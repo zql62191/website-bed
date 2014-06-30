@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+@import "variables";
+@import "rgbapng";
+@import "borderbox";
+@import "bourbon/bourbon";
+@import "mixins";
+
+@import "compass/reset";
+
+*, *:before, *:after {
+  position: relative;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+html,
+body,
+.page-wrapper,
+.page-content {
+  height: 100%;
+  width: 100%;
+}
+
+.section {
+  min-height: 100%;
+
+  &:nth-of-type(odd) {
+    background: yellow;
+  }
+  &:nth-of-type(even) {
+    background: orange;
+  }
+
+  .next-section {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: green;
+    box-shadow: 0 6px 17px 3px rgba(0,0,0,.5);
+  }
+}

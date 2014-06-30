@@ -1,0 +1,12 @@
+source 'https://rubygems.org'
+
+gem 'sass', '>= 3.3.7'
+gem 'compass', '>= 1.0.0.alpha.13'
+gem 'compass-borderbox', '>= 0.1.2.0'
+gem 'compass-rgbapng', '>= 0.2.1'
+gem 'oily_png', '>= 1.1.1'
+gem 'bootstrap-sass', '>= 3.1.1.1'
+gem 'jeet', '>= 0.0.4'
+gem 'bourbon-compass', '>= 4.0.1'
+gem 'neat-compass', '>= 1.6.0'
+gem 'bitters-compass', '>= 0.9.3'
