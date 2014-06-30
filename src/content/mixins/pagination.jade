@@ -1,0 +1,7 @@
+mixin pagination(ordinal)
+  if(site.nav[ordinal])
+    ul(class="#{ordinal}-pagination")
+      each val in site.nav[ordinal]
+          li(class="#{ordinal}-pagination__item")
+            a(href="#{val.url}")
+              | !{val.text}

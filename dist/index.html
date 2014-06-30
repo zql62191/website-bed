@@ -6,7 +6,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <meta name="viewport" content="width=960">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, minimal-ui">
     <meta name="format-detection" content="telephone=no">
     <meta name="google" content="notranslate">
     <title></title>
@@ -16,38 +16,84 @@
     </script>
     <link rel="stylesheet" href="css/styles.css"><!--[if (gte IE 6)&(lte IE 8)]>
     <script src="//cdn.jsdelivr.net/g/nwmatcher@1.2.5,selectivizr@1.0.3b"></script><![endif]-->
-    <script src="//cdn.jsdelivr.net/g/jquery@1.11.0,lodash@2.4.1(lodash.compat.min.js),parseuri@1.2.2"></script>
+    <script src="//cdn.jsdelivr.net/g/jquery@1.11.0,lodash@2.4.1(lodash.compat.min.js),parseuri@1.2.2,hammerjs@1.1.2,jquery.hammerjs@1.1.2,jquery.velocity@0.3.0"></script>
+    <script src="js/libs.js"></script>
+    <script src="js/script.js"></script>
   </head>
   <body>
     <div class="page-wrapper">
-      <div class="page-header"></div>
+      <div class="page-header">
+        <div class="content-wrap"></div>
+      </div>
+      <div class="page-nav">
+        <nav>
+                <ul class="primary-nav">
+                  <li class="primary-nav__item"><a href="#home">Home</a></li>
+                  <li class="primary-nav__item"><a href="#prevalence">Prevalence</a></li>
+                  <li class="primary-nav__item"><a href="#course">Clinical Course</a></li>
+                  <li class="primary-nav__item"><a href="#effects">Effects on Well-being</a></li>
+                  <li class="primary-nav__item"><a href="#neurobiology">Neurobiology</a></li>
+                  <li class="primary-nav__item"><a href="#diagnosis">Diagnosis</a></li>
+                  <li class="primary-nav__item"><a href="#dsm5">DSM-5<sup>&reg;</sup> Criteria</a></li>
+                  <li class="primary-nav__item"><a href="#resources">Resources</a></li>
+                </ul>
+        </nav>
+      </div>
       <div class="page-content"><a id="home" name="home"></a>
-        <div class="section">
-          <div class="content-wrap"></div><a href="#prevalence" class="next-section"></a>
+        <div class="section section--home">
+          <div class="bar--title">binge eating disorder</div>
+          <div class="content-wrap">
+            <div class="eyebrow">For many patients, binge eating <br>disorder is a cycle of…</div>
+            <h1>Binge, shame, guilt. <br>Repeat.</h1>
+            <p>Adults with binge eating disorder (BED) carry on in silence for years, too embarrassed and ashamed to talk about their bingeing, all the while compromising their physical and mental health. 1-8 It’s time to interrupt their suffering.</p>
+          </div><a href="#prevalence" class="bar--next">BED is the most common eating disorder</a>
         </div><a id="prevalence" name="prevalence"></a>
-        <div class="section">
-          <div class="content-wrap"></div><a href="#course" class="next-section"></a>
+        <div class="section section--prevalence">
+          <div class="content-wrap"></div><a href="#course" class="bar--next">It often goes untreated for years</a>
         </div><a id="course" name="course"></a>
-        <div class="section">
-          <div class="content-wrap"></div><a href="#effects" class="next-section"></a>
+        <div class="section section--course">
+          <div class="content-wrap"></div><a href="#effects" class="bar--next">BED is a psychological condition</a>
         </div><a id="effects" name="effects"></a>
-        <div class="section">
-          <div class="content-wrap"></div><a href="#neurobiology" class="next-section"></a>
+        <div class="section section--effects">
+          <div class="content-wrap"></div><a href="#neurobiology" class="bar--next">Emerging evidence of BED neurobiology</a>
         </div><a id="neurobiology" name="neurobiology"></a>
-        <div class="section">
-          <div class="content-wrap"></div><a href="#diagnosis" class="next-section"></a>
+        <div class="section section--neurobiology">
+          <div class="content-wrap"></div><a href="#diagnosis" class="bar--next">Finding BED in your patients</a>
         </div><a id="diagnosis" name="diagnosis"></a>
-        <div class="section">
-          <div class="content-wrap"></div><a href="#dsm5" class="next-section"></a>
+        <div class="section section--diagnosis">
+          <div class="content-wrap"></div><a href="#dsm5" class="bar--next">The <em>DSM-5<sup>&reg;</sup></em> criteria</a>
         </div><a id="dsm5" name="dsm5"></a>
-        <div class="section">
-          <div class="content-wrap"></div><a href="#resources" class="next-section"></a>
+        <div class="section section--dsm5">
+          <div class="content-wrap"></div><a href="#resources" class="bar--next">Resources for helping</a>
         </div><a id="resources" name="resources"></a>
-        <div class="section">
+        <div class="section section--resources">
           <div class="content-wrap"></div>
         </div>
+        <nav>
+          <ul class="primary-pagination">
+            <li class="primary-pagination__item"><a href="#home">Home</a></li>
+            <li class="primary-pagination__item"><a href="#prevalence">Prevalence</a></li>
+            <li class="primary-pagination__item"><a href="#course">Clinical Course</a></li>
+            <li class="primary-pagination__item"><a href="#effects">Effects on Well-being</a></li>
+            <li class="primary-pagination__item"><a href="#neurobiology">Neurobiology</a></li>
+            <li class="primary-pagination__item"><a href="#diagnosis">Diagnosis</a></li>
+            <li class="primary-pagination__item"><a href="#dsm5">DSM-5<sup>&reg;</sup> Criteria</a></li>
+            <li class="primary-pagination__item"><a href="#resources">Resources</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="page-footer"></div>
+      <div class="page-footer">
+        <div class="content-wrap">
+          <nav>
+                  <ul class="secondary-nav">
+                    <li class="secondary-nav__item"><a href="#">Unsubscribe</a></li>
+                    <li class="secondary-nav__item"><a href="#">Contact Us</a></li>
+                    <li class="secondary-nav__item"><a href="#">Privacy Policy</a></li>
+                    <li class="secondary-nav__item"><a href="#">Shire US</a></li>
+                  </ul>
+          </nav>S02592 07/14
+        </div>
+      </div>
     </div>
     <script>location.hostname === 'localhost' && document.write('\x3Cscript src="//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1">\x3C/script>');</script>
   </body>

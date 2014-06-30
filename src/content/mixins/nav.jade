@@ -1,0 +1,13 @@
+mixin nav(ordinal)
+  if(site.nav[ordinal])
+    ul(class="#{ordinal}-nav")
+      each val in site.nav[ordinal]
+        if val.subnav
+          li(class="#{ordinal}-nav__item #{ordinal}-nav__item--subnav")
+            a(href="#{val.url}")
+              | !{val.text}
+            mixin nav(val.subnav)
+        else
+          li(class="#{ordinal}-nav__item")
+            a(href="#{val.url}")
+              | !{val.text}

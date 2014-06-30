@@ -1,3 +1,50 @@
 ---
 title:
-prc: XXXXXXXXXXXXXX-XX-XX XXX/XX
+prc: "S02592 07/14"
+nav:
+  primary:
+    -
+      url: "#home"
+      text: "Home"
+      file: "home"
+    -
+      url: "#prevalence"
+      text: "Prevalence"
+      file: "prevalence"
+    -
+      url: "#course"
+      text: "Clinical Course"
+      file: "course"
+    -
+      url: "#effects"
+      text: "Effects on Well-being"
+      file: "effects"
+    -
+      url: "#neurobiology"
+      text: "Neurobiology"
+      file: "neurobiology"
+    -
+      url: "#diagnosis"
+      text: "Diagnosis"
+      file: "diagnosis"
+    -
+      url: "#dsm5"
+      text: "DSM-5<sup>&reg;</sup> Criteria"
+      file: "dsm5"
+    -
+      url: "#resources"
+      text: "Resources"
+      file: "resources"
+  secondary:
+    -
+      url: "#"
+      text: "Unsubscribe"
+    -
+      url: "#"
+      text: "Contact Us"
+    -
+      url: "#"
+      text: "Privacy Policy"
+    -
+      url: "#"
+      text: "Shire US"

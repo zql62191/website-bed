@@ -56,39 +56,206 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 *, *:before, *:after {
   position: relative;
-  overflow: auto;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  max-height: 1000000px;
+  background: url("");
+}
+
+sub, sup {
+  font-size: 60%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+.eq-ie sup {
+  top: -0.8em;
+}
+
+sub {
+  bottom: -0.25em;
 }
 
 html,
 body,
 .page-wrapper,
 .page-content {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
+  overflow: visible;
+  min-width: 960px;
+}
+@media only screen and (max-width: 40em) {
+  html,
+  body,
+  .page-wrapper,
+  .page-content {
+    min-width: 100%;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  html,
+  body,
+  .page-wrapper,
+  .page-content {
+    min-width: 100%;
+  }
+}
+
+.content-wrap {
+  margin: 0 auto;
+  width: 960px;
+}
+@media only screen and (max-width: 40em) {
+  .content-wrap {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .content-wrap {
+    width: 100%;
+  }
 }
 
 .section {
   min-height: 100%;
 }
-.section:nth-of-type(odd) {
-  background: yellow;
+.section .bar--title {
+  height: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  background: #51748b;
+  color: #febd3f;
+  font-size: 21px;
+  line-height: 58px;
+  font-family: 'GillSansStd-Light';
 }
-.section:nth-of-type(even) {
-  background: orange;
+.section .content-wrap:after {
+  content: '';
+  height: 50px;
 }
-.section .next-section {
+.section .bar--next {
   display: block;
+  cursor: pointer;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   height: 50px;
-  background: green;
+  color: #ffffff;
+  font-size: 19px;
+  font-family: 'GillSansStd-Light';
+  line-height: 60px;
+  text-align: center;
+  text-decoration: none;
   -webkit-box-shadow: 0 6px 17px 3px rgba(0, 0, 0, 0.5);
   box-shadow: 0 6px 17px 3px rgba(0, 0, 0, 0.5);
 }
+.section .bar--next.highlight {
+  background: #fec451 !important;
+}
+.section.section--home {
+  background: #393e47;
+}
+.section.section--home .bar--next {
+  background: #51748b;
+}
+.section.section--prevalence {
+  background: #51748b;
+}
+.section.section--prevalence .bar--next {
+  background: #333e48;
+}
+.section.section--course {
+  background: #333e48;
+}
+.section.section--course .bar--next {
+  background: #51748b;
+}
+.section.section--effects {
+  background: #51748b;
+}
+.section.section--effects .bar--next {
+  background: #333e48;
+}
+.section.section--neurobiology {
+  background: #333e48;
+}
+.section.section--neurobiology .bar--next {
+  background: #8c8f91;
+}
+.section.section--diagnosis {
+  background: #8c8f91;
+}
+.section.section--diagnosis .bar--next {
+  background: #ffffff;
+  color: #000000;
+}
+.section.section--dsm5 {
+  background: #ffffff;
+}
+.section.section--dsm5 .bar--next {
+  background: #8c8f91;
+}
+.section.section--resources {
+  background: #8c8f91;
+}
+.section.section--resources .content-wrap:after {
+  height: 0;
+}
 
-/*# sourceMappingURL=styles.css.map */
+.page-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: url('../img/rgbapng/ffffff1a-5.png');
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
+
+.page-nav {
+  position: fixed;
+  top: 50px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url('../img/rgbapng/00000099-5.png');
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+.page-nav nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  background: #bbbec0;
+}
+.page-nav nav .primary-nav .primary-nav__item {
+  height: 36px;
+  line-height: 40px;
+  font-size: 19px;
+  font-family: 'GillSansStd-Light';
+  border-bottom: 1px solid #c3c6c7;
+  letter-spacing: 0.02em;
+}
+.page-nav nav .primary-nav .primary-nav__item a {
+  display: block;
+  text-decoration: none;
+  color: #333e48;
+  height: 100%;
+  padding: 0 60px 0 20px;
+}
+.page-nav nav .primary-nav .primary-nav__item a.active, .page-nav nav .primary-nav .primary-nav__item a.highlight {
+  background: #fec451;
+  -webkit-box-shadow: 1px 2px 2px rgba(33, 30, 31, 0.25);
+  box-shadow: 1px 2px 2px rgba(33, 30, 31, 0.25);
+}

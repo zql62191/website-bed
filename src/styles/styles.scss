@@ -10,36 +10,224 @@
 
 *, *:before, *:after {
   position: relative;
-  overflow: auto;
+  // overflow: auto;
   box-sizing: border-box;
+  // Disables Android's font boosting
+  max-height: 1000000px;
+  // Disables Android's Auto-Fit Pages
+  background: url('');
+}
+
+sub, sup {
+  font-size: 60%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+  .eq-ie & {
+    top: -0.8em;
+  }
+}
+
+sub {
+  bottom: -0.25em;
 }
 
 html,
 body,
 .page-wrapper,
 .page-content {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
+  overflow: visible;
+  min-width: 960px;
+
+  @media only screen and (max-width: 40em) {
+    min-width: 100%;
+  }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    min-width: 100%;
+  }
+}
+
+.content-wrap {
+  margin: 0 auto;
+  width: 960px;
+
+  @media only screen and (max-width: 40em) {
+    width: 100%;
+  }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    width: 100%;
+  }
 }
 
 .section {
   min-height: 100%;
 
-  &:nth-of-type(odd) {
-    background: yellow;
-  }
-  &:nth-of-type(even) {
-    background: orange;
+  // &:nth-of-type(odd) {
+  //   background: yellow;
+  // }
+  // &:nth-of-type(even) {
+  //   background: orange;
+  // }
+
+  .bar--title {
+    height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    background: #51748b;
+    color: #febd3f;
+    font-size: 21px;
+    line-height: 58px;
+    font-family: 'GillSansStd-Light';
   }
 
-  .next-section {
+  .content-wrap {
+    &:after {
+      content: '';
+      height: 50px;
+    }
+  }
+
+  .bar--next {
     display: block;
+    cursor: pointer;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     height: 50px;
-    background: green;
+    color: #ffffff;
+    font-size: 19px;
+    font-family: 'GillSansStd-Light';
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+    // background: green;
     box-shadow: 0 6px 17px 3px rgba(0,0,0,.5);
+
+    &.highlight {
+      background: #fec451 !important;
+    }
+  }
+
+  &.section--home {
+    background: #393e47;
+
+    .bar--next {
+      background: #51748b;
+    }
+  }
+  &.section--prevalence {
+    background: #51748b;
+
+    .bar--next {
+      background: #333e48;
+    }
+  }
+  &.section--course {
+    background: #333e48;
+
+    .bar--next {
+      background: #51748b;
+    }
+  }
+  &.section--effects {
+    background: #51748b;
+
+    .bar--next {
+      background: #333e48;
+    }
+  }
+  &.section--neurobiology {
+    background: #333e48;
+
+    .bar--next {
+      background: #8c8f91;
+    }
+  }
+  &.section--diagnosis {
+    background: #8c8f91;
+
+    .bar--next {
+      background: #ffffff;
+      color: #000000;
+    }
+  }
+  &.section--dsm5 {
+    background: #ffffff;
+
+    .bar--next {
+      background: #8c8f91;
+    }
+  }
+  &.section--resources {
+    background: #8c8f91;
+
+    .content-wrap:after {
+      height: 0;
+    }
+  }
+}
+
+.page-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  @include rgba-background(rgba(255,255,255,0.1));
+  z-index: 1;
+}
+
+.page-nav {
+  position: fixed;
+  top: 50px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  @include rgba-background(rgba(0,0,0,0.6));
+
+  z-index: 2;
+  // display: none;
+
+  nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    background: #bbbec0;
+
+      .primary-nav {
+
+        .primary-nav__item {
+          height: 36px;
+          line-height: 40px;
+          font-size: 19px;
+          font-family: 'GillSansStd-Light';
+          border-bottom: 1px solid #c3c6c7;
+          letter-spacing: 0.02em;
+
+          a {
+            display: block;
+            text-decoration: none;
+            color: #333e48;
+            height: 100%;
+            padding: 0 60px 0 20px;
+
+            &.active,
+            &.highlight {
+              background: #fec451;
+              box-shadow: 1px 2px 2px rgba(33,30,31,.25);
+            }
+          }
+        }
+      }
   }
 }
