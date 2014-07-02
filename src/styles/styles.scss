@@ -5,7 +5,8 @@
 @import "borderbox";
 @import "bourbon/bourbon";
 @import "mixins";
-
+@import "mediaqueries";
+@import "zindex";
 @import "compass/reset";
 
 *, *:before, *:after {
@@ -16,6 +17,7 @@
   max-height: 1000000px;
   // Disables Android's Auto-Fit Pages
   background: url('');
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 sub, sup {
@@ -42,38 +44,46 @@ body,
 .page-content {
   min-height: 100%;
   width: 100%;
-  overflow: visible;
+  // overflow: visible;
   min-width: 960px;
 
-  @media only screen and (max-width: 40em) {
+  @include breakpoint($small) {
+    min-width: 320px;
+  }
+
+  @include breakpoint($medium) {
     min-width: 100%;
   }
-  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-    min-width: 100%;
-  }
+}
+
+html {
+  background: #000000;
+  overflow-y: scroll;
+}
+
+body {
+  font-family: 'GillSansStd-Light';
+}
+
+.page-wrapper {
+  overflow: hidden;
 }
 
 .content-wrap {
   margin: 0 auto;
   width: 960px;
+  height: 100%;
 
-  @media only screen and (max-width: 40em) {
+  @include breakpoint($small) {
     width: 100%;
   }
-  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  @include breakpoint($medium) {
     width: 100%;
   }
 }
 
 .section {
   min-height: 100%;
-
-  // &:nth-of-type(odd) {
-  //   background: yellow;
-  // }
-  // &:nth-of-type(even) {
-  //   background: orange;
-  // }
 
   .bar--title {
     height: 50px;
@@ -107,7 +117,6 @@ body,
     line-height: 60px;
     text-align: center;
     text-decoration: none;
-    // background: green;
     box-shadow: 0 6px 17px 3px rgba(0,0,0,.5);
 
     &.highlight {
@@ -154,12 +163,12 @@ body,
     background: #8c8f91;
 
     .bar--next {
-      background: #ffffff;
+      background: #ededed;
       color: #000000;
     }
   }
   &.section--dsm5 {
-    background: #ffffff;
+    background: #ededed;
 
     .bar--next {
       background: #8c8f91;
@@ -182,52 +191,100 @@ body,
   width: 100%;
   height: 50px;
   @include rgba-background(rgba(255,255,255,0.1));
-  z-index: 1;
+  // @include rgba-background(rgba(0,0,0,0.1));
+  z-index: z('page-header');
+
+  .content-wrap {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
 }
 
 .page-nav {
   position: fixed;
   top: 50px;
-  right: 0;
-  bottom: 0;
+  // top: 0;
   left: 0;
-  @include rgba-background(rgba(0,0,0,0.6));
-
-  z-index: 2;
-  // display: none;
+  height: 100%;
+  display: none;
+  z-index: z('page-nav');
 
   nav {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
+    position: relative;
+    height: 100%;
     display: inline-block;
     background: #bbbec0;
 
-      .primary-nav {
+    .primary-nav {
 
-        .primary-nav__item {
-          height: 36px;
-          line-height: 40px;
-          font-size: 19px;
-          font-family: 'GillSansStd-Light';
-          border-bottom: 1px solid #c3c6c7;
-          letter-spacing: 0.02em;
+      .primary-nav__item {
+        height: 36px;
+        line-height: 40px;
+        font-size: 19px;
+        border-bottom: 1px solid #c3c6c7;
+        letter-spacing: 0.02em;
 
-          a {
-            display: block;
-            text-decoration: none;
-            color: #333e48;
-            height: 100%;
-            padding: 0 60px 0 20px;
+        a {
+          display: block;
+          text-decoration: none;
+          color: #333e48;
+          height: 100%;
+          padding: 0 60px 0 20px;
+          white-space: nowrap;
 
-            &.active,
-            &.highlight {
-              background: #fec451;
-              box-shadow: 1px 2px 2px rgba(33,30,31,.25);
-            }
+          &.active,
+          &.highlight {
+            background: #fec451;
+            box-shadow: 1px 2px 2px rgba(33,30,31,.25);
           }
         }
       }
+    }
+  }
+}
+
+// html._menu_open {
+//   overflow: hidden;
+
+//   body {
+//     height: 100% !important;
+//     overflow: hidden;
+//   }
+
+//   .page-header,
+//   .page-wrapper,
+//   .mask {
+//     overflow-y: scroll;
+//   }
+// }
+
+.btn {
+  display: block;
+  color: #ffffff;
+  cursor: pointer;
+
+  &.btn--menu {
+    display: inline-block;
+    height: 50px;
+    line-height: 58px;
+    padding: 0 30px;
+    font-family: 'GillSansStd-Light';
+    text-transform: uppercase;
+  }
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  @include rgba-background(rgba(0,0,0,0.5));
+  display: none;
+
+  &.mask--nav {
+    // top: 50px;
+    z-index: z('mask--nav');
   }
 }

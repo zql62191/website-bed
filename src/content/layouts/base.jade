@@ -48,12 +48,12 @@ html(
 
     <!--[if (gte IE 6)&(lte IE 8)]>
     script(
-      src="//cdn.jsdelivr.net/g/nwmatcher@1.2.5,selectivizr@1.0.3b"
+      src="//cdn.jsdelivr.net/g/html5shiv@0.3.0,nwmatcher@1.2.5,selectivizr@1.0.3b,respond@0.3.0"
       )
     <![endif]-->
 
     script(
-      src="//cdn.jsdelivr.net/g/jquery@1.11.0,lodash@2.4.1(lodash.compat.min.js),parseuri@1.2.2,hammerjs@1.1.2,jquery.hammerjs@1.1.2,jquery.velocity@0.3.0"
+      src="//cdn.jsdelivr.net/g/jquery@1.11.0,lodash@2.4.1(lodash.compat.min.js),jquery.velocity@0.3.0"
       )
     script(
       src="js/libs.js"
@@ -72,4 +72,5 @@ html(
 
     if dev
       script.
-        location.hostname === 'localhost' && document.write('\x3Cscript src="//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1">\x3C/script>');
+        document.write('\x3Cscript src="//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1">\x3C/script>');
+        /iP(hone|od|ad)|Android|BlackBerry|IEMobile/i.test(navigator.userAgent)&&document.write('<script src="//'+(location.host||"localhost").split(":")[0]+':8081/target/target-script-min.js">\x3c/script>');

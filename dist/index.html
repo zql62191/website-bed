@@ -15,16 +15,17 @@
       
     </script>
     <link rel="stylesheet" href="css/styles.css"><!--[if (gte IE 6)&(lte IE 8)]>
-    <script src="//cdn.jsdelivr.net/g/nwmatcher@1.2.5,selectivizr@1.0.3b"></script><![endif]-->
-    <script src="//cdn.jsdelivr.net/g/jquery@1.11.0,lodash@2.4.1(lodash.compat.min.js),parseuri@1.2.2,hammerjs@1.1.2,jquery.hammerjs@1.1.2,jquery.velocity@0.3.0"></script>
+    <script src="//cdn.jsdelivr.net/g/html5shiv@0.3.0,nwmatcher@1.2.5,selectivizr@1.0.3b,respond@0.3.0"></script><![endif]-->
+    <script src="//cdn.jsdelivr.net/g/jquery@1.11.0,lodash@2.4.1(lodash.compat.min.js),jquery.velocity@0.3.0"></script>
     <script src="js/libs.js"></script>
     <script src="js/script.js"></script>
   </head>
   <body>
     <div class="page-wrapper">
       <div class="page-header">
-        <div class="content-wrap"></div>
+        <div class="content-wrap"><a class="btn btn--menu">Menu</a></div>
       </div>
+      <div class="mask mask--nav"></div>
       <div class="page-nav">
         <nav>
                 <ul class="primary-nav">
@@ -40,7 +41,7 @@
         </nav>
       </div>
       <div class="page-content"><a id="home" name="home"></a>
-        <div class="section section--home">
+        <div data-section="home" class="section section--home">
           <div class="bar--title">binge eating disorder</div>
           <div class="content-wrap">
             <div class="eyebrow">For many patients, binge eating <br>disorder is a cycle of…</div>
@@ -48,25 +49,25 @@
             <p>Adults with binge eating disorder (BED) carry on in silence for years, too embarrassed and ashamed to talk about their bingeing, all the while compromising their physical and mental health. 1-8 It’s time to interrupt their suffering.</p>
           </div><a href="#prevalence" class="bar--next">BED is the most common eating disorder</a>
         </div><a id="prevalence" name="prevalence"></a>
-        <div class="section section--prevalence">
+        <div data-section="prevalence" class="section section--prevalence">
           <div class="content-wrap"></div><a href="#course" class="bar--next">It often goes untreated for years</a>
         </div><a id="course" name="course"></a>
-        <div class="section section--course">
+        <div data-section="course" class="section section--course">
           <div class="content-wrap"></div><a href="#effects" class="bar--next">BED is a psychological condition</a>
         </div><a id="effects" name="effects"></a>
-        <div class="section section--effects">
+        <div data-section="effects" class="section section--effects">
           <div class="content-wrap"></div><a href="#neurobiology" class="bar--next">Emerging evidence of BED neurobiology</a>
         </div><a id="neurobiology" name="neurobiology"></a>
-        <div class="section section--neurobiology">
+        <div data-section="neurobiology" class="section section--neurobiology">
           <div class="content-wrap"></div><a href="#diagnosis" class="bar--next">Finding BED in your patients</a>
         </div><a id="diagnosis" name="diagnosis"></a>
-        <div class="section section--diagnosis">
+        <div data-section="diagnosis" class="section section--diagnosis">
           <div class="content-wrap"></div><a href="#dsm5" class="bar--next">The <em>DSM-5<sup>&reg;</sup></em> criteria</a>
         </div><a id="dsm5" name="dsm5"></a>
-        <div class="section section--dsm5">
+        <div data-section="dsm5" class="section section--dsm5">
           <div class="content-wrap"></div><a href="#resources" class="bar--next">Resources for helping</a>
         </div><a id="resources" name="resources"></a>
-        <div class="section section--resources">
+        <div data-section="resources" class="section section--resources">
           <div class="content-wrap"></div>
         </div>
         <nav>
@@ -95,6 +96,9 @@
         </div>
       </div>
     </div>
-    <script>location.hostname === 'localhost' && document.write('\x3Cscript src="//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1">\x3C/script>');</script>
+    <script>
+      document.write('\x3Cscript src="//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1">\x3C/script>');
+      /iP(hone|od|ad)|Android|BlackBerry|IEMobile/i.test(navigator.userAgent)&&document.write('<script src="//'+(location.host||"localhost").split(":")[0]+':8081/target/target-script-min.js">\x3c/script>');
+    </script>
   </body>
 </html>

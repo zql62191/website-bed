@@ -1,11 +1,10 @@
 require 'bootstrap-sass'
 require 'compass/import-once/activate'
-
 require 'rgbapng'
 require 'oily_png'
 require 'borderbox'
-
 require 'bourbon-compass'
+require 'sass-media_query_combiner'
 
 asset_cache_buster :none
 
