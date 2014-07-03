@@ -1,15 +1,37 @@
+
 // bourbon variables
-$prefix-for-webkit: false;
-$prefix-for-mozilla: false;
-$prefix-for-microsoft: false;
-$prefix-for-opera: false;
-$prefix-for-spec: false;
+$prefix-for-webkit      : false;
+$prefix-for-mozilla     : false;
+$prefix-for-microsoft   : false;
+$prefix-for-opera       : false;
+$prefix-for-spec        : false;
 
 // compass variables
-$legacy-support-for-ie:  true;
-$legacy-support-for-ie6: true;
-$legacy-support-for-ie7: true;
-$legacy-support-for-ie8: true;
+// $legacy-support-for-ie  : true;
+// $legacy-support-for-ie6 : true;
+// $legacy-support-for-ie7 : true;
+// $legacy-support-for-ie8 : true;
 
 // compass-borderbox variables
-$global-border-box: true;
+$global-border-box      : true;
+
+// z-indexs
+$z-layers: (
+  'page': (
+    'header' : 3,
+    'nav'    : 4
+  ),
+  'mask': (
+    'nav' : 2
+  ),
+  'default'        : 1,
+  'below'          : -1,
+  'bottomless-pit' : -9000
+);
+
+// media queries
+$media-queries: (
+  'small'  : 'only screen and (max-width: 40em)',
+  'medium' : 'only screen and (min-width: 40.063em) and (max-width: 64em)',
+  'large'  : 'only screen and (min-width: 64.063em)'
+);

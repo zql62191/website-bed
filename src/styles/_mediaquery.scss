@@ -1,0 +1,43 @@
+
+// $media-queries is defined in variables
+
+@mixin mediaquery($query, $ie: '') {
+  @media #{map-get($media-queries, $query)} {
+    @content;
+  }
+
+  @if $ie != '' {
+    .#{$ie} & {
+      @content;
+    }
+  }
+}
+
+@mixin mq($args...) {
+  @include mediaquery($args...) {
+    @content;
+  }
+}
+
+// Setup media query order for sass-media_query_combiner
+// https://github.com/aaronjensen/sass-media_query_combiner/issues/10
+html {
+  @include mq('small') {
+    // do not remove the following comment
+    /* */
+  }
+}
+
+html {
+  @include mq('medium') {
+    // do not remove the following comment
+    /* */
+  }
+}
+
+html {
+  @include mq('large') {
+    // do not remove the following comment
+    /* */
+  }
+}

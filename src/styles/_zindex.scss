@@ -1,11 +1,19 @@
-$z-layers: (
-  "page-header":        3,
-  "page-nav":           4,
-  "mask--nav":          2,
-  "default":            1,
-  "below":             -1,
-  "bottomless-pit":  -9000
-);
+
+// http://www.sitepoint.com/better-solution-managing-z-index-sass/
+// https://twitter.com/w3cplus/status/479910313198768128
+
+// $z-layers is defined in variables
+
+@function map-has-nested-keys($map, $keys...) {
+  @each $key in $keys {
+    @if not map-has-key($map, $key) {
+      @return false;
+    }
+    $map: map-get($map, $key);
+  }
+
+  @return true;
+}
 
 @function map-deep-get($map, $keys...) {
   @each $key in $keys {
@@ -15,10 +23,10 @@ $z-layers: (
   @return $map;
 }
 
-@function z($layer) {
-  @if not map-has-key($z-layers, $layer) {
-    @warn "No layer found for `#{$layer}` in $z-layers map. Property omitted.";
+@function z($layers...) {
+  @if not map-has-nested-keys($z-layers, $layers...) {
+    @warn 'No layer found for `#{inspect($layers...)}` in $z-layers map. Property omitted.';
   }
 
-  @return map-get($z-layers, $layer);
+  @return map-deep-get($z-layers, $layers...);
 }

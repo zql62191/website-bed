@@ -1,12 +1,15 @@
 @charset "UTF-8";
 
 @import "variables";
+@import "compass";
 @import "rgbapng";
 @import "borderbox";
 @import "bourbon/bourbon";
+
 @import "mixins";
-@import "mediaqueries";
+@import "mediaquery";
 @import "zindex";
+
 @import "compass/reset";
 
 *, *:before, *:after {
@@ -17,6 +20,7 @@
   max-height: 1000000px;
   // Disables Android's Auto-Fit Pages
   background: url('');
+  // Disables Tap Highlight Color
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
@@ -47,11 +51,11 @@ body,
   // overflow: visible;
   min-width: 960px;
 
-  @include breakpoint($small) {
+  @include mq('small') {
     min-width: 320px;
   }
 
-  @include breakpoint($medium) {
+  @include mq('medium') {
     min-width: 100%;
   }
 }
@@ -74,16 +78,15 @@ body {
   width: 960px;
   height: 100%;
 
-  @include breakpoint($small) {
+  @include mq('small') {
     width: 100%;
   }
-  @include breakpoint($medium) {
+  @include mq('medium') {
     width: 100%;
   }
 }
 
 .section {
-  min-height: 100%;
 
   .bar--title {
     height: 50px;
@@ -192,7 +195,7 @@ body {
   height: 50px;
   @include rgba-background(rgba(255,255,255,0.1));
   // @include rgba-background(rgba(0,0,0,0.1));
-  z-index: z('page-header');
+  z-index: z('page', 'header');
 
   .content-wrap {
     width: 100%;
@@ -208,7 +211,7 @@ body {
   left: 0;
   height: 100%;
   display: none;
-  z-index: z('page-nav');
+  z-index: z('page', 'nav');
 
   nav {
     position: relative;
@@ -285,6 +288,6 @@ body {
 
   &.mask--nav {
     // top: 50px;
-    z-index: z('mask--nav');
+    z-index: z('mask', 'nav');
   }
 }

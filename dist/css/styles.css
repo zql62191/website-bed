@@ -109,9 +109,6 @@ body {
   width: 960px;
   height: 100%;
 }
-.section {
-  min-height: 100%;
-}
 .section .bar--title {
   height: 50px;
   text-transform: uppercase;
