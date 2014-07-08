@@ -42,47 +42,111 @@ sub {
   bottom: -0.25em;
 }
 
-html,
-body,
-.page-wrapper,
-.page-content {
-  min-height: 100%;
+hr {
+  margin: 0 auto;
+  height: 1px;
+  border: 0;
+  @include rgba-background(rgba(255,255,255,0.4));
+}
+
+p {
+  padding-bottom: 6px;
+}
+
+html {
+  // background-color: #ffffff;
+  background-color: #393e47;
+  overflow-y: scroll;
+}
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Roboto, Arial, "Lucida Grande", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.nobr,
+nobr {
+  white-space:nowrap;
+}
+
+.eq-ie9 * {
+  filter: none !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.hide--small {
+  @include mq('small') {
+    display: none !important;
+  }
+}
+
+.hide--medium {
+  @include mq('medium') {
+    display: none !important;
+  }
+}
+
+.hide--large {
+  @include mq('large') {
+    display: none !important;
+  }
+}
+
+.page-wrapper {
+  margin: 0 auto;
+  overflow: hidden;
   width: 100%;
-  // overflow: visible;
-  min-width: 960px;
+  border: 1px solid lighten(#000000, 20%);
 
   @include mq('small') {
     min-width: 320px;
   }
 
-  @include mq('medium') {
-    min-width: 100%;
+  @include mq('large') {
+    max-width: 1024px;
+    box-shadow: 0px 5px 10px lighten(#000000, 20%);
   }
 }
 
-html {
-  background: #000000;
-  overflow-y: scroll;
+// DEBUG
+#_:target {
+
+  .page-wrapper,
+  .page-header {
+    margin: 0;
+
+    @include mq('small') {
+      width: 320px;
+    }
+    @include mq('medium') {
+      width: 768px;
+    }
+    @include mq('large') {
+      width: 1024px;
+    }
+  }
+
 }
 
-body {
-  font-family: 'GillSansStd-Light';
-}
-
-.page-wrapper {
-  overflow: hidden;
-}
-
-.content-wrap {
+.outer-wrap {
   margin: 0 auto;
-  width: 960px;
-  height: 100%;
+  width: percentage(960/1024);
 
-  @include mq('small') {
-    width: 100%;
+  @include mq('large') {
+    width: 1024px;
   }
-  @include mq('medium') {
-    width: 100%;
+}
+
+.inner-wrap {
+  margin: 0 auto;
+
+  @include mq('large') {
+    width: 960px;
   }
 }
 
@@ -99,10 +163,13 @@ body {
     font-family: 'GillSansStd-Light';
   }
 
-  .content-wrap {
+  .inner-wrap {
+    min-height: 650px;
+
     &:after {
       content: '';
       height: 50px;
+      display: block;
     }
   }
 
@@ -127,63 +194,8 @@ body {
     }
   }
 
-  &.section--home {
-    background: #393e47;
 
-    .bar--next {
-      background: #51748b;
-    }
-  }
-  &.section--prevalence {
-    background: #51748b;
 
-    .bar--next {
-      background: #333e48;
-    }
-  }
-  &.section--course {
-    background: #333e48;
-
-    .bar--next {
-      background: #51748b;
-    }
-  }
-  &.section--effects {
-    background: #51748b;
-
-    .bar--next {
-      background: #333e48;
-    }
-  }
-  &.section--neurobiology {
-    background: #333e48;
-
-    .bar--next {
-      background: #8c8f91;
-    }
-  }
-  &.section--diagnosis {
-    background: #8c8f91;
-
-    .bar--next {
-      background: #ededed;
-      color: #000000;
-    }
-  }
-  &.section--dsm5 {
-    background: #ededed;
-
-    .bar--next {
-      background: #8c8f91;
-    }
-  }
-  &.section--resources {
-    background: #8c8f91;
-
-    .content-wrap:after {
-      height: 0;
-    }
-  }
 }
 
 .page-header {
@@ -193,14 +205,15 @@ body {
   left: 0;
   width: 100%;
   height: 50px;
-  @include rgba-background(rgba(255,255,255,0.1));
-  // @include rgba-background(rgba(0,0,0,0.1));
   z-index: z('page', 'header');
 
-  .content-wrap {
+  .outer-wrap,
+  .inner-wrap {
     width: 100%;
-    max-width: 100%;
-    min-width: 100%;
+    max-width: 1024px;
+  }
+  .outer-wrap {
+    @include rgba-background(rgba(255,255,255,0.1));
   }
 }
 
@@ -210,7 +223,8 @@ body {
   // top: 0;
   left: 0;
   height: 100%;
-  display: none;
+  // display: none;
+  overflow: hidden;
   z-index: z('page', 'nav');
 
   nav {
@@ -218,6 +232,7 @@ body {
     height: 100%;
     display: inline-block;
     background: #bbbec0;
+    display: none;
 
     .primary-nav {
 
@@ -289,5 +304,103 @@ body {
   &.mask--nav {
     // top: 50px;
     z-index: z('mask', 'nav');
+  }
+}
+
+.section--home {
+  background: #4d5158;
+
+  @include mq('small') {
+    background: #4d5158 url('../img/home__bg--mobile.jpg') 0 50px no-repeat;
+    background-size: contain;
+  }
+  @include mq('medium', 'large') {
+    background: #4d5158 url('../img/home__bg.jpg') 0 50px no-repeat;
+    background-size: cover;
+  }
+
+  .inner-wrap {
+    padding-left: percentage(609/1024);
+    padding-top: percentage(241/1024);
+    // padding-right: percentage(35/1024);
+
+    @include mq('small') {
+      padding-left: percentage(14/640);
+      padding-top: percentage(945/640);
+    }
+  }
+
+  .eyebrow {
+    font-size: 20px;
+    line-height: 26px;
+    font-family: 'GillSansStd-Light';
+  }
+
+  .tagline {
+    font-size: 37px;
+    line-height: 48px;
+    font-family: 'GillSansStd';
+    color: #febd3f;
+    text-shadow: 0 3px 3px rgba(33,30,30,.4);
+    padding-top: 7px;
+  }
+
+  .subhead {
+    line-height: 24px;
+    padding-top: 5px;
+  }
+
+  .bar--next {
+    background: #51748b;
+  }
+}
+.section--prevalence {
+  background: #51748b;
+
+  .bar--next {
+    background: #333e48;
+  }
+}
+.section--course {
+  background: #333e48;
+
+  .bar--next {
+    background: #51748b;
+  }
+}
+.section--effects {
+  background: #51748b;
+
+  .bar--next {
+    background: #333e48;
+  }
+}
+.section--neurobiology {
+  background: #333e48;
+
+  .bar--next {
+    background: #8c8f91;
+  }
+}
+.section--diagnosis {
+  background: #8c8f91;
+
+  .bar--next {
+    background: #ededed;
+    color: #000000;
+  }
+}
+.section--dsm5 {
+  background: #ededed;
+
+  .bar--next {
+    background: #8c8f91;
+  }
+}
+.section--resources {
+  background: #8c8f91;
+
+  .inner-wrap:after {
+    display: none;
   }
 }

@@ -19,9 +19,15 @@ var BED = {
   init: function() {
 
     // DEV
-    $('.section').css({
-      'height': $(window).height()
-    });
+    // $('.section').css({
+    //   'height': $(window).height()
+    // });
+
+    $(window).on('resize', function(e) {
+      $('.page-nav').css({
+        left: $('.page-wrapper').offset().left
+      });
+    }).trigger('resize');
 
     $(document.body).hammer({
 
@@ -82,9 +88,10 @@ var BED = {
         duration: 250
       });
 
-      $('.page-nav').velocity('transition.slideLeftIn', {
+      $('.page-nav nav').velocity('transition.slideLeftIn', {
         duration: 150,
         delay: 100,
+        display: 'inline-block',
         complete: function(elements) {
           $('.page-nav').addClass('_is_open');
         }
@@ -100,7 +107,7 @@ var BED = {
         delay: 100
       });
 
-      $('.page-nav').velocity('transition.slideLeftOut', {
+      $('.page-nav nav').velocity('transition.slideLeftOut', {
         duration: 250,
         complete: function(elements) {
           $('.page-nav').removeClass('_is_open');

@@ -1,5 +1,5 @@
 module.exports = {
-  server: {
+  dev: {
     options: {
       hostname: '*', // breaks something (on my machine)
       // hostname: '<%= grunt.config.get("ip") %>',

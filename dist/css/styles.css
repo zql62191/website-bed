@@ -83,31 +83,60 @@ sub {
   bottom: -0.25em;
 }
 
-html,
-body,
-.page-wrapper,
-.page-content {
-  min-height: 100%;
-  width: 100%;
-  min-width: 960px;
+hr {
+  margin: 0 auto;
+  height: 1px;
+  border: 0;
+  background: url('../img/rgbapng/ffffff66-5.png');
+  background: rgba(255, 255, 255, 0.4);
 }
+
+p {
+  padding-bottom: 6px;
+}
+
 html {
-  background: #000000;
+  background-color: #393e47;
   overflow-y: scroll;
 }
 
 body {
-  font-family: 'GillSansStd-Light';
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Roboto, Arial, "Lucida Grande", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.nobr,
+nobr {
+  white-space: nowrap;
+}
+
+.eq-ie9 * {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+
+.hide {
+  display: none !important;
 }
 
 .page-wrapper {
-  overflow: hidden;
-}
-
-.content-wrap {
   margin: 0 auto;
-  width: 960px;
-  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  border: 1px solid #333333;
+}
+#_:target .page-wrapper,
+#_:target .page-header {
+  margin: 0;
+}
+.outer-wrap {
+  margin: 0 auto;
+  width: 93.75%;
+}
+.inner-wrap {
+  margin: 0 auto;
 }
 .section .bar--title {
   height: 50px;
@@ -119,9 +148,13 @@ body {
   line-height: 58px;
   font-family: 'GillSansStd-Light';
 }
-.section .content-wrap:after {
+.section .inner-wrap {
+  min-height: 650px;
+}
+.section .inner-wrap:after {
   content: '';
   height: 50px;
+  display: block;
 }
 .section .bar--next {
   display: block;
@@ -143,55 +176,6 @@ body {
 .section .bar--next.highlight {
   background: #fec451 !important;
 }
-.section.section--home {
-  background: #393e47;
-}
-.section.section--home .bar--next {
-  background: #51748b;
-}
-.section.section--prevalence {
-  background: #51748b;
-}
-.section.section--prevalence .bar--next {
-  background: #333e48;
-}
-.section.section--course {
-  background: #333e48;
-}
-.section.section--course .bar--next {
-  background: #51748b;
-}
-.section.section--effects {
-  background: #51748b;
-}
-.section.section--effects .bar--next {
-  background: #333e48;
-}
-.section.section--neurobiology {
-  background: #333e48;
-}
-.section.section--neurobiology .bar--next {
-  background: #8c8f91;
-}
-.section.section--diagnosis {
-  background: #8c8f91;
-}
-.section.section--diagnosis .bar--next {
-  background: #ededed;
-  color: #000000;
-}
-.section.section--dsm5 {
-  background: #ededed;
-}
-.section.section--dsm5 .bar--next {
-  background: #8c8f91;
-}
-.section.section--resources {
-  background: #8c8f91;
-}
-.section.section--resources .content-wrap:after {
-  height: 0;
-}
 
 .page-header {
   position: fixed;
@@ -200,14 +184,16 @@ body {
   left: 0;
   width: 100%;
   height: 50px;
-  background: url('../img/rgbapng/ffffff1a-5.png');
-  background: rgba(255, 255, 255, 0.1);
   z-index: 3;
 }
-.page-header .content-wrap {
+.page-header .outer-wrap,
+.page-header .inner-wrap {
   width: 100%;
-  max-width: 100%;
-  min-width: 100%;
+  max-width: 1024px;
+}
+.page-header .outer-wrap {
+  background: url('../img/rgbapng/ffffff1a-5.png');
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .page-nav {
@@ -215,7 +201,7 @@ body {
   top: 50px;
   left: 0;
   height: 100%;
-  display: none;
+  overflow: hidden;
   z-index: 4;
 }
 .page-nav nav {
@@ -223,6 +209,7 @@ body {
   height: 100%;
   display: inline-block;
   background: #bbbec0;
+  display: none;
 }
 .page-nav nav .primary-nav .primary-nav__item {
   height: 36px;
@@ -273,20 +260,109 @@ body {
   z-index: 2;
 }
 
+.section--home {
+  background: #4d5158;
+}.section--home .inner-wrap {
+  padding-left: 59.47265625%;
+  padding-top: 23.53515625%;
+}.section--home .eyebrow {
+  font-size: 20px;
+  line-height: 26px;
+  font-family: 'GillSansStd-Light';
+}
+.section--home .tagline {
+  font-size: 37px;
+  line-height: 48px;
+  font-family: 'GillSansStd';
+  color: #febd3f;
+  text-shadow: 0 3px 3px rgba(33, 30, 30, 0.4);
+  padding-top: 7px;
+}
+.section--home .subhead {
+  line-height: 24px;
+  padding-top: 5px;
+}
+.section--home .bar--next {
+  background: #51748b;
+}
+
+.section--prevalence {
+  background: #51748b;
+}
+.section--prevalence .bar--next {
+  background: #333e48;
+}
+
+.section--course {
+  background: #333e48;
+}
+.section--course .bar--next {
+  background: #51748b;
+}
+
+.section--effects {
+  background: #51748b;
+}
+.section--effects .bar--next {
+  background: #333e48;
+}
+
+.section--neurobiology {
+  background: #333e48;
+}
+.section--neurobiology .bar--next {
+  background: #8c8f91;
+}
+
+.section--diagnosis {
+  background: #8c8f91;
+}
+.section--diagnosis .bar--next {
+  background: #ededed;
+  color: #000000;
+}
+
+.section--dsm5 {
+  background: #ededed;
+}
+.section--dsm5 .bar--next {
+  background: #8c8f91;
+}
+
+.section--resources {
+  background: #8c8f91;
+}
+.section--resources .inner-wrap:after {
+  display: none;
+}
+
 @media only screen and (max-width: 40em) {
   html {
     /* */
   }
 
-  html,
-  body,
-  .page-wrapper,
-  .page-content {
+  .hide--small {
+    display: none !important;
+  }
+
+  .page-wrapper {
     min-width: 320px;
   }
 
-  .content-wrap {
-    width: 100%;
+  #_:target .page-wrapper,
+  #_:target .page-header {
+    width: 320px;
+  }
+
+  .section--home {
+    background: #4d5158 url("../img/home__bg--mobile.jpg") 0 50px no-repeat;
+    -webkit-background-size: contain contain;
+    background-size: contain;
+  }
+
+  .section--home .inner-wrap {
+    padding-left: 2.1875%;
+    padding-top: 147.65625%;
   }
 }
 
@@ -295,15 +371,19 @@ body {
     /* */
   }
 
-  html,
-  body,
-  .page-wrapper,
-  .page-content {
-    min-width: 100%;
+  .hide--medium {
+    display: none !important;
   }
 
-  .content-wrap {
-    width: 100%;
+  #_:target .page-wrapper,
+  #_:target .page-header {
+    width: 768px;
+  }
+
+  .section--home {
+    background: #4d5158 url("../img/home__bg.jpg") 0 50px no-repeat;
+    -webkit-background-size: cover cover;
+    background-size: cover;
   }
 }
 
@@ -311,4 +391,35 @@ body {
   html {
     /* */
   }
+
+  .hide--large {
+    display: none !important;
+  }
+
+  .page-wrapper {
+    max-width: 1024px;
+    -webkit-box-shadow: 0px 5px 10px #333333;
+    box-shadow: 0px 5px 10px #333333;
+  }
+
+  #_:target .page-wrapper,
+  #_:target .page-header {
+    width: 1024px;
+  }
+
+  .outer-wrap {
+    width: 1024px;
+  }
+
+  .inner-wrap {
+    width: 960px;
+  }
+
+  .section--home {
+    background: #4d5158 url("../img/home__bg.jpg") 0 50px no-repeat;
+    -webkit-background-size: cover cover;
+    background-size: cover;
+  }
 }
+
+/*# sourceMappingURL=styles.css.map */

@@ -7,7 +7,7 @@ module.exports = {
 	},
 	dev: {
 		options: {
-			style: 'expanded',
+      style: 'expanded',
 			sourcemap: false // autoprefixer makes one
 		},
 		files: [{

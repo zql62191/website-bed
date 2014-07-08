@@ -1,16 +1,31 @@
 
 // $media-queries is defined in variables
 
-@mixin mediaquery($query, $ie: '') {
-  @media #{map-get($media-queries, $query)} {
-    @content;
+@mixin mediaquery($queries...) {
+
+  @each $query in $queries {
+
+    @if not map-has-key($media-queries, $query) {
+
+      @warn "No media query found for `#{$query}` in $media-queries map. Content omitted.";
+
+    } @else {
+
+        @media #{map-get($media-queries, $query)} {
+          @content;
+        }
+
+        // Using respond current.
+
+        // @if $query == 'large' {
+        //   .lt-ie9 & {
+        //     @content;
+        //   }
+        // }
+    }
+
   }
 
-  @if $ie != '' {
-    .#{$ie} & {
-      @content;
-    }
-  }
 }
 
 @mixin mq($args...) {
@@ -41,3 +56,5 @@ html {
     /* */
   }
 }
+
+

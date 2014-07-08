@@ -1,12 +1,36 @@
+
+// @mixin inline-block {
+//     display: inline-block;
+//     *display: inline;
+//     *zoom: 1;
+// }
+
 @mixin inline-block {
-    display: inline-block;
+  display: inline-block;
+
+  @include for-legacy-browser('ie', '7') {
     *display: inline;
     *zoom: 1;
+  }
 }
 
 @mixin active-state {
-  .touch &,
-  .no-touch & {
-    @content;
+
+  // .touch &,
+  // .no-touch & {
+  //   @content;
+  // }
+
+  @include mq('small', 'medium') {
+    &.tap {
+      @content;
+    }
   }
+
+  @include mq('large') {
+    &:hover {
+      @content;
+    }
+  }
+
 }

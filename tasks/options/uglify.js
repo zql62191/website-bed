@@ -6,7 +6,6 @@ module.exports = {
   },
   dev: {
     options: {
-      mangle: false, // setting it to true messes up angular
       sourceMap: true
     },
     files: [{
@@ -19,7 +18,6 @@ module.exports = {
   },
   prod: {
     options: {
-      mangle: false, // setting it to true messes up angular
       sourceMap: false
     },
     files: [{

@@ -1,21 +1,38 @@
+// ---------- Bourbon ----------
 
-// bourbon variables
+// Turn off prefixes, autoprefixer does this for me.
 $prefix-for-webkit      : false;
 $prefix-for-mozilla     : false;
 $prefix-for-microsoft   : false;
 $prefix-for-opera       : false;
 $prefix-for-spec        : false;
 
-// compass variables
+
+// ---------- Compass ----------
+
+
 // $legacy-support-for-ie  : true;
 // $legacy-support-for-ie6 : true;
 // $legacy-support-for-ie7 : true;
 // $legacy-support-for-ie8 : true;
 
-// compass-borderbox variables
-$global-border-box      : true;
+// http://beta.compass-style.org/reference/compass/support/
+// http://beta.compass-style.org/help/documentation/tuning-vendor-prefixes/
+// http://atendesigngroup.com/blog/new-browser-support-features-compass-1x
 
-// z-indexs
+$graceful-usage-threshold : 0.1;
+$critical-usage-threshold : 0.136798;
+$debug-browser-support    : false;
+$browser-minimum-versions: (
+  'ie': '8'
+);
+
+// compass-borderbox variables
+$global-border-box : true;
+
+
+// ---------- Z Indexes ----------
+
 $z-layers: (
   'page': (
     'header' : 3,
@@ -29,7 +46,8 @@ $z-layers: (
   'bottomless-pit' : -9000
 );
 
-// media queries
+// ---------- Media Queries ----------
+
 $media-queries: (
   'small'  : 'only screen and (max-width: 40em)',
   'medium' : 'only screen and (min-width: 40.063em) and (max-width: 64em)',

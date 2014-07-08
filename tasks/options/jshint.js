@@ -22,7 +22,9 @@ module.exports = {
     '-W098': true // variables defined but never used
   },
   dev: {
-    src: ['src/scripts/*.js']
+    src: [
+      'src/scripts/app.js'
+    ]
   },
   tasks: {
     src: ['tasks/**/*.js']

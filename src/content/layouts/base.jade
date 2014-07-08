@@ -48,23 +48,20 @@ html(
 
     <!--[if (gte IE 6)&(lte IE 8)]>
     script(
-      src="//cdn.jsdelivr.net/g/html5shiv@0.3.0,nwmatcher@1.2.5,selectivizr@1.0.3b"
+      src="js/ie.js"
       )
     <![endif]-->
 
     script(
-      src="//cdn.jsdelivr.net/g/jquery@1.11.0,lodash@2.4.1(lodash.compat.min.js),jquery.velocity@0.3.0"
-      )
-    script(
       src="js/libs.js"
       )
     script(
-      src="js/script.js"
+      src="js/app.js"
       )
     script.
       $(BED.init);
 
-  body
+  body#_
     .page-wrapper
       include /partials/global/page-header.jade
       include /partials/global/page-nav.jade
@@ -74,5 +71,5 @@ html(
 
     if dev
       script.
-        document.write('\x3Cscript src="//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1">\x3C/script>');
-        /iP(hone|od|ad)|Android|BlackBerry|IEMobile/i.test(navigator.userAgent)&&document.write('<script src="//'+(location.host||"localhost").split(":")[0]+':8081/target/target-script-min.js">\x3c/script>');
+        'WebSocket' in window && window.WebSocket.CLOSING === 2 && document.write('\x3Cscript src="//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1">\x3C/script>');
+        /iP(hone|od|ad)|Android|BlackBerry|IEMobile/i.test(navigator.userAgent) && document.write('<script src="//'+(location.host||"localhost").split(":")[0]+':8081/target/target-script-min.js">\x3c/script>');
