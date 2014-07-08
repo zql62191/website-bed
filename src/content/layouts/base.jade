@@ -41,6 +41,10 @@ html(
     script.
       (function(a){if(/msie|trident/i.test(a)){a=a.match(/(?:msie |rv:)(\d+(\.\d+)?)/i);a=parseInt(a&&1<a.length&&a[1]||"",10);for(var c=["eq-ie"],b=6;12>=b;b++)a>b?c.push("gt-ie"+b):a<b?c.push("lt-ie"+b):a===b&&(c.push("lte-ie"+b),c.push("eq-ie"+b),c.push("gte-ie"+b));document.documentElement.className+=" "+c.join(" ")}})(navigator.userAgent||"");
 
+    script(
+      src="//fast.fonts.net/jsapi/352bad9a-496a-416d-b9cf-171842848303.js"
+      )
+
     link(
       rel="stylesheet",
       href="css/styles.css"
@@ -63,13 +67,13 @@ html(
 
   body#_
     .page-wrapper
-      include /partials/global/page-header.jade
-      include /partials/global/page-nav.jade
+      include /partials/components/page-header.jade
+      include /partials/components/page-nav.jade
       .page-content
         block content
-      include /partials/global/page-footer.jade
+      include /partials/components/page-footer.jade
 
     if dev
       script.
-        'WebSocket' in window && window.WebSocket.CLOSING === 2 && document.write('\x3Cscript src="//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1">\x3C/script>');
-        /iP(hone|od|ad)|Android|BlackBerry|IEMobile/i.test(navigator.userAgent) && document.write('<script src="//'+(location.host||"localhost").split(":")[0]+':8081/target/target-script-min.js">\x3c/script>');
+        document.location.port !== '8005' && 'WebSocket' in window && window.WebSocket.CLOSING === 2 && document.write('\x3Cscript src="//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1">\x3C/script>');
+        document.location.port !== '8005' && /iP(hone|od|ad)|Android|BlackBerry|IEMobile/i.test(navigator.userAgent) && document.write('<script src="//'+(location.host||"localhost").split(":")[0]+':8081/target/target-script-min.js">\x3c/script>');

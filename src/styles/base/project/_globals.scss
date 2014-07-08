@@ -1,0 +1,138 @@
+
+*, *:before, *:after {
+  position: relative;
+  // overflow: auto;
+  box-sizing: border-box;
+  // Disables Android's font boosting
+  max-height: 1000000px;
+  // Disables Android's Auto-Fit Pages
+  background: url('');
+  // Disables Tap Highlight Color
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+sub, sup {
+  font-size: 60%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+  .eq-ie & {
+    top: -0.8em;
+  }
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+hr {
+  margin: 0 auto;
+  height: 1px;
+  border: 0;
+  @include rgba-background(rgba(255,255,255,0.4));
+}
+
+p {
+  padding-bottom: 6px;
+}
+
+html {
+  // background-color: #ffffff;
+  background-color: #393e47;
+  overflow-y: scroll;
+}
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Roboto, Arial, "Lucida Grande", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.nobr,
+nobr {
+  white-space:nowrap;
+}
+
+.eq-ie9 * {
+  filter: none !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.hide--small {
+  @include mq('small') {
+    display: none !important;
+  }
+}
+
+.hide--medium {
+  @include mq('medium') {
+    display: none !important;
+  }
+}
+
+.hide--large {
+  @include mq('large') {
+    display: none !important;
+  }
+}
+
+.page-wrapper {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+  border: 1px solid lighten(#000000, 20%);
+
+  @include mq('small') {
+    min-width: 320px;
+  }
+
+  @include mq('large') {
+    max-width: 1024px;
+    box-shadow: 0px 5px 10px lighten(#000000, 20%);
+  }
+}
+
+// DEBUG
+#_:target {
+
+  .page-wrapper,
+  .page-header {
+    margin: 0;
+
+    @include mq('small') {
+      width: 320px;
+    }
+    @include mq('medium') {
+      width: 768px;
+    }
+    @include mq('large') {
+      width: 1024px;
+    }
+  }
+
+}
+
+.outer-wrap {
+  margin: 0 auto;
+  width: percentage(960/1024);
+
+  @include mq('large') {
+    width: 1024px;
+  }
+}
+
+.inner-wrap {
+  margin: 0 auto;
+
+  @include mq('large') {
+    width: 960px;
+  }
+}

@@ -1,0 +1,14 @@
+.btn {
+  display: block;
+  color: #ffffff;
+  cursor: pointer;
+
+  &.btn--menu {
+    display: inline-block;
+    height: 50px;
+    line-height: 58px;
+    padding: 0 30px;
+    font-family: 'GillSansStd-Light';
+    text-transform: uppercase;
+  }
+}

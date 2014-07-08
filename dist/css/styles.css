@@ -1,4 +1,3 @@
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -138,45 +137,6 @@ nobr {
 .inner-wrap {
   margin: 0 auto;
 }
-.section .bar--title {
-  height: 50px;
-  text-transform: uppercase;
-  text-align: center;
-  background: #51748b;
-  color: #febd3f;
-  font-size: 21px;
-  line-height: 58px;
-  font-family: 'GillSansStd-Light';
-}
-.section .inner-wrap {
-  min-height: 650px;
-}
-.section .inner-wrap:after {
-  content: '';
-  height: 50px;
-  display: block;
-}
-.section .bar--next {
-  display: block;
-  cursor: pointer;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 50px;
-  color: #ffffff;
-  font-size: 19px;
-  font-family: 'GillSansStd-Light';
-  line-height: 60px;
-  text-align: center;
-  text-decoration: none;
-  -webkit-box-shadow: 0 6px 17px 3px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 6px 17px 3px rgba(0, 0, 0, 0.5);
-}
-.section .bar--next.highlight {
-  background: #fec451 !important;
-}
-
 .page-header {
   position: fixed;
   top: 0;
@@ -232,18 +192,43 @@ nobr {
   box-shadow: 1px 2px 2px rgba(33, 30, 31, 0.25);
 }
 
-.btn {
-  display: block;
-  color: #ffffff;
-  cursor: pointer;
-}
-.btn.btn--menu {
-  display: inline-block;
+.section .bar--title {
   height: 50px;
-  line-height: 58px;
-  padding: 0 30px;
-  font-family: 'GillSansStd-Light';
   text-transform: uppercase;
+  text-align: center;
+  background: #51748b;
+  color: #febd3f;
+  font-size: 21px;
+  line-height: 58px;
+  font-family: 'GillSansStd-Light';
+}
+.section .inner-wrap {
+  min-height: 650px;
+}
+.section .inner-wrap:after {
+  content: '';
+  height: 50px;
+  display: block;
+}
+.section .bar--next {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  color: #ffffff;
+  font-size: 19px;
+  font-family: 'GillSansStd-Light';
+  line-height: 60px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0 6px 17px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 6px 17px 3px rgba(0, 0, 0, 0.5);
+}
+.section .bar--next.highlight {
+  background: #fec451 !important;
 }
 
 .mask {
@@ -258,6 +243,20 @@ nobr {
 }
 .mask.mask--nav {
   z-index: 2;
+}
+
+.btn {
+  display: block;
+  color: #ffffff;
+  cursor: pointer;
+}
+.btn.btn--menu {
+  display: inline-block;
+  height: 50px;
+  line-height: 58px;
+  padding: 0 30px;
+  font-family: 'GillSansStd-Light';
+  text-transform: uppercase;
 }
 
 .section--home {
@@ -421,5 +420,3 @@ nobr {
     background-size: cover;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */
