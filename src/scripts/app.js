@@ -84,6 +84,8 @@ var BED = {
 
       // $('html').addClass('_menu_open');
 
+      $('.btn--menu, .mask--nav').prop('disabled', true);
+
       $('.mask--nav').velocity('fadeIn', {
         duration: 300
       });
@@ -93,6 +95,7 @@ var BED = {
         display: 'inline-block',
         complete: function(elements) {
           $('.page-nav').addClass('_is_open');
+          $('.btn--menu, .mask--nav').prop('disabled', false);
         }
       });
 
@@ -100,6 +103,8 @@ var BED = {
     close: function() {
 
       // $('html').removeClass('_menu_open');
+
+      $('.btn--menu, .mask--nav').prop('disabled', true);
 
       $('.mask--nav').velocity('fadeOut', {
         duration: 300
@@ -109,6 +114,7 @@ var BED = {
         duration: 300,
         complete: function(elements) {
           $('.page-nav').removeClass('_is_open');
+          $('.btn--menu, .mask--nav').prop('disabled', false);
         }
       });
 
