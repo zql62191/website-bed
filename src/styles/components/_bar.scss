@@ -1,0 +1,27 @@
+.bar {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  height: 50px;
+  line-height: 50px;
+  font-family: font('gill sans', 'light');
+
+  @include mq('small') {
+    height: 93px;
+    line-height: 93px;
+  }
+
+  &.bar--title {
+/*     text-transform: uppercase; */
+    color: #ffffff;
+    font-size: 19px;
+
+    @include mq('small') {
+      font-size: 30px;
+    }
+
+    &.highlight {
+      background: #fec451 !important;
+    }
+  }
+}

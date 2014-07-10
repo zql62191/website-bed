@@ -40,7 +40,7 @@ module.exports = {
   },
   prod: {
     options: {
-      pretty: false,
+      pretty: true,
       debug: false,
       data: function(dest, src) {
         var yfm = require('assemble-yaml');

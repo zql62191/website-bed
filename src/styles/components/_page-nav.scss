@@ -8,6 +8,10 @@
   overflow: hidden;
   z-index: z('page', 'nav');
 
+  @include mq('small') {
+    top: 93px;
+  }
+
   nav {
     position: relative;
     height: 100%;
@@ -19,10 +23,16 @@
 
       .primary-nav__item {
         height: 36px;
-        line-height: 40px;
+        line-height: 36px;
         font-size: 19px;
         border-bottom: 1px solid #c3c6c7;
         letter-spacing: 0.02em;
+
+        @include mq('small') {
+          height: 90px;
+          font-size: 37px;
+          line-height: 90px;
+        }
 
         a {
           display: block;
@@ -31,6 +41,10 @@
           height: 100%;
           padding: 0 60px 0 20px;
           white-space: nowrap;
+
+          @include mq('small') {
+            padding: 0 120px 0 40px;
+          }
 
           &.active,
           &.highlight {

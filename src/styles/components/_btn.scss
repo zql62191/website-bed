@@ -2,13 +2,18 @@
   display: block;
   color: #ffffff;
   cursor: pointer;
+  font-family: font('gill sans','light');
+  height: 50px;
+  line-height: 50px;
+
+  @include mq('small') {
+    height: 93px;
+    line-height: 93px;
+  }
 
   &.btn--menu {
     display: inline-block;
-    height: 50px;
-    line-height: 58px;
     padding: 0 30px;
-    font-family: 'GillSansStd-Light';
     text-transform: uppercase;
   }
 }

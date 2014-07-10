@@ -15,17 +15,17 @@ module.exports = function(grunt) {
   grunt.registerTask('styles:prod', ['clean:sass', 'sass:prod', 'copy:styles', 'autoprefixer:prod']);
 
   // grunt.registerTask('cachebust:dev', ['asset_cachebuster']);
-  // grunt.registerTask('cachebust:dev:html', ['asset_cachebuster:dev:html']);
+  // grunt.registerTask('cachebust:dev:html', ['asset_cachebuster:html']);
   // grunt.registerTask('cachebust:prod', ['asset_cachebuster']);
 
   grunt.registerTask('cachebust:dev', []);
   grunt.registerTask('cachebust:dev:html', []);
   grunt.registerTask('cachebust:prod', []);
 
-  grunt.registerTask('build:dev', ['verifylowercase', 'clean:dist', 'jade:dev', 'images:dev', 'fonts', 'media', 'scripts:dev', 'styles:dev', 'cachebust:dev']);
-  grunt.registerTask('build:prod', ['verifylowercase', 'clean:dist', 'jade:prod', 'images:prod', 'fonts', 'media', 'scripts:prod', 'styles:prod', 'cachebust:prod']);
+  grunt.registerTask('build:dev', ['verifylowercase', 'clean:dist', 'images:dev', 'fonts', 'media', 'concurrent:dev', 'cachebust:dev']);
+  grunt.registerTask('build:prod', ['verifylowercase', 'clean:dist', 'images:prod', 'fonts', 'media', 'concurrent:prod', 'cachebust:prod']);
 
-  grunt.registerTask('default', ['build:dev', 'connect', 'concurrent:dev']);
+  grunt.registerTask('default', ['build:dev', 'connect', 'concurrent:local']);
   grunt.registerTask('dev', ['build:dev']);
   grunt.registerTask('prod', ['build:prod']);
 

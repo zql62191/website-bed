@@ -20,6 +20,6 @@ indent_style = space
 indent_size = 2
 
 # SCSS
-[*.{_scss,scss}]
+[*.scss]
 indent_style = space
 indent_size = 2

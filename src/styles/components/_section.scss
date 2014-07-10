@@ -1,47 +1,12 @@
 .section {
-
-  .bar--title {
-    height: 50px;
-    text-transform: uppercase;
-    text-align: center;
-    background: #51748b;
-    color: #febd3f;
-    font-size: 21px;
-    line-height: 58px;
-    font-family: 'GillSansStd-Light';
-  }
-
-  .inner-wrap {
+  box-shadow: 0 -6px 17px 3px rgba(0,0,0,.3);
+  
+  .content-wrap {
     min-height: 650px;
+    padding: 30px 0 80px;
 
-    &:after {
-      content: '';
-      height: 50px;
-      display: block;
+    @include mq('small') {
+      padding: 22px 0 115px;
     }
   }
-
-  .bar--next {
-    display: block;
-    cursor: pointer;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-    color: #ffffff;
-    font-size: 19px;
-    font-family: 'GillSansStd-Light';
-    line-height: 60px;
-    text-align: center;
-    text-decoration: none;
-    box-shadow: 0 6px 17px 3px rgba(0,0,0,.5);
-
-    &.highlight {
-      background: #fec451 !important;
-    }
-  }
-
-
-
 }

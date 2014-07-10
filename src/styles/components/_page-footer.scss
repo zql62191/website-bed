@@ -1,0 +1,10 @@
+.page-footer {
+
+  .content-wrap {
+    padding-bottom: 40px;
+
+    @include mq('small') {
+      padding-bottom: 80px;
+    }
+  }
+}

@@ -34,7 +34,7 @@
 
 // ---------- Media Queries ----------
 
-@mixin media-query($queries...) {
+@mixin mq($queries...) {
   @each $query in $queries {
     @if not map-has-key($media-queries, $query) {
       @warn "No media query found for `#{$query}` in $media-queries map. Content omitted.";
@@ -43,12 +43,6 @@
         @content;
       }
     }
-  }
-}
-
-@mixin mq($args...) {
-  @include media-query($args...) {
-    @content;
   }
 }
 
@@ -68,4 +62,12 @@ html {
   @each $key, $value in $map {
     @debug '#{$key}: #{$value}';
   }
+}
+
+@function font($fonts...) {
+  @if not map-has-nested-keys($font-names, $fonts...) {
+    @warn 'No font found for `#{inspect($fonts)}` in $font-names map. Property omitted.';
+  }
+
+  @return map-deep-get($font-names, $fonts...), #{$font-fallback};
 }

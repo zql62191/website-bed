@@ -6,16 +6,16 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, minimal-ui">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
     <meta name="format-detection" content="telephone=no">
     <meta name="google" content="notranslate">
     <title></title>
     <script>
-      (function(a){if(/msie|trident/i.test(a)){a=a.match(/(?:msie |rv:)(\d+(\.\d+)?)/i);a=parseInt(a&&1<a.length&&a[1]||"",10);for(var c=["eq-ie"],b=6;12>=b;b++)a>b?c.push("gt-ie"+b):a<b?c.push("lt-ie"+b):a===b&&(c.push("lte-ie"+b),c.push("eq-ie"+b),c.push("gte-ie"+b));document.documentElement.className+=" "+c.join(" ")}})(navigator.userAgent||"");
+      (function(a){if(/msie|trident/i.test(a)){a=a.match(/(?:msie |rv:)(\d+(\.\d+)?)/i);a=parseInt(a&&1<a.length&&a[1]||'',10);for(var c=['eq-ie'],b=6;12>=b;b++)a>b?c.push('gt-ie'+b):a<b?c.push('lt-ie'+b):a===b&&(c.push('lte-ie'+b),c.push('eq-ie'+b),c.push('gte-ie'+b));document.documentElement.className+=' '+c.join(' ')}})(navigator.userAgent||'');
       
     </script>
-    <script src="//fast.fonts.net/jsapi/352bad9a-496a-416d-b9cf-171842848303.js"></script>
-    <link rel="stylesheet" href="css/styles.css"><!--[if (gte IE 6)&(lte IE 8)]>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="//fast.fonts.net/jsapi/352bad9a-496a-416d-b9cf-171842848303.js"></script><!--[if (gte IE 6)&(lte IE 8)]>
     <script src="js/ie.js"></script><![endif]-->
     <script src="js/libs.js"></script>
     <script src="js/app.js"></script>
@@ -27,9 +27,7 @@
   <body id="_">
     <div class="page-wrapper">
       <div class="page-header">
-        <div class="outer-wrap">
-          <div class="inner-wrap"><a class="btn btn--menu">Menu</a></div>
-        </div>
+        <div class="content-wrap"><a class="btn btn--menu">Menu</a></div>
       </div>
       <div class="mask mask--nav"></div>
       <div class="page-nav">
@@ -49,27 +47,23 @@
       <div class="page-content">
       </div>
       <div class="page-footer">
-        <div class="outer-wrap">
-          <div class="inner-wrap">
-            <nav>
-                    <ul class="secondary-nav">
-                      <li class="secondary-nav__item"><a href="#">Unsubscribe</a></li>
-                      <li class="secondary-nav__item"><a href="#">Contact Us</a></li>
-                      <li class="secondary-nav__item"><a href="#">Privacy Policy</a></li>
-                      <li class="secondary-nav__item"><a href="#">Shire US</a></li>
-                    </ul>
-            </nav>
-            <p class="prc">S02592 07/14</p>
-            <p>&copy;2014 Shire US Inc., Wayne, PA 19087 1‐800‐828‐2088 All rights reserved.</p>
-            <p>All content of this website including text, images, graphics, sound files, and their arrangement, belongs to Shire and is protected by international copyright laws. All other intellectual property rights are reserved. The content may not be copied for commercial use or distribution, nor may these objects be downloaded, modified, or posted to other sites.</p>
-            <p>This site is strictly intended for US residents and is governed solely by US laws and government regulations. Please see our privacy policy for more information. While Shire US Inc. makes reasonable efforts to include accurate, up‐to‐date information on the site, Shire US Inc. makes no warranties or representations as to its accuracy. Shire US Inc. assumes no liability for any errors or omissions in the content of the site.</p>
-          </div>
+        <div class="content-wrap">
+          <nav>
+                  <ul class="secondary-nav">
+                    <li class="secondary-nav__item"><a href="#">Unsubscribe</a></li>
+                    <li class="secondary-nav__item"><a href="#">Contact Us</a></li>
+                    <li class="secondary-nav__item"><a href="#">Privacy Policy</a></li>
+                    <li class="secondary-nav__item"><a href="#">Shire US</a></li>
+                  </ul>
+          </nav>
+          <p class="prc">S02592 07/14</p>
+          <p>&copy;2014 Shire US Inc., Wayne, PA 19087 1‐800‐828‐2088 All rights reserved.</p>
+          <p>All content of this website including text, images, graphics, sound files, and their arrangement, belongs to Shire and is protected by international copyright laws. All other intellectual property rights are reserved. The content may not be copied for commercial use or distribution, nor may these objects be downloaded, modified, or posted to other sites.</p>
+          <p>This site is strictly intended for US residents and is governed solely by US laws and government regulations. Please see our privacy policy for more information. While Shire US Inc. makes reasonable efforts to include accurate, up‐to‐date information on the site, Shire US Inc. makes no warranties or representations as to its accuracy. Shire US Inc. assumes no liability for any errors or omissions in the content of the site.</p>
         </div>
       </div>
     </div>
-    <script>
-      document.location.port !== '8005' && 'WebSocket' in window && window.WebSocket.CLOSING === 2 && document.write('\x3Cscript src="//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1">\x3C/script>');
-      document.location.port !== '8005' && /iP(hone|od|ad)|Android|BlackBerry|IEMobile/i.test(navigator.userAgent) && document.write('<script src="//'+(location.host||"localhost").split(":")[0]+':8081/target/target-script-min.js">\x3c/script>');
-    </script>
+    <script>document.location.port !== '8005' && 'WebSocket' in window && window.WebSocket.CLOSING === 2 && document.write('\x3Cscript src="//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1">\x3C/script>');</script>
+    <script>document.location.port !== '8005' && /iP(hone|od|ad)|Android|BlackBerry|IEMobile/i.test(navigator.userAgent) && document.write('<script src="//'+(location.host||"localhost").split(":")[0]+':8081/target/target-script-min.js">\x3c/script>');</script>
   </body>
 </html>

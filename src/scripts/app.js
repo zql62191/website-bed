@@ -41,7 +41,7 @@ var BED = {
 
     // })
 
-    .on(BED.gestures.down, '[data-highlight], .bar--next, nav a', function(e) {
+    .on(BED.gestures.down, '[data-highlight], .bar--title, nav a', function(e) {
 
       $(this).addClass('highlight');
 
@@ -55,9 +55,11 @@ var BED = {
 
     .on(BED.gestures.click, 'a[href^="#"]', function(e) {
 
-      var anchor = $(this).attr('href').match(/\#.*$/ig);
+      e.preventDefault();
 
-      $(anchor).velocity('scroll', {
+      var jqAnchor = $($(this).attr('href').match(/\#.*$/ig)[0]);
+
+      jqAnchor.velocity('scroll', {
         duration: 250
       });
 
