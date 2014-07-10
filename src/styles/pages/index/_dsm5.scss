@@ -10,4 +10,262 @@
   background: radial-gradient(ellipse at center,  #ffffff 44%,#61676b 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#61676b',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 
+
+  color: #333e48;
+
+
+  h2 {
+    color: #51748b;
+    margin-bottom: 35px;
+
+    @include mq('large', 'medium') {
+      text-shadow: none;
+    }
+    @include mq('small') {
+      text-shadow: none;
+      line-height: 60px;
+    }
+  }
+  h3 {
+    color: #333e48;
+    text-shadow: none;
+    font-size: 23px;
+    margin-bottom: 7px;
+    
+    @include mq('small') {
+      font-size: 44px;
+    }
+  }
+
+  ul.outline {
+    padding-left: 10px;
+
+    @include mq('small') {
+        padding-left: 0;
+      }
+
+    li {
+      font-size: 21px;
+      line-height: 26px;
+      margin-left: 25px;
+      text-indent: -30px;
+      font-family: font('helvetica nueue', 'light');
+      margin-bottom: 7px;
+
+      @include mq('small') {
+        margin-top: 30px;
+        margin-left: 0;
+        text-indent: 0;
+        font-size: 33px;
+        line-height: 38px;
+      }
+
+      ol {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      li {
+        list-style: decimal;
+        text-indent: -5px;
+
+        @include mq('small') {
+          margin-left: 43px;
+          margin-top: 0;
+        }
+      }
+      li:before {
+        font-family: font('helvetica nueue', 'bold');
+        font-weight: bold;
+      }
+
+    }
+   span.list {
+    font-size: 27px;
+    color: #51748b;
+    font-family: font('helvetica nueue', 'bold');
+
+    @include mq('small') {
+      display: block;
+      font-size: 60px;
+      line-height: 60px;
+    }
+   }
+
+  }
+
+  // Width compensation for open tab:
+  .a {
+    width: 485px;
+    li {
+      width: 505px;
+    }
+  }
+
+  .b {
+    width: 420px;
+    overflow: visible;
+
+    @include mq('small') {
+      width: auto;
+    }
+    
+    li {
+      width: 665px;
+      @include mq('small') {
+        width: auto;
+      }
+    }
+    .short {
+      width: 410px;
+      @include mq('small') {
+        width: auto;
+      }
+    }
+  }
+
+  p {
+    margin-top: 15px;
+    width: 570px;
+    font-style: italic;
+
+    @include mq('small') {
+      font-size: 30px;
+      line-height: 42px;
+      margin-top: 45px;
+    }
+  }
+
+  a.pdf-link {
+    display: block;
+    height: 45px;
+    margin-top: 15px;
+    background-repeat: no-repeat;
+    color: #333e48;
+    text-decoration: none;
+
+    @include mq('large', 'medium') {
+      background-image: url(../img/pdf.png);
+      padding-left: 40px;
+    } 
+    @include mq('small') {
+      font-size: 30px;
+      line-height: 92px;
+      margin-top: 62px;
+      margin-bottom: 365px;
+      padding-left: 75px;
+      background-image: url(../img/pdf-large.png);
+      background-size: 70px auto;
+      height: 92px;
+    }
+
+    i {
+        font-style: italic;
+    }
+    span {
+      border-bottom: 1px solid #333e48;
+      line-height: 45px;
+      sup {
+        text-decoration: none;
+      }
+    }
+  }
+
+  // Tab styles
+  .tab-container {
+    position: absolute;
+    padding-top: 61px;
+    z-index: 10;
+    float: right;
+    width: 400px;
+    height: 410px;
+    overflow: hidden;
+    overflow-y: visible;
+    
+    @include mq('large', 'medium') {
+      top: 107px;
+      right: 0px;
+      background-image: url(../img/dsm5-tab-border.png);
+      background-repeat: no-repeat;
+      background-position: center right;
+    }
+
+    @include mq('small') {
+      bottom: 0;
+      top: auto;
+      width: auto;
+      height: 500px;
+      right: -40px;
+      overflow-y: hidden;
+    }
+  }
+  .tab-inner {
+    background-image: url(../img/dsm5-tab-bg.png);
+    background-repeat: no-repeat;
+    width: 400px;
+    padding: 34px 25px 0 60px;
+    height: 308px;
+
+    @include mq('large', 'medium') {
+      background-image: url(../img/dsm5-tab-bg.png);
+    }
+    @include mq('small') {
+      background-image: url(../img/dsm5-tab-bg-mobile.png);
+      right: 0;
+      width: 643px;
+      height: 500px;
+      padding-right: 0;
+    }
+
+    h3 {
+      color: #febd3f;
+
+      @include mq('small') {
+        font-size: 36px;
+      }
+    }
+    p {
+      font-style: normal;
+      color: #ffffff;
+      margin-bottom: 10px;
+      width: 290px;
+      line-height: 23px;
+
+      @include mq('small') {
+        font-size: 32px;
+        line-height: 33px;
+        width: 434px;
+        margin-top: 15px;
+        margin-left: 11px;
+      }
+    }
+    ul {
+      @include mq('small') {
+        margin-left: 25px;
+      }
+    }
+    li {
+      font-size: 15px;
+      color: #ffffff;
+      margin-left: 10px;
+      text-indent: -12px;
+      width: 265px;
+      
+      &:before {
+        content: '•';
+        color: #febd3f;
+        margin-right: 3px;
+      }
+
+      @include mq('small') {
+        font-size: 26px;
+
+        &.first {
+          width: 390px;
+        }
+        &.second {
+          width: 475px;
+        }
+      }
+    }
+  }
 }
