@@ -1270,4 +1270,70 @@ ul.dash > li:before {
   padding-right: 16px;
 }
 
+.privacy-policy {
+  background: #ffffff;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iNDQlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzYxNjc2YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9yYWRpYWxHcmFkaWVudD4KICA8cmVjdCB4PSItNTAiIHk9Ii01MCIgd2lkdGg9IjEwMSIgaGVpZ2h0PSIxMDEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(44%, white), color-stop(100%, #61676b));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, white 44%, #61676b 100%);
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 12+ */
+  /* IE10+ */
+  background: -webkit-radial-gradient(center, ellipse, #ffffff 44%, #61676b 100%);
+  background: radial-gradient(ellipse at center, #ffffff 44%, #61676b 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#61676b',GradientType=1 );
+  /* IE6-8 fallback on horizontal gradient */
+}
+.privacy-policy .content-wrap {
+  color: #333e48;
+  padding: 62px 68px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+@media only screen and (max-width: 40em) {
+  .privacy-policy .content-wrap {
+    padding: 127px 27px 30px 27px;
+  }
+}
+.privacy-policy .content-wrap h1 {
+  font-family: , "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 40em) {
+  .privacy-policy .content-wrap h1 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+.privacy-policy .content-wrap h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  line-height: 23px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+.privacy-policy .content-wrap h1, .privacy-policy .content-wrap h2 {
+  color: #333e48;
+  text-shadow: none;
+}
+.privacy-policy .content-wrap p {
+  margin-top: 5px;
+  font-size: 19px;
+  line-height: 23px;
+}
+.privacy-policy .content-wrap p.policy {
+  margin-top: 35px;
+}
+@media only screen and (max-width: 40em) {
+  .privacy-policy .content-wrap p {
+    line-height: 20px;
+    margin-top: 10px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
