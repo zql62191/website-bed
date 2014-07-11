@@ -10,196 +10,196 @@
   background: radial-gradient(ellipse at center,  #8c8f91 40%,#323333 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c8f91', endColorstr='#323333',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 
-}
-
-.headline-wrap {
-  margin-bottom: 30px;
-  
-  @include mq('small') {
-    margin: 0;
-  }
-  
-  p {
-    @include mq('small') {
-      font-size: 28px;
-      line-height: 32px;
-      width: 560px;
-    }
-  }
-}
-
-h2 {
-  @include mq('small') {
-    font-size: 36px;
-  }
-}
-
-h3 {
-  font-size: 23px;
-  font-weight: normal;
-  margin-top: 10px;
-  
-  @include mq('small') {
-    font-size: 26px;
-    margin-top: 15px;
-  }
-}
-
-p, li {
-  font-size: 22px;
-  line-height: 27px;
-  margin-bottom: 5px;
-  
-  @include mq('small') {
-    font-size: 26px;
-    width: 580px;
-    line-height: 32px;
-    margin-bottom: 10px;
-  }
-}
-
-.float-column {
-  background: url("../img/bed-patient.png") no-repeat 0 20px;
-  padding-left: 400px;
-  margin: 40px 0 0 -32px;
-  height: 406px;
-  width: 900px;
-  
-  @include mq('small') {
-    background: none;
-    padding: 0;
-    margin: 0 0 30px;;
-    height: inherit;
-    
-    li {
-      width: 520px;
-    }
-  }
-}
-
-.nest {
-  margin-left: 20px;
-  
-  li {
-    margin-bottom: 0;
-  }
-
-  li:before {
-    content: "-";
-    color: #febd3f;
-    float: left;
-    margin: 0 5px 0 -15px;
-  }
-}
-
-.videos {
-  
-  background: #a1a1a1;
-  width: 1024px;
-  margin-left: -32px;
-  padding: 20px 40px 25px;
-  
-  @include mq('small') {
-    width: 625px;
-    margin: 0 0 0 -20px;
-  }
-  
-  h4 {
-    color: #ffffff;
-    font-size: 24px;
+  .headline-wrap {
     margin-bottom: 30px;
-  }
-  
-  li {
-    background: #616364;
-    display: inline-block;
-    width: 180px;
-    height: 160px;
-    margin-right: 4px;
-    border-bottom: #747779 solid 12px;
-    
+
     @include mq('small') {
-      width: 263px;
-      height: 240px;
-      margin-right: 7px;
-      border-bottom: #747779 solid 18px;
+      margin: 0;
     }
-    
+
     p {
-      color: #febd3f;
-      display: table-cell;
-      vertical-align: middle;
-      text-align: center;
-      width: inherit;
-      height: inherit;
-      padding: 21px;
-      font-size: 24px;
-      
       @include mq('small') {
-        padding: 65px;
+        font-size: 28px;
+        line-height: 32px;
+        width: 560px;
       }
     }
   }
-}
 
-.orgs {
-  
-  padding: 20px 50px 10px 5px;
-  
+  h2 {
+    @include mq('small') {
+      font-size: 36px;
+    }
+  }
+
   h3 {
-    width: 800px;
-    margin-bottom: 20px;
-    line-height: 25px;
+    font-size: 23px;
+    font-weight: normal;
+    margin-top: 10px;
+
+    @include mq('small') {
+      font-size: 26px;
+      margin-top: 15px;
+    }
   }
-  
-  ul { 
-    float: left;
-    width: 450px;
-    margin-bottom: 20px;
-    
-    li { 
-      margin-bottom: 20px;
+
+  p, li {
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 5px;
+
+    @include mq('small') {
+      font-size: 26px;
+      width: 580px;
+      line-height: 32px;
+      margin-bottom: 10px;
     }
-    
-    span {
-      color: #ffffff;
+  }
+
+  .float-column {
+    background: url("../img/bed-patient.png") no-repeat 0 20px;
+    padding-left: 400px;
+    margin: 40px 0 0 -32px;
+    height: 406px;
+    width: 900px;
+
+    @include mq('small') {
+      background: none;
+      padding: 0;
+      margin: 0 0 30px;;
+      height: inherit;
+
+      li {
+        width: 520px;
+      }
     }
-    
-    p{
+  }
+
+  .nest {
+    margin-left: 20px;
+
+    li {
+      margin-bottom: 0;
+    }
+
+    li:before {
+      content: "-";
       color: #febd3f;
-      font-size: 20px;
-      line-height: 20px;
+      float: left;
+      margin: 0 5px 0 -15px;
     }
   }
-}
 
-.callout {
-  margin: 0 auto;
-  font-size: 21px;
-  line-height: 25px;
-  width: 360px;
-  background: #333e48;
-  text-align: center;
-  clear: both;
-  padding: 4px 20px;
-  color: #febd3f;
-  box-sizing: border-box;
-  border-radius: 3px;
-  
-  @include mq('small') {
-    
-  }
-}
+  .videos {
 
-.references {
-  
-  margin-top: 20px;
-  font-family: font('helvetica nueue','light');
-  
-  p {
-    font-size: 17px;
-    line-height: 21px;
-    color: #eeeeee;
-    padding-right: 16px;
+    background: #a1a1a1;
+    width: 1024px;
+    margin-left: -32px;
+    padding: 20px 40px 25px;
+
+    @include mq('small') {
+      width: 625px;
+      margin: 0 0 0 -20px;
+    }
+
+    h4 {
+      color: #ffffff;
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    li {
+      background: #616364;
+      display: inline-block;
+      width: 180px;
+      height: 160px;
+      margin-right: 4px;
+      border-bottom: #747779 solid 12px;
+
+      @include mq('small') {
+        width: 263px;
+        height: 240px;
+        margin-right: 7px;
+        border-bottom: #747779 solid 18px;
+      }
+
+      p {
+        color: #febd3f;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        width: inherit;
+        height: inherit;
+        padding: 21px;
+        font-size: 24px;
+
+        @include mq('small') {
+          padding: 65px;
+        }
+      }
+    }
   }
+
+  .orgs {
+
+    padding: 20px 50px 10px 5px;
+
+    h3 {
+      width: 800px;
+      margin-bottom: 20px;
+      line-height: 25px;
+    }
+
+    ul { 
+      float: left;
+      width: 450px;
+      margin-bottom: 20px;
+
+      li { 
+        margin-bottom: 20px;
+      }
+
+      span {
+        color: #ffffff;
+      }
+
+      p{
+        color: #febd3f;
+        font-size: 20px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .callout {
+    margin: 0 auto;
+    font-size: 21px;
+    line-height: 25px;
+    width: 360px;
+    background: #333e48;
+    text-align: center;
+    clear: both;
+    padding: 4px 20px;
+    color: #febd3f;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+    @include mq('small') {
+
+    }
+  }
+
+  .references {
+
+    margin-top: 20px;
+    font-family: font('helvetica nueue','light');
+
+    p {
+      font-size: 17px;
+      line-height: 21px;
+      color: #eeeeee;
+      padding-right: 16px;
+    }
+  }
+
 }
