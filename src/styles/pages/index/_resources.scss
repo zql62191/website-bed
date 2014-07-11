@@ -19,16 +19,16 @@
 
     p {
       @include mq('small') {
-        font-size: 28px;
-        line-height: 32px;
-        width: 560px;
+        font-size: 32px;
+        line-height: 36px;
+        width: 540px;
       }
     }
   }
 
   h2 {
     @include mq('small') {
-      font-size: 36px;
+      font-size: 59px;
     }
   }
 
@@ -36,10 +36,12 @@
     font-size: 23px;
     font-weight: normal;
     margin-top: 10px;
+    line-height: 25px;
 
     @include mq('small') {
-      font-size: 26px;
+      font-size: 33px;
       margin-top: 15px;
+      line-height: 39px;
     }
   }
 
@@ -49,9 +51,9 @@
     margin-bottom: 5px;
 
     @include mq('small') {
-      font-size: 26px;
+      font-size: 32px;
       width: 580px;
-      line-height: 32px;
+      line-height: 36px;
       margin-bottom: 10px;
     }
   }
@@ -98,7 +100,7 @@
     padding: 20px 40px 25px;
 
     @include mq('small') {
-      width: 625px;
+      width: 640px;
       margin: 0 0 0 -20px;
     }
 
@@ -106,6 +108,12 @@
       color: #ffffff;
       font-size: 24px;
       margin-bottom: 30px;
+      
+      @include mq('small') {
+        font-size: 32px;
+        width: 640px;
+        letter-spacing: -1px;
+      }
     }
 
     li {
@@ -117,7 +125,7 @@
       border-bottom: #747779 solid 12px;
 
       @include mq('small') {
-        width: 263px;
+        width: 268px;
         height: 240px;
         margin-right: 7px;
         border-bottom: #747779 solid 18px;
@@ -134,7 +142,7 @@
         font-size: 24px;
 
         @include mq('small') {
-          padding: 65px;
+          font-size: 32px;
         }
       }
     }
@@ -147,7 +155,10 @@
     h3 {
       width: 800px;
       margin-bottom: 20px;
-      line-height: 25px;
+      
+      @include mq('small') {
+        width: 580px;
+      }
     }
 
     ul { 
@@ -167,6 +178,11 @@
         color: #febd3f;
         font-size: 20px;
         line-height: 20px;
+        
+        @include mq('small') {
+          font-size: 32px;
+          line-height: 36px;
+        }
       }
     }
   }
@@ -185,7 +201,10 @@
     border-radius: 3px;
 
     @include mq('small') {
-
+      font-size: 30px;
+      line-height: 36px;
+      padding: 12px 20px;
+      width: 580px;
     }
   }
 
