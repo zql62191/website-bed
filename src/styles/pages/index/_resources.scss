@@ -187,18 +187,12 @@
     }
   }
 
-  .callout {
+  .signup {
     margin: 0 auto;
-    font-size: 21px;
     line-height: 25px;
     width: 360px;
-    background: #333e48;
-    text-align: center;
+    padding: 4px 20px; 
     clear: both;
-    padding: 4px 20px;
-    color: #febd3f;
-    box-sizing: border-box;
-    border-radius: 3px;
 
     @include mq('small') {
       font-size: 30px;
