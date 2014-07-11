@@ -167,10 +167,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #febd3f;
 }
 
-h1, h2 {
-  text-shadow: 2px 3px 3px rgba(33, 30, 30, 0.4);
-}
-
 h1 {
   font-size: 37px;
 }
@@ -913,13 +909,16 @@ ul.dash > li:before {
     width: auto;
   }
 }
-.section--dsm5 p {
+.section--dsm5 p.subhead {
+  width: 570px;
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+.section--dsm5 p.disclaimer {
   margin-top: 15px;
   width: 570px;
-  font-style: italic;
 }
 @media only screen and (max-width: 40em) {
-  .section--dsm5 p {
+  .section--dsm5 p.disclaimer {
     font-size: 30px;
     line-height: 42px;
     margin-top: 45px;
@@ -1384,7 +1383,7 @@ ul.dash > li:before {
   }
 }
 .privacy-policy .content-wrap h1 {
-  font-family: , "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   margin-bottom: 20px;
@@ -1495,7 +1494,7 @@ ul.dash > li:before {
   background-color: #333e48;
   color: #febd3f;
   font-size: 18px;
-  font-family: , "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 
 /*# sourceMappingURL=styles.css.map */

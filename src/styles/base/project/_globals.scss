@@ -102,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h2 {
-  text-shadow: 2px 3px 3px rgba(33,30,30,.4);
+  // text-shadow: 2px 3px 3px rgba(33,30,30,.4);
 }
 
 h1 {
@@ -124,6 +124,29 @@ h2 {
 h3 {
   font-size: 27px;
 }
+
+// p,
+// li {
+//   font-family: font('helvetica neue', 'roman');
+
+//   strong, b {
+//     font-family: font('helvetica neue', 'bold');
+//   }
+//   em, i {
+//     font-family: font('helvetica neue', 'italic');
+//   }
+// }
+
+// h1, h2, h3, h4, h5, h6 {
+//   font-family: font('gill sans', 'roman');
+
+//   strong, b {
+//     font-family: font('gill sans', 'bold');
+//   }
+//   em, i {
+//     font-family: font('gill sans', 'italic');
+//   }
+// }
 
 .page-wrapper {
   margin: 0 auto;

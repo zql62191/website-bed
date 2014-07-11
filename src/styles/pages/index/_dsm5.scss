@@ -49,7 +49,7 @@
       line-height: 26px;
       margin-left: 25px;
       text-indent: -30px;
-      font-family: font('helvetica nueue', 'light');
+      font-family: font('helvetica neue', 'light');
       margin-bottom: 7px;
 
       @include mq('small') {
@@ -74,7 +74,7 @@
         }
       }
       li:before {
-        font-family: font('helvetica nueue', 'bold');
+        font-family: font('helvetica neue', 'bold');
         font-weight: bold;
       }
 
@@ -82,7 +82,7 @@
     span.list {
       font-size: 27px;
       color: #51748b;
-      font-family: font('helvetica nueue', 'bold');
+      font-family: font('helvetica neue', 'bold');
 
       @include mq('small') {
         display: block;
@@ -122,16 +122,21 @@
     }
   }
 
-  p {
+  p.subhead {
+    width: 570px;
+    font-family: font('helvetica neue', 'light');
+  }
+
+  p.disclaimer {
     margin-top: 15px;
     width: 570px;
-    font-style: italic;
 
     @include mq('small') {
       font-size: 30px;
       line-height: 42px;
       margin-top: 45px;
     }
+
   }
 
   a.pdf-link {
