@@ -1293,6 +1293,9 @@ ul.dash > li:before {
   padding: 62px 68px;
   font-family: Helvetica, Arial, sans-serif;
 }
+.privacy-policy .content-wrap strong {
+  font-weight: bold;
+}
 @media only screen and (max-width: 40em) {
   .privacy-policy .content-wrap {
     padding: 127px 27px 30px 27px;
