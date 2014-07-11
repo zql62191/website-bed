@@ -77,6 +77,17 @@ var BED = {
     //   }
     // });
 
+    $('.tab-container').click(function() {
+
+      if (!$(this).hasClass('open')) {
+        $(this).addClass('open');
+        $('.closed-text').addClass('hidden');
+      } else {
+        $(this).removeClass('open');
+        $('.closed-text').removeClass('hidden');
+      }
+    });
+
   },
 
   nav: {

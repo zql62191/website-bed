@@ -913,6 +913,7 @@ ul.dash > li:before {
   height: 410px;
   overflow: hidden;
   overflow-y: visible;
+  cursor: pointer;
 }
 @media only screen and (min-width: 64.063em) {
   .section--dsm5 .tab-container {
@@ -945,29 +946,29 @@ ul.dash > li:before {
   }
 }
 @media only screen and (min-width: 64.063em) {
-  .section--dsm5 .tab-container:hover, .section--dsm5 .tab-container.open {
+  .section--dsm5 .tab-container.open {
     width: 400px;
   }
-  .section--dsm5 .tab-container:hover .tab-inner, .section--dsm5 .tab-container.open .tab-inner {
+  .section--dsm5 .tab-container.open .tab-inner {
     background-image: url(../img/dsm5-tab-bg.png);
     padding-left: 60px;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .section--dsm5 .tab-container:hover, .section--dsm5 .tab-container.open {
+  .section--dsm5 .tab-container.open {
     width: 400px;
   }
-  .section--dsm5 .tab-container:hover .tab-inner, .section--dsm5 .tab-container.open .tab-inner {
+  .section--dsm5 .tab-container.open .tab-inner {
     background-image: url(../img/dsm5-tab-bg.png);
     padding-left: 60px;
   }
 }
 @media only screen and (max-width: 40em) {
-  .section--dsm5 .tab-container:hover, .section--dsm5 .tab-container.open {
+  .section--dsm5 .tab-container.open {
     width: auto;
     right: -40px;
   }
-  .section--dsm5 .tab-container:hover .tab-inner, .section--dsm5 .tab-container.open .tab-inner {
+  .section--dsm5 .tab-container.open .tab-inner {
     background-image: url(../img/dsm5-tab-bg-mobile.png);
     padding-left: 60px;
   }
@@ -1021,20 +1022,21 @@ ul.dash > li:before {
     font-size: 32px;
     line-height: 33px;
     width: 434px;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-left: 11px;
   }
 }
 @media only screen and (max-width: 40em) {
   .section--dsm5 .tab-inner ul {
-    margin-left: 25px;
+    margin-left: 35px;
+    margin-top: 22px;
   }
 }
 .section--dsm5 .tab-inner li {
   font-size: 15px;
   color: #ffffff;
-  margin-left: 10px;
-  text-indent: -12px;
+  margin-left: 12px;
+  text-indent: -17px;
   width: 265px;
 }
 .section--dsm5 .tab-inner li:before {
@@ -1045,6 +1047,7 @@ ul.dash > li:before {
 @media only screen and (max-width: 40em) {
   .section--dsm5 .tab-inner li {
     font-size: 26px;
+    line-height: 32px;
   }
   .section--dsm5 .tab-inner li.first {
     width: 390px;
