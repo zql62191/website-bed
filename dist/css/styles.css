@@ -1041,4 +1041,185 @@ ul.dash > li:before {
   /* IE6-8 fallback on horizontal gradient */
 }
 
+.headline-wrap {
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 40em) {
+  .headline-wrap {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .headline-wrap p {
+    font-size: 28px;
+    line-height: 32px;
+    width: 560px;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  h2 {
+    font-size: 36px;
+  }
+}
+
+h3 {
+  font-size: 23px;
+  font-weight: normal;
+  margin-top: 10px;
+}
+@media only screen and (max-width: 40em) {
+  h3 {
+    font-size: 26px;
+    margin-top: 15px;
+  }
+}
+
+p, li {
+  font-size: 22px;
+  line-height: 27px;
+  margin-bottom: 5px;
+}
+@media only screen and (max-width: 40em) {
+  p, li {
+    font-size: 26px;
+    width: 580px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+}
+
+.float-column {
+  background: url("../img/bed-patient.png") no-repeat 0 20px;
+  padding-left: 400px;
+  margin: 40px 0 0 -32px;
+  height: 406px;
+  width: 900px;
+}
+@media only screen and (max-width: 40em) {
+  .float-column {
+    background: none;
+    padding: 0;
+    margin: 0 0 30px;
+    height: inherit;
+  }
+  .float-column li {
+    width: 520px;
+  }
+}
+
+.nest {
+  margin-left: 20px;
+}
+.nest li {
+  margin-bottom: 0;
+}
+.nest li:before {
+  content: "-";
+  color: #febd3f;
+  float: left;
+  margin: 0 5px 0 -15px;
+}
+
+.videos {
+  background: #a1a1a1;
+  width: 1024px;
+  margin-left: -32px;
+  padding: 20px 40px 25px;
+}
+@media only screen and (max-width: 40em) {
+  .videos {
+    width: 625px;
+    margin: 0 0 0 -20px;
+  }
+}
+.videos h4 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.videos li {
+  background: #616364;
+  display: inline-block;
+  width: 180px;
+  height: 160px;
+  margin-right: 4px;
+  border-bottom: #747779 solid 12px;
+}
+@media only screen and (max-width: 40em) {
+  .videos li {
+    width: 263px;
+    height: 240px;
+    margin-right: 7px;
+    border-bottom: #747779 solid 18px;
+  }
+}
+.videos li p {
+  color: #febd3f;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: inherit;
+  height: inherit;
+  padding: 21px;
+  font-size: 24px;
+}
+@media only screen and (max-width: 40em) {
+  .videos li p {
+    padding: 65px;
+  }
+}
+
+.orgs {
+  padding: 20px 50px 10px 5px;
+}
+.orgs h3 {
+  width: 800px;
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+.orgs ul {
+  float: left;
+  width: 450px;
+  margin-bottom: 20px;
+}
+.orgs ul li {
+  margin-bottom: 20px;
+}
+.orgs ul span {
+  color: #ffffff;
+}
+.orgs ul p {
+  color: #febd3f;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.callout {
+  margin: 0 auto;
+  font-size: 21px;
+  line-height: 25px;
+  width: 360px;
+  background: #333e48;
+  text-align: center;
+  clear: both;
+  padding: 4px 20px;
+  color: #febd3f;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.references {
+  margin-top: 20px;
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+.references p {
+  font-size: 17px;
+  line-height: 21px;
+  color: #eeeeee;
+  padding-right: 16px;
+}
+
 /*# sourceMappingURL=styles.css.map */
