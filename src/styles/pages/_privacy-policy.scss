@@ -41,14 +41,10 @@
       line-height: 23px;
       margin-top: 40px;
       font-weight: bold;
-
-      @include mq('small') {
-        
-      }
     }
     h1, h2 {
       color: #333e48;
-      text-shadow :none;
+      text-shadow: none;
     }
     p {
       margin-top: 5px;
