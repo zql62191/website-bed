@@ -4,17 +4,17 @@ window.onerror = function() {
 
 var BED = {
 
-  // gestures: {
-  //   down: 'touch',
-  //   up: 'release',
-  //   click: 'tap'
-  // },
-
   gestures: {
-    down: 'touchstart mousedown',
-    up: 'touchend mouseup',
-    click: 'click'
+    down: 'touch',
+    up: 'release',
+    click: 'tap'
   },
+
+  // gestures: {
+  //   down: 'touchstart mousedown',
+  //   up: 'touchend mouseup',
+  //   click: 'click'
+  // },
 
   init: function() {
 

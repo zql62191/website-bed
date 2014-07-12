@@ -68,6 +68,6 @@ html {
   @if not map-has-nested-keys($font-names, $fonts...) {
     @warn 'No font found for `#{inspect($fonts)}` in $font-names map. Property omitted.';
   }
-
-  @return map-deep-get($font-names, $fonts...), #{$font-fallback};
+  // TODO: remove !important once I fix the fonts.
+  @return map-deep-get($font-names, $fonts...), #{$font-fallback} !important;
 }

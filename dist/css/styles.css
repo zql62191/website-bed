@@ -151,7 +151,7 @@ html {
 }
 
 body {
-  font-family: "Gill Sans W01 Light", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "HelveticaNeueW01-55Roma", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
   font-size: 19px;
   line-height: 1.38;
   color: #ffffff;
@@ -163,7 +163,6 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   color: #febd3f;
 }
 
@@ -187,6 +186,31 @@ h2 {
 
 h3 {
   font-size: 27px;
+}
+
+p,
+li {
+  font-family: "HelveticaNeueW01-55Roma", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
+}
+p strong, p b,
+li strong,
+li b {
+  font-family: "HelveticaNeueW01-75Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
+}
+p em, p i,
+li em,
+li i {
+  font-family: "HelveticaNeueW01-56It", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
+}
+h1 strong, h1 b, h2 strong, h2 b, h3 strong, h3 b, h4 strong, h4 b, h5 strong, h5 b, h6 strong, h6 b {
+  font-family: "Gill Sans W01 Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
+}
+h1 em, h1 i, h2 em, h2 i, h3 em, h3 i, h4 em, h4 i, h5 em, h5 i, h6 em, h6 i {
+  font-family: "GillSansW01-MediumItali", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
 }
 
 .page-wrapper {
@@ -425,7 +449,7 @@ ul.dash > li:before {
   display: block;
   color: #ffffff;
   cursor: pointer;
-  font-family: "Gill Sans W01 Light", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Gill Sans W01 Light", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
   height: 50px;
   line-height: 50px;
 }
@@ -460,7 +484,7 @@ ul.dash > li:before {
   text-decoration: none;
   height: 50px;
   line-height: 50px;
-  font-family: "Gill Sans W01 Light", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Gill Sans W01 Light", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
 }
 @media only screen and (max-width: 40em) {
   .bar {
@@ -515,7 +539,7 @@ ul.dash > li:before {
 }
 .modal-box h3 {
   color: #333e48;
-  font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
   font-size: 32px;
   margin-bottom: 15px;
 }
@@ -836,7 +860,7 @@ ul.dash > li:before {
   line-height: 26px;
   margin-left: 25px;
   text-indent: -30px;
-  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
   margin-bottom: 7px;
 }
 @media only screen and (max-width: 40em) {
@@ -863,13 +887,13 @@ ul.dash > li:before {
   }
 }
 .section--dsm5 ul.outline li li:before {
-  font-family: "HelveticaNeueW01-75Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "HelveticaNeueW01-75Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
   font-weight: bold;
 }
 .section--dsm5 ul.outline span.list {
   font-size: 27px;
   color: #51748b;
-  font-family: "HelveticaNeueW01-75Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "HelveticaNeueW01-75Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
 }
 @media only screen and (max-width: 40em) {
   .section--dsm5 ul.outline span.list {
@@ -911,7 +935,7 @@ ul.dash > li:before {
 }
 .section--dsm5 p.subhead {
   width: 570px;
-  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
 }
 .section--dsm5 p.disclaimer {
   margin-top: 15px;
@@ -1125,7 +1149,7 @@ ul.dash > li:before {
   width: 198px;
   font-size: 26px;
   line-height: 26px;
-  font-family: "Gill Sans W01 Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Gill Sans W01 Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
 }
 @media only screen and (max-width: 40em) {
   .section--dsm5 .closed-text {
@@ -1342,7 +1366,7 @@ ul.dash > li:before {
 }
 .section--resources .references {
   margin-top: 20px;
-  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
 }
 .section--resources .references p {
   font-size: 17px;
@@ -1383,7 +1407,7 @@ ul.dash > li:before {
   }
 }
 .privacy-policy .content-wrap h1 {
-  font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
   font-size: 30px;
   line-height: 30px;
   margin-bottom: 20px;
@@ -1494,7 +1518,7 @@ ul.dash > li:before {
   background-color: #333e48;
   color: #febd3f;
   font-size: 18px;
-  font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
 }
 
 /*# sourceMappingURL=styles.css.map */

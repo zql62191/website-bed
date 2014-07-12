@@ -82,11 +82,11 @@ html {
   background-color: #393e47;
   overflow-y: scroll;
   // text-rendering: optimizePrecision;
-  // -webkit-font-smoothing: antialiased
+  // -webkit-font-smoothing: antialiased;
 }
 
 body {
-  font-family: font('gill sans','light');
+  font-family: font('helvetica neue', 'roman');
   font-size: 19px;
   line-height: 1.38;
   color: #ffffff;
@@ -97,7 +97,6 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: font('gill sans','regular');
   color: #febd3f;
 }
 
@@ -106,6 +105,7 @@ h1, h2 {
 }
 
 h1 {
+  // TODO: fix desktop
   font-size: 37px;
 
   @include mq('small') {
@@ -125,28 +125,28 @@ h3 {
   font-size: 27px;
 }
 
-// p,
-// li {
-//   font-family: font('helvetica neue', 'roman');
+p,
+li {
+  font-family: font('helvetica neue', 'roman');
 
-//   strong, b {
-//     font-family: font('helvetica neue', 'bold');
-//   }
-//   em, i {
-//     font-family: font('helvetica neue', 'italic');
-//   }
-// }
+  strong, b {
+    font-family: font('helvetica neue', 'bold');
+  }
+  em, i {
+    font-family: font('helvetica neue', 'italic');
+  }
+}
 
-// h1, h2, h3, h4, h5, h6 {
-//   font-family: font('gill sans', 'roman');
+h1, h2, h3, h4, h5, h6 {
+  font-family: font('gill sans', 'roman');
 
-//   strong, b {
-//     font-family: font('gill sans', 'bold');
-//   }
-//   em, i {
-//     font-family: font('gill sans', 'italic');
-//   }
-// }
+  strong, b {
+    font-family: font('gill sans', 'bold');
+  }
+  em, i {
+    font-family: font('gill sans', 'italic');
+  }
+}
 
 .page-wrapper {
   margin: 0 auto;

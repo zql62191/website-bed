@@ -37,13 +37,13 @@ nav:
       file: "resources"
   secondary:
     -
-      url: "#"
+      url: "unsubscribe.html"
       text: "Unsubscribe"
     -
-      url: "#"
+      url: "contact-us.html"
       text: "Contact Us"
     -
-      url: "#"
+      url: "privacy-policy.html"
       text: "Privacy Policy"
     -
       url: "#"

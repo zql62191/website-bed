@@ -4,7 +4,7 @@ module.exports = {
   },
   all: {
     files: {
-      'src/scripts/libs.js': [
+      'dist/js/libs.js': [
         'src/scripts/libs/jquery.js',
         'src/scripts/libs/lodash.compat.js',
         'src/scripts/libs/jquery.velocity.js',
@@ -13,7 +13,7 @@ module.exports = {
         'src/scripts/libs/jquery.exists.js',
         'src/scripts/libs/jquery.highlight.js'
       ],
-      'src/scripts/ie.js': [
+      'dist/js/ie.js': [
         'src/scripts/libs/html5shiv.js',
         'src/scripts/libs/nwmatcher.js',
         'src/scripts/libs/selectivizr.js',
