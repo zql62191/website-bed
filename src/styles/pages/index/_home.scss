@@ -2,10 +2,10 @@
   background: #4d5158;
 
   @include mq('small') {
-    background: #4d5158 url('../img/home__bg--mobile.jpg') 0 50px no-repeat;
+    background: #4d5158 url('#{$img-path}/home__bg--mobile.jpg') 0 25px no-repeat;
   }
   @include mq('medium', 'large') {
-    background: #4d5158 url('../img/home__bg.jpg') 0 0 no-repeat;
+    background: #4d5158 url('#{$img-path}/home__bg.jpg') 0 0 no-repeat;
   }
 
   .bar--title {
@@ -27,22 +27,19 @@
 
     @include mq('small') {
       padding-left: 14px;
-      padding-top: 850px;
+      padding-top: 545px;
     }
   }
 
   .eyebrow {
+    font-family: font('gill sans', 'roman');
     font-size: 21px;
 
+    padding-bottom: 0;
+    
     @include mq('small') {
-      font-size: 32px;
-    }
-  }
-
-  .subhead {
-
-    @include mq('small') {
-      font-size: 34px;
+      font-size: 35px;
+      line-height: 39px;
     }
   }
 }

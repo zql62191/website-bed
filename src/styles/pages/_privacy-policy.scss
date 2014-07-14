@@ -16,16 +16,11 @@
     padding: 62px 68px;
     font-family: Helvetica, Arial, sans-serif;
 
-    strong {
-      font-weight: bold;
-    }
-
     @include mq('small') {
       padding: 127px 27px 30px 27px;
     }
 
     h1 {
-      font-family: font('gill sans', 'roman');
       font-size: 30px;
       line-height: 30px;
       margin-bottom: 20px;

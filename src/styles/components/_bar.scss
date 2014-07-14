@@ -4,7 +4,7 @@
   text-decoration: none;
   height: 50px;
   line-height: 50px;
-  font-family: font('gill sans', 'light');
+  font-family: font('gill sans', 'roman');
 
   @include mq('small') {
     height: 93px;
@@ -12,7 +12,6 @@
   }
 
   &.bar--title {
-/*     text-transform: uppercase; */
     color: #ffffff;
     font-size: 19px;
 

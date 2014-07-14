@@ -12,11 +12,12 @@
   }
 
   .content-wrap {
-    @include rgba-background(rgba(255,255,255,0.1));
+    // @include rgba-background(rgba(255,255,255,0.25));
+    @include rgba-background(rgba(0,0,0,0.25));
     width: 1024px;
 
     @include mq('small') {
-      width: 960px;
+      width: 640px;
     }
   }
 }

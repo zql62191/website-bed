@@ -7,6 +7,16 @@
   }
 }
 
+@mixin bumpout {
+  width: 1024px;
+  margin-left: -32px;
+
+  @include mq('small') {
+    width: 640;
+    margin-left: -20px;
+  }
+}
+
 @mixin active-state {
 
   // .touch &,
@@ -25,5 +35,4 @@
       @content;
     }
   }
-
 }

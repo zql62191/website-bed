@@ -20,7 +20,7 @@ module.exports = {
   },
   prod: {
     options: {
-      style: 'expanded',
+      style: 'compressed',
       sourcemap: false
     },
     files: [{

@@ -69,5 +69,5 @@ html {
     @warn 'No font found for `#{inspect($fonts)}` in $font-names map. Property omitted.';
   }
   // TODO: remove !important once I fix the fonts.
-  @return map-deep-get($font-names, $fonts...), #{$font-fallback} !important;
+  @return map-deep-get($font-names, $fonts...), #{$font-fallback};
 }

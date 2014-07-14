@@ -8,87 +8,23 @@
   background: -o-radial-gradient(center, ellipse cover,  #8c8f91 40%,#323333 100%); /* Opera 12+ */
   background: -ms-radial-gradient(center, ellipse cover,  #8c8f91 40%,#323333 100%); /* IE10+ */
   background: radial-gradient(ellipse at center,  #8c8f91 40%,#323333 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c8f91', endColorstr='#323333',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c8f91', endColorstr='#323333',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 
-  .headline-wrap {
-    margin-bottom: 30px;
-
-    @include mq('small') {
-      margin: 0;
-    }
-
-    p {
-      @include mq('small') {
-        font-size: 32px;
-        line-height: 36px;
-        width: 540px;
-      }
-    }
+  .lt-ie9 & {
+    background: #8c8f91; /* Old browsers */
   }
 
-  h2 {
-    @include mq('small') {
-      font-size: 59px;
-    }
+  @include mq('small') {
+    // TODO: change to linear gradient for mobile
   }
 
-  h3 {
-    font-size: 23px;
-    font-weight: normal;
-    margin-top: 10px;
-    line-height: 25px;
-
-    @include mq('small') {
-      font-size: 33px;
-      margin-top: 15px;
-      line-height: 39px;
-    }
-  }
-
-  p, li {
-    font-size: 22px;
-    line-height: 27px;
-    margin-bottom: 5px;
-
-    @include mq('small') {
-      font-size: 32px;
-      width: 580px;
-      line-height: 36px;
-      margin-bottom: 10px;
-    }
-  }
-
-  .float-column {
-    background: url("../img/bed-patient.png") no-repeat 0 20px;
-    padding-left: 400px;
-    margin: 40px 0 0 -32px;
-    height: 406px;
-    width: 900px;
-
-    @include mq('small') {
-      background: none;
-      padding: 0;
-      margin: 0 0 30px;;
-      height: inherit;
-
-      li {
-        width: 520px;
-      }
-    }
-  }
-
-  .nest {
-    margin-left: 20px;
-
-    li {
-      margin-bottom: 0;
-    }
-
-    li:before {
-      content: "-";
-      color: #febd3f;
-      float: left;
-      margin: 0 5px 0 -15px;
+  .graphic-wrap {
+    @include mq('medium','large') {
+      background: url('#{$img-path}/bed-patient.png') no-repeat bottom left;
+      padding-left: 400px;
+      min-height: 386px;
+      width: 1024px;
+      margin-left: -32px;
     }
   }
 
@@ -96,12 +32,12 @@
 
     background: #a1a1a1;
     width: 1024px;
-    margin-left: -32px;
+    margin: 0 30px 0 -32px;
     padding: 20px 40px 25px;
 
     @include mq('small') {
       width: 640px;
-      margin: 0 0 0 -20px;
+      margin: 0 0 30px -20px;
     }
 
     h4 {
@@ -138,7 +74,7 @@
         text-align: center;
         width: inherit;
         height: inherit;
-        padding: 21px;
+        padding: 21px 0;
         font-size: 24px;
 
         @include mq('small') {
@@ -148,50 +84,55 @@
     }
   }
 
-  .orgs {
+  ul.organizations {
 
-    padding: 20px 50px 10px 5px;
+    @include clearfix;
 
-    h3 {
-      width: 800px;
-      margin-bottom: 20px;
-      
-      @include mq('small') {
-        width: 580px;
-      }
+    li {
+      width: 50%;
     }
 
-    ul { 
+    li:nth-child(odd) {
       float: left;
-      width: 450px;
-      margin-bottom: 20px;
+      clear: left;
+    }
+    li:nth-child(even) {
+      float: right;
+      clear: right;
+    }
 
-      li { 
-        margin-bottom: 20px;
-      }
+    p {
+      padding-bottom: 0;
+    }
 
-      span {
-        color: #ffffff;
-      }
+    // Title
+    p:nth-child(1) {
+      color: #ffffff;
+    }
+    // URL
+    p:nth-child(2) {
+      color: #febd3f;
+    }
+    // Phone
+    p:nth-child(3) {
+      color: #febd3f;
+    }
 
-      p{
-        color: #febd3f;
-        font-size: 20px;
-        line-height: 20px;
-        
-        @include mq('small') {
-          font-size: 32px;
-          line-height: 36px;
-        }
+    @include mq('small') {
+      li {
+        float: none !important;
+        clear: both !important;
+        width: 100% !important;
       }
     }
+
   }
 
   .signup {
     margin: 0 auto;
     line-height: 25px;
-    width: 360px;
-    padding: 4px 20px; 
+    width: 400px;
+    padding: 10px 20px; 
     clear: both;
 
     @include mq('small') {
@@ -203,9 +144,8 @@
   }
 
   .references {
-
+    word-wrap: break-word;
     margin-top: 20px;
-    font-family: font('helvetica neue','light');
 
     p {
       font-size: 17px;
@@ -214,5 +154,4 @@
       padding-right: 16px;
     }
   }
-
 }

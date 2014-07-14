@@ -1,5 +1,7 @@
 // place variables that are needed by both the system utils and the project here
 
+$img-path: '../img';
+
 
 // ---------- Bourbon ----------
 
@@ -23,7 +25,7 @@ $prefix-for-spec        : false;
 // http://atendesigngroup.com/blog/new-browser-support-features-compass-1x
 
 $graceful-usage-threshold : 0.1;
-$critical-usage-threshold : 0.136798;
+$critical-usage-threshold : 0.136798; // to exclude ie7
 $debug-browser-support    : false;
 $browser-minimum-versions: (
   'ie': '8'
@@ -37,11 +39,11 @@ $global-border-box : true;
 
 $z-layers: (
   'page': (
-    'header' : 3,
-    'nav'    : 4
+    'header' : 1003,
+    'nav'    : 1004
   ),
   'mask': (
-    'nav' : 2
+    'nav' : 1002
   ),
   'default'        : 1,
   'below'          : -1,
@@ -55,6 +57,8 @@ $media-queries: (
   'medium' : 'only screen and (min-width: 40.063em) and (max-width: 64em)',
   'large'  : 'only screen and (min-width: 64.063em)'
 );
+
+// ---------- Font Names ----------
 
 $font-names: (
   'helvetica neue': (
@@ -70,6 +74,7 @@ $font-names: (
   'gill sans': (
     'light': 'Gill Sans W01 Light',
     'light italic': 'GillSansW01-LightItalic',
+    'medium': 'Gill Sans W01 Medium',
     'regular': 'Gill Sans W01 Medium',
     'roman': 'Gill Sans W01 Medium',
     'italic': 'GillSansW01-MediumItali',
@@ -79,6 +84,5 @@ $font-names: (
 );
 
 $font-fallback: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
-
 
 $scale: 960/1024;

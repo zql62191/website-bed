@@ -1,11 +1,12 @@
 module.exports = {
   options: {
-    compress: {
-      drop_console: true
-    }
+
   },
   dev: {
     options: {
+      compress: {
+        drop_console: false
+      },
       sourceMap: true
     },
     files: [{
@@ -18,6 +19,9 @@ module.exports = {
   },
   prod: {
     options: {
+      compress: {
+        drop_console: false
+      },
       sourceMap: false
     },
     files: [{

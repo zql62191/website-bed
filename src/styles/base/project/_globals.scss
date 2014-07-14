@@ -1,4 +1,6 @@
 
+// ---------- Project Resets ----------
+
 *, *:before, *:after {
   position: relative;
   // overflow: auto;
@@ -12,7 +14,7 @@
 }
 
 sub, sup {
-  font-size: 60%;
+  font-size: 0.6em;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
@@ -67,10 +69,6 @@ hr {
   @include rgba-background(rgba(255,255,255,0.4));
 }
 
-p {
-
-}
-
 html,
 body {
   width: 100%;
@@ -78,81 +76,14 @@ body {
 }
 
 html {
-  // background-color: #ffffff;
   background-color: #393e47;
   overflow-y: scroll;
-  // text-rendering: optimizePrecision;
-  // -webkit-font-smoothing: antialiased;
-}
-
-body {
-  font-family: font('helvetica neue', 'roman');
-  font-size: 19px;
-  line-height: 1.38;
-  color: #ffffff;
-
-  @include mq('small') {
-    font-size: 17px;
-  }
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #febd3f;
-}
-
-h1, h2 {
-  // text-shadow: 2px 3px 3px rgba(33,30,30,.4);
-}
-
-h1 {
-  // TODO: fix desktop
-  font-size: 37px;
-
-  @include mq('small') {
-    font-size: 59px;
-  }
-}
-
-h2 {
-  font-size: 37px;
-
-  @include mq('small') {
-    font-size: 59px;
-  }
-}
-
-h3 {
-  font-size: 27px;
-}
-
-p,
-li {
-  font-family: font('helvetica neue', 'roman');
-
-  strong, b {
-    font-family: font('helvetica neue', 'bold');
-  }
-  em, i {
-    font-family: font('helvetica neue', 'italic');
-  }
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: font('gill sans', 'roman');
-
-  strong, b {
-    font-family: font('gill sans', 'bold');
-  }
-  em, i {
-    font-family: font('gill sans', 'italic');
-  }
 }
 
 .page-wrapper {
   margin: 0 auto;
   overflow: hidden;
   width: 1024px;
-  // border: 1px solid lighten(#000000, 20%);
   box-shadow: 0px 5px 10px lighten(#000000, 20%);
 
   @include mq('small') {
@@ -170,56 +101,247 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-
 ul.bullet {
   display: block;
-  padding-left: 15px;
+  padding-left: 10px;
 
-  > li {  
+  @include mq('small') {
+    padding-left: 20px;
+  }
+
+  > li {
+    position: relative;
+    display: block;
+
     &:before {
       content: '•';
-      margin:0 5px 0 -15px; 
+      margin:0 5px 0 -10px; 
       width: 0;
       overflow: visible;
       float: left;  
+      font-size: 0.8em;
       color: #febd3f;
+
+      @include mq('small') {
+        margin: 0 5px 0 -20px;
+      }
     }
-    position: relative;
-    display: block;
   }
 }
 
 ul.dash {
   display: block;
-  padding-left: 15px;
+  padding-left: 10px;
+
+  @include mq('small') {
+    padding-left: 20px;
+  }
 
   > li {  
+    position: relative;
+    display: block;
+
     &:before {
       content: '–';
+      margin:0 5px 0 -10px;
+      width: 0;
+      overflow: visible;
+      float: left;
+      font-size: 0.8em;
+      color: #febd3f;
+
+      @include mq('small') {
+        margin: 0 5px 0 -20px;
+      }
+    }
+  } 
+}
+
+ol.letter {
+  display: block;
+  padding-left: 15px;
+  counter-reset: lettered;
+
+  @include mq('small') {
+    padding-left: 0;
+  }
+
+  > li {
+    position: relative;
+    display: block;
+    counter-increment: lettered;
+
+    &:before {
+      content: counter(lettered, lower-alpha);
       margin:0 5px 0 -15px;
       width: 0;
       overflow: visible;
       float: left;
-      color: #febd3f;
-    }
-    position: relative;
-    display: block;
-  } 
-}
 
-// DEBUG
-#_:target {
-
-  .page-wrapper,
-  .page-header {
-    margin: 0;
-    width: 1024px;
-
-    @include mq('small') {
-      width: 640px;
-    }
-    @include mq('medium') {
-      width: 1024px;
+      @include mq('small') {
+        margin: 0;
+        width: auto;
+        float: none;
+      }
     }
   }
+}
+
+ol.number {
+  display: block;
+  padding-left: 35px;
+  counter-reset: numbered;
+
+  > li {
+    position: relative;
+    display: block;
+    counter-increment: numbered;
+
+    &:before {
+      content: counter(numbered, decimal) '.';
+      margin:0 5px 0 -35px;
+      width: 0;
+      overflow: visible;
+      float: left;
+    }
+  }
+}
+
+// ---------- Brand Styling ----------
+
+
+body {
+  color: #ffffff;
+  font-family: font('helvetica neue', 'roman');
+  // TODO: add desktop font-size/line-height
+
+  strong, b {
+    font-family: font('helvetica neue', 'bold');
+  }
+  em, i {
+    font-family: font('helvetica neue', 'italic');
+  }
+
+  @include mq('small') {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: #febd3f;  
+  font-family: font('gill sans', 'roman');
+  // TODO: add desktop font-size/line-height
+
+  &.white {
+    color: #ffffff;
+  }
+
+  strong, b {
+    font-family: font('gill sans', 'bold');
+  }
+  em, i {
+    font-family: font('gill sans', 'italic');
+  }
+}
+
+h1 {
+  // TODO: add desktop font-size/line-height
+
+  @include mq('small') {
+    // TODO: add mobile font-size/line-height
+    font-size: 59px;
+    line-height: 63px;
+  }
+}
+
+h2 {
+  // TODO: add desktop font-size/line-height
+  padding-top: 30px;
+  padding-bottom: 35px;
+  
+  @include mq('small') {
+    font-size: 56px;
+    line-height: 60px;
+    padding-top: 15px;
+    padding-bottom: 40px;
+  }
+}
+
+h3 {
+  // TODO: add desktop font-size/line-height
+  padding-bottom: 10px;
+
+  @include mq('small') {
+    // TODO: add mobile font-size/line-height
+    font-size: 34px;
+    line-height: 40px;
+    padding-bottom: 5px;
+  }
+}
+
+.sub-head {
+  font-family: font('helvetica neue', 'roman');
+  // TODO: add desktop font-size/line-height
+  padding-bottom: 35px;
+
+  @include mq('small') {
+    font-size: 40px;
+    line-height: 44px;
+    padding-bottom: 40px;
+  }
+}
+
+ul,
+ol {
+  padding-bottom: 20px;
+
+  @include mq('small') {
+    padding-bottom: 20px;
+  }
+
+  ul, ol {
+    padding-top: 10px;
+    padding-bottom: 0;    
+  }
+}
+
+p {
+  padding-bottom: 20px;
+
+  @include mq('small') {
+    padding-bottom: 20px;
+  }
+}
+
+li {
+  padding-bottom: 10px;
+
+  @include mq('small') {
+    padding-bottom: 10px;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.chart-head {
+  color: #fefefe;
+  font-family: font('gill sans', 'roman');
+  // TODO: add desktop font-size/line-height
+
+  @include mq('small') {
+    font-size: 34px;
+    line-height: 40px;
+  }
+}
+
+// DEV
+html::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.fpo {
+  height: 500px;
 }

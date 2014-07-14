@@ -35,11 +35,11 @@ var BED = {
 
     })
 
-    // .on(BED.gestures.click, 'a', function(e) {
+    .on('click', 'a[href^="#"]', function(e) {
 
-    //   e.preventDefault();
+      e.preventDefault();
 
-    // })
+    })
 
     .on(BED.gestures.down, '[data-highlight], .bar--title, nav a', function(e) {
 

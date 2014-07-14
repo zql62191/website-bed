@@ -29,6 +29,7 @@
         font-size: 19px;
         border-bottom: 1px solid #c3c6c7;
         letter-spacing: 0.02em;
+        padding-bottom: 0;
 
         @include mq('small') {
           height: 90px;
