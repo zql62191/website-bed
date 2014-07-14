@@ -60,7 +60,8 @@ var BED = {
       var jqAnchor = $($(this).attr('href').match(/\#.*$/ig)[0]);
 
       jqAnchor.velocity('scroll', {
-        duration: 250
+        duration: 250,
+        offset: jqAnchor.height()
       });
 
     })

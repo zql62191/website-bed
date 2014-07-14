@@ -262,8 +262,13 @@ ol.letter > li:before {
 
 ol.number {
   display: block;
-  padding-left: 35px;
+  padding-left: 15px;
   counter-reset: numbered;
+}
+@media only screen and (max-width: 40em) {
+  ol.number {
+    padding-left: 35px;
+  }
 }
 ol.number > li {
   position: relative;
@@ -272,10 +277,15 @@ ol.number > li {
 }
 ol.number > li:before {
   content: counter(numbered,decimal) ".";
-  margin: 0 5px 0 -35px;
+  margin: 0 5px 0 -15px;
   width: 0;
   overflow: visible;
   float: left;
+}
+@media only screen and (max-width: 40em) {
+  ol.number > li:before {
+    margin-left: -35px;
+  }
 }
 
 body {
@@ -530,10 +540,6 @@ html::-webkit-scrollbar {
   margin-top: 15px;
 }
 
-.section {
-  -webkit-box-shadow: 0 -6px 17px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 -6px 17px 3px rgba(0, 0, 0, 0.3);
-}
 .section .content-wrap {
   padding-bottom: 80px;
 }
@@ -597,11 +603,13 @@ html::-webkit-scrollbar {
   height: 50px;
   line-height: 50px;
   font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  margin-bottom: 50px;
 }
 @media only screen and (max-width: 40em) {
   .bar {
     height: 93px;
     line-height: 93px;
+    margin-bottom: 93px;
   }
 }
 .bar.bar--title {
@@ -611,6 +619,23 @@ html::-webkit-scrollbar {
 @media only screen and (max-width: 40em) {
   .bar.bar--title {
     font-size: 30px;
+  }
+}
+.bar.bar--title:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -20px;
+}
+@media only screen and (max-width: 40em) {
+  .bar.bar--title:before {
+    top: -1px;
   }
 }
 .bar.bar--title.highlight {
@@ -697,6 +722,9 @@ html::-webkit-scrollbar {
     font-size: 25px;
   }
 }
+.section--home .bar--title:before {
+  display: none;
+}
 .section--home .content-wrap {
   padding-left: 609px;
   padding-top: 237px;
@@ -740,6 +768,11 @@ html::-webkit-scrollbar {
   background: #51748b;
   /* Old browsers */
 }
+@media only screen and (max-width: 40em) {
+  .section--prevalence .bar--title:before {
+    border-top-color: #b3b6b7;
+  }
+}
 
 .section--course {
   background: #333e48;
@@ -760,6 +793,11 @@ html::-webkit-scrollbar {
 .lt-ie9 .section--course {
   background: #333e48;
   /* Old browsers */
+}
+@media only screen and (max-width: 40em) {
+  .section--course .bar--title:before {
+    border-top-color: #385365;
+  }
 }
 
 .section--effects {
@@ -782,6 +820,11 @@ html::-webkit-scrollbar {
   background: #51748b;
   /* Old browsers */
 }
+@media only screen and (max-width: 40em) {
+  .section--effects .bar--title:before {
+    border-top-color: #2b343c;
+  }
+}
 
 .section--neurobiology {
   background: #333e48;
@@ -803,6 +846,11 @@ html::-webkit-scrollbar {
   background: #333e48;
   /* Old browsers */
 }
+@media only screen and (max-width: 40em) {
+  .section--neurobiology .bar--title:before {
+    border-top-color: #385466;
+  }
+}
 
 .section--diagnosis {
   background: #8c8f91;
@@ -823,6 +871,11 @@ html::-webkit-scrollbar {
 .lt-ie9 .section--diagnosis {
   background: #8c8f91;
   /* Old browsers */
+}
+@media only screen and (max-width: 40em) {
+  .section--diagnosis .bar--title:before {
+    border-top-color: #2b343d;
+  }
 }
 .section--diagnosis .sub-head {
   width: 897px;
@@ -893,6 +946,11 @@ html::-webkit-scrollbar {
 .lt-ie9 .section--dsm5 {
   background: #ededed;
   /* Old browsers */
+}
+@media only screen and (max-width: 40em) {
+  .section--dsm5 .bar--title:before {
+    border-top-color: #4d5158;
+  }
 }
 .section--dsm5 h2 {
   color: #51748b;
@@ -1226,6 +1284,11 @@ html::-webkit-scrollbar {
 .lt-ie9 .section--resources {
   background: #8c8f91;
   /* Old browsers */
+}
+@media only screen and (max-width: 40em) {
+  .section--resources .bar--title:before {
+    border-top-color: #5c5f62;
+  }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .section--resources .graphic-wrap {

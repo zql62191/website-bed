@@ -189,8 +189,12 @@ ol.letter {
 
 ol.number {
   display: block;
-  padding-left: 35px;
+  padding-left: 15px;
   counter-reset: numbered;
+
+  @include mq('small') {
+    padding-left: 35px;    
+  }
 
   > li {
     position: relative;
@@ -199,10 +203,14 @@ ol.number {
 
     &:before {
       content: counter(numbered, decimal) '.';
-      margin:0 5px 0 -35px;
+      margin:0 5px 0 -15px;
       width: 0;
       overflow: visible;
       float: left;
+
+      @include mq('small') {
+        margin-left: -35px;
+      }
     }
   }
 }

@@ -8,6 +8,10 @@ nav:
       text: "Home"
       file: "home"
     -
+      url: "#dsm5"
+      text: "DSM-5<sup>&reg;</sup> Criteria"
+      file: "dsm5"
+    -
       url: "#prevalence"
       text: "Prevalence"
       file: "prevalence"
@@ -27,10 +31,6 @@ nav:
       url: "#diagnosis"
       text: "Diagnosis"
       file: "diagnosis"
-    -
-      url: "#dsm5"
-      text: "DSM-5<sup>&reg;</sup> Criteria"
-      file: "dsm5"
     -
       url: "#resources"
       text: "Resources"

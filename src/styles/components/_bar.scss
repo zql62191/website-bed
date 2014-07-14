@@ -5,10 +5,13 @@
   height: 50px;
   line-height: 50px;
   font-family: font('gill sans', 'roman');
+  // padding: 10px 0;
+  margin-bottom: 50px;
 
   @include mq('small') {
     height: 93px;
     line-height: 93px;
+    margin-bottom: 93px;
   }
 
   &.bar--title {
@@ -17,6 +20,24 @@
 
     @include mq('small') {
       font-size: 30px;
+    }
+
+    // triangle
+    &:before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid transparent;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -20px;
+
+      @include mq('small') {
+        top: -1px;
+      }
     }
 
     &.highlight {
