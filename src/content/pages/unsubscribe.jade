@@ -20,26 +20,26 @@ block content
             id='emailRadio')
           label(
             for='emailRadio').
-            I would like to opt out of future BED email communication.
+              I would like to opt out of future BED email communication.
         p.form-line
           input(
             type='radio',
             name='unsubscribe',
             value='direct',
-            id='directRadio').
+            id='directRadio')
           label(
             for='directRadio').
-            I would like to opt out of future BED direct mail communication.
+              I would like to opt out of future BED direct mail communication.
 
         p.form-line
           input(
             type='radio',
             name='unsubscribe',
             value='both',
-            id='bothRadio').
+            id='bothRadio')
           label(
             for='bothRadio').
-            I would like to opt out of all future Shire communication.
+              I would like to opt out of all future Shire communication.
 
       
       .required-fields
@@ -94,6 +94,20 @@ block content
           name='state',
           placeholder='*State',
           class='state')
+
+        select(
+          name='state',
+          class='state')
+          option(
+            value='*State').
+              *State
+
+
+        input(
+          type='text',
+          name='zip',
+          placeholder='*Zip',
+          class='zip')
 
         input(
           type='submit',

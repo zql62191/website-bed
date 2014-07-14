@@ -15,7 +15,9 @@
   }
 
   .content-wrap {
-    padding: 60px 75px 40px 75px;
+    @include mq('large', 'medium') {
+      padding: 60px 75px 40px 75px;
+    }
     color: #333e48;
     font-family: Helvetica, Arial, sans-serif;
 
@@ -31,28 +33,41 @@
     }
     p {
       margin: 20px 0;
-      font-size: 19px;
+      font-size: 26px;
     }
     .opt-out-choice {
+      z-index: 10;
+      position: relative;
 
-      .form-line {
-        margin: 0 0 5px 0;
+      @include mq('small') {
+        padding-bottom: 45px;
+        height: 200px;
       }
     }
+    .form-line {
+      margin: 0 0 5px 0;
+    }
     .required-fields {
-      
+      clear: both;
+
       p {
         margin-top: 32px;
-        margin-bottom: 7px;
+        line-height: 15px;
+        margin-bottom: 0px;
         font-size: 15px;
         color: #8c8f91;
+        padding-bottom: 0;
       }
-      
+
+
+
       .red {
         color: #ff0000;
       }
 
-      input {
+      input, select {
+        font-size: 15px;
+        color: #8c8f91;
         border-radius: 6px/4px;
         background-color: #fff;
         box-shadow: 0 2px 2px rgba(33,30,31,.25);
@@ -60,7 +75,7 @@
         height: 31px;
         margin-bottom: 10px;
         margin-right: 15px;
-      
+
         &.email {
           margin-right: 386px;
         }
@@ -75,11 +90,36 @@
           width: 295px;
           display: block;
           margin: 32px auto 0 auto;
+          @include mq('small') {
+            margin: 15px 0 150px 0;
+          }
           background-color: #333e48;
           color: #febd3f;
           font-size: 18px;
           font-family: font('gill sans', 'roman');
         }
+      }
+
+      
+    }
+    @include mq('small') {
+      p.form-line {
+        margin-bottom: 0;
+        padding: 0 0 0 4px;
+      }
+      .opt-out-choice input {
+        float: left;
+        margin: 10px 10px 0 0 ;
+        clear: left;
+      }
+      label {
+        font-size: 24px;
+        line-height: 28px;
+        padding-bottom: 15px;
+        width: 410px;
+        display: block;
+        float: left;
+        clear: right;
       }
     }
   }

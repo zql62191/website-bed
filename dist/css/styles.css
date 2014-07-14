@@ -1417,9 +1417,18 @@ html::-webkit-scrollbar {
   /* Old browsers */
 }
 .unsubscribe .content-wrap {
-  padding: 60px 75px 40px 75px;
   color: #333e48;
   font-family: Helvetica, Arial, sans-serif;
+}
+@media only screen and (min-width: 64.063em) {
+  .unsubscribe .content-wrap {
+    padding: 60px 75px 40px 75px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .unsubscribe .content-wrap {
+    padding: 60px 75px 40px 75px;
+  }
 }
 .unsubscribe .content-wrap input {
   font-size: 16px;
@@ -1432,21 +1441,38 @@ html::-webkit-scrollbar {
 }
 .unsubscribe .content-wrap p {
   margin: 20px 0;
-  font-size: 19px;
+  font-size: 26px;
 }
-.unsubscribe .content-wrap .opt-out-choice .form-line {
+.unsubscribe .content-wrap .opt-out-choice {
+  z-index: 10;
+  position: relative;
+}
+@media only screen and (max-width: 40em) {
+  .unsubscribe .content-wrap .opt-out-choice {
+    padding-bottom: 45px;
+    height: 200px;
+  }
+}
+.unsubscribe .content-wrap .form-line {
   margin: 0 0 5px 0;
+}
+.unsubscribe .content-wrap .required-fields {
+  clear: both;
 }
 .unsubscribe .content-wrap .required-fields p {
   margin-top: 32px;
-  margin-bottom: 7px;
+  line-height: 15px;
+  margin-bottom: 0px;
   font-size: 15px;
   color: #8c8f91;
+  padding-bottom: 0;
 }
 .unsubscribe .content-wrap .required-fields .red {
   color: #ff0000;
 }
-.unsubscribe .content-wrap .required-fields input {
+.unsubscribe .content-wrap .required-fields input, .unsubscribe .content-wrap .required-fields select {
+  font-size: 15px;
+  color: #8c8f91;
   border-radius: 6px/4px;
   background-color: #fff;
   -webkit-box-shadow: 0 2px 2px rgba(33, 30, 31, 0.25);
@@ -1456,16 +1482,16 @@ html::-webkit-scrollbar {
   margin-bottom: 10px;
   margin-right: 15px;
 }
-.unsubscribe .content-wrap .required-fields input.email {
+.unsubscribe .content-wrap .required-fields input.email, .unsubscribe .content-wrap .required-fields select.email {
   margin-right: 386px;
 }
-.unsubscribe .content-wrap .required-fields input.first-name {
+.unsubscribe .content-wrap .required-fields input.first-name, .unsubscribe .content-wrap .required-fields select.first-name {
   width: 310px;
 }
-.unsubscribe .content-wrap .required-fields input.middle-initial {
+.unsubscribe .content-wrap .required-fields input.middle-initial, .unsubscribe .content-wrap .required-fields select.middle-initial {
   width: 56px;
 }
-.unsubscribe .content-wrap .required-fields input.submit {
+.unsubscribe .content-wrap .required-fields input.submit, .unsubscribe .content-wrap .required-fields select.submit {
   width: 295px;
   display: block;
   margin: 32px auto 0 auto;
@@ -1473,6 +1499,31 @@ html::-webkit-scrollbar {
   color: #febd3f;
   font-size: 18px;
   font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+@media only screen and (max-width: 40em) {
+  .unsubscribe .content-wrap .required-fields input.submit, .unsubscribe .content-wrap .required-fields select.submit {
+    margin: 15px 0 150px 0;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .unsubscribe .content-wrap p.form-line {
+    margin-bottom: 0;
+    padding: 0 0 0 4px;
+  }
+  .unsubscribe .content-wrap .opt-out-choice input {
+    float: left;
+    margin: 10px 10px 0 0;
+    clear: left;
+  }
+  .unsubscribe .content-wrap label {
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 15px;
+    width: 410px;
+    display: block;
+    float: left;
+    clear: right;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
