@@ -23,4 +23,39 @@
   }
 
   // continue styles here
+
+
+  .graphic {
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: top left;
+  }
+  .sixty-three {
+    @include mq('small') {
+      background-image: url('#{img-path}/effects-sixty-three.png');
+      height: 450px;
+    }
+  }
+  .eighty {
+    @include mq('small') {
+      background-image: url('#{img-path}/effects-eighty.png');
+      height: 450px;
+    }
+  }
+
+  ul {
+    li {
+      padding-left: 28px;
+      text-indent: -28px;
+
+      &:before {
+        display: inline;
+        content: '•';
+        color: #febd3f;
+        padding-right: 10px;
+      }
+    }
+  }
+
+
 }
