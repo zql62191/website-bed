@@ -771,6 +771,103 @@ html::-webkit-scrollbar {
 .section--prevalence .bar--title:before {
   border-top-color: #4d5158;
 }
+.section--prevalence h1, .section--prevalence h2, .section--prevalence h3, .section--prevalence p {
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+.section--prevalence h1 {
+  padding-bottom: 25px;
+}
+.section--prevalence .asterisk {
+  padding-left: 5px;
+  font-size: 26px;
+  line-height: 28px;
+  width: 538px;
+  margin-left: 25px;
+  padding-bottom: 50px;
+}
+.section--prevalence .asterisk:before {
+  content: '*';
+  margin-left: -5px;
+}
+.section--prevalence .blurb {
+  background-repeat: no-repeat;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+  background-position: top left;
+  padding: 22px;
+  color: #333e48;
+  font-size: 27px;
+  line-height: 31px;
+}
+@media only screen and (max-width: 40em) {
+  .section--prevalence .blurb {
+    background-image: url("../img/prevalence-text-bg-mobile.png");
+    width: 571px;
+    height: 167px;
+  }
+}
+.section--prevalence .gender-ratio {
+  padding: 40px 0;
+}
+.section--prevalence .comparable {
+  padding: 40px 0 26px 0;
+  margin-bottom: 40px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+.section--prevalence .comparable h2 {
+  font-size: 42px;
+  line-height: 46px;
+  width: 90%;
+  padding-bottom: 50px;
+}
+.section--prevalence .comparable p {
+  padding: 25px 0 0 0;
+  font-size: 25px;
+  line-height: 28px;
+}
+.section--prevalence ul li {
+  padding-left: 28px;
+  text-indent: -28px;
+}
+.section--prevalence ul li:before {
+  display: inline;
+  content: '•';
+  color: #febd3f;
+  padding-right: 10px;
+}
+.section--prevalence .graphic {
+  background-repeat: no-repeat;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+  background-position: top left;
+}
+@media only screen and (max-width: 40em) {
+  .section--prevalence .us-graphic {
+    background-image: url("../img/prevalence-us-mobile.png");
+    height: 420px;
+  }
+}
+.section--prevalence .male-female-graphic {
+  margin: 0 auto;
+}
+@media only screen and (max-width: 40em) {
+  .section--prevalence .male-female-graphic {
+    background-image: url("../img/prevalence-male-female-mobile.png");
+    width: 500px;
+    height: 348px;
+  }
+}
+.section--prevalence .patients-graphic {
+  margin: 0 auto;
+}
+@media only screen and (max-width: 40em) {
+  .section--prevalence .patients-graphic {
+    width: 580px;
+    height: 545px;
+    background-image: url("../img/prevalence-patients-mobile.png");
+  }
+}
 
 .section--course {
   background: #333e48;
@@ -891,23 +988,23 @@ html::-webkit-scrollbar {
     width: auto;
   }
 }
-.section--diagnosis .p1 {
+.section--diagnosis p:nth-child(1) {
   width: 810px;
 }
 @media only screen and (max-width: 40em) {
-  .section--diagnosis .p1 {
+  .section--diagnosis p:nth-child(1) {
     width: auto;
   }
 }
-.section--diagnosis .p2 {
+.section--diagnosis p:nth-child(2) {
   width: 690px;
 }
 @media only screen and (max-width: 40em) {
-  .section--diagnosis .p2 {
+  .section--diagnosis p:nth-child(2) {
     width: auto;
   }
 }
-.section--diagnosis .p3 {
+.section--diagnosis p:nth-child(3) {
   margin-bottom: 0;
 }
 .section--diagnosis .graphic-wrap {
@@ -1129,7 +1226,7 @@ html::-webkit-scrollbar {
     width: 88px;
     bottom: auto;
     top: auto;
-    margin-bottom: 90px;
+    padding-bottom: 90px;
     right: -20px;
   }
 }
@@ -1163,7 +1260,6 @@ html::-webkit-scrollbar {
   }
 }
 .section--dsm5 .tab-inner {
-  width: 400px;
   padding: 34px 25px 0 100px;
   height: 838px;
   padding-right: 1px;
@@ -1173,12 +1269,14 @@ html::-webkit-scrollbar {
   .section--dsm5 .tab-inner {
     background-image: url("../img/dsm5-tab-bg-closed.png");
     background-position: left center;
+    width: 400px;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .section--dsm5 .tab-inner {
     background-image: url("../img/dsm5-tab-bg-closed.png");
     background-position: left center;
+    width: 400px;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -1187,7 +1285,6 @@ html::-webkit-scrollbar {
     background-position: top left;
     right: 0px;
     width: 612px;
-    height: 838px;
     padding-right: 0;
   }
 }
@@ -1461,14 +1558,13 @@ html::-webkit-scrollbar {
     padding: 105px 0 45px 0;
   }
 }
-.contact-us .content-wrap h1, .contact-us .content-wrap h2 {
-  color: #333e48;
-}
 .contact-us .content-wrap h1 {
+  color: #333e48;
   padding-bottom: 40px;
   font-size: 28px;
 }
 .contact-us .content-wrap h2 {
+  color: #333e48;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
   padding-bottom: 5px;
@@ -1519,6 +1615,8 @@ html::-webkit-scrollbar {
   font-size: 30px;
   line-height: 30px;
   margin-bottom: 20px;
+  color: #333e48;
+  text-shadow: none;
 }
 @media only screen and (max-width: 40em) {
   .privacy-policy .content-wrap h1 {
@@ -1530,26 +1628,25 @@ html::-webkit-scrollbar {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 19px;
   line-height: 23px;
-  margin-top: 40px;
+  padding: 20px 0 7px 0;
   font-weight: bold;
-}
-.privacy-policy .content-wrap h1, .privacy-policy .content-wrap h2 {
   color: #333e48;
   text-shadow: none;
 }
 .privacy-policy .content-wrap p {
-  margin-top: 5px;
   font-size: 19px;
   line-height: 23px;
 }
 .privacy-policy .content-wrap p.policy {
-  margin-top: 35px;
+  padding-top: 35px;
 }
 @media only screen and (max-width: 40em) {
   .privacy-policy .content-wrap p {
     line-height: 20px;
-    margin-top: 10px;
   }
+}
+.privacy-policy .content-wrap .contact p {
+  padding-bottom: 10px;
 }
 
 .unsubscribe {
@@ -1615,9 +1712,20 @@ html::-webkit-scrollbar {
     padding-bottom: 45px;
     height: 200px;
   }
+  .unsubscribe .content-wrap .opt-out-choice input {
+    float: left;
+    margin: 10px 10px 0 0;
+    clear: left;
+  }
 }
 .unsubscribe .content-wrap .form-line {
   margin: 0 0 5px 0;
+}
+@media only screen and (max-width: 40em) {
+  .unsubscribe .content-wrap .form-line {
+    margin-bottom: 0;
+    padding: 0 0 0 4px;
+  }
 }
 .unsubscribe .content-wrap .required-fields {
   clear: both;
@@ -1674,15 +1782,6 @@ html::-webkit-scrollbar {
   }
 }
 @media only screen and (max-width: 40em) {
-  .unsubscribe .content-wrap p.form-line {
-    margin-bottom: 0;
-    padding: 0 0 0 4px;
-  }
-  .unsubscribe .content-wrap .opt-out-choice input {
-    float: left;
-    margin: 10px 10px 0 0;
-    clear: left;
-  }
   .unsubscribe .content-wrap label {
     font-size: 24px;
     line-height: 28px;

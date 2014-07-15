@@ -28,27 +28,26 @@
 		@include mq('small') {
 			width: auto;
 		}
-		
 	}
-	.p1 {
-		width: 810px;
+	p {
+    &:nth-child(1) {
+  		width: 810px;
 
-		@include mq('small') {
-			width: auto;
-		}
-	}
+  		@include mq('small') {
+  			width: auto;
+  		}
+  	}
+  	&:nth-child(2) {
+  		width: 690px;
 
-	.p2 {
-		width: 690px;
-
-		@include mq('small') {
-			width: auto;
-		}
-	}
-
-	.p3 {
-		margin-bottom: 0;
-	}
+  		@include mq('small') {
+  			width: auto;
+  		}
+  	}
+  	&:nth-child(3) {
+  		margin-bottom: 0;
+  	}
+  }
 
 	.graphic-wrap {
 		margin: 20px 0;

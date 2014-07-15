@@ -22,17 +22,13 @@
     @include mq('small') {
       padding: 105px 0 45px 0;
     }
-
-
-    h1, h2 {
-      color: #333e48;
-    }
     h1 {
-      //padding-top: 85px;
+      color: #333e48;
       padding-bottom: 40px;
       font-size: 28px;
     }
     h2 {
+      color: #333e48;
       font-family: Helvetica, Arial, sans-serif;
       font-weight: bold;
       padding-bottom: 5px;

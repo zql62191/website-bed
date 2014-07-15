@@ -10,6 +10,9 @@
   background: radial-gradient(ellipse at center,  #ffffff 44%,#61676b 100%); /* W3C */
   // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#61676b',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 
+
+  color: #333e48;
+
   .lt-ie9 & {
     background: #ededed; /* Old browsers */
   }
@@ -18,14 +21,20 @@
     // TODO: change to linear gradient for mobile    
   }
 
+<<<<<<< .mine
+    .bar--title:before {
+      border-top-color: rgb(77,81,88);
+    }
+=======
   .bar--title:before {
     border-top-color: rgb(56,83,101);
+>>>>>>> .r39
   }
 
-  color: #333e48;
 
   h2 {
     color: #51748b;
+
     @include mq('large', 'medium') {
       font-size: 36px;
     }
@@ -33,6 +42,7 @@
 
   h3 {
     color: #333e48;
+
     @include mq('large', 'medium') {
       font-size: 24px;
     }
@@ -44,11 +54,13 @@
     @include mq('large', 'medium') {
       padding-left: 25px;
     }
+
     > li:before {
       text-transform: uppercase;
       color: #51748b;
       font-family: font('helvetica neue','bold');
       font-size: 26px;
+      
       @include mq('large', 'medium') {
         margin-left: -25px;
         margin-top: -5px;
@@ -76,27 +88,26 @@
       font-family: font('helvetica neue','bold');
     } 
   }
+  p {
 
-  
-
-  p.sub-head {
-    width: 570px;
-  }
-
-  p.disclaimer {
-    margin-top: 15px;
-    width: 570px;
-
-    em {
-      font-family: font('gill sans', 'italic');
+    &.sub-head {
+      width: 570px;
     }
+    
+    &.disclaimer {
+      margin-top: 15px;
+      width: 570px;
 
-    @include mq('small') {
-      font-size: 30px;
-      line-height: 42px;
-      margin-top: 20px;
+      em {
+        font-family: font('gill sans', 'italic');
+      }
+
+      @include mq('small') {
+        font-size: 30px;
+        line-height: 42px;
+        margin-top: 20px;
+      }
     }
-
   }
 
   a.pdf-link {
@@ -127,6 +138,7 @@
     span {
       border-bottom: 1px solid #333e48;
       line-height: 45px;
+
       sup {
         text-decoration: none;
       }
@@ -157,11 +169,11 @@
       width: 88px;
       bottom: auto;
       top: auto;
-      margin-bottom: 90px;
+      padding-bottom: 90px;
       right: -20px;
     }
 
-    // Open tabbed styles
+    // Opened tab styles
     @include mq('large', 'medium') {
 
       &.open {
@@ -178,11 +190,10 @@
       &.open {
         width: auto;
         right: -10px;
-
         height: 872px;
 
         .tab-inner {
-          background-image: url('#{$img-path}/dsm5-tab-bg-mobile.png'); //
+          background-image: url('#{$img-path}/dsm5-tab-bg-mobile.png');
           padding-left: 60px;
         }
       }
@@ -191,7 +202,6 @@
 
   // Closed Tab Styles
   .tab-inner {
-    width: 400px;
     padding: 34px 25px 0 100px;
     height: 838px;
     padding-right: 1px;
@@ -200,13 +210,13 @@
     @include mq('large', 'medium') {
       background-image: url('#{$img-path}/dsm5-tab-bg-closed.png');
       background-position: left center;
+      width: 400px;
     }
     @include mq('small') {
       background-image: url('#{$img-path}/dsm5-tab-bg-mobile-closed.png');
       background-position: top left;
       right: 0px;
       width: 612px;
-      height: 838px;
       padding-right: 0;
     }
 
@@ -255,7 +265,6 @@
         font-size: 23px;
         line-height: 32px;
 
-
         &.first {
           width: 390px;
         }
@@ -270,7 +279,6 @@
     right: 60px;
     top: 295px;
     width: 198px;
-
     font-size: 26px;
     line-height: 26px;
     font-family: font('gill sans', 'bold');

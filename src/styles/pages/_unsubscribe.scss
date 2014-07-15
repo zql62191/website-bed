@@ -15,16 +15,16 @@
   }
 
   .content-wrap {
+    color: #333e48;
+    font-family: Helvetica, Arial, sans-serif;
+
     @include mq('large', 'medium') {
       padding: 60px 75px 40px 75px;
     }
-    color: #333e48;
-    font-family: Helvetica, Arial, sans-serif;
 
     input {
       font-size: 16px;
     }
-  
     h1 {
       text-shadow: none;
       color: #333e48;
@@ -46,10 +46,21 @@
       @include mq('small') {
         padding-bottom: 45px;
         height: 200px;
+
+        input {
+          float: left;
+          margin: 10px 10px 0 0 ;
+          clear: left;
+        }
       }
     }
     .form-line {
       margin: 0 0 5px 0;
+
+      @include mq('small') {
+        margin-bottom: 0;
+        padding: 0 0 0 4px;
+      }
     }
     .required-fields {
       clear: both;
@@ -58,21 +69,17 @@
         margin-top: 32px;
         line-height: 15px;
         margin-bottom: 7px;
+        font-size: 15px;
+        color: #8c8f91;
+        padding-bottom: 0;
 
         @include mq('small') {
           margin-bottom: 0;
         }
-        font-size: 15px;
-        color: #8c8f91;
-        padding-bottom: 0;
       }
-
-
-
       .red {
         color: #ff0000;
       }
-
       input, select {
         font-size: 15px;
         color: #8c8f91;
@@ -87,7 +94,6 @@
         &.email {
           margin-right: 386px;
         }
-
         &.first-name {
           width: 310px;
         }
@@ -98,28 +104,19 @@
           width: 295px;
           display: block;
           margin: 32px auto 0 auto;
-          @include mq('small') {
-            margin: 15px 0 150px 0;
-          }
           background-color: #333e48;
           color: #febd3f;
           font-size: 18px;
           font-family: font('gill sans', 'roman');
+
+          @include mq('small') {
+            margin: 15px 0 150px 0;
+          }
         }
       }
-
-      
     }
     @include mq('small') {
-      p.form-line {
-        margin-bottom: 0;
-        padding: 0 0 0 4px;
-      }
-      .opt-out-choice input {
-        float: left;
-        margin: 10px 10px 0 0 ;
-        clear: left;
-      }
+      
       label {
         font-size: 24px;
         line-height: 28px;

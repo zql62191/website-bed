@@ -23,5 +23,109 @@
   }
 
 
-  // continue styles in here
+  // TEXT FORMATTING AND LAYOUT
+  h1, h2, h3, p {
+    font-family: font('helvetica neue', 'light');
+  }
+  h1 {
+    padding-bottom: 25px;
+  }
+  .asterisk {
+    padding-left: 5px;
+    font-size: 26px;
+    line-height: 28px;
+    width: 538px;
+    margin-left: 25px;
+    padding-bottom: 50px;
+
+    &:before {
+      content: '*';
+      margin-left: -5px;
+    }
+  }
+  .blurb {
+    
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: top left;
+    padding: 22px;
+    color: #333e48;
+    font-size: 27px;
+    line-height: 31px;
+
+    @include mq('small') {
+      background-image: url('#{$img-path}/prevalence-text-bg-mobile.png');
+      width: 571px;
+      height: 167px;
+    }
+  }
+  .gender-ratio {
+    padding: 40px 0;
+  }
+  .comparable {
+    padding: 40px 0 26px 0;
+    margin-bottom: 40px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+
+    h2 {
+      font-size: 42px;
+      line-height: 46px;
+      width: 90%;
+      padding-bottom: 50px;
+    }
+    p {
+      padding: 25px 0 0 0;
+      font-size: 25px;
+      line-height: 28px;
+    }
+  }
+  ul {
+    li {
+      padding-left: 28px;
+      text-indent: -28px;
+
+      &:before {
+        display: inline;
+        content: '•';
+        color: #febd3f;
+        padding-right: 10px;
+      }
+    }
+  }
+
+  // GRAPHICS
+  .graphic {
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: top left;
+  }
+  .us-graphic {
+
+    @include mq('small') {
+      background-image: url('#{$img-path}/prevalence-us-mobile.png');
+      height: 420px;
+    }
+  }
+  .male-female-graphic {
+    margin: 0 auto;
+
+    @include mq('small') {
+      background-image: url('#{$img-path}/prevalence-male-female-mobile.png');
+      width: 500px;
+      height: 348px;
+    }
+  }
+  .patients-graphic {
+    margin: 0 auto;
+
+    @include mq('small') {
+      width: 580px;
+      height: 545px;
+      background-image: url('#{$img-path}/prevalence-patients-mobile.png');
+    }
+  }
+
+
+
 }
