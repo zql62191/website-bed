@@ -16,10 +16,10 @@
 
   @include mq('small') {
     // TODO: change to linear gradient for mobile
+  }
 
-    .bar--title:before {
-      border-top-color: rgb(56,83,101);
-    }
+  .bar--title:before {
+    border-top-color: rgb(179,182,183);
   }
 
 

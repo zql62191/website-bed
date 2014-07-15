@@ -18,10 +18,6 @@
     @include mq('small') {
       font-size: 25px;
     }
-
-    &:before {
-      display: none;
-    }
   }
 
   .content-wrap {

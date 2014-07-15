@@ -625,9 +625,9 @@ html::-webkit-scrollbar {
   content: '';
   width: 0;
   height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid transparent;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 16px solid transparent;
   position: absolute;
   top: 0;
   left: 50%;
@@ -635,6 +635,9 @@ html::-webkit-scrollbar {
 }
 @media only screen and (max-width: 40em) {
   .bar.bar--title:before {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid transparent;
     top: -1px;
   }
 }
@@ -722,9 +725,6 @@ html::-webkit-scrollbar {
     font-size: 25px;
   }
 }
-.section--home .bar--title:before {
-  display: none;
-}
 .section--home .content-wrap {
   padding-left: 609px;
   padding-top: 237px;
@@ -768,10 +768,8 @@ html::-webkit-scrollbar {
   background: #51748b;
   /* Old browsers */
 }
-@media only screen and (max-width: 40em) {
-  .section--prevalence .bar--title:before {
-    border-top-color: #b3b6b7;
-  }
+.section--prevalence .bar--title:before {
+  border-top-color: #4d5158;
 }
 
 .section--course {
@@ -794,10 +792,8 @@ html::-webkit-scrollbar {
   background: #333e48;
   /* Old browsers */
 }
-@media only screen and (max-width: 40em) {
-  .section--course .bar--title:before {
-    border-top-color: #385365;
-  }
+.section--course .bar--title:before {
+  border-top-color: #b3b6b7;
 }
 
 .section--effects {
@@ -820,10 +816,8 @@ html::-webkit-scrollbar {
   background: #51748b;
   /* Old browsers */
 }
-@media only screen and (max-width: 40em) {
-  .section--effects .bar--title:before {
-    border-top-color: #2b343c;
-  }
+.section--effects .bar--title:before {
+  border-top-color: #2b343c;
 }
 
 .section--neurobiology {
@@ -846,10 +840,8 @@ html::-webkit-scrollbar {
   background: #333e48;
   /* Old browsers */
 }
-@media only screen and (max-width: 40em) {
-  .section--neurobiology .bar--title:before {
-    border-top-color: #385466;
-  }
+.section--neurobiology .bar--title:before {
+  border-top-color: #385466;
 }
 
 .section--diagnosis {
@@ -872,10 +864,8 @@ html::-webkit-scrollbar {
   background: #8c8f91;
   /* Old browsers */
 }
-@media only screen and (max-width: 40em) {
-  .section--diagnosis .bar--title:before {
-    border-top-color: #2b343d;
-  }
+.section--diagnosis .bar--title:before {
+  border-top-color: #2b343d;
 }
 .section--diagnosis .sub-head {
   width: 897px;
@@ -947,10 +937,8 @@ html::-webkit-scrollbar {
   background: #ededed;
   /* Old browsers */
 }
-@media only screen and (max-width: 40em) {
-  .section--dsm5 .bar--title:before {
-    border-top-color: #4d5158;
-  }
+.section--dsm5 .bar--title:before {
+  border-top-color: #385365;
 }
 .section--dsm5 h2 {
   color: #51748b;
@@ -1285,17 +1273,14 @@ html::-webkit-scrollbar {
   background: #8c8f91;
   /* Old browsers */
 }
-@media only screen and (max-width: 40em) {
-  .section--resources .bar--title:before {
-    border-top-color: #5c5f62;
-  }
+.section--resources .bar--title:before {
+  border-top-color: #5c5f62;
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .section--resources .graphic-wrap {
     background: url("../img/bed-patient.png") no-repeat bottom left;
     padding-left: 400px;
     min-height: 386px;
-    width: 1024px;
     margin-left: -32px;
   }
 }
@@ -1304,7 +1289,6 @@ html::-webkit-scrollbar {
     background: url("../img/bed-patient.png") no-repeat bottom left;
     padding-left: 400px;
     min-height: 386px;
-    width: 1024px;
     margin-left: -32px;
   }
 }
