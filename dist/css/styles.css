@@ -795,6 +795,22 @@ html::-webkit-scrollbar {
 .section--course .bar--title:before {
   border-top-color: #b3b6b7;
 }
+.section--course h2 {
+  font-size: 54px;
+}
+.section--course .sub-head .yellow, .section--course p .yellow {
+  color: #febd3f;
+  font-weight: bold;
+}
+.section--course .fpo {
+  text-align: center;
+  height: auto;
+  margin-bottom: 30px;
+}
+.section--course .disclaimer {
+  font-size: 24px;
+  line-height: 34px;
+}
 
 .section--effects {
   background: #51748b;
