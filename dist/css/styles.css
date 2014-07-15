@@ -845,23 +845,23 @@ html::-webkit-scrollbar {
 }
 
 .section--diagnosis {
-  background: #8c8f91;
+  background: #51748b;
   /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMjklIiBzdG9wLWNvbG9yPSIjOGM4ZjkxIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iOTMlIiBzdG9wLWNvbG9yPSIjNDI0NjQ5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMjElIiBzdG9wLWNvbG9yPSIjNTE3NDhiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzI5NDA0ZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9yYWRpYWxHcmFkaWVudD4KICA8cmVjdCB4PSItNTAiIHk9Ii01MCIgd2lkdGg9IjEwMSIgaGVpZ2h0PSIxMDEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
   /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(29%, #8c8f91), color-stop(93%, #424649));
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(21%, #51748b), color-stop(100%, #29404f));
   /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover, #8c8f91 29%, #424649 93%);
+  background: -webkit-radial-gradient(center, ellipse cover, #51748b 21%, #29404f 100%);
   /* Chrome10+,Safari5.1+ */
   /* Opera 12+ */
   /* IE10+ */
-  background: -webkit-radial-gradient(center, ellipse, #8c8f91 29%, #424649 93%);
-  background: radial-gradient(ellipse at center, #8c8f91 29%, #424649 93%);
+  background: -webkit-radial-gradient(center, ellipse, #51748b 21%, #29404f 100%);
+  background: radial-gradient(ellipse at center, #51748b 21%, #29404f 100%);
   /* W3C */
 }
 .lt-ie9 .section--diagnosis {
-  background: #8c8f91;
+  background: #51748b;
   /* Old browsers */
 }
 .section--diagnosis .bar--title:before {
@@ -1274,7 +1274,7 @@ html::-webkit-scrollbar {
   /* Old browsers */
 }
 .section--resources .bar--title:before {
-  border-top-color: #5c5f62;
+  border-top-color: #385466;
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .section--resources .graphic-wrap {
