@@ -23,4 +23,46 @@
   }
 
   // continue styles in here
+
+  .dash {
+    :before {
+      color: #ffffff;
+    }
+  }
+
+  .reward {
+    background-image: url('#{$img-path}/neurobiology-mobile-1.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    position: relative;
+    left: -20px;
+    padding: 332px 0  0 20px;
+    
+  }
+  .dysregulation {
+    background-image: url('#{$img-path}/neurobiology-mobile-2.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+    position: relative;
+    right: -20px;
+    padding: 310px 20px 0 0;
+  }
+  .endogenous {
+    background-image: url('#{$img-path}/neurobiology-mobile-3.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    left: -20px;
+    padding: 325px 0  0 20px;
+  }
+  .risk {
+    background-image: url('#{$img-path}/neurobiology-mobile-4.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    left: -20px;
+    padding: 510px 0  0 20px;
+  }
+
+
+
+
 }
