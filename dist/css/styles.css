@@ -932,6 +932,36 @@ html::-webkit-scrollbar {
 .section--effects .bar--title:before {
   border-top-color: #2b343c;
 }
+.section--effects br.mobile {
+  display: none;
+}
+@media only screen and (max-width: 40em) {
+  .section--effects br.mobile {
+    display: block;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--effects h1, .section--effects h2, .section--effects h3, .section--effects p, .section--effects ul {
+    width: 515px;
+  }
+}
+.section--effects h1 {
+  padding-bottom: 30px;
+}
+.section--effects .intro {
+  font-size: 40px;
+}
+.section--effects h3 {
+  padding-top: 35px;
+}
+.section--effects .comorbidity {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+.section--effects .yellow {
+  color: #febd3f;
+  font-family: "HelveticaNeueW01-75Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
 .section--effects .graphic {
   background-repeat: no-repeat;
   -webkit-background-size: auto 100%;
@@ -940,25 +970,15 @@ html::-webkit-scrollbar {
 }
 @media only screen and (max-width: 40em) {
   .section--effects .sixty-three {
-    background-image: url("img-path/effects-sixty-three.png");
+    background-image: url("../img/effects-sixty-three.png");
     height: 450px;
   }
 }
 @media only screen and (max-width: 40em) {
   .section--effects .eighty {
-    background-image: url("img-path/effects-eighty.png");
+    background-image: url("../img/effects-eighty.png");
     height: 450px;
   }
-}
-.section--effects ul li {
-  padding-left: 28px;
-  text-indent: -28px;
-}
-.section--effects ul li:before {
-  display: inline;
-  content: '•';
-  color: #febd3f;
-  padding-right: 10px;
 }
 
 .section--neurobiology {

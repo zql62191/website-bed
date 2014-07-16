@@ -24,6 +24,40 @@
 
   // continue styles here
 
+  br.mobile {
+    display: none;
+
+    @include mq('small') {
+      display: block;
+    }
+  }
+
+  h1, h2, h3, p, ul {
+    @include mq('small') {
+      width: 515px;
+    }
+  }
+  h1 {
+    padding-bottom: 30px;
+  }
+  .intro {
+    font-size: 40px;
+  }
+  h3 {
+    padding-top: 35px;
+  }
+  .associated {
+
+  }
+  .comorbidity {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  .yellow {
+    color: #febd3f;
+    font-family: font('helvetica neue', 'bold');
+  }
+
 
   .graphic {
     background-repeat: no-repeat;
@@ -32,30 +66,30 @@
   }
   .sixty-three {
     @include mq('small') {
-      background-image: url('#{img-path}/effects-sixty-three.png');
+      background-image: url('#{$img-path}/effects-sixty-three.png');
       height: 450px;
     }
   }
   .eighty {
     @include mq('small') {
-      background-image: url('#{img-path}/effects-eighty.png');
+      background-image: url('#{$img-path}/effects-eighty.png');
       height: 450px;
     }
   }
 
-  ul {
-    li {
-      padding-left: 28px;
-      text-indent: -28px;
+  // ul {
+  //   li {
+  //     padding-left: 28px;
+  //     text-indent: -28px;
 
-      &:before {
-        display: inline;
-        content: '•';
-        color: #febd3f;
-        padding-right: 10px;
-      }
-    }
-  }
+  //     &:before {
+  //       display: inline;
+  //       content: '•';
+  //       color: #febd3f;
+  //       padding-right: 10px;
+  //     }
+  //   }
+  // }
 
 
 }
