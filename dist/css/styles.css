@@ -864,6 +864,7 @@ html::-webkit-scrollbar {
     width: 500px;
     height: 348px;
     margin: 0 auto;
+    padding-bottom: 45px;
   }
 }
 @media only screen and (min-width: 64.063em) {
@@ -970,8 +971,10 @@ html::-webkit-scrollbar {
     line-height: 26px;
   }
 }
-.section--prevalence .gender-ratio {
-  padding: 40px 0;
+@media only screen and (max-width: 40em) {
+  .section--prevalence .gender-ratio {
+    padding: 30px 20px 10px 0;
+  }
 }
 @media only screen and (min-width: 64.063em) {
   .section--prevalence .gender-ratio {
@@ -1054,13 +1057,7 @@ html::-webkit-scrollbar {
 .section--prevalence .comparable p {
   padding: 25px 0 0 0;
 }
-@media only screen and (min-width: 64.063em) {
-  .section--prevalence .comparable p {
-    font-size: 25px;
-    line-height: 28px;
-  }
-}
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+@media only screen and (max-width: 40em) {
   .section--prevalence .comparable p {
     font-size: 25px;
     line-height: 28px;
@@ -1252,38 +1249,79 @@ html::-webkit-scrollbar {
 .section--neurobiology .bar--title:before {
   border-top-color: #385466;
 }
-.section--neurobiology .dash :before {
+.section--neurobiology .content-wrap h2.pretitle {
+  font-size: 36px;
+  line-height: 42px;
+  padding-bottom: 10px;
   color: #ffffff;
 }
-.section--neurobiology .reward {
-  background-image: url("../img/neurobiology-mobile-1.png");
-  background-position: top left;
-  background-repeat: no-repeat;
-  position: relative;
-  left: -20px;
-  padding: 332px 0  0 20px;
+.section--neurobiology .content-wrap h1 {
+  font-size: 57px;
+  padding-bottom: 50px;
 }
-.section--neurobiology .dysregulation {
-  background-image: url("../img/neurobiology-mobile-2.png");
-  background-position: top right;
-  background-repeat: no-repeat;
-  position: relative;
-  right: -20px;
-  padding: 310px 20px 0 0;
+.section--neurobiology .content-wrap .dash :before {
+  color: #ffffff;
 }
-.section--neurobiology .endogenous {
-  background-image: url("../img/neurobiology-mobile-3.png");
-  background-position: top left;
-  background-repeat: no-repeat;
-  left: -20px;
-  padding: 325px 0  0 20px;
+@media only screen and (max-width: 40em) {
+  .section--neurobiology .content-wrap .reward {
+    background-image: url("../img/neurobiology-mobile-1.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    position: relative;
+    left: -20px;
+    padding: 332px 0  0 20px;
+  }
 }
-.section--neurobiology .risk {
-  background-image: url("../img/neurobiology-mobile-4.png");
-  background-position: top center;
-  background-repeat: no-repeat;
-  left: -20px;
-  padding: 510px 0  0 20px;
+@media only screen and (max-width: 40em) {
+  .section--neurobiology .content-wrap .dysregulation {
+    background-image: url("../img/neurobiology-mobile-2.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    position: relative;
+    right: -20px;
+    padding: 310px 20px 0 0;
+  }
+  .section--neurobiology .content-wrap .dysregulation h3, .section--neurobiology .content-wrap .dysregulation p {
+    margin-left: -20px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--neurobiology .content-wrap .endogenous {
+    background-image: url("../img/neurobiology-mobile-3.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    left: -20px;
+    padding: 325px 0  0 20px;
+  }
+  .section--neurobiology .content-wrap .endogenous .blurb {
+    margin: 10px 0 40px 0;
+    color: #333e48;
+    border: 2px solid #febd3f;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-left: -42px;
+    padding: 40px 35px 40px 40px;
+    background-color: #ffffff;
+    background-image: -webkit-linear-gradient(-130deg, #cacaca, white 67%);
+    background-image: -webkit-linear-gradient(230deg, #cacaca, #ffffff 67%);
+    background-image: linear-gradient(-140deg, #cacaca, #ffffff 67%);
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--neurobiology .content-wrap .risk {
+    width: 640px;
+    background-image: url("../img/neurobiology-mobile-4.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    left: -20px;
+    padding: 510px 0  0 20px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--neurobiology .content-wrap .risk .asterisk {
+    font-size: 25px;
+    line-height: 30px;
+  }
 }
 
 .section--diagnosis {
@@ -1321,6 +1359,11 @@ html::-webkit-scrollbar {
     padding-bottom: 10px;
   }
 }
+@media only screen and (max-width: 40em) {
+  .section--diagnosis h1 {
+    padding-bottom: 50px;
+  }
+}
 @media only screen and (min-width: 64.063em) {
   .section--diagnosis h3 {
     font-size: 24px;
@@ -1330,9 +1373,6 @@ html::-webkit-scrollbar {
   .section--diagnosis h3 {
     font-size: 24px;
   }
-}
-.section--diagnosis .sub-head {
-  width: 897px;
 }
 @media only screen and (max-width: 40em) {
   .section--diagnosis .sub-head {
@@ -1341,11 +1381,13 @@ html::-webkit-scrollbar {
 }
 @media only screen and (min-width: 64.063em) {
   .section--diagnosis .sub-head {
+    width: 897px;
     font-size: 22px;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .section--diagnosis .sub-head {
+    width: 897px;
     font-size: 22px;
   }
 }
@@ -1353,25 +1395,26 @@ html::-webkit-scrollbar {
   .section--diagnosis p {
     font-size: 20px;
   }
-}
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .section--diagnosis p {
-    font-size: 20px;
-  }
-}
-.section--diagnosis p:nth-of-type(2) {
-  width: 810px;
-}
-@media only screen and (max-width: 40em) {
   .section--diagnosis p:nth-of-type(2) {
-    width: auto;
+    width: 810px;
+  }
+  .section--diagnosis p:nth-of-type(3) {
+    width: 690px;
   }
 }
-.section--diagnosis p:nth-of-type(3) {
-  width: 690px;
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--diagnosis p {
+    font-size: 20px;
+  }
+  .section--diagnosis p:nth-of-type(2) {
+    width: 810px;
+  }
+  .section--diagnosis p:nth-of-type(3) {
+    width: 690px;
+  }
 }
 @media only screen and (max-width: 40em) {
-  .section--diagnosis p:nth-of-type(3) {
+  .section--diagnosis p:nth-of-type(2), .section--diagnosis p:nth-of-type(3) {
     width: auto;
   }
 }
@@ -1767,6 +1810,46 @@ html::-webkit-scrollbar {
 .section--resources .bar--title:before {
   border-top-color: #385466;
 }
+@media only screen and (min-width: 64.063em) {
+  .section--resources h2 {
+    font-size: 36px;
+    padding-bottom: 10px;
+  }
+  .section--resources .sub-head {
+    font-size: 21px;
+    line-height: 24px;
+  }
+  .section--resources h3 {
+    font-size: 21px;
+  }
+  .section--resources h3.conversation {
+    font-size: 25px;
+  }
+  .section--resources p, .section--resources li {
+    font-size: 21px;
+    line-height: 24px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--resources h2 {
+    font-size: 36px;
+    padding-bottom: 10px;
+  }
+  .section--resources .sub-head {
+    font-size: 21px;
+    line-height: 24px;
+  }
+  .section--resources h3 {
+    font-size: 21px;
+  }
+  .section--resources h3.conversation {
+    font-size: 25px;
+  }
+  .section--resources p, .section--resources li {
+    font-size: 21px;
+    line-height: 24px;
+  }
+}
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .section--resources .graphic-wrap {
     background: url("../img/bed-patient.png") no-repeat bottom left;
@@ -1836,6 +1919,18 @@ html::-webkit-scrollbar {
 @media only screen and (max-width: 40em) {
   .section--resources .videos li p {
     font-size: 32px;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  .section--resources h3.org-header {
+    padding: 40px 0 20px 0;
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--resources h3.org-header {
+    padding: 40px 0 20px 0;
+    font-size: 25px;
   }
 }
 .section--resources ul.organizations:after {
@@ -1990,11 +2085,21 @@ html::-webkit-scrollbar {
   }
 }
 .privacy-policy .content-wrap h1 {
-  font-size: 30px;
-  line-height: 30px;
   margin-bottom: 20px;
   color: #333e48;
   text-shadow: none;
+}
+@media only screen and (min-width: 64.063em) {
+  .privacy-policy .content-wrap h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .privacy-policy .content-wrap h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 @media only screen and (max-width: 40em) {
   .privacy-policy .content-wrap h1 {

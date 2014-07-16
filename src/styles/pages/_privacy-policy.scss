@@ -21,11 +21,14 @@
     }
 
     h1 {
-      font-size: 30px;
-      line-height: 30px;
       margin-bottom: 20px;
       color: #333e48;
       text-shadow: none;
+
+      @include mq('large', 'medium') {
+        font-size: 30px;
+        line-height: 30px;
+      }
 
       @include mq('small') {
         font-size: 36px;

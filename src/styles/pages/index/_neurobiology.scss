@@ -22,47 +22,91 @@
     border-top-color: rgb(56,84,102);
   }
 
-  // continue styles in here
-
-  .dash {
-    :before {
+  .content-wrap {
+    h2.pretitle {
+      font-size: 36px;
+      line-height: 42px;
+      padding-bottom: 10px;
       color: #ffffff;
     }
-  }
+    h1 {
+      font-size: 57px;
+      padding-bottom: 50px;
+    }
 
-  .reward {
-    background-image: url('#{$img-path}/neurobiology-mobile-1.png');
-    background-position: top left;
-    background-repeat: no-repeat;
-    position: relative;
-    left: -20px;
-    padding: 332px 0  0 20px;
-    
-  }
-  .dysregulation {
-    background-image: url('#{$img-path}/neurobiology-mobile-2.png');
-    background-position: top right;
-    background-repeat: no-repeat;
-    position: relative;
-    right: -20px;
-    padding: 310px 20px 0 0;
-  }
-  .endogenous {
-    background-image: url('#{$img-path}/neurobiology-mobile-3.png');
-    background-position: top left;
-    background-repeat: no-repeat;
-    left: -20px;
-    padding: 325px 0  0 20px;
-  }
-  .risk {
-    background-image: url('#{$img-path}/neurobiology-mobile-4.png');
-    background-position: top center;
-    background-repeat: no-repeat;
-    left: -20px;
-    padding: 510px 0  0 20px;
-  }
+    .dash {
+      :before {
+        color: #ffffff;
+      }
+    }
 
+    .reward {
+      @include mq('small') {
+        background-image: url('#{$img-path}/neurobiology-mobile-1.png');
+        background-position: top left;
+        background-repeat: no-repeat;
+        position: relative;
+        left: -20px;
+        padding: 332px 0  0 20px;
+      }
+    }
 
+    .dysregulation {
+      @include mq('small') {
+        background-image: url('#{$img-path}/neurobiology-mobile-2.png');
+        background-position: top right;
+        background-repeat: no-repeat;
+        position: relative;
+        right: -20px;
+        padding: 310px 20px 0 0;
 
+        h3, p {
+          margin-left: -20px;
+        }
+      }
+    }
 
+    .endogenous {
+      @include mq('small') {
+        background-image: url('#{$img-path}/neurobiology-mobile-3.png');
+        background-position: top left;
+        background-repeat: no-repeat;
+        left: -20px;
+        padding: 325px 0  0 20px;
+
+        .blurb {
+          margin: 10px 0 40px 0;
+          color: #333e48;
+          border: 2px solid #febd3f;
+          border-top-right-radius: 15px;
+          border-bottom-right-radius: 15px;
+          margin-left: -42px;
+          padding: 40px 35px 40px 40px;
+          background-color: #ffffff;
+          background-image: -webkit-linear-gradient(-130deg, #cacaca, #fff 67%);
+          background-image: -moz-linear-gradient(-130deg, #cacaca, #fff 67%);
+          background-image: -o-linear-gradient(-130deg, #cacaca, #fff 67%);
+          background-image: linear-gradient(-140deg, #cacaca, #fff 67%);
+        }
+      }
+    }
+
+    .risk {
+      @include mq('small') {
+        width: 640px;
+        background-image: url('#{$img-path}/neurobiology-mobile-4.png');
+        background-position: top center;
+        background-repeat: no-repeat;
+        left: -20px;
+        padding: 510px 0  0 20px;
+      }
+
+      .asterisk {
+        @include mq('small') {
+          font-size: 25px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
 }

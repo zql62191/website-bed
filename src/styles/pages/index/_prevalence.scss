@@ -58,7 +58,6 @@
     }
   }
   .blurb {
-    
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: top left;
@@ -89,6 +88,7 @@
       width: 500px;
       height: 348px;
       margin: 0 auto;
+      padding-bottom: 45px;
     }
     @include mq('large', 'medium') {
       display: none;
@@ -136,6 +136,7 @@
     }
   }
 
+  // Mobile graphic
   .male-female-text {
     @include mq('small') {
       display: none;
@@ -149,13 +150,18 @@
       line-height: 26px;
     }
   }
+
+  // Mobile text 
   .gender-ratio {
-    padding: 40px 0;
+    @include mq('small') {
+      padding: 30px 20px 10px 0;
+    }
 
     @include mq('large', 'medium') {
       display: none;
     }
   }
+
   .comparable {
     padding: 40px 0 26px 0;
     margin-bottom: 40px;
@@ -198,10 +204,11 @@
         padding: 0 0 15px 0;
       }
     }
+
     p {
       padding: 25px 0 0 0;
 
-      @include mq('large', 'medium') {
+      @include mq('small') {
         font-size: 25px;
         line-height: 28px;
       }
@@ -211,6 +218,7 @@
       }
     }
   }
+
   ul {
     @include mq('large', 'medium') {
       font-size: 22px;

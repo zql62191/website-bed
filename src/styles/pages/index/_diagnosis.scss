@@ -27,6 +27,9 @@
       font-size: 36px;
       padding-bottom: 10px;
     }
+    @include mq('small') {
+      padding-bottom: 50px;
+    }
   }
   h3 {
     @include mq('large', 'medium') {
@@ -35,36 +38,33 @@
   }
 
 	.sub-head {
-		width: 897px;
-
 		@include mq('small') {
 			width: auto;
 		}
-
     @include mq('large', 'medium') {
+      width: 897px;
       font-size: 22px;
     }
 	}
 
 	p {
-
     @include mq('large', 'medium') {
       font-size: 20px;
+    
+      // Widths set to force text wrapping.
+      &:nth-of-type(2) {
+        width: 810px;
+      }
+      &:nth-of-type(3) {
+        width: 690px;
+      }
     }
-    &:nth-of-type(2) {
-  		width: 810px;
+    @include mq('small') {
 
-  		@include mq('small') {
-  			width: auto;
-  		}
-  	}
-  	&:nth-of-type(3) {
-  		width: 690px;
-
-  		@include mq('small') {
-  			width: auto;
-  		}
-  	}
+      &:nth-of-type(2), &:nth-of-type(3) {
+        width: auto;
+      }
+    }
   	&:nth-of-type(4) {
   		margin-bottom: 0;
       padding-bottom: 5px;

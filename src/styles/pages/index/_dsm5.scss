@@ -79,18 +79,18 @@
       }
     }
 
-
+    // Sub lists
     ol.number {
       > li:before {
         font-family: font('helvetica neue','bold');
       } 
     }
+
     p {
 
       &.sub-head {
         width: 570px;
       }
-      
       &.disclaimer {
         margin-top: 15px;
         width: 570px;

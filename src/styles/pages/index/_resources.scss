@@ -22,6 +22,33 @@
     border-top-color: rgb(56,84,102);
   }
 
+
+
+  @include mq('large', 'medium') {
+    h2 {
+      font-size: 36px;
+      padding-bottom: 10px;
+    }
+    .sub-head {
+      font-size: 21px;
+      line-height: 24px;
+    }
+    h3 {
+      font-size: 21px;
+
+      &.conversation {
+        font-size: 25px;
+      }
+    }
+    p, li {
+      font-size: 21px;
+      line-height: 24px;
+    }
+  }
+
+
+
+
   .graphic-wrap {
     @include mq('medium','large') {
       background: url('#{$img-path}/bed-patient.png') no-repeat bottom left;
@@ -85,6 +112,13 @@
           font-size: 32px;
         }
       }
+    }
+  }
+
+  h3.org-header {
+    @include mq('large', 'medium') {
+      padding: 40px 0 20px 0;
+      font-size: 25px;
     }
   }
 
