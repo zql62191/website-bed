@@ -17,279 +17,275 @@
     background: #ededed; /* Old browsers */
   }
 
-  @include mq('small') {
-    // TODO: change to linear gradient for mobile    
-  }
+  .content-wrap {
 
-
-  .bar--title:before {
-    border-top-color: rgb(56,83,101);
-  }
-
-
-  h2 {
-    color: #51748b;
-
-    @include mq('large', 'medium') {
-      font-size: 36px;
-    }
-  }
-
-  h3 {
-    color: #333e48;
-
-    @include mq('large', 'medium') {
-      font-size: 24px;
-    }
-  }
-
-  // Main List 
-  ol.letter {
-
-    @include mq('large', 'medium') {
-      padding-left: 25px;
+    @include mq('small') {
+      // TODO: change to linear gradient for mobile    
     }
 
-    > li:before {
-      text-transform: uppercase;
+
+    .bar--title:before {
+      border-top-color: rgb(56,83,101);
+    }
+
+
+    h1 {
       color: #51748b;
-      font-family: font('helvetica neue','bold');
-      font-size: 26px;
-      
+
       @include mq('large', 'medium') {
-        margin-left: -25px;
-        margin-top: -5px;
+        font-size: 38px;
       }
-      @include mq('small') {
-        display: block;
-        font-size: 60px;
-        line-height: 60px;
-      }
-    }
-
-    > li {
-      @include mq('large', 'medium') {
-        padding-top: 5px;
-      }
-      @include mq('small') {
-        padding-top: 20px;
-      }
-    }
-  }
-
-
-  ol.number {
-    > li:before {
-      font-family: font('helvetica neue','bold');
-    } 
-  }
-  p {
-
-    &.sub-head {
-      width: 570px;
-    }
-    
-    &.disclaimer {
-      margin-top: 15px;
-      width: 570px;
-
-      em {
-        font-family: font('gill sans', 'italic');
-      }
-
-      @include mq('small') {
-        font-size: 30px;
-        line-height: 42px;
-        margin-top: 20px;
-      }
-    }
-  }
-
-  a.pdf-link {
-    display: block;
-    height: 45px;
-    margin-top: 15px;
-    background-repeat: no-repeat;
-    color: #333e48;
-    text-decoration: none;
-
-    @include mq('large', 'medium') {
-      background-image: url('#{$img-path}/pdf.png');
-      padding-left: 40px;
-    } 
-    @include mq('small') {
-      font-size: 30px;
-      line-height: 92px;
-      margin-top: 35px;
-      padding-left: 75px;
-      background-image: url('#{$img-path}/pdf-large.png');
-      background-size: 70px auto;
-      height: 92px;
-    }
-
-    i {
-        font-style: italic;
-    }
-    span {
-      border-bottom: 1px solid #333e48;
-      line-height: 45px;
-
-      sup {
-        text-decoration: none;
-      }
-    }
-  }
-
-  // Tab styles
-  .tab-container {
-    position: absolute;
-    padding-top: 61px;
-    right: 0;
-    z-index: 10;
-    height: 410px;
-    cursor: pointer;
-    margin: 0 0 0 auto;
-
-    @include mq('large', 'medium') {
-      width: 40px;
-      top: 107px;
-      right: 0px;
-      background-image: url('#{$img-path}/dsm5-tab-border.png');
-      background-repeat: no-repeat;
-      background-position: center right;
-    }
-
-    @include mq('small') {
-      position: relative;
-      width: 88px;
-      bottom: auto;
-      top: auto;
-      padding-bottom: 90px;
-      right: -20px;
-    }
-
-    // Opened tab styles
-    @include mq('large', 'medium') {
-
-      &.open {
-        width: 400px;
-
-        .tab-inner {
-          background-image: url('#{$img-path}/dsm5-tab-bg.png');
-          padding-left: 60px;
-        }
-      }
-    }
-    @include mq('small') {
-
-      &.open {
-        width: auto;
-        right: -10px;
-        height: 872px;
-
-        .tab-inner {
-          background-image: url('#{$img-path}/dsm5-tab-bg-mobile.png');
-          padding-left: 60px;
-        }
-      }
-    }
-  }
-
-  // Closed Tab Styles
-  .tab-inner {
-    padding: 34px 25px 0 100px;
-    height: 838px;
-    padding-right: 1px;
-    background-repeat: no-repeat;
-
-    @include mq('large', 'medium') {
-      background-image: url('#{$img-path}/dsm5-tab-bg-closed.png');
-      background-position: left center;
-      width: 400px;
-    }
-    @include mq('small') {
-      background-image: url('#{$img-path}/dsm5-tab-bg-mobile-closed.png');
-      background-position: top left;
-      right: 0px;
-      width: 612px;
-      padding-right: 0;
     }
 
     h3 {
-      color: #febd3f;
+      color: #333e48;
 
-      @include mq('small') {
-        font-size: 36px;
+      @include mq('large', 'medium') {
+        font-size: 24px;
       }
+    }
+
+    // Main List 
+    ol.letter {
+
+      @include mq('large', 'medium') {
+        padding-left: 25px;
+      }
+
+      > li:before {
+        text-transform: uppercase;
+        color: #51748b;
+        font-family: font('helvetica neue','bold');
+        font-size: 26px;
+        
+        @include mq('large', 'medium') {
+          margin-left: -25px;
+          margin-top: -5px;
+        }
+        @include mq('small') {
+          display: block;
+          font-size: 60px;
+          line-height: 60px;
+        }
+      }
+
+      > li {
+        @include mq('large', 'medium') {
+          padding-top: 5px;
+        }
+        @include mq('small') {
+          padding-top: 20px;
+        }
+      }
+    }
+
+
+    ol.number {
+      > li:before {
+        font-family: font('helvetica neue','bold');
+      } 
     }
     p {
-      font-style: normal;
-      color: #ffffff;
-      margin-bottom: 10px;
-      width: 290px;
-      line-height: 23px;
 
-      @include mq('small') {
-        font-size: 29px;
-        line-height: 37px;
-        width: 400px;
-        margin-top: 10px;
-        margin-left: 55px;
-        padding-bottom: 0;
+      &.sub-head {
+        width: 570px;
       }
-    }
-    ul {
-      @include mq('small') {
-        margin-left: 35px;
-        margin-top: 22px;
-      }
-    }
-    li {
-      font-size: 15px;
-      color: #ffffff;
-      margin-left: 12px;
-      width: 265px;
       
-      &:before {
-        content: '•';
-        color: #febd3f;
-        margin-right: 3px;
+      &.disclaimer {
+        margin-top: 15px;
+        width: 570px;
+
+        em {
+          font-family: font('gill sans', 'italic');
+        }
+
+        @include mq('small') {
+          font-size: 30px;
+          line-height: 42px;
+          margin-top: 20px;
+        }
+      }
+    }
+
+    a.pdf-link {
+      display: block;
+      height: 45px;
+      margin-top: 15px;
+      background-repeat: no-repeat;
+      color: #333e48;
+      text-decoration: none;
+
+      @include mq('large', 'medium') {
+        background-image: url('#{$img-path}/pdf.png');
+        padding-left: 40px;
+      } 
+      @include mq('small') {
+        font-size: 30px;
+        line-height: 92px;
+        margin-top: 35px;
+        padding-left: 75px;
+        background-image: url('#{$img-path}/pdf-large.png');
+        background-size: 70px auto;
+        height: 92px;
+      }
+
+      i {
+          font-style: italic;
+      }
+      span {
+        border-bottom: 1px solid #333e48;
+        line-height: 45px;
+
+        sup {
+          text-decoration: none;
+        }
+      }
+    }
+
+    // Tab styles
+    .tab-container {
+      padding-top: 61px;
+      z-index: 10;
+      height: 410px;
+      cursor: pointer;
+      margin: 0 0 0 auto;
+
+      @include mq('large', 'medium') {
+        position: absolute;
+        width: 40px;
+        top: 107px;
+        right: 0px;
+        background-image: url('#{$img-path}/dsm5-tab-border.png');
+        background-repeat: no-repeat;
+        background-position: center right;
+
+        &.open {
+          width: 400px;
+
+          .tab-inner {
+            background-image: url('#{$img-path}/dsm5-tab-bg.png');
+            padding-left: 60px;
+          }
+        }
       }
 
       @include mq('small') {
-        font-size: 23px;
-        line-height: 32px;
+        position: relative;
+        width: 88px;
+        bottom: auto;
+        top: auto;
+        padding-bottom: 90px;
+        right: -20px;
 
-        &.first {
-          width: 390px;
-        }
-        &.second {
-          width: 475px;
+        &.open {
+          width: auto;
+          right: -10px;
+          height: 872px;
+
+          .tab-inner {
+            background-image: url('#{$img-path}/dsm5-tab-bg-mobile.png');
+            padding-left: 60px;
+          }
         }
       }
     }
-  }
-  .closed-text {
-    position: absolute;
-    right: 60px;
-    top: 295px;
-    width: 198px;
-    font-size: 26px;
-    line-height: 26px;
-    font-family: font('gill sans', 'bold');
 
-    @include mq('small') {
-      font-size: 54px;
-      line-height: 64px;
-      width: 410px;
-      top: 100px;
-      bottom: 285px;
-      right: auto;
-      left: -495px;
+    // Closed Tab Styles
+    .tab-inner {
+      padding: 34px 25px 0 100px;
+      height: 838px;
+      padding-right: 1px;
+      background-repeat: no-repeat;
+
+      @include mq('large', 'medium') {
+        background-image: url('#{$img-path}/dsm5-tab-bg-closed.png');
+        background-position: left center;
+        width: 400px;
+      }
+      @include mq('small') {
+        background-image: url('#{$img-path}/dsm5-tab-bg-mobile-closed.png');
+        background-position: top left;
+        right: 0px;
+        width: 612px;
+        padding-right: 0;
+      }
+
+      h3 {
+        color: #febd3f;
+
+        @include mq('small') {
+          font-size: 36px;
+        }
+      }
+      p {
+        font-style: normal;
+        color: #ffffff;
+        margin-bottom: 10px;
+        width: 290px;
+        line-height: 23px;
+
+        @include mq('small') {
+          font-size: 29px;
+          line-height: 37px;
+          width: 400px;
+          margin-top: 10px;
+          margin-left: 55px;
+          padding-bottom: 0;
+        }
+      }
+      ul {
+        @include mq('small') {
+          margin-left: 35px;
+          margin-top: 22px;
+        }
+      }
+      li {
+        font-size: 15px;
+        color: #ffffff;
+        margin-left: 12px;
+        width: 265px;
+        
+        &:before {
+          content: '•';
+          color: #febd3f;
+          margin-right: 3px;
+        }
+
+        @include mq('small') {
+          font-size: 23px;
+          line-height: 32px;
+
+          &.first {
+            width: 390px;
+          }
+          &.second {
+            width: 475px;
+          }
+        }
+      }
     }
+    .closed-text {
+      position: absolute;
+      right: 60px;
+      top: 295px;
+      width: 198px;
+      font-size: 26px;
+      line-height: 26px;
+      font-family: font('gill sans', 'bold');
 
-    &.hidden {
-      display: none;
-    } 
+      @include mq('small') {
+        font-size: 54px;
+        line-height: 64px;
+        width: 410px;
+        top: 100px;
+        bottom: 285px;
+        right: auto;
+        left: -495px;
+      }
+
+      &.hidden {
+        display: none;
+      } 
+    }
   }
 }

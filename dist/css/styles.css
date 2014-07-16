@@ -777,6 +777,18 @@ html::-webkit-scrollbar {
 .section--prevalence h1 {
   padding-bottom: 25px;
 }
+@media only screen and (min-width: 64.063em) {
+  .section--prevalence h1 {
+    font-size: 32px;
+    font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--prevalence h1 {
+    font-size: 32px;
+    font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  }
+}
 .section--prevalence .asterisk {
   padding-left: 5px;
   font-size: 26px;
@@ -788,6 +800,24 @@ html::-webkit-scrollbar {
 .section--prevalence .asterisk:before {
   content: '*';
   margin-left: -5px;
+}
+@media only screen and (min-width: 64.063em) {
+  .section--prevalence .asterisk {
+    float: left;
+    width: 405px;
+    padding-top: 150px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--prevalence .asterisk {
+    float: left;
+    width: 405px;
+    padding-top: 150px;
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 .section--prevalence .blurb {
   background-repeat: no-repeat;
@@ -806,8 +836,152 @@ html::-webkit-scrollbar {
     height: 167px;
   }
 }
+@media only screen and (min-width: 64.063em) {
+  .section--prevalence .blurb {
+    background-image: url("../img/prevalence-text-bg.png");
+    width: 740px;
+    height: 73px;
+    margin: 420px auto 0 auto;
+    padding: 16px 25px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--prevalence .blurb {
+    background-image: url("../img/prevalence-text-bg.png");
+    width: 740px;
+    height: 73px;
+    margin: 420px auto 0 auto;
+    padding: 16px 25px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--prevalence .male-female-graphic {
+    background-image: url("../img/prevalence-male-female-mobile.png");
+    width: 500px;
+    height: 348px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  .section--prevalence .male-female-graphic {
+    display: none;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--prevalence .male-female-graphic {
+    display: none;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--prevalence .desktop-graphic {
+    display: none;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  .section--prevalence .desktop-graphic {
+    background-repeat: no-repeat;
+    background-position: top center;
+    text-align: center;
+    float: left;
+  }
+  .section--prevalence .desktop-graphic p {
+    font-size: 22px;
+    line-height: 26px;
+    font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    width: 230px;
+    margin-left: -36.5px;
+  }
+  .section--prevalence .desktop-graphic.female-graphic {
+    background-image: url("../img/prevalence-female.png");
+    width: 157px;
+    height: 230px;
+    margin: 55px 0 0 60px;
+    padding-top: 235px;
+    color: #febd3f;
+  }
+  .section--prevalence .desktop-graphic.male-graphic {
+    background-image: url("../img/prevalence-male.png");
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    width: 192px;
+    height: 189px;
+    margin: 55px 0;
+    padding-top: 205px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--prevalence .desktop-graphic {
+    background-repeat: no-repeat;
+    background-position: top center;
+    text-align: center;
+    float: left;
+  }
+  .section--prevalence .desktop-graphic p {
+    font-size: 22px;
+    line-height: 26px;
+    font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    width: 230px;
+    margin-left: -36.5px;
+  }
+  .section--prevalence .desktop-graphic.female-graphic {
+    background-image: url("../img/prevalence-female.png");
+    width: 157px;
+    height: 230px;
+    margin: 55px 0 0 60px;
+    padding-top: 235px;
+    color: #febd3f;
+  }
+  .section--prevalence .desktop-graphic.male-graphic {
+    background-image: url("../img/prevalence-male.png");
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    width: 192px;
+    height: 189px;
+    margin: 55px 0;
+    padding-top: 205px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--prevalence .male-female-text {
+    display: none;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  .section--prevalence .male-female-text {
+    float: left;
+    width: 485px;
+    height: 115px;
+    padding: 77px 73px 0 34px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--prevalence .male-female-text {
+    float: left;
+    width: 485px;
+    height: 115px;
+    padding: 77px 73px 0 34px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
 .section--prevalence .gender-ratio {
   padding: 40px 0;
+}
+@media only screen and (min-width: 64.063em) {
+  .section--prevalence .gender-ratio {
+    display: none;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--prevalence .gender-ratio {
+    display: none;
+  }
 }
 .section--prevalence .comparable {
   padding: 40px 0 26px 0;
@@ -815,26 +989,104 @@ html::-webkit-scrollbar {
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
 }
-.section--prevalence .comparable h2 {
-  font-size: 42px;
-  line-height: 46px;
-  width: 90%;
-  padding-bottom: 50px;
+@media only screen and (min-width: 64.063em) {
+  .section--prevalence .comparable {
+    margin-top: 387px;
+    padding-top: 25px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--prevalence .comparable {
+    margin-top: 387px;
+    padding-top: 25px;
+  }
+}
+.section--prevalence .comparable .patients-graphic {
+  margin: 0 auto;
+}
+@media only screen and (max-width: 40em) {
+  .section--prevalence .comparable .patients-graphic {
+    width: 580px;
+    height: 545px;
+    background-image: url("../img/prevalence-patients-mobile.png");
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  .section--prevalence .comparable .patients-graphic {
+    width: 897px;
+    height: 186px;
+    background-image: url("../img/prevalence-patients.png");
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--prevalence .comparable .patients-graphic {
+    width: 897px;
+    height: 186px;
+    background-image: url("../img/prevalence-patients.png");
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--prevalence .comparable h2 {
+    font-size: 42px;
+    line-height: 46px;
+    width: 90%;
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  .section--prevalence .comparable h2 {
+    font-size: 23px;
+    line-height: 26px;
+    font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    width: 710px;
+    padding: 0 0 15px 0;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--prevalence .comparable h2 {
+    font-size: 23px;
+    line-height: 26px;
+    font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    width: 710px;
+    padding: 0 0 15px 0;
+  }
 }
 .section--prevalence .comparable p {
   padding: 25px 0 0 0;
-  font-size: 25px;
-  line-height: 28px;
 }
-.section--prevalence ul li {
-  padding-left: 28px;
-  text-indent: -28px;
+@media only screen and (min-width: 64.063em) {
+  .section--prevalence .comparable p {
+    font-size: 25px;
+    line-height: 28px;
+  }
 }
-.section--prevalence ul li:before {
-  display: inline;
-  content: '•';
-  color: #febd3f;
-  padding-right: 10px;
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--prevalence .comparable p {
+    font-size: 25px;
+    line-height: 28px;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  .section--prevalence .comparable p {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--prevalence .comparable p {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  .section--prevalence ul {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--prevalence ul {
+    font-size: 22px;
+  }
 }
 .section--prevalence .graphic {
   background-repeat: no-repeat;
@@ -848,24 +1100,20 @@ html::-webkit-scrollbar {
     height: 420px;
   }
 }
-.section--prevalence .male-female-graphic {
-  margin: 0 auto;
-}
-@media only screen and (max-width: 40em) {
-  .section--prevalence .male-female-graphic {
-    background-image: url("../img/prevalence-male-female-mobile.png");
-    width: 500px;
-    height: 348px;
+@media only screen and (min-width: 64.063em) {
+  .section--prevalence .us-graphic {
+    background-image: url("../img/prevalence-us.png");
+    height: 420px;
+    width: 496px;
+    float: left;
   }
 }
-.section--prevalence .patients-graphic {
-  margin: 0 auto;
-}
-@media only screen and (max-width: 40em) {
-  .section--prevalence .patients-graphic {
-    width: 580px;
-    height: 545px;
-    background-image: url("../img/prevalence-patients-mobile.png");
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--prevalence .us-graphic {
+    background-image: url("../img/prevalence-us.png");
+    height: 420px;
+    width: 496px;
+    float: left;
   }
 }
 
@@ -1061,6 +1309,28 @@ html::-webkit-scrollbar {
 .section--diagnosis .bar--title:before {
   border-top-color: #2b343d;
 }
+@media only screen and (min-width: 64.063em) {
+  .section--diagnosis h1 {
+    font-size: 36px;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--diagnosis h1 {
+    font-size: 36px;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  .section--diagnosis h3 {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--diagnosis h3 {
+    font-size: 24px;
+  }
+}
 .section--diagnosis .sub-head {
   width: 897px;
 }
@@ -1069,24 +1339,57 @@ html::-webkit-scrollbar {
     width: auto;
   }
 }
-.section--diagnosis p:nth-child(1) {
+@media only screen and (min-width: 64.063em) {
+  .section--diagnosis .sub-head {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--diagnosis .sub-head {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  .section--diagnosis p {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--diagnosis p {
+    font-size: 20px;
+  }
+}
+.section--diagnosis p:nth-of-type(2) {
   width: 810px;
 }
 @media only screen and (max-width: 40em) {
-  .section--diagnosis p:nth-child(1) {
+  .section--diagnosis p:nth-of-type(2) {
     width: auto;
   }
 }
-.section--diagnosis p:nth-child(2) {
+.section--diagnosis p:nth-of-type(3) {
   width: 690px;
 }
 @media only screen and (max-width: 40em) {
-  .section--diagnosis p:nth-child(2) {
+  .section--diagnosis p:nth-of-type(3) {
     width: auto;
   }
 }
-.section--diagnosis p:nth-child(3) {
+.section--diagnosis p:nth-of-type(4) {
   margin-bottom: 0;
+  padding-bottom: 5px;
+}
+@media only screen and (min-width: 64.063em) {
+  .section--diagnosis li {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--diagnosis li {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 .section--diagnosis .graphic-wrap {
   margin: 20px 0;
@@ -1131,106 +1434,106 @@ html::-webkit-scrollbar {
   background: #ededed;
   /* Old browsers */
 }
-.section--dsm5 .bar--title:before {
+.section--dsm5 .content-wrap .bar--title:before {
   border-top-color: #385365;
 }
-.section--dsm5 h2 {
+.section--dsm5 .content-wrap h1 {
   color: #51748b;
 }
 @media only screen and (min-width: 64.063em) {
-  .section--dsm5 h2 {
-    font-size: 36px;
+  .section--dsm5 .content-wrap h1 {
+    font-size: 38px;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .section--dsm5 h2 {
-    font-size: 36px;
+  .section--dsm5 .content-wrap h1 {
+    font-size: 38px;
   }
 }
-.section--dsm5 h3 {
+.section--dsm5 .content-wrap h3 {
   color: #333e48;
 }
 @media only screen and (min-width: 64.063em) {
-  .section--dsm5 h3 {
+  .section--dsm5 .content-wrap h3 {
     font-size: 24px;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .section--dsm5 h3 {
+  .section--dsm5 .content-wrap h3 {
     font-size: 24px;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  .section--dsm5 ol.letter {
+  .section--dsm5 .content-wrap ol.letter {
     padding-left: 25px;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .section--dsm5 ol.letter {
+  .section--dsm5 .content-wrap ol.letter {
     padding-left: 25px;
   }
 }
-.section--dsm5 ol.letter > li:before {
+.section--dsm5 .content-wrap ol.letter > li:before {
   text-transform: uppercase;
   color: #51748b;
   font-family: "HelveticaNeueW01-75Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 26px;
 }
 @media only screen and (min-width: 64.063em) {
-  .section--dsm5 ol.letter > li:before {
+  .section--dsm5 .content-wrap ol.letter > li:before {
     margin-left: -25px;
     margin-top: -5px;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .section--dsm5 ol.letter > li:before {
+  .section--dsm5 .content-wrap ol.letter > li:before {
     margin-left: -25px;
     margin-top: -5px;
   }
 }
 @media only screen and (max-width: 40em) {
-  .section--dsm5 ol.letter > li:before {
+  .section--dsm5 .content-wrap ol.letter > li:before {
     display: block;
     font-size: 60px;
     line-height: 60px;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  .section--dsm5 ol.letter > li {
+  .section--dsm5 .content-wrap ol.letter > li {
     padding-top: 5px;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .section--dsm5 ol.letter > li {
+  .section--dsm5 .content-wrap ol.letter > li {
     padding-top: 5px;
   }
 }
 @media only screen and (max-width: 40em) {
-  .section--dsm5 ol.letter > li {
+  .section--dsm5 .content-wrap ol.letter > li {
     padding-top: 20px;
   }
 }
-.section--dsm5 ol.number > li:before {
+.section--dsm5 .content-wrap ol.number > li:before {
   font-family: "HelveticaNeueW01-75Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
-.section--dsm5 p.sub-head {
+.section--dsm5 .content-wrap p.sub-head {
   width: 570px;
 }
-.section--dsm5 p.disclaimer {
+.section--dsm5 .content-wrap p.disclaimer {
   margin-top: 15px;
   width: 570px;
 }
-.section--dsm5 p.disclaimer em {
+.section--dsm5 .content-wrap p.disclaimer em {
   font-family: "GillSansW01-MediumItali", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 @media only screen and (max-width: 40em) {
-  .section--dsm5 p.disclaimer {
+  .section--dsm5 .content-wrap p.disclaimer {
     font-size: 30px;
     line-height: 42px;
     margin-top: 20px;
   }
 }
-.section--dsm5 a.pdf-link {
+.section--dsm5 .content-wrap a.pdf-link {
   display: block;
   height: 45px;
   margin-top: 15px;
@@ -1239,19 +1542,19 @@ html::-webkit-scrollbar {
   text-decoration: none;
 }
 @media only screen and (min-width: 64.063em) {
-  .section--dsm5 a.pdf-link {
+  .section--dsm5 .content-wrap a.pdf-link {
     background-image: url("../img/pdf.png");
     padding-left: 40px;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .section--dsm5 a.pdf-link {
+  .section--dsm5 .content-wrap a.pdf-link {
     background-image: url("../img/pdf.png");
     padding-left: 40px;
   }
 }
 @media only screen and (max-width: 40em) {
-  .section--dsm5 a.pdf-link {
+  .section--dsm5 .content-wrap a.pdf-link {
     font-size: 30px;
     line-height: 92px;
     margin-top: 35px;
@@ -1262,37 +1565,44 @@ html::-webkit-scrollbar {
     height: 92px;
   }
 }
-.section--dsm5 a.pdf-link i {
+.section--dsm5 .content-wrap a.pdf-link i {
   font-style: italic;
 }
-.section--dsm5 a.pdf-link span {
+.section--dsm5 .content-wrap a.pdf-link span {
   border-bottom: 1px solid #333e48;
   line-height: 45px;
 }
-.section--dsm5 a.pdf-link span sup {
+.section--dsm5 .content-wrap a.pdf-link span sup {
   text-decoration: none;
 }
-.section--dsm5 .tab-container {
-  position: absolute;
+.section--dsm5 .content-wrap .tab-container {
   padding-top: 61px;
-  right: 0;
   z-index: 10;
   height: 410px;
   cursor: pointer;
   margin: 0 0 0 auto;
 }
 @media only screen and (min-width: 64.063em) {
-  .section--dsm5 .tab-container {
+  .section--dsm5 .content-wrap .tab-container {
+    position: absolute;
     width: 40px;
     top: 107px;
     right: 0px;
     background-image: url("../img/dsm5-tab-border.png");
     background-repeat: no-repeat;
     background-position: center right;
+  }
+  .section--dsm5 .content-wrap .tab-container.open {
+    width: 400px;
+  }
+  .section--dsm5 .content-wrap .tab-container.open .tab-inner {
+    background-image: url("../img/dsm5-tab-bg.png");
+    padding-left: 60px;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .section--dsm5 .tab-container {
+  .section--dsm5 .content-wrap .tab-container {
+    position: absolute;
     width: 40px;
     top: 107px;
     right: 0px;
@@ -1300,9 +1610,16 @@ html::-webkit-scrollbar {
     background-repeat: no-repeat;
     background-position: center right;
   }
+  .section--dsm5 .content-wrap .tab-container.open {
+    width: 400px;
+  }
+  .section--dsm5 .content-wrap .tab-container.open .tab-inner {
+    background-image: url("../img/dsm5-tab-bg.png");
+    padding-left: 60px;
+  }
 }
 @media only screen and (max-width: 40em) {
-  .section--dsm5 .tab-container {
+  .section--dsm5 .content-wrap .tab-container {
     position: relative;
     width: 88px;
     bottom: auto;
@@ -1310,58 +1627,38 @@ html::-webkit-scrollbar {
     padding-bottom: 90px;
     right: -20px;
   }
-}
-@media only screen and (min-width: 64.063em) {
-  .section--dsm5 .tab-container.open {
-    width: 400px;
-  }
-  .section--dsm5 .tab-container.open .tab-inner {
-    background-image: url("../img/dsm5-tab-bg.png");
-    padding-left: 60px;
-  }
-}
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .section--dsm5 .tab-container.open {
-    width: 400px;
-  }
-  .section--dsm5 .tab-container.open .tab-inner {
-    background-image: url("../img/dsm5-tab-bg.png");
-    padding-left: 60px;
-  }
-}
-@media only screen and (max-width: 40em) {
-  .section--dsm5 .tab-container.open {
+  .section--dsm5 .content-wrap .tab-container.open {
     width: auto;
     right: -10px;
     height: 872px;
   }
-  .section--dsm5 .tab-container.open .tab-inner {
+  .section--dsm5 .content-wrap .tab-container.open .tab-inner {
     background-image: url("../img/dsm5-tab-bg-mobile.png");
     padding-left: 60px;
   }
 }
-.section--dsm5 .tab-inner {
+.section--dsm5 .content-wrap .tab-inner {
   padding: 34px 25px 0 100px;
   height: 838px;
   padding-right: 1px;
   background-repeat: no-repeat;
 }
 @media only screen and (min-width: 64.063em) {
-  .section--dsm5 .tab-inner {
+  .section--dsm5 .content-wrap .tab-inner {
     background-image: url("../img/dsm5-tab-bg-closed.png");
     background-position: left center;
     width: 400px;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .section--dsm5 .tab-inner {
+  .section--dsm5 .content-wrap .tab-inner {
     background-image: url("../img/dsm5-tab-bg-closed.png");
     background-position: left center;
     width: 400px;
   }
 }
 @media only screen and (max-width: 40em) {
-  .section--dsm5 .tab-inner {
+  .section--dsm5 .content-wrap .tab-inner {
     background-image: url("../img/dsm5-tab-bg-mobile-closed.png");
     background-position: top left;
     right: 0px;
@@ -1369,15 +1666,15 @@ html::-webkit-scrollbar {
     padding-right: 0;
   }
 }
-.section--dsm5 .tab-inner h3 {
+.section--dsm5 .content-wrap .tab-inner h3 {
   color: #febd3f;
 }
 @media only screen and (max-width: 40em) {
-  .section--dsm5 .tab-inner h3 {
+  .section--dsm5 .content-wrap .tab-inner h3 {
     font-size: 36px;
   }
 }
-.section--dsm5 .tab-inner p {
+.section--dsm5 .content-wrap .tab-inner p {
   font-style: normal;
   color: #ffffff;
   margin-bottom: 10px;
@@ -1385,7 +1682,7 @@ html::-webkit-scrollbar {
   line-height: 23px;
 }
 @media only screen and (max-width: 40em) {
-  .section--dsm5 .tab-inner p {
+  .section--dsm5 .content-wrap .tab-inner p {
     font-size: 29px;
     line-height: 37px;
     width: 400px;
@@ -1395,35 +1692,35 @@ html::-webkit-scrollbar {
   }
 }
 @media only screen and (max-width: 40em) {
-  .section--dsm5 .tab-inner ul {
+  .section--dsm5 .content-wrap .tab-inner ul {
     margin-left: 35px;
     margin-top: 22px;
   }
 }
-.section--dsm5 .tab-inner li {
+.section--dsm5 .content-wrap .tab-inner li {
   font-size: 15px;
   color: #ffffff;
   margin-left: 12px;
   width: 265px;
 }
-.section--dsm5 .tab-inner li:before {
+.section--dsm5 .content-wrap .tab-inner li:before {
   content: '•';
   color: #febd3f;
   margin-right: 3px;
 }
 @media only screen and (max-width: 40em) {
-  .section--dsm5 .tab-inner li {
+  .section--dsm5 .content-wrap .tab-inner li {
     font-size: 23px;
     line-height: 32px;
   }
-  .section--dsm5 .tab-inner li.first {
+  .section--dsm5 .content-wrap .tab-inner li.first {
     width: 390px;
   }
-  .section--dsm5 .tab-inner li.second {
+  .section--dsm5 .content-wrap .tab-inner li.second {
     width: 475px;
   }
 }
-.section--dsm5 .closed-text {
+.section--dsm5 .content-wrap .closed-text {
   position: absolute;
   right: 60px;
   top: 295px;
@@ -1433,7 +1730,7 @@ html::-webkit-scrollbar {
   font-family: "Gill Sans W01 Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 @media only screen and (max-width: 40em) {
-  .section--dsm5 .closed-text {
+  .section--dsm5 .content-wrap .closed-text {
     font-size: 54px;
     line-height: 64px;
     width: 410px;
@@ -1443,7 +1740,7 @@ html::-webkit-scrollbar {
     left: -495px;
   }
 }
-.section--dsm5 .closed-text.hidden {
+.section--dsm5 .content-wrap .closed-text.hidden {
   display: none;
 }
 
