@@ -9,6 +9,13 @@
   z-index: z('page', 'nav');
   // width: 1024px;
 
+  &._is_animating,
+  &._is_open {
+    & + .page-content {
+      -webkit-filter: blur(2px);
+    }
+  }
+
   @include mq('small') {
     top: 93px;
     // width: 640px;

@@ -464,6 +464,9 @@ html::-webkit-scrollbar {
   overflow: hidden;
   z-index: 1004;
 }
+.page-nav._is_animating + .page-content, .page-nav._is_open + .page-content {
+  -webkit-filter: blur(2px);
+}
 @media only screen and (max-width: 40em) {
   .page-nav {
     top: 93px;

@@ -98,6 +98,8 @@ var BED = {
 
       $('.btn--menu, .mask--nav').prop('disabled', true);
 
+      $('.page-nav').addClass('_is_animating');
+
       $('.mask--nav').velocity('fadeIn', {
         duration: 300
       });
@@ -106,8 +108,8 @@ var BED = {
         duration: 300,
         display: 'inline-block',
         complete: function(elements) {
-          $('.page-nav').addClass('_is_open');
           $('.btn--menu, .mask--nav').prop('disabled', false);
+          $('.page-nav').addClass('_is_open').removeClass('_is_animating');
         }
       });
 
@@ -118,6 +120,8 @@ var BED = {
 
       $('.btn--menu, .mask--nav').prop('disabled', true);
 
+      $('.page-nav').addClass('_is_animating');
+
       $('.mask--nav').velocity('fadeOut', {
         duration: 300
       });
@@ -125,7 +129,7 @@ var BED = {
       $('.page-nav nav').velocity('transition.slideLeftOut', {
         duration: 300,
         complete: function(elements) {
-          $('.page-nav').removeClass('_is_open');
+          $('.page-nav').removeClass('_is_open _is_animating');
           $('.btn--menu, .mask--nav').prop('disabled', false);
         }
       });
