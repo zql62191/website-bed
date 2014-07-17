@@ -22,10 +22,28 @@
     border-top-color: rgb(179,182,183);
   }
 
-  h2 {
-    font-size: 54px;
+  br.mobile {
+    @include mq('large', 'medium') {
+      display: none;
+    }
   }
 
+  h2 {
+    @include mq('small') {
+      font-size: 54px;
+    }
+    @include mq('large', 'medium') {
+      font-size: 38px;
+      padding-bottom: 25px;
+    }
+  }
+
+  .sub-head {
+
+    @include mq('large', 'medium') {
+      font-size: 25px;
+    }
+  }
   .sub-head, p {
 
     .yellow {
@@ -34,16 +52,61 @@
     }
   }
 
-  .fpo {
-    text-align: center;
-    height: auto;
-    margin-bottom: 30px;
+  .graphic-container {
+    overflow: auto;
   }
+
+  .twenty-one, .chart {
+
+    @include mq('small') {
+      text-align: center;
+      height: auto;
+      margin-bottom: 30px;
+    }
+  }
+
+  .twenty-one img{
+
+    @include mq('large', 'medium') {
+      float: right;
+      width: 375px;
+      margin: 30px 310px 140px 0;
+    }
+  }
+  .chart img {
+    @include mq('large', 'medium') {
+      width: 175px;
+      float: left;
+    }
+  }
+
+  .mean-duration {
+    @include mq('small') {
+      font-size: 41px;
+      line-height: 45px;
+    }
+    
+    @include mq('large', 'medium') {
+      font-size: 23px;
+      line-height: 26px;
+      position: absolute;
+      top: 330px;
+      left: 250px;
+    }
+  }
+
 
   // add to global styles
   .disclaimer {
-    font-size: 24px;
-    line-height: 34px;
+    @include mq('small') {
+      font-size: 25px;
+      line-height: 34px;
+    }
+    @include mq('large', 'medium') {
+      font-size: 18px;
+      line-height: 22px;
+      padding-left: 20px;
+    }
   }
 
 

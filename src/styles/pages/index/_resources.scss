@@ -32,6 +32,7 @@
     .sub-head {
       font-size: 21px;
       line-height: 24px;
+      padding-bottom: 20px;
     }
     h3 {
       font-size: 21px;
@@ -40,12 +41,35 @@
         font-size: 25px;
       }
     }
-    p, li {
-      font-size: 21px;
-      line-height: 24px;
+    p {
+      font-size: 23px;
+      line-height: 26px;
+    }
+    li {
+      font-size: 20px;
+      line-height: 22px;
+      padding-bottom: 5px;
     }
   }
-
+  @include mq('small') {
+    h2 {
+      font-size: 48px;
+      line-height: 50px;
+      padding-bottom: 15px;
+    }
+    .sub-head {
+      font-size: 30px;
+      line-height: 33px;
+    }
+    h3 {
+      font-size: 26px;
+      line-height: 28px;
+    }
+    p, li {
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
 
 
 
@@ -77,10 +101,14 @@
       margin-bottom: 30px;
       
       @include mq('small') {
-        font-size: 32px;
+        font-size: 27px;
         width: 640px;
-        letter-spacing: -1px;
+        //letter-spacing: -1px;
       }
+    }
+
+    ul {
+      cursor: pointer;
     }
 
     li {
@@ -107,9 +135,11 @@
         height: inherit;
         padding: 21px 0;
         font-size: 24px;
+        line-height: 26px;
+        font-family: font('gill sans', 'regular');
 
         @include mq('small') {
-          font-size: 32px;
+          //font-size: 32px;
         }
       }
     }
@@ -120,11 +150,19 @@
       padding: 40px 0 20px 0;
       font-size: 25px;
     }
+    @include mq('small') {
+      padding-bottom: 30px;
+    }
   }
 
   ul.organizations {
 
     @include clearfix;
+
+    @include mq('small') {
+      padding-bottom: 50px;
+    }
+
 
     li {
       width: 50%;
@@ -141,6 +179,15 @@
 
     p {
       padding-bottom: 0;
+
+      @include mq('small') {
+        font-size: 24px;
+        line-height: 30px;
+      }
+      @include mq('large', 'medium') {
+        font-size: 18px;
+        line-height: 21px;
+      }
     }
 
     // Title
@@ -169,21 +216,32 @@
   .signup {
     margin: 0 auto;
     line-height: 25px;
-    width: 400px;
-    padding: 10px 20px; 
     clear: both;
+    font-family: font('gill sans', 'regular');
+    cursor: pointer;
 
+    @include mq('large', 'medium') {
+      font-size: 24px;
+      line-height: 26px;
+      width: 445px;
+      padding: 10px 20px; 
+    }
     @include mq('small') {
-      font-size: 30px;
-      line-height: 36px;
+      font-size: 28px;
+      line-height: 32px;
       padding: 12px 20px;
-      width: 580px;
+      width: 460px;
     }
   }
 
   .references {
     word-wrap: break-word;
     margin-top: 20px;
+
+    @include mq('small') {
+      margin-top: 30px;
+    }
+
 
     p {
       font-size: 17px;
@@ -192,4 +250,12 @@
       padding-right: 16px;
     }
   }
+
+  br.mobile-only {
+    @include mq('large', 'medium') {
+      display: none;
+    }
+  }
+
+
 }

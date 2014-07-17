@@ -12,13 +12,13 @@
 
 
   color: #333e48;
+  overflow-y: hidden;
 
   .lt-ie9 & {
     background: #ededed; /* Old browsers */
   }
 
   .content-wrap {
-
     @include mq('small') {
       // TODO: change to linear gradient for mobile    
     }
@@ -28,8 +28,14 @@
       border-top-color: rgb(56,83,101);
     }
 
+    br.mobile {
+      @include mq('large', 'medium') {
+        display: none;
+      }
+    }
 
-    h1 {
+
+    h1, h2 {
       color: #51748b;
 
       @include mq('large', 'medium') {
@@ -43,6 +49,12 @@
       @include mq('large', 'medium') {
         font-size: 24px;
       }
+      @include mq('small') {
+        font-size: 42px;
+        line-height: 44px;
+        padding-bottom: 25px;
+      }
+
     }
 
     // Main List 
@@ -51,6 +63,11 @@
       @include mq('large', 'medium') {
         padding-left: 25px;
       }
+      @include mq('small') {
+        padding-left: 50px;
+      }
+
+
 
       > li:before {
         text-transform: uppercase;
@@ -63,9 +80,11 @@
           margin-top: -5px;
         }
         @include mq('small') {
-          display: block;
+          //display: block;
           font-size: 60px;
           line-height: 60px;
+          margin-left: -55px;
+          padding-right: 10px;
         }
       }
 
@@ -84,6 +103,13 @@
       > li:before {
         font-family: font('helvetica neue','bold');
       } 
+
+      @include mq('small') {
+        padding-left: 0;
+      }
+
+
+
     }
 
     p {
@@ -95,14 +121,11 @@
         margin-top: 15px;
         width: 570px;
 
-        em {
-          font-family: font('gill sans', 'italic');
-        }
-
         @include mq('small') {
           font-size: 30px;
           line-height: 42px;
-          margin-top: 20px;
+          margin-top: 30px;
+          padding-left: 45px;
         }
       }
     }
@@ -122,15 +145,12 @@
       @include mq('small') {
         font-size: 30px;
         line-height: 92px;
-        margin-top: 35px;
+        margin-top: 0;
         padding-left: 75px;
+        margin-left: 45px;
         background-image: url('#{$img-path}/pdf-large.png');
         background-size: 70px auto;
         height: 92px;
-      }
-
-      i {
-          font-style: italic;
       }
       span {
         border-bottom: 1px solid #333e48;
@@ -225,8 +245,8 @@
         line-height: 23px;
 
         @include mq('small') {
-          font-size: 29px;
-          line-height: 37px;
+          font-size: 28px;
+          line-height: 36px;
           width: 400px;
           margin-top: 10px;
           margin-left: 55px;

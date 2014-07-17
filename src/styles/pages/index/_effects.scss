@@ -23,55 +23,132 @@
   }
 
   // continue styles here
+  .content-wrap {
+    overflow: auto;
 
-  br.mobile {
-    display: none;
+    h1, h2, h3, p, ul {
+      @include mq('small') {
+        width: 515px;
+      }
+    }
+    h1 {
+      @include mq('small') {
+        padding-bottom: 30px;
+      }
 
-    @include mq('small') {
-      display: block;
+      @include mq('large', 'medium') {
+        font-size: 36px;
+        padding-bottom: 15px;
+      }
+    }
+    .intro {
+      @include mq('small') {
+        font-size: 40px;
+      }
+      @include mq('large', 'medium') {
+        font-size: 25px;
+        line-height: 29px;
+        padding-bottom: 0;
+      }
+    }
+    h3 {
+
+      @include mq('small') {
+        padding-top: 35px;
+      }
+      @include mq('large', 'medium') {
+        padding-top: 25px;
+      }
+    }
+    
+    .yellow {
+      color: #febd3f;
+      font-family: font('helvetica neue', 'bold');
+    }
+
+
+    // Left Column
+    .associated {
+      @include mq('small') {
+        h3 {
+          width: auto;
+          line-height: 60px;
+          padding-bottom: 0;
+        }
+      }
+      @include mq('large', 'medium') {
+        padding-left: 45px;
+        width: 430px;
+        float: left;
+
+        h3 {
+          font-size: 24px;
+          line-height: 45px;
+          padding-bottom: 5px;
+        }
+        li {
+          font-size: 20px;
+          line-height: 26px;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+
+    // Right Column
+    .comorbidity {
+      @include mq('small') {
+        h3 {
+          padding-top: 40px;
+          padding-bottom: 40px;
+        }
+      }
+      @include mq('large', 'medium') {
+        width: 430px;
+        float: left;
+
+        h3 {
+          font-size: 24px;
+          line-height: 45px;
+          padding-bottom: 5px;
+          padding-top: 71px;
+        }
+        p {
+          font-size: 20px;
+          line-height: 26px;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    .graphic {
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      background-position: top left;
+    }
+    .sixty-three {
+      @include mq('small') {
+        background-image: url('#{$img-path}/effects-sixty-three-mobile.png');
+        height: 450px;
+      }
+      @include mq('large', 'medium') {
+        background-image: url('#{$img-path}/effects-sixty-three.png');
+        height: 215px;
+        margin-top: -38px;
+        margin-left: -15px;
+      }
+    }
+    .eighty {
+      @include mq('small') {
+        background-image: url('#{$img-path}/effects-eighty-mobile.png');
+        height: 450px;
+      }
+      @include mq('large', 'medium') {
+        background-image: url('#{$img-path}/effects-eighty.png');
+        height: 189px;
+        margin-top: -19px;
+        margin-left: -30px;
+      }
     }
   }
-
-  h1, h2, h3, p, ul {
-    @include mq('small') {
-      width: 515px;
-    }
-  }
-  h1 {
-    padding-bottom: 30px;
-  }
-  .intro {
-    font-size: 40px;
-  }
-  h3 {
-    padding-top: 35px;
-  }
-  .comorbidity {
-    padding-top: 50px;
-    padding-bottom: 40px;
-  }
-  .yellow {
-    color: #febd3f;
-    font-family: font('helvetica neue', 'bold');
-  }
-
-
-  .graphic {
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-position: top left;
-  }
-  .sixty-three {
-    @include mq('small') {
-      background-image: url('#{$img-path}/effects-sixty-three.png');
-      height: 450px;
-    }
-  }
-  .eighty {
-    @include mq('small') {
-      background-image: url('#{$img-path}/effects-eighty.png');
-      height: 450px;
-    }
-  }
-
 }
