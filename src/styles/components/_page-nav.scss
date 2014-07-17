@@ -12,7 +12,8 @@
   &._is_animating,
   &._is_open {
     & + .page-content {
-      -webkit-filter: blur(2px);
+      // looks horrible on mobile
+      // -webkit-filter: blur(2px);
     }
   }
 
