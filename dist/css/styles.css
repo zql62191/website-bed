@@ -295,8 +295,14 @@ body {
 body strong, body b {
   font-family: "HelveticaNeueW01-75Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
+body strong em, body strong i, body b em, body b i {
+  font-family: "HelveticaNeueW01-76Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
 body em, body i {
   font-family: "HelveticaNeueW01-56It", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+body em strong, body em b, body i strong, body i b {
+  font-family: "HelveticaNeueW01-76Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 @media only screen and (max-width: 40em) {
   body {
@@ -315,8 +321,14 @@ h1.white, h2.white, h3.white, h4.white, h5.white, h6.white {
 h1 strong, h1 b, h2 strong, h2 b, h3 strong, h3 b, h4 strong, h4 b, h5 strong, h5 b, h6 strong, h6 b {
   font-family: "Gill Sans W01 Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
+h1 strong em, h1 strong i, h1 b em, h1 b i, h2 strong em, h2 strong i, h2 b em, h2 b i, h3 strong em, h3 strong i, h3 b em, h3 b i, h4 strong em, h4 strong i, h4 b em, h4 b i, h5 strong em, h5 strong i, h5 b em, h5 b i, h6 strong em, h6 strong i, h6 b em, h6 b i {
+  font-family: "GillSansW01-BoldItalic", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
 h1 em, h1 i, h2 em, h2 i, h3 em, h3 i, h4 em, h4 i, h5 em, h5 i, h6 em, h6 i {
   font-family: "GillSansW01-MediumItali", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+h1 em strong, h1 em b, h1 i strong, h1 i b, h2 em strong, h2 em b, h2 i strong, h2 i b, h3 em strong, h3 em b, h3 i strong, h3 i b, h4 em strong, h4 em b, h4 i strong, h4 i b, h5 em strong, h5 em b, h5 i strong, h5 i b, h6 em strong, h6 em b, h6 i strong, h6 i b {
+  font-family: "GillSansW01-BoldItalic", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 
 @media only screen and (max-width: 40em) {

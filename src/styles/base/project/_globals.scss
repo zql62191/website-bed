@@ -225,9 +225,17 @@ body {
 
   strong, b {
     font-family: font('helvetica neue', 'bold');
+
+    em, i {
+      font-family: font('helvetica neue', 'bold italic');
+    }
   }
   em, i {
     font-family: font('helvetica neue', 'italic');
+
+    strong, b {
+      font-family: font('helvetica neue', 'bold italic');
+    }
   }
 
   @include mq('small') {
@@ -247,9 +255,17 @@ h1,h2,h3,h4,h5,h6 {
 
   strong, b {
     font-family: font('gill sans', 'bold');
+
+    em, i {
+      font-family: font('gill sans', 'bold italic');
+    }
   }
   em, i {
     font-family: font('gill sans', 'italic');
+
+    strong, b {
+      font-family: font('gill sans', 'bold italic');
+    }
   }
 }
 
