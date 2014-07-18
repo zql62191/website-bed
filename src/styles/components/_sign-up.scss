@@ -1,0 +1,141 @@
+.signup-container {
+  right: 0;
+  
+  z-index: 200;
+  background-color: #e1e3e4;
+  height: 100%;
+  padding: 30px 25px;
+
+  -webkit-box-shadow: inset 3px 0 5px 0px rgba(50, 50, 50, 0.65);
+  -moz-box-shadow: inset 3px 0 5px 0px rgba(50, 50, 50, 0.65);
+  box-shadow: inset 3px 0 5px 0px rgba(50, 50, 50, 0.65);
+
+  display: none;
+
+  @include mq('large', 'medium') {
+    position: fixed;
+    top: 50px;
+    width: 720px;
+  }
+  @include mq('small') {
+    position: absolute;
+    top: 93px;
+    width: 543px;
+  }
+
+  &._is_open {
+    display: block;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 17px;
+    height: 28px;
+    width: 28px;
+    background-image: url('#{$img-path}/close.png');
+    cursor: pointer;
+
+    @include mq('small') {
+      display: none;
+    }
+  }
+
+  h2 {
+    color: #333e48;
+    font-size: 21px;
+    line-height: 24px;
+
+    @include mq('small') {
+      font-size: 58px;
+      line-height: 60px;
+    }
+  }
+  h3 {
+    padding: 25px 0 5px 0;
+    color: #333e48;
+    font-weight: bold;
+  }
+  .red {
+    color: #ff0000;
+  }
+  .required-fields {
+    color: #8c8f91;
+
+    @include mq('small') {
+      font-size: 22px;
+      padding-bottom: 0;
+    }
+  }
+
+  input, select {
+    color: #8c8f91;
+    background-color: #fff;
+    box-shadow: 0 2px 2px rgba(33,30,31,.25);
+    margin-right: 15px;
+
+    @include mq('large', 'medium') {
+      width: 315px;
+      height: 31px;
+      font-size: 15px;
+      border-radius: 6px/4px;
+      margin-bottom: 10px;
+    }
+    @include mq('small') {
+      width: 490px;
+      height: 78px;
+      font-size: 32px;
+      font-family: font('gill sans', 'regular');
+      border-radius: 10px;
+      padding-left: 25px;
+      margin-bottom: 25px;
+    }
+
+    &.email {
+      //margin-right: 386px;
+    }
+    &.first-name {
+      @include mq('large', 'medium') {
+        width: 240px;
+      }
+      @include mq('small') {
+        width: 385px;
+      }
+    }
+    &.middle-initial {
+      width: 56px;
+
+      @include mq('small') {
+        margin-right: 0;
+        width: 80px;
+      }
+    }
+    &.state, &.zip {
+      width: 148px;
+    }
+    &.optin {
+      width: auto;
+      height: auto;
+      margin: 0 5px 0 0;
+      box-shadow: none;
+      float: left;
+    }
+    &.submit {
+      width: 295px;
+      display: block;
+      margin: 0 auto;
+      background-color: #333e48;
+      color: #febd3f;
+      font-size: 18px;
+      font-family: font('gill sans', 'roman');
+
+      @include mq('small') {
+        margin: 15px 0 150px 0;
+      }
+    }
+  }
+  .optin-label {
+    color: #333e48;
+  }
+
+}
