@@ -12,7 +12,7 @@
 
 
   color: #333e48;
-  overflow-y: hidden;
+  overflow: hidden;
 
   .lt-ie9 & {
     background: #ededed; /* Old browsers */
@@ -28,21 +28,21 @@
       border-top-color: rgb(56,83,101);
     }
 
-    br.mobile {
-      @include mq('large', 'medium') {
-        display: none;
-      }
-    }
-
-
-    h1, h2 {
+    h1 {
       color: #51748b;
 
       @include mq('large', 'medium') {
         font-size: 38px;
       }
     }
+    h2 {
+      color: #51748b;
 
+      @include mq('large', 'medium') {
+        font-size: 38px;
+        padding-bottom: 15px;
+      }
+    }
     h3 {
       color: #333e48;
 
@@ -73,14 +73,13 @@
         text-transform: uppercase;
         color: #51748b;
         font-family: font('helvetica neue','bold');
-        font-size: 26px;
-        
+               
         @include mq('large', 'medium') {
+          font-size:  26px;
           margin-left: -25px;
           margin-top: -5px;
         }
         @include mq('small') {
-          //display: block;
           font-size: 60px;
           line-height: 60px;
           margin-left: -55px;
@@ -91,6 +90,7 @@
       > li {
         @include mq('large', 'medium') {
           padding-top: 5px;
+          font-size: 20px;
         }
         @include mq('small') {
           padding-top: 20px;
@@ -102,20 +102,32 @@
     ol.number {
       > li:before {
         font-family: font('helvetica neue','bold');
+
+        @include mq('large', 'medium') {
+          margin-left: -30px;
+        }
       } 
 
       @include mq('small') {
         padding-left: 0;
       }
-
-
-
+      @include mq('large', 'medium') {
+        font-size: 21px;
+        line-height: 23px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+      }
     }
 
     p {
 
       &.sub-head {
         width: 570px;
+
+        @include mq('large', 'medium') {
+          font-size: 24px;
+          width: auto;
+        }
       }
       &.disclaimer {
         margin-top: 15px;
@@ -132,24 +144,24 @@
 
     a.pdf-link {
       display: block;
-      height: 45px;
-      margin-top: 15px;
       background-repeat: no-repeat;
       color: #333e48;
       text-decoration: none;
 
       @include mq('large', 'medium') {
         background-image: url('#{$img-path}/pdf.png');
+        height: 45px;
+        margin-top: 15px;
         padding-left: 40px;
       } 
       @include mq('small') {
+        background-image: url('#{$img-path}/pdf-large.png');
+        background-size: 70px auto;
         font-size: 30px;
         line-height: 92px;
         margin-top: 0;
         padding-left: 75px;
         margin-left: 45px;
-        background-image: url('#{$img-path}/pdf-large.png');
-        background-size: 70px auto;
         height: 92px;
       }
       span {
@@ -185,6 +197,13 @@
           .tab-inner {
             background-image: url('#{$img-path}/dsm5-tab-bg.png');
             padding-left: 60px;
+            background-position: top right;
+
+            p {
+              padding-left: 25px;
+              font-size: 19px;
+              line-height: 22px;
+            }
           }
         }
       }
@@ -219,7 +238,7 @@
 
       @include mq('large', 'medium') {
         background-image: url('#{$img-path}/dsm5-tab-bg-closed.png');
-        background-position: left center;
+        background-position: top left;
         width: 400px;
       }
       @include mq('small') {
@@ -260,7 +279,6 @@
         }
       }
       li {
-        font-size: 15px;
         color: #ffffff;
         margin-left: 12px;
         width: 265px;
@@ -286,13 +304,15 @@
     }
     .closed-text {
       position: absolute;
-      right: 60px;
-      top: 295px;
-      width: 198px;
-      font-size: 26px;
-      line-height: 26px;
       font-family: font('gill sans', 'bold');
 
+      @include mq('large', 'medium') {
+        font-size: 26px;
+        line-height: 26px;
+        right: 60px;
+        width: 198px;
+        top: 105px;
+      }
       @include mq('small') {
         font-size: 54px;
         line-height: 64px;

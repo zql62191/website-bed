@@ -725,6 +725,9 @@ html::-webkit-scrollbar {
     background: #4d5158 url("../img/home__bg.jpg") 0 0 no-repeat;
   }
 }
+.section--home .bar {
+  margin-bottom: 0px;
+}
 .section--home .bar--title {
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -737,6 +740,17 @@ html::-webkit-scrollbar {
     font-size: 25px;
   }
 }
+.section--home .disclaimer-bar {
+  width: 100%;
+  background-color: #333e48;
+  height: 22px;
+  margin-bottom: -22px;
+}
+.section--home .disclaimer-bar p {
+  text-align: center;
+  line-height: 22px;
+  font-size: 13px;
+}
 .section--home .content-wrap {
   padding-left: 609px;
   padding-top: 237px;
@@ -748,15 +762,64 @@ html::-webkit-scrollbar {
     padding-top: 545px;
   }
 }
+@media only screen and (min-width: 64.063em) {
+  .section--home .content-wrap {
+    padding-top: 200px;
+    padding-bottom: 45px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--home .content-wrap {
+    padding-top: 200px;
+    padding-bottom: 45px;
+  }
+}
 .section--home .eyebrow {
   font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 21px;
   padding-bottom: 0;
 }
+@media only screen and (min-width: 64.063em) {
+  .section--home .eyebrow {
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--home .eyebrow {
+    padding-bottom: 10px;
+  }
+}
 @media only screen and (max-width: 40em) {
   .section--home .eyebrow {
     font-size: 35px;
     line-height: 39px;
+  }
+}
+.section--home h1 {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+@media only screen and (min-width: 64.063em) {
+  .section--home h1 {
+    font-size: 32px;
+    padding-bottom: 15px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--home h1 {
+    font-size: 32px;
+    padding-bottom: 15px;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  .section--home p {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--home p {
+    font-size: 16px;
+    line-height: 18px;
   }
 }
 
@@ -1902,7 +1965,7 @@ html::-webkit-scrollbar {
   background: radial-gradient(ellipse at center, #ffffff 44%, #61676b 100%);
   /* W3C */
   color: #333e48;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 .lt-ie9 .section--dsm5 {
   background: #ededed;
@@ -1911,27 +1974,32 @@ html::-webkit-scrollbar {
 .section--dsm5 .content-wrap .bar--title:before {
   border-top-color: #385365;
 }
-@media only screen and (min-width: 64.063em) {
-  .section--dsm5 .content-wrap br.mobile {
-    display: none;
-  }
-}
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .section--dsm5 .content-wrap br.mobile {
-    display: none;
-  }
-}
-.section--dsm5 .content-wrap h1, .section--dsm5 .content-wrap h2 {
+.section--dsm5 .content-wrap h1 {
   color: #51748b;
 }
 @media only screen and (min-width: 64.063em) {
-  .section--dsm5 .content-wrap h1, .section--dsm5 .content-wrap h2 {
+  .section--dsm5 .content-wrap h1 {
     font-size: 38px;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .section--dsm5 .content-wrap h1, .section--dsm5 .content-wrap h2 {
+  .section--dsm5 .content-wrap h1 {
     font-size: 38px;
+  }
+}
+.section--dsm5 .content-wrap h2 {
+  color: #51748b;
+}
+@media only screen and (min-width: 64.063em) {
+  .section--dsm5 .content-wrap h2 {
+    font-size: 38px;
+    padding-bottom: 15px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--dsm5 .content-wrap h2 {
+    font-size: 38px;
+    padding-bottom: 15px;
   }
 }
 .section--dsm5 .content-wrap h3 {
@@ -1973,16 +2041,17 @@ html::-webkit-scrollbar {
   text-transform: uppercase;
   color: #51748b;
   font-family: "HelveticaNeueW01-75Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-size: 26px;
 }
 @media only screen and (min-width: 64.063em) {
   .section--dsm5 .content-wrap ol.letter > li:before {
+    font-size: 26px;
     margin-left: -25px;
     margin-top: -5px;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .section--dsm5 .content-wrap ol.letter > li:before {
+    font-size: 26px;
     margin-left: -25px;
     margin-top: -5px;
   }
@@ -1998,11 +2067,13 @@ html::-webkit-scrollbar {
 @media only screen and (min-width: 64.063em) {
   .section--dsm5 .content-wrap ol.letter > li {
     padding-top: 5px;
+    font-size: 20px;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .section--dsm5 .content-wrap ol.letter > li {
     padding-top: 5px;
+    font-size: 20px;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -2013,13 +2084,51 @@ html::-webkit-scrollbar {
 .section--dsm5 .content-wrap ol.number > li:before {
   font-family: "HelveticaNeueW01-75Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
+@media only screen and (min-width: 64.063em) {
+  .section--dsm5 .content-wrap ol.number > li:before {
+    margin-left: -30px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--dsm5 .content-wrap ol.number > li:before {
+    margin-left: -30px;
+  }
+}
 @media only screen and (max-width: 40em) {
   .section--dsm5 .content-wrap ol.number {
     padding-left: 0;
   }
 }
+@media only screen and (min-width: 64.063em) {
+  .section--dsm5 .content-wrap ol.number {
+    font-size: 21px;
+    line-height: 23px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--dsm5 .content-wrap ol.number {
+    font-size: 21px;
+    line-height: 23px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+  }
+}
 .section--dsm5 .content-wrap p.sub-head {
   width: 570px;
+}
+@media only screen and (min-width: 64.063em) {
+  .section--dsm5 .content-wrap p.sub-head {
+    font-size: 24px;
+    width: auto;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--dsm5 .content-wrap p.sub-head {
+    font-size: 24px;
+    width: auto;
+  }
 }
 .section--dsm5 .content-wrap p.disclaimer {
   margin-top: 15px;
@@ -2035,8 +2144,6 @@ html::-webkit-scrollbar {
 }
 .section--dsm5 .content-wrap a.pdf-link {
   display: block;
-  height: 45px;
-  margin-top: 15px;
   background-repeat: no-repeat;
   color: #333e48;
   text-decoration: none;
@@ -2044,25 +2151,29 @@ html::-webkit-scrollbar {
 @media only screen and (min-width: 64.063em) {
   .section--dsm5 .content-wrap a.pdf-link {
     background-image: url("../img/pdf.png");
+    height: 45px;
+    margin-top: 15px;
     padding-left: 40px;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .section--dsm5 .content-wrap a.pdf-link {
     background-image: url("../img/pdf.png");
+    height: 45px;
+    margin-top: 15px;
     padding-left: 40px;
   }
 }
 @media only screen and (max-width: 40em) {
   .section--dsm5 .content-wrap a.pdf-link {
+    background-image: url("../img/pdf-large.png");
+    -webkit-background-size: 70px auto;
+    background-size: 70px auto;
     font-size: 30px;
     line-height: 92px;
     margin-top: 0;
     padding-left: 75px;
     margin-left: 45px;
-    background-image: url("../img/pdf-large.png");
-    -webkit-background-size: 70px auto;
-    background-size: 70px auto;
     height: 92px;
   }
 }
@@ -2096,6 +2207,12 @@ html::-webkit-scrollbar {
   .section--dsm5 .content-wrap .tab-container.open .tab-inner {
     background-image: url("../img/dsm5-tab-bg.png");
     padding-left: 60px;
+    background-position: top right;
+  }
+  .section--dsm5 .content-wrap .tab-container.open .tab-inner p {
+    padding-left: 25px;
+    font-size: 19px;
+    line-height: 22px;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
@@ -2114,6 +2231,12 @@ html::-webkit-scrollbar {
   .section--dsm5 .content-wrap .tab-container.open .tab-inner {
     background-image: url("../img/dsm5-tab-bg.png");
     padding-left: 60px;
+    background-position: top right;
+  }
+  .section--dsm5 .content-wrap .tab-container.open .tab-inner p {
+    padding-left: 25px;
+    font-size: 19px;
+    line-height: 22px;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -2144,14 +2267,14 @@ html::-webkit-scrollbar {
 @media only screen and (min-width: 64.063em) {
   .section--dsm5 .content-wrap .tab-inner {
     background-image: url("../img/dsm5-tab-bg-closed.png");
-    background-position: left center;
+    background-position: top left;
     width: 400px;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .section--dsm5 .content-wrap .tab-inner {
     background-image: url("../img/dsm5-tab-bg-closed.png");
-    background-position: left center;
+    background-position: top left;
     width: 400px;
   }
 }
@@ -2196,7 +2319,6 @@ html::-webkit-scrollbar {
   }
 }
 .section--dsm5 .content-wrap .tab-inner li {
-  font-size: 15px;
   color: #ffffff;
   margin-left: 12px;
   width: 265px;
@@ -2220,12 +2342,25 @@ html::-webkit-scrollbar {
 }
 .section--dsm5 .content-wrap .closed-text {
   position: absolute;
-  right: 60px;
-  top: 295px;
-  width: 198px;
-  font-size: 26px;
-  line-height: 26px;
   font-family: "Gill Sans W01 Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+@media only screen and (min-width: 64.063em) {
+  .section--dsm5 .content-wrap .closed-text {
+    font-size: 26px;
+    line-height: 26px;
+    right: 60px;
+    width: 198px;
+    top: 105px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .section--dsm5 .content-wrap .closed-text {
+    font-size: 26px;
+    line-height: 26px;
+    right: 60px;
+    width: 198px;
+    top: 105px;
+  }
 }
 @media only screen and (max-width: 40em) {
   .section--dsm5 .content-wrap .closed-text {

@@ -8,6 +8,10 @@
     background: #4d5158 url('#{$img-path}/home__bg.jpg') 0 0 no-repeat;
   }
 
+
+  .bar {
+    margin-bottom: 0px;
+  }
   .bar--title {
     letter-spacing: 0.02em;
     text-transform: uppercase;
@@ -20,6 +24,19 @@
     }
   }
 
+  .disclaimer-bar {
+    width: 100%;
+    background-color: #333e48;
+    height: 22px;
+    margin-bottom: -22px;
+
+    p {
+      text-align: center;
+      line-height: 22px;
+      font-size: 13px;
+    }
+  }
+
   .content-wrap {
     padding-left: 609px;
     padding-top: 237px;
@@ -29,17 +46,39 @@
       padding-left: 14px;
       padding-top: 545px;
     }
+    @include mq('large', 'medium') {
+      padding-top: 200px;
+      padding-bottom: 45px;
+    }
   }
 
   .eyebrow {
     font-family: font('gill sans', 'roman');
     font-size: 21px;
-
     padding-bottom: 0;
     
+    @include mq('large', 'medium') {
+      padding-bottom: 10px;
+    }
     @include mq('small') {
       font-size: 35px;
       line-height: 39px;
+    }
+  }
+
+  h1 {
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+
+    @include mq('large', 'medium') {
+      font-size: 32px;
+      padding-bottom: 15px;
+    }
+  }
+
+  p {
+    @include mq('large', 'medium') {
+      font-size: 16px;
+      line-height: 18px;
     }
   }
 }
