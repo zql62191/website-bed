@@ -65,6 +65,10 @@
     .required-fields {
       clear: both;
 
+      .ng-invalid.ng-dirty {
+        border-color: #FF0000;
+      }
+
       p {
         margin-top: 32px;
         line-height: 15px;

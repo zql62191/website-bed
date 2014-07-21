@@ -34,6 +34,7 @@ GEM
       chunky_png (>= 0.8.0)
       compass (>= 0.10.0)
     ffi (1.9.3)
+    ffi (1.9.3-x64-mingw32)
     jeet (0.0.4)
       breakpoint (>= 2.0)
       compass (>= 0.11)
@@ -55,6 +56,7 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   bitters-compass (>= 0.9.3)

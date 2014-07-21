@@ -3,7 +3,8 @@ module.exports = {
     compass: true,
     force: true,
     quiet: false,
-    trace: false
+    trace: false,
+	noCache: true
   },
   dev: {
     options: {
