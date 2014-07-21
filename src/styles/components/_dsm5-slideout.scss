@@ -1,0 +1,69 @@
+.dsm5-container {
+  right: 0;
+  
+  z-index: 200;
+  background-color: #e1e3e4;
+  height: auto;
+  padding: 30px 23px;
+
+  -webkit-box-shadow: inset 3px 0 5px 0px rgba(50, 50, 50, 0.65);
+  -moz-box-shadow: inset 3px 0 5px 0px rgba(50, 50, 50, 0.65);
+  box-shadow: inset 3px 0 5px 0px rgba(50, 50, 50, 0.65);
+
+  display: none;
+
+  @include mq('large', 'medium') {
+    position: fixed;
+    top: 50px;
+    width: 235px;
+  }
+  @include mq('small') {
+    position: absolute;
+    top: 93px;
+    width: 543px;
+  }
+
+  &._is_open {
+    display: block;
+  }
+
+  h2 {
+    color: #333e48;
+    border-bottom: 1px solid #ffffff;
+
+    @include mq('large', 'medium') {
+      font-size: 21px;
+      line-height: 28px;
+      padding: 10px 0 5px 0;
+      margin-bottom: 10px;
+    }
+    @include mq('small') {
+      font-size: 58px;
+      line-height: 60px;
+      padding-bottom: 30px;
+      margin-bottom: 25px;
+    }
+  }
+  p, li {
+    color: #333e48;
+
+    @include mq('large', 'medium') {
+      font-size: 15px;
+      line-height: 17px;
+    }
+    @include mq('small') {
+      font-size: 32px;
+    }
+  }
+
+  ul.bullet > li:before {
+    color: #333e48;
+  }
+
+  a.pdf-link {
+    @include mq('small') {
+      margin-left: 0;
+    }
+  }
+
+}

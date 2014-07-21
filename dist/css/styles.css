@@ -423,6 +423,66 @@ li:last-child {
   }
 }
 
+/* PDF Download link styles - for DSM5 section of index and DSM5 slideout in menu */
+a.pdf-link {
+  display: block;
+  background-repeat: no-repeat;
+  color: #333e48;
+  text-decoration: none;
+}
+@media only screen and (min-width: 64.063em) {
+  a.pdf-link {
+    background-image: url("../img/pdf.png");
+    height: 45px;
+    margin-top: 15px;
+    padding-left: 40px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  a.pdf-link {
+    background-image: url("../img/pdf.png");
+    height: 45px;
+    margin-top: 15px;
+    padding-left: 40px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  a.pdf-link {
+    background-image: url("../img/pdf-large.png");
+    -webkit-background-size: 70px auto;
+    background-size: 70px auto;
+    font-size: 30px;
+    line-height: 92px;
+    margin-top: 0;
+    padding-left: 75px;
+    margin-left: 45px;
+    height: 92px;
+  }
+}
+a.pdf-link span {
+  border-bottom: 1px solid #333e48;
+  line-height: 45px;
+}
+a.pdf-link span sup {
+  text-decoration: none;
+}
+
+/* Close button for slideouts */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 17px;
+  height: 28px;
+  width: 28px;
+  background-image: url("../img/close.png");
+  cursor: pointer;
+}
+@media only screen and (max-width: 40em) {
+  .close {
+    display: none;
+  }
+}
+
 html::-webkit-scrollbar {
   width: 0 !important;
 }
@@ -741,20 +801,6 @@ html::-webkit-scrollbar {
 .signup-container._is_open {
   display: block;
 }
-.signup-container .close {
-  position: absolute;
-  top: 10px;
-  right: 17px;
-  height: 28px;
-  width: 28px;
-  background-image: url("../img/close.png");
-  cursor: pointer;
-}
-@media only screen and (max-width: 40em) {
-  .signup-container .close {
-    display: none;
-  }
-}
 .signup-container h2 {
   color: #333e48;
   font-size: 21px;
@@ -870,6 +916,97 @@ html::-webkit-scrollbar {
 }
 .signup-container .optin-label {
   color: #333e48;
+}
+
+.dsm5-container {
+  right: 0;
+  z-index: 200;
+  background-color: #e1e3e4;
+  height: auto;
+  padding: 30px 23px;
+  -webkit-box-shadow: inset 3px 0 5px 0px rgba(50, 50, 50, 0.65);
+  box-shadow: inset 3px 0 5px 0px rgba(50, 50, 50, 0.65);
+  display: none;
+}
+@media only screen and (min-width: 64.063em) {
+  .dsm5-container {
+    position: fixed;
+    top: 50px;
+    width: 235px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .dsm5-container {
+    position: fixed;
+    top: 50px;
+    width: 235px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .dsm5-container {
+    position: absolute;
+    top: 93px;
+    width: 543px;
+  }
+}
+.dsm5-container._is_open {
+  display: block;
+}
+.dsm5-container h2 {
+  color: #333e48;
+  border-bottom: 1px solid #ffffff;
+}
+@media only screen and (min-width: 64.063em) {
+  .dsm5-container h2 {
+    font-size: 21px;
+    line-height: 28px;
+    padding: 10px 0 5px 0;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .dsm5-container h2 {
+    font-size: 21px;
+    line-height: 28px;
+    padding: 10px 0 5px 0;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .dsm5-container h2 {
+    font-size: 58px;
+    line-height: 60px;
+    padding-bottom: 30px;
+    margin-bottom: 25px;
+  }
+}
+.dsm5-container p, .dsm5-container li {
+  color: #333e48;
+}
+@media only screen and (min-width: 64.063em) {
+  .dsm5-container p, .dsm5-container li {
+    font-size: 15px;
+    line-height: 17px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .dsm5-container p, .dsm5-container li {
+    font-size: 15px;
+    line-height: 17px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .dsm5-container p, .dsm5-container li {
+    font-size: 32px;
+  }
+}
+.dsm5-container ul.bullet > li:before {
+  color: #333e48;
+}
+@media only screen and (max-width: 40em) {
+  .dsm5-container a.pdf-link {
+    margin-left: 0;
+  }
 }
 
 .section--home {
@@ -2306,48 +2443,6 @@ html::-webkit-scrollbar {
     margin-top: 30px;
     padding-left: 45px;
   }
-}
-.section--dsm5 .content-wrap a.pdf-link {
-  display: block;
-  background-repeat: no-repeat;
-  color: #333e48;
-  text-decoration: none;
-}
-@media only screen and (min-width: 64.063em) {
-  .section--dsm5 .content-wrap a.pdf-link {
-    background-image: url("../img/pdf.png");
-    height: 45px;
-    margin-top: 15px;
-    padding-left: 40px;
-  }
-}
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .section--dsm5 .content-wrap a.pdf-link {
-    background-image: url("../img/pdf.png");
-    height: 45px;
-    margin-top: 15px;
-    padding-left: 40px;
-  }
-}
-@media only screen and (max-width: 40em) {
-  .section--dsm5 .content-wrap a.pdf-link {
-    background-image: url("../img/pdf-large.png");
-    -webkit-background-size: 70px auto;
-    background-size: 70px auto;
-    font-size: 30px;
-    line-height: 92px;
-    margin-top: 0;
-    padding-left: 75px;
-    margin-left: 45px;
-    height: 92px;
-  }
-}
-.section--dsm5 .content-wrap a.pdf-link span {
-  border-bottom: 1px solid #333e48;
-  line-height: 45px;
-}
-.section--dsm5 .content-wrap a.pdf-link span sup {
-  text-decoration: none;
 }
 .section--dsm5 .content-wrap .tab-container {
   padding-top: 61px;

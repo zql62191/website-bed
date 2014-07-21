@@ -361,6 +361,56 @@ li {
   }
 }
 
+
+/* PDF Download link styles - for DSM5 section of index and DSM5 slideout in menu */
+a.pdf-link {
+  display: block;
+  background-repeat: no-repeat;
+  color: #333e48;
+  text-decoration: none;
+
+  @include mq('large', 'medium') {
+    background-image: url('#{$img-path}/pdf.png');
+    height: 45px;
+    margin-top: 15px;
+    padding-left: 40px;
+  } 
+  @include mq('small') {
+    background-image: url('#{$img-path}/pdf-large.png');
+    background-size: 70px auto;
+    font-size: 30px;
+    line-height: 92px;
+    margin-top: 0;
+    padding-left: 75px;
+    margin-left: 45px;
+    height: 92px;
+  }
+  span {
+    border-bottom: 1px solid #333e48;
+    line-height: 45px;
+
+    sup {
+      text-decoration: none;
+    }
+  }
+}
+
+/* Close button for slideouts */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 17px;
+  height: 28px;
+  width: 28px;
+  background-image: url('#{$img-path}/close.png');
+  cursor: pointer;
+
+  @include mq('small') {
+    display: none;
+  }
+}
+
+
 // DEV
 html::-webkit-scrollbar {
   width: 0 !important;
