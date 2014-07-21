@@ -6,10 +6,7 @@ extends /layouts/base
 
 block content
   script(
-    src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.min.js')
-
-  script(
-  src='js/unsubscribe.js')
+  src='js/form-angular.js')
 
   .unsubscribe(
     ng-app='BED',
@@ -112,7 +109,7 @@ block content
             name='suiteOffice',
             placeholder='Suite/Office',
             ng-model="form.suite",
-            required="false",
+            ng-required="false",
             class='suite-office')
 
           input(
@@ -136,7 +133,7 @@ block content
             name='zip',
             placeholder='*Zip',
             ng-model="form.zip",
-            ng-pattern="/^\d{5}$/",
+            ng-pattern="/^[0-9]{5}$/",
             required=true,
             class='zip')
 

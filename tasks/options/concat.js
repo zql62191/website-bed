@@ -11,7 +11,8 @@ module.exports = {
         'src/scripts/libs/velocity.ui.js',
         'src/scripts/libs/jquery.hammer.js',
         'src/scripts/libs/jquery.exists.js',
-        'src/scripts/libs/jquery.highlight.js'
+        'src/scripts/libs/jquery.highlight.js',
+        'src/scripts/libs/angular.min.js'
       ],
       'dist/js/ie.js': [
         'src/scripts/libs/html5shiv.js',

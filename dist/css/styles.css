@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "IBM437";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -776,6 +776,9 @@ html::-webkit-scrollbar {
   -webkit-box-shadow: inset 3px 0 5px 0px rgba(50, 50, 50, 0.65);
   box-shadow: inset 3px 0 5px 0px rgba(50, 50, 50, 0.65);
   display: none;
+}
+.signup-container .ng-invalid.ng-dirty {
+  border-color: #FF0000;
 }
 @media only screen and (min-width: 64.063em) {
   .signup-container {
@@ -3151,6 +3154,9 @@ html::-webkit-scrollbar {
 }
 .unsubscribe .content-wrap .required-fields {
   clear: both;
+}
+.unsubscribe .content-wrap .required-fields .ng-invalid.ng-dirty {
+  border-color: #FF0000;
 }
 .unsubscribe .content-wrap .required-fields p {
   margin-top: 32px;
