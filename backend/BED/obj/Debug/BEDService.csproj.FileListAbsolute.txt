@@ -1,0 +1,10 @@
+C:\Workspace\Shire\BED\trunk\BED\bin\HCSService.dll
+C:\Workspace\Shire\BED\trunk\BED\bin\HCSService.pdb
+C:\Workspace\Shire\BED\trunk\BED\obj\Debug\ResolveAssemblyReference.cache
+C:\Workspace\Shire\BED\trunk\BED\obj\Debug\HCSService.dll
+C:\Workspace\Shire\BED\trunk\BED\obj\Debug\HCSService.pdb
+C:\Workspace\Shire\BED\trunk\BED\BED\bin\HCSService.pdb
+C:\Workspace\Shire\BED\trunk\BED\BED\obj\Debug\ResolveAssemblyReference.cache
+C:\Workspace\Shire\BED\trunk\BED\BED\obj\Debug\HCSService.dll
+C:\Workspace\Shire\BED\trunk\BED\BED\obj\Debug\HCSService.pdb
+C:\Workspace\Shire\BED\trunk\BED\BED\bin\HCSService.dll
