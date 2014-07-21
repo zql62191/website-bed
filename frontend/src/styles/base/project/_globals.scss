@@ -234,6 +234,7 @@ ol.number {
 
 .scroll-point {
   display: block;
+  margin-top: 5px;
   margin-bottom: 50px;
 
   @include mq('mobile') {

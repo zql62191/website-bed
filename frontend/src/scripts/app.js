@@ -50,8 +50,6 @@ var BED = {
 
     .on(BED.gestures.click, 'a[href^="/#"]', function(e) {
 
-      e.preventDefault();
-
       var jqAnchor = $($(this).prop('href').match(/\/(\#.*)$/i)[1]);
 
       jqAnchor.velocity('scroll', {

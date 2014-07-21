@@ -296,6 +296,7 @@ ol.number > li:before {
 
 .scroll-point {
   display: block;
+  margin-top: 5px;
   margin-bottom: 50px;
 }
 @media only screen and (max-width: 40em) {
@@ -703,6 +704,11 @@ html::-webkit-scrollbar {
     font-size: 30px;
   }
 }
+@media only screen and (min-width: 40.063em) {
+  .bar.bar--title {
+    padding-top: 5px;
+  }
+}
 .bar.bar--title:before {
   content: '';
   width: 0;
@@ -995,6 +1001,7 @@ html::-webkit-scrollbar {
 }
 .section--home .scroll-point {
   margin-bottom: 0;
+  margin-top: 0;
 }
 .section--home .bar--title {
   letter-spacing: 0.02em;
