@@ -1,20 +1,19 @@
 .section--diagnosis {
-  background: #51748b; /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: #51748b;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMjElIiBzdG9wLWNvbG9yPSIjNTE3NDhiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzI5NDA0ZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9yYWRpYWxHcmFkaWVudD4KICA8cmVjdCB4PSItNTAiIHk9Ii01MCIgd2lkdGg9IjEwMSIgaGVpZ2h0PSIxMDEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
-  background: -moz-radial-gradient(center, ellipse cover,  #51748b 21%, #29404f 100%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(21%,#51748b), color-stop(100%,#29404f)); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover,  #51748b 21%,#29404f 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover,  #51748b 21%,#29404f 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover,  #51748b 21%,#29404f 100%); /* IE10+ */
-  background: radial-gradient(ellipse at center,  #51748b 21%,#29404f 100%); /* W3C */
+  background: -moz-radial-gradient(center, ellipse cover,  #51748b 21%, #29404f 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(21%,#51748b), color-stop(100%,#29404f));
+  background: -webkit-radial-gradient(center, ellipse cover,  #51748b 21%,#29404f 100%);
+  background: -o-radial-gradient(center, ellipse cover,  #51748b 21%,#29404f 100%);
+  background: -ms-radial-gradient(center, ellipse cover,  #51748b 21%,#29404f 100%);
+  background: radial-gradient(ellipse at center,  #51748b 21%,#29404f 100%);
   // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51748b', endColorstr='#29404f',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 
   .lt-ie9 & {
-    background: #51748b; /* Old browsers */
+    background: #51748b;
   }
 
-  @include mq('small') {
+  @include mq('mobile') {
     // TODO: change to linear gradient for mobile
   }
 
@@ -23,32 +22,32 @@
   }
 
   h1 {
-    @include mq('large', 'medium') {
+    @include mq('desktop') {
       font-size: 36px;
       padding-bottom: 10px;
     }
-    @include mq('small') {
+    @include mq('mobile') {
       padding-bottom: 50px;
     }
   }
   h3 {
-    @include mq('large', 'medium') {
+    @include mq('desktop') {
       font-size: 24px;
     }
   }
 
 	.sub-head {
-		@include mq('small') {
+		@include mq('mobile') {
 			width: auto;
 		}
-    @include mq('large', 'medium') {
+    @include mq('desktop') {
       width: 897px;
       font-size: 22px;
     }
 	}
 
 	p {
-    @include mq('large', 'medium') {
+    @include mq('desktop') {
       font-size: 20px;
     
       // Widths set to force text wrapping.
@@ -59,7 +58,7 @@
         width: 690px;
       }
     }
-    @include mq('small') {
+    @include mq('mobile') {
 
       &:nth-of-type(2), &:nth-of-type(3) {
         width: auto;
@@ -72,7 +71,7 @@
   }
 
   li {
-    @include mq('large', 'medium') {
+    @include mq('desktop') {
       font-size: 20px;
       line-height: 20px;
     }
@@ -81,11 +80,11 @@
 	.graphic-wrap {
 		margin: 20px 0;
 
-		@include mq('medium', 'large') {
+		@include mq('desktop') {
 			min-height: 270px;
 			background: url('#{$img-path}/diagnosis-graphic.png') center center no-repeat;
 		}
-		@include mq('small') {
+		@include mq('mobile') {
 			min-height: 920px;
 			background: url('#{$img-path}/diagnosis-graphic-mobile.png') center center no-repeat;
 		}

@@ -12,12 +12,12 @@
 
   display: none;
 
-  @include mq('large', 'medium') {
+  @include mq('desktop') {
     position: fixed;
     top: 50px;
     width: 235px;
   }
-  @include mq('small') {
+  @include mq('mobile') {
     position: absolute;
     top: 93px;
     width: 543px;
@@ -31,13 +31,13 @@
     color: #333e48;
     border-bottom: 1px solid #ffffff;
 
-    @include mq('large', 'medium') {
+    @include mq('desktop') {
       font-size: 21px;
       line-height: 28px;
       padding: 10px 0 5px 0;
       margin-bottom: 10px;
     }
-    @include mq('small') {
+    @include mq('mobile') {
       font-size: 58px;
       line-height: 60px;
       padding-bottom: 30px;
@@ -47,11 +47,11 @@
   p, li {
     color: #333e48;
 
-    @include mq('large', 'medium') {
+    @include mq('desktop') {
       font-size: 15px;
       line-height: 17px;
     }
-    @include mq('small') {
+    @include mq('mobile') {
       font-size: 32px;
     }
   }
@@ -61,7 +61,7 @@
   }
 
   a.pdf-link {
-    @include mq('small') {
+    @include mq('mobile') {
       margin-left: 0;
     }
   }

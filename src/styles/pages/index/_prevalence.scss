@@ -1,20 +1,19 @@
 .section--prevalence {
-  background: #51748b; /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: #51748b;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMjAlIiBzdG9wLWNvbG9yPSIjNTE3NDhiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzI5NDA0ZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9yYWRpYWxHcmFkaWVudD4KICA8cmVjdCB4PSItNTAiIHk9Ii01MCIgd2lkdGg9IjEwMSIgaGVpZ2h0PSIxMDEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
-  background: -moz-radial-gradient(center, ellipse cover,  #51748b 20%, #29404f 100%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(20%,#51748b), color-stop(100%,#29404f)); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover,  #51748b 20%,#29404f 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover,  #51748b 20%,#29404f 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover,  #51748b 20%,#29404f 100%); /* IE10+ */
-  background: radial-gradient(ellipse at center,  #51748b 20%,#29404f 100%); /* W3C */
+  background: -moz-radial-gradient(center, ellipse cover,  #51748b 20%, #29404f 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(20%,#51748b), color-stop(100%,#29404f));
+  background: -webkit-radial-gradient(center, ellipse cover,  #51748b 20%,#29404f 100%);
+  background: -o-radial-gradient(center, ellipse cover,  #51748b 20%,#29404f 100%);
+  background: -ms-radial-gradient(center, ellipse cover,  #51748b 20%,#29404f 100%);
+  background: radial-gradient(ellipse at center,  #51748b 20%,#29404f 100%);
   // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51748b', endColorstr='#29404f',GradientType=0 ); /* IE6-8 fallback on horizontal gradient */
 
   .lt-ie9 & {
-    background: #51748b; /* Old browsers */
+    background: #51748b;
   }
 
-  @include mq('small') {
+  @include mq('mobile') {
     // TODO: change to linear gradient for mobile
   }
 
@@ -28,7 +27,7 @@
   h1 {
     padding-bottom: 25px;
 
-    @include mq('large', 'medium') {
+    @include mq('desktop') {
       font-size: 32px;
       font-family: font('gill sans', 'regular');
     }    
@@ -41,11 +40,11 @@
   }
 
   .us-graphic {
-    @include mq('small') {
+    @include mq('mobile') {
       background-image: url('#{$img-path}/prevalence-us-mobile.png');
       height: 420px;
     }
-    @include mq('large', 'medium') {
+    @include mq('desktop') {
       background-image: url('#{$img-path}/prevalence-us.png');
       height: 420px;
       width: 496px;
@@ -66,7 +65,7 @@
       margin-left: -5px;
     }
 
-    @include mq('large', 'medium') {
+    @include mq('desktop') {
       float: left;
       width: 260px;
       padding-top: 150px;
@@ -83,12 +82,12 @@
     font-size: 27px;
     line-height: 31px;
 
-    @include mq('small') {
+    @include mq('mobile') {
       background-image: url('#{$img-path}/prevalence-text-bg-mobile.png');
       width: 571px;
       height: 167px;
     }
-    @include mq('large', 'medium') {
+    @include mq('desktop') {
       background-image: url('#{$img-path}/prevalence-text-bg.png');
       width: 740px;
       height: 73px;
@@ -100,13 +99,13 @@
 
   }
   .male-female-graphic {
-    @include mq('small') {
+    @include mq('mobile') {
       background-image: url('#{$img-path}/prevalence-male-female-mobile.png');
       width: 500px;
       height: 348px;
       margin: 0 auto 45px auto;
     }
-    @include mq('large', 'medium') {
+    @include mq('desktop') {
       display: none;
     }
   }
@@ -114,11 +113,11 @@
   // Graphic (and cooresponding text) only visible on desktop
   .desktop-graphic {
 
-    @include mq('small') {
+    @include mq('mobile') {
       display: none;
     }
 
-    @include mq('large', 'medium') {
+    @include mq('desktop') {
       background-repeat: no-repeat;
       background-position: top center;
       text-align: center;
@@ -154,10 +153,10 @@
 
   // Mobile graphic
   .male-female-text {
-    @include mq('small') {
+    @include mq('mobile') {
       display: none;
     }
-    @include mq('large', 'medium') {
+    @include mq('desktop') {
       float: left;
       width: 310px;
       height: 115px;
@@ -169,11 +168,11 @@
 
   // Mobile text 
   .gender-ratio {
-    @include mq('small') {
+    @include mq('mobile') {
       padding: 30px 20px 10px 0;
     }
 
-    @include mq('large', 'medium') {
+    @include mq('desktop') {
       display: none;
     }
   }
@@ -184,7 +183,7 @@
     border-top: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
 
-    @include mq('large', 'medium') {
+    @include mq('desktop') {
       margin-top: 350px;
       padding-top: 25px;
     }
@@ -192,12 +191,12 @@
     .patients-graphic {
       margin: 0 auto;
 
-      @include mq('small') {
+      @include mq('mobile') {
         width: 580px;
         height: 545px;
         background-image: url('#{$img-path}/prevalence-patients-mobile.png');
       }
-      @include mq('large', 'medium') {
+      @include mq('desktop') {
         width: 897px;
         height: 186px;
         background-image: url('#{$img-path}/prevalence-patients.png');
@@ -205,14 +204,14 @@
     }
 
     h2 {
-      @include mq('small') {
+      @include mq('mobile') {
         font-size: 42px;
         line-height: 46px;
         width: 90%;
         padding-bottom: 50px;
       }
 
-      @include mq('large', 'medium') {
+      @include mq('desktop') {
         font-size: 23px;
         line-height: 26px;
         font-family: font('gill sans', 'regular');
@@ -224,11 +223,11 @@
     p {
       padding: 25px 0 0 0;
 
-      @include mq('small') {
+      @include mq('mobile') {
         font-size: 25px;
         line-height: 28px;
       }
-      @include mq('large', 'medium') {
+      @include mq('desktop') {
         font-size: 18px;
         line-height: 21px;
       }
@@ -236,12 +235,12 @@
   }
 
   ul {
-    @include mq('large', 'medium') {
+    @include mq('desktop') {
       font-size: 22px;
     }
   }
   .frequencies {
-    @include mq('large', 'medium') {
+    @include mq('desktop') {
       font-size: 22px;
       line-height: 25px;
     }

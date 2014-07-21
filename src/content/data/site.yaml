@@ -4,35 +4,35 @@ prc: "S02592 07/14"
 nav:
   primary:
     -
-      url: "#home"
+      url: "/#home"
       text: "Home"
       file: "home"
     -
-      url: "#dsm5"
-      text: "DSM-5<sup>&reg;</sup> Criteria"
-      file: "dsm5"
-    -
-      url: "#prevalence"
+      url: "/#prevalence"
       text: "Prevalence"
       file: "prevalence"
     -
-      url: "#course"
+      url: "/#dsm5"
+      text: "DSM-5<sup>&reg;</sup> Criteria"
+      file: "dsm5"
+    -
+      url: "/#course"
       text: "Clinical Course"
       file: "course"
     -
-      url: "#effects"
+      url: "/#effects"
       text: "Effects on Well-being"
       file: "effects"
     -
-      url: "#neurobiology"
+      url: "/#neurobiology"
       text: "Neurobiology"
       file: "neurobiology"
     -
-      url: "#diagnosis"
+      url: "/#diagnosis"
       text: "Diagnosis"
       file: "diagnosis"
     -
-      url: "#resources"
+      url: "/#resources"
       text: "Resources"
       file: "resources"
   secondary:

@@ -32,19 +32,83 @@
         </div>
       </div>
       <div class="mask mask--nav"></div>
-      <div class="page-nav">
+      <div class="page-nav _is_fixed_left">
         <nav>
                 <ul class="primary-nav">
-                  <li class="primary-nav__item"><a href="#home">Home</a></li>
-                  <li class="primary-nav__item"><a href="#dsm5">DSM-5<sup>&reg;</sup> Criteria</a></li>
-                  <li class="primary-nav__item"><a href="#prevalence">Prevalence</a></li>
-                  <li class="primary-nav__item"><a href="#course">Clinical Course</a></li>
-                  <li class="primary-nav__item"><a href="#effects">Effects on Well-being</a></li>
-                  <li class="primary-nav__item"><a href="#neurobiology">Neurobiology</a></li>
-                  <li class="primary-nav__item"><a href="#diagnosis">Diagnosis</a></li>
-                  <li class="primary-nav__item"><a href="#resources">Resources</a></li>
+                  <li class="primary-nav__item"><a href="/#home">Home</a></li>
+                  <li class="primary-nav__item"><a href="/#prevalence">Prevalence</a></li>
+                  <li class="primary-nav__item"><a href="/#dsm5">DSM-5<sup>&reg;</sup> Criteria</a></li>
+                  <li class="primary-nav__item"><a href="/#course">Clinical Course</a></li>
+                  <li class="primary-nav__item"><a href="/#effects">Effects on Well-being</a></li>
+                  <li class="primary-nav__item"><a href="/#neurobiology">Neurobiology</a></li>
+                  <li class="primary-nav__item"><a href="/#diagnosis">Diagnosis</a></li>
+                  <li class="primary-nav__item"><a href="/#resources">Resources</a></li>
                 </ul>
         </nav>
+      </div>
+      <div ng-app="BED" ng-controller="UnsubscribeController" class="signup-container _is_fixed_right">
+        <div class="close"></div>
+        <h2>
+          Sign up to receive informative BED content and updates from Shire.
+          
+        </h2>
+        <p class="required-fields"><span class="red">*</span>Required Fields
+          
+        </p>
+        <form novalidate>
+          <input type="text" name="firstName" placeholder="*First Name" ng-model="form.fname" ng-required="true" class="first-name">
+          <input type="text" name="middleInitial" placeholder="MI" ng-model="form.MI" ng-required="false" class="middle-initial">
+          <input type="text" name="lastName" placeholder="*Last Name" ng-model="form.lname" ng-required="true" class="last-name">
+          <input type="text" name="email" placeholder="*Email" ng-model="form.email" ng-required="true" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/" class="email">
+          <input type="text" name="email2" ng-model="form.confirmemail" ng-required="true" confirmemail placeholder="*Re-enter Email" class="email2">
+          <input type="text" name="streetAddress" placeholder="*Street Address" ng-model="form.street" ng-required="true" class="street-address">
+          <input type="text" name="suiteOffice" placeholder="Suite/Office" ng-model="form.suite" ng-required="false" class="suite-office">
+          <input type="text" name="city" placeholder="*City" ng-model="form.city" ng-required="true" class="city">
+          <select name="state" ng-model="form.state" ng-options="state for state in states" stateselect class="state"></select>
+          <input type="text" name="zip" placeholder="*Zip" ng-model="form.zip" ng-pattern="/^[0-9]{5}$/" required class="zip">
+          <select name="profession" ng-model="form.profession" ng-options="prof for prof in professions" profselect class="profession"></select>
+          <h3>
+            Opt In for Communications
+            
+            
+          </h3>
+          <input type="checkbox" name="optin" ng-model="form.checkbox" ng-required="true" id="optin" class="optin">
+          <label for="optin" class="optin-label">
+            <p>By checking this box and clicking submit, you certify that you are a US health care professional and you are opting to receive information about binge eating disorder plus product information, site updates, educational information, patient support resources, and other information from Shire. You will be able to opt out of these communications at any time.</p>
+            <p>
+              Shire respects your personal information. All information you have provided will be kept confidential and will not be used or distributed to anyone for any purpose other than what is explained in our Privacy Policy Statement. We encourage you to read our Privacy Policy Statement by clicking on this link: Review Shire Privacy Policy Statement. This consent will be in effect until such time as you opt out of the program.
+              
+              
+              
+            </p>
+          </label>
+          <input type="submit" name="submit" value="SUBMIT" class="submit">
+        </form>
+      </div>
+      <div class="dsm5-container _is_fixed_right">
+        <div class="close"></div>
+        <h2>
+          What is binge eating disorder (BED)?
+          
+        </h2>
+        <p>Binge eating disorder, now a distinct diagnosis in DSM-5<sup>®</sup>, is characterized by<sup>1</sup>:
+          
+        </p>
+        <ul class="bullet">
+          <li>Recurring episodes (at least once weekly for 3 months) of consuming a large amount of food in a short period of time, compared with others</li>
+          <li>A feeling of a lack of control during an episode</li>
+          <li>
+            Marked distress regarding binge eating
+            
+          </li>
+        </ul>
+        <p>
+          During a binge, adults with BED may eat much more rapidly than normal, eat until they are uncomfortably full, and/or eat alone out of embarrassment. They may feel disgusted with themselves, depressed, or very guilty afterward.
+          
+        </p>
+        <p><em>These are not the complete diagnostic criteria, but instead a brief summary. Please view the full diagnostic criteria by selecting the link below. Diagnosis should be based on a complete evaluation of the patient.</em> 
+          
+        </p><a target="_blank" href="#" class="pdf-link"><span><em>DSM-5<sup>&reg;</sup></em> Criteria</span></a>
       </div>
       <div class="page-content">
         <script src="js/form-angular.js"></script>

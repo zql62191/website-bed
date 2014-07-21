@@ -10,23 +10,18 @@ var BED = {
     click: 'tap'
   },
 
-  // gestures: {
-  //   down: 'touchstart mousedown',
-  //   up: 'touchend mouseup',
-  //   click: 'click'
-  // },
-
   init: function() {
 
-    // DEV
-    // $('.section').css({
-    //   'height': $(window).height()
-    // });
-
     $(window).on('resize', function(e) {
-      $('.page-nav').css({
+
+      $('._is_fixed_left').css({
         left: $('.page-wrapper').offset().left
       });
+
+      $('._is_fixed_right').css({
+        right: $('.page-wrapper').offset().left
+      });
+
     }).trigger('resize');
 
     $(document.body).hammer({
@@ -35,7 +30,7 @@ var BED = {
 
     })
 
-    .on('click', 'a[href^="#"]', function(e) {
+    .on('click', 'a[href^="/#"]', function(e) {
 
       e.preventDefault();
 
@@ -53,15 +48,14 @@ var BED = {
 
     })
 
-    .on(BED.gestures.click, 'a[href^="#"]', function(e) {
+    .on(BED.gestures.click, 'a[href^="/#"]', function(e) {
 
       e.preventDefault();
 
-      var jqAnchor = $($(this).attr('href').match(/\#.*$/ig)[0]);
+      var jqAnchor = $($(this).prop('href').match(/\/(\#.*)$/i)[1]);
 
       jqAnchor.velocity('scroll', {
-        duration: 250,
-        offset: jqAnchor.height()
+        duration: 250
       });
 
     })
@@ -113,6 +107,9 @@ var BED = {
         }
       });
 
+      // $('.mask--nav').show();
+      // $('.page-nav').show().addClass('_is_open');
+
     },
     close: function() {
 
@@ -133,6 +130,9 @@ var BED = {
           $('.btn--menu, .mask--nav').prop('disabled', false);
         }
       });
+
+      // $('.mask--nav').hide();
+      // $('.page-nav').hide().removeClass('_is_open');
 
     },
     toggle: function() {

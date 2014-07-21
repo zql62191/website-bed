@@ -1,20 +1,18 @@
 .section--course {
-  background: #333e48; /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: #333e48;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iNDUlIiBzdG9wLWNvbG9yPSIjMzMzZTQ4IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzIxMjgyZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9yYWRpYWxHcmFkaWVudD4KICA8cmVjdCB4PSItNTAiIHk9Ii01MCIgd2lkdGg9IjEwMSIgaGVpZ2h0PSIxMDEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
-  background: -moz-radial-gradient(center, ellipse cover,  #333e48 45%, #21282f 100%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(45%,#333e48), color-stop(100%,#21282f)); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover,  #333e48 45%,#21282f 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover,  #333e48 45%,#21282f 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover,  #333e48 45%,#21282f 100%); /* IE10+ */
-  background: radial-gradient(ellipse at center,  #333e48 45%,#21282f 100%); /* W3C */
-  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333e48', endColorstr='#21282f',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+  background: -moz-radial-gradient(center, ellipse cover,  #333e48 45%, #21282f 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(45%,#333e48), color-stop(100%,#21282f));
+  background: -webkit-radial-gradient(center, ellipse cover,  #333e48 45%,#21282f 100%);
+  background: -o-radial-gradient(center, ellipse cover,  #333e48 45%,#21282f 100%);
+  background: -ms-radial-gradient(center, ellipse cover,  #333e48 45%,#21282f 100%);
+  background: radial-gradient(ellipse at center,  #333e48 45%,#21282f 100%);
 
   .lt-ie9 & {
-    background: #333e48; /* Old browsers */
+    background: #333e48;
   }
 
-  @include mq('small') {
+  @include mq('mobile') {
     // TODO: change to linear gradient for mobile
   }
 
@@ -23,16 +21,16 @@
   }
 
   br.mobile {
-    @include mq('large', 'medium') {
+    @include mq('desktop') {
       display: none;
     }
   }
 
   h2 {
-    @include mq('small') {
+    @include mq('mobile') {
       font-size: 54px;
     }
-    @include mq('large', 'medium') {
+    @include mq('desktop') {
       font-size: 38px;
       padding-bottom: 25px;
     }
@@ -40,7 +38,7 @@
 
   .sub-head {
 
-    @include mq('large', 'medium') {
+    @include mq('desktop') {
       font-size: 25px;
     }
   }
@@ -58,7 +56,7 @@
 
   .twenty-one, .chart {
 
-    @include mq('small') {
+    @include mq('mobile') {
       text-align: center;
       height: auto;
       margin-bottom: 30px;
@@ -67,26 +65,26 @@
 
   .twenty-one img{
 
-    @include mq('large', 'medium') {
+    @include mq('desktop') {
       float: right;
       width: 375px;
       margin: 30px 310px 140px 0;
     }
   }
   .chart img {
-    @include mq('large', 'medium') {
+    @include mq('desktop') {
       width: 175px;
       float: left;
     }
   }
 
   .mean-duration {
-    @include mq('small') {
+    @include mq('mobile') {
       font-size: 41px;
       line-height: 45px;
     }
     
-    @include mq('large', 'medium') {
+    @include mq('desktop') {
       font-size: 23px;
       line-height: 26px;
       position: absolute;
@@ -98,11 +96,11 @@
 
   // add to global styles
   .disclaimer {
-    @include mq('small') {
+    @include mq('mobile') {
       font-size: 25px;
       line-height: 34px;
     }
-    @include mq('large', 'medium') {
+    @include mq('desktop') {
       font-size: 18px;
       line-height: 22px;
       padding-left: 20px;

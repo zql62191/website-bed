@@ -17,7 +17,7 @@
     }
   }
 
-  @include mq('small') {
+  @include mq('mobile') {
     top: 93px;
     // width: 640px;
   }
@@ -39,7 +39,7 @@
         letter-spacing: 0.02em;
         padding-bottom: 0;
 
-        @include mq('small') {
+        @include mq('mobile') {
           height: 90px;
           font-size: 37px;
           line-height: 90px;
@@ -53,7 +53,7 @@
           padding: 0 60px 0 20px;
           white-space: nowrap;
 
-          @include mq('small') {
+          @include mq('mobile') {
             padding: 0 120px 0 40px;
           }
 

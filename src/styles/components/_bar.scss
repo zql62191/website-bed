@@ -6,9 +6,9 @@
   line-height: 50px;
   font-family: font('gill sans', 'roman');
   // padding: 10px 0;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
 
-  @include mq('small') {
+  @include mq('mobile') {
     height: 93px;
     line-height: 93px;
     margin-bottom: 93px;
@@ -18,7 +18,7 @@
     color: #ffffff;
     font-size: 19px;
 
-    @include mq('small') {
+    @include mq('mobile') {
       font-size: 30px;
     }
 
@@ -35,7 +35,7 @@
       left: 50%;
       margin-left: -20px;
 
-      @include mq('small') {
+      @include mq('mobile') {
         border-left: 20px solid transparent;
         border-right: 20px solid transparent;
         border-top: 20px solid transparent;

@@ -52,10 +52,17 @@ $z-layers: (
 
 // ---------- Media Queries ----------
 
+// $media-queries: (
+//   'mobile'     : 'only screen and (max-width: 40em)',
+//   'tablet'    : 'only screen and (min-width: 40.063em) and (max-width: 64em)',
+//   'desktop'     : 'only screen and (min-width: 64.063em)'
+// );
+
+// Reducing media queries since its just mobile/desktop
+
 $media-queries: (
-  'small'  : 'only screen and (max-width: 40em)',
-  'medium' : 'only screen and (min-width: 40.063em) and (max-width: 64em)',
-  'large'  : 'only screen and (min-width: 64.063em)'
+  'mobile'    : 'only screen and (max-width: 40em)',
+  'desktop'   : 'only screen and (min-width: 40.063em)'
 );
 
 // ---------- Font Names ----------

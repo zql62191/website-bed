@@ -1,13 +1,12 @@
 .section--dsm5 {
-  background: #ededed; /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: #ededed;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iNDQlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzYxNjc2YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9yYWRpYWxHcmFkaWVudD4KICA8cmVjdCB4PSItNTAiIHk9Ii01MCIgd2lkdGg9IjEwMSIgaGVpZ2h0PSIxMDEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
-  background: -moz-radial-gradient(center, ellipse cover,  #ffffff 44%, #61676b 100%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(44%,#ffffff), color-stop(100%,#61676b)); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 44%,#61676b 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover,  #ffffff 44%,#61676b 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover,  #ffffff 44%,#61676b 100%); /* IE10+ */
-  background: radial-gradient(ellipse at center,  #ffffff 44%,#61676b 100%); /* W3C */
+  background: -moz-radial-gradient(center, ellipse cover,  #ffffff 44%, #61676b 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(44%,#ffffff), color-stop(100%,#61676b));
+  background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 44%,#61676b 100%);
+  background: -o-radial-gradient(center, ellipse cover,  #ffffff 44%,#61676b 100%);
+  background: -ms-radial-gradient(center, ellipse cover,  #ffffff 44%,#61676b 100%);
+  background: radial-gradient(ellipse at center,  #ffffff 44%,#61676b 100%);
   // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#61676b',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 
 
@@ -15,285 +14,283 @@
   overflow: hidden;
 
   .lt-ie9 & {
-    background: #ededed; /* Old browsers */
+    background: #ededed;
   }
 
-  .content-wrap {
-    @include mq('small') {
-      // TODO: change to linear gradient for mobile    
+  @include mq('mobile') {
+    // TODO: change to linear gradient for mobile    
+  }
+
+
+  .bar--title:before {
+    border-top-color: rgb(56,83,101);
+  }
+
+  h1 {
+    color: #51748b;
+
+    @include mq('desktop') {
+      font-size: 38px;
+    }
+  }
+  h2 {
+    color: #51748b;
+
+    @include mq('desktop') {
+      font-size: 38px;
+      padding-bottom: 15px;
+    }
+  }
+  h3 {
+    color: #333e48;
+
+    @include mq('desktop') {
+      font-size: 24px;
+    }
+    @include mq('mobile') {
+      font-size: 42px;
+      line-height: 44px;
+      padding-bottom: 25px;
+    }
+
+  }
+
+  // Main List 
+  ol.letter {
+
+    @include mq('desktop') {
+      padding-left: 25px;
+    }
+    @include mq('mobile') {
+      padding-left: 50px;
     }
 
 
-    .bar--title:before {
-      border-top-color: rgb(56,83,101);
-    }
 
-    h1 {
+    > li:before {
+      text-transform: uppercase;
       color: #51748b;
-
-      @include mq('large', 'medium') {
-        font-size: 38px;
+      font-family: font('helvetica neue','bold');
+             
+      @include mq('desktop') {
+        font-size:  26px;
+        margin-left: -25px;
+        margin-top: -5px;
+      }
+      @include mq('mobile') {
+        font-size: 60px;
+        line-height: 60px;
+        margin-left: -55px;
+        padding-right: 10px;
       }
     }
-    h2 {
-      color: #51748b;
 
-      @include mq('large', 'medium') {
-        font-size: 38px;
-        padding-bottom: 15px;
+    > li {
+      @include mq('desktop') {
+        padding-top: 5px;
+        font-size: 20px;
+      }
+      @include mq('mobile') {
+        padding-top: 20px;
       }
     }
-    h3 {
-      color: #333e48;
+  }
 
-      @include mq('large', 'medium') {
+  // Sub lists
+  ol.number {
+    > li:before {
+      font-family: font('helvetica neue','bold');
+
+      @include mq('desktop') {
+        margin-left: -30px;
+      }
+    } 
+
+    @include mq('mobile') {
+      padding-left: 0;
+    }
+    @include mq('desktop') {
+      font-size: 21px;
+      line-height: 23px;
+      padding-bottom: 10px;
+      padding-left: 30px;
+    }
+  }
+
+  p {
+
+    &.sub-head {
+      width: 570px;
+
+      @include mq('desktop') {
         font-size: 24px;
-      }
-      @include mq('small') {
-        font-size: 42px;
-        line-height: 44px;
-        padding-bottom: 25px;
-      }
-
-    }
-
-    // Main List 
-    ol.letter {
-
-      @include mq('large', 'medium') {
-        padding-left: 25px;
-      }
-      @include mq('small') {
-        padding-left: 50px;
-      }
-
-
-
-      > li:before {
-        text-transform: uppercase;
-        color: #51748b;
-        font-family: font('helvetica neue','bold');
-               
-        @include mq('large', 'medium') {
-          font-size:  26px;
-          margin-left: -25px;
-          margin-top: -5px;
-        }
-        @include mq('small') {
-          font-size: 60px;
-          line-height: 60px;
-          margin-left: -55px;
-          padding-right: 10px;
-        }
-      }
-
-      > li {
-        @include mq('large', 'medium') {
-          padding-top: 5px;
-          font-size: 20px;
-        }
-        @include mq('small') {
-          padding-top: 20px;
-        }
+        width: auto;
       }
     }
+    &.disclaimer {
+      margin-top: 15px;
+      width: 570px;
 
-    // Sub lists
-    ol.number {
-      > li:before {
-        font-family: font('helvetica neue','bold');
-
-        @include mq('large', 'medium') {
-          margin-left: -30px;
-        }
-      } 
-
-      @include mq('small') {
-        padding-left: 0;
-      }
-      @include mq('large', 'medium') {
-        font-size: 21px;
-        line-height: 23px;
-        padding-bottom: 10px;
-        padding-left: 30px;
+      @include mq('mobile') {
+        font-size: 30px;
+        line-height: 42px;
+        margin-top: 30px;
+        padding-left: 45px;
       }
     }
+  }
 
-    p {
+  // Tab styles
+  .tab-container {
+    padding-top: 61px;
+    z-index: 10;
+    height: 410px;
+    cursor: pointer;
+    margin: 0 0 0 auto;
 
-      &.sub-head {
-        width: 570px;
-
-        @include mq('large', 'medium') {
-          font-size: 24px;
-          width: auto;
-        }
-      }
-      &.disclaimer {
-        margin-top: 15px;
-        width: 570px;
-
-        @include mq('small') {
-          font-size: 30px;
-          line-height: 42px;
-          margin-top: 30px;
-          padding-left: 45px;
-        }
-      }
-    }
-
-    // Tab styles
-    .tab-container {
-      padding-top: 61px;
-      z-index: 10;
-      height: 410px;
-      cursor: pointer;
-      margin: 0 0 0 auto;
-
-      @include mq('large', 'medium') {
-        position: absolute;
-        width: 40px;
-        top: 107px;
-        right: 0px;
-        background-image: url('#{$img-path}/dsm5-tab-border.png');
-        background-repeat: no-repeat;
-        background-position: center right;
-
-        &.open {
-          width: 400px;
-
-          .tab-inner {
-            background-image: url('#{$img-path}/dsm5-tab-bg.png');
-            padding-left: 60px;
-            background-position: top right;
-
-            p {
-              padding-left: 25px;
-              font-size: 19px;
-              line-height: 22px;
-            }
-          }
-        }
-      }
-
-      @include mq('small') {
-        position: relative;
-        width: 88px;
-        bottom: auto;
-        top: auto;
-        padding-bottom: 90px;
-        right: -20px;
-
-        &.open {
-          width: auto;
-          right: -10px;
-          height: 872px;
-
-          .tab-inner {
-            background-image: url('#{$img-path}/dsm5-tab-bg-mobile.png');
-            padding-left: 60px;
-          }
-        }
-      }
-    }
-
-    // Closed Tab Styles
-    .tab-inner {
-      padding: 34px 25px 0 100px;
-      height: 838px;
-      padding-right: 1px;
-      background-repeat: no-repeat;
-
-      @include mq('large', 'medium') {
-        background-image: url('#{$img-path}/dsm5-tab-bg-closed.png');
-        background-position: top left;
-        width: 400px;
-      }
-      @include mq('small') {
-        background-image: url('#{$img-path}/dsm5-tab-bg-mobile-closed.png');
-        background-position: top left;
-        right: 0px;
-        width: 612px;
-        padding-right: 0;
-      }
-
-      h3 {
-        color: #febd3f;
-
-        @include mq('small') {
-          font-size: 36px;
-        }
-      }
-      p {
-        font-style: normal;
-        color: #ffffff;
-        margin-bottom: 10px;
-        width: 290px;
-        line-height: 23px;
-
-        @include mq('small') {
-          font-size: 28px;
-          line-height: 36px;
-          width: 400px;
-          margin-top: 10px;
-          margin-left: 55px;
-          padding-bottom: 0;
-        }
-      }
-      ul {
-        @include mq('small') {
-          margin-left: 35px;
-          margin-top: 22px;
-        }
-      }
-      li {
-        color: #ffffff;
-        margin-left: 12px;
-        width: 265px;
-        
-        &:before {
-          content: '•';
-          color: #febd3f;
-          margin-right: 3px;
-        }
-
-        @include mq('small') {
-          font-size: 23px;
-          line-height: 32px;
-
-          &.first {
-            width: 390px;
-          }
-          &.second {
-            width: 475px;
-          }
-        }
-      }
-    }
-    .closed-text {
+    @include mq('desktop') {
       position: absolute;
-      font-family: font('gill sans', 'bold');
+      width: 40px;
+      top: 107px;
+      right: 0px;
+      background-image: url('#{$img-path}/dsm5-tab-border.png');
+      background-repeat: no-repeat;
+      background-position: center right;
 
-      @include mq('large', 'medium') {
-        font-size: 26px;
-        line-height: 26px;
-        right: 60px;
-        width: 198px;
-        top: 105px;
-      }
-      @include mq('small') {
-        font-size: 54px;
-        line-height: 64px;
-        width: 410px;
-        top: 100px;
-        bottom: 285px;
-        right: auto;
-        left: -495px;
-      }
+      &.open {
+        width: 400px;
 
-      &.hidden {
-        display: none;
-      } 
+        .tab-inner {
+          background-image: url('#{$img-path}/dsm5-tab-bg.png');
+          padding-left: 60px;
+          background-position: top right;
+
+          p {
+            padding-left: 25px;
+            font-size: 19px;
+            line-height: 22px;
+          }
+        }
+      }
     }
+
+    @include mq('mobile') {
+      position: relative;
+      width: 88px;
+      bottom: auto;
+      top: auto;
+      padding-bottom: 90px;
+      right: -20px;
+
+      &.open {
+        width: auto;
+        right: -10px;
+        height: 872px;
+
+        .tab-inner {
+          background-image: url('#{$img-path}/dsm5-tab-bg-mobile.png');
+          padding-left: 60px;
+        }
+      }
+    }
+  }
+
+  // Closed Tab Styles
+  .tab-inner {
+    padding: 34px 25px 0 100px;
+    height: 838px;
+    padding-right: 1px;
+    background-repeat: no-repeat;
+
+    @include mq('desktop') {
+      background-image: url('#{$img-path}/dsm5-tab-bg-closed.png');
+      background-position: top left;
+      width: 400px;
+    }
+    @include mq('mobile') {
+      background-image: url('#{$img-path}/dsm5-tab-bg-mobile-closed.png');
+      background-position: top left;
+      right: 0px;
+      width: 612px;
+      padding-right: 0;
+    }
+
+    h3 {
+      color: #febd3f;
+
+      @include mq('mobile') {
+        font-size: 36px;
+      }
+    }
+    p {
+      font-style: normal;
+      color: #ffffff;
+      margin-bottom: 10px;
+      width: 290px;
+      line-height: 23px;
+
+      @include mq('mobile') {
+        font-size: 28px;
+        line-height: 36px;
+        width: 400px;
+        margin-top: 10px;
+        margin-left: 55px;
+        padding-bottom: 0;
+      }
+    }
+    ul {
+      @include mq('mobile') {
+        margin-left: 35px;
+        margin-top: 22px;
+      }
+    }
+    li {
+      color: #ffffff;
+      margin-left: 12px;
+      width: 265px;
+      
+      &:before {
+        content: '•';
+        color: #febd3f;
+        margin-right: 3px;
+      }
+
+      @include mq('mobile') {
+        font-size: 23px;
+        line-height: 32px;
+
+        &.first {
+          width: 390px;
+        }
+        &.second {
+          width: 475px;
+        }
+      }
+    }
+  }
+  .closed-text {
+    position: absolute;
+    font-family: font('gill sans', 'bold');
+
+    @include mq('desktop') {
+      font-size: 26px;
+      line-height: 26px;
+      right: 60px;
+      width: 198px;
+      top: 105px;
+    }
+    @include mq('mobile') {
+      font-size: 54px;
+      line-height: 64px;
+      width: 410px;
+      top: 100px;
+      bottom: 285px;
+      right: auto;
+      left: -495px;
+    }
+
+    &.hidden {
+      display: none;
+    } 
   }
 }

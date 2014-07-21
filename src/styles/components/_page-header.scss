@@ -7,16 +7,16 @@
   height: 50px;
   z-index: z('page', 'header');
 
-  @include mq('small') {
+  @include mq('mobile') {
     height: 93px;
   }
 
   .content-wrap {
     // @include rgba-background(rgba(255,255,255,0.25));
-    @include rgba-background(rgba(0,0,0,0.25));
+    @include rgba-background(rgba(0,0,0,0.4));
     width: 1024px;
 
-    @include mq('small') {
+    @include mq('mobile') {
       width: 640px;
     }
   }

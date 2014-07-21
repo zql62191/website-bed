@@ -7,9 +7,12 @@
   // }
   
   .content-wrap {
+    padding-top: 30px;
     padding-bottom: 80px;
+    @include clearfix;
 
-    @include mq('small') {
+    @include mq('mobile') {
+      padding-top: 15px;
       padding-bottom: 40px;
     }
   }

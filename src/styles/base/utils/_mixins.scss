@@ -11,28 +11,8 @@
   width: 1024px;
   margin-left: -32px;
 
-  @include mq('small') {
+  @include mq('mobile') {
     width: 640;
     margin-left: -20px;
-  }
-}
-
-@mixin active-state {
-
-  // .touch &,
-  // .no-touch & {
-  //   @content;
-  // }
-
-  @include mq('small', 'medium') {
-    &.tap {
-      @content;
-    }
-  }
-
-  @include mq('large') {
-    &:hover {
-      @content;
-    }
   }
 }

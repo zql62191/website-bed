@@ -8,7 +8,7 @@
   height: 50px;
   line-height: 50px;
 
-  @include mq('small') {
+  @include mq('mobile') {
     height: 93px;
     line-height: 93px;
   }
@@ -26,7 +26,6 @@
   text-align: center;
   padding: 4px 0;
   color: #febd3f;
-  box-sizing: border-box;
   border-radius: 3px;
   display:block;
 }

@@ -44,20 +44,20 @@ nobr {
   display: none !important;
 }
 
-.hide--small {
-  @include mq('small') {
+.hide--mobile {
+  @include mq('mobile') {
     display: none !important;
   }
 }
 
-.hide--medium {
-  @include mq('medium') {
-    display: none !important;
-  }
+.hide--tablet {
+  // @include mq('tablet') {
+  //   display: none !important;
+  // }
 }
 
-.hide--large {
-  @include mq('large') {
+.hide--desktop {
+  @include mq('desktop') {
     display: none !important;
   }
 }
@@ -86,7 +86,7 @@ html {
   width: 1024px;
   box-shadow: 0px 5px 10px lighten(#000000, 20%);
 
-  @include mq('small') {
+  @include mq('mobile') {
     width: 640px;
   }
 }
@@ -95,66 +95,83 @@ html {
   margin: 0 auto;
   width: 960px;
   height: 100%;
-
-  @include mq('small') {
+  
+  @include mq('mobile') {
     width: 600px;
   }
 }
 
 ul.bullet {
   display: block;
-  padding-left: 10px;
+  padding-left: 15px;
 
-  @include mq('small') {
+  @include mq('mobile') {
     padding-left: 20px;
   }
 
   > li {
     position: relative;
     display: block;
+  }
 
-    &:before {
-      content: '•';
-      margin:0 5px 0 -10px; 
-      width: 0;
-      overflow: visible;
-      float: left;  
-      font-size: 0.8em;
-      color: #febd3f;
+  > li:before {
+    content: '•';
+    margin:0 5px 0 -15px; 
+    width: 0;
+    overflow: visible;
+    float: left;  
+    font-size: 0.8em;
+    color: #febd3f;
 
-      @include mq('small') {
-        margin: 0 5px 0 -20px;
-      }
+    @include mq('mobile') {
+      margin: 0 5px 0 -20px;
     }
   }
 }
 
 ul.dash {
   display: block;
-  padding-left: 10px;
+  padding-left: 15px;
 
-  @include mq('small') {
+  @include mq('mobile') {
     padding-left: 20px;
   }
 
   > li {  
     position: relative;
     display: block;
+  }
 
-    &:before {
-      content: '–';
-      margin:0 5px 0 -10px;
-      width: 0;
-      overflow: visible;
-      float: left;
-      font-size: 0.8em;
-      color: #febd3f;
+  > li:before {
+    content: '\2013';
+    margin:0 5px 0 -15px;
+    width: 0;
+    overflow: visible;
+    float: left;
+    font-size: 0.8em;
+    color: #febd3f;
 
-      @include mq('small') {
-        margin: 0 5px 0 -20px;
-      }
+    @include mq('mobile') {
+      margin-left: -20px;
     }
   } 
+
+  &.dash--em {
+    padding-left: 20px;
+
+    @include mq('mobile') {
+      padding-left: 30px;
+    }
+
+    > li:before {
+      content: '\2014';
+      margin-left: -20px;
+
+      @include mq('mobile') {
+        margin-left: -30px;
+      }
+    }
+  }
 }
 
 ol.letter {
@@ -162,7 +179,7 @@ ol.letter {
   padding-left: 15px;
   counter-reset: lettered;
 
-  @include mq('small') {
+  @include mq('mobile') {
     padding-left: 0;
   }
 
@@ -170,19 +187,19 @@ ol.letter {
     position: relative;
     display: block;
     counter-increment: lettered;
+  }
 
-    &:before {
-      content: counter(lettered, lower-alpha);
-      margin:0 5px 0 -15px;
-      width: 0;
-      overflow: visible;
-      float: left;
+  > li:before {
+    content: counter(lettered, lower-alpha);
+    margin:0 5px 0 -15px;
+    width: 0;
+    overflow: visible;
+    float: left;
 
-      @include mq('small') {
-        margin: 0;
-        width: auto;
-        float: none;
-      }
+    @include mq('mobile') {
+      margin: 0;
+      width: auto;
+      float: none;
     }
   }
 }
@@ -192,7 +209,7 @@ ol.number {
   padding-left: 15px;
   counter-reset: numbered;
 
-  @include mq('small') {
+  @include mq('mobile') {
     padding-left: 35px;    
   }
 
@@ -200,79 +217,56 @@ ol.number {
     position: relative;
     display: block;
     counter-increment: numbered;
+  }
 
-    &:before {
-      content: counter(numbered, decimal) '.';
-      margin:0 5px 0 -15px;
-      width: 0;
-      overflow: visible;
-      float: left;
+  > li:before {
+    content: counter(numbered, decimal) '.';
+    margin:0 5px 0 -15px;
+    width: 0;
+    overflow: visible;
+    float: left;
 
-      @include mq('small') {
-        margin-left: -35px;
-      }
+    @include mq('mobile') {
+      margin-left: -35px;
     }
+  }
+}
+
+.scroll-point {
+  display: block;
+  margin-bottom: 50px;
+
+  @include mq('mobile') {
+    margin-bottom: 93px;
   }
 }
 
 // ---------- Brand Styling ----------
 
-
 body {
+  @include helvetica-neue;
   color: #ffffff;
-  font-family: font('helvetica neue', 'roman');
-  // TODO: add desktop font-size/line-height
 
-  strong, b {
-    font-family: font('helvetica neue', 'bold');
-
-    em, i {
-      font-family: font('helvetica neue', 'bold italic');
-    }
-  }
-  em, i {
-    font-family: font('helvetica neue', 'italic');
-
-    strong, b {
-      font-family: font('helvetica neue', 'bold italic');
-    }
-  }
-
-  @include mq('small') {
+  @include mq('mobile') {
     font-size: 32px;
     line-height: 40px;
   }
 }
 
 h1,h2,h3,h4,h5,h6 {
+  @include gill-sans;
   color: #febd3f;  
-  font-family: font('gill sans', 'roman');
   // TODO: add desktop font-size/line-height
 
   &.white {
     color: #ffffff;
-  }
-
-  strong, b {
-    font-family: font('gill sans', 'bold');
-
-    em, i {
-      font-family: font('gill sans', 'bold italic');
-    }
-  }
-  em, i {
-    font-family: font('gill sans', 'italic');
-
-    strong, b {
-      font-family: font('gill sans', 'bold italic');
-    }
   }
 }
 
 h1 {
   // TODO: add desktop font-size/line-height
 
-  @include mq('small') {
+  @include mq('mobile') {
     // TODO: add mobile font-size/line-height
     font-size: 59px;
     line-height: 63px;
@@ -281,10 +275,10 @@ h1 {
 
 h2 {
   // TODO: add desktop font-size/line-height
-  padding-top: 30px;
+  // padding-top: 30px;
   padding-bottom: 35px;
   
-  @include mq('small') {
+  @include mq('mobile') {
     font-size: 56px;
     line-height: 60px;
     padding-top: 15px;
@@ -296,7 +290,7 @@ h3 {
   // TODO: add desktop font-size/line-height
   padding-bottom: 10px;
 
-  @include mq('small') {
+  @include mq('mobile') {
     // TODO: add mobile font-size/line-height
     font-size: 34px;
     line-height: 40px;
@@ -309,7 +303,7 @@ h3 {
   // TODO: add desktop font-size/line-height
   padding-bottom: 35px;
 
-  @include mq('small') {
+  @include mq('mobile') {
     font-size: 40px;
     line-height: 44px;
     padding-bottom: 40px;
@@ -320,7 +314,7 @@ ul,
 ol {
   padding-bottom: 20px;
 
-  @include mq('small') {
+  @include mq('mobile') {
     padding-bottom: 20px;
   }
 
@@ -333,7 +327,7 @@ ol {
 p {
   padding-bottom: 20px;
 
-  @include mq('small') {
+  @include mq('mobile') {
     padding-bottom: 20px;
   }
 }
@@ -341,7 +335,7 @@ p {
 li {
   padding-bottom: 10px;
 
-  @include mq('small') {
+  @include mq('mobile') {
     padding-bottom: 10px;
   }
 
@@ -355,7 +349,7 @@ li {
   font-family: font('gill sans', 'roman');
   // TODO: add desktop font-size/line-height
 
-  @include mq('small') {
+  @include mq('mobile') {
     font-size: 34px;
     line-height: 40px;
   }
@@ -369,13 +363,13 @@ a.pdf-link {
   color: #333e48;
   text-decoration: none;
 
-  @include mq('large', 'medium') {
+  @include mq('desktop') {
     background-image: url('#{$img-path}/pdf.png');
     height: 45px;
     margin-top: 15px;
     padding-left: 40px;
   } 
-  @include mq('small') {
+  @include mq('mobile') {
     background-image: url('#{$img-path}/pdf-large.png');
     background-size: 70px auto;
     font-size: 30px;
@@ -405,7 +399,7 @@ a.pdf-link {
   background-image: url('#{$img-path}/close.png');
   cursor: pointer;
 
-  @include mq('small') {
+  @include mq('mobile') {
     display: none;
   }
 }
