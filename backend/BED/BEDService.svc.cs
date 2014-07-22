@@ -20,7 +20,7 @@ using System.Text.RegularExpressions;
 
 namespace BEDService
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "HCSService" in code, svc and config file together.
+    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "BEDService" in code, svc and config file together.
  
     [AspNetCompatibilityRequirements
     (RequirementsMode = AspNetCompatibilityRequirementsMode.Required)]

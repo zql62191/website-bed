@@ -107,3 +107,4 @@
 2014-07-21 18:22:22,254 [60] INFO BEDService.Global - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
 2014-07-21 18:24:34,106 [63] INFO BEDService.Global - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
 2014-07-21 18:28:27,445 [56] INFO BEDService.Global - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-07-22 10:34:59,598 [4] INFO BEDService.Global - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
