@@ -273,17 +273,17 @@
     font-family: font('gill sans', 'bold');
 
     @include mq('desktop') {
-      font-size: 26px;
+      font-size: 24px;
       line-height: 26px;
       right: 60px;
-      width: 198px;
+      width: 277px;
       top: 105px;
     }
     @include mq('mobile') {
-      font-size: 54px;
-      line-height: 64px;
+      font-size: 36px;
+      line-height: 42px;
       width: 410px;
-      top: 100px;
+      top: 120px;
       bottom: 285px;
       right: auto;
       left: -495px;

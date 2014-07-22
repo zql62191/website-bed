@@ -1,6 +1,6 @@
 ---
 title:
-prc: "S02592 07/14"
+prc: "S02592 08/14"
 nav:
   primary:
     -
@@ -13,15 +13,15 @@ nav:
       file: "prevalence"
     -
       url: "/#dsm5"
-      text: "DSM-5<sup>&reg;</sup> Criteria"
+      text: "<em>DSM-5<sup>&reg;</sup></em> Criteria"
       file: "dsm5"
     -
       url: "/#course"
-      text: "Clinical Course"
+      text: "Clinical Characteristics"
       file: "course"
     -
       url: "/#effects"
-      text: "Effects on Well-being"
+      text: "<em>DSM-5<sup>&reg;</sup></em> Functional <br/>Consequences"
       file: "effects"
     -
       url: "/#neurobiology"
@@ -29,11 +29,11 @@ nav:
       file: "neurobiology"
     -
       url: "/#diagnosis"
-      text: "Diagnosis"
+      text: "Recognizing BED in Adults"
       file: "diagnosis"
     -
       url: "/#resources"
-      text: "Resources"
+      text: "Resources/Expert Videos"
       file: "resources"
   secondary:
     -

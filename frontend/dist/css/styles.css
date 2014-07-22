@@ -558,6 +558,11 @@ html::-webkit-scrollbar {
     font-size: 37px;
     line-height: 90px;
   }
+  .page-nav nav .primary-nav .primary-nav__item._2_liner {
+    padding: 30px 0;
+    height: 145px;
+    line-height: 45px;
+  }
 }
 .page-nav nav .primary-nav .primary-nav__item a {
   display: block;
@@ -1008,11 +1013,16 @@ html::-webkit-scrollbar {
   text-transform: uppercase;
   color: #febd3f;
   font-size: 21px;
+  line-height: 20px;
+  padding-top: 7px;
   background: #51748b;
+  margin-bottom: 0;
 }
 @media only screen and (max-width: 40em) {
   .section--home .bar--title {
     font-size: 25px;
+    line-height: 25px;
+    padding-top: 25px;
   }
 }
 .section--home .disclaimer-bar {
@@ -1061,6 +1071,7 @@ html::-webkit-scrollbar {
 }
 .section--home h1 {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  font-size: 55px;
 }
 @media only screen and (min-width: 40.063em) {
   .section--home h1 {
@@ -1358,7 +1369,7 @@ html::-webkit-scrollbar {
   font-weight: bold;
 }
 .section--course .graphic-container {
-  overflow: auto;
+  overflow: hidden;
 }
 @media only screen and (max-width: 40em) {
   .section--course .twenty-one, .section--course .chart {
@@ -1382,17 +1393,16 @@ html::-webkit-scrollbar {
 }
 @media only screen and (max-width: 40em) {
   .section--course .mean-duration {
-    font-size: 41px;
-    line-height: 45px;
+    font-size: 25px;
+    line-height: 34px;
+    padding-bottom: 40px;
   }
 }
 @media only screen and (min-width: 40.063em) {
   .section--course .mean-duration {
-    font-size: 23px;
-    line-height: 26px;
     position: absolute;
-    top: 330px;
-    left: 250px;
+    top: 370px;
+    left: 20px;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -1504,7 +1514,6 @@ html::-webkit-scrollbar {
     font-size: 24px;
     line-height: 45px;
     padding-bottom: 5px;
-    padding-top: 71px;
   }
   .section--effects .comorbidity p {
     font-size: 20px;
@@ -1582,7 +1591,7 @@ html::-webkit-scrollbar {
 }
 @media only screen and (max-width: 40em) {
   .section--neurobiology h1 {
-    font-size: 57px;
+    font-size: 53px;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -1778,6 +1787,13 @@ html::-webkit-scrollbar {
 .section--diagnosis p:nth-of-type(4) {
   margin-bottom: 0;
   padding-bottom: 5px;
+}
+.section--diagnosis p.center {
+  text-align: center;
+  padding-top: 25px;
+}
+.section--diagnosis a {
+  color: #febd3f;
 }
 @media only screen and (min-width: 40.063em) {
   .section--diagnosis li {
@@ -2063,19 +2079,19 @@ html::-webkit-scrollbar {
 }
 @media only screen and (min-width: 40.063em) {
   .section--dsm5 .closed-text {
-    font-size: 26px;
+    font-size: 24px;
     line-height: 26px;
     right: 60px;
-    width: 198px;
+    width: 277px;
     top: 105px;
   }
 }
 @media only screen and (max-width: 40em) {
   .section--dsm5 .closed-text {
-    font-size: 54px;
-    line-height: 64px;
+    font-size: 36px;
+    line-height: 42px;
     width: 410px;
-    top: 100px;
+    top: 120px;
     bottom: 285px;
     right: auto;
     left: -495px;

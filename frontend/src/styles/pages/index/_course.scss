@@ -51,7 +51,7 @@
   }
 
   .graphic-container {
-    overflow: auto;
+    overflow: hidden;
   }
 
   .twenty-one, .chart {
@@ -80,16 +80,21 @@
 
   .mean-duration {
     @include mq('mobile') {
-      font-size: 41px;
-      line-height: 45px;
+      //font-size: 41px;
+      //line-height: 45px;
+      font-size: 25px;
+      line-height: 34px;
+      padding-bottom: 40px;
     }
     
     @include mq('desktop') {
-      font-size: 23px;
-      line-height: 26px;
+      //font-size: 23px;
+      //line-height: 26px;
       position: absolute;
-      top: 330px;
-      left: 250px;
+      //top: 330px;
+      top: 370px;
+      //left: 250px;
+      left: 20px;
     }
   }
 
