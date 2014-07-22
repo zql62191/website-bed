@@ -39,7 +39,9 @@ namespace BEDService
         {
             AuditTrail auditTrail = new AuditTrail();
             List<string> errors = null;
-         
+            HCPIndividual hcp;
+            QuestionResponseSet questionResponseSet;
+
             try
             {
                 errors = Validate(optIn);
@@ -49,74 +51,43 @@ namespace BEDService
 
                 Address address = new Address(optIn.Address1, optIn.Address2, optIn.City, Enum.Parse(typeof(States), optIn.State).ToString(), optIn.Zip, AddressTypes.UNSP.ToString(), Countries.US.ToString());
                 EmailAddress emailAddress = new EmailAddress(optIn.Email);
-                HCPIndividual hcp = new HCPIndividual(String.Empty, optIn.FName, optIn.LName, String.Empty, emailAddress, address);
+                hcp = new HCPIndividual(String.Empty, optIn.FName, optIn.LName, String.Empty, emailAddress, address);
                 hcp.Specialties.Add((Specialties)Enum.Parse(typeof(Specialties), optIn.Profession));
+
+                hcp.MedicalDesignations = new List<MedicalDesignations>();
+                hcp.MedicalEductationNumber = String.Empty;
+                hcp.MedicalLicenses = new List<MedicalLicense>();
+                hcp.NPI = String.Empty;
+                hcp.Password = new Password();
+                hcp.PhoneNumbers = new List<PhoneNumber>();
+                hcp.Practices = new List<Practice>();
                                 
                 RegistrationManager regMgr = new RegistrationManager();
                 regMgr.Individual = hcp;
 
-                
+                List<QuestionResponse> questionResponses = new List<QuestionResponse>();
+                QuestionResponse questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDExitMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]));
+                questionResponses.Add(questionResponse);
 
+                questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDSourceMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]));
+                questionResponses.Add(questionResponse);
 
+                questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDResponseTracking"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]));
+                questionResponses.Add(questionResponse);
 
-                regMgr.BeginRegistration();
+                questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDSpeciality"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]));
+                questionResponses.Add(questionResponse);
 
+                questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDPractice"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsQuestionNotAsked"]));
+                questionResponses.Add(questionResponse);
 
-                // Create the entities 
-                // Create the Individual entity object
-                //Individual oIndividual = new Individual(); 
-                //oIndividual.IndividualType = Individual.IndividualTypes.Professional_HCP; 
-                //oIndividual.FirstName = sFirstName; 
-                //oIndividual.LastName = sLastName; 
-                //// Create an Address entity object and add it to the Individual 
-                //// entity‟s Addresses collection 
-                //Address oAddress = new Address();
-                //oAddress.StreetAddress1 = sAddress1;
-                //oAddress.StreetAddress2 = sAddress2; 
-                //oAddress.City = sCity;
-                //oAddress.State = sState;
+                questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDHCPOptIn"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsYes"]));
+                questionResponses.Add(questionResponse);
 
-                //oAddress.ZipCode = sZIP;
-                //oIndividual.Addresses.Add(oAddress); 
+                questionResponseSet = new QuestionResponseSet();
+                questionResponseSet.QuestionResponses = questionResponses;
 
-                //EmailAddress oEmail = new EmailAddress();
-                //oEmail.EmailAddressString = sEmail;
-                //oIndividual.EmailAddresses.Add(oEmail); 
-
-
-                //SurveyResponse oPracticeTypeResponse = new SurveyResponse();
-                //oPracticeTypeResponse.QuestionID = 8030;
-                //oPracticeTypeResponse.AnswerID = Convert.ToInt32(sPracticeType); 
-                //SurveyResponse oOptResponse = new SurveyResponse(); 
-                //oOptResponse.QuestionID = 1045270; 
-                //oOptResponse.AnswerID = 0; //(int)"";//hdnOptQuestion.Value;
-
-
-                //Transaction oTransaction = new Transaction(); 
-                //oTransaction.Individual = oIndividual; 
-
-                //oTransaction.SurveyResponses.Add(oPracticeTypeResponse); 
-                //oTransaction.SurveyResponses.Add(oOptResponse); int? iTransactionID; 
-
-                //RegistrationManager oRegistrationMgr = new RegistrationManager(); 
-                //iTransactionID = oRegistrationMgr.SaveRegistration(oTransaction); 
-
-                //if (iTransactionID == null) 
-                //{
-                //    if (oRegistrationMgr.Errors.Count > 0) 
-
-                //    { 
-                //        String sRegErrors = "";
-                //        foreach (Error oError in oRegistrationMgr.Errors) 
-                //        {
-                //            sRegErrors += oError.ErrorMessage + "<br />"; 
-                //        }
-
-                //    } 
-                //} 
-                // Redirect to the confirmation page Response.Redirect("http://" + Request.ServerVariables("HTTP_HOST") + "/" + "Confirmation.aspx"); }
-
-
+                regMgr.PerformRegistration(hcp, questionResponseSet);
 
             }
             catch (Exception e)
@@ -125,7 +96,8 @@ namespace BEDService
             }
             finally
             {
-               
+                hcp = null;
+                questionResponseSet = null;
             }
 
             return errors;

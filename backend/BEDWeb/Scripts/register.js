@@ -10,25 +10,25 @@ var ProcessData;
 function registerUser() {
 
     var data = {
-        "obj": {
-            "FName": "",
-            "MName": "mname",
-            "LName": "",
-            "Email": "email@email.cim1",
+        "optIn": {
+            "FName": "Test",
+            "MName": "T",
+            "LName": "Test",
+            "Email": "email@email.cim",
             "ConfirmEmail": "email@email.cim",
             "Address1": "address1",
             "Address2": "address2",
             "City": "city",
-            "State": "state",
-            "Zip": "1111",
-            "Profession": "profession",
+            "State": "OH",
+            "Zip": "11111",
+            "Profession": "OPT",
             "CommunicationsOptIn": 1
             }
     };
 
     alert("CreateRegistration");
 
-    Url = "http://localhost:63407/BEDService/TestOptInData";
+    Url = "http://localhost:63407/BEDService/SetOptInData";
     ProcessData = true;
     Data = JSON.stringify(data);
     TestService();
