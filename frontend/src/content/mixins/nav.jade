@@ -2,7 +2,7 @@ mixin nav(ordinal)
   if(site.nav[ordinal])
     ul(class='#{ordinal}-nav')
       each val in site.nav[ordinal]
-        - var brCount = val.text.match(/<br( \/)?>/ig) ? val.text.match(/<br( \/)?>/ig).length + 1 : 1;
+        - var brCount = val.text.match(/<\/?br[^>]*>/ig) ? val.text.match(/<\/?br[^>]*>/ig).length + 1 : 1;
         if val.subnav
           li(class='#{ordinal}-nav__item _#{brCount}_liner #{ordinal}-nav__item--subnav')
             a(href='#{val.url}')
