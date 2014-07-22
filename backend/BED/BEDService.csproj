@@ -13,6 +13,7 @@
     <RootNamespace>BEDService</RootNamespace>
     <AssemblyName>BEDService</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -80,6 +81,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="db\ErrorDataSource.cs" />
+    <Compile Include="db\DBDataSource.cs" />
+    <Compile Include="db\Settings.cs" />
+    <Compile Include="db\Util.cs" />
     <Compile Include="Model\OptIn.cs" />
     <Compile Include="Properties\AssemblyInfo.log4net.cs" />
     <Compile Include="Global.asax.cs">

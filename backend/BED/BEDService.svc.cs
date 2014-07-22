@@ -16,6 +16,7 @@ using System.ServiceModel.Channels;
 using System.Net;
 using System.Collections;
 using System.Text.RegularExpressions;
+using BEDService.db;
 
 
 namespace BEDService
@@ -113,6 +114,10 @@ namespace BEDService
 
         public string TestOptInData()
         {
+            using (ErrorDataSource datasource = new ErrorDataSource())
+            {
+                datasource.AddError(32, "TestValue");
+            }
             return "TestOptInData";
         }
 

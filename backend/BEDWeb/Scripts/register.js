@@ -28,7 +28,7 @@ function registerUser() {
 
     alert("CreateRegistration");
 
-    Url = "http://localhost:63407/BEDService/setOptInData";
+    Url = "http://localhost:63407/BEDService/TestOptInData";
     ProcessData = true;
     Data = JSON.stringify(data);
     TestService();
