@@ -11,7 +11,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BEDService</RootNamespace>
-    <AssemblyName>HCSService</AssemblyName>
+    <AssemblyName>BEDService</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -44,10 +44,6 @@
     <Reference Include="ShireRealtime.XmlSerializers, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\ShireRealtime.XmlSerializers.dll</HintPath>
-    </Reference>
-    <Reference Include="ShireRegistration, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\ShireRegistration.dll</HintPath>
     </Reference>
     <Reference Include="ShireUtility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=66eacd5bafbf8737, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
