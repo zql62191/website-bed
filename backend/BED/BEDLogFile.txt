@@ -1,0 +1,1 @@
+2014-07-22 11:44:29,265 [26] INFO BEDService.Global - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
