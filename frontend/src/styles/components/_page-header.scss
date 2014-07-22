@@ -12,8 +12,8 @@
   }
 
   .content-wrap {
-    // @include rgba-background(rgba(255,255,255,0.25));
-    @include rgba-background(rgba(0,0,0,0.4));
+    //@include rgba-background(rgba(255,255,255,0.25));
+    @include rgba-background(rgba(0,0,0,0.5));
     width: 1024px;
 
     @include mq('mobile') {

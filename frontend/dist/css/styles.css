@@ -514,8 +514,8 @@ html::-webkit-scrollbar {
   }
 }
 .page-header .content-wrap {
-  background: url('../img/rgbapng/00000066-5.png');
-  background: rgba(0, 0, 0, 0.4);
+  background: url('../img/rgbapng/0000007f-5.png');
+  background: rgba(0, 0, 0, 0.5);
   width: 1024px;
 }
 @media only screen and (max-width: 40em) {

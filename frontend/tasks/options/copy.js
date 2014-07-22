@@ -55,5 +55,13 @@ module.exports = {
       expand: true,
       filter: 'isFile'
     }]
+  },
+  integrate: {
+    files: [{
+      cwd: 'dist/',
+      dest: '../backend/BEDWeb/content/',
+      src: ['**/*'],
+      expand: true
+    }]
   }
 };
