@@ -11,18 +11,18 @@ function registerUser() {
 
     var data = {
         "obj": {
-                "fname": "",
-                "mname": "mname",
-                "lname": "",
-                "email": "email@email.cim1",
-                "confirmemail": "email@email.cim",
-                "address1": "address1",
-                "address2": "address2",
-                "city": "city",
-                "state": "state",
-                "zip": "1111",
-                "profession": "profession",
-                "chk": 1
+            "FName": "",
+            "MName": "mname",
+            "LName": "",
+            "Email": "email@email.cim1",
+            "ConfirmEmail": "email@email.cim",
+            "Address1": "address1",
+            "Address2": "address2",
+            "City": "city",
+            "State": "state",
+            "Zip": "1111",
+            "Profession": "profession",
+            "CommunicationsOptIn": 1
             }
     };
 

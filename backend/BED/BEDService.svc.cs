@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Configuration;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
@@ -16,6 +16,10 @@ using System.ServiceModel.Channels;
 using System.Net;
 using System.Collections;
 using System.Text.RegularExpressions;
+using Shire.Realtime.ProcessManagers;
+using Shire.Realtime.Entities;
+using Shire.Realtime.Enumerations;
+
 using BEDService.db;
 
 
@@ -42,6 +46,21 @@ namespace BEDService
 
                 if (errors.Count > 0)
                     return errors;
+
+                Address address = new Address(optIn.Address1, optIn.Address2, optIn.City, Enum.Parse(typeof(States), optIn.State).ToString(), optIn.Zip, AddressTypes.UNSP.ToString(), Countries.US.ToString());
+                EmailAddress emailAddress = new EmailAddress(optIn.Email);
+                HCPIndividual hcp = new HCPIndividual(String.Empty, optIn.FName, optIn.LName, String.Empty, emailAddress, address);
+                hcp.Specialties.Add((Specialties)Enum.Parse(typeof(Specialties), optIn.Profession));
+                                
+                RegistrationManager regMgr = new RegistrationManager();
+                regMgr.Individual = hcp;
+
+                
+
+
+
+                regMgr.BeginRegistration();
+
 
                 // Create the entities 
                 // Create the Individual entity object
@@ -125,21 +144,21 @@ namespace BEDService
         {
             List<string> errors = new List<string>();
 
-            ValueExists("FirstName", optIn.fname, errors);
-            ValueExists("LastName", optIn.lname, errors);
-            ValueExists("Profession", optIn.profession, errors);
-            ValueExists("Address1", optIn.address1, errors);
-            ValueExists("City", optIn.city, errors);
-            ValueExists("State", optIn.state, errors);
+            ValueExists("FirstName", optIn.FName, errors);
+            ValueExists("LastName", optIn.LName, errors);
+            ValueExists("Profession", optIn.Profession, errors);
+            ValueExists("Address1", optIn.Address1, errors);
+            ValueExists("City", optIn.City, errors);
+            ValueExists("State", optIn.State, errors);
 
-            ValueExists("Zip", optIn.zip, errors);
-            IsPatternValid("Zip", optIn.zip, new Regex(@"^\d{5}"), errors);
+            ValueExists("Zip", optIn.Zip, errors);
+            IsPatternValid("Zip", optIn.Zip, new Regex(@"^\d{5}"), errors);
 
-            ValueExists("Email", optIn.email, errors);
-            ValueExists("ConfirmEmail", optIn.confirmemail, errors);
-            IsPatternValid("Email", optIn.email, new Regex(@"^[\w!#$%&'*+\-/=?\^_`{|}~]+(\.[\w!#$%&'*+\-/=?\^_`{|}~]+)*@((([\-\w]+\.)+[a-zA-Z]{2,4})|(([0-9]{1,3}\.){3}[0-9]{1,3}))$", RegexOptions.IgnoreCase), errors);
+            ValueExists("Email", optIn.Email, errors);
+            ValueExists("ConfirmEmail", optIn.ConfirmEmail, errors);
+            IsPatternValid("Email", optIn.Email, new Regex(@"^[\w!#$%&'*+\-/=?\^_`{|}~]+(\.[\w!#$%&'*+\-/=?\^_`{|}~]+)*@((([\-\w]+\.)+[a-zA-Z]{2,4})|(([0-9]{1,3}\.){3}[0-9]{1,3}))$", RegexOptions.IgnoreCase), errors);
 
-            ConfirmEmailMatch("ConfirmEmail", optIn.email, optIn.confirmemail, errors);
+            ConfirmEmailMatch("ConfirmEmail", optIn.Email, optIn.ConfirmEmail, errors);
 
             return errors;
         }

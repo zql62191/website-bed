@@ -6,28 +6,28 @@ namespace BEDService.Model
     public class OptIn
     {
         [DataMember(IsRequired = true)]
-        public string fname { get; set; }
+        public string FName { get; set; }
         [DataMember(IsRequired = true)]
-        public string mname { get; set; }
+        public string MName { get; set; }
         [DataMember(IsRequired = true)]
-        public string lname { get; set; }
+        public string LName { get; set; }
         [DataMember(IsRequired = true)]
-        public string email { get; set; }
+        public string Email { get; set; }
         [DataMember(IsRequired = true)]
-        public string confirmemail { get; set; }
+        public string ConfirmEmail { get; set; }
         [DataMember(IsRequired = true)]
-        public string address1 { get; set; }
+        public string Address1 { get; set; }
         [DataMember(IsRequired = false)]
-        public string address2 { get; set; }
+        public string Address2 { get; set; }
         [DataMember(IsRequired = true)]
-        public string city { get; set; }
+        public string City { get; set; }
         [DataMember(IsRequired = true)]
-        public string state { get; set; }
+        public string State { get; set; }
         [DataMember(IsRequired = true)]
-        public string zip { get; set; }
+        public string Zip { get; set; }
         [DataMember(IsRequired = true)]
-        public string profession { get; set; }
+        public string Profession { get; set; }
         [DataMember(IsRequired = true)]
-        public bool chk { get; set; }
+        public bool CommunicationsOptIn { get; set; }
     }
 }
