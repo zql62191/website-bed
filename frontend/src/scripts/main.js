@@ -97,7 +97,7 @@ var BED = {
 
         // .on(BED.gestures.click, '.mask--nav', BED.nav.close)
 
-        .on(BED.gestures.click, '.btn--signup, .signup-container .close', function(e) {
+        .on(BED.gestures.click, '.button.signup, .btn--signup, .signup-container .close', function(e) {
 
             if ($('.signup-container').hasClass('_is_open')) {
 
