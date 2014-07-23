@@ -85,6 +85,8 @@
     <Compile Include="db\DBDataSource.cs" />
     <Compile Include="db\Settings.cs" />
     <Compile Include="db\Util.cs" />
+    <Compile Include="Model\FormAddress.cs" />
+    <Compile Include="Model\FormEmail.cs" />
     <Compile Include="Model\OptIn.cs" />
     <Compile Include="Properties\AssemblyInfo.log4net.cs" />
     <Compile Include="Global.asax.cs">

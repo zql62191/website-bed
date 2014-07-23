@@ -11,19 +11,24 @@ function registerUser() {
 
     var data = {
         "optIn": {
+            "Specialty": "OPT",
+            "CommunicationsOptIn": 1
+        },
+        "email": {
+            "Email": "email@email.cim",
+            "ConfirmEmail": "email@email.cim"
+        },
+        "formaddress": {
             "FName": "Test",
             "MName": "T",
             "LName": "Test",
-            "Email": "email@email.cim",
-            "ConfirmEmail": "email@email.cim",
             "Address1": "address1",
             "Address2": "address2",
             "City": "city",
             "State": "OH",
-            "Zip": "11111",
-            "Specialty": "OPT",
-            "CommunicationsOptIn": 1
-            }
+            "Zip": "11111"
+        }
+
     };
 
     alert("CreateRegistration");
@@ -46,10 +51,11 @@ function TestService() {
         contentType: "application/json",
         dataType: "json",
         success: function (xhr) { //On Successfull service call
-            alert("success - " + xhr);
+            alert("success - " + xhr.responseText);
         },
         error: function (xhr) {
             alert(xhr.responseText);
+            $('.error').text('<pre>' + xhr.responseText + '</pre>');
         } // When Service call fails
     });
 

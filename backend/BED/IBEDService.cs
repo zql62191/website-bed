@@ -22,8 +22,37 @@ namespace BEDService
          RequestFormat = WebMessageFormat.Json,
          UriTemplate = "/SetOptInData"
         )]
-        List<string> SetOptInData(OptIn optIn);
+        List<string> SetOptInData(OptIn optIn, FormEmail email, FormAddress formaddress);
 
+        [OperationContract]
+        [WebInvoke
+         (Method = "*",
+         BodyStyle = WebMessageBodyStyle.WrappedRequest,
+         ResponseFormat = WebMessageFormat.Json,
+         RequestFormat = WebMessageFormat.Json,
+         UriTemplate = "/SetUnsubscribeDataEmail"
+        )]
+        List<string> SetUnsubscribeDataEmail(FormEmail email);
+
+        [OperationContract]
+        [WebInvoke
+         (Method = "*",
+         BodyStyle = WebMessageBodyStyle.WrappedRequest,
+         ResponseFormat = WebMessageFormat.Json,
+         RequestFormat = WebMessageFormat.Json,
+         UriTemplate = "/SetUnsubscribeDataAddress"
+        )]
+        List<string> SetUnsubscribeDataAddress(FormAddress address);
+
+        [OperationContract]
+        [WebInvoke
+         (Method = "*",
+         BodyStyle = WebMessageBodyStyle.WrappedRequest,
+         ResponseFormat = WebMessageFormat.Json,
+         RequestFormat = WebMessageFormat.Json,
+         UriTemplate = "/SetUnsubscribeDataBoth"
+        )]
+        List<string> SetUnsubscribeDataBoth(FormEmail email, FormAddress address);
 
         [OperationContract]
         [WebInvoke

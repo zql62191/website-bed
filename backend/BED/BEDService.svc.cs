@@ -36,7 +36,7 @@ namespace BEDService
         public static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
 
-        public List<string> SetOptInData(OptIn optIn)
+        public List<string> SetOptInData(OptIn optIn, FormEmail email, FormAddress formaddress)
         {
             AuditTrail auditTrail = new AuditTrail();
             List<string> errors = null;
@@ -45,7 +45,7 @@ namespace BEDService
 
             try
             {
-                errors = Validate(optIn);
+                errors = Validate(optIn, email, formaddress);
 
                 if (errors.Count > 0)
                     return errors;
@@ -103,6 +103,37 @@ namespace BEDService
             return errors;
         }
 
+        public List<string> SetUnsubscribeDataEmail(FormEmail email) 
+        {
+            List<string> errors = null;
+            try
+            {
+                errors = ValidateEmail(email);
+
+                if (errors.Count > 0)
+                    return errors;
+            }
+            catch (Exception e)
+            {
+            }
+
+            return errors;
+        }
+
+        public List<string> SetUnsubscribeDataAddress(FormAddress adress)
+        {
+            List<string> errors = null;
+
+            return errors;
+        }
+
+        public List<string> SetUnsubscribeDataBoth(FormEmail email, FormAddress address)
+        {
+            List<string> errors = null;
+
+            return errors;
+        }
+
         public string TestOptInData()
         {
             using (ErrorDataSource datasource = new ErrorDataSource())
@@ -112,28 +143,54 @@ namespace BEDService
             return "TestOptInData";
         }
 
-        private List<string> Validate(OptIn optIn)
+        private List<string> Validate(OptIn optIn, FormEmail email, FormAddress address)
         {
             List<string> errors = new List<string>();
 
-            ValueExists("FirstName", optIn.FName, errors);
-            ValueExists("LastName", optIn.LName, errors);
+            errors.AddRange(ValidateAddress(address));
+            errors.AddRange(ValidateEmail(email));
+            errors.AddRange(ValidateConfirmEmail(email));
+
             ValueExists("Profession", optIn.Specialty, errors);
-            ValueExists("Address1", optIn.Address1, errors);
-            ValueExists("City", optIn.City, errors);
-            ValueExists("State", optIn.State, errors);
-
-            ValueExists("Zip", optIn.Zip, errors);
-            IsPatternValid("Zip", optIn.Zip, new Regex(@"^\d{5}"), errors);
-
-            ValueExists("Email", optIn.Email, errors);
-            ValueExists("ConfirmEmail", optIn.ConfirmEmail, errors);
-            IsPatternValid("Email", optIn.Email, new Regex(@"^[\w!#$%&'*+\-/=?\^_`{|}~]+(\.[\w!#$%&'*+\-/=?\^_`{|}~]+)*@((([\-\w]+\.)+[a-zA-Z]{2,4})|(([0-9]{1,3}\.){3}[0-9]{1,3}))$", RegexOptions.IgnoreCase), errors);
-
-            ConfirmEmailMatch("ConfirmEmail", optIn.Email, optIn.ConfirmEmail, errors);
 
             return errors;
         }
+
+        private List<string> ValidateEmail(FormEmail email)
+        {
+            List<string> errors = new List<string>();
+
+            ValueExists("Email", email.Email, errors);
+            IsPatternValid("Email", email.Email, new Regex(@"^[\w!#$%&'*+\-/=?\^_`{|}~]+(\.[\w!#$%&'*+\-/=?\^_`{|}~]+)*@((([\-\w]+\.)+[a-zA-Z]{2,4})|(([0-9]{1,3}\.){3}[0-9]{1,3}))$", RegexOptions.IgnoreCase), errors);
+
+            return errors;
+
+        }
+
+        private List<string> ValidateConfirmEmail(FormEmail email)
+        {
+            List<string> errors = new List<string>();
+
+            ValueExists("ConfirmEmail", email.ConfirmEmail, errors);
+            ConfirmEmailMatch("ConfirmEmail", email.Email, email.ConfirmEmail, errors);
+
+            return errors;
+        }
+
+        private List<string> ValidateAddress(FormAddress address)
+        {
+            List<string> errors = new List<string>();
+            ValueExists("FirstName", address.FName, errors);
+            ValueExists("LastName", address.LName, errors);
+            ValueExists("Address1", address.Address1, errors);
+            ValueExists("City", address.City, errors);
+            ValueExists("State", address.State, errors);
+
+            ValueExists("Zip", address.Zip, errors);
+            IsPatternValid("Zip", address.Zip, new Regex(@"^\d{5}"), errors);
+            return errors;
+        }
+
 
         private void ValueExists(string fieldName, string value,  List<string> errors)
         {
