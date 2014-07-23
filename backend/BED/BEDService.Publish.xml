@@ -1,11 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <publishData>
-  <publishProfile publishUrl="C:\inetpub\wwwroot\Novo-WS\New folder (2)" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
-    <file relUrl="HCSService.svc" publishTime="04/28/2014 15:40:24" />
+  <publishProfile publishUrl="C:\inetpub\wwwroot\BEDService" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="07/22/2014 17:42:01" />
+    <file relUrl="bin/ShireRealtime.dll" publishTime="07/17/2014 17:30:06" />
+    <file relUrl="bin/ShireWeb.dll" publishTime="07/17/2014 17:30:06" />
+    <file relUrl="common/config/Environment.config" publishTime="07/17/2014 17:30:05" />
+    <file relUrl="common/config/Realtime.config" publishTime="07/17/2014 17:30:05" />
+    <file relUrl="bin/ShireRealtime.XmlSerializers.dll" publishTime="07/17/2014 17:30:06" />
+    <file relUrl="bin/BEDService.dll" publishTime="07/22/2014 18:17:18" />
     <file relUrl="bin/log4net.dll" publishTime="04/28/2014 15:40:24" />
-    <file relUrl="Web.config" publishTime="05/02/2014 17:48:58" />
-    <file relUrl="bin/HCSService.dll" publishTime="05/02/2014 17:45:08" />
-    <file relUrl="bin/HCSService.pdb" publishTime="05/02/2014 17:45:08" />
-    <file relUrl="Global.asax" publishTime="04/28/2014 15:40:24" />
+    <file relUrl="bin/ShireUtility.dll" publishTime="07/17/2014 17:30:06" />
+    <file relUrl="Global.asax" publishTime="07/21/2014 12:46:45" />
+    <file relUrl="bin/BEDService.pdb" publishTime="07/22/2014 18:17:18" />
+    <file relUrl="BEDService.svc" publishTime="07/21/2014 12:05:31" />
   </publishProfile>
 </publishData>

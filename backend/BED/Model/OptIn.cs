@@ -26,7 +26,7 @@ namespace BEDService.Model
         [DataMember(IsRequired = true)]
         public string Zip { get; set; }
         [DataMember(IsRequired = true)]
-        public string Profession { get; set; }
+        public string Specialty { get; set; }
         [DataMember(IsRequired = true)]
         public bool CommunicationsOptIn { get; set; }
     }

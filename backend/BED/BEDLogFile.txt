@@ -12,3 +12,8 @@
 2014-07-22 17:52:01,705 [5] INFO BEDService.Global - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
 2014-07-22 17:53:50,562 [4] INFO BEDService.Global - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
 2014-07-22 18:11:50,573 [20] INFO BEDService.Global - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-07-22 18:19:24,041 [27] INFO BEDService.Global - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-07-23 11:17:55,482 [7] INFO BEDService.Global - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-07-23 11:21:44,027 [30] INFO BEDService.Global - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-07-23 12:09:33,419 [118] INFO BEDService.Global - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-07-23 13:44:49,780 [18] INFO BEDService.Global - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 

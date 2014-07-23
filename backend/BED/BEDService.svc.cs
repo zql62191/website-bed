@@ -19,6 +19,7 @@ using System.Text.RegularExpressions;
 using Shire.Realtime.ProcessManagers;
 using Shire.Realtime.Entities;
 using Shire.Realtime.Enumerations;
+using Shire.Realtime.WebServices;
 
 using BEDService.db;
 
@@ -49,50 +50,49 @@ namespace BEDService
                 if (errors.Count > 0)
                     return errors;
 
-                Address address = new Address(optIn.Address1, optIn.Address2, optIn.City, Enum.Parse(typeof(States), optIn.State).ToString(), optIn.Zip, AddressTypes.UNSP.ToString(), Countries.US.ToString());
-                EmailAddress emailAddress = new EmailAddress(optIn.Email);
-                hcp = new HCPIndividual(String.Empty, optIn.FName, optIn.LName, String.Empty, emailAddress, address);
-                hcp.Specialties.Add((Specialties)Enum.Parse(typeof(Specialties), optIn.Profession));
+                if (Services.ServiceIsAvailable)
+                {
+                    Address address = new Address(optIn.Address1, optIn.Address2, optIn.City, Enum.Parse(typeof(States), optIn.State).ToString(), optIn.Zip, null, ConfigurationManager.AppSettings["RTCountry"]);
+                    EmailAddress emailAddress = new EmailAddress(optIn.Email);
+                    hcp = new HCPIndividual(String.Empty, optIn.FName, optIn.LName, String.Empty, emailAddress, address);
+                    hcp.Specialties.Add((Specialties)Enum.Parse(typeof(Specialties), optIn.Specialty));
 
-                hcp.MedicalDesignations = new List<MedicalDesignations>();
-                hcp.MedicalEductationNumber = String.Empty;
-                hcp.MedicalLicenses = new List<MedicalLicense>();
-                hcp.NPI = String.Empty;
-                hcp.Password = new Password();
-                hcp.PhoneNumbers = new List<PhoneNumber>();
-                hcp.Practices = new List<Practice>();
-                                
-                RegistrationManager regMgr = new RegistrationManager();
-                regMgr.Individual = hcp;
+                    //hcp.PIISetID = long.MaxValue;
 
-                List<QuestionResponse> questionResponses = new List<QuestionResponse>();
-                QuestionResponse questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDExitMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]));
-                questionResponses.Add(questionResponse);
+                    RegistrationManager regMgr = new RegistrationManager();
+                    regMgr.Individual = hcp;
+                    
+                    List<QuestionResponse> questionResponses = new List<QuestionResponse>();
+                    QuestionResponse questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDExitMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), ConfigurationManager.AppSettings["MCCRegister"]);
+                    questionResponses.Add(questionResponse);
 
-                questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDSourceMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]));
-                questionResponses.Add(questionResponse);
+                    questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDSourceMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), ConfigurationManager.AppSettings["RTWebSiteID"]);
+                    questionResponses.Add(questionResponse);
 
-                questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDResponseTracking"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]));
-                questionResponses.Add(questionResponse);
+                    questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDHCPOptIn"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsYes"]));
+                    questionResponses.Add(questionResponse);
 
-                questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDSpeciality"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]));
-                questionResponses.Add(questionResponse);
+                    questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDSpeciality"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), optIn.Specialty);
+                    questionResponses.Add(questionResponse);
 
-                questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDPractice"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsQuestionNotAsked"]));
-                questionResponses.Add(questionResponse);
+                    questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDPractice"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsQuestionNotAsked"]));
+                    questionResponses.Add(questionResponse);
 
-                questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDHCPOptIn"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsYes"]));
-                questionResponses.Add(questionResponse);
-
-                questionResponseSet = new QuestionResponseSet();
-                questionResponseSet.QuestionResponses = questionResponses;
-
-                regMgr.PerformRegistration(hcp, questionResponseSet);
+                    questionResponseSet = new QuestionResponseSet();
+                   // questionResponseSet.QuestionSetID = long.MaxValue;
+                    questionResponseSet.QuestionResponses = questionResponses;
+                    
+                    regMgr.PerformLiteRegistration(hcp, questionResponseSet);
+                }
+                else
+                {
+                    errors.Add("The PMM services are unavailable");
+                }
 
             }
             catch (Exception e)
             {
-
+                throw e;
             }
             finally
             {
@@ -118,7 +118,7 @@ namespace BEDService
 
             ValueExists("FirstName", optIn.FName, errors);
             ValueExists("LastName", optIn.LName, errors);
-            ValueExists("Profession", optIn.Profession, errors);
+            ValueExists("Profession", optIn.Specialty, errors);
             ValueExists("Address1", optIn.Address1, errors);
             ValueExists("City", optIn.City, errors);
             ValueExists("State", optIn.State, errors);
