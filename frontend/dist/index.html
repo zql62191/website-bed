@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="BED">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8">
@@ -28,8 +28,7 @@
   <body>
     <div class="page-wrapper">
       <div class="page-header">
-        <div class="content-wrap"><a class="btn btn--menu">Menu</a>
-        </div>
+        <div class="content-wrap"><a class="btn btn--menu">Menu</a><a class="btn btn--dsm5"><em>DSM-5</em><sup>&reg;</sup><br class="hide--desktop"> Criteria</a><a class="btn btn--signup">SIGN <br class="hide--desktop">UP</a></div>
       </div>
       <div class="mask mask--nav"></div>
       <div class="page-nav _is_fixed_left">
@@ -542,5 +541,7 @@
         </div>
       </div>
     </div>
+    <script>!/cdm210.com/i.test(location.host) && document.location.port !== '8005' && 'WebSocket' in window && window.WebSocket.CLOSING === 2 && document.write('\x3Cscript src="//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1">\x3C/script>');</script>
+    <script>!/cdm210.com/i.test(location.host) && document.location.port !== '8005' && /iP(hone|od|ad)|Android|BlackBerry|IEMobile/i.test(navigator.userAgent) && document.write('<script src="//'+(location.host||"localhost").split(":")[0]+':8081/target/target-script-min.js">\x3c/script>');</script>
   </body>
 </html>

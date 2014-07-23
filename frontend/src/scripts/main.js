@@ -2,35 +2,38 @@ window.onerror = function() {
     return true;
 };
 
-var BED = {
+// var BED = {
 
-    init: function() {
+//     init: function() {
 
-        BED.UI.init();
-        BED.Analytics.init();
+//         BED.UI.init();
 
-    }
-};
+//         BED.Analytics.init();
 
-BED.Analytics = {
+//     }
+// };
 
-    init: function() {
 
-    }
-};
+// BED.Analytics = {
 
-BED.UI = {
+//     init: function() {
 
-    gestures: {
-        down: 'touch',
-        up: 'release',
-        click: 'tap'
-    },
+//     }
+// };
 
-    init: function() {
+// BED.UI = {
 
-    }
-};
+//     gestures: {
+//         down: 'touch',
+//         up: 'release',
+//         click: 'tap'
+//     },
+
+//     init: function() {
+
+//     }
+
+// };
 
 var BED = {
 

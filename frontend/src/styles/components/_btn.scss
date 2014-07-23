@@ -7,15 +7,45 @@
     font-family: font("gill sans", "light");
     height: 50px;
     line-height: 50px;
+    padding: 0 30px;
+    text-align: center;
     @include mq("mobile") {
+        font-size: 23px;
         height: 93px;
         line-height: 93px;
     }
 
     &.btn--menu {
-        display: inline-block;
-        padding: 0 30px;
         text-transform: uppercase;
+        float: left;
+        @include mq("mobile") {
+            background: transparent url("#{$img-path}/hamburger-mobile.png") 30px 30px no-repeat;
+            font-size: 0;
+            width: 104px;
+        }
+
+        @include mq("desktop") {
+            background: transparent url("#{$img-path}/hamburger.png") 16px 16px no-repeat;
+            text-indent: 25px;
+        }
+    }
+    &.btn--dsm5,
+    &.btn--signup {
+        float: right;
+        padding: 0 15px;
+        @include mq("mobile") {
+            line-height: 25px;
+            padding: 21px 15px;
+        }
+    }
+    &.btn--dsm5:before {
+        content: '';
+        position: absolute;
+        top: 25%;
+        bottom: 25%;
+        left: 0;
+        width: 1px;
+        background: #ffffff;
     }
 }
 

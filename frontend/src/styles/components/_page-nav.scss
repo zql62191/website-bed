@@ -28,18 +28,22 @@
                 letter-spacing: 0.02em;
                 padding-bottom: 0;
                 &._2_liner {
-                    padding: 10px 0;
                     height: 60px;
                     line-height: 20px;
+                    a {
+                        padding: 10px 60px 10px 20px;
+                    }
                 }
                 @include mq("mobile") {
                     height: 90px;
                     font-size: 37px;
                     line-height: 90px;
                     &._2_liner {
-                        padding: 30px 0;
                         height: 145px;
                         line-height: 45px;
+                        a {
+                            padding: 30px 120px 30px 40px;
+                        }
                     }
                     &.active,
                     &.highlight {

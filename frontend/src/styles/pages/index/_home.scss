@@ -6,6 +6,7 @@
 
     @include mq("desktop") {
         background: #4d5158 url("#{$img-path}/home__bg.jpg") 0 0 no-repeat;
+        height: 700px;
     }
 
     .scroll-point {
@@ -32,7 +33,7 @@
         width: 100%;
         background-color: #333e48;
         height: 22px;
-        margin-bottom: -22px;
+        // margin-bottom: -22px;
         p {
             text-align: center;
             line-height: 22px;
@@ -40,17 +41,13 @@
         }
     }
     .content-wrap {
-        padding-left: 609px;
-        padding-top: 237px;
-        padding-right: 35px;
         @include mq("mobile") {
             padding-left: 14px;
             padding-top: 545px;
         }
 
         @include mq("desktop") {
-            padding-top: 200px;
-            padding-bottom: 45px;
+            padding: 178px 35px 0 609px;
         }
     }
     .eyebrow {

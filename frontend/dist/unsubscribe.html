@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="BED">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8">
@@ -28,8 +28,7 @@
   <body>
     <div class="page-wrapper">
       <div class="page-header">
-        <div class="content-wrap"><a class="btn btn--menu">Menu</a>
-        </div>
+        <div class="content-wrap"><a class="btn btn--menu">Menu</a><a class="btn btn--dsm5"><em>DSM-5</em><sup>&reg;</sup><br class="hide--desktop"> Criteria</a><a class="btn btn--signup">SIGN <br class="hide--desktop">UP</a></div>
       </div>
       <div class="mask mask--nav"></div>
       <div class="page-nav _is_fixed_left">
@@ -109,53 +108,55 @@
         </p><a target="_blank" href="#" class="pdf-link"><span><em>DSM-5<sup>&reg;</sup></em> Criteria</span></a>
       </div>
       <div class="page-content">
-        <div ng-app="BED" ng-controller="UnsubscribeController" class="unsubscribe">
+        <div ng-controller="UnsubscribeController" class="unsubscribe">
           <div class="content-wrap">
-            <h1>Unsubscribe</h1>
-            <p>
-              To unsubscribe from future communications, please select an option below, fill in the required fields, and click Submit.
-              
-            </p>
-            <div class="opt-out-choice">
-              <p class="form-line">
-                <input type="radio" name="unsubscribe" value="email" ng-model="form.optoutchoice" id="emailRadio">
-                <label for="emailRadio">I would like to opt out of future BED email communication.</label>
-              </p>
-              <p class="form-line">
-                <input type="radio" name="unsubscribe" value="direct" ng-model="form.optoutchoice" id="directRadio">
-                <label for="directRadio">
-                  I would like to opt out of future BED direct mail communication.
-                  
-                </label>
-              </p>
-              <p class="form-line">
-                <input type="radio" name="unsubscribe" value="both" ng-model="form.optoutchoice" id="bothRadio">
-                <label for="bothRadio">
-                  I would like to opt out of all future Shire communication.
-                  
-                  
-                </label>
-              </p>
-            </div>
-            <div class="required-fields">
-              <p ng-if="form.optoutchoice != &quot;none&quot;"><span class="red">*</span>Required Fields
+            <form id="bed_form" name="bed_form" ng-submit="submitForm()" autocomplete="off" novalidate>
+              <h1>Unsubscribe</h1>
+              <p>
+                To unsubscribe from future communications, please select an option below, fill in the required fields, and click Submit.
                 
               </p>
-              <div ng-if="form.optoutchoice == &quot;email&quot; || form.optoutchoice == &quot;both&quot;" class="email">
-                <input type="text" name="email" placeholder="*Email" ng-model="form.email" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/" required class="email">
+              <div class="opt-out-choice">
+                <p class="form-line">
+                  <input type="radio" name="unsubscribe" value="email" ng-model="form.optoutchoice" id="emailRadio">
+                  <label for="emailRadio">I would like to opt out of future BED email communication.</label>
+                </p>
+                <p class="form-line">
+                  <input type="radio" name="unsubscribe" value="direct" ng-model="form.optoutchoice" id="directRadio">
+                  <label for="directRadio">
+                    I would like to opt out of future BED direct mail communication.
+                    
+                  </label>
+                </p>
+                <p class="form-line">
+                  <input type="radio" name="unsubscribe" value="both" ng-model="form.optoutchoice" id="bothRadio">
+                  <label for="bothRadio">
+                    I would like to opt out of all future Shire communication.
+                    
+                    
+                  </label>
+                </p>
               </div>
-              <div ng-if="form.optoutchoice == &quot;direct&quot; || form.optoutchoice == &quot;both&quot;" class="address">
-                <input type="text" name="firstName" placeholder="*First Name" ng-model="form.fname" required class="first-name">
-                <input type="text" name="middleInitial" placeholder="MI" ng-model="form.MI" ng-pattern="/^[a-zA-Z]$/" size="1" max-length="1" class="middle-initial">
-                <input type="text" name="lastName" placeholder="*Last Name" ng-model="form.lname" required="true" class="last-name">
-                <input type="text" name="streetAddress" placeholder="*Street Address" ng-model="form.street" required="true" class="street-address">
-                <input type="text" name="suiteOffice" placeholder="Suite/Office" ng-model="form.suite" ng-required="false" class="suite-office">
-                <input type="text" name="city" placeholder="*City" ng-model="form.city" required="true" class=".city">
-                <select name="state" ng-model="form.state" ng-options="state for state in states" stateselect required="true" class="state"></select>
-                <input type="text" name="zip" placeholder="*Zip" ng-model="form.zip" ng-pattern="/^[0-9]{5}$/" required class="zip">
+              <div class="required-fields">
+                <p ng-if="form.optoutchoice != &quot;none&quot;"><span class="red">*</span>Required Fields
+                  
+                </p>
+                <div ng-if="form.optoutchoice == &quot;email&quot; || form.optoutchoice == &quot;both&quot;" class="email">
+                  <input type="text" name="email" placeholder="*Email" ng-model="form.email" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/" ng-required="true" class="email">
+                </div>
+                <div ng-if="form.optoutchoice == &quot;direct&quot; || form.optoutchoice == &quot;both&quot;" class="address">
+                  <input type="text" name="firstName" placeholder="*First Name" ng-model="form.fname" ng-required="true" class="first-name">
+                  <input type="text" name="middleInitial" placeholder="MI" ng-model="form.MI" ng-pattern="/^[a-zA-Z]$/" size="1" max-length="1" class="middle-initial">
+                  <input type="text" name="lastName" placeholder="*Last Name" ng-model="form.lname" ng-required="true" class="last-name">
+                  <input type="text" name="streetAddress" placeholder="*Street Address" ng-model="form.street" ng-required="true" class="street-address">
+                  <input type="text" name="suiteOffice" placeholder="Suite/Office" ng-model="form.suite" ng-required="false" class="suite-office">
+                  <input type="text" name="city" placeholder="*City" ng-model="form.city" ng-required="true" class=".city">
+                  <select name="state" ng-model="form.state" ng-options="state for state in states" stateselect ng-required="true" class="state"></select>
+                  <input type="text" name="zip" placeholder="*Zip" ng-model="form.zip" ng-pattern="/^[0-9]{5}$/" ng-required="true" class="zip">
+                </div>
+                <input type="submit" name="submit" value="SUBMIT" ng-if="form.optoutchoice != &quot;none&quot;" class="submit">
               </div>
-              <input type="submit" name="submit" value="SUBMIT" ng-if="form.optoutchoice != &quot;none&quot;" class="submit">
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -188,5 +189,7 @@
         </div>
       </div>
     </div>
+    <script>!/cdm210.com/i.test(location.host) && document.location.port !== '8005' && 'WebSocket' in window && window.WebSocket.CLOSING === 2 && document.write('\x3Cscript src="//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1">\x3C/script>');</script>
+    <script>!/cdm210.com/i.test(location.host) && document.location.port !== '8005' && /iP(hone|od|ad)|Android|BlackBerry|IEMobile/i.test(navigator.userAgent) && document.write('<script src="//'+(location.host||"localhost").split(":")[0]+':8081/target/target-script-min.js">\x3c/script>');</script>
   </body>
 </html>

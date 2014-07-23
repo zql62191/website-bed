@@ -3,142 +3,149 @@
 extends /layouts/base
 
 block content
+  
+  div(ng-controller='UnsubscribeController').unsubscribe
 
-  .unsubscribe(
-    ng-app='BED',
-    ng-controller='UnsubscribeController')
     .content-wrap
-      h1.
-        Unsubscribe
-      p.
-        To unsubscribe from future communications, please select an option below, fill in the required fields, and click Submit.
 
-      .opt-out-choice
-        p.form-line
-          //- ids only included to work with labels' for attribute.  No styles depend on id.
+      form(
+        id="bed_form",
+        name="bed_form",
+        ng-submit="submitForm()",
+        autocomplete="off",
+        novalidate)
+
+        h1.
+          Unsubscribe
+        p.
+          To unsubscribe from future communications, please select an option below, fill in the required fields, and click Submit.
+
+        .opt-out-choice
+          p.form-line
+            //- ids only included to work with labels' for attribute.  No styles depend on id.
+            input(
+              type='radio',
+              name='unsubscribe',
+              value='email',
+              ng-model="form.optoutchoice",
+              id='emailRadio')
+            label(
+              for='emailRadio').
+                I would like to opt out of future BED email communication.
+          p.form-line
+            input(
+              type='radio',
+              name='unsubscribe',
+              value='direct',
+              ng-model="form.optoutchoice",
+              id='directRadio')
+            label(
+              for='directRadio').
+                I would like to opt out of future BED direct mail communication.
+
+          p.form-line
+            input(
+              type='radio',
+              name='unsubscribe',
+              value='both',
+              ng-model="form.optoutchoice",
+              id='bothRadio')
+            label(
+              for='bothRadio').
+                I would like to opt out of all future Shire communication.
+
+        
+        .required-fields
+          p(
+            ng-if='form.optoutchoice != "none"').
+            #[span.red *]Required Fields
+
+          //- The placeholders used below cannot be styled.  These will need to be replaced.
+          .email(
+              ng-if='form.optoutchoice == "email" || form.optoutchoice == "both"')
+            input(
+              type='text',
+              name='email',
+              placeholder='*Email',
+              ng-model="form.email",
+              ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/",
+              ng-required="true",
+              class='email')
+          .address(
+            ng-if='form.optoutchoice == "direct" || form.optoutchoice == "both"')
+            input(
+              type='text',
+              name='firstName',
+              placeholder='*First Name',
+              ng-model="form.fname",
+              ng-required="true",
+              class='first-name')
+
+            input(
+              type='text',
+              name='middleInitial',
+              placeholder='MI',
+              ng-model="form.MI",
+              ng-pattern="/^[a-zA-Z]$/",
+              size="1",
+              max-length="1",
+              class='middle-initial')
+
+            input(
+              type='text',
+              name='lastName',
+              placeholder='*Last Name',
+              ng-model="form.lname",
+              ng-required="true"
+              class='last-name')
+
+            input(
+              type='text',
+              name='streetAddress',
+              placeholder='*Street Address',
+              ng-model="form.street",
+              ng-required="true",
+              class='street-address')
+
+            input(
+              type='text',
+              name='suiteOffice',
+              placeholder='Suite/Office',
+              ng-model="form.suite",
+              ng-required="false",
+              class='suite-office')
+
+            input(
+              type='text',
+              name='city',
+              placeholder='*City',
+              ng-model="form.city",
+              ng-required="true",
+              class='.city')
+
+            select(
+              name='state',
+              class='state',
+              ng-model="form.state",
+              ng-options="state for state in states",
+              stateselect,
+              ng-required="true").
+
+            input(
+              type='text',
+              name='zip',
+              placeholder='*Zip',
+              ng-model="form.zip",
+              ng-pattern="/^[0-9]{5}$/",
+              ng-required="true",
+              class='zip')
+
           input(
-            type='radio',
-            name='unsubscribe',
-            value='email',
-            ng-model="form.optoutchoice",
-            id='emailRadio')
-          label(
-            for='emailRadio').
-              I would like to opt out of future BED email communication.
-        p.form-line
-          input(
-            type='radio',
-            name='unsubscribe',
-            value='direct',
-            ng-model="form.optoutchoice",
-            id='directRadio')
-          label(
-            for='directRadio').
-              I would like to opt out of future BED direct mail communication.
-
-        p.form-line
-          input(
-            type='radio',
-            name='unsubscribe',
-            value='both',
-            ng-model="form.optoutchoice",
-            id='bothRadio')
-          label(
-            for='bothRadio').
-              I would like to opt out of all future Shire communication.
-
-      
-      .required-fields
-        p(
-          ng-if='form.optoutchoice != "none"').
-          #[span.red *]Required Fields
-
-        //- The placeholders used below cannot be styled.  These will need to be replaced.
-        .email(
-            ng-if='form.optoutchoice == "email" || form.optoutchoice == "both"')
-          input(
-            type='text',
-            name='email',
-            placeholder='*Email',
-            ng-model="form.email",
-            ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/",
-            required=true,
-            class='email')
-        .address(
-          ng-if='form.optoutchoice == "direct" || form.optoutchoice == "both"')
-          input(
-            type='text',
-            name='firstName',
-            placeholder='*First Name',
-            ng-model="form.fname",
-            required = true,
-            class='first-name')
-
-          input(
-            type='text',
-            name='middleInitial',
-            placeholder='MI',
-            ng-model="form.MI",
-            ng-pattern="/^[a-zA-Z]$/",
-            size="1",
-            max-length="1",
-            class='middle-initial')
-
-          input(
-            type='text',
-            name='lastName',
-            placeholder='*Last Name',
-            ng-model="form.lname",
-            required="true"
-            class='last-name')
-
-          input(
-            type='text',
-            name='streetAddress',
-            placeholder='*Street Address',
-            ng-model="form.street",
-            required="true",
-            class='street-address')
-
-          input(
-            type='text',
-            name='suiteOffice',
-            placeholder='Suite/Office',
-            ng-model="form.suite",
-            ng-required="false",
-            class='suite-office')
-
-          input(
-            type='text',
-            name='city',
-            placeholder='*City',
-            ng-model="form.city",
-            required="true",
-            class='.city')
-
-          select(
-            name='state',
-            class='state',
-            ng-model="form.state",
-            ng-options="state for state in states",
-            stateselect,
-            required="true").
-
-          input(
-            type='text',
-            name='zip',
-            placeholder='*Zip',
-            ng-model="form.zip",
-            ng-pattern="/^[0-9]{5}$/",
-            required=true,
-            class='zip')
-
-        input(
-          type='submit',
-          name='submit',
-          value='SUBMIT',
-          ng-if='form.optoutchoice != "none"',
-          class='submit')
+            type='submit',
+            name='submit',
+            value='SUBMIT',
+            ng-if='form.optoutchoice != "none"',
+            class='submit')
 
 
 

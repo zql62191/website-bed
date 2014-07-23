@@ -228,18 +228,14 @@
     }
 }
 
-
-
-
-
-@include mq('mobile') {
+@include mq("mobile") {
     .percent {
         font-size: 31px;
     }
 }
 
 
-@include mq('desktop') {
+@include mq("desktop") {
     .percent {
         font-size: 16px;
     }
