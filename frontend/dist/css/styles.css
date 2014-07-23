@@ -551,6 +551,11 @@ html::-webkit-scrollbar {
   letter-spacing: 0.02em;
   padding-bottom: 0;
 }
+.page-nav nav .primary-nav .primary-nav__item._2_liner {
+  padding: 10px 0;
+  height: 60px;
+  line-height: 20px;
+}
 @media only screen and (max-width: 40em) {
   .page-nav nav .primary-nav .primary-nav__item {
     height: 90px;
@@ -558,11 +563,14 @@ html::-webkit-scrollbar {
     line-height: 90px;
   }
   .page-nav nav .primary-nav .primary-nav__item._2_liner {
+    padding: 30px 0;
     height: 145px;
     line-height: 45px;
   }
-  .page-nav nav .primary-nav .primary-nav__item._2_liner a {
-    padding: 30px 0;
+  .page-nav nav .primary-nav .primary-nav__item.active, .page-nav nav .primary-nav .primary-nav__item.highlight {
+    background: #fec451;
+    -webkit-box-shadow: 1px 2px 2px rgba(33, 30, 31, 0.25);
+    box-shadow: 1px 2px 2px rgba(33, 30, 31, 0.25);
   }
 }
 .page-nav nav .primary-nav .primary-nav__item a {
@@ -1285,7 +1293,7 @@ html::-webkit-scrollbar {
 }
 @media only screen and (max-width: 40em) {
   .section--prevalence .comparable h2 {
-    font-size: 42px;
+    font-size: 40px;
     line-height: 46px;
     width: 90%;
     padding-bottom: 50px;
@@ -1327,6 +1335,16 @@ html::-webkit-scrollbar {
   }
 }
 
+@media only screen and (max-width: 40em) {
+  .percent {
+    font-size: 31px;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .percent {
+    font-size: 16px;
+  }
+}
 .section--course {
   background: #333e48;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iNDUlIiBzdG9wLWNvbG9yPSIjMzMzZTQ4IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzIxMjgyZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9yYWRpYWxHcmFkaWVudD4KICA8cmVjdCB4PSItNTAiIHk9Ii01MCIgd2lkdGg9IjEwMSIgaGVpZ2h0PSIxMDEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
