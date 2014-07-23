@@ -558,9 +558,11 @@ html::-webkit-scrollbar {
     line-height: 90px;
   }
   .page-nav nav .primary-nav .primary-nav__item._2_liner {
-    padding: 30px 0;
     height: 145px;
     line-height: 45px;
+  }
+  .page-nav nav .primary-nav .primary-nav__item._2_liner a {
+    padding: 30px 0;
   }
 }
 .page-nav nav .primary-nav .primary-nav__item a {
