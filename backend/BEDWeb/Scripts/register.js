@@ -21,7 +21,7 @@ function registerUser() {
             "City": "city",
             "State": "OH",
             "Zip": "11111",
-            "Profession": "OPT",
+            "Specialty": "OPT",
             "CommunicationsOptIn": 1
             }
     };
