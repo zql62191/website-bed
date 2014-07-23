@@ -22,7 +22,7 @@ namespace BEDService
          RequestFormat = WebMessageFormat.Json,
          UriTemplate = "/SetOptInData"
         )]
-        List<string> SetOptInData(OptIn optIn, FormEmail email, FormAddress formaddress);
+        List<string> SetOptInData(OptIn optIn);
 
         [OperationContract]
         [WebInvoke

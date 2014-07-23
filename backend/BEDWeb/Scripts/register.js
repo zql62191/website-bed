@@ -12,21 +12,21 @@ function registerUser() {
     var data = {
         "optIn": {
             "Specialty": "OPT",
-            "CommunicationsOptIn": 1
-        },
-        "email": {
-            "Email": "email@email.cim",
-            "ConfirmEmail": "email@email.cim"
-        },
-        "formaddress": {
-            "FName": "Test",
-            "MName": "T",
-            "LName": "Test",
-            "Address1": "address1",
-            "Address2": "address2",
-            "City": "city",
-            "State": "OH",
-            "Zip": "11111"
+            "CommunicationsOptIn": 1,
+            "Email": {
+                "Email": "email@email.cim",
+                "ConfirmEmail": "email@email.cim"
+            },
+            "Address": {
+                "FName": "Test",
+                "MName": "T",
+                "LName": "Test",
+                "Address1": "address1",
+                "Address2": "address2",
+                "City": "city",
+                "State": "OH",
+                "Zip": "11111"
+            }
         }
 
     };

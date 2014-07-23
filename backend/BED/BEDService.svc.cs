@@ -36,7 +36,7 @@ namespace BEDService
         public static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
 
-        public List<string> SetOptInData(OptIn optIn, FormEmail email, FormAddress formaddress)
+        public List<string> SetOptInData(OptIn optIn)
         {
             AuditTrail auditTrail = new AuditTrail();
             List<string> errors = null;
@@ -45,16 +45,16 @@ namespace BEDService
 
             try
             {
-                errors = Validate(optIn, email, formaddress);
+                errors = Validate(optIn);
 
                 if (errors.Count > 0)
                     return errors;
 
                 if (Services.ServiceIsAvailable)
                 {
-                    Address address = new Address(optIn.Address1, optIn.Address2, optIn.City, Enum.Parse(typeof(States), optIn.State).ToString(), optIn.Zip, null, ConfigurationManager.AppSettings["RTCountry"]);
-                    EmailAddress emailAddress = new EmailAddress(optIn.Email);
-                    hcp = new HCPIndividual(String.Empty, optIn.FName, optIn.LName, String.Empty, emailAddress, address);
+                    Address address = new Address(optIn.Address.Address1, optIn.Address.Address2, optIn.Address.City, Enum.Parse(typeof(States), optIn.Address.State).ToString(), optIn.Address.Zip, null, ConfigurationManager.AppSettings["RTCountry"]);
+                    EmailAddress emailAddress = new EmailAddress(optIn.Email.Email);
+                    hcp = new HCPIndividual(String.Empty, optIn.Address.FName, optIn.Address.LName, String.Empty, emailAddress, address);
                     hcp.Specialties.Add((Specialties)Enum.Parse(typeof(Specialties), optIn.Specialty));
 
                     //hcp.PIISetID = long.MaxValue;
@@ -143,13 +143,13 @@ namespace BEDService
             return "TestOptInData";
         }
 
-        private List<string> Validate(OptIn optIn, FormEmail email, FormAddress address)
+        private List<string> Validate(OptIn optIn)
         {
             List<string> errors = new List<string>();
 
-            errors.AddRange(ValidateAddress(address));
-            errors.AddRange(ValidateEmail(email));
-            errors.AddRange(ValidateConfirmEmail(email));
+            errors.AddRange(ValidateAddress(optIn.Address));
+            errors.AddRange(ValidateEmail(optIn.Email));
+            errors.AddRange(ValidateConfirmEmail(optIn.Email));
 
             ValueExists("Profession", optIn.Specialty, errors);
 
