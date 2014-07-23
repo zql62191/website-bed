@@ -95,7 +95,37 @@ var BED = {
 
         .on(BED.gestures.click, '.page-nav a', BED.nav.tap)
 
-        .on(BED.gestures.click, '.mask--nav', BED.nav.close);
+        .on(BED.gestures.click, '.mask--nav', BED.nav.close)
+
+        .on(BED.gestures.click, '.btn--signup, .signup-container .close', function(e) {
+
+            if ($('.signup-container').hasClass('_is_open')) {
+
+                $('._slideout,.mask').removeClass('_is_open');
+
+            } else {
+
+                $('._slideout,.mask').removeClass('_is_open');
+
+                $('.signup-container,.mask--slideout').addClass('_is_open');
+
+            }
+        })
+
+        .on(BED.gestures.click, '.btn--dsm5, .dsm5-container .close', function(e) {
+
+            if ($('.dsm5-container').hasClass('_is_open')) {
+
+                $('._slideout,.mask').removeClass('_is_open');
+
+            } else {
+
+                $('._slideout,.mask').removeClass('_is_open');
+
+                $('.dsm5-container,.mask--slideout').addClass('_is_open');
+
+            }
+        });
 
         // $(document).on('scroll touchmove', function(e) {
         //   if ($('html').hasClass('_menu_open')) {

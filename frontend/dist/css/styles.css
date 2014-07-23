@@ -119,6 +119,10 @@ nobr {
   }
 }
 
+._is_open {
+  display: block !important;
+}
+
 hr {
   margin: 0 auto;
   height: 1px;
@@ -969,7 +973,7 @@ html::-webkit-scrollbar {
   right: 0;
   z-index: 200;
   background-color: #e1e3e4;
-  height: auto;
+  bottom: 0;
   padding: 30px 23px;
   -webkit-box-shadow: inset 3px 0 5px 0px rgba(50, 50, 50, 0.65);
   box-shadow: inset 3px 0 5px 0px rgba(50, 50, 50, 0.65);

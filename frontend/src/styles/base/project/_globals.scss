@@ -61,6 +61,10 @@ nobr {
     }
 }
 
+._is_open {
+    display: block !important;
+}
+
 hr {
     margin: 0 auto;
     height: 1px;
