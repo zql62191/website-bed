@@ -1,52 +1,45 @@
 .page-footer {
-
-  li {
-    float: left;
-    margin-top: 10px;
-    margin-bottom: 24px;
-    
-    & + li {
-      a {
-        border-left: 1px solid #ffffff;
-        padding-left: 6px;
-        margin-left: 6px;
-      }
-    } 
-  }
-    
-  a {
-    color: #febd3f;
-    font-size: 14px;
-    line-height: 12px;
-    z-index: 10;
-  }
- 
-  .footer-logo {
-    width: 93px;
-    height: 28px;
-    clear: both;
-    display: block;
-    margin-bottom: 24px;
-  }
-
-  p {
-    clear: both;
-    margin-bottom: 0;
-    font-size: 13px;
-    line-height: 13px;
-    font-family: Helvetica, Arial, sans-serif;
-
-    a {
-      margin-right: 0;
-      padding-right: 0;
-      border-right: 0;
-      font-size: inherit;
+    li {
+        float: left;
+        margin-top: 10px;
+        margin-bottom: 24px;
+        & + li {
+            a {
+                border-left: 1px solid #ffffff;
+                padding-left: 6px;
+                margin-left: 6px;
+            }
+        }
     }
-  }
-
-  .prc {
-    float: right;
-    clear: none;
-    margin-top: 15px;
-  }
+    a {
+        color: #febd3f;
+        font-size: 14px;
+        line-height: 12px;
+        z-index: 10;
+    }
+    .footer-logo {
+        width: 93px;
+        height: 28px;
+        clear: both;
+        display: block;
+        margin-bottom: 24px;
+    }
+    p {
+        clear: both;
+        margin-bottom: 0;
+        font-size: 13px;
+        line-height: 13px;
+        font-family: Helvetica, Arial, sans-serif;
+        a {
+            margin-right: 0;
+            padding-right: 0;
+            border-right: 0;
+            font-size: inherit;
+        }
+    }
+    .prc {
+        float: right;
+        clear: none;
+        margin-top: 15px;
+    }
 }

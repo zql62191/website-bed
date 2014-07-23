@@ -1,10 +1,11 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 
-@import 'vendor/_reset';
+@import "vendor/_reset";
+
 // @import 'vendor/_normalize';
 
-@import 'base/__base';
+@import "base/__base";
 
-@import 'components/__components';
+@import "components/__components";
 
-@import 'pages/__pages';
+@import "pages/__pages";

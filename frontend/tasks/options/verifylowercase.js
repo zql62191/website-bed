@@ -1,7 +1,7 @@
 module.exports = {
-	all: {
-		src: [
-			'src/**/*'
-		]
-	}
+    all: {
+        src: [
+            'src/**/*'
+        ]
+    }
 };

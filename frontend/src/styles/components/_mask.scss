@@ -1,15 +1,13 @@
-
 .mask {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  @include rgba-background(rgba(0,0,0,0.5));
-  display: none;
-
-  &.mask--nav {
-    // top: 50px;
-    z-index: z('mask', 'nav');
-  }
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    @include rgba-background(rgba(0, 0, 0, 0.5));
+    display: none;
+    &.mask--nav {
+        // top: 50px;
+        z-index: z("mask", "nav");
+    }
 }

@@ -1,18 +1,18 @@
 module.exports = {
-  dist: {
-    options: {
-      force: true
+    dist: {
+        options: {
+            force: true
+        },
+        src: [
+            './tmp',
+            './dist',
+            './.sass-cache'
+        ]
     },
-    src: [
-      './tmp',
-      './dist',
-      './.sass-cache'
-    ]
-  },
-  sass: {
-    options: {
-      force: true
-    },
-    src: ['./sass-cache']
-  }
+    sass: {
+        options: {
+            force: true
+        },
+        src: ['./sass-cache']
+    }
 };

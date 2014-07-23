@@ -1,75 +1,61 @@
 .page-nav {
-  position: fixed;
-  top: 50px;
-  // top: 0;
-  left: 0;
-  height: 100%;
-  // display: none;
-  overflow: hidden;
-  z-index: z('page', 'nav');
-  // width: 1024px;
-
-  &._is_animating,
-  &._is_open {
-    & + .page-content {
-      // looks horrible on mobile
-      // -webkit-filter: blur(2px);
-    }
-  }
-
-  @include mq('mobile') {
-    top: 93px;
-    // width: 640px;
-  }
-
-  nav {
-    position: relative;
+    position: fixed;
+    top: 50px;
+    // top: 0;
+    left: 0;
     height: 100%;
-    display: inline-block;
-    background: #bbbec0;
-    display: none;
-
-    .primary-nav {
-
-      .primary-nav__item {
-        height: 36px;
-        line-height: 36px;
-        font-size: 19px;
-        border-bottom: 1px solid #c3c6c7;
-        letter-spacing: 0.02em;
-        padding-bottom: 0;
-
-        @include mq('mobile') {
-          height: 90px;
-          font-size: 37px;
-          line-height: 90px;
-
-          &._2_liner {
-            padding: 30px 0;
-            height: 145px;
-            line-height: 45px;
-          }
-        }
-
-        a {
-          display: block;
-          text-decoration: none;
-          color: #333e48;
-          height: 100%;
-          padding: 0 60px 0 20px;
-          white-space: nowrap;
-
-          @include mq('mobile') {
-            padding: 0 120px 0 40px;
-          }
-
-          &.active,
-          &.highlight {
-            background: #fec451;
-            box-shadow: 1px 2px 2px rgba(33,30,31,.25);
-          }
-        }
-      }
+    // display: none;
+    overflow: hidden;
+    z-index: z("page", "nav");
+    // width: 1024px;
+    @include mq("mobile") {
+        top: 93px;
+        // width: 640px;
     }
-  }
+
+    nav {
+        position: relative;
+        height: 100%;
+        display: inline-block;
+        background: #bbbec0;
+        display: none;
+        .primary-nav {
+            .primary-nav__item {
+                height: 36px;
+                line-height: 36px;
+                font-size: 19px;
+                border-bottom: 1px solid #c3c6c7;
+                letter-spacing: 0.02em;
+                padding-bottom: 0;
+                @include mq("mobile") {
+                    height: 90px;
+                    font-size: 37px;
+                    line-height: 90px;
+                    &._2_liner {
+                        padding: 30px 0;
+                        height: 145px;
+                        line-height: 45px;
+                    }
+                }
+
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: #333e48;
+                    height: 100%;
+                    padding: 0 60px 0 20px;
+                    white-space: nowrap;
+                    @include mq("mobile") {
+                        padding: 0 120px 0 40px;
+                    }
+
+                    &.active,
+                    &.highlight {
+                        background: #fec451;
+                        box-shadow: 1px 2px 2px rgba(33, 30, 31, 0.25);
+                    }
+                }
+            }
+        }
+    }
 }

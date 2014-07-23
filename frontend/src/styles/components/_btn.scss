@@ -1,31 +1,30 @@
 // TODO: name these better
 
 .btn {
-  display: block;
-  color: #ffffff;
-  cursor: pointer;
-  font-family: font('gill sans','light');
-  height: 50px;
-  line-height: 50px;
+    display: block;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: font("gill sans", "light");
+    height: 50px;
+    line-height: 50px;
+    @include mq("mobile") {
+        height: 93px;
+        line-height: 93px;
+    }
 
-  @include mq('mobile') {
-    height: 93px;
-    line-height: 93px;
-  }
-
-  &.btn--menu {
-    display: inline-block;
-    padding: 0 30px;
-    text-transform: uppercase;
-  }
+    &.btn--menu {
+        display: inline-block;
+        padding: 0 30px;
+        text-transform: uppercase;
+    }
 }
 
 .button {
-  font-size: 21px;
-  background: #333e48;
-  text-align: center;
-  padding: 4px 0;
-  color: #febd3f;
-  border-radius: 3px;
-  display:block;
+    font-size: 21px;
+    background: #333e48;
+    text-align: center;
+    padding: 4px 0;
+    color: #febd3f;
+    border-radius: 3px;
+    display: block;
 }

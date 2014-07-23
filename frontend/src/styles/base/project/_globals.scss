@@ -1,416 +1,384 @@
-
 // ---------- Project Resets ----------
 
 *, *:before, *:after {
-  position: relative;
-  // overflow: auto;
-  box-sizing: border-box;
-  // Disables Android's font boosting
-  max-height: 1000000px;
-  // Disables Android's Auto-Fit Pages
-  background: url('');
-  // Disables Tap Highlight Color
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+    position: relative;
+    // overflow: auto;
+    box-sizing: border-box;
+    // Disables Android's font boosting
+    max-height: 1000000px;
+    // Disables Android's Auto-Fit Pages
+    background: url("");
+    // Disables Tap Highlight Color
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 sub, sup {
-  font-size: 0.6em;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
+    font-size: 0.6em;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
 }
 
 sup {
-  top: -0.5em;
-  .eq-ie & {
-    top: -0.8em;
-  }
+    top: -0.5em;
+    .eq-ie & {
+        top: -0.8em;
+    }
 }
 
 sub {
-  bottom: -0.25em;
+    bottom: -0.25em;
 }
 
 .nobr,
 nobr {
-  white-space:nowrap;
+    white-space: nowrap;
 }
 
 .eq-ie9 * {
-  filter: none !important;
+    filter: none !important;
 }
 
 .hide {
-  display: none !important;
+    display: none !important;
 }
 
 .hide--mobile {
-  @include mq('mobile') {
-    display: none !important;
-  }
+    @include mq("mobile") {
+        display: none !important;
+    }
 }
 
 .hide--tablet {
-  // @include mq('tablet') {
-  //   display: none !important;
-  // }
+    // @include mq('tablet') {
+    //   display: none !important;
+    // }
 }
 
 .hide--desktop {
-  @include mq('desktop') {
-    display: none !important;
-  }
+    @include mq("desktop") {
+        display: none !important;
+    }
 }
 
 hr {
-  margin: 0 auto;
-  height: 1px;
-  border: 0;
-  @include rgba-background(rgba(255,255,255,0.4));
+    margin: 0 auto;
+    height: 1px;
+    border: 0;
+    @include rgba-background(rgba(255, 255, 255, 0.4));
 }
 
 html,
 body {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 html {
-  background-color: #393e47;
-  overflow-y: scroll;
+    background-color: #393e47;
+    overflow-y: scroll;
 }
 
 .page-wrapper {
-  margin: 0 auto;
-  overflow: hidden;
-  width: 1024px;
-  box-shadow: 0px 5px 10px lighten(#000000, 20%);
-
-  @include mq('mobile') {
-    width: 640px;
-  }
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1024px;
+    box-shadow: 0px 5px 10px lighten(black, 20%);
+    @include mq("mobile") {
+        width: 640px;
+    }
 }
 
 .content-wrap {
-  margin: 0 auto;
-  width: 960px;
-  height: 100%;
-  
-  @include mq('mobile') {
-    width: 600px;
-  }
+    margin: 0 auto;
+    width: 960px;
+    height: 100%;
+    @include mq("mobile") {
+        width: 600px;
+    }
 }
 
 ul.bullet {
-  display: block;
-  padding-left: 15px;
-
-  @include mq('mobile') {
-    padding-left: 20px;
-  }
-
-  > li {
-    position: relative;
     display: block;
-  }
-
-  > li:before {
-    content: '•';
-    margin:0 5px 0 -15px; 
-    width: 0;
-    overflow: visible;
-    float: left;  
-    font-size: 0.8em;
-    color: #febd3f;
-
-    @include mq('mobile') {
-      margin: 0 5px 0 -20px;
+    padding-left: 15px;
+    @include mq("mobile") {
+        padding-left: 20px;
     }
-  }
+
+    > li {
+        position: relative;
+        display: block;
+    }
+    > li:before {
+        content: '\2022';
+        margin: 0 5px 0 -15px;
+        width: 0;
+        overflow: visible;
+        float: left;
+        font-size: 0.8em;
+        color: #febd3f;
+        @include mq("mobile") {
+            margin: 0 5px 0 -20px;
+        }
+    }
 }
 
 ul.dash {
-  display: block;
-  padding-left: 15px;
-
-  @include mq('mobile') {
-    padding-left: 20px;
-  }
-
-  > li {  
-    position: relative;
     display: block;
-  }
-
-  > li:before {
-    content: '\2013';
-    margin:0 5px 0 -15px;
-    width: 0;
-    overflow: visible;
-    float: left;
-    font-size: 0.8em;
-    color: #febd3f;
-
-    @include mq('mobile') {
-      margin-left: -20px;
-    }
-  } 
-
-  &.dash--em {
-    padding-left: 20px;
-
-    @include mq('mobile') {
-      padding-left: 30px;
+    padding-left: 15px;
+    @include mq("mobile") {
+        padding-left: 20px;
     }
 
+    > li {
+        position: relative;
+        display: block;
+    }
     > li:before {
-      content: '\2014';
-      margin-left: -20px;
-
-      @include mq('mobile') {
-        margin-left: -30px;
-      }
+        content: '\2013';
+        margin: 0 5px 0 -15px;
+        width: 0;
+        overflow: visible;
+        float: left;
+        font-size: 0.8em;
+        color: #febd3f;
+        @include mq("mobile") {
+            margin-left: -20px;
+        }
     }
-  }
+    &.dash--em {
+        padding-left: 20px;
+        @include mq("mobile") {
+            padding-left: 30px;
+        }
+
+        > li:before {
+            content: '\2014';
+            margin-left: -20px;
+            @include mq("mobile") {
+                margin-left: -30px;
+            }
+        }
+    }
 }
 
 ol.letter {
-  display: block;
-  padding-left: 15px;
-  counter-reset: lettered;
-
-  @include mq('mobile') {
-    padding-left: 0;
-  }
-
-  > li {
-    position: relative;
     display: block;
-    counter-increment: lettered;
-  }
-
-  > li:before {
-    content: counter(lettered, lower-alpha);
-    margin:0 5px 0 -15px;
-    width: 0;
-    overflow: visible;
-    float: left;
-
-    @include mq('mobile') {
-      margin: 0;
-      width: auto;
-      float: none;
+    padding-left: 15px;
+    counter-reset: lettered;
+    @include mq("mobile") {
+        padding-left: 0;
     }
-  }
+
+    > li {
+        position: relative;
+        display: block;
+        counter-increment: lettered;
+    }
+    > li:before {
+        content: counter(lettered, lower-alpha);
+        margin: 0 5px 0 -15px;
+        width: 0;
+        overflow: visible;
+        float: left;
+        @include mq("mobile") {
+            margin: 0;
+            width: auto;
+            float: none;
+        }
+    }
 }
 
 ol.number {
-  display: block;
-  padding-left: 15px;
-  counter-reset: numbered;
-
-  @include mq('mobile') {
-    padding-left: 35px;    
-  }
-
-  > li {
-    position: relative;
     display: block;
-    counter-increment: numbered;
-  }
-
-  > li:before {
-    content: counter(numbered, decimal) '.';
-    margin:0 5px 0 -15px;
-    width: 0;
-    overflow: visible;
-    float: left;
-
-    @include mq('mobile') {
-      margin-left: -35px;
+    padding-left: 15px;
+    counter-reset: numbered;
+    @include mq("mobile") {
+        padding-left: 35px;
     }
-  }
+
+    > li {
+        position: relative;
+        display: block;
+        counter-increment: numbered;
+    }
+    > li:before {
+        content: counter(numbered, decimal) ".";
+        margin: 0 5px 0 -15px;
+        width: 0;
+        overflow: visible;
+        float: left;
+        @include mq("mobile") {
+            margin-left: -35px;
+        }
+    }
 }
 
 .scroll-point {
-  display: block;
-  margin-top: 5px;
-  margin-bottom: 50px;
-
-  @include mq('mobile') {
-    margin-bottom: 93px;
-  }
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    @include mq("mobile") {
+        margin-bottom: 93px;
+    }
 }
 
 // ---------- Brand Styling ----------
 
 body {
-  @include helvetica-neue;
-  color: #ffffff;
-
-  @include mq('mobile') {
-    font-size: 32px;
-    line-height: 40px;
-  }
+    @include helvetica-neue;
+    color: #ffffff;
+    @include mq("mobile") {
+        font-size: 32px;
+        line-height: 40px;
+    }
 }
 
-h1,h2,h3,h4,h5,h6 {
-  @include gill-sans;
-  color: #febd3f;  
-  // TODO: add desktop font-size/line-height
-
-  &.white {
-    color: #ffffff;
-  }
+h1, h2, h3, h4, h5, h6 {
+    @include gill-sans;
+    color: #febd3f;
+    // TODO: add desktop font-size/line-height
+    &.white {
+        color: #ffffff;
+    }
 }
 
 h1 {
-  // TODO: add desktop font-size/line-height
-
-  @include mq('mobile') {
-    // TODO: add mobile font-size/line-height
-    font-size: 59px;
-    line-height: 63px;
-  }
+    // TODO: add desktop font-size/line-height
+    @include mq("mobile") {
+        // TODO: add mobile font-size/line-height
+        font-size: 59px;
+        line-height: 63px;
+    }
 }
 
 h2 {
-  // TODO: add desktop font-size/line-height
-  // padding-top: 30px;
-  padding-bottom: 35px;
-  
-  @include mq('mobile') {
-    font-size: 56px;
-    line-height: 60px;
-    padding-top: 15px;
-    padding-bottom: 40px;
-  }
+    // TODO: add desktop font-size/line-height
+    // padding-top: 30px;
+    padding-bottom: 35px;
+    @include mq("mobile") {
+        font-size: 56px;
+        line-height: 60px;
+        padding-top: 15px;
+        padding-bottom: 40px;
+    }
 }
 
 h3 {
-  // TODO: add desktop font-size/line-height
-  padding-bottom: 10px;
-
-  @include mq('mobile') {
-    // TODO: add mobile font-size/line-height
-    font-size: 34px;
-    line-height: 40px;
-    padding-bottom: 5px;
-  }
+    // TODO: add desktop font-size/line-height
+    padding-bottom: 10px;
+    @include mq("mobile") {
+        // TODO: add mobile font-size/line-height
+        font-size: 34px;
+        line-height: 40px;
+        padding-bottom: 5px;
+    }
 }
 
 .sub-head {
-  font-family: font('helvetica neue', 'roman');
-  // TODO: add desktop font-size/line-height
-  padding-bottom: 35px;
-
-  @include mq('mobile') {
-    font-size: 40px;
-    line-height: 44px;
-    padding-bottom: 40px;
-  }
+    font-family: font("helvetica neue", "roman");
+    // TODO: add desktop font-size/line-height
+    padding-bottom: 35px;
+    @include mq("mobile") {
+        font-size: 40px;
+        line-height: 44px;
+        padding-bottom: 40px;
+    }
 }
 
 ul,
 ol {
-  padding-bottom: 20px;
-
-  @include mq('mobile') {
     padding-bottom: 20px;
-  }
+    @include mq("mobile") {
+        padding-bottom: 20px;
+    }
 
-  ul, ol {
-    padding-top: 10px;
-    padding-bottom: 0;    
-  }
+    ul, ol {
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
 }
 
 p {
-  padding-bottom: 20px;
-
-  @include mq('mobile') {
     padding-bottom: 20px;
-  }
+    @include mq("mobile") {
+        padding-bottom: 20px;
+    }
 }
 
 li {
-  padding-bottom: 10px;
-
-  @include mq('mobile') {
     padding-bottom: 10px;
-  }
+    @include mq("mobile") {
+        padding-bottom: 10px;
+    }
 
-  &:last-child {
-    padding-bottom: 0;
-  }
+    &:last-child {
+        padding-bottom: 0;
+    }
 }
 
 .chart-head {
-  color: #fefefe;
-  font-family: font('gill sans', 'roman');
-  // TODO: add desktop font-size/line-height
-
-  @include mq('mobile') {
-    font-size: 34px;
-    line-height: 40px;
-  }
+    color: #fefefe;
+    font-family: font("gill sans", "roman");
+    // TODO: add desktop font-size/line-height
+    @include mq("mobile") {
+        font-size: 34px;
+        line-height: 40px;
+    }
 }
-
 
 /* PDF Download link styles - for DSM5 section of index and DSM5 slideout in menu */
 a.pdf-link {
-  display: block;
-  background-repeat: no-repeat;
-  color: #333e48;
-  text-decoration: none;
-
-  @include mq('desktop') {
-    background-image: url('#{$img-path}/pdf.png');
-    height: 45px;
-    margin-top: 15px;
-    padding-left: 40px;
-  } 
-  @include mq('mobile') {
-    background-image: url('#{$img-path}/pdf-large.png');
-    background-size: 70px auto;
-    font-size: 30px;
-    line-height: 92px;
-    margin-top: 0;
-    padding-left: 75px;
-    margin-left: 45px;
-    height: 92px;
-  }
-  span {
-    border-bottom: 1px solid #333e48;
-    line-height: 45px;
-
-    sup {
-      text-decoration: none;
+    display: block;
+    background-repeat: no-repeat;
+    color: #333e48;
+    text-decoration: none;
+    @include mq("desktop") {
+        background-image: url("#{$img-path}/pdf.png");
+        height: 45px;
+        margin-top: 15px;
+        padding-left: 40px;
     }
-  }
+
+    @include mq("mobile") {
+        background-image: url("#{$img-path}/pdf-large.png");
+        background-size: 70px auto;
+        font-size: 30px;
+        line-height: 92px;
+        margin-top: 0;
+        padding-left: 75px;
+        margin-left: 45px;
+        height: 92px;
+    }
+
+    span {
+        border-bottom: 1px solid #333e48;
+        line-height: 45px;
+        sup {
+            text-decoration: none;
+        }
+    }
 }
 
 /* Close button for slideouts */
 .close {
-  position: absolute;
-  top: 10px;
-  right: 17px;
-  height: 28px;
-  width: 28px;
-  background-image: url('#{$img-path}/close.png');
-  cursor: pointer;
-
-  @include mq('mobile') {
-    display: none;
-  }
+    position: absolute;
+    top: 10px;
+    right: 17px;
+    height: 28px;
+    width: 28px;
+    background-image: url("#{$img-path}/close.png");
+    cursor: pointer;
+    @include mq("mobile") {
+        display: none;
+    }
 }
-
 
 // DEV
 html::-webkit-scrollbar {
-  width: 0 !important;
+    width: 0 !important;
 }
 
 .fpo {
-  height: 500px;
+    height: 500px;
 }

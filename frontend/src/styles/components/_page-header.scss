@@ -1,23 +1,21 @@
 .page-header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  z-index: z('page', 'header');
-
-  @include mq('mobile') {
-    height: 93px;
-  }
-
-  .content-wrap {
-    //@include rgba-background(rgba(255,255,255,0.25));
-    @include rgba-background(rgba(0,0,0,0.5));
-    width: 1024px;
-
-    @include mq('mobile') {
-      width: 640px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: z("page", "header");
+    @include mq("mobile") {
+        height: 93px;
     }
-  }
+
+    .content-wrap {
+        //@include rgba-background(rgba(255,255,255,0.25));
+        @include rgba-background(rgba(0, 0, 0, 0.5));
+        width: 1024px;
+        @include mq("mobile") {
+            width: 640px;
+        }
+    }
 }
