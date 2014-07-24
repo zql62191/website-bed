@@ -42,6 +42,7 @@ namespace BEDService
             List<string> errors = null;
             HCPIndividual hcp;
             QuestionResponseSet questionResponseSet;
+            RegistrationManager regMgr;
 
             try
             {
@@ -53,13 +54,12 @@ namespace BEDService
                 if (Services.ServiceIsAvailable)
                 {
                     Address address = new Address(optIn.Address.Address1, optIn.Address.Address2, optIn.Address.City, Enum.Parse(typeof(States), optIn.Address.State).ToString(), optIn.Address.Zip, null, ConfigurationManager.AppSettings["RTCountry"]);
+                   
                     EmailAddress emailAddress = new EmailAddress(optIn.Email.Email);
                     hcp = new HCPIndividual(String.Empty, optIn.Address.FName, optIn.Address.LName, String.Empty, emailAddress, address);
                     hcp.Specialties.Add((Specialties)Enum.Parse(typeof(Specialties), optIn.Specialty));
 
-                    //hcp.PIISetID = long.MaxValue;
-
-                    RegistrationManager regMgr = new RegistrationManager();
+                    regMgr = new RegistrationManager();
                     regMgr.Individual = hcp;
                     
                     List<QuestionResponse> questionResponses = new List<QuestionResponse>();
@@ -72,17 +72,17 @@ namespace BEDService
                     questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDHCPOptIn"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsYes"]));
                     questionResponses.Add(questionResponse);
 
-                    questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDSpeciality"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), optIn.Specialty);
-                    questionResponses.Add(questionResponse);
-
-                    questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDPractice"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsQuestionNotAsked"]));
-                    questionResponses.Add(questionResponse);
 
                     questionResponseSet = new QuestionResponseSet();
-                    //questionResponseSet.QuestionSetID = long.MaxValue;
                     questionResponseSet.QuestionResponses = questionResponses;
                     
                     regMgr.PerformLiteRegistration(hcp, questionResponseSet);
+
+                    if (regMgr.Status.ToUpper() != "OK")
+                    {
+                        errors.Add(regMgr.StatusMessage);
+                    }
+
                 }
                 else
                 {
@@ -98,6 +98,7 @@ namespace BEDService
             {
                 hcp = null;
                 questionResponseSet = null;
+                regMgr = null;
             }
 
             return errors;
@@ -107,12 +108,46 @@ namespace BEDService
         {
             AuditTrail auditTrail = new AuditTrail();
             List<string> errors = null;
+            HCPIndividual hcp;
+            QuestionResponseSet questionResponseSet;
+
             try
             {
                 errors = ValidateEmail(email);
 
                 if (errors.Count > 0)
                     return errors;
+                if (Services.ServiceIsAvailable)
+                {
+                    EmailAddress emailAddress = new EmailAddress(email.Email);
+
+                    hcp = new HCPIndividual();
+                    hcp.EmailAddresses = new List<EmailAddress>();
+                    hcp.EmailAddresses.Add(emailAddress);
+ 
+                    //hcp.PIISetID = long.MaxValue;
+
+                    RegistrationManager regMgr = new RegistrationManager();
+                    regMgr.Individual = hcp;
+
+                    List<QuestionResponse> questionResponses = new List<QuestionResponse>();
+                    QuestionResponse questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDExitMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), ConfigurationManager.AppSettings["MCCUnsubscribe"]);
+                    questionResponses.Add(questionResponse);
+
+                    questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDOptOutBEDEmail"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsYes"]));
+                    questionResponses.Add(questionResponse);
+
+                    questionResponseSet = new QuestionResponseSet();
+                    // questionResponseSet.QuestionSetID = long.MaxValue;
+                    questionResponseSet.QuestionResponses = questionResponses;
+
+                    regMgr.PerformLiteRegistration(hcp, questionResponseSet);
+                }
+                else
+                {
+                    errors.Add("The PMM services are unavailable");
+                }
+
             }
             catch (Exception e)
             {
@@ -137,8 +172,8 @@ namespace BEDService
                 errors = ValidateAddress(address);
 
                 if (errors.Count > 0)
-                    return errors;
-            }
+            return errors;
+        }
             catch (Exception e)
             {
                 auditTrail.SetAuditTrail(" ", AuditTrail.OperationType.Unsubscribtion_Failure, e.Source, e.Message);
@@ -163,8 +198,8 @@ namespace BEDService
                 errors.AddRange(ValidateEmail(email));
 
                 if (errors.Count > 0)
-                    return errors;
-            }
+            return errors;
+        }
             catch (Exception e)
             {
                 auditTrail.SetAuditTrail(" ", AuditTrail.OperationType.Unsubscribtion_Failure, e.Source, e.Message);

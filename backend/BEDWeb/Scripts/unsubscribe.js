@@ -10,18 +10,9 @@ var ProcessData;
 function registerUser() {
 
     var data = {
-        "FormEmail": {
-            "Email": "email@email.cim"
-        },
-        "FormAddress": {
-            "FName": "Test",
-            "MName": "T",
-            "LName": "Test",
-            "Address1": "address1",
-            "Address2": "address2",
-            "City": "city",
-            "State": "OH",
-            "Zip": "11111"
+        "email": {
+            "Email": "email@email.cim",
+            "ConfirmEmail":"email@email.cim"
         }
     };
 
