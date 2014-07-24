@@ -25,7 +25,8 @@ namespace BEDService.Model
             ServiceStart,
             ServiceEnd,
             Application_Failure,
-            Uninitialized
+            Uninitialized,
+            Unsubscribtion_Failure
         };
 
         public AuditTrail() {

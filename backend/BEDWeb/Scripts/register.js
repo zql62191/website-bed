@@ -14,8 +14,8 @@ function registerUser() {
             "Specialty": "OPT",
             "CommunicationsOptIn": 1,
             "Email": {
-                "Email": "email@email.cim",
-                "ConfirmEmail": "email@email.cim"
+                "Email": "email@email.com",
+                "ConfirmEmail": "email@email.com"
             },
             "Address": {
                 "FName": "Test",
@@ -55,7 +55,7 @@ function TestService() {
         },
         error: function (xhr) {
             alert(xhr.responseText);
-            $('.error').text('<pre>' + xhr.responseText + '</pre>');
+            $('.error').html('<pre>' + xhr.responseText + '</pre>');
         } // When Service call fails
     });
 

@@ -79,7 +79,7 @@ namespace BEDService
                     questionResponses.Add(questionResponse);
 
                     questionResponseSet = new QuestionResponseSet();
-                   // questionResponseSet.QuestionSetID = long.MaxValue;
+                    //questionResponseSet.QuestionSetID = long.MaxValue;
                     questionResponseSet.QuestionResponses = questionResponses;
                     
                     regMgr.PerformLiteRegistration(hcp, questionResponseSet);
@@ -105,6 +105,7 @@ namespace BEDService
 
         public List<string> SetUnsubscribeDataEmail(FormEmail email) 
         {
+            AuditTrail auditTrail = new AuditTrail();
             List<string> errors = null;
             try
             {
@@ -115,21 +116,65 @@ namespace BEDService
             }
             catch (Exception e)
             {
+                auditTrail.SetAuditTrail(" ", AuditTrail.OperationType.Unsubscribtion_Failure, e.Source, e.Message);
+                throw e;
+            }
+            finally
+            {
+                log.Info(auditTrail.GetAuditTrail());
+                auditTrail = null;
             }
 
             return errors;
         }
 
-        public List<string> SetUnsubscribeDataAddress(FormAddress adress)
+        public List<string> SetUnsubscribeDataAddress(FormAddress address)
         {
+            AuditTrail auditTrail = new AuditTrail();
             List<string> errors = null;
+            try
+            {
+                errors = ValidateAddress(address);
+
+                if (errors.Count > 0)
+                    return errors;
+            }
+            catch (Exception e)
+            {
+                auditTrail.SetAuditTrail(" ", AuditTrail.OperationType.Unsubscribtion_Failure, e.Source, e.Message);
+                throw e;
+            }
+            finally
+            {
+                log.Info(auditTrail.GetAuditTrail());
+                auditTrail = null;
+            }
 
             return errors;
         }
 
         public List<string> SetUnsubscribeDataBoth(FormEmail email, FormAddress address)
         {
+            AuditTrail auditTrail = new AuditTrail();
             List<string> errors = null;
+            try
+            {
+                errors = ValidateAddress(address);
+                errors.AddRange(ValidateEmail(email));
+
+                if (errors.Count > 0)
+                    return errors;
+            }
+            catch (Exception e)
+            {
+                auditTrail.SetAuditTrail(" ", AuditTrail.OperationType.Unsubscribtion_Failure, e.Source, e.Message);
+                throw e;
+            }
+            finally
+            {
+                log.Info(auditTrail.GetAuditTrail());
+                auditTrail = null;
+            }
 
             return errors;
         }
