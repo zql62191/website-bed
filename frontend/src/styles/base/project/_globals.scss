@@ -364,6 +364,30 @@ a.pdf-link {
     }
 }
 
+
+// Utility classes
+.yellow {
+    color: #fcbb3f;
+}
+.center {
+    text-align: center;
+}
+.footnote {
+
+    @include mq('mobile') {
+        font-size: 25px;
+        line-height: 28px; 
+    }
+
+    @include mq('desktop') {
+        font-size: 18px;
+        line-height: 21px; 
+    }
+}
+
+
+
+
 /* Close button for slideouts */
 .close {
     position: absolute;

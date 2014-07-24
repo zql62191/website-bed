@@ -196,11 +196,12 @@
             }
         }
         p {
+            padding-top: 10px;
             font-style: normal;
             color: #ffffff;
             margin-bottom: 10px;
             width: 290px;
-            line-height: 23px;
+            line-height: 25px;
             @include mq("mobile") {
                 font-size: 28px;
                 line-height: 36px;

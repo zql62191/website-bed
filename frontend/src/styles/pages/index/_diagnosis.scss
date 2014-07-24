@@ -91,4 +91,58 @@
             background: url("#{$img-path}/diagnosis-graphic-mobile.png") center center no-repeat;
         }
     }
+
+    .fifty-percent {
+        padding-top: 100px;
+        min-height: 375px;
+        background: url('#{$img-path}/diagnosis-fifty-bg.png') center center no-repeat;
+        text-align: center;
+
+        .large{
+            font-size: 145px;
+            line-height: 140px;
+            font-family: font('gill sans', 'bold');
+            padding-bottom: 0;
+            padding-right: 15px;
+        }
+        p:not(.large) {
+            margin-top: -15px;
+            font-size: 29px;
+            line-height: 34px;
+        }
+    }
+
+    .weight-graphic {
+        margin-left: 115px;
+        padding-left: 105px;
+
+        .large {
+            font-size: 120px;
+            line-height: 100px;
+            font-family: font('gill sans', 'bold');
+        }
+        p {
+            padding-bottom: 10px;
+            line-height: 36px;
+        }
+    }
+
+    .nineteen-percent {
+        margin-top: 35px;
+        background: url('#{$img-path}/diagnosis-nineteen.png') top left no-repeat;
+        min-height: 250px;
+        padding-bottom: 40px;
+    }
+
+    .thirty-six-percent {
+        padding-left: 105px;
+        background: url('#{$img-path}/diagnosis-thirty-six.png') top left no-repeat;
+        min-height: 210px;
+    }
+
+    .percent {
+        font-size: 0.5em;
+        top: -0.65em;
+    }
+
 }

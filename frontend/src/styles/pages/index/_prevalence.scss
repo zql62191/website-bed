@@ -90,6 +90,9 @@
         }
     }
     .male-female-graphic {
+
+        text-align: center;
+
         @include mq("mobile") {
             background-image: url("#{$img-path}/prevalence-male-female-mobile.png");
             width: 500px;
@@ -100,6 +103,16 @@
         @include mq("desktop") {
             display: none;
         }
+
+        div {
+            padding-top: 60px;
+        }
+
+        p {
+            font-size: 38px;
+            font-family: font('gill sans', 'regular');
+        }
+
     }
     // Graphic (and cooresponding text) only visible on desktop
     .desktop-graphic {

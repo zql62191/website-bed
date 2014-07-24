@@ -45,6 +45,15 @@
     }
     .graphic-container {
         overflow: hidden;
+
+        .text {
+            width: 329px;
+            margin: 0 auto;
+        }
+        .footnote {
+            padding-left: 45px;
+            padding-bottom: 60px;
+        }
     }
     .twenty-one, .chart {
         @include mq("mobile") {
@@ -98,5 +107,54 @@
             padding-left: 20px;
         }
     }
-    // continue styles in here
+
+
+    .graphic {
+        margin-bottom: 75px;
+
+        .large {
+            padding-top: 55px;
+            font-size: 230px;
+            line-height: 180px;
+            font-family: font('gill sans', 'bold');
+        }
+        p {
+            padding-right: 25px;
+        }
+    }
+
+    .eighty {
+        background: url("#{$img-path}/spiral.png") top left no-repeat;
+        text-align: center;
+
+
+        @include mq("mobile") {
+            height: 450px;
+        }
+        @include mq("desktop") {
+            height: 189px;
+            margin-top: -19px;
+            margin-left: -30px;
+        }
+    }
+
+    .forty-nine {
+        background: url("#{$img-path}/spiral.png") top left no-repeat;
+        text-align: center;
+
+
+        @include mq("mobile") {
+            height: 450px;
+        }
+        @include mq("desktop") {
+            height: 189px;
+            margin-top: -19px;
+            margin-left: -30px;
+        }
+    }
+
+    .percent {
+        font-size: 0.5em;
+        top: -0.65em;
+    }
 }

@@ -478,6 +478,27 @@ a.pdf-link span sup {
   text-decoration: none;
 }
 
+.yellow {
+  color: #fcbb3f;
+}
+
+.center {
+  text-align: center;
+}
+
+@media only screen and (max-width: 40em) {
+  .footnote {
+    font-size: 25px;
+    line-height: 28px;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .footnote {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
 /* Close button for slideouts */
 .close {
   position: absolute;
@@ -1223,6 +1244,9 @@ html::-webkit-scrollbar {
     line-height: 22px;
   }
 }
+.section--prevalence .male-female-graphic {
+  text-align: center;
+}
 @media only screen and (max-width: 40em) {
   .section--prevalence .male-female-graphic {
     background-image: url("../img/prevalence-male-female-mobile.png");
@@ -1235,6 +1259,13 @@ html::-webkit-scrollbar {
   .section--prevalence .male-female-graphic {
     display: none;
   }
+}
+.section--prevalence .male-female-graphic div {
+  padding-top: 60px;
+}
+.section--prevalence .male-female-graphic p {
+  font-size: 38px;
+  font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 @media only screen and (max-width: 40em) {
   .section--prevalence .desktop-graphic {
@@ -1423,6 +1454,14 @@ html::-webkit-scrollbar {
 .section--course .graphic-container {
   overflow: hidden;
 }
+.section--course .graphic-container .text {
+  width: 329px;
+  margin: 0 auto;
+}
+.section--course .graphic-container .footnote {
+  padding-left: 45px;
+  padding-bottom: 60px;
+}
 @media only screen and (max-width: 40em) {
   .section--course .twenty-one, .section--course .chart {
     text-align: center;
@@ -1469,6 +1508,54 @@ html::-webkit-scrollbar {
     line-height: 22px;
     padding-left: 20px;
   }
+}
+.section--course .graphic {
+  margin-bottom: 75px;
+}
+.section--course .graphic .large {
+  padding-top: 55px;
+  font-size: 230px;
+  line-height: 180px;
+  font-family: "Gill Sans W01 Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+.section--course .graphic p {
+  padding-right: 25px;
+}
+.section--course .eighty {
+  background: url("../img/spiral.png") top left no-repeat;
+  text-align: center;
+}
+@media only screen and (max-width: 40em) {
+  .section--course .eighty {
+    height: 450px;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .section--course .eighty {
+    height: 189px;
+    margin-top: -19px;
+    margin-left: -30px;
+  }
+}
+.section--course .forty-nine {
+  background: url("../img/spiral.png") top left no-repeat;
+  text-align: center;
+}
+@media only screen and (max-width: 40em) {
+  .section--course .forty-nine {
+    height: 450px;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .section--course .forty-nine {
+    height: 189px;
+    margin-top: -19px;
+    margin-left: -30px;
+  }
+}
+.section--course .percent {
+  font-size: 0.5em;
+  top: -0.65em;
 }
 
 .section--effects {
@@ -1594,14 +1681,14 @@ html::-webkit-scrollbar {
   }
 }
 @media only screen and (max-width: 40em) {
-  .section--effects .eighty {
-    background-image: url("../img/effects-eighty-mobile.png");
+  .section--effects .nineteen {
+    background-image: url("../img/effects-nineteen-mobile.png");
     height: 450px;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  .section--effects .eighty {
-    background-image: url("../img/effects-eighty.png");
+  .section--effects .nineteen {
+    background-image: url("../img/effects-nineteen-mobile.png");
     height: 189px;
     margin-top: -19px;
     margin-left: -30px;
@@ -1868,6 +1955,52 @@ html::-webkit-scrollbar {
     background: url("../img/diagnosis-graphic-mobile.png") center center no-repeat;
   }
 }
+.section--diagnosis .fifty-percent {
+  padding-top: 100px;
+  min-height: 375px;
+  background: url("../img/diagnosis-fifty-bg.png") center center no-repeat;
+  text-align: center;
+}
+.section--diagnosis .fifty-percent .large {
+  font-size: 145px;
+  line-height: 140px;
+  font-family: "Gill Sans W01 Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  padding-bottom: 0;
+  padding-right: 15px;
+}
+.section--diagnosis .fifty-percent p:not(.large) {
+  margin-top: -15px;
+  font-size: 29px;
+  line-height: 34px;
+}
+.section--diagnosis .weight-graphic {
+  margin-left: 115px;
+  padding-left: 105px;
+}
+.section--diagnosis .weight-graphic .large {
+  font-size: 120px;
+  line-height: 100px;
+  font-family: "Gill Sans W01 Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+.section--diagnosis .weight-graphic p {
+  padding-bottom: 10px;
+  line-height: 36px;
+}
+.section--diagnosis .nineteen-percent {
+  margin-top: 35px;
+  background: url("../img/diagnosis-nineteen.png") top left no-repeat;
+  min-height: 250px;
+  padding-bottom: 40px;
+}
+.section--diagnosis .thirty-six-percent {
+  padding-left: 105px;
+  background: url("../img/diagnosis-thirty-six.png") top left no-repeat;
+  min-height: 210px;
+}
+.section--diagnosis .percent {
+  font-size: 0.5em;
+  top: -0.65em;
+}
 
 .section--dsm5 {
   background: #ededed;
@@ -2081,11 +2214,12 @@ html::-webkit-scrollbar {
   }
 }
 .section--dsm5 .tab-inner p {
+  padding-top: 10px;
   font-style: normal;
   color: #ffffff;
   margin-bottom: 10px;
   width: 290px;
-  line-height: 23px;
+  line-height: 25px;
 }
 @media only screen and (max-width: 40em) {
   .section--dsm5 .tab-inner p {
