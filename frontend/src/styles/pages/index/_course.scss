@@ -30,6 +30,11 @@
         @include mq("desktop") {
             font-size: 38px;
             padding-bottom: 25px;
+
+
+            &:nth-of-type(2) {
+                padding-top: 25px;
+            }
         }
     }
     .sub-head {
@@ -60,6 +65,17 @@
             @include mq('desktop') {
                 width: 49%;
                 display: inline-block;
+
+                .text {
+                    float: right;
+                    width: 50%;
+                }
+                .text:first-child {
+                    padding-top: 75px;
+                }
+                .footnote {
+                    padding-left: 0;
+                }
             }
         }
     }
@@ -91,8 +107,6 @@
     .chart img {
         @include mq("desktop") {
             width: 175px;
-            display: inline;
-            width: 25%;
         }
     }
     .mean-duration {
@@ -167,6 +181,7 @@
             width: 450px;
             height: 450px;
             display: inline-block;
+            margin-bottom: 0;
         }
     }
 

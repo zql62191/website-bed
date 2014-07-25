@@ -1419,6 +1419,9 @@ html::-webkit-scrollbar {
     font-size: 38px;
     padding-bottom: 25px;
   }
+  .section--course h2:nth-of-type(2) {
+    padding-top: 25px;
+  }
 }
 @media only screen and (min-width: 40.063em) {
   .section--course .sub-head {
@@ -1444,6 +1447,16 @@ html::-webkit-scrollbar {
   .section--course .graphic-container div {
     width: 49%;
     display: inline-block;
+  }
+  .section--course .graphic-container div .text {
+    float: right;
+    width: 50%;
+  }
+  .section--course .graphic-container div .text:first-child {
+    padding-top: 75px;
+  }
+  .section--course .graphic-container div .footnote {
+    padding-left: 0;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -1473,8 +1486,6 @@ html::-webkit-scrollbar {
 @media only screen and (min-width: 40.063em) {
   .section--course .chart img {
     width: 175px;
-    display: inline;
-    width: 25%;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -1539,6 +1550,7 @@ html::-webkit-scrollbar {
     width: 450px;
     height: 450px;
     display: inline-block;
+    margin-bottom: 0;
   }
 }
 .section--course .forty-nine {
@@ -1604,7 +1616,7 @@ html::-webkit-scrollbar {
   .section--effects .intro {
     font-size: 25px;
     line-height: 29px;
-    padding-bottom: 0;
+    padding-bottom: 25px;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -1655,11 +1667,13 @@ html::-webkit-scrollbar {
   .section--effects .comorbidity {
     width: 430px;
     float: left;
+    padding-left: 25px;
   }
   .section--effects .comorbidity h3 {
     font-size: 24px;
-    line-height: 45px;
+    line-height: 25px;
     padding-bottom: 5px;
+    padding-top: 0;
   }
   .section--effects .comorbidity p {
     font-size: 20px;
@@ -1681,10 +1695,10 @@ html::-webkit-scrollbar {
 }
 @media only screen and (min-width: 40.063em) {
   .section--effects .sixty-three {
-    background-image: url("../img/effects-sixty-three.png");
-    height: 215px;
-    margin-top: -38px;
+    background-image: url("../img/effects-sixty-three-mobile.png");
+    height: 300px;
     margin-left: -15px;
+    background-position: top center;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -1696,9 +1710,9 @@ html::-webkit-scrollbar {
 @media only screen and (min-width: 40.063em) {
   .section--effects .nineteen {
     background-image: url("../img/effects-nineteen-mobile.png");
-    height: 189px;
-    margin-top: -19px;
+    height: 300px;
     margin-left: -30px;
+    background-position: top center;
   }
 }
 

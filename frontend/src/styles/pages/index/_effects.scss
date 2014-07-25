@@ -49,7 +49,7 @@
         @include mq("desktop") {
             font-size: 25px;
             line-height: 29px;
-            padding-bottom: 0;
+            padding-bottom: 25px;
         }
     }
     h3 {
@@ -101,10 +101,12 @@
         @include mq("desktop") {
             width: 430px;
             float: left;
+            padding-left: 25px;
             h3 {
                 font-size: 24px;
-                line-height: 45px;
+                line-height: 25px;
                 padding-bottom: 5px;
+                padding-top: 0;
             }
             p {
                 font-size: 20px;
@@ -124,10 +126,11 @@
             height: 450px;
         }
         @include mq("desktop") {
-            background-image: url("#{$img-path}/effects-sixty-three.png");
-            height: 215px;
-            margin-top: -38px;
+            background-image: url("#{$img-path}/effects-sixty-three-mobile.png");
+            height: 300px;
+            //margin-top: -38px;
             margin-left: -15px;
+            background-position: top center;
         }
     }
     .nineteen {
@@ -137,9 +140,10 @@
         }
         @include mq("desktop") {
             background-image: url("#{$img-path}/effects-nineteen-mobile.png");
-            height: 189px;
-            margin-top: -19px;
+            height: 300px;
+            //margin-top: -19px;
             margin-left: -30px;
+            background-position: top center;
         }
     }
 }
