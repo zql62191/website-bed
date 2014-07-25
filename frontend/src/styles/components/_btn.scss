@@ -15,6 +15,10 @@
         line-height: 93px;
     }
 
+    em {
+        font-family: font("gill sans", "light italic");
+    }
+
     &.btn--menu {
         text-transform: uppercase;
         float: left;

@@ -519,10 +519,6 @@ html::-webkit-scrollbar {
   width: 0 !important;
 }
 
-.fpo {
-  height: 500px;
-}
-
 .page-header {
   position: fixed;
   top: 0;
@@ -663,6 +659,9 @@ html::-webkit-scrollbar {
   margin-top: 15px;
 }
 
+.section {
+  overflow: hidden;
+}
 .section .content-wrap {
   padding-top: 30px;
   padding-bottom: 80px;
@@ -709,6 +708,9 @@ html::-webkit-scrollbar {
     height: 93px;
     line-height: 93px;
   }
+}
+.btn em {
+  font-family: "GillSansW01-LightItalic", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 .btn.btn--menu {
   text-transform: uppercase;

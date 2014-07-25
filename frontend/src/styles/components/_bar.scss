@@ -16,6 +16,7 @@
     &.bar--title {
         color: #ffffff;
         font-size: 19px;
+        // display: none;
         @include mq("mobile") {
             font-size: 30px;
         }

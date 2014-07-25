@@ -12,7 +12,9 @@ module.exports = {
                 'src/scripts/libs/jquery.hammer.js',
                 'src/scripts/libs/jquery.exists.js',
                 'src/scripts/libs/jquery.highlight.js',
-                'src/scripts/libs/angular.min.js'
+                'src/scripts/libs/skrollr.js',
+                'src/scripts/libs/bowser.js',
+                'src/scripts/libs/angular.js'
             ],
             'dist/js/ie.js': [
                 'src/scripts/libs/html5shiv.js',

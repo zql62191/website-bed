@@ -4,6 +4,6 @@ module.exports = {
         indent: 4
     },
     all: {
-        src: ['src/styles/**/*.scss']
+        src: ['src/styles/**/*.scss', '!src/styles/base/_config.scss']
     },
 };

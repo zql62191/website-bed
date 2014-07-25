@@ -34,7 +34,18 @@ $global-border-box: true;
 
 // ---------- Z Indexes ----------
 
-$z-layers: ("page": ("header": 1003, "nav": 1004), "mask": ("nav": 1002), "default": 1, "below": -1, "bottomless-pit": -9000);
+$z-layers: (
+    "page": (
+        "header": 1003, 
+        "nav": 1004
+    ), 
+    "mask": (
+        "nav": 1002
+    ), 
+    "default": 1, 
+    "below": -1, 
+    "bottomless-pit": -9000
+);
 
 // ---------- Media Queries ----------
 
@@ -46,12 +57,49 @@ $z-layers: ("page": ("header": 1003, "nav": 1004), "mask": ("nav": 1002), "defau
 
 // Reducing media queries since its just mobile/desktop
 
-$media-queries: ("mobile": "only screen and (max-width: 40em)", "desktop": "only screen and (min-width: 40.063em)");
+$media-queries: (
+    "mobile": "only screen and (max-width: 40em)", 
+    "desktop": "only screen and (min-width: 40.063em)"
+);
 
 // ---------- Font Names ----------
 
-$font-names: ("helvetica neue": ("light": "HelveticaNeueW01-45Ligh", "light italic": "HelveticaNeueW01-46Ligh", "roman": "HelveticaNeueW01-55Roma", "regular": "HelveticaNeueW01-55Roma", "italic": "HelveticaNeueW01-56It", "bold": "HelveticaNeueW01-75Bold", "bold italic": "HelveticaNeueW01-76Bold"), "gill sans": ("light": "Gill Sans W01 Light", "light italic": "GillSansW01-LightItalic", "medium": "Gill Sans W01 Medium", "regular": "Gill Sans W01 Medium", "roman": "Gill Sans W01 Medium", "italic": "GillSansW01-MediumItali", "bold": "Gill Sans W01 Bold", "bold italic": "GillSansW01-BoldItalic"));
+$font-names: (
+    "helvetica neue": (
+        "light": "HelveticaNeueW01-45Ligh", 
+        "light italic": "HelveticaNeueW01-46Ligh", 
+        "roman": "HelveticaNeueW01-55Roma", 
+        "regular": "HelveticaNeueW01-55Roma", 
+        "italic": "HelveticaNeueW01-56It", 
+        "bold": "HelveticaNeueW01-75Bold", 
+        "bold italic": "HelveticaNeueW01-76Bold"
+    ), 
+    "gill sans": (
+        "light": "Gill Sans W01 Light", 
+        "light italic": "GillSansW01-LightItalic", 
+        "medium": "Gill Sans W01 Medium", 
+        "regular": "Gill Sans W01 Medium", 
+        "roman": "Gill Sans W01 Medium", 
+        "italic": "GillSansW01-MediumItali", 
+        "bold": "Gill Sans W01 Bold", 
+        "bold italic": "GillSansW01-BoldItalic"
+    )
+);
 
 $font-fallback: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 
 $scale: 960 / 1024;
+
+
+
+
+
+
+
+
+
+
+
+
+
+

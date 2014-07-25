@@ -43,7 +43,30 @@ var BED = {
         click: 'tap'
     },
 
+    skrollr: null,
+
     init: function() {
+
+        if (!bowser.mobile && !bowser.tablet) {
+            console.log('skrollr');
+
+            BED.skrollr = skrollr.init({
+                smoothScrolling: true,
+                forceHeight: true,
+                beforerender: function(data) {
+
+                    console.log('beforerender');
+                    console.log(data);
+
+                    // return data.direction !== 'up';
+                },
+                render: function(data) {
+
+                    console.log('render');
+                    console.log(data);
+                }
+            });
+        }
 
         $(window).on('resize', function(e) {
 
