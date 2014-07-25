@@ -100,8 +100,9 @@
     .twenty-one img {
         @include mq("desktop") {
             float: left;
-            width: 375px;
-            //margin: 30px 310px 140px 0;
+            width: 300px;
+            top: 40px;
+            left: 80px;
         }
     }
     .chart img {
@@ -147,20 +148,16 @@
         margin-bottom: 75px;
 
         .large {
-            padding-top: 55px;
-            font-size: 230px;
+            padding-top: 20px;
+            font-size: 160px;
             line-height: 180px;
             font-family: font('gill sans', 'bold');
+            left: -15px
         }
 
         @include mq('mobile') {
             p {
                 padding-right: 25px;
-            }
-        }
-        @include mq('desktop') {
-            p {
-                padding-left: 40px;
             }
         }
     }
@@ -177,12 +174,21 @@
             //height: 189px;
             //margin-top: -19px;
             //margin-left: -30px;
-            background-size: 100%;
+            background-size: 80%;
             width: 450px;
-            height: 450px;
+            height: 350px;
             display: inline-block;
             margin-bottom: 0;
+            top: 25px;
+            left: 85px
         }
+        
+        p {
+            font-size: 22px;
+            line-height: 26px;
+            left: -15px;
+            padding: 0;
+            }
     }
 
     .forty-nine {
@@ -197,12 +203,20 @@
             //height: 189px;
            // margin-top: -19px;
             ///margin-left: -30px;
-            background-size: 100%;
+            background-size: 80%;
             margin: 0 15px;
             width: 450px;
-            height: 450px;
+            height: 350px;
             display: inline-block;
+            top: 25px;
+            left: 20px;
         }
+        p {
+            font-size: 22px;
+            line-height: 26px;
+            left: -15px;
+            padding: 0;
+            }
     }
 
     .percent {
