@@ -17,11 +17,6 @@
     .bar--title:before {
         border-top-color: rgb(179, 182, 183);
     }
-    br.mobile {
-        @include mq("desktop") {
-            display: none;
-        }
-    }
     h2 {
         @include mq("mobile") {
             font-size: 54px;
@@ -48,15 +43,33 @@
             font-weight: bold;
         }
     }
+    p {
+        @include mq('desktop') {
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+
     .graphic-container {
         overflow: hidden;
+        border-bottom: 1px solid #ffffff;
+
+        @include mq('desktop') {
+            height: 350px;
+        }
 
         .text {
             width: 329px;
             margin: 0 auto;
         }
         .footnote {
-            padding-left: 45px;
+
+            @include mq('desktop') {
+                padding-left: 45px;
+            }
+            @include mq('mobile') {
+                padding-left: 25px;
+            }
             padding-bottom: 60px;
         }
 
@@ -105,9 +118,12 @@
             left: 80px;
         }
     }
-    .chart img {
-        @include mq("desktop") {
-            width: 175px;
+    .chart {
+        margin-left: -45px;
+        img {
+            @include mq("desktop") {
+                width: 175px;
+            }
         }
     }
     .mean-duration {
@@ -120,17 +136,16 @@
         }
 
         @include mq("desktop") {
-            //font-size: 23px;
-            //line-height: 26px;
             position: absolute;
-            //top: 330px;
-            top: 370px;
-            //left: 250px;
-            left: 20px;
+            top: 300px;
+            //left: 20px;
         }
     }
     // add to global styles
     .disclaimer {
+
+        //font-size: 25px;
+        //line-height: 34px;
         @include mq("mobile") {
             font-size: 25px;
             line-height: 34px;
@@ -138,8 +153,14 @@
 
         @include mq("desktop") {
             font-size: 18px;
-            line-height: 22px;
-            padding-left: 20px;
+            line-height: 21px;
+            padding-top: 25px;
+            //padding-left: 20px;
+        }
+
+        &:before {
+            content: '*';
+            margin-left: -9px;
         }
     }
 
@@ -158,6 +179,14 @@
         @include mq('mobile') {
             p {
                 padding-right: 25px;
+            }
+
+            .large {
+                padding-top: 20px;
+                font-size: 160px;
+                line-height: 180px;
+                font-family: font('gill sans', 'bold');
+                left: -15px
             }
         }
     }
@@ -188,7 +217,7 @@
             line-height: 26px;
             left: -15px;
             padding: 0;
-            }
+        }
     }
 
     .forty-nine {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -1207,7 +1208,7 @@ html::-webkit-scrollbar {
 }
 .section--prevalence .asterisk:before {
   content: '*';
-  margin-left: -5px;
+  margin-left: -9px;
 }
 @media only screen and (min-width: 40.063em) {
   .section--prevalence .asterisk {
@@ -1233,6 +1234,7 @@ html::-webkit-scrollbar {
     background-image: url("../img/prevalence-text-bg-mobile.png");
     width: 571px;
     height: 167px;
+    margin-bottom: 20px;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -1373,6 +1375,13 @@ html::-webkit-scrollbar {
     line-height: 21px;
   }
 }
+.section--prevalence .comparable .dagger {
+  margin-left: 15px;
+}
+.section--prevalence .comparable .dagger:before {
+  content: '†';
+  margin-left: -15px;
+}
 @media only screen and (min-width: 40.063em) {
   .section--prevalence ul {
     font-size: 22px;
@@ -1409,11 +1418,6 @@ html::-webkit-scrollbar {
 .section--course .bar--title:before {
   border-top-color: #b3b6b7;
 }
-@media only screen and (min-width: 40.063em) {
-  .section--course br.mobile {
-    display: none;
-  }
-}
 @media only screen and (max-width: 40em) {
   .section--course h2 {
     font-size: 54px;
@@ -1437,16 +1441,37 @@ html::-webkit-scrollbar {
   color: #febd3f;
   font-weight: bold;
 }
+@media only screen and (min-width: 40.063em) {
+  .section--course p {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
 .section--course .graphic-container {
   overflow: hidden;
+  border-bottom: 1px solid #ffffff;
+}
+@media only screen and (min-width: 40.063em) {
+  .section--course .graphic-container {
+    height: 350px;
+  }
 }
 .section--course .graphic-container .text {
   width: 329px;
   margin: 0 auto;
 }
 .section--course .graphic-container .footnote {
-  padding-left: 45px;
   padding-bottom: 60px;
+}
+@media only screen and (min-width: 40.063em) {
+  .section--course .graphic-container .footnote {
+    padding-left: 45px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--course .graphic-container .footnote {
+    padding-left: 25px;
+  }
 }
 @media only screen and (min-width: 40.063em) {
   .section--course .graphic-container div {
@@ -1490,6 +1515,9 @@ html::-webkit-scrollbar {
     left: 80px;
   }
 }
+.section--course .chart {
+  margin-left: -45px;
+}
 @media only screen and (min-width: 40.063em) {
   .section--course .chart img {
     width: 175px;
@@ -1505,8 +1533,7 @@ html::-webkit-scrollbar {
 @media only screen and (min-width: 40.063em) {
   .section--course .mean-duration {
     position: absolute;
-    top: 370px;
-    left: 20px;
+    top: 300px;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -1518,9 +1545,13 @@ html::-webkit-scrollbar {
 @media only screen and (min-width: 40.063em) {
   .section--course .disclaimer {
     font-size: 18px;
-    line-height: 22px;
-    padding-left: 20px;
+    line-height: 21px;
+    padding-top: 25px;
   }
+}
+.section--course .disclaimer:before {
+  content: '*';
+  margin-left: -9px;
 }
 .section--course .graphic {
   margin-bottom: 75px;
@@ -1535,6 +1566,13 @@ html::-webkit-scrollbar {
 @media only screen and (max-width: 40em) {
   .section--course .graphic p {
     padding-right: 25px;
+  }
+  .section--course .graphic .large {
+    padding-top: 20px;
+    font-size: 160px;
+    line-height: 180px;
+    font-family: "Gill Sans W01 Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    left: -15px;
   }
 }
 .section--course .eighty {
@@ -1662,7 +1700,7 @@ html::-webkit-scrollbar {
 @media only screen and (min-width: 40.063em) {
   .section--effects .associated {
     padding-left: 45px;
-    width: 430px;
+    padding-bottom: 30px;
     float: left;
   }
   .section--effects .associated h3 {
@@ -1684,8 +1722,6 @@ html::-webkit-scrollbar {
 }
 @media only screen and (min-width: 40.063em) {
   .section--effects .comorbidity {
-    width: 430px;
-    float: left;
     padding-left: 25px;
   }
   .section--effects .comorbidity h3 {
@@ -1693,11 +1729,6 @@ html::-webkit-scrollbar {
     line-height: 25px;
     padding-bottom: 5px;
     padding-top: 0;
-  }
-  .section--effects .comorbidity p {
-    font-size: 20px;
-    line-height: 26px;
-    padding-bottom: 0;
   }
 }
 .section--effects .graphic {
@@ -1707,31 +1738,86 @@ html::-webkit-scrollbar {
   background-position: top left;
 }
 @media only screen and (max-width: 40em) {
+  .section--effects .graphic h1 {
+    width: 350px;
+    margin: 0 auto;
+    padding-top: 108px;
+    font-size: 225px;
+    font-family: "Gill Sans W01 Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  }
+  .section--effects .graphic p {
+    width: 350px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-right: 20px;
+    text-align: center;
+    line-height: 41px;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .section--effects .graphic {
+    width: 100%;
+  }
+  .section--effects .graphic h1 {
+    width: 350px;
+    padding: 75px 0 0 50px;
+    font-size: 185px;
+    font-family: "Gill Sans W01 Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .section--effects .graphic p {
+    width: 500px;
+    padding-right: 20px;
+    padding-top: 115px;
+    line-height: 41px;
+    font-size: 30px;
+    line-height: 36px;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+.section--effects .sixty-three {
+  background-image: url("../img/spiral.png");
+}
+@media only screen and (max-width: 40em) {
   .section--effects .sixty-three {
-    background-image: url("../img/effects-sixty-three-mobile.png");
     height: 450px;
   }
 }
 @media only screen and (min-width: 40.063em) {
   .section--effects .sixty-three {
-    background-image: url("../img/effects-sixty-three-mobile.png");
     height: 300px;
-    margin-left: -15px;
-    background-position: top center;
   }
+}
+.section--effects .nineteen {
+  background-image: url("../img/spiral.png");
 }
 @media only screen and (max-width: 40em) {
   .section--effects .nineteen {
-    background-image: url("../img/effects-nineteen-mobile.png");
     height: 450px;
   }
 }
 @media only screen and (min-width: 40.063em) {
   .section--effects .nineteen {
-    background-image: url("../img/effects-nineteen-mobile.png");
     height: 300px;
-    margin-left: -30px;
-    background-position: top center;
+    margin-left: 20px;
+  }
+}
+.section--effects .percent {
+  font-size: 0.5em;
+  top: -0.65em;
+}
+@media only screen and (max-width: 40em) {
+  .section--effects .footnote {
+    font-size: 25px;
+    line-height: 34px;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .section--effects .footnote {
+    font-size: 18px;
+    line-height: 21px;
   }
 }
 
@@ -1935,6 +2021,9 @@ html::-webkit-scrollbar {
   .section--diagnosis h3 {
     font-size: 24px;
   }
+}
+.section--diagnosis h3.chart-head {
+  font-family: "HelveticaNeueW01-55Roma", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 @media only screen and (max-width: 40em) {
   .section--diagnosis .sub-head {

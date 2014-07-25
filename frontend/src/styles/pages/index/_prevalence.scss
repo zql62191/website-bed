@@ -55,7 +55,7 @@
         padding-bottom: 50px;
         &:before {
             content: '*';
-            margin-left: -5px;
+            margin-left: -9px;
         }
         @include mq("desktop") {
             float: left;
@@ -77,6 +77,7 @@
             background-image: url("#{$img-path}/prevalence-text-bg-mobile.png");
             width: 571px;
             height: 167px;
+            margin-bottom: 20px;
         }
 
         @include mq("desktop") {
@@ -206,6 +207,13 @@
             @include mq("desktop") {
                 font-size: 18px;
                 line-height: 21px;
+            }
+        }
+        .dagger {
+            margin-left: 15px;
+            &:before {
+                content: '†';
+                margin-left: -15px;
             }
         }
     }
