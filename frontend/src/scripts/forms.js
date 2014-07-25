@@ -1,3 +1,9 @@
+/****
+ *
+ * Angular Code
+ *
+ ****/
+
 /* Controllers */
 (function() {
     var app;
@@ -63,15 +69,129 @@
 
     app = angular.module('BED.controllers', []);
 
-    app.controller('UnsubscribeController', ['$scope', UnsubscribeController]);
+    app.controller('UnsubscribeController', ['$scope', '$window', '$log', '$location', '$document', '$timeout', '$http', UnsubscribeController]);
 
-    function UnsubscribeController($scope) {
+    function UnsubscribeController($scope, $window, $log, $location, $document, $timeout, $http) {
+
         $scope.states = statearray;
 
         $scope.form = {
-            optoutchoice: "none",
+            optoutchoice: "none"
+        };
+        $scope.form.state = $scope.states[0];
+
+        $scope.unsubscribe = function() {
+            var oldHeight = $(document).height() - $(window).height();
+            var oldTop = $(window).scrollTop();
+            var oldBottom = oldHeight - oldTop;
+
+            if (!$scope.bed_form.$valid) {
+                /*print error*/
+                return;
+            }
+
+            $timeout(function() {
+                var newHeight = $(document).height() - $(window).height();
+                var newTop = $(window).scrollTop();
+                var newBottom = newHeight - newTop;
+                var bottomDifference = newBottom - oldBottom;
+
+                $(window).scrollTop(oldTop + bottomDifference);
+            }, 100);
+
+            switch ($('input:checked').val()) {
+                case 'email':
+                    $scope.unsubscribeEmail();
+                    break;
+                case 'direct':
+                    $scope.unsubscribeDirect();
+                    break;
+                case 'both':
+                    $scope.unsubscribeAll();
+                    break;
+                default:
+                    console.log('No option selected.');
+                    break;
+            }
         };
 
+        $scope.unsubscribeAll = function() {
+            var URL;
+            var data = {
+                "email": {
+                    "Email": $scope.form.email,
+                    "ConfirmEmail": $scope.form.email
+                },
+                "address": {
+                    "FName": $scope.form.fname,
+                    "MName": $scope.form.MI,
+                    "LName": $scope.form.lname,
+                    "Address1": $scope.form.street,
+                    "Address2": $scope.form.suite,
+                    "City": $scope.form.city,
+                    "State": "OH",
+                    "Zip": $scope.form.zip
+                }
+            };
+
+            URL = "/BEDService/SetUnsubscribeDataAll";
+            Data = JSON.stringify(data);
+
+            $scope.processForm(URL, Data);
+        };
+
+        function unsubscribeDirect() {
+            var URL;
+            var data = {
+                "address": {
+                    "FName": "Test",
+                    "MName": "T",
+                    "LName": "Test",
+                    "Address1": "address1",
+                    "Address2": "address2",
+                    "City": "city",
+                    "State": "OH",
+                    "Zip": "11111"
+                }
+            };
+
+            Url = "/BEDService/SetUnsubscribeDataDirect";
+            Data = JSON.stringify(data);
+        }
+
+        function unsubscribeEmail() {
+            var URL;
+            var data = {
+                "FormEmail": {
+                    "Email": "email@email.cim",
+                    "ConfirmEmail": "email@email.cim"
+                }
+            };
+
+            Url = "/BEDService/SetUnsubscribeDataEmail";
+            Data = JSON.stringify(data);
+        }
+
+        $scope.processForm = function(path, sdata) {
+            $log.log(sdata);
+            $http({
+                headers: {
+                    'Accept': 'application/json, text/javascript',
+                    'Content-Type': 'application/json; charset=utf-8'
+                },
+                method: 'POST',
+                url: path,
+                data: sdata,
+                'dataType': 'json'
+            });
+        };
+    }
+
+    app.controller('OptInController', ['$scope', '$window', '$log', '$location', '$document', '$timeout', '$http', OptInController]);
+
+    function OptInController($scope, $window, $log, $location, $document, $timeout, $http) {
+
+        $scope.states = statearray;
         $scope.professions = [
             '*Profession',
             'Eating Disorder Clinician',
@@ -83,6 +203,67 @@
 
         $scope.form.state = $scope.states[0];
         $scope.form.profession = $scope.professions[0];
+
+
+
+        $scope.optIn = function() {
+            var oldHeight = $(document).height() - $(window).height();
+            var oldTop = $(window).scrollTop();
+            var oldBottom = oldHeight - oldTop;
+            var URL;
+            var data = {
+                "optIn": {
+                    "email": {
+                        "Email": $scope.form.email,
+                        "ConfirmEmail": $scope.form.email
+                    },
+                    "address": {
+                        "FName": $scope.form.fname,
+                        "MName": $scope.form.MI,
+                        "LName": $scope.form.lname,
+                        "Address1": $scope.form.street,
+                        "Address2": $scope.form.suite,
+                        "City": $scope.form.city,
+                        "State": "OH",
+                        "Zip": $scope.form.zip
+                    }
+                }
+            };
+
+            if (!$scope.bed_form.$valid) {
+                /*print error*/
+                return;
+            }
+
+            $timeout(function() {
+                var newHeight = $(document).height() - $(window).height();
+                var newTop = $(window).scrollTop();
+                var newBottom = newHeight - newTop;
+                var bottomDifference = newBottom - oldBottom;
+
+                $(window).scrollTop(oldTop + bottomDifference);
+            }, 100);
+
+            URL = "/BEDService/SetOptInData";
+            Data = JSON.stringify(data);
+
+            $scope.processForm(URL, Data);
+
+        };
+
+        $scope.processForm = function(path, sdata) {
+            $log.log(sdata);
+            $http({
+                headers: {
+                    'Accept': 'application/json, text/javascript',
+                    'Content-Type': 'application/json; charset=utf-8'
+                },
+                method: 'POST',
+                url: path,
+                data: sdata,
+                'dataType': 'json'
+            });
+        };
     }
 }).call(this);
 

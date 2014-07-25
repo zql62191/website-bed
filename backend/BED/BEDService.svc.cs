@@ -163,7 +163,7 @@ namespace BEDService
             return errors;
         }
 
-        public List<string> SetUnsubscribeDataAddress(FormAddress address)
+        public List<string> SetUnsubscribeDataDirect(FormAddress address)
         {
             AuditTrail auditTrail = new AuditTrail();
             List<string> errors = null;
@@ -188,7 +188,7 @@ namespace BEDService
             return errors;
         }
 
-        public List<string> SetUnsubscribeDataBoth(FormEmail email, FormAddress address)
+        public List<string> SetUnsubscribeDataAll(FormEmail email, FormAddress address)
         {
             AuditTrail auditTrail = new AuditTrail();
             List<string> errors = null;

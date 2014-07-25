@@ -45,7 +45,7 @@
                 </ul>
         </nav>
       </div>
-      <div ng-controller="UnsubscribeController" class="signup-container _is_fixed_right _slideout">
+      <div ng-controller="OptInController" class="signup-container _is_fixed_right _slideout">
         <div class="close"></div>
         <h2>
           Sign up to receive informative BED content and updates from Shire.
@@ -54,7 +54,7 @@
         <p class="required-fields"><span class="red">*</span>Required Fields
           
         </p>
-        <form novalidate>
+        <form name="bed_form" novalidate>
           <input type="text" name="firstName" placeholder="*First Name" ng-model="form.fname" ng-required="true" class="first-name">
           <input type="text" name="middleInitial" placeholder="MI" ng-model="form.MI" ng-required="false" class="middle-initial">
           <input type="text" name="lastName" placeholder="*Last Name" ng-model="form.lname" ng-required="true" class="last-name">
@@ -110,7 +110,7 @@
       <div class="page-content">
         <div ng-controller="UnsubscribeController" class="unsubscribe">
           <div class="content-wrap">
-            <form id="bed_form" name="bed_form" ng-submit="submitForm()" autocomplete="off" novalidate>
+            <form id="bed_form" name="bed_form" ng-submit="unsubscribe()" autocomplete="off" novalidate>
               <h1>Unsubscribe</h1>
               <p>
                 To unsubscribe from future communications, please select an option below, fill in the required fields, and click Submit.

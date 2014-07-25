@@ -40,9 +40,9 @@ namespace BEDService
          BodyStyle = WebMessageBodyStyle.WrappedRequest,
          ResponseFormat = WebMessageFormat.Json,
          RequestFormat = WebMessageFormat.Json,
-         UriTemplate = "/SetUnsubscribeDataAddress"
+         UriTemplate = "/SetUnsubscribeDataDirect"
         )]
-        List<string> SetUnsubscribeDataAddress(FormAddress address);
+        List<string> SetUnsubscribeDataDirect(FormAddress address);
 
         [OperationContract]
         [WebInvoke
@@ -50,9 +50,9 @@ namespace BEDService
          BodyStyle = WebMessageBodyStyle.WrappedRequest,
          ResponseFormat = WebMessageFormat.Json,
          RequestFormat = WebMessageFormat.Json,
-         UriTemplate = "/SetUnsubscribeDataBoth"
+         UriTemplate = "/SetUnsubscribeDataAll"
         )]
-        List<string> SetUnsubscribeDataBoth(FormEmail email, FormAddress address);
+        List<string> SetUnsubscribeDataAll(FormEmail email, FormAddress address);
 
         [OperationContract]
         [WebInvoke
