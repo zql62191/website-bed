@@ -92,17 +92,10 @@
     .male-female-graphic {
 
         text-align: center;
-
-        @include mq("mobile") {
-            background-image: url("#{$img-path}/prevalence-male-female-mobile.png");
-            width: 500px;
-            height: 348px;
-            margin: 0 auto 45px auto;
-        }
-
-        @include mq("desktop") {
-            display: none;
-        }
+        background: url("#{$img-path}/prevalence-male-female-mobile.png") center center no-repeat;
+        height: 348px;
+        width: 500px;
+        margin: 0 auto 45px auto;
 
         div {
             padding-top: 60px;
@@ -121,6 +114,7 @@
         }
 
         @include mq("desktop") {
+            display: none;
             background-repeat: no-repeat;
             background-position: top center;
             text-align: center;
@@ -150,21 +144,6 @@
             }
         }
     }
-    // Mobile graphic
-    .male-female-text {
-        @include mq("mobile") {
-            display: none;
-        }
-
-        @include mq("desktop") {
-            float: left;
-            width: 310px;
-            height: 115px;
-            padding: 115px 32px 0 34px;
-            font-size: 22px;
-            line-height: 26px;
-        }
-    }
     // Mobile text
     .gender-ratio {
         @include mq("mobile") {
@@ -181,7 +160,6 @@
         border-top: 1px solid #ffffff;
         border-bottom: 1px solid #ffffff;
         @include mq("desktop") {
-            margin-top: 350px;
             padding-top: 25px;
         }
 

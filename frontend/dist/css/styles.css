@@ -1246,19 +1246,10 @@ html::-webkit-scrollbar {
 }
 .section--prevalence .male-female-graphic {
   text-align: center;
-}
-@media only screen and (max-width: 40em) {
-  .section--prevalence .male-female-graphic {
-    background-image: url("../img/prevalence-male-female-mobile.png");
-    width: 500px;
-    height: 348px;
-    margin: 0 auto 45px auto;
-  }
-}
-@media only screen and (min-width: 40.063em) {
-  .section--prevalence .male-female-graphic {
-    display: none;
-  }
+  background: url("../img/prevalence-male-female-mobile.png") center center no-repeat;
+  height: 348px;
+  width: 500px;
+  margin: 0 auto 45px auto;
 }
 .section--prevalence .male-female-graphic div {
   padding-top: 60px;
@@ -1274,6 +1265,7 @@ html::-webkit-scrollbar {
 }
 @media only screen and (min-width: 40.063em) {
   .section--prevalence .desktop-graphic {
+    display: none;
     background-repeat: no-repeat;
     background-position: top center;
     text-align: center;
@@ -1305,21 +1297,6 @@ html::-webkit-scrollbar {
   }
 }
 @media only screen and (max-width: 40em) {
-  .section--prevalence .male-female-text {
-    display: none;
-  }
-}
-@media only screen and (min-width: 40.063em) {
-  .section--prevalence .male-female-text {
-    float: left;
-    width: 310px;
-    height: 115px;
-    padding: 115px 32px 0 34px;
-    font-size: 22px;
-    line-height: 26px;
-  }
-}
-@media only screen and (max-width: 40em) {
   .section--prevalence .gender-ratio {
     padding: 30px 20px 10px 0;
   }
@@ -1337,7 +1314,6 @@ html::-webkit-scrollbar {
 }
 @media only screen and (min-width: 40.063em) {
   .section--prevalence .comparable {
-    margin-top: 350px;
     padding-top: 25px;
   }
 }
@@ -1462,6 +1438,18 @@ html::-webkit-scrollbar {
   padding-left: 45px;
   padding-bottom: 60px;
 }
+@media only screen and (min-width: 40.063em) {
+  .section--course .graphic-container div {
+    width: 49%;
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .section--course .twenty-one {
+    width: 50%;
+    display: inline-block;
+  }
+}
 @media only screen and (max-width: 40em) {
   .section--course .twenty-one, .section--course .chart {
     text-align: center;
@@ -1470,16 +1458,21 @@ html::-webkit-scrollbar {
   }
 }
 @media only screen and (min-width: 40.063em) {
+  .section--course .twenty-one, .section--course .chart {
+    float: left;
+  }
+}
+@media only screen and (min-width: 40.063em) {
   .section--course .twenty-one img {
-    float: right;
+    float: left;
     width: 375px;
-    margin: 30px 310px 140px 0;
   }
 }
 @media only screen and (min-width: 40.063em) {
   .section--course .chart img {
     width: 175px;
-    float: left;
+    display: inline;
+    width: 25%;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -1518,8 +1511,15 @@ html::-webkit-scrollbar {
   line-height: 180px;
   font-family: "Gill Sans W01 Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
-.section--course .graphic p {
-  padding-right: 25px;
+@media only screen and (max-width: 40em) {
+  .section--course .graphic p {
+    padding-right: 25px;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .section--course .graphic p {
+    padding-left: 40px;
+  }
 }
 .section--course .eighty {
   background: url("../img/spiral.png") top left no-repeat;
@@ -1532,9 +1532,11 @@ html::-webkit-scrollbar {
 }
 @media only screen and (min-width: 40.063em) {
   .section--course .eighty {
-    height: 189px;
-    margin-top: -19px;
-    margin-left: -30px;
+    -webkit-background-size: 100% 100%;
+    background-size: 100%;
+    width: 450px;
+    height: 450px;
+    display: inline-block;
   }
 }
 .section--course .forty-nine {
@@ -1548,9 +1550,12 @@ html::-webkit-scrollbar {
 }
 @media only screen and (min-width: 40.063em) {
   .section--course .forty-nine {
-    height: 189px;
-    margin-top: -19px;
-    margin-left: -30px;
+    -webkit-background-size: 100% 100%;
+    background-size: 100%;
+    margin: 0 15px;
+    width: 450px;
+    height: 450px;
+    display: inline-block;
   }
 }
 .section--course .percent {
@@ -1911,12 +1916,6 @@ html::-webkit-scrollbar {
   .section--diagnosis p {
     font-size: 20px;
   }
-  .section--diagnosis p:nth-of-type(2) {
-    width: 810px;
-  }
-  .section--diagnosis p:nth-of-type(3) {
-    width: 690px;
-  }
 }
 @media only screen and (max-width: 40em) {
   .section--diagnosis p:nth-of-type(2), .section--diagnosis p:nth-of-type(3) {
@@ -1973,6 +1972,13 @@ html::-webkit-scrollbar {
   font-size: 29px;
   line-height: 34px;
 }
+@media only screen and (min-width: 40.063em) {
+  .section--diagnosis .fifty-percent {
+    float: left;
+    width: 400px;
+    margin-top: 40px;
+  }
+}
 .section--diagnosis .weight-graphic {
   margin-left: 115px;
   padding-left: 105px;
@@ -1992,10 +1998,22 @@ html::-webkit-scrollbar {
   min-height: 250px;
   padding-bottom: 40px;
 }
+@media only screen and (min-width: 40.063em) {
+  .section--diagnosis .nineteen-percent {
+    float: left;
+    width: 300px;
+  }
+}
 .section--diagnosis .thirty-six-percent {
   padding-left: 105px;
   background: url("../img/diagnosis-thirty-six.png") top left no-repeat;
   min-height: 210px;
+}
+@media only screen and (min-width: 40.063em) {
+  .section--diagnosis .thirty-six-percent {
+    float: left;
+    width: 300px;
+  }
 }
 .section--diagnosis .percent {
   font-size: 0.5em;

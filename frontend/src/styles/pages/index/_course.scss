@@ -54,6 +54,22 @@
             padding-left: 45px;
             padding-bottom: 60px;
         }
+
+
+        div {
+            @include mq('desktop') {
+                width: 49%;
+                display: inline-block;
+            }
+        }
+    }
+
+
+    .twenty-one {
+        @include mq('desktop') {
+            width: 50%;
+            display: inline-block;
+        }
     }
     .twenty-one, .chart {
         @include mq("mobile") {
@@ -61,18 +77,22 @@
             height: auto;
             margin-bottom: 30px;
         }
+        @include mq('desktop') {
+            float: left;
+        }
     }
     .twenty-one img {
         @include mq("desktop") {
-            float: right;
+            float: left;
             width: 375px;
-            margin: 30px 310px 140px 0;
+            //margin: 30px 310px 140px 0;
         }
     }
     .chart img {
         @include mq("desktop") {
             width: 175px;
-            float: left;
+            display: inline;
+            width: 25%;
         }
     }
     .mean-duration {
@@ -118,8 +138,16 @@
             line-height: 180px;
             font-family: font('gill sans', 'bold');
         }
-        p {
-            padding-right: 25px;
+
+        @include mq('mobile') {
+            p {
+                padding-right: 25px;
+            }
+        }
+        @include mq('desktop') {
+            p {
+                padding-left: 40px;
+            }
         }
     }
 
@@ -132,9 +160,13 @@
             height: 450px;
         }
         @include mq("desktop") {
-            height: 189px;
-            margin-top: -19px;
-            margin-left: -30px;
+            //height: 189px;
+            //margin-top: -19px;
+            //margin-left: -30px;
+            background-size: 100%;
+            width: 450px;
+            height: 450px;
+            display: inline-block;
         }
     }
 
@@ -147,9 +179,14 @@
             height: 450px;
         }
         @include mq("desktop") {
-            height: 189px;
-            margin-top: -19px;
-            margin-left: -30px;
+            //height: 189px;
+           // margin-top: -19px;
+            ///margin-left: -30px;
+            background-size: 100%;
+            margin: 0 15px;
+            width: 450px;
+            height: 450px;
+            display: inline-block;
         }
     }
 
