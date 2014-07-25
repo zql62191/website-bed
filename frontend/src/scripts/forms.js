@@ -78,6 +78,7 @@
         $scope.form = {
             optoutchoice: "none"
         };
+
         $scope.form.state = $scope.states[0];
 
         $scope.unsubscribe = function() {
@@ -134,7 +135,7 @@
                 }
             };
 
-            URL = "/BEDSite/Service/BEDService.svc/SetUnsubscribeDataAll";
+            URL = "http://localhost:54953/BEDSite/Service/BEDService.svc/SetUnsubscribeDataAll";
             Data = JSON.stringify(data);
 
             $scope.processForm(URL, Data);
@@ -155,7 +156,7 @@
                 }
             };
 
-            URL = "/BEDSite/Service/BEDService.svc/SetUnsubscribeDataDirect";
+            URL = "http://localhost:54953/BEDSite/Service/BEDService.svc/SetUnsubscribeDataDirect";
             Data = JSON.stringify(data);
 
             $scope.processForm(URL, Data);
@@ -170,7 +171,7 @@
                 }
             };
 
-            URL = "BEDSite/Service/BEDService.svc/SetUnsubscribeDataEmail";
+            URL = "http://localhost:54953BEDSite/Service/BEDService.svc/SetUnsubscribeDataEmail";
             Data = JSON.stringify(data);
 
             $scope.processForm(URL, Data);
@@ -204,6 +205,10 @@
             'Psychiatrist',
             'Psychologist'
         ];
+
+        $scope.form = {
+
+        };
 
         $scope.form.state = $scope.states[0];
         $scope.form.profession = $scope.professions[0];
@@ -248,14 +253,14 @@
                 $(window).scrollTop(oldTop + bottomDifference);
             }, 100);
 
-            URL = "BEDSite/Service/BEDService.svc/SetOptInData";
+            URL = "http://localhost:54953BEDSite/Service/BEDService.svc/SetOptInData";
             Data = JSON.stringify(data);
 
-            $scope.processForm(URL, Data);
+            $scope.processOptIn(URL, Data);
 
         };
 
-        $scope.processForm = function(path, sdata) {
+        $scope.processOptIn = function(path, sdata) {
             $log.log(sdata);
             $http({
                 headers: {

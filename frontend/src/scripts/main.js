@@ -48,22 +48,22 @@ var BED = {
     init: function() {
 
         if (!bowser.mobile && !bowser.tablet) {
-            console.log('skrollr');
+            //console.log('skrollr');
 
             BED.skrollr = skrollr.init({
                 smoothScrolling: true,
                 forceHeight: true,
                 beforerender: function(data) {
 
-                    console.log('beforerender');
-                    console.log(data);
+                    //console.log('beforerender');
+                    //console.log(data);
 
                     // return data.direction !== 'up';
                 },
                 render: function(data) {
 
-                    console.log('render');
-                    console.log(data);
+                    //console.log('render');
+                    //console.log(data);
                 }
             });
         }

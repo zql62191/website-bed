@@ -54,7 +54,7 @@
         <p class="required-fields"><span class="red">*</span>Required Fields
           
         </p>
-        <form name="bed_form" novalidate>
+        <form name="bed_form" ng-submit="optIn()" novalidate>
           <input type="text" name="firstName" placeholder="*First Name" ng-model="form.fname" ng-required="true" class="first-name">
           <input type="text" name="middleInitial" placeholder="MI" ng-model="form.MI" ng-required="false" class="middle-initial">
           <input type="text" name="lastName" placeholder="*Last Name" ng-model="form.lname" ng-required="true" class="last-name">
