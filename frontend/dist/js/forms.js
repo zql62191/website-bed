@@ -134,7 +134,7 @@
                 }
             };
 
-            URL = "/BEDService/SetUnsubscribeDataAll";
+            URL = "/BEDSite/Service/BEDService.svc/SetUnsubscribeDataAll";
             Data = JSON.stringify(data);
 
             $scope.processForm(URL, Data);
@@ -155,8 +155,10 @@
                 }
             };
 
-            Url = "/BEDService/SetUnsubscribeDataDirect";
+            URL = "/BEDSite/Service/BEDService.svc/SetUnsubscribeDataDirect";
             Data = JSON.stringify(data);
+
+            $scope.processForm(URL, Data);
         }
 
         function unsubscribeEmail() {
@@ -168,8 +170,10 @@
                 }
             };
 
-            Url = "/BEDService/SetUnsubscribeDataEmail";
+            URL = "BEDSite/Service/BEDService.svc/SetUnsubscribeDataEmail";
             Data = JSON.stringify(data);
+
+            $scope.processForm(URL, Data);
         }
 
         $scope.processForm = function(path, sdata) {
@@ -244,7 +248,7 @@
                 $(window).scrollTop(oldTop + bottomDifference);
             }, 100);
 
-            URL = "/BEDService/SetOptInData";
+            URL = "BEDSite/Service/BEDService.svc/SetOptInData";
             Data = JSON.stringify(data);
 
             $scope.processForm(URL, Data);
