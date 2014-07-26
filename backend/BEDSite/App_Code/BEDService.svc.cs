@@ -84,6 +84,7 @@ namespace BEDService
             }
             catch (Exception e)
             {
+                auditTrail.SetAuditTrail(" ", AuditTrail.OperationType.OptIn_Failure, e.Source, e.Message);
                 throw e;
             }
             finally

@@ -17,6 +17,7 @@
         'Colorado',
         'Connecticut',
         'Delaware',
+        'District of Columbia',
         'Florida',
         'Georgia',
         'Hawaii',
@@ -130,7 +131,7 @@
                     "Address1": $scope.form.street,
                     "Address2": $scope.form.suite,
                     "City": $scope.form.city,
-                    "State": "OH",
+                    "State": convertStateToAbbr($scope.form.state),
                     "Zip": $scope.form.zip
                 }
             };
@@ -141,41 +142,37 @@
             $scope.processForm(URL, Data);
         };
 
-        function unsubscribeDirect() {
+        $scope.unsubscribeDirect = function() {
             var URL;
             var data = {
-                "address": {
-                    "FName": "Test",
-                    "MName": "T",
-                    "LName": "Test",
-                    "Address1": "address1",
-                    "Address2": "address2",
-                    "City": "city",
-                    "State": "OH",
-                    "Zip": "11111"
-                }
+                "FName": $scope.form.fname,
+                "MName": $scope.checkFormPresent($scope.form.MI),
+                "LName": $scope.form.lname,
+                "Address1": $scope.form.street,
+                "Address2": $scope.checkFormPresent($scope.form.suite),
+                "City": $scope.form.city,
+                "State": convertStateToAbbr($scope.form.state),
+                "Zip": $scope.form.zip
             };
 
             URL = "http://localhost:54953/BEDSite/Service/BEDService.svc/SetUnsubscribeDataDirect";
             Data = JSON.stringify(data);
 
             $scope.processForm(URL, Data);
-        }
+        };
 
-        function unsubscribeEmail() {
+        $scope.unsubscribeEmail = function() {
             var URL;
             var data = {
-                "FormEmail": {
-                    "Email": "email@email.cim",
-                    "ConfirmEmail": "email@email.cim"
-                }
+                "Email": $scope.form.email,
+                "ConfirmEmail": $scope.form.email
             };
 
-            URL = "http://localhost:54953BEDSite/Service/BEDService.svc/SetUnsubscribeDataEmail";
+            URL = "http://localhost:54953/BEDSite/Service/BEDService.svc/SetUnsubscribeDataEmail";
             Data = JSON.stringify(data);
 
             $scope.processForm(URL, Data);
-        }
+        };
 
         $scope.processForm = function(path, sdata) {
             $log.log(sdata);
@@ -195,7 +192,6 @@
     app.controller('OptInController', ['$scope', '$window', '$log', '$location', '$document', '$timeout', '$http', OptInController]);
 
     function OptInController($scope, $window, $log, $location, $document, $timeout, $http) {
-
         $scope.states = statearray;
         $scope.professions = [
             '*Profession',
@@ -213,29 +209,27 @@
         $scope.form.state = $scope.states[0];
         $scope.form.profession = $scope.professions[0];
 
-
-
         $scope.optIn = function() {
             var oldHeight = $(document).height() - $(window).height();
             var oldTop = $(window).scrollTop();
             var oldBottom = oldHeight - oldTop;
             var URL;
             var data = {
-                "optIn": {
-                    "email": {
-                        "Email": $scope.form.email,
-                        "ConfirmEmail": $scope.form.email
-                    },
-                    "address": {
-                        "FName": $scope.form.fname,
-                        "MName": $scope.form.MI,
-                        "LName": $scope.form.lname,
-                        "Address1": $scope.form.street,
-                        "Address2": $scope.form.suite,
-                        "City": $scope.form.city,
-                        "State": "OH",
-                        "Zip": $scope.form.zip
-                    }
+                "Specialty": convertSpecToCode($scope.form.profession),
+                "CommunicationsOptIn": 1,
+                "Email": {
+                    "Email": $scope.form.email,
+                    "ConfirmEmail": $scope.form.email
+                },
+                "Address": {
+                    "FName": $scope.form.fname,
+                    "MName": $scope.checkFormPresent($scope.form.MI),
+                    "LName": $scope.form.lname,
+                    "Address1": $scope.form.street,
+                    "Address2": $scope.checkFormPresent($scope.form.suite),
+                    "City": $scope.form.city,
+                    "State": convertStateToAbbr($scope.form.state),
+                    "Zip": $scope.form.zip
                 }
             };
 
@@ -253,11 +247,19 @@
                 $(window).scrollTop(oldTop + bottomDifference);
             }, 100);
 
-            URL = "http://localhost:54953BEDSite/Service/BEDService.svc/SetOptInData";
+            URL = "http://localhost:54953/BEDSite/Service/BEDService.svc/SetOptInData";
             Data = JSON.stringify(data);
 
             $scope.processOptIn(URL, Data);
 
+        };
+
+        $scope.checkFormPresent = function(item) {
+            if (item) {
+                return item;
+            } else {
+                return null;
+            }
         };
 
         $scope.processOptIn = function(path, sdata) {
@@ -342,3 +344,140 @@
     app = angular.module('BED', ['BED.controllers', 'BED.directives']);
 
 }).call(this);
+
+/* support functions */
+function convertSpecToCode(specialty) {
+    switch (specialty) {
+        case 'Eating Disorder Clinician':
+            return 'EDC';
+        case 'Internal Medicine':
+            return 'IM';
+        case 'Primary Care Physician':
+            return 'PCPR';
+        case 'Psychiatrist':
+            return 'P';
+        case 'Psychologist':
+            return 'PSY';
+        default:
+            return null;
+    }
+}
+
+function convertStateToAbbr(state) {
+    switch (state) {
+        case 'Alabama':
+            return 'AL';
+        case 'Alaska':
+            return 'AK';
+        case 'Arizona':
+            return 'AZ';
+        case 'Arkansas':
+            return 'AR';
+        case 'California':
+            return 'CA';
+        case 'Colorado':
+            return 'CO';
+        case 'Connecticut':
+            return 'CT';
+        case 'Delaware':
+            return 'DE';
+        case 'Florida':
+            return 'FL';
+        case 'Georgia':
+            return 'GA';
+        case 'Hawaii':
+            return 'HI';
+        case 'Idaho':
+            return 'ID';
+        case 'Illinois':
+            return 'IL';
+        case 'Indiana':
+            return 'IN';
+        case 'Iowa':
+            return 'IA';
+        case 'Kansas':
+            return 'KS';
+        case 'Kentucky':
+            return 'KY';
+        case 'Louisiana':
+            return 'LA';
+        case 'Maine':
+            return 'ME';
+        case 'Maryland':
+            return 'MD';
+        case 'Massachusetts':
+            return 'MA';
+        case 'Michigan':
+            return 'MI';
+        case 'Minnesota':
+            return 'MN';
+        case 'Mississippi':
+            return 'MS';
+        case 'Missouri':
+            return 'MO';
+        case 'Montana':
+            return 'MT';
+        case 'Nebraska':
+            return 'NE';
+        case 'Nevada':
+            return 'NV';
+        case 'New Hampshire':
+            return 'NH';
+        case 'New Jersey':
+            return 'NJ';
+        case 'New Mexico':
+            return 'NM';
+        case 'New York':
+            return 'NY';
+        case 'North Carolina':
+            return 'NC';
+        case 'North Dakota':
+            return 'ND';
+        case 'Ohio':
+            return 'OH';
+        case 'Oklahoma':
+            return 'OK';
+        case 'Oregon':
+            return 'OR';
+        case 'Pennsylvania':
+            return 'PA';
+        case 'Rhode Island':
+            return 'RI';
+        case 'South Carolina':
+            return 'SC';
+        case 'South Dakota':
+            return 'SD';
+        case 'Tennessee':
+            return 'TN';
+        case 'Texas':
+            return 'TX';
+        case 'Utah':
+            return 'UT';
+        case 'Vermont':
+            return 'VT';
+        case 'Virginia':
+            return 'VA';
+        case 'Washington':
+            return 'WA';
+        case 'West Virginia':
+            return 'WV';
+        case 'Wisconsin':
+            return 'WI';
+        case 'Wyoming':
+            return 'WY';
+        case 'Puerto Rico':
+            return 'PR';
+        case 'Guam':
+            return 'GU';
+        case 'Northern Mariana Islands':
+            return 'MP';
+        case 'Puerto Rico':
+            return 'PR';
+        case 'U.S. Minor Outlying Islands':
+            return 'UM';
+        case 'U.S. Virgin Islands':
+            return 'VI';
+        default:
+            return null;
+    }
+}

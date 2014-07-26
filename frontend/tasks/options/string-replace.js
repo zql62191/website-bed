@@ -14,8 +14,8 @@ module.exports = {
         files: [{
             expand: true,
             src: ['**/*.html'],
-            cwd: '../backend/BEDWeb/content/',
-            dest: '../backend/BEDWeb/content/'
+            cwd: '../backend/BEDSite/content/',
+            dest: '../backend/BEDSite/content/'
         }]
     }
 };

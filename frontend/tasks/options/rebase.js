@@ -6,9 +6,9 @@ module.exports = {
         },
         files: [{
             expand: true,
-            cwd: '../backend/BEDWeb/content/',
+            cwd: '../backend/BEDSite/content/',
             src: '**/*.{html,css}',
-            dest: '../backend/BEDWeb/content/',
+            dest: '../backend/BEDSite/content/',
             reference: true,
             scopes: {
                 // Matches url() resource links in css.

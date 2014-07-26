@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     grunt.registerTask('images:prod', ['copy:images']);
 
     grunt.registerTask('scripts:dev', ['jshint:dev', 'concat', 'copy:scripts']);
-    grunt.registerTask('scripts:prod', ['jshint:dev', 'concat', 'copy:scripts', 'uglify:prod']);
+    grunt.registerTask('scripts:prod', ['jshint:dev', 'concat', 'copy:scripts']);
 
     grunt.registerTask('fonts', ['copy:fonts']);
 

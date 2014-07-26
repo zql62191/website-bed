@@ -59,7 +59,7 @@ module.exports = {
     integrate: {
         files: [{
             cwd: 'dist/',
-            dest: '../backend/BEDWeb/content/',
+            dest: '../backend/BEDSite/content/',
             src: ['**/*'],
             expand: true
         }]

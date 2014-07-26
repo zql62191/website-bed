@@ -14,8 +14,14 @@ namespace BEDService
     public interface IBEDService
     {
         [OperationContract]
-        [WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Bare, UriTemplate = "SetOptInData")]
-        List<string> SetOptInData(OptIn obj);
+        [WebInvoke
+         (Method = "*",
+         BodyStyle = WebMessageBodyStyle.Bare,
+         ResponseFormat = WebMessageFormat.Json,
+         RequestFormat = WebMessageFormat.Json,
+         UriTemplate = "/SetOptInData"
+        )]
+        List<string> SetOptInData(OptIn optIn);
 
     }
 }
