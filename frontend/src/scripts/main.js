@@ -47,7 +47,7 @@ var BED = {
 
     init: function() {
 
-        if (!bowser.mobile && !bowser.tablet) {
+        if (!bowser.mobile && !bowser.tablet && parseUri(window.location.href).queryKey['skrollr'] !== 'off') {
             //console.log('skrollr');
 
             BED.skrollr = skrollr.init({

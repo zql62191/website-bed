@@ -7,12 +7,14 @@ module.exports = {
             'dist/js/libs.js': [
                 'src/scripts/libs/jquery.js',
                 'src/scripts/libs/lodash.compat.js',
+                'src/scripts/libs/parseuri.js',
                 'src/scripts/libs/jquery.velocity.js',
                 'src/scripts/libs/velocity.ui.js',
                 'src/scripts/libs/jquery.hammer.js',
                 'src/scripts/libs/jquery.exists.js',
                 'src/scripts/libs/jquery.highlight.js',
                 'src/scripts/libs/skrollr.js',
+                'src/scripts/libs/waypoints.js',
                 'src/scripts/libs/bowser.js',
                 'src/scripts/libs/angular.js'
             ],
