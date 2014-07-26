@@ -185,6 +185,10 @@
                 width: 100% !important;
             }
         }
+        a {
+            color: #febd3f;
+            text-decoration: none;
+        }
     }
     .signup {
         margin: 0 auto;
@@ -195,7 +199,7 @@
         @include mq("desktop") {
             font-size: 24px;
             line-height: 26px;
-            width: 445px;
+            width: 470px;
             padding: 10px 20px;
         }
 

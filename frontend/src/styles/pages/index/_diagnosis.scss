@@ -35,6 +35,11 @@
 
         &.chart-head {
             font-family: font('helvetica neue', 'regular');
+            padding: 25px 0 15px 0;
+            @include mq('desktop') {
+
+            }
+
         }
     }
     .sub-head {

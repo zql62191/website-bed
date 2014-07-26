@@ -28,6 +28,10 @@
             font-family: font("gill sans", "regular");
         }
     }
+    h3 {
+        font-size: 32px;
+        font-family: font("gill sans", "regular");
+    }
     .graphic {
         background-repeat: no-repeat;
         background-size: auto 100%;
@@ -155,7 +159,10 @@
         }
 
         @include mq("desktop") {
-            display: none;
+            //display: none;
+            font-size: 20px;
+            line-height: 25px;
+            padding-top: 45px;
         }
     }
     .comparable {

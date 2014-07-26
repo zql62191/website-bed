@@ -338,19 +338,19 @@ a.pdf-link {
     color: #333e48;
     text-decoration: none;
     @include mq("desktop") {
-        background-image: url("#{$img-path}/pdf.png");
+        //background-image: url("#{$img-path}/pdf.png");
         height: 45px;
         margin-top: 15px;
-        padding-left: 40px;
+        //padding-left: 40px;
     }
 
     @include mq("mobile") {
-        background-image: url("#{$img-path}/pdf-large.png");
-        background-size: 70px auto;
+        //background-image: url("#{$img-path}/pdf-large.png");
+        //background-size: 70px auto;
         font-size: 30px;
-        line-height: 92px;
+        //line-height: 92px;
         margin-top: 0;
-        padding-left: 75px;
+        //padding-left: 75px;
         margin-left: 45px;
         height: 92px;
     }
