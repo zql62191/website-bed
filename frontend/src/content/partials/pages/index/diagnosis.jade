@@ -1,9 +1,8 @@
-div(
-  data-section='diagnosis'
-  ).section.section--diagnosis
-
+div(data-section='diagnosis').section.section--diagnosis
+  
   a(href='/#diagnosis').bar.bar--title.
     Finding BED in your patients
+
   a(id='diagnosis',name='diagnosis').scroll-point
 
   .content-wrap
@@ -12,7 +11,7 @@ div(
     p.sub-head.
       BED is defined as recurring episodes of eating a large amount of food in a short period of time, with episodes characterized by feelings of lack of control and marked distress.#[sup 1]
     p.
-      These are not the full diagnostic criteria—see full DSM-5 criteria #[a(href='#').yellow here].
+      These are not the full diagnostic criteria—see full DSM-5 criteria #[a(href,data-slideout='dsm5').yellow here].
 
     h3.
       BED is different from bulimia nervosa

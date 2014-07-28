@@ -1,3 +1,11 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak, .ng-hide {
+    display: none !important;
+}
+
+ng\:form {
+    display: block;
+}
+
 // ---------- Project Resets ----------
 
 *, *:before, *:after {
@@ -364,29 +372,26 @@ a.pdf-link {
     }
 }
 
-
 // Utility classes
 .yellow {
     color: #fcbb3f;
 }
+
 .center {
     text-align: center;
 }
-.footnote {
 
-    @include mq('mobile') {
+.footnote {
+    @include mq("mobile") {
         font-size: 25px;
-        line-height: 28px; 
+        line-height: 28px;
     }
 
-    @include mq('desktop') {
+    @include mq("desktop") {
         font-size: 18px;
-        line-height: 21px; 
+        line-height: 21px;
     }
 }
-
-
-
 
 /* Close button for slideouts */
 .close {

@@ -1,0 +1,26 @@
+.slideout {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    display: none;
+    overflow: hidden;
+    @include rgba-background(rgba(0, 0, 0, 0.5));
+    z-index: z("slideout");
+    padding-top: 50px;
+    @include mq("mobile") {
+        padding-top: 93px;
+        position: absolute;
+    }
+
+    .slideout__inner {
+        position: absolute;
+        height: 100%;
+        background: #e1e3e4;
+    }
+    &[data-direction="left"] .slideout__inner {
+        left: 0;
+    }
+    &[data-direction="right"] .slideout__inner {
+        right: 0;
+    }
+}

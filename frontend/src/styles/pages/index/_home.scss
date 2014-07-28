@@ -18,9 +18,10 @@
         text-transform: uppercase;
         color: #febd3f;
         font-size: 21px;
-        line-height: 20px;
+        line-height: 45px;
+        z-index: 1002;
         // To accomodate second line
-        padding-top: 7px;
+        // padding-top: 7px;
         background: #51748b;
         margin-bottom: 0;
         @include mq("mobile") {

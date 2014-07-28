@@ -7,6 +7,7 @@ module.exports = {
             compress: {
                 drop_console: false
             },
+            mangle: false,
             sourceMap: true
         },
         files: [{
@@ -22,6 +23,7 @@ module.exports = {
             compress: {
                 drop_console: true
             },
+            mangle: true,
             sourceMap: false
         },
         files: [{

@@ -25,8 +25,6 @@
         @include mq("desktop") {
             font-size: 38px;
             padding-bottom: 25px;
-
-
             &:nth-of-type(2) {
                 padding-top: 25px;
             }
@@ -44,17 +42,15 @@
         }
     }
     p {
-        @include mq('desktop') {
+        @include mq("desktop") {
             font-size: 20px;
             line-height: 25px;
         }
     }
-
     .graphic-container {
         overflow: hidden;
         border-bottom: 1px solid #ffffff;
-
-        @include mq('desktop') {
+        @include mq("desktop") {
             height: 350px;
         }
 
@@ -63,22 +59,20 @@
             margin: 0 auto;
         }
         .footnote {
-
-            @include mq('desktop') {
+            @include mq("desktop") {
                 padding-left: 45px;
             }
-            @include mq('mobile') {
+
+            @include mq("mobile") {
                 padding-left: 25px;
             }
+
             padding-bottom: 60px;
         }
-
-
         div {
-            @include mq('desktop') {
+            @include mq("desktop") {
                 width: 49%;
                 display: inline-block;
-
                 .text {
                     float: right;
                     width: 50%;
@@ -92,10 +86,8 @@
             }
         }
     }
-
-
     .twenty-one {
-        @include mq('desktop') {
+        @include mq("desktop") {
             width: 50%;
             display: inline-block;
         }
@@ -106,7 +98,8 @@
             height: auto;
             margin-bottom: 30px;
         }
-        @include mq('desktop') {
+
+        @include mq("desktop") {
             float: left;
         }
     }
@@ -143,7 +136,6 @@
     }
     // add to global styles
     .disclaimer {
-
         //font-size: 25px;
         //line-height: 34px;
         @include mq("mobile") {
@@ -163,42 +155,35 @@
             margin-left: -9px;
         }
     }
-
-
     .graphic {
         margin-bottom: 75px;
-
         .large {
             padding-top: 20px;
             font-size: 160px;
             line-height: 180px;
-            font-family: font('gill sans', 'bold');
-            left: -15px
+            font-family: font("gill sans", "bold");
+            left: -15px;
         }
-
-        @include mq('mobile') {
+        @include mq("mobile") {
             p {
                 padding-right: 25px;
             }
-
             .large {
                 padding-top: 20px;
                 font-size: 160px;
                 line-height: 180px;
-                font-family: font('gill sans', 'bold');
-                left: -15px
+                font-family: font("gill sans", "bold");
+                left: -15px;
             }
         }
     }
-
     .eighty {
         background: url("#{$img-path}/spiral.png") top left no-repeat;
         text-align: center;
-
-
         @include mq("mobile") {
             height: 450px;
         }
+
         @include mq("desktop") {
             //height: 189px;
             //margin-top: -19px;
@@ -209,9 +194,9 @@
             display: inline-block;
             margin-bottom: 0;
             top: 25px;
-            left: 85px
+            left: 85px;
         }
-        
+
         p {
             font-size: 22px;
             line-height: 26px;
@@ -219,18 +204,16 @@
             padding: 0;
         }
     }
-
     .forty-nine {
         background: url("#{$img-path}/spiral.png") top left no-repeat;
         text-align: center;
-
-
         @include mq("mobile") {
             height: 450px;
         }
+
         @include mq("desktop") {
             //height: 189px;
-           // margin-top: -19px;
+            // margin-top: -19px;
             ///margin-left: -30px;
             background-size: 80%;
             margin: 0 15px;
@@ -240,14 +223,14 @@
             top: 25px;
             left: 20px;
         }
+
         p {
             font-size: 22px;
             line-height: 26px;
             left: -15px;
             padding: 0;
-            }
+        }
     }
-
     .percent {
         font-size: 0.5em;
         top: -0.65em;

@@ -36,12 +36,12 @@ $global-border-box: true;
 
 $z-layers: (
     "page": (
-        "header": 1003, 
-        "nav": 1004
+        "header": 1005, 
+        "header-bg": 1001,
+        "nav": 1003
     ), 
-    "mask": (
-        "nav": 1002
-    ), 
+    "slideout": 1000,
+    "modal": 1010,
     "default": 1, 
     "below": -1, 
     "bottomless-pit": -9000

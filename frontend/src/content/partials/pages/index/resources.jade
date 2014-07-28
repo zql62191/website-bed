@@ -2,6 +2,7 @@ div(data-section='resources').section.section--resources
 
   a(href='/#resources').bar.bar--title.
     Resources/Expert Videos
+
   a(id='resources',name='resources').scroll-point
 
   .content-wrap
@@ -50,23 +51,23 @@ div(data-section='resources').section.section--resources
         VIDEOS: Key opinion leaders discuss BED
 
       ul
-        li
+        li(data-video)
           p.
             Overview
           //-img(src="img/video-2.png")
-        li
+        li(data-video)
           p.
             Clinical #[br]Course
           //-img(src="img/video-3.png")
-        li
+        li(data-video)
           p.
             Clinical #[br]Characteristics
           //-img(src="img/video-4.png")
-        li
+        li(data-video)
           p.
             BED #[br]Neurobiology
           //-img(src="img/video-5.png")
-        li
+        li(data-video)
           p.
             Clinical #[br]Strategies
           //-img(src="img/video-6.png")
@@ -156,7 +157,7 @@ div(data-section='resources').section.section--resources
         p.
           (800) 931-2237
 
-    a.button.signup.
+    a(data-slideout='signup').button.signup.
       Register for additional information on BED including the full #[em DSM-5]#[sup ®] diagnostic criteria
 
     .references

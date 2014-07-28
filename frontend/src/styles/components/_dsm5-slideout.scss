@@ -1,27 +1,13 @@
-.dsm5-container {
-    right: 0;
-    z-index: 200;
-    background-color: #e1e3e4;
-    bottom: 0;
-    padding: 30px 23px;
-    -webkit-box-shadow: inset 3px 0 5px 0px rgba(50, 50, 50, 0.65);
-    -moz-box-shadow: inset 3px 0 5px 0px rgba(50, 50, 50, 0.65);
-    box-shadow: inset 3px 0 5px 0px rgba(50, 50, 50, 0.65);
-    display: none;
-    @include mq("desktop") {
-        position: fixed;
-        top: 50px;
-        width: 235px;
-    }
+.slideout--dsm5 {
+    .slideout__inner {
+        padding: 30px 23px;
+        @include mq("desktop") {
+            width: 300px;
+        }
 
-    @include mq("mobile") {
-        position: absolute;
-        top: 93px;
-        width: 543px;
-    }
-
-    &._is_open {
-        display: block;
+        @include mq("mobile") {
+            width: 560px;
+        }
     }
     h2 {
         color: #333e48;

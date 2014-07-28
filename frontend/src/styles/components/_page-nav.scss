@@ -1,24 +1,10 @@
 .page-nav {
-    position: fixed;
-    top: 50px;
-    // top: 0;
-    left: 0;
-    height: 100%;
-    display: none;
-    overflow: hidden;
-    z-index: z("page", "nav");
-    // width: 1024px;
-    @include mq("mobile") {
-        top: 93px;
-        // width: 640px;
-    }
-
-    nav {
-        position: relative;
-        height: 100%;
-        display: inline-block;
+    .slideout__inner {
+        width: 320px;
+        @include mq("mobile") {
+            width: 580px;
+        }
         background: #bbbec0;
-        // display: none;
         .primary-nav {
             .primary-nav__item {
                 height: 36px;
