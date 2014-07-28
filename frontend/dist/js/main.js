@@ -145,6 +145,7 @@ var BED = {
                 // do nothing
 
             } else {
+
                 e.preventDefault();
 
                 var jqModal = $('.modal--interstitial');
