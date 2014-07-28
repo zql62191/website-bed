@@ -1331,19 +1331,39 @@ html::-webkit-scrollbar {
     line-height: 22px;
   }
 }
+.section--prevalence .male-graphic {
+  background: url("../img/prevalence-male-graphic.png") center center no-repeat;
+  width: 254px;
+  height: 248px;
+  position: absolute;
+}
+@media only screen and (min-width: 40.063em) {
+  .section--prevalence .male-graphic {
+    top: 0;
+    left: 185px;
+  }
+}
+.section--prevalence .female-graphic {
+  background: url("../img/prevalence-female-graphic.png") center center no-repeat;
+  width: 210px;
+  height: 306px;
+  position: absolute;
+}
+@media only screen and (min-width: 40.063em) {
+  .section--prevalence .female-graphic {
+    top: 42px;
+    left: 55px;
+  }
+}
 .section--prevalence .male-female-graphic {
   text-align: center;
-  background: url("../img/prevalence-male-female-mobile.png") center center no-repeat;
   height: 348px;
   width: 500px;
   margin: 0 auto 45px auto;
 }
-.section--prevalence .male-female-graphic div {
-  padding-top: 60px;
-}
 @media only screen and (min-width: 40.063em) {
-  .section--prevalence .male-female-graphic div {
-    margin-top: 20px;
+  .section--prevalence .male-female-graphic {
+    padding-top: 65px;
   }
 }
 .section--prevalence .male-female-graphic p {
@@ -2485,6 +2505,11 @@ html::-webkit-scrollbar {
   }
   .section--dsm5 .tab-inner li.second {
     width: 475px;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .section--dsm5 .tab-inner li {
+    width: 265px;
   }
 }
 .section--dsm5 .closed-text {

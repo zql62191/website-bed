@@ -222,7 +222,7 @@
             color: #ffffff;
             margin-left: 12px;
             padding-left: 30px;
-            //width: 265px;
+            
             &:before {
                 content: '\2022';
                 color: #febd3f;
@@ -238,6 +238,9 @@
                 &.second {
                     width: 475px;
                 }
+            }
+            @include mq('desktop') {
+                width: 265px;
             }
         }
     }

@@ -94,18 +94,49 @@
             line-height: 22px;
         }
     }
+
+    .male-graphic {
+        background: url("#{$img-path}/prevalence-male-graphic.png") center center no-repeat;
+        width: 254px;
+        height: 248px;
+        position: absolute;
+
+        @include mq('mobile') {
+            
+        }
+        @include mq('desktop') {
+            top: 0;
+            left: 185px;
+        }
+    }
+
+    .female-graphic {
+        background: url("#{$img-path}/prevalence-female-graphic.png") center center no-repeat;
+        width: 210px;
+        height: 306px;
+        position: absolute;
+
+        @include mq('mobile') {
+            
+        }
+        @include mq('desktop') {
+            top: 42px;
+            left: 55px;
+        }
+    }
+
+
     .male-female-graphic {
         text-align: center;
-        background: url("#{$img-path}/prevalence-male-female-mobile.png") center center no-repeat;
+        //background: url("#{$img-path}/prevalence-male-female-mobile.png") center center no-repeat;
         height: 348px;
         width: 500px;
         margin: 0 auto 45px auto;
-        div {
-            padding-top: 60px;
-            @include mq("desktop") {
-                margin-top: 20px;
-            }
+
+        @include mq('desktop') {
+            padding-top: 65px;
         }
+
         p {
             font-size: 38px;
             font-family: font("gill sans", "regular");
