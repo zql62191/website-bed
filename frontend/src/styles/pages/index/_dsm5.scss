@@ -197,9 +197,10 @@
         }
         p {
             padding-top: 10px;
+            padding-bottom: 10px;
             font-style: normal;
             color: #ffffff;
-            margin-bottom: 10px;
+            //margin-bottom: 10px;
             width: 290px;
             line-height: 25px;
             @include mq("mobile") {
@@ -220,11 +221,13 @@
         li {
             color: #ffffff;
             margin-left: 12px;
-            width: 265px;
+            padding-left: 30px;
+            //width: 265px;
             &:before {
                 content: '\2022';
                 color: #febd3f;
-                margin-right: 3px;
+                //margin-right: 3px;
+                margin: 0 5px 0 -15px;
             }
             @include mq("mobile") {
                 font-size: 23px;

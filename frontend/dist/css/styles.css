@@ -2443,9 +2443,9 @@ html::-webkit-scrollbar {
 }
 .section--dsm5 .tab-inner p {
   padding-top: 10px;
+  padding-bottom: 10px;
   font-style: normal;
   color: #ffffff;
-  margin-bottom: 10px;
   width: 290px;
   line-height: 25px;
 }
@@ -2468,12 +2468,12 @@ html::-webkit-scrollbar {
 .section--dsm5 .tab-inner li {
   color: #ffffff;
   margin-left: 12px;
-  width: 265px;
+  padding-left: 30px;
 }
 .section--dsm5 .tab-inner li:before {
   content: '\2022';
   color: #febd3f;
-  margin-right: 3px;
+  margin: 0 5px 0 -15px;
 }
 @media only screen and (max-width: 40em) {
   .section--dsm5 .tab-inner li {
