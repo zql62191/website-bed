@@ -110,8 +110,8 @@ var BED = {
             });
 
             $('.modal__outer').css({
-                width: $(window).width(),
-                height: $(window).height()
+                width: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+                height: window.innerHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
             });
 
         }).trigger('resize');
