@@ -58,18 +58,18 @@
           <p class="required-fields"><span class="red">*</span>Required Fields
             
           </p>
-          <form name="bed_form" ng-submit="optIn()" novalidate>
-            <input type="text" name="firstName" placeholder="*First Name" ng-model="form.fname" ng-required="true" class="first-name">
+          <form name="bed_form" id="bed_form" ng-submit="optIn()" novalidate>
+            <input type="text" name="firstName" placeholder="*First Name" ng-model="fname" ng-required="true" ng-class="{forminvalid: (bed_form.firstName.$invalid &amp;&amp; bed_form.firstName.$dirty) || (bed_form.firstName.$invalid &amp;&amp; invalidform)}" class="first-name">
             <input type="text" name="middleInitial" placeholder="MI" ng-model="form.MI" ng-required="false" class="middle-initial">
-            <input type="text" name="lastName" placeholder="*Last Name" ng-model="form.lname" ng-required="true" class="last-name">
-            <input type="text" name="email" placeholder="*Email" ng-model="form.email" ng-required="true" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/" class="email">
-            <input type="text" name="email2" ng-model="form.confirmemail" ng-required="true" confirmemail placeholder="*Re-enter Email" class="email2">
-            <input type="text" name="streetAddress" placeholder="*Street Address" ng-model="form.street" ng-required="true" class="street-address">
+            <input type="text" name="lastName" placeholder="*Last Name" ng-model="form.lname" ng-required="true" ng-class="{forminvalid: (bed_form.lastName.$invalid &amp;&amp; bed_form.lastName.$dirty) || (bed_form.lastName.$invalid &amp;&amp; invalidform)}" class="last-name">
+            <input type="text" name="email" placeholder="*Email" ng-model="form.email" ng-required="true" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/" ng-class="{forminvalid: (bed_form.email.$invalid &amp;&amp; bed_form.email.$dirty) || (bed_form.email.$invalid &amp;&amp; invalidform)}" class="email">
+            <input type="text" name="email2" ng-model="form.confirmemail" ng-required="true" confirmemail placeholder="*Re-enter Email" ng-class="{forminvalid: (bed_form.email2.$invalid &amp;&amp; bed_form.email2.$dirty) || (bed_form.email2.$invalid &amp;&amp; invalidform)}" class="email2">
+            <input type="text" name="streetAddress" placeholder="*Street Address" ng-model="form.street" ng-required="true" ng-class="{forminvalid: (bed_form.streetAddress.$invalid &amp;&amp; bed_form.streetAddress.$dirty) || (bed_form.streetAddress.$invalid &amp;&amp; invalidform)}" class="street-address">
             <input type="text" name="suiteOffice" placeholder="Suite/Office" ng-model="form.suite" ng-required="false" class="suite-office">
-            <input type="text" name="city" placeholder="*City" ng-model="form.city" ng-required="true" class="city">
-            <select name="state" ng-model="form.state" ng-options="state for state in states" stateselect class="state"></select>
-            <input type="text" name="zip" placeholder="*Zip" ng-model="form.zip" ng-pattern="/^[0-9]{5}$/" required class="zip">
-            <select name="profession" ng-model="form.profession" ng-options="prof for prof in professions" profselect class="profession"></select>
+            <input type="text" name="city" placeholder="*City" ng-model="form.city" ng-required="true" ng-class="{forminvalid: (bed_form.city.$invalid &amp;&amp; bed_form.city.$dirty) || (bed_form.city.$invalid &amp;&amp; invalidform)}" class="city">
+            <select name="state" ng-model="form.state" ng-options="state for state in states" ng-class="{forminvalid: (bed_form.state.$invalid &amp;&amp; bed_form.state.$dirty) || (bed_form.state.$invalid &amp;&amp; invalidform)}" stateselect class="state"></select>
+            <input type="text" name="zip" placeholder="*Zip" ng-model="form.zip" ng-pattern="/^[0-9]{5}$/" ng-required="true" ng-class="{forminvalid: (bed_form.zip.$invalid &amp;&amp; bed_form.zip.$dirty) || (bed_form.zip.$invalid &amp;&amp; invalidform)}" class="zip">
+            <select name="profession" ng-model="form.profession" ng-options="prof for prof in professions" profselect ng-class="{forminvalid: (bed_form.profession.$invalid &amp;&amp; bed_form.profession.$dirty) || (bed_form.profession.$invalid &amp;&amp; invalidform)}" class="profession"></select>
             <h3>
               Opt In for Communications
               

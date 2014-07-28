@@ -18,7 +18,7 @@
     <script src="//fast.fonts.net/jsapi/352bad9a-496a-416d-b9cf-171842848303.js"></script><!--[if (gte IE 6)&(lte IE 8)]>
     <script src="content/js/ie.js"></script><![endif]-->
     <script src="content/js/libs.js"></script><!--[if (gte IE 6)&(lte IE 8)]>
-    <script src="//cdn.jsdelivr.net/skrollr/0.6.26/skrollr.ie.min.js"></script><![endif]-->
+    <script src="content/js/skrollr.ie.js"></script><![endif]-->
     <script src="content/js/main.js"></script>
     <script src="content/js/forms.js"></script>
     <script>
@@ -28,87 +28,94 @@
   </head>
   <body>
     <div class="page-wrapper">
-      <div class="page-header">
-        <div class="content-wrap"><a class="btn btn--menu">Menu</a><a class="btn btn--dsm5"><em>DSM-5</em><sup>&reg;</sup><br class="hide--desktop"> Criteria</a><a class="btn btn--signup">SIGN <br class="hide--desktop">UP</a></div>
+      <div class="page-header-bg">
+        <div class="content-wrap"></div>
       </div>
-      <div class="page-nav _is_fixed_left _slideout">
-        <nav>
+      <div class="page-header">
+        <div class="content-wrap"><a data-slideout="menu" class="page-header__btn page-header__btn--menu">Menu</a><a data-slideout="dsm5" class="page-header__btn page-header__btn--dsm5"><em>DSM-5</em><sup>&reg;</sup><br class="hide--desktop"> Criteria</a><a data-slideout="signup" class="page-header__btn page-header__btn--signup">SIGN <br class="hide--desktop">UP</a></div>
+      </div>
+      <div data-direction="left" class="page-nav slideout slideout--menu">
+        <nav class="slideout__inner">
                 <ul class="primary-nav">
-                  <li class="primary-nav__item _1_liner"><a href="/#home">Home</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/#prevalence">Prevalence</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/#dsm5"><em>DSM-5<sup>&reg;</sup></em> Criteria</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/#course">Clinical Characteristics</a></li>
-                  <li class="primary-nav__item _2_liner"><a href="/#effects"><em>DSM-5<sup>&reg;</sup></em> Functional <br/>Consequences</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/#neurobiology">Neurobiology</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/#diagnosis">Recognizing BED in Adults</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/#resources">Resources/Expert Videos</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#home" target="_self">Home</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#prevalence" target="_self">Prevalence</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#dsm5" target="_self"><em>DSM-5<sup>&reg;</sup></em> Criteria</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#course" target="_self">Clinical Characteristics</a></li>
+                  <li class="primary-nav__item _2_liner"><a href="/#effects" target="_self"><em>DSM-5<sup>&reg;</sup></em> Functional <br/>Consequences</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#neurobiology" target="_self">Neurobiology</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#diagnosis" target="_self">Recognizing BED in Adults</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#resources" target="_self">Resources/Expert Videos</a></li>
                 </ul>
         </nav>
       </div>
-      <div ng-controller="OptInController" class="signup-container _is_fixed_right _slideout">
-        <div class="close"></div>
-        <h2>
-          Sign up to receive informative BED content and updates from Shire.
-          
-        </h2>
-        <p class="required-fields"><span class="red">*</span>Required Fields
-          
-        </p>
-        <form name="bed_form" ng-submit="optIn()" novalidate>
-          <input type="text" name="firstName" placeholder="*First Name" ng-model="form.fname" ng-required="true" class="first-name">
-          <input type="text" name="middleInitial" placeholder="MI" ng-model="form.MI" ng-required="false" class="middle-initial">
-          <input type="text" name="lastName" placeholder="*Last Name" ng-model="form.lname" ng-required="true" class="last-name">
-          <input type="text" name="email" placeholder="*Email" ng-model="form.email" ng-required="true" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/" class="email">
-          <input type="text" name="email2" ng-model="form.confirmemail" ng-required="true" confirmemail placeholder="*Re-enter Email" class="email2">
-          <input type="text" name="streetAddress" placeholder="*Street Address" ng-model="form.street" ng-required="true" class="street-address">
-          <input type="text" name="suiteOffice" placeholder="Suite/Office" ng-model="form.suite" ng-required="false" class="suite-office">
-          <input type="text" name="city" placeholder="*City" ng-model="form.city" ng-required="true" class="city">
-          <select name="state" ng-model="form.state" ng-options="state for state in states" stateselect class="state"></select>
-          <input type="text" name="zip" placeholder="*Zip" ng-model="form.zip" ng-pattern="/^[0-9]{5}$/" required class="zip">
-          <select name="profession" ng-model="form.profession" ng-options="prof for prof in professions" profselect class="profession"></select>
-          <h3>
-            Opt In for Communications
+      <div data-direction="right" ng-controller="OptInController" class="signup-container slideout slideout--signup">
+        <div class="slideout__inner">
+          <div class="close"></div>
+          <h2>
+            Sign up to receive informative BED content and updates from Shire.
             
+          </h2>
+          <p class="required-fields"><span class="red">*</span>Required Fields
             
-          </h3>
-          <input type="checkbox" name="optin" ng-model="form.checkbox" ng-required="true" id="optin" class="optin">
-          <label for="optin" class="optin-label">
-            <p>By checking this box and clicking submit, you certify that you are a US health care professional and you are opting to receive information about binge eating disorder plus product information, site updates, educational information, patient support resources, and other information from Shire. You will be able to opt out of these communications at any time.</p>
-            <p>
-              Shire respects your personal information. All information you have provided will be kept confidential and will not be used or distributed to anyone for any purpose other than what is explained in our Privacy Policy Statement. We encourage you to read our Privacy Policy Statement by clicking on this link: Review Shire Privacy Policy Statement. This consent will be in effect until such time as you opt out of the program.
+          </p>
+          <form name="bed_form" ng-submit="optIn()" novalidate>
+            <input type="text" name="firstName" placeholder="*First Name" ng-model="form.fname" ng-required="true" class="first-name">
+            <input type="text" name="middleInitial" placeholder="MI" ng-model="form.MI" ng-required="false" class="middle-initial">
+            <input type="text" name="lastName" placeholder="*Last Name" ng-model="form.lname" ng-required="true" class="last-name">
+            <input type="text" name="email" placeholder="*Email" ng-model="form.email" ng-required="true" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/" class="email">
+            <input type="text" name="email2" ng-model="form.confirmemail" ng-required="true" confirmemail placeholder="*Re-enter Email" class="email2">
+            <input type="text" name="streetAddress" placeholder="*Street Address" ng-model="form.street" ng-required="true" class="street-address">
+            <input type="text" name="suiteOffice" placeholder="Suite/Office" ng-model="form.suite" ng-required="false" class="suite-office">
+            <input type="text" name="city" placeholder="*City" ng-model="form.city" ng-required="true" class="city">
+            <select name="state" ng-model="form.state" ng-options="state for state in states" stateselect class="state"></select>
+            <input type="text" name="zip" placeholder="*Zip" ng-model="form.zip" ng-pattern="/^[0-9]{5}$/" required class="zip">
+            <select name="profession" ng-model="form.profession" ng-options="prof for prof in professions" profselect class="profession"></select>
+            <h3>
+              Opt In for Communications
               
-            </p>
-          </label>
-          <input type="submit" name="submit" value="SUBMIT" class="submit">
-        </form>
+              
+            </h3>
+            <input type="checkbox" name="optin" ng-model="form.checkbox" ng-required="true" id="optin" class="optin">
+            <label for="optin" class="optin-label">
+              <p>By checking this box and clicking submit, you certify that you are a US health care professional and you are opting to receive information about binge eating disorder plus product information, site updates, educational information, patient support resources, and other information from Shire. You will be able to opt out of these communications at any time.</p>
+              <p>
+                Shire respects your personal information. All information you have provided will be kept confidential and will not be used or distributed to anyone for any purpose other than what is explained in our Privacy Policy Statement. We encourage you to read our Privacy Policy Statement by clicking on this link: Review Shire Privacy Policy Statement. This consent will be in effect until such time as you opt out of the program.
+                
+              </p>
+            </label>
+            <input type="submit" name="submit" value="SUBMIT" class="submit">
+          </form>
+        </div>
       </div>
-      <div class="dsm5-container _is_fixed_right _slideout">
-        <div class="close"></div>
-        <h2>
-          What is binge eating disorder (BED)?
-          
-        </h2>
-        <p>Binge eating disorder, now a distinct diagnosis in DSM-5<sup>®</sup>, is characterized by<sup>1</sup>:
-          
-        </p>
-        <ul class="bullet">
-          <li>Recurring episodes (at least once weekly for 3 months) of consuming a large amount of food in a short period of time, compared with others</li>
-          <li>A feeling of a lack of control over eating during an episode</li>
-          <li>
-            Marked distress regarding binge eating
+      <div data-direction="right" class="dsm5-container slideout slideout--dsm5">
+        <div class="slideout__inner">
+          <div class="close"></div>
+          <h2>
+            What is binge eating disorder (BED)?
             
-          </li>
-        </ul>
-        <p>
-          During a binge, adults with BED may eat much more rapidly than normal, eat until they are uncomfortably full, eat large amounts of food when not feeling physically hungry, and/or eat alone out of embarrassment. They may feel disgusted with themselves, depressed, or very guilty afterward.
-          
-        </p>
-        <p><em>These are not the complete diagnostic criteria, but instead a brief summary. Please view the full diagnostic criteria by selecting the link below. Diagnosis should be based on a complete evaluation of the patient.</em> 
-          
-        </p><a target="_blank" href="#" class="pdf-link"><span><em>DSM-5<sup>&reg;</sup></em> Criteria</span></a>
+          </h2>
+          <p>Binge eating disorder, now a distinct diagnosis in DSM-5<sup>®</sup>, is characterized by<sup>1</sup>:
+            
+          </p>
+          <ul class="bullet">
+            <li>Recurring episodes (at least once weekly for 3 months) of consuming a large amount of food in a short period of time, compared with others</li>
+            <li>A feeling of a lack of control over eating during an episode</li>
+            <li>
+              Marked distress regarding binge eating
+              
+            </li>
+          </ul>
+          <p>
+            During a binge, adults with BED may eat much more rapidly than normal, eat until they are uncomfortably full, eat large amounts of food when not feeling physically hungry, and/or eat alone out of embarrassment. They may feel disgusted with themselves, depressed, or very guilty afterward.
+            
+          </p>
+          <p><em>These are not the complete diagnostic criteria, but instead a brief summary. Please view the full diagnostic criteria by selecting the link below. Diagnosis should be based on a complete evaluation of the patient.</em> 
+            
+          </p><a href data-slideout="signup" class="pdf-link"><span><em>DSM-5<sup>&reg;</sup></em> Criteria</span></a>
+        </div>
       </div>
       <div class="page-content">
-        <div data-section="home" class="section section--home"><a id="home" name="home" class="scroll-point"></a><a href="/#home" class="bar bar--title">binge eating disorder <br>in adults
+        <div data-section="home" class="section section--home"><a id="home" name="home" class="scroll-point"></a><a href="/#home" class="bar bar--title">binge eating disorder <br class="hide--desktop">in adults
             </a>
           <div class="disclaimer-bar">
             <p>
@@ -117,7 +124,7 @@
             </p>
           </div>
           <div class="content-wrap">
-            <p class="eyebrow">For many patients, binge eating disorder is a cycle of…</p>
+            <p class="eyebrow">For many patients, binge eating <br class="hide--desktop">disorder is a cycle of…</p>
             <h1 class="tagline">Binge. Distress. Repeat.<sup>1</sup>
               
             </h1>
@@ -129,25 +136,29 @@
               What is BED?
               
             </h3>
-            <p>BED, now a distinct disorder in DSM-5<sup>®</sup>, is defined as recurring episodes (≥ once weekly, for at least 3 months) of consuming a large amount of food in a short time, compared with others. Patients feel a lack of control during a binge and marked distress over their eating. They typically experience shame and guilt, among other symptoms, about their bingeing, and may conceal these symptoms, even from you.<sup>1</sup></p>
+            <p>BED, now a distinct disorder in <em>DSM-5</em><sup>®</sup>, is defined as recurring episodes (≥ once weekly, for at least 3 months) of consuming a large amount of food in a short time, compared with others. Patients feel a lack of control during a binge and marked distress over their eating. They typically experience shame and guilt, among other symptoms, about their bingeing, and may conceal these symptoms, even from you.<sup>1</sup></p>
           </div>
         </div>
-        <div data-section="prevalence" class="section section--prevalence"><a href="/#prevalence" class="bar bar--title">BED is the most common eating disorder</a><a id="prevalence" name="prevalence" class="scroll-point"></a>
+        <div data-section="prevalence" class="section section--prevalence"><a href="/#prevalence" class="bar bar--title">
+            BED is the most common eating disorder
+            </a><a id="prevalence" name="prevalence" class="scroll-point"></a>
           <div class="content-wrap">
-            <h1>BED affects nearly 3 million US adults*<sup>2-4</sup>
+            <h1 data-skrollr="prevalence-header">BED affects nearly <br class="hide--desktop">3 million US adults*<sup>2,3</sup>
               
             </h1>
-            <div class="us-graphic graphic"></div>
-            <div class="asterisk">Estimated 12-month prevalence in National Comorbidity Survey Replication of US adults ≥18 years of age, extrapolated to full US population aged ≥18 years.<sup>2-4</sup>
+            <div data-skrollr="prevalence-map" class="us-graphic graphic"></div>
+            <div data-skrollr="prevalence-asterisk" class="asterisk">Estimated 12-month prevalence in National Comorbidity Survey Replication of US adults aged ≥18 years, extrapolated to full US population aged ≥18 years.<sup>2-4</sup>
               
             </div>
             <div class="blurb">BED is the most common eating disorder among US adults and more than twice as prevalent as bulimia nervosa and anorexia nervosa combined<sup>2</sup>
               
             </div>
-            <p class="gender-ratio">The gender ratio is far less skewed in BED than in bulimia nervosa<sup>1</sup>
-              
+            <p class="gender-ratio">The gender ratio is far less skewed in BED than in bulimia nervosa<sup>1,2</sup>
               
             </p>
+            <h3>12-month prevalence in US adults<sup>2</sup>:
+              
+            </h3>
             <div class="male-female-graphic graphic">
               <div>
                 <p><span class="yellow">BED: 2 to 1</span><br>
@@ -160,33 +171,41 @@
               </div>
             </div>
             <div class="comparable">
-              <h2>Comparable prevalence rates among non-Latino white <span class="percent">(1.4%)</span>, Latino <span class="percent">(2.1%)</span>, Asian <span class="percent">(1.2%)</span>, and African American <span class="percent">(1.5%)</span> adults in the US<sup>†5</sup>
+              <h2>There are comparable prevalence rates among non-Latino white <span class="percent">(1.4%)</span>, Latino <span class="percent">(2.1%)</span>, Asian <span class="percent">(1.2%)</span>, and African American <span class="percent">(1.5%)</span> adults in the US<sup>†4</sup>
                 
               </h2>
               <div class="patients-graphic graphic"></div>
-              <p><sup>†</sup>Sample from a combined data set of 3 nationally representative US samples.<sup>5</sup>
+              <p class="dagger">Sample from a combined data set of 3 nationally representative US samples.<sup>4</sup>
                 
               </p>
             </div>
-            <p class="frequencies">Roughly similar frequencies in the industrialized countries (eg, Australia, Canada, <br class="hide--mobile">many European countries, New Zealand, and the United States)<sup>1</sup></p>
+            <p class="frequencies">BED occurs with roughly similar frequencies in most industrialized countries (eg, Australia, Canada, <br class="hide--mobile">many European countries, New Zealand, and the United States)<sup>1</sup>
+              
+              
+            </p>
+            <div class="blurb-2">In an on-line survey, only 3% of US adults who met <em>DSM-5</em>® criteria for BED reported being diagnosed with BED by a healthcare provider in the past 12 months.<sup>5</sup>
+              
+            </div>
+            <div class="footnote">Data from a 2013 online survey of adults ≥18 years (Validate Attitudes and Lifestyle Issues in Depression ADHD and Troubles with Eating [VALIDATE]). 344 of 22,397 respondents met DSM-5 criteria for BED in the previous 12 months (a 12-month prevalence estimate of 1.64% of the total US adult population.<sup>5</sup></div>
           </div>
         </div>
-        <div data-section="dsm5" class="section section--dsm5"><a href="/#dsm5" class="bar bar--title">The <em>DSM-5<sup>&reg;</sup></em> criteria</a><a id="dsm5" name="dsm5" class="scroll-point"></a>
+        <div data-section="dsm5" class="section section--dsm5"><a href="/#dsm5" class="bar bar--title">The <em>DSM-5<sup>&reg;</sup></em> criteria
+            </a><a id="dsm5" name="dsm5" class="scroll-point"></a>
           <div class="content-wrap">
             <h2>Essential features <br class="mobile">of binge eating disorder
               
             </h2>
-            <p class="sub-head">In order to be diagnosed with BED, an individual must meet all <br class="hide--mobile">of the following DSM-5<sup>®</sup> diagnostic criteria.<sup>1</sup>
+            <p class="sub-head">In order to be diagnosed with BED, an individual must meet all <br class="hide--mobile">of the following <em>DSM-5</em><sup>®</sup> diagnostic criteria.<sup>1</sup>
               
             </p>
             <ol class="letter">
               <li>Recurrent episodes of binge eating. An episode of <br class="hide--mobile">binge eating is characterized by <em>both</em> of the following:
                 <ol class="number">
                   <li>Eating, in a discrete period of time (eg, within any <br class="hide--mobile">2-hour period), an amount of food that is definitely <br class="hide--mobile">larger than what most people would eat in a similar <br class="hide--mobile">period of time under similar circumstances. </li>
-                  <li>A sense of lack of control over eating during the <br class="hide--mobile">episode (e.g., a feeling that one cannot stop eating or <br class="hide--mobile">control what or how much one is eating). </li>
+                  <li>A sense of lack of control over eating during the <br class="hide--mobile">episode (eg, a feeling that one cannot stop eating or <br class="hide--mobile">control what or how much one is eating). </li>
                 </ol>
               </li>
-              <li>The binge-eating episodes are associated with <em>three <br class="hide--mobile">(or more)</em> of the following:
+              <li>The binge eating episodes are associated with <em>three <br class="hide--mobile">(or more)</em> of the following:
                 <ol class="number">
                   <li>Eating much more rapidly than normal.</li>
                   <li>Eating until feeling uncomfortably full.</li>
@@ -202,7 +221,7 @@
               </li>
             </ol>
             <p class="disclaimer"><em>Diagnosis should be based upon a <br class="hide--desktop">complete evaluation of the patient.
-                </em></p><a target="_blank" href="#" class="pdf-link"><span><em>DSM-5<sup>&reg;</sup></em> Criteria
+                </em></p><a href data-slideout="signup" class="pdf-link"><span>Register for additional information on BED including the full <em>DSM-5<sup>&reg;</sup></em> diagnostic criteria
                 </span></a>
             <div class="tab-container">
               <div class="tab-inner">
@@ -221,7 +240,9 @@
             </div>
           </div>
         </div>
-        <div data-section="course" class="section section--course"><a href="/#course" class="bar bar--title">Clinical characteristics of BED</a><a id="course" name="course" class="scroll-point"></a>
+        <div data-section="course" class="section section--course"><a href="/#course" class="bar bar--title">
+            Clinical characteristics of BED
+            </a><a id="course" name="course" class="scroll-point"></a>
           <div class="content-wrap">
             <h2>
               BED onset occurs later than other eating disorders
@@ -247,25 +268,16 @@
               </div>
               <p class="mean-duration">The mean duration of BED is 8.1 years<sup>2</sup>
                 
+                
               </p>
             </div>
-            <p class="disclaimer">*Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, <br class="hide--mobile">a nationally representative face-to-face household survey of English-speaking adults <br class="hide--desktop">≥18 years.<sup>2</sup>
-              
-              
-              
-            </p>
-            <h2 class="yellow">
-              BED is associated with significant psychiatric comorbidity comparable to bulimia nervosa and anorexia nervosa
+            <h2 class="yellow">BED is associated with significant psychiatric comorbidity comparable to bulimia nervosa and anorexia nervosa<sup>1</sup>
               
             </h2>
-            <p>
-              Adults with BED often have coexisting bipolar, depressive, or anxiety disorders
+            <p class="sub-head">Adults with BED often have coexisting bipolar, depressive, or anxiety disorders<sup>1</sup>
               
             </p>
-            <p class="yellow center">Lifetime comorbidity per DSM-IV in a nationally representative survey of US adults ≥18 years*<sup>2</sup>
-              
-              
-              
+            <p class="yellow center">Lifetime comorbidity per DSM-IV in a nationally representative survey of US adults aged ≥18 years*<sup>2</sup>:
               
             </p>
             <div class="eighty graphic">
@@ -283,20 +295,22 @@
                 
               </p>
               <p>met criteria for<br>
-                <span class="yellow"> or more other</span><br>
-                psychiatric disorder
+                <span class="yellow">3 or more other</span><br>
+                psychiatric disorders
+                
               </p>
             </div>
+            <p class="disclaimer">Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults <br class="hide--desktop"> aged ≥18 years.<sup>2</sup></p>
           </div>
         </div>
-        <div data-section="effects" class="section section--effects"><a href="/#effects" class="bar bar--title">BED is a psychological condition</a><a id="effects" name="effects" class="scroll-point"></a>
+        <div data-section="effects" class="section section--effects"><a href="/#effects" class="bar bar--title">
+            Functional consequences of BED
+            </a><a id="effects" name="effects" class="scroll-point"></a>
           <div class="content-wrap">
-            <h1>
-              BED in adults is associated with a range of functional consequences
+            <h1>BED in adults is associated with a range of functional consequences<sup>1</sup>
               
             </h1>
-            <p class="intro">
-              Functional consequences of BED may include:
+            <p class="intro">Functional consequences of BED may include<sup>1</sup>:
               
             </p>
             <div class="associated">
@@ -309,91 +323,109 @@
                 <li>
                   Increased risk for weight gain and development of obesity
                   
-                  
                 </li>
               </ul>
-              <div class="sixty-three graphic"></div>
-            </div>
-            <div class="comorbidity">
-              <h3>
-                Significant psychiatric comorbidity
+              <h3>In a nationally representative survey of US adults aged ≥18 years*<sup>2</sup>:
                 
               </h3>
-              <p>Almost 50% meet criteria for <br class="hide--mobile"><span class="yellow">3 or more</span> other psychiatric <br class="hide--mobile">disorders<sup>2</sup>
-                
-              </p>
-              <div class="nineteen graphic"></div>
+              <div class="sixty-three graphic">
+                <h1>63<sup class="percent">%</sup>
+                  
+                </h1>
+                <p><span class="yellow">reported functional <br class="hide--desktop">impairment</span> during <br class="hide--desktop">the past year (Sheehan <br class="hide--desktop">Disability Scale)
+                  
+                </p>
+              </div>
             </div>
+            <div class="comorbidity">
+              <div class="nineteen graphic">
+                <h1>19<sup class="percent">%</sup>
+                  
+                </h1>
+                <p>reported <br><span class="yellow">severe impairment</span>
+                  
+                </p>
+              </div>
+            </div>
+            <p class="footnote">*Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a face-to-face household survey of English-speaking adults aged ≥18 years.<sup>2</sup></p>
           </div>
         </div>
-        <div data-section="neurobiology" class="section section--neurobiology"><a href="/#neurobiology" class="bar bar--title">Emerging evidence of BED neurobiology</a><a id="neurobiology" name="neurobiology" class="scroll-point"></a>
+        <div data-section="neurobiology" class="section section--neurobiology"><a href="/#neurobiology" class="bar bar--title">
+            Emerging evidence of BED neurobiology
+            </a><a id="neurobiology" name="neurobiology" class="scroll-point"></a>
           <div class="content-wrap">
-            <h2 class="pretitle">While the exact cause is unknown</h2>
-            <h1>Research suggests BED may have a neurobiological basis and genetic and environmental influences<sup>6-18</sup>
-              
-            </h1>
-            <div data-bottom-top="opacity: 0; transform: translate3d(100px,0px,0px)" data--10p-bottom="opacity: 1; transform: translate3d(0px,0,0px)" class="reward neuro-graphic">
+            <div data-skrollr="neurobiology-header">
+              <h2 class="pretitle">While the exact cause is unknown</h2>
+              <h1>Research suggests BED may have a neurobiological basis and genetic and environmental influences<sup>6-12</sup>
+                
+              </h1>
+            </div>
+            <div data-skrollr="neurobiology-reward" class="reward neuro-graphic">
               <h3>Reward center and impulsivity dysregulation</h3>
               <p>Adults with BED have shown reduced activity <br class="hide--mobile">in impulse control-related regions of the brain<sup>6</sup>
                 
               </p>
             </div>
-            <div data-bottom-top="opacity: 0; transform: translate3d(-100px,0px,0px)" data--10p-bottom="opacity: 1; transform: translate3d(0px,0,0px)" class="dysregulation neuro-graphic">
+            <div data-skrollr="neurobiology-dysregulation" class="dysregulation neuro-graphic">
               <h3>Neurotransmitter dysregulation</h3>
-              <p>Dopamine signaling converts sensory stimuli <br class="hide--mobile">into processes that may generate or enhance wanting <br class="hide--mobile">of a particular food<sup>7-10</sup>
+              <p>Dopamine signaling converts sensory stimuli <br class="hide--mobile">into processes that may generate or enhance wanting <br class="hide--mobile">of a particular food<sup>7-9</sup>
                 
                 
               </p>
             </div>
-            <div data-bottom-top="opacity: 0; transform: translate3d(100px,0px,0px)" data--10p-bottom="opacity: 1; transform: translate3d(0px,0,0px)" class="endogenous neuro-graphic">
+            <div data-skrollr="neurobiology-endogeneous" class="endogenous neuro-graphic">
               <h3>Endogenous μ-opioid signaling dysfunction</h3>
               <p>Opioid signaling converts sensory stimuli <br class="hide--mobile">into processes that generate or enhance “liking” of a particular food<sup>8,9</sup>
                 
+                
               </p>
-              <div data-bottom-top="opacity: 0; transform: translate3d(-100px,0px,0px)" data-center-center="opacity: 1; transform: translate3d(0px,0,0px)" class="blurb">Dysregulation in these areas of the brain, known as the reward center, has been associated with changes in reward processing, self-regulation, and impulse control that may play a significant role in abnormal, compulsive eating behavior.<sup>6,7,10-16</sup>
-                
-                
-              </div>
             </div>
-            <div data-bottom-top="opacity: 0;" data--10p-bottom="opacity: 1;" class="risk neuro-graphic">
+            <div data-skrollr="neurobiology-risk" class="risk neuro-graphic">
               <h3>
                 Research also suggests that risk factors for BED may include:
                 
               </h3>
               <ul class="bullet">
-                <li>Genetic influences<sup>7,17</sup>
+                <li>Genetic influences<sup>7,10</sup>
                   <ul class="dash dash--em">
                     <li>BED appears to run in families, which may reflect additive genetic influences</li>
                     <li>Genetic differences in neurobiological components <br class="hide--mobile">of the brain's reward center have been observed</li>
                   </ul>
                 </li>
-                <li>Environmental influences<sup>18,19</sup>
+                <li>Environmental influences
                   <ul class="dash dash--em">
-                    <li>In a case-controlled retrospective assessment of 162 women with BED, stressful life events were reported more frequently in the year preceding BED onset than in non-BED controls</li>
-                    <li>
-                      In a nationally representative survey of 5,702 adults, of the men (n=30) and women (n=75) who reported BED, 98% and 90%, respectively, reported experiencing some form of trauma*
+                    <li>In a case-controlled retrospective assessment of 162 women with BED, stressful life events were reported more frequently in the year preceding BED onset than in non-BED controls<sup>11</sup></li>
+                    <li>In a nationally representative survey of 5,702 adults, of the men (n=30) and women (n=75) who reported BED, 98% and 90%, respectively, reported experiencing some form of trauma*<sup>12</sup>
                       
                     </li>
                   </ul>
                 </li>
               </ul>
-              <p class="asterisk">*Types of trauma included combat experience, life-threatening accident, and physical or sexual assault.</p>
+              <p class="asterisk">*Types of trauma included combat experience, life-threatening accident, and physical or sexual assault.<sup>12</sup>
+                
+                
+                
+                
+                
+              </p>
             </div>
           </div>
         </div>
-        <div data-section="diagnosis" class="section section--diagnosis"><a href="/#diagnosis" class="bar bar--title">Finding BED in your patients</a><a id="diagnosis" name="diagnosis" class="scroll-point"></a>
+        <div data-section="diagnosis" class="section section--diagnosis"><a href="/#diagnosis" class="bar bar--title">
+            Finding BED in your patients
+            </a><a id="diagnosis" name="diagnosis" class="scroll-point"></a>
           <div class="content-wrap">
             <h1>Recognizing BED</h1>
             <p class="sub-head">BED is defined as recurring episodes of eating a large amount of food in a short period of time, with episodes characterized by feelings of lack of control and marked distress.<sup>1</sup></p>
-            <p>These are not the full diagnostic criteria—see full DSM-5 criteria <a href="#" class="yellow">here</a>.
+            <p>These are not the full diagnostic criteria—see full DSM-5 criteria <a href data-slideout="dsm5" class="yellow">here</a>.
               
             </p>
             <h3>BED is different from bulimia nervosa</h3>
             <p>It is not associated with compensatory behaviors such as purging or excessive exercise, or with dietary restriction, although frequent dieting may be reported.<sup>1</sup></p>
             <h3>BED is different from overeating</h3>
-            <p>While overeating is a challenge for many Americans, recurrent binge eating is much less common, far more severe, and is associated with significant physical and psychological problems.<sup>23</sup></p>
+            <p>While overeating is a challenge for many Americans, recurrent binge eating is much less common, far more severe, and is associated with significant physical and psychological problems.<sup>13</sup></p>
             <h3>BED is different from obesity</h3>
-            <p>As noted in DSM-5, compared with weight-matched obese adults without BED, obese adults with BED consume more calories in laboratory studies of eating behavior and have<sup>1</sup>:</p>
+            <p>As noted in <em>DSM-5</em><sup>&reg;</sup>, compared with weight-matched obese adults without BED, obese adults with BED consume more calories in laboratory studies of eating behavior and have<sup>1</sup>:</p>
             <ul class="bullet">
               <li>Greater functional impairment</li>
               <li>Lower quality of life</li>
@@ -403,14 +435,14 @@
             <h3 class="chart-head">BED occurs in normal-weight, overweight, and obese individuals<sup>2</sup>
               
             </h3>
-            <p class="center">Based on a nationally representative survey of US adults ≥18 years<sup>2</sup>
+            <h3 class="center">Based on a nationally representative survey of US adults aged ≥18 years<sup>2</sup>
               
-            </p>
+            </h3>
             <div class="fifty-percent">
               <p class="large yellow">&lt;50<sup class="percent">%</sup>
                 
               </p>
-              <p class="yellow">of adults with BED <br>are obese<sup>2</sup>
+              <p class="yellow">of adults with BED <br>are obese
                 
                 
               </p>
@@ -419,7 +451,7 @@
               <p class="large yellow">19<sup class="percent">%</sup>
                 
               </p>
-              <p class="yellow">are normal weight <br>(BMI 18.5-24.9)<sup>2</sup>
+              <p class="yellow">are normal weight <br>(BMI 18.5-24.9)
                 
               </p>
             </div>
@@ -432,18 +464,20 @@
                 
               </p>
               <p>but not obese<br>
-                (BMI ≥30)<sup>2</sup>
+                (BMI ≥30)
               </p>
             </div>
           </div>
         </div>
-        <div data-section="resources" class="section section--resources"><a href="/#resources" class="bar bar--title">Resources/Expert Videos</a><a id="resources" name="resources" class="scroll-point"></a>
+        <div data-section="resources" class="section section--resources"><a href="/#resources" class="bar bar--title">
+            Resources/Expert Videos
+            </a><a id="resources" name="resources" class="scroll-point"></a>
           <div class="content-wrap">
             <h2>Resources</h2>
             <p class="sub-head">Now that you have a better understanding of BED, you know what to <br class="hide--mobile">look for in your practice. </p>
             <h3 class="conversation">Starting the conversation</h3>
             <p>These questions may help you begin a dialogue with your adult patients about <br class="hide--mobile">their eating behavior and feelings toward food.</p>
-            <h3>General screening<sup>1</sup></h3>
+            <h3>General screening<sup>14</sup></h3>
             <ul class="bullet">
               <li>Do you worry that you have lost control over how much you eat?</li>
               <li>
@@ -452,7 +486,7 @@
               </li>
             </ul>
             <div class="graphic-wrap">
-              <h3>Specific for BED diagnosis<sup>1</sup></h3>
+              <h3>Specific for BED diagnosis<sup>15</sup></h3>
               <ul class="bullet">
                 <li>Do you often eat within any 2-hour period what <br class="hide--mobile">most people would regard as an unusual amount of food?</li>
                 <li>During these binges, did you eat… 
@@ -476,22 +510,20 @@
                 
               </h4>
               <ul>
-                <li>
+                <li data-video>
                   <p>Overview</p>
                 </li>
-                <li>
+                <li data-video>
                   <p>Clinical <br>Course</p>
                 </li>
-                <li>
+                <li data-video>
                   <p>Clinical <br>Characteristics</p>
                 </li>
-                <li>
+                <li data-video>
                   <p>BED <br>Neurobiology</p>
                 </li>
-                <li>
-                  <p>Clinical <br>Strategies
-                    
-                  </p>
+                <li data-video>
+                  <p>Clinical <br>Strategies</p>
                 </li>
               </ul>
             </div>
@@ -501,96 +533,81 @@
             <ul class="organizations">
               <li>
                 <p>Alliance for Eating Disorders Awareness</p>
-                <p>www.allianceforeatingdisorders.com</p>
+                <p><a href="http://www.allianceforeatingdisorders.com">www.allianceforeatingdisorders.com</a></p>
                 <p>(866) 662-1235</p>
               </li>
               <li>
                 <p>American Medical Association</p>
-                <p>www.ama-assn.org/ama</p>
+                <p><a href="http://www.ama-assn.org/ama">www.ama-assn.org/ama</a></p>
                 <p>(800) 621-8335</p>
               </li>
               <li>
                 <p>American Psychiatric Association</p>
-                <p>www.psychiatry.org</p>
+                <p><a href="http://www.psychiatry.org">www.psychiatry.org</a></p>
                 <p>(888) 35-PSYCH</p>
               </li>
               <li>
                 <p>American Psychological Association</p>
-                <p>www.apa.org</p>
+                <p><a href="http://www.apa.org">www.apa.org</a></p>
                 <p>(800) 374-2721</p>
               </li>
               <li>
                 <p>Binge Eating Disorder Association</p>
-                <p>bedaonline.com</p>
+                <p><a href="http://bedaonline.com">bedaonline.com</a></p>
                 <p>(855) 855-BEDA</p>
               </li>
               <li>
                 <p>National Alliance for Mental Illness</p>
-                <p>www.nami.org</p>
+                <p><a href="http://www.nami.org">www.nami.org</a></p>
                 <p>(800) 950-6264</p>
               </li>
               <li>
                 <p>National Association for Anorexia Nervosa <br>and Associated Disorders</p>
-                <p>www.anad.org</p>
+                <p><a href="http://www.anad.org">www.anad.org</a></p>
                 <p>(630) 577-1330</p>
               </li>
               <li>
                 <p>National Eating Disorders Association</p>
-                <p>www.nationaleatingdisorders.org</p>
+                <p><a href="http://www.nationaleatingdisorders.org">www.nationaleatingdisorders.org</a></p>
                 <p>
                   (800) 931-2237
                   
                 </p>
               </li>
-            </ul><a class="button signup">
-              Sign up to receive informative BED content and updates from Shire.
+            </ul><a data-slideout="signup" class="button signup">Register for additional information on BED including the full <em>DSM-5</em><sup>®</sup> diagnostic criteria
               </a>
             <div class="references">
               <p><strong>References:</strong> 
                 
-                <strong>1</strong>.&nbsp;American Psychiatric Association. Binge-eating disorder. In: <em>Diagnostic and Statistical Manual of Mental Disorders</em>. 5th ed. Arlington, VA: American Psychiatric Association; 2013;350-353. 
+                <strong>1.</strong>&nbsp;American Psychiatric Association. Binge-eating disorder. In: <em>Diagnostic and Statistical Manual of Mental Disorders. 5th ed.</em> Arlington, VA: American Psychiatric Association; 2013;350-353. 
                 
-                <strong>2</strong>.&nbsp;Hudson JI, Hiripi E, Pope HG Jr, Kessler RC. The prevalence and correlates of eating disorders in the National Comorbidity Survey Replication [published correction appears in <em>Biol Psychiatry</em>. 2012;72(2):164]. <em>Biol Psychiatry</em>. 2007;61(3):348-358.
+                <strong>2.</strong>&nbsp;Hudson JI, Hiripi E, Pope HG Jr, Kessler RC. The prevalence and correlates of eating disorders in the National Comorbidity Survey Replication [published correction appears in <em>Biol Psychiatry.</em> 2012;72(2):164]. <em>Biol Psychiatry.</em> 2007;61(3):348-358.
                 
-                <strong>3</strong>.&nbsp;US Census Bureau. USA QuickFacts. http://quickfacts.census.gov<br class="mobile-only">/qfd/states/00000.html. Accessed May 20, 2014. 
+                <strong>3.</strong>&nbsp;Howden LM, Meyer JA. Age and sex composition: 2010. US Census Bureau; 2011. 
                 
-                <strong>4</strong>.&nbsp;US Census Bureau. US and World Population Clock. www.census.gov/popclock. Accessed May 20, 2014. 
+                <strong>4.</strong>&nbsp;Marques L, Alegria M, Becker AE, et al. Comparative prevalence, correlates of impairment, and service utilization for eating disorders across US ethnic groups: implications for reducing ethnic disparities in health care access for eating disorders. <em>Int J Eat Disord.</em> 2011;44(5):412-420. 
                 
-                <strong>5</strong>.&nbsp;Marques L, Alegria M, Becker AE, et al. Comparative prevalence, correlates of impairment, and service utilization for eating disorders across US ethnic groups: implications for reducing ethnic disparities in health care access for eating disorders. <em>Int J Eat Disord</em>. 2011;44(5):412-420. 
+                <strong>5.</strong>&nbsp;Cossrow N, Russo LJ, Ming EE, Witt EA, Victor TW, Wadden TA. Estimating the prevalence of binge eating disorder in a community sample comparing DSM-IV-TR and DSM-5 criteria. Poster. APA 167th Annual Meeting, New York, NY, May 3-7, 2014. 
                 
-                <strong>6</strong>.&nbsp;Sim LA, McAlpine DE, Grothe KB, et al. Identification and treatment of eating disorders in the primary care setting. <em>Mayo Clin Proc</em>. 2010;85(8):746-751. 
+                <strong>6.</strong>&nbsp;Balodis IM, Molina ND, Kober H, et al. Divergent neural substrates of inhibitory control in binge eating disorder relative to other manifestations of obesity. <em>Obesity (Silver Spring).</em> 2013;21(2):367-377. 
                 
-                <strong>7</strong>.&nbsp;Balodis IM, Molina ND, Kober H, et al. Divergent neural substrates of inhibitory control in binge eating disorder relative to other manifestations of obesity. <em>Obesity</em> (Silver Spring). 2013;21(2):367-377. 
+                <strong>7.</strong>&nbsp;Davis CA, Levitan RD, Reid C, et al. Dopamine for “wanting” and opioids for “liking”: a comparison of obese adults with and without binge eating. <em>Obesity (Silver Spring).</em> 2009;17(6):1220-1225. 
                 
-                <strong>8</strong>.&nbsp;Davis CA, Levitan RD, Reid C, et al. Dopamine for “wanting” and opioids for “liking”: a comparison of obese adults with and without binge eating. <em>Obesity</em> (Silver Spring). 2009;17(6):1220-1225. 
+                <strong>8.</strong>&nbsp;Berridge KC, Ho CY, Richard JM, DiFeliceantonio AG. The tempted brain eats; pleasure and desire circuits in obesity and eating disorders. <em>Brain Res.</em> 2010;1350:43-64. 
                 
-                <strong>9</strong>.&nbsp;Berridge KC, Kringelbach ML. Neuroscience of affect: brain mechanisms of pleasure and displeasure. <em>Curr Opin Neurobiol</em>. 2013;23(3):294-303. 
+                <strong>9.</strong>&nbsp;Wyvell CL, Berridge KC. Intra-accumbens amphetamine increases the conditioned incentive salience of sucrose reward: enhancement of reward “wanting” without enhanced “liking” or response reinforcement. <em>J Neurosci.</em> 2000;20(21):8122-8130. 
                 
-                <strong>10</strong>.&nbsp;Wyvell CL, Berridge KC. Intra-accumbens amphetamine increases the conditioned incentive salience of sucrose reward: enhancement of reward “wanting” without enhanced “liking” or response reinforcement. <em>J Neurosci</em>. 2000;20(21):8122-8130. 
+                <strong>10.</strong>&nbsp;Davis C, Levitan RD, Yilmaz Z, Kaplan AS, Carter JC, Kennedy JL. Binge eating disorder and the dopamine D2 receptor: Genotypes and sub-phenotypes. Prog Neuropsychopharmacol <em>Biol Psychiatry.</em> 2012;38(2):328-335. 
                 
-                <strong>11</strong>.&nbsp;Schäfer A, Vaitl D, Schienle A. Regional grey matter volume abnormalities in bulimia nervosa and binge-eating disorder. <em>Neuroimage</em>. 2010;50(2):639-643. 
+                <strong>11.</strong>&nbsp;Pike KM, Wilfley D, Hilbert A, Fairburn CG, Dohm FA, Striegel-Moore RH. Antecedent life events of binge-eating disorder. <em>Psychiatry Res.</em> 2006;142(1):19-29. 
                 
-                <strong>12</strong>.&nbsp;Woolley JD, Gorno-Tempini M-L, Seeley WW, et al. Binge eating is associated with right orbitofrontal-insular-striatal atrophy in frontotemporal dementia. <em>Neurology</em>. 2007;69(14):1424-1433. 
+                <strong>12.</strong>&nbsp;Mitchell KS, Mazzeo SE, Schlesinger MR, Brewerton TD, Smith BN. Comorbidity of partial and subthreshold PTSD among men and women with eating disorders in the National Comorbidity Survey-Replication Study. <em>Int J Eat Disord.</em> 2012;45(3):307-315. 
                 
-                <strong>13</strong>.&nbsp;Schienle A, Schäfer A, Hermann A, Vaitl D. Binge-eating disorder: reward sensitivity and brain activation to images of food. <em>Biol Psychiatry</em>. 2009;65(8):654-661. 
+                <strong>13.</strong>&nbsp;American Psychiatric Association. Feeding and eating disorders. American Psychiatric Association; 2013. 
                 
-                <strong>14</strong>.&nbsp;Levitan RD, Masellis M, Basile VS, et al. The dopamine-4 receptor gene associated with binge eating and weight gain in women with seasonal affective disorder: an evolutionary perspective. <em>Biol Psychiatry</em>. 2004;56(9):665-669. 
+                <strong>14.</strong>&nbsp;Morgan JF. The SCOFF questionnaire: a new screening tool for eating disorders. <em>West J Med.</em> 2000;172(3):164-165. 
                 
-                <strong>15</strong>.&nbsp;Naleid AM, Grace MK, Chimukangara M, Billington CJ, Levine AS. Paraventricular opioids alter intake of high-fat but not high-sucrose diet depending on diet preference in a binge model of feeding. <em>Am J Physiol Regul Integr Comp Physiol</em>. 2007;293(1):R99-R105. 
-                
-                <strong>16</strong>.&nbsp;Boggiano MM, Chandler PC, Viana JB, Oswald KD, Maldonado CR, Wauford PK. Combined dieting and stress evoke exaggerated responses to opioids in binge-eating rats. <em>Behav Neurosci</em>. 2005;119(5):1207-1214. 
-                
-                <strong>17</strong>.&nbsp;Blasio A, Steardo L, Sabino V, Cottone P. Opioid system in the medial prefrontal cortex mediates binge-like eating. <em>Addict Biol</em>. 2013;19(4):652-662. 
-                
-                <strong>18</strong>.&nbsp;Davis C, Levitan RD, Yilmaz Z, Kaplan AS, Carter JC, Kennedy JL. Binge eating disorder and the dopamine D2 receptor: genotypes and sub-phenotypes. <em>Prog Neuropsychopharmacol Biol Psychiatry</em>. 2012;38(2):328-335. 
-                
-                <strong>19</strong>.&nbsp;Mitchell KS, Mazzeo SE, Schlesinger MR, Brewerton TD, Smith BN. Comorbidity of partial and subthreshold ptsd among men and women with eating disorders in the national comorbidity survey-replication study. <em>Int J Eat Disord</em>. 2012;45(3):307-315. 
-                
-                <strong>20</strong>.&nbsp;American Psychiatric Association. Feeding and eating disorders. American Psychiatric Association; 2013. 
-                
-                <strong>21</strong>.&nbsp;Morgan JF, Reid F, Lacey JH. The SCOFF questionnaire: a new screening tool for eating disorders. <em>West J Med</em>. 2000;172(3):164-165. 
-                
-                <strong>22</strong>.&nbsp;First MB, Spitzer RL, Gibbon M, Williams JBW. Structured Clinical Interview for DSM-IV-TR Axis I Disorders, Research Version, Patient Edition. (SCID-I/P). New York: Biometrics Research, New York State Psychiatric Institute; 2010. 
+                <strong>15.</strong>&nbsp;First MB, Spitzer RL, Gibbon M, Williams JBW. <em>Structured Clinical Interview for DSM-IV-TR Axis I Disorders, Research Version, Patient Edition (SCID-I/P).</em> New York, NY: Biometrics Research, New York State Psychiatric Institute; 2010.
               </p>
             </div>
           </div>
@@ -600,28 +617,52 @@
         <div class="content-wrap">
           <nav>
                   <ul class="secondary-nav">
-                    <li class="secondary-nav__item _1_liner"><a href="unsubscribe.aspx">Unsubscribe</a></li>
-                    <li class="secondary-nav__item _1_liner"><a href="contact-us.aspx">Contact Us</a></li>
-                    <li class="secondary-nav__item _1_liner"><a href="privacy-policy.aspx">Privacy Policy</a></li>
-                    <li class="secondary-nav__item _1_liner"><a href="#">Shire US</a></li>
+                    <li class="secondary-nav__item _1_liner"><a href="unsubscribe.aspx" target="_self">Unsubscribe</a></li>
+                    <li class="secondary-nav__item _1_liner"><a href="contact-us.aspx" target="_self">Contact Us</a></li>
+                    <li class="secondary-nav__item _1_liner"><a href="privacy-policy.aspx" target="_self">Privacy Policy</a></li>
+                    <li class="secondary-nav__item _1_liner"><a href="http://www.shire.com/" target="_blank">Shire US</a></li>
                   </ul>
           </nav>
           <p class="prc">S02592 08/14</p><img src="content/img/footer-logo.png" class="footer-logo">
-          <p>&copy;2014 <a href="#" target="_blank">Shire US Inc.,</a> Wayne, PA 19087 1‐800‐828‐2088 All rights reserved.</p>
+          <p>&copy;2014 <a href="http://www.shire.com/" target="_blank">Shire US Inc.,</a> Wayne, PA 19087 1‐800‐828‐2088 All rights reserved.</p>
           <p>All content of this website including text, images, graphics, sound files, and their arrangement, belongs to Shire and is protected by international copyright laws. All other intellectual property rights are reserved. The content may not be copied for commercial use or distribution, nor may these objects be downloaded, modified, or posted to other sites.</p>
           <p>This site is intended solely for US residents and is governed solely by US laws and government regulations. Please see <a href="privacy-policy.aspx">our privacy policy</a> for more information. While Shire US Inc. makes reasonable efforts to include accurate, up‐to‐date information on the site, Shire US Inc. makes no warranties or representations as to its accuracy. Shire US Inc. assumes no liability for any errors or omissions in the content of the site.</p>
         </div>
       </div>
-      <div class="mask mask--slideout"></div>
-      <div class="modal-overlay">
-        <div class="modal-container">
-          <div class="modal-close"></div>
-          <div class="modal-box">
-            <section class="variable-content">
-              <h3>You are about to leave BingeEatingDisorder.com.</h3>
-              <p>This link will take you to a website maintained by a third party, that is responsible for its content and privacy policy. Shire provides this link as a service to you. Our privacy policy does not apply to the website you are about to visit. We encourage you to read the privacy policy of every website you visit. Click "OK" to continue or "CANCEL" to return to BingeEatingDisorder.com.</p>
-              <div class="controls"><a class="button">ok</a><a class="button">cancel</a></div>
-            </section>
+      <div class="modal modal--interstitial">
+        <div class="modal__outer">
+          <div class="modal__inner">
+            <div class="modal__close"></div>
+            <h3>You are about to leave BingeEatingDisorder.com.</h3>
+            <p>This link will take you to a website maintained by a third party, that is responsible for its content and privacy policy. Shire provides this link as a service to you. Our privacy policy does not apply to the website you are about to visit. We encourage you to read the privacy policy of every website you visit. Click "OK" to continue or "CANCEL" to return to BingeEatingDisorder.com.</p>
+            <div class="controls"><a href="#" target="_blank" class="button button--ok">ok</a><a href class="button button--cancel">
+                cancel
+                </a></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--thankyou">
+        <div class="modal__outer">
+          <div class="modal__inner">
+            <div class="modal__close"></div>
+            <h3>Thank you!</h3>
+            <p>Your registration is complete.</p>
+            <p>
+              We appreciate your interest in staying up to date on binge eating disorder (BED) in adults. You can expect to receive additional information from Shire on how to help your adult patients with BED.
+              
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--video">
+        <div class="modal__outer">
+          <div class="modal__inner">
+            <div class="modal__close"></div>
+            <h3>Video title</h3>
+            <div class="fpo">
+              FPO
+              
+            </div>
           </div>
         </div>
       </div>

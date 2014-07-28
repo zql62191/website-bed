@@ -126,17 +126,18 @@
                 },
                 "address": {
                     "FName": $scope.form.fname,
-                    "MName": $scope.form.MI,
+                    "MName": $scope.checkFormPresent($scope.form.MI),
                     "LName": $scope.form.lname,
                     "Address1": $scope.form.street,
-                    "Address2": $scope.form.suite,
+                    "Address2": $scope.checkFormPresent($scope.form.suite),
                     "City": $scope.form.city,
                     "State": convertStateToAbbr($scope.form.state),
                     "Zip": $scope.form.zip
                 }
             };
+            $log.log(convertStateToAbbr($scope.form.state));
 
-            URL = "http://localhost:54953/BEDSite/Service/BEDService.svc/SetUnsubscribeDataAll";
+            URL = "/BEDSite/Service/BEDService.svc/SetUnsubscribeDataBoth";
             Data = JSON.stringify(data);
 
             $scope.processForm(URL, Data);
@@ -155,7 +156,7 @@
                 "Zip": $scope.form.zip
             };
 
-            URL = "http://localhost:54953/BEDSite/Service/BEDService.svc/SetUnsubscribeDataDirect";
+            URL = "/BEDSite/Service/BEDService.svc/SetUnsubscribeDataDirect";
             Data = JSON.stringify(data);
 
             $scope.processForm(URL, Data);
@@ -168,7 +169,7 @@
                 "ConfirmEmail": $scope.form.email
             };
 
-            URL = "http://localhost:54953/BEDSite/Service/BEDService.svc/SetUnsubscribeDataEmail";
+            URL = "/BEDSite/Service/BEDService.svc/SetUnsubscribeDataEmail";
             Data = JSON.stringify(data);
 
             $scope.processForm(URL, Data);
@@ -178,14 +179,20 @@
             $log.log(sdata);
             $http({
                 headers: {
-                    'Accept': 'application/json, text/javascript',
                     'Content-Type': 'application/json; charset=utf-8'
                 },
                 method: 'POST',
                 url: path,
                 data: sdata,
-                'dataType': 'json'
             });
+        };
+
+        $scope.checkFormPresent = function(item) {
+            if (item) {
+                return item;
+            } else {
+                return null;
+            }
         };
     }
 
@@ -193,6 +200,7 @@
 
     function OptInController($scope, $window, $log, $location, $document, $timeout, $http) {
         $scope.states = statearray;
+        $scope.invalidform = false;
         $scope.professions = [
             '*Profession',
             'Eating Disorder Clinician',
@@ -235,6 +243,7 @@
 
             if (!$scope.bed_form.$valid) {
                 /*print error*/
+                $scope.invalidform = true;
                 return;
             }
 
@@ -247,10 +256,11 @@
                 $(window).scrollTop(oldTop + bottomDifference);
             }, 100);
 
-            URL = "http://localhost:54953/BEDSite/Service/BEDService.svc/SetOptInData";
+            URL = "/BEDSite/Service/BEDService.svc/SetOptInData";
             Data = JSON.stringify(data);
 
             $scope.processOptIn(URL, Data);
+            showSignUpThankYou();
 
         };
 
@@ -266,7 +276,6 @@
             $log.log(sdata);
             $http({
                 headers: {
-                    'Accept': 'application/json, text/javascript',
                     'Content-Type': 'application/json; charset=utf-8'
                 },
                 method: 'POST',
@@ -423,122 +432,13 @@ function convertStateToAbbr(state) {
         'U.S. Virgin Islands': 'VI'
     };
 
-    return states[state] || null;
+    if (states[state]) {
+        return states[state];
+    } else {
+        return null;
+    }
+}
 
-    // switch (state) {
-    //     case 'Alabama':
-    //         return 'AL';
-    //     case 'Alaska':
-    //         return 'AK';
-    //     case 'Arizona':
-    //         return 'AZ';
-    //     case 'Arkansas':
-    //         return 'AR';
-    //     case 'California':
-    //         return 'CA';
-    //     case 'Colorado':
-    //         return 'CO';
-    //     case 'Connecticut':
-    //         return 'CT';
-    //     case 'Delaware':
-    //         return 'DE';
-    //     case 'Florida':
-    //         return 'FL';
-    //     case 'Georgia':
-    //         return 'GA';
-    //     case 'Hawaii':
-    //         return 'HI';
-    //     case 'Idaho':
-    //         return 'ID';
-    //     case 'Illinois':
-    //         return 'IL';
-    //     case 'Indiana':
-    //         return 'IN';
-    //     case 'Iowa':
-    //         return 'IA';
-    //     case 'Kansas':
-    //         return 'KS';
-    //     case 'Kentucky':
-    //         return 'KY';
-    //     case 'Louisiana':
-    //         return 'LA';
-    //     case 'Maine':
-    //         return 'ME';
-    //     case 'Maryland':
-    //         return 'MD';
-    //     case 'Massachusetts':
-    //         return 'MA';
-    //     case 'Michigan':
-    //         return 'MI';
-    //     case 'Minnesota':
-    //         return 'MN';
-    //     case 'Mississippi':
-    //         return 'MS';
-    //     case 'Missouri':
-    //         return 'MO';
-    //     case 'Montana':
-    //         return 'MT';
-    //     case 'Nebraska':
-    //         return 'NE';
-    //     case 'Nevada':
-    //         return 'NV';
-    //     case 'New Hampshire':
-    //         return 'NH';
-    //     case 'New Jersey':
-    //         return 'NJ';
-    //     case 'New Mexico':
-    //         return 'NM';
-    //     case 'New York':
-    //         return 'NY';
-    //     case 'North Carolina':
-    //         return 'NC';
-    //     case 'North Dakota':
-    //         return 'ND';
-    //     case 'Ohio':
-    //         return 'OH';
-    //     case 'Oklahoma':
-    //         return 'OK';
-    //     case 'Oregon':
-    //         return 'OR';
-    //     case 'Pennsylvania':
-    //         return 'PA';
-    //     case 'Rhode Island':
-    //         return 'RI';
-    //     case 'South Carolina':
-    //         return 'SC';
-    //     case 'South Dakota':
-    //         return 'SD';
-    //     case 'Tennessee':
-    //         return 'TN';
-    //     case 'Texas':
-    //         return 'TX';
-    //     case 'Utah':
-    //         return 'UT';
-    //     case 'Vermont':
-    //         return 'VT';
-    //     case 'Virginia':
-    //         return 'VA';
-    //     case 'Washington':
-    //         return 'WA';
-    //     case 'West Virginia':
-    //         return 'WV';
-    //     case 'Wisconsin':
-    //         return 'WI';
-    //     case 'Wyoming':
-    //         return 'WY';
-    //     case 'Puerto Rico':
-    //         return 'PR';
-    //     case 'Guam':
-    //         return 'GU';
-    //     case 'Northern Mariana Islands':
-    //         return 'MP';
-    //     case 'Puerto Rico':
-    //         return 'PR';
-    //     case 'U.S. Minor Outlying Islands':
-    //         return 'UM';
-    //     case 'U.S. Virgin Islands':
-    //         return 'VI';
-    //     default:
-    //         return null;
-    // }
+function showSignUpThankYou() {
+    $('.modal--thankyou').show();
 }

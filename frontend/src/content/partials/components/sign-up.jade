@@ -10,14 +10,16 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
 
     form(
       name='bed_form',
+      id='bed_form',
       ng-submit="optIn()",
       novalidate)
       input(
         type='text',
         name='firstName',
         placeholder='*First Name',
-        ng-model='form.fname',
+        ng-model='fname',
         ng-required='true',
+        ng-class="{forminvalid: (bed_form.firstName.$invalid && bed_form.firstName.$dirty) || (bed_form.firstName.$invalid && invalidform)}",
         class='first-name')
 
       input(
@@ -34,6 +36,7 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
         placeholder='*Last Name',
         ng-model='form.lname',
         ng-required='true',
+        ng-class="{forminvalid: (bed_form.lastName.$invalid && bed_form.lastName.$dirty) || (bed_form.lastName.$invalid && invalidform)}",
         class='last-name')
 
       input(
@@ -43,6 +46,7 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
         ng-model='form.email',
         ng-required='true',
         ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/",
+        ng-class="{forminvalid: (bed_form.email.$invalid && bed_form.email.$dirty) || (bed_form.email.$invalid && invalidform)}",
         class='email')
 
       input(
@@ -52,6 +56,7 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
         ng-required='true',
         confirmemail,
         placeholder='*Re-enter Email',
+        ng-class="{forminvalid: (bed_form.email2.$invalid && bed_form.email2.$dirty) || (bed_form.email2.$invalid && invalidform)}",
         class='email2')
 
       input(
@@ -60,6 +65,7 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
         placeholder='*Street Address',
         ng-model='form.street',
         ng-required='true',
+        ng-class="{forminvalid: (bed_form.streetAddress.$invalid && bed_form.streetAddress.$dirty) || (bed_form.streetAddress.$invalid && invalidform)}",
         class='street-address')
 
       input(
@@ -76,6 +82,7 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
         placeholder='*City',
         ng-model='form.city',
         ng-required='true',
+        ng-class="{forminvalid: (bed_form.city.$invalid && bed_form.city.$dirty) || (bed_form.city.$invalid && invalidform)}",
         class='city')
 
       select(
@@ -83,6 +90,7 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
         class='state',
         ng-model="form.state",
         ng-options="state for state in states",
+        ng-class="{forminvalid: (bed_form.state.$invalid && bed_form.state.$dirty) || (bed_form.state.$invalid && invalidform)}",
         stateselect)
 
       input(
@@ -91,7 +99,8 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
         placeholder='*Zip',
         ng-model="form.zip",
         ng-pattern="/^[0-9]{5}$/",
-        required=true,
+        ng-required='true',
+        ng-class="{forminvalid: (bed_form.zip.$invalid && bed_form.zip.$dirty) || (bed_form.zip.$invalid && invalidform)}",
         class='zip')
 
       select(
@@ -99,6 +108,7 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
         ng-model='form.profession',
         ng-options='prof for prof in professions',
         profselect,
+        ng-class="{forminvalid: (bed_form.profession.$invalid && bed_form.profession.$dirty) || (bed_form.profession.$invalid && invalidform)}",
         class='profession')
 
 
