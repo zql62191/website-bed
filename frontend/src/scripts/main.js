@@ -1,12 +1,12 @@
-window.onerror = function() {
-    return true;
-};
+// bad idea in dev
+// window.onerror = function() {
+//     return true;
+// };
 
 var BED = {
 
     gestures: {
-        // click: 'click'
-        click: 'tap'
+        click: typeof Hammer !== 'undefined' ? 'tap' : 'click'
     },
 
     mq: {
