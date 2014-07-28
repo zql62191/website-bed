@@ -15,9 +15,7 @@ div(data-section='prevalence').section.section--prevalence
     div(data-skrollr="prevalence-asterisk").asterisk.
       Estimated 12-month prevalence in National Comorbidity Survey Replication of US adults aged ≥18 years, extrapolated to full US population aged ≥18 years.#[sup 2-4]
 
-    .blurb(
-        data-bottom-top='opacity: 0;',
-        data--30p-bottom='opacity: 1;').
+    .blurb.
       BED is the most common eating disorder among US adults and more than twice as prevalent as bulimia nervosa and anorexia nervosa combined#[sup 2]
 
     p.gender-ratio.
@@ -29,10 +27,14 @@ div(data-section='prevalence').section.section--prevalence
     
 
     .male-female-graphic
-      p.
+      p(
+        data-bottom-top='opacity: 0; transform: translate3d(0px,100px,0px)',
+        data--30p-bottom='opacity: 1; transform: translate3d(0px,0px,0px)').
         #[span.yellow BED: 2 to 1]#[br]
         1.6% of women vs 0.8% of men
-      p.
+      p(
+        data-bottom-top='opacity: 0; transform: translate3d(0px,100px,0px)',
+        data--30p-bottom='opacity: 1; transform: translate3d(0px,0px,0px)').
         #[span.yellow Bulimia nervosa: 5 to 1]#[br]
         0.5% of women vs 0.1% of men
 

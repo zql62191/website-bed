@@ -22,27 +22,27 @@ var BED = {
     skrollr: {
         inst: null,
         ani: {
-            // 'prevalence-header': {
-            //     'data-bottom-top': 'opacity: 0; transform: translate3d(0px,-50px,0px)',
-            //     'data-bottom-bottom': 'opacity: 1; transform: translate3d(0px,0,0px)'
-            // },
-            // 'prevalence-map': {
-            //     'data-bottom-top': 'opacity: 0; transform: scale(0.5);',
-            //     'data-center-center': 'opacity: 1; transform: scale(1);'
-            // },
-            // 'prevalence-asterisk': {
-            //     'data-bottom-top': 'opacity: 0; transform: translate3d(100px,0px,0px)',
-            //     'data-center-center': 'opacity: 1; transform: translate3d(0px,0,0px)'
-            // },
-            // 'prevalence-link': {
-            //     'data-anchor-target': '.section--prevalence',
-            //     'data-100-top': 'display: block;',
-            //     'data-bottom': 'display: none;'
-            // },
-            // 'neurobiology-header': {
-            //     'data-bottom-top': 'opacity: 0; transform: translate3d(0px,-50px,0px)',
-            //     'data-bottom-bottom': 'opacity: 1; transform: translate3d(0px,0,0px)'
-            // },
+            'prevalence-header': {
+                'data-bottom-top': 'opacity: 0; transform: translate3d(0px,-50px,0px)',
+                'data-bottom-bottom': 'opacity: 1; transform: translate3d(0px,0,0px)'
+            },
+            'prevalence-map': {
+                'data-bottom-top': 'opacity: 0; transform: scale(0.5);',
+                'data-center-center': 'opacity: 1; transform: scale(1);'
+            },
+            'prevalence-asterisk': {
+                'data-bottom-top': 'opacity: 0; transform: translate3d(100px,0px,0px)',
+                'data-center-center': 'opacity: 1; transform: translate3d(0px,0,0px)'
+            },
+            'prevalence-link': {
+                'data-anchor-target': '.section--prevalence',
+                'data-100-top': 'display: block;',
+                'data-bottom': 'display: none;'
+            },
+            'neurobiology-header': {
+                'data-bottom-top': 'opacity: 0; transform: translate3d(0px,-50px,0px)',
+                'data-bottom-bottom': 'opacity: 1; transform: translate3d(0px,0,0px)'
+            },
             'neurobiology-reward': {
                 'data-bottom-top': 'opacity: 0; transform: translate3d(100px,0px,0px)',
                 'data--10p-bottom': 'opacity: 1; transform: translate3d(0px,0,0px)'
