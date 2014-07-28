@@ -2641,12 +2641,20 @@ html::-webkit-scrollbar {
   margin-right: 4px;
   border-bottom: #747779 solid 12px;
 }
+@media only screen and (min-width: 40.063em) {
+  .section--resources .videos li {
+    width: 466px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+  }
+}
 @media only screen and (max-width: 40em) {
   .section--resources .videos li {
     width: 268px;
     height: 240px;
     margin-right: 7px;
     border-bottom: #747779 solid 18px;
+    padding: 0 20px;
   }
 }
 .section--resources .videos li p {

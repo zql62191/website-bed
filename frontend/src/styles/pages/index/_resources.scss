@@ -103,11 +103,20 @@
             height: 160px;
             margin-right: 4px;
             border-bottom: #747779 solid 12px;
+            
+
+            @include mq('desktop') {
+                width: 466px;
+                margin-bottom: 10px;
+                padding: 0 20px;
+            }
+
             @include mq("mobile") {
                 width: 268px;
                 height: 240px;
                 margin-right: 7px;
                 border-bottom: #747779 solid 18px;
+                padding: 0 20px;
             }
 
             p {
