@@ -302,3 +302,50 @@ var BED = {
     }
 
 };
+
+// $(function() {
+
+//     scrollItems = $('.section');
+
+//     $(window).scroll(function() {
+//         var fromTop = $(this).scrollTop();
+//         var toBottom = fromTop + $(this).height();
+
+//         var current = scrollItems.map(function() {
+//             if ($(this).offset().top < fromTop) {
+//                 return this;
+//             }
+//         });
+//         current = current[current.length - 1];
+
+//         var next = scrollItems.map(function() {
+//             if ($(this).offset().top < toBottom) {
+//                 return this;
+//             }
+//         });
+//         next = next[next.length - 1];
+
+//         console.log('1current: ', $(current).data('section'));
+//         console.log('1next: ', $(next).data('section'));
+
+//         var jqCurrent = $('.section:in-viewport').last();
+//         var jqNext = $('.section:below-the-fold').first();
+
+//         console.log('2current: ', jqCurrent.data('section'));
+//         console.log('2next: ', jqNext.data('section'));
+
+//         //     // Get container scroll position
+//         //     var fromTop = $(this).scrollTop();
+
+//         //     // Get id of current scroll item
+//         //     var cur = scrollItems.map(function() {
+//         //         if ($(this).offset().top < fromTop) {
+//         //             return this;
+//         //         }
+//         //     });
+//         //     console.log(cur[cur.length - 1]);
+//         //     // Get the id of the current element
+//         //     cur = cur[cur.length - 1];
+//         //     var id = cur && cur.length ? cur[0].id : "";
+//     });
+// });

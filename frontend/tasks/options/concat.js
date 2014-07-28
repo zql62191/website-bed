@@ -12,6 +12,7 @@ module.exports = {
                 'src/scripts/libs/velocity.ui.min.js',
                 'src/scripts/libs/jquery.hammer.min.js',
                 'src/scripts/libs/jquery.exists.js',
+                'src/scripts/libs/jquery.viewport.min.js',
                 'src/scripts/libs/skrollr.min.js',
                 'src/scripts/libs/bowser.min.js',
                 'src/scripts/libs/angular.min.js'
