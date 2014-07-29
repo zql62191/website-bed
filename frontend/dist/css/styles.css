@@ -1451,9 +1451,9 @@ a.pdf-link span sup {
   }
 }
 .section--prevalence .male-graphic {
-  background: url("../img/prevalence-male-graphic.png") center center no-repeat;
+  background: url("../img/prevalence-male-graphic.png") 0 0 no-repeat;
   width: 254px;
-  height: 248px;
+  height: 348px;
   position: absolute;
 }
 @media only screen and (max-width: 40em) {
@@ -1469,20 +1469,20 @@ a.pdf-link span sup {
   }
 }
 .section--prevalence .female-graphic {
-  background: url("../img/prevalence-female-graphic.png") center center no-repeat;
+  background: url("../img/prevalence-female-graphic.png") 0px 42px no-repeat;
   width: 210px;
-  height: 306px;
+  height: 348px;
   position: absolute;
 }
 @media only screen and (max-width: 40em) {
   .section--prevalence .female-graphic {
-    top: 42px;
+    top: 0;
     left: 55px;
   }
 }
 @media only screen and (min-width: 40.063em) {
   .section--prevalence .female-graphic {
-    top: 42px;
+    top: 0;
     left: 55px;
   }
 }

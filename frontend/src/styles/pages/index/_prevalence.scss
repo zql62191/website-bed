@@ -122,9 +122,10 @@
     }
 
     .male-graphic {
-        background: url("#{$img-path}/prevalence-male-graphic.png") center center no-repeat;
+        background: url("#{$img-path}/prevalence-male-graphic.png") 0 0 no-repeat;
         width: 254px;
-        height: 248px;
+        // height: 248px;
+        height: 348px;
         position: absolute;
         @include mq("mobile") {
             top: 0;
@@ -137,17 +138,20 @@
         }
     }
     .female-graphic {
-        background: url("#{$img-path}/prevalence-female-graphic.png") center center no-repeat;
+        background: url("#{$img-path}/prevalence-female-graphic.png") 0px 42px no-repeat;
         width: 210px;
-        height: 306px;
+        // height: 306px;
+        height: 348px;
         position: absolute;
         @include mq("mobile") {
-            top: 42px;
+            // top: 42px;
+            top: 0;
             left: 55px;
         }
 
         @include mq("desktop") {
-            top: 42px;
+            // top: 42px;
+            top: 0;
             left: 55px;
         }
     }

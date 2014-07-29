@@ -101,7 +101,7 @@ var BED = {
                 forceHeight: true,
                 beforerender: function(data) {
                     // console.log('beforerender: ', data);
-                    return data.direction !== 'up';
+                    // return data.direction !== 'up';
                 },
                 render: function(data) {
                     // console.log('render: ', data);
