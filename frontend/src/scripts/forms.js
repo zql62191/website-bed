@@ -130,7 +130,7 @@
             };
             $log.log(convertStateToAbbr($scope.form.state));
 
-            URL = "http://localhost:1210/Unsubscribe/Service/BEDUnsubscribe.svc/etUnsubscribeDataBoth";
+            URL = "http://localhost:1210/Unsubscribe/Service/BEDUnsubscribe.svc/SetUnsubscribeDataBoth";
             Data = JSON.stringify(data);
 
             $scope.processForm(URL, Data);
@@ -150,7 +150,7 @@
                 "Zip": $scope.form.zip
             };
 
-            URL = "http://localhost:1210/Unsubscribe/Service/BEDUnsubscribe.svc/SetUnsubscribeDataDirect";
+            URL = "http://localhost:1210/Unsubscribe/Service/BEDUnsubscribe.svc/SetUnsubscribeDataAddress";
             Data = JSON.stringify(data);
 
             $scope.processForm(URL, Data);
