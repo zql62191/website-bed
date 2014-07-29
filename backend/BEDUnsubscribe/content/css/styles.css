@@ -850,6 +850,13 @@ a.pdf-link span sup {
 .slideout--signup .forminvalid {
   border-color: #FF0000;
 }
+.slideout--signup .forminvaliddiv {
+  border: 2px solid red;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  float: left;
+}
 .slideout--signup._is_open {
   display: block;
 }
@@ -1011,6 +1018,37 @@ a.pdf-link span sup {
     margin-left: 0;
   }
 }
+.slideout--dsm5 .signup {
+  margin: 0 auto;
+  line-height: 25px;
+  clear: both;
+  font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  cursor: pointer;
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.4);
+  box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.4);
+  border-radius: 10px;
+  width: 100%;
+}
+.slideout--dsm5 .signup:hover {
+  position: relative;
+  top: 1px;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.4);
+  box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.4);
+}
+@media only screen and (min-width: 40.063em) {
+  .slideout--dsm5 .signup {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 10px 20px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .slideout--dsm5 .signup {
+    font-size: 28px;
+    line-height: 32px;
+    padding: 12px 20px;
+  }
+}
 
 .page-header-bg {
   position: fixed;
@@ -1078,6 +1116,10 @@ a.pdf-link span sup {
 }
 .page-header .page-header__btn:hover {
   text-decoration: none;
+  color: #febd3f;
+}
+.page-header .page-header__btn:active {
+  color: #febd3f;
 }
 .page-header .page-header__btn em {
   font-family: "GillSansW01-LightItalic", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -1255,6 +1297,7 @@ a.pdf-link span sup {
     font-size: 25px;
     line-height: 25px;
     padding-top: 25px;
+    margin-left: -40px;
   }
 }
 .section--home .disclaimer-bar {
@@ -1377,10 +1420,10 @@ a.pdf-link span sup {
   width: 538px;
   margin-left: 25px;
   padding-bottom: 50px;
-}
-.section--prevalence .asterisk:before {
-  content: '*';
-  margin-left: -9px;
+  /*&:before {
+      content: '*';
+      margin-left: -9px;
+  }*/
 }
 @media only screen and (min-width: 40.063em) {
   .section--prevalence .asterisk {
@@ -1596,11 +1639,11 @@ a.pdf-link span sup {
   }
 }
 .section--prevalence .comparable .dagger {
-  margin-left: 15px;
-}
-.section--prevalence .comparable .dagger:before {
-  content: 'ΓÇá';
-  margin-left: -15px;
+  padding: 0 0 25px 0;
+  /*&:before {
+      content: 'ΓÇá';
+      margin-left: -15px;
+  }*/
 }
 @media only screen and (min-width: 40.063em) {
   .section--prevalence ul {
@@ -1707,6 +1750,11 @@ a.pdf-link span sup {
   }
   .section--course .graphic-container .legend .footnote {
     padding-left: 0;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--course .graphic-container .legend .footnote {
+    margin-top: -40px;
   }
 }
 .section--course .twenty-one-animated {
@@ -1960,7 +2008,6 @@ a.pdf-link span sup {
 @media only screen and (max-width: 40em) {
   .section--effects .associated h3 {
     width: auto;
-    line-height: 60px;
     padding-bottom: 0;
   }
 }
@@ -2088,6 +2135,9 @@ a.pdf-link span sup {
 }
 .section--effects .nineteen {
   background-image: url("../img/spiral.png");
+}
+.section--effects .nineteen .large {
+  letter-spacing: -10px;
 }
 .section--effects .percent {
   font-size: 0.5em;
@@ -2279,7 +2329,7 @@ a.pdf-link span sup {
   .section--neurobiology .risk-2 {
     width: 640px;
     left: -20px;
-    padding: 510px 0  0 20px;
+    padding: 0 0  0 20px;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -2299,6 +2349,7 @@ a.pdf-link span sup {
   .section--neurobiology .risk-2 .asterisk {
     font-size: 25px;
     line-height: 30px;
+    padding-left: 50px;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -2475,6 +2526,9 @@ a.pdf-link span sup {
   background: url("../img/diagnosis-nineteen.png") top left no-repeat;
   min-height: 250px;
   padding-bottom: 40px;
+}
+.section--diagnosis .nineteen-percent .large {
+  letter-spacing: -10px;
 }
 @media only screen and (min-width: 40.063em) {
   .section--diagnosis .nineteen-percent {
@@ -2803,6 +2857,12 @@ a.pdf-link span sup {
   -webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.4);
   box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.4);
   border-radius: 10px;
+}
+.section--dsm5 .signup:hover {
+  position: relative;
+  top: 1px;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.4);
+  box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.4);
 }
 @media only screen and (min-width: 40.063em) {
   .section--dsm5 .signup {

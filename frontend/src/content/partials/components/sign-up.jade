@@ -17,7 +17,7 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
         type='text',
         name='firstName',
         placeholder='*First Name',
-        ng-model='fname',
+        ng-model='form.fname',
         ng-required='true',
         ng-class="{forminvalid: (bed_form.firstName.$invalid && bed_form.firstName.$dirty) || (bed_form.firstName.$invalid && invalidform)}",
         class='first-name')
@@ -128,7 +128,8 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
       h3.
         Opt In for Communications
 
-      div(ng-class="{forminvaliddiv: (bed_form.optin.$invalid && bed_form.optin.$dirty) || (bed_form.optin.$pristine && invalidform)}")
+      div(
+        ng-class="{forminvaliddiv: (bed_form.optin.$invalid && bed_form.optin.$dirty) || (bed_form.optin.$pristine && invalidform)}")
         input(
           type='checkbox',
           name='optin',

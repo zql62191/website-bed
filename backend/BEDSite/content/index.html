@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="content/css/styles.css">
     <script src="//fast.fonts.net/jsapi/352bad9a-496a-416d-b9cf-171842848303.js"></script><!--[if (gte IE 6)&(lte IE 8)]>
     <script src="content/js/ie.js"></script><![endif]-->
-    <script src="content/js/libs.js"></script><!--[if (gte IE 6)&(lte IE 8)]>
+    <script src="content/js/libs.js"></script>
+    <script src="me/mediaelement-and-player.min.js"></script><!--[if (gte IE 6)&(lte IE 8)]>
     <script src="content/js/skrollr.ie.js"></script><![endif]-->
     <script src="content/js/main.js"></script>
     <script src="content/js/forms.js"></script>
@@ -51,37 +52,46 @@
       <div data-direction="right" ng-controller="OptInController" class="signup-container slideout slideout--signup">
         <div class="slideout__inner">
           <div class="close"></div>
-          <h2>
-            Sign up to receive informative BED content and updates from Shire.
+          <h2>Sign up to receive the full <em>DSM-5</em><sup>®</sup> diagnostic criteria and other <br class="hide--mobile">BED content from Shire.
             
           </h2>
           <p class="required-fields"><span class="red">*</span>Required Fields
             
           </p>
           <form name="bed_form" id="bed_form" ng-submit="optIn()" novalidate>
-            <input type="text" name="firstName" placeholder="*First Name" ng-model="fname" ng-required="true" ng-class="{forminvalid: (bed_form.firstName.$invalid &amp;&amp; bed_form.firstName.$dirty) || (bed_form.firstName.$invalid &amp;&amp; invalidform)}" class="first-name">
+            <input type="text" name="firstName" placeholder="*First Name" ng-model="form.fname" ng-required="true" ng-class="{forminvalid: (bed_form.firstName.$invalid &amp;&amp; bed_form.firstName.$dirty) || (bed_form.firstName.$invalid &amp;&amp; invalidform)}" class="first-name">
             <input type="text" name="middleInitial" placeholder="MI" ng-model="form.MI" ng-required="false" class="middle-initial">
             <input type="text" name="lastName" placeholder="*Last Name" ng-model="form.lname" ng-required="true" ng-class="{forminvalid: (bed_form.lastName.$invalid &amp;&amp; bed_form.lastName.$dirty) || (bed_form.lastName.$invalid &amp;&amp; invalidform)}" class="last-name">
-            <input type="text" name="email" placeholder="*Email" ng-model="form.email" ng-required="true" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/" ng-class="{forminvalid: (bed_form.email.$invalid &amp;&amp; bed_form.email.$dirty) || (bed_form.email.$invalid &amp;&amp; invalidform)}" class="email">
-            <input type="text" name="email2" ng-model="form.confirmemail" ng-required="true" confirmemail placeholder="*Re-enter Email" ng-class="{forminvalid: (bed_form.email2.$invalid &amp;&amp; bed_form.email2.$dirty) || (bed_form.email2.$invalid &amp;&amp; invalidform)}" class="email2">
+            <input type="text" name="email" placeholder="*E-mail" ng-model="form.email" ng-required="true" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/" ng-class="{forminvalid: (bed_form.email.$invalid &amp;&amp; bed_form.email.$dirty) || (bed_form.email.$invalid &amp;&amp; invalidform)}" class="email">
+            <input type="text" name="email2" ng-model="form.confirmemail" ng-required="true" confirmemail placeholder="*Re-enter E-mail" ng-class="{forminvalid: (bed_form.email2.$invalid &amp;&amp; bed_form.email2.$dirty) || (bed_form.email2.$invalid &amp;&amp; invalidform)}" class="email2">
             <input type="text" name="streetAddress" placeholder="*Street Address" ng-model="form.street" ng-required="true" ng-class="{forminvalid: (bed_form.streetAddress.$invalid &amp;&amp; bed_form.streetAddress.$dirty) || (bed_form.streetAddress.$invalid &amp;&amp; invalidform)}" class="street-address">
             <input type="text" name="suiteOffice" placeholder="Suite/Office" ng-model="form.suite" ng-required="false" class="suite-office">
             <input type="text" name="city" placeholder="*City" ng-model="form.city" ng-required="true" ng-class="{forminvalid: (bed_form.city.$invalid &amp;&amp; bed_form.city.$dirty) || (bed_form.city.$invalid &amp;&amp; invalidform)}" class="city">
             <select name="state" ng-model="form.state" ng-required="true" ng-class="{forminvalid: (bed_form.state.$invalid &amp;&amp; bed_form.state.$dirty) || (bed_form.state.$pristine &amp;&amp; invalidform)}" ng-options="state for state in states" class="state">
-              <option value="" ng-selected="true">*State</option>
+              <option value="" ng-selected="true">
+                *State
+                
+                
+              </option>
             </select>
-            <input type="text" name="zip" placeholder="*Zip" ng-model="form.zip" ng-pattern="/^[0-9]{5}$/" ng-required="true" ng-class="{forminvalid: (bed_form.zip.$invalid &amp;&amp; bed_form.zip.$dirty) || (bed_form.zip.$invalid &amp;&amp; invalidform)}" class="zip">
+            <input type="text" name="zip" placeholder="*Zip" ng-model="form.zip" ng-pattern="/^[0-9]{5}$/" maxlength="5" ng-required="true" ng-class="{forminvalid: (bed_form.zip.$invalid &amp;&amp; bed_form.zip.$dirty) || (bed_form.zip.$invalid &amp;&amp; invalidform)}" class="zip">
             <select name="profession" ng-model="form.profession" ng-required="true" ng-class="{forminvalid: (bed_form.profession.$invalid &amp;&amp; bed_form.profession.$dirty) || (bed_form.profession.$pristine &amp;&amp; invalidform)}" ng-options="prof for prof in professions" class="profession">
-              <option value="" ng-selected="true">*Profession</option>
+              <option value="" ng-selected="true">
+                *Profession
+                
+                
+                
+              </option>
             </select>
             <h3>
               Opt In for Communications
               
-              
             </h3>
-            <input type="checkbox" name="optin" ng-model="form.checkbox" ng-required="true" id="optin" class="optin">
+            <div ng-class="{forminvaliddiv: (bed_form.optin.$invalid &amp;&amp; bed_form.optin.$dirty) || (bed_form.optin.$pristine &amp;&amp; invalidform)}">
+              <input type="checkbox" name="optin" ng-model="form.checkbox" ng-required="true" id="optin" class="optin">
+            </div>
             <label for="optin" class="optin-label">
-              <p>By checking this box and clicking submit, you certify that you are a US health care professional and you are opting to receive information about binge eating disorder plus product information, site updates, educational information, patient support resources, and other information from Shire. You will be able to opt out of these communications at any time.</p>
+              <p>By checking this box and clicking submit, you certify that you are a US health care professional and you are opting to receive information about binge eating disorder plus site updates, educational information, patient support resources, and other information from Shire. You will be able to opt out of these communications at any time.</p>
               <p>
                 Shire respects your personal information. All information you have provided will be kept confidential and will not be used or distributed to anyone for any purpose other than what is explained in our Privacy Policy Statement. We encourage you to read our Privacy Policy Statement by clicking on this link: Review Shire Privacy Policy Statement. This consent will be in effect until such time as you opt out of the program.
                 
@@ -98,7 +108,7 @@
             What is binge eating disorder (BED)?
             
           </h2>
-          <p>Binge eating disorder, now a distinct diagnosis in DSM-5<sup>®</sup>, is characterized by<sup>1</sup>:
+          <p>Binge eating disorder, now a distinct diagnosis in <em>DSM-5</em><sup>®</sup>, is characterized by<sup>1</sup>:
             
           </p>
           <ul class="bullet">
@@ -113,9 +123,9 @@
             During a binge, adults with BED may eat much more rapidly than normal, eat until they are uncomfortably full, eat large amounts of food when not feeling physically hungry, and/or eat alone out of embarrassment. They may feel disgusted with themselves, depressed, or very guilty afterward.
             
           </p>
-          <p><em>These are not the complete diagnostic criteria, but instead a brief summary. Please view the full diagnostic criteria by selecting the link below. Diagnosis should be based on a complete evaluation of the patient.</em> 
+          <p><em>Diagnosis should be based on a complete evaluation of the patient. These are not the complete diagnostic criteria, but instead a brief summary.</em> 
             
-          </p><a href data-slideout="signup" class="pdf-link"><span><em>DSM-5<sup>&reg;</sup></em> Criteria</span></a>
+          </p><a data-slideout="signup" class="button signup">Register for additional information on BED including the full <em>DSM-5</em><sup>®</sup> diagnostic criteria</a>
         </div>
       </div>
       <div class="page-content">
@@ -128,7 +138,7 @@
             </p>
           </div>
           <div class="content-wrap">
-            <p class="eyebrow">For many patients, binge eating <br class="hide--desktop">disorder is a cycle of…</p>
+            <p class="eyebrow">For many patients, binge eating <br class="hide--desktop">disorder (BED) is a cycle of…</p>
             <h1 class="tagline">Binge. Distress. Repeat.<sup>1</sup>
               
             </h1>
@@ -144,7 +154,7 @@
         </div>
         <div data-section="prevalence" class="section section--prevalence"><a id="prevalence" name="prevalence" class="scroll-point"></a>
           <div class="content-wrap">
-            <h1 data-skrollr="prevalence-header">BED affects nearly <br class="hide--desktop">3 million US adults*<sup>2,3</sup>
+            <h1 data-skrollr="prevalence-header">BED affects nearly <br class="hide--desktop">3 million US adults<sup>2,3</sup>
               
             </h1>
             <div data-skrollr="prevalence-map" class="us-graphic graphic"></div>
@@ -157,7 +167,7 @@
             <p class="gender-ratio">The gender ratio is far less skewed in BED than in bulimia nervosa<sup>1,2</sup>
               
             </p>
-            <h3>12-month prevalence in US adults<sup>2</sup>:
+            <h3 class="center">12-month prevalence in US adults<sup>2</sup>:
               
               
               
@@ -173,28 +183,35 @@
               <div data-bottom-top="opacity: 0; transform: translate3d(500px,0px,0px)" data--30p-bottom="opacity: 1; transform: translate3d(0px,0,0px)" class="male-graphic graphic"></div>
               <div data-bottom-top="opacity: 0; transform: translate3d(-500px,0px,0px)" data--30p-bottom="opacity: 1; transform: translate3d(0px,0,0px)" class="female-graphic graphic"></div>
             </div>
+            <div class="footnote">
+              <p>
+                Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a face-to-face household survey of English-speaking adults aged &gte;18 years.
+                
+                
+              </p>
+            </div>
             <div class="comparable">
-              <h2>There are comparable prevalence rates among non-Latino white <span class="percent">(1.4%)</span>, Latino <span class="percent">(2.1%)</span>, Asian <span class="percent">(1.2%)</span>, and African American <span class="percent">(1.5%)</span> adults in the US<sup>†4</sup>
+              <h2>There are comparable prevalence rates among non-Latino white <span class="percent">(1.4%)</span>, Latino <span class="percent">(2.1%)</span>, Asian <span class="percent">(1.2%)</span>, and African American <span class="percent">(1.5%)</span> adults in the US<sup>4</sup>
                 
               </h2>
+              <p class="dagger">Sample from a combined data set of 3 nationally representative US samples.<sup>4</sup>
+                
+              </p>
               <div class="patients-graphic">
                 <div data-bottom-top="transform: translate3d(-800px,0px,0px);" data--40p-bottom="transform: translate3d(0px,0px,0px);" class="patient-1 graphic"></div>
                 <div data-bottom-top="transform: translate3d(-800px,0px,0px);" data--30p-bottom="transform: translate3d(0px,0px,0px);" class="patient-2 graphic"></div>
                 <div data-bottom-top="transform: translate3d(-800px,0px,0px);" data--20p-bottom="transform: translate3d(0px,0px,0px);" class="patient-3 graphic"></div>
                 <div data-bottom-top="transform: translate3d(-800px,0px,0px);" data--10p-bottom="transform: translate3d(0px,0px,0px);" class="patient-4 graphic"></div>
               </div>
-              <p class="dagger">Sample from a combined data set of 3 nationally representative US samples.<sup>4</sup>
-                
-              </p>
             </div>
             <p class="frequencies">BED occurs with roughly similar frequencies in most industrialized countries (eg, Australia, Canada, <br class="hide--mobile">many European countries, New Zealand, and the United States)<sup>1</sup>
               
               
             </p>
-            <div class="blurb-2">In an on-line survey, only 3% of US adults who met <em>DSM-5</em><sup>®</sup> criteria for BED reported being diagnosed with BED by a healthcare provider in the past 12 months.<sup>5</sup><br>&nbsp;
+            <div class="blurb-2">In an online survey, only 3% of US adults who met <em>DSM-5</em><sup>®</sup> criteria for BED reported being diagnosed with BED by a healthcare provider in the past 12 months.<sup>5</sup><br>&nbsp;
               
             </div>
-            <div class="footnote">Data from a 2013 online survey of adults ≥18 years (Validate Attitudes and Lifestyle Issues in Depression ADHD and Troubles with Eating [VALIDATE]). 344 of 22,397 respondents met DSM-5 criteria for BED in the previous 12 months (a 12-month prevalence estimate of 1.64% of the total US adult population.<sup>5</sup></div>
+            <div class="footnote">Data from a 2013 online survey of adults aged ≥18 years (Validate Attitudes and Lifestyle Issues in Depression ADHD and Troubles with Eating [VALIDATE]). Of 22,397 respondents, 344 met <em>DSM-5</em><sup>&reg;</sup> criteria for BED in the previous 12 months (a 12-month prevalence estimate of 1.64% of the total US adult population).<sup>5</sup></div>
           </div>
         </div>
         <div data-section="dsm5" class="section section--dsm5"><a id="dsm5" name="dsm5" class="scroll-point"></a>
@@ -282,12 +299,12 @@
               <p class="twenty-one hide--desktop"><img src="content/img/course-21.png"></p>
               <div class="legend">
                 <p class="text yellow">Age-of-onset ranges<br>
-                  for AN, BN, and BED*<sup>2</sup>
+                  for BED, AN, and BN<sup>2</sup>
                   
                 </p>
                 <p class="chart"><img src="content/img/median-ages.png"></p>
-                <p class="text footnote"><span class="yellow">*Interquartile range.</span><br>
-                  AN=anorexia nervosa;<br>
+                <p class="text footnote"><span class="yellow">Interquartile range.</span><br>
+                  AN=anorexia nervosa.<br>
                   BN=bulimia nervosa.
                   
                 </p>
@@ -300,10 +317,10 @@
             <h2 class="yellow">BED is associated with significant psychiatric comorbidity comparable to bulimia nervosa and anorexia nervosa<sup>1</sup>
               
             </h2>
-            <p class="sub-head">Adults with BED often have coexisting bipolar, depressive, or anxiety disorders<sup>1</sup>
+            <p class="sub-head">Adults with BED often have coexisting bipolar, depressive, or anxiety disorders.<sup>1</sup>
               
             </p>
-            <p class="yellow center no-padding">Lifetime comorbidity per DSM-IV in a nationally representative <br class="hide--mobile">survey of US adults aged ≥18 years*<sup>2</sup>:
+            <p class="yellow center no-padding">Lifetime comorbidity per <em>DSM-IV</em><sup>&reg;</sup> in a nationally representative <br class="hide--mobile">survey of US adults aged ≥18 years*<sup>2</sup>:
               
             </p>
             <div class="eighty graphic">
@@ -335,7 +352,7 @@
               <h1>BED in adults is associated with a range of functional consequences<sup>1</sup>
                 
               </h1>
-              <p class="intro">Functional consequences of BED may include<sup>1</sup>:
+              <p class="intro">Functional consequences may include<sup>1</sup>:
                 
               </p>
             </div>
@@ -351,7 +368,7 @@
                   
                 </li>
               </ul>
-              <h3>In a nationally representative survey of US adults aged ≥18 years*<sup>2</sup>:
+              <h3>In a nationally representative survey of US adults aged ≥18 years<sup>2</sup>:
                 
               </h3>
               <div class="sixty-three graphic">
@@ -371,7 +388,7 @@
                 </p>
               </div>
             </div>
-            <p class="footnote">*Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a face-to-face household survey of English-speaking adults aged ≥18 years.<sup>2</sup></p>
+            <p class="footnote">Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a face-to-face household survey of English-speaking adults aged ≥18 years.<sup>2</sup></p>
           </div>
         </div>
         <div data-section="neurobiology" class="section section--neurobiology"><a id="neurobiology" name="neurobiology" class="scroll-point"></a>
@@ -411,7 +428,7 @@
                 <li>Genetic influences<sup>7,10</sup>
                   <ul class="dash dash--em">
                     <li>BED appears to run in families, which may reflect additive genetic influences</li>
-                    <li>Genetic differences in neurobiological components <br class="hide--mobile">of the brain's reward center have been observed
+                    <li>Genetic differences in neurobiological components <br class="hide--mobile">of the brain&#8217;s reward center have been observed
                       
                     </li>
                   </ul>
@@ -429,7 +446,7 @@
                   </ul>
                 </li>
               </ul>
-              <p class="asterisk">*Types of trauma included combat experience, life-threatening accident, and physical or sexual assault.<sup>12</sup>
+              <p class="asterisk">Types of trauma included combat experience, life-threatening accident, and physical or sexual assault.<sup>12</sup>
                 
                 
                 
@@ -445,7 +462,7 @@
               <h1>Recognizing BED</h1>
               <p class="sub-head">BED is defined as recurring episodes of eating a large amount of food in a short period of time, with episodes characterized by feelings of lack of control and marked distress.<sup>1</sup></p>
             </div>
-            <p>These are not the full diagnostic criteria—see full DSM-5 criteria <a href data-slideout="dsm5" class="yellow">here</a>.
+            <p>These are not the full diagnostic criteria. <a data-slideout="signup" class="signup">Please register</a> to receive the full <em>DSM-5</em><sup>®</sup> diagnostic criteria and additional BED information from Shire.
               
             </p>
             <h3>BED is different from bulimia nervosa</h3>
@@ -672,7 +689,7 @@
               </a><a href="/#neurobiology" class="bar bar--next bar--neurobiology">
               Emerging evidence of BED neurobiology
               </a><a href="/#diagnosis" class="bar bar--next bar--diagnosis">
-              Finding BED in your patients
+              Identifying BED in your adult patients
               </a><a href="/#resources" class="bar bar--next bar--resources">Resources/Expert Videos</a></div>
         </div>
         <div class="pagination"><a href="/#home" class="pagination__item"></a><a href="/#prevalence" class="pagination__item"></a><a href="/#dsm5" class="pagination__item"></a><a href="/#course" class="pagination__item"></a><a href="/#effects" class="pagination__item"></a><a href="/#neurobiology" class="pagination__item"></a><a href="/#diagnosis" class="pagination__item"></a><a href="/#resources" class="pagination__item"></a>
@@ -699,7 +716,7 @@
           <div class="modal__inner">
             <div class="modal__close"></div>
             <h3>You are about to leave BingeEatingDisorder.com.</h3>
-            <p>This link will take you to a website maintained by a third party, that is responsible for its content and privacy policy. Shire provides this link as a service to you. Our privacy policy does not apply to the website you are about to visit. We encourage you to read the privacy policy of every website you visit. Click "OK" to continue or "CANCEL" to return to BingeEatingDisorder.com.</p>
+            <p>This link will take you to a website maintained by a third party that is responsible for its content and privacy policy. Shire provides this link as a service to you. Our privacy policy does not apply to the website you are about to visit. We encourage you to read the privacy policy of every website you visit. Click "OK" to continue or "CANCEL" to return to BingeEatingDisorder.com.</p>
             <div class="controls"><a href="#" target="_blank" class="button button--ok">ok</a><a href class="button button--cancel">
                 cancel
                 </a></div>
