@@ -11,11 +11,9 @@
                     headers: {
                         'Content-Type': 'application/json; charset=utf-8'
                     },
-
-                    url: '/BEDSite/Service/BEDService.svc/SetOptInData',
+                    url: '/Unsubscribe/Service/BEDUnsubscribe.svc',
                     method: 'POST',
-
-                    data: data
+                    data: $.param(data)
                 }).then(function (response) {
                     if (response.data.success === 'true') {
                         return response.data;
@@ -41,7 +39,7 @@
 
     app = angular.module('BED.controllers', ['BED.services']);
 
-    app.controller('BedController', function(ApiService, $scope, $log, $location, $window, $document, $timeout, _) {
+    app.controller('UnsubscribeController', function(ApiService, $scope, $log, $location, $window, $document, $timeout, _) {
 
         $window.onbeforeunload = function() {
             return '';
@@ -120,6 +118,10 @@
     'Psychologist'
 	];
 
+    $scope.form = {
+                optoutchoice: "none"
+                   };
+
 //        $scope.env = {
 //            lcl: /local|ngrok|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/ig.test($location.host()),
 //            dev: /-dev|local|ngrok|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/ig.test($location.host()),
@@ -145,42 +147,7 @@
             $scope.success_modal = $scope.fail_modal = false;
             $scope.loading_modal = true;
            
-            //var objsend2 ="{\"Specialty\":"+ "\""+ $scope.form_data.profession + "\",";
-//              var objsend ="{\"Specialty\":\"OPT\",";
-//            objsend += "\"CommunicationsOptIn\": 1,";
-//            objsend +="\"Email\": {\"Email\": \"email@email.com\",\"ConfirmEmail\": \"email@email.com\"},";
-//            objsend +="\"Address\": {";
-//            objsend +="\"FName\": \"Test\",";
-//            objsend +="\"MName\": \"T\",";
-//            objsend +="\"LName\": \"Test\",";
-//            objsend +="\"Address1\": \"address1\",";
-//            objsend +="\"Address2\": \"address2\",";
-//            objsend +="\"City\": \"city\",";
-//            objsend +="\"State\":\"OH\",";
-//            objsend +="\"Zip\": \"11111\"} }";
-
-             var data = {
-	               "Specialty" : $scope.form_data.profession,
-                   "CommunicationsOptIn" : $scope.form_data.checkbox,
-	                    "Email": {
-	                        "Email": $scope.form_data.email,
-	                        "ConfirmEmail": $scope.form_data.confirmemail
-	                    },
-	                    "Address": {
-	                        "FName": $scope.form_data.fname,
-	                        "MName": $scope.form_data.MI,
-	                        "LName": $scope.form_data.lname,
-	                        "Address1": $scope.form_data.street,
-	                        "Address2": $scope.form_data.suite,
-	                        "City": $scope.form_data.city,
-	                        "State": "OH",
-	                        "Zip": $scope.form_data.zip
-	                    }
-	               
-	        };
-
-
-           var tdata = JSON.stringify(data);
+             var tdata = JSON.stringify(form_data);
              $window.alert('data1' +tdata);
             ApiService.submitForm($scope.post_path, tdata)
                 .then(function(data) {
@@ -200,7 +167,7 @@
         };
 
         $scope.submitForm = function() {
-            $window.alert('submitForm');
+
             var oldHeight = $(document).height() - $(window).height();
             var oldTop = $(window).scrollTop();
             var oldBottom = oldHeight - oldTop;
