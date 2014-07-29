@@ -650,6 +650,9 @@ a.pdf-link span sup {
     height: 93px;
   }
 }
+.next-section .bar--next.active {
+  display: block;
+}
 .next-section .bar--next:hover {
   background: #fec451;
 }
@@ -3009,6 +3012,30 @@ a.pdf-link span sup {
   .section--resources br.mobile-only {
     display: none;
   }
+}
+
+.pagination {
+  position: fixed;
+  right: 0;
+  top: 100px;
+  z-index: 998;
+}
+@media only screen and (max-width: 40em) {
+  .pagination {
+    display: none;
+  }
+}
+.pagination .pagination__item {
+  background-image: url("../img/bullet.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: block;
+}
+.pagination .pagination__item.active, .pagination .pagination__item:hover {
+  background-image: url("../img/bullet--yellow.png");
 }
 
 .contact-us {

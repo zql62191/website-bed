@@ -6,3 +6,27 @@
 @import "_diagnosis";
 @import "_dsm5";
 @import "_resources";
+
+.pagination {
+    position: fixed;
+    right: 0;
+    top: 100px;
+    z-index: z("pagination");
+    @include mq('mobile') {
+        display: none;
+    }
+    .pagination__item {
+        background-image: url("#{$img-path}/bullet.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        display: block;
+        &.active,
+        &:hover {
+            background-image: url("#{$img-path}/bullet--yellow.png");
+        }
+         
+    }
+}

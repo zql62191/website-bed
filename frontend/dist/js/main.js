@@ -34,11 +34,6 @@ var BED = {
                 'data-bottom-top': 'opacity: 0; transform: translate3d(100px,0px,0px)',
                 'data-center-center': 'opacity: 1; transform: translate3d(0px,0,0px)'
             },
-            'prevalence-link': {
-                'data-anchor-target': '.section--prevalence',
-                'data-100-top': 'display: block;',
-                'data-bottom': 'display: none;'
-            },
             'neurobiology-header': {
                 'data-bottom-top': 'opacity: 0; transform: translate3d(0px,-50px,0px)',
                 'data-bottom-bottom': 'opacity: 1; transform: translate3d(0px,0,0px)'
@@ -149,11 +144,13 @@ var BED = {
 
                 $('.page-nav a[href="/#' + jqCurrent.data('section') + '"]').addClass('active');
 
-                $('.bar--next').hide();
+                $('.bar--next, .pagination__item').removeClass('active');
+
+                $('.pagination__item').eq(jqCurrent.index()).addClass('active');
             }
 
             if (jqNext) {
-                $('.bar--next.bar--' + jqNext.data('section')).show();
+                $('.bar--next.bar--' + jqNext.data('section')).addClass('active');
             }
         })
 
@@ -173,6 +170,8 @@ var BED = {
                 height: window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
             });
 
+            $('.pagination').css('right', offset + 8);
+
         })
 
         .trigger('resize');
@@ -188,12 +187,15 @@ var BED = {
             var page = parseUri(window.location.href);
             var link = parseUri($(this).prop('href'));
 
+            // check if the link and current page are on the same domain
             if (page.host === link.host) {
 
+                // check if the link and the current page are the same file
                 if (page.path === link.path) {
 
                     e.preventDefault();
 
+                    // check if the link has a hash to scroll to
                     if (link.anchor) {
                         $('[id="' + link.anchor + '"],[name="' + link.anchor + '"]').eq(0).velocity('scroll', {
                             duration: 250

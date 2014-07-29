@@ -29,6 +29,10 @@
             height: 93px;
         }
 
+        &.active {
+            display: block;
+        }
+
         &:hover {
             background: #fec451;
         }
