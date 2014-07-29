@@ -80,7 +80,7 @@ var BED = {
         //     }
         // }, 1);
 
-        if (!bowser.mobile && !bowser.tablet) {
+        if (!bowser.mobile && !bowser.tablet && parseUri(window.location.href).queryKey('skrollr') !== 'off') {
 
             // alert('skrollr initializing');
 

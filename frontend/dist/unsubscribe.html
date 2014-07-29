@@ -127,6 +127,62 @@
         </div>
       </div>
       <div class="page-content">
+        <div ng-controller="UnsubscribeController" class="ng-cloak unsubscribe">
+          <div class="content-wrap">
+            <form id="bed_form" name="bed_form" ng-submit="unsubscribe()" autocomplete="offs" novalidate>
+              <h1>Unsubscribe</h1>
+              <p>
+                To unsubscribe from future communications, please select an option below, fill in the required fields, and click Submit.
+                
+              </p>
+              <div class="opt-out-choice">
+                <p class="form-line">
+                  <input type="radio" name="unsubscribe" value="email" ng-model="form.optoutchoice" ng-change="invalidform = false" id="emailRadio">
+                  <label for="emailRadio">I would like to opt out of future BED email communication.</label>
+                </p>
+                <p class="form-line">
+                  <input type="radio" name="unsubscribe" value="direct" ng-model="form.optoutchoice" ng-change="invalidform = false" id="directRadio">
+                  <label for="directRadio">
+                    I would like to opt out of future BED direct mail communication.
+                    
+                  </label>
+                </p>
+                <p class="form-line">
+                  <input type="radio" name="unsubscribe" value="both" ng-model="form.optoutchoice" ng-change="invalidform = false" id="bothRadio">
+                  <label for="bothRadio">
+                    I would like to opt out of all future Shire communication.
+                    
+                    
+                  </label>
+                </p>
+              </div>
+              <div class="required-fields">
+                <p ng-if="form.optoutchoice != &quot;none&quot;"><span class="red">*</span>Required Fields
+                  
+                </p>
+                <div ng-if="form.optoutchoice == &quot;email&quot; || form.optoutchoice == &quot;both&quot;" class="email">
+                  <input type="text" name="email" placeholder="*Email" ng-model="form.email" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/" ng-class="{forminvalid: (bed_form.email.$invalid &amp;&amp; bed_form.email.$dirty) || (bed_form.email.$invalid &amp;&amp; invalidform)}" ng-required="true" class="email">
+                </div>
+                <div ng-if="form.optoutchoice == &quot;direct&quot; || form.optoutchoice == &quot;both&quot;" class="address">
+                  <input type="text" name="firstName" placeholder="*First Name" ng-model="form.fname" ng-required="true" ng-class="{forminvalid: (bed_form.firstName.$invalid &amp;&amp; bed_form.firstName.$dirty) || (bed_form.firstName.$invalid &amp;&amp; invalidform)}" class="first-name">
+                  <input type="text" name="middleInitial" placeholder="MI" ng-model="form.MI" ng-pattern="/^[a-zA-Z]$/" size="1" max-length="1" class="middle-initial">
+                  <input type="text" name="lastName" placeholder="*Last Name" ng-model="form.lname" ng-required="true" ng-class="{forminvalid: (bed_form.lastName.$invalid &amp;&amp; bed_form.lastName.$dirty) || (bed_form.lastName.$invalid &amp;&amp; invalidform)}" class="last-name">
+                  <input type="text" name="streetAddress" placeholder="*Street Address" ng-model="form.street" ng-required="true" ng-class="{forminvalid: (bed_form.streetAddress.$invalid &amp;&amp; bed_form.streetAddress.$dirty) || (bed_form.streetAddress.$invalid &amp;&amp; invalidform)}" class="street-address">
+                  <input type="text" name="suiteOffice" placeholder="Suite/Office" ng-model="form.suite" ng-required="false" class="suite-office">
+                  <input type="text" name="city" placeholder="*City" ng-model="form.city" ng-required="true" ng-class="{forminvalid: (bed_form.city.$invalid &amp;&amp; bed_form.city.$dirty) || (bed_form.city.$invalid &amp;&amp; invalidform)}" class=".city">
+                  <select name="state" ng-model="form.state" ng-options="state for state in states" ng-class="{forminvalid: (bed_form.state.$invalid &amp;&amp; bed_form.state.$dirty) || (bed_form.state.$pristine &amp;&amp; invalidform)}" ng-required="true" class="state">
+                    <option value="" ng-selected="true">
+                      *State
+                      
+                    </option>
+                  </select>
+                  <input type="text" name="zip" placeholder="*Zip" ng-model="form.zip" ng-pattern="/^[0-9]{5}$/" ng-required="true" ng-class="{forminvalid: (bed_form.zip.$invalid &amp;&amp; bed_form.zip.$dirty) || (bed_form.zip.$invalid &amp;&amp; invalidform)}" class="zip">
+                </div>
+                <input type="submit" name="submit" value="SUBMIT" ng-if="form.optoutchoice != &quot;none&quot;" class="submit">
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
       <div class="page-footer">
         <div class="content-wrap">
