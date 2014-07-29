@@ -98,10 +98,10 @@ var BED = {
 
             BED.skrollr.inst = skrollr.init({
                 smoothScrolling: true,
-                // forceHeight: true,
+                forceHeight: true,
                 beforerender: function(data) {
                     // console.log('beforerender: ', data);
-                    // return data.direction !== 'up';
+                    return data.direction !== 'up';
                 },
                 render: function(data) {
                     // console.log('render: ', data);
@@ -301,10 +301,6 @@ var BED = {
             };
 
             var transition = getTransition(jqSlideOut.data('direction'));
-
-            if (bowser.mobile) {
-                jqSlideOutInner.css('padding-top', $('.page-header').offset().top);
-            }
 
             jqSlideOut.addClass('_is_animating');
 

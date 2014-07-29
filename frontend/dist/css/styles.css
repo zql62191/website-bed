@@ -815,18 +815,18 @@ a.pdf-link span sup {
   background: url('../img/rgbapng/0000007f-5.png');
   background: rgba(0, 0, 0, 0.5);
   z-index: 1000;
-  padding-top: 50px;
-}
-@media only screen and (max-width: 40em) {
-  .slideout {
-    padding-top: 93px;
-    position: absolute;
-  }
 }
 .slideout .slideout__inner {
   position: absolute;
-  height: 100%;
+  top: 50px;
+  bottom: 0;
   background: #e1e3e4;
+  overflow-y: scroll;
+}
+@media only screen and (max-width: 40em) {
+  .slideout .slideout__inner {
+    top: 93px;
+  }
 }
 .slideout[data-direction="left"] .slideout__inner {
   left: 0;
