@@ -1732,7 +1732,8 @@ a.pdf-link span sup {
   height: 25px;
   position: absolute;
   top: 0;
-  left: -445px;
+  left: -452px;
+  opacity: 0.5;
 }
 .section--course .twenty-one-animated .copy {
   background: transparent url("../img/21-text.png") 0 0 no-repeat;
