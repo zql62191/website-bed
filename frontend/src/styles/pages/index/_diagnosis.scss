@@ -89,6 +89,7 @@
     }
     .graphic-wrap {
         margin: 20px 0;
+
         @include mq("desktop") {
             min-height: 270px;
             background: url("#{$img-path}/diagnosis-graphic.png") center center no-repeat;
@@ -104,6 +105,7 @@
         min-height: 375px;
         background: url("#{$img-path}/diagnosis-fifty-bg.png") center center no-repeat;
         text-align: center;
+
         .large {
             font-size: 145px;
             line-height: 140px;
@@ -125,6 +127,7 @@
     .weight-graphic {
         margin-left: 115px;
         padding-left: 105px;
+
         .large {
             font-size: 120px;
             line-height: 100px;
@@ -132,7 +135,7 @@
         }
         p {
             padding-bottom: 10px;
-            line-height: 36px;
+            //line-height: 36px;
         }
     }
     .nineteen-percent {
@@ -140,18 +143,22 @@
         background: url("#{$img-path}/diagnosis-nineteen.png") top left no-repeat;
         min-height: 250px;
         padding-bottom: 40px;
+
         @include mq("desktop") {
             float: left;
             width: 300px;
+            line-height: 26px;
         }
     }
     .thirty-six-percent {
         padding-left: 105px;
         background: url("#{$img-path}/diagnosis-thirty-six.png") top left no-repeat;
         min-height: 210px;
+
         @include mq("desktop") {
             float: left;
             width: 300px;
+            line-height: 26px;
         }
     }
     .percent {

@@ -95,6 +95,32 @@
             line-height: 22px;
         }
     }
+    .blurb-2 {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: top left;
+        padding: 22px;
+        color: #333e48;
+        font-size: 27px;
+        line-height: 31px;
+
+        @include mq("mobile") {
+            background-image: url("#{$img-path}/prevalence-text-bg-mobile.png");
+            width: 571px;
+            height: 167px;
+            margin-bottom: 20px;
+        }
+        @include mq("desktop") {
+            background-image: url("#{$img-path}/prevalence-text-bg-2.png");
+            width: 740px;
+            height: 115px;
+            margin: 0 auto 25px auto;
+            padding: 25px 35px;
+            font-size: 20px;
+            line-height: 22px;
+        }
+    }
+
     .male-graphic {
         background: url("#{$img-path}/prevalence-male-graphic.png") center center no-repeat;
         width: 254px;
@@ -137,42 +163,43 @@
         }
     }
     // Graphic (and cooresponding text) only visible on desktop
-    .desktop-graphic {
-        @include mq("mobile") {
-            display: none;
-        }
+    // .desktop-graphic {
+    //     @include mq("mobile") {
+    //         display: none;
+    //     }
 
-        @include mq("desktop") {
-            display: none;
-            background-repeat: no-repeat;
-            background-position: top center;
-            text-align: center;
-            float: left;
-            p {
-                font-size: 22px;
-                line-height: 26px;
-                font-family: font("gill sans", "regular");
-                width: 230px;
-                margin-left: -36.5px;
-            }
-            &.female-graphic {
-                background-image: url("#{$img-path}/prevalence-female.png");
-                width: 158px;
-                height: 230px;
-                margin: 75px 0 0 151px;
-                padding-top: 235px;
-                color: #febd3f;
-            }
-            &.male-graphic {
-                background-image: url("#{$img-path}/prevalence-male.png");
-                background-size: 100% auto;
-                width: 192px;
-                height: 189px;
-                margin: 45px 0;
-                padding-top: 205px;
-            }
-        }
-    }
+    //     @include mq("desktop") {
+    //         display: none;
+    //         background-repeat: no-repeat;
+    //         background-position: top center;
+    //         text-align: center;
+    //         float: left;
+    //         p {
+    //             font-size: 22px;
+    //             line-height: 26px;
+    //             font-family: font("gill sans", "regular");
+    //             width: 230px;
+    //             margin-left: -36.5px;
+    //         }
+    //         &.female-graphic {
+    //             background-image: url("#{$img-path}/prevalence-female.png");
+    //             width: 158px;
+    //             height: 230px;
+    //             margin: 75px 0 0 151px;
+    //             padding-top: 235px;
+    //             color: #febd3f;
+    //         }
+    //         &.male-graphic {
+    //             background-image: url("#{$img-path}/prevalence-male.png");
+    //             background-size: 100% auto;
+    //             width: 192px;
+    //             height: 189px;
+    //             margin: 45px 0;
+    //             padding-top: 205px;
+    //         }
+    //     }
+
+    // }
     // Mobile text
     .gender-ratio {
         @include mq("mobile") {
@@ -198,7 +225,7 @@
         .patients-graphic {
             margin: 0 auto;
             @include mq("mobile") {
-                width: 580px;
+                width: 605px;
                 height: 545px;
                 //background-image: url("#{$img-path}/prevalence-patients-mobile.png");
             }
@@ -214,7 +241,15 @@
                     width: 195px;
                     height: 185px;
                     display: inline-block;
-                    margin-right: 26px;
+                    margin-right: 25px;
+                }
+
+                @include mq('mobile') {
+                    width: 275px;
+                    height: 262px;
+                    display: inline-block;
+                    margin-right: 20px;
+                    margin-bottom: 15px;
                 }
             }
         }

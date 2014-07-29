@@ -1420,6 +1420,35 @@ a.pdf-link span sup {
     line-height: 22px;
   }
 }
+.section--prevalence .blurb-2 {
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100%;
+  background-position: top left;
+  padding: 22px;
+  color: #333e48;
+  font-size: 27px;
+  line-height: 31px;
+}
+@media only screen and (max-width: 40em) {
+  .section--prevalence .blurb-2 {
+    background-image: url("../img/prevalence-text-bg-mobile.png");
+    width: 571px;
+    height: 167px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .section--prevalence .blurb-2 {
+    background-image: url("../img/prevalence-text-bg-2.png");
+    width: 740px;
+    height: 115px;
+    margin: 0 auto 25px auto;
+    padding: 25px 35px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
 .section--prevalence .male-graphic {
   background: url("../img/prevalence-male-graphic.png") center center no-repeat;
   width: 254px;
@@ -1468,44 +1497,6 @@ a.pdf-link span sup {
   font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 @media only screen and (max-width: 40em) {
-  .section--prevalence .desktop-graphic {
-    display: none;
-  }
-}
-@media only screen and (min-width: 40.063em) {
-  .section--prevalence .desktop-graphic {
-    display: none;
-    background-repeat: no-repeat;
-    background-position: top center;
-    text-align: center;
-    float: left;
-  }
-  .section--prevalence .desktop-graphic p {
-    font-size: 22px;
-    line-height: 26px;
-    font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    width: 230px;
-    margin-left: -36.5px;
-  }
-  .section--prevalence .desktop-graphic.female-graphic {
-    background-image: url("../img/prevalence-female.png");
-    width: 158px;
-    height: 230px;
-    margin: 75px 0 0 151px;
-    padding-top: 235px;
-    color: #febd3f;
-  }
-  .section--prevalence .desktop-graphic.male-graphic {
-    background-image: url("../img/prevalence-male.png");
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
-    width: 192px;
-    height: 189px;
-    margin: 45px 0;
-    padding-top: 205px;
-  }
-}
-@media only screen and (max-width: 40em) {
   .section--prevalence .gender-ratio {
     padding: 30px 20px 10px 0;
   }
@@ -1533,7 +1524,7 @@ a.pdf-link span sup {
 }
 @media only screen and (max-width: 40em) {
   .section--prevalence .comparable .patients-graphic {
-    width: 580px;
+    width: 605px;
     height: 545px;
   }
 }
@@ -1548,7 +1539,16 @@ a.pdf-link span sup {
     width: 195px;
     height: 185px;
     display: inline-block;
-    margin-right: 26px;
+    margin-right: 25px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--prevalence .comparable .patients-graphic .graphic {
+    width: 275px;
+    height: 262px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 15px;
   }
 }
 .section--prevalence .comparable .patient-1 {
@@ -1958,22 +1958,28 @@ a.pdf-link span sup {
 }
 .section--effects .graphic {
   background-repeat: no-repeat;
-  -webkit-background-size: auto 100%;
-  background-size: auto 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: 100%;
   background-position: top left;
 }
 @media only screen and (max-width: 40em) {
+  .section--effects .graphic {
+    width: 350px;
+    margin: 0 auto;
+    height: 350px;
+    padding-left: 25px;
+  }
   .section--effects .graphic h1 {
     width: 350px;
     margin: 0 auto;
     padding-top: 108px;
+    padding-bottom: 0;
     font-size: 225px;
     font-family: "Gill Sans W01 Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   }
   .section--effects .graphic p {
-    width: 350px;
+    width: 100%;
     margin: 0 auto;
-    padding-top: 30px;
     padding-right: 20px;
     text-align: center;
     line-height: 41px;
@@ -1981,25 +1987,53 @@ a.pdf-link span sup {
 }
 @media only screen and (min-width: 40.063em) {
   .section--effects .graphic {
-    width: 100%;
+    width: 450px;
+    height: 350px;
+    text-align: center;
+    display: inline-block;
+    -webkit-background-size: 80% 80%;
+    background-size: 80%;
+    vertical-align: top;
   }
   .section--effects .graphic h1 {
-    width: 350px;
     padding: 75px 0 0 50px;
     font-size: 185px;
     font-family: "Gill Sans W01 Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    display: inline-block;
     vertical-align: top;
   }
   .section--effects .graphic p {
-    width: 500px;
-    padding-right: 20px;
-    padding-top: 115px;
-    line-height: 41px;
-    font-size: 30px;
-    line-height: 36px;
-    display: inline-block;
     vertical-align: top;
+    font-size: 22px;
+    line-height: 26px;
+    left: -15px;
+    padding: 0;
+  }
+}
+.section--effects .graphic .large {
+  color: #fcbb3f;
+  padding-top: 20px;
+  font-size: 160px;
+  line-height: 180px;
+  font-family: "Gill Sans W01 Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  left: -15px;
+}
+@media only screen and (min-width: 40.063em) {
+  .section--effects .graphic .large {
+    font-size: 130px;
+    line-height: 120px;
+    padding-top: 60px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--effects .graphic p {
+    padding-right: 25px;
+  }
+  .section--effects .graphic .large {
+    padding-top: 20px;
+    font-size: 160px;
+    line-height: 160px;
+    font-family: "Gill Sans W01 Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    left: -15px;
   }
 }
 .section--effects .sixty-three {
@@ -2010,24 +2044,8 @@ a.pdf-link span sup {
     height: 450px;
   }
 }
-@media only screen and (min-width: 40.063em) {
-  .section--effects .sixty-three {
-    height: 300px;
-  }
-}
 .section--effects .nineteen {
   background-image: url("../img/spiral.png");
-}
-@media only screen and (max-width: 40em) {
-  .section--effects .nineteen {
-    height: 450px;
-  }
-}
-@media only screen and (min-width: 40.063em) {
-  .section--effects .nineteen {
-    height: 300px;
-    margin-left: 20px;
-  }
 }
 .section--effects .percent {
   font-size: 0.5em;
@@ -2371,7 +2389,6 @@ a.pdf-link span sup {
 }
 .section--diagnosis .weight-graphic p {
   padding-bottom: 10px;
-  line-height: 36px;
 }
 .section--diagnosis .nineteen-percent {
   margin-top: 35px;
@@ -2383,6 +2400,7 @@ a.pdf-link span sup {
   .section--diagnosis .nineteen-percent {
     float: left;
     width: 300px;
+    line-height: 26px;
   }
 }
 .section--diagnosis .thirty-six-percent {
@@ -2394,6 +2412,7 @@ a.pdf-link span sup {
   .section--diagnosis .thirty-six-percent {
     float: left;
     width: 300px;
+    line-height: 26px;
   }
 }
 .section--diagnosis .percent {

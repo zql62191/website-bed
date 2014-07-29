@@ -117,20 +117,26 @@
     }
     .graphic {
         background-repeat: no-repeat;
-        background-size: auto 100%;
+        background-size: 100%;
         background-position: top left;
+
         @include mq("mobile") {
+            width: 350px;
+            margin: 0 auto;
+            height: 350px;
+            padding-left: 25px;
+
             h1 {
                 width: 350px;
                 margin: 0 auto;
                 padding-top: 108px;
+                padding-bottom: 0;
                 font-size: 225px;
                 font-family: font("gill sans", "bold");
             }
             p {
-                width: 350px;
+                width: 100%;
                 margin: 0 auto;
-                padding-top: 30px;
                 padding-right: 20px;
                 text-align: center;
                 line-height: 41px;
@@ -138,24 +144,52 @@
         }
 
         @include mq("desktop") {
-            width: 100%;
+            width: 450px;
+            height: 350px;
+            text-align: center;
+            display: inline-block;
+            background-size: 80%;
+            vertical-align: top;
+
             h1 {
-                width: 350px;
                 padding: 75px 0 0 50px;
                 font-size: 185px;
                 font-family: font("gill sans", "bold");
-                display: inline-block;
                 vertical-align: top;
             }
             p {
-                width: 500px;
-                padding-right: 20px;
-                padding-top: 115px;
-                line-height: 41px;
-                font-size: 30px;
-                line-height: 36px;
-                display: inline-block;
                 vertical-align: top;
+                font-size: 22px;
+                
+                line-height: 26px;
+                left: -15px;
+                padding: 0;
+            }
+        }
+        .large {
+            color: #fcbb3f;
+            padding-top: 20px;
+            font-size: 160px;
+            line-height: 180px;
+            font-family: font("gill sans", "bold");
+            left: -15px;
+
+            @include mq('desktop') {
+                font-size: 130px;
+                line-height: 120px;
+                padding-top: 60px;
+            }
+        }
+        @include mq("mobile") {
+            p {
+                padding-right: 25px;
+            }
+            .large {
+                padding-top: 20px;
+                font-size: 160px;
+                line-height: 160px;
+                font-family: font("gill sans", "bold");
+                left: -15px;
             }
         }
     }
@@ -166,19 +200,19 @@
         }
 
         @include mq("desktop") {
-            height: 300px;
+            //height: 300px;
             //margin-left: -15px;
         }
     }
     .nineteen {
         background-image: url("#{$img-path}/spiral.png");
         @include mq("mobile") {
-            height: 450px;
+            //height: 450px;
         }
 
         @include mq("desktop") {
-            height: 300px;
-            margin-left: 20px;
+            //height: 300px;
+            //margin-left: 20px;
         }
     }
     .percent {
