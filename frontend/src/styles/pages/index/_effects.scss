@@ -66,7 +66,7 @@
         @include mq("mobile") {
             h3 {
                 width: auto;
-                line-height: 60px;
+                //line-height: 60px;
                 padding-bottom: 0;
             }
         }
@@ -205,6 +205,11 @@
         }
     }
     .nineteen {
+
+        .large {
+            letter-spacing: -10px;
+        }
+
         background-image: url("#{$img-path}/spiral.png");
         @include mq("mobile") {
             //height: 450px;

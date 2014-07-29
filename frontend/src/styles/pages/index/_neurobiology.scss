@@ -170,7 +170,7 @@
         @include mq("mobile") {
             width: 640px;
             left: -20px;
-            padding: 510px 0  0 20px;
+            padding: 0 0  0 20px;
         }
 
         @include mq("desktop") {
@@ -189,6 +189,7 @@
             @include mq("mobile") {
                 font-size: 25px;
                 line-height: 30px;
+                padding-left: 50px;
             }
 
             @include mq("desktop") {
