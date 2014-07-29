@@ -84,6 +84,11 @@
                     padding-left: 0;
                 }
             }
+            @include mq('mobile') {
+                .footnote {
+                    margin-top: -40px;
+                }
+            }
         }
     }
     .twenty-one-animated {

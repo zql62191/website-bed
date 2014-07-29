@@ -187,6 +187,10 @@
         min-height: 250px;
         padding-bottom: 40px;
 
+        .large {
+            letter-spacing: -10px;
+        }
+
         @include mq("desktop") {
             float: left;
             width: 300px;

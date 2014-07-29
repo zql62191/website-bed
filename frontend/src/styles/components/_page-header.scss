@@ -56,6 +56,10 @@
 
         &:hover {
             text-decoration: none;
+            color: #febd3f;
+        }
+        &:active {
+            color: #febd3f;
         }
         em {
             font-family: font("gill sans", "light italic");

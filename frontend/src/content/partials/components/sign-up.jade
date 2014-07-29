@@ -3,7 +3,7 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
     .close
 
     h2.
-      Sign up to receive informative BED content and updates from Shire.
+      Sign up to receive the full #[em DSM-5]#[sup ®] diagnostic criteria and other #[br.hide--mobile]BED content from Shire.
 
     p.required-fields.
       #[span.red *]Required Fields
@@ -42,7 +42,7 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
       input(
         type='text',
         name='email',
-        placeholder='*Email',
+        placeholder='*E-mail',
         ng-model='form.email',
         ng-required='true',
         ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/",
@@ -55,7 +55,7 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
         ng-model='form.confirmemail',
         ng-required='true',
         confirmemail,
-        placeholder='*Re-enter Email',
+        placeholder='*Re-enter E-mail',
         ng-class="{forminvalid: (bed_form.email2.$invalid && bed_form.email2.$dirty) || (bed_form.email2.$invalid && invalidform)}",
         class='email2')
 
@@ -138,7 +138,7 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
 
       label(for='optin', class='optin-label')
         p.
-          By checking this box and clicking submit, you certify that you are a US health care professional and you are opting to receive information about binge eating disorder plus product information, site updates, educational information, patient support resources, and other information from Shire. You will be able to opt out of these communications at any time.
+          By checking this box and clicking submit, you certify that you are a US health care professional and you are opting to receive information about binge eating disorder plus site updates, educational information, patient support resources, and other information from Shire. You will be able to opt out of these communications at any time.
         p.
           Shire respects your personal information. All information you have provided will be kept confidential and will not be used or distributed to anyone for any purpose other than what is explained in our Privacy Policy Statement. We encourage you to read our Privacy Policy Statement by clicking on this link: Review Shire Privacy Policy Statement. This consent will be in effect until such time as you opt out of the program.
 
