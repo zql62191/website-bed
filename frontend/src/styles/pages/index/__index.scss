@@ -10,7 +10,8 @@
 .pagination {
     position: fixed;
     right: 0;
-    top: 100px;
+    top: 50%;
+    margin-top: -80px;
     z-index: z("pagination");
     @include mq('mobile') {
         display: none;

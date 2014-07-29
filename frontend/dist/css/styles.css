@@ -3017,7 +3017,8 @@ a.pdf-link span sup {
 .pagination {
   position: fixed;
   right: 0;
-  top: 100px;
+  top: 50%;
+  margin-top: -80px;
   z-index: 998;
 }
 @media only screen and (max-width: 40em) {
