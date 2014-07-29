@@ -56,6 +56,15 @@ module.exports = {
             filter: 'isFile'
         }]
     },
+    vendor: {
+        files: [{
+            cwd: 'src/vendor/',
+            dest: 'dist/',
+            src: ['**/*'],
+            expand: true,
+            filter: 'isFile'
+        }]
+    },
     integrate: {
         files: [{
             cwd: 'dist/',
