@@ -37,14 +37,14 @@
       <div data-direction="left" class="page-nav slideout slideout--menu">
         <nav class="slideout__inner">
                 <ul class="primary-nav">
-                  <li class="primary-nav__item _1_liner"><a href="/#home" target="_self">Home</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/#prevalence" target="_self">Prevalence</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/#dsm5" target="_self"><em>DSM-5<sup>&reg;</sup></em> Criteria</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/#course" target="_self">Clinical Characteristics</a></li>
-                  <li class="primary-nav__item _2_liner"><a href="/#effects" target="_self"><em>DSM-5<sup>&reg;</sup></em> Functional <br/>Consequences</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/#neurobiology" target="_self">Neurobiology</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/#diagnosis" target="_self">Recognizing BED in Adults</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/#resources" target="_self">Resources/Expert Videos</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="#home" target="_self">Home</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="#prevalence" target="_self">Prevalence</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="#dsm5" target="_self"><em>DSM-5<sup>&reg;</sup></em> Criteria</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="#course" target="_self">Clinical Characteristics</a></li>
+                  <li class="primary-nav__item _2_liner"><a href="#effects" target="_self"><em>DSM-5<sup>&reg;</sup></em> Functional <br/>Consequences</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="#neurobiology" target="_self">Neurobiology</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="#diagnosis" target="_self">Recognizing BED in Adults</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="#resources" target="_self">Resources/Expert Videos</a></li>
                 </ul>
         </nav>
       </div>
@@ -58,18 +58,20 @@
           <p class="required-fields"><span class="red">*</span>Required Fields
             
           </p>
-          <form name="bed_form" ng-submit="optIn()" novalidate>
-            <input type="text" name="firstName" placeholder="*First Name" ng-model="form.fname" ng-required="true" class="first-name">
+          <form name="bed_form" id="bed_form" ng-submit="optIn()" novalidate>
+            <input type="text" name="firstName" placeholder="*First Name" ng-model="fname" ng-required="true" ng-class="{forminvalid: (bed_form.firstName.$invalid &amp;&amp; bed_form.firstName.$dirty) || (bed_form.firstName.$invalid &amp;&amp; invalidform)}" class="first-name">
             <input type="text" name="middleInitial" placeholder="MI" ng-model="form.MI" ng-required="false" class="middle-initial">
-            <input type="text" name="lastName" placeholder="*Last Name" ng-model="form.lname" ng-required="true" class="last-name">
-            <input type="text" name="email" placeholder="*Email" ng-model="form.email" ng-required="true" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/" class="email">
-            <input type="text" name="email2" ng-model="form.confirmemail" ng-required="true" confirmemail placeholder="*Re-enter Email" class="email2">
-            <input type="text" name="streetAddress" placeholder="*Street Address" ng-model="form.street" ng-required="true" class="street-address">
+            <input type="text" name="lastName" placeholder="*Last Name" ng-model="form.lname" ng-required="true" ng-class="{forminvalid: (bed_form.lastName.$invalid &amp;&amp; bed_form.lastName.$dirty) || (bed_form.lastName.$invalid &amp;&amp; invalidform)}" class="last-name">
+            <input type="text" name="email" placeholder="*Email" ng-model="form.email" ng-required="true" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/" ng-class="{forminvalid: (bed_form.email.$invalid &amp;&amp; bed_form.email.$dirty) || (bed_form.email.$invalid &amp;&amp; invalidform)}" class="email">
+            <input type="text" name="email2" ng-model="form.confirmemail" ng-required="true" confirmemail placeholder="*Re-enter Email" ng-class="{forminvalid: (bed_form.email2.$invalid &amp;&amp; bed_form.email2.$dirty) || (bed_form.email2.$invalid &amp;&amp; invalidform)}" class="email2">
+            <input type="text" name="streetAddress" placeholder="*Street Address" ng-model="form.street" ng-required="true" ng-class="{forminvalid: (bed_form.streetAddress.$invalid &amp;&amp; bed_form.streetAddress.$dirty) || (bed_form.streetAddress.$invalid &amp;&amp; invalidform)}" class="street-address">
             <input type="text" name="suiteOffice" placeholder="Suite/Office" ng-model="form.suite" ng-required="false" class="suite-office">
-            <input type="text" name="city" placeholder="*City" ng-model="form.city" ng-required="true" class="city">
-            <select name="state" ng-model="form.state" ng-options="state for state in states" stateselect class="state"></select>
-            <input type="text" name="zip" placeholder="*Zip" ng-model="form.zip" ng-pattern="/^[0-9]{5}$/" required class="zip">
-            <select name="profession" ng-model="form.profession" ng-options="prof for prof in professions" profselect class="profession"></select>
+            <input type="text" name="city" placeholder="*City" ng-model="form.city" ng-required="true" ng-class="{forminvalid: (bed_form.city.$invalid &amp;&amp; bed_form.city.$dirty) || (bed_form.city.$invalid &amp;&amp; invalidform)}" class="city">
+            <select name="state" ng-model="form.state" ng-class="{forminvalid: (bed_form.state.$invalid &amp;&amp; bed_form.state.$dirty) || (bed_form.state.$invalid &amp;&amp; invalidform)}" stateselect class="state">
+              <option value="">*State</option>
+            </select>
+            <input type="text" name="zip" placeholder="*Zip" ng-model="form.zip" ng-pattern="/^[0-9]{5}$/" ng-required="true" ng-class="{forminvalid: (bed_form.zip.$invalid &amp;&amp; bed_form.zip.$dirty) || (bed_form.zip.$invalid &amp;&amp; invalidform)}" class="zip">
+            <select name="profession" ng-model="form.profession" ng-options="prof for prof in professions" profselect ng-class="{forminvalid: (bed_form.profession.$invalid &amp;&amp; bed_form.profession.$dirty) || (bed_form.profession.$invalid &amp;&amp; invalidform)}" class="profession"></select>
             <h3>
               Opt In for Communications
               
@@ -115,8 +117,8 @@
         </div>
       </div>
       <div class="page-content">
-        <div data-section="home" class="section section--home"><a id="home" name="home" class="scroll-point"></a><a href="/#home" class="bar bar--title">binge eating disorder <br class="hide--desktop">in adults
-            </a>
+        <div data-section="home" class="section section--home"><a href="#home" class="bar bar--title">binge eating disorder <br class="hide--desktop">in adults
+            </a><a id="home" name="home" class="scroll-point"></a>
           <div class="disclaimer-bar">
             <p>
               This site is intended for US health care professionals only.
@@ -139,7 +141,7 @@
             <p>BED, now a distinct disorder in <em>DSM-5</em><sup>®</sup>, is defined as recurring episodes (≥ once weekly, for at least 3 months) of consuming a large amount of food in a short time, compared with others. Patients feel a lack of control during a binge and marked distress over their eating. They typically experience shame and guilt, among other symptoms, about their bingeing, and may conceal these symptoms, even from you.<sup>1</sup></p>
           </div>
         </div>
-        <div data-section="prevalence" class="section section--prevalence"><a href="/#prevalence" class="bar bar--title">
+        <div data-section="prevalence" class="section section--prevalence"><a href="#prevalence" class="bar bar--title">
             BED is the most common eating disorder
             </a><a id="prevalence" name="prevalence" class="scroll-point"></a>
           <div class="content-wrap">
@@ -158,17 +160,19 @@
             </p>
             <h3>12-month prevalence in US adults<sup>2</sup>:
               
+              
+              
             </h3>
-            <div class="male-female-graphic graphic">
-              <div>
-                <p><span class="yellow">BED: 2 to 1</span><br>
-                  1.6% of women vs 0.8% of men
-                </p>
-                <p><span class="yellow">Bulimia nervosa: 5 to 1</span><br>
-                  0.5% of women vs 0.1% of men
-                  
-                </p>
-              </div>
+            <div class="male-female-graphic">
+              <p data-bottom-top="opacity: 0; transform: translate3d(0px,100px,0px)" data--30p-bottom="opacity: 1; transform: translate3d(0px,0px,0px)"><span class="yellow">BED: 2 to 1</span><br>
+                1.6% of women vs 0.8% of men
+              </p>
+              <p data-bottom-top="opacity: 0; transform: translate3d(0px,100px,0px)" data--30p-bottom="opacity: 1; transform: translate3d(0px,0px,0px)"><span class="yellow">Bulimia nervosa: 5 to 1</span><br>
+                0.5% of women vs 0.1% of men
+                
+              </p>
+              <div data-bottom-top="opacity: 0; transform: translate3d(500px,0px,0px)" data--30p-bottom="opacity: 1; transform: translate3d(0px,0,0px)" class="male-graphic graphic"></div>
+              <div data-bottom-top="opacity: 0; transform: translate3d(-500px,0px,0px)" data--30p-bottom="opacity: 1; transform: translate3d(0px,0,0px)" class="female-graphic graphic"></div>
             </div>
             <div class="comparable">
               <h2>There are comparable prevalence rates among non-Latino white <span class="percent">(1.4%)</span>, Latino <span class="percent">(2.1%)</span>, Asian <span class="percent">(1.2%)</span>, and African American <span class="percent">(1.5%)</span> adults in the US<sup>†4</sup>
@@ -189,7 +193,7 @@
             <div class="footnote">Data from a 2013 online survey of adults ≥18 years (Validate Attitudes and Lifestyle Issues in Depression ADHD and Troubles with Eating [VALIDATE]). 344 of 22,397 respondents met DSM-5 criteria for BED in the previous 12 months (a 12-month prevalence estimate of 1.64% of the total US adult population.<sup>5</sup></div>
           </div>
         </div>
-        <div data-section="dsm5" class="section section--dsm5"><a href="/#dsm5" class="bar bar--title">The <em>DSM-5<sup>&reg;</sup></em> criteria
+        <div data-section="dsm5" class="section section--dsm5"><a href="#dsm5" class="bar bar--title">The <em>DSM-5<sup>&reg;</sup></em> criteria
             </a><a id="dsm5" name="dsm5" class="scroll-point"></a>
           <div class="content-wrap">
             <h2>Essential features <br class="mobile">of binge eating disorder
@@ -226,10 +230,18 @@
             <div class="tab-container">
               <div class="tab-inner">
                 <h3>What are common triggers of binge eating?</h3>
-                <p>
-                  As noted in DSM-5, the most common antecedent of binge eating is negative affect. Other triggers include interpersonal stressors; dietary restraint; negative feelings related to body weight, body shape, and food; and boredom.
+                <p>As noted in DSM-5®, negative affect most commonly precedes a bingeing episode.<sup>1</sup> 
                   
                 </p>
+                <p>Other triggers include<sup>1</sup>:
+                  
+                </p>
+                <ul>
+                  <li>Interpersonal stressors</li>
+                  <li>Dietary restraint</li>
+                  <li>Negative feelings related to body weight, body shape, and food</li>
+                  <li>Boredom</li>
+                </ul>
               </div>
               <div class="closed-text">
                 What are common triggers of binge eating?
@@ -240,7 +252,7 @@
             </div>
           </div>
         </div>
-        <div data-section="course" class="section section--course"><a href="/#course" class="bar bar--title">
+        <div data-section="course" class="section section--course"><a href="#course" class="bar bar--title">
             Clinical characteristics of BED
             </a><a id="course" name="course" class="scroll-point"></a>
           <div class="content-wrap">
@@ -277,7 +289,7 @@
             <p class="sub-head">Adults with BED often have coexisting bipolar, depressive, or anxiety disorders<sup>1</sup>
               
             </p>
-            <p class="yellow center">Lifetime comorbidity per DSM-IV in a nationally representative survey of US adults aged ≥18 years*<sup>2</sup>:
+            <p class="yellow center">Lifetime comorbidity per DSM-IV in a nationally representative <br class="hide--mobile">survey of US adults aged ≥18 years*<sup>2</sup>:
               
             </p>
             <div class="eighty graphic">
@@ -303,7 +315,7 @@
             <p class="disclaimer">Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults <br class="hide--desktop"> aged ≥18 years.<sup>2</sup></p>
           </div>
         </div>
-        <div data-section="effects" class="section section--effects"><a href="/#effects" class="bar bar--title">
+        <div data-section="effects" class="section section--effects"><a href="#effects" class="bar bar--title">
             Functional consequences of BED
             </a><a id="effects" name="effects" class="scroll-point"></a>
           <div class="content-wrap">
@@ -350,7 +362,7 @@
             <p class="footnote">*Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a face-to-face household survey of English-speaking adults aged ≥18 years.<sup>2</sup></p>
           </div>
         </div>
-        <div data-section="neurobiology" class="section section--neurobiology"><a href="/#neurobiology" class="bar bar--title">
+        <div data-section="neurobiology" class="section section--neurobiology"><a href="#neurobiology" class="bar bar--title">
             Emerging evidence of BED neurobiology
             </a><a id="neurobiology" name="neurobiology" class="scroll-point"></a>
           <div class="content-wrap">
@@ -411,7 +423,7 @@
             </div>
           </div>
         </div>
-        <div data-section="diagnosis" class="section section--diagnosis"><a href="/#diagnosis" class="bar bar--title">
+        <div data-section="diagnosis" class="section section--diagnosis"><a href="#diagnosis" class="bar bar--title">
             Finding BED in your patients
             </a><a id="diagnosis" name="diagnosis" class="scroll-point"></a>
           <div class="content-wrap">
@@ -469,7 +481,7 @@
             </div>
           </div>
         </div>
-        <div data-section="resources" class="section section--resources"><a href="/#resources" class="bar bar--title">
+        <div data-section="resources" class="section section--resources"><a href="#resources" class="bar bar--title">
             Resources/Expert Videos
             </a><a id="resources" name="resources" class="scroll-point"></a>
           <div class="content-wrap">
@@ -511,19 +523,34 @@
               </h4>
               <ul>
                 <li data-video>
-                  <p>Overview</p>
+                  <p>How does the prevalence of B-E-D compare to the prevalence of other eating disorders in adults?</p>
                 </li>
                 <li data-video>
-                  <p>Clinical <br>Course</p>
+                  <p>What are the functional consequences of BED in adults?</p>
                 </li>
                 <li data-video>
-                  <p>Clinical <br>Characteristics</p>
+                  <p>What are the diagnostic criteria for BED?</p>
                 </li>
                 <li data-video>
-                  <p>BED <br>Neurobiology</p>
+                  <p>What psychiatric disorders are commonly associated with BED?</p>
                 </li>
                 <li data-video>
-                  <p>Clinical <br>Strategies</p>
+                  <p>What is thought to cause BED?</p>
+                </li>
+                <li data-video>
+                  <p>How does the prevalence of BED compare among races/ethnicities in adults?</p>
+                </li>
+                <li data-video>
+                  <p>Does BED occur in both women and men?</p>
+                </li>
+                <li data-video>
+                  <p>What is the clinical course of BED?</p>
+                </li>
+                <li data-video>
+                  <p>
+                    How can clinicians begin an effective conversation with their adult patients about binge eating disorder?
+                    
+                  </p>
                 </li>
               </ul>
             </div>

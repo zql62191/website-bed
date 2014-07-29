@@ -89,9 +89,11 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
         name='state',
         class='state',
         ng-model="form.state",
-        ng-options="state for state in states",
         ng-class="{forminvalid: (bed_form.state.$invalid && bed_form.state.$dirty) || (bed_form.state.$invalid && invalidform)}",
         stateselect)
+          option(value="")
+            | *State
+
 
       input(
         type='text',
