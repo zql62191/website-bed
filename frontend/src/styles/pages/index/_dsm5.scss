@@ -193,11 +193,16 @@
             @include mq("desktop") {
                 right: 10px;
             }
+            @include mq('mobile') {
+                top: 30px;
+                right: 30px;
+            }
+            display: block;
         }
         h3 {
             color: #febd3f;
             @include mq("mobile") {
-                font-size: 36px;
+                //font-size: 36px;
             }
         }
         p {
@@ -207,10 +212,10 @@
             color: #ffffff;
             //margin-bottom: 10px;
             width: 290px;
-            line-height: 25px;
+            //line-height: 25px;
             @include mq("mobile") {
-                font-size: 28px;
-                line-height: 36px;
+                //font-size: 28px;
+                //line-height: 36px;
                 width: 400px;
                 margin-top: 10px;
                 margin-left: 55px;
@@ -221,6 +226,7 @@
             @include mq("mobile") {
                 margin-left: 35px;
                 margin-top: 22px;
+                width: 80%;
             }
         }
         li {
@@ -234,8 +240,9 @@
                 margin: 0 5px 0 -15px;
             }
             @include mq("mobile") {
-                font-size: 23px;
-                line-height: 32px;
+                //font-size: 23px;
+                //line-height: 32px;
+
                 &.first {
                     width: 390px;
                 }

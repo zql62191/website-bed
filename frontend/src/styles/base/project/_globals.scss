@@ -38,6 +38,13 @@ sub {
     bottom: -0.25em;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    sup {
+        font-size: 0.4em;
+        top: -1.2em;
+    }
+}
+
 .nobr,
 nobr {
     white-space: nowrap;
@@ -389,6 +396,7 @@ li {
     @include mq("mobile") {
         font-size: 34px;
         line-height: 40px;
+        padding-top: 36px;
     }
 
     @include mq("desktop") {

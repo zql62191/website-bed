@@ -102,6 +102,11 @@ sub {
   bottom: -0.25em;
 }
 
+h1 sup, h2 sup, h3 sup, h4 sup, h5 sup, h6 sup {
+  font-size: 0.4em;
+  top: -1.2em;
+}
+
 .nobr,
 nobr {
   white-space: nowrap;
@@ -510,6 +515,7 @@ li:last-child {
   .chart-head {
     font-size: 34px;
     line-height: 40px;
+    padding-top: 36px;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -1744,11 +1750,6 @@ a.pdf-link span sup {
 .section--course .bar--title:before {
   border-top-color: #b3b6b7;
 }
-@media only screen and (max-width: 40em) {
-  .section--course h2 {
-    font-size: 54px;
-  }
-}
 @media only screen and (min-width: 40.063em) {
   .section--course h2 {
     padding-bottom: 25px;
@@ -1765,12 +1766,6 @@ a.pdf-link span sup {
 .section--course .sub-head .yellow, .section--course p .yellow {
   color: #febd3f;
   font-weight: bold;
-}
-@media only screen and (min-width: 40.063em) {
-  .section--course p {
-    font-size: 20px;
-    line-height: 25px;
-  }
 }
 .section--course .graphic-container {
   overflow: hidden;
@@ -1815,6 +1810,9 @@ a.pdf-link span sup {
   }
 }
 @media only screen and (max-width: 40em) {
+  .section--course .graphic-container .legend {
+    margin-bottom: 48px;
+  }
   .section--course .graphic-container .legend .footnote {
     margin-top: -175px;
     padding-left: 40px;
@@ -2034,6 +2032,11 @@ a.pdf-link span sup {
 @media only screen and (max-width: 40em) {
   .section--course .forty-nine .large {
     left: 15px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--course .chart-head {
+    width: 544px;
   }
 }
 .section--course .percent {
@@ -2822,18 +2825,22 @@ a.pdf-link span sup {
     padding-right: 0;
   }
 }
+.section--dsm5 .tab-inner .close {
+  display: block;
+}
 @media only screen and (min-width: 40.063em) {
   .section--dsm5 .tab-inner .close {
     right: 10px;
   }
 }
+@media only screen and (max-width: 40em) {
+  .section--dsm5 .tab-inner .close {
+    top: 30px;
+    right: 30px;
+  }
+}
 .section--dsm5 .tab-inner h3 {
   color: #febd3f;
-}
-@media only screen and (max-width: 40em) {
-  .section--dsm5 .tab-inner h3 {
-    font-size: 36px;
-  }
 }
 .section--dsm5 .tab-inner p {
   padding-top: 10px;
@@ -2841,12 +2848,9 @@ a.pdf-link span sup {
   font-style: normal;
   color: #ffffff;
   width: 290px;
-  line-height: 25px;
 }
 @media only screen and (max-width: 40em) {
   .section--dsm5 .tab-inner p {
-    font-size: 28px;
-    line-height: 36px;
     width: 400px;
     margin-top: 10px;
     margin-left: 55px;
@@ -2857,6 +2861,7 @@ a.pdf-link span sup {
   .section--dsm5 .tab-inner ul {
     margin-left: 35px;
     margin-top: 22px;
+    width: 80%;
   }
 }
 .section--dsm5 .tab-inner li {
@@ -2870,10 +2875,6 @@ a.pdf-link span sup {
   margin: 0 5px 0 -15px;
 }
 @media only screen and (max-width: 40em) {
-  .section--dsm5 .tab-inner li {
-    font-size: 23px;
-    line-height: 32px;
-  }
   .section--dsm5 .tab-inner li.first {
     width: 390px;
   }
