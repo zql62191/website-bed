@@ -1695,20 +1695,61 @@ a.pdf-link span sup {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  .section--course .graphic-container div {
+  .section--course .graphic-container .legend {
     width: 49%;
     display: inline-block;
   }
-  .section--course .graphic-container div .text {
+  .section--course .graphic-container .legend .text {
     float: right;
     width: 50%;
   }
-  .section--course .graphic-container div .text:first-child {
+  .section--course .graphic-container .legend .text:first-child {
     padding-top: 75px;
   }
-  .section--course .graphic-container div .footnote {
+  .section--course .graphic-container .legend .footnote {
     padding-left: 0;
   }
+}
+.section--course .twenty-one-animated {
+  float: left;
+  width: 50%;
+  height: 185px;
+}
+.section--course .twenty-one-animated .animated-wrap {
+  margin-top: 40px;
+  margin-left: 80px;
+}
+.section--course .twenty-one-animated .numbers-wrap {
+  width: 300px;
+  height: 25px;
+  overflow: hidden;
+  position: absolute;
+  top: 80px;
+  left: 0;
+}
+.section--course .twenty-one-animated .numbers {
+  background: transparent url("../img/21-numbers.png") 0 0 no-repeat;
+  width: 832px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: -445px;
+}
+.section--course .twenty-one-animated .copy {
+  background: transparent url("../img/21-text.png") 0 0 no-repeat;
+  width: 300px;
+  height: 185px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.section--course .twenty-one-animated .brackets {
+  background: transparent url("../img/21-brackets.png") 0 0 no-repeat;
+  width: 300px;
+  height: 185px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 @media only screen and (min-width: 40.063em) {
   .section--course .twenty-one {

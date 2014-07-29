@@ -69,7 +69,7 @@
 
             padding-bottom: 60px;
         }
-        div {
+        .legend {
             @include mq("desktop") {
                 width: 49%;
                 display: inline-block;
@@ -84,6 +84,50 @@
                     padding-left: 0;
                 }
             }
+        }
+    }
+    .twenty-one-animated {
+        float: left;
+        width: 50%;
+        height: 185px;
+
+        .animated-wrap {
+            margin-top: 40px;
+            margin-left: 80px;
+        }              
+
+        .numbers-wrap {
+            width: 300px;
+            height: 25px;
+            overflow: hidden;
+            position: absolute;
+            top: 80px;
+            left: 0;
+        }
+
+        .numbers {
+            background: transparent url("#{$img-path}/21-numbers.png") 0 0 no-repeat;
+            width: 832px;
+            height: 25px;
+            position: absolute;
+            top: 0;
+            left: -445px;
+        }
+        .copy {
+            background: transparent url("#{$img-path}/21-text.png") 0 0 no-repeat;
+            width: 300px;
+            height: 185px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .brackets {
+            background: transparent url("#{$img-path}/21-brackets.png") 0 0 no-repeat;
+            width: 300px;
+            height: 185px;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
     }
     .twenty-one {

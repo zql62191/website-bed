@@ -11,10 +11,23 @@ div(data-section='course').section.section--course
     
     .graphic-container
       
-      p.twenty-one
+      .twenty-one-animated.hide--mobile
+        .animated-wrap
+          .numbers-wrap
+            div(
+              data--50-bottom='transform: translate3d(597px,0px,0px)',
+              data--25p-bottom='transform: translate3d(0px,0px,0px)'
+            ).numbers
+          .brackets
+          div(
+              data--25p-bottom='opacity: 0;',
+              data--35p-bottom='opacity: 1;'
+            ).copy
+
+      p.twenty-one.hide--desktop
         img(src='img/course-21.png')
       
-      div
+      .legend
         p.text.yellow.
           Age-of-onset ranges#[br]
           for AN, BN, and BED*#[sup 2]
