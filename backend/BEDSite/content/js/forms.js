@@ -134,7 +134,6 @@
             Data = JSON.stringify(data);
 
             $scope.processForm(URL, Data);
-            showUnsubscribeThankYou();
         };
 
         $scope.unsubscribeDirect = function() {
@@ -154,7 +153,6 @@
             Data = JSON.stringify(data);
 
             $scope.processForm(URL, Data);
-            showUnsubscribeThankYou();
         };
 
         $scope.unsubscribeEmail = function() {
@@ -168,7 +166,6 @@
             Data = JSON.stringify(data);
 
             $scope.processForm(URL, Data);
-            showUnsubscribeThankYou();
         };
 
         $scope.processForm = function(path, sdata) {
@@ -180,6 +177,12 @@
                 method: 'POST',
                 url: path,
                 data: sdata,
+            }).
+            success(function() {
+                showUnsubscribeThankYou();
+            }).
+            error(function(data) {
+                $log.log(data);
             });
         };
 
@@ -255,8 +258,7 @@
             URL = "/BEDSite/Service/BEDService.svc/SetOptInData";
             Data = JSON.stringify(data);
 
-            //$scope.processOptIn(URL, Data);
-            showSignUpThankYou();
+            $scope.processOptIn(URL, Data);
 
         };
 
@@ -278,6 +280,12 @@
                 url: path,
                 data: sdata,
                 'dataType': 'json'
+            }).
+            success(function() {
+                showSignUpThankYou();
+            }).
+            error(function(data) {
+                $log.log(data);
             });
         };
     }
