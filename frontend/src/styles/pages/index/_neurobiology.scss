@@ -33,27 +33,13 @@
     }
     h1 {
         padding-bottom: 50px;
-        @include mq("mobile") {
-            font-size: 53px;
-        }
-
-        @include mq("desktop") {
-            font-size: 36px;
-        }
     }
     h3 {
         @include mq("desktop") {
-            font-size: 25px;
-            line-height: 28px;
             padding-bottom: 0;
         }
     }
-    p, ul {
-        @include mq("desktop") {
-            font-size: 20px;
-            line-height: 24px;
-        }
-    }
+
     .dash {
         li:before {
             color: #ffffff;
@@ -62,6 +48,7 @@
     .neuro-graphic {
         background-position: top left;
         background-repeat: no-repeat;
+
         @include mq("desktop") {
             min-height: 145px;
             padding: 34px 0 0 189px;
@@ -87,6 +74,7 @@
             position: relative;
             right: -20px;
             padding: 310px 20px 0 0;
+            
             h3, p {
                 margin-left: -20px;
             }

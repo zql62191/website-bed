@@ -28,8 +28,9 @@
     }
     h2 {
         color: #51748b;
+
         @include mq("desktop") {
-            font-size: 38px;
+            //font-size: 38px;
             padding-bottom: 15px;
         }
     }
@@ -60,9 +61,9 @@
             color: #51748b;
             font-family: font("helvetica neue", "bold");
             @include mq("desktop") {
-                font-size: 26px;
+                font-size: 23px;
                 margin-left: -25px;
-                margin-top: -5px;
+                //margin-top: -5px;
             }
 
             @include mq("mobile") {
@@ -106,7 +107,6 @@
         &.sub-head {
             width: 570px;
             @include mq("desktop") {
-                font-size: 24px;
                 width: auto;
             }
         }

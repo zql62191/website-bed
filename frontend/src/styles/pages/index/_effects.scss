@@ -73,16 +73,16 @@
 
         @include mq("desktop") {
             padding-left: 45px;
-            padding-bottom: 30px;
+            //padding-bottom: 30px;
             //float: left;
             h3 {
-                font-size: 24px;
-                line-height: 45px;
-                padding-bottom: 5px;
+                //font-size: 24px;
+                //line-height: 45px;
+                padding-bottom: 24px;
             }
             li {
-                font-size: 20px;
-                line-height: 26px;
+                //font-size: 20px;
+                //line-height: 26px;
                 padding-bottom: 0;
                 margin-bottom: 10px;
             }
@@ -200,8 +200,9 @@
         }
 
         @include mq("desktop") {
+            left: 85px;
             //height: 300px;
-            //margin-left: -15px;
+            margin-left: -15px;
         }
     }
     .nineteen {
@@ -218,6 +219,7 @@
         @include mq("desktop") {
             //height: 300px;
             //margin-left: 20px;
+            left: 20px;
         }
     }
     .percent {
@@ -233,6 +235,11 @@
         @include mq("desktop") {
             font-size: 18px;
             line-height: 21px;
+        }
+    }
+    .chart-footnote {
+        @include mq('desktop') {
+            width: 800px;
         }
     }
 }

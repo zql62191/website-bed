@@ -19,48 +19,48 @@
     }
     @include mq("desktop") {
         h2 {
-            font-size: 36px;
+            //font-size: 36px;
             padding-bottom: 10px;
         }
         .sub-head {
-            font-size: 21px;
-            line-height: 24px;
             padding-bottom: 20px;
         }
         h3 {
-            font-size: 21px;
-            &.conversation {
-                font-size: 25px;
-            }
+            font-size: 28px;
+            line-height: 30px;
+        }
+        h4 {
+            font-size: 24px;
+            line-height: 28px;
         }
         p {
-            font-size: 23px;
-            line-height: 26px;
+            //font-size: 23px;
+            //line-height: 26px;
         }
         li {
-            font-size: 20px;
-            line-height: 22px;
+            //font-size: 20px;
+            //line-height: 22px;
             padding-bottom: 5px;
         }
     }
 
     @include mq("mobile") {
         h2 {
-            font-size: 48px;
-            line-height: 50px;
+            //font-size: 48px;
+            //line-height: 50px;
             padding-bottom: 15px;
         }
         .sub-head {
-            font-size: 30px;
-            line-height: 33px;
+            //font-size: 30px;
+            //line-height: 33px;
         }
         h3 {
-            font-size: 26px;
-            line-height: 28px;
+            //font-size: 26px;
+            //line-height: 28px;
         }
         p, li {
-            font-size: 24px;
-            line-height: 29px;
+            //font-size: 24px;
+            //line-height: 29px;
         }
     }
 
@@ -83,9 +83,9 @@
             margin: 0 0 30px -20px;
         }
 
-        h4 {
+        h3 {
             color: #ffffff;
-            font-size: 24px;
+            //font-size: 24px;
             margin-bottom: 30px;
             @include mq("mobile") {
                 font-size: 27px;
@@ -184,7 +184,7 @@
     h3.org-header {
         @include mq("desktop") {
             padding: 40px 0 20px 0;
-            font-size: 25px;
+            //font-size: 25px;
         }
 
         @include mq("mobile") {
@@ -210,15 +210,7 @@
         }
         p {
             padding-bottom: 0;
-            @include mq("mobile") {
-                font-size: 24px;
-                line-height: 30px;
-            }
-
-            @include mq("desktop") {
-                font-size: 18px;
-                line-height: 21px;
-            }
+            
         }
         // Title
         p:nth-child(1) {
@@ -262,6 +254,7 @@
             line-height: 26px;
             width: 470px;
             padding: 10px 20px;
+            margin-bottom: 48px;
         }
 
         @include mq("mobile") {
@@ -279,8 +272,8 @@
         }
 
         p {
-            font-size: 17px;
-            line-height: 21px;
+            //font-size: 17px;
+            //line-height: 21px;
             color: #eeeeee;
             padding-right: 16px;
         }

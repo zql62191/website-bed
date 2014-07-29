@@ -113,13 +113,21 @@ html {
 ul.bullet {
     display: block;
     padding-left: 15px;
+
     @include mq("mobile") {
+        font-size: 32px;
+        line-height: 40px;
         padding-left: 20px;
+    }
+    @include mq('desktop') {
+        font-size: 20px;
+        line-height: 26px;
     }
 
     > li {
         position: relative;
         display: block;
+        padding-bottom: 10px;
     }
     > li:before {
         content: '\2022';
@@ -138,13 +146,22 @@ ul.bullet {
 ul.dash {
     display: block;
     padding-left: 15px;
+    padding-top: 0;
+
     @include mq("mobile") {
+        font-size: 32px;
+        line-height: 40px;
         padding-left: 20px;
+    }
+    @include mq('desktop') {
+        font-size: 20px;
+        line-height: 26px;
     }
 
     > li {
         position: relative;
         display: block;
+        padding-bottom: 10px;
     }
     > li:before {
         content: '\2013';
@@ -178,8 +195,15 @@ ol.letter {
     display: block;
     padding-left: 15px;
     counter-reset: lettered;
+    
     @include mq("mobile") {
+        font-size: 32px;
+        line-height: 40px;
         padding-left: 0;
+    }
+    @include mq('desktop') {
+        font-size: 20px;
+        line-height: 26px;
     }
 
     > li {
@@ -205,8 +229,15 @@ ol.number {
     display: block;
     padding-left: 15px;
     counter-reset: numbered;
+
     @include mq("mobile") {
+        font-size: 32px;
+        line-height: 40px;
         padding-left: 35px;
+    }
+    @include mq('desktop') {
+        font-size: 20px;
+        line-height: 26px;
     }
 
     > li {
@@ -265,32 +296,39 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     // TODO: add desktop font-size/line-height
     @include mq("mobile") {
-        // TODO: add mobile font-size/line-height
         font-size: 59px;
         line-height: 63px;
     }
+
 }
 
 h2 {
-    // TODO: add desktop font-size/line-height
     // padding-top: 30px;
     padding-bottom: 35px;
+
     @include mq("mobile") {
         font-size: 56px;
         line-height: 60px;
         padding-top: 15px;
         padding-bottom: 40px;
     }
+    @include mq('desktop') {
+        font-size: 36px;
+        line-height: 38px;
+    }
 }
 
 h3 {
-    // TODO: add desktop font-size/line-height
     padding-bottom: 10px;
+
     @include mq("mobile") {
-        // TODO: add mobile font-size/line-height
         font-size: 34px;
         line-height: 40px;
         padding-bottom: 5px;
+    }
+    @include mq('desktop') {
+        font-size: 26px;
+        line-height: 29px;
     }
 }
 
@@ -302,6 +340,10 @@ h3 {
         font-size: 40px;
         line-height: 44px;
         padding-bottom: 40px;
+    }
+    @include mq('desktop') {
+        font-size: 23px;
+        line-height: 26px;
     }
 }
 
@@ -323,6 +365,10 @@ p {
     @include mq("mobile") {
         padding-bottom: 20px;
     }
+    @include mq('desktop') {
+        font-size: 20px;
+        line-height: 26px;
+    }
 }
 
 li {
@@ -337,9 +383,9 @@ li {
 }
 
 .chart-head {
-    color: #fefefe;
+    color: #fcbb3f;
     font-family: font("gill sans", "roman");
-    // TODO: add desktop font-size/line-height
+
     @include mq("mobile") {
         font-size: 34px;
         line-height: 40px;
@@ -348,8 +394,17 @@ li {
     @include mq("desktop") {
         font-size: 26px;
         line-height: 29px;
+        padding-top: 36px;
     }
 }
+.chart-footnote {
+    @include mq('desktop') {
+        width: 750px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
 
 /* PDF Download link styles - for DSM5 section of index and DSM5 slideout in menu */
 a.pdf-link {
@@ -395,13 +450,13 @@ a.pdf-link {
 
 .footnote {
     @include mq("mobile") {
-        font-size: 25px;
+        font-size: 24px;
         line-height: 28px;
     }
 
     @include mq("desktop") {
         font-size: 18px;
-        line-height: 21px;
+        line-height: 20px;
     }
 }
 
