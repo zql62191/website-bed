@@ -28,6 +28,7 @@ block content
               name='unsubscribe',
               value='email',
               ng-model="form.optoutchoice",
+              ng-change='invalidform = false',
               id='emailRadio')
             label(
               for='emailRadio').
@@ -38,6 +39,7 @@ block content
               name='unsubscribe',
               value='direct',
               ng-model="form.optoutchoice",
+              ng-change='invalidform = false',
               id='directRadio')
             label(
               for='directRadio').
@@ -49,6 +51,7 @@ block content
               name='unsubscribe',
               value='both',
               ng-model="form.optoutchoice",
+              ng-change='invalidform = false',
               id='bothRadio')
             label(
               for='bothRadio').
@@ -69,6 +72,7 @@ block content
               placeholder='*Email',
               ng-model="form.email",
               ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/",
+              ng-class="{forminvalid: (bed_form.email.$invalid && bed_form.email.$dirty) || (bed_form.email.$invalid && invalidform)}",
               ng-required="true",
               class='email')
           .address(
@@ -79,6 +83,7 @@ block content
               placeholder='*First Name',
               ng-model="form.fname",
               ng-required="true",
+              ng-class="{forminvalid: (bed_form.firstName.$invalid && bed_form.firstName.$dirty) || (bed_form.firstName.$invalid && invalidform)}",
               class='first-name')
 
             input(
@@ -96,7 +101,8 @@ block content
               name='lastName',
               placeholder='*Last Name',
               ng-model="form.lname",
-              ng-required="true"
+              ng-required="true",
+              ng-class="{forminvalid: (bed_form.lastName.$invalid && bed_form.lastName.$dirty) || (bed_form.lastName.$invalid && invalidform)}",
               class='last-name')
 
             input(
@@ -105,6 +111,7 @@ block content
               placeholder='*Street Address',
               ng-model="form.street",
               ng-required="true",
+              ng-class="{forminvalid: (bed_form.streetAddress.$invalid && bed_form.streetAddress.$dirty) || (bed_form.streetAddress.$invalid && invalidform)}",
               class='street-address')
 
             input(
@@ -121,6 +128,7 @@ block content
               placeholder='*City',
               ng-model="form.city",
               ng-required="true",
+              ng-class="{forminvalid: (bed_form.city.$invalid && bed_form.city.$dirty) || (bed_form.city.$invalid && invalidform)}",
               class='.city')
 
             select(
@@ -128,8 +136,12 @@ block content
               class='state',
               ng-model="form.state",
               ng-options="state for state in states",
-              stateselect,
+              ng-class="{forminvalid: (bed_form.state.$invalid && bed_form.state.$dirty) || (bed_form.state.$pristine && invalidform)}",
               ng-required="true")
+                option(
+                  value='',
+                  ng-selected='true')
+                    *State
 
             input(
               type='text',
@@ -138,6 +150,7 @@ block content
               ng-model="form.zip",
               ng-pattern="/^[0-9]{5}$/",
               ng-required="true",
+              ng-class="{forminvalid: (bed_form.zip.$invalid && bed_form.zip.$dirty) || (bed_form.zip.$invalid && invalidform)}",
               class='zip')
 
           input(

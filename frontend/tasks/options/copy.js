@@ -63,5 +63,13 @@ module.exports = {
             src: ['**/*'],
             expand: true
         }]
+    },
+    integrate2: {
+        files: [{
+            cwd: 'dist/',
+            dest: '../backend/BEDUnsubscribe/content/',
+            src: ['**/*'],
+            expand: true
+        }]
     }
 };

@@ -29,5 +29,6 @@ module.exports = function(grunt) {
     grunt.registerTask('dev', ['build:dev']);
     grunt.registerTask('prod', ['build:prod']);
     grunt.registerTask('integrate', ['build:prod', 'copy:integrate', 'rebase:integrate', 'string-replace:integrate']);
+    grunt.registerTask('integrate2', ['build:prod', 'copy:integrate2', 'rebase:integrate2', 'string-replace:integrate2']);
 
 };

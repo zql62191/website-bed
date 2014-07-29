@@ -8,7 +8,6 @@
 (function() {
     var app;
     var statearray = [
-        '*State',
         'Alabama',
         'Alaska',
         'Arizona',
@@ -60,12 +59,6 @@
         'West Virginia',
         'Wisconsin',
         'Wyoming',
-        'American Samoa',
-        'Guam',
-        'Northern Mariana Islands',
-        'Puerto Rico',
-        'U.S. Minor Outlying Islands',
-        'U.S. Virgin Islands'
     ];
 
     app = angular.module('BED.controllers', []);
@@ -75,11 +68,10 @@
     function UnsubscribeController($scope, $window, $log, $location, $document, $timeout, $http) {
 
         $scope.states = statearray;
-
+        $scope.invalidform = false;
         $scope.form = {
             optoutchoice: "none"
         };
-
         $scope.form.state = $scope.states[0];
 
         $scope.unsubscribe = function() {
@@ -89,6 +81,7 @@
 
             if (!$scope.bed_form.$valid) {
                 /*print error*/
+                $scope.invalidform = true;
                 return;
             }
 
@@ -140,7 +133,8 @@
             URL = "/BEDSite/Service/BEDService.svc/SetUnsubscribeDataBoth";
             Data = JSON.stringify(data);
 
-            $scope.processForm(URL, Data);
+            //$scope.processForm(URL, Data);
+            showUnsubscribeThankYou();
         };
 
         $scope.unsubscribeDirect = function() {
@@ -159,7 +153,8 @@
             URL = "/BEDSite/Service/BEDService.svc/SetUnsubscribeDataDirect";
             Data = JSON.stringify(data);
 
-            $scope.processForm(URL, Data);
+            //$scope.processForm(URL, Data);
+            showUnsubscribeThankYou();
         };
 
         $scope.unsubscribeEmail = function() {
@@ -172,7 +167,8 @@
             URL = "/BEDSite/Service/BEDService.svc/SetUnsubscribeDataEmail";
             Data = JSON.stringify(data);
 
-            $scope.processForm(URL, Data);
+            //$scope.processForm(URL, Data);
+            showUnsubscribeThankYou();
         };
 
         $scope.processForm = function(path, sdata) {
@@ -202,12 +198,12 @@
         $scope.states = statearray;
         $scope.invalidform = false;
         $scope.professions = [
-            '*Profession',
             'Eating Disorder Clinician',
             'Internal Medicine',
             'Primary Care Physician',
             'Psychiatrist',
-            'Psychologist'
+            'Psychologist',
+            'Other'
         ];
 
         $scope.form = {
@@ -259,7 +255,7 @@
             URL = "/BEDSite/Service/BEDService.svc/SetOptInData";
             Data = JSON.stringify(data);
 
-            $scope.processOptIn(URL, Data);
+            //$scope.processOptIn(URL, Data);
             showSignUpThankYou();
 
         };
@@ -367,6 +363,8 @@ function convertSpecToCode(specialty) {
             return 'P';
         case 'Psychologist':
             return 'PSY';
+        case 'Other':
+            return 'OS';
         default:
             return null;
     }
@@ -425,11 +423,6 @@ function convertStateToAbbr(state) {
         'West Virginia': 'WV',
         'Wisconsin': 'WI',
         'Wyoming': 'WY',
-        'Guam': 'GU',
-        'Northern Mariana Islands': 'MP',
-        'Puerto Rico': 'PR',
-        'U.S. Minor Outlying Islands': 'UM',
-        'U.S. Virgin Islands': 'VI'
     };
 
     if (states[state]) {
@@ -440,5 +433,9 @@ function convertStateToAbbr(state) {
 }
 
 function showSignUpThankYou() {
-    $('.modal--thankyou').show();
+    $('.modal.modal--signup').show();
+}
+
+function showUnsubscribeThankYou() {
+    $('.modal.modal--unsubscribe').show();
 }
