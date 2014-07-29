@@ -18,7 +18,6 @@
         top: 50px;
         bottom: 0;
         background: #e1e3e4;
-        overflow-y: scroll;
         @include mq('mobile') {
             top: 93px;
         }

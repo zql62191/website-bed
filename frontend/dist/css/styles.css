@@ -821,7 +821,6 @@ a.pdf-link span sup {
   top: 50px;
   bottom: 0;
   background: #e1e3e4;
-  overflow-y: scroll;
 }
 @media only screen and (max-width: 40em) {
   .slideout .slideout__inner {
@@ -2380,25 +2379,26 @@ a.pdf-link span sup {
     line-height: 20px;
   }
 }
-.section--diagnosis .graphic-wrap {
-  margin: 20px 0;
-}
 @media only screen and (min-width: 40.063em) {
   .section--diagnosis .graphic-wrap {
-    min-height: 270px;
-    background: url("../img/diagnosis-graphic.png") center center no-repeat;
+    width: 700px;
+    margin: 0 auto;
   }
-}
-@media only screen and (max-width: 40em) {
-  .section--diagnosis .graphic-wrap {
-    min-height: 920px;
-    background: url("../img/diagnosis-graphic-mobile.png") center center no-repeat;
+  .section--diagnosis .graphic-wrap:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 .section--diagnosis .fifty-percent {
   padding-top: 100px;
   min-height: 375px;
   text-align: center;
+}
+@media only screen and (max-width: 40em) {
+  .section--diagnosis .fifty-percent {
+    margin-left: 115px;
+  }
 }
 .section--diagnosis .fifty-percent .large {
   font-size: 145px;
@@ -2411,6 +2411,9 @@ a.pdf-link span sup {
   margin-top: -15px;
   font-size: 29px;
   line-height: 34px;
+}
+.section--diagnosis .fifty-percent p {
+  width: 381px;
 }
 @media only screen and (min-width: 40.063em) {
   .section--diagnosis .fifty-percent {
@@ -2451,8 +2454,12 @@ a.pdf-link span sup {
   transform-origin: center center;
 }
 .section--diagnosis .weight-graphic {
-  margin-left: 115px;
   padding-left: 105px;
+}
+@media only screen and (max-width: 40em) {
+  .section--diagnosis .weight-graphic {
+    margin-left: 115px;
+  }
 }
 .section--diagnosis .weight-graphic .large {
   font-size: 120px;
