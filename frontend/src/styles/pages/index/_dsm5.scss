@@ -93,7 +93,7 @@
             }
         }
         @include mq("mobile") {
-            padding-left: 0;
+            padding-left: 34px;
         }
 
         @include mq("desktop") {

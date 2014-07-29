@@ -22,8 +22,8 @@
         padding-bottom: 10px;
         color: #ffffff;
         @include mq("mobile") {
-            font-size: 36px;
-            line-height: 42px;
+            font-size: 40px;
+            line-height: 44px;
         }
 
         @include mq("desktop") {

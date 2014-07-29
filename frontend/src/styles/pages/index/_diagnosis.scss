@@ -36,7 +36,6 @@
 
         @include mq("desktop") {
             width: 897px;
-            //font-size: 22px;
         }
     }
     p {
@@ -65,7 +64,6 @@
 
         &.center {
             text-align: center;
-            //padding-top: 25px;
         }
     }
     a {
@@ -76,6 +74,9 @@
             font-size: 20px;
             line-height: 20px;
         }
+    }
+    .chart-head {
+        padding-bottom: 36px;
     }
     .graphic-wrap {
         // margin: 20px 0;
@@ -96,7 +97,6 @@
     .fifty-percent {
         padding-top: 100px;
         min-height: 375px;
-        // background: url("#{$img-path}/diagnosis-fifty-bg.png") center center no-repeat;
         text-align: center;
         @include mq("mobile") {
             margin-left: 115px;

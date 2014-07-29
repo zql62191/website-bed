@@ -329,8 +329,8 @@ h3 {
     padding-bottom: 10px;
 
     @include mq("mobile") {
-        font-size: 34px;
-        line-height: 40px;
+        font-size: 40px;
+        line-height: 44px;
         padding-bottom: 5px;
     }
     @include mq('desktop') {
@@ -339,13 +339,29 @@ h3 {
     }
 }
 
+h4 {
+    @include mq("mobile") {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    @include mq('desktop') {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+.eyebrow {
+    @include mq("mobile") {
+        font-size: 36px;
+        line-height: 40px;
+    }
+}
 .sub-head {
     font-family: font("helvetica neue", "roman");
-    // TODO: add desktop font-size/line-height
+
     padding-bottom: 35px;
     @include mq("mobile") {
-        font-size: 40px;
-        line-height: 44px;
+        font-size: 36px;
+        line-height: 40px;
         padding-bottom: 40px;
     }
     @include mq('desktop') {
@@ -394,15 +410,15 @@ li {
     font-family: font("gill sans", "roman");
 
     @include mq("mobile") {
-        font-size: 34px;
-        line-height: 40px;
-        padding-top: 36px;
+        font-size: 40px;
+        line-height: 44px;
+        padding-top: 48px;
     }
 
     @include mq("desktop") {
         font-size: 26px;
         line-height: 29px;
-        padding-top: 36px;
+        padding-top: 48px;
     }
 }
 .chart-footnote {
@@ -454,6 +470,7 @@ a.pdf-link {
 
 .center {
     text-align: center;
+    margin: 0 auto;
 }
 
 .footnote {

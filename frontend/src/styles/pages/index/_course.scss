@@ -83,6 +83,9 @@
                     padding-left: 40px;
                     color: #333E48;
                 }
+                .chart-head {
+                    padding-bottom: 36px;
+                }
             }
         }
     }
@@ -165,8 +168,8 @@
         @include mq("mobile") {
             //font-size: 41px;
             //line-height: 45px;
-            font-size: 25px;
-            line-height: 34px;
+            //font-size: 25px;
+            ///line-height: 34px;
             padding-bottom: 40px;
         }
 
@@ -228,10 +231,11 @@
         background: url("#{$img-path}/spiral.png") top left no-repeat;
         background-size: 100%;
         text-align: center;
+
         @include mq("mobile") {
-            height: 350px;
+            height: 339px;
             width: 350px;
-            margin: 0 auto;
+            margin: 16px auto 0 auto;
         }
 
         @include mq("desktop") {
@@ -244,8 +248,8 @@
         }
 
         p {
-            font-size: 22px;
-            line-height: 26px;
+            font-size: 28px;
+            line-height: 32px;
             left: -15px;
             padding: 0;
 
@@ -279,8 +283,8 @@
         }
 
         p {
-            font-size: 22px;
-            line-height: 26px;
+            font-size: 28px;
+            line-height: 32px;
             left: -15px;
             padding: 0;
 
@@ -297,6 +301,7 @@
     .chart-head {
         @include mq('mobile') {
             width: 544px;
+            margin: 0 auto;
         }
     }
     .percent {

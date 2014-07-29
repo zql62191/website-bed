@@ -433,8 +433,8 @@ h3 {
 }
 @media only screen and (max-width: 40em) {
   h3 {
-    font-size: 34px;
-    line-height: 40px;
+    font-size: 40px;
+    line-height: 44px;
     padding-bottom: 5px;
   }
 }
@@ -445,14 +445,34 @@ h3 {
   }
 }
 
+@media only screen and (max-width: 40em) {
+  h4 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  h4 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .eyebrow {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
 .sub-head {
   font-family: "HelveticaNeueW01-55Roma", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   padding-bottom: 35px;
 }
 @media only screen and (max-width: 40em) {
   .sub-head {
-    font-size: 40px;
-    line-height: 44px;
+    font-size: 36px;
+    line-height: 40px;
     padding-bottom: 40px;
   }
 }
@@ -513,16 +533,16 @@ li:last-child {
 }
 @media only screen and (max-width: 40em) {
   .chart-head {
-    font-size: 34px;
-    line-height: 40px;
-    padding-top: 36px;
+    font-size: 40px;
+    line-height: 44px;
+    padding-top: 48px;
   }
 }
 @media only screen and (min-width: 40.063em) {
   .chart-head {
     font-size: 26px;
     line-height: 29px;
-    padding-top: 36px;
+    padding-top: 48px;
   }
 }
 
@@ -569,6 +589,7 @@ a.pdf-link span sup {
 
 .center {
   text-align: center;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 40em) {
@@ -1427,6 +1448,11 @@ a.pdf-link span sup {
     padding-bottom: 15px;
   }
 }
+@media only screen and (max-width: 40em) {
+  .section--home h1 {
+    padding-top: 24px;
+  }
+}
 .section--home h3 {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
@@ -1440,6 +1466,11 @@ a.pdf-link span sup {
     font-size: 23px;
     line-height: 26px;
     padding-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--home p.sub-head {
+    padding-bottom: 20px;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -1501,8 +1532,6 @@ a.pdf-link span sup {
 }
 .section--prevalence .asterisk {
   padding-left: 5px;
-  font-size: 26px;
-  line-height: 28px;
   width: 538px;
   margin-left: 25px;
   padding-bottom: 50px;
@@ -1823,6 +1852,9 @@ a.pdf-link span sup {
     padding-left: 40px;
     color: #333E48;
   }
+  .section--course .graphic-container .legend .chart-head {
+    padding-bottom: 36px;
+  }
 }
 .section--course .twenty-one-animated {
   float: left;
@@ -1902,8 +1934,6 @@ a.pdf-link span sup {
 }
 @media only screen and (max-width: 40em) {
   .section--course .mean-duration {
-    font-size: 25px;
-    line-height: 34px;
     padding-bottom: 40px;
   }
 }
@@ -1967,9 +1997,9 @@ a.pdf-link span sup {
 }
 @media only screen and (max-width: 40em) {
   .section--course .eighty {
-    height: 350px;
+    height: 339px;
     width: 350px;
-    margin: 0 auto;
+    margin: 16px auto 0 auto;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -1984,8 +2014,8 @@ a.pdf-link span sup {
   }
 }
 .section--course .eighty p {
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 28px;
+  line-height: 32px;
   left: -15px;
   padding: 0;
 }
@@ -2024,8 +2054,8 @@ a.pdf-link span sup {
   }
 }
 .section--course .forty-nine p {
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 28px;
+  line-height: 32px;
   left: -15px;
   padding: 0;
 }
@@ -2042,6 +2072,7 @@ a.pdf-link span sup {
 @media only screen and (max-width: 40em) {
   .section--course .chart-head {
     width: 544px;
+    margin: 0 auto;
   }
 }
 .section--course .percent {
@@ -2214,6 +2245,7 @@ a.pdf-link span sup {
   }
   .section--effects .graphic .large {
     padding-top: 20px;
+    padding-bottom: 0;
     font-size: 160px;
     line-height: 160px;
     font-family: "Gill Sans W01 Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -2225,7 +2257,13 @@ a.pdf-link span sup {
 }
 @media only screen and (max-width: 40em) {
   .section--effects .sixty-three {
-    height: 450px;
+    height: 335px;
+    margin-top: 16px;
+  }
+  .section--effects .sixty-three p {
+    font-size: 28px;
+    line-height: 32px;
+    padding-right: 0;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -2240,6 +2278,13 @@ a.pdf-link span sup {
 .section--effects .nineteen .large {
   letter-spacing: -10px;
 }
+@media only screen and (max-width: 40em) {
+  .section--effects .nineteen p {
+    padding-right: 0;
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
 @media only screen and (min-width: 40.063em) {
   .section--effects .nineteen {
     left: 20px;
@@ -2248,18 +2293,6 @@ a.pdf-link span sup {
 .section--effects .percent {
   font-size: 0.5em;
   top: -0.65em;
-}
-@media only screen and (max-width: 40em) {
-  .section--effects .footnote {
-    font-size: 25px;
-    line-height: 34px;
-  }
-}
-@media only screen and (min-width: 40.063em) {
-  .section--effects .footnote {
-    font-size: 18px;
-    line-height: 21px;
-  }
 }
 @media only screen and (min-width: 40.063em) {
   .section--effects .chart-footnote {
@@ -2287,8 +2320,8 @@ a.pdf-link span sup {
 }
 @media only screen and (max-width: 40em) {
   .section--neurobiology h2.pretitle {
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 40px;
+    line-height: 44px;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -2506,6 +2539,9 @@ a.pdf-link span sup {
     font-size: 20px;
     line-height: 20px;
   }
+}
+.section--diagnosis .chart-head {
+  padding-bottom: 36px;
 }
 @media only screen and (min-width: 40.063em) {
   .section--diagnosis .graphic-wrap {
@@ -2727,7 +2763,7 @@ a.pdf-link span sup {
 }
 @media only screen and (max-width: 40em) {
   .section--dsm5 ol.number {
-    padding-left: 0;
+    padding-left: 34px;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -3009,17 +3045,13 @@ a.pdf-link span sup {
     width: 640px;
     margin: 0 0 30px -20px;
   }
+  .section--resources .videos h3 {
+    padding-bottom: 24px;
+  }
 }
 .section--resources .videos h4 {
   color: #ffffff;
-  font-size: 24px;
   margin-bottom: 30px;
-}
-@media only screen and (max-width: 40em) {
-  .section--resources .videos h4 {
-    font-size: 27px;
-    width: 640px;
-  }
 }
 .section--resources .videos video {
   display: none;
@@ -3214,10 +3246,10 @@ a.pdf-link span sup {
 }
 @media only screen and (max-width: 40em) {
   .section--resources .signup {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 32px;
+    line-height: 40px;
     padding: 12px 20px;
-    width: 460px;
+    width: 490px;
   }
 }
 .section--resources .references {

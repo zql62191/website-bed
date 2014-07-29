@@ -33,34 +33,14 @@
             font-size: 24px;
             line-height: 28px;
         }
-        p {
-            //font-size: 23px;
-            //line-height: 26px;
-        }
         li {
-            //font-size: 20px;
-            //line-height: 22px;
             padding-bottom: 5px;
         }
     }
 
     @include mq("mobile") {
         h2 {
-            //font-size: 48px;
-            //line-height: 50px;
             padding-bottom: 15px;
-        }
-        .sub-head {
-            //font-size: 30px;
-            //line-height: 33px;
-        }
-        h3 {
-            //font-size: 26px;
-            //line-height: 28px;
-        }
-        p, li {
-            //font-size: 24px;
-            //line-height: 29px;
         }
     }
 
@@ -78,19 +58,25 @@
         width: 1024px;
         margin: 0 30px 0 -32px;
         padding: 20px 40px 25px;
+
         @include mq("mobile") {
             width: 640px;
             margin: 0 0 30px -20px;
+
+            h3 {
+                padding-bottom: 24px;
+            }
         }
 
         h4 {
             color: #ffffff;
-            font-size: 24px;
+
+            //font-size: 24px;
             margin-bottom: 30px;
+
             @include mq("mobile") {
-                font-size: 27px;
-                width: 640px;
-                //letter-spacing: -1px;
+                //font-size: 27px;
+                //width: 640px;
             }
         }
         video {
@@ -292,10 +278,10 @@
         }
 
         @include mq("mobile") {
-            font-size: 28px;
-            line-height: 32px;
+            font-size: 32px;
+            line-height: 40px;
             padding: 12px 20px;
-            width: 460px;
+            width: 490px;
         }
     }
     .references {
