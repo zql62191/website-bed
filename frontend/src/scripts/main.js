@@ -56,8 +56,12 @@ var BED = {
                 'data--10p-bottom': 'opacity: 1; transform: translate3d(0px,0,0px)'
             },
             'neurobiology-risk': {
-                'data-bottom-top': 'opacity: 0;',
-                'data--10p-bottom': 'opacity: 1;'
+                'data-bottom-top': 'opacity: 0; transform: translate3d(-100px,0px,0px)',
+                'data--10p-bottom': 'opacity: 1; transform: translate3d(0px,0,0px)'
+            },
+            'neurobiology-risk-2': {
+                'data-bottom-top': 'opacity: 0; transform: translate3d(100px,0px,0px)',
+                'data--10p-bottom': 'opacity: 1; transform: translate3d(0px,0,0px)'
             }
         }
     },

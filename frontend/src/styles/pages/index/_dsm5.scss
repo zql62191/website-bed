@@ -189,6 +189,11 @@
             padding-right: 0;
         }
 
+        .close {
+            @include mq('desktop') {
+                right: 10px;
+            }
+        }
         h3 {
             color: #febd3f;
             @include mq("mobile") {
@@ -267,6 +272,34 @@
 
         &.hidden {
             display: none;
+        }
+    }
+
+    .signup {
+        margin: 0 auto;
+        line-height: 25px;
+        clear: both;
+        font-family: font("gill sans", "regular");
+        cursor: pointer;
+        -webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.4);
+        -moz-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.4);
+        box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.4);
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+
+        @include mq("desktop") {
+            font-size: 24px;
+            line-height: 26px;
+            width: 470px;
+            padding: 10px 20px;
+        }
+
+        @include mq("mobile") {
+            font-size: 28px;
+            line-height: 32px;
+            padding: 12px 20px;
+            width: 460px;
         }
     }
 }

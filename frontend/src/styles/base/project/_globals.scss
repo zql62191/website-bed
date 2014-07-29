@@ -337,6 +337,10 @@ li {
         font-size: 34px;
         line-height: 40px;
     }
+    @include mq('desktop') {
+        font-size: 26px;
+        line-height: 29px;
+    }
 }
 
 /* PDF Download link styles - for DSM5 section of index and DSM5 slideout in menu */
@@ -391,6 +395,9 @@ a.pdf-link {
         font-size: 18px;
         line-height: 21px;
     }
+}
+.no-padding {
+    padding: 0;
 }
 
 /* Close button for slideouts */

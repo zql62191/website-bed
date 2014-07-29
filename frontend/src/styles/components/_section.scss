@@ -7,7 +7,7 @@
     overflow: hidden;
     .content-wrap {
         padding-top: 30px;
-        padding-bottom: 80px;
+        padding-bottom: 45px;
         @include clearfix;
         @include mq("mobile") {
             padding-top: 15px;

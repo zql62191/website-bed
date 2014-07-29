@@ -144,8 +144,41 @@
         }
 
         @include mq("desktop") {
+            margin-bottom: 0;
+            min-height: 100px;
             padding-top: 10px;
             background-image: url("#{$img-path}/neurobiology-4.png");
+            ul.dash {
+                //margin-bottom: 25px;
+            }
+        }
+
+        .asterisk {
+            @include mq("mobile") {
+                font-size: 25px;
+                line-height: 30px;
+            }
+
+            @include mq("desktop") {
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+    }
+    .risk-2 {
+        @include mq("mobile") {
+            width: 640px;
+            left: -20px;
+            padding: 510px 0  0 20px;
+        }
+
+        @include mq("desktop") {
+            background-image: url("#{$img-path}/neurobiology-5.png");
+            padding-top: 0;
+            margin-top: 34px;
+            ul.bullet {
+                margin-top: -34px;
+            }
             ul.dash {
                 margin-bottom: 25px;
             }

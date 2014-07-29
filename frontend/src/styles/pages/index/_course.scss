@@ -163,6 +163,12 @@
             line-height: 180px;
             font-family: font("gill sans", "bold");
             left: -15px;
+
+            @include mq('desktop') {
+                font-size: 130px;
+                line-height: 120px;
+                padding-top: 60px;
+            }
         }
         @include mq("mobile") {
             p {
@@ -185,15 +191,12 @@
         }
 
         @include mq("desktop") {
-            //height: 189px;
-            //margin-top: -19px;
-            //margin-left: -30px;
             background-size: 80%;
             width: 450px;
             height: 350px;
             display: inline-block;
             margin-bottom: 0;
-            top: 25px;
+            //top: 25px;
             left: 85px;
         }
 
@@ -212,15 +215,12 @@
         }
 
         @include mq("desktop") {
-            //height: 189px;
-            // margin-top: -19px;
-            ///margin-left: -30px;
             background-size: 80%;
             margin: 0 15px;
             width: 450px;
             height: 350px;
             display: inline-block;
-            top: 25px;
+            //top: 25px;
             left: 20px;
         }
 
