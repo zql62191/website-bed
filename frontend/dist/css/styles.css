@@ -128,10 +128,6 @@ nobr {
   }
 }
 
-._is_open {
-  display: block !important;
-}
-
 hr {
   margin: 0 auto;
   height: 1px;
@@ -304,6 +300,13 @@ ol.number > li:before {
   ol.number > li:before {
     margin-left: -35px;
   }
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 .scroll-point {
@@ -527,10 +530,6 @@ a.pdf-link span sup {
   }
 }
 
-html::-webkit-scrollbar {
-  width: 0 !important;
-}
-
 .section {
   overflow: hidden;
 }
@@ -558,6 +557,9 @@ html::-webkit-scrollbar {
   color: #febd3f;
   border-radius: 3px;
   display: block;
+  text-decoration: none;
+}
+.button:hover {
   text-decoration: none;
 }
 
@@ -590,7 +592,7 @@ html::-webkit-scrollbar {
     padding-top: 5px;
   }
 }
-.bar.bar--title:before {
+.bar.bar--next:before {
   content: '';
   width: 0;
   height: 0;
@@ -603,15 +605,81 @@ html::-webkit-scrollbar {
   margin-left: -20px;
 }
 @media only screen and (max-width: 40em) {
-  .bar.bar--title:before {
+  .bar.bar--next:before {
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-top: 20px solid transparent;
     top: -1px;
   }
 }
-.bar.bar--title.highlight {
-  background: #fec451 !important;
+
+.next-section {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  z-index: 999;
+}
+@media only screen and (max-width: 40em) {
+  .next-section {
+    height: 93px;
+  }
+}
+.next-section .content-wrap {
+  width: 1024px;
+}
+@media only screen and (max-width: 40em) {
+  .next-section .content-wrap {
+    width: 640px;
+  }
+}
+.next-section .bar--next {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  color: #ffffff;
+  width: 1024px;
+  height: 50px;
+  padding-top: 5px;
+}
+@media only screen and (max-width: 40em) {
+  .next-section .bar--next {
+    width: 640px;
+    height: 93px;
+  }
+}
+.next-section .bar--next:hover {
+  background: #fec451;
+}
+.next-section .bar--next:before {
+  border-top-color: #ffffff;
+}
+.next-section .bar--next.bar--prevalence {
+  background: #51748b;
+}
+.next-section .bar--next.bar--dsm5 {
+  background: #ededed;
+  color: #000000;
+}
+.next-section .bar--next.bar--dsm5:before {
+  border-top-color: #000000;
+}
+.next-section .bar--next.bar--course {
+  background: #333e48;
+}
+.next-section .bar--next.bar--effects {
+  background: #51748b;
+}
+.next-section .bar--next.bar--neurobiology {
+  background: #333e48;
+}
+.next-section .bar--next.bar--diagnosis {
+  background: #51748b;
+}
+.next-section .bar--next.bar--resources {
+  background: #8c8f91;
 }
 
 .modal {
@@ -1005,6 +1073,9 @@ html::-webkit-scrollbar {
     line-height: 93px;
   }
 }
+.page-header .page-header__btn:hover {
+  text-decoration: none;
+}
 .page-header .page-header__btn em {
   font-family: "GillSansW01-LightItalic", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
@@ -1082,11 +1153,6 @@ html::-webkit-scrollbar {
   .page-nav .slideout__inner .primary-nav .primary-nav__item._2_liner a {
     padding: 30px 120px 30px 40px;
   }
-  .page-nav .slideout__inner .primary-nav .primary-nav__item.active, .page-nav .slideout__inner .primary-nav .primary-nav__item.highlight {
-    background: #fec451;
-    -webkit-box-shadow: 1px 2px 2px rgba(33, 30, 31, 0.25);
-    box-shadow: 1px 2px 2px rgba(33, 30, 31, 0.25);
-  }
 }
 .page-nav .slideout__inner .primary-nav .primary-nav__item a {
   display: block;
@@ -1101,7 +1167,8 @@ html::-webkit-scrollbar {
     padding: 0 120px 0 40px;
   }
 }
-.page-nav .slideout__inner .primary-nav .primary-nav__item a.active, .page-nav .slideout__inner .primary-nav .primary-nav__item a.highlight {
+.page-nav .slideout__inner .primary-nav .primary-nav__item a:hover, .page-nav .slideout__inner .primary-nav .primary-nav__item a.active, .page-nav .slideout__inner .primary-nav .primary-nav__item a.highlight {
+  text-decoration: none !important;
   background: #fec451;
   -webkit-box-shadow: 1px 2px 2px rgba(33, 30, 31, 0.25);
   box-shadow: 1px 2px 2px rgba(33, 30, 31, 0.25);

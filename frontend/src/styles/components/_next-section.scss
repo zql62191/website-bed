@@ -1,0 +1,64 @@
+.next-section {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    z-index: z("next-section");
+    @include mq("mobile") {
+        height: 93px;
+    }
+
+    .content-wrap {
+        width: 1024px;
+        @include mq("mobile") {
+            width: 640px;
+        }
+    }
+    .bar--next {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: none;
+        color: #ffffff;
+        width: 1024px;
+        height: 50px;
+        padding-top: 5px;
+        @include mq("mobile") {
+            width: 640px;
+            height: 93px;
+        }
+
+        &:hover {
+            background: #fec451;
+        }
+        &:before {
+            border-top-color: #ffffff;
+        }
+        &.bar--prevalence {
+            background: #51748b;
+        }
+        &.bar--dsm5 {
+            background: #ededed;
+            color: #000000;
+            &:before {
+                border-top-color: #000000;
+            }
+        }
+        &.bar--course {
+            background: #333e48;
+        }
+        &.bar--effects {
+            background: #51748b;
+        }
+        &.bar--neurobiology {
+            background: #333e48;
+        }
+        &.bar--diagnosis {
+            background: #51748b;
+        }
+        &.bar--resources {
+            background: #8c8f91;
+        }
+    }
+}

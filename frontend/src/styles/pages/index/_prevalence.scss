@@ -78,13 +78,13 @@
         color: #333e48;
         font-size: 27px;
         line-height: 31px;
-
         @include mq("mobile") {
             background-image: url("#{$img-path}/prevalence-text-bg-mobile.png");
             width: 571px;
             height: 167px;
             margin-bottom: 20px;
         }
+
         @include mq("desktop") {
             background-image: url("#{$img-path}/prevalence-text-bg.png");
             width: 740px;
@@ -95,18 +95,17 @@
             line-height: 22px;
         }
     }
-
     .male-graphic {
         background: url("#{$img-path}/prevalence-male-graphic.png") center center no-repeat;
         width: 254px;
         height: 248px;
         position: absolute;
-
-        @include mq('mobile') {
+        @include mq("mobile") {
             top: 0;
             left: 185px;
         }
-        @include mq('desktop') {
+
+        @include mq("desktop") {
             top: 0;
             left: 185px;
         }
@@ -116,12 +115,12 @@
         width: 210px;
         height: 306px;
         position: absolute;
-
-        @include mq('mobile') {
+        @include mq("mobile") {
             top: 42px;
             left: 55px;
         }
-        @include mq('desktop') {
+
+        @include mq("desktop") {
             top: 42px;
             left: 55px;
         }
@@ -132,13 +131,11 @@
         width: 500px;
         margin: 0 auto 45px auto;
         padding-top: 65px;
-
         p {
             font-size: 38px;
             font-family: font("gill sans", "regular");
         }
     }
-
     // Graphic (and cooresponding text) only visible on desktop
     .desktop-graphic {
         @include mq("mobile") {
@@ -213,7 +210,7 @@
             }
 
             .graphic {
-                @include mq('desktop') {
+                @include mq("desktop") {
                     width: 195px;
                     height: 185px;
                     display: inline-block;

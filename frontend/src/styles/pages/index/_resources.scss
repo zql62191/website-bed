@@ -93,7 +93,6 @@
                 //letter-spacing: -1px;
             }
         }
-
         .video-placeholder {
             display: block;
             width: 600px;
@@ -102,7 +101,6 @@
             margin: 25px auto;
             border: 2px solid #616364;
         }
-
         ul {
             cursor: pointer;
         }
@@ -113,16 +111,13 @@
             height: 160px;
             margin-right: 4px;
             //border-bottom: #747779 solid 12px;
-            
-
-            @include mq('desktop') {
+            @include mq("desktop") {
                 width: 600px;
                 height: 60px;
                 font-size: 18px;
                 padding: 0 20px;
                 display: block;
                 margin: 0 auto 10px auto;
-
             }
 
             @include mq("mobile") {
@@ -145,31 +140,27 @@
                 text-align: center;
                 height: inherit;
                 padding-bottom: 0;
-                
                 font-family: font("gill sans", "regular");
-                
                 @include mq("mobile") {
                     font-size: 24px;
                     line-height: 26px;
                     width: 560px;
                 }
-                @include mq('desktop') {
+
+                @include mq("desktop") {
                     font-size: 18px;
                     line-height: 20px;
                     padding-top: 0;
                     width: 560px;
                 }
             }
-
             &:hover {
                 background-color: #747779;
             }
         }
     }
-
     .video-player {
         position: relative;
-
         .arrow {
             height: 40px;
             width: 30px;
@@ -177,22 +168,18 @@
             top: 50%;
             margin-top: -20px;
             cursor: pointer;
-        
             &:hover {
                 opacity: 0.8;
             }
         }
-
         .arrow-left {
             left: 105px;
-            background: url('#{$img-path}/arrow-left.png') center center no-repeat;
+            background: url("#{$img-path}/arrow-left.png") center center no-repeat;
         }
-
         .arrow-right {
             right: 105px;
-            background: url('#{$img-path}/arrow-right.png') center center no-repeat;
+            background: url("#{$img-path}/arrow-right.png") center center no-repeat;
         }
-
     }
     h3.org-header {
         @include mq("desktop") {
@@ -270,7 +257,6 @@
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         border-radius: 10px;
-
         @include mq("desktop") {
             font-size: 24px;
             line-height: 26px;

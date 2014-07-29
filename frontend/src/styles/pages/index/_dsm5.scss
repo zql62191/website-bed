@@ -190,7 +190,7 @@
         }
 
         .close {
-            @include mq('desktop') {
+            @include mq("desktop") {
                 right: 10px;
             }
         }
@@ -227,7 +227,6 @@
             color: #ffffff;
             margin-left: 12px;
             padding-left: 30px;
-            
             &:before {
                 content: '\2022';
                 color: #febd3f;
@@ -244,7 +243,8 @@
                     width: 475px;
                 }
             }
-            @include mq('desktop') {
+
+            @include mq("desktop") {
                 width: 265px;
             }
         }
@@ -274,7 +274,6 @@
             display: none;
         }
     }
-
     .signup {
         margin: 0 auto;
         line-height: 25px;
@@ -287,7 +286,6 @@
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         border-radius: 10px;
-
         @include mq("desktop") {
             font-size: 24px;
             line-height: 26px;

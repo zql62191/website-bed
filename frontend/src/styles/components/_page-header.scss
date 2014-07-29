@@ -12,7 +12,7 @@
 
     .content-wrap {
         //@include rgba-background(rgba(0, 0, 0, 0.5));
-        @include rgba-background(rgba(125, 125, 125, 0.90));
+        @include rgba-background(rgba(125, 125, 125, 0.9));
         width: 1024px;
         @include mq("mobile") {
             width: 640px;
@@ -54,6 +54,9 @@
             line-height: 93px;
         }
 
+        &:hover {
+            text-decoration: none;
+        }
         em {
             font-family: font("gill sans", "light italic");
         }

@@ -69,9 +69,9 @@ nobr {
     }
 }
 
-._is_open {
-    display: block !important;
-}
+// ._is_open {
+//     display: block !important;
+// }
 
 hr {
     margin: 0 auto;
@@ -226,6 +226,13 @@ ol.number {
     }
 }
 
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 .scroll-point {
     display: block;
     margin-top: 5px;
@@ -337,7 +344,8 @@ li {
         font-size: 34px;
         line-height: 40px;
     }
-    @include mq('desktop') {
+
+    @include mq("desktop") {
         font-size: 26px;
         line-height: 29px;
     }
@@ -396,6 +404,7 @@ a.pdf-link {
         line-height: 21px;
     }
 }
+
 .no-padding {
     padding: 0;
 }
@@ -415,9 +424,9 @@ a.pdf-link {
 }
 
 // DEV
-html::-webkit-scrollbar {
-    width: 0 !important;
-}
+// html::-webkit-scrollbar {
+//     width: 0 !important;
+// }
 
 // .fpo {
 //     height: 500px;

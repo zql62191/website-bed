@@ -24,7 +24,8 @@
         @include mq("desktop") {
             padding-top: 5px;
         }
-
+    }
+    &.bar--next {
         // triangle
         &:before {
             content: '';
@@ -44,8 +45,9 @@
                 top: -1px;
             }
         }
-        &.highlight {
-            background: #fec451 !important;
-        }
+        // &.highlight {
+        //     background: #fec451 !important;
+        // }
+   
     }
 }

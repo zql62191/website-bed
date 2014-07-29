@@ -163,8 +163,7 @@
             line-height: 180px;
             font-family: font("gill sans", "bold");
             left: -15px;
-
-            @include mq('desktop') {
+            @include mq("desktop") {
                 font-size: 130px;
                 line-height: 120px;
                 padding-top: 60px;

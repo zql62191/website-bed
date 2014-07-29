@@ -22,7 +22,7 @@ html(
       content='0')
     meta(
       name='viewport',
-      content='target-densitydpi=device-dpi, width=device-width, user-scalable=0')
+      content='target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimum-ui')
     meta(
       name='format-detection',
       content='telephone=no')
@@ -69,7 +69,6 @@ html(
       .page-content
         block content
       include /partials/components/page-footer.jade
-
       include /partials/components/modal.jade
 
     if dev

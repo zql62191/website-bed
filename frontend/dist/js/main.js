@@ -66,7 +66,17 @@ var BED = {
         }
     },
 
+    lastScrollPos: -1,
+
+    // currentPage: 'home',
+
+    scrollSections: [],
+
     init: function() {
+
+        BED.scrollSections = _.map($('.section'), function(el) {
+            return $(el).data('section');
+        });
 
         // setTimeout(function() {
         //     if (window.location.hash) {
@@ -75,7 +85,7 @@ var BED = {
         //     }
         // }, 1);
 
-        if (window.matchMedia(BED.mq.desktop).matches || !bowser.mobile && !bowser.tablet) {
+        if (!bowser.mobile && !bowser.tablet) {
 
             // alert('skrollr initializing');
 
@@ -93,7 +103,7 @@ var BED = {
 
             BED.skrollr.inst = skrollr.init({
                 smoothScrolling: true,
-                forceHeight: true,
+                // forceHeight: true,
                 beforerender: function(data) {
                     // console.log('beforerender: ', data);
                     // return data.direction !== 'up';
@@ -104,7 +114,52 @@ var BED = {
             });
         }
 
-        $(window).on('resize', function(e) {
+        $(window)
+
+        .on('scroll', function(e) {
+
+            var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+            var x = width / 2;
+            var y = height * (2 / 3);
+
+            var jqIsOpen = $('._is_open');
+
+            var origDisplayAttribute = jqIsOpen.css('display');
+            jqIsOpen.css('display', 'none');
+
+            var underneathElem = document.elementFromPoint(x, y);
+
+            if (origDisplayAttribute) {
+                jqIsOpen.css('display', origDisplayAttribute);
+            } else {
+                jqIsOpen.css('display', 'block');
+            }
+
+            var jqCurrent = $(underneathElem).closest('.section');
+
+            var jqNext = jqCurrent.next('.section');
+
+            if (jqCurrent) {
+
+                BED.currentPage = jqCurrent.data('section');
+
+                $('.page-nav a.active').removeClass('active');
+
+                $('.page-nav a[href="/#' + jqCurrent.data('section') + '"]').addClass('active');
+
+                $('.bar--next').hide();
+            }
+
+            if (jqNext) {
+                $('.bar--next.bar--' + jqNext.data('section')).show();
+            }
+        })
+
+        .trigger('scroll')
+
+        .on('resize', function(e) {
 
             var offset = $('.page-wrapper').offset().left;
 
@@ -118,7 +173,9 @@ var BED = {
                 height: window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
             });
 
-        }).trigger('resize');
+        })
+
+        .trigger('resize');
 
         $(document.body)
 
@@ -243,7 +300,7 @@ var BED = {
 
             var transition = getTransition(jqSlideOut.data('direction'));
 
-            if (bowser.mobile || window.matchMedia(BED.mq.mobile).matches) {
+            if (bowser.mobile) {
                 jqSlideOutInner.css('padding-top', $('.page-header').offset().top);
             }
 
@@ -306,50 +363,3 @@ var BED = {
     }
 
 };
-
-// $(function() {
-
-//     scrollItems = $('.section');
-
-//     $(window).scroll(function() {
-//         var fromTop = $(this).scrollTop();
-//         var toBottom = fromTop + $(this).height();
-
-//         var current = scrollItems.map(function() {
-//             if ($(this).offset().top < fromTop) {
-//                 return this;
-//             }
-//         });
-//         current = current[current.length - 1];
-
-//         var next = scrollItems.map(function() {
-//             if ($(this).offset().top < toBottom) {
-//                 return this;
-//             }
-//         });
-//         next = next[next.length - 1];
-
-//         console.log('1current: ', $(current).data('section'));
-//         console.log('1next: ', $(next).data('section'));
-
-//         var jqCurrent = $('.section:in-viewport').last();
-//         var jqNext = $('.section:below-the-fold').first();
-
-//         console.log('2current: ', jqCurrent.data('section'));
-//         console.log('2next: ', jqNext.data('section'));
-
-//         //     // Get container scroll position
-//         //     var fromTop = $(this).scrollTop();
-
-//         //     // Get id of current scroll item
-//         //     var cur = scrollItems.map(function() {
-//         //         if ($(this).offset().top < fromTop) {
-//         //             return this;
-//         //         }
-//         //     });
-//         //     console.log(cur[cur.length - 1]);
-//         //     // Get the id of the current element
-//         //     cur = cur[cur.length - 1];
-//         //     var id = cur && cur.length ? cur[0].id : "";
-//     });
-// });
