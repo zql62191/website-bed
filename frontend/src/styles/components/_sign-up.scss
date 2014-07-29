@@ -12,6 +12,13 @@
     .forminvalid {
         border-color: #FF0000;
     }
+    .forminvaliddiv {
+        border: 2px solid red;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        float: left;
+    }
     &._is_open {
         display: block;
     }

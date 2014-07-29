@@ -150,6 +150,7 @@ block content
               ng-model="form.zip",
               ng-pattern="/^[0-9]{5}$/",
               ng-required="true",
+              maxlength=5,
               ng-class="{forminvalid: (bed_form.zip.$invalid && bed_form.zip.$dirty) || (bed_form.zip.$invalid && invalidform)}",
               class='zip')
 

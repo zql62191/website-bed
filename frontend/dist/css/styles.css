@@ -850,6 +850,13 @@ a.pdf-link span sup {
 .slideout--signup .forminvalid {
   border-color: #FF0000;
 }
+.slideout--signup .forminvaliddiv {
+  border: 2px solid red;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  float: left;
+}
 .slideout--signup._is_open {
   display: block;
 }
@@ -1634,7 +1641,7 @@ a.pdf-link span sup {
 .section--prevalence .comparable .dagger {
   padding: 0 0 25px 0;
   /*&:before {
-      content: '†';
+      content: 'ΓÇá';
       margin-left: -15px;
   }*/
 }
