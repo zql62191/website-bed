@@ -5,21 +5,28 @@ namespace BEDSite.Model
     [DataContract]
     public class FormAddress
     {
-        [DataMember(IsRequired = true)]
+        [DataMember]
         public string FName { get; set; }
-        [DataMember(IsRequired = true)]
+
+        [DataMember]
         public string MName { get; set; }
-        [DataMember(IsRequired = true)]
+
+        [DataMember]
         public string LName { get; set; }
-        [DataMember(IsRequired = true)]
+
+        [DataMember]
         public string Address1 { get; set; }
-        [DataMember(IsRequired = false)]
+
+        [DataMember]
         public string Address2 { get; set; }
-        [DataMember(IsRequired = true)]
+
+        [DataMember]
         public string City { get; set; }
-        [DataMember(IsRequired = true)]
+
+        [DataMember]
         public string State { get; set; }
-        [DataMember(IsRequired = true)]
+
+        [DataMember]
         public string Zip { get; set; }
     }
 }

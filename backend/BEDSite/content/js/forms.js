@@ -26,7 +26,7 @@
         'Iowa',
         'Kanasas',
         'Kentucky',
-        'Lousiana',
+        'Louisiana',
         'Maine',
         'Maryland',
         'Massachusetts',
