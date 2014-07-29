@@ -35,5 +35,11 @@ module.exports = {
             'src/media/**/*'
         ],
         tasks: ['media']
+    },
+    vendor: {
+        files: [
+            'src/vendor/**/*'
+        ],
+        tasks: ['vendor']
     }
 };

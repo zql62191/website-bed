@@ -19,6 +19,18 @@ var BED = {
         'shire.com'
     ],
 
+    videos: {
+        'grilo2': '//view.vzaar.com/1788413/video',
+        'bulik3': '//view.vzaar.com/1788415/video',
+        'bulik4': '//view.vzaar.com/1788416/video',
+        'grilo5': '//view.vzaar.com/1788417/video',
+        'kornstein6': '//view.vzaar.com/1788418/video',
+        'grilo7': '//view.vzaar.com/1788419/video',
+        'kornstein8': '//view.vzaar.com/1788420/video',
+        'bulik12': '//view.vzaar.com/1788421/video',
+        'kornstein14': '//view.vzaar.com/1788422/video'
+    },
+
     skrollr: {
         inst: null,
         ani: {
@@ -65,13 +77,35 @@ var BED = {
 
     // currentPage: 'home',
 
-    scrollSections: [],
+    // scrollSections: [],
+
+    videoPlayer: null,
 
     init: function() {
 
-        BED.scrollSections = _.map($('.section'), function(el) {
-            return $(el).data('section');
-        });
+        BED.videoPlayer = $('#videoPlayer').attr({
+
+            width: window.matchMedia(BED.mq.mobile).matches ? 560 : 800,
+
+            height: window.matchMedia(BED.mq.mobile).matches ? 315 : 450
+
+        }).mediaelementplayer({
+
+            success: function(mediaElement, domObject) {
+                $(mediaElement).on('ended', function(e) {
+                    console.log(e);
+                });
+            },
+
+            error: function() {
+
+            }
+
+        })[0].player;
+
+        // BED.scrollSections = _.map($('.section'), function(el) {
+        //     return $(el).data('section');
+        // });
 
         // setTimeout(function() {
         //     if (window.location.hash) {
@@ -250,19 +284,19 @@ var BED = {
             e.stopPropagation();
         })
 
-        .on(BED.gestures.click, '[data-video]', function(e) {
+        // .on(BED.gestures.click, '[data-video]', function(e) {
 
-            var title = $(this).find('p').text();
+        //     var title = $(this).find('p').text();
 
-            var jqModal = $('.modal--video');
+        //     var jqModal = $('.modal--video');
 
-            jqModal.find('h3').text(title);
+        //     jqModal.find('h3').text(title);
 
-            jqModal.velocity('fadeIn', {
-                duration: 250
-            });
+        //     jqModal.velocity('fadeIn', {
+        //         duration: 250
+        //     });
 
-        })
+        // })
 
         .on(BED.gestures.click, '.page-nav a', function(e) {
 
@@ -275,6 +309,45 @@ var BED = {
             $(this).toggleClass('open');
 
             $('.closed-text').toggleClass('hidden');
+
+        })
+
+        .on(BED.gestures.click, '.video-playlist li[data-video]', function(e) {
+
+            $(this).siblings().removeClass('active').end().addClass('active');
+
+            $('.mejs-container').velocity('scroll', {
+                duration: 250,
+                offset: '-' + ($('.page-header').height() + 20)
+            });
+
+            BED.videoPlayer.setSrc(BED.videos[$(this).data('video')]);
+
+            BED.videoPlayer.play();
+
+        })
+
+        .on(BED.gestures.click, '.video-player .arrow-left', function(e) {
+
+            var jqCurrent = $('.video-playlist li.active');
+
+            if (jqCurrent.is(':first-child')) {
+                jqCurrent.siblings('li[data-video]').last().trigger(BED.gestures.click);
+            } else {
+                jqCurrent.prev('li[data-video]').trigger(BED.gestures.click);
+            }
+
+        })
+
+        .on(BED.gestures.click, '.video-player .arrow-right', function(e) {
+
+            var jqCurrent = $('.video-playlist li.active');
+
+            if (jqCurrent.is(':last-child')) {
+                jqCurrent.siblings('li[data-video]').first().trigger(BED.gestures.click);
+            } else {
+                jqCurrent.next('li[data-video]').trigger(BED.gestures.click);
+            }
 
         });
 

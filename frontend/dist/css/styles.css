@@ -604,6 +604,10 @@ a.pdf-link span sup {
   }
 }
 
+.mejs-container * {
+  position: static;
+}
+
 .section {
   overflow: hidden;
 }
@@ -895,6 +899,7 @@ a.pdf-link span sup {
   top: 50px;
   bottom: 0;
   background: #e1e3e4;
+  overflow-y: scroll;
 }
 @media only screen and (max-width: 40em) {
   .slideout .slideout__inner {
@@ -3005,81 +3010,98 @@ a.pdf-link span sup {
     margin: 0 0 30px -20px;
   }
 }
-.section--resources .videos h3 {
+.section--resources .videos h4 {
   color: #ffffff;
+  font-size: 24px;
   margin-bottom: 30px;
 }
 @media only screen and (max-width: 40em) {
-  .section--resources .videos h3 {
+  .section--resources .videos h4 {
     font-size: 27px;
     width: 640px;
   }
 }
-.section--resources .videos .video-placeholder {
+.section--resources .videos video {
+  display: none;
+}
+.section--resources .videos .mejs-container video {
   display: block;
-  width: 600px;
-  max-width: 100%;
-  height: auto;
-  margin: 25px auto;
-  border: 2px solid #616364;
 }
-.section--resources .videos ul {
+.section--resources .video-playlist li {
   cursor: pointer;
-}
-.section--resources .videos li {
   background: #616364;
-  display: inline-block;
-  width: 180px;
-  height: 160px;
-  margin-right: 4px;
+  display: block;
+  margin: 0 auto 1px auto;
 }
 @media only screen and (min-width: 40.063em) {
-  .section--resources .videos li {
-    width: 600px;
+  .section--resources .video-playlist li {
+    width: 800px;
     height: 60px;
     font-size: 18px;
     padding: 0 20px;
-    display: block;
-    margin: 0 auto 10px auto;
+    padding-left: 80px;
   }
 }
 @media only screen and (max-width: 40em) {
-  .section--resources .videos li {
+  .section--resources .video-playlist li {
     width: 100%;
-    height: 60px;
-    margin-right: 7px;
-    padding: 0 20px;
+    min-height: 60px;
+    padding: 10px 20px;
     text-align: center;
+    padding-left: 80px;
   }
 }
-.section--resources .videos li p {
+.section--resources .video-playlist li:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #3d3d3d;
+  width: 60px;
+}
+.section--resources .video-playlist li:after {
+  content: '\25B6';
+  color: #febd3f;
+  text-align: center;
+  width: 60px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -11px;
+}
+@media only screen and (max-width: 40em) {
+  .section--resources .video-playlist li:after {
+    margin-top: -14.5px;
+    font-size: 30px;
+  }
+}
+.section--resources .video-playlist li.active, .section--resources .video-playlist li:hover {
+  background-color: #747779;
+}
+.section--resources .video-playlist li p {
   margin: 0 auto;
   color: #febd3f;
   display: table-cell;
   width: 100%;
   vertical-align: middle;
-  text-align: center;
+  text-align: left;
   height: inherit;
   padding-bottom: 0;
   font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 @media only screen and (max-width: 40em) {
-  .section--resources .videos li p {
+  .section--resources .video-playlist li p {
     font-size: 24px;
     line-height: 26px;
-    width: 560px;
+    width: 500px;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  .section--resources .videos li p {
+  .section--resources .video-playlist li p {
     font-size: 18px;
     line-height: 20px;
-    padding-top: 0;
-    width: 560px;
   }
-}
-.section--resources .videos li:hover {
-  background-color: #747779;
 }
 .section--resources .video-player {
   position: relative;
@@ -3091,17 +3113,31 @@ a.pdf-link span sup {
   top: 50%;
   margin-top: -20px;
   cursor: pointer;
+  opacity: 0.5;
 }
 .section--resources .video-player .arrow:hover {
-  opacity: 0.8;
+  opacity: 1;
 }
 .section--resources .video-player .arrow-left {
-  left: 105px;
+  left: 10px;
   background: url("../img/arrow-left.png") center center no-repeat;
 }
+@media only screen and (max-width: 40em) {
+  .section--resources .video-player .arrow-left {
+    left: -35px;
+  }
+}
 .section--resources .video-player .arrow-right {
-  right: 105px;
+  right: 10px;
   background: url("../img/arrow-right.png") center center no-repeat;
+}
+@media only screen and (max-width: 40em) {
+  .section--resources .video-player .arrow-right {
+    right: -35px;
+  }
+}
+.section--resources .video-player .mejs-container {
+  margin: 0 auto 1px auto;
 }
 @media only screen and (min-width: 40.063em) {
   .section--resources h3.org-header {

@@ -51,41 +51,50 @@ div(data-section='resources').section.section--resources
         
 
       .video-player 
-        img(src="img/video-placeholder.png", class="video-placeholder")
+        //- img(src="img/video-placeholder.png", class="video-placeholder")
+        video(
+          id='videoPlayer'
+          poster='//view.vzaar.com/1788413/video',
+          controls='controls',
+          preload='none')
+
+          source(
+            type='video/mp4',
+            src='//view.vzaar.com/1788413/video')
 
         .arrow-left.arrow
 
         .arrow-right.arrow
 
 
-      ul
-        li
+      ul.video-playlist
+        li(data-video='grilo2').active
           p.
-            &#9654; How does the prevalence of BED compare to that of other eating disorders? (0:45)
-        li
+            How does the prevalence of BED compare to that of other eating disorders? #[span.time (00:42)]
+        li(data-video='bulik3')
           p.
-            &#9654; What are the functional consequences of BED? (1:23)
-        li
+            What are the functional consequences of BED? #[span.time (02:03)]
+        li(data-video='bulik4')
           p.
-            &#9654; What are the diagnostic criteria for BED? (0:30)
-        li
+            What are the diagnostic criteria for BED? #[span.time (01:32)]
+        li(data-video='grilo5')
           p.
-            &#9654; What psychiatric disorders are commonly associated with BED? (0:52)
-        li
+            What psychiatric disorders are commonly associated with BED? #[span.time (01:10)]
+        li(data-video='kornstein6')
           p.
-            &#9654; What is thought to cause BED? (0:43)
-        li
+            What is thought to cause BED? #[span.time (00:53)]
+        li(data-video='grilo7')
           p.
-            &#9654; How does the prevalence of BED compare among races/ethnicities? (0:55)
-        li
+            How does the prevalence of BED compare among races/ethnicities? #[span.time (00:52)]
+        li(data-video='kornstein8')
           p.
-            &#9654; Does BED occur in both women and men? (1:05)
-        li
+            Does BED occur in both women and men? #[span.time (00:34)]
+        li(data-video='bulik12')
           p.
-            &#9654; What is the clinical course of BED? (1:13)
-        li
+            What is the clinical course of BED? #[span.time (00:31)]
+        li(data-video='kornstein14')
           p.
-            &#9654; How can clinicians begin an effective conversation with their patients about BED? (0:37)
+            How can clinicians begin an effective conversation with their patients about BED? #[span.time (00:51)]
 
     h3.org-header.
       If you or your patients would like more information about BED, #[br.hide--mobile]these organizations may be able to help:

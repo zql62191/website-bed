@@ -74,7 +74,8 @@
                     padding-left: 0;
                 }
             }
-            @include mq('mobile') {
+
+            @include mq("mobile") {
                 margin-bottom: 48px;
 
                 .footnote {
@@ -89,12 +90,10 @@
         float: left;
         width: 50%;
         height: 185px;
-
         .animated-wrap {
             margin-top: 40px;
             margin-left: 80px;
-        }              
-
+        }
         .numbers-wrap {
             width: 300px;
             height: 25px;
@@ -103,7 +102,6 @@
             top: 80px;
             left: 0;
         }
-
         .numbers {
             background: transparent url("#{$img-path}/21-numbers.png") 0 0 no-repeat;
             width: 832px;

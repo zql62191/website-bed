@@ -11,14 +11,14 @@
     //     padding-top: 93px;
     //     position: absolute;
     // }
-
     .slideout__inner {
         position: absolute;
         // height: 100%;
         top: 50px;
         bottom: 0;
         background: #e1e3e4;
-        @include mq('mobile') {
+        overflow-y: scroll;
+        @include mq("mobile") {
             top: 93px;
         }
     }

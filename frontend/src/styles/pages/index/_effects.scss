@@ -119,13 +119,11 @@
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: top left;
-
         @include mq("mobile") {
             width: 350px;
             margin: 0 auto;
             height: 350px;
             padding-left: 25px;
-
             h1 {
                 width: 350px;
                 margin: 0 auto;
@@ -150,7 +148,6 @@
             display: inline-block;
             background-size: 80%;
             vertical-align: top;
-
             h1 {
                 padding: 75px 0 0 50px;
                 font-size: 185px;
@@ -160,12 +157,12 @@
             p {
                 vertical-align: top;
                 font-size: 22px;
-                
                 line-height: 26px;
                 left: -15px;
                 padding: 0;
             }
         }
+
         .large {
             color: #fcbb3f;
             padding-top: 20px;
@@ -173,8 +170,7 @@
             line-height: 180px;
             font-family: font("gill sans", "bold");
             left: -15px;
-
-            @include mq('desktop') {
+            @include mq("desktop") {
                 font-size: 130px;
                 line-height: 120px;
                 padding-top: 60px;
@@ -206,11 +202,9 @@
         }
     }
     .nineteen {
-
         .large {
             letter-spacing: -10px;
         }
-
         background-image: url("#{$img-path}/spiral.png");
         @include mq("mobile") {
             //height: 450px;

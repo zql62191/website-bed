@@ -13,9 +13,10 @@
     top: 50%;
     margin-top: -80px;
     z-index: z("pagination");
-    @include mq('mobile') {
+    @include mq("mobile") {
         display: none;
     }
+
     .pagination__item {
         background-image: url("#{$img-path}/bullet.png");
         background-repeat: no-repeat;
@@ -28,6 +29,5 @@
         &:hover {
             background-image: url("#{$img-path}/bullet--yellow.png");
         }
-         
     }
 }

@@ -79,17 +79,14 @@
     }
     .graphic-wrap {
         // margin: 20px 0;
-
         // @include mq("desktop") {
         //     min-height: 270px;
         //     background: url("#{$img-path}/diagnosis-graphic.png") center center no-repeat;
         // }
-
         // @include mq("mobile") {
         //     min-height: 920px;
         //     background: url("#{$img-path}/diagnosis-graphic-mobile.png") center center no-repeat;
         // }
-
         @include mq("desktop") {
             @include clearfix;
             width: 700px;
@@ -101,7 +98,6 @@
         min-height: 375px;
         // background: url("#{$img-path}/diagnosis-fifty-bg.png") center center no-repeat;
         text-align: center;
-
         @include mq("mobile") {
             margin-left: 115px;
         }
@@ -126,6 +122,7 @@
             width: 400px;
             margin-top: 40px;
         }
+
         .grey-circle {
             background: transparent url("#{$img-path}/grey-circle.png") 0 0 no-repeat;
             background-size: 381px 375px;
@@ -156,7 +153,6 @@
     }
     .weight-graphic {
         padding-left: 105px;
-
         @include mq("mobile") {
             margin-left: 115px;
         }
@@ -169,6 +165,7 @@
         p {
             padding-bottom: 10px;
             //line-height: 36px;
+       
         }
     }
     .nineteen-percent {
@@ -176,11 +173,9 @@
         background: url("#{$img-path}/diagnosis-nineteen.png") top left no-repeat;
         min-height: 250px;
         padding-bottom: 40px;
-
         .large {
             letter-spacing: -10px;
         }
-
         @include mq("desktop") {
             float: left;
             width: 300px;
@@ -191,7 +186,6 @@
         padding-left: 105px;
         background: url("#{$img-path}/diagnosis-thirty-six.png") top left no-repeat;
         min-height: 210px;
-
         @include mq("desktop") {
             float: left;
             width: 300px;

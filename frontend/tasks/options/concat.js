@@ -14,6 +14,7 @@ module.exports = {
                 'src/scripts/libs/jquery.exists.js',
                 'src/scripts/libs/skrollr.min.js',
                 'src/scripts/libs/bowser.min.js',
+                'src/scripts/libs/matchMedia.js',
                 'src/scripts/libs/angular.min.js'
             ],
             'dist/js/ie.js': [
