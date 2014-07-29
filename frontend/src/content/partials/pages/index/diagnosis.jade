@@ -40,11 +40,18 @@ div(data-section='diagnosis').section.section--diagnosis
     //- OLD   .graphic-wrap
 
     .fifty-percent
-      
-      p.large.yellow.
+      .grey-circle
+        .yellow-wrap
+          div(
+            data-bottom-top='transform: rotate(-180deg);',
+            data--20p-bottom='transform: rotate(0deg);').yellow-circle
+
+      p(data-bottom-top='opacity: 0;',
+        data--20p-bottom='opacity: 1;').large.yellow.
         &lt;50#[sup.percent %]
 
-      p.yellow.
+      p(data-bottom-top='opacity: 0;',
+        data--20p-bottom='opacity: 1;').yellow.
         of adults with BED #[br]are obese
 
 

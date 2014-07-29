@@ -655,6 +655,7 @@ a.pdf-link span sup {
 }
 .next-section .bar--next:hover {
   background: #fec451;
+  text-decoration: none;
 }
 .next-section .bar--next:before {
   border-top-color: #ffffff;
@@ -2356,7 +2357,6 @@ a.pdf-link span sup {
 .section--diagnosis .fifty-percent {
   padding-top: 100px;
   min-height: 375px;
-  background: url("../img/diagnosis-fifty-bg.png") center center no-repeat;
   text-align: center;
 }
 .section--diagnosis .fifty-percent .large {
@@ -2377,6 +2377,37 @@ a.pdf-link span sup {
     width: 400px;
     margin-top: 40px;
   }
+}
+.section--diagnosis .fifty-percent .grey-circle {
+  background: transparent url("../img/grey-circle.png") 0 0 no-repeat;
+  -webkit-background-size: 381px 375px;
+  background-size: 381px 375px;
+  width: 381px;
+  height: 375px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.section--diagnosis .fifty-percent .yellow-wrap {
+  width: 190.5px;
+  height: 375px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+.section--diagnosis .fifty-percent .yellow-circle {
+  background: transparent url("../img/yellow-half-circle.png") top right no-repeat;
+  -webkit-background-size: 190.5px 375px;
+  background-size: 190.5px 375px;
+  width: 381px;
+  height: 375px;
+  position: absolute;
+  top: 0;
+  left: -190.5px;
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
 }
 .section--diagnosis .weight-graphic {
   margin-left: 115px;

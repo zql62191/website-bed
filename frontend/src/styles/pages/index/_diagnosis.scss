@@ -103,7 +103,7 @@
     .fifty-percent {
         padding-top: 100px;
         min-height: 375px;
-        background: url("#{$img-path}/diagnosis-fifty-bg.png") center center no-repeat;
+        // background: url("#{$img-path}/diagnosis-fifty-bg.png") center center no-repeat;
         text-align: center;
 
         .large {
@@ -122,6 +122,33 @@
             float: left;
             width: 400px;
             margin-top: 40px;
+        }
+        .grey-circle {
+            background: transparent url("#{$img-path}/grey-circle.png") 0 0 no-repeat;
+            background-size: 381px 375px;
+            width: 381px;
+            height: 375px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .yellow-wrap {
+            width: 190.5px;
+            height: 375px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            overflow: hidden;
+        }
+        .yellow-circle {
+            background: transparent url("#{$img-path}/yellow-half-circle.png") top right no-repeat;
+            background-size: 190.5px 375px;
+            width: 381px;
+            height: 375px;
+            position: absolute;
+            top: 0;
+            left: -190.5px;
+            transform-origin: center center;
         }
     }
     .weight-graphic {
