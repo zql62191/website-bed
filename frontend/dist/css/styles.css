@@ -1654,6 +1654,11 @@ a.pdf-link span sup {
   font-size: 38px;
   font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
+@media only screen and (min-width: 40.063em) {
+  .section--prevalence .male-female-graphic p {
+    line-height: 38px;
+  }
+}
 @media only screen and (max-width: 40em) {
   .section--prevalence .gender-ratio {
     padding: 30px 20px 10px 0;
@@ -1807,7 +1812,7 @@ a.pdf-link span sup {
 }
 @media only screen and (min-width: 40.063em) {
   .section--course .graphic-container {
-    height: 350px;
+    height: 430px;
   }
 }
 .section--course .graphic-container .text {
@@ -1857,8 +1862,8 @@ a.pdf-link span sup {
   }
 }
 .section--course .twenty-one-animated {
-  float: left;
-  width: 50%;
+  display: inline-block;
+  width: 49%;
   height: 185px;
 }
 .section--course .twenty-one-animated .animated-wrap {
@@ -1923,6 +1928,11 @@ a.pdf-link span sup {
     top: 40px;
     left: 80px;
   }
+}
+.section--course .median-ages {
+  background: transparent url("../img/median-ages-wide.png") 0 0 no-repeat;
+  width: 453px;
+  height: 343px;
 }
 .section--course .chart {
   margin-left: -45px;
@@ -2784,10 +2794,10 @@ a.pdf-link span sup {
 }
 .section--dsm5 p.disclaimer {
   margin-top: 15px;
-  width: 570px;
 }
 @media only screen and (max-width: 40em) {
   .section--dsm5 p.disclaimer {
+    width: 570px;
     font-size: 30px;
     line-height: 42px;
     margin-top: 30px;
@@ -3040,13 +3050,13 @@ a.pdf-link span sup {
   margin: 0 30px 0 -32px;
   padding: 20px 40px 25px;
 }
+.section--resources .videos h3 {
+  padding-bottom: 24px;
+}
 @media only screen and (max-width: 40em) {
   .section--resources .videos {
     width: 640px;
     margin: 0 0 30px -20px;
-  }
-  .section--resources .videos h3 {
-    padding-bottom: 24px;
   }
 }
 .section--resources .videos h4 {

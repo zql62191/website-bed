@@ -112,8 +112,9 @@
         }
         &.disclaimer {
             margin-top: 15px;
-            width: 570px;
+            
             @include mq("mobile") {
+                width: 570px;
                 font-size: 30px;
                 line-height: 42px;
                 margin-top: 30px;

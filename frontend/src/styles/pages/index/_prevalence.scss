@@ -163,6 +163,11 @@
         p {
             font-size: 38px;
             font-family: font("gill sans", "regular");
+
+
+            @include mq('desktop') {
+                line-height: 38px;
+            }
         }
     }
     // Graphic (and cooresponding text) only visible on desktop
