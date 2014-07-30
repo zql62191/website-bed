@@ -271,6 +271,17 @@ a {
     }
 }
 
+.ref {
+    @include mq('desktop') {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    @include mq('mobile') {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
 .scroll-point {
     display: block;
     margin-top: 5px;

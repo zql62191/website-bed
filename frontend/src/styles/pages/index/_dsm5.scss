@@ -194,17 +194,19 @@
         .close {
             @include mq("desktop") {
                 right: 10px;
+                display: block;
             }
             @include mq('mobile') {
                 top: 30px;
                 right: 30px;
             }
-            display: block;
+            
         }
         h3 {
             color: #febd3f;
             @include mq("mobile") {
                 //font-size: 36px;
+                padding-left: 35px;
             }
         }
         p {

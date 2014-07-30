@@ -349,6 +349,19 @@ a:hover {
   text-decoration: underline;
 }
 
+@media only screen and (min-width: 40.063em) {
+  .ref {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .ref {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
 .scroll-point {
   display: block;
   margin-top: 5px;
@@ -1590,9 +1603,9 @@ a.pdf-link span sup {
 }
 @media only screen and (max-width: 40em) {
   .section--prevalence .blurb-2 {
-    background-image: url("../img/prevalence-text-bg-mobile.png");
+    background-image: url("../img/prevalence-text-bg-tall.png");
     width: 571px;
-    height: 167px;
+    height: 311px;
     margin-bottom: 20px;
   }
 }
@@ -1600,8 +1613,8 @@ a.pdf-link span sup {
   .section--prevalence .blurb-2 {
     background-image: url("../img/prevalence-text-bg-2.png");
     width: 740px;
-    height: 115px;
-    margin: 0 auto 25px auto;
+    height: 180px;
+    margin: 50px auto 25px auto;
     padding: 25px 35px;
     font-size: 20px;
     line-height: 22px;
@@ -1666,9 +1679,8 @@ a.pdf-link span sup {
 }
 @media only screen and (min-width: 40.063em) {
   .section--prevalence .gender-ratio {
-    font-size: 20px;
-    line-height: 25px;
-    padding-top: 45px;
+    padding-top: 85px;
+    padding-bottom: 0;
   }
 }
 .section--prevalence .comparable {
@@ -1687,44 +1699,72 @@ a.pdf-link span sup {
 }
 @media only screen and (max-width: 40em) {
   .section--prevalence .comparable .patients-graphic {
-    width: 605px;
+    width: 440px;
     height: 545px;
   }
 }
 @media only screen and (min-width: 40.063em) {
   .section--prevalence .comparable .patients-graphic {
     width: 897px;
-    height: 186px;
   }
 }
 @media only screen and (min-width: 40.063em) {
   .section--prevalence .comparable .patients-graphic .graphic {
     width: 195px;
-    height: 185px;
+    height: 365px;
     display: inline-block;
     margin-right: 25px;
   }
 }
 @media only screen and (max-width: 40em) {
   .section--prevalence .comparable .patients-graphic .graphic {
-    width: 275px;
+    width: 195px;
     height: 262px;
     display: inline-block;
     margin-right: 20px;
     margin-bottom: 15px;
+    background-position: center;
   }
 }
-.section--prevalence .comparable .patient-1 {
-  background-image: url("../img/prevalence-patient-1.png");
+@media only screen and (min-width: 40.063em) {
+  .section--prevalence .comparable .patient-1 {
+    background-image: url("../img/prevalence-person-1-tall.png");
+  }
 }
-.section--prevalence .comparable .patient-2 {
-  background-image: url("../img/prevalence-patient-2.png");
+@media only screen and (max-width: 40em) {
+  .section--prevalence .comparable .patient-1 {
+    background-image: url("../img/prevalence-person-1-short.png");
+  }
 }
-.section--prevalence .comparable .patient-3 {
-  background-image: url("../img/prevalence-patient-3.png");
+@media only screen and (min-width: 40.063em) {
+  .section--prevalence .comparable .patient-2 {
+    background-image: url("../img/prevalence-person-2-tall.png");
+  }
 }
-.section--prevalence .comparable .patient-4 {
-  background-image: url("../img/prevalence-patient-4.png");
+@media only screen and (max-width: 40em) {
+  .section--prevalence .comparable .patient-2 {
+    background-image: url("../img/prevalence-person-2-short.png");
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .section--prevalence .comparable .patient-3 {
+    background-image: url("../img/prevalence-person-3-tall.png");
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--prevalence .comparable .patient-3 {
+    background-image: url("../img/prevalence-person-3-short.png");
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .section--prevalence .comparable .patient-4 {
+    background-image: url("../img/prevalence-person-4-tall.png");
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--prevalence .comparable .patient-4 {
+    background-image: url("../img/prevalence-person-4-short.png");
+  }
 }
 @media only screen and (max-width: 40em) {
   .section--prevalence .comparable h2 {
@@ -1812,7 +1852,15 @@ a.pdf-link span sup {
 }
 @media only screen and (min-width: 40.063em) {
   .section--course .graphic-container {
-    height: 430px;
+    height: 546px;
+    margin-bottom: 36px;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .section--course .graphic-container .chart-head {
+    text-align: right;
+    padding-right: 20px;
+    padding-bottom: 24px;
   }
 }
 .section--course .graphic-container .text {
@@ -1863,6 +1911,7 @@ a.pdf-link span sup {
 }
 .section--course .twenty-one-animated {
   display: inline-block;
+  vertical-align: top;
   width: 49%;
   height: 185px;
 }
@@ -1933,6 +1982,8 @@ a.pdf-link span sup {
   background: transparent url("../img/median-ages-wide.png") 0 0 no-repeat;
   width: 453px;
   height: 343px;
+  display: inline-block;
+  vertical-align: top;
 }
 .section--course .chart {
   margin-left: -45px;
@@ -1950,7 +2001,7 @@ a.pdf-link span sup {
 @media only screen and (min-width: 40.063em) {
   .section--course .mean-duration {
     position: absolute;
-    top: 300px;
+    top: 485px;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -2878,12 +2929,10 @@ a.pdf-link span sup {
     padding-right: 0;
   }
 }
-.section--dsm5 .tab-inner .close {
-  display: block;
-}
 @media only screen and (min-width: 40.063em) {
   .section--dsm5 .tab-inner .close {
     right: 10px;
+    display: block;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -2894,6 +2943,11 @@ a.pdf-link span sup {
 }
 .section--dsm5 .tab-inner h3 {
   color: #febd3f;
+}
+@media only screen and (max-width: 40em) {
+  .section--dsm5 .tab-inner h3 {
+    padding-left: 35px;
+  }
 }
 .section--dsm5 .tab-inner p {
   padding-top: 10px;

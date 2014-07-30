@@ -41,9 +41,18 @@
         overflow: hidden;
         border-bottom: 1px solid #ffffff;
         @include mq("desktop") {
-            height: 430px;
+            height: 546px;
+            margin-bottom: 36px;
         }
 
+        .chart-head {
+
+            @include mq('desktop') {
+                text-align: right;
+                padding-right: 20px;
+                padding-bottom: 24px;
+            }
+        }
         .text {
             width: 329px;
             margin: 0 auto;
@@ -92,6 +101,7 @@
     .twenty-one-animated {
         //float: left;
         display: inline-block;
+        vertical-align: top;
         width: 49%;
         height: 185px;
         .animated-wrap {
@@ -161,6 +171,8 @@
         background: transparent url("#{$img-path}/median-ages-wide.png") 0 0 no-repeat;
         width: 453px;
         height: 343px;
+        display: inline-block;
+        vertical-align: top;
     }
     .chart {
         margin-left: -45px;
@@ -172,23 +184,17 @@
     }
     .mean-duration {
         @include mq("mobile") {
-            //font-size: 41px;
-            //line-height: 45px;
-            //font-size: 25px;
-            ///line-height: 34px;
             padding-bottom: 40px;
         }
 
         @include mq("desktop") {
             position: absolute;
-            top: 300px;
-            //left: 20px;
+            top: 485px;
         }
     }
     // add to global styles
     .disclaimer {
-        //font-size: 25px;
-        //line-height: 34px;
+
         @include mq("mobile") {
             font-size: 25px;
             line-height: 34px;
@@ -198,7 +204,6 @@
             font-size: 18px;
             line-height: 21px;
             padding-top: 25px;
-            //padding-left: 20px;
         }
 
         &:before {
