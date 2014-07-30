@@ -1611,6 +1611,7 @@ a.pdf-link span sup {
     width: 571px;
     height: 311px;
     margin-bottom: 20px;
+    margin-top: 50px;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -2160,6 +2161,19 @@ a.pdf-link span sup {
     width: 544px;
     margin: 0 auto;
   }
+}
+.section--course .chart-footnote {
+  text-align: left;
+  margin-left: 7px;
+}
+@media only screen and (min-width: 40.063em) {
+  .section--course .chart-footnote {
+    width: 93%;
+  }
+}
+.section--course .chart-footnote:before {
+  content: '*';
+  margin-left: -7px;
 }
 .section--course .percent {
   font-size: 0.5em;
@@ -3069,8 +3083,8 @@ a.pdf-link span sup {
 }
 @media only screen and (max-width: 40em) {
   .section--dsm5 .signup {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 32px;
+    line-height: 40px;
     padding: 12px 20px;
     width: 460px;
   }
