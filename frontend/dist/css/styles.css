@@ -1856,7 +1856,7 @@ a.pdf-link span sup {
 }
 @media only screen and (min-width: 40.063em) {
   .section--course .graphic-container {
-    height: 546px;
+    height: 605px;
     margin-bottom: 36px;
   }
 }
@@ -2009,13 +2009,24 @@ a.pdf-link span sup {
 }
 @media only screen and (max-width: 40em) {
   .section--course .mean-duration {
-    padding-bottom: 40px;
+    padding: 15px;
+    background: transparent url("../img/blurb-2-mobile.png") 0 0 no-repeat;
+    margin-bottom: 40px;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    color: #333e48;
   }
 }
 @media only screen and (min-width: 40.063em) {
   .section--course .mean-duration {
     position: absolute;
+    padding: 15px;
     top: 485px;
+    background: transparent url("../img/blurb-2-desktop.png") 0 0 no-repeat;
+    width: 739px;
+    height: 76px;
+    line-height: 46px;
+    color: #333e48;
   }
 }
 @media only screen and (max-width: 40em) {
