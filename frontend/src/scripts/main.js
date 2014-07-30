@@ -83,25 +83,29 @@ var BED = {
 
     init: function() {
 
-        BED.videoPlayer = $('#videoPlayer').attr({
+        $('#videoPlayer').exists(function() {
 
-            width: window.matchMedia(BED.mq.mobile).matches ? 560 : 800,
+            BED.videoPlayer = $('#videoPlayer').attr({
 
-            height: window.matchMedia(BED.mq.mobile).matches ? 315 : 450
+                width: window.matchMedia(BED.mq.mobile).matches ? 560 : 800,
 
-        }).mediaelementplayer({
+                height: window.matchMedia(BED.mq.mobile).matches ? 315 : 450
 
-            success: function(mediaElement, domObject) {
-                $(mediaElement).on('ended', function(e) {
-                    console.log(e);
-                });
-            },
+            }).mediaelementplayer({
 
-            error: function() {
+                success: function(mediaElement, domObject) {
+                    $(mediaElement).on('ended', function(e) {
+                        console.log(e);
+                    });
+                },
 
-            }
+                error: function() {
 
-        })[0].player;
+                }
+
+            })[0].player;
+
+        });
 
         // BED.scrollSections = _.map($('.section'), function(el) {
         //     return $(el).data('section');

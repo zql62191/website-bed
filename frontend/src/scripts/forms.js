@@ -169,21 +169,23 @@
         };
 
         $scope.processForm = function(path, sdata) {
-            $log.log(sdata);
-            $http({
-                headers: {
-                    'Content-Type': 'application/json; charset=utf-8'
-                },
-                method: 'POST',
-                url: path,
-                data: sdata,
-            }).
-            success(function() {
-                showUnsubscribeThankYou();
-            }).
-            error(function(data) {
-                $log.log(data);
-            });
+            // $log.log(sdata);
+            // $http({
+            //     headers: {
+            //         'Content-Type': 'application/json; charset=utf-8'
+            //     },
+            //     method: 'POST',
+            //     url: path,
+            //     data: sdata,
+            // }).
+            // success(function() {
+            //     showUnsubscribeThankYou();
+            // }).
+            // error(function(data) {
+            //     $log.log(data);
+            // });
+
+            showUnsubscribeThankYou();
         };
 
         $scope.checkFormPresent = function(item) {
@@ -271,22 +273,24 @@
         };
 
         $scope.processOptIn = function(path, sdata) {
-            $log.log(sdata);
-            $http({
-                headers: {
-                    'Content-Type': 'application/json; charset=utf-8'
-                },
-                method: 'POST',
-                url: path,
-                data: sdata,
-                'dataType': 'json'
-            }).
-            success(function() {
-                showSignUpThankYou();
-            }).
-            error(function(data) {
-                $log.log(data);
-            });
+            // $log.log(sdata);
+            // $http({
+            //     headers: {
+            //         'Content-Type': 'application/json; charset=utf-8'
+            //     },
+            //     method: 'POST',
+            //     url: path,
+            //     data: sdata,
+            //     'dataType': 'json'
+            // }).
+            // success(function() {
+            //     showSignUpThankYou();
+            // }).
+            // error(function(data) {
+            //     $log.log(data);
+            // });
+
+            showSignUpThankYou();
         };
     }
 }).call(this);
