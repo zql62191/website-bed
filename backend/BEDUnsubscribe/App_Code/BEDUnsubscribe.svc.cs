@@ -107,31 +107,6 @@ namespace BEDService
             return errors;
         }
 
-        //public List<string> SetUnsubscribeDataAddress(FormAddress address)
-        //{
-        //    AuditTrail auditTrail = new AuditTrail();
-        //    List<string> errors = null;
-        //    try
-        //    {
-        //        errors = ValidateAddress(address);
-
-        //        if (errors.Count > 0)
-        //            return errors;
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        auditTrail.SetAuditTrail(" ", AuditTrail.OperationType.Unsubscribtion_Failure, e.Source, e.Message);
-        //        throw e;
-        //    }
-        //    finally
-        //    {
-        //        log.Info(auditTrail.GetAuditTrail());
-        //        auditTrail = null;
-        //    }
-
-        //    return errors;
-        //}
-
         public List<string> SetUnsubscribeDataAddress(FormAddress address)
         {
             AuditTrail auditTrail = new AuditTrail();
