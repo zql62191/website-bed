@@ -753,8 +753,8 @@ a.pdf-link span sup {
   display: block;
 }
 .next-section .bar--next:hover {
-  background: #fec451;
-  text-decoration: none;
+  background: #fec451 !important;
+  text-decoration: none !important;
 }
 .next-section .bar--next:before {
   border-top-color: #ffffff;
