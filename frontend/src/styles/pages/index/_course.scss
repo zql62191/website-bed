@@ -183,6 +183,15 @@
         }
     }
     .mean-duration {
+        /*
+        background-image: url("../img/prevalence-text-bg.png");
+        width: 740px;
+        height: 73px;
+        margin: 0 auto 0 auto;
+        padding: 16px 25px;
+        color: #51748b;
+        */
+
         @include mq("mobile") {
             padding-bottom: 40px;
         }

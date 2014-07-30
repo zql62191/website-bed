@@ -345,8 +345,9 @@ ol.number > li:before {
 a {
   text-decoration: none;
 }
-a:hover {
-  text-decoration: underline;
+
+.content-wrap a:hover {
+  color: #ffcd6d;
 }
 
 @media only screen and (min-width: 40.063em) {
@@ -1331,6 +1332,9 @@ a.pdf-link span sup {
   -webkit-box-shadow: 1px 2px 2px rgba(33, 30, 31, 0.25);
   box-shadow: 1px 2px 2px rgba(33, 30, 31, 0.25);
 }
+.page-nav .slideout__inner .primary-nav .primary-nav__item a.active {
+  background-color: #ffcd6d;
+}
 
 .page-footer nav {
   float: left;
@@ -1993,6 +1997,16 @@ a.pdf-link span sup {
     width: 175px;
   }
 }
+.section--course .mean-duration {
+  /*
+  background-image: url("../img/prevalence-text-bg.png");
+  width: 740px;
+  height: 73px;
+  margin: 0 auto 0 auto;
+  padding: 16px 25px;
+  color: #51748b;
+  */
+}
 @media only screen and (max-width: 40em) {
   .section--course .mean-duration {
     padding-bottom: 40px;
@@ -2204,9 +2218,6 @@ a.pdf-link span sup {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  .section--effects .associated {
-    padding-left: 45px;
-  }
   .section--effects .associated h3 {
     padding-bottom: 24px;
   }
@@ -2334,10 +2345,13 @@ a.pdf-link span sup {
   }
 }
 .section--effects .nineteen {
+  /*.large {
+      letter-spacing: -10px;
+      sup {
+          letter-spacing: normal;
+      }
+  }*/
   background-image: url("../img/spiral.png");
-}
-.section--effects .nineteen .large {
-  letter-spacing: -10px;
 }
 @media only screen and (max-width: 40em) {
   .section--effects .nineteen p {
@@ -2701,9 +2715,6 @@ a.pdf-link span sup {
   background: url("../img/diagnosis-nineteen.png") top left no-repeat;
   min-height: 250px;
   padding-bottom: 40px;
-}
-.section--diagnosis .nineteen-percent .large {
-  letter-spacing: -10px;
 }
 @media only screen and (min-width: 40.063em) {
   .section--diagnosis .nineteen-percent {

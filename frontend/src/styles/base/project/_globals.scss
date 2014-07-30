@@ -267,7 +267,13 @@ ol.number {
 a {
     text-decoration: none;
     &:hover {
-        text-decoration: underline;
+        //text-decoration: underline;
+    }
+}
+
+.content-wrap {
+    a:hover {
+        color: #ffcd6d;
     }
 }
 
