@@ -2530,12 +2530,14 @@ a.pdf-link span sup {
   }
 }
 @media only screen and (max-width: 40em) {
+  .section--diagnosis p {
+    /*             &:nth-of-type(4) {
+                    margin-bottom: 0;
+                    padding-bottom: 5px;
+                } */
+  }
   .section--diagnosis p:nth-of-type(2), .section--diagnosis p:nth-of-type(3) {
     width: auto;
-  }
-  .section--diagnosis p:nth-of-type(4) {
-    margin-bottom: 0;
-    padding-bottom: 5px;
   }
 }
 .section--diagnosis p.center {
