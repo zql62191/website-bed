@@ -85,17 +85,17 @@ ng\:form {
 }
 
 sub, sup {
-  font-size: 0.6em;
+  font-size: 0.33em;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
 }
 
 sup {
-  top: -0.5em;
+  top: -1.5em;
 }
 .eq-ie sup {
-  top: -0.8em;
+  top: -1.8em;
 }
 
 sub {
@@ -345,8 +345,22 @@ ol.number > li:before {
 a {
   text-decoration: none;
 }
-a:hover {
-  text-decoration: underline;
+
+.content-wrap a:hover {
+  color: #ffcd6d;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .ref {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .ref {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .scroll-point {
@@ -433,8 +447,8 @@ h3 {
 }
 @media only screen and (max-width: 40em) {
   h3 {
-    font-size: 34px;
-    line-height: 40px;
+    font-size: 40px;
+    line-height: 44px;
     padding-bottom: 5px;
   }
 }
@@ -445,14 +459,34 @@ h3 {
   }
 }
 
+@media only screen and (max-width: 40em) {
+  h4 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  h4 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .eyebrow {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
 .sub-head {
   font-family: "HelveticaNeueW01-55Roma", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   padding-bottom: 35px;
 }
 @media only screen and (max-width: 40em) {
   .sub-head {
-    font-size: 40px;
-    line-height: 44px;
+    font-size: 36px;
+    line-height: 40px;
     padding-bottom: 40px;
   }
 }
@@ -513,16 +547,16 @@ li:last-child {
 }
 @media only screen and (max-width: 40em) {
   .chart-head {
-    font-size: 34px;
-    line-height: 40px;
-    padding-top: 36px;
+    font-size: 40px;
+    line-height: 44px;
+    padding-top: 48px;
   }
 }
 @media only screen and (min-width: 40.063em) {
   .chart-head {
     font-size: 26px;
     line-height: 29px;
-    padding-top: 36px;
+    padding-top: 48px;
   }
 }
 
@@ -569,6 +603,7 @@ a.pdf-link span sup {
 
 .center {
   text-align: center;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 40em) {
@@ -602,6 +637,10 @@ a.pdf-link span sup {
   .close {
     display: none;
   }
+}
+
+.mejs-container * {
+  position: static;
 }
 
 .section {
@@ -728,8 +767,8 @@ a.pdf-link span sup {
   display: block;
 }
 .next-section .bar--next:hover {
-  background: #fec451;
-  text-decoration: none;
+  background: #fec451 !important;
+  text-decoration: none !important;
 }
 .next-section .bar--next:before {
   border-top-color: #ffffff;
@@ -895,6 +934,7 @@ a.pdf-link span sup {
   top: 50px;
   bottom: 0;
   background: #e1e3e4;
+  overflow-y: scroll;
 }
 @media only screen and (max-width: 40em) {
   .slideout .slideout__inner {
@@ -1292,6 +1332,9 @@ a.pdf-link span sup {
   -webkit-box-shadow: 1px 2px 2px rgba(33, 30, 31, 0.25);
   box-shadow: 1px 2px 2px rgba(33, 30, 31, 0.25);
 }
+.page-nav .slideout__inner .primary-nav .primary-nav__item a.active {
+  background-color: #ffcd6d;
+}
 
 .page-footer nav {
   float: left;
@@ -1422,6 +1465,11 @@ a.pdf-link span sup {
     padding-bottom: 15px;
   }
 }
+@media only screen and (max-width: 40em) {
+  .section--home h1 {
+    padding-top: 24px;
+  }
+}
 .section--home h3 {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
@@ -1435,6 +1483,11 @@ a.pdf-link span sup {
     font-size: 23px;
     line-height: 26px;
     padding-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--home p.sub-head {
+    padding-bottom: 20px;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -1496,8 +1549,6 @@ a.pdf-link span sup {
 }
 .section--prevalence .asterisk {
   padding-left: 5px;
-  font-size: 26px;
-  line-height: 28px;
   width: 538px;
   margin-left: 25px;
   padding-bottom: 50px;
@@ -1556,18 +1607,19 @@ a.pdf-link span sup {
 }
 @media only screen and (max-width: 40em) {
   .section--prevalence .blurb-2 {
-    background-image: url("../img/prevalence-text-bg-mobile.png");
+    background-image: url("../img/prevalence-text-bg-tall.png");
     width: 571px;
-    height: 167px;
+    height: 311px;
     margin-bottom: 20px;
+    margin-top: 50px;
   }
 }
 @media only screen and (min-width: 40.063em) {
   .section--prevalence .blurb-2 {
     background-image: url("../img/prevalence-text-bg-2.png");
     width: 740px;
-    height: 115px;
-    margin: 0 auto 25px auto;
+    height: 180px;
+    margin: 50px auto 25px auto;
     padding: 25px 35px;
     font-size: 20px;
     line-height: 22px;
@@ -1620,6 +1672,11 @@ a.pdf-link span sup {
   font-size: 38px;
   font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
+@media only screen and (min-width: 40.063em) {
+  .section--prevalence .male-female-graphic p {
+    line-height: 38px;
+  }
+}
 @media only screen and (max-width: 40em) {
   .section--prevalence .gender-ratio {
     padding: 30px 20px 10px 0;
@@ -1627,9 +1684,8 @@ a.pdf-link span sup {
 }
 @media only screen and (min-width: 40.063em) {
   .section--prevalence .gender-ratio {
-    font-size: 20px;
-    line-height: 25px;
-    padding-top: 45px;
+    padding-top: 85px;
+    padding-bottom: 0;
   }
 }
 .section--prevalence .comparable {
@@ -1648,44 +1704,72 @@ a.pdf-link span sup {
 }
 @media only screen and (max-width: 40em) {
   .section--prevalence .comparable .patients-graphic {
-    width: 605px;
+    width: 440px;
     height: 545px;
   }
 }
 @media only screen and (min-width: 40.063em) {
   .section--prevalence .comparable .patients-graphic {
     width: 897px;
-    height: 186px;
   }
 }
 @media only screen and (min-width: 40.063em) {
   .section--prevalence .comparable .patients-graphic .graphic {
     width: 195px;
-    height: 185px;
+    height: 365px;
     display: inline-block;
     margin-right: 25px;
   }
 }
 @media only screen and (max-width: 40em) {
   .section--prevalence .comparable .patients-graphic .graphic {
-    width: 275px;
+    width: 195px;
     height: 262px;
     display: inline-block;
     margin-right: 20px;
     margin-bottom: 15px;
+    background-position: center;
   }
 }
-.section--prevalence .comparable .patient-1 {
-  background-image: url("../img/prevalence-patient-1.png");
+@media only screen and (min-width: 40.063em) {
+  .section--prevalence .comparable .patient-1 {
+    background-image: url("../img/prevalence-person-1-tall.png");
+  }
 }
-.section--prevalence .comparable .patient-2 {
-  background-image: url("../img/prevalence-patient-2.png");
+@media only screen and (max-width: 40em) {
+  .section--prevalence .comparable .patient-1 {
+    background-image: url("../img/prevalence-person-1-short.png");
+  }
 }
-.section--prevalence .comparable .patient-3 {
-  background-image: url("../img/prevalence-patient-3.png");
+@media only screen and (min-width: 40.063em) {
+  .section--prevalence .comparable .patient-2 {
+    background-image: url("../img/prevalence-person-2-tall.png");
+  }
 }
-.section--prevalence .comparable .patient-4 {
-  background-image: url("../img/prevalence-patient-4.png");
+@media only screen and (max-width: 40em) {
+  .section--prevalence .comparable .patient-2 {
+    background-image: url("../img/prevalence-person-2-short.png");
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .section--prevalence .comparable .patient-3 {
+    background-image: url("../img/prevalence-person-3-tall.png");
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--prevalence .comparable .patient-3 {
+    background-image: url("../img/prevalence-person-3-short.png");
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .section--prevalence .comparable .patient-4 {
+    background-image: url("../img/prevalence-person-4-tall.png");
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--prevalence .comparable .patient-4 {
+    background-image: url("../img/prevalence-person-4-short.png");
+  }
 }
 @media only screen and (max-width: 40em) {
   .section--prevalence .comparable h2 {
@@ -1773,7 +1857,15 @@ a.pdf-link span sup {
 }
 @media only screen and (min-width: 40.063em) {
   .section--course .graphic-container {
-    height: 350px;
+    height: 605px;
+    margin-bottom: 36px;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .section--course .graphic-container .chart-head {
+    text-align: right;
+    padding-right: 20px;
+    padding-bottom: 24px;
   }
 }
 .section--course .graphic-container .text {
@@ -1818,10 +1910,14 @@ a.pdf-link span sup {
     padding-left: 40px;
     color: #333E48;
   }
+  .section--course .graphic-container .legend .chart-head {
+    padding-bottom: 36px;
+  }
 }
 .section--course .twenty-one-animated {
-  float: left;
-  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
   height: 185px;
 }
 .section--course .twenty-one-animated .animated-wrap {
@@ -1887,6 +1983,13 @@ a.pdf-link span sup {
     left: 80px;
   }
 }
+.section--course .median-ages {
+  background: transparent url("../img/median-ages-wide.png") 0 0 no-repeat;
+  width: 453px;
+  height: 343px;
+  display: inline-block;
+  vertical-align: top;
+}
 .section--course .chart {
   margin-left: -45px;
 }
@@ -1895,17 +1998,36 @@ a.pdf-link span sup {
     width: 175px;
   }
 }
+.section--course .mean-duration {
+  /*
+  background-image: url("../img/prevalence-text-bg.png");
+  width: 740px;
+  height: 73px;
+  margin: 0 auto 0 auto;
+  padding: 16px 25px;
+  color: #51748b;
+  */
+}
 @media only screen and (max-width: 40em) {
   .section--course .mean-duration {
-    font-size: 25px;
-    line-height: 34px;
-    padding-bottom: 40px;
+    padding: 15px;
+    background: transparent url("../img/blurb-2-mobile.png") 0 0 no-repeat;
+    margin-bottom: 40px;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    color: #333e48;
   }
 }
 @media only screen and (min-width: 40.063em) {
   .section--course .mean-duration {
     position: absolute;
-    top: 300px;
+    padding: 15px;
+    top: 485px;
+    background: transparent url("../img/blurb-2-desktop.png") 0 0 no-repeat;
+    width: 739px;
+    height: 76px;
+    line-height: 46px;
+    color: #333e48;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -1962,9 +2084,9 @@ a.pdf-link span sup {
 }
 @media only screen and (max-width: 40em) {
   .section--course .eighty {
-    height: 350px;
+    height: 339px;
     width: 350px;
-    margin: 0 auto;
+    margin: 16px auto 0 auto;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -1979,8 +2101,8 @@ a.pdf-link span sup {
   }
 }
 .section--course .eighty p {
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 28px;
+  line-height: 32px;
   left: -15px;
   padding: 0;
 }
@@ -2019,8 +2141,8 @@ a.pdf-link span sup {
   }
 }
 .section--course .forty-nine p {
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 28px;
+  line-height: 32px;
   left: -15px;
   padding: 0;
 }
@@ -2037,7 +2159,21 @@ a.pdf-link span sup {
 @media only screen and (max-width: 40em) {
   .section--course .chart-head {
     width: 544px;
+    margin: 0 auto;
   }
+}
+.section--course .chart-footnote {
+  text-align: left;
+  margin-left: 7px;
+}
+@media only screen and (min-width: 40.063em) {
+  .section--course .chart-footnote {
+    width: 93%;
+  }
+}
+.section--course .chart-footnote:before {
+  content: '*';
+  margin-left: -7px;
 }
 .section--course .percent {
   font-size: 0.5em;
@@ -2107,9 +2243,6 @@ a.pdf-link span sup {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  .section--effects .associated {
-    padding-left: 45px;
-  }
   .section--effects .associated h3 {
     padding-bottom: 24px;
   }
@@ -2209,6 +2342,7 @@ a.pdf-link span sup {
   }
   .section--effects .graphic .large {
     padding-top: 20px;
+    padding-bottom: 0;
     font-size: 160px;
     line-height: 160px;
     font-family: "Gill Sans W01 Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -2220,7 +2354,13 @@ a.pdf-link span sup {
 }
 @media only screen and (max-width: 40em) {
   .section--effects .sixty-three {
-    height: 450px;
+    height: 335px;
+    margin-top: 16px;
+  }
+  .section--effects .sixty-three p {
+    font-size: 28px;
+    line-height: 32px;
+    padding-right: 0;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -2230,10 +2370,20 @@ a.pdf-link span sup {
   }
 }
 .section--effects .nineteen {
+  /*.large {
+      letter-spacing: -10px;
+      sup {
+          letter-spacing: normal;
+      }
+  }*/
   background-image: url("../img/spiral.png");
 }
-.section--effects .nineteen .large {
-  letter-spacing: -10px;
+@media only screen and (max-width: 40em) {
+  .section--effects .nineteen p {
+    padding-right: 0;
+    font-size: 28px;
+    line-height: 32px;
+  }
 }
 @media only screen and (min-width: 40.063em) {
   .section--effects .nineteen {
@@ -2243,18 +2393,6 @@ a.pdf-link span sup {
 .section--effects .percent {
   font-size: 0.5em;
   top: -0.65em;
-}
-@media only screen and (max-width: 40em) {
-  .section--effects .footnote {
-    font-size: 25px;
-    line-height: 34px;
-  }
-}
-@media only screen and (min-width: 40.063em) {
-  .section--effects .footnote {
-    font-size: 18px;
-    line-height: 21px;
-  }
 }
 @media only screen and (min-width: 40.063em) {
   .section--effects .chart-footnote {
@@ -2282,8 +2420,8 @@ a.pdf-link span sup {
 }
 @media only screen and (max-width: 40em) {
   .section--neurobiology h2.pretitle {
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 40px;
+    line-height: 44px;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -2482,12 +2620,14 @@ a.pdf-link span sup {
   }
 }
 @media only screen and (max-width: 40em) {
+  .section--diagnosis p {
+    /*             &:nth-of-type(4) {
+                    margin-bottom: 0;
+                    padding-bottom: 5px;
+                } */
+  }
   .section--diagnosis p:nth-of-type(2), .section--diagnosis p:nth-of-type(3) {
     width: auto;
-  }
-  .section--diagnosis p:nth-of-type(4) {
-    margin-bottom: 0;
-    padding-bottom: 5px;
   }
 }
 .section--diagnosis p.center {
@@ -2501,6 +2641,9 @@ a.pdf-link span sup {
     font-size: 20px;
     line-height: 20px;
   }
+}
+.section--diagnosis .chart-head {
+  padding-bottom: 36px;
 }
 @media only screen and (min-width: 40.063em) {
   .section--diagnosis .graphic-wrap {
@@ -2597,9 +2740,6 @@ a.pdf-link span sup {
   background: url("../img/diagnosis-nineteen.png") top left no-repeat;
   min-height: 250px;
   padding-bottom: 40px;
-}
-.section--diagnosis .nineteen-percent .large {
-  letter-spacing: -10px;
 }
 @media only screen and (min-width: 40.063em) {
   .section--diagnosis .nineteen-percent {
@@ -2722,7 +2862,7 @@ a.pdf-link span sup {
 }
 @media only screen and (max-width: 40em) {
   .section--dsm5 ol.number {
-    padding-left: 0;
+    padding-left: 34px;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -2743,14 +2883,14 @@ a.pdf-link span sup {
 }
 .section--dsm5 p.disclaimer {
   margin-top: 15px;
-  width: 570px;
 }
 @media only screen and (max-width: 40em) {
   .section--dsm5 p.disclaimer {
+    width: 570px;
     font-size: 30px;
     line-height: 42px;
     margin-top: 30px;
-    padding-left: 45px;
+    padding-bottom: 40px;
   }
 }
 .section--dsm5 .tab-container {
@@ -2825,12 +2965,10 @@ a.pdf-link span sup {
     padding-right: 0;
   }
 }
-.section--dsm5 .tab-inner .close {
-  display: block;
-}
 @media only screen and (min-width: 40.063em) {
   .section--dsm5 .tab-inner .close {
     right: 10px;
+    display: block;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -2841,6 +2979,11 @@ a.pdf-link span sup {
 }
 .section--dsm5 .tab-inner h3 {
   color: #febd3f;
+}
+@media only screen and (max-width: 40em) {
+  .section--dsm5 .tab-inner h3 {
+    padding-left: 35px;
+  }
 }
 .section--dsm5 .tab-inner p {
   padding-top: 10px;
@@ -2940,8 +3083,8 @@ a.pdf-link span sup {
 }
 @media only screen and (max-width: 40em) {
   .section--dsm5 .signup {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 32px;
+    line-height: 40px;
     padding: 12px 20px;
     width: 460px;
   }
@@ -2999,87 +3142,100 @@ a.pdf-link span sup {
   margin: 0 30px 0 -32px;
   padding: 20px 40px 25px;
 }
+.section--resources .videos h3 {
+  padding-bottom: 24px;
+}
 @media only screen and (max-width: 40em) {
   .section--resources .videos {
     width: 640px;
     margin: 0 0 30px -20px;
   }
 }
-.section--resources .videos h3 {
+.section--resources .videos h4 {
   color: #ffffff;
   margin-bottom: 30px;
 }
-@media only screen and (max-width: 40em) {
-  .section--resources .videos h3 {
-    font-size: 27px;
-    width: 640px;
-  }
+.section--resources .videos video {
+  display: none;
 }
-.section--resources .videos .video-placeholder {
+.section--resources .videos .mejs-container video {
   display: block;
-  width: 600px;
-  max-width: 100%;
-  height: auto;
-  margin: 25px auto;
-  border: 2px solid #616364;
 }
-.section--resources .videos ul {
+.section--resources .video-playlist li {
   cursor: pointer;
-}
-.section--resources .videos li {
   background: #616364;
-  display: inline-block;
-  width: 180px;
-  height: 160px;
-  margin-right: 4px;
+  display: block;
+  margin: 0 auto 1px auto;
 }
 @media only screen and (min-width: 40.063em) {
-  .section--resources .videos li {
-    width: 600px;
+  .section--resources .video-playlist li {
+    width: 800px;
     height: 60px;
     font-size: 18px;
     padding: 0 20px;
-    display: block;
-    margin: 0 auto 10px auto;
+    padding-left: 80px;
   }
 }
 @media only screen and (max-width: 40em) {
-  .section--resources .videos li {
+  .section--resources .video-playlist li {
     width: 100%;
-    height: 60px;
-    margin-right: 7px;
-    padding: 0 20px;
+    min-height: 60px;
+    padding: 10px 20px;
     text-align: center;
+    padding-left: 80px;
   }
 }
-.section--resources .videos li p {
+.section--resources .video-playlist li:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #3d3d3d;
+  width: 60px;
+}
+.section--resources .video-playlist li:after {
+  content: '\25B6';
+  color: #febd3f;
+  text-align: center;
+  width: 60px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -11px;
+}
+@media only screen and (max-width: 40em) {
+  .section--resources .video-playlist li:after {
+    margin-top: -14.5px;
+    font-size: 30px;
+  }
+}
+.section--resources .video-playlist li.active, .section--resources .video-playlist li:hover {
+  background-color: #747779;
+}
+.section--resources .video-playlist li p {
   margin: 0 auto;
   color: #febd3f;
   display: table-cell;
   width: 100%;
   vertical-align: middle;
-  text-align: center;
+  text-align: left;
   height: inherit;
   padding-bottom: 0;
   font-family: "Gill Sans W01 Medium", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 @media only screen and (max-width: 40em) {
-  .section--resources .videos li p {
+  .section--resources .video-playlist li p {
     font-size: 24px;
     line-height: 26px;
-    width: 560px;
+    width: 500px;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  .section--resources .videos li p {
+  .section--resources .video-playlist li p {
     font-size: 18px;
     line-height: 20px;
-    padding-top: 0;
-    width: 560px;
   }
-}
-.section--resources .videos li:hover {
-  background-color: #747779;
 }
 .section--resources .video-player {
   position: relative;
@@ -3091,17 +3247,36 @@ a.pdf-link span sup {
   top: 50%;
   margin-top: -20px;
   cursor: pointer;
+  opacity: 0.5;
 }
 .section--resources .video-player .arrow:hover {
-  opacity: 0.8;
+  opacity: 1;
+}
+@media only screen and (max-width: 40em) {
+  .section--resources .video-player .arrow {
+    display: none;
+  }
 }
 .section--resources .video-player .arrow-left {
-  left: 105px;
+  left: 10px;
   background: url("../img/arrow-left.png") center center no-repeat;
 }
+@media only screen and (max-width: 40em) {
+  .section--resources .video-player .arrow-left {
+    left: -35px;
+  }
+}
 .section--resources .video-player .arrow-right {
-  right: 105px;
+  right: 10px;
   background: url("../img/arrow-right.png") center center no-repeat;
+}
+@media only screen and (max-width: 40em) {
+  .section--resources .video-player .arrow-right {
+    right: -35px;
+  }
+}
+.section--resources .video-player .mejs-container {
+  margin: 0 auto 1px auto;
 }
 @media only screen and (min-width: 40.063em) {
   .section--resources h3.org-header {
@@ -3178,10 +3353,10 @@ a.pdf-link span sup {
 }
 @media only screen and (max-width: 40em) {
   .section--resources .signup {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 32px;
+    line-height: 40px;
     padding: 12px 20px;
-    width: 460px;
+    width: 490px;
   }
 }
 .section--resources .references {

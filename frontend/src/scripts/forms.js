@@ -169,23 +169,23 @@
         };
 
         $scope.processForm = function(path, sdata) {
-            // $log.log(sdata);
-            // $http({
-            //     headers: {
-            //         'Content-Type': 'application/json; charset=utf-8'
-            //     },
-            //     method: 'POST',
-            //     url: path,
-            //     data: sdata,
-            // }).
-            // success(function() {
-            //     showUnsubscribeThankYou();
-            // }).
-            // error(function(data) {
-            //     $log.log(data);
-            // });
-
-            showUnsubscribeThankYou();
+            $log.log(sdata);
+            $http({
+                headers: {
+                    'Content-Type': 'application/json; charset=utf-8'
+                },
+                method: 'POST',
+                url: path,
+                data: sdata,
+            }).
+            success(function() {
+                $scope.clearFormData();
+                showUnsubscribeThankYou();
+            }).
+            error(function(data) {
+                $scope.clearFormData();
+                showUnsubscribeError();
+            });
         };
 
         $scope.checkFormPresent = function(item) {
@@ -194,6 +194,20 @@
             } else {
                 return null;
             }
+        };
+
+        $scope.clearFormData = function() {
+            $scope.bed_form.$setPristine();
+            $scope.invalidform = false;
+            $scope.form.email = null;
+            $scope.form.fname = null;
+            $scope.form.MI = null;
+            $scope.form.lname = null;
+            $scope.form.street = null;
+            $scope.form.suite = null;
+            $scope.form.city = null;
+            $scope.form.state = 0;
+            $scope.form.zip = null;
         };
     }
 
@@ -272,25 +286,42 @@
             }
         };
 
-        $scope.processOptIn = function(path, sdata) {
-            // $log.log(sdata);
-            // $http({
-            //     headers: {
-            //         'Content-Type': 'application/json; charset=utf-8'
-            //     },
-            //     method: 'POST',
-            //     url: path,
-            //     data: sdata,
-            //     'dataType': 'json'
-            // }).
-            // success(function() {
-            //     showSignUpThankYou();
-            // }).
-            // error(function(data) {
-            //     $log.log(data);
-            // });
+        $scope.clearFormData = function() {
+            $scope.bed_form.$setPristine();
+            $scope.invalidform = false;
+            $scope.form.email = null;
+            $scope.form.confirmemail = null;
+            $scope.form.fname = null;
+            $scope.form.MI = null;
+            $scope.form.lname = null;
+            $scope.form.street = null;
+            $scope.form.suite = null;
+            $scope.form.city = null;
+            $scope.form.state = 0;
+            $scope.form.zip = null;
+            $scope.form.profession = 0;
+            $scope.form.checkbox = false;
+        };
 
-            showSignUpThankYou();
+        $scope.processOptIn = function(path, sdata) {
+            $log.log(sdata);
+            $http({
+                headers: {
+                    'Content-Type': 'application/json; charset=utf-8'
+                },
+                method: 'POST',
+                url: path,
+                data: sdata,
+                'dataType': 'json'
+            }).
+            success(function() {
+                $scope.clearFormData();
+                showSignUpThankYou();
+            }).
+            error(function(data) {
+                $scope.clearFormData();
+                showSignUpError();
+            });
         };
     }
 }).call(this);
@@ -451,4 +482,12 @@ function showSignUpThankYou() {
 
 function showUnsubscribeThankYou() {
     $('.modal.modal--unsubscribe').show();
+}
+
+function showSignUpError() {
+    $('.modal.modal--signup_error').show();
+}
+
+function showUnsubscribeError() {
+    $('.modal.modal--unsubscribe_error').show();
 }

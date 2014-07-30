@@ -179,10 +179,12 @@
                 data: sdata,
             }).
             success(function() {
+                $scope.clearFormData();
                 showUnsubscribeThankYou();
             }).
             error(function(data) {
-                $log.log(data);
+                $scope.clearFormData();
+                showUnsubscribeError();
             });
         };
 
@@ -192,6 +194,20 @@
             } else {
                 return null;
             }
+        };
+
+        $scope.clearFormData = function() {
+            $scope.bed_form.$setPristine();
+            $scope.invalidform = false;
+            $scope.form.email = null;
+            $scope.form.fname = null;
+            $scope.form.MI = null;
+            $scope.form.lname = null;
+            $scope.form.street = null;
+            $scope.form.suite = null;
+            $scope.form.city = null;
+            $scope.form.state = 0;
+            $scope.form.zip = null;
         };
     }
 
@@ -270,6 +286,23 @@
             }
         };
 
+        $scope.clearFormData = function() {
+            $scope.bed_form.$setPristine();
+            $scope.invalidform = false;
+            $scope.form.email = null;
+            $scope.form.confirmemail = null;
+            $scope.form.fname = null;
+            $scope.form.MI = null;
+            $scope.form.lname = null;
+            $scope.form.street = null;
+            $scope.form.suite = null;
+            $scope.form.city = null;
+            $scope.form.state = 0;
+            $scope.form.zip = null;
+            $scope.form.profession = 0;
+            $scope.form.checkbox = false;
+        };
+
         $scope.processOptIn = function(path, sdata) {
             $log.log(sdata);
             $http({
@@ -282,10 +315,12 @@
                 'dataType': 'json'
             }).
             success(function() {
+                $scope.clearFormData();
                 showSignUpThankYou();
             }).
             error(function(data) {
-                $log.log(data);
+                $scope.clearFormData();
+                showSignUpError();
             });
         };
     }
@@ -447,4 +482,12 @@ function showSignUpThankYou() {
 
 function showUnsubscribeThankYou() {
     $('.modal.modal--unsubscribe').show();
+}
+
+function showSignUpError() {
+    $('.modal.modal--signup_error').show();
+}
+
+function showUnsubscribeError() {
+    $('.modal.modal--unsubscribe_error').show();
 }
