@@ -102,67 +102,67 @@ namespace BEDService
             return errors;
         }
 
-        //public List<string> SetUnsubscribeDataEmail(FormEmail email)
-        //{
-        //    AuditTrail auditTrail = new AuditTrail();
-        //    List<string> errors = null;
-        //    HCPIndividual hcp;
-        //    QuestionResponseSet questionResponseSet;
+        public List<string> SetUnsubscribeDataEmail(FormEmail email)
+        {
+            AuditTrail auditTrail = new AuditTrail();
+            List<string> errors = null;
+            HCPIndividual hcp;
+            QuestionResponseSet questionResponseSet;
 
-        //    try
-        //    {
-        //        errors = ValidateEmail(email);
+            try
+            {
+                errors = ValidateEmail(email);
 
-        //        if (errors.Count > 0)
-        //            return errors;
-        //        if (Services.ServiceIsAvailable)
-        //        {
-        //            EmailAddress emailAddress = new EmailAddress(email.Email);
+                if (errors.Count > 0)
+                    return errors;
+                if (Services.ServiceIsAvailable)
+                {
+                    EmailAddress emailAddress = new EmailAddress(email.Email);
 
-        //            hcp = new HCPIndividual();
-        //            hcp.EmailAddresses = new List<EmailAddress>();
-        //            hcp.EmailAddresses.Add(emailAddress);
- 
-        //            //hcp.PIISetID = long.MaxValue;
+                    hcp = new HCPIndividual();
+                    hcp.EmailAddresses = new List<EmailAddress>();
+                    hcp.EmailAddresses.Add(emailAddress);
 
-        //            RegistrationManager regMgr = new RegistrationManager();
-        //            regMgr.Individual = hcp;
+                    //hcp.PIISetID = long.MaxValue;
 
-        //            List<QuestionResponse> questionResponses = new List<QuestionResponse>();
-        //            QuestionResponse questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDExitMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), ConfigurationManager.AppSettings["MCCUnsubscribe"]);
-        //            questionResponses.Add(questionResponse);
+                    RegistrationManager regMgr = new RegistrationManager();
+                    regMgr.Individual = hcp;
 
-        //            questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDOptOutBEDEmail"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsYes"]));
-        //            questionResponses.Add(questionResponse);
+                    List<QuestionResponse> questionResponses = new List<QuestionResponse>();
+                    QuestionResponse questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDExitMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), ConfigurationManager.AppSettings["MCCUnsubscribe"]);
+                    questionResponses.Add(questionResponse);
 
-        //            questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDSourceMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), ConfigurationManager.AppSettings["RTWebSiteID"]);
-        //            questionResponses.Add(questionResponse);
+                    questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDOptOutBEDEmail"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsYes"]));
+                    questionResponses.Add(questionResponse);
 
-        //            questionResponseSet = new QuestionResponseSet();
-        //            // questionResponseSet.QuestionSetID = long.MaxValue;
-        //            questionResponseSet.QuestionResponses = questionResponses;
+                    questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDSourceMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), ConfigurationManager.AppSettings["RTWebSiteID"]);
+                    questionResponses.Add(questionResponse);
 
-        //            regMgr.PerformLiteRegistration(hcp, questionResponseSet);
-        //        }
-        //        else
-        //        {
-        //            errors.Add("The PMM services are unavailable");
-        //        }
+                    questionResponseSet = new QuestionResponseSet();
+                    // questionResponseSet.QuestionSetID = long.MaxValue;
+                    questionResponseSet.QuestionResponses = questionResponses;
 
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        auditTrail.SetAuditTrail(" ", AuditTrail.OperationType.Unsubscribtion_Failure, e.Source, e.Message);
-        //        throw e;
-        //    }
-        //    finally
-        //    {
-        //        log.Info(auditTrail.GetAuditTrail());
-        //        auditTrail = null;
-        //    }
+                    regMgr.PerformLiteRegistration(hcp, questionResponseSet);
+                }
+                else
+                {
+                    errors.Add("The PMM services are unavailable");
+                }
 
-        //    return errors;
-        //}
+            }
+            catch (Exception e)
+            {
+                auditTrail.SetAuditTrail(" ", AuditTrail.OperationType.Unsubscribtion_Failure, e.Source, e.Message);
+                throw e;
+            }
+            finally
+            {
+                log.Info(auditTrail.GetAuditTrail());
+                auditTrail = null;
+            }
+
+            return errors;
+        }
 
         //public List<string> SetUnsubscribeDataAddress(FormAddress address)
         //{

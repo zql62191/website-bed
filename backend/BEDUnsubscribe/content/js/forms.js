@@ -24,7 +24,7 @@
         'Illinois',
         'Indiana',
         'Iowa',
-        'Kanasas',
+        'Kansas',
         'Kentucky',
         'Louisiana',
         'Maine',
@@ -130,7 +130,7 @@
             };
             $log.log(convertStateToAbbr($scope.form.state));
 
-            URL = "http://localhost:1210/Unsubscribe/Service/BEDUnsubscribe.svc/SetUnsubscribeDataBoth";
+            URL = "Service/BEDUnsubscribe.svc/SetUnsubscribeDataBoth";
             Data = JSON.stringify(data);
 
             $scope.processForm(URL, Data);
@@ -149,7 +149,7 @@
                 "Zip": $scope.form.zip
             };
 
-            URL = "http://localhost:1210/Unsubscribe/Service/BEDUnsubscribe.svc/SetUnsubscribeDataAddress";
+            URL = "Service/BEDUnsubscribe.svc/SetUnsubscribeDataAddress";
             Data = JSON.stringify(data);
 
             $scope.processForm(URL, Data);
@@ -162,7 +162,7 @@
                 "ConfirmEmail": $scope.form.email
             };
 
-            URL = "http://localhost:1210/Unsubscribe/Service/BEDUnsubscribe.svc/SetUnsubscribeDataEmail";
+            URL = "Service/BEDUnsubscribe.svc/SetUnsubscribeDataEmail";
             Data = JSON.stringify(data);
 
             $scope.processForm(URL, Data);
@@ -255,7 +255,7 @@
                 $(window).scrollTop(oldTop + bottomDifference);
             }, 100);
 
-            URL = "/BEDSite/Service/BEDService.svc/SetOptInData";
+            URL = "Service/BEDService.svc/SetOptInData";
             Data = JSON.stringify(data);
 
             $scope.processOptIn(URL, Data);

@@ -21,8 +21,8 @@ namespace BEDService
         [WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Bare, UriTemplate = "SetUnsubscribeDataAddress")]
         List<string> SetUnsubscribeDataAddress(FormAddress address);
 
-        //[OperationContract]
-        //[WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "SetUnsubscribeDataBoth")]
-        //List<string> SetUnsubscribeDataBoth(FormEmail email, FormAddress address);
+        [OperationContract]
+        [WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "SetUnsubscribeDataBoth")]
+        List<string> SetUnsubscribeDataBoth(FormEmail email, FormAddress address);
     }
 }

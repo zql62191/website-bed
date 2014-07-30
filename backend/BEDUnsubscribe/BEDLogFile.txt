@@ -43,3 +43,39 @@ Parameter name: value
 2014-07-29 14:59:12,010 [23] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
 2014-07-29 15:00:19,332 [10] INFO BEDService.BEDUnsubscribe - BED:: User:   | Operation: Unsubscribtion_success |  Category: SetUnsubscribeDataEmail | Message: OK 
 2014-07-29 15:01:21,957 [10] INFO BEDService.BEDUnsubscribe - BED:: User:   | Operation: Unsubscribtion_success |  Category: SetUnsubscribeDataEmail | Message: OK 
+2014-07-29 15:48:18,495 [7] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-07-29 16:00:28,626 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-07-29 16:04:19,984 [23] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-07-29 16:07:52,291 [25] INFO BEDService.BEDUnsubscribe - BED:: User:   | Operation: Unsubscribtion_Failure |  Category: App_Code.vpykyu0n | Message: Object reference not set to an instance of an object. 
+2014-07-29 16:45:08,899 [110] INFO BEDService.BEDUnsubscribe - BED:: User:   | Operation: Unsubscribtion_Failure |  Category: ShireRealtime | Message: Object reference not set to an instance of an object. 
+2014-07-29 16:48:18,490 [105] INFO BEDService.BEDUnsubscribe - BED:: User:   | Operation: Unsubscribtion_Failure |  Category: ShireRealtime | Message: Object reference not set to an instance of an object. 
+2014-07-29 16:48:22,810 [110] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-07-29 16:48:49,496 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-07-29 16:50:53,172 [9] INFO BEDService.BEDUnsubscribe - BED:: User:   | Operation: Unsubscribtion_Failure |  Category: ShireRealtime | Message: Object reference not set to an instance of an object. 
+2014-07-29 16:58:54,875 [5] INFO BEDService.BEDUnsubscribe - BED:: User:   | Operation: Unsubscribtion_Failure |  Category: ShireRealtime | Message: Object reference not set to an instance of an object. 
+2014-07-29 16:59:21,985 [19] INFO BEDService.BEDUnsubscribe - BED:: User:   | Operation: Unsubscribtion_Failure |  Category: ShireRealtime | Message: Object reference not set to an instance of an object. 
+2014-07-29 17:00:30,644 [17] INFO BEDService.BEDUnsubscribe - BED:: User:  | Operation: Uninitialized |  Category:  | Message:  
+2014-07-29 17:04:21,023 [29] INFO BEDService.BEDUnsubscribe - BED:: User:  | Operation: Uninitialized |  Category:  | Message:  
+2014-07-29 17:04:56,984 [27] INFO BEDService.BEDUnsubscribe - BED:: User:  | Operation: Uninitialized |  Category:  | Message:  
+2014-07-29 17:05:15,544 [30] INFO BEDService.BEDUnsubscribe - BED:: User:  | Operation: Uninitialized |  Category:  | Message:  
+2014-07-29 17:05:54,194 [25] INFO BEDService.BEDUnsubscribe - BED:: User:  | Operation: Uninitialized |  Category:  | Message:  
+2014-07-29 17:06:29,729 [30] INFO BEDService.BEDUnsubscribe - BED:: User:   | Operation: Unsubscribtion_success |  Category: SetUnsubscribeDataEmail | Message: OK 
+2014-07-29 17:07:04,765 [26] INFO BEDService.BEDUnsubscribe - BED:: User:   | Operation: Unsubscribtion_success |  Category: SetUnsubscribeDataBoth | Message: OK 
+2014-07-29 17:09:37,680 [9] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-07-29 17:10:19,372 [7] INFO BEDService.BEDUnsubscribe - BED:: User:   | Operation: Unsubscribtion_success |  Category: SetUnsubscribeDataAddress | Message: OK 
+2014-07-29 17:18:37,810 [9] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-07-29 17:20:30,020 [47] INFO BEDService.BEDUnsubscribe - BED:: User:   | Operation: Unsubscribtion_Failure |  Category: ShireRealtime | Message: The INSERT statement conflicted with the FOREIGN KEY constraint "websites_realtime_error_log_fk". The conflict occurred in database "realtime_log", table "dbo.tbl_websites", column 'website_id'.
+The statement has been terminated. 
+2014-07-29 17:20:33,717 [9] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-07-29 17:31:50,035 [51] INFO BEDService.BEDUnsubscribe - BED:: User:   | Operation: Unsubscribtion_Failure |  Category: ShireRealtime | Message: The INSERT statement conflicted with the FOREIGN KEY constraint "websites_realtime_error_log_fk". The conflict occurred in database "realtime_log", table "dbo.tbl_websites", column 'website_id'.
+The statement has been terminated. 
+2014-07-29 17:32:33,415 [9] INFO BEDService.BEDUnsubscribe - BED:: User:   | Operation: Unsubscribtion_Failure |  Category: App_Code.dz2zkh2k | Message: Object reference not set to an instance of an object. 
+2014-07-29 17:32:38,087 [9] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-07-29 17:33:05,997 [53] INFO BEDService.BEDUnsubscribe - BED:: User:   | Operation: Unsubscribtion_success |  Category: SetUnsubscribeDataAddress | Message: OK 
+2014-07-29 17:34:08,461 [48] INFO BEDService.BEDUnsubscribe - BED:: User:   | Operation: Unsubscribtion_success |  Category: SetUnsubscribeDataAddress | Message: OK 
+2014-07-29 17:34:19,894 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-07-29 17:37:40,037 [15] INFO BEDService.BEDUnsubscribe - BED:: User:   | Operation: Unsubscribtion_Failure |  Category: App_Code.kllsmf6m | Message: Object reference not set to an instance of an object. 
+2014-07-29 17:37:43,648 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-07-29 17:38:06,611 [8] INFO BEDService.BEDUnsubscribe - BED:: User:  | Operation: Uninitialized |  Category:  | Message:  
+2014-07-29 17:38:38,604 [17] INFO BEDService.BEDUnsubscribe - BED:: User:  | Operation: Uninitialized |  Category:  | Message:  
+2014-07-29 17:39:26,685 [8] INFO BEDService.BEDUnsubscribe - BED:: User:   | Operation: Unsubscribtion_success |  Category: SetUnsubscribeDataBoth | Message: OK 

@@ -138,6 +138,7 @@ namespace BEDService
             List<string> errors = null;
             HCPIndividual hcp;
             QuestionResponseSet questionResponseSet;
+
             try
             {
                 errors = ValidateAddress(address);
@@ -146,6 +147,7 @@ namespace BEDService
                     return errors;
                 if (Services.ServiceIsAvailable)
                 {
+                    EmailAddress emailAddress = new EmailAddress("test@test.com");
                     Address Address = new Address(address.Address1, address.Address2, address.City, address.State, address.Zip, "", "");
 
                     hcp = new HCPIndividual();
@@ -154,6 +156,8 @@ namespace BEDService
                     hcp.MiddleName = address.MName;
                     hcp.Addresses = new List<Address>();
                     hcp.Addresses.Add(Address);
+                    hcp.EmailAddresses = new List<EmailAddress>();
+                    hcp.EmailAddresses.Add(emailAddress);
 
                     //hcp.PIISetID = long.MaxValue;
 
@@ -239,10 +243,7 @@ namespace BEDService
                     QuestionResponse questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDExitMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), ConfigurationManager.AppSettings["MCCUnsubscribe"]);
                     questionResponses.Add(questionResponse);
 
-                    questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDOptOutBEDEmail"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsYes"]));
-                    questionResponses.Add(questionResponse);
-
-                    questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDOptOutBEDDirectMail"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsYes"]));
+                    questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDOptOutAll"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsYes"]));
                     questionResponses.Add(questionResponse);
 
                     questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDSourceMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), ConfigurationManager.AppSettings["RTWebSiteID"]);
