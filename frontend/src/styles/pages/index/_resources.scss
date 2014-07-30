@@ -180,6 +180,10 @@
             &:hover {
                 opacity: 1;
             }
+
+            @include mq("mobile") {
+                display: none;
+            }
         }
         .arrow-left {
             left: 10px;

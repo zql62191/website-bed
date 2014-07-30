@@ -85,17 +85,17 @@ ng\:form {
 }
 
 sub, sup {
-  font-size: 0.6em;
+  font-size: 0.33em;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
 }
 
 sup {
-  top: -0.5em;
+  top: -1.5em;
 }
 .eq-ie sup {
-  top: -0.8em;
+  top: -1.8em;
 }
 
 sub {
@@ -2801,7 +2801,7 @@ a.pdf-link span sup {
     font-size: 30px;
     line-height: 42px;
     margin-top: 30px;
-    padding-left: 45px;
+    padding-bottom: 40px;
   }
 }
 .section--dsm5 .tab-container {
@@ -3159,6 +3159,11 @@ a.pdf-link span sup {
 }
 .section--resources .video-player .arrow:hover {
   opacity: 1;
+}
+@media only screen and (max-width: 40em) {
+  .section--resources .video-player .arrow {
+    display: none;
+  }
 }
 .section--resources .video-player .arrow-left {
   left: 10px;

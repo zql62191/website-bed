@@ -21,16 +21,16 @@ ng\:form {
 }
 
 sub, sup {
-    font-size: 0.6em;
+    font-size: 0.33em;
     line-height: 0;
     position: relative;
     vertical-align: baseline;
 }
 
 sup {
-    top: -0.5em;
+    top: -1.5em;
     .eq-ie & {
-        top: -0.8em;
+        top: -1.8em;
     }
 }
 
