@@ -4,8 +4,7 @@ div(data-section='course').section.section--course
   
   .content-wrap
 
-    div('data-bottom-top'='opacity: 0; transform: translate3d(0px,-50px,0px)',
-        'data-bottom-bottom'='opacity: 1; transform: translate3d(0px,0,0px)')
+    div(data-skrollr='course-title')
       h2.
         BED onset occurs later than other eating disorders
       
@@ -21,15 +20,9 @@ div(data-section='course').section.section--course
       .twenty-one-animated.hide--mobile
         .animated-wrap
           .numbers-wrap
-            div(
-              data--10p-bottom='transform: translate3d(732px,0px,0px)',
-              data--25p-bottom='transform: translate3d(0px,0px,0px)'
-            ).numbers
+            div(data-skrollr='course-21-numbers').numbers
           .brackets
-          div(
-              data--20p-bottom='opacity: 0; transform: scale(0);',
-              data--35p-bottom='opacity: 1; transform: scale(1);'
-            ).copy
+          div(data-skrollr='course-21-copy').copy
 
       p.twenty-one.hide--desktop
         img(src='img/course-21.png')

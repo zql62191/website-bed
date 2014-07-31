@@ -46,22 +46,18 @@ div(data-section='diagnosis').section.section--diagnosis
       .fifty-percent
         .grey-circle
           .yellow-wrap
-            div(
-              data-bottom-top='transform: rotate(-180deg);',
-              data--20p-bottom='transform: rotate(0deg);').yellow-circle
+            div(data-skrollr='diagnosis-circle').yellow-circle
 
-        p(data-bottom-top='opacity: 0;',
-          data--20p-bottom='opacity: 1;').large.yellow.
+        p(data-skrollr='diagnosis-50').large.yellow.
           &lt;50#[sup.percent %]
 
-        p(data-bottom-top='opacity: 0;',
-          data--20p-bottom='opacity: 1;').yellow.
+        p(data-skrollr='diagnosis-50-caption').yellow.
           of adults with BED #[br]are obese
 
 
       .nineteen-percent.weight-graphic
 
-        p.large.yellow.
+        p(data-skrollr='diagnosis-19').large.yellow.
           19#[sup.percent %]
 
         p.yellow.
@@ -69,7 +65,7 @@ div(data-section='diagnosis').section.section--diagnosis
 
       .thirty-six-percent.weight-graphic
 
-        p.large.
+        p(data-skrollr='diagnosis-36').large.
           36#[sup.percent %]
 
         p.

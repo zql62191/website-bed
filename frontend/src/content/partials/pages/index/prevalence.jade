@@ -21,28 +21,16 @@ div(data-section='prevalence').section.section--prevalence
     h3.center.chart-head.
       12-month prevalence in US adults#[sup 2]:
 
-    
-
     .male-female-graphic
-      p(
-        data-bottom-top='opacity: 0; transform: translate3d(0px,100px,0px)',
-        data--30p-bottom='opacity: 1; transform: translate3d(0px,0px,0px)').
+      p(data-skrollr='prevalence-mf-text-1').
         #[span.yellow BED: 2 to 1]#[br]
         1.6% of women vs 0.8% of men
-      p(
-        data-bottom-top='opacity: 0; transform: translate3d(0px,100px,0px)',
-        data--30p-bottom='opacity: 1; transform: translate3d(0px,0px,0px)').
+      p(data-skrollr='prevalence-mf-text-2').
         #[span.yellow Bulimia nervosa: 5 to 1]#[br]
         0.5% of women vs 0.1% of men
 
-      .male-graphic.graphic(
-        data-bottom-top='opacity: 0; transform: translate3d(500px,0px,0px)',
-        data--30p-bottom='opacity: 1; transform: translate3d(0px,0,0px)')
-
-      .female-graphic.graphic(
-        data-bottom-top='opacity: 0; transform: translate3d(-500px,0px,0px)',
-        data--30p-bottom='opacity: 1; transform: translate3d(0px,0,0px)')
-
+      .male-graphic.graphic(data-skrollr='prevalence-male-graphic')
+      .female-graphic.graphic(data-skrollr='prevalence-female-graphic')
 
     .footnote
       p.
@@ -57,24 +45,15 @@ div(data-section='prevalence').section.section--prevalence
         Sample from a combined data set of 3 nationally representative US samples.#[sup 4]
 
       .patients-graphic
-        .patient-1(
-          data-bottom-top='transform: translate3d(-800px,0px,0px);',
-          data--40p-bottom='transform: translate3d(0px,0px,0px);').graphic
-        .patient-2(
-          data-bottom-top='transform: translate3d(-800px,0px,0px);',
-          data--30p-bottom='transform: translate3d(0px,0px,0px);').graphic
-        .patient-3(
-          data-bottom-top='transform: translate3d(-800px,0px,0px);',
-          data--20p-bottom='transform: translate3d(0px,0px,0px);').graphic
-        .patient-4(
-          data-bottom-top='transform: translate3d(-800px,0px,0px);',
-          data--10p-bottom='transform: translate3d(0px,0px,0px);').graphic
+        .patient-1(data-skrollr='patient-1').graphic
+        .patient-2(data-skrollr='patient-2').graphic
+        .patient-3(data-skrollr='patient-3').graphic
+        .patient-4(data-skrollr='patient-4').graphic
 
     p.frequencies.
       BED occurs with roughly similar frequencies in most industrialized countries (eg, Australia, Canada, #[br.hide--mobile]many European countries, New Zealand, and the United States).#[sup 1]
 
-
-    .blurb-2
+    .blurb-2(data-skrollr='prevalence-blurb-2')
       |In an online survey, only 3% of US adults who met #[em DSM-5]#[sup ®] criteria for BED reported being diagnosed with BED by a health care provider in the past 12 months.#[sup 5]#[br]&nbsp;
 
       .footnote.
