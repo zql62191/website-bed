@@ -163,7 +163,7 @@
                 <p ng-if="form.optoutchoice != &quot;none&quot;"><span class="red">*</span>Required Fields
                   
                 </p>
-                <div ng-if="form.optoutchoice == &quot;email&quot; || form.optoutchoice == &quot;both&quot;" class="email">
+                <div ng-if="form.optoutchoice != &quot;&quot;" class="email">
                   <input type="text" name="email" placeholder="*Email" ng-model="form.email" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/" ng-class="{forminvalid: (bed_form.email.$invalid &amp;&amp; bed_form.email.$dirty) || (bed_form.email.$invalid &amp;&amp; invalidform)}" ng-required="true" class="email">
                 </div>
                 <div ng-if="form.optoutchoice == &quot;direct&quot; || form.optoutchoice == &quot;both&quot;" class="address">

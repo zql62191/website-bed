@@ -25,11 +25,13 @@ module.exports = {
                 },
                 // Matches stylesheet links and their href attribute's value.
                 link: {
-                    'css/': 'content/css/'
+                    'css/': 'content/css/',
+                    'me/': 'content/me/'
                 },
                 // Matches script tags, and their sources.
                 script: {
-                    'js/': 'content/js/'
+                    'js/': 'content/js/',
+                    'me/': 'content/me/'
                 }
             }
         }]
@@ -60,11 +62,13 @@ module.exports = {
                 },
                 // Matches stylesheet links and their href attribute's value.
                 link: {
-                    'css/': 'content/css/'
+                    'css/': 'content/css/',
+                    'me/': 'content/me/'
                 },
                 // Matches script tags, and their sources.
                 script: {
-                    'js/': 'content/js/'
+                    'js/': 'content/js/',
+                    'me/': 'content/me/'
                 }
             }
         }]

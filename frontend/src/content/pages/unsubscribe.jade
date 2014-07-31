@@ -65,7 +65,7 @@ block content
 
           //- The placeholders used below cannot be styled.  These will need to be replaced.
           .email(
-              ng-if='form.optoutchoice == "email" || form.optoutchoice == "both"')
+              ng-if='form.optoutchoice != ""')
             input(
               type='text',
               name='email',
