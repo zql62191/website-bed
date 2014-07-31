@@ -130,7 +130,7 @@
             };
             $log.log(convertStateToAbbr($scope.form.state));
 
-            URL = "Service/BEDUnsubscribe.svc/SetUnsubscribeDataBoth";
+            URL = "/Unsubscribe/Service/BEDUnsubscribe.svc/SetUnsubscribeDataBoth";
             Data = JSON.stringify(data);
 
             $scope.processForm(URL, Data);
@@ -149,7 +149,7 @@
                 "Zip": $scope.form.zip
             };
 
-            URL = "Service/BEDUnsubscribe.svc/SetUnsubscribeDataAddress";
+            URL = "/Unsubscribe/Service/BEDUnsubscribe.svc/SetUnsubscribeDataAddress";
             Data = JSON.stringify(data);
 
             $scope.processForm(URL, Data);
@@ -162,7 +162,7 @@
                 "ConfirmEmail": $scope.form.email
             };
 
-            URL = "Service/BEDUnsubscribe.svc/SetUnsubscribeDataEmail";
+            URL = "/Unsubscribe/Service/BEDUnsubscribe.svc/SetUnsubscribeDataEmail";
             Data = JSON.stringify(data);
 
             $scope.processForm(URL, Data);
@@ -271,7 +271,7 @@
                 $(window).scrollTop(oldTop + bottomDifference);
             }, 100);
 
-            URL = "Service/BEDService.svc/SetOptInData";
+            URL = "/Service/BEDService.svc/SetOptInData";
             Data = JSON.stringify(data);
 
             $scope.processOptIn(URL, Data);
