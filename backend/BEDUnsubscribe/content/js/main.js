@@ -81,31 +81,31 @@ var BED = {
 
     videoPlayer: null,
 
-//    init: function() {
+    init: function() {
 
-//        $('#videoPlayer').exists(function() {
+        $('#videoPlayer').exists(function() {
 
-//            BED.videoPlayer = $('#videoPlayer').attr({
+            BED.videoPlayer = $('#videoPlayer').attr({
 
-//                width: window.matchMedia(BED.mq.mobile).matches ? 560 : 800,
+                width: window.matchMedia(BED.mq.mobile).matches ? 560 : 800,
 
-//                height: window.matchMedia(BED.mq.mobile).matches ? 315 : 450
+                height: window.matchMedia(BED.mq.mobile).matches ? 315 : 450
 
-//            }).mediaelementplayer({
+            }).mediaelementplayer({
 
-//                success: function(mediaElement, domObject) {
-//                    $(mediaElement).on('ended', function(e) {
-//                        console.log(e);
-//                    });
-//                },
+                success: function(mediaElement, domObject) {
+                    $(mediaElement).on('ended', function(e) {
+                        console.log(e);
+                    });
+                },
 
-//                error: function() {
+                error: function() {
 
-//                }
+                }
 
-//            })[0].player;
+            })[0].player;
 
-//        });
+        });
 
         // BED.scrollSections = _.map($('.section'), function(el) {
         //     return $(el).data('section');
