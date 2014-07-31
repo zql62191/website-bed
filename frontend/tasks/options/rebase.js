@@ -21,54 +21,17 @@ module.exports = {
                 // },
                 // Matches image elements and their source value.
                 img: {
-                    'img/': 'content/img/'
+                    'img/': '/content/img/'
                 },
                 // Matches stylesheet links and their href attribute's value.
                 link: {
-                    'css/': 'content/css/',
-                    'me/': 'content/me/'
+                    'css/': '/content/css/',
+                    'me/': '/content/me/'
                 },
                 // Matches script tags, and their sources.
                 script: {
-                    'js/': 'content/js/',
-                    'me/': 'content/me/'
-                }
-            }
-        }]
-    },
-    integrate2: {
-        options: {
-            filter: true,
-            base: ''
-        },
-        files: [{
-            expand: true,
-            cwd: '../backend/BEDUnsubscribe/content/',
-            src: '**/*.{html,css}',
-            dest: '../backend/BEDUnsubscribe/content/',
-            reference: true,
-            scopes: {
-                // Matches url() resource links in css.
-                // url: {
-                //   '../img/': '/content/img/'
-                // },
-                // Matches html link tags and their href attribute's value.
-                // a: {
-                //   '': ''
-                // },
-                // Matches image elements and their source value.
-                img: {
-                    'img/': 'content/img/'
-                },
-                // Matches stylesheet links and their href attribute's value.
-                link: {
-                    'css/': 'content/css/',
-                    'me/': 'content/me/'
-                },
-                // Matches script tags, and their sources.
-                script: {
-                    'js/': 'content/js/',
-                    'me/': 'content/me/'
+                    'js/': '/content/js/',
+                    'me/': '/content/me/'
                 }
             }
         }]

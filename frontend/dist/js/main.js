@@ -3,6 +3,15 @@
 //     return true;
 // };
 
+
+// setTimeout(function() {
+//     if (window.location.hash) {
+//         window.__hash = window.location.hash;
+//         window.scrollTo(0, 0);
+//         window.location.hash = '';
+//     }
+// }, 1);
+
 var BED = {
 
     gestures: {
@@ -114,7 +123,7 @@ var BED = {
             },
 
             //Course
-            'course-title' : {
+            'course-title': {
                 'data-bottom-top': 'opacity: 0; transform: translate3d(0px,-50px,0px)',
                 'data-bottom-bottom': 'opacity: 1; transform: translate3d(0px,0,0px)'
             },
@@ -212,14 +221,7 @@ var BED = {
         //     return $(el).data('section');
         // });
 
-        // setTimeout(function() {
-        //     if (window.location.hash) {
-        //         window.scrollTo(0, 0);
-        //         window.location.hash = '';
-        //     }
-        // }, 1);
-
-        if (!bowser.mobile && !bowser.tablet) {
+        if (!bowser.mobile && !bowser.tablet && !bowser.msie) {
 
             // alert('skrollr initializing');
 
@@ -231,7 +233,7 @@ var BED = {
                 if (jqEl.length > 0) {
                     jqEl.attr(value);
                 } else {
-                    console.warn('No matching element for animation: ', key);
+                    console.log('No matching element for animation: ', key);
                 }
             });
 
@@ -545,7 +547,6 @@ $.preloadImages = function() {
     for (var i = 0; i < arguments.length; i++) {
         $("<img />").attr("src", arguments[i]);
     }
-}
+};
 
 $.preloadImages("/img/dsm5-tab-bg.png");
-

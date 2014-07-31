@@ -1792,7 +1792,7 @@ a.pdf-link span sup {
 .section--prevalence .comparable .dagger {
   padding: 0 0 25px 0;
   /*&:before {
-      content: 'ΓÇá';
+      content: '†';
       margin-left: -15px;
   }*/
 }

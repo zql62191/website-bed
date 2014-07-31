@@ -63,9 +63,9 @@
 
     app = angular.module('BED.controllers', []);
 
-    app.controller('UnsubscribeController', ['$scope', '$window', '$log', '$location', '$document', '$timeout', '$http', UnsubscribeController]);
+    app.controller('UnsubscribeController', ['$scope', '$window', '$log', '$document', '$timeout', '$http', UnsubscribeController]);
 
-    function UnsubscribeController($scope, $window, $log, $location, $document, $timeout, $http) {
+    function UnsubscribeController($scope, $window, $log, $document, $timeout, $http) {
 
         $scope.states = statearray;
         $scope.invalidform = false;
@@ -217,9 +217,9 @@
         };
     }
 
-    app.controller('OptInController', ['$scope', '$window', '$log', '$location', '$document', '$timeout', '$http', OptInController]);
+    app.controller('OptInController', ['$scope', '$window', '$log', '$document', '$timeout', '$http', OptInController]);
 
-    function OptInController($scope, $window, $log, $location, $document, $timeout, $http) {
+    function OptInController($scope, $window, $log, $document, $timeout, $http) {
         $scope.states = statearray;
         $scope.invalidform = false;
         $scope.professions = [

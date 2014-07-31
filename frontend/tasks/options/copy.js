@@ -16,8 +16,7 @@ module.exports = {
             cwd: 'src/fonts/',
             dest: 'dist/fonts/',
             src: ['**/*.{ttf,otf,eot,woff,svg}'],
-            expand: true,
-            filter: 'isFile'
+            expand: true
         }]
     },
     images: {
@@ -25,8 +24,7 @@ module.exports = {
             cwd: 'src/images/',
             dest: 'dist/img/',
             src: ['**/*.{gif,jpg,png}'],
-            expand: true,
-            filter: 'isFile'
+            expand: true
         }]
     },
     scripts: {
@@ -34,8 +32,7 @@ module.exports = {
             cwd: 'src/scripts/',
             dest: 'dist/js/',
             src: ['*.{js,htc}'],
-            expand: true,
-            filter: 'isFile'
+            expand: true
         }]
     },
     styles: {
@@ -43,17 +40,15 @@ module.exports = {
             cwd: 'src/styles/',
             dest: 'dist/css/',
             src: ['*.css'],
-            expand: true,
-            filter: 'isFile'
+            expand: true
         }]
     },
     media: {
         files: [{
             cwd: 'src/media/',
             dest: 'dist/media/',
-            src: ['*'],
-            expand: true,
-            filter: 'isFile'
+            src: ['**/*'],
+            expand: true
         }]
     },
     vendor: {
@@ -62,7 +57,7 @@ module.exports = {
             dest: 'dist/',
             src: ['**/*'],
             expand: true,
-            filter: 'isFile'
+            dot: true
         }]
     },
     integrate: {
@@ -70,15 +65,8 @@ module.exports = {
             cwd: 'dist/',
             dest: '../backend/BEDSite/content/',
             src: ['**/*'],
-            expand: true
-        }]
-    },
-    integrate2: {
-        files: [{
-            cwd: 'dist/',
-            dest: '../backend/BEDUnsubscribe/content/',
-            src: ['**/*'],
-            expand: true
+            expand: true,
+            dot: true
         }]
     }
 };
