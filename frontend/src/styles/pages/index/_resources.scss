@@ -49,8 +49,12 @@
             background: url("#{$img-path}/bed-patient.png") no-repeat bottom left;
             padding-left: 400px;
             min-height: 386px;
-            // width: 1024px;
             margin-left: -32px;
+        }
+
+        ul ul li {
+            padding-bottom: 0;
+            padding-top: 10px;
         }
     }
     .videos {
@@ -58,26 +62,18 @@
         width: 1024px;
         margin: 0 30px 0 -32px;
         padding: 20px 40px 25px;
-        h3 {
-            padding-bottom: 24px;
-        }
+
         @include mq("mobile") {
             width: 640px;
             margin: 0 0 30px -20px;
-
-
         }
 
+        h3 {
+            padding-bottom: 24px;
+        }
         h4 {
             color: #ffffff;
-
-            //font-size: 24px;
             margin-bottom: 30px;
-
-            @include mq("mobile") {
-                //font-size: 27px;
-                //width: 640px;
-            }
         }
         video {
             display: none;
@@ -92,7 +88,7 @@
             background: #616364;
             display: block;
             margin: 0 auto 1px auto;
-            //border-bottom: #747779 solid 12px;
+
             @include mq("desktop") {
                 width: 800px;
                 height: 60px;
@@ -102,18 +98,12 @@
             }
 
             @include mq("mobile") {
-                //width: 268px;
-                //height: 240px;
                 width: 100%;
                 min-height: 60px;
-                // margin-right: 7px;
-                ///border-bottom: #747779 solid 18px;
                 padding: 10px 20px;
                 text-align: center;
                 padding-left: 80px;
             }
-
-
 
             &:before {
                 content: '';
@@ -133,6 +123,7 @@
                 left: 0;
                 top: 50%;
                 margin-top: -11px;
+
                 @include mq("mobile") {
                     margin-top: -14.5px;
                     font-size: 30px;
@@ -152,12 +143,12 @@
                 height: inherit;
                 padding-bottom: 0;
                 font-family: font("gill sans", "regular");
+
                 @include mq("mobile") {
                     font-size: 24px;
                     line-height: 26px;
                     width: 500px;
                 }
-
                 @include mq("desktop") {
                     font-size: 18px;
                     line-height: 20px;
@@ -169,6 +160,7 @@
     }
     .video-player {
         position: relative;
+
         .arrow {
             height: 40px;
             width: 30px;
@@ -296,8 +288,6 @@
         }
 
         p {
-            //font-size: 17px;
-            //line-height: 21px;
             color: #eeeeee;
             padding-right: 16px;
         }

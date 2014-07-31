@@ -438,3 +438,13 @@ var BED = {
     }
 
 };
+
+// preload dsm5 tab bg image
+$.preloadImages = function() {
+    for (var i = 0; i < arguments.length; i++) {
+        $("<img />").attr("src", arguments[i]);
+    }
+}
+
+$.preloadImages("/img/dsm5-tab-bg.png");
+
