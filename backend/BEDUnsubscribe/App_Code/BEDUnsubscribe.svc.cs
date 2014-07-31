@@ -107,7 +107,7 @@ namespace BEDService
             return errors;
         }
 
-        public List<string> SetUnsubscribeDataAddress(FormAddress address)
+        public List<string> SetUnsubscribeDataAddress(FormEmail email,FormAddress address)
         {
             AuditTrail auditTrail = new AuditTrail();
             List<string> errors = null;
@@ -122,7 +122,7 @@ namespace BEDService
                     return errors;
                 if (Services.ServiceIsAvailable)
                 {
-                    EmailAddress emailAddress = new EmailAddress("test@test.com");
+                    EmailAddress emailAddress = new EmailAddress(email.Email);
                     Address Address = new Address(address.Address1, address.Address2, address.City, address.State, address.Zip, "", "");
 
                     hcp = new HCPIndividual();

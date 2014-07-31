@@ -138,17 +138,32 @@
 
         $scope.unsubscribeDirect = function() {
             var URL;
+//            var data = {
+//                "FName": $scope.form.fname,
+//                "MName": $scope.checkFormPresent($scope.form.MI),
+//                "LName": $scope.form.lname,
+//                "Address1": $scope.form.street,
+//                "Address2": $scope.checkFormPresent($scope.form.suite),
+//                "City": $scope.form.city,
+//                "State": convertStateToAbbr($scope.form.state),
+//                "Zip": $scope.form.zip
+//            };
             var data = {
-                "FName": $scope.form.fname,
-                "MName": $scope.checkFormPresent($scope.form.MI),
-                "LName": $scope.form.lname,
-                "Address1": $scope.form.street,
-                "Address2": $scope.checkFormPresent($scope.form.suite),
-                "City": $scope.form.city,
-                "State": convertStateToAbbr($scope.form.state),
-                "Zip": $scope.form.zip
+                "email": {
+                    "Email": $scope.form.email,
+                    "ConfirmEmail": $scope.form.email
+                },
+                "address": {
+                    "FName": $scope.form.fname,
+                    "MName": $scope.checkFormPresent($scope.form.MI),
+                    "LName": $scope.form.lname,
+                    "Address1": $scope.form.street,
+                    "Address2": $scope.checkFormPresent($scope.form.suite),
+                    "City": $scope.form.city,
+                    "State": convertStateToAbbr($scope.form.state),
+                    "Zip": $scope.form.zip
+                }
             };
-
             URL = "/Unsubscribe/Service/BEDUnsubscribe.svc/SetUnsubscribeDataAddress";
             Data = JSON.stringify(data);
 

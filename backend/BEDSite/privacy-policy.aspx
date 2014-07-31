@@ -1,4 +1,7 @@
+﻿<%@ Page Title="Privacy Policy" Language="C#"  AutoEventWireup="true"
+    CodeFile="privacy-policy.aspx.cs" Inherits="privacypolicy" Debug="true" %>
 <!DOCTYPE html>
+
 <html lang="en" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="BED">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -10,23 +13,37 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="google" content="notranslate">
     <title></title>
+    <%-- <script type="text/javascript">
+         function pageLoad() {
+             alert("load");
+             var config = '<%=ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None)%>';
+             config.AppSettings.Settings["CommonConfigPath"].Value = "/common/config/";
+             alert(config.AppSettings.Settings["CommonConfigPath"].Value);
+             config.Save(ConfigurationSaveMode.Modified);
+
+             ConfigurationManager.RefreshSection("appSettings");
+         }
+         
+      
+    </script>--%>
     <script>
-      (function(a){if(/msie|trident/i.test(a)){a=a.match(/(?:msie |rv:)(\d+(\.\d+)?)/i);a=parseInt(a&&1<a.length&&a[1]||'',10);for(var c=['eq-ie'],b=6;12>=b;b++)a>b?c.push('gt-ie'+b):a<b?c.push('lt-ie'+b):a===b&&(c.push('lte-ie'+b),c.push('eq-ie'+b),c.push('gte-ie'+b));document.documentElement.className+=' '+c.join(' ')}})(navigator.userAgent||'');
+        (function (a) { if (/msie|trident/i.test(a)) { a = a.match(/(?:msie |rv:)(\d+(\.\d+)?)/i); a = parseInt(a && 1 < a.length && a[1] || '', 10); for (var c = ['eq-ie'], b = 6; 12 >= b; b++) a > b ? c.push('gt-ie' + b) : a < b ? c.push('lt-ie' + b) : a === b && (c.push('lte-ie' + b), c.push('eq-ie' + b), c.push('gte-ie' + b)); document.documentElement.className += ' ' + c.join(' ') } })(navigator.userAgent || '');
       
     </script>
     <link rel="stylesheet" href="content/css/styles.css">
-    <link rel="stylesheet" href="me/mediaelementplayer.min.css">
+    <link rel="stylesheet" href="content/me/mediaelementplayer.min.css">
     <script src="//fast.fonts.net/jsapi/352bad9a-496a-416d-b9cf-171842848303.js"></script><!--[if (gte IE 6)&(lte IE 8)]>
     <script src="content/js/ie.js"></script><![endif]-->
     <script src="content/js/libs.js"></script>
-    <script src="me/mediaelement-and-player.min.js"></script><!--[if (gte IE 6)&(lte IE 8)]>
+    <script src="content/me/mediaelement-and-player.min.js"></script><!--[if (gte IE 6)&(lte IE 8)]>
     <script src="content/js/skrollr.ie.js"></script><![endif]-->
     <script src="content/js/main.js"></script>
     <script src="content/js/forms.js"></script>
     <script>
-      $(BED.init);
+        $(BED.init);
       
     </script>
+   
   </head>
   <body>
     <div class="page-wrapper">
@@ -130,60 +147,9 @@
         </div>
       </div>
       <div class="page-content">
-        <div ng-controller="UnsubscribeController" class="ng-cloak unsubscribe">
+        <div class="privacy-policy">
           <div class="content-wrap">
-            <form id="bed_form" name="bed_form" ng-submit="unsubscribe()" autocomplete="offs" novalidate>
-              <h1>Unsubscribe</h1>
-              <p>
-                To unsubscribe from future communications, please select an option below, fill in the required fields, and click Submit.
-                
-              </p>
-              <div class="opt-out-choice">
-                <p class="form-line">
-                  <input type="radio" name="unsubscribe" value="email" ng-model="form.optoutchoice" ng-change="invalidform = false" id="emailRadio">
-                  <label for="emailRadio">I would like to opt out of future BED email communication.</label>
-                </p>
-                <p class="form-line">
-                  <input type="radio" name="unsubscribe" value="direct" ng-model="form.optoutchoice" ng-change="invalidform = false" id="directRadio">
-                  <label for="directRadio">
-                    I would like to opt out of future BED direct mail communication.
-                    
-                  </label>
-                </p>
-                <p class="form-line">
-                  <input type="radio" name="unsubscribe" value="both" ng-model="form.optoutchoice" ng-change="invalidform = false" id="bothRadio">
-                  <label for="bothRadio">
-                    I would like to opt out of all future Shire communication.
-                    
-                    
-                  </label>
-                </p>
-              </div>
-              <div class="required-fields">
-                <p ng-if="form.optoutchoice != &quot;none&quot;"><span class="red">*</span>Required Fields
-                  
-                </p>
-                <div class="email">
-                  <input type="text" name="email" placeholder="*Email" ng-model="form.email" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/" ng-class="{forminvalid: (bed_form.email.$invalid &amp;&amp; bed_form.email.$dirty) || (bed_form.email.$invalid &amp;&amp; invalidform)}" ng-required="true" class="email">
-                </div>
-                <div ng-if="form.optoutchoice == &quot;direct&quot; || form.optoutchoice == &quot;both&quot;" class="address">
-                  <input type="text" name="firstName" placeholder="*First Name" ng-model="form.fname" ng-required="true" ng-class="{forminvalid: (bed_form.firstName.$invalid &amp;&amp; bed_form.firstName.$dirty) || (bed_form.firstName.$invalid &amp;&amp; invalidform)}" class="first-name">
-                  <input type="text" name="middleInitial" placeholder="MI" ng-model="form.MI" ng-pattern="/^[a-zA-Z]$/" size="1" max-length="1" class="middle-initial">
-                  <input type="text" name="lastName" placeholder="*Last Name" ng-model="form.lname" ng-required="true" ng-class="{forminvalid: (bed_form.lastName.$invalid &amp;&amp; bed_form.lastName.$dirty) || (bed_form.lastName.$invalid &amp;&amp; invalidform)}" class="last-name">
-                  <input type="text" name="streetAddress" placeholder="*Street Address" ng-model="form.street" ng-required="true" ng-class="{forminvalid: (bed_form.streetAddress.$invalid &amp;&amp; bed_form.streetAddress.$dirty) || (bed_form.streetAddress.$invalid &amp;&amp; invalidform)}" class="street-address">
-                  <input type="text" name="suiteOffice" placeholder="Suite/Office" ng-model="form.suite" ng-required="false" class="suite-office">
-                  <input type="text" name="city" placeholder="*City" ng-model="form.city" ng-required="true" ng-class="{forminvalid: (bed_form.city.$invalid &amp;&amp; bed_form.city.$dirty) || (bed_form.city.$invalid &amp;&amp; invalidform)}" class=".city">
-                  <select name="state" ng-model="form.state" ng-options="state for state in states" ng-class="{forminvalid: (bed_form.state.$invalid &amp;&amp; bed_form.state.$dirty) || (bed_form.state.$pristine &amp;&amp; invalidform)}" ng-required="true" class="state">
-                    <option value="" ng-selected="true">
-                      *State
-                      
-                    </option>
-                  </select>
-                  <input type="text" name="zip" placeholder="*Zip" ng-model="form.zip" ng-pattern="/^[0-9]{5}$/" ng-required="true" maxlength="5" ng-class="{forminvalid: (bed_form.zip.$invalid &amp;&amp; bed_form.zip.$dirty) || (bed_form.zip.$invalid &amp;&amp; invalidform)}" class="zip">
-                </div>
-                <input type="submit" name="submit" value="SUBMIT" ng-if="form.optoutchoice != &quot;none&quot;" class="submit">
-              </div>
-            </form>
+            <asp:Literal ID="litPrivacyPolicy" runat="server"></asp:Literal>
           </div>
         </div>
       </div>
@@ -277,7 +243,7 @@
         </div>
       </div>
     </div>
-    <script>!/cdm210.com/i.test(location.host) && document.location.port !== '8005' && 'WebSocket' in window && window.WebSocket.CLOSING === 2 && document.write('\x3Cscript src="//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1">\x3C/script>');</script>
-    <script>!/cdm210.com/i.test(location.host) && document.location.port !== '8005' && /iP(hone|od|ad)|Android|BlackBerry|IEMobile/i.test(navigator.userAgent) && document.write('<script src="//'+(location.host||"localhost").split(":")[0]+':8081/target/target-script-min.js">\x3c/script>');</script>
+    <script>        !/cdm210.com/i.test(location.host) && document.location.port !== '8005' && 'WebSocket' in window && window.WebSocket.CLOSING === 2 && document.write('\x3Cscript src="//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1">\x3C/script>');</script>
+    <script>        !/cdm210.com/i.test(location.host) && document.location.port !== '8005' && /iP(hone|od|ad)|Android|BlackBerry|IEMobile/i.test(navigator.userAgent) && document.write('<script src="//' + (location.host || "localhost").split(":")[0] + ':8081/target/target-script-min.js">\x3c/script>');</script>
   </body>
 </html>

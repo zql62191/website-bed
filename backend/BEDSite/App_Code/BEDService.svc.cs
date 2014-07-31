@@ -30,6 +30,7 @@ namespace BEDService
 
         public List<string> SetOptInData(OptIn optIn)
         {
+            log4net.Config.XmlConfigurator.Configure();
           // string fname = obj.fname + obj.MI + obj.lname + obj.email;
             AuditTrail auditTrail = new AuditTrail();
             List<string> errors = null;
@@ -79,7 +80,8 @@ namespace BEDService
                     {
                         errors.Add(regMgr.StatusMessage);
                     }
-
+                    
+                    auditTrail.SetAuditTrail(" ", AuditTrail.OperationType.OptIn_Success, "SetOptInData", regMgr.Status.ToUpper());
                 }
                 else
                 {
@@ -97,6 +99,9 @@ namespace BEDService
                 hcp = null;
                 questionResponseSet = null;
                 regMgr = null;
+                log.Info(auditTrail.GetAuditTrail());
+                auditTrail = null;
+          
             }
 
             return errors;
