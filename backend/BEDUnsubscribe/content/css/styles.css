@@ -424,9 +424,6 @@ h1.white, h2.white, h3.white, h4.white, h5.white, h6.white {
   }
 }
 
-h2 {
-  padding-bottom: 35px;
-}
 @media only screen and (max-width: 40em) {
   h2 {
     font-size: 56px;
@@ -439,12 +436,10 @@ h2 {
   h2 {
     font-size: 36px;
     line-height: 38px;
+    padding-bottom: 35px;
   }
 }
 
-h3 {
-  padding-bottom: 10px;
-}
 @media only screen and (max-width: 40em) {
   h3 {
     font-size: 40px;
@@ -456,6 +451,7 @@ h3 {
   h3 {
     font-size: 26px;
     line-height: 29px;
+    padding-bottom: 10px;
   }
 }
 
@@ -481,7 +477,6 @@ h3 {
 
 .sub-head {
   font-family: "HelveticaNeueW01-55Roma", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  padding-bottom: 35px;
 }
 @media only screen and (max-width: 40em) {
   .sub-head {
@@ -494,6 +489,7 @@ h3 {
   .sub-head {
     font-size: 23px;
     line-height: 26px;
+    padding-bottom: 35px;
   }
 }
 
@@ -934,7 +930,7 @@ a.pdf-link span sup {
   top: 50px;
   bottom: 0;
   background: #e1e3e4;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 @media only screen and (max-width: 40em) {
   .slideout .slideout__inner {
@@ -959,6 +955,11 @@ a.pdf-link span sup {
 @media only screen and (max-width: 40em) {
   .slideout--signup .slideout__inner {
     width: 543px;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .slideout--signup .bed_form {
+    width: 665px;
   }
 }
 .slideout--signup .forminvalid {
@@ -3136,20 +3137,24 @@ a.pdf-link span sup {
     margin-left: -32px;
   }
 }
+.section--resources .graphic-wrap ul ul li {
+  padding-bottom: 0;
+  padding-top: 10px;
+}
 .section--resources .videos {
   background: #a1a1a1;
   width: 1024px;
   margin: 0 30px 0 -32px;
   padding: 20px 40px 25px;
 }
-.section--resources .videos h3 {
-  padding-bottom: 24px;
-}
 @media only screen and (max-width: 40em) {
   .section--resources .videos {
     width: 640px;
     margin: 0 0 30px -20px;
   }
+}
+.section--resources .videos h3 {
+  padding-bottom: 24px;
 }
 .section--resources .videos h4 {
   color: #ffffff;
