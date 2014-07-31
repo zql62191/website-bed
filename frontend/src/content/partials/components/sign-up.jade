@@ -45,7 +45,7 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
         placeholder='*E-mail',
         ng-model='form.email',
         ng-required='true',
-        ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/",
+        ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/",
         ng-class="{forminvalid: (bed_form.email.$invalid && bed_form.email.$dirty) || (bed_form.email.$invalid && invalidform)}",
         class='email')
 

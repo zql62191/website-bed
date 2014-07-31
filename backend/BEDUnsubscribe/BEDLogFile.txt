@@ -79,3 +79,8 @@ The statement has been terminated.
 2014-07-29 17:38:06,611 [8] INFO BEDService.BEDUnsubscribe - BED:: User:  | Operation: Uninitialized |  Category:  | Message:  
 2014-07-29 17:38:38,604 [17] INFO BEDService.BEDUnsubscribe - BED:: User:  | Operation: Uninitialized |  Category:  | Message:  
 2014-07-29 17:39:26,685 [8] INFO BEDService.BEDUnsubscribe - BED:: User:   | Operation: Unsubscribtion_success |  Category: SetUnsubscribeDataBoth | Message: OK 
+2014-07-31 09:25:47,492 [7] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-07-31 09:26:03,720 [5] INFO BEDService.BEDUnsubscribe - BED:: User:  | Operation: Uninitialized |  Category:  | Message:  
+2014-07-31 09:27:10,885 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-07-31 09:27:31,907 [9] INFO BEDService.BEDUnsubscribe - BED:: User:   | Operation: Unsubscribtion_success |  Category: SetUnsubscribeDataAddress | Message: OK 
+2014-07-31 10:05:10,323 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 

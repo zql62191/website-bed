@@ -71,7 +71,7 @@ block content
               name='email',
               placeholder='*Email',
               ng-model="form.email",
-              ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/",
+              ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/",
               ng-class="{forminvalid: (bed_form.email.$invalid && bed_form.email.$dirty) || (bed_form.email.$invalid && invalidform)}",
               ng-required="true",
               class='email')
