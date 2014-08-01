@@ -136,8 +136,6 @@ var BED = {
                 'data--35p-bottom': 'opacity: 1; transform: scale(1);'
             },
 
-
-
             //Effects
             'effects-title': {
                 'data-bottom-top': 'opacity: 0; transform: translate3d(0px,-50px,0px)',
@@ -185,10 +183,6 @@ var BED = {
 
     lastScrollPos: -1,
 
-    // currentPage: 'home',
-
-    // scrollSections: [],
-
     videoPlayer: null,
 
     init: function() {
@@ -217,13 +211,9 @@ var BED = {
 
         });
 
-        // BED.scrollSections = _.map($('.section'), function(el) {
-        //     return $(el).data('section');
-        // });
-
         if (!bowser.mobile && !bowser.tablet && !bowser.msie) {
 
-            // alert('skrollr initializing');
+            console.log('skrollr initializing');
 
             // set up animations
             _.each(BED.skrollr.ani, function(value, key, collection) {
@@ -241,11 +231,11 @@ var BED = {
                 smoothScrolling: true,
                 forceHeight: true,
                 beforerender: function(data) {
-                    // console.log('beforerender: ', data);
-                    //return data.direction !== 'up';
+                    console.log('beforerender: ', data);
+                    return data.direction !== 'up';
                 },
                 render: function(data) {
-                    // console.log('render: ', data);
+                    console.log('render: ', data);
                 }
             });
         }

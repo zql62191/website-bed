@@ -50,6 +50,17 @@ html(
       src='js/ie.js')
     <![endif]-->
 
+  body
+    .page-wrapper
+      include /partials/components/page-header.jade
+      include /partials/components/page-nav.jade
+      include /partials/components/sign-up.jade
+      include /partials/components/dsm5-slideout.jade
+      .page-content
+        block content
+      include /partials/components/page-footer.jade
+      include /partials/components/modal.jade
+
     script(
       src='js/libs.js')
     script(
@@ -64,17 +75,6 @@ html(
       src='js/forms.js')
     script.
       $(BED.init);
-
-  body
-    .page-wrapper
-      include /partials/components/page-header.jade
-      include /partials/components/page-nav.jade
-      include /partials/components/sign-up.jade
-      include /partials/components/dsm5-slideout.jade
-      .page-content
-        block content
-      include /partials/components/page-footer.jade
-      include /partials/components/modal.jade
 
     if dev
       script.
