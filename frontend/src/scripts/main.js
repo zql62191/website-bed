@@ -3,15 +3,6 @@
 //     return true;
 // };
 
-
-// setTimeout(function() {
-//     if (window.location.hash) {
-//         window.__hash = window.location.hash;
-//         window.scrollTo(0, 0);
-//         window.location.hash = '';
-//     }
-// }, 1);
-
 var BED = {
 
     gestures: {
@@ -59,23 +50,23 @@ var BED = {
             },
             'prevalence-mf-text-1': {
                 'data-bottom-top': 'opacity: 0; transform: translate3d(0px,100px,0px);',
-                'data--30p-bottom': 'opacity: 1; transform: translate3d(0px,0px,0px)'
+                'data-center': 'opacity: 1; transform: translate3d(0px,0px,0px)'
             },
             'prevalence-mf-text-2': {
                 'data-bottom-top': 'opacity: 0; transform: translate3d(0px,100px,0px)',
-                'data--30p-bottom': 'opacity: 1; transform: translate3d(0px,0px,0px)'
+                'data-center': 'opacity: 1; transform: translate3d(0px,0px,0px)'
             },
             'prevalence-male-graphic': {
                 'data-bottom-top': 'opacity: 0; transform: translate3d(500px,0px,0px)',
-                'data--30p-bottom': 'opacity: 1; transform: translate3d(0px,0,0px)'
+                'data-center': 'opacity: 1; transform: translate3d(0px,0,0px)'
             },
             'prevalence-female-graphic': {
                 'data-bottom-top': 'opacity: 0; transform: translate3d(-500px,0px,0px)',
-                'data--30p-bottom': 'opacity: 1; transform: translate3d(0px,0,0px)'
+                'data-center': 'opacity: 1; transform: translate3d(0px,0,0px)'
             },
             'prevalence-blurb-2': {
                 'data-bottom-top': 'opacity: 0; transform: translate3d(0px,100px,0px)',
-                'data--10p-bottom': 'opacity: 1; transform: translate3d(0px,0,0px)'
+                'data-center': 'opacity: 1; transform: translate3d(0px,0,0px)'
             },
 
             //Prevalence Patients
@@ -99,33 +90,33 @@ var BED = {
             //Neurobiology
             'neurobiology-header': {
                 'data-bottom-top': 'opacity: 0; transform: translate3d(0px,-50px,0px)',
-                'data-bottom-bottom': 'opacity: 1; transform: translate3d(0px,0,0px)'
+                'data-center': 'opacity: 1; transform: translate3d(0px,0,0px)'
             },
             'neurobiology-reward': {
                 'data-bottom-top': 'opacity: 0; transform: translate3d(100px,0px,0px)',
-                'data--10p-bottom': 'opacity: 1; transform: translate3d(0px,0,0px)'
+                'data-center': 'opacity: 1; transform: translate3d(0px,0,0px)'
             },
             'neurobiology-dysregulation': {
                 'data-bottom-top': 'opacity: 0; transform: translate3d(-100px,0px,0px)',
-                'data--10p-bottom': 'opacity: 1; transform: translate3d(0px,0,0px)'
+                'data-center': 'opacity: 1; transform: translate3d(0px,0,0px)'
             },
             'neurobiology-endogeneous': {
                 'data-bottom-top': 'opacity: 0; transform: translate3d(100px,0px,0px)',
-                'data--10p-bottom': 'opacity: 1; transform: translate3d(0px,0,0px)'
+                'data-center': 'opacity: 1; transform: translate3d(0px,0,0px)'
             },
             'neurobiology-risk': {
                 'data-bottom-top': 'opacity: 0; transform: translate3d(-100px,0px,0px)',
-                'data--10p-bottom': 'opacity: 1; transform: translate3d(0px,0,0px)'
+                'data-center': 'opacity: 1; transform: translate3d(0px,0,0px)'
             },
             'neurobiology-risk-2': {
                 'data-bottom-top': 'opacity: 0; transform: translate3d(100px,0px,0px)',
-                'data--10p-bottom': 'opacity: 1; transform: translate3d(0px,0,0px)'
+                'data-center': 'opacity: 1; transform: translate3d(0px,0,0px)'
             },
 
             //Course
-            'course-title': {
+            'course-title' : {
                 'data-bottom-top': 'opacity: 0; transform: translate3d(0px,-50px,0px)',
-                'data-bottom-bottom': 'opacity: 1; transform: translate3d(0px,0,0px)'
+                'data-center': 'opacity: 1; transform: translate3d(0px,0,0px)'
             },
             'course-21-numbers': {
                 'data--10p-bottom': 'transform: translate3d(732px,0px,0px)',
@@ -135,53 +126,66 @@ var BED = {
                 'data--20p-bottom': 'opacity: 0; transform: scale(0);',
                 'data--35p-bottom': 'opacity: 1; transform: scale(1);'
             },
+            'course-80': {
+                'data-bottom-top': 'opacity: 0; transform: scale(0.5);',
+                'data-center': 'opacity: 1; transform: scale(1);'
+            },
+            'course-49': {
+                'data-bottom-top': 'opacity: 0; transform: scale(0.5);',
+                'data-center': 'opacity: 1; transform: scale(1);'
+            },
+
 
             //Effects
             'effects-title': {
                 'data-bottom-top': 'opacity: 0; transform: translate3d(0px,-50px,0px)',
-                'data-bottom-bottom': 'opacity: 1; transform: translate3d(0px,0,0px)'
+                'data-center': 'opacity: 1; transform: translate3d(0px,0,0px)'
             },
             'effects-63': {
                 'data-bottom-top': 'opacity: 0; transform: scale(0.5);',
-                'data--20p-bottom': 'opacity: 1; transform: scale(1);'
+                'data-center': 'opacity: 1; transform: scale(1);'
             },
             'effects-19': {
                 'data-bottom-top': 'opacity: 0; transform: scale(0.5);',
-                'data--20p-bottom': 'opacity: 1; transform: scale(1);'
+                'data-center': 'opacity: 1; transform: scale(1);'
             },
 
             //Diagnosis
             'diagnosis-circle': {
                 'data-bottom-top': 'transform: rotate(-180deg);',
-                'data--20p-bottom': 'transform: rotate(0deg);'
+                'data-center': 'transform: rotate(0deg);'
             },
             'diagnosis-50': {
                 'data-bottom-top': 'opacity: 0;',
-                'data--20p-bottom': 'opacity: 1;'
+                'data-center': 'opacity: 1;'
             },
             'diagnosis-50-caption': {
                 'data-bottom-top': 'opacity: 0;',
-                'data--20p-bottom': 'opacity: 1;'
+                'data-center': 'opacity: 1;'
             },
             'diagnosis-19': {
                 'data-bottom-top': 'opacity: 0; transform: scale(0.5);',
-                'data--20p-bottom': 'opacity: 1; transform: scale(1);'
+                'data-center': 'opacity: 1; transform: scale(1);'
             },
             'diagnosis-36': {
                 'data-bottom-top': 'opacity: 0; transform: scale(0.5);',
-                'data--20p-bottom': 'opacity: 1; transform: scale(1);'
+                'data-center': 'opacity: 1; transform: scale(1);'
             },
 
             //Resources
             'resources-signup': {
                 'data-bottom-top': 'opacity: 0;',
-                'data--20p-bottom': 'opacity: 1;'
+                'data-center': 'opacity: 1;'
             }
 
         }
     },
 
     lastScrollPos: -1,
+
+    // currentPage: 'home',
+
+    // scrollSections: [],
 
     videoPlayer: null,
 
@@ -211,9 +215,20 @@ var BED = {
 
         });
 
+        // BED.scrollSections = _.map($('.section'), function(el) {
+        //     return $(el).data('section');
+        // });
+
+        // setTimeout(function() {
+        //     if (window.location.hash) {
+        //         window.scrollTo(0, 0);
+        //         window.location.hash = '';
+        //     }
+        // }, 1);
+
         if (!bowser.mobile && !bowser.tablet && !bowser.msie) {
 
-            console.log('skrollr initializing');
+            // alert('skrollr initializing');
 
             // set up animations
             _.each(BED.skrollr.ani, function(value, key, collection) {
@@ -223,7 +238,7 @@ var BED = {
                 if (jqEl.length > 0) {
                     jqEl.attr(value);
                 } else {
-                    console.log('No matching element for animation: ', key);
+                    console.warn('No matching element for animation: ', key);
                 }
             });
 
@@ -231,11 +246,11 @@ var BED = {
                 smoothScrolling: true,
                 forceHeight: true,
                 beforerender: function(data) {
-                    console.log('beforerender: ', data);
-                    return data.direction !== 'up';
+                    // console.log('beforerender: ', data);
+                    //return data.direction !== 'up';
                 },
                 render: function(data) {
-                    console.log('render: ', data);
+                    // console.log('render: ', data);
                 }
             });
         }
@@ -537,6 +552,7 @@ $.preloadImages = function() {
     for (var i = 0; i < arguments.length; i++) {
         $("<img />").attr("src", arguments[i]);
     }
-};
+}
 
 $.preloadImages("/img/dsm5-tab-bg.png");
+
