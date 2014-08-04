@@ -50,3 +50,9 @@
 2014-08-04 10:53:55,167 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
 2014-08-04 10:54:20,572 [19] INFO BEDService.BEDWCFService - BED:: User:  | Operation: Uninitialized |  Category:  | Message:  
 2014-08-04 10:56:02,962 [11] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Success |  Category: SetOptInData | Message: OK 
+2014-08-04 11:10:29,328 [10] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-04 12:21:15,230 [10] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Failure |  Category: App_Code.jgihfr0z | Message: Object reference not set to an instance of an object. 
+2014-08-04 12:22:19,515 [16] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Success |  Category: SetOptInData | Message: OK 
+2014-08-04 12:25:44,874 [101] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Failure |  Category: App_Code.jgihfr0z | Message: Object reference not set to an instance of an object. 
+2014-08-04 12:27:18,327 [100] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Failure |  Category: App_Code.jgihfr0z | Message: Object reference not set to an instance of an object. 
+2014-08-04 12:28:52,648 [7] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Success |  Category: SetOptInData | Message: OK 

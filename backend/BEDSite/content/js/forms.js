@@ -63,9 +63,9 @@
 
     app = angular.module('BED.controllers', []);
 
-    app.controller('UnsubscribeController', ['$scope', '$window', '$log', '$location', '$document', '$timeout', '$http', UnsubscribeController]);
+    app.controller('UnsubscribeController', ['$scope', '$window', '$log', '$document', '$timeout', '$http', UnsubscribeController]);
 
-    function UnsubscribeController($scope, $window, $log, $location, $document, $timeout, $http) {
+    function UnsubscribeController($scope, $window, $log, $document, $timeout, $http) {
 
         $scope.states = statearray;
         $scope.invalidform = false;
@@ -217,9 +217,9 @@
         };
     }
 
-    app.controller('OptInController', ['$scope', '$window', '$log', '$location', '$document', '$timeout', '$http', OptInController]);
+    app.controller('OptInController', ['$scope', '$window', '$log', '$document', '$timeout', '$http', OptInController]);
 
-    function OptInController($scope, $window, $log, $location, $document, $timeout, $http) {
+    function OptInController($scope, $window, $log, $document, $timeout, $http) {
         $scope.states = statearray;
         $scope.invalidform = false;
         $scope.professions = [
@@ -277,7 +277,7 @@
                 $(window).scrollTop(oldTop + bottomDifference);
             }, 100);
 
-            URL = "Service/BEDService.svc/SetOptInData";
+            URL = "/Service/BEDService.svc/SetOptInData";
             Data = JSON.stringify(data);
 
             $scope.processOptIn(URL, Data);
@@ -431,6 +431,7 @@ function convertStateToAbbr(state) {
         'Colorado': 'CO',
         'Connecticut': 'CT',
         'Delaware': 'DE',
+        'District of Columbia': 'DC',
         'Florida': 'FL',
         'Georgia': 'GA',
         'Hawaii': 'HI',

@@ -2,5 +2,5 @@
     CodeFile="Default.aspx.cs" Inherits="Default2" %>
 
      <%		  
-         Response.WriteFile("content/unsubscribe.html");
+         Response.WriteFile("/content/unsubscribe.html");
      %>

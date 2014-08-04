@@ -14,19 +14,10 @@
       (function(a){if(/msie|trident/i.test(a)){a=a.match(/(?:msie |rv:)(\d+(\.\d+)?)/i);a=parseInt(a&&1<a.length&&a[1]||'',10);for(var c=['eq-ie'],b=6;12>=b;b++)a>b?c.push('gt-ie'+b):a<b?c.push('lt-ie'+b):a===b&&(c.push('lte-ie'+b),c.push('eq-ie'+b),c.push('gte-ie'+b));document.documentElement.className+=' '+c.join(' ')}})(navigator.userAgent||'');
       
     </script>
-    <link rel="stylesheet" href="content/css/styles.css">
-    <link rel="stylesheet" href="me/mediaelementplayer.min.css">
+    <link rel="stylesheet" href="/content/css/styles.css">
+    <link rel="stylesheet" href="/content/me/mediaelementplayer.min.css">
     <script src="//fast.fonts.net/jsapi/352bad9a-496a-416d-b9cf-171842848303.js"></script><!--[if (gte IE 6)&(lte IE 8)]>
-    <script src="content/js/ie.js"></script><![endif]-->
-    <script src="content/js/libs.js"></script>
-    <script src="me/mediaelement-and-player.min.js"></script><!--[if (gte IE 6)&(lte IE 8)]>
-    <script src="content/js/skrollr.ie.js"></script><![endif]-->
-    <script src="content/js/main.js"></script>
-    <script src="content/js/forms.js"></script>
-    <script>
-      $(BED.init);
-      
-    </script>
+    <script src="/content/js/ie.js"></script><![endif]-->
   </head>
   <body>
     <div class="page-wrapper">
@@ -39,14 +30,14 @@
       <div data-direction="left" class="page-nav slideout slideout--menu">
         <nav class="slideout__inner">
                 <ul class="primary-nav">
-                  <li class="primary-nav__item _1_liner"><a href="/#home" target="_self">Home</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/#prevalence" target="_self">Prevalence</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/#dsm5" target="_self"><em>DSM-5<sup>&reg;</sup></em> Criteria</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/#course" target="_self">Clinical Characteristics</a></li>
-                  <li class="primary-nav__item _2_liner"><a href="/#effects" target="_self"><em>DSM-5<sup>&reg;</sup></em> Functional <br/>Consequences</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/#neurobiology" target="_self">Neurobiology</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/#diagnosis" target="_self">Recognizing BED in Adults</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/#resources" target="_self">Resources/Expert Videos</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/Default.aspx#home" target="_self">Home</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/index.html#prevalence" target="_self">Prevalence</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/index.html#dsm5" target="_self"><em>DSM-5<sup>&reg;</sup></em> Criteria</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/index.html#course" target="_self">Clinical Characteristics</a></li>
+                  <li class="primary-nav__item _2_liner"><a href="/index.html#effects" target="_self"><em>DSM-5<sup>&reg;</sup></em> Functional <br/>Consequences</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/index.html#neurobiology" target="_self">Neurobiology</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/index.html#diagnosis" target="_self">Recognizing BED in Adults</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/index.html#resources" target="_self">Resources/Expert Videos</a></li>
                 </ul>
         </nav>
       </div>
@@ -61,7 +52,7 @@
           </p>
           <form name="bed_form" id="bed_form" ng-submit="optIn()" novalidate>
             <input type="text" name="firstName" placeholder="*First Name" ng-model="form.fname" ng-required="true" ng-class="{forminvalid: (bed_form.firstName.$invalid &amp;&amp; bed_form.firstName.$dirty) || (bed_form.firstName.$invalid &amp;&amp; invalidform)}" class="first-name">
-            <input type="text" name="middleInitial" placeholder="MI" ng-model="form.MI" ng-required="false" class="middle-initial">
+            <input type="text" name="middleInitial" placeholder="MI" ng-model="form.MI" ng-required="false" maxlength="1" class="middle-initial">
             <input type="text" name="lastName" placeholder="*Last Name" ng-model="form.lname" ng-required="true" ng-class="{forminvalid: (bed_form.lastName.$invalid &amp;&amp; bed_form.lastName.$dirty) || (bed_form.lastName.$invalid &amp;&amp; invalidform)}" class="last-name">
             <input type="text" name="email" placeholder="*E-mail" ng-model="form.email" ng-required="true" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/" ng-class="{forminvalid: (bed_form.email.$invalid &amp;&amp; bed_form.email.$dirty) || (bed_form.email.$invalid &amp;&amp; invalidform)}" class="email">
             <input type="text" name="email2" ng-model="form.confirmemail" ng-required="true" confirmemail placeholder="*Re-enter E-mail" ng-class="{forminvalid: (bed_form.email2.$invalid &amp;&amp; bed_form.email2.$dirty) || (bed_form.email2.$invalid &amp;&amp; invalidform)}" class="email2">
@@ -163,12 +154,12 @@
                 <p ng-if="form.optoutchoice != &quot;none&quot;"><span class="red">*</span>Required Fields
                   
                 </p>
-                <div class="email">
+                <div ng-if="form.optoutchoice != &quot;none&quot;" class="email">
                   <input type="text" name="email" placeholder="*Email" ng-model="form.email" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/" ng-class="{forminvalid: (bed_form.email.$invalid &amp;&amp; bed_form.email.$dirty) || (bed_form.email.$invalid &amp;&amp; invalidform)}" ng-required="true" class="email">
                 </div>
                 <div ng-if="form.optoutchoice == &quot;direct&quot; || form.optoutchoice == &quot;both&quot;" class="address">
                   <input type="text" name="firstName" placeholder="*First Name" ng-model="form.fname" ng-required="true" ng-class="{forminvalid: (bed_form.firstName.$invalid &amp;&amp; bed_form.firstName.$dirty) || (bed_form.firstName.$invalid &amp;&amp; invalidform)}" class="first-name">
-                  <input type="text" name="middleInitial" placeholder="MI" ng-model="form.MI" ng-pattern="/^[a-zA-Z]$/" size="1" max-length="1" class="middle-initial">
+                  <input type="text" name="middleInitial" placeholder="MI" ng-model="form.MI" ng-pattern="/^[a-zA-Z]$/" size="1" maxlength="1" class="middle-initial">
                   <input type="text" name="lastName" placeholder="*Last Name" ng-model="form.lname" ng-required="true" ng-class="{forminvalid: (bed_form.lastName.$invalid &amp;&amp; bed_form.lastName.$dirty) || (bed_form.lastName.$invalid &amp;&amp; invalidform)}" class="last-name">
                   <input type="text" name="streetAddress" placeholder="*Street Address" ng-model="form.street" ng-required="true" ng-class="{forminvalid: (bed_form.streetAddress.$invalid &amp;&amp; bed_form.streetAddress.$dirty) || (bed_form.streetAddress.$invalid &amp;&amp; invalidform)}" class="street-address">
                   <input type="text" name="suiteOffice" placeholder="Suite/Office" ng-model="form.suite" ng-required="false" class="suite-office">
@@ -191,15 +182,15 @@
         <div class="content-wrap">
           <nav>
                   <ul class="secondary-nav">
-                    <li class="secondary-nav__item _1_liner"><a href="unsubscribe.aspx" target="_self">Unsubscribe</a></li>
-                    <li class="secondary-nav__item _1_liner"><a href="contact-us.aspx" target="_self">Contact Us</a></li>
-                    <li class="secondary-nav__item _1_liner"><a href="privacy-policy.aspx" target="_self">Privacy Policy</a></li>
+                    <li class="secondary-nav__item _1_liner"><a href="/Unsubscribe/Default.aspx" target="_self">Unsubscribe</a></li>
+                    <li class="secondary-nav__item _1_liner"><a href="/contact-us.aspx" target="_self">Contact Us</a></li>
+                    <li class="secondary-nav__item _1_liner"><a href="/privacy-policy.aspx" target="_self">Privacy Policy</a></li>
                     <li class="secondary-nav__item _1_liner"><a href="http://www.shire.com/" target="_blank">Shire US</a></li>
                   </ul>
-          </nav><img src="content/img/footer-logo.png" class="footer-logo">
+          </nav><img src="/content/img/footer-logo.png" class="footer-logo">
           <p>&copy;2014 <a href="http://www.shire.com/" target="_blank">Shire US Inc.,</a> Wayne, PA 19087 1‐800‐828‐2088 All rights reserved. S02592 08/14</p>
           <p>All content of this website including text, images, graphics, sound files, and their arrangement, belongs to Shire and is protected by international copyright laws. All other intellectual property rights are reserved. The content may not be copied for commercial use or distribution, nor may these objects be downloaded, modified, or posted to other sites.</p>
-          <p>This site is intended solely for US residents and is governed solely by US laws and government regulations. Please see <a href="privacy-policy.aspx">our privacy policy</a> for more information. While Shire US Inc. makes reasonable efforts to include accurate, up‐to‐date information on the site, Shire US Inc. makes no warranties or representations as to its accuracy. Shire US Inc. assumes no liability for any errors or omissions in the content of the site.</p>
+          <p>This site is intended solely for US residents and is governed solely by US laws and government regulations. Please see <a href="privacy-policy.html">our privacy policy</a> for more information. While Shire US Inc. makes reasonable efforts to include accurate, up‐to‐date information on the site, Shire US Inc. makes no warranties or representations as to its accuracy. Shire US Inc. assumes no liability for any errors or omissions in the content of the site.</p>
         </div>
       </div>
       <div class="modal modal--interstitial">
@@ -277,6 +268,15 @@
         </div>
       </div>
     </div>
+    <script src="/content/js/libs.js"></script>
+    <script src="/content/me/mediaelement-and-player.min.js"></script><!--[if (gte IE 6)&(lte IE 8)]>
+    <script src="/content/js/skrollr.ie.js"></script><![endif]-->
+    <script src="/content/js/main.js"></script>
+    <script src="/content/js/forms.js"></script>
+    <script>
+      $(BED.init);
+      
+    </script>
     <script>!/cdm210.com/i.test(location.host) && document.location.port !== '8005' && 'WebSocket' in window && window.WebSocket.CLOSING === 2 && document.write('\x3Cscript src="//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1">\x3C/script>');</script>
     <script>!/cdm210.com/i.test(location.host) && document.location.port !== '8005' && /iP(hone|od|ad)|Android|BlackBerry|IEMobile/i.test(navigator.userAgent) && document.write('<script src="//'+(location.host||"localhost").split(":")[0]+':8081/target/target-script-min.js">\x3c/script>');</script>
   </body>

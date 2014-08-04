@@ -114,7 +114,7 @@ var BED = {
             },
 
             //Course
-            'course-title' : {
+            'course-title': {
                 'data-bottom-top': 'opacity: 0; transform: translate3d(0px,-50px,0px)',
                 'data-center': 'opacity: 1; transform: translate3d(0px,0,0px)'
             },
@@ -552,7 +552,6 @@ $.preloadImages = function() {
     for (var i = 0; i < arguments.length; i++) {
         $("<img />").attr("src", arguments[i]);
     }
-}
+};
 
-$.preloadImages("/img/dsm5-tab-bg.png");
-
+$.preloadImages("img/dsm5-tab-bg.png");

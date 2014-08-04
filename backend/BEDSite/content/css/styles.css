@@ -2092,24 +2092,35 @@ a.pdf-link span sup {
 }
 @media only screen and (min-width: 40.063em) {
   .section--course .eighty {
-    -webkit-background-size: 80% 80%;
-    background-size: 80%;
-    width: 450px;
-    height: 350px;
+    -webkit-background-size: 100% 100%;
+    background-size: 100%;
+    width: 360px;
+    height: 340px;
     display: inline-block;
     margin-bottom: 0;
-    left: 85px;
+    margin-left: 85px;
   }
+}
+.lt-ie9 .section--course .eighty {
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
+                src='img/spiral.png',
+                sizingMethod='scale')";
 }
 .section--course .eighty p {
   font-size: 28px;
   line-height: 32px;
-  left: -15px;
-  padding: 0;
+  padding: 0 0 0 15px;
 }
-@media only screen and (max-width: 40em) {
+@media only screen and (min-width: 40.063em) {
   .section--course .eighty p {
     left: 15px;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .section--course .eighty .large {
+    left: 30px;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -2132,24 +2143,33 @@ a.pdf-link span sup {
 }
 @media only screen and (min-width: 40.063em) {
   .section--course .forty-nine {
-    -webkit-background-size: 80% 80%;
-    background-size: 80%;
-    margin: 0 15px;
-    width: 450px;
-    height: 350px;
+    margin-left: 30px;
+    padding: 0 15px;
+    width: 360px;
+    height: 340px;
     display: inline-block;
-    left: 20px;
   }
+}
+.lt-ie9 .section--course .forty-nine {
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
+                src='img/spiral.png',
+                sizingMethod='scale')";
 }
 .section--course .forty-nine p {
   font-size: 28px;
   line-height: 32px;
-  left: -15px;
-  padding: 0;
+  padding: 0 0 0 15px;
 }
-@media only screen and (max-width: 40em) {
+@media only screen and (min-width: 40.063em) {
   .section--course .forty-nine p {
     left: 15px;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .section--course .forty-nine .large {
+    left: 30px;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -2280,7 +2300,6 @@ a.pdf-link span sup {
     width: 350px;
     margin: 0 auto;
     height: 350px;
-    padding-left: 25px;
   }
   .section--effects .graphic h1 {
     width: 350px;
@@ -2304,8 +2323,6 @@ a.pdf-link span sup {
     height: 350px;
     text-align: center;
     display: inline-block;
-    -webkit-background-size: 80% 80%;
-    background-size: 80%;
     vertical-align: top;
   }
   .section--effects .graphic h1 {
@@ -2318,7 +2335,7 @@ a.pdf-link span sup {
     vertical-align: top;
     font-size: 22px;
     line-height: 26px;
-    left: -15px;
+    left: 15px;
     padding: 0;
   }
 }
@@ -2328,7 +2345,7 @@ a.pdf-link span sup {
   font-size: 160px;
   line-height: 180px;
   font-family: "Gill Sans W01 Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  left: -15px;
+  left: 30px;
 }
 @media only screen and (min-width: 40.063em) {
   .section--effects .graphic .large {
@@ -2340,6 +2357,7 @@ a.pdf-link span sup {
 @media only screen and (max-width: 40em) {
   .section--effects .graphic p {
     padding-right: 25px;
+    left: 15px;
   }
   .section--effects .graphic .large {
     padding-top: 20px;
@@ -2347,7 +2365,6 @@ a.pdf-link span sup {
     font-size: 160px;
     line-height: 160px;
     font-family: "Gill Sans W01 Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    left: -15px;
   }
 }
 .section--effects .sixty-three {
@@ -2355,7 +2372,8 @@ a.pdf-link span sup {
 }
 @media only screen and (max-width: 40em) {
   .section--effects .sixty-three {
-    height: 335px;
+    width: 350px;
+    height: 350px;
     margin-top: 16px;
   }
   .section--effects .sixty-three p {
@@ -2366,20 +2384,26 @@ a.pdf-link span sup {
 }
 @media only screen and (min-width: 40.063em) {
   .section--effects .sixty-three {
-    left: 85px;
-    margin-left: -15px;
+    margin-left: 75px;
+    width: 360px;
+    height: 340px;
   }
 }
+.lt-ie9 .section--effects .sixty-three {
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
+                src='img/spiral.png',
+                sizingMethod='scale')";
+}
 .section--effects .nineteen {
-  /*.large {
-      letter-spacing: -10px;
-      sup {
-          letter-spacing: normal;
-      }
-  }*/
   background-image: url("../img/spiral.png");
 }
 @media only screen and (max-width: 40em) {
+  .section--effects .nineteen {
+    width: 350px;
+    height: 350px;
+  }
   .section--effects .nineteen p {
     padding-right: 0;
     font-size: 28px;
@@ -2388,8 +2412,17 @@ a.pdf-link span sup {
 }
 @media only screen and (min-width: 40.063em) {
   .section--effects .nineteen {
-    left: 20px;
+    margin-left: 30px;
+    width: 360px;
+    height: 340px;
   }
+}
+.lt-ie9 .section--effects .nineteen {
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
+                src='img/spiral.png',
+                sizingMethod='scale')";
 }
 .section--effects .percent {
   font-size: 0.5em;

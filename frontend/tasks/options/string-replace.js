@@ -23,12 +23,20 @@ module.exports = {
                 }, {
                     pattern: '/unsubscribe.html',
                     replacement: '/Unsubscribe/Default.aspx'
+                }, {
+                    pattern: 'img/dsm5-tab-bg.png',
+                    replacement: '/content/img/dsm5-tab-bg.png'
                 }
             ]
         },
         files: [{
             expand: true,
             src: ['**/*.html'],
+            cwd: '../backend/BEDSite/content/',
+            dest: '../backend/BEDSite/content/'
+        }, {
+            expand: true,
+            src: ['**/*.js'],
             cwd: '../backend/BEDSite/content/',
             dest: '../backend/BEDSite/content/'
         }]
