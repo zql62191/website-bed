@@ -28,7 +28,8 @@ namespace BEDSite.Model
             Uninitialized,
             Unsubscribtion_Failure,
             OptIn_Failure,
-            OptIn_Success
+            OptIn_Success,
+            OptIn_errors
         };
 
         public AuditTrail() {

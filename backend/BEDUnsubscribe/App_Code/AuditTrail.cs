@@ -27,7 +27,8 @@ namespace BEDSite.Model
             Application_Failure,
             Uninitialized,
             Unsubscribtion_Failure,
-            Unsubscribtion_success
+            Unsubscribtion_success,
+            Unsubscribtion_error
         };
 
         public AuditTrail() {

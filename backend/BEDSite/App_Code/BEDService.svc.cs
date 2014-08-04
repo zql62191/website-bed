@@ -82,9 +82,24 @@ namespace BEDService
                     if (regMgr.Status.ToUpper() != "OK")
                     {
                         errors.Add(regMgr.StatusMessage);
+                        if (regMgr.PIISet.Status.ToUpper() != "OK")
+                        {
+                            errors.Add(regMgr.StatusMessage);
+                          
+                        }
+                        if (regMgr.Questions.Status.ToUpper() != "OK")
+                        {
+                            for(int i=0;i<regMgr.Questions.Questions.Count;i++)
+                            {
+                                errors.Add(regMgr.Questions.Questions[i].ErrorMessage);
+                            }
+                        }
+
                     }
-                    
-                    auditTrail.SetAuditTrail(" ", AuditTrail.OperationType.OptIn_Success, "SetOptInData", regMgr.Status.ToUpper());
+
+                    auditTrail.SetAuditTrail(optIn.Email.Email, AuditTrail.OperationType.OptIn_Success, "SetOptInData", regMgr.Status.ToUpper());
+                    if (errors.Count > 0)
+                        auditTrail.SetAuditTrail(optIn.Email.Email, AuditTrail.OperationType.OptIn_errors, "SetOptInData", errors.ToString());
                 }
                 else
                 {
