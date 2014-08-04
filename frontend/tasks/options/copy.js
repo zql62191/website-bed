@@ -31,7 +31,7 @@ module.exports = {
         files: [{
             cwd: 'src/scripts/',
             dest: 'dist/js/',
-            src: ['*.{js,htc}'],
+            src: ['*.{js,htc,map}'],
             expand: true
         }]
     },

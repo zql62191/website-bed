@@ -34,7 +34,7 @@
         }
     }
     p, ul, li {
-        //////font-family: font('helvetica neue', 'light');
+        // font-family: font('helvetica neue', 'light');
    
     }
     .intro {
@@ -66,23 +66,23 @@
         @include mq("mobile") {
             h3 {
                 width: auto;
-                //line-height: 60px;
+                // line-height: 60px;
                 padding-bottom: 0;
             }
         }
 
         @include mq("desktop") {
-            //padding-left: 45px;
-            //padding-bottom: 30px;
-            //float: left;
+            // padding-left: 45px;
+            // padding-bottom: 30px;
+            // float: left;
             h3 {
-                //font-size: 24px;
-                //line-height: 45px;
+                // font-size: 24px;
+                // line-height: 45px;
                 padding-bottom: 24px;
             }
             li {
-                //font-size: 20px;
-                //line-height: 26px;
+                // font-size: 20px;
+                // line-height: 26px;
                 padding-bottom: 0;
                 margin-bottom: 10px;
             }
@@ -115,7 +115,7 @@
             width: 350px;
             margin: 0 auto;
             height: 350px;
-            //padding-left: 25px;
+            // padding-left: 25px;
             h1 {
                 width: 350px;
                 margin: 0 auto;
@@ -202,12 +202,8 @@
         }
         .lt-ie9 & {
             background: transparent;
-            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-                src='img/spiral.png',
-                sizingMethod='scale');
-            -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
-                src='img/spiral.png',
-                sizingMethod='scale')";
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale');
+            -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale')";
         }
     }
     .nineteen {
@@ -231,12 +227,8 @@
         }
         .lt-ie9 & {
             background: transparent;
-            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-                src='img/spiral.png',
-                sizingMethod='scale');
-            -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
-                src='img/spiral.png',
-                sizingMethod='scale')";
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale');
+            -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale')";
         }
     }
     .percent {

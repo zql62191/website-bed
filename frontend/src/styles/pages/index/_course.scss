@@ -280,12 +280,8 @@
 
         .lt-ie9 & {
             background: transparent;
-            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-                src='img/spiral.png',
-                sizingMethod='scale');
-            -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
-                src='img/spiral.png',
-                sizingMethod='scale')";
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale');
+            -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale')";
         }
 
         p {
@@ -328,12 +324,8 @@
 
         .lt-ie9 & {
             background: transparent;
-            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-                src='img/spiral.png',
-                sizingMethod='scale');
-            -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
-                src='img/spiral.png',
-                sizingMethod='scale')";
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale');
+            -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale')";
         }
 
         p {

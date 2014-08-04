@@ -30,14 +30,14 @@
       <div data-direction="left" class="page-nav slideout slideout--menu">
         <nav class="slideout__inner">
                 <ul class="primary-nav">
-                  <li class="primary-nav__item _1_liner"><a href="/index.html#home" target="_self">Home</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/index.html#prevalence" target="_self">Prevalence</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/index.html#dsm5" target="_self"><em>DSM-5<sup>&reg;</sup></em> Criteria</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/index.html#course" target="_self">Clinical Characteristics</a></li>
-                  <li class="primary-nav__item _2_liner"><a href="/index.html#effects" target="_self"><em>DSM-5<sup>&reg;</sup></em> Functional <br/>Consequences</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/index.html#neurobiology" target="_self">Neurobiology</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/index.html#diagnosis" target="_self">Recognizing BED in Adults</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/index.html#resources" target="_self">Resources/Expert Videos</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#home" target="_self">Home</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#prevalence" target="_self">Prevalence</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#dsm5" target="_self"><em>DSM-5<sup>&reg;</sup></em> Criteria</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#course" target="_self">Clinical Characteristics</a></li>
+                  <li class="primary-nav__item _2_liner"><a href="/#effects" target="_self"><em>DSM-5<sup>&reg;</sup></em> Functional <br/>Consequences</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#neurobiology" target="_self">Neurobiology</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#diagnosis" target="_self">Recognizing BED in Adults</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#resources" target="_self">Resources/Expert Videos</a></li>
                 </ul>
         </nav>
       </div>
@@ -271,12 +271,24 @@
     <script src="js/libs.js"></script>
     <script src="me/mediaelement-and-player.min.js"></script><!--[if (gte IE 6)&(lte IE 8)]>
     <script src="js/skrollr.ie.js"></script><![endif]-->
-    <script src="js/main.js"></script>
+    <script src="js/bed.js"></script>
     <script src="js/forms.js"></script>
     <script>
       $(BED.init);
       
     </script>
+    <script>
+      (function () {
+        var tagjs = document.createElement("script");
+        var s = document.getElementsByTagName("script")[0];
+        tagjs.async = true;
+        tagjs.src = "//s.btstatic.com/tag.js#site=Xpq89R8";
+        s.parentNode.insertBefore(tagjs, s);
+        }());
+    </script>
+    <noscript>
+      <iframe src="//s.thebrighttag.com/iframe?c=Xpq89R8" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    </noscript>
     <script>!/cdm210.com/i.test(location.host) && document.location.port !== '8005' && 'WebSocket' in window && window.WebSocket.CLOSING === 2 && document.write('\x3Cscript src="//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1">\x3C/script>');</script>
     <script>!/cdm210.com/i.test(location.host) && document.location.port !== '8005' && /iP(hone|od|ad)|Android|BlackBerry|IEMobile/i.test(navigator.userAgent) && document.write('<script src="//'+(location.host||"localhost").split(":")[0]+':8081/target/target-script-min.js">\x3c/script>');</script>
   </body>

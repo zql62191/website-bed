@@ -1792,7 +1792,7 @@ a.pdf-link span sup {
 .section--prevalence .comparable .dagger {
   padding: 0 0 25px 0;
   /*&:before {
-      content: 'ΓÇá';
+      content: '†';
       margin-left: -15px;
   }*/
 }
@@ -2103,10 +2103,8 @@ a.pdf-link span sup {
 }
 .lt-ie9 .section--course .eighty {
   background: transparent;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
-                src='img/spiral.png',
-                sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale')";
 }
 .section--course .eighty p {
   font-size: 28px;
@@ -2152,10 +2150,8 @@ a.pdf-link span sup {
 }
 .lt-ie9 .section--course .forty-nine {
   background: transparent;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
-                src='img/spiral.png',
-                sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale')";
 }
 .section--course .forty-nine p {
   font-size: 28px;
@@ -2391,10 +2387,8 @@ a.pdf-link span sup {
 }
 .lt-ie9 .section--effects .sixty-three {
   background: transparent;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
-                src='img/spiral.png',
-                sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale')";
 }
 .section--effects .nineteen {
   background-image: url("../img/spiral.png");
@@ -2419,10 +2413,8 @@ a.pdf-link span sup {
 }
 .lt-ie9 .section--effects .nineteen {
   background: transparent;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
-                src='img/spiral.png',
-                sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale')";
 }
 .section--effects .percent {
   font-size: 0.5em;

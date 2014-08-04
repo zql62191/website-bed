@@ -13,7 +13,7 @@ module.exports = {
                 // },
                 {
                     pattern: '/index.html',
-                    replacement: '/Default.aspx'
+                    replacement: '/'
                 }, {
                     pattern: '/privacy-policy.html',
                     replacement: '/privacy-policy.aspx'
@@ -22,7 +22,7 @@ module.exports = {
                     replacement: '/contact-us.aspx'
                 }, {
                     pattern: '/unsubscribe.html',
-                    replacement: '/Unsubscribe/Default.aspx'
+                    replacement: '/Unsubscribe/'
                 }, {
                     pattern: 'img/dsm5-tab-bg.png',
                     replacement: '/content/img/dsm5-tab-bg.png'
@@ -31,12 +31,7 @@ module.exports = {
         },
         files: [{
             expand: true,
-            src: ['**/*.html'],
-            cwd: '../backend/BEDSite/content/',
-            dest: '../backend/BEDSite/content/'
-        }, {
-            expand: true,
-            src: ['**/*.js'],
+            src: ['**/*.{js,html}'],
             cwd: '../backend/BEDSite/content/',
             dest: '../backend/BEDSite/content/'
         }]

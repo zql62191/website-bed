@@ -4,35 +4,35 @@ prc: "S02592 08/14"
 nav:
   primary:
     -
-      url: "/index.html#home"
+      url: "/#home"
       title: "Home"
       file: "home"
     -
-      url: "/index.html#prevalence"
+      url: "/#prevalence"
       title: "Prevalence"
       file: "prevalence"
     -
-      url: "/index.html#dsm5"
+      url: "/#dsm5"
       title: "<em>DSM-5<sup>&reg;</sup></em> Criteria"
       file: "dsm5"
     -
-      url: "/index.html#course"
+      url: "/#course"
       title: "Clinical Characteristics"
       file: "course"
     -
-      url: "/index.html#effects"
+      url: "/#effects"
       title: "<em>DSM-5<sup>&reg;</sup></em> Functional <br/>Consequences"
       file: "effects"
     -
-      url: "/index.html#neurobiology"
+      url: "/#neurobiology"
       title: "Neurobiology"
       file: "neurobiology"
     -
-      url: "/index.html#diagnosis"
+      url: "/#diagnosis"
       title: "Recognizing BED in Adults"
       file: "diagnosis"
     -
-      url: "/index.html#resources"
+      url: "/#resources"
       title: "Resources/Expert Videos"
       file: "resources"
   secondary:

@@ -23,7 +23,8 @@ module.exports = {
     },
     dev: {
         src: [
-            'src/scripts/*.js'
+            'src/scripts/*.js',
+            'src/scripts/bed/*.js'
         ]
     },
     tasks: {
