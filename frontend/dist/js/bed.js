@@ -718,5 +718,3 @@ var BED = {
         }
     }
 };
-
-//# sourceMappingURL=bed.js.map

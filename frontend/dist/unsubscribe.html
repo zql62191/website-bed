@@ -32,10 +32,10 @@
                 <ul class="primary-nav">
                   <li class="primary-nav__item _1_liner"><a href="/#home" target="_self">Home</a></li>
                   <li class="primary-nav__item _1_liner"><a href="/#prevalence" target="_self">Prevalence</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/#dsm5" target="_self"><em>DSM-5<sup>&reg;</sup></em> Criteria</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#dsm5" target="_self"><em>DSM-5</em> Criteria</a></li>
                   <li class="primary-nav__item _1_liner"><a href="/#course" target="_self">Clinical Characteristics</a></li>
-                  <li class="primary-nav__item _2_liner"><a href="/#effects" target="_self"><em>DSM-5<sup>&reg;</sup></em> Functional <br/>Consequences</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/#neurobiology" target="_self">Neurobiology</a></li>
+                  <li class="primary-nav__item _2_liner"><a href="/#effects" target="_self"><em>DSM-5</em> Functional <br/>Consequences</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#neurobiology" target="_self">Possible Causes</a></li>
                   <li class="primary-nav__item _1_liner"><a href="/#diagnosis" target="_self">Recognizing BED in Adults</a></li>
                   <li class="primary-nav__item _1_liner"><a href="/#resources" target="_self">Resources/Expert Videos</a></li>
                 </ul>
@@ -52,7 +52,7 @@
           </p>
           <form name="bed_form" id="bed_form" ng-submit="optIn()" novalidate>
             <input type="text" name="firstName" placeholder="*First Name" ng-model="form.fname" ng-required="true" ng-class="{forminvalid: (bed_form.firstName.$invalid &amp;&amp; bed_form.firstName.$dirty) || (bed_form.firstName.$invalid &amp;&amp; invalidform)}" class="first-name">
-            <input type="text" name="middleInitial" placeholder="MI" ng-model="form.MI" ng-required="false" maxlength="1" class="middle-initial">
+            <input type="text" name="middleInitial" placeholder="MI" ng-model="form.MI" ng-required="false" class="middle-initial">
             <input type="text" name="lastName" placeholder="*Last Name" ng-model="form.lname" ng-required="true" ng-class="{forminvalid: (bed_form.lastName.$invalid &amp;&amp; bed_form.lastName.$dirty) || (bed_form.lastName.$invalid &amp;&amp; invalidform)}" class="last-name">
             <input type="text" name="email" placeholder="*E-mail" ng-model="form.email" ng-required="true" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/" ng-class="{forminvalid: (bed_form.email.$invalid &amp;&amp; bed_form.email.$dirty) || (bed_form.email.$invalid &amp;&amp; invalidform)}" class="email">
             <input type="text" name="email2" ng-model="form.confirmemail" ng-required="true" confirmemail placeholder="*Re-enter E-mail" ng-class="{forminvalid: (bed_form.email2.$invalid &amp;&amp; bed_form.email2.$dirty) || (bed_form.email2.$invalid &amp;&amp; invalidform)}" class="email2">
@@ -132,19 +132,21 @@
               <div class="opt-out-choice">
                 <p class="form-line">
                   <input type="radio" name="unsubscribe" value="email" ng-model="form.optoutchoice" ng-change="invalidform = false" id="emailRadio">
-                  <label for="emailRadio">I would like to opt out of future BED email communication.</label>
+                  <label for="emailRadio">I would like to opt out of future BED 
+                    <nobr>e-mail</nobr> communications.
+                  </label>
                 </p>
                 <p class="form-line">
                   <input type="radio" name="unsubscribe" value="direct" ng-model="form.optoutchoice" ng-change="invalidform = false" id="directRadio">
                   <label for="directRadio">
-                    I would like to opt out of future BED direct mail communication.
+                    I would like to opt out of future BED direct mail communications.
                     
                   </label>
                 </p>
                 <p class="form-line">
                   <input type="radio" name="unsubscribe" value="both" ng-model="form.optoutchoice" ng-change="invalidform = false" id="bothRadio">
                   <label for="bothRadio">
-                    I would like to opt out of all future Shire communication.
+                    I would like to opt out of all future Shire communications.
                     
                     
                   </label>
@@ -154,12 +156,12 @@
                 <p ng-if="form.optoutchoice != &quot;none&quot;"><span class="red">*</span>Required Fields
                   
                 </p>
-                <div ng-if="form.optoutchoice != &quot;none&quot;" class="email">
-                  <input type="text" name="email" placeholder="*Email" ng-model="form.email" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/" ng-class="{forminvalid: (bed_form.email.$invalid &amp;&amp; bed_form.email.$dirty) || (bed_form.email.$invalid &amp;&amp; invalidform)}" ng-required="true" class="email">
+                <div ng-if="form.optoutchoice == &quot;email&quot; || form.optoutchoice == &quot;both&quot;" class="email">
+                  <input type="text" name="email" placeholder="*E-mail" ng-model="form.email" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/" ng-class="{forminvalid: (bed_form.email.$invalid &amp;&amp; bed_form.email.$dirty) || (bed_form.email.$invalid &amp;&amp; invalidform)}" ng-required="true" class="email">
                 </div>
                 <div ng-if="form.optoutchoice == &quot;direct&quot; || form.optoutchoice == &quot;both&quot;" class="address">
                   <input type="text" name="firstName" placeholder="*First Name" ng-model="form.fname" ng-required="true" ng-class="{forminvalid: (bed_form.firstName.$invalid &amp;&amp; bed_form.firstName.$dirty) || (bed_form.firstName.$invalid &amp;&amp; invalidform)}" class="first-name">
-                  <input type="text" name="middleInitial" placeholder="MI" ng-model="form.MI" ng-pattern="/^[a-zA-Z]$/" size="1" maxlength="1" class="middle-initial">
+                  <input type="text" name="middleInitial" placeholder="MI" ng-model="form.MI" ng-pattern="/^[a-zA-Z]$/" size="1" max-length="1" class="middle-initial">
                   <input type="text" name="lastName" placeholder="*Last Name" ng-model="form.lname" ng-required="true" ng-class="{forminvalid: (bed_form.lastName.$invalid &amp;&amp; bed_form.lastName.$dirty) || (bed_form.lastName.$invalid &amp;&amp; invalidform)}" class="last-name">
                   <input type="text" name="streetAddress" placeholder="*Street Address" ng-model="form.street" ng-required="true" ng-class="{forminvalid: (bed_form.streetAddress.$invalid &amp;&amp; bed_form.streetAddress.$dirty) || (bed_form.streetAddress.$invalid &amp;&amp; invalidform)}" class="street-address">
                   <input type="text" name="suiteOffice" placeholder="Suite/Office" ng-model="form.suite" ng-required="false" class="suite-office">
@@ -182,9 +184,9 @@
         <div class="content-wrap">
           <nav>
                   <ul class="secondary-nav">
-                    <li class="secondary-nav__item _1_liner"><a href="/unsubscribe.html" target="_self">Unsubscribe</a></li>
-                    <li class="secondary-nav__item _1_liner"><a href="/contact-us.html" target="_self">Contact Us</a></li>
-                    <li class="secondary-nav__item _1_liner"><a href="/privacy-policy.html" target="_self">Privacy Policy</a></li>
+                    <li class="secondary-nav__item _1_liner"><a href="unsubscribe.html" target="_self">Unsubscribe</a></li>
+                    <li class="secondary-nav__item _1_liner"><a href="contact-us.html" target="_self">Contact Us</a></li>
+                    <li class="secondary-nav__item _1_liner"><a href="privacy-policy.html" target="_self">Privacy Policy</a></li>
                     <li class="secondary-nav__item _1_liner"><a href="http://www.shire.com/" target="_blank">Shire US</a></li>
                   </ul>
           </nav><img src="img/footer-logo.png" class="footer-logo">
@@ -218,18 +220,6 @@
           </div>
         </div>
       </div>
-      <div class="modal modal--signup_error">
-        <div class="modal__outer">
-          <div class="modal__inner">
-            <div class="modal__close"></div>
-            <h3>Network Error</h3>
-            <p>
-              There was an error processing your request. Please try again later.
-              
-            </p>
-          </div>
-        </div>
-      </div>
       <div class="modal modal--video">
         <div class="modal__outer">
           <div class="modal__inner">
@@ -247,20 +237,8 @@
           <div class="modal__inner">
             <div class="modal__close"></div>
             <h3>Thank you for your request.</h3>
-            <p>Your request has been received, and we will update your contact preferences. Please be aware that it may take up to 10 business days before your preferences are reflected in our system. You may still receive communications during this time.</p>
-            <p>Please feel free to register with us again should you wish to recieve information about BED and other information from Shire in the future.</p>
-            <div class="controls"><a href="/" class="button button--close">
-                CLOSE
-                </a></div>
-          </div>
-        </div>
-      </div>
-      <div class="modal modal--unsubscribe_error">
-        <div class="modal__outer">
-          <div class="modal__inner">
-            <div class="modal__close"></div>
-            <h3>Network Error</h3>
-            <p>There was an error processing your request. Please try again later.</p>
+            <p>Your request has been received, and we will update your contact preferences. Please be aware that it may take up to 10 business days for your preferences to be reflected in our system. You may still receive communications during this time.</p>
+            <p>Please feel free to register with us again should you wish to recieve information about binge eating disorder (BED) and other information from Shire in the future.</p>
             <div class="controls"><a href class="button button--close">
                 CLOSE
                 </a></div>

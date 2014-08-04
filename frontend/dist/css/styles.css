@@ -765,6 +765,7 @@ a.pdf-link span sup {
 .next-section .bar--next:hover {
   background: #fec451 !important;
   text-decoration: none !important;
+  color: #FFFFFF !important;
 }
 .next-section .bar--next:before {
   border-top-color: #ffffff;
@@ -1792,7 +1793,7 @@ a.pdf-link span sup {
 .section--prevalence .comparable .dagger {
   padding: 0 0 25px 0;
   /*&:before {
-      content: '†';
+      content: 'ΓÇá';
       margin-left: -15px;
   }*/
 }

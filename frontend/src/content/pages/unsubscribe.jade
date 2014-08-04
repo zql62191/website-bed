@@ -32,7 +32,7 @@ block content
               id='emailRadio')
             label(
               for='emailRadio').
-                I would like to opt out of future BED email communication.
+                I would like to opt out of future BED #[nobr e-mail] communications.
           p.form-line
             input(
               type='radio',
@@ -43,7 +43,7 @@ block content
               id='directRadio')
             label(
               for='directRadio').
-                I would like to opt out of future BED direct mail communication.
+                I would like to opt out of future BED direct mail communications.
 
           p.form-line
             input(
@@ -55,7 +55,7 @@ block content
               id='bothRadio')
             label(
               for='bothRadio').
-                I would like to opt out of all future Shire communication.
+                I would like to opt out of all future Shire communications.
 
         
         .required-fields
@@ -65,13 +65,13 @@ block content
 
           //- The placeholders used below cannot be styled.  These will need to be replaced.
           .email(
-              ng-if='form.optoutchoice != "none"')
+              ng-if='form.optoutchoice == "email" || form.optoutchoice == "both"')
             input(
               type='text',
               name='email',
-              placeholder='*Email',
+              placeholder='*E-mail',
               ng-model="form.email",
-              ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/",
+              ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/",
               ng-class="{forminvalid: (bed_form.email.$invalid && bed_form.email.$dirty) || (bed_form.email.$invalid && invalidform)}",
               ng-required="true",
               class='email')
@@ -93,7 +93,7 @@ block content
               ng-model="form.MI",
               ng-pattern="/^[a-zA-Z]$/",
               size="1",
-              maxlength=1,
+              max-length="1",
               class='middle-initial')
 
             input(
