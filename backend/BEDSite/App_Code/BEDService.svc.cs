@@ -51,6 +51,9 @@ namespace BEDService
 
                     EmailAddress emailAddress = new EmailAddress(optIn.Email.Email);
                     hcp = new HCPIndividual(String.Empty, optIn.Address.FName, optIn.Address.LName, String.Empty, emailAddress, address);
+                    if(!String.IsNullOrEmpty(optIn.Address.MName)) {
+                        hcp.MiddleName = optIn.Address.MName;
+                    }
                     hcp.Specialties.Add((Specialties)Enum.Parse(typeof(Specialties), optIn.Specialty));
 
                     regMgr = new RegistrationManager();

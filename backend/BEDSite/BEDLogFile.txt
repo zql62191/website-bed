@@ -17,3 +17,36 @@
 2014-07-23 11:21:44,027 [30] INFO BEDService.Global - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
 2014-07-23 12:09:33,419 [118] INFO BEDService.Global - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
 2014-07-23 13:44:49,780 [18] INFO BEDService.Global - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-07-31 18:04:58,662 [7] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-07-31 18:05:00,114 [7] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-01 09:52:54,227 [14] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-04 09:46:17,408 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-04 09:51:08,629 [23] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-04 09:51:48,600 [28] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Failure |  Category: ShireRealtime | Message: The type initializer for 'Shire.Realtime.WebServices.Services' threw an exception. 
+2014-08-04 09:59:59,767 [37] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Failure |  Category: ShireRealtime | Message: The type initializer for 'Shire.Realtime.WebServices.Services' threw an exception. 
+2014-08-04 10:00:01,168 [35] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-04 10:01:16,219 [41] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Failure |  Category: mscorlib | Message: Could not find a part of the path 'C:\Projects\Vyvanse BED - Web\trunk\backend\BEDSite\Service\common\config\Realtime.config'. 
+2014-08-04 10:01:19,709 [35] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-04 10:02:39,488 [42] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Failure |  Category: mscorlib | Message: Could not find file 'C:\Projects\Vyvanse BED - Web\trunk\backend\BEDSite\Service\Realtime.config'. 
+2014-08-04 10:02:42,586 [35] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-04 10:03:08,012 [11] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Failure |  Category: ShireRealtime | Message: The type initializer for 'Shire.Realtime.WebServices.Services' threw an exception. 
+2014-08-04 10:03:36,438 [27] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Failure |  Category: ShireRealtime | Message: The type initializer for 'Shire.Realtime.WebServices.Services' threw an exception. 
+2014-08-04 10:04:19,325 [41] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Failure |  Category: ShireRealtime | Message: The type initializer for 'Shire.Realtime.WebServices.Services' threw an exception. 
+2014-08-04 10:04:48,464 [44] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Failure |  Category: ShireRealtime | Message: The type initializer for 'Shire.Realtime.WebServices.Services' threw an exception. 
+2014-08-04 10:05:26,843 [26] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Failure |  Category: ShireRealtime | Message: The type initializer for 'Shire.Realtime.WebServices.Services' threw an exception. 
+2014-08-04 10:06:55,096 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-04 10:12:09,268 [6] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Success |  Category: SetOptInData | Message: OK 
+2014-08-04 10:12:14,213 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-04 10:13:01,735 [15] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Failure |  Category: System.Configuration | Message: An error occurred loading a configuration file: Failed to map the path '/'. 
+2014-08-04 10:14:06,330 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-04 10:17:33,040 [14] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Success |  Category: SetOptInData | Message: OK 
+2014-08-04 10:19:32,278 [14] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Success |  Category: SetOptInData | Message: OK 
+2014-08-04 10:45:26,336 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-04 10:48:23,595 [10] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Success |  Category: SetOptInData | Message: ERROR 
+2014-08-04 10:48:40,746 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-04 10:50:54,276 [22] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Success |  Category: SetOptInData | Message: ERROR 
+2014-08-04 10:52:45,022 [19] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Success |  Category: SetOptInData | Message: ERROR 
+2014-08-04 10:53:45,439 [11] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Success |  Category: SetOptInData | Message: ERROR 
+2014-08-04 10:53:55,167 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-04 10:54:20,572 [19] INFO BEDService.BEDWCFService - BED:: User:  | Operation: Uninitialized |  Category:  | Message:  
+2014-08-04 10:56:02,962 [11] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Success |  Category: SetOptInData | Message: OK 

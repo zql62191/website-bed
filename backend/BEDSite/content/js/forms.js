@@ -277,7 +277,7 @@
                 $(window).scrollTop(oldTop + bottomDifference);
             }, 100);
 
-            URL = "/Service/BEDService.svc/SetOptInData";
+            URL = "Service/BEDService.svc/SetOptInData";
             Data = JSON.stringify(data);
 
             $scope.processOptIn(URL, Data);
