@@ -2,6 +2,56 @@ var BED = (function() {
 
     var initialized = false;
 
+    var snag = function() {
+
+        var jqSections = $('.section');
+        var jqNexts = $('.bar--next');
+
+        $('.next-section, .next-section .content-wrap').css({
+            position: 'absolute',
+            height: 0,
+            width: 0,
+            top: 0,
+            left: 0,
+            right: 0
+        });
+
+        setTimeout(function() {
+
+            $(window).scrollTop(9999999);
+
+        }, 1);
+
+        setTimeout(function() {
+            $(window).scrollTop(0);
+        }, 500);
+
+        $('.pagination').hide();
+
+        jqNexts.each(function(i, el) {
+
+            $(el).css({
+                position: 'absolute',
+                display: 'block',
+                top: jqSections.eq(i + 1).offset().top
+            });
+
+        });
+
+        $(document).on('click', function() {
+
+            jqNexts.each(function(i, el) {
+
+                $(el).css({
+                    position: 'absolute',
+                    display: 'block',
+                    top: jqSections.eq(i + 1).offset().top
+                });
+
+            });
+        });
+    };
+
     var init = function() {
 
         if (initialized) {
@@ -17,7 +67,13 @@ var BED = (function() {
         BED.SlideOut.init();
         BED.VideoPlayer.init();
 
+        if (typeof parseUri(window.location.href).queryKey['snag'] !== 'undefined') {
+
+            $(window).load(snag);
+
+        }
     };
+
 
     // Return the module object
     return {

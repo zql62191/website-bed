@@ -773,6 +773,11 @@ a.pdf-link span sup {
 .next-section .bar--next.bar--prevalence {
   background: #51748b;
 }
+@media only screen and (max-width: 40em) {
+  .next-section .bar--next.bar--prevalence {
+    letter-spacing: -0.02em;
+  }
+}
 .next-section .bar--next.bar--dsm5 {
   background: #ededed;
   color: #000000;
