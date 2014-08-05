@@ -1,6 +1,10 @@
-BED.VideoPlayer = {
+if (typeof BED === 'undefined') {
+    window.BED = {};
+}
 
-    locations: {
+BED.VideoPlayer = (function() {
+
+    var locations = {
         'grilo2': '//view.vzaar.com/1788413/video',
         'bulik3': '//view.vzaar.com/1788415/video',
         'bulik4': '//view.vzaar.com/1788416/video',
@@ -10,24 +14,54 @@ BED.VideoPlayer = {
         'kornstein8': '//view.vzaar.com/1788420/video',
         'bulik12': '//view.vzaar.com/1788421/video',
         'kornstein14': '//view.vzaar.com/1788422/video'
-    },
+    };
 
-    currentVideo: '',
+    var videoNameList = [];
+    var videoTitleList = [];
 
-    currentVideoName: '',
+    var currentVideoName = '';
 
-    playPercentages: {
-        _0: false,
-        _25: false,
-        _50: false,
-        _75: false,
-        _90: false,
-        _100: false
-    },
+    var currentVideoTitle = '';
 
-    instance: null,
+    var p0 = false;
+    var p25 = false;
+    var p50 = false;
+    var p75 = false;
+    var p90 = false;
+    var p100 = false;
 
-    init: function() {
+    var instance = null;
+
+    var initialized = false;
+
+    var init = function() {
+
+        if (initialized) {
+            return;
+        }
+
+        initialized = true;
+
+        // Generate playlist order list (used in next/prev functionality)
+        $('.video-playlist li').each(function(i, el) {
+
+            videoNameList.push($(el).data('video'));
+            videoTitleList.push($(el).find('p').text().trim().slice(0, -8));
+
+            // Load first video in list
+            if (i === 0) {
+                currentVideoName = videoNameList[i];
+                currentVideoTitle = videoTitleList[i];
+                $('#videoPlayer source').attr('src', document.location.protocol + locations[currentVideoName]);
+                $(el).addClass('active');
+            }
+
+        });
+
+        console.log('videoNameList: ', videoNameList);
+        console.log('videoTitleList: ', videoTitleList);
+
+        // Setup MediaElementJS
 
         $('#videoPlayer').attr({
 
@@ -37,182 +71,224 @@ BED.VideoPlayer = {
 
         }).mediaelementplayer({
 
-            success: BED.VideoPlayer.onSuccess,
+            success: onSuccess,
 
-            error: BED.VideoPlayer.onError
+            error: onError
 
         });
+
+        // Setup UI Events
 
         $(document.body)
 
-        .on(BED.UI.gestures.click, '.video-playlist li[data-video]', function(e) {
+        .on(BED.UI.gestures.click + '.videoplayer', '.video-playlist li[data-video]', function(e) {
 
-            $(this).siblings().removeClass('active').end().addClass('active');
-
-            $('.mejs-container').velocity('scroll', {
-                duration: 250,
-                offset: '-' + ($('.page-header').height() + 20)
-            });
-
-            BED.VideoPlayer.currentVideo = $(this).data('video');
-
-            BED.VideoPlayer.currentVideoName = $(this).find('p').text().slice(0, -8);
-
-            BED.VideoPlayer.instance.setSrc(BED.VideoPlayer.locations[BED.VideoPlayer.currentVideo]);
-
-            BED.VideoPlayer.instance.play();
+            playVideo($(this).data('video'), true);
 
         })
 
-        .on(BED.UI.gestures.click, '.video-player .arrow-left', function(e) {
+        .on(BED.UI.gestures.click + '.videoplayer', '.video-player .arrow-left', function(e) {
 
-            var jqCurrent = $('.video-playlist li.active');
-
-            if (jqCurrent.is(':first-child')) {
-                jqCurrent.siblings('li[data-video]').last().trigger(BED.UI.gestures.click);
-            } else {
-                jqCurrent.prev('li[data-video]').trigger(BED.UI.gestures.click);
-            }
+            playPrevVideo();
 
         })
 
-        .on(BED.UI.gestures.click, '.video-player .arrow-right', function(e) {
+        .on(BED.UI.gestures.click + '.videoplayer', '.video-player .arrow-right', function(e) {
 
-            var jqCurrent = $('.video-playlist li.active');
-
-            if (jqCurrent.is(':last-child')) {
-                jqCurrent.siblings('li[data-video]').first().trigger(BED.UI.gestures.click);
-            } else {
-                jqCurrent.next('li[data-video]').trigger(BED.UI.gestures.click);
-            }
+            playNextVideo();
 
         });
 
-        var activeVideo = $('li[data-video].active');
+    };
 
-        BED.VideoPlayer.currentVideo = activeVideo.data('video');
+    // MediaElementJS success handler
+    var onSuccess = function(mediaElement, domObject) {
+        // console.log('success');
 
-        BED.VideoPlayer.currentVideoName = activeVideo.find('p').text().slice(0, -8);
+        instance = mediaElement;
 
-    },
+        // Setup player listeners
+        $(instance)
 
-    onSuccess: function(mediaElement, domObject) {
+        .on('loadeddata', onLoadedData)
 
-        BED.VideoPlayer.instance = mediaElement;
+        .on('timeupdate', onTimeUpdate)
 
-        // Setup listeners
-        $(BED.VideoPlayer.instance)
+        .on('ended', onEnded);
 
-        .on('loadeddata', BED.VideoPlayer.onLoadedData)
+        $('.mejs-container.svg').removeClass('svg').addClass('no-svg');
 
-        .on('timeupdate', BED.VideoPlayer.onTimeUpdate)
+    };
 
-        .on('ended', BED.VideoPlayer.onEnded);
-
-    },
-
-    onError: function() {
+    // MediaElementJS error handler
+    var onError = function() {
         // console.log('error');
-    },
+    };
 
-    onLoadedData: function(e) {
+    // MediaElementJS loadeddata handler
+    var onLoadedData = function(e) {
         // console.log(e);
 
         // Reset percentage milestones
-        BED.VideoPlayer.playPercentages._0 = false;
-        BED.VideoPlayer.playPercentages._25 = false;
-        BED.VideoPlayer.playPercentages._50 = false;
-        BED.VideoPlayer.playPercentages._75 = false;
-        BED.VideoPlayer.playPercentages._90 = false;
-        BED.VideoPlayer.playPercentages._100 = false;
-    },
+        p0 = p25 = p50 = p75 = p90 = p100 = false;
+    };
 
-    onTimeUpdate: function(e) {
+    // MediaElementJS timeupdate handler
+    var onTimeUpdate = function(e) {
         // console.log(e);
 
         // Calculate current percentage viewed
-        var currentPercentage = (BED.VideoPlayer.instance.currentTime / BED.VideoPlayer.instance.duration) * 100;
+        var currentPercentage = (instance.currentTime / instance.duration) * 100;
 
         if (currentPercentage === 0) {
             // hits 0 percentage after video ended
             return;
         }
 
-        // console.log('currentPercentage: ', currentPercentage);
+        console.log('currentPercentage: ', currentPercentage);
 
-        if (currentPercentage >= 0 && !BED.VideoPlayer.playPercentages._0) {
+        if (currentPercentage >= 0 && !p0) {
             // Check if more than 0% viewed and if not previously fired
 
             console.log('0%');
 
-            BED.VideoPlayer.playPercentages._0 = true;
+            p0 = true;
 
             // fire 'Video Play'
-            BED.Analytics.videoOnPlay(BED.VideoPlayer.currentVideoName);
+            BED.Analytics.videoOnPlay(currentVideoTitle);
 
-        } else if (currentPercentage >= 25 && !BED.VideoPlayer.playPercentages._25) {
+        } else if (currentPercentage >= 25 && !p25) {
             // Check if more than 25% viewed and if not previously fired
 
             console.log('25%');
 
-            BED.VideoPlayer.playPercentages._25 = true;
+            p25 = true;
 
             // fire 'Video Milestone' @ 25%
-            BED.Analytics.videoOnPercentage(BED.VideoPlayer.currentVideoName, 25);
+            BED.Analytics.videoOnPercentage(currentVideoTitle, 25);
 
-        } else if (currentPercentage >= 50 && !BED.VideoPlayer.playPercentages._50) {
+        } else if (currentPercentage >= 50 && !p50) {
             // Check if more than 50% viewed and if not previously fired
 
             console.log('50%');
 
-            BED.VideoPlayer.playPercentages._50 = true;
+            p50 = true;
 
             // fire 'Video Milestone' @ 50%
-            BED.Analytics.videoOnPercentage(BED.VideoPlayer.currentVideoName, 50);
+            BED.Analytics.videoOnPercentage(currentVideoTitle, 50);
 
-        } else if (currentPercentage >= 75 && !BED.VideoPlayer.playPercentages._75) {
+        } else if (currentPercentage >= 75 && !p75) {
             // Check if more than 75% viewed and if not previously fired
 
             console.log('75%');
 
-            BED.VideoPlayer.playPercentages._75 = true;
+            p75 = true;
 
             // fire 'Video Milestone' @ 75%
-            BED.Analytics.videoOnPercentage(BED.VideoPlayer.currentVideoName, 75);
+            BED.Analytics.videoOnPercentage(currentVideoTitle, 75);
 
-        } else if (currentPercentage >= 90 && !BED.VideoPlayer.playPercentages._90) {
+        } else if (currentPercentage >= 90 && !p90) {
             // Check if more than 90% viewed and if not previously fired
 
             console.log('90%');
 
-            BED.VideoPlayer.playPercentages._90 = true;
+            p90 = true;
 
             // fire 'Video Complete'
-            BED.Analytics.videoOnComplete(BED.VideoPlayer.currentVideoName);
+            BED.Analytics.videoOnComplete(currentVideoTitle);
 
-        } else if (currentPercentage >= 99 && !BED.VideoPlayer.playPercentages._100) {
+        } else if (currentPercentage >= 99 && !p100) {
             // Check if more than 100% viewed and if not previously fired
 
             console.log('100%');
 
-            BED.VideoPlayer.playPercentages._100 = true;
+            p100 = true;
 
             // fire 'Video Milestone' @ 100%
-            BED.Analytics.videoOnPercentage(BED.VideoPlayer.currentVideoName, 100);
+            BED.Analytics.videoOnPercentage(currentVideoTitle, 100);
 
         }
-    },
+    };
 
-    onEnded: function(e) {
+    // MediaElementJS ended handler
+    var onEnded = function(e) {
         // console.log(e);
 
         // Reset percentage milestones
-        BED.VideoPlayer.playPercentages._0 = false;
-        BED.VideoPlayer.playPercentages._25 = false;
-        BED.VideoPlayer.playPercentages._50 = false;
-        BED.VideoPlayer.playPercentages._75 = false;
-        BED.VideoPlayer.playPercentages._90 = false;
-        BED.VideoPlayer.playPercentages._100 = false;
-    }
+        p0 = p25 = p50 = p75 = p90 = p100 = false;
+    };
 
-};
+    // Internal video player controls
+    var playVideo = function(name, play) {
+
+        // Get playlist items
+        var jqPlaylistItems = $('.video-playlist li');
+        // Get next playlist item
+        var jqNextPlaylistItem = jqPlaylistItems.filter('[data-video="' + name + '"]');
+
+        // Toggle active classes
+        jqPlaylistItems.removeClass('active');
+        jqNextPlaylistItem.addClass('active');
+
+        // Set name/title variables
+        currentVideoName = name;
+        currentVideoTitle = videoTitleList[_.indexOf(videoNameList, name)];
+
+        // Load video
+        instance.setSrc(document.location.protocol + locations[currentVideoName]);
+
+        // Load video?
+        instance.load();
+
+        if (play) {
+            // Play video
+            instance.play();
+        }
+    };
+
+    var playNextVideo = function() {
+
+        var currentIndex = _.indexOf(videoNameList, currentVideoName);
+
+        var nextIndex = (function() {
+            var idx;
+
+            if (currentIndex === videoNameList.length - 1) {
+                idx = 0;
+            } else {
+                idx = currentIndex + 1;
+            }
+
+            return idx;
+        })();
+
+        playVideo(videoNameList[nextIndex], true);
+
+    };
+
+    var playPrevVideo = function() {
+
+        var currentIndex = _.indexOf(videoNameList, currentVideo);
+
+        var nextIndex = (function() {
+            var idx;
+
+            if (currentIndex === 0) {
+                idx = videoNameList.length - 1;
+            } else {
+                idx = currentIndex - 1;
+            }
+
+            return idx;
+        })();
+
+        playVideo(videoNameList[nextIndex], true);
+
+    };
+
+    // Return the module object
+    return {
+        init: init
+    };
+
+})();

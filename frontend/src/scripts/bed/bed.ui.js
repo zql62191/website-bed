@@ -1,22 +1,43 @@
-BED.UI = {
+if (typeof BED === 'undefined') {
+    window.BED = {};
+}
 
-    gestures: {
-        click: /*typeof Hammer !== 'undefined' ? 'tap' :*/ 'click'
-    },
+BED.UI = (function() {
 
-    mediaQueries: {
+    var whitelisted = [
+        'www.shire.com',
+        'shire.com'
+    ];
+
+    var gestures = {
+        'click': /*typeof Hammer !== 'undefined' ? 'tap' :*/ 'click',
+        'scroll': 'scroll',
+        'resize': 'resize'
+    };
+
+    var mediaQueries = {
         mobile: 'only screen and (max-width: 40em)',
         desktop: 'only screen and (min-width: 40.063em)'
-    },
+    };
 
-    lastScrollPos: -1,
+    var lastScrollPos = -1;
 
-    init: function() {
+    var currentSection = '';
+
+    var initialized = false;
+
+    var init = function() {
+
+        if (initialized) {
+            return;
+        }
+
+        initialized = true;
 
         // Setup events on window
         $(window)
 
-        .on('scroll', function(e) {
+        .on(gestures.scroll + '.ui', function(e) {
 
             var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
             var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
@@ -43,7 +64,7 @@ BED.UI = {
 
             if (jqCurrent) {
 
-                BED.currentPage = jqCurrent.data('section');
+                currentSection = jqCurrent.data('section');
 
                 $('.page-nav a.active').removeClass('active');
 
@@ -59,9 +80,9 @@ BED.UI = {
             }
         })
 
-        .trigger('scroll')
+        .trigger(gestures.scroll + '.ui')
 
-        .on('resize', function(e) {
+        .on(gestures.resize + '.ui', function(e) {
 
             var offset = $('.page-wrapper').offset().left;
 
@@ -79,7 +100,7 @@ BED.UI = {
 
         })
 
-        .trigger('resize');
+        .trigger(gestures.resize + '.ui');
 
 
         // Setup default events on body
@@ -89,7 +110,7 @@ BED.UI = {
         //     stop_browser_behavior: false
         // })
 
-        .on('click', 'a[href]:not(.button--ok)', function(e) {
+        .on('click' + '.ui', 'a[href]:not(.button--ok)', function(e) {
 
             var page = parseUri(window.location.href);
             var link = parseUri($(this).prop('href'));
@@ -110,7 +131,7 @@ BED.UI = {
                     }
                 }
 
-            } else if (_.contains(BED.whitelisted, link.host)) {
+            } else if (_.contains(whitelisted, link.host)) {
 
                 // do nothing
 
@@ -129,11 +150,11 @@ BED.UI = {
 
         })
 
-        .on(BED.UI.gestures.click, '.modal__inner', function(e) {
+        .on(gestures.click + '.ui', '.modal__inner', function(e) {
             e.stopPropagation();
         })
 
-        .on(BED.UI.gestures.click, '.modal .modal__outer, .modal .modal__close, .modal a.button', function(e) {
+        .on(gestures.click + '.ui', '.modal .modal__outer, .modal .modal__close, .modal a.button', function(e) {
 
             $(this).closest('.modal').velocity('fadeOut', {
                 duration: 250
@@ -141,7 +162,7 @@ BED.UI = {
 
         })
 
-        .on(BED.UI.gestures.click, '.tab-container', function(e) {
+        .on(gestures.click + '.ui', '.tab-container', function(e) {
 
             $(this).toggleClass('open');
 
@@ -149,8 +170,14 @@ BED.UI = {
 
         });
 
-        // Init SlideOuts
-        BED.UI.SlideOut.init();
+    };
 
-    }
-};
+    // Return the module object
+    return {
+        init: init,
+        gestures: gestures,
+        mediaQueries: mediaQueries,
+        currentSection: currentSection
+    };
+
+})();

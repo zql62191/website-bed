@@ -1,6 +1,10 @@
-BED.Skrollr = {
+if (typeof BED === 'undefined') {
+    window.BED = {};
+}
 
-    animations: {
+BED.Skrollr = (function() {
+
+    var animations = {
 
         // Prevalence
         'prevalence-header': {
@@ -144,11 +148,19 @@ BED.Skrollr = {
             'data-center': 'opacity: 1;'
         }
 
-    },
+    };
 
-    instance: null,
+    var instance = null;
 
-    init: function() {
+    var initialized = false;
+
+    var init = function() {
+
+        if (initialized) {
+            return;
+        }
+
+        initialized = true;
 
         // Disable on Mobile/Tablet/IE
         if (!bowser.mobile && !bowser.tablet && !bowser.msie) {
@@ -158,7 +170,7 @@ BED.Skrollr = {
 
                 var name = $(el).data('skrollr');
 
-                var attrs = BED.Skrollr.animations[name];
+                var attrs = animations[name];
 
                 if (attrs) {
                     $(el).attr(attrs);
@@ -167,7 +179,7 @@ BED.Skrollr = {
             });
 
             // Initialize skrollr
-            BED.Skrollr.instance = skrollr.init({
+            instance = window.skrollr.init({
                 smoothScrolling: true,
                 forceHeight: true,
                 beforerender: function(data) {
@@ -183,5 +195,13 @@ BED.Skrollr = {
 
         }
 
-    }
-};
+    };
+    // Return the module object
+    return {
+        init: init,
+        instance: function() {
+            return instance;
+        }
+    };
+
+})();

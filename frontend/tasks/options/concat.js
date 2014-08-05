@@ -1,8 +1,8 @@
 var files = {
-    'dist/js/bed.js': [
+    'src/scripts/bed.js': [
         'src/scripts/bed/bed.js',
         'src/scripts/bed/bed.ui.js',
-        'src/scripts/bed/bed.ui.slideout.js',
+        'src/scripts/bed/bed.slideout.js',
         'src/scripts/bed/bed.skrollr.js',
         'src/scripts/bed/bed.videoplayer.js',
         'src/scripts/bed/bed.analytics.js'
@@ -19,7 +19,8 @@ var files = {
         'src/scripts/libs/bowser.min.js',
         'src/scripts/libs/matchMedia.js',
         'src/scripts/libs/angular.min.js',
-        'src/scripts/libs/placeholders.min.js'
+        'src/scripts/libs/placeholders.min.js',
+        'src/scripts/libs/polyfills.js'
     ],
     'dist/js/ie.js': [
         'src/scripts/libs/html5shiv.min.js',

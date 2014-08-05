@@ -1,20 +1,27 @@
-var BED = {
+var BED = (function() {
 
-    whitelisted: [
-        'www.shire.com',
-        'shire.com'
-    ],
+    var initialized = false;
 
-    init: function() {
+    var init = function() {
 
-        BED.UI.init();
+        if (initialized) {
+            return;
+        }
 
+        initialized = true;
+
+        // Init all the things!
+        BED.Analytics.init();
         BED.Skrollr.init();
-
+        BED.UI.init();
+        BED.SlideOut.init();
         BED.VideoPlayer.init();
 
-        BED.Analytics.init();
+    };
 
-    }
+    // Return the module object
+    return {
+        init: init
+    };
 
-};
+})();

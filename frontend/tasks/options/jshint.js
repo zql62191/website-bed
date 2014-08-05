@@ -18,8 +18,11 @@ module.exports = {
             angular: true
         },
         force: true, // allow build to continue with errors
-        '-W013': true, // Missing space after 'x'. It fires with "function() { }"
-        '-W098': true // variables defined but never used
+        // Ignored Warnings
+        // Reference: https://github.com/jshint/jshint/blob/2.1.4/src/shared/messages.js
+        '-W013': true, // Missing space after '{a}'.
+        '-W032': true, // Unnecessary semicolon.
+        '-W098': true // '{a}' is defined but never used.
     },
     dev: {
         src: [
