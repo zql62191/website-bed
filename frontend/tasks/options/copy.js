@@ -64,7 +64,7 @@ module.exports = {
         files: [{
             cwd: 'dist/',
             dest: '../backend/BEDSite/content/',
-            src: ['**/*'],
+            src: ['**/*', '!privacy.aspx'],
             expand: true,
             dot: true
         }]

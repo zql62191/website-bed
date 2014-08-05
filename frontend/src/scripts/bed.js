@@ -68,10 +68,12 @@ var BED = (function() {
         BED.VideoPlayer.init();
 
         if (typeof parseUri(window.location.href).queryKey['snag'] !== 'undefined') {
-
             $(window).load(snag);
-
         }
+
+        $('[data-load]').each(function(i, el) {
+            $(el).load($(el).data('load'));
+        });
     };
 
 
@@ -657,8 +659,8 @@ BED.VideoPlayer = (function() {
 
         });
 
-        console.log('videoNameList: ', videoNameList);
-        console.log('videoTitleList: ', videoTitleList);
+        // console.log('videoNameList: ', videoNameList);
+        // console.log('videoTitleList: ', videoTitleList);
 
         // Setup MediaElementJS
 

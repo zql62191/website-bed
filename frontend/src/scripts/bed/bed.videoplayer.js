@@ -58,8 +58,8 @@ BED.VideoPlayer = (function() {
 
         });
 
-        console.log('videoNameList: ', videoNameList);
-        console.log('videoTitleList: ', videoTitleList);
+        // console.log('videoNameList: ', videoNameList);
+        // console.log('videoTitleList: ', videoTitleList);
 
         // Setup MediaElementJS
 
