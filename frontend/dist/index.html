@@ -52,7 +52,7 @@
           </p>
           <form name="bed_form" id="bed_form" ng-submit="optIn()" novalidate>
             <input type="text" name="firstName" placeholder="*First Name" ng-model="form.fname" ng-required="true" ng-class="{forminvalid: (bed_form.firstName.$invalid &amp;&amp; bed_form.firstName.$dirty) || (bed_form.firstName.$invalid &amp;&amp; invalidform)}" class="first-name">
-            <input type="text" name="middleInitial" placeholder="MI" ng-model="form.MI" ng-required="false" class="middle-initial">
+            <input type="text" name="middleInitial" placeholder="MI" ng-model="form.MI" ng-required="false" maxlength="1" class="middle-initial">
             <input type="text" name="lastName" placeholder="*Last Name" ng-model="form.lname" ng-required="true" ng-class="{forminvalid: (bed_form.lastName.$invalid &amp;&amp; bed_form.lastName.$dirty) || (bed_form.lastName.$invalid &amp;&amp; invalidform)}" class="last-name">
             <input type="text" name="email" placeholder="*E-mail" ng-model="form.email" ng-required="true" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/" ng-class="{forminvalid: (bed_form.email.$invalid &amp;&amp; bed_form.email.$dirty) || (bed_form.email.$invalid &amp;&amp; invalidform)}" class="email">
             <input type="text" name="email2" ng-model="form.confirmemail" ng-required="true" confirmemail placeholder="*Re-enter E-mail" ng-class="{forminvalid: (bed_form.email2.$invalid &amp;&amp; bed_form.email2.$dirty) || (bed_form.email2.$invalid &amp;&amp; invalidform)}" class="email2">
@@ -727,6 +727,18 @@
           </div>
         </div>
       </div>
+      <div class="modal modal--signup_error">
+        <div class="modal__outer">
+          <div class="modal__inner">
+            <div class="modal__close"></div>
+            <h3>Network Error</h3>
+            <p>
+              There was an error processing your request. Please try again later.
+              
+            </p>
+          </div>
+        </div>
+      </div>
       <div class="modal modal--video">
         <div class="modal__outer">
           <div class="modal__inner">
@@ -746,6 +758,18 @@
             <h3>Thank you for your request.</h3>
             <p>Your request has been received, and we will update your contact preferences. Please be aware that it may take up to 10 business days for your preferences to be reflected in our system. You may still receive communications during this time.</p>
             <p>Please feel free to register with us again should you wish to recieve information about binge eating disorder (BED) and other information from Shire in the future.</p>
+            <div class="controls"><a href class="button button--close">
+                CLOSE
+                </a></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--unsubscribe_error">
+        <div class="modal__outer">
+          <div class="modal__inner">
+            <div class="modal__close"></div>
+            <h3>Network Error</h3>
+            <p>There was an error processing your request. Please try again later.</p>
             <div class="controls"><a href class="button button--close">
                 CLOSE
                 </a></div>
