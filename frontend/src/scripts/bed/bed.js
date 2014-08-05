@@ -71,6 +71,12 @@ var BED = (function() {
             $(window).load(snag);
         }
 
+        if (bowser.msie && bowser.version < 9) {
+
+            $('input, textarea').placeholder();
+
+        }
+
         $('[data-load]').each(function(i, el) {
             $(el).load($(el).data('load'));
         });

@@ -18,9 +18,9 @@ var files = {
         'src/scripts/libs/skrollr.min.js',
         'src/scripts/libs/bowser.min.js',
         'src/scripts/libs/matchMedia.js',
-        'src/scripts/libs/angular.min.js',
-        'src/scripts/libs/placeholders.min.js',
-        'src/scripts/libs/polyfills.js'
+        'src/scripts/libs/jquery.placeholder.js',
+        'src/scripts/libs/polyfills.js',
+        'src/scripts/libs/angular.min.js'
     ],
     'dist/js/ie.js': [
         'src/scripts/libs/html5shiv.min.js',

@@ -80,6 +80,10 @@ nobr {
 //     display: block !important;
 // }
 
+a {
+    cursor: pointer;
+}
+
 hr {
     margin: 0 auto;
     height: 1px;
@@ -524,4 +528,13 @@ a.pdf-link {
 
 .mejs-container * {
     position: static;
+}
+
+.asterisk {
+    &:before {
+        content: '\002A';
+        position: absolute;
+        right: 100%;
+        padding-right: 2px;
+    }
 }

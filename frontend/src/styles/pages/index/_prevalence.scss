@@ -109,14 +109,14 @@
             width: 571px;
             height: 311px;
             margin-bottom: 20px;
-            margin-top: 50px;
+            margin-top: 30px;
         }
 
         @include mq("desktop") {
             background-image: url("#{$img-path}/prevalence-text-bg-2.png");
             width: 740px;
             height: 180px;
-            margin: 50px auto 25px auto;
+            margin: 30px auto 25px auto;
             padding: 25px 35px;
             font-size: 20px;
             line-height: 22px;
@@ -210,7 +210,9 @@
     // }
     // Mobile text
     .gender-ratio {
+        border-top: 1px solid #ffffff;
         @include mq("mobile") {
+            margin-top: 30px;
             padding: 30px 20px 10px 0;
         }
 
@@ -218,7 +220,8 @@
             //display: none;
             ///font-size: 20px;
             //line-height: 25px;
-            padding-top: 85px;
+            margin-top: 30px;
+            padding-top: 30px;
             padding-bottom: 0;
         }
     }
@@ -229,6 +232,7 @@
         border-bottom: 1px solid #ffffff;
         @include mq("desktop") {
             padding-top: 25px;
+            margin-bottom: 25px;
         }
 
         .patients-graphic {
@@ -334,8 +338,12 @@
     }
     .frequencies {
         @include mq("desktop") {
-            font-size: 22px;
-            line-height: 25px;
+            font-size: 18px;
+            line-height: 20px;
+        }
+        @include mq("mobile") {
+            font-size: 24px;
+            line-height: 28px;
         }
     }
 
@@ -344,15 +352,11 @@
     }
 }
 
-@include mq("mobile") {
-    .percent {
-        font-size: 26px;
-    }
-}
-
-
-@include mq("desktop") {
-    .percent {
+.percent {
+    @include mq("desktop") {
         font-size: 18px;
+    }
+    @include mq("mobile") {
+        font-size: 26px;        
     }
 }

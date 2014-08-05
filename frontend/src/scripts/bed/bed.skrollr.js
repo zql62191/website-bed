@@ -63,6 +63,10 @@ BED.Skrollr = (function() {
             'data-bottom-top': 'opacity: 0; transform: translate3d(0px,-50px,0px)',
             'data-center': 'opacity: 1; transform: translate3d(0px,0,0px)'
         },
+        'neurobiology-header-2': {
+            'data-bottom-top': 'opacity: 0;',
+            'data-center': 'opacity: 1;'
+        },
         'neurobiology-reward': {
             'data-bottom-top': 'opacity: 0; transform: translate3d(100px,0px,0px)',
             'data-center': 'opacity: 1; transform: translate3d(0px,0,0px)'

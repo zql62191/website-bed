@@ -130,7 +130,7 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
         Opt In for Communications
 
       div(
-        ng-class="{forminvaliddiv: (bed_form.optin.$invalid && bed_form.optin.$dirty) || (bed_form.optin.$pristine && invalidform)}")
+        ng-class="{forminvaliddiv: (bed_form.optin.$invalid && bed_form.optin.$dirty) || (bed_form.optin.$pristine && invalidform)}").check-wrap
         input(
           type='checkbox',
           name='optin',

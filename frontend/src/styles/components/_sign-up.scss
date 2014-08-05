@@ -19,12 +19,17 @@
     .forminvalid {
         border-color: #FF0000;
     }
-    .forminvaliddiv {
-        border: 2px solid red;
+
+    .check-wrap {
+        border: 2px solid transparent;
         display: inline-block;
         width: 16px;
         height: 16px;
         float: left;
+        margin-top: 5px;
+    }
+    .forminvaliddiv {
+        border: 2px solid red;
     }
     &._is_open {
         display: block;
