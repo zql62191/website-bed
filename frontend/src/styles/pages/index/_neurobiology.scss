@@ -39,7 +39,6 @@
             padding-bottom: 0;
         }
     }
-
     .dash {
         li:before {
             color: #ffffff;
@@ -48,7 +47,6 @@
     .neuro-graphic {
         background-position: top left;
         background-repeat: no-repeat;
-
         @include mq("desktop") {
             min-height: 145px;
             padding: 34px 0 0 189px;
@@ -74,7 +72,6 @@
             position: relative;
             right: -20px;
             padding: 310px 20px 0 0;
-            
             h3, p {
                 margin-left: -20px;
             }
@@ -167,9 +164,11 @@
             //margin-top: 34px;
             ul.bullet {
                 //margin-top: -34px;
+           
             }
             ul.dash {
                 //margin-bottom: 25px;
+           
             }
         }
 

@@ -62,7 +62,6 @@
         width: 1024px;
         margin: 0 30px 0 -32px;
         padding: 20px 40px 25px;
-
         @include mq("mobile") {
             width: 640px;
             margin: 0 0 30px -20px;
@@ -88,7 +87,6 @@
             background: #616364;
             display: block;
             margin: 0 auto 1px auto;
-
             @include mq("desktop") {
                 width: 800px;
                 height: 60px;
@@ -123,7 +121,6 @@
                 left: 0;
                 top: 50%;
                 margin-top: -11px;
-
                 @include mq("mobile") {
                     margin-top: -14.5px;
                     font-size: 30px;
@@ -143,12 +140,12 @@
                 height: inherit;
                 padding-bottom: 0;
                 font-family: font("gill sans", "regular");
-
                 @include mq("mobile") {
                     font-size: 24px;
                     line-height: 26px;
                     width: 500px;
                 }
+
                 @include mq("desktop") {
                     font-size: 18px;
                     line-height: 20px;
@@ -160,7 +157,6 @@
     }
     .video-player {
         position: relative;
-
         .arrow {
             height: 40px;
             width: 30px;
@@ -172,7 +168,6 @@
             &:hover {
                 opacity: 1;
             }
-
             @include mq("mobile") {
                 display: none;
             }
@@ -180,7 +175,6 @@
         .arrow-left {
             left: 10px;
             background: url("#{$img-path}/arrow-left.png") center center no-repeat;
-
             @include mq("mobile") {
                 left: -35px;
             }
@@ -188,7 +182,6 @@
         .arrow-right {
             right: 10px;
             background: url("#{$img-path}/arrow-right.png") center center no-repeat;
-
             @include mq("mobile") {
                 right: -35px;
             }
@@ -226,7 +219,6 @@
         }
         p {
             padding-bottom: 0;
-            
         }
         // Title
         p:nth-child(1) {

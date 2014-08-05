@@ -28,7 +28,6 @@
             padding-bottom: 50px;
         }
     }
-    
     .sub-head {
         @include mq("mobile") {
             width: auto;
@@ -56,10 +55,10 @@
             &:nth-of-type(2), &:nth-of-type(3) {
                 width: auto;
             }
-/*             &:nth-of-type(4) {
-                margin-bottom: 0;
-                padding-bottom: 5px;
-            } */
+            // &:nth-of-type(4) {
+            //     margin-bottom: 0;
+            //     padding-bottom: 5px;
+            // }
         }
 
         &.center {
@@ -175,6 +174,7 @@
         padding-bottom: 40px;
         .large {
             //letter-spacing: -10px;
+       
         }
         @include mq("desktop") {
             float: left;

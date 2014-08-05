@@ -18,7 +18,6 @@
         border-top-color: rgb(179, 182, 183);
     }
     h2 {
-
         @include mq("desktop") {
             padding-bottom: 25px;
             &:nth-of-type(2) {
@@ -46,8 +45,7 @@
         }
 
         .chart-head {
-
-            @include mq('desktop') {
+            @include mq("desktop") {
                 padding-top: 0;
                 padding-left: 50%;
                 text-align: left;
@@ -88,7 +86,6 @@
 
             @include mq("mobile") {
                 margin-bottom: 48px;
-
                 .footnote {
                     margin-top: -175px;
                     padding-left: 40px;
@@ -193,7 +190,6 @@
         padding: 16px 25px;
         color: #51748b;
         */
-
         @include mq("mobile") {
             padding: 15px;
             background: transparent url("#{$img-path}/blurb-2-mobile.png") 0 0 no-repeat;
@@ -215,11 +211,11 @@
     }
     // add to global styles
     .disclaimer {
-
         @include mq("mobile") {
             font-size: 25px;
             line-height: 34px;
         }
+
         @include mq("desktop") {
             font-size: 18px;
             line-height: 21px;
@@ -262,9 +258,6 @@
         background: url("#{$img-path}/spiral.png") top left no-repeat;
         background-size: 100%;
         text-align: center;
-
-        
-
         @include mq("mobile") {
             height: 339px;
             width: 350px;
@@ -285,21 +278,20 @@
             filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale');
             -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale')";
         }
-
         p {
             font-size: 28px;
             line-height: 32px;
             padding: 0 0 0 15px;
-
-            @include mq('desktop') {
+            @include mq("desktop") {
                 left: 15px;
             }
         }
         .large {
-            @include mq('desktop') {
+            @include mq("desktop") {
                 left: 30px;
             }
-            @include mq('mobile') {
+
+            @include mq("mobile") {
                 left: 15px;
             }
         }
@@ -308,8 +300,6 @@
         background: url("#{$img-path}/spiral.png") top left no-repeat;
         background-size: 100%;
         text-align: center;
-
-
         @include mq("mobile") {
             height: 350px;
             width: 350px;
@@ -329,36 +319,35 @@
             filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale');
             -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale')";
         }
-
         p {
             font-size: 28px;
             line-height: 32px;
             padding: 0 0 0 15px;
-
-            @include mq('desktop') {
+            @include mq("desktop") {
                 left: 15px;
             }
         }
         .large {
-            @include mq('desktop') {
+            @include mq("desktop") {
                 left: 30px;
             }
-            @include mq('mobile') {
+
+            @include mq("mobile") {
                 left: 15px;
             }
         }
     }
     .chart-head {
-        @include mq('mobile') {
+        @include mq("mobile") {
             width: 544px;
             margin: 0 auto;
         }
     }
     .chart-footnote {
-
-        @include mq('desktop') {
+        @include mq("desktop") {
             width: 93%;
         }
+
         text-align: left;
     }
     .percent {

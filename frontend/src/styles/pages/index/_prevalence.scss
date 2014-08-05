@@ -50,11 +50,9 @@
             float: left;
             margin-left: 100px;
         }
-
-        
     }
     .asterisk {
-        padding-left: 5px;
+        //padding-left: 5px;
         width: 538px;
         margin-left: 25px;
         padding-bottom: 50px;
@@ -103,7 +101,6 @@
         color: #333e48;
         font-size: 27px;
         line-height: 31px;
-
         @include mq("mobile") {
             background-image: url("#{$img-path}/prevalence-text-bg-tall.png");
             width: 571px;
@@ -165,9 +162,7 @@
         p {
             font-size: 38px;
             font-family: font("gill sans", "regular");
-
-
-            @include mq('desktop') {
+            @include mq("desktop") {
                 line-height: 38px;
             }
         }
@@ -271,40 +266,52 @@
             }
         }
         .patient-1 {
-            @include mq('desktop') {
+            @include mq("desktop") {
                 background-image: url("#{$img-path}/prevalence-person-1-tall.png");
             }
-            @include mq('mobile') {
+
+            @include mq("mobile") {
                 background-image: url("#{$img-path}/prevalence-person-1-short.png");
             }
+
             //background-image: url("#{$img-path}/prevalence-patient-1.png");
+       
         }
         .patient-2 {
-            @include mq('desktop') {
+            @include mq("desktop") {
                 background-image: url("#{$img-path}/prevalence-person-2-tall.png");
             }
-            @include mq('mobile') {
+
+            @include mq("mobile") {
                 background-image: url("#{$img-path}/prevalence-person-2-short.png");
             }
+
             //background-image: url("#{$img-path}/prevalence-patient-2.png");
+       
         }
         .patient-3 {
-            @include mq('desktop') {
+            @include mq("desktop") {
                 background-image: url("#{$img-path}/prevalence-person-3-tall.png");
             }
-            @include mq('mobile') {
+
+            @include mq("mobile") {
                 background-image: url("#{$img-path}/prevalence-person-3-short.png");
             }
+
             //background-image: url("#{$img-path}/prevalence-patient-3.png");
+       
         }
         .patient-4 {
-            @include mq('desktop') {
+            @include mq("desktop") {
                 background-image: url("#{$img-path}/prevalence-person-4-tall.png");
             }
-            @include mq('mobile') {
+
+            @include mq("mobile") {
                 background-image: url("#{$img-path}/prevalence-person-4-short.png");
             }
+
             //background-image: url("#{$img-path}/prevalence-patient-4.png");
+       
         }
         h2 {
             @include mq("mobile") {
@@ -341,12 +348,12 @@
             font-size: 18px;
             line-height: 20px;
         }
+
         @include mq("mobile") {
             font-size: 24px;
             line-height: 28px;
         }
     }
-
     .twelve-month {
         padding-top: 36px;
     }
@@ -356,7 +363,8 @@
     @include mq("desktop") {
         font-size: 18px;
     }
+
     @include mq("mobile") {
-        font-size: 26px;        
+        font-size: 26px;
     }
 }

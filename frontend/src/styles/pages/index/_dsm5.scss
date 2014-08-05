@@ -28,7 +28,6 @@
     }
     h2 {
         color: #51748b;
-
         @include mq("desktop") {
             //font-size: 38px;
             padding-bottom: 15px;
@@ -112,7 +111,6 @@
         }
         &.disclaimer {
             margin-top: 15px;
-            
             @include mq("mobile") {
                 width: 570px;
                 font-size: 30px;
@@ -142,6 +140,7 @@
                 width: 400px;
                 .tab-inner {
                     background-image: url("#{$img-path}/dsm5-tab-bg.png");
+                    @include preload-desktop("#{$img-path}/dsm5-tab-bg.png");
                     padding-left: 60px;
                     background-position: top right;
                     p {
@@ -166,6 +165,7 @@
                 height: 872px;
                 .tab-inner {
                     background-image: url("#{$img-path}/dsm5-tab-bg-mobile.png");
+                    @include preload-mobile("#{$img-path}/dsm5-tab-bg-mobile.png");
                     padding-left: 60px;
                 }
             }
@@ -196,11 +196,11 @@
                 right: 10px;
                 display: block;
             }
-            @include mq('mobile') {
+
+            @include mq("mobile") {
                 top: 30px;
                 right: 30px;
             }
-            
         }
         h3 {
             color: #febd3f;
@@ -246,7 +246,6 @@
             @include mq("mobile") {
                 //font-size: 23px;
                 //line-height: 32px;
-
                 &.first {
                     width: 390px;
                 }

@@ -14,3 +14,13 @@
         margin-left: -20px;
     }
 }
+
+@mixin preload-mobile($img) {
+    $tmp: preload-mobile($img);
+    $tmp: null;
+}
+
+@mixin preload-desktop($img) {
+    $tmp: preload-desktop($img);
+    $tmp: null;
+}

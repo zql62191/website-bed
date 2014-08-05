@@ -10,16 +10,14 @@
         }
     }
     .bed_form {
-
         // Need to force width outside of container because of scrollbar
-        @include mq('desktop') {
+        @include mq("desktop") {
             width: 665px;
         }
     }
     .forminvalid {
         border-color: #FF0000;
     }
-
     .check-wrap {
         border: 2px solid transparent;
         display: inline-block;

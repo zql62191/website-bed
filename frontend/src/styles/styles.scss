@@ -9,3 +9,15 @@
 @import "components/__components";
 
 @import "pages/__pages";
+
+body:before {
+    @include mq("mobile") {
+        content: $preload-mobile;
+        display: none;
+    }
+
+    @include mq("desktop") {
+        content: $preload-desktop;
+        display: none;
+    }
+}

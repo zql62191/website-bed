@@ -22,7 +22,6 @@
         z-index: 1002;
         background: #51748b;
         margin-bottom: 0;
-
         @include mq("mobile") {
             font-size: 25px;
             line-height: 25px;
@@ -81,7 +80,8 @@
             padding-bottom: 5px;
             padding-top: 24px;
         }
-        @include mq('desktop') {
+
+        @include mq("desktop") {
             font-size: 26px;
             line-height: 29px;
             padding-bottom: 10px;
@@ -94,18 +94,17 @@
         }
     }
     p {
-
         &.sub-head {
             @include mq("desktop") {
                 font-size: 23px;
                 line-height: 26px;
                 padding-bottom: 10px;
             }
-             @include mq("mobile") {
+
+            @include mq("mobile") {
                 padding-bottom: 20px;
             }
         }
-
         @include mq("desktop") {
             font-size: 16px;
             line-height: 18px;

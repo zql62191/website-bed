@@ -177,7 +177,7 @@
                 padding-bottom: 0;
                 font-size: 160px;
                 line-height: 160px;
-                font-family: font("gill sans", "bold"); 
+                font-family: font("gill sans", "bold");
             }
         }
     }
@@ -187,7 +187,6 @@
             width: 350px;
             height: 350px;
             margin-top: 16px;
-
             p {
                 font-size: 28px;
                 line-height: 32px;
@@ -200,6 +199,7 @@
             width: 360px;
             height: 340px;
         }
+
         .lt-ie9 & {
             background: transparent;
             filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale');
@@ -208,11 +208,9 @@
     }
     .nineteen {
         background-image: url("#{$img-path}/spiral.png");
-
         @include mq("mobile") {
             width: 350px;
             height: 350px;
-
             p {
                 padding-right: 0;
                 font-size: 28px;
@@ -225,6 +223,7 @@
             width: 360px;
             height: 340px;
         }
+
         .lt-ie9 & {
             background: transparent;
             filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale');
@@ -235,9 +234,8 @@
         font-size: 0.5em;
         top: -0.65em;
     }
-
     .chart-footnote {
-        @include mq('desktop') {
+        @include mq("desktop") {
             width: 800px;
         }
     }
