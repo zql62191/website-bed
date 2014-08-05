@@ -71,7 +71,7 @@ var BED = (function() {
             $(window).load(snag);
         }
 
-        if (bowser.msie && bowser.version < 9) {
+        if (bowser.msie && bowser.version < 10) {
 
             $('input, textarea').placeholder();
 

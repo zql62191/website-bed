@@ -71,7 +71,7 @@ var BED = (function() {
             $(window).load(snag);
         }
 
-        if (bowser.msie && bowser.version < 9) {
+        if (bowser.msie && bowser.version < 10) {
 
             $('input, textarea').placeholder();
 
@@ -130,45 +130,59 @@ BED.UI = (function() {
 
         .on(gestures.scroll + '.ui', function(e) {
 
-            var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-            var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+            setTimeout(function() {
 
-            var x = width / 2;
-            var y = height * (2 / 3);
+                var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+                var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
-            var jqIsOpen = $('._is_open');
+                // console.log('width: ', width);
+                // console.log('height: ', height);
 
-            var origDisplayAttribute = jqIsOpen.css('display');
-            jqIsOpen.css('display', 'none');
+                var x = width / 2;
+                var y = height * (2 / 3);
 
-            var underneathElem = document.elementFromPoint(x, y);
+                // console.log('x: ', x);
+                // console.log('y: ', y);
 
-            if (origDisplayAttribute) {
-                jqIsOpen.css('display', origDisplayAttribute);
-            } else {
-                jqIsOpen.css('display', 'block');
-            }
+                var jqIsOpen = $('._is_open');
 
-            var jqCurrent = $(underneathElem).closest('.section');
+                var origDisplayAttribute = jqIsOpen.css('display');
+                jqIsOpen.css('display', 'none');
 
-            var jqNext = jqCurrent.next('.section');
+                var underneathElem = document.elementFromPoint(x, y);
 
-            if (jqCurrent) {
+                // console.log('underneathElem: ', underneathElem);
 
-                currentSection = jqCurrent.data('section');
+                // console.log('$.elementFromPoint: ', $.elementFromPoint(x, y));
 
-                $('.page-nav a.active').removeClass('active');
+                if (origDisplayAttribute) {
+                    jqIsOpen.css('display', origDisplayAttribute);
+                } else {
+                    jqIsOpen.css('display', 'block');
+                }
 
-                $('.page-nav a[href="/#' + jqCurrent.data('section') + '"]').addClass('active');
+                var jqCurrent = $(underneathElem).closest('.section');
 
-                $('.bar--next, .pagination__item').removeClass('active');
+                var jqNext = jqCurrent.next('.section');
 
-                $('.pagination__item').eq(jqCurrent.index()).addClass('active');
-            }
+                if (jqCurrent) {
 
-            if (jqNext) {
-                $('.bar--next.bar--' + jqNext.data('section')).addClass('active');
-            }
+                    currentSection = jqCurrent.data('section');
+
+                    $('.page-nav a.active').removeClass('active');
+
+                    $('.page-nav a[href="/#' + jqCurrent.data('section') + '"]').addClass('active');
+
+                    $('.bar--next, .pagination__item').removeClass('active');
+
+                    $('.pagination__item').eq(jqCurrent.index()).addClass('active');
+                }
+
+                if (jqNext) {
+                    $('.bar--next.bar--' + jqNext.data('section')).addClass('active');
+                }
+
+            }, 1);
         })
 
         .trigger(gestures.scroll + '.ui')
@@ -960,3 +974,5 @@ BED.Analytics = (function() {
     };
 
 })();
+
+//# sourceMappingURL=bed.js.map
