@@ -650,6 +650,13 @@ a.pdf-link span sup {
   padding-right: 2px;
 }
 
+.loading {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+}
+
 .section {
   overflow: hidden;
 }
