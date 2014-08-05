@@ -226,6 +226,9 @@ namespace BEDService
                     EmailAddress emailAddress = new EmailAddress(email.Email);
 
                     hcp = new HCPIndividual();
+                    hcp.FirstName = address.FName;
+                    hcp.LastName = address.LName;
+                    hcp.MiddleName = address.MName;
                     hcp.EmailAddresses = new List<EmailAddress>();
                     hcp.EmailAddresses.Add(emailAddress);
 
