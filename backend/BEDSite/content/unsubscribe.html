@@ -30,14 +30,14 @@
       <div data-direction="left" class="page-nav slideout slideout--menu">
         <nav class="slideout__inner">
                 <ul class="primary-nav">
-                  <li class="primary-nav__item _1_liner"><a href="/Default.aspx#home" target="_self">Home</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/index.html#prevalence" target="_self">Prevalence</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/index.html#dsm5" target="_self"><em>DSM-5<sup>&reg;</sup></em> Criteria</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/index.html#course" target="_self">Clinical Characteristics</a></li>
-                  <li class="primary-nav__item _2_liner"><a href="/index.html#effects" target="_self"><em>DSM-5<sup>&reg;</sup></em> Functional <br/>Consequences</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/index.html#neurobiology" target="_self">Neurobiology</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/index.html#diagnosis" target="_self">Recognizing BED in Adults</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/index.html#resources" target="_self">Resources/Expert Videos</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#home" target="_self">Home</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#prevalence" target="_self">Prevalence</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#dsm5" target="_self"><em>DSM-5</em> Criteria</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#course" target="_self">Clinical Characteristics</a></li>
+                  <li class="primary-nav__item _2_liner"><a href="/#effects" target="_self"><em>DSM-5</em> Functional <br/>Consequences</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#neurobiology" target="_self">Potential Causes</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#diagnosis" target="_self">Recognizing BED in Adults</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#resources" target="_self">Resources/Expert Videos</a></li>
                 </ul>
         </nav>
       </div>
@@ -79,7 +79,7 @@
               Opt In for Communications
               
             </h3>
-            <div ng-class="{forminvaliddiv: (bed_form.optin.$invalid &amp;&amp; bed_form.optin.$dirty) || (bed_form.optin.$pristine &amp;&amp; invalidform)}">
+            <div ng-class="{forminvaliddiv: (bed_form.optin.$invalid &amp;&amp; bed_form.optin.$dirty) || (bed_form.optin.$pristine &amp;&amp; invalidform)}" class="check-wrap">
               <input type="checkbox" name="optin" ng-model="form.checkbox" ng-required="true" id="optin" class="optin">
             </div>
             <label for="optin" class="optin-label">
@@ -115,9 +115,9 @@
             During a binge, adults with BED may eat much more rapidly than normal, eat until they are uncomfortably full, eat large amounts of food when not feeling physically hungry, and/or eat alone out of embarrassment. They may feel disgusted with themselves, depressed, or very guilty afterward.
             
           </p>
-          <p><em>Diagnosis should be based on a complete evaluation of the patient. These are not the complete diagnostic criteria, but instead a brief summary.</em> 
-            
-          </p><a data-slideout="signup" class="button signup">Register for additional information on BED including the full <em>DSM-5</em><sup>®</sup> diagnostic criteria</a>
+          <p><em>
+              These are not the complete diagnostic criteria, but instead a brief summary. Diagnosis should be based upon a complete evaluation of the patient.
+              </em></p><a data-slideout="signup" class="button signup">Register for additional information on BED <br class="hide--mobile">including the full <em>DSM-5</em><sup>&reg;</sup> <br class="hide--mobile">diagnostic criteria</a>
         </div>
       </div>
       <div class="page-content">
@@ -132,19 +132,21 @@
               <div class="opt-out-choice">
                 <p class="form-line">
                   <input type="radio" name="unsubscribe" value="email" ng-model="form.optoutchoice" ng-change="invalidform = false" id="emailRadio">
-                  <label for="emailRadio">I would like to opt out of future BED email communication.</label>
+                  <label for="emailRadio">I would like to opt out of future BED 
+                    <nobr>e-mail</nobr> communications.
+                  </label>
                 </p>
                 <p class="form-line">
                   <input type="radio" name="unsubscribe" value="direct" ng-model="form.optoutchoice" ng-change="invalidform = false" id="directRadio">
                   <label for="directRadio">
-                    I would like to opt out of future BED direct mail communication.
+                    I would like to opt out of future BED direct mail communications.
                     
                   </label>
                 </p>
                 <p class="form-line">
                   <input type="radio" name="unsubscribe" value="both" ng-model="form.optoutchoice" ng-change="invalidform = false" id="bothRadio">
                   <label for="bothRadio">
-                    I would like to opt out of all future Shire communication.
+                    I would like to opt out of all future Shire communications.
                     
                     
                   </label>
@@ -155,11 +157,11 @@
                   
                 </p>
                 <div ng-if="form.optoutchoice != &quot;none&quot;" class="email">
-                  <input type="text" name="email" placeholder="*Email" ng-model="form.email" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/" ng-class="{forminvalid: (bed_form.email.$invalid &amp;&amp; bed_form.email.$dirty) || (bed_form.email.$invalid &amp;&amp; invalidform)}" ng-required="true" class="email">
+                  <input type="text" name="email" placeholder="*E-mail" ng-model="form.email" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/" ng-class="{forminvalid: (bed_form.email.$invalid &amp;&amp; bed_form.email.$dirty) || (bed_form.email.$invalid &amp;&amp; invalidform)}" ng-required="true" class="email">
                 </div>
                 <div ng-if="form.optoutchoice == &quot;direct&quot; || form.optoutchoice == &quot;both&quot;" class="address">
                   <input type="text" name="firstName" placeholder="*First Name" ng-model="form.fname" ng-required="true" ng-class="{forminvalid: (bed_form.firstName.$invalid &amp;&amp; bed_form.firstName.$dirty) || (bed_form.firstName.$invalid &amp;&amp; invalidform)}" class="first-name">
-                  <input type="text" name="middleInitial" placeholder="MI" ng-model="form.MI" ng-pattern="/^[a-zA-Z]$/" size="1" maxlength="1" class="middle-initial">
+                  <input type="text" name="middleInitial" placeholder="MI" ng-model="form.MI" ng-pattern="/^[a-zA-Z]$/" size="1" max-length="1" class="middle-initial">
                   <input type="text" name="lastName" placeholder="*Last Name" ng-model="form.lname" ng-required="true" ng-class="{forminvalid: (bed_form.lastName.$invalid &amp;&amp; bed_form.lastName.$dirty) || (bed_form.lastName.$invalid &amp;&amp; invalidform)}" class="last-name">
                   <input type="text" name="streetAddress" placeholder="*Street Address" ng-model="form.street" ng-required="true" ng-class="{forminvalid: (bed_form.streetAddress.$invalid &amp;&amp; bed_form.streetAddress.$dirty) || (bed_form.streetAddress.$invalid &amp;&amp; invalidform)}" class="street-address">
                   <input type="text" name="suiteOffice" placeholder="Suite/Office" ng-model="form.suite" ng-required="false" class="suite-office">
@@ -182,7 +184,7 @@
         <div class="content-wrap">
           <nav>
                   <ul class="secondary-nav">
-                    <li class="secondary-nav__item _1_liner"><a href="/Unsubscribe/Default.aspx" target="_self">Unsubscribe</a></li>
+                    <li class="secondary-nav__item _1_liner"><a href="/Unsubscribe/" target="_self">Unsubscribe</a></li>
                     <li class="secondary-nav__item _1_liner"><a href="/contact-us.aspx" target="_self">Contact Us</a></li>
                     <li class="secondary-nav__item _1_liner"><a href="/privacy-policy.aspx" target="_self">Privacy Policy</a></li>
                     <li class="secondary-nav__item _1_liner"><a href="http://www.shire.com/" target="_blank">Shire US</a></li>
@@ -212,7 +214,7 @@
             <h3>Thank you!</h3>
             <p>Your registration is complete.</p>
             <p>
-              We appreciate your interest in staying up to date on binge eating disorder (BED) in adults. You can expect to receive additional information from Shire on how to help your adult patients with BED.
+              We appreciate your interest in staying up to date on binge eating disorder (BED) in adults. You can expect to receive additional information from Shire for adult patients with BED.
               
             </p>
           </div>
@@ -247,9 +249,9 @@
           <div class="modal__inner">
             <div class="modal__close"></div>
             <h3>Thank you for your request.</h3>
-            <p>Your request has been received, and we will update your contact preferences. Please be aware that it may take up to 10 business days before your preferences are reflected in our system. You may still receive communications during this time.</p>
-            <p>Please feel free to register with us again should you wish to recieve information about BED and other information from Shire in the future.</p>
-            <div class="controls"><a href="/" class="button button--close">
+            <p>Your request has been received, and we will update your contact preferences. Please be aware that it may take up to 10 business days for your preferences to be reflected in our system. You may still receive communications during this time.</p>
+            <p>Please feel free to register with us again should you wish to receive information about binge eating disorder (BED) in adults and other information from Shire in the future.</p>
+            <div class="controls"><a href class="button button--close">
                 CLOSE
                 </a></div>
           </div>
@@ -271,12 +273,24 @@
     <script src="/content/js/libs.js"></script>
     <script src="/content/me/mediaelement-and-player.min.js"></script><!--[if (gte IE 6)&(lte IE 8)]>
     <script src="/content/js/skrollr.ie.js"></script><![endif]-->
-    <script src="/content/js/main.js"></script>
+    <script src="/content/js/bed.js"></script>
     <script src="/content/js/forms.js"></script>
     <script>
       $(BED.init);
       
     </script>
+    <script>
+      (function () {
+        var tagjs = document.createElement("script");
+        var s = document.getElementsByTagName("script")[0];
+        tagjs.async = true;
+        tagjs.src = "//s.btstatic.com/tag.js#site=Xpq89R8";
+        s.parentNode.insertBefore(tagjs, s);
+        }());
+    </script>
+    <noscript>
+      <iframe src="//s.thebrighttag.com/iframe?c=Xpq89R8" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    </noscript>
     <script>!/cdm210.com/i.test(location.host) && document.location.port !== '8005' && 'WebSocket' in window && window.WebSocket.CLOSING === 2 && document.write('\x3Cscript src="//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1">\x3C/script>');</script>
     <script>!/cdm210.com/i.test(location.host) && document.location.port !== '8005' && /iP(hone|od|ad)|Android|BlackBerry|IEMobile/i.test(navigator.userAgent) && document.write('<script src="//'+(location.host||"localhost").split(":")[0]+':8081/target/target-script-min.js">\x3c/script>');</script>
   </body>

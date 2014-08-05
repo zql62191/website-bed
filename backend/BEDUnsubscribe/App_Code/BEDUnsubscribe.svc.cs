@@ -61,7 +61,7 @@ namespace BEDService
                     regMgr.Individual = hcp;
 
                     List<QuestionResponse> questionResponses = new List<QuestionResponse>();
-                    QuestionResponse questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDExitMCC"]),  Int32.Parse(ConfigurationManager.AppSettings["MCCUnsubscribe"]));
+                    QuestionResponse questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDExitMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), ConfigurationManager.AppSettings["MCCUnsubscribe"]);
                     questionResponses.Add(questionResponse);
 
                     questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDOptOutBEDEmail"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsYes"]));
@@ -152,10 +152,10 @@ namespace BEDService
                     regMgr.Individual = hcp;
 
                     List<QuestionResponse> questionResponses = new List<QuestionResponse>();
-                    QuestionResponse questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDExitMCC"]), Int32.Parse(ConfigurationManager.AppSettings["MCCUnsubscribe"]));
+                    QuestionResponse questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDExitMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), ConfigurationManager.AppSettings["MCCUnsubscribe"]);
                     questionResponses.Add(questionResponse);
 
-                    questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDOptOutBEDDirectMail"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsYes"]), ConfigurationManager.AppSettings["MCCUnsubscribe"]);
+                    questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDOptOutBEDDirectMail"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsYes"]));
                     questionResponses.Add(questionResponse);
 
                     questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDSourceMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), ConfigurationManager.AppSettings["RTWebSiteID"]);
@@ -242,7 +242,7 @@ namespace BEDService
                     regMgr.Individual = hcp;
 
                     List<QuestionResponse> questionResponses = new List<QuestionResponse>();
-                    QuestionResponse questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDExitMCC"]), Int32.Parse(ConfigurationManager.AppSettings["MCCUnsubscribe"]));
+                    QuestionResponse questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDExitMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), ConfigurationManager.AppSettings["MCCUnsubscribe"]);
                     questionResponses.Add(questionResponse);
 
                     questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDOptOutAll"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsYes"]));

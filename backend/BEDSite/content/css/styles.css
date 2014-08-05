@@ -133,6 +133,10 @@ nobr {
   }
 }
 
+a {
+  cursor: pointer;
+}
+
 hr {
   margin: 0 auto;
   height: 1px;
@@ -639,6 +643,13 @@ a.pdf-link span sup {
   position: static;
 }
 
+.asterisk:before {
+  content: '\002A';
+  position: absolute;
+  right: 100%;
+  padding-right: 2px;
+}
+
 .section {
   overflow: hidden;
 }
@@ -765,12 +776,18 @@ a.pdf-link span sup {
 .next-section .bar--next:hover {
   background: #fec451 !important;
   text-decoration: none !important;
+  color: #FFFFFF !important;
 }
 .next-section .bar--next:before {
   border-top-color: #ffffff;
 }
 .next-section .bar--next.bar--prevalence {
   background: #51748b;
+}
+@media only screen and (max-width: 40em) {
+  .next-section .bar--next.bar--prevalence {
+    letter-spacing: -0.02em;
+  }
 }
 .next-section .bar--next.bar--dsm5 {
   background: #ededed;
@@ -965,12 +982,16 @@ a.pdf-link span sup {
 .slideout--signup .forminvalid {
   border-color: #FF0000;
 }
-.slideout--signup .forminvaliddiv {
-  border: 2px solid red;
+.slideout--signup .check-wrap {
+  border: 2px solid transparent;
   display: inline-block;
   width: 16px;
   height: 16px;
   float: left;
+  margin-top: 5px;
+}
+.slideout--signup .forminvaliddiv {
+  border: 2px solid red;
 }
 .slideout--signup._is_open {
   display: block;
@@ -1458,17 +1479,20 @@ a.pdf-link span sup {
 }
 .section--home h1 {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  font-size: 55px;
-}
-@media only screen and (min-width: 40.063em) {
-  .section--home h1 {
-    font-size: 32px;
-    padding-bottom: 15px;
-  }
 }
 @media only screen and (max-width: 40em) {
   .section--home h1 {
+    font-size: 40px;
+    line-height: 44px;
+    padding-bottom: 5px;
     padding-top: 24px;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .section--home h1 {
+    font-size: 26px;
+    line-height: 29px;
+    padding-bottom: 10px;
   }
 }
 .section--home h3 {
@@ -1612,7 +1636,7 @@ a.pdf-link span sup {
     width: 571px;
     height: 311px;
     margin-bottom: 20px;
-    margin-top: 50px;
+    margin-top: 30px;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -1620,7 +1644,7 @@ a.pdf-link span sup {
     background-image: url("../img/prevalence-text-bg-2.png");
     width: 740px;
     height: 180px;
-    margin: 50px auto 25px auto;
+    margin: 30px auto 25px auto;
     padding: 25px 35px;
     font-size: 20px;
     line-height: 22px;
@@ -1678,14 +1702,19 @@ a.pdf-link span sup {
     line-height: 38px;
   }
 }
+.section--prevalence .gender-ratio {
+  border-top: 1px solid #ffffff;
+}
 @media only screen and (max-width: 40em) {
   .section--prevalence .gender-ratio {
+    margin-top: 30px;
     padding: 30px 20px 10px 0;
   }
 }
 @media only screen and (min-width: 40.063em) {
   .section--prevalence .gender-ratio {
-    padding-top: 85px;
+    margin-top: 30px;
+    padding-top: 30px;
     padding-bottom: 0;
   }
 }
@@ -1698,6 +1727,7 @@ a.pdf-link span sup {
 @media only screen and (min-width: 40.063em) {
   .section--prevalence .comparable {
     padding-top: 25px;
+    margin-bottom: 25px;
   }
 }
 .section--prevalence .comparable .patients-graphic {
@@ -1803,24 +1833,31 @@ a.pdf-link span sup {
 }
 @media only screen and (min-width: 40.063em) {
   .section--prevalence .frequencies {
-    font-size: 22px;
-    line-height: 25px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--prevalence .frequencies {
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 .section--prevalence .twelve-month {
   padding-top: 36px;
 }
 
-@media only screen and (max-width: 40em) {
-  .percent {
-    font-size: 26px;
-  }
-}
 @media only screen and (min-width: 40.063em) {
   .percent {
     font-size: 18px;
   }
 }
+@media only screen and (max-width: 40em) {
+  .percent {
+    font-size: 26px;
+  }
+}
+
 .section--course {
   background: #333e48;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iNDUlIiBzdG9wLWNvbG9yPSIjMzMzZTQ4IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzIxMjgyZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9yYWRpYWxHcmFkaWVudD4KICA8cmVjdCB4PSItNTAiIHk9Ii01MCIgd2lkdGg9IjEwMSIgaGVpZ2h0PSIxMDEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
@@ -1864,7 +1901,9 @@ a.pdf-link span sup {
 }
 @media only screen and (min-width: 40.063em) {
   .section--course .graphic-container .chart-head {
-    text-align: right;
+    padding-top: 0;
+    padding-left: 50%;
+    text-align: left;
     padding-right: 20px;
     padding-bottom: 24px;
   }
@@ -2103,10 +2142,8 @@ a.pdf-link span sup {
 }
 .lt-ie9 .section--course .eighty {
   background: transparent;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
-                src='img/spiral.png',
-                sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale')";
 }
 .section--course .eighty p {
   font-size: 28px;
@@ -2152,10 +2189,8 @@ a.pdf-link span sup {
 }
 .lt-ie9 .section--course .forty-nine {
   background: transparent;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
-                src='img/spiral.png',
-                sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale')";
 }
 .section--course .forty-nine p {
   font-size: 28px;
@@ -2185,16 +2220,11 @@ a.pdf-link span sup {
 }
 .section--course .chart-footnote {
   text-align: left;
-  margin-left: 7px;
 }
 @media only screen and (min-width: 40.063em) {
   .section--course .chart-footnote {
     width: 93%;
   }
-}
-.section--course .chart-footnote:before {
-  content: '*';
-  margin-left: -7px;
 }
 .section--course .percent {
   font-size: 0.5em;
@@ -2391,10 +2421,8 @@ a.pdf-link span sup {
 }
 .lt-ie9 .section--effects .sixty-three {
   background: transparent;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
-                src='img/spiral.png',
-                sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale')";
 }
 .section--effects .nineteen {
   background-image: url("../img/spiral.png");
@@ -2419,10 +2447,8 @@ a.pdf-link span sup {
 }
 .lt-ie9 .section--effects .nineteen {
   background: transparent;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
-                src='img/spiral.png',
-                sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/spiral.png',sizingMethod='scale')";
 }
 .section--effects .percent {
   font-size: 0.5em;
@@ -2596,13 +2622,6 @@ a.pdf-link span sup {
   .section--neurobiology .risk-2 {
     background-image: url("../img/neurobiology-5.png");
     padding-top: 0;
-    margin-top: 34px;
-  }
-  .section--neurobiology .risk-2 ul.bullet {
-    margin-top: -34px;
-  }
-  .section--neurobiology .risk-2 ul.dash {
-    margin-bottom: 25px;
   }
 }
 @media only screen and (max-width: 40em) {

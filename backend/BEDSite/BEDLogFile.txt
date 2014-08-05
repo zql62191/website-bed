@@ -56,3 +56,27 @@
 2014-08-04 12:25:44,874 [101] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Failure |  Category: App_Code.jgihfr0z | Message: Object reference not set to an instance of an object. 
 2014-08-04 12:27:18,327 [100] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Failure |  Category: App_Code.jgihfr0z | Message: Object reference not set to an instance of an object. 
 2014-08-04 12:28:52,648 [7] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Success |  Category: SetOptInData | Message: OK 
+2014-08-05 14:47:01,921 [8] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-05 14:47:12,144 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-05 14:47:34,679 [10] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-05 14:48:03,548 [8] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-05 14:48:17,840 [6] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-05 14:48:26,172 [8] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-05 14:49:17,020 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-05 15:24:45,611 [9] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-05 17:51:48,248 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-05 17:52:47,573 [6] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Failure |  Category: mscorlib | Message: Could not find a part of the path 'C:\Projects\Vyvanse BED - Web\trunk\backend\BEDSite\Service\common\config\Realtime.config'. 
+2014-08-05 17:52:50,044 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-05 17:53:45,396 [17] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Failure |  Category: ShireRealtime | Message: The type initializer for 'Shire.Realtime.WebServices.Services' threw an exception. 
+2014-08-05 17:53:48,345 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-05 17:54:43,898 [17] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Failure |  Category: mscorlib | Message: Could not find a part of the path 'C:\Projects\Vyvanse BED - Web\trunk\backend\BEDSite\Service\common\config\Realtime.config'. 
+2014-08-05 17:54:46,463 [17] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-05 17:55:23,351 [20] INFO BEDService.BEDWCFService - BED:: User: asdf@asdf.com | Operation: OptIn_Success |  Category: SetOptInData | Message: OK 
+2014-08-05 17:55:56,937 [17] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-05 17:56:56,738 [19] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Failure |  Category: mscorlib | Message: Input string was not in a correct format. 
+2014-08-05 18:00:08,661 [27] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Failure |  Category: mscorlib | Message: Input string was not in a correct format. 
+2014-08-05 18:00:13,709 [20] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-05 18:27:23,609 [23] INFO BEDService.BEDWCFService - BED:: User: aa@aaa.com | Operation: OptIn_errors |  Category: SetOptInData | Message: System.Collections.Generic.List`1[System.String] 
+2014-08-05 18:27:28,546 [20] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-05 18:27:50,331 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-05 18:29:18,454 [10] INFO BEDService.BEDWCFService - BED:: User: aa@aaa.com | Operation: OptIn_Success |  Category: SetOptInData | Message: OK 

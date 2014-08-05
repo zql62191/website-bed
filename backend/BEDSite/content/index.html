@@ -30,14 +30,14 @@
       <div data-direction="left" class="page-nav slideout slideout--menu">
         <nav class="slideout__inner">
                 <ul class="primary-nav">
-                  <li class="primary-nav__item _1_liner"><a href="/Default.aspx#home" target="_self">Home</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/index.html#prevalence" target="_self">Prevalence</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/index.html#dsm5" target="_self"><em>DSM-5<sup>&reg;</sup></em> Criteria</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/index.html#course" target="_self">Clinical Characteristics</a></li>
-                  <li class="primary-nav__item _2_liner"><a href="/index.html#effects" target="_self"><em>DSM-5<sup>&reg;</sup></em> Functional <br/>Consequences</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/index.html#neurobiology" target="_self">Neurobiology</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/index.html#diagnosis" target="_self">Recognizing BED in Adults</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/index.html#resources" target="_self">Resources/Expert Videos</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#home" target="_self">Home</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#prevalence" target="_self">Prevalence</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#dsm5" target="_self"><em>DSM-5</em> Criteria</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#course" target="_self">Clinical Characteristics</a></li>
+                  <li class="primary-nav__item _2_liner"><a href="/#effects" target="_self"><em>DSM-5</em> Functional <br/>Consequences</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#neurobiology" target="_self">Potential Causes</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#diagnosis" target="_self">Recognizing BED in Adults</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/#resources" target="_self">Resources/Expert Videos</a></li>
                 </ul>
         </nav>
       </div>
@@ -79,7 +79,7 @@
               Opt In for Communications
               
             </h3>
-            <div ng-class="{forminvaliddiv: (bed_form.optin.$invalid &amp;&amp; bed_form.optin.$dirty) || (bed_form.optin.$pristine &amp;&amp; invalidform)}">
+            <div ng-class="{forminvaliddiv: (bed_form.optin.$invalid &amp;&amp; bed_form.optin.$dirty) || (bed_form.optin.$pristine &amp;&amp; invalidform)}" class="check-wrap">
               <input type="checkbox" name="optin" ng-model="form.checkbox" ng-required="true" id="optin" class="optin">
             </div>
             <label for="optin" class="optin-label">
@@ -115,14 +115,14 @@
             During a binge, adults with BED may eat much more rapidly than normal, eat until they are uncomfortably full, eat large amounts of food when not feeling physically hungry, and/or eat alone out of embarrassment. They may feel disgusted with themselves, depressed, or very guilty afterward.
             
           </p>
-          <p><em>Diagnosis should be based on a complete evaluation of the patient. These are not the complete diagnostic criteria, but instead a brief summary.</em> 
-            
-          </p><a data-slideout="signup" class="button signup">Register for additional information on BED including the full <em>DSM-5</em><sup>®</sup> diagnostic criteria</a>
+          <p><em>
+              These are not the complete diagnostic criteria, but instead a brief summary. Diagnosis should be based upon a complete evaluation of the patient.
+              </em></p><a data-slideout="signup" class="button signup">Register for additional information on BED <br class="hide--mobile">including the full <em>DSM-5</em><sup>&reg;</sup> <br class="hide--mobile">diagnostic criteria</a>
         </div>
       </div>
       <div class="page-content">
-        <div data-section="home" class="section section--home"><a href="#home" class="bar bar--title">binge eating disorder <br class="hide--desktop">in adults
-            </a><a id="home" name="home" class="scroll-point"></a>
+        <div data-section="home" class="section section--home"><a id="home" name="home" class="scroll-point"></a><a href="#home" class="bar bar--title">binge eating disorder <br class="hide--desktop">in adults
+            </a>
           <div class="disclaimer-bar">
             <p>
               This site is intended for US health care professionals only.
@@ -134,7 +134,7 @@
             <h1 class="tagline">Binge. Distress. Repeat.<sup>1</sup>
               
             </h1>
-            <p class="sub-head">
+            <p>
               Identifying and accurately diagnosing adults with BED is the first step to helping them.
               
             </p>
@@ -157,7 +157,7 @@
             <div class="blurb">BED is the most common eating disorder among US adults and more than twice as prevalent as bulimia nervosa and anorexia nervosa combined<sup>2</sup>
               
             </div>
-            <p class="gender-ratio sub-head">The gender ratio is far less skewed in BED than in bulimia nervosa.<sup>1,2</sup>
+            <p class="gender-ratio sub-head">The gender ratio is far less skewed in BED than in bulimia nervosa.<sup>1</sup>
               
             </p>
             <h3 class="center chart-head">12-month prevalence in US adults<sup>2</sup>:
@@ -232,7 +232,7 @@
                 
               </li>
             </ol>
-            <p class="disclaimer"><em>Diagnosis should be based upon a <br class="hide--desktop">complete evaluation of the patient.
+            <p class="disclaimer"><em>These are not the complete diagnostic criteria, but instead a brief summary. <br>Diagnosis should be based upon a complete evaluation of the patient.
                 </em></p><a data-slideout="signup" class="button signup">Register to receive the full <em>DSM-5</em><sup>&reg;</sup> diagnostic criteria and additional BED information from Shire
               
               </a>
@@ -275,7 +275,7 @@
               </p>
             </div>
             <div class="graphic-container">
-              <h3 class="chart-head hide--mobile">Age-of-onset ranges for BED, AN, and BN<sup>2</sup>
+              <h3 class="chart-head hide--mobile">Median ages of onset and <br>age-of-onset ranges for BED, AN, and BN<sup>2</sup>
                 
                 
               </h3>
@@ -310,10 +310,11 @@
             <h2 class="yellow">BED is associated with significant psychiatric comorbidity comparable to bulimia nervosa and anorexia nervosa<sup>1</sup>
               
             </h2>
-            <p class="sub-head">Adults with BED often have coexisting bipolar, depressive, or anxiety disorders.<sup>1</sup>
+            <p class="sub-head">Adults with BED often have coexisting psychiatric and physical conditions such as bipolar disorders, depressive disorders, anxiety disorders, substance use disorders, and obesity.<sup>1</sup>
               
             </p>
-            <h3 class="yellow center chart-head">Lifetime comorbidity per <em>DSM-IV</em><sup>&reg;</sup> in a nationally representative <br class="hide--mobile">survey of US adults aged ≥18 years*<sup>2</sup>:
+            <h3 class="yellow center chart-head">Lifetime BED comorbidity per 
+              <nobr><em>DSM-IV</em><sup>&reg;</sup></nobr> in a nationally representative <br class="hide--mobile">survey of US adults aged ≥18 years*<sup>2</sup>:
               
             </h3>
             <div class="eighty graphic">
@@ -336,24 +337,20 @@
                 
               </p>
             </div>
-            <p class="footnote chart-footnote">Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults <br class="hide--desktop"> aged ≥18 years.<sup>2</sup></p>
+            <p class="footnote chart-footnote asterisk">Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults <br class="hide--desktop"> aged ≥18 years.<sup>2</sup></p>
           </div>
         </div>
         <div data-section="effects" class="section section--effects"><a id="effects" name="effects" class="scroll-point"></a>
           <div class="content-wrap">   
             <div data-skrollr="effects-title">
-              <h2>BED in adults is associated with a range of functional consequences<sup>1</sup>
+              <h2>According to DSM-5<sup>&reg;</sup>, BED in adults is associated with a range of functional consequences<sup>1</sup>
                 
               </h2>
-              <p class="sub-head">Functional consequences may include<sup>1</sup>:
-                
-              </p>
             </div>
             <div class="associated">
               <ul class="bullet">
                 <li>Social role adjustment problems</li>
-                <li>Impaired health-related quality <br class="hide--desktop">of life</li>
-                <li>Decreased life satisfaction</li>
+                <li>Impaired health-related quality <br class="hide--desktop">of life and life satisfaction</li>
                 <li>Increased medical morbidity and mortality</li>
                 <li>Increased health care utilization compared with body mass index (BMI)–matched control subjects</li>
                 <li>
@@ -376,7 +373,7 @@
                 <p data-skrollr="effects-19" class="large">19<sup class="percent">%</sup>
                   
                 </p>
-                <p>reported <br><span class="yellow">severe impairment</span>
+                <p><span class="yellow">reported severe impairment</span> during the past year (Sheehan Disability Scale)
                   
                 </p>
               </div>
@@ -388,58 +385,60 @@
           <div class="content-wrap">
             <div data-skrollr="neurobiology-header">
               <h2 class="pretitle">While the exact cause is unknown,</h2>
-              <h2>Research suggests BED may have a neurobiological basis and genetic and environmental influences<sup>6-12</sup>
+              <h2>Research suggests BED may have a neurobiological basis and genetic and environmental influences<sup>6-12</sup></h2>
+              <p class="sub-head">
+                Prevailing theories that may support a neurobiological basis for BED:
                 
-              </h2>
+              </p>
             </div>
             <div data-skrollr="neurobiology-reward" class="reward neuro-graphic">
-              <h3>Reward center and impulsivity dysregulation</h3>
+              <h3>Reward center and impulsivity dysregulation theory</h3>
               <p>Adults with BED have shown reduced activity <br class="hide--mobile">in impulse control&ndash;related regions of the brain<sup>6</sup>
                 
               </p>
             </div>
             <div data-skrollr="neurobiology-dysregulation" class="dysregulation neuro-graphic">
-              <h3>Neurotransmitter dysregulation</h3>
-              <p>Dopamine signaling converts sensory stimuli <br class="hide--mobile">into processes that may generate or enhance wanting <br class="hide--mobile">of a particular food<sup>7-9</sup>
+              <h3>Neurotransmitter dysregulation theory</h3>
+              <p>Dopamine signaling converts sensory stimuli <br class="hide--mobile">into processes that may generate or enhance “wanting” <br class="hide--mobile">of a particular food<sup>7-9</sup>
                 
                 
               </p>
             </div>
             <div data-skrollr="neurobiology-endogeneous" class="endogenous neuro-graphic">
-              <h3>Endogenous μ-opioid signaling dysfunction</h3>
+              <h3>Endogenous μ-opioid signaling dysfunction theory</h3>
               <p>Opioid signaling converts sensory stimuli <br class="hide--mobile">into processes that generate or enhance “liking” of a particular food<sup>8,9</sup>
                 
+              </p>
+            </div>
+            <div data-skrollr="neurobiology-header-2">
+              <p class="sub-head">
+                Research also suggests that risk factors for BED may include:
                 
               </p>
             </div>
             <div data-skrollr="neurobiology-risk" class="risk neuro-graphic">
-              <h3>
-                Research also suggests that risk factors for BED may include:
+              <h3>Genetic influences<sup>7,10</sup>
                 
               </h3>
               <ul class="bullet">
-                <li>Genetic influences<sup>7,10</sup>
-                  <ul class="dash dash--em">
-                    <li>BED appears to run in families, which may reflect additive genetic influences</li>
-                    <li>Genetic differences in neurobiological components <br class="hide--mobile">of the brain&#8217;s reward center have been observed
-                      
-                    </li>
-                  </ul>
+                <li>BED appears to run in families, which may reflect additive genetic influences</li>
+                <li>Genetic differences in neurobiological components <br class="hide--mobile">of the brain&#8217;s reward center have been observed
+                  
                 </li>
               </ul>
             </div>
             <div data-skrollr="neurobiology-risk-2" class="risk-2 neuro-graphic">
+              <h3>
+                Environmental and social influences
+                
+              </h3>
               <ul class="bullet">
-                <li>Environmental influences
-                  <ul class="dash dash--em">
-                    <li>In a case-controlled retrospective assessment of 162 women with BED, <br class="hide--mobile">stressful life events were reported more frequently in the year preceding BED onset than in non-BED controls<sup>11</sup></li>
-                    <li>In a nationally representative survey of 5,702 adults, of the men (n=30) and women (n=75) who reported BED, 98% and 90%, respectively, reported experiencing some form of trauma*<sup>12</sup>
-                      
-                    </li>
-                  </ul>
+                <li>In a case-controlled retrospective assessment of 162 women with BED, <br class="hide--mobile">stressful life events were reported more frequently in the year preceding BED onset than in non-BED controls<sup>11</sup></li>
+                <li>In a nationally representative survey of 5,702 adults, of the men (n=30) and women (n=75) who reported BED, 98% and 90%, respectively, reported experiencing some form of trauma*<sup>12</sup>
+                  
                 </li>
               </ul>
-              <p class="footnote">*Types of trauma included combat experience, life-threatening accident, and physical <br class="hide--mobile">or sexual assault.<sup>12</sup>
+              <p class="footnote asterisk">Types of trauma included combat experience, life-threatening accident, major natural disaster, and physical <br class="hide--mobile">or sexual assault.<sup>12</sup>
                 
                 
                 
@@ -453,11 +452,9 @@
           <div class="content-wrap">
             <div data-bottom-top="opacity: 0; transform: translate3d(0px,-50px,0px)" data-bottom-bottom="opacity: 1; transform: translate3d(0px,0,0px)">
               <h2>Recognizing BED</h2>
-              <p class="sub-head">BED is defined as recurring episodes of eating a large amount of food in a short period of time, with episodes characterized by feelings of lack of control and marked distress.<sup>1</sup></p>
+              <p class="sub-head">DSM-5<sup>&reg;</sup> defines BED as recurring episodes (at least once weekly for 3 months) of consuming a large amount of food in a short period of time, with episodes characterized by feelings of lack of control and marked distress regarding binge eating.<sup>1</sup></p>
             </div>
-            <p>These are not the full diagnostic criteria. <a data-slideout="signup" class="signup">Please register</a> to receive the full <em>DSM-5</em><sup>®</sup> diagnostic criteria and additional BED information from Shire.
-              
-            </p>
+            <p><em>These are not the full diagnostic criteria. <a data-slideout="signup" class="signup">Please register</a> to receive the full </em>&nbsp;DSM-5<sup>&reg;</sup>&nbsp;<em>diagnostic criteria and additional BED information from Shire.</em></p>
             <h3>BED is different from bulimia nervosa</h3>
             <p>It is not associated with compensatory behaviors such as purging or excessive exercise, or with dietary restriction, although frequent dieting may be reported.<sup>1</sup></p>
             <h3>BED is different from overeating</h3>
@@ -517,9 +514,9 @@
         <div data-section="resources" class="section section--resources"><a id="resources" name="resources" class="scroll-point"></a>
           <div class="content-wrap">
             <h2>Resources</h2>
-            <p class="sub-head">Now that you have a better understanding of BED, you know what to <br class="hide--mobile">look for in your practice. </p>
+            <p class="sub-head">This information may help you to identify and accurately diagnose adults with BED in your practice.</p>
             <h3>Starting the conversation</h3>
-            <p>These questions may help you begin a dialogue with your adult patients about <br class="hide--mobile">their eating behavior and feelings toward food.</p>
+            <p>These questions may help you begin a dialogue with your adult patients about <br class="hide--mobile">their eating behavior if BED is suspected.</p>
             <h4>General screening<sup>14</sup></h4>
             <ul class="bullet">
               <li>Do you worry that you have lost control over how much you eat?</li>
@@ -553,36 +550,33 @@
                 
               </h3>
               <div class="video-player">
-                <video id="videoPlayer" poster="//view.vzaar.com/1788413/video" controls="controls" preload="none">
+                <video id="videoPlayer" controls="controls" preload="none">
                   <source type="video/mp4" src="//view.vzaar.com/1788413/video">
                 </video>
                 <div class="arrow-left arrow"></div>
                 <div class="arrow-right arrow"></div>
               </div>
               <ul class="video-playlist">
-                <li data-video="grilo2" class="active">
-                  <p>How does the prevalence of BED compare to that of other eating disorders? <span class="time">(00:42)</span></p>
-                </li>
-                <li data-video="bulik3">
-                  <p>What are the functional consequences of BED? <span class="time">(02:03)</span></p>
-                </li>
-                <li data-video="bulik4">
-                  <p>What are the diagnostic criteria for BED? <span class="time">(01:32)</span></p>
-                </li>
-                <li data-video="grilo5">
-                  <p>What psychiatric disorders are commonly associated with BED? <span class="time">(01:10)</span></p>
-                </li>
-                <li data-video="kornstein6">
-                  <p>What is thought to cause BED? <span class="time">(00:53)</span></p>
-                </li>
-                <li data-video="grilo7">
-                  <p>How does the prevalence of BED compare among races/ethnicities? <span class="time">(00:52)</span></p>
+                <li data-video="grilo2">
+                  <p>How does the prevalence of BED compare to that of other eating disorders in adults? <span class="time">(00:42)</span></p>
                 </li>
                 <li data-video="kornstein8">
                   <p>Does BED occur in both women and men? <span class="time">(00:34)</span></p>
                 </li>
+                <li data-video="grilo7">
+                  <p>How does the prevalence of BED compare among races/ethnicities? <span class="time">(00:52)</span></p>
+                </li>
                 <li data-video="bulik12">
                   <p>What is the clinical course of BED? <span class="time">(00:31)</span></p>
+                </li>
+                <li data-video="grilo5">
+                  <p>What psychiatric disorders are commonly associated with BED? <span class="time">(01:10)</span></p>
+                </li>
+                <li data-video="bulik3">
+                  <p>What are the functional consequences of BED? <span class="time">(02:03)</span></p>
+                </li>
+                <li data-video="kornstein6">
+                  <p>What is thought to cause BED? <span class="time">(00:53)</span></p>
                 </li>
                 <li data-video="kornstein14">
                   <p>How can clinicians begin an effective conversation with their patients about BED? <span class="time">(00:51)</span>
@@ -672,27 +666,26 @@
           </div>
         </div>
         <div class="next-section">
-          <div class="content-wrap"><a href="/#prevalence" class="bar bar--next bar--prevalence">
-              BED is the most common eating disorder
+          <div class="content-wrap"><a href="/#prevalence" class="bar bar--next bar--prevalence">BED: The most common eating disorder in adults<sup>2</sup>
               </a><a href="/#dsm5" class="bar bar--next bar--dsm5">The <em>DSM-5<sup>&reg;</sup></em> criteria
               </a><a href="/#course" class="bar bar--next bar--course">
               Clinical characteristics of BED
               </a><a href="/#effects" class="bar bar--next bar--effects">
               Functional consequences of BED
               </a><a href="/#neurobiology" class="bar bar--next bar--neurobiology">
-              Emerging evidence of BED neurobiology
+              Potential causes of BED
               </a><a href="/#diagnosis" class="bar bar--next bar--diagnosis">
               Identifying BED in your adult patients
               </a><a href="/#resources" class="bar bar--next bar--resources">Resources/Expert Videos</a></div>
         </div>
-        <div class="pagination"><a href="/index.html#home" class="pagination__item"></a><a href="/index.html#prevalence" class="pagination__item"></a><a href="/index.html#dsm5" class="pagination__item"></a><a href="/index.html#course" class="pagination__item"></a><a href="/index.html#effects" class="pagination__item"></a><a href="/index.html#neurobiology" class="pagination__item"></a><a href="/index.html#diagnosis" class="pagination__item"></a><a href="/index.html#resources" class="pagination__item"></a>
+        <div class="pagination"><a href="/#home" class="pagination__item"></a><a href="/#prevalence" class="pagination__item"></a><a href="/#dsm5" class="pagination__item"></a><a href="/#course" class="pagination__item"></a><a href="/#effects" class="pagination__item"></a><a href="/#neurobiology" class="pagination__item"></a><a href="/#diagnosis" class="pagination__item"></a><a href="/#resources" class="pagination__item"></a>
         </div>
       </div>
       <div class="page-footer">
         <div class="content-wrap">
           <nav>
                   <ul class="secondary-nav">
-                    <li class="secondary-nav__item _1_liner"><a href="/Unsubscribe/Default.aspx" target="_self">Unsubscribe</a></li>
+                    <li class="secondary-nav__item _1_liner"><a href="/Unsubscribe/" target="_self">Unsubscribe</a></li>
                     <li class="secondary-nav__item _1_liner"><a href="/contact-us.aspx" target="_self">Contact Us</a></li>
                     <li class="secondary-nav__item _1_liner"><a href="/privacy-policy.aspx" target="_self">Privacy Policy</a></li>
                     <li class="secondary-nav__item _1_liner"><a href="http://www.shire.com/" target="_blank">Shire US</a></li>
@@ -722,7 +715,7 @@
             <h3>Thank you!</h3>
             <p>Your registration is complete.</p>
             <p>
-              We appreciate your interest in staying up to date on binge eating disorder (BED) in adults. You can expect to receive additional information from Shire on how to help your adult patients with BED.
+              We appreciate your interest in staying up to date on binge eating disorder (BED) in adults. You can expect to receive additional information from Shire for adult patients with BED.
               
             </p>
           </div>
@@ -757,9 +750,9 @@
           <div class="modal__inner">
             <div class="modal__close"></div>
             <h3>Thank you for your request.</h3>
-            <p>Your request has been received, and we will update your contact preferences. Please be aware that it may take up to 10 business days before your preferences are reflected in our system. You may still receive communications during this time.</p>
-            <p>Please feel free to register with us again should you wish to recieve information about BED and other information from Shire in the future.</p>
-            <div class="controls"><a href="/" class="button button--close">
+            <p>Your request has been received, and we will update your contact preferences. Please be aware that it may take up to 10 business days for your preferences to be reflected in our system. You may still receive communications during this time.</p>
+            <p>Please feel free to register with us again should you wish to receive information about binge eating disorder (BED) in adults and other information from Shire in the future.</p>
+            <div class="controls"><a href class="button button--close">
                 CLOSE
                 </a></div>
           </div>
@@ -781,12 +774,24 @@
     <script src="/content/js/libs.js"></script>
     <script src="/content/me/mediaelement-and-player.min.js"></script><!--[if (gte IE 6)&(lte IE 8)]>
     <script src="/content/js/skrollr.ie.js"></script><![endif]-->
-    <script src="/content/js/main.js"></script>
+    <script src="/content/js/bed.js"></script>
     <script src="/content/js/forms.js"></script>
     <script>
       $(BED.init);
       
     </script>
+    <script>
+      (function () {
+        var tagjs = document.createElement("script");
+        var s = document.getElementsByTagName("script")[0];
+        tagjs.async = true;
+        tagjs.src = "//s.btstatic.com/tag.js#site=Xpq89R8";
+        s.parentNode.insertBefore(tagjs, s);
+        }());
+    </script>
+    <noscript>
+      <iframe src="//s.thebrighttag.com/iframe?c=Xpq89R8" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    </noscript>
     <script>!/cdm210.com/i.test(location.host) && document.location.port !== '8005' && 'WebSocket' in window && window.WebSocket.CLOSING === 2 && document.write('\x3Cscript src="//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1">\x3C/script>');</script>
     <script>!/cdm210.com/i.test(location.host) && document.location.port !== '8005' && /iP(hone|od|ad)|Android|BlackBerry|IEMobile/i.test(navigator.userAgent) && document.write('<script src="//'+(location.host||"localhost").split(":")[0]+':8081/target/target-script-min.js">\x3c/script>');</script>
   </body>
