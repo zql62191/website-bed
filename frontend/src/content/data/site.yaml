@@ -16,11 +16,11 @@ nav:
       title: "<em>DSM-5</em> Criteria"
       file: "dsm5"
     -
-      url: "/#course"
+      url: "/#clinical-characteristics"
       title: "Clinical Characteristics"
       file: "course"
     -
-      url: "/#effects"
+      url: "/#functional-consequences"
       title: "<em>DSM-5</em> Functional <br/>Consequences"
       file: "effects"
     -
