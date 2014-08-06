@@ -123,6 +123,11 @@
             @include mq("desktop") {
                 padding-bottom: 15px;
             }
+
+            @include mq("mobile") {
+                font-size: 24px;
+                line-height: 28px;
+            }
         }
     }
     .male-graphic {

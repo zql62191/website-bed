@@ -24,6 +24,9 @@
         @include mq("mobile") {
             font-size: 40px;
             line-height: 44px;
+            & + h2 {
+                letter-spacing: -0.02em;
+            }
         }
 
         @include mq("desktop") {

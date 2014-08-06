@@ -1669,6 +1669,12 @@ a.pdf-link span sup {
     padding-bottom: 15px;
   }
 }
+@media only screen and (max-width: 40em) {
+  .section--prevalence .blurb-2 .sub-head {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
 .section--prevalence .male-graphic {
   background: url("../img/prevalence-male-graphic.png") 0 0 no-repeat;
   width: 254px;
@@ -2490,6 +2496,9 @@ a.pdf-link span sup {
   .section--neurobiology h2.pretitle {
     font-size: 40px;
     line-height: 44px;
+  }
+  .section--neurobiology h2.pretitle + h2 {
+    letter-spacing: -0.02em;
   }
 }
 @media only screen and (min-width: 40.063em) {
