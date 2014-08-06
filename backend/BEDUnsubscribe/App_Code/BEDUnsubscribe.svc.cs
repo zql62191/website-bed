@@ -314,7 +314,7 @@ namespace BEDService
             List<string> errors = new List<string>();
 
             ValueExists("Email", email.Email, errors);
-            IsPatternValid("Email", email.Email, new Regex(@"^[\w!#$%&'*+\-/=?\^_`{|}~]+(\.[\w!#$%&'*+\-/=?\^_`{|}~]+)*@((([\-\w]+\.)+[a-zA-Z]{2,4})|(([0-9]{1,3}\.){3}[0-9]{1,3}))$", RegexOptions.IgnoreCase), errors);
+            IsPatternValid("Email", email.Email, new Regex(@"/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/", RegexOptions.IgnoreCase), errors);
 
             return errors;
 
