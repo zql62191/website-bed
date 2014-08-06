@@ -71,11 +71,7 @@ var BED = (function() {
             $(window).load(snag);
         }
 
-        if (bowser.msie && bowser.version < 9) {
-
-            $('input, textarea').placeholder();
-
-        }
+        $('input, textarea').placeholder();
 
         $('[data-load]').each(function(i, el) {
             $(el).load($(el).data('load'));
@@ -130,45 +126,58 @@ BED.UI = (function() {
 
         .on(gestures.scroll + '.ui', function(e) {
 
-            var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-            var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+            setTimeout(function() {
 
-            var x = width / 2;
-            var y = height * (2 / 3);
+                var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+                var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
-            var jqIsOpen = $('._is_open');
+                // console.log('width: ', width);
+                // console.log('height: ', height);
 
-            var origDisplayAttribute = jqIsOpen.css('display');
-            jqIsOpen.css('display', 'none');
+                var x = width / 2;
+                var y = height * (2 / 3);
 
-            var underneathElem = document.elementFromPoint(x, y);
+                // console.log('x: ', x);
+                // console.log('y: ', y);
 
-            if (origDisplayAttribute) {
-                jqIsOpen.css('display', origDisplayAttribute);
-            } else {
-                jqIsOpen.css('display', 'block');
-            }
+                var jqIsOpen = $('._is_open');
 
-            var jqCurrent = $(underneathElem).closest('.section');
+                var origDisplayAttribute = jqIsOpen.css('display');
+                jqIsOpen.css('display', 'none');
 
-            var jqNext = jqCurrent.next('.section');
+                var underneathElem = document.elementFromPoint(x, y);
 
-            if (jqCurrent) {
+                // console.log('underneathElem: ', underneathElem);
+                // console.log('$.elementFromPoint: ', $.elementFromPoint(x, y));
 
-                currentSection = jqCurrent.data('section');
+                if (origDisplayAttribute) {
+                    jqIsOpen.css('display', origDisplayAttribute);
+                } else {
+                    jqIsOpen.css('display', 'block');
+                }
 
-                $('.page-nav a.active').removeClass('active');
+                var jqCurrent = $(underneathElem).closest('.section');
 
-                $('.page-nav a[href="/#' + jqCurrent.data('section') + '"]').addClass('active');
+                var jqNext = jqCurrent.next('.section');
 
-                $('.bar--next, .pagination__item').removeClass('active');
+                if (jqCurrent) {
 
-                $('.pagination__item').eq(jqCurrent.index()).addClass('active');
-            }
+                    currentSection = jqCurrent.data('section');
 
-            if (jqNext) {
-                $('.bar--next.bar--' + jqNext.data('section')).addClass('active');
-            }
+                    $('.page-nav a.active').removeClass('active');
+
+                    $('.page-nav a[href="/#' + jqCurrent.data('section') + '"]').addClass('active');
+
+                    $('.bar--next, .pagination__item').removeClass('active');
+
+                    $('.pagination__item').eq(jqCurrent.index()).addClass('active');
+                }
+
+                if (jqNext) {
+                    $('.bar--next.bar--' + jqNext.data('section')).addClass('active');
+                }
+
+            }, 1);
         })
 
         .trigger(gestures.scroll + '.ui')
@@ -694,7 +703,7 @@ BED.VideoPlayer = (function() {
 
         .on(BED.UI.gestures.click + '.videoplayer', '.video-playlist li[data-video]', function(e) {
 
-            playVideo($(this).data('video'), true);
+            playVideo($(this).data('video'));
 
         })
 
@@ -830,7 +839,7 @@ BED.VideoPlayer = (function() {
     };
 
     // Internal video player controls
-    var playVideo = function(name, play) {
+    var playVideo = function(name) {
 
         // Get playlist items
         var jqPlaylistItems = $('.video-playlist li');
@@ -845,16 +854,20 @@ BED.VideoPlayer = (function() {
         currentVideoName = name;
         currentVideoTitle = videoTitleList[_.indexOf(videoNameList, name)];
 
+        // Scroll player into view
+        $('.mejs-container').velocity('scroll', {
+            duration: 250,
+            offset: '-' + ($('.page-header').height() + 20)
+        });
+
         // Load video
         instance.setSrc(document.location.protocol + locations[currentVideoName]);
 
         // Load video?
         instance.load();
 
-        if (play) {
-            // Play video
-            instance.play();
-        }
+        // Play video
+        instance.play();
     };
 
     var playNextVideo = function() {
@@ -873,7 +886,7 @@ BED.VideoPlayer = (function() {
             return idx;
         })();
 
-        playVideo(videoNameList[nextIndex], true);
+        playVideo(videoNameList[nextIndex]);
 
     };
 
@@ -893,7 +906,7 @@ BED.VideoPlayer = (function() {
             return idx;
         })();
 
-        playVideo(videoNameList[nextIndex], true);
+        playVideo(videoNameList[nextIndex]);
 
     };
 
