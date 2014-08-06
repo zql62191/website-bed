@@ -81,19 +81,19 @@ BED.VideoPlayer = (function() {
 
         $(document.body)
 
-        .on(BED.UI.gestures.click + '.videoplayer', '.video-playlist li[data-video]', function(e) {
+        .on('click.videoplayer', '.video-playlist li[data-video]', function(e) {
 
             playVideo($(this).data('video'));
 
         })
 
-        .on(BED.UI.gestures.click + '.videoplayer', '.video-player .arrow-left', function(e) {
+        .on('click.videoplayer', '.video-player .arrow-left', function(e) {
 
             playPrevVideo();
 
         })
 
-        .on(BED.UI.gestures.click + '.videoplayer', '.video-player .arrow-right', function(e) {
+        .on('click.videoplayer', '.video-player .arrow-right', function(e) {
 
             playNextVideo();
 

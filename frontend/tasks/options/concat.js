@@ -3,6 +3,7 @@ var files = {
         'src/scripts/bed/bed.js',
         'src/scripts/bed/bed.ui.js',
         'src/scripts/bed/bed.slideout.js',
+        'src/scripts/bed/bed.modal.js',
         'src/scripts/bed/bed.skrollr.js',
         'src/scripts/bed/bed.videoplayer.js',
         'src/scripts/bed/bed.analytics.js'

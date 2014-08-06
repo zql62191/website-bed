@@ -14,27 +14,44 @@ BED.SlideOut = (function() {
 
         initialized = true;
 
+        $(window)
+
+        .on('resize.slideout', onResize);
+
+        onResize();
+
         $(document.body)
 
-        .on(BED.UI.gestures.click + '.slideout', 'a[data-slideout]', function(e) {
+        .on('click.slideout', 'a[data-slideout]', function(e) {
             toggle($(this).data('slideout'));
         })
 
-        .on(BED.UI.gestures.click + '.slideout', '.slideout', function(e) {
+        .on('click.slideout', '.slideout', function(e) {
             close($(this));
         })
 
-        .on(BED.UI.gestures.click + '.slideout', '.slideout .close', function(e) {
+        .on('click.slideout', '.slideout .close', function(e) {
             close($(this).closest('.slideout'));
         })
 
-        .on(BED.UI.gestures.click + '.slideout', '.slideout .slideout__inner', function(e) {
+        .on('click.slideout', '.slideout .slideout__inner', function(e) {
             e.stopPropagation();
         })
 
-        .on(BED.UI.gestures.click + '.slideout', '.page-nav a', function(e) {
+        .on('click.slideout', '.page-nav a', function(e) {
             close($('.slideout--menu'));
         });
+    };
+
+    var onResize = function(e) {
+
+        var offset = $('.page-wrapper').offset().left;
+
+        $('.slideout').css({
+            left: offset,
+            right: offset
+        });
+
     };
 
     var open = function(el) {

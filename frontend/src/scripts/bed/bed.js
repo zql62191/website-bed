@@ -65,6 +65,7 @@ var BED = (function() {
         BED.Skrollr.init();
         BED.UI.init();
         BED.SlideOut.init();
+        BED.Modal.init();
         BED.VideoPlayer.init();
 
         if (typeof parseUri(window.location.href).queryKey['snag'] !== 'undefined') {

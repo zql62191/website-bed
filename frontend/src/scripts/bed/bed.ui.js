@@ -9,12 +9,6 @@ BED.UI = (function() {
         'shire.com'
     ];
 
-    var gestures = {
-        'click': 'click',
-        'scroll': 'scroll',
-        'resize': 'resize'
-    };
-
     var mediaQueries = {
         mobile: 'only screen and (max-width: 40em)',
         desktop: 'only screen and (min-width: 40.063em)'
@@ -45,13 +39,13 @@ BED.UI = (function() {
         // Setup events on window
         $(window)
 
-        .on(gestures.scroll + '.ui', onScroll)
+        .on('scroll.ui', onScroll)
 
-        .trigger(gestures.scroll + '.ui')
+        .on('resize.ui', onResize);
 
-        .on(gestures.resize + '.ui', onResize)
+        onScroll();
 
-        .trigger(gestures.resize + '.ui');
+        onResize();
 
         // Setup fastclick
         FastClick.attach(document.body);
@@ -59,21 +53,9 @@ BED.UI = (function() {
         // Setup default events on body
         $(document.body)
 
-        .on('click' + '.ui', 'a[href]:not(.button--ok)', onAnchorClick)
+        .on('click.ui', 'a[href]:not(.button--ok)', onAnchorClick)
 
-        .on(gestures.click + '.ui', '.modal__inner', function(e) {
-            e.stopPropagation();
-        })
-
-        .on(gestures.click + '.ui', '.modal .modal__outer, .modal .modal__close, .modal a.button', function(e) {
-
-            $(this).closest('.modal').velocity('fadeOut', {
-                duration: 250
-            });
-
-        })
-
-        .on(gestures.click + '.ui', '.tab-container', function(e) {
+        .on('click.ui', '.tab-container', function(e) {
 
             $(this).toggleClass('open');
 
@@ -104,7 +86,7 @@ BED.UI = (function() {
 
             var jqIsOpen = $('._is_open');
 
-            var origDisplayAttribute = jqIsOpen.css('display');
+            // var origDisplayAttribute = jqIsOpen.css('display');
             jqIsOpen.css('display', 'none');
 
             var underneathElem = document.elementFromPoint(x, y);
@@ -112,11 +94,11 @@ BED.UI = (function() {
             // console.log('underneathElem: ', underneathElem);
             // console.log('$.elementFromPoint: ', $.elementFromPoint(x, y));
 
-            if (origDisplayAttribute) {
-                jqIsOpen.css('display', origDisplayAttribute);
-            } else {
-                jqIsOpen.css('display', 'block');
-            }
+            // if (origDisplayAttribute) {
+            // jqIsOpen.css('display', origDisplayAttribute);
+            // } else {
+            jqIsOpen.css('display', 'block');
+            // }
 
             var jqCurrent = $(underneathElem).closest('.section');
 
@@ -126,7 +108,7 @@ BED.UI = (function() {
 
                 currentSection = jqCurrent.data('section');
 
-                if (!e.isTrigger && !velocityScroll) {
+                if (!velocityScroll) {
                     $.history.load('/' + currentSection);
                 }
 
@@ -154,16 +136,6 @@ BED.UI = (function() {
     var onResize = function(e) {
 
         var offset = $('.page-wrapper').offset().left;
-
-        $('.slideout').css({
-            left: offset,
-            right: offset
-        });
-
-        $('.modal__outer').css({
-            width: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
-            height: window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
-        });
 
         $('.pagination').css('right', offset + 8);
 
@@ -210,13 +182,7 @@ BED.UI = (function() {
 
             e.preventDefault();
 
-            var jqModal = $('.modal--interstitial');
-
-            jqModal.find('a.button--ok').prop('href', link.source);
-
-            jqModal.velocity('fadeIn', {
-                duration: 250
-            });
+            BED.Modal.open('interstitial', link.source);
         }
 
     };
@@ -240,9 +206,7 @@ BED.UI = (function() {
     // Return the module object
     return {
         init: init,
-        gestures: gestures,
-        mediaQueries: mediaQueries,
-        currentSection: currentSection
+        mediaQueries: mediaQueries
     };
 
 })();
