@@ -1,3 +1,20 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+
+</title></head>
+<body>
+    <form method="post" action="privacy.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+</div>
+
+    <div>
+    
 <!-- Begin ShireContent-sourced content -->
 <div id="shirecc">
 <h1>Privacy Policy</h1>
@@ -8,7 +25,7 @@
     <p>Generally, we do not knowingly collect information from children on this site. We encourage parents to talk to their children and supervise their use of the Internet and the information they disclose to Web sites.</p>
     <p>In some cases, there are treatments that pertain to children, and while this site is not intended for use by minors, you may have the opportunity to provide personal information about a child. Such information will only be used to provide the requested services, and for no other purposes.</p>
     <h2>About This Site</h2>
-    <p>In our effort to bring you up-to-date and accurate product and resource information, we use various expert sources and studies to develop site content. As a result, you may find slight differences in statistics and/or percentages across various articles—because different sources can view data differently.</p>
+    <p>In our effort to bring you up-to-date and accurate product and resource information, we use various expert sources and studies to develop site content. As a result, you may find slight differences in statistics and/or percentages across various articles&#151;because different sources can view data differently.</p>
     <h2>Information We Collect and How We Collect It</h2>
     <p>You can visit our site and view most of the content anonymously; however, we may collect information from you.</p>
     <p>The information we gather on our site falls into three categories: (1) personally identifiable information you supply, (2) aggregate information collected as you navigate through our site, and (3) publicly or commercially available information.</p>
@@ -39,10 +56,14 @@
     <p>This site may contain links or references to other Web sites. Please be aware that Shire does not control other Web sites and that this Online Privacy Policy does not apply to those Web sites. We encourage you to read the privacy policy of every Web site you visit. We are not responsible for, nor do we endorse, the contents of these other Web sites. If you in any way rely on information obtained from any such Web sites, you do so at your own risk.</p>
     <h2>How to Contact Us / Accountability</h2>
     <p>If you have any questions, comments or concerns about this Online Privacy Policy or about the information practices of this site, or would like to have your information removed from our files, please contact us as follows:</p>
-    Shire US Inc.<br>
-    Attn: Online Privacy Policy<br>
-    725 Chesterbrook Blvd<br>
-    Wayne, PA  19087<br>
+    Shire US Inc.<br />
+    Attn: Online Privacy Policy<br />
+    725 Chesterbrook Blvd<br />
+    Wayne, PA  19087<br />
     <p>This policy was last revised June 1, 2011</p>
 </div>
 <!-- End ShireContent-sourced content -->
+    </div>
+    </form>
+</body>
+</html>
