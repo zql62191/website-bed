@@ -650,6 +650,13 @@ a.pdf-link span sup {
   padding-right: 2px;
 }
 
+.loading {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 50px auto;
+}
+
 .section {
   overflow: hidden;
 }
@@ -1573,7 +1580,6 @@ a.pdf-link span sup {
   }
 }
 .section--prevalence .asterisk {
-  padding-left: 5px;
   width: 538px;
   margin-left: 25px;
   padding-bottom: 50px;
@@ -1822,7 +1828,7 @@ a.pdf-link span sup {
 .section--prevalence .comparable .dagger {
   padding: 0 0 25px 0;
   /*&:before {
-      content: 'ΓÇá';
+      content: '†';
       margin-left: -15px;
   }*/
 }
@@ -2673,12 +2679,6 @@ a.pdf-link span sup {
   }
 }
 @media only screen and (max-width: 40em) {
-  .section--diagnosis p {
-    /*             &:nth-of-type(4) {
-                    margin-bottom: 0;
-                    padding-bottom: 5px;
-                } */
-  }
   .section--diagnosis p:nth-of-type(2), .section--diagnosis p:nth-of-type(3) {
     width: auto;
   }
@@ -3695,6 +3695,19 @@ a.pdf-link span sup {
     display: block;
     float: left;
     clear: right;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  body:before {
+    content: url("../img/dsm5-tab-bg-mobile.png");
+    display: none;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  body:before {
+    content: url("../img/dsm5-tab-bg.png");
+    display: none;
   }
 }
 
