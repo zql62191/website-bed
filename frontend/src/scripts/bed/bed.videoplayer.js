@@ -292,7 +292,10 @@ BED.VideoPlayer = (function() {
 
     // Return the module object
     return {
-        init: init
+        init: init,
+        instance: function() {
+            return instance;
+        }
     };
 
 })();
