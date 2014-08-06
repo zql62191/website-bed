@@ -1031,7 +1031,7 @@ a.pdf-link span sup {
   }
 }
 .slideout--signup input, .slideout--signup select {
-  color: #8c8f91;
+  color: #333e48;
   background-color: #fff;
   -webkit-box-shadow: 0 2px 2px rgba(33, 30, 31, 0.25);
   box-shadow: 0 2px 2px rgba(33, 30, 31, 0.25);
@@ -1056,6 +1056,21 @@ a.pdf-link span sup {
     padding-left: 25px;
     margin-bottom: 25px;
   }
+}
+.slideout--signup input.placeholder, .slideout--signup select.placeholder {
+  color: #8c8f91;
+}
+.slideout--signup input::-webkit-input-placeholder, .slideout--signup select::-webkit-input-placeholder {
+  color: #8c8f91;
+}
+.slideout--signup input::-moz-placeholder, .slideout--signup select::-moz-placeholder {
+  color: #8c8f91;
+}
+.slideout--signup input:-moz-placeholder, .slideout--signup select:-moz-placeholder {
+  color: #8c8f91;
+}
+.slideout--signup input:-ms-input-placeholder, .slideout--signup select:-ms-input-placeholder {
+  color: #8c8f91;
 }
 @media only screen and (min-width: 40.063em) {
   .slideout--signup input.first-name, .slideout--signup select.first-name {

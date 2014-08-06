@@ -57,7 +57,7 @@
         }
     }
     input, select {
-        color: #8c8f91;
+        color: #333e48;
         background-color: #fff;
         box-shadow: 0 2px 2px rgba(33, 30, 31, 0.25);
         margin-right: 15px;
@@ -77,6 +77,14 @@
             border-radius: 10px;
             padding-left: 25px;
             margin-bottom: 25px;
+        }
+
+        &.placeholder {
+            color: #8c8f91;
+        }
+
+        @include placeholder {
+            color: #8c8f91;
         }
 
         &.email {

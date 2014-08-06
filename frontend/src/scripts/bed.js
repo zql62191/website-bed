@@ -273,8 +273,7 @@ BED.UI = (function() {
 
     // Anchor click handler
     var onAnchorClick = function(e) {
-
-        console.log(e);
+        // console.log(e);
 
         var page = parseUri(window.location.href);
         var link = parseUri($(this).prop('href'));
