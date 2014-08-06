@@ -71,11 +71,7 @@ var BED = (function() {
             $(window).load(snag);
         }
 
-        if (bowser.msie && bowser.version < 10) {
-
-            $('input, textarea').placeholder();
-
-        }
+        $('input, textarea').placeholder();
 
         $('[data-load]').each(function(i, el) {
             $(el).load($(el).data('load'));
@@ -152,7 +148,6 @@ BED.UI = (function() {
                 var underneathElem = document.elementFromPoint(x, y);
 
                 // console.log('underneathElem: ', underneathElem);
-
                 // console.log('$.elementFromPoint: ', $.elementFromPoint(x, y));
 
                 if (origDisplayAttribute) {

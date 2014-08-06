@@ -61,7 +61,6 @@ BED.UI = (function() {
                 var underneathElem = document.elementFromPoint(x, y);
 
                 // console.log('underneathElem: ', underneathElem);
-
                 // console.log('$.elementFromPoint: ', $.elementFromPoint(x, y));
 
                 if (origDisplayAttribute) {
