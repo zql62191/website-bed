@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Configuration;
-using System.Collections.Specialized;
 using System.Web;
 using System.Web.Configuration;
-using System.Data.Linq;
 using System.Web.UI;
-using System.Web.Caching;
 using System.Web.UI.WebControls;
+using System.Configuration;
+using System.Collections.Specialized;
+using System.Web.Caching;
 using Shire.Web;
 
 public partial class privacy : System.Web.UI.Page
@@ -25,7 +23,6 @@ public partial class privacy : System.Web.UI.Page
     }
     protected void Page_Load(object sender, EventArgs e)
     {
-
         string str2 = ConfigurationManager.AppSettings["CommonConfigPath"];
         if (str2.CompareTo("../common/config/") == 0)
         {
@@ -37,5 +34,8 @@ public partial class privacy : System.Web.UI.Page
         webConfigApp.AppSettings.Settings[Key1].Value = Value1;
         webConfigApp.Save();
         ConfigurationManager.RefreshSection(sectionName);
+        
     }
+
+  
 }
