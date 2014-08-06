@@ -44,8 +44,10 @@ namespace BEDService
                 errors = ValidateEmail(email);
 
                 if (errors.Count > 0)
+                {
+                    auditTrail.SetAuditTrail(email.Email, AuditTrail.OperationType.Unsubscribtion_error, "SetUnsubscribeDataEmail", errors.ToString());
                     return errors;
-               
+                }
                 if (Services.ServiceIsAvailable)
                 {
                     RegistrationManager regMgr = new RegistrationManager();
@@ -75,23 +77,7 @@ namespace BEDService
                     questionResponseSet.QuestionResponses = questionResponses;
 
                     regMgr.PerformLiteRegistration(hcp, questionResponseSet);
-                    if (regMgr.Status.ToUpper() != "OK")
-                    {
-                        errors.Add(regMgr.StatusMessage);
-
-                        if (regMgr.PIISet.Status.ToUpper() != "OK")
-                        {
-                            errors.Add(regMgr.StatusMessage);
-
-                        }
-                        if (regMgr.Questions.Status.ToUpper() != "OK")
-                        {
-                            for (int i = 0; i < regMgr.Questions.Questions.Count; i++)
-                            {
-                                errors.Add(regMgr.Questions.Questions[i].ErrorMessage);
-                            }
-                        }
-                    }
+                    errors = GetRegMgrErrors(regMgr, errors);
                     auditTrail.SetAuditTrail(email.Email, AuditTrail.OperationType.Unsubscribtion_success, "SetUnsubscribeDataEmail", regMgr.Status.ToUpper());
                     if (errors.Count > 0)
                         auditTrail.SetAuditTrail(email.Email, AuditTrail.OperationType.Unsubscribtion_error, "SetUnsubscribeDataEmail", errors.ToString());
@@ -129,9 +115,12 @@ namespace BEDService
             try
             {
                 errors = ValidateAddress(address);
-
+                errors.AddRange(ValidateEmail(email));
                 if (errors.Count > 0)
+                {
+                    auditTrail.SetAuditTrail(email.Email, AuditTrail.OperationType.Unsubscribtion_error, "SetUnsubscribeDataAddress", errors.ToString());
                     return errors;
+                }
                 if (Services.ServiceIsAvailable)
                 {
                     EmailAddress emailAddress = new EmailAddress(email.Email);
@@ -166,23 +155,7 @@ namespace BEDService
                     questionResponseSet.QuestionResponses = questionResponses;
 
                     regMgr.PerformLiteRegistration(hcp, questionResponseSet);
-                    if (regMgr.Status.ToUpper() != "OK")
-                    {
-                        errors.Add(regMgr.StatusMessage);
-
-                        if (regMgr.PIISet.Status.ToUpper() != "OK")
-                        {
-                            errors.Add(regMgr.StatusMessage);
-
-                        }
-                        if (regMgr.Questions.Status.ToUpper() != "OK")
-                        {
-                            for (int i = 0; i < regMgr.Questions.Questions.Count; i++)
-                            {
-                                errors.Add(regMgr.Questions.Questions[i].ErrorMessage);
-                            }
-                        }
-                    }
+                    errors = GetRegMgrErrors(regMgr, errors);
                     auditTrail.SetAuditTrail(email.Email, AuditTrail.OperationType.Unsubscribtion_success, "SetUnsubscribeDataAddress", regMgr.Status.ToUpper());
                     if (errors.Count > 0)
                         auditTrail.SetAuditTrail(email.Email, AuditTrail.OperationType.Unsubscribtion_error, "SetUnsubscribeDataAddress", errors.ToString());
@@ -218,8 +191,10 @@ namespace BEDService
                 errors.AddRange(ValidateEmail(email));
 
                 if (errors.Count > 0)
+                {
+                    auditTrail.SetAuditTrail(email.Email, AuditTrail.OperationType.Unsubscribtion_error, "SetUnsubscribeDataBoth", errors.ToString());
                     return errors;
-                
+                } 
                 if (Services.ServiceIsAvailable)
                 {
                     RegistrationManager regMgr = new RegistrationManager();
@@ -242,13 +217,13 @@ namespace BEDService
                     regMgr.Individual = hcp;
 
                     List<QuestionResponse> questionResponses = new List<QuestionResponse>();
-                    QuestionResponse questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDExitMCC"]), Int32.Parse( ConfigurationManager.AppSettings["MCCUnsubscribe"]));
+                    QuestionResponse questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDExitMCC"]),Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), ConfigurationManager.AppSettings["MCCUnsubscribe"]);
                     questionResponses.Add(questionResponse);
 
                     questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDOptOutAll"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsYes"]));
                     questionResponses.Add(questionResponse);
 
-                    questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDSourceMCC"]), Int32.Parse( ConfigurationManager.AppSettings["RTWebSiteID"]));
+                    questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDSourceMCC"]),Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), ConfigurationManager.AppSettings["RTWebSiteID"]);
                     questionResponses.Add(questionResponse);
 
                     questionResponseSet = new QuestionResponseSet();
@@ -256,22 +231,7 @@ namespace BEDService
                     questionResponseSet.QuestionResponses = questionResponses;
 
                     regMgr.PerformLiteRegistration(hcp, questionResponseSet);
-                    if (regMgr.Status.ToUpper() != "OK")
-                    {
-                        errors.Add(regMgr.StatusMessage);
-                        if (regMgr.PIISet.Status.ToUpper() != "OK")
-                        {
-                            errors.Add(regMgr.StatusMessage);
-
-                        }
-                        if (regMgr.Questions.Status.ToUpper() != "OK")
-                        {
-                            for (int i = 0; i < regMgr.Questions.Questions.Count; i++)
-                            {
-                                errors.Add(regMgr.Questions.Questions[i].ErrorMessage);
-                            }
-                        }
-                    }
+                    errors = GetRegMgrErrors(regMgr, errors);
                     auditTrail.SetAuditTrail(email.Email, AuditTrail.OperationType.Unsubscribtion_success, "SetUnsubscribeDataBoth", regMgr.Status.ToUpper());
                     if (errors.Count > 0)
                         auditTrail.SetAuditTrail(email.Email, AuditTrail.OperationType.Unsubscribtion_error, "SetUnsubscribeDataBoth", errors.ToString());
@@ -314,8 +274,9 @@ namespace BEDService
             List<string> errors = new List<string>();
 
             ValueExists("Email", email.Email, errors);
-            IsPatternValid("Email", email.Email, new Regex(@"/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/", RegexOptions.IgnoreCase), errors);
-
+           // IsPatternValid("Email", email.Email, new Regex(@"/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/", RegexOptions.IgnoreCase), errors);
+           // IsPatternValid("Email", email.Email, new Regex(@"^[\w!#$%&'*+\-/=?\^_`{|}~]+(\.[\w!#$%&'*+\-/=?\^_`{|}~]+)*@((([\-\w]+\.)+[a-zA-Z]{2,4})|(([0-9]{1,3}\.){3}[0-9]{1,3}))$", RegexOptions.IgnoreCase), errors);
+            IsPatternValid("Email", email.Email, new Regex(@"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$", RegexOptions.IgnoreCase), errors);
             return errors;
 
         }
@@ -369,5 +330,37 @@ namespace BEDService
                     errors.Add(fieldName);
             }
         }
+
+        private List<string> GetRegMgrErrors(RegistrationManager regMgr, List<string> errors)
+        {
+            if (regMgr.Status.ToUpper() != "OK")
+            {
+                errors.Add(String.Format("Reg Mgr Error Message: ", regMgr.StatusMessage));
+                if (regMgr.PIISet.Status.ToUpper() != "OK")
+                {
+                    errors.Add(String.Format(" - PIISet error: "));
+
+                    foreach (PIIDataDetail detail in regMgr.PIISet.Details)
+                    {
+                        if (detail.Status != "OK")
+                            errors.Add(String.Format(" -- Field:{0}, Value:{1}, Error:{2}", detail.Type, detail.Value, detail.StatusMessage));
+                    }
+
+                }
+                if (regMgr.Questions.Status.ToUpper() != "OK")
+                {
+                    errors.Add(String.Format("Question errors: "));
+                    foreach (Question question in regMgr.Questions.Questions)
+                    {
+                        if (question.IsError == true)
+                        {
+                            errors.Add(String.Format(" -- Question ID:{0}, Type:{1}, Error:{2}", question.QuestionID, question.QuestionType, question.ErrorMessage));
+                        }
+                    }
+                }
+            }
+            return errors;
+        }
+
     }
 }
