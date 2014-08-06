@@ -21,16 +21,16 @@ ng\:form {
 }
 
 sub, sup {
-    font-size: 0.33em;
+    font-size: 0.5em;
     line-height: 0;
     position: relative;
     vertical-align: baseline;
 }
 
 sup {
-    top: -1.5em;
+    top: -0.7em;
     .eq-ie & {
-        top: -1.8em;
+        top: -0.9em;
     }
 }
 
@@ -38,12 +38,12 @@ sub {
     bottom: -0.25em;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    sup {
-        font-size: 0.4em;
-        top: -1.2em;
-    }
-}
+// h1, h2, h3, h4, h5, h6 {
+//     sup {
+//         font-size: 0.4em;
+//         top: -1.2em;
+//     }
+// }
 
 .nobr,
 nobr {
@@ -271,14 +271,9 @@ ol.number {
 a {
     text-decoration: none;
     &:hover {
+        color: #ffcd6d;
         //text-decoration: underline;
    
-    }
-}
-
-.content-wrap {
-    a:hover {
-        color: #ffcd6d;
     }
 }
 

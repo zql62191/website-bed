@@ -97,7 +97,7 @@ BED.UI = (function() {
     ];
 
     var gestures = {
-        'click': typeof Hammer !== 'undefined' ? 'tap' : 'click',
+        'click': 'click',
         'scroll': 'scroll',
         'resize': 'resize'
     };
@@ -140,18 +140,11 @@ BED.UI = (function() {
 
         .trigger(gestures.resize + '.ui');
 
+        // Setup fastclick
+        FastClick.attach(document.body);
+
         // Setup default events on body
         $(document.body)
-
-        .run(function() {
-            if (typeof Hammer !== 'undefined') {
-                $(document.body).hammer({
-                    stop_browser_behavior: false
-                });
-            } else {
-                FastClick.attach(document.body);
-            }
-        })
 
         .on('click' + '.ui', 'a[href]:not(.button--ok)', onAnchorClick)
 
@@ -216,15 +209,13 @@ BED.UI = (function() {
 
             var jqNext = jqCurrent.next('.section');
 
-            if (jqCurrent) {
+            jqCurrent.exists(function() {
 
                 currentSection = jqCurrent.data('section');
 
                 if (!e.isTrigger && !velocityScroll) {
                     $.history.load('/' + currentSection);
                 }
-
-                // window.location.hash = currentSection;
 
                 $('.page-nav a.active').removeClass('active');
 
@@ -233,11 +224,14 @@ BED.UI = (function() {
                 $('.bar--next, .pagination__item').removeClass('active');
 
                 $('.pagination__item').eq(jqCurrent.index()).addClass('active');
-            }
 
-            if (jqNext) {
-                $('.bar--next.bar--' + jqNext.data('section')).addClass('active');
-            }
+            });
+
+            jqNext.exists(function() {
+
+                $('.bar--next[data-section="' + jqNext.data('section') + '"]').addClass('active');
+
+            });
 
         }, 1);
 

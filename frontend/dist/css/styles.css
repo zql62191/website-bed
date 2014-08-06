@@ -84,26 +84,21 @@ ng\:form {
 }
 
 sub, sup {
-  font-size: 0.33em;
+  font-size: 0.5em;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
 }
 
 sup {
-  top: -1.5em;
+  top: -0.7em;
 }
 .eq-ie sup {
-  top: -1.8em;
+  top: -0.9em;
 }
 
 sub {
   bottom: -0.25em;
-}
-
-h1 sup, h2 sup, h3 sup, h4 sup, h5 sup, h6 sup {
-  font-size: 0.4em;
-  top: -1.2em;
 }
 
 .nobr,
@@ -348,8 +343,7 @@ ol.number > li:before {
 a {
   text-decoration: none;
 }
-
-.content-wrap a:hover {
+a:hover {
   color: #ffcd6d;
 }
 
@@ -1593,7 +1587,7 @@ a.pdf-link span sup {
     margin-left: 100px;
   }
 }
-.section--prevalence .asterisk {
+.section--prevalence .chart-note {
   width: 538px;
   margin-left: 25px;
   padding-bottom: 50px;
@@ -1603,7 +1597,7 @@ a.pdf-link span sup {
   }*/
 }
 @media only screen and (min-width: 40.063em) {
-  .section--prevalence .asterisk {
+  .section--prevalence .chart-note {
     float: left;
     width: 275px;
     padding-top: 150px;
@@ -1668,6 +1662,11 @@ a.pdf-link span sup {
     padding: 25px 35px;
     font-size: 20px;
     line-height: 22px;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .section--prevalence .blurb-2 .sub-head {
+    padding-bottom: 15px;
   }
 }
 .section--prevalence .male-graphic {
@@ -1849,8 +1848,8 @@ a.pdf-link span sup {
 }
 @media only screen and (min-width: 40.063em) {
   .section--prevalence .frequencies {
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 23px;
+    line-height: 26px;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -1911,7 +1910,7 @@ a.pdf-link span sup {
 }
 @media only screen and (min-width: 40.063em) {
   .section--course .graphic-container {
-    height: 605px;
+    height: 520px;
     margin-bottom: 36px;
   }
 }
@@ -2066,24 +2065,17 @@ a.pdf-link span sup {
 }
 @media only screen and (max-width: 40em) {
   .section--course .mean-duration {
-    padding: 15px;
-    background: transparent url("../img/blurb-2-mobile.png") 0 0 no-repeat;
+    padding: 0 15px;
     margin-bottom: 40px;
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%;
-    color: #333e48;
+    color: #FFFFFF;
   }
 }
 @media only screen and (min-width: 40.063em) {
   .section--course .mean-duration {
     position: absolute;
-    padding: 15px;
-    top: 485px;
-    background: transparent url("../img/blurb-2-desktop.png") 0 0 no-repeat;
-    width: 739px;
-    height: 76px;
-    line-height: 46px;
-    color: #333e48;
+    padding: 0 15px;
+    top: 465px;
+    color: #FFFFFF;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -2513,6 +2505,9 @@ a.pdf-link span sup {
   .section--neurobiology h3 {
     padding-bottom: 0;
   }
+}
+.section--neurobiology .sub-head.second {
+  padding-top: 35px;
 }
 .section--neurobiology .dash li:before {
   color: #ffffff;
@@ -3360,21 +3355,16 @@ a.pdf-link span sup {
   display: table;
   clear: both;
 }
-@media only screen and (max-width: 40em) {
+@media only screen and (min-width: 40.063em) {
   .section--resources ul.organizations {
-    padding-bottom: 50px;
+    width: 50%;
+    float: left;
+    clear: left;
   }
-}
-.section--resources ul.organizations li {
-  width: 50%;
-}
-.section--resources ul.organizations li:nth-child(odd) {
-  float: left;
-  clear: left;
-}
-.section--resources ul.organizations li:nth-child(even) {
-  float: right;
-  clear: right;
+  .section--resources ul.organizations + ul.organizations {
+    float: right;
+    clear: right;
+  }
 }
 .section--resources ul.organizations p {
   padding-bottom: 0;
@@ -3387,17 +3377,6 @@ a.pdf-link span sup {
 }
 .section--resources ul.organizations p:nth-child(3) {
   color: #febd3f;
-}
-@media only screen and (max-width: 40em) {
-  .section--resources ul.organizations li {
-    float: none !important;
-    clear: both !important;
-    width: 100% !important;
-  }
-}
-.section--resources ul.organizations a {
-  color: #febd3f;
-  text-decoration: none;
 }
 .section--resources .signup {
   margin: 0 auto;

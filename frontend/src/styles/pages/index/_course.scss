@@ -40,7 +40,7 @@
         overflow: hidden;
         border-bottom: 1px solid #ffffff;
         @include mq("desktop") {
-            height: 605px;
+            height: 520px;
             margin-bottom: 36px;
         }
 
@@ -191,22 +191,22 @@
         color: #51748b;
         */
         @include mq("mobile") {
-            padding: 15px;
-            background: transparent url("#{$img-path}/blurb-2-mobile.png") 0 0 no-repeat;
+            padding: 0 15px;
+            // background: transparent url("#{$img-path}/blurb-2-mobile.png") 0 0 no-repeat;
             margin-bottom: 40px;
-            background-size: 100% 100%;
-            color: #333e48;
+            // background-size: 100% 100%;
+            color: #FFFFFF;
         }
 
         @include mq("desktop") {
             position: absolute;
-            padding: 15px;
-            top: 485px;
-            background: transparent url("#{$img-path}/blurb-2-desktop.png") 0 0 no-repeat;
-            width: 739px;
-            height: 76px;
-            line-height: 46px;
-            color: #333e48;
+            padding: 0 15px;
+            top: 465px;
+            // background: transparent url("#{$img-path}/blurb-2-desktop.png") 0 0 no-repeat;
+            // width: 739px;
+            // height: 76px;
+            // line-height: 46px;
+            color: #FFFFFF;
         }
     }
     // add to global styles

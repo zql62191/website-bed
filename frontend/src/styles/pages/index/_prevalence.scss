@@ -51,7 +51,7 @@
             margin-left: 100px;
         }
     }
-    .asterisk {
+    .chart-note {
         //padding-left: 5px;
         width: 538px;
         margin-left: 25px;
@@ -117,6 +117,12 @@
             padding: 25px 35px;
             font-size: 20px;
             line-height: 22px;
+        }
+
+        .sub-head {
+            @include mq("desktop") {
+                padding-bottom: 15px;
+            }
         }
     }
     .male-graphic {
@@ -345,8 +351,8 @@
     }
     .frequencies {
         @include mq("desktop") {
-            font-size: 18px;
-            line-height: 20px;
+            font-size: 23px;
+            line-height: 26px;
         }
 
         @include mq("mobile") {

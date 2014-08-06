@@ -4,7 +4,7 @@ module.exports = {
         devFile: 'remote',
 
         // [REQUIRED] Path to save out the built file.
-        outputFile: 'dist/js/modernizr-custom.min.js',
+        outputFile: 'dist/js/modernizr.js',
 
         // Based on default settings on http://modernizr.com/download/
         extra: {
@@ -43,7 +43,8 @@ module.exports = {
         // You can override this by defining a 'files' array below.
         files: {
             src: [
-                'src/**/*.{js,scss}'
+                'src/**/*.{js,scss}',
+                '!src/scripts/libs/*'
             ]
         },
 
