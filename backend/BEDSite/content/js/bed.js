@@ -145,11 +145,11 @@ BED.UI = (function() {
 
         .run(function() {
             if (typeof Hammer !== 'undefined') {
-                $(this).hammer({
+                $(document.body).hammer({
                     stop_browser_behavior: false
                 });
             } else {
-                FastClick.attach(this);
+                FastClick.attach(document.body);
             }
         })
 
@@ -273,6 +273,8 @@ BED.UI = (function() {
 
     // Anchor click handler
     var onAnchorClick = function(e) {
+
+        console.log(e);
 
         var page = parseUri(window.location.href);
         var link = parseUri($(this).prop('href'));
@@ -1030,3 +1032,5 @@ BED.Analytics = (function() {
     };
 
 })();
+
+//# sourceMappingURL=bed.js.map
