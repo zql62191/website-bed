@@ -377,7 +377,7 @@
             require: 'ngModel',
             link: function(scope, elm, attrs, ctrl) {
                 ctrl.$parsers.unshift(function(viewValue) {
-                    if (angular.equals(scope.form.email, viewValue)) {
+                    if (angular.equals(scope.form.email.toLowerCase(), viewValue.toLowerCase())) {
                         //set validity
                         ctrl.$setValidity('confirmemail', true);
                         return viewValue;

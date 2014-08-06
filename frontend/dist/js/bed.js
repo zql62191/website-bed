@@ -1030,5 +1030,3 @@ BED.Analytics = (function() {
     };
 
 })();
-
-//# sourceMappingURL=bed.js.map
