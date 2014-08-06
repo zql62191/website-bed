@@ -703,7 +703,7 @@ BED.VideoPlayer = (function() {
 
         .on(BED.UI.gestures.click + '.videoplayer', '.video-playlist li[data-video]', function(e) {
 
-            playVideo($(this).data('video'), true);
+            playVideo($(this).data('video'));
 
         })
 
@@ -839,7 +839,7 @@ BED.VideoPlayer = (function() {
     };
 
     // Internal video player controls
-    var playVideo = function(name, play) {
+    var playVideo = function(name) {
 
         // Get playlist items
         var jqPlaylistItems = $('.video-playlist li');
@@ -854,16 +854,20 @@ BED.VideoPlayer = (function() {
         currentVideoName = name;
         currentVideoTitle = videoTitleList[_.indexOf(videoNameList, name)];
 
+        // Scroll player into view
+        $('.mejs-container').velocity('scroll', {
+            duration: 250,
+            offset: '-' + ($('.page-header').height() + 20)
+        });
+
         // Load video
         instance.setSrc(document.location.protocol + locations[currentVideoName]);
 
         // Load video?
         instance.load();
 
-        if (play) {
-            // Play video
-            instance.play();
-        }
+        // Play video
+        instance.play();
     };
 
     var playNextVideo = function() {
@@ -882,7 +886,7 @@ BED.VideoPlayer = (function() {
             return idx;
         })();
 
-        playVideo(videoNameList[nextIndex], true);
+        playVideo(videoNameList[nextIndex]);
 
     };
 
@@ -902,7 +906,7 @@ BED.VideoPlayer = (function() {
             return idx;
         })();
 
-        playVideo(videoNameList[nextIndex], true);
+        playVideo(videoNameList[nextIndex]);
 
     };
 
