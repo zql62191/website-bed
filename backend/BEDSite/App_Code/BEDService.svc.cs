@@ -79,23 +79,7 @@ namespace BEDService
 
                     regMgr.PerformLiteRegistration(hcp, questionResponseSet);
 
-                    if (regMgr.Status.ToUpper() != "OK")
-                    {
-                        errors.Add(regMgr.StatusMessage);
-                        if (regMgr.PIISet.Status.ToUpper() != "OK")
-                        {
-                            errors.Add(regMgr.StatusMessage);
-                          
-                        }
-                        if (regMgr.Questions.Status.ToUpper() != "OK")
-                        {
-                            for(int i=0;i<regMgr.Questions.Questions.Count;i++)
-                            {
-                                errors.Add(regMgr.Questions.Questions[i].ErrorMessage);
-                            }
-                        }
-
-                    }
+                    errors = GetRegMgrErrors(regMgr, errors);
 
                     auditTrail.SetAuditTrail(optIn.Email.Email, AuditTrail.OperationType.OptIn_Success, "SetOptInData", regMgr.Status.ToUpper());
                     if (errors.Count > 0)
@@ -125,67 +109,38 @@ namespace BEDService
             return errors;
         }
 
-        public List<string> SetUnsubscribeDataEmail(FormEmail email)
+
+        private List<string> GetRegMgrErrors(RegistrationManager regMgr, List<string> errors)
         {
-            AuditTrail auditTrail = new AuditTrail();
-            List<string> errors = null;
-            HCPIndividual hcp;
-            QuestionResponseSet questionResponseSet;
-
-            try
+            if (regMgr.Status.ToUpper() != "OK")
             {
-                errors = ValidateEmail(email);
-
-                if (errors.Count > 0)
-                    return errors;
-                if (Services.ServiceIsAvailable)
+                errors.Add(String.Format("Reg Mgr Error Message: ", regMgr.StatusMessage));
+                if (regMgr.PIISet.Status.ToUpper() != "OK")
                 {
-                    EmailAddress emailAddress = new EmailAddress(email.Email);
+                    errors.Add(String.Format(" - PIISet error: "));
 
-                    hcp = new HCPIndividual();
-                    hcp.EmailAddresses = new List<EmailAddress>();
-                    hcp.EmailAddresses.Add(emailAddress);
+                    foreach (PIIDataDetail detail in regMgr.PIISet.Details)
+                    {
+                        if(detail.Status != "OK")
+                            errors.Add(String.Format(" -- Field:{0}, Value:{1}, Error:{2}", detail.Type, detail.Value, detail.StatusMessage));
+                    }
 
-                    //hcp.PIISetID = long.MaxValue;
-
-                    RegistrationManager regMgr = new RegistrationManager();
-                    regMgr.Individual = hcp;
-
-                    List<QuestionResponse> questionResponses = new List<QuestionResponse>();
-                    QuestionResponse questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDExitMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), ConfigurationManager.AppSettings["MCCUnsubscribe"]);
-                    questionResponses.Add(questionResponse);
-
-                    questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDOptOutBEDEmail"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsYes"]));
-                    questionResponses.Add(questionResponse);
-
-                    questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDSourceMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), ConfigurationManager.AppSettings["RTWebSiteID"]);
-                    questionResponses.Add(questionResponse);
-
-                    questionResponseSet = new QuestionResponseSet();
-                    // questionResponseSet.QuestionSetID = long.MaxValue;
-                    questionResponseSet.QuestionResponses = questionResponses;
-
-                    regMgr.PerformLiteRegistration(hcp, questionResponseSet);
                 }
-                else
+                if (regMgr.Questions.Status.ToUpper() != "OK")
                 {
-                    errors.Add("The PMM services are unavailable");
+                    errors.Add(String.Format("Question errors: "));
+                    foreach (Question question in regMgr.Questions.Questions)
+                    {
+                        if (question.IsError == true)
+                        {
+                            errors.Add(String.Format(" -- Question ID:{0}, Type:{1}, Error:{2}", question.QuestionID, question.QuestionType, question.ErrorMessage));
+                        }
+                    }
                 }
-
             }
-            catch (Exception e)
-            {
-                auditTrail.SetAuditTrail(" ", AuditTrail.OperationType.Unsubscribtion_Failure, e.Source, e.Message);
-                throw e;
-            }
-            finally
-            {
-                log.Info(auditTrail.GetAuditTrail());
-                auditTrail = null;
-            }
-
             return errors;
         }
+
 
         //public List<string> SetUnsubscribeDataAddress(FormAddress address)
         //{
