@@ -387,6 +387,8 @@ BED.SlideOut = (function() {
             duration: 300
         });
 
+        $('body').addClass('modal-open');//css('overflow', 'hidden');
+
     };
 
     var close = function(el) {
@@ -417,6 +419,8 @@ BED.SlideOut = (function() {
         jqSlideOutInner.velocity(transition, {
             duration: 300
         });
+
+        $('body').removeClass('modal-open');
 
     };
 
@@ -1090,5 +1094,3 @@ BED.Analytics = (function() {
     };
 
 })();
-
-//# sourceMappingURL=bed.js.map

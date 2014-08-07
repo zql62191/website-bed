@@ -515,6 +515,11 @@ a.pdf-link {
     }
 }
 
+.modal-open {
+    overflow: hidden;
+    height: 100% !important;
+}
+
 // DEV
 // html::-webkit-scrollbar {
 //     width: 0 !important;
