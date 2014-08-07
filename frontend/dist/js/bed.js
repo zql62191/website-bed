@@ -172,7 +172,7 @@ BED.UI = (function() {
             // console.log('height: ', height);
 
             var x = width / 2;
-            var y = height * (2 / 3);
+            var y = height * (1 / 2); //(2 / 3);
 
             // console.log('x: ', x);
             // console.log('y: ', y);
