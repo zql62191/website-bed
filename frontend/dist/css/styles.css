@@ -2783,13 +2783,13 @@ input[type="text"] {
 }
 .section--diagnosis .fifty-percent .yellow-circle {
   background: transparent url("../img/yellow-half-circle.png") top right no-repeat;
-  -webkit-background-size: 190.5px 375px;
-  background-size: 190.5px 375px;
-  width: 381px;
+  -webkit-background-size: 375px 375px;
+  background-size: 375px 375px;
+  width: 375px;
   height: 375px;
   position: absolute;
   top: 0;
-  left: -190.5px;
+  left: -185px;
   -webkit-transform-origin: center center;
   -ms-transform-origin: center center;
   transform-origin: center center;

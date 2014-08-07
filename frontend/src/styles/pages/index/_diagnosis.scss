@@ -141,12 +141,12 @@
         }
         .yellow-circle {
             background: transparent url("#{$img-path}/yellow-half-circle.png") top right no-repeat;
-            background-size: 190.5px 375px;
-            width: 381px;
+            background-size: 375px 375px;
+            width: 375px;
             height: 375px;
             position: absolute;
             top: 0;
-            left: -190.5px;
+            left: -185px;
             transform-origin: center center;
         }
     }
