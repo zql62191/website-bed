@@ -58,7 +58,7 @@
         'Washington',
         'West Virginia',
         'Wisconsin',
-        'Wyoming',
+        'Wyoming'
     ];
 
     app = angular.module('BED.controllers', []);
@@ -70,7 +70,7 @@
         $scope.states = statearray;
         $scope.invalidform = false;
         $scope.form = {
-            optoutchoice: "none"
+            optoutchoice: 'none'
         };
         $scope.form.state = $scope.states[0];
 
@@ -113,24 +113,24 @@
         $scope.unsubscribeAll = function() {
             var URL;
             var data = {
-                "email": {
-                    "Email": $scope.form.email,
-                    "ConfirmEmail": $scope.form.email
+                'email': {
+                    'Email': $scope.form.email,
+                    'ConfirmEmail': $scope.form.email
                 },
-                "address": {
-                    "FName": $scope.form.fname,
-                    "MName": $scope.checkFormPresent($scope.form.MI),
-                    "LName": $scope.form.lname,
-                    "Address1": $scope.form.street,
-                    "Address2": $scope.checkFormPresent($scope.form.suite),
-                    "City": $scope.form.city,
-                    "State": convertStateToAbbr($scope.form.state),
-                    "Zip": $scope.form.zip
+                'address': {
+                    'FName': $scope.form.fname,
+                    'MName': $scope.checkFormPresent($scope.form.MI),
+                    'LName': $scope.form.lname,
+                    'Address1': $scope.form.street,
+                    'Address2': $scope.checkFormPresent($scope.form.suite),
+                    'City': $scope.form.city,
+                    'State': convertStateToAbbr($scope.form.state),
+                    'Zip': $scope.form.zip
                 }
             };
             $log.log(convertStateToAbbr($scope.form.state));
 
-            URL = "/Unsubscribe/Service/BEDUnsubscribe.svc/SetUnsubscribeDataBoth";
+            URL = '/Unsubscribe/Service/BEDUnsubscribe.svc/SetUnsubscribeDataBoth';
             Data = JSON.stringify(data);
 
             $scope.processForm(URL, Data);
@@ -139,23 +139,23 @@
         $scope.unsubscribeDirect = function() {
             var URL;
             var data = {
-                "email": {
-                    "Email": $scope.form.email,
-                    "ConfirmEmail": $scope.form.email
+                'email': {
+                    'Email': $scope.form.email,
+                    'ConfirmEmail': $scope.form.email
                 },
-                "address": {
-                    "FName": $scope.form.fname,
-                    "MName": $scope.checkFormPresent($scope.form.MI),
-                    "LName": $scope.form.lname,
-                    "Address1": $scope.form.street,
-                    "Address2": $scope.checkFormPresent($scope.form.suite),
-                    "City": $scope.form.city,
-                    "State": convertStateToAbbr($scope.form.state),
-                    "Zip": $scope.form.zip
+                'address': {
+                    'FName': $scope.form.fname,
+                    'MName': $scope.checkFormPresent($scope.form.MI),
+                    'LName': $scope.form.lname,
+                    'Address1': $scope.form.street,
+                    'Address2': $scope.checkFormPresent($scope.form.suite),
+                    'City': $scope.form.city,
+                    'State': convertStateToAbbr($scope.form.state),
+                    'Zip': $scope.form.zip
                 }
             };
 
-            URL = "/Unsubscribe/Service/BEDUnsubscribe.svc/SetUnsubscribeDataAddress";
+            URL = '/Unsubscribe/Service/BEDUnsubscribe.svc/SetUnsubscribeDataAddress';
             Data = JSON.stringify(data);
 
             $scope.processForm(URL, Data);
@@ -164,11 +164,11 @@
         $scope.unsubscribeEmail = function() {
             var URL;
             var data = {
-                "Email": $scope.form.email,
-                "ConfirmEmail": $scope.form.email
+                'Email': $scope.form.email,
+                'ConfirmEmail': $scope.form.email
             };
 
-            URL = "/Unsubscribe/Service/BEDUnsubscribe.svc/SetUnsubscribeDataEmail";
+            URL = '/Unsubscribe/Service/BEDUnsubscribe.svc/SetUnsubscribeDataEmail';
             Data = JSON.stringify(data);
 
             $scope.processForm(URL, Data);
@@ -186,11 +186,11 @@
             }).
             success(function() {
                 $scope.clearFormData();
-                showUnsubscribeThankYou();
+                BED.Modal.open('unsubscribe');
             }).
             error(function(data) {
                 $scope.clearFormData();
-                showUnsubscribeError();
+                BED.Modal.open('unsubscribe_error');
             });
         };
 
@@ -244,21 +244,21 @@
             var oldBottom = oldHeight - oldTop;
             var URL;
             var data = {
-                "Specialty": convertSpecToCode($scope.form.profession),
-                "CommunicationsOptIn": 1,
-                "Email": {
-                    "Email": $scope.form.email,
-                    "ConfirmEmail": $scope.form.email
+                'Specialty': convertSpecToCode($scope.form.profession),
+                'CommunicationsOptIn': 1,
+                'Email': {
+                    'Email': $scope.form.email,
+                    'ConfirmEmail': $scope.form.email
                 },
-                "Address": {
-                    "FName": $scope.form.fname,
-                    "MName": $scope.checkFormPresent($scope.form.MI),
-                    "LName": $scope.form.lname,
-                    "Address1": $scope.form.street,
-                    "Address2": $scope.checkFormPresent($scope.form.suite),
-                    "City": $scope.form.city,
-                    "State": convertStateToAbbr($scope.form.state),
-                    "Zip": $scope.form.zip
+                'Address': {
+                    'FName': $scope.form.fname,
+                    'MName': $scope.checkFormPresent($scope.form.MI),
+                    'LName': $scope.form.lname,
+                    'Address1': $scope.form.street,
+                    'Address2': $scope.checkFormPresent($scope.form.suite),
+                    'City': $scope.form.city,
+                    'State': convertStateToAbbr($scope.form.state),
+                    'Zip': $scope.form.zip
                 }
             };
 
@@ -277,7 +277,7 @@
                 $(window).scrollTop(oldTop + bottomDifference);
             }, 100);
 
-            URL = "/Service/BEDService.svc/SetOptInData";
+            URL = '/Service/BEDService.svc/SetOptInData';
             Data = JSON.stringify(data);
 
             $scope.processOptIn(URL, Data);
@@ -322,11 +322,11 @@
             }).
             success(function() {
                 $scope.clearFormData();
-                showSignUpThankYou();
+                BED.Modal.open('signup');
             }).
             error(function(data) {
                 $scope.clearFormData();
-                showSignUpError();
+                BED.Modal.open('signup_error');
             });
         };
     }
@@ -411,21 +411,20 @@
 
 /* support functions */
 function convertSpecToCode(specialty) {
-    switch (specialty) {
-        case 'Eating Disorder Clinician':
-            return 'EDC';
-        case 'Internal Medicine':
-            return 'IM';
-        case 'Primary Care Physician':
-            return 'PCPR';
-        case 'Psychiatrist':
-            return 'P';
-        case 'Psychologist':
-            return 'PSY';
-        case 'Other':
-            return 'OS';
-        default:
-            return null;
+
+    var specs = {
+        'Eating Disorder Clinician': 'EDC',
+        'Internal Medicine': 'IM',
+        'Primary Care Physician': 'PCPR',
+        'Psychiatrist': 'P',
+        'Psychologist': 'PSY',
+        'Other': 'OS'
+    };
+
+    if (specs[specialty]) {
+        return specs[specialty];
+    } else {
+        return null;
     }
 }
 
@@ -482,7 +481,7 @@ function convertStateToAbbr(state) {
         'Washington': 'WA',
         'West Virginia': 'WV',
         'Wisconsin': 'WI',
-        'Wyoming': 'WY',
+        'Wyoming': 'WY'
     };
 
     if (states[state]) {
@@ -490,20 +489,4 @@ function convertStateToAbbr(state) {
     } else {
         return null;
     }
-}
-
-function showSignUpThankYou() {
-    $('.modal.modal--signup').show();
-}
-
-function showUnsubscribeThankYou() {
-    $('.modal.modal--unsubscribe').show();
-}
-
-function showSignUpError() {
-    $('.modal.modal--signup_error').show();
-}
-
-function showUnsubscribeError() {
-    $('.modal.modal--unsubscribe_error').show();
 }
