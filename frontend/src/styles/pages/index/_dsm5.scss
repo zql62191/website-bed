@@ -136,6 +136,9 @@
             background-image: url("#{$img-path}/dsm5-tab-border.png");
             background-repeat: no-repeat;
             background-position: center right;
+
+
+
             &.open {
                 width: 400px;
                 .tab-inner {
@@ -143,6 +146,7 @@
                     @include preload-desktop("#{$img-path}/dsm5-tab-bg.png");
                     padding-left: 60px;
                     background-position: top right;
+
                     p {
                         padding-left: 25px;
                         font-size: 19px;
@@ -181,6 +185,11 @@
             background-image: url("#{$img-path}/dsm5-tab-bg-closed.png");
             background-position: top left;
             width: 400px;
+
+            &:hover {
+                //background-image: url("#{$img-path}/dsm5-tab-bg-hover.png");
+            }
+
         }
 
         @include mq("mobile") {
