@@ -375,16 +375,11 @@
     });
 
     /*custom validator - confirmtaion email */
-    app.directive('confirmemail', function($log) {
+    app.directive('confirmemail', function() {
         return {
             require: 'ngModel',
             link: function(scope, elm, attrs, ctrl) {
-                $log.log(scope);
-                $log.log(elm);
-                $log.log(attrs);
-                $log.log(ctrl);
                 ctrl.$parsers.unshift(function(viewValue) {
-                    $log.log(viewValue);
                     if (scope.form.email && viewValue) {
                         if (angular.equals(scope.form.email.toLowerCase(), viewValue.toLowerCase())) {
                             //set validity

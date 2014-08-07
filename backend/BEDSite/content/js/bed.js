@@ -172,7 +172,7 @@ BED.UI = (function() {
             // console.log('height: ', height);
 
             var x = width / 2;
-            var y = height * (2 / 3);
+            var y = height * (1 / 2); //(2 / 3);
 
             // console.log('x: ', x);
             // console.log('y: ', y);
@@ -562,11 +562,11 @@ BED.Skrollr = (function() {
         },
         'prevalence-male-graphic': {
             'data-bottom-top': 'opacity: 0; transform: translate3d(500px,0px,0px)',
-            'data-center': 'opacity: 1; transform: translate3d(0px,0,0px)'
+            'data-450-top-top': 'opacity: 1; transform: translate3d(0px,0,0px)'
         },
         'prevalence-female-graphic': {
             'data-bottom-top': 'opacity: 0; transform: translate3d(-500px,0px,0px)',
-            'data-center': 'opacity: 1; transform: translate3d(0px,0,0px)'
+            'data-450-top-top': 'opacity: 1; transform: translate3d(0px,0,0px)'
         },
         'prevalence-blurb-2': {
             'data-bottom-top': 'opacity: 0; transform: translate3d(0px,100px,0px)',
@@ -576,15 +576,15 @@ BED.Skrollr = (function() {
         //Prevalence Patients
         'patient-1': {
             'data-bottom-top': 'transform: translate3d(-800px,0px,0px);',
-            'data--40p-bottom': 'transform: translate3d(0px,0px,0px);'
+            'data--25p-bottom': 'transform: translate3d(0px,0px,0px);'
         },
         'patient-2': {
             'data-bottom-top': 'transform: translate3d(-800px,0px,0px);',
-            'data--30p-bottom': 'transform: translate3d(0px,0px,0px);'
+            'data--20p-bottom': 'transform: translate3d(0px,0px,0px);'
         },
         'patient-3': {
             'data-bottom-top': 'transform: translate3d(-800px,0px,0px);',
-            'data--20p-bottom': 'transform: translate3d(0px,0px,0px);'
+            'data--15p-bottom': 'transform: translate3d(0px,0px,0px);'
         },
         'patient-4': {
             'data-bottom-top': 'transform: translate3d(-800px,0px,0px);',
@@ -627,12 +627,13 @@ BED.Skrollr = (function() {
             'data-center': 'opacity: 1; transform: translate3d(0px,0,0px)'
         },
         'course-21-numbers': {
-            'data--10p-bottom': 'transform: translate3d(732px,0px,0px)',
-            'data--25p-bottom': 'transform: translate3d(0px,0px,0px)'
+            'data--10p-bottom': 'transform: translate3d(732px,0px,0px);',
+            'data--20p-bottom': 'transform: translate3d(0px,0px,0px); opacity: 1;',
+            'data--40p-bottom': 'opacity: 0;'
         },
         'course-21-copy': {
             'data--20p-bottom': 'opacity: 0; transform: scale(0);',
-            'data--35p-bottom': 'opacity: 1; transform: scale(1);'
+            'data--30p-bottom': 'opacity: 1; transform: scale(1);'
         },
         'course-80': {
             'data-bottom-top': 'opacity: 0; transform: scale(0.5);',

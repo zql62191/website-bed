@@ -168,6 +168,11 @@ html {
   width: 960px;
   height: 100%;
 }
+@media only screen and (min-width: 40.063em) {
+  .content-wrap {
+    padding-right: 25px;
+  }
+}
 @media only screen and (max-width: 40em) {
   .content-wrap {
     width: 600px;
@@ -630,6 +635,15 @@ a.pdf-link span sup {
   .close {
     display: none;
   }
+}
+
+.preloaded-images {
+  position: absolute;
+  overflow: hidden;
+  left: -9999px;
+  top: -9999px;
+  height: 1px;
+  width: 1px;
 }
 
 .mejs-container * {
@@ -2778,13 +2792,13 @@ input[type="text"] {
 }
 .section--diagnosis .fifty-percent .yellow-circle {
   background: transparent url("../img/yellow-half-circle.png") top right no-repeat;
-  -webkit-background-size: 190.5px 375px;
-  background-size: 190.5px 375px;
-  width: 381px;
+  -webkit-background-size: 375px 375px;
+  background-size: 375px 375px;
+  width: 375px;
   height: 375px;
   position: absolute;
   top: 0;
-  left: -190.5px;
+  left: -185px;
   -webkit-transform-origin: center center;
   -ms-transform-origin: center center;
   transform-origin: center center;
@@ -2975,7 +2989,7 @@ input[type="text"] {
     position: absolute;
     width: 40px;
     top: 107px;
-    right: 0px;
+    right: 25px;
     background-image: url("../img/dsm5-tab-border.png");
     background-repeat: no-repeat;
     background-position: center right;
@@ -3669,7 +3683,7 @@ input[type="text"] {
 }
 .unsubscribe .required-fields input, .unsubscribe .required-fields select {
   font-size: 15px;
-  color: #8c8f91;
+  color: #333e48;
   border-radius: 6px/4px;
   background-color: #fff;
   -webkit-box-shadow: 0 2px 2px rgba(33, 30, 31, 0.25);
