@@ -57,10 +57,10 @@ BED.SlideOut = (function() {
     var open = function(el) {
 
         $('.slideout._is_open').exists(function() {
-            close($(this));
+            close();
         });
 
-        var jqSlideOut = el;
+        var jqSlideOut = (typeof el === 'string') ? $('.slideout--' + el) : el;
         var jqSlideOutInner = jqSlideOut.find('.slideout__inner');
 
         var getTransition = function(direction) {
@@ -93,7 +93,7 @@ BED.SlideOut = (function() {
 
     var close = function(el) {
 
-        var jqSlideOut = el;
+        var jqSlideOut = $('.slideout._is_open');
         var jqSlideOutInner = jqSlideOut.find('.slideout__inner');
 
         var getTransition = function(direction) {

@@ -322,6 +322,7 @@
             }).
             success(function() {
                 $scope.clearFormData();
+                BED.SlideOut.close();
                 BED.Modal.open('signup');
             }).
             error(function(data) {
