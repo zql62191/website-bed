@@ -970,7 +970,7 @@ input[type="text"] {
 }
 @media only screen and (min-width: 40.063em) {
   .slideout--signup .slideout__inner {
-    width: 720px;
+    width: 730px;
   }
 }
 @media only screen and (max-width: 40em) {
