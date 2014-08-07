@@ -14,7 +14,6 @@
       (function(a){if(/msie|trident/i.test(a)){a=a.match(/(?:msie |rv:)(\d+(\.\d+)?)/i);a=parseInt(a&&1<a.length&&a[1]||'',10);for(var c=['eq-ie'],b=6;12>=b;b++)a>b?c.push('gt-ie'+b):a<b?c.push('lt-ie'+b):a===b&&(c.push('lte-ie'+b),c.push('eq-ie'+b),c.push('gte-ie'+b));document.documentElement.className+=' '+c.join(' ')}})(navigator.userAgent||'');
       
     </script>
-    <script></script>
     <link rel="stylesheet" href="/content/css/styles.css">
     <link rel="stylesheet" href="/content/me/mediaelementplayer.min.css">
     <script src="//fast.fonts.net/jsapi/352bad9a-496a-416d-b9cf-171842848303.js"></script><!--[if (gte IE 6)&(lte IE 8)]>
@@ -55,8 +54,8 @@
             <input type="text" name="firstName" placeholder="*First Name" ng-model="form.fname" ng-required="true" ng-class="{forminvalid: (bed_form.firstName.$invalid &amp;&amp; bed_form.firstName.$dirty) || (bed_form.firstName.$invalid &amp;&amp; invalidform)}" class="first-name">
             <input type="text" name="middleInitial" placeholder="MI" ng-model="form.MI" ng-required="false" maxlength="1" class="middle-initial">
             <input type="text" name="lastName" placeholder="*Last Name" ng-model="form.lname" ng-required="true" ng-class="{forminvalid: (bed_form.lastName.$invalid &amp;&amp; bed_form.lastName.$dirty) || (bed_form.lastName.$invalid &amp;&amp; invalidform)}" class="last-name">
-            <input type="text" name="email" placeholder="*E-mail" ng-model="form.email" ng-required="true" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/" ng-class="{forminvalid: (bed_form.email.$invalid &amp;&amp; bed_form.email.$dirty) || (bed_form.email.$invalid &amp;&amp; invalidform)}" class="email">
-            <input type="text" name="email2" ng-model="form.confirmemail" ng-required="true" confirmemail placeholder="*Re-enter E-mail" ng-class="{forminvalid: (bed_form.email2.$invalid &amp;&amp; bed_form.email2.$dirty) || (bed_form.email2.$invalid &amp;&amp; invalidform)}" class="email2">
+            <input type="text" name="email" placeholder="*E‐mail" ng-model="form.email" ng-required="true" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/" ng-class="{forminvalid: (bed_form.email.$invalid &amp;&amp; bed_form.email.$dirty) || (bed_form.email.$invalid &amp;&amp; invalidform)}" class="email">
+            <input type="text" name="email2" ng-model="form.confirmemail" ng-required="true" confirmemail placeholder="*Re-enter E‐mail" ng-class="{forminvalid: (bed_form.email2.$invalid &amp;&amp; bed_form.email2.$dirty) || (bed_form.email2.$invalid &amp;&amp; invalidform)}" class="email2">
             <input type="text" name="streetAddress" placeholder="*Street Address" ng-model="form.street" ng-required="true" ng-class="{forminvalid: (bed_form.streetAddress.$invalid &amp;&amp; bed_form.streetAddress.$dirty) || (bed_form.streetAddress.$invalid &amp;&amp; invalidform)}" class="street-address">
             <input type="text" name="suiteOffice" placeholder="Suite/Office" ng-model="form.suite" ng-required="false" class="suite-office">
             <input type="text" name="city" placeholder="*City" ng-model="form.city" ng-required="true" ng-class="{forminvalid: (bed_form.city.$invalid &amp;&amp; bed_form.city.$dirty) || (bed_form.city.$invalid &amp;&amp; invalidform)}" class="city">
@@ -85,8 +84,7 @@
             </div>
             <label for="optin" class="optin-label">
               <p>By checking this box and clicking submit, you certify that you are a US health care professional and you are opting to receive information about binge eating disorder plus site updates, educational information, patient support resources, and other information from Shire. You will be able to opt out of these communications at any time.</p>
-              <p>
-                Shire respects your personal information. All information you have provided will be kept confidential and will not be used or distributed to anyone for any purpose other than what is explained in our Privacy Policy Statement. We encourage you to read our Privacy Policy Statement by clicking on this link: Review Shire Privacy Policy Statement. This consent will be in effect until such time as you opt out of the program.
+              <p>Shire respects your personal information. All information you have provided will be kept confidential and will not be used or distributed to anyone for any purpose other than what is explained in our Privacy Policy Statement. We encourage you to read our Privacy Policy Statement by clicking on this link: <a href="/privacy-policy.aspx" class="yellow">Review Shire Privacy Policy Statement</a>. This consent will be in effect until such time as you opt out of the program.
                 
               </p>
             </label>
@@ -152,7 +150,7 @@
               
             </h2>
             <div data-skrollr="prevalence-map" class="us-graphic graphic"></div>
-            <div data-skrollr="prevalence-asterisk" class="asterisk footnote">Estimated 12-month prevalence in National Comorbidity Survey Replication of US adults aged ≥18 years, extrapolated to full US population aged ≥18 years.<sup>2,3</sup>
+            <div data-skrollr="prevalence-asterisk" class="chart-note footnote">Estimated 12-month prevalence in National Comorbidity Survey Replication of US adults aged ≥18 years, extrapolated to full US population aged ≥18 years.<sup>2,3</sup>
               
             </div>
             <div class="blurb">BED is the most common eating disorder among US adults and more than twice as prevalent as bulimia nervosa and anorexia nervosa combined<sup>2</sup>
@@ -175,12 +173,10 @@
               <div data-skrollr="prevalence-male-graphic" class="male-graphic graphic"></div>
               <div data-skrollr="prevalence-female-graphic" class="female-graphic graphic"></div>
             </div>
-            <div class="footnote">
-              <p>
-                Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a face-to-face household survey of English-speaking adults aged &#8805;18 years.
-                
-              </p>
-            </div>
+            <p class="footnote">
+              Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a face-to-face household survey of English-speaking adults aged &#8805;18 years.
+              
+            </p>
             <div class="comparable">
               <h3>Prevalence rates are comparable among non-Latino white <span class="percent">(1.4%)</span>, Latino <span class="percent">(2.1%)</span>, Asian <span class="percent">(1.2%)</span>, and African American <span class="percent">(1.5%)</span> adults in the US<sup>4</sup>
                 
@@ -195,10 +191,13 @@
                 <div data-skrollr="patient-4" class="patient-4 graphic"></div>
               </div>
             </div>
-            <p class="frequencies">BED occurs with roughly similar frequencies in most industrialized countries (eg, Australia, Canada, <br class="hide--mobile">many European countries, New Zealand, and the United States).<sup>1</sup>
+            <p class="frequencies">BED occurs with roughly similar frequencies in most industrialized countries (eg, Australia, Canada, many European countries, New Zealand, and the United States).<sup>1</sup>
               
             </p>
-            <div data-skrollr="prevalence-blurb-2" class="blurb-2">In an online survey, only 3% of US adults who met <em>DSM-5</em><sup>®</sup> criteria for BED reported being diagnosed with BED by a health care provider in the past 12 months.<sup>5</sup><br>&nbsp;
+            <div data-skrollr="prevalence-blurb-2" class="blurb-2">
+              <div class="sub-head">In an online survey, only 3% of US adults who met <em>DSM-5</em><sup>®</sup> criteria for BED reported being diagnosed with BED by a health care provider in the past 12 months.<sup>5</sup>
+                
+              </div>
               <div class="footnote">Data from a 2013 online survey of adults aged ≥18 years. Of 22,397 respondents, 344 met <em>DSM-5</em><sup>&reg;</sup> criteria for BED in the previous 12 months.<sup>5</sup></div>
             </div>
           </div>
@@ -291,7 +290,8 @@
               </div>
               <p class="twenty-one hide--desktop"><img src="/content/img/course-21.png"></p>
               <div class="legend">
-                <h3 class="chart-head center hide--desktop">Age-of-onset ranges<br>
+                <h3 class="chart-head center hide--desktop">
+                  Median ages of onset and age-of-onset ranges
                   for BED, AN, and BN<sup>2</sup>
                   
                 </h3>
@@ -341,10 +341,10 @@
             <p class="footnote chart-footnote asterisk">Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults <br class="hide--desktop"> aged ≥18 years.<sup>2</sup></p>
           </div>
         </div>
-        <div data-section="effects" class="section section--effects"><a id="functional-consequences" name="functional-consequences" class="scroll-point"></a>
+        <div data-section="functional-consequences" class="section section--effects"><a id="functional-consequences" name="functional-consequences" class="scroll-point"></a>
           <div class="content-wrap">   
             <div data-skrollr="effects-title">
-              <h2>According to DSM-5<sup>&reg;</sup>, BED in adults is associated with a range of functional consequences<sup>1</sup>
+              <h2>According to <em>DSM-5<sup>&reg;</sup></em>, BED in adults is associated with a range of functional consequences<sup>1</sup>
                 
               </h2>
             </div>
@@ -412,7 +412,7 @@
               </p>
             </div>
             <div data-skrollr="neurobiology-header-2">
-              <p class="sub-head">
+              <p class="sub-head second">
                 Research also suggests that risk factors for BED may include:
                 
               </p>
@@ -423,7 +423,8 @@
               </h3>
               <ul class="bullet">
                 <li>BED appears to run in families, which may reflect additive genetic influences</li>
-                <li>Genetic differences in neurobiological components <br class="hide--mobile">of the brain&#8217;s reward center have been observed
+                <li>
+                  Genetic differences in neurobiological components of the brain&#8217;s reward center have been observed
                   
                 </li>
               </ul>
@@ -453,9 +454,11 @@
           <div class="content-wrap">
             <div data-bottom-top="opacity: 0; transform: translate3d(0px,-50px,0px)" data-bottom-bottom="opacity: 1; transform: translate3d(0px,0,0px)">
               <h2>Recognizing BED</h2>
-              <p class="sub-head">DSM-5<sup>&reg;</sup> defines BED as recurring episodes (at least once weekly for 3 months) of consuming a large amount of food in a short period of time, with episodes characterized by feelings of lack of control and marked distress regarding binge eating.<sup>1</sup></p>
+              <p class="sub-head"><em>DSM-5<sup>&reg;</sup></em> defines BED as recurring episodes (at least once weekly for 3 months) of consuming a large amount of food in a short period of time, with episodes characterized by feelings of lack of control and marked distress regarding binge eating.<sup>1</sup></p>
             </div>
-            <p><em>These are not the full diagnostic criteria. <a data-slideout="signup" class="signup">Please register</a> to receive the full </em>&nbsp;DSM-5<sup>&reg;</sup>&nbsp;<em>diagnostic criteria and additional BED information from Shire.</em></p>
+            <p><em>These are not the full diagnostic criteria. <a data-slideout="signup" class="signup">Please register</a> to receive the full </em>
+              <nobr>DSM-5<sup>&reg;</sup></nobr> <em>diagnostic criteria and additional BED information from Shire.</em>
+            </p>
             <h3>BED is different from bulimia nervosa</h3>
             <p>It is not associated with compensatory behaviors such as purging or excessive exercise, or with dietary restriction, although frequent dieting may be reported.<sup>1</sup></p>
             <h3>BED is different from overeating</h3>
@@ -468,7 +471,7 @@
               <li>More subjective distress</li>
               <li>Greater psychiatric comorbidity</li>
             </ul>
-            <p>BED occurs in normal-weight, overweight, and obese individuals<sup>2</sup>
+            <p>BED occurs in normal-weight, overweight, and obese individuals.<sup>2</sup>
               
             </p>
             <h3 class="center chart-head">Based on a nationally representative survey of US adults aged ≥18 years<sup>2</sup>:
@@ -515,7 +518,7 @@
         <div data-section="resources" class="section section--resources"><a id="resources" name="resources" class="scroll-point"></a>
           <div class="content-wrap">
             <h2>Resources</h2>
-            <p class="sub-head">This information may help you to identify and accurately diagnose adults with BED in your practice.</p>
+            <p class="sub-head">This information may help you to identify and accurately diagnose adults with BED in <br class="hide--mobile">your practice.</p>
             <h3>Starting the conversation</h3>
             <p>These questions may help you begin a dialogue with your adult patients about <br class="hide--mobile">their eating behavior if BED is suspected.</p>
             <h4>General screening<sup>14</sup></h4>
@@ -573,9 +576,6 @@
                 <li data-video="grilo5">
                   <p>What psychiatric disorders are commonly associated with BED? <span class="time">(01:10)</span></p>
                 </li>
-                <li data-video="bulik3">
-                  <p>What are the functional consequences of BED? <span class="time">(02:03)</span></p>
-                </li>
                 <li data-video="kornstein6">
                   <p>What is thought to cause BED? <span class="time">(00:53)</span></p>
                 </li>
@@ -592,37 +592,39 @@
             <ul class="organizations">
               <li>
                 <p>Alliance for Eating Disorders Awareness</p>
-                <p><a href="http://www.allianceforeatingdisorders.com">www.allianceforeatingdisorders.com</a></p>
+                <p><a href="http://www.allianceforeatingdisorders.com" class="yellow">www.allianceforeatingdisorders.com</a></p>
                 <p>(866) 662-1235</p>
               </li>
               <li>
                 <p>American Medical Association</p>
-                <p><a href="http://www.ama-assn.org/ama">www.ama-assn.org/ama</a></p>
+                <p><a href="http://www.ama-assn.org/ama" class="yellow">www.ama-assn.org/ama</a></p>
                 <p>(800) 262-3211</p>
               </li>
               <li>
                 <p>American Psychiatric Association</p>
-                <p><a href="http://www.psychiatry.org">www.psychiatry.org</a></p>
+                <p><a href="http://www.psychiatry.org" class="yellow">www.psychiatry.org</a></p>
                 <p>(888) 357-7924</p>
               </li>
               <li>
                 <p>American Psychological Association</p>
-                <p><a href="http://www.apa.org">www.apa.org</a></p>
+                <p><a href="http://www.apa.org" class="yellow">www.apa.org</a></p>
                 <p>(800) 374-2721</p>
               </li>
+            </ul>
+            <ul class="organizations">
               <li>
                 <p>Binge Eating Disorder Association</p>
-                <p><a href="http://bedaonline.com">bedaonline.com</a></p>
+                <p><a href="http://bedaonline.com" class="yellow">bedaonline.com</a></p>
                 <p>(855) 855-2332</p>
               </li>
               <li>
                 <p>National Alliance for Mental Illness</p>
-                <p><a href="http://www.nami.org">www.nami.org</a></p>
+                <p><a href="http://www.nami.org" class="yellow">www.nami.org</a></p>
                 <p>(800) 950-6264</p>
               </li>
               <li>
                 <p>National Eating Disorders Association</p>
-                <p><a href="http://www.nationaleatingdisorders.org">www.nationaleatingdisorders.org</a></p>
+                <p><a href="http://www.nationaleatingdisorders.org" class="yellow">www.nationaleatingdisorders.org</a></p>
                 <p>
                   (800) 931-2237
                   
@@ -657,7 +659,7 @@
                 
                 <strong>12.</strong>&nbsp;Mitchell KS, Mazzeo SE, Schlesinger MR, Brewerton TD, Smith BN. Comorbidity of partial and subthreshold ptsd among men and women with eating disorders in the National Comorbidity Survey-Replication Study. <em>Int J Eat Disord.</em> 2012;45(3):307-315. 
                 
-                <strong>13.</strong>&nbsp;American Psychiatric Association. DSM-5 Fact Sheet. Feeding and eating disorders. www.dsm5.org/documents/eating%20disorders%20fact20%sheet.pdf. Accessed May 21, 2014. 
+                <strong>13.</strong>&nbsp;American Psychiatric Association. DSM-5 Fact Sheet. Feeding and eating disorders. www.dsm5.org/documents/<br class="hide--desktop">eating%20disorders%20fact20%sheet.pdf. Accessed May 21, 2014. 
                 
                 <strong>14.</strong>&nbsp;Morgan JF, Reid F, Lacey JH. The SCOFF questionnaire: a new screening tool for eating disorders. <em>West J Med.</em> 2000;172(3):164-165. 
                 
@@ -667,17 +669,17 @@
           </div>
         </div>
         <div class="next-section">
-          <div class="content-wrap"><a href="/#/prevalence" class="bar bar--next bar--prevalence">BED: The most common eating disorder in adults<sup>2</sup>
-              </a><a href="/#/dsm5" class="bar bar--next bar--dsm5">The <em>DSM-5<sup>&reg;</sup></em> criteria
-              </a><a href="/#/clinical-characteristics" class="bar bar--next bar--course">
+          <div class="content-wrap"><a href="/#/prevalence" data-section="prevalence" class="bar bar--next bar--prevalence">BED: The most common eating disorder in adults<sup>2</sup>
+              </a><a href="/#/dsm5" data-section="dsm5" class="bar bar--next bar--dsm5">The <em>DSM-5<sup>&reg;</sup></em> criteria
+              </a><a href="/#/clinical-characteristics" data-section="clinical-characteristics" class="bar bar--next bar--course">
               Clinical characteristics of BED
-              </a><a href="/#/functional-consequences" class="bar bar--next bar--effects">
+              </a><a href="/#/functional-consequences" data-section="functional-consequences" class="bar bar--next bar--effects">
               Functional consequences of BED
-              </a><a href="/#/neurobiology" class="bar bar--next bar--neurobiology">
+              </a><a href="/#/neurobiology" data-section="neurobiology" class="bar bar--next bar--neurobiology">
               Potential causes of BED
-              </a><a href="/#/diagnosis" class="bar bar--next bar--diagnosis">
+              </a><a href="/#/diagnosis" data-section="diagnosis" class="bar bar--next bar--diagnosis">
               Identifying BED in your adult patients
-              </a><a href="/#/resources" class="bar bar--next bar--resources">Resources/Expert Videos</a></div>
+              </a><a href="/#/resources" data-section="resources" class="bar bar--next bar--resources">Resources/Expert Videos</a></div>
         </div>
         <div class="pagination"><a href="/#/home" class="pagination__item"></a><a href="/#/prevalence" class="pagination__item"></a><a href="/#/dsm5" class="pagination__item"></a><a href="/#/clinical-characteristics" class="pagination__item"></a><a href="/#/functional-consequences" class="pagination__item"></a><a href="/#/neurobiology" class="pagination__item"></a><a href="/#/diagnosis" class="pagination__item"></a><a href="/#/resources" class="pagination__item"></a>
         </div>
@@ -694,7 +696,7 @@
           </nav><img src="/content/img/footer-logo.png" class="footer-logo">
           <p>&copy;2014 <a href="http://www.shire.com/" target="_blank">Shire US Inc.,</a> Wayne, PA 19087 1‐800‐828‐2088 All rights reserved. S02592 08/14</p>
           <p>All content of this website including text, images, graphics, sound files, and their arrangement, belongs to Shire and is protected by international copyright laws. All other intellectual property rights are reserved. The content may not be copied for commercial use or distribution, nor may these objects be downloaded, modified, or posted to other sites.</p>
-          <p>This site is intended solely for US residents and is governed solely by US laws and government regulations. Please see <a href="privacy-policy.html">our privacy policy</a> for more information. While Shire US Inc. makes reasonable efforts to include accurate, up‐to‐date information on the site, Shire US Inc. makes no warranties or representations as to its accuracy. Shire US Inc. assumes no liability for any errors or omissions in the content of the site.</p>
+          <p>This site is intended solely for US residents and is governed solely by US laws and government regulations. Please see <a href="/privacy-policy.html">our privacy policy</a> for more information. While Shire US Inc. makes reasonable efforts to include accurate, up‐to‐date information on the site, Shire US Inc. makes no warranties or representations as to its accuracy. Shire US Inc. assumes no liability for any errors or omissions in the content of the site.</p>
         </div>
       </div>
       <div class="modal modal--interstitial">

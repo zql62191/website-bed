@@ -390,6 +390,15 @@
         };
     });
 
+    // Elegant placeholder polyfill hack
+    app.directive('ngIf', function() {
+        return {
+            link: function(scope, elm, attrs) {
+                $('input, textarea', elm).placeholder();
+            }
+        };
+    });
+
 }).call(this);
 
 /* App */

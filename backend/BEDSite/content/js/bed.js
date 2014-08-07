@@ -4,6 +4,11 @@ var BED = (function() {
 
     var snag = function() {
 
+        $('.slideout').css({
+            position: 'absolute',
+            bottom: 0
+        });
+
         var jqSections = $('.section');
         var jqNexts = $('.bar--next');
 
@@ -38,7 +43,7 @@ var BED = (function() {
 
         });
 
-        $(document).on('click', function() {
+        $(document.body).on('click.snag', function() {
 
             jqNexts.each(function(i, el) {
 
@@ -65,6 +70,7 @@ var BED = (function() {
         BED.Skrollr.init();
         BED.UI.init();
         BED.SlideOut.init();
+        BED.Modal.init();
         BED.VideoPlayer.init();
 
         if (typeof parseUri(window.location.href).queryKey['snag'] !== 'undefined') {
@@ -96,12 +102,6 @@ BED.UI = (function() {
         'shire.com'
     ];
 
-    var gestures = {
-        'click': typeof Hammer !== 'undefined' ? 'tap' : 'click',
-        'scroll': 'scroll',
-        'resize': 'resize'
-    };
-
     var mediaQueries = {
         mobile: 'only screen and (max-width: 40em)',
         desktop: 'only screen and (min-width: 40.063em)'
@@ -132,42 +132,23 @@ BED.UI = (function() {
         // Setup events on window
         $(window)
 
-        .on(gestures.scroll + '.ui', onScroll)
+        .on('scroll.ui', onScroll)
 
-        .trigger(gestures.scroll + '.ui')
+        .on('resize.ui', onResize);
 
-        .on(gestures.resize + '.ui', onResize)
+        onScroll();
 
-        .trigger(gestures.resize + '.ui');
+        onResize();
+
+        // Setup fastclick
+        FastClick.attach(document.body);
 
         // Setup default events on body
         $(document.body)
 
-        .run(function() {
-            if (typeof Hammer !== 'undefined') {
-                $(document.body).hammer({
-                    stop_browser_behavior: false
-                });
-            } else {
-                FastClick.attach(document.body);
-            }
-        })
+        .on('click.ui', 'a[href]:not(.button--ok)', onAnchorClick)
 
-        .on('click' + '.ui', 'a[href]:not(.button--ok)', onAnchorClick)
-
-        .on(gestures.click + '.ui', '.modal__inner', function(e) {
-            e.stopPropagation();
-        })
-
-        .on(gestures.click + '.ui', '.modal .modal__outer, .modal .modal__close, .modal a.button', function(e) {
-
-            $(this).closest('.modal').velocity('fadeOut', {
-                duration: 250
-            });
-
-        })
-
-        .on(gestures.click + '.ui', '.tab-container', function(e) {
+        .on('click.ui', '.tab-container', function(e) {
 
             $(this).toggleClass('open');
 
@@ -198,7 +179,7 @@ BED.UI = (function() {
 
             var jqIsOpen = $('._is_open');
 
-            var origDisplayAttribute = jqIsOpen.css('display');
+            // var origDisplayAttribute = jqIsOpen.css('display');
             jqIsOpen.css('display', 'none');
 
             var underneathElem = document.elementFromPoint(x, y);
@@ -206,25 +187,23 @@ BED.UI = (function() {
             // console.log('underneathElem: ', underneathElem);
             // console.log('$.elementFromPoint: ', $.elementFromPoint(x, y));
 
-            if (origDisplayAttribute) {
-                jqIsOpen.css('display', origDisplayAttribute);
-            } else {
-                jqIsOpen.css('display', 'block');
-            }
+            // if (origDisplayAttribute) {
+            // jqIsOpen.css('display', origDisplayAttribute);
+            // } else {
+            jqIsOpen.css('display', 'block');
+            // }
 
             var jqCurrent = $(underneathElem).closest('.section');
 
             var jqNext = jqCurrent.next('.section');
 
-            if (jqCurrent) {
+            jqCurrent.exists(function() {
 
                 currentSection = jqCurrent.data('section');
 
-                if (!e.isTrigger && !velocityScroll) {
+                if (!velocityScroll) {
                     $.history.load('/' + currentSection);
                 }
-
-                // window.location.hash = currentSection;
 
                 $('.page-nav a.active').removeClass('active');
 
@@ -233,11 +212,14 @@ BED.UI = (function() {
                 $('.bar--next, .pagination__item').removeClass('active');
 
                 $('.pagination__item').eq(jqCurrent.index()).addClass('active');
-            }
 
-            if (jqNext) {
-                $('.bar--next.bar--' + jqNext.data('section')).addClass('active');
-            }
+            });
+
+            jqNext.exists(function() {
+
+                $('.bar--next[data-section="' + jqNext.data('section') + '"]').addClass('active');
+
+            });
 
         }, 1);
 
@@ -247,16 +229,6 @@ BED.UI = (function() {
     var onResize = function(e) {
 
         var offset = $('.page-wrapper').offset().left;
-
-        $('.slideout').css({
-            left: offset,
-            right: offset
-        });
-
-        $('.modal__outer').css({
-            width: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
-            height: window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
-        });
 
         $('.pagination').css('right', offset + 8);
 
@@ -303,13 +275,7 @@ BED.UI = (function() {
 
             e.preventDefault();
 
-            var jqModal = $('.modal--interstitial');
-
-            jqModal.find('a.button--ok').prop('href', link.source);
-
-            jqModal.velocity('fadeIn', {
-                duration: 250
-            });
+            BED.Modal.open('interstitial', link.source);
         }
 
     };
@@ -333,9 +299,7 @@ BED.UI = (function() {
     // Return the module object
     return {
         init: init,
-        gestures: gestures,
-        mediaQueries: mediaQueries,
-        currentSection: currentSection
+        mediaQueries: mediaQueries
     };
 
 })();
@@ -355,27 +319,44 @@ BED.SlideOut = (function() {
 
         initialized = true;
 
+        $(window)
+
+        .on('resize.slideout', onResize);
+
+        onResize();
+
         $(document.body)
 
-        .on(BED.UI.gestures.click + '.slideout', 'a[data-slideout]', function(e) {
+        .on('click.slideout', 'a[data-slideout]', function(e) {
             toggle($(this).data('slideout'));
         })
 
-        .on(BED.UI.gestures.click + '.slideout', '.slideout', function(e) {
+        .on('click.slideout', '.slideout', function(e) {
             close($(this));
         })
 
-        .on(BED.UI.gestures.click + '.slideout', '.slideout .close', function(e) {
+        .on('click.slideout', '.slideout .close', function(e) {
             close($(this).closest('.slideout'));
         })
 
-        .on(BED.UI.gestures.click + '.slideout', '.slideout .slideout__inner', function(e) {
+        .on('click.slideout', '.slideout .slideout__inner', function(e) {
             e.stopPropagation();
         })
 
-        .on(BED.UI.gestures.click + '.slideout', '.page-nav a', function(e) {
+        .on('click.slideout', '.page-nav a', function(e) {
             close($('.slideout--menu'));
         });
+    };
+
+    var onResize = function(e) {
+
+        var offset = $('.page-wrapper').offset().left;
+
+        $('.slideout').css({
+            left: offset,
+            right: offset
+        });
+
     };
 
     var open = function(el) {
@@ -411,6 +392,8 @@ BED.SlideOut = (function() {
             duration: 300
         });
 
+        // $('body').addClass('modal-open');//css('overflow', 'hidden');
+
     };
 
     var close = function(el) {
@@ -442,6 +425,8 @@ BED.SlideOut = (function() {
             duration: 300
         });
 
+        // $('body').removeClass('modal-open');
+
     };
 
     var toggle = function(name) {
@@ -462,6 +447,87 @@ BED.SlideOut = (function() {
         open: open,
         close: close,
         toggle: toggle
+    };
+
+})();
+;if (typeof BED === 'undefined') {
+    window.BED = {};
+}
+
+BED.Modal = (function() {
+
+    var initialized = false;
+
+    var init = function() {
+
+        if (initialized) {
+            return;
+        }
+
+        initialized = true;
+
+        $(window)
+
+        .on('resize.modal', onResize);
+
+        onResize();
+
+        $(document.body)
+
+        .on('click.modal', '.modal__inner', function(e) {
+            e.stopPropagation();
+        })
+
+        .on('click.modal', '.modal .modal__outer, .modal .modal__close, .modal a.button', function(e) {
+
+            close();
+
+        });
+
+    };
+
+    var onResize = function(e) {
+
+        $('.modal__outer').css({
+            width: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+            height: window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+        });
+
+    };
+
+    var open = function(name, url) {
+
+        var jqModal = $('.modal--' + name);
+
+        if (name === 'interstitial') {
+            jqModal.find('a.button--ok').prop('href', url);
+        }
+
+        jqModal.velocity('fadeIn', {
+            duration: 250,
+            complete: function(e) {
+                $(this).addClass('_is_open');
+            }
+        });
+
+    };
+
+    var close = function() {
+
+        $('.modal._is_open').velocity('fadeOut', {
+            duration: 250,
+            complete: function(e) {
+                $(this).removeClass('_is_open');
+            }
+        });
+
+    };
+
+    // Return the module object
+    return {
+        init: init,
+        open: open,
+        close: close
     };
 
 })();
@@ -570,11 +636,11 @@ BED.Skrollr = (function() {
         },
         'course-80': {
             'data-bottom-top': 'opacity: 0; transform: scale(0.5);',
-            'data-center': 'opacity: 1; transform: scale(1);'
+            'data-450-top-top': 'opacity: 1; transform: scale(1);'
         },
         'course-49': {
             'data-bottom-top': 'opacity: 0; transform: scale(0.5);',
-            'data-center': 'opacity: 1; transform: scale(1);'
+            'data-450-top-top': 'opacity: 1; transform: scale(1);'
         },
 
         //Effects
@@ -683,15 +749,15 @@ BED.Skrollr = (function() {
 BED.VideoPlayer = (function() {
 
     var locations = {
-        'grilo2': '//view.vzaar.com/1788413/video',
-        'bulik3': '//view.vzaar.com/1788415/video',
-        'bulik4': '//view.vzaar.com/1788416/video',
-        'grilo5': '//view.vzaar.com/1788417/video',
-        'kornstein6': '//view.vzaar.com/1788418/video',
-        'grilo7': '//view.vzaar.com/1788419/video',
-        'kornstein8': '//view.vzaar.com/1788420/video',
-        'bulik12': '//view.vzaar.com/1788421/video',
-        'kornstein14': '//view.vzaar.com/1788422/video'
+        'grilo2': '//view.vzaar.com/1788413/video', // S02969 Grilo2
+        'bulik3': '//view.vzaar.com/1788415/video', // S02970 Bulik3
+        'bulik4': '//view.vzaar.com/1788416/video', // S02971 Bulik4
+        'grilo5': '//view.vzaar.com/1788417/video', // S02972 Grilo5
+        'kornstein6': '//view.vzaar.com/1788418/video', // S02973 Kornstein6
+        'grilo7': '//view.vzaar.com/1788419/video', // S03011 Grilo7
+        'kornstein8': '//view.vzaar.com/1788420/video', // S03012 Kornstein8
+        'bulik12': '//view.vzaar.com/1788421/video', // S03016 Bulik12
+        'kornstein14': '//view.vzaar.com/1788422/video' // S03018 Kornstein14
     };
 
     var videoNameList = [];
@@ -759,19 +825,19 @@ BED.VideoPlayer = (function() {
 
         $(document.body)
 
-        .on(BED.UI.gestures.click + '.videoplayer', '.video-playlist li[data-video]', function(e) {
+        .on('click.videoplayer', '.video-playlist li[data-video]', function(e) {
 
             playVideo($(this).data('video'));
 
         })
 
-        .on(BED.UI.gestures.click + '.videoplayer', '.video-player .arrow-left', function(e) {
+        .on('click.videoplayer', '.video-player .arrow-left', function(e) {
 
             playPrevVideo();
 
         })
 
-        .on(BED.UI.gestures.click + '.videoplayer', '.video-player .arrow-right', function(e) {
+        .on('click.videoplayer', '.video-player .arrow-right', function(e) {
 
             playNextVideo();
 
@@ -970,7 +1036,10 @@ BED.VideoPlayer = (function() {
 
     // Return the module object
     return {
-        init: init
+        init: init,
+        instance: function() {
+            return instance;
+        }
     };
 
 })();

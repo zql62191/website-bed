@@ -14,7 +14,6 @@
       (function(a){if(/msie|trident/i.test(a)){a=a.match(/(?:msie |rv:)(\d+(\.\d+)?)/i);a=parseInt(a&&1<a.length&&a[1]||'',10);for(var c=['eq-ie'],b=6;12>=b;b++)a>b?c.push('gt-ie'+b):a<b?c.push('lt-ie'+b):a===b&&(c.push('lte-ie'+b),c.push('eq-ie'+b),c.push('gte-ie'+b));document.documentElement.className+=' '+c.join(' ')}})(navigator.userAgent||'');
       
     </script>
-    <script></script>
     <link rel="stylesheet" href="/content/css/styles.css">
     <link rel="stylesheet" href="/content/me/mediaelementplayer.min.css">
     <script src="//fast.fonts.net/jsapi/352bad9a-496a-416d-b9cf-171842848303.js"></script><!--[if (gte IE 6)&(lte IE 8)]>
@@ -55,8 +54,8 @@
             <input type="text" name="firstName" placeholder="*First Name" ng-model="form.fname" ng-required="true" ng-class="{forminvalid: (bed_form.firstName.$invalid &amp;&amp; bed_form.firstName.$dirty) || (bed_form.firstName.$invalid &amp;&amp; invalidform)}" class="first-name">
             <input type="text" name="middleInitial" placeholder="MI" ng-model="form.MI" ng-required="false" maxlength="1" class="middle-initial">
             <input type="text" name="lastName" placeholder="*Last Name" ng-model="form.lname" ng-required="true" ng-class="{forminvalid: (bed_form.lastName.$invalid &amp;&amp; bed_form.lastName.$dirty) || (bed_form.lastName.$invalid &amp;&amp; invalidform)}" class="last-name">
-            <input type="text" name="email" placeholder="*E-mail" ng-model="form.email" ng-required="true" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/" ng-class="{forminvalid: (bed_form.email.$invalid &amp;&amp; bed_form.email.$dirty) || (bed_form.email.$invalid &amp;&amp; invalidform)}" class="email">
-            <input type="text" name="email2" ng-model="form.confirmemail" ng-required="true" confirmemail placeholder="*Re-enter E-mail" ng-class="{forminvalid: (bed_form.email2.$invalid &amp;&amp; bed_form.email2.$dirty) || (bed_form.email2.$invalid &amp;&amp; invalidform)}" class="email2">
+            <input type="text" name="email" placeholder="*E‐mail" ng-model="form.email" ng-required="true" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/" ng-class="{forminvalid: (bed_form.email.$invalid &amp;&amp; bed_form.email.$dirty) || (bed_form.email.$invalid &amp;&amp; invalidform)}" class="email">
+            <input type="text" name="email2" ng-model="form.confirmemail" ng-required="true" confirmemail placeholder="*Re-enter E‐mail" ng-class="{forminvalid: (bed_form.email2.$invalid &amp;&amp; bed_form.email2.$dirty) || (bed_form.email2.$invalid &amp;&amp; invalidform)}" class="email2">
             <input type="text" name="streetAddress" placeholder="*Street Address" ng-model="form.street" ng-required="true" ng-class="{forminvalid: (bed_form.streetAddress.$invalid &amp;&amp; bed_form.streetAddress.$dirty) || (bed_form.streetAddress.$invalid &amp;&amp; invalidform)}" class="street-address">
             <input type="text" name="suiteOffice" placeholder="Suite/Office" ng-model="form.suite" ng-required="false" class="suite-office">
             <input type="text" name="city" placeholder="*City" ng-model="form.city" ng-required="true" ng-class="{forminvalid: (bed_form.city.$invalid &amp;&amp; bed_form.city.$dirty) || (bed_form.city.$invalid &amp;&amp; invalidform)}" class="city">
@@ -85,8 +84,7 @@
             </div>
             <label for="optin" class="optin-label">
               <p>By checking this box and clicking submit, you certify that you are a US health care professional and you are opting to receive information about binge eating disorder plus site updates, educational information, patient support resources, and other information from Shire. You will be able to opt out of these communications at any time.</p>
-              <p>
-                Shire respects your personal information. All information you have provided will be kept confidential and will not be used or distributed to anyone for any purpose other than what is explained in our Privacy Policy Statement. We encourage you to read our Privacy Policy Statement by clicking on this link: Review Shire Privacy Policy Statement. This consent will be in effect until such time as you opt out of the program.
+              <p>Shire respects your personal information. All information you have provided will be kept confidential and will not be used or distributed to anyone for any purpose other than what is explained in our Privacy Policy Statement. We encourage you to read our Privacy Policy Statement by clicking on this link: <a href="/privacy-policy.aspx" class="yellow">Review Shire Privacy Policy Statement</a>. This consent will be in effect until such time as you opt out of the program.
                 
               </p>
             </label>
@@ -136,7 +134,7 @@
               Health Care Professionals
               
             </h2>
-            <p>Clinical inquiries: For further clinical information on Shire products, US health care professionals may call Shire Medical Affairs toll-free at <strong>1-800-828-2088</strong> or send an e-mail to <a href='mailto:medinfoGlobal@shire.com' target='_blank'>medinfoGlobal@shire.com</a>.</p>
+            <p>Clinical inquiries: For further clinical information on Shire products, US health care professionals may call Shire Medical Affairs toll-free at <strong>1-800-828-2088</strong> or send an e‐mail to <a href='mailto:medinfoGlobal@shire.com' target='_blank'>medinfoGlobal@shire.com</a>.</p>
           </div>
         </div>
       </div>
@@ -152,7 +150,7 @@
           </nav><img src="/content/img/footer-logo.png" class="footer-logo">
           <p>&copy;2014 <a href="http://www.shire.com/" target="_blank">Shire US Inc.,</a> Wayne, PA 19087 1‐800‐828‐2088 All rights reserved. S02592 08/14</p>
           <p>All content of this website including text, images, graphics, sound files, and their arrangement, belongs to Shire and is protected by international copyright laws. All other intellectual property rights are reserved. The content may not be copied for commercial use or distribution, nor may these objects be downloaded, modified, or posted to other sites.</p>
-          <p>This site is intended solely for US residents and is governed solely by US laws and government regulations. Please see <a href="privacy-policy.html">our privacy policy</a> for more information. While Shire US Inc. makes reasonable efforts to include accurate, up‐to‐date information on the site, Shire US Inc. makes no warranties or representations as to its accuracy. Shire US Inc. assumes no liability for any errors or omissions in the content of the site.</p>
+          <p>This site is intended solely for US residents and is governed solely by US laws and government regulations. Please see <a href="/privacy-policy.html">our privacy policy</a> for more information. While Shire US Inc. makes reasonable efforts to include accurate, up‐to‐date information on the site, Shire US Inc. makes no warranties or representations as to its accuracy. Shire US Inc. assumes no liability for any errors or omissions in the content of the site.</p>
         </div>
       </div>
       <div class="modal modal--interstitial">
