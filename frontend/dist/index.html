@@ -59,22 +59,9 @@
             <input type="text" name="streetAddress" placeholder="*Street Address" ng-model="form.street" ng-required="true" ng-class="{forminvalid: (bed_form.streetAddress.$invalid &amp;&amp; bed_form.streetAddress.$dirty) || (bed_form.streetAddress.$invalid &amp;&amp; invalidform)}" class="street-address">
             <input type="text" name="suiteOffice" placeholder="Suite/Office" ng-model="form.suite" ng-required="false" class="suite-office">
             <input type="text" name="city" placeholder="*City" ng-model="form.city" ng-required="true" ng-class="{forminvalid: (bed_form.city.$invalid &amp;&amp; bed_form.city.$dirty) || (bed_form.city.$invalid &amp;&amp; invalidform)}" class="city">
-            <select name="state" ng-model="form.state" ng-required="true" ng-class="{forminvalid: (bed_form.state.$invalid &amp;&amp; bed_form.state.$dirty) || (bed_form.state.$pristine &amp;&amp; invalidform)}" ng-options="state for state in states" class="state">
-              <option value="" ng-selected="true">
-                *State
-                
-                
-              </option>
-            </select>
+            <select name="state" ng-model="form.state" ng-required="true" stateselect ng-class="{forminvalid: (bed_form.state.$invalid &amp;&amp; bed_form.state.$dirty) || (bed_form.state.$pristine &amp;&amp; invalidform)}" ng-options="state for state in states" class="state"></select>
             <input type="text" name="zip" placeholder="*Zip" ng-model="form.zip" ng-pattern="/^[0-9]{5}$/" maxlength="5" ng-required="true" ng-class="{forminvalid: (bed_form.zip.$invalid &amp;&amp; bed_form.zip.$dirty) || (bed_form.zip.$invalid &amp;&amp; invalidform)}" class="zip">
-            <select name="profession" ng-model="form.profession" ng-required="true" ng-class="{forminvalid: (bed_form.profession.$invalid &amp;&amp; bed_form.profession.$dirty) || (bed_form.profession.$pristine &amp;&amp; invalidform)}" ng-options="prof for prof in professions" class="profession">
-              <option value="" ng-selected="true">
-                *Profession
-                
-                
-                
-              </option>
-            </select>
+            <select name="profession" ng-model="form.profession" ng-required="true" ng-class="{forminvalid: (bed_form.profession.$invalid &amp;&amp; bed_form.profession.$dirty) || (bed_form.profession.$pristine &amp;&amp; invalidform)}" ng-options="prof for prof in professions" class="profession"></select>
             <h3>
               Opt In for Communications
               

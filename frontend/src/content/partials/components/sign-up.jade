@@ -91,14 +91,9 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
         class='state',
         ng-model="form.state",
         ng-required='true',
+        stateselect,
         ng-class="{forminvalid: (bed_form.state.$invalid && bed_form.state.$dirty) || (bed_form.state.$pristine && invalidform)}",
         ng-options="state for state in states")
-          option(
-            value='',
-            ng-selected='true'
-            ).
-              *State
-
 
       input(
         type='text',
@@ -118,11 +113,6 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
         ng-required='true',
         ng-class="{forminvalid: (bed_form.profession.$invalid && bed_form.profession.$dirty) || (bed_form.profession.$pristine && invalidform)}",
         ng-options='prof for prof in professions')
-            option(
-            value='',
-            ng-selected='true'
-            ).
-              *Profession
 
 
 

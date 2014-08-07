@@ -92,8 +92,7 @@ block content
               placeholder='MI',
               ng-model="form.MI",
               ng-pattern="/^[a-zA-Z]$/",
-              size="1",
-              max-length="1",
+              maxlength=1,
               class='middle-initial')
 
             input(
@@ -138,10 +137,6 @@ block content
               ng-options="state for state in states",
               ng-class="{forminvalid: (bed_form.state.$invalid && bed_form.state.$dirty) || (bed_form.state.$pristine && invalidform)}",
               ng-required="true")
-                option(
-                  value='',
-                  ng-selected='true').
-                    *State
 
             input(
               type='text',

@@ -8,6 +8,7 @@
 (function() {
     var app;
     var statearray = [
+        '*State',
         'Alabama',
         'Alaska',
         'Arizona',
@@ -223,6 +224,7 @@
         $scope.states = statearray;
         $scope.invalidform = false;
         $scope.professions = [
+            '*Profession',
             'Eating Disorder Clinician',
             'Internal Medicine',
             'Primary Care Physician',
@@ -373,15 +375,25 @@
     });
 
     /*custom validator - confirmtaion email */
-    app.directive('confirmemail', function() {
+    app.directive('confirmemail', function($log) {
         return {
             require: 'ngModel',
             link: function(scope, elm, attrs, ctrl) {
+                $log.log(scope);
+                $log.log(elm);
+                $log.log(attrs);
+                $log.log(ctrl);
                 ctrl.$parsers.unshift(function(viewValue) {
-                    if (angular.equals(scope.form.email.toLowerCase(), viewValue.toLowerCase())) {
-                        //set validity
-                        ctrl.$setValidity('confirmemail', true);
-                        return viewValue;
+                    $log.log(viewValue);
+                    if (scope.form.email && viewValue) {
+                        if (angular.equals(scope.form.email.toLowerCase(), viewValue.toLowerCase())) {
+                            //set validity
+                            ctrl.$setValidity('confirmemail', true);
+                            return viewValue;
+                        } else {
+                            ctrl.$setValidity('confirmemail', false);
+                            return undefined;
+                        }
                     } else {
                         ctrl.$setValidity('confirmemail', false);
                         return undefined;
