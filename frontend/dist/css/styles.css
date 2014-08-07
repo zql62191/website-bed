@@ -1650,7 +1650,6 @@ input[type="text"] {
   background-position: top left;
   padding: 22px;
   color: #333e48;
-  font-size: 27px;
   line-height: 31px;
 }
 @media only screen and (max-width: 40em) {
@@ -1680,8 +1679,8 @@ input[type="text"] {
 }
 @media only screen and (max-width: 40em) {
   .section--prevalence .blurb-2 .sub-head {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 27px;
+    line-height: 31px;
   }
 }
 .section--prevalence .male-graphic {

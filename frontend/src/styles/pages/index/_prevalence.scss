@@ -99,7 +99,6 @@
         background-position: top left;
         padding: 22px;
         color: #333e48;
-        font-size: 27px;
         line-height: 31px;
         @include mq("mobile") {
             background-image: url("#{$img-path}/prevalence-text-bg-tall.png");
@@ -125,8 +124,8 @@
             }
 
             @include mq("mobile") {
-                font-size: 24px;
-                line-height: 28px;
+                font-size: 27px;
+                line-height: 31px;
             }
         }
     }
