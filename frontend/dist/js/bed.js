@@ -631,11 +631,11 @@ BED.Skrollr = (function() {
         },
         'course-80': {
             'data-bottom-top': 'opacity: 0; transform: scale(0.5);',
-            'data-center': 'opacity: 1; transform: scale(1);'
+            'data-450-top-top': 'opacity: 1; transform: scale(1);'
         },
         'course-49': {
             'data-bottom-top': 'opacity: 0; transform: scale(0.5);',
-            'data-center': 'opacity: 1; transform: scale(1);'
+            'data-450-top-top': 'opacity: 1; transform: scale(1);'
         },
 
         //Effects
