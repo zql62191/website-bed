@@ -52,10 +52,6 @@ html(
 
   body
 
-    .preloaded-images
-      img(src='img/dsm5-tab-bg-mobile.png')
-      img(src='img/dsm5-tab-bg.png')
-
     .page-wrapper
       include /partials/components/page-header.jade
       include /partials/components/page-nav.jade
@@ -65,6 +61,8 @@ html(
         block content
       include /partials/components/page-footer.jade
       include /partials/components/modal.jade
+
+    include /partials/components/preload.jade
 
     script(
       src='js/libs.js')

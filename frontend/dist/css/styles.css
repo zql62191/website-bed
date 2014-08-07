@@ -637,7 +637,7 @@ a.pdf-link span sup {
   }
 }
 
-.preloaded-images {
+._preload {
   position: absolute;
   overflow: hidden;
   left: -9999px;
@@ -3725,19 +3725,6 @@ input[type="text"] {
     display: block;
     float: left;
     clear: right;
-  }
-}
-
-@media only screen and (max-width: 40em) {
-  body:before {
-    content: url("../img/dsm5-tab-bg-mobile.png");
-    display: none;
-  }
-}
-@media only screen and (min-width: 40.063em) {
-  body:before {
-    content: url("../img/dsm5-tab-bg.png");
-    display: none;
   }
 }
 
