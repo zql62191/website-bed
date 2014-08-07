@@ -650,6 +650,10 @@ a.pdf-link span sup {
   margin: 50px auto;
 }
 
+input[type="text"] {
+  text-indent: 5px;
+}
+
 .section {
   overflow: hidden;
 }
@@ -2648,7 +2652,7 @@ a.pdf-link span sup {
   .section--neurobiology .risk-2 .asterisk {
     font-size: 25px;
     line-height: 30px;
-    padding-left: 50px;
+    margin-left: 50px;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -3254,6 +3258,21 @@ a.pdf-link span sup {
     padding: 10px 20px;
     text-align: center;
     padding-left: 80px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 .section--resources .video-playlist li:before {
@@ -3287,9 +3306,7 @@ a.pdf-link span sup {
 .section--resources .video-playlist li p {
   margin: 0 auto;
   color: #febd3f;
-  display: table-cell;
   width: 100%;
-  vertical-align: middle;
   text-align: left;
   height: inherit;
   padding-bottom: 0;
@@ -3304,6 +3321,8 @@ a.pdf-link span sup {
 }
 @media only screen and (min-width: 40.063em) {
   .section--resources .video-playlist li p {
+    display: table-cell;
+    vertical-align: middle;
     font-size: 18px;
     line-height: 20px;
   }

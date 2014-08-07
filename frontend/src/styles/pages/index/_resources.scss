@@ -101,6 +101,9 @@
                 padding: 10px 20px;
                 text-align: center;
                 padding-left: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
 
             &:before {
@@ -133,9 +136,7 @@
             p {
                 margin: 0 auto;
                 color: #febd3f;
-                display: table-cell;
                 width: 100%;
-                vertical-align: middle;
                 text-align: left;
                 height: inherit;
                 padding-bottom: 0;
@@ -147,6 +148,8 @@
                 }
 
                 @include mq("desktop") {
+                    display: table-cell;
+                    vertical-align: middle;
                     font-size: 18px;
                     line-height: 20px;
                     // padding-top: 0;

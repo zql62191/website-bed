@@ -182,7 +182,7 @@
             @include mq("mobile") {
                 font-size: 25px;
                 line-height: 30px;
-                padding-left: 50px;
+                margin-left: 50px;
             }
 
             @include mq("desktop") {
