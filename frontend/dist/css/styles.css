@@ -168,6 +168,11 @@ html {
   width: 960px;
   height: 100%;
 }
+@media only screen and (min-width: 40.063em) {
+  .content-wrap {
+    padding-right: 25px;
+  }
+}
 @media only screen and (max-width: 40em) {
   .content-wrap {
     width: 600px;
@@ -2975,7 +2980,7 @@ input[type="text"] {
     position: absolute;
     width: 40px;
     top: 107px;
-    right: 0px;
+    right: 25px;
     background-image: url("../img/dsm5-tab-border.png");
     background-repeat: no-repeat;
     background-position: center right;
