@@ -632,11 +632,6 @@ a.pdf-link span sup {
   }
 }
 
-.modal-open {
-  overflow: hidden;
-  height: 100% !important;
-}
-
 .mejs-container * {
   position: static;
 }

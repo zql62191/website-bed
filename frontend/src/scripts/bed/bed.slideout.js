@@ -87,7 +87,7 @@ BED.SlideOut = (function() {
             duration: 300
         });
 
-        $('body').addClass('modal-open');//css('overflow', 'hidden');
+        // $('body').addClass('modal-open');//css('overflow', 'hidden');
 
     };
 
@@ -120,7 +120,7 @@ BED.SlideOut = (function() {
             duration: 300
         });
 
-        $('body').removeClass('modal-open');
+        // $('body').removeClass('modal-open');
 
     };
 

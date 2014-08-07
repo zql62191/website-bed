@@ -5,15 +5,15 @@ if (typeof BED === 'undefined') {
 BED.VideoPlayer = (function() {
 
     var locations = {
-        'grilo2': '//view.vzaar.com/1788413/video',
-        'bulik3': '//view.vzaar.com/1788415/video',
-        'bulik4': '//view.vzaar.com/1788416/video',
-        'grilo5': '//view.vzaar.com/1788417/video',
-        'kornstein6': '//view.vzaar.com/1788418/video',
-        'grilo7': '//view.vzaar.com/1788419/video',
-        'kornstein8': '//view.vzaar.com/1788420/video',
-        'bulik12': '//view.vzaar.com/1788421/video',
-        'kornstein14': '//view.vzaar.com/1788422/video'
+        'grilo2': '//view.vzaar.com/1788413/video', // S02969 Grilo2
+        'bulik3': '//view.vzaar.com/1788415/video', // S02970 Bulik3
+        'bulik4': '//view.vzaar.com/1788416/video', // S02971 Bulik4
+        'grilo5': '//view.vzaar.com/1788417/video', // S02972 Grilo5
+        'kornstein6': '//view.vzaar.com/1788418/video', // S02973 Kornstein6
+        'grilo7': '//view.vzaar.com/1788419/video', // S03011 Grilo7
+        'kornstein8': '//view.vzaar.com/1788420/video', // S03012 Kornstein8
+        'bulik12': '//view.vzaar.com/1788421/video', // S03016 Bulik12
+        'kornstein14': '//view.vzaar.com/1788422/video' // S03018 Kornstein14
     };
 
     var videoNameList = [];

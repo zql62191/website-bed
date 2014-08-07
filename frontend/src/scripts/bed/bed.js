@@ -4,6 +4,11 @@ var BED = (function() {
 
     var snag = function() {
 
+        $('.slideout').css({
+            position: 'absolute',
+            bottom: 0
+        });
+
         var jqSections = $('.section');
         var jqNexts = $('.bar--next');
 
@@ -38,7 +43,7 @@ var BED = (function() {
 
         });
 
-        $(document).on('click', function() {
+        $(document.body).on('click.snag', function() {
 
             jqNexts.each(function(i, el) {
 
