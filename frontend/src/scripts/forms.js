@@ -77,9 +77,9 @@
         $scope.form.state = $scope.states[0];
 
         $scope.unsubscribe = function() {
-            // var oldHeight = $(document).height() - $(window).height();
-            // var oldTop = $(window).scrollTop();
-            // var oldBottom = oldHeight - oldTop;
+            var oldHeight = $(document).height() - $(window).height();
+            var oldTop = $(window).scrollTop();
+            var oldBottom = oldHeight - oldTop;
 
             // $log.log('mid', $scope.MID);
 
@@ -90,14 +90,14 @@
                 return;
             }
 
-            // $timeout(function() {
-            //     var newHeight = $(document).height() - $(window).height();
-            //     var newTop = $(window).scrollTop();
-            //     var newBottom = newHeight - newTop;
-            //     var bottomDifference = newBottom - oldBottom;
+            $timeout(function() {
+                var newHeight = $(document).height() - $(window).height();
+                var newTop = $(window).scrollTop();
+                var newBottom = newHeight - newTop;
+                var bottomDifference = newBottom - oldBottom;
 
-            //     $(window).scrollTop(oldTop + bottomDifference);
-            // }, 100);
+                $(window).scrollTop(oldTop + bottomDifference);
+            }, 100);
 
             switch ($('input:checked').val()) {
                 case 'email':
@@ -276,7 +276,6 @@
 
             var URL;
             var data = {
-                'sourceCode': $scope.MID,
                 'Specialty': convertSpecToCode($scope.form.profession),
                 'CommunicationsOptIn': 1,
                 'Email': {
@@ -292,7 +291,8 @@
                     'City': $scope.form.city,
                     'State': convertStateToAbbr($scope.form.state),
                     'Zip': $scope.form.zip
-                }
+                },
+                'sourceCode': $scope.MID
             };
 
             if (angular.equals($scope.form.state, '*State')) {
