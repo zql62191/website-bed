@@ -148,6 +148,7 @@
         $scope.unsubscribeDirect = function() {
             var URL;
             var data = {
+                'sourceCode': $scope.MID,
                 'email': {
                     'Email': $scope.form.email,
                     'ConfirmEmail': $scope.form.email
@@ -173,8 +174,11 @@
         $scope.unsubscribeEmail = function() {
             var URL;
             var data = {
-                'Email': $scope.form.email,
-                'ConfirmEmail': $scope.form.email
+                'sourceCode': $scope.MID,
+                'email': {
+                    'Email': $scope.form.email,
+                    'ConfirmEmail': $scope.form.email
+                }
             };
 
             URL = '/Unsubscribe/Service/BEDUnsubscribe.svc/SetUnsubscribeDataEmail';
@@ -230,6 +234,7 @@
 
     function OptInController($scope, $window, $location, $log, $document, $timeout, $http) {
         $scope.states = statearray;
+        $scope.MID = $window.parseUri($window.location.href).queryKey['mid'] || 0;
         $scope.invalidform = false;
         $scope.professions = [
             '*Profession',
@@ -252,8 +257,10 @@
             var oldHeight = $(document).height() - $(window).height();
             var oldTop = $(window).scrollTop();
             var oldBottom = oldHeight - oldTop;
+
             var URL;
             var data = {
+                'sourceCode': $scope.MID,
                 'Specialty': convertSpecToCode($scope.form.profession),
                 'CommunicationsOptIn': 1,
                 'Email': {
