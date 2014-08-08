@@ -37,12 +37,31 @@
             font-size: 32px;
         }
     }
+    p {
+        padding-bottom: 15px;
+    }
+    ul.bullet {
+        padding-bottom: 0;
+    }
     ul.bullet > li:before {
         color: #333e48;
     }
     a.pdf-link {
         @include mq("mobile") {
             margin-left: 0;
+        }
+    }
+    .footnote {
+        color: #333e48;
+        margin-bottom: 15px;
+        
+        @include mq('desktop') {
+            font-size: 15px;
+            line-height: 17px;    
+        }
+        @include mq('mobile') {
+            font-size: 32px;
+            line-height: 40px;
         }
     }
     .signup {

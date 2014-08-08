@@ -32,7 +32,7 @@
 
         .lt-ie10 & {
             width: 23px;
-            height: 23px;
+            height: 25px;
         }
         .optin {
             border: 0 !important;
@@ -60,9 +60,9 @@
     }
     a {
         //text-decoration: underline;
-        color: #7D8490;
+        color: #51748b;
         &:hover {
-            color: #333e48;
+            //color: #333e48;
         }
     }
     .red {

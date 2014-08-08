@@ -137,12 +137,13 @@
 
         @include mq("desktop") {
             margin-bottom: 0;
+            //margin-top: 34px;
             min-height: 100px;
-            padding-top: 10px;
+            //padding-top: 10px;
             background-image: url("#{$img-path}/neurobiology-4.png");
+            background-position: top left;
             ul.dash {
                 //margin-bottom: 25px;
-           
             }
         }
 
@@ -168,9 +169,10 @@
         }
 
         @include mq("desktop") {
+            background-position: top left;
             background-image: url("#{$img-path}/neurobiology-5.png");
-            padding-top: 0;
-            //margin-top: 34px;
+            padding-top: 34px;
+            
             ul.bullet {
                 //margin-top: -34px;
            
@@ -186,7 +188,7 @@
             font-size: 25px;
             line-height: 30px;
             margin-top: 20px;
-            margin-left: 20px;
+            margin-left: 10px;
         }
 
         @include mq("desktop") {

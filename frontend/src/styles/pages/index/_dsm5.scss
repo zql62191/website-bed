@@ -47,7 +47,8 @@
         }
     }
     // Main List
-    ol.letter {
+    ol.number {
+
         @include mq("desktop") {
             padding-left: 25px;
         }
@@ -57,6 +58,7 @@
         }
 
         > li:before {
+            content: counter(numbered, decimal);
             text-transform: uppercase;
             color: #51748b;
             font-family: font("helvetica neue", "bold");
@@ -85,11 +87,12 @@
         }
     }
     // Sub lists
-    ol.number {
+    ul.bullet {
         > li:before {
+            color: #333e48;
             font-family: font("helvetica neue", "bold");
             @include mq("desktop") {
-                margin-left: -30px;
+                margin-left: -15px;
             }
         }
         @include mq("mobile") {
@@ -100,7 +103,7 @@
             font-size: 21px;
             line-height: 23px;
             padding-bottom: 10px;
-            padding-left: 30px;
+            padding-left: 15px;
         }
     }
     p {
@@ -148,10 +151,10 @@
                     padding-left: 60px;
                     background-position: top right;
 
-                    p {
+                    p, li {
                         padding-left: 25px;
-                        font-size: 19px;
-                        line-height: 22px;
+                        font-size: 16px;
+                        line-height: 18px;
                     }
                 }
             }

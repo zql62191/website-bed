@@ -13,7 +13,7 @@ nav:
       file: "prevalence"
     -
       url: "/#/dsm5"
-      title: "<em>DSM-5</em> Criteria"
+      title: "<em>DSM-5<sup>&reg;</sup></em> Criteria"
       file: "dsm5"
     -
       url: "/#/clinical-characteristics"
@@ -21,7 +21,7 @@ nav:
       file: "course"
     -
       url: "/#/functional-consequences"
-      title: "<em>DSM-5</em> Functional <br/>Consequences"
+      title: "<em>DSM-5<sup>&reg;</sup></em> Functional <br/>Consequences"
       file: "effects"
     -
       url: "/#/neurobiology"
