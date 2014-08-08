@@ -70,15 +70,15 @@ html {
     @return map-deep-get($font-names, $fonts...), #{$font-fallback};
 }
 
-$preload-mobile: null;
-$preload-desktop: null;
+// $preload-mobile: null;
+// $preload-desktop: null;
 
-@function preload-mobile($image-url) {
-    $preload-mobile: $preload-mobile url($image-url);
-    @return $preload-mobile;
-}
+// @function preload-mobile($image-url) {
+//     $preload-mobile: $preload-mobile url($image-url);
+//     @return $preload-mobile;
+// }
 
-@function preload-desktop($image-url) {
-    $preload-desktop: $preload-desktop url($image-url);
-    @return $preload-desktop;
-}
+// @function preload-desktop($image-url) {
+//     $preload-desktop: $preload-desktop url($image-url);
+//     @return $preload-desktop;
+// }

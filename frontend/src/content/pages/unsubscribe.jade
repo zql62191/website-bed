@@ -135,7 +135,6 @@ block content
               class='state',
               ng-model="form.state",
               ng-options="state for state in states",
-              stateselect,
               ng-class="{forminvalid: (bed_form.state.$invalid && bed_form.state.$dirty) || (bed_form.state.$pristine && invalidform)}",
               ng-required="true")
 

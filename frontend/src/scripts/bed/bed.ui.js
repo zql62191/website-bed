@@ -91,9 +91,7 @@ BED.UI = (function() {
                 }
 
             });
-
         }
-
     };
 
     // Window scroll handler
@@ -117,19 +115,11 @@ BED.UI = (function() {
 
             var jqIsOpen = $('._is_open');
 
-            // var origDisplayAttribute = jqIsOpen.css('display');
             jqIsOpen.css('display', 'none');
 
             var underneathElem = document.elementFromPoint(x, y);
 
-            // console.log('underneathElem: ', underneathElem);
-            // console.log('$.elementFromPoint: ', $.elementFromPoint(x, y));
-
-            // if (origDisplayAttribute) {
-            // jqIsOpen.css('display', origDisplayAttribute);
-            // } else {
             jqIsOpen.css('display', 'block');
-            // }
 
             var jqCurrent = $(underneathElem).closest('.section');
 
