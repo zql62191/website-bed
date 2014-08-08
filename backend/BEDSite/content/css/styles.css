@@ -950,6 +950,10 @@ input[type="text"] {
   color: black;
 }
 
+.modal--signup .modal__inner {
+  padding: 20px 55px;
+}
+
 .slideout {
   position: fixed;
   top: 0;
@@ -971,6 +975,9 @@ input[type="text"] {
   .slideout .slideout__inner {
     top: 93px;
   }
+}
+.eq-ie9 .slideout .slideout__inner form {
+  width: 670px;
 }
 .slideout[data-direction="left"] .slideout__inner {
   left: 0;
@@ -1016,7 +1023,7 @@ input[type="text"] {
 }
 .lt-ie10 .slideout--signup .check-wrap {
   width: 23px;
-  height: 23px;
+  height: 25px;
 }
 .slideout--signup .check-wrap .optin {
   border: 0 !important;
@@ -1044,10 +1051,7 @@ input[type="text"] {
   font-weight: bold;
 }
 .slideout--signup a {
-  color: #7D8490;
-}
-.slideout--signup a:hover {
-  color: #333e48;
+  color: #51748b;
 }
 .slideout--signup .red {
   color: #ff0000;
@@ -1198,12 +1202,34 @@ input[type="text"] {
     font-size: 32px;
   }
 }
+.slideout--dsm5 p {
+  padding-bottom: 15px;
+}
+.slideout--dsm5 ul.bullet {
+  padding-bottom: 0;
+}
 .slideout--dsm5 ul.bullet > li:before {
   color: #333e48;
 }
 @media only screen and (max-width: 40em) {
   .slideout--dsm5 a.pdf-link {
     margin-left: 0;
+  }
+}
+.slideout--dsm5 .footnote {
+  color: #333e48;
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 40.063em) {
+  .slideout--dsm5 .footnote {
+    font-size: 15px;
+    line-height: 17px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .slideout--dsm5 .footnote {
+    font-size: 32px;
+    line-height: 40px;
   }
 }
 .slideout--dsm5 .signup {
@@ -1428,6 +1454,12 @@ input[type="text"] {
   font-size: 14px;
   line-height: 12px;
   z-index: 10;
+}
+@media only screen and (max-width: 40em) {
+  .page-footer a {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 .page-footer .footer-logo {
   width: 93px;
@@ -2286,6 +2318,11 @@ input[type="text"] {
     width: 93%;
   }
 }
+@media only screen and (max-width: 40em) {
+  .section--course .chart-footnote {
+    margin-left: 10px;
+  }
+}
 .section--course .percent {
   font-size: 0.5em;
   top: -0.65em;
@@ -2662,8 +2699,8 @@ input[type="text"] {
   .section--neurobiology .risk {
     margin-bottom: 0;
     min-height: 100px;
-    padding-top: 10px;
     background-image: url("../img/neurobiology-4.png");
+    background-position: top left;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -2689,8 +2726,10 @@ input[type="text"] {
 }
 @media only screen and (min-width: 40.063em) {
   .section--neurobiology .risk-2 {
+    background-position: top left;
     background-image: url("../img/neurobiology-5.png");
-    padding-top: 0;
+    padding-top: 34px;
+    margin-bottom: 0;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -2698,13 +2737,14 @@ input[type="text"] {
     font-size: 25px;
     line-height: 30px;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 }
 @media only screen and (min-width: 40.063em) {
   .section--neurobiology .asterisk {
     font-size: 18px;
     line-height: 22px;
+    margin-left: 200px;
   }
 }
 
@@ -2743,6 +2783,11 @@ input[type="text"] {
   }
 }
 @media only screen and (max-width: 40em) {
+  .section--diagnosis h3:nth-of-type(1) {
+    padding-top: 15px;
+  }
+}
+@media only screen and (max-width: 40em) {
   .section--diagnosis p:nth-of-type(2), .section--diagnosis p:nth-of-type(3) {
     width: auto;
   }
@@ -2759,8 +2804,10 @@ input[type="text"] {
     line-height: 20px;
   }
 }
-.section--diagnosis .chart-head {
-  padding-bottom: 36px;
+@media only screen and (max-width: 40em) {
+  .section--diagnosis .chart-head {
+    padding-bottom: 36px;
+  }
 }
 @media only screen and (min-width: 40.063em) {
   .section--diagnosis .graphic-wrap {
@@ -2930,28 +2977,29 @@ input[type="text"] {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  .section--dsm5 ol.letter {
+  .section--dsm5 ol.number {
     padding-left: 25px;
   }
 }
 @media only screen and (max-width: 40em) {
-  .section--dsm5 ol.letter {
+  .section--dsm5 ol.number {
     padding-left: 50px;
   }
 }
-.section--dsm5 ol.letter > li:before {
+.section--dsm5 ol.number > li:before {
+  content: counter(numbered,decimal);
   text-transform: uppercase;
   color: #51748b;
   font-family: "HelveticaNeueW01-75Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 @media only screen and (min-width: 40.063em) {
-  .section--dsm5 ol.letter > li:before {
+  .section--dsm5 ol.number > li:before {
     font-size: 23px;
     margin-left: -25px;
   }
 }
 @media only screen and (max-width: 40em) {
-  .section--dsm5 ol.letter > li:before {
+  .section--dsm5 ol.number > li:before {
     font-size: 60px;
     line-height: 60px;
     margin-left: -55px;
@@ -2959,35 +3007,36 @@ input[type="text"] {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  .section--dsm5 ol.letter > li {
+  .section--dsm5 ol.number > li {
     padding-top: 5px;
     font-size: 20px;
   }
 }
 @media only screen and (max-width: 40em) {
-  .section--dsm5 ol.letter > li {
+  .section--dsm5 ol.number > li {
     padding-top: 20px;
   }
 }
-.section--dsm5 ol.number > li:before {
+.section--dsm5 ul.bullet > li:before {
+  color: #333e48;
   font-family: "HelveticaNeueW01-75Bold", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 @media only screen and (min-width: 40.063em) {
-  .section--dsm5 ol.number > li:before {
-    margin-left: -30px;
+  .section--dsm5 ul.bullet > li:before {
+    margin-left: -15px;
   }
 }
 @media only screen and (max-width: 40em) {
-  .section--dsm5 ol.number {
+  .section--dsm5 ul.bullet {
     padding-left: 34px;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  .section--dsm5 ol.number {
+  .section--dsm5 ul.bullet {
     font-size: 21px;
     line-height: 23px;
     padding-bottom: 10px;
-    padding-left: 30px;
+    padding-left: 15px;
   }
 }
 .section--dsm5 p.sub-head {
@@ -3035,10 +3084,10 @@ input[type="text"] {
     padding-left: 60px;
     background-position: top right;
   }
-  .section--dsm5 .tab-container.open .tab-inner p {
+  .section--dsm5 .tab-container.open .tab-inner p, .section--dsm5 .tab-container.open .tab-inner li {
     padding-left: 25px;
-    font-size: 19px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 18px;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -3247,7 +3296,7 @@ input[type="text"] {
 }
 @media only screen and (min-width: 40.063em) {
   .section--resources .graphic-wrap {
-    background: url("../img/bed-patient.png") no-repeat bottom left;
+    background: url("../img/bed-patient-2.png") no-repeat bottom left;
     padding-left: 400px;
     min-height: 386px;
     margin-left: -32px;

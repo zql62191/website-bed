@@ -22,6 +22,9 @@
         @include mq("mobile") {
             top: 93px;
         }
+        .eq-ie9 & form {
+            width: 670px;
+        }
     }
     &[data-direction="left"] .slideout__inner {
         left: 0;

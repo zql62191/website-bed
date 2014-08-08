@@ -976,6 +976,9 @@ input[type="text"] {
     top: 93px;
   }
 }
+.eq-ie9 .slideout .slideout__inner form {
+  width: 670px;
+}
 .slideout[data-direction="left"] .slideout__inner {
   left: 0;
 }
