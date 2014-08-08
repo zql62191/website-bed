@@ -77,31 +77,27 @@
         $scope.form.state = $scope.states[0];
 
         $scope.unsubscribe = function() {
-            var oldHeight = $(document).height() - $(window).height();
-            var oldTop = $(window).scrollTop();
-            var oldBottom = oldHeight - oldTop;
+            // var oldHeight = $(document).height() - $(window).height();
+            // var oldTop = $(window).scrollTop();
+            // var oldBottom = oldHeight - oldTop;
 
-            $log.log($scope.MID);
-
-            if (angular.equals($scope.form.state, '*State')) {
-                $scope.invalidform = true;
-                return;
-            }
+            // $log.log('mid', $scope.MID);
 
             if (!$scope.bed_form.$valid) {
+                // $log.log(2);
                 /*print error*/
                 $scope.invalidform = true;
                 return;
             }
 
-            $timeout(function() {
-                var newHeight = $(document).height() - $(window).height();
-                var newTop = $(window).scrollTop();
-                var newBottom = newHeight - newTop;
-                var bottomDifference = newBottom - oldBottom;
+            // $timeout(function() {
+            //     var newHeight = $(document).height() - $(window).height();
+            //     var newTop = $(window).scrollTop();
+            //     var newBottom = newHeight - newTop;
+            //     var bottomDifference = newBottom - oldBottom;
 
-                $(window).scrollTop(oldTop + bottomDifference);
-            }, 100);
+            //     $(window).scrollTop(oldTop + bottomDifference);
+            // }, 100);
 
             switch ($('input:checked').val()) {
                 case 'email':
@@ -114,12 +110,20 @@
                     $scope.unsubscribeAll();
                     break;
                 default:
-                    console.log('No option selected.');
+                    $log.log('No option selected.');
                     break;
             }
         };
 
         $scope.unsubscribeAll = function() {
+
+            // $log.log('unsubscribeAll');
+
+            if (angular.equals($scope.form.state, '*State')) {
+                $scope.invalidform = true;
+                return;
+            }
+
             var URL;
             var data = {
                 'email': {
@@ -146,6 +150,14 @@
         };
 
         $scope.unsubscribeDirect = function() {
+
+            // $log.log('unsubscribeDirect');
+
+            if (angular.equals($scope.form.state, '*State')) {
+                $scope.invalidform = true;
+                return;
+            }
+
             var URL;
             var data = {
                 'email': {
@@ -172,6 +184,9 @@
         };
 
         $scope.unsubscribeEmail = function() {
+
+            // $log.log('unsubscribeEmail');
+
             var URL;
             var data = {
                 'email': {
