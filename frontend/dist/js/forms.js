@@ -122,7 +122,6 @@
         $scope.unsubscribeAll = function() {
             var URL;
             var data = {
-                'sourceCode': $scope.MID,
                 'email': {
                     'Email': $scope.form.email,
                     'ConfirmEmail': $scope.form.email
@@ -136,7 +135,8 @@
                     'City': $scope.form.city,
                     'State': convertStateToAbbr($scope.form.state),
                     'Zip': $scope.form.zip
-                }
+                },
+                'sourceCode': $scope.MID
             };
 
             URL = '/Unsubscribe/Service/BEDUnsubscribe.svc/SetUnsubscribeDataBoth';
@@ -148,7 +148,6 @@
         $scope.unsubscribeDirect = function() {
             var URL;
             var data = {
-                'sourceCode': $scope.MID,
                 'email': {
                     'Email': $scope.form.email,
                     'ConfirmEmail': $scope.form.email
@@ -162,7 +161,8 @@
                     'City': $scope.form.city,
                     'State': convertStateToAbbr($scope.form.state),
                     'Zip': $scope.form.zip
-                }
+                },
+                'sourceCode': $scope.MID
             };
 
             URL = '/Unsubscribe/Service/BEDUnsubscribe.svc/SetUnsubscribeDataAddress';
@@ -174,11 +174,11 @@
         $scope.unsubscribeEmail = function() {
             var URL;
             var data = {
-                'sourceCode': $scope.MID,
                 'email': {
                     'Email': $scope.form.email,
                     'ConfirmEmail': $scope.form.email
-                }
+                },
+                'sourceCode': $scope.MID
             };
 
             URL = '/Unsubscribe/Service/BEDUnsubscribe.svc/SetUnsubscribeDataEmail';

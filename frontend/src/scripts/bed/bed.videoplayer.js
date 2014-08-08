@@ -77,6 +77,15 @@ BED.VideoPlayer = (function() {
 
         }).mediaelementplayer({
 
+            // force iPad's native controls
+            // iPadUseNativeControls: true,
+
+            // // force iPhone's native controls
+            // iPhoneUseNativeControls: true,
+
+            // // force Android's native controls
+            // AndroidUseNativeControls: true,
+
             success: onSuccess,
 
             error: onError
@@ -123,6 +132,10 @@ BED.VideoPlayer = (function() {
         .on('ended', onEnded);
 
         $('.mejs-container.svg').removeClass('svg').addClass('no-svg');
+
+        if (bowser.mobile || bowser.tablet) {
+            $('.mejs-overlay-play').hide();
+        }
 
     };
 
