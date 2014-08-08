@@ -3,7 +3,7 @@ module.exports = {
         options: {
             replacements: [
                 // {
-                //     pattern: /<a.*?href="\/([^"]*)".*>/ig,
+                //     pattern: /<a.*?href="([^"]*)".*>/ig,
                 //     replacement: function(match, p1, offset, string) {
                 //         if (/(?!.*\..*\/).*(\.html)/gi.test(p1)) {
                 //             match = match.replace(/(\.html)/, '.aspx');
@@ -12,17 +12,20 @@ module.exports = {
                 //     }
                 // },
                 {
-                    pattern: /\/index.html/ig,
+                    pattern: '/index.html',
                     replacement: '/'
                 }, {
-                    pattern: /\/privacy-policy.html/ig,
+                    pattern: '/privacy-policy.html',
                     replacement: '/privacy-policy.aspx'
                 }, {
-                    pattern: /\/contact-us.html/ig,
+                    pattern: '/contact-us.html',
                     replacement: '/contact-us.aspx'
                 }, {
-                    pattern: /\/unsubscribe.html/ig,
+                    pattern: '/unsubscribe.html',
                     replacement: '/Unsubscribe/'
+                }, {
+                    pattern: 'img/dsm5-tab-bg.png',
+                    replacement: '/content/img/dsm5-tab-bg.png'
                 }
             ]
         },

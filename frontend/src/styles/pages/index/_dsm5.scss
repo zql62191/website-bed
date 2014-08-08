@@ -143,7 +143,7 @@
                 width: 400px;
                 .tab-inner {
                     background-image: url("#{$img-path}/dsm5-tab-bg.png");
-                    // @include preload-desktop("#{$img-path}/dsm5-tab-bg.png");
+                    @include preload-desktop("#{$img-path}/dsm5-tab-bg.png");
                     padding-left: 60px;
                     background-position: top right;
 
@@ -169,7 +169,7 @@
                 height: 872px;
                 .tab-inner {
                     background-image: url("#{$img-path}/dsm5-tab-bg-mobile.png");
-                    // @include preload-mobile("#{$img-path}/dsm5-tab-bg-mobile.png");
+                    @include preload-mobile("#{$img-path}/dsm5-tab-bg-mobile.png");
                     padding-left: 60px;
                 }
             }
