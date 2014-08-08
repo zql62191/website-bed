@@ -28,7 +28,7 @@ namespace BEDService
         //string firstname = System.web.HttpContext.Current
         //System.Web.HttpContext.Current.Request.QueryString["fname"];
 
-        public List<string> SetOptInData(OptIn optIn)
+        public List<string> SetOptInData(OptIn optIn, string sourceCode)
         {
             log4net.Config.XmlConfigurator.Configure();
           // string fname = obj.fname + obj.MI + obj.lname + obj.email;
@@ -56,6 +56,16 @@ namespace BEDService
                     }
                     hcp.Specialties.Add((Specialties)Enum.Parse(typeof(Specialties), optIn.Specialty));
 
+                    string sourceMCC = string.Empty;
+                    if (!string.IsNullOrWhiteSpace(sourceCode))
+                    {
+                        sourceMCC = sourceCode;
+                    }
+                    else
+                    {
+                        sourceMCC = Convert.ToString(ConfigurationManager.AppSettings["RTWebSiteID"]);
+                    }
+
                     regMgr = new RegistrationManager();
                     regMgr.Individual = hcp;
 
@@ -67,7 +77,7 @@ namespace BEDService
                     Configuration config = WebConfigurationManager.OpenWebConfiguration(System.Web.HttpContext.Current.Request.ApplicationPath+"/Unsubscribe/");
                     KeyValueConfigurationElement Appsetting = config.AppSettings.Settings["RTWebSiteID"];
 
-                    questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDSourceMCC"]),Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), ConfigurationManager.AppSettings["RTWebSiteID"]);
+                    questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDSourceMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), sourceMCC);
                     questionResponses.Add(questionResponse);
 
                     questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDHCPOptIn"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsYes"]));

@@ -28,9 +28,9 @@ namespace BEDService
         //string firstname = System.web.HttpContext.Current
         //System.Web.HttpContext.Current.Request.QueryString["fname"];
 
-    
 
-        public List<string> SetUnsubscribeDataEmail(FormEmail email)
+
+        public List<string> SetUnsubscribeDataEmail(FormEmail email, string sourceCode)
         {
             AuditTrail auditTrail = new AuditTrail();
             List<string> errors = null;
@@ -62,6 +62,15 @@ namespace BEDService
                   
                     regMgr.Individual = hcp;
 
+                    string sourceMCC = string.Empty;
+                    if (!string.IsNullOrWhiteSpace(sourceCode))
+                    {
+                        sourceMCC = sourceCode;
+                    }
+                    else
+                    {
+                        sourceMCC = Convert.ToString(ConfigurationManager.AppSettings["RTWebSiteID"]);
+                    }
                     List<QuestionResponse> questionResponses = new List<QuestionResponse>();
                     QuestionResponse questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDExitMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), ConfigurationManager.AppSettings["MCCUnsubscribe"]);
                     questionResponses.Add(questionResponse);
@@ -69,7 +78,7 @@ namespace BEDService
                     questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDOptOutBEDEmail"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsYes"]));
                     questionResponses.Add(questionResponse);
 
-                    questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDSourceMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), ConfigurationManager.AppSettings["RTWebSiteID"]);
+                    questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDSourceMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), sourceMCC);
                     questionResponses.Add(questionResponse);
 
                     questionResponseSet = new QuestionResponseSet();
@@ -105,7 +114,7 @@ namespace BEDService
             return errors;
         }
 
-        public List<string> SetUnsubscribeDataAddress(FormEmail email,FormAddress address)
+        public List<string> SetUnsubscribeDataAddress(FormEmail email, FormAddress address, string sourceCode)
         {
             AuditTrail auditTrail = new AuditTrail();
             List<string> errors = null;
@@ -140,6 +149,16 @@ namespace BEDService
                     RegistrationManager regMgr = new RegistrationManager();
                     regMgr.Individual = hcp;
 
+                    string sourceMCC = string.Empty;
+                    if (!string.IsNullOrWhiteSpace(sourceCode))
+                    {
+                        sourceMCC = sourceCode;
+                    }
+                    else
+                    {
+                        sourceMCC = Convert.ToString( ConfigurationManager.AppSettings["RTWebSiteID"]);
+                    }
+
                     List<QuestionResponse> questionResponses = new List<QuestionResponse>();
                     QuestionResponse questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDExitMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), ConfigurationManager.AppSettings["MCCUnsubscribe"]);
                     questionResponses.Add(questionResponse);
@@ -147,7 +166,7 @@ namespace BEDService
                     questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDOptOutBEDDirectMail"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsYes"]));
                     questionResponses.Add(questionResponse);
 
-                    questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDSourceMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), ConfigurationManager.AppSettings["RTWebSiteID"]);
+                    questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDSourceMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), sourceMCC);
                     questionResponses.Add(questionResponse);
 
                     questionResponseSet = new QuestionResponseSet();
@@ -179,8 +198,8 @@ namespace BEDService
             return errors;
         }
 
-        public List<string> SetUnsubscribeDataBoth(FormEmail email, FormAddress address)
-        {
+        public List<string> SetUnsubscribeDataBoth(FormEmail email, FormAddress address, string sourceCode)
+         {
             AuditTrail auditTrail = new AuditTrail();
             List<string> errors = null;
             HCPIndividual hcp;
@@ -216,6 +235,15 @@ namespace BEDService
 
                     regMgr.Individual = hcp;
 
+                    string sourceMCC = string.Empty;
+                    if (!string.IsNullOrWhiteSpace(sourceCode))
+                    {
+                        sourceMCC = sourceCode;
+                    }
+                    else
+                    {
+                        sourceMCC = Convert.ToString(ConfigurationManager.AppSettings["RTWebSiteID"]);
+                    }
                     List<QuestionResponse> questionResponses = new List<QuestionResponse>();
                     QuestionResponse questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDExitMCC"]),Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), ConfigurationManager.AppSettings["MCCUnsubscribe"]);
                     questionResponses.Add(questionResponse);
@@ -223,7 +251,7 @@ namespace BEDService
                     questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDOptOutAll"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsYes"]));
                     questionResponses.Add(questionResponse);
 
-                    questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDSourceMCC"]),Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), ConfigurationManager.AppSettings["RTWebSiteID"]);
+                    questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDSourceMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), sourceMCC);
                     questionResponses.Add(questionResponse);
 
                     questionResponseSet = new QuestionResponseSet();

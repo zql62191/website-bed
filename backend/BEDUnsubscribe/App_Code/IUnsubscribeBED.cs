@@ -14,15 +14,15 @@ namespace BEDService
     public interface IUnsubscribeBED
     {
         [OperationContract]
-        [WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Bare, UriTemplate = "SetUnsubscribeDataEmail")]
-        List<string> SetUnsubscribeDataEmail(FormEmail email);
+        [WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "SetUnsubscribeDataEmail")]
+        List<string> SetUnsubscribeDataEmail(FormEmail email, string sourceCode);
 
         [OperationContract]
         [WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "SetUnsubscribeDataAddress")]
-        List<string> SetUnsubscribeDataAddress(FormEmail email,FormAddress address);
+        List<string> SetUnsubscribeDataAddress(FormEmail email, FormAddress address, string sourceCode);
 
         [OperationContract]
         [WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "SetUnsubscribeDataBoth")]
-        List<string> SetUnsubscribeDataBoth(FormEmail email, FormAddress address);
+        List<string> SetUnsubscribeDataBoth(FormEmail email, FormAddress address, string sourceCode);
     }
 }
