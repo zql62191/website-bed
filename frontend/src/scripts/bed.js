@@ -156,6 +156,27 @@ BED.UI = (function() {
 
         });
 
+        if (bowser.ios) {
+            // Weird hack to fix scrolling in fixed position elements
+
+            $('input').css('pointer-events', 'none');
+
+            $('.slideout').on('click.iosfix', function(e) {
+
+                $('input').css('pointer-events', 'all');
+
+                var el = $(document.elementFromPoint(e.clientX, e.clientY));
+
+                $('input').css('pointer-events', 'none');
+
+                if (el.is('input')) {
+                    el.focus();
+                }
+
+            });
+
+        }
+
     };
 
     // Window scroll handler

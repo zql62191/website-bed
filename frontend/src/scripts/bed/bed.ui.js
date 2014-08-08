@@ -63,6 +63,27 @@ BED.UI = (function() {
 
         });
 
+        if (bowser.ios) {
+            // Weird hack to fix scrolling in fixed position elements
+
+            $('input').css('pointer-events', 'none');
+
+            $('.slideout').on('click.iosfix', function(e) {
+
+                $('input').css('pointer-events', 'all');
+
+                var el = $(document.elementFromPoint(e.clientX, e.clientY));
+
+                $('input').css('pointer-events', 'none');
+
+                if (el.is('input')) {
+                    el.focus();
+                }
+
+            });
+
+        }
+
     };
 
     // Window scroll handler
@@ -86,19 +107,11 @@ BED.UI = (function() {
 
             var jqIsOpen = $('._is_open');
 
-            // var origDisplayAttribute = jqIsOpen.css('display');
             jqIsOpen.css('display', 'none');
 
             var underneathElem = document.elementFromPoint(x, y);
 
-            // console.log('underneathElem: ', underneathElem);
-            // console.log('$.elementFromPoint: ', $.elementFromPoint(x, y));
-
-            // if (origDisplayAttribute) {
-            // jqIsOpen.css('display', origDisplayAttribute);
-            // } else {
             jqIsOpen.css('display', 'block');
-            // }
 
             var jqCurrent = $(underneathElem).closest('.section');
 
