@@ -36,6 +36,8 @@ BED.UI = (function() {
             unescape: ",/"
         });
 
+        $('input, textarea').placeholder();
+
         // Setup events on window
         $(window)
 
@@ -62,6 +64,35 @@ BED.UI = (function() {
             $('.closed-text').toggleClass('hidden');
 
         });
+
+        if (bowser.ios) {
+            // Weird hack to fix scrolling in fixed position elements
+
+            $('input').css('pointer-events', 'none');
+
+            $('.slideout').on('click.iosfix', function(e) {
+
+                $('input').css('pointer-events', 'all');
+
+                var el = $(document.elementFromPoint(e.clientX, e.clientY));
+
+                $('input').css('pointer-events', 'none');
+
+                if (el.is('input')) {
+                    el.focus();
+                }
+
+            });
+
+            $(document).on('touchmove', function(e) {
+
+                if ($(document.activeElement).is('input')) {
+                    e.preventDefault();
+                }
+
+            });
+
+        }
 
     };
 
