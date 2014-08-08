@@ -70,6 +70,7 @@
 
         $scope.states = statearray;
         $scope.invalidform = false;
+        $scope.MID = $window.parseUri($window.location.href).queryKey['mid'] || 0;
         $scope.form = {
             optoutchoice: 'none'
         };
@@ -79,6 +80,8 @@
             var oldHeight = $(document).height() - $(window).height();
             var oldTop = $(window).scrollTop();
             var oldBottom = oldHeight - oldTop;
+
+            $log.log($scope.MID);
 
             if (angular.equals($scope.form.state, '*State')) {
                 $scope.invalidform = true;
@@ -119,6 +122,7 @@
         $scope.unsubscribeAll = function() {
             var URL;
             var data = {
+                'sourceCode': $scope.MID,
                 'email': {
                     'Email': $scope.form.email,
                     'ConfirmEmail': $scope.form.email
@@ -134,7 +138,6 @@
                     'Zip': $scope.form.zip
                 }
             };
-            $log.log(convertStateToAbbr($scope.form.state));
 
             URL = '/Unsubscribe/Service/BEDUnsubscribe.svc/SetUnsubscribeDataBoth';
             Data = JSON.stringify(data);
