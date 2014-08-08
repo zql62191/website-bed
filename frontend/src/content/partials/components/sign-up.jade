@@ -111,6 +111,7 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
         class='profession',
         ng-model='form.profession',
         ng-required='true',
+        profselect,
         ng-class="{forminvalid: (bed_form.profession.$invalid && bed_form.profession.$dirty) || (bed_form.profession.$pristine && invalidform)}",
         ng-options='prof for prof in professions')
 

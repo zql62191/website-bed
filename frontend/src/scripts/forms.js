@@ -80,6 +80,11 @@
             var oldTop = $(window).scrollTop();
             var oldBottom = oldHeight - oldTop;
 
+            if (angular.equals($scope.form.state, '*State')) {
+                $scope.invalidform = true;
+                return;
+            }
+
             if (!$scope.bed_form.$valid) {
                 /*print error*/
                 $scope.invalidform = true;
@@ -263,6 +268,16 @@
                     'Zip': $scope.form.zip
                 }
             };
+
+            if (angular.equals($scope.form.state, '*State')) {
+                $scope.invalidform = true;
+                return;
+            }
+
+            if (angular.equals($scope.form.profession, '*Profession')) {
+                $scope.invalidform = true;
+                return;
+            }
 
             if (!$scope.bed_form.$valid) {
                 /*print error*/
