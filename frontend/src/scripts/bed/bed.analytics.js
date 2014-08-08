@@ -46,12 +46,23 @@ BED.Analytics = (function() {
         }
     };
 
+    var formOnComplete = function(name) {
+
+        console.log('formOnComplete fired: ', name);
+
+        if (typeof window.formCompleteHandler !== 'undefined') {
+            window.formCompleteHandler(name);
+        }
+
+    };
+
     // Return the module object
     return {
         init: init,
         videoOnPlay: videoOnPlay,
         videoOnPercentage: videoOnPercentage,
-        videoOnComplete: videoOnComplete
+        videoOnComplete: videoOnComplete,
+        formOnComplete: formOnComplete
     };
 
 })();

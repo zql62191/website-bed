@@ -518,9 +518,9 @@ BED.Modal = (function() {
 
     var open = function(el, url) {
 
-        var jqModal = (typeof el === 'string') ? $('.modal--' + el) : el;
+        var jqModal = (typeof el === 'string') ? $('.modal--' + el) : $(el);
 
-        if (name === 'interstitial') {
+        if (jqModal.is('.modal--interstitial')) {
             jqModal.find('a.button--ok').prop('href', url);
         }
 
@@ -770,20 +770,27 @@ BED.Skrollr = (function() {
 
 BED.VideoPlayer = (function() {
 
-    var locations = {
-        'grilo2': '//view.vzaar.com/1788413/video', // S02969 Grilo2
-        'bulik3': '//view.vzaar.com/1788415/video', // S02970 Bulik3
-        'bulik4': '//view.vzaar.com/1788416/video', // S02971 Bulik4
-        'grilo5': '//view.vzaar.com/1788417/video', // S02972 Grilo5
-        'kornstein6': '//view.vzaar.com/1788418/video', // S02973 Kornstein6
-        'grilo7': '//view.vzaar.com/1788419/video', // S03011 Grilo7
-        'kornstein8': '//view.vzaar.com/1788420/video', // S03012 Kornstein8
-        'bulik12': '//view.vzaar.com/1788421/video', // S03016 Bulik12
-        'kornstein14': '//view.vzaar.com/1788422/video' // S03018 Kornstein14
+    var videoLocationList = {
+        'grilo2': '//d2ly9zedmmzqz4.cloudfront.net/BED-S02969.mp4', // S02969 Grilo2
+        'kornstein8': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03012.mp4', // S03012 Kornstein8
+        'grilo7': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03011.mp4', // S03011 Grilo7
+        'bulik12': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03016.mp4', // S03016 Bulik12
+        'grilo5': '//d2ly9zedmmzqz4.cloudfront.net/BED-S02972.mp4', // S02972 Grilo5
+        'kornstein6': '//d2ly9zedmmzqz4.cloudfront.net/BED-S02973.mp4', // S02973 Kornstein6
+        'kornstein14': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03018.mp4' // S03018 Kornstein14
+    };
+
+    var videoTitleList = {
+        'grilo2': 'How does the prevalence of BED compare',
+        'kornstein8': 'Does BED occur in both women and men?',
+        'grilo7': 'How does the prevalence of BED compare among races/ethnicities?',
+        'bulik12': 'What is the clinical course of BED?',
+        'grilo5': 'What psychiatric disorders are commonly associated with BED?',
+        'kornstein6': 'What is thought to cause BED?',
+        'kornstein14': 'How can clinicians begin an effective conversation'
     };
 
     var videoNameList = [];
-    var videoTitleList = [];
 
     var currentVideoName = '';
 
@@ -812,13 +819,12 @@ BED.VideoPlayer = (function() {
         $('.video-playlist li').each(function(i, el) {
 
             videoNameList.push($(el).data('video'));
-            videoTitleList.push($(el).find('p').text().trim().slice(0, -8));
 
             // Load first video in list
             if (i === 0) {
                 currentVideoName = videoNameList[i];
-                currentVideoTitle = videoTitleList[i];
-                $('#videoPlayer source').attr('src', document.location.protocol + locations[currentVideoName]);
+                currentVideoTitle = videoTitleList[currentVideoName];
+                $('#videoPlayer source').attr('src', document.location.protocol + videoLocationList[currentVideoName]);
                 $(el).addClass('active');
             }
 
@@ -998,7 +1004,7 @@ BED.VideoPlayer = (function() {
 
         // Set name/title variables
         currentVideoName = name;
-        currentVideoTitle = videoTitleList[_.indexOf(videoNameList, name)];
+        currentVideoTitle = videoTitleList[currentVideoName];
 
         // Scroll player into view
         $('.mejs-container').velocity('scroll', {
@@ -1007,7 +1013,7 @@ BED.VideoPlayer = (function() {
         });
 
         // Load video
-        instance.setSrc(document.location.protocol + locations[currentVideoName]);
+        instance.setSrc(document.location.protocol + videoLocationList[currentVideoName]);
 
         // Load video?
         instance.load();
@@ -1113,12 +1119,23 @@ BED.Analytics = (function() {
         }
     };
 
+    var formOnComplete = function(name) {
+
+        console.log('formOnComplete fired: ', name);
+
+        if (typeof window.formCompleteHandler !== 'undefined') {
+            window.formCompleteHandler(name);
+        }
+
+    };
+
     // Return the module object
     return {
         init: init,
         videoOnPlay: videoOnPlay,
         videoOnPercentage: videoOnPercentage,
-        videoOnComplete: videoOnComplete
+        videoOnComplete: videoOnComplete,
+        formOnComplete: formOnComplete
     };
 
 })();

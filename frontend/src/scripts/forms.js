@@ -195,11 +195,12 @@
                 },
                 method: 'POST',
                 url: path,
-                data: sdata,
+                data: sdata
             }).
             success(function() {
                 $scope.clearFormData();
                 BED.Modal.open('unsubscribe');
+                BED.Analytics.formOnComplete('Unsubscribe');
             }).
             error(function(data) {
                 $scope.clearFormData();
@@ -351,6 +352,7 @@
                 $scope.clearFormData();
                 BED.SlideOut.close();
                 BED.Modal.open('signup');
+                BED.Analytics.formOnComplete('Registration');
             }).
             error(function(data) {
                 $scope.clearFormData();

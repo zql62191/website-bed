@@ -45,9 +45,9 @@ BED.Modal = (function() {
 
     var open = function(el, url) {
 
-        var jqModal = (typeof el === 'string') ? $('.modal--' + el) : el;
+        var jqModal = (typeof el === 'string') ? $('.modal--' + el) : $(el);
 
-        if (name === 'interstitial') {
+        if (jqModal.is('.modal--interstitial')) {
             jqModal.find('a.button--ok').prop('href', url);
         }
 
