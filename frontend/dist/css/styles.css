@@ -1007,6 +1007,7 @@ input[type="text"] {
   height: 16px;
   float: left;
   margin-top: 5px;
+  margin-right: 10px;
 }
 .slideout--signup .forminvaliddiv {
   border: 2px solid red;
@@ -1946,8 +1947,8 @@ input[type="text"] {
 @media only screen and (min-width: 40.063em) {
   .section--course .graphic-container .chart-head {
     padding-top: 0;
-    padding-left: 50%;
-    text-align: left;
+    padding-left: 40%;
+    text-align: center;
     padding-right: 20px;
     padding-bottom: 24px;
   }
@@ -2560,7 +2561,7 @@ input[type="text"] {
     background-image: url("../img/neurobiology-mobile-1.png");
     position: relative;
     left: -20px;
-    padding: 0 0 332px 20px;
+    padding: 0 0 315px 20px;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -2589,7 +2590,7 @@ input[type="text"] {
   .section--neurobiology .endogenous {
     background-image: url("../img/neurobiology-mobile-3.png");
     left: -20px;
-    padding: 0 0 325px 20px;
+    padding: 0 0 305px 20px;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -2632,7 +2633,7 @@ input[type="text"] {
     background-image: url("../img/neurobiology-mobile-4.png");
     background-position: bottom right;
     left: -20px;
-    padding: 0 0 310px 20px;
+    padding: 0 0 273px 20px;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -2659,7 +2660,7 @@ input[type="text"] {
   .section--neurobiology .risk-2 {
     width: 640px;
     left: -20px;
-    padding: 0 0 335px 20px;
+    padding: 0 0 307px 20px;
     background-image: url("../img/neurobiology-mobile-5.png");
     background-position: bottom left;
   }
@@ -2884,7 +2885,7 @@ input[type="text"] {
   }
 }
 .section--dsm5 h2 {
-  color: #51748b;
+  color: #333E48;
 }
 @media only screen and (min-width: 40.063em) {
   .section--dsm5 h2 {
@@ -3247,6 +3248,7 @@ input[type="text"] {
   }
 }
 .section--resources .videos h3 {
+  color: #333E48;
   padding-bottom: 24px;
 }
 .section--resources .videos h4 {

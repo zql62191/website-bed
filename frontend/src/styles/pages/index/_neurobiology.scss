@@ -64,7 +64,7 @@
             background-image: url("#{$img-path}/neurobiology-mobile-1.png");
             position: relative;
             left: -20px;
-            padding: 0 0 332px 20px;
+            padding: 0 0 315px 20px;
         }
 
         @include mq("desktop") {
@@ -91,7 +91,7 @@
         @include mq("mobile") {
             background-image: url("#{$img-path}/neurobiology-mobile-3.png");
             left: -20px;
-            padding: 0 0 325px 20px;
+            padding: 0 0 305px 20px;
         }
 
         @include mq("desktop") {
@@ -132,7 +132,7 @@
             background-image: url("#{$img-path}/neurobiology-mobile-4.png");
             background-position: bottom right;
             left: -20px;
-            padding: 0 0 310px 20px;
+            padding: 0 0 273px 20px;
         }
 
         @include mq("desktop") {
@@ -162,7 +162,7 @@
         @include mq("mobile") {
             width: 640px;
             left: -20px;
-            padding: 0 0 335px 20px;
+            padding: 0 0 307px 20px;
             background-image: url("#{$img-path}/neurobiology-mobile-5.png");
             background-position: bottom left;
         }
