@@ -276,23 +276,26 @@
 
             var URL;
             var data = {
-                'Specialty': convertSpecToCode($scope.form.profession),
-                'CommunicationsOptIn': 1,
-                'Email': {
-                    'Email': $scope.form.email,
-                    'ConfirmEmail': $scope.form.email
-                },
-                'Address': {
-                    'FName': $scope.form.fname,
-                    'MName': $scope.checkFormPresent($scope.form.MI),
-                    'LName': $scope.form.lname,
-                    'Address1': $scope.form.street,
-                    'Address2': $scope.checkFormPresent($scope.form.suite),
-                    'City': $scope.form.city,
-                    'State': convertStateToAbbr($scope.form.state),
-                    'Zip': $scope.form.zip
+                'optIn': {
+                    'Specialty': convertSpecToCode($scope.form.profession),
+                    'CommunicationsOptIn': 1,
+                    'Email': {
+                        'Email': $scope.form.email,
+                        'ConfirmEmail': $scope.form.email
+                    },
+                    'Address': {
+                        'FName': $scope.form.fname,
+                        'MName': $scope.checkFormPresent($scope.form.MI),
+                        'LName': $scope.form.lname,
+                        'Address1': $scope.form.street,
+                        'Address2': $scope.checkFormPresent($scope.form.suite),
+                        'City': $scope.form.city,
+                        'State': convertStateToAbbr($scope.form.state),
+                        'Zip': $scope.form.zip
+                    }
                 },
                 'sourceCode': $scope.MID
+
             };
 
             if (angular.equals($scope.form.state, '*State')) {
