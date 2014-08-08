@@ -2726,6 +2726,7 @@ input[type="text"] {
     background-position: top left;
     background-image: url("../img/neurobiology-5.png");
     padding-top: 34px;
+    margin-bottom: 0;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -2740,6 +2741,7 @@ input[type="text"] {
   .section--neurobiology .asterisk {
     font-size: 18px;
     line-height: 22px;
+    margin-left: 200px;
   }
 }
 
@@ -2799,8 +2801,10 @@ input[type="text"] {
     line-height: 20px;
   }
 }
-.section--diagnosis .chart-head {
-  padding-bottom: 36px;
+@media only screen and (max-width: 40em) {
+  .section--diagnosis .chart-head {
+    padding-bottom: 36px;
+  }
 }
 @media only screen and (min-width: 40.063em) {
   .section--diagnosis .graphic-wrap {
@@ -3289,7 +3293,7 @@ input[type="text"] {
 }
 @media only screen and (min-width: 40.063em) {
   .section--resources .graphic-wrap {
-    background: url("../img/bed-patient.png") no-repeat bottom left;
+    background: url("../img/bed-patient-2.png") no-repeat bottom left;
     padding-left: 400px;
     min-height: 386px;
     margin-left: -32px;

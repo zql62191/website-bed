@@ -80,7 +80,9 @@
         }
     }
     .chart-head {
-        padding-bottom: 36px;
+        @include mq('mobile') {
+            padding-bottom: 36px;
+        }
     }
     .graphic-wrap {
         // margin: 20px 0;

@@ -46,7 +46,7 @@
 
     .graphic-wrap {
         @include mq("desktop") {
-            background: url("#{$img-path}/bed-patient.png") no-repeat bottom left;
+            background: url("#{$img-path}/bed-patient-2.png") no-repeat bottom left;
             padding-left: 400px;
             min-height: 386px;
             margin-left: -32px;

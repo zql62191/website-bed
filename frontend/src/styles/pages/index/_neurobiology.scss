@@ -172,6 +172,7 @@
             background-position: top left;
             background-image: url("#{$img-path}/neurobiology-5.png");
             padding-top: 34px;
+            margin-bottom: 0;
             
             ul.bullet {
                 //margin-top: -34px;
@@ -194,6 +195,7 @@
         @include mq("desktop") {
             font-size: 18px;
             line-height: 22px;
+            margin-left: 200px;
         }
     }
     
