@@ -1014,6 +1014,13 @@ input[type="text"] {
     height: 35px;
   }
 }
+.lt-ie10 .slideout--signup .check-wrap {
+  width: 23px;
+  height: 23px;
+}
+.slideout--signup .check-wrap .optin {
+  border: 0 !important;
+}
 .slideout--signup .forminvaliddiv {
   border: 2px solid red;
 }

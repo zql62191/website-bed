@@ -29,6 +29,14 @@
             width: 35px;
             height: 35px;
         }
+
+        .lt-ie10 & {
+            width: 23px;
+            height: 23px;
+        }
+        .optin {
+            border: 0 !important;
+        }
     }
     .forminvaliddiv {
         border: 2px solid red;
