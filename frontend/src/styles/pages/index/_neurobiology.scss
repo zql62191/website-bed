@@ -51,7 +51,7 @@
         }
     }
     .neuro-graphic {
-        background-position: top left;
+        background-position: bottom left;
         background-repeat: no-repeat;
         @include mq("desktop") {
             min-height: 145px;
@@ -64,7 +64,7 @@
             background-image: url("#{$img-path}/neurobiology-mobile-1.png");
             position: relative;
             left: -20px;
-            padding: 332px 0  0 20px;
+            padding: 0 0 332px 20px;
         }
 
         @include mq("desktop") {
@@ -74,10 +74,10 @@
     .dysregulation {
         @include mq("mobile") {
             background-image: url("#{$img-path}/neurobiology-mobile-2.png");
-            background-position: top right;
+            background-position: bottom right;
             position: relative;
             right: -20px;
-            padding: 310px 20px 0 0;
+            padding: 20px 0 310px 0;
             h3, p {
                 margin-left: -20px;
             }
@@ -91,7 +91,7 @@
         @include mq("mobile") {
             background-image: url("#{$img-path}/neurobiology-mobile-3.png");
             left: -20px;
-            padding: 325px 0  0 20px;
+            padding: 0 0 325px 20px;
         }
 
         @include mq("desktop") {
@@ -130,8 +130,9 @@
         @include mq("mobile") {
             width: 640px;
             background-image: url("#{$img-path}/neurobiology-mobile-4.png");
+            background-position: bottom right;
             left: -20px;
-            padding: 510px 0  0 20px;
+            padding: 0 0 310px 20px;
         }
 
         @include mq("desktop") {
@@ -161,7 +162,9 @@
         @include mq("mobile") {
             width: 640px;
             left: -20px;
-            padding: 0 0  0 20px;
+            padding: 0 0 335px 20px;
+            background-image: url("#{$img-path}/neurobiology-mobile-5.png");
+            background-position: bottom left;
         }
 
         @include mq("desktop") {
@@ -177,18 +180,19 @@
            
             }
         }
+    }
+    .asterisk {
+        @include mq("mobile") {
+            font-size: 25px;
+            line-height: 30px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
 
-        .asterisk {
-            @include mq("mobile") {
-                font-size: 25px;
-                line-height: 30px;
-                margin-left: 50px;
-            }
-
-            @include mq("desktop") {
-                font-size: 18px;
-                line-height: 22px;
-            }
+        @include mq("desktop") {
+            font-size: 18px;
+            line-height: 22px;
         }
     }
+    
 }

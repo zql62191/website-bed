@@ -255,12 +255,13 @@
         clear: both;
         font-family: font("gill sans", "regular");
         cursor: pointer;
-        -webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.4);
-        -moz-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.4);
         box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.4);
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
         border-radius: 10px;
+        &:hover {
+            position: relative;
+            top: 1px;
+            box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.4);
+        }
         @include mq("desktop") {
             font-size: 24px;
             line-height: 26px;

@@ -46,6 +46,13 @@
         color: #333e48;
         font-weight: bold;
     }
+    a {
+        //text-decoration: underline;
+        color: #7D8490;
+        &:hover {
+            color: #333e48;
+        }
+    }
     .red {
         color: #ff0000;
     }
