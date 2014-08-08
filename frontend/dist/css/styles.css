@@ -1006,7 +1006,7 @@ input[type="text"] {
   width: 16px;
   height: 16px;
   float: left;
-  padding: 5px 10px 0 0;
+  margin: 5px 10px 0 0;
 }
 @media only screen and (max-width: 40em) {
   .slideout--signup .check-wrap {
