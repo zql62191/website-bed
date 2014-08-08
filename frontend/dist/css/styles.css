@@ -1006,8 +1006,13 @@ input[type="text"] {
   width: 16px;
   height: 16px;
   float: left;
-  margin-top: 5px;
-  margin-right: 10px;
+  padding: 5px 10px 0 0;
+}
+@media only screen and (max-width: 40em) {
+  .slideout--signup .check-wrap {
+    width: 35px;
+    height: 35px;
+  }
 }
 .slideout--signup .forminvaliddiv {
   border: 2px solid red;

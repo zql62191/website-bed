@@ -24,8 +24,13 @@
         width: 16px;
         height: 16px;
         float: left;
-        margin-top: 5px;
-        margin-right: 10px;
+        padding: 5px 10px 0 0;
+        // margin-top: 5px;
+        // margin-right: 10px;
+        @include mq('mobile') {
+            width: 35px;
+            height: 35px;
+        }
     }
     .forminvaliddiv {
         border: 2px solid red;
