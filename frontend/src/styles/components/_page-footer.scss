@@ -45,4 +45,11 @@
         clear: none;
         margin-top: 15px;
     }
+
+    @include mq("mobile") {
+        padding-bottom: 93px;
+    }
+    @include mq("desktop") {
+        padding-bottom: 50px;
+    }
 }

@@ -1006,7 +1006,20 @@ input[type="text"] {
   width: 16px;
   height: 16px;
   float: left;
-  margin-top: 5px;
+  margin: 5px 10px 0 0;
+}
+@media only screen and (max-width: 40em) {
+  .slideout--signup .check-wrap {
+    width: 35px;
+    height: 35px;
+  }
+}
+.lt-ie10 .slideout--signup .check-wrap {
+  width: 23px;
+  height: 23px;
+}
+.slideout--signup .check-wrap .optin {
+  border: 0 !important;
 }
 .slideout--signup .forminvaliddiv {
   border: 2px solid red;
@@ -1029,6 +1042,12 @@ input[type="text"] {
   padding: 25px 0 5px 0;
   color: #333e48;
   font-weight: bold;
+}
+.slideout--signup a {
+  color: #7D8490;
+}
+.slideout--signup a:hover {
+  color: #333e48;
 }
 .slideout--signup .red {
   color: #ff0000;
@@ -1434,6 +1453,16 @@ input[type="text"] {
   float: right;
   clear: none;
   margin-top: 15px;
+}
+@media only screen and (max-width: 40em) {
+  .page-footer {
+    padding-bottom: 93px;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .page-footer {
+    padding-bottom: 50px;
+  }
 }
 
 .section--home {
@@ -1940,8 +1969,8 @@ input[type="text"] {
 @media only screen and (min-width: 40.063em) {
   .section--course .graphic-container .chart-head {
     padding-top: 0;
-    padding-left: 50%;
-    text-align: left;
+    padding-left: 40%;
+    text-align: center;
     padding-right: 20px;
     padding-bottom: 24px;
   }
@@ -2539,7 +2568,7 @@ input[type="text"] {
   color: #ffffff;
 }
 .section--neurobiology .neuro-graphic {
-  background-position: top left;
+  background-position: bottom left;
   background-repeat: no-repeat;
 }
 @media only screen and (min-width: 40.063em) {
@@ -2554,7 +2583,7 @@ input[type="text"] {
     background-image: url("../img/neurobiology-mobile-1.png");
     position: relative;
     left: -20px;
-    padding: 332px 0  0 20px;
+    padding: 0 0 315px 20px;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -2565,10 +2594,10 @@ input[type="text"] {
 @media only screen and (max-width: 40em) {
   .section--neurobiology .dysregulation {
     background-image: url("../img/neurobiology-mobile-2.png");
-    background-position: top right;
+    background-position: bottom right;
     position: relative;
     right: -20px;
-    padding: 310px 20px 0 0;
+    padding: 20px 0 310px 0;
   }
   .section--neurobiology .dysregulation h3, .section--neurobiology .dysregulation p {
     margin-left: -20px;
@@ -2583,7 +2612,7 @@ input[type="text"] {
   .section--neurobiology .endogenous {
     background-image: url("../img/neurobiology-mobile-3.png");
     left: -20px;
-    padding: 325px 0  0 20px;
+    padding: 0 0 305px 20px;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -2624,8 +2653,9 @@ input[type="text"] {
   .section--neurobiology .risk {
     width: 640px;
     background-image: url("../img/neurobiology-mobile-4.png");
+    background-position: bottom right;
     left: -20px;
-    padding: 510px 0  0 20px;
+    padding: 0 0 273px 20px;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -2652,7 +2682,9 @@ input[type="text"] {
   .section--neurobiology .risk-2 {
     width: 640px;
     left: -20px;
-    padding: 0 0  0 20px;
+    padding: 0 0 307px 20px;
+    background-image: url("../img/neurobiology-mobile-5.png");
+    background-position: bottom left;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -2662,14 +2694,15 @@ input[type="text"] {
   }
 }
 @media only screen and (max-width: 40em) {
-  .section--neurobiology .risk-2 .asterisk {
+  .section--neurobiology .asterisk {
     font-size: 25px;
     line-height: 30px;
-    margin-left: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  .section--neurobiology .risk-2 .asterisk {
+  .section--neurobiology .asterisk {
     font-size: 18px;
     line-height: 22px;
   }
@@ -2874,7 +2907,7 @@ input[type="text"] {
   }
 }
 .section--dsm5 h2 {
-  color: #51748b;
+  color: #333E48;
 }
 @media only screen and (min-width: 40.063em) {
   .section--dsm5 h2 {
@@ -3237,6 +3270,7 @@ input[type="text"] {
   }
 }
 .section--resources .videos h3 {
+  color: #333E48;
   padding-bottom: 24px;
 }
 .section--resources .videos h4 {
@@ -3428,6 +3462,12 @@ input[type="text"] {
   -webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.4);
   box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.4);
   border-radius: 10px;
+}
+.section--resources .signup:hover {
+  position: relative;
+  top: 1px;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.4);
+  box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.4);
 }
 @media only screen and (min-width: 40.063em) {
   .section--resources .signup {

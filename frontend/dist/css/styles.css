@@ -1454,6 +1454,16 @@ input[type="text"] {
   clear: none;
   margin-top: 15px;
 }
+@media only screen and (max-width: 40em) {
+  .page-footer {
+    padding-bottom: 93px;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .page-footer {
+    padding-bottom: 50px;
+  }
+}
 
 .section--home {
   background: #4d5158;
