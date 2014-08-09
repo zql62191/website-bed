@@ -533,9 +533,9 @@ a.pdf-link {
 // }
 
 // DEV
-// html::-webkit-scrollbar {
-//     width: 0 !important;
-// }
+html::-webkit-scrollbar {
+    width: 0 !important;
+}
 
 // .fpo {
 //     height: 500px;

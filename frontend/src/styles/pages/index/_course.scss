@@ -96,6 +96,11 @@
                 }
             }
         }
+        + h2 {
+            @include mq("mobile") {
+                padding-top: 35px;
+            }
+        }
     }
     .chart-head {
         padding-bottom: 30px;

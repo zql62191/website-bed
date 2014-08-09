@@ -78,9 +78,12 @@
         line-height: 31px;
         @include mq("mobile") {
             background-image: url("#{$img-path}/prevalence-text-bg-mobile.png");
-            width: 571px;
-            height: 167px;
-            margin-bottom: 20px;
+            width: 520px;
+            // height: 167px;
+            margin-bottom: 50px;
+            font-size: 33px;
+            line-height: 37px;
+            background-size: 100% 100%;
         }
 
         @include mq("desktop") {
@@ -371,6 +374,7 @@
 }
 
 .percent {
+    line-height: 0;
     @include mq("desktop") {
         font-size: 18px;
     }

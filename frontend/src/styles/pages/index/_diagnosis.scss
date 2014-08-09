@@ -39,7 +39,7 @@
             padding-bottom: 25px;
         }
     }
-    h3:nth-of-type(1) {
+    h3 {
         @include mq('mobile') {
             padding-top: 15px;
         }
