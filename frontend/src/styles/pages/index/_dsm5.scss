@@ -63,7 +63,7 @@
             color: #51748b;
             font-family: font("helvetica neue", "bold");
             @include mq("desktop") {
-                font-size: 23px;
+                font-size: 30px;
                 margin-left: -25px;
                 //margin-top: -5px;
             }
@@ -115,6 +115,7 @@
         }
         &.disclaimer {
             margin-top: 15px;
+            padding-bottom: 30px;
             @include mq("mobile") {
                 width: 570px;
                 font-size: 30px;
@@ -124,6 +125,9 @@
                 padding-bottom: 40px;
             }
         }
+    }
+    .smaller {
+        font-size: 18px !important;
     }
     // Tab styles
     .tab-container {
@@ -275,6 +279,7 @@
     .closed-text {
         position: absolute;
         font-family: font("gill sans", "bold");
+        text-align: right;
         @include mq("desktop") {
             font-size: 24px;
             line-height: 26px;
@@ -286,7 +291,7 @@
         @include mq("mobile") {
             font-size: 36px;
             line-height: 42px;
-            width: 410px;
+            width: 462px;
             top: 120px;
             bottom: 285px;
             right: auto;

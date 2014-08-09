@@ -35,6 +35,7 @@
 
         @include mq("desktop") {
             width: 897px;
+            padding-bottom: 25px;
         }
     }
     h3:nth-of-type(1) {
@@ -69,9 +70,15 @@
         &.center {
             text-align: center;
         }
+        &.moar {
+            padding-bottom: 40px;
+        }
     }
     a {
         color: #febd3f;
+        &:hover {
+            color: #ffcd6d;
+        }
     }
     li {
         @include mq("desktop") {

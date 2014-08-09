@@ -97,6 +97,9 @@
             }
         }
     }
+    .chart-head {
+        padding-bottom: 30px;
+    }
     .twenty-one-animated {
         //float: left;
         display: inline-block;
@@ -346,6 +349,8 @@
     .chart-footnote {
         @include mq("desktop") {
             width: 93%;
+            margin: 0;
+            margin-left: 10px;
         }
 
         @include mq('mobile') {

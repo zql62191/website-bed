@@ -51,6 +51,12 @@
             margin-left: 0;
         }
     }
+    .smaller {
+        @include mq("desktop") {
+            font-size: 13px !important;
+            line-height: 16px !important;
+        }
+    }
     .footnote {
         color: #333e48;
         margin-bottom: 15px;
