@@ -31,6 +31,7 @@
     .sub-head {
         @include mq("mobile") {
             width: auto;
+            padding-bottom: 30px;
         }
 
         @include mq("desktop") {

@@ -127,7 +127,9 @@
         }
     }
     .smaller {
-        font-size: 18px !important;
+        @include mq("desktop") {
+            font-size: 18px !important;
+        }
     }
     // Tab styles
     .tab-container {
@@ -248,15 +250,16 @@
                 margin-left: 35px;
                 margin-top: 22px;
                 width: 80%;
+                padding-left: 0;
             }
         }
         li {
             color: #ffffff;
             margin-left: 12px;
-            padding-left: 30px;
+            padding-left: 35px;
             &:before {
                 content: '\2022';
-                color: #febd3f;
+                color: #febd3f !important;
                 //margin-right: 3px;
                 margin: 0 5px 0 -15px;
             }

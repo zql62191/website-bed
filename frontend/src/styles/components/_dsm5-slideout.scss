@@ -56,6 +56,10 @@
             font-size: 13px !important;
             line-height: 16px !important;
         }
+        @include mq("mobile") {
+            font-size: 27px !important;
+            line-height: 35px !important;
+        }
     }
     .footnote {
         color: #333e48;

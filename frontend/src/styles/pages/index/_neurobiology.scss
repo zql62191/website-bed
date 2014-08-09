@@ -92,6 +92,7 @@
             background-image: url("#{$img-path}/neurobiology-mobile-3.png");
             left: -20px;
             padding: 0 0 305px 20px;
+            margin-bottom: 45px;
         }
 
         @include mq("desktop") {
