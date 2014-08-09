@@ -76,11 +76,14 @@
             margin-bottom: 30px;
         }
         video {
-            display: none;
+            background: #000000;
         }
-        .mejs-container video {
-            display: block;
-        }
+        // video {
+        //     display: none;
+        // }
+        // .mejs-container video {
+        //     display: block;
+        // }
     }
     .video-playlist {
         li {

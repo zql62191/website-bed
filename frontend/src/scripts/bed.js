@@ -844,13 +844,13 @@ BED.VideoPlayer = (function() {
         }).mediaelementplayer({
 
             // force iPad's native controls
-            // iPadUseNativeControls: true,
+            iPadUseNativeControls: true,
 
-            // // force iPhone's native controls
-            // iPhoneUseNativeControls: true,
+            // force iPhone's native controls
+            iPhoneUseNativeControls: true,
 
-            // // force Android's native controls
-            // AndroidUseNativeControls: true,
+            // force Android's native controls
+            AndroidUseNativeControls: true,
 
             success: onSuccess,
 
@@ -899,10 +899,6 @@ BED.VideoPlayer = (function() {
 
         $('.mejs-container.svg').removeClass('svg').addClass('no-svg');
 
-        if (bowser.mobile || bowser.tablet) {
-            $('.mejs-overlay-play').hide();
-        }
-
     };
 
     // MediaElementJS error handler
@@ -930,12 +926,12 @@ BED.VideoPlayer = (function() {
             return;
         }
 
-        console.log('currentPercentage: ', currentPercentage);
+        // console.log('currentPercentage: ', currentPercentage);
 
         if (currentPercentage >= 0 && !p0) {
             // Check if more than 0% viewed and if not previously fired
 
-            console.log('0%');
+            // console.log('0%');
 
             p0 = true;
 
@@ -945,7 +941,7 @@ BED.VideoPlayer = (function() {
         } else if (currentPercentage >= 25 && !p25) {
             // Check if more than 25% viewed and if not previously fired
 
-            console.log('25%');
+            // console.log('25%');
 
             p25 = true;
 
@@ -955,7 +951,7 @@ BED.VideoPlayer = (function() {
         } else if (currentPercentage >= 50 && !p50) {
             // Check if more than 50% viewed and if not previously fired
 
-            console.log('50%');
+            // console.log('50%');
 
             p50 = true;
 
@@ -965,7 +961,7 @@ BED.VideoPlayer = (function() {
         } else if (currentPercentage >= 75 && !p75) {
             // Check if more than 75% viewed and if not previously fired
 
-            console.log('75%');
+            // console.log('75%');
 
             p75 = true;
 
@@ -975,7 +971,7 @@ BED.VideoPlayer = (function() {
         } else if (currentPercentage >= 90 && !p90) {
             // Check if more than 90% viewed and if not previously fired
 
-            console.log('90%');
+            // console.log('90%');
 
             p90 = true;
 
@@ -985,7 +981,7 @@ BED.VideoPlayer = (function() {
         } else if (currentPercentage >= 99 && !p100) {
             // Check if more than 100% viewed and if not previously fired
 
-            console.log('100%');
+            // console.log('100%');
 
             p100 = true;
 

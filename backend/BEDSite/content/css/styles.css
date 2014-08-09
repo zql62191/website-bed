@@ -3327,10 +3327,7 @@ input[type="text"] {
   margin-bottom: 30px;
 }
 .section--resources .videos video {
-  display: none;
-}
-.section--resources .videos .mejs-container video {
-  display: block;
+  background: #000000;
 }
 .section--resources .video-playlist li {
   cursor: pointer;
