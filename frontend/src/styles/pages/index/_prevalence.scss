@@ -103,9 +103,10 @@
         @include mq("mobile") {
             background-image: url("#{$img-path}/prevalence-text-bg-tall.png");
             width: 571px;
-            height: 311px;
+            // height: 311px;
             margin-bottom: 20px;
             margin-top: 30px;
+            background-size: 100% 100%;
         }
 
         @include mq("desktop") {
@@ -124,8 +125,8 @@
             }
 
             @include mq("mobile") {
-                font-size: 27px;
-                line-height: 31px;
+                //font-size: 27px;
+                //line-height: 31px;
             }
         }
     }
