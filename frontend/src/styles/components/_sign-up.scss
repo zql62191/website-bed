@@ -146,6 +146,7 @@
             font-family: font("gill sans", "roman");
             @include mq("mobile") {
                 margin: 15px 0 150px 0;
+                font-size: 32px;
             }
         }
     }
