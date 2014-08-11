@@ -6,6 +6,8 @@ BED.SlideOut = (function() {
 
     var initialized = false;
 
+    var focused = false;
+
     var init = function() {
 
         if (initialized) {
@@ -27,7 +29,9 @@ BED.SlideOut = (function() {
         })
 
         .on('click.slideout', '.slideout', function(e) {
-            close($(this));
+            if (!bowser.mobile || bowser.mobile && !focused) {
+                close($(this));
+            }
         })
 
         .on('click.slideout', '.slideout .close', function(e) {
@@ -40,6 +44,16 @@ BED.SlideOut = (function() {
 
         .on('click.slideout', '.page-nav a', function(e) {
             close($('.slideout--menu'));
+        })
+
+        .on('focus.slideout', '.slideout input, .slideout select', function(e) {
+            focused = true;
+        })
+
+        .on('blur.slideout', '.slideout input, .slideout select', function(e) {
+            setTimeout(function() {
+                focused = false;
+            }, 1);
         });
     };
 

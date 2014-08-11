@@ -19,6 +19,7 @@
         background: #e1e3e4;
         // overflow-y: scroll;
         overflow-y: auto;
+        // -webkit-overflow-scrolling: touch;
         @include mq("mobile") {
             top: 93px;
         }

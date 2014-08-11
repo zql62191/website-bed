@@ -60,7 +60,8 @@ $z-layers: (
 // Reducing media queries since its just mobile/desktop
 
 $media-queries: (
-    "mobile": "only screen and (max-width: 40em)", 
+    "mobile": "only screen and (max-width: 40em)",
+    "tablet": "only screen and (min-width: 40.063em) and (max-width: 64em)",
     "desktop": "only screen and (min-width: 40.063em)"
 );
 

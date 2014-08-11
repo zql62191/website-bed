@@ -568,3 +568,9 @@ input {
 input[type="text"] {
     text-indent: 5px;
 }
+label { 
+    display: block;
+    cursor: pointer;
+}
+// Fastclick fix
+label > * { pointer-events: none; }

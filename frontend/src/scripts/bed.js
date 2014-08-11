@@ -159,17 +159,17 @@ BED.UI = (function() {
         });
 
         if (bowser.ios) {
-            // Weird hack to fix scrolling in fixed position elements
+            // Elegant hack to fix scrolling in fixed position elements
 
-            $('input').css('pointer-events', 'none');
+            $('input[type="text"]').css('pointer-events', 'none');
 
             $('.slideout').on('click.iosfix', function(e) {
 
-                $('input').css('pointer-events', 'all');
+                $('input[type="text"]').css('pointer-events', 'all');
 
                 var el = $(document.elementFromPoint(e.clientX, e.clientY));
 
-                $('input').css('pointer-events', 'none');
+                $('input[type="text"]').css('pointer-events', 'none');
 
                 if (el.is('input')) {
                     el.focus();
@@ -179,7 +179,7 @@ BED.UI = (function() {
 
             $(document).on('touchmove', function(e) {
 
-                if ($(document.activeElement).is('input')) {
+                if ($(document.activeElement).is('input[type="text"]')) {
                     e.preventDefault();
                 }
 
@@ -332,6 +332,8 @@ BED.SlideOut = (function() {
 
     var initialized = false;
 
+    var focused = false;
+
     var init = function() {
 
         if (initialized) {
@@ -353,7 +355,9 @@ BED.SlideOut = (function() {
         })
 
         .on('click.slideout', '.slideout', function(e) {
-            close($(this));
+            if (!bowser.mobile || bowser.mobile && !focused) {
+                close($(this));
+            }
         })
 
         .on('click.slideout', '.slideout .close', function(e) {
@@ -366,6 +370,16 @@ BED.SlideOut = (function() {
 
         .on('click.slideout', '.page-nav a', function(e) {
             close($('.slideout--menu'));
+        })
+
+        .on('focus.slideout', '.slideout input, .slideout select', function(e) {
+            focused = true;
+        })
+
+        .on('blur.slideout', '.slideout input, .slideout select', function(e) {
+            setTimeout(function() {
+                focused = false;
+            }, 1);
         });
     };
 
