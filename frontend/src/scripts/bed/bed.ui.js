@@ -64,34 +64,6 @@ BED.UI = (function() {
             $('.closed-text').toggleClass('hidden');
 
         });
-
-        if (bowser.ios) {
-            // Elegant hack to fix scrolling in fixed position elements
-
-            $('input[type="text"]').css('pointer-events', 'none');
-
-            $('.slideout').on('click.iosfix', function(e) {
-
-                $('input[type="text"]').css('pointer-events', 'all');
-
-                var el = $(document.elementFromPoint(e.clientX, e.clientY));
-
-                $('input[type="text"]').css('pointer-events', 'none');
-
-                if (el.is('input')) {
-                    el.focus();
-                }
-
-            });
-
-            $(document).on('touchmove', function(e) {
-
-                if ($(document.activeElement).is('input[type="text"]')) {
-                    e.preventDefault();
-                }
-
-            });
-        }
     };
 
     // Window scroll handler
