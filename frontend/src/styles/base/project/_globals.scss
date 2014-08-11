@@ -527,10 +527,20 @@ a.pdf-link {
    width: 1px;
 }
 
-// .modal-open {
-//     overflow: hidden;
-//     height: 100% !important;
-// }
+
+.seo {
+    position: absolute;
+    top: -9999;
+    left: -9999;
+    text-indent: -9999;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+
+
 
 // DEV
 html::-webkit-scrollbar {
