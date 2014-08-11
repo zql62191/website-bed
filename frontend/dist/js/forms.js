@@ -420,28 +420,28 @@
     });
 
     /*custom validator - confirmtaion email */
-    app.directive('confirmemail', function() {
-        return {
-            require: 'ngModel',
-            link: function(scope, elm, attrs, ctrl) {
-                ctrl.$parsers.unshift(function(viewValue) {
-                    if (scope.form.email && viewValue) {
-                        if (angular.equals(scope.form.email.toLowerCase(), viewValue.toLowerCase())) {
-                            //set validity
-                            ctrl.$setValidity('confirmemail', true);
-                            return viewValue;
-                        } else {
-                            ctrl.$setValidity('confirmemail', false);
-                            return undefined;
-                        }
-                    } else {
-                        ctrl.$setValidity('confirmemail', false);
-                        return undefined;
-                    }
-                });
-            }
-        };
-    });
+    // app.directive('confirmemail', function() {
+    //     return {
+    //         require: 'ngModel',
+    //         link: function(scope, elm, attrs, ctrl) {
+    //             ctrl.$parsers.unshift(function(viewValue) {
+    //                 if (scope.form.email && viewValue) {
+    //                     if (angular.equals(scope.form.email.toLowerCase(), viewValue.toLowerCase())) {
+    //                         //set validity
+    //                         ctrl.$setValidity('confirmemail', true);
+    //                         return viewValue;
+    //                     } else {
+    //                         ctrl.$setValidity('confirmemail', false);
+    //                         return undefined;
+    //                     }
+    //                 } else {
+    //                     ctrl.$setValidity('confirmemail', false);
+    //                     return undefined;
+    //                 }
+    //             });
+    //         }
+    //     };
+    // });
 
     // Elegant placeholder polyfill hack
     app.directive('ngIf', function() {
@@ -458,7 +458,7 @@
 (function() {
     var app;
 
-    app = angular.module('BED', ['BED.controllers', 'BED.directives']);
+    app = angular.module('BED', ['BED.controllers', 'BED.directives', 'ui.utils']);
 
 }).call(this);
 

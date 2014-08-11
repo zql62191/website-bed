@@ -55,7 +55,8 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
         name='email2',
         ng-model='form.confirmemail',
         ng-required='true',
-        confirmemail,
+        ui-validate=" '$value==form.email' ",
+        ui-validate-watch=" 'form.email' ",
         placeholder='*Re-enter E‐mail',
         ng-class="{forminvalid: (bed_form.email2.$invalid && bed_form.email2.$dirty) || (bed_form.email2.$invalid && invalidform)}",
         class='email2')
