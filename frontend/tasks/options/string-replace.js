@@ -23,6 +23,9 @@ module.exports = {
                 }, {
                     pattern: /\/unsubscribe.html/ig,
                     replacement: '/Unsubscribe/'
+                }, {
+                    pattern: /\/media\/DSM-5_BED_Brochure.pdf/ig,
+                    replacement: '/Content/media/DSM-5_BED_Brochure.pdf'
                 }
             ]
         },
