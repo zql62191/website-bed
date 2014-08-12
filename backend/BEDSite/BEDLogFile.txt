@@ -114,3 +114,10 @@
 2014-08-06 16:10:58,791 [21] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
 2014-08-06 16:11:56,755 [17] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
 2014-08-06 16:13:53,668 [18] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-11 15:21:23,712 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-11 15:46:04,970 [33] INFO BEDService.BEDWCFService - BED:: User: asdf@asdf.com | Operation: OptIn_Success |  Category: SetOptInData | Message: OK 
+2014-08-11 15:46:10,801 [30] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-11 15:49:11,008 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-11 15:49:55,118 [8] INFO BEDService.BEDWCFService - BED:: User: asdf@asdf.com | Operation: OptIn_Success |  Category: SetOptInData | Message: OK 
+2014-08-11 15:50:09,642 [6] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-11 15:51:13,735 [6] INFO BEDService.BEDWCFService - BED:: User: asdf@asdf.com | Operation: OptIn_Success |  Category: SetOptInData | Message: OK 

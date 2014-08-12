@@ -56,20 +56,18 @@ namespace BEDService
                     hcp = new HCPIndividual();
                     hcp.EmailAddresses = new List<EmailAddress>();
                     hcp.EmailAddresses.Add(emailAddress);
- 
-                    //hcp.PIISetID = long.MaxValue;
 
                   
                     regMgr.Individual = hcp;
 
                     string sourceMCC = string.Empty;
-                    if (!string.IsNullOrWhiteSpace(sourceCode))
+                    if (!string.IsNullOrWhiteSpace(sourceCode) && !string.Equals(sourceCode, "0"))
                     {
                         sourceMCC = sourceCode;
                     }
                     else
                     {
-                        sourceMCC = Convert.ToString(ConfigurationManager.AppSettings["RTWebSiteID"]);
+                        sourceMCC = Convert.ToString(ConfigurationManager.AppSettings["MCCUnsubscribe"]);
                     }
                     List<QuestionResponse> questionResponses = new List<QuestionResponse>();
                     QuestionResponse questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDExitMCC"]), Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), ConfigurationManager.AppSettings["MCCUnsubscribe"]);
@@ -82,7 +80,6 @@ namespace BEDService
                     questionResponses.Add(questionResponse);
 
                     questionResponseSet = new QuestionResponseSet();
-                    // questionResponseSet.QuestionSetID = long.MaxValue;
                     questionResponseSet.QuestionResponses = questionResponses;
 
                     regMgr.PerformLiteRegistration(hcp, questionResponseSet);
@@ -144,19 +141,17 @@ namespace BEDService
                     hcp.EmailAddresses = new List<EmailAddress>();
                     hcp.EmailAddresses.Add(emailAddress);
 
-                    //hcp.PIISetID = long.MaxValue;
-
                     RegistrationManager regMgr = new RegistrationManager();
                     regMgr.Individual = hcp;
 
                     string sourceMCC = string.Empty;
-                    if (!string.IsNullOrWhiteSpace(sourceCode))
+                    if (!string.IsNullOrWhiteSpace(sourceCode) && !string.Equals(sourceCode, "0"))
                     {
                         sourceMCC = sourceCode;
                     }
                     else
                     {
-                        sourceMCC = Convert.ToString( ConfigurationManager.AppSettings["RTWebSiteID"]);
+                        sourceMCC = Convert.ToString(ConfigurationManager.AppSettings["MCCUnsubscribe"]);
                     }
 
                     List<QuestionResponse> questionResponses = new List<QuestionResponse>();
@@ -236,13 +231,13 @@ namespace BEDService
                     regMgr.Individual = hcp;
 
                     string sourceMCC = string.Empty;
-                    if (!string.IsNullOrWhiteSpace(sourceCode))
+                    if (!string.IsNullOrWhiteSpace(sourceCode) && !string.Equals(sourceCode, "0"))
                     {
                         sourceMCC = sourceCode;
                     }
                     else
                     {
-                        sourceMCC = Convert.ToString(ConfigurationManager.AppSettings["RTWebSiteID"]);
+                        sourceMCC = Convert.ToString(ConfigurationManager.AppSettings["MCCUnsubscribe"]);
                     }
                     List<QuestionResponse> questionResponses = new List<QuestionResponse>();
                     QuestionResponse questionResponse = new QuestionResponse(Int32.Parse(ConfigurationManager.AppSettings["RTIDExitMCC"]),Int32.Parse(ConfigurationManager.AppSettings["RTIDAnsOpen"]), ConfigurationManager.AppSettings["MCCUnsubscribe"]);

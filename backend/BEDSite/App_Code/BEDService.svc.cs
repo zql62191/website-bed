@@ -57,13 +57,13 @@ namespace BEDService
                     hcp.Specialties.Add((Specialties)Enum.Parse(typeof(Specialties), optIn.Specialty));
 
                     string sourceMCC = string.Empty;
-                    if (!string.IsNullOrWhiteSpace(sourceCode))
+                    if (!string.IsNullOrWhiteSpace(sourceCode) && !string.Equals(sourceCode, "0"))
                     {
                         sourceMCC = sourceCode;
                     }
                     else
                     {
-                        sourceMCC = Convert.ToString(ConfigurationManager.AppSettings["RTWebSiteID"]);
+                        sourceMCC = Convert.ToString(ConfigurationManager.AppSettings["MCCRegister"]);
                     }
 
                     regMgr = new RegistrationManager();
@@ -151,57 +151,6 @@ namespace BEDService
             return errors;
         }
 
-
-        //public List<string> SetUnsubscribeDataAddress(FormAddress address)
-        //{
-        //    AuditTrail auditTrail = new AuditTrail();
-        //    List<string> errors = null;
-        //    try
-        //    {
-        //        errors = ValidateAddress(address);
-
-        //        if (errors.Count > 0)
-        //            return errors;
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        auditTrail.SetAuditTrail(" ", AuditTrail.OperationType.Unsubscribtion_Failure, e.Source, e.Message);
-        //        throw e;
-        //    }
-        //    finally
-        //    {
-        //        log.Info(auditTrail.GetAuditTrail());
-        //        auditTrail = null;
-        //    }
-
-        //    return errors;
-        //}
-
-        //public List<string> SetUnsubscribeDataBoth(FormEmail email, FormAddress address)
-        //{
-        //    AuditTrail auditTrail = new AuditTrail();
-        //    List<string> errors = null;
-        //    try
-        //    {
-        //        errors = ValidateAddress(address);
-        //        errors.AddRange(ValidateEmail(email));
-
-        //        if (errors.Count > 0)
-        //            return errors;
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        auditTrail.SetAuditTrail(" ", AuditTrail.OperationType.Unsubscribtion_Failure, e.Source, e.Message);
-        //        throw e;
-        //    }
-        //    finally
-        //    {
-        //        log.Info(auditTrail.GetAuditTrail());
-        //        auditTrail = null;
-        //    }
-
-        //    return errors;
-        //}
         private List<string> Validate(OptIn optIn)
         {
             List<string> errors = new List<string>();
