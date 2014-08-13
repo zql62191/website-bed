@@ -26,6 +26,9 @@ module.exports = {
                 }, {
                     pattern: /\/media\/DSM-5_BED_Brochure.pdf/ig,
                     replacement: '/Content/media/DSM-5_BED_Brochure.pdf'
+                }, {
+                    pattern: /progid:DXImageTransform\.Microsoft\.AlphaImageLoader\(src='img\//ig,
+                    replacement: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src=\'content/img/'
                 }
             ]
         },

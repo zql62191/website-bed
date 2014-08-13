@@ -117,6 +117,12 @@
 
 .modal--interstitial {
     .modal__inner {
-        padding: 20px;
+        @include mq("mobile") {
+            padding: 20px;
+        }
+
+        @include mq("desktop") {
+            padding: 20px 55px;            
+        }
     }
 }
