@@ -129,7 +129,7 @@
             line-height: 34px;
         }
         p {
-            width: 381px;
+            width: 381px !important;
         }
         @include mq("desktop") {
             float: left;
