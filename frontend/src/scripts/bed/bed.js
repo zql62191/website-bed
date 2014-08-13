@@ -65,8 +65,6 @@ var BED = (function() {
 
         initialized = true;
 
-        $('meta[name="viewport"]').attr('content', 'target-densitydpi=device-dpi, width=' + (bowser.mobile ? '640' : '1024'));
-
         // Init all the things!
         BED.Analytics.init();
         BED.Skrollr.init();
