@@ -287,7 +287,7 @@ BED.VideoPlayer = (function() {
 
     var playPrevVideo = function() {
 
-        var currentIndex = _.indexOf(videoNameList, currentVideo);
+        var currentIndex = _.indexOf(videoNameList, currentVideoName);
 
         var nextIndex = (function() {
             var idx;
