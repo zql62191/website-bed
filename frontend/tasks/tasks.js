@@ -25,7 +25,7 @@ module.exports = function(grunt) {
     grunt.registerTask('cachebust:prod', []);
 
     grunt.registerTask('build:dev', ['verifylowercase', 'clean:dist', 'images:dev', 'fonts', 'media', 'vendor', 'concurrent:dev', 'cachebust:dev']);
-    grunt.registerTask('build:prod', ['verifylowercase', 'clean:dist', 'images:prod', 'fonts', 'media', 'vendor', 'concurrent:prod', 'cachebust:prod']);
+    grunt.registerTask('build:prod', ['verifylowercase', 'clean:dist', 'images:prod', 'fonts', 'media', 'vendor', 'concurrent:prod', 'inline:prod', 'cachebust:prod']);
 
     grunt.registerTask('default', ['build:dev', 'connect', 'concurrent:local']);
     grunt.registerTask('dev', ['build:dev']);
