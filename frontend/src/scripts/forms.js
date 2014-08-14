@@ -110,7 +110,6 @@
                     $scope.unsubscribeAll();
                     break;
                 default:
-                    // $log.log('No option selected.');
                     break;
             }
         };
@@ -203,7 +202,6 @@
         };
 
         $scope.processForm = function(path, sdata) {
-            // $log.log(sdata);
             $http({
                 headers: {
                     'Content-Type': 'application/json; charset=utf-8'
@@ -356,7 +354,6 @@
         };
 
         $scope.processOptIn = function(path, sdata) {
-            $log.log(sdata);
             $http({
                 headers: {
                     'Content-Type': 'application/json; charset=utf-8'
