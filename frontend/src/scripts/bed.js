@@ -1094,8 +1094,7 @@ BED.VideoPlayer = (function() {
         }
     };
 
-})();
-;if (typeof BED === 'undefined') {
+})();;if (typeof BED === 'undefined') {
     window.BED = {};
 }
 
@@ -1163,5 +1162,3 @@ BED.Analytics = (function() {
     };
 
 })();
-
-//# sourceMappingURL=bed.js.map
