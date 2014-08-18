@@ -122,3 +122,9 @@
 2014-08-11 15:50:09,642 [6] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
 2014-08-11 15:51:13,735 [6] INFO BEDService.BEDWCFService - BED:: User: asdf@asdf.com | Operation: OptIn_Success |  Category: SetOptInData | Message: OK 
 2014-08-12 10:55:28,548 [6] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-18 17:22:17,294 [8] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-18 17:22:37,589 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-18 17:27:06,781 [18] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-18 17:27:57,194 [18] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-18 17:28:49,795 [18] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-18 17:29:56,786 [15] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Failure |  Category: ShireRealtime | Message: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified) 

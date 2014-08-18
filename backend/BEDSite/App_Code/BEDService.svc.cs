@@ -37,6 +37,7 @@ namespace BEDService
             HCPIndividual hcp;
             QuestionResponseSet questionResponseSet;
             RegistrationManager regMgr;
+            EmailManager emailMgr;
 
             try
             {
@@ -88,6 +89,10 @@ namespace BEDService
                     questionResponseSet.QuestionResponses = questionResponses;
 
                     regMgr.PerformLiteRegistration(hcp, questionResponseSet);
+                    if(String.Equals(regMgr.Status, "OK")) {
+                        emailMgr = new EmailManager();
+                        emailMgr.SendEmail(Int32.Parse(ConfigurationManager.AppSettings["RTWelcomEmailMAID"]));
+                    }
 
                     errors = GetRegMgrErrors(regMgr, errors);
 
