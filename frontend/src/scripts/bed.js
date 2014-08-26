@@ -126,6 +126,8 @@ BED.UI = (function() {
 
         initialized = true;
 
+        $(window).scrollTop($('#' + document.location.hash.slice(2)).offset().top || 0);
+
         $.history.init(onHistoryChange, {
             unescape: ",/"
         });
