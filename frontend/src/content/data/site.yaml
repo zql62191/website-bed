@@ -15,7 +15,7 @@ nav:
       file: "prevalence"
     -
       url: "/#/dsm-5"
-      title: "<em>DSM-5<sup>&reg;</sup></em> Criteria"
+      title: "What is BED?"
       file: "dsm5"
     -
       url: "/#/clinical-characteristics"
@@ -23,7 +23,7 @@ nav:
       file: "course"
     -
       url: "/#/functional-consequences"
-      title: "<em>DSM-5<sup>&reg;</sup></em> Functional <br/>Consequences"
+      title: "Functional Consequences"
       file: "effects"
     -
       url: "/#/neurobiology"
