@@ -3055,7 +3055,15 @@ label > * {
 }
 @media only screen and (min-width: 40.063em) {
   .section--dsm5 p.wrap {
-    width: 550px;
+    width: 530px;
+  }
+}
+.section--dsm5 p.wrapbottom {
+  padding-bottom: 0px;
+}
+@media only screen and (min-width: 40.063em) {
+  .section--dsm5 p.wrapbottom {
+    width: 530px;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -3131,7 +3139,7 @@ label > * {
 }
 .section--dsm5 p.disclaimer {
   margin-top: 15px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 @media only screen and (max-width: 40em) {
   .section--dsm5 p.disclaimer {
