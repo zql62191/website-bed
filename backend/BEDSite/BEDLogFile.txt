@@ -128,3 +128,12 @@
 2014-08-18 17:27:57,194 [18] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
 2014-08-18 17:28:49,795 [18] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
 2014-08-18 17:29:56,786 [15] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Failure |  Category: ShireRealtime | Message: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified) 
+2014-08-19 10:41:58,238 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-19 11:03:03,408 [17] INFO BEDService.BEDWCFService - BED:: User:   | Operation: OptIn_Failure |  Category: ShireRealtime | Message: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified) 
+2014-08-19 11:03:08,624 [8] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-19 11:04:26,840 [18] INFO BEDService.BEDWCFService - BED:: User: asdf@asdf.com | Operation: OptIn_Success |  Category: SetOptInData | Message: OK 
+2014-08-19 11:05:41,342 [20] INFO BEDService.BEDWCFService - BED:: User: dmarsh@cdmprinceton.com | Operation: OptIn_Success |  Category: SetOptInData | Message: OK 
+2014-08-19 17:01:35,575 [17] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2014-08-19 17:04:37,348 [124] INFO BEDService.BEDWCFService - BED:: User: dmarsh@cdmprinceton.com | Operation: OptIn_Success |  Category: SetOptInData | Message: OK 
+2014-08-19 17:05:58,108 [113] INFO BEDService.BEDWCFService - BED:: User: dmarsh@cdmprinceton.com | Operation: OptIn_Success |  Category: SetOptInData | Message: OK 
+2014-08-19 17:06:53,516 [116] INFO BEDService.BEDWCFService - BED:: User: devin.m65@gmail.com | Operation: OptIn_Success |  Category: SetOptInData | Message: OK 

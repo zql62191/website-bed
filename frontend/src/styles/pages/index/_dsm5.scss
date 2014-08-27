@@ -46,6 +46,14 @@
             padding-bottom: 25px;
         }
     }
+    p.wrap {
+        @include mq("mobile") {
+
+        }
+        @include mq("desktop") {
+            width: 550px;
+        }
+    }
     // Main List
     ol.number {
 

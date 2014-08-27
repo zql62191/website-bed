@@ -91,7 +91,7 @@ namespace BEDService
                     regMgr.PerformLiteRegistration(hcp, questionResponseSet);
                     if(String.Equals(regMgr.Status, "OK")) {
                         emailMgr = new EmailManager();
-                        emailMgr.SendEmail(Int32.Parse(ConfigurationManager.AppSettings["RTWelcomEmailMAID"]));
+                        emailMgr.SendEmail(Int32.Parse(ConfigurationManager.AppSettings["RTWelcomEmailMAID"]), emailAddress.EmailAddressString);
                     }
 
                     errors = GetRegMgrErrors(regMgr, errors);

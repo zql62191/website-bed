@@ -3054,6 +3054,11 @@ label > * {
   }
 }
 @media only screen and (min-width: 40.063em) {
+  .section--dsm5 p.wrap {
+    width: 550px;
+  }
+}
+@media only screen and (min-width: 40.063em) {
   .section--dsm5 ol.number {
     padding-left: 25px;
   }
