@@ -30,6 +30,6 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['build:dev', 'connect', 'concurrent:local']);
     grunt.registerTask('dev', ['build:dev']);
     grunt.registerTask('prod', ['build:prod']);
-    grunt.registerTask('integrate', ['build:prod', 'copy:integrate', 'rebase:integrate', 'string-replace:integrate', 'build:dev']);
+    grunt.registerTask('integrate', ['build:prod', 'copy:integrate', 'rebase:integrate', 'string-replace:integrate']);
 
 };

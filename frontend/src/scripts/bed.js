@@ -918,6 +918,12 @@ BED.VideoPlayer = (function() {
 
         $('.mejs-container.svg').removeClass('svg').addClass('no-svg');
 
+        // Load video
+        instance.setSrc(document.location.protocol + videoLocationList[currentVideoName]);
+
+        // Load video?
+        instance.load();
+
     };
 
     // MediaElementJS error handler
@@ -1098,7 +1104,8 @@ BED.VideoPlayer = (function() {
         }
     };
 
-})();;if (typeof BED === 'undefined') {
+})();
+;if (typeof BED === 'undefined') {
     window.BED = {};
 }
 
