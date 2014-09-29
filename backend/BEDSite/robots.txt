@@ -1,0 +1,13 @@
+User-agent: *
+
+Disallow: /bin
+Disallow: /db
+Disallow: /Scripts
+Disallow: /Styles
+Disallow: /Account
+Disallow: /configs
+Disallow: /bed_dsm5_download.aspx
+Disallow: /content
+Disallow: /Service
+Disallow: /Unsubscribe
+Disallow: /Common
