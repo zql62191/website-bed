@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!-- created with Scrutiny from www.peacockmedia.co.uk on Monday, September 29, 2014 2:43:03 PM Eastern Daylight Time-->
+
+	<url>
+		<loc>https://www.bingeeatingdisorder.com/</loc>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.bingeeatingdisorder.com/contact-us.aspx</loc>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://www.bingeeatingdisorder.com/privacy-policy.aspx</loc>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://www.bingeeatingdisorder.com/Unsubscribe/</loc>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+</urlset>
