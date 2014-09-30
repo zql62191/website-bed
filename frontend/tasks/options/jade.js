@@ -25,7 +25,8 @@ module.exports = {
                     to: dest,
                     site: yfm.extractJSON('src/content/data/site.yaml'),
                     env: yfm.extractJSON('src/content/data/dev.yaml'),
-                    page: yfm.extractJSON('./' + src)
+                    page: yfm.extractJSON('./' + src),
+                    path: dest.replace('dist','').replace('/index.html', '').replace('unsubscribe.html', 'Unsubscribe/').replace('.html', '.aspx')
                 };
             }
         },
@@ -51,7 +52,8 @@ module.exports = {
                     to: dest,
                     site: yfm.extractJSON('src/content/data/site.yaml'),
                     env: yfm.extractJSON('src/content/data/prod.yaml'),
-                    page: yfm.extractJSON('./' + src)
+                    page: yfm.extractJSON('./' + src),
+                    path: dest.replace('dist','').replace('/index.html', '').replace('unsubscribe.html', 'Unsubscribe/').replace('.html', '.aspx')
                 };
             }
         },
