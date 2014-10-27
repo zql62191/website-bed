@@ -796,7 +796,14 @@ BED.VideoPlayer = (function() {
         'bulik12': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03016.mp4', // S03016 Bulik12
         'grilo5': '//d2ly9zedmmzqz4.cloudfront.net/BED-S02972.mp4', // S02972 Grilo5
         'kornstein6': '//d2ly9zedmmzqz4.cloudfront.net/BED-S02973.mp4', // S02973 Kornstein6
-        'kornstein14': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03018.mp4' // S03018 Kornstein14
+        'kornstein14': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03018.mp4', // S03018 Kornstein14
+
+        // videos added 10/27/14
+        'bulik4': '//view.vzaar.com/2178951/video',         // S03323
+        'bulik3': '//view.vzaar.com/2178948/video',         // S03322
+        'wilfley10': '//view.vzaar.com/2178943/video',      // S03014
+        'wilfley9': '//view.vzaar.com/2178943/video',       // S03013
+        'wilfley13': '//view.vzaar.com/2178888/video'       // S03017
     };
 
     var videoTitleList = {
@@ -806,7 +813,13 @@ BED.VideoPlayer = (function() {
         'bulik12': 'What is the clinical course of BED?',
         'grilo5': 'What psychiatric disorders are commonly associated with BED?',
         'kornstein6': 'What is thought to cause BED?',
-        'kornstein14': 'How can clinicians begin an effective conversation'
+        'kornstein14': 'How can clinicians begin an effective conversation',
+
+        'bulik4': 'What are the essential features for a diagnosis of BED?',
+        'bulik3': 'What are the functional consequences of BED in adults?',
+        'wilfley10': 'How is BED distinct from bulimia nervosa?',
+        'wilfley9': 'How is BED distinct from overeating and obesity?',
+        'wilfley13': 'What is the relationship between obesity and BED in adults?'
     };
 
     var videoNameList = [];
@@ -1173,5 +1186,3 @@ BED.Analytics = (function() {
     };
 
 })();
-
-//# sourceMappingURL=bed.js.map
