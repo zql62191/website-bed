@@ -790,19 +790,19 @@ BED.Skrollr = (function() {
 BED.VideoPlayer = (function() {
 
     var videoLocationList = {
-        'grilo2': '//d2ly9zedmmzqz4.cloudfront.net/BED-S02969.mp4', // S02969 Grilo2
-        'kornstein8': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03012.mp4', // S03012 Kornstein8
-        'grilo7': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03011.mp4', // S03011 Grilo7
-        'bulik12': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03016.mp4', // S03016 Bulik12
-        'grilo5': '//d2ly9zedmmzqz4.cloudfront.net/BED-S02972.mp4', // S02972 Grilo5
-        'kornstein6': '//d2ly9zedmmzqz4.cloudfront.net/BED-S02973.mp4', // S02973 Kornstein6
-        'kornstein14': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03018.mp4', // S03018 Kornstein14
+        'grilo2': '//d2ly9zedmmzqz4.cloudfront.net/BED-S02969.mp4',         // S02969 Grilo2
+        'kornstein8': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03012.mp4',     // S03012 Kornstein8
+        'grilo7': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03011.mp4',         // S03011 Grilo7
+        'bulik12': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03016.mp4',        // S03016 Bulik12
+        'grilo5': '//d2ly9zedmmzqz4.cloudfront.net/BED-S02972.mp4',         // S02972 Grilo5
+        'kornstein6': '//d2ly9zedmmzqz4.cloudfront.net/BED-S02973.mp4',     // S02973 Kornstein6
+        'kornstein14': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03018.mp4',    // S03018 Kornstein14
 
         // videos added 10/27/14
         'bulik4': '//view.vzaar.com/2178951/video',         // S03323
         'bulik3': '//view.vzaar.com/2178948/video',         // S03322
         'wilfley10': '//view.vzaar.com/2178943/video',      // S03014
-        'wilfley9': '//view.vzaar.com/2178943/video',       // S03013
+        'wilfley9': '//view.vzaar.com/2178935/video',       // S03013
         'wilfley13': '//view.vzaar.com/2178888/video'       // S03017
     };
 
