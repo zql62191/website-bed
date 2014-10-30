@@ -80,6 +80,14 @@
             margin: 0 auto;
             display: block;
         }
+
+        @media only screen and (min-width: 40.063em) and (max-width: 64em) and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+            video::-webkit-media-controls-fullscreen-button {
+                display: none;
+            }
+        }
+
+
         // video {
         //     display: none;
         // }
