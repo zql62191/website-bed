@@ -1,18 +1,18 @@
 .slideout--signup {
     .slideout__inner {
-        padding: 30px 25px;
+        padding: 25px 20px;
         @include mq("desktop") {
-            width: 740px;
+            width: 490px;
         }
 
         @include mq("mobile") {
-            width: 543px;
+            width: 500px;
         }
     }
     .bed_form {
         // Need to force width outside of container because of scrollbar
         @include mq("desktop") {
-            width: 665px;
+            width: 680px;
         }
     }
     .forminvalid {
@@ -48,8 +48,9 @@
         color: #333e48;
         font-size: 21px;
         line-height: 24px;
+        padding-top: 5px;
         @include mq("mobile") {
-            font-size: 58px;
+            font-size: 30px;
             line-height: 60px;
         }
     }
@@ -65,11 +66,12 @@
             //color: #333e48;
         }
     }
+
     .red {
         color: #ff0000;
     }
     .required-fields {
-        color: #8c8f91;
+        color: #7c8d94;
         @include mq("mobile") {
             font-size: 22px;
             padding-bottom: 0;
@@ -81,15 +83,18 @@
         box-shadow: 0 2px 2px rgba(33, 30, 31, 0.25);
         margin-right: 15px;
         @include mq("desktop") {
-            width: 315px;
+            width: 440px;
             height: 31px;
             font-size: 15px;
             border-radius: 6px/4px;
             margin-bottom: 10px;
         }
-
+    em{
+        color: #7c8d94;
+        font-size: 15px;
+    }
         @include mq("mobile") {
-            width: 490px;
+            width: 440px;
             height: 78px;
             font-size: 32px;
             font-family: font("gill sans", "regular");
@@ -111,13 +116,13 @@
        
         }
         &.first-name {
-            @include mq("desktop") {
-                width: 240px;
-            }
+            // @include mq("desktop") {
+            //     width: 240px;
+            // }
 
-            @include mq("mobile") {
-                width: 385px;
-            }
+            // @include mq("mobile") {
+            //     width: 385px;
+            // }
         }
         &.middle-initial {
             width: 56px;
