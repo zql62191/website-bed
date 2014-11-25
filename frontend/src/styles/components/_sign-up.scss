@@ -146,7 +146,7 @@
 
     em{
         
-        font-family: font("gill sans", "regular");
+        font-family: font("gill sans", "italic");
         font-size: 16px;
         color: #657E8E;
         line-height: 18px;
@@ -155,7 +155,7 @@
             width: 440px;
             height: 78px;
             font-size: 32px;
-            font-family: font("gill sans", "regular");
+            font-family: font("gill sans", "italic");
             border-radius: 10px;
             padding-left: 25px;
             margin-bottom: 25px;
@@ -211,18 +211,18 @@
         &.submit {
             width: 295px;
             display: block;
-            margin: 0 auto 30px auto;
             background-color: #333e48;
             color: #febd3f;
-            font-size: 18px;
             font-family: font("gill sans", "roman");
             border-radius: 4px;
             background: #323E48;
             @include mq("mobile") {
-                margin: 15px 0 150px 0;
-                font-size: 32px;
                 border-radius: 4px;
                 background: #323E48;
+                font-size: 32px;
+                color: #FFBE2C;
+                line-height: 38px;
+               
             }
         }
     }
