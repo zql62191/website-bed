@@ -51,20 +51,21 @@
         display: block;
     }
     h2 {
+
         font-family: GillSansStd;
         font-size: 26px;
         color: #333E48;
         line-height: 26px;
+
         @include mq("mobile") {
             font-size: 48px;
             color: #333E48;
             line-height: 46px;
-
-
+            padding: 0px 0px;
         }
     }
     h3 {
-        padding: 25px 0 5px 0;
+        
         @include mq("desktop"){
             font-weight: bold;
             font-family: GillSansStd;
@@ -77,7 +78,8 @@
             font-family: GillSansStd;
             font-size: 48px;
             color: #333E48;
-            line-height: 46px;    
+            line-height: 46px;  
+
         }
     a {
         //text-decoration: underline;
@@ -105,7 +107,7 @@
             font-size: 26px;
             color: #657E8E;
             line-height: 32px;
-            padding-bottom: 25px;
+            margin: 5px 5px; 
 
 
         }
@@ -131,6 +133,15 @@
             font-size: 15px;
             border-radius: 6px/4px;
             margin-bottom: 10px;
+
+        }
+        @include mq("mobile") {
+            width: 494px;
+            height: 90px;
+            font-size: 15px;
+            border-radius: 8px;
+            margin-bottom: 5px;
+            border: 1px solid #9A9A9A;
         }
 
     em{
@@ -159,27 +170,31 @@
         }
 
         &.email {
-            //margin-right: 386px;
+             @include mq("mobile") {
+                //width: 494px;
+                width: 519px;
+            }
        
         }
         &.first-name {
-            // @include mq("desktop") {
-            //     width: 240px;
-            // }
 
-            // @include mq("mobile") {
-            //     width: 385px;
-            // }
-        }
-        &.middle-initial {
-            width: 56px;
+
             @include mq("mobile") {
-                margin-right: 0;
-                width: 80px;
+                //width: 494px;
+                width: 519px;
             }
         }
-        &.state, &.zip {
-            width: 148px;
+        &.last-name {
+             @include mq("mobile") {
+                //width: 494px;
+                width: 519px;
+            }
+        }
+        &.email2{
+            @include mq("mobile") {
+                //width: 494px;
+                width: 519px;
+            }
         }
         &.optin {
             width: auto;
@@ -191,6 +206,7 @@
             font-size: 20px;
             color: #333E48;
             line-height: 26px;
+            margin-top: 10px;
         }
         &.submit {
             width: 295px;
@@ -213,9 +229,13 @@
     .optin-label {
         color: #333e48;
         display: block;
+
     }
     .optin-privacy {
         color: #333e48;
         display: block;
+    }
+    sup{
+        line-height:1em;
     }
 }
