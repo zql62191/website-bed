@@ -2,11 +2,11 @@
     .slideout__inner {
         padding: 25px 20px;
         @include mq("desktop") {
-            width: 490px;
+            width: 498px;
         }
 
         @include mq("mobile") {
-            width: 500px;
+            width: 498px;
         }
     }
     .bed_form {
@@ -62,7 +62,7 @@
         color: #333E48;
         line-height: 29px;
         @include mq("mobile");
-            font-size: 35px;
+            font-size: 26px;
             font-weight: bold;
     }
     a {
@@ -157,6 +157,10 @@
             margin: 0 5px 0 0;
             box-shadow: none;
             float: left;
+            font-family: HelveticaNeue;
+            font-size: 20px;
+            color: #333E48;
+            line-height: 26px;
         }
         &.submit {
             width: 295px;
@@ -166,9 +170,13 @@
             color: #febd3f;
             font-size: 18px;
             font-family: font("gill sans", "roman");
+            border-radius: 4px;
+            background: #323E48;
             @include mq("mobile") {
                 margin: 15px 0 150px 0;
                 font-size: 32px;
+                border-radius: 4px;
+                background: #323E48;
             }
         }
     }
