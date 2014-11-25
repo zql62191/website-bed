@@ -3,7 +3,7 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
     .close
 
     h2.
-      Sign up to instantly receive the #[br.hide--desktop]#[em DSM-5]#[sup ®] diagnostic criteria for Binge Eating Disorder and other BED content from Shire.
+      Sign up to instantly receive the #[br.hide--desktop]#[br]#[em DSM-5]#[sup ®] diagnostic criteria for Binge Eating Disorder and other BED content from Shire.
 
     p.required-fields.
       #[span.blue #[em All fields are required in the below form]]
@@ -17,7 +17,7 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
       input(
         type='text',
         name='firstName',
-        placeholder='*First Name',
+        placeholder='First Name',
         ng-model='form.fname',
         ng-required='true',
         ng-class="{forminvalid: (bed_form.firstName.$invalid && bed_form.firstName.$dirty) || (bed_form.firstName.$invalid && invalidform)}",
@@ -35,7 +35,7 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
       input(
         type='text',
         name='lastName',
-        placeholder='*Last Name',
+        placeholder='Last Name',
         ng-model='form.lname',
         ng-required='true',
         ng-class="{forminvalid: (bed_form.lastName.$invalid && bed_form.lastName.$dirty) || (bed_form.lastName.$invalid && invalidform)}",
@@ -44,7 +44,7 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
       input(
         type='text',
         name='email',
-        placeholder='*E‐mail',
+        placeholder='E‐mail',
         ng-model='form.email',
         ng-required='true',
         ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$/",
@@ -58,7 +58,7 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
         ng-required='true',
         ui-validate=" '$value==form.email' ",
         ui-validate-watch=" 'form.email' ",
-        placeholder='*Re-enter E‐mail',
+        placeholder='Re-enter E‐mail',
         ng-class="{forminvalid: (bed_form.email2.$invalid && bed_form.email2.$dirty) || (bed_form.email2.$invalid && invalidform)}",
         class='email2')
 
