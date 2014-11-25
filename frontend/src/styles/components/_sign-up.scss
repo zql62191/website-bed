@@ -6,13 +6,19 @@
         }
 
         @include mq("mobile") {
-            width: 498px;
+            width: 590px;
         }
     }
     .bed_form {
         // Need to force width outside of container because of scrollbar
         @include mq("desktop") {
             width: 680px;
+        }
+        @include mq("mobile"){
+            width:680px;
+            border-radius: 8px;
+            background: #FFFFFF;
+            border: 1px solid #9A9A9A;
         }
     }
     .forminvalid {
@@ -50,21 +56,29 @@
         color: #333E48;
         line-height: 26px;
         @include mq("mobile") {
-            font-size: 30px;
-            line-height: 40px;
+            font-size: 48px;
+            color: #333E48;
+            line-height: 46px;
+
+
         }
     }
     h3 {
         padding: 25px 0 5px 0;
-        font-weight: bold;
-        font-family: GillSansStd;
-        font-size: 26px;
-        color: #333E48;
-        line-height: 29px;
-        @include mq("mobile");
-            font-size: 26px;
+        @include mq("desktop"){
             font-weight: bold;
-    }
+            font-family: GillSansStd;
+            font-size: 26px;
+            color: #333E48;
+            line-height: 29px;
+        }
+
+        @include mq("mobile");
+            font-family: GillSansStd;
+            font-size: 48px;
+            color: #333E48;
+            line-height: 46px;    
+        }
     a {
         //text-decoration: underline;
         color: #51748b;
@@ -78,11 +92,26 @@
     }
     .required-fields {
         color: #7c8d94;
-        @include mq("mobile") {
-            font-size: 22px;
-            padding-bottom: 0;
+        font-size: 16px;
+        line-height: 18px;
+
+        @include mq("desktop") {
+            font-size: 16px;
+            padding-bottom: 25px;
+            
+
         }
+         @include mq("mobile") {
+            font-size: 26px;
+            color: #657E8E;
+            line-height: 32px;
+            padding-bottom: 25px;
+
+
+        }
+
     }
+
     input, select {
         color: #333e48;
         background-color: #fff;
@@ -103,13 +132,14 @@
             border-radius: 6px/4px;
             margin-bottom: 10px;
         }
-        em{
-            
-            font-family: HelveticaNeue-Italic;
-            font-size: 16px;
-            color: #657E8E;
-            line-height: 18px;
-        }
+
+    em{
+        
+        font-family: font("gill sans", "regular");
+        font-size: 16px;
+        color: #657E8E;
+        line-height: 18px;
+    }
         @include mq("mobile") {
             width: 440px;
             height: 78px;
