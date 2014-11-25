@@ -47,11 +47,11 @@
     h2 {
         color: #333e48;
         font-size: 21px;
-        line-height: 24px;
+        line-height: 6x;
         padding-top: 5px;
         @include mq("mobile") {
             font-size: 30px;
-            line-height: 60px;
+            line-height: 40px;
         }
     }
     h3 {
