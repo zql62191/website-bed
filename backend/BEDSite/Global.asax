@@ -27,14 +27,28 @@
         }
     }
 
-    //protected void Application_BeginRequest(Object sender, EventArgs e)
-    //{
-    //    if (HttpContext.Current.Request.IsSecureConnection.Equals(false) && HttpContext.Current.Request.IsLocal.Equals(false))
-    //    {
-    //        Response.Redirect("https://" + Request.ServerVariables["HTTP_HOST"]
-    //    + HttpContext.Current.Request.RawUrl);
-    //    }
-    //}
+    protected void Application_BeginRequest(Object sender, EventArgs e)
+    {
+        //if (System.IO.File.Exists(HttpContext.Current.Request.PhysicalPath))
+        //{
+        //    if (HttpContext.Current.Request.IsSecureConnection.Equals(false) || !Request.ServerVariables["HTTP_HOST"].ToUpper().Contains("WWW"))
+        //    {
+        //        Response.Redirect("https://" + parseWWW(Request.ServerVariables["HTTP_HOST"])
+        //            + HttpContext.Current.Request.RawUrl, false);
+        //        Response.StatusCode = 301;
+        //        Response.End();
+        //    }
+        //}
+    }
+
+    String parseWWW(String request)
+    {
+        String parsedRequest;
+
+        parsedRequest = request.Contains("www") ? request : "www." + request;
+        
+        return parsedRequest;
+    }
     
     void Application_End(object sender, EventArgs e) 
     {

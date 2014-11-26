@@ -19,8 +19,8 @@
     <script>
 !function(e){if(/msie|trident/i.test(e)){for(var t=function(){var t=e.match(/(?:msie |rv:)(\d+(\.\d+)?)/i),n=t&&t.length>1&&t[1]||"";return parseInt(n,10)}(),n="ie",i=6,s=12,u=["eq-ie"],r=i;s>=r;r++)t>r?u.push("gt-"+n+r):r>t?u.push("lt-"+n+r):t===r&&(u.push("lte-"+n+r),u.push("eq-"+n+r),u.push("gte-"+n+r));document.documentElement.className+=" "+u.join(" ")}}(navigator.userAgent||"");
 </script>
-    <link rel="stylesheet" href="/content/css/styles.css">
-    <link rel="stylesheet" href="/content/me/mediaelementplayer.min.css">
+    <link rel="stylesheet" href="content/css/styles.css">
+    <link rel="stylesheet" href="content/me/mediaelementplayer.min.css">
     <script src="//fast.fonts.net/jsapi/352bad9a-496a-416d-b9cf-171842848303.js"></script>
     <link rel="canonical" href="https://www.bingeeatingdisorder.com/"><!--[if (gte IE 6)&(lte IE 8)]>
     <script src="/content/js/ie.js"></script><![endif]-->
@@ -51,26 +51,18 @@
       <div data-direction="right" ng-controller="OptInController" class="signup-container slideout slideout--signup">
         <div class="slideout__inner">
           <div class="close"></div>
-          <h2>Sign up to receive the <em>DSM-5</em><sup>®</sup> diagnostic criteria and other <br class="hide--mobile">BED content from Shire.
+          <h2>Sign up to instantly <br class="hide--desktop">receive the <br class="hide--mobile"><em>DSM-5</em><sup>®</sup> diagnostic criteria for <br class="hide--desktop">binge  <br class="hide--mobile">eating disorder <br class="hide--desktop">and other BED<br class="hide--mobile"> content<br class="hide--desktop"> from Shire.
             
           </h2>
-          <p class="required-fields"><span class="red">*</span>Required Fields
+          <p class="required-fields"><em>All fields are required in the below form.</em>
             
           </p>
           <form name="bed_form" id="bed_form" ng-submit="optIn()" autocomplete="off" novalidate>
-            <input type="text" name="firstName" placeholder="*First Name" ng-model="form.fname" ng-required="true" ng-class="{forminvalid: (bed_form.firstName.$invalid &amp;&amp; bed_form.firstName.$dirty) || (bed_form.firstName.$invalid &amp;&amp; invalidform)}" class="first-name">
-            <input type="text" name="middleInitial" placeholder="MI" ng-model="form.MI" ng-required="false" maxlength="1" class="middle-initial">
-            <input type="text" name="lastName" placeholder="*Last Name" ng-model="form.lname" ng-required="true" ng-class="{forminvalid: (bed_form.lastName.$invalid &amp;&amp; bed_form.lastName.$dirty) || (bed_form.lastName.$invalid &amp;&amp; invalidform)}" class="last-name">
-            <input type="text" name="email" placeholder="*E‐mail" ng-model="form.email" ng-required="true" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/" ng-class="{forminvalid: (bed_form.email.$invalid &amp;&amp; bed_form.email.$dirty) || (bed_form.email.$invalid &amp;&amp; invalidform)}" class="email">
-            <input type="text" name="email2" ng-model="form.confirmemail" ng-required="true" ui-validate=" '$value==form.email' " ui-validate-watch=" 'form.email' " placeholder="*Re-enter E‐mail" ng-class="{forminvalid: (bed_form.email2.$invalid &amp;&amp; bed_form.email2.$dirty) || (bed_form.email2.$invalid &amp;&amp; invalidform)}" class="email2">
-            <input type="text" name="streetAddress" placeholder="*Street Address" ng-model="form.street" ng-required="true" ng-class="{forminvalid: (bed_form.streetAddress.$invalid &amp;&amp; bed_form.streetAddress.$dirty) || (bed_form.streetAddress.$invalid &amp;&amp; invalidform)}" class="street-address">
-            <input type="text" name="suiteOffice" placeholder="Suite/Office" ng-model="form.suite" ng-required="false" class="suite-office">
-            <input type="text" name="city" placeholder="*City" ng-model="form.city" ng-required="true" ng-class="{forminvalid: (bed_form.city.$invalid &amp;&amp; bed_form.city.$dirty) || (bed_form.city.$invalid &amp;&amp; invalidform)}" class="city">
-            <select name="state" ng-model="form.state" ng-required="true" stateselect ng-class="{forminvalid: (bed_form.state.$invalid &amp;&amp; bed_form.state.$dirty) || (bed_form.state.$pristine &amp;&amp; invalidform)}" ng-options="state for state in states" class="state"></select>
-            <input type="text" name="zip" placeholder="*Zip" ng-model="form.zip" ng-pattern="/^[0-9]{5}$/" maxlength="5" ng-required="true" ng-class="{forminvalid: (bed_form.zip.$invalid &amp;&amp; bed_form.zip.$dirty) || (bed_form.zip.$invalid &amp;&amp; invalidform)}" class="zip">
-            <select name="profession" ng-model="form.profession" ng-required="true" profselect ng-class="{forminvalid: (bed_form.profession.$invalid &amp;&amp; bed_form.profession.$dirty) || (bed_form.profession.$pristine &amp;&amp; invalidform)}" ng-options="prof for prof in professions" class="profession"></select>
-            <h3>
-              Opt In for Communications
+            <input type="text" name="firstName" placeholder="First Name" ng-model="form.fname" ng-required="true" ng-class="{forminvalid: (bed_form.firstName.$invalid &amp;&amp; bed_form.firstName.$dirty) || (bed_form.firstName.$invalid &amp;&amp; invalidform)}" class="first-name">
+            <input type="text" name="lastName" placeholder="Last Name" ng-model="form.lname" ng-required="true" ng-class="{forminvalid: (bed_form.lastName.$invalid &amp;&amp; bed_form.lastName.$dirty) || (bed_form.lastName.$invalid &amp;&amp; invalidform)}" class="last-name">
+            <input type="text" name="email" placeholder="E‐mail" ng-model="form.email" ng-required="true" ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/" ng-class="{forminvalid: (bed_form.email.$invalid &amp;&amp; bed_form.email.$dirty) || (bed_form.email.$invalid &amp;&amp; invalidform)}" class="email">
+            <input type="text" name="email2" ng-model="form.confirmemail" ng-required="true" ui-validate=" '$value==form.email' " ui-validate-watch=" 'form.email' " placeholder="Re-enter E‐mail" ng-class="{forminvalid: (bed_form.email2.$invalid &amp;&amp; bed_form.email2.$dirty) || (bed_form.email2.$invalid &amp;&amp; invalidform)}" class="email2">
+            <h3>Opt In for <br class="hide--desktop"> Communications
               
             </h3>
             <div ng-class="{forminvaliddiv: (bed_form.optin.$invalid &amp;&amp; bed_form.optin.$dirty) || (bed_form.optin.$pristine &amp;&amp; invalidform)}" class="check-wrap">
@@ -820,11 +812,11 @@
       <div class="hide--desktop"><img src="/content/img/dsm5-tab-bg-mobile.png"></div>
       <div class="hide--mobile"><img src="/content/img/dsm5-tab-bg.png"></div>
     </div>
-    <script src="/content/js/libs.js"></script>
-    <script src="/content/me/mediaelement-and-player.min.js"></script><!--[if (gte IE 6)&(lte IE 8)]>
+    <script src="content/js/libs.js"></script>
+    <script src="content/me/mediaelement-and-player.min.js"></script><!--[if (gte IE 6)&(lte IE 8)]>
     <script src="/content/js/skrollr.ie.js"></script><![endif]-->
-    <script src="/content/js/bed.js"></script>
-    <script src="/content/js/forms.js"></script>
+    <script src="content/js/bed.js"></script>
+    <script src="content/js/forms.js"></script>
     <script>
       $(BED.init);
       

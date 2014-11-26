@@ -25,13 +25,12 @@ namespace BEDService
     public class BEDWCFService : IBEDService
     {
         public static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-        //string firstname = System.web.HttpContext.Current
-        //System.Web.HttpContext.Current.Request.QueryString["fname"];
+
 
         public List<string> SetOptInData(OptIn optIn, string sourceCode)
         {
             log4net.Config.XmlConfigurator.Configure();
-          // string fname = obj.fname + obj.MI + obj.lname + obj.email;
+
             AuditTrail auditTrail = new AuditTrail();
             List<string> errors = null;
             HCPIndividual hcp;
@@ -48,14 +47,9 @@ namespace BEDService
 
                 if (Services.ServiceIsAvailable)
                 {
-                    Address address = new Address(optIn.Address.Address1, optIn.Address.Address2, optIn.Address.City, Enum.Parse(typeof(States), optIn.Address.State).ToString(), optIn.Address.Zip, null, ConfigurationManager.AppSettings["RTCountry"]);
 
                     EmailAddress emailAddress = new EmailAddress(optIn.Email.Email);
-                    hcp = new HCPIndividual(String.Empty, optIn.Address.FName, optIn.Address.LName, String.Empty, emailAddress, address);
-                    if(!String.IsNullOrEmpty(optIn.Address.MName)) {
-                        hcp.MiddleName = optIn.Address.MName;
-                    }
-                    hcp.Specialties.Add((Specialties)Enum.Parse(typeof(Specialties), optIn.Specialty));
+                    hcp = new HCPIndividual(String.Empty, optIn.Name.FName, optIn.Name.LName, String.Empty, emailAddress);
 
                     string sourceMCC = string.Empty;
                     if (!string.IsNullOrWhiteSpace(sourceCode) && !string.Equals(sourceCode, "0"))
@@ -160,11 +154,10 @@ namespace BEDService
         {
             List<string> errors = new List<string>();
 
-            errors.AddRange(ValidateAddress(optIn.Address));
+            errors.AddRange(ValidateName(optIn.Name));
             errors.AddRange(ValidateEmail(optIn.Email));
             errors.AddRange(ValidateConfirmEmail(optIn.Email));
 
-            ValueExists("Profession", optIn.Specialty, errors);
 
             return errors;
         }
@@ -190,17 +183,13 @@ namespace BEDService
             return errors;
         }
 
-        private List<string> ValidateAddress(FormAddress address)
+        private List<string> ValidateName(FormName name)
         {
             List<string> errors = new List<string>();
-            ValueExists("FirstName", address.FName, errors);
-            ValueExists("LastName", address.LName, errors);
-            ValueExists("Address1", address.Address1, errors);
-            ValueExists("City", address.City, errors);
-            ValueExists("State", address.State, errors);
 
-            ValueExists("Zip", address.Zip, errors);
-            IsPatternValid("Zip", address.Zip, new Regex(@"^\d{5}"), errors);
+            ValueExists("FirstName", name.FName, errors);
+            ValueExists("LastName", name.LName, errors);
+
             return errors;
         }
 

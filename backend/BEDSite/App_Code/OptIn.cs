@@ -10,11 +10,11 @@ namespace BEDSite.Model
     public class OptIn
     {
         [DataMember]
-        public string Specialty { get; set; }
-        [DataMember]
         public bool CommunicationsOptIn { get; set; }
+
         [DataMember]
-        public FormAddress Address { get; set; }
+        public FormName Name { get; set; }
+
         [DataMember]
         public FormEmail Email { get; set; }
     }
