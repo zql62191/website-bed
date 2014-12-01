@@ -52,7 +52,7 @@
     }
     h2 {
 
-        font-family: GillSansStd;
+        font-family: font("gill sans", "roman");
         font-size: 26px;
         color: #333E48;
         line-height: 26px;
@@ -68,7 +68,7 @@
         
         @include mq("desktop"){
             font-weight: bold;
-            font-family: GillSansStd;
+            font-family: font("gill sans", "roman");
             font-size: 26px;
             color: #333E48;
             line-height: 29px;
@@ -206,7 +206,6 @@
             font-size: 20px;
             color: #333E48;
             line-height: 26px;
-            margin-top: 10px;
         }
         &.submit {
             width: 295px;

@@ -23,14 +23,6 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
         ng-class="{forminvalid: (bed_form.firstName.$invalid && bed_form.firstName.$dirty) || (bed_form.firstName.$invalid && invalidform)}",
         class='first-name')
 
-      //- input(
-      //-   type='text',
-      //-   name='middleInitial',
-      //-   placeholder='MI',
-      //-   ng-model='form.MI'
-      //-   ng-required='false',
-      //-   maxlength='1',
-      //-   class='middle-initial')
 
       input(
         type='text',
@@ -61,62 +53,6 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
         placeholder='Re-enter E‐mail',
         ng-class="{forminvalid: (bed_form.email2.$invalid && bed_form.email2.$dirty) || (bed_form.email2.$invalid && invalidform)}",
         class='email2')
-
-      //- input(
-      //-   type='text',
-      //-   name='streetAddress',
-      //-   placeholder='*Street Address',
-      //-   ng-model='form.street',
-      //-   ng-required='true',
-      //-   ng-class="{forminvalid: (bed_form.streetAddress.$invalid && bed_form.streetAddress.$dirty) || (bed_form.streetAddress.$invalid && invalidform)}",
-      //-   class='street-address')
-
-      //- input(
-      //-   type='text',
-      //-   name='suiteOffice',
-      //-   placeholder='Suite/Office',
-      //-   ng-model='form.suite',
-      //-   ng-required='false',
-      //-   class='suite-office')
-
-      //- input(
-      //-   type='text',
-      //-   name='city',
-      //-   placeholder='*City',
-      //-   ng-model='form.city',
-      //-   ng-required='true',
-      //-   ng-class="{forminvalid: (bed_form.city.$invalid && bed_form.city.$dirty) || (bed_form.city.$invalid && invalidform)}",
-      //-   class='city')
-
-      //- select(
-      //-   name='state',
-      //-   class='state',
-      //-   ng-model="form.state",
-      //-   ng-required='true',
-      //-   stateselect,
-      //-   ng-class="{forminvalid: (bed_form.state.$invalid && bed_form.state.$dirty) || (bed_form.state.$pristine && invalidform)}",
-      //-   ng-options="state for state in states")
-
-      //- input(
-      //-   type='text',
-      //-   name='zip',
-      //-   placeholder='*Zip',
-      //-   ng-model="form.zip",
-      //-   ng-pattern="/^[0-9]{5}$/",
-      //-   maxlength=5,
-      //-   ng-required='true',
-      //-   ng-class="{forminvalid: (bed_form.zip.$invalid && bed_form.zip.$dirty) || (bed_form.zip.$invalid && invalidform)}",
-      //-   class='zip')
-
-      //- select(
-      //-   name='profession',
-      //-   class='profession',
-      //-   ng-model='form.profession',
-      //-   ng-required='true',
-      //-   profselect,
-      //-   ng-class="{forminvalid: (bed_form.profession.$invalid && bed_form.profession.$dirty) || (bed_form.profession.$pristine && invalidform)}",
-      //-   ng-options='prof for prof in professions')
-
 
 
       h3.
