@@ -55,7 +55,8 @@
         font-family: font("gill sans", "roman");
         font-size: 26px;
         color: #333E48;
-        line-height: 26px;
+        line-height: 30px;
+        padding-bottom: 15px;
 
         @include mq("mobile") {
             font-size: 48px;
