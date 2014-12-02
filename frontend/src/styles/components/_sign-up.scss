@@ -130,10 +130,10 @@
 
         @include mq("desktop") {
             width: 440px;
-            height: 31px;
+            height: 34px;
             font-size: 15px;
-            border-radius: 6px/4px;
-            margin-bottom: 10px;
+            border-radius: 4px;
+            margin-bottom: 8px;
 
         }
         @include mq("mobile") {
