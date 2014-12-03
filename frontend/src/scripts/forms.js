@@ -250,6 +250,8 @@
         $scope.states = statearray;
         $scope.MID = $window.parseUri($window.location.href).queryKey['mid'] || 0;
         $scope.invalidform = false;
+        $scope.regComplete = false;
+        $scope.submitted = false;
         $scope.professions = [
             '*Profession',
             'Eating Disorder Clinician',
@@ -321,19 +323,19 @@
 
         $scope.clearFormData = function() {
             $scope.bed_form.$setPristine();
-            $scope.invalidform = false;
-            $scope.form.email = null;
+            $scope.invalidform       = false;
+            $scope.form.email        = null;
             $scope.form.confirmemail = null;
-            $scope.form.fname = null;
-            $scope.form.MI = null;
-            $scope.form.lname = null;
-            $scope.form.street = null;
-            $scope.form.suite = null;
-            $scope.form.city = null;
-            $scope.form.state = 0;
-            $scope.form.zip = null;
-            $scope.form.profession = 0;
-            $scope.form.checkbox = false;
+            $scope.form.fname        = null;
+            $scope.form.MI           = null;
+            $scope.form.lname        = null;
+            $scope.form.street       = null;
+            $scope.form.suite        = null;
+            $scope.form.city         = null;
+            $scope.form.state        = 0;
+            $scope.form.zip          = null;
+            $scope.form.profession   = 0;
+            $scope.form.checkbox     = false;
         };
 
         $scope.processOptIn = function(path, sdata) {
@@ -347,15 +349,21 @@
                 'dataType': 'json'
             }).
             success(function() {
+                //BED.Modal.open('signup');
+                //BED.SlideOut.close();
+
                 $scope.clearFormData();
-                BED.SlideOut.close();
-                BED.Modal.open('signup');
+                $scope.regComplete = true;
                 BED.Analytics.formOnComplete('Registration');
             }).
             error(function(data) {
                 $scope.clearFormData();
                 BED.Modal.open('signup_error');
             });
+        };
+
+        $scope.toDSM5 = function() {
+            $window.location.href= "bed_dsm5_download.aspx";
         };
     }
 }).call(this);

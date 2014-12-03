@@ -238,4 +238,39 @@
     sup{
         line-height:1em;
     }
+
+    .dsm5-book {
+        background-image: url("#{$img-path}/dsm5-download.png");
+        height: 245px;
+        width: 193px;
+        margin: 15px auto 35px;
+    }
+
+    .download {
+        width: 295px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        background-color: #333e48;
+        color: #febd3f;
+        font-family: font("gill sans", "roman");
+        border-radius: 4px;
+        background: #323E48;
+        @include mq("mobile") {
+            border-radius: 4px;
+            background: #323E48;
+            font-size: 32px;
+            color: #FFBE2C;
+            line-height: 38px;
+           
+        }
+    }
+
+    .error-message {
+        color: #FF0000;
+        display: block;
+        font-size: 18px;
+    }
 }
