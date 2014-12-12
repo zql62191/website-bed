@@ -292,7 +292,7 @@
             };
 
             if (!$scope.bed_form.$valid) {
-                /*print error*/
+                // print error
                 $scope.invalidform = true;
                 return;
             }

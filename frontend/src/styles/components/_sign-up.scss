@@ -31,9 +31,10 @@
         height: 16px;
         float: left;
         margin: 5px 10px 0 0;
+
         @include mq('mobile') {
-            width: 35px;
-            height: 35px;
+            width: 15px;
+            height: 15px;
         }
 
         .lt-ie10 & {
@@ -76,7 +77,7 @@
         }
 
         @include mq("mobile");
-            font-family: GillSansStd;
+            font-family: font("gill sans", "roman");
             font-size: 48px;
             color: #333E48;
             line-height: 46px;  
@@ -258,13 +259,15 @@
         font-family: font("gill sans", "roman");
         border-radius: 4px;
         background: #323E48;
+
         @include mq("mobile") {
             border-radius: 4px;
             background: #323E48;
             font-size: 32px;
             color: #FFBE2C;
             line-height: 38px;
-           
+            width: 330px;
+            height: 40px;  
         }
     }
 

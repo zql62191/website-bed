@@ -49,9 +49,9 @@
         </nav>
       </div>
       <div data-direction="right" ng-controller="OptInController" class="signup-container slideout slideout--signup">
-        <div class="slideout__inner">
+        <div ng-hide="regComplete" class="slideout__inner">
           <div class="close"></div>
-          <h2>Sign up to instantly <br class="hide--desktop">receive the <br class="hide--mobile"><em>DSM-5</em><sup>®</sup> diagnostic criteria for <br class="hide--desktop">binge  <br class="hide--mobile">eating disorder <br class="hide--desktop">and other BED<br class="hide--mobile"> content<br class="hide--desktop"> from Shire.
+          <h2>Sign up to instantly <br class="hide--desktop">receive the <br class="hide--mobile"><em>DSM-5</em><sup>&reg;</sup> diagnostic criteria for <br class="hide--desktop">binge  <br class="hide--mobile">eating disorder <br class="hide--desktop">and other BED<br class="hide--mobile"> content<br class="hide--desktop"> from Shire.
             
           </h2>
           <p class="required-fields"><em>All fields are required in the below form.</em>
@@ -77,8 +77,16 @@
             <p class="optin-privacy">Shire respects your personal information. All information you have provided will be kept confidential and will not be used or distributed to anyone for any purpose other than what is explained in our Privacy Policy Statement. We encourage you to read our Privacy Policy Statement by clicking on this link: <a href="/privacy-policy.aspx" target="_blank">Review Shire Privacy Policy Statement</a>. This consent will be in effect until such time as you opt out of the program.
               
             </p>
+            <p ng-show="invalidform" class="error-message">Please review the errors above before continuing.</p>
             <input type="submit" name="submit" value="SUBMIT" class="submit">
           </form>
+        </div>
+        <div ng-show="regComplete" class="slideout__inner">
+          <div class="close"></div>
+          <h2>Thank you for signing up.</h2>
+          <p class="optin-privacy">Your download of the <em>DSM-5</em><sup>&reg;</sup> diagnostic criteria for BED is now available. You will also receive an<br>e-mail shortly with a link to download the PDF.</p>
+          <div class="dsm5-book"></div>
+          <div ng-click="toDSM5()" class="download">DOWNLOAD NOW</div>
         </div>
       </div>
       <div data-direction="right" class="dsm5-container slideout slideout--dsm5">
@@ -125,7 +133,7 @@
                     <li class="secondary-nav__item _1_liner"><a href="http://www.shire.com/" target="_blank">Shire US</a></li>
                   </ul>
           </nav><img src="/content/img/footer-logo.png" class="footer-logo">
-          <p>&copy;2014 <a href="http://www.shire.com/" target="_blank">Shire US Inc.,</a> Wayne, PA 19087 &nbsp;&nbsp;&nbsp;&nbsp;1‐800‐828‐2088 &nbsp;&nbsp;&nbsp;&nbsp;All rights reserved. &nbsp;&nbsp;&nbsp;&nbsp;S03442 &nbsp;&nbsp;&nbsp;&nbsp;09/14</p>
+          <p>&copy;2014 <a href="http://www.shire.com/" target="_blank">Shire US Inc.,</a> Wayne, PA 19087 &nbsp;&nbsp;&nbsp;&nbsp;1‐800‐828‐2088 &nbsp;&nbsp;&nbsp;&nbsp;All rights reserved. &nbsp;&nbsp;&nbsp;&nbsp;S04554 &nbsp;&nbsp;&nbsp;&nbsp;09/14</p>
           <p>All content of this website including text, images, graphics, sound files, and their arrangement, belongs to Shire and is protected by international copyright laws. All other intellectual property rights are reserved. The content may not be copied for commercial use or distribution, nor may these objects be downloaded, modified, or posted to other sites.</p>
           <p>This site is intended solely for US residents and is governed solely by US laws and government regulations. Please see <a href="/privacy-policy.aspx">our privacy policy</a> for more information. While Shire US Inc. makes reasonable efforts to include accurate, up‐to‐date information on the site, Shire US Inc. makes no warranties or representations as to its accuracy. Shire US Inc. assumes no liability for any errors or omissions in the content of the site.</p>
         </div>

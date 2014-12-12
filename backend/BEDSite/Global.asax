@@ -29,21 +29,25 @@
 
     protected void Application_BeginRequest(Object sender, EventArgs e)
     {
-        //if (System.IO.File.Exists(HttpContext.Current.Request.PhysicalPath))
-        //{
-        //    if (HttpContext.Current.Request.IsSecureConnection.Equals(false) || !Request.ServerVariables["HTTP_HOST"].ToUpper().Contains("WWW"))
-        //    {
-        //        Response.Redirect("https://" + parseWWW(Request.ServerVariables["HTTP_HOST"])
-        //            + HttpContext.Current.Request.RawUrl, false);
-        //        Response.StatusCode = 301;
-        //        Response.End();
-        //    }
-        //}
+        if (System.IO.File.Exists(HttpContext.Current.Request.PhysicalPath))
+        {
+            if (HttpContext.Current.Request.IsSecureConnection.Equals(false) || (!Request.ServerVariables["HTTP_HOST"].ToUpper().Contains("WWW") && Request.ServerVariables["HTTP_HOST"].ToUpper().Contains("BINGEEATINGDISORDER")))
+            {
+                Response.Redirect("https://" + parseWWW(Request.ServerVariables["HTTP_HOST"])
+                    + HttpContext.Current.Request.RawUrl, false);
+                Response.StatusCode = 301;
+                Response.End();
+            }
+        }
     }
 
     String parseWWW(String request)
     {
         String parsedRequest;
+        
+        if(!request.Contains("bingeeatingdisorder") || request.Contains("stage")) {
+            return request;
+        }
 
         parsedRequest = request.Contains("www") ? request : "www." + request;
         
