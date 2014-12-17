@@ -432,7 +432,7 @@ BED.SlideOut = (function() {
             duration: 300
         });
 
-        // $('body').addClass('modal-open');//css('overflow', 'hidden');
+        $('body').css('overflow', 'hidden');
 
     };
 
@@ -465,7 +465,7 @@ BED.SlideOut = (function() {
             duration: 300
         });
 
-        // $('body').removeClass('modal-open');
+        $('body').css('overflow', 'auto');
 
     };
 
@@ -489,8 +489,7 @@ BED.SlideOut = (function() {
         toggle: toggle
     };
 
-})();
-;if (typeof BED === 'undefined') {
+})();;if (typeof BED === 'undefined') {
     window.BED = {};
 }
 
