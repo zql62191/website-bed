@@ -1016,7 +1016,10 @@ label > * {
   }
 }
 .eq-ie9 .slideout .slideout__inner form {
-  width: 670px;
+  width: auto;
+}
+.eq-ie9 .slideout .slideout__inner form input {
+  width: 100%;
 }
 .slideout[data-direction="left"] .slideout__inner {
   left: 0;
@@ -1035,21 +1038,25 @@ label > * {
 }
 @media only screen and (max-width: 40em) {
   .slideout--signup .slideout__inner {
-    width: 590px;
+    width: 490px;
   }
 }
 @media only screen and (min-width: 40.063em) {
   .slideout--signup .bed_form {
-    width: 680px;
+    width: 498px;
   }
 }
 @media only screen and (max-width: 40em) {
   .slideout--signup .bed_form {
-    width: 680px;
+    width: 480px;
     border-radius: 8px;
     background: #FFFFFF;
     border: 1px solid #9A9A9A;
   }
+}
+.ie9 .slideout--signup {
+  display: block;
+  text-overflow: none;
 }
 .slideout--signup .forminvalid {
   border-color: #FF0000;
@@ -1059,7 +1066,6 @@ label > * {
   display: inline-block;
   width: 16px;
   height: 16px;
-  float: left;
   margin: 5px 10px 0 0;
 }
 @media only screen and (max-width: 40em) {
