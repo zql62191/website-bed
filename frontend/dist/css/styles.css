@@ -1240,6 +1240,31 @@ label > * {
   color: #333E48;
   line-height: 26px;
 }
+@media only screen and (max-width: 40em) {
+  .slideout--signup input.optin, .slideout--signup select.optin {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-top: -20px;
+    margin-left: -4px;
+  }
+  .slideout--signup input.optin :after, .slideout--signup select.optin :after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 20px;
+    height: 15px;
+  }
+  .slideout--signup input.optin :before, .slideout--signup select.optin :before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 35px;
+    height: 20px;
+  }
+}
 .slideout--signup input.submit, .slideout--signup select.submit {
   width: 295px;
   display: block;
@@ -1258,9 +1283,20 @@ label > * {
     line-height: 38px;
   }
 }
+@media only screen and (max-width: 40em) {
+  .slideout--signup .check-wrap {
+    width: 16px;
+    height: 16px;
+  }
+}
 .slideout--signup .optin-label {
   color: #333e48;
   display: block;
+}
+@media only screen and (max-width: 40em) {
+  .slideout--signup .optin-label {
+    pointer-events: none;
+  }
 }
 .slideout--signup .optin-privacy {
   color: #333e48;
