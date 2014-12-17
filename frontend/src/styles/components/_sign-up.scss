@@ -6,21 +6,26 @@
         }
 
         @include mq("mobile") {
-            width: 590px;
+            width: 490px;
         }
     }
     .bed_form {
         // Need to force width outside of container because of scrollbar
         @include mq("desktop") {
-            width: 680px;
+            //width: 680px;
+            width: 498px;
         }
         @include mq("mobile"){
-            width:680px;
+            width:480px;
             border-radius: 8px;
             background: #FFFFFF;
             border: 1px solid #9A9A9A;
         }
     }
+       .ie9 & {
+                display:block;
+                text-overflow: none;
+        }
     .forminvalid {
         border-color: #FF0000;
     }
@@ -29,7 +34,7 @@
         display: inline-block;
         width: 16px;
         height: 16px;
-        float: left;
+        //float: left;
         margin: 5px 10px 0 0;
 
         @include mq('mobile') {
@@ -235,6 +240,7 @@
     .optin-privacy {
         color: #333e48;
         display: block;
+
     }
     sup{
         line-height:1em;
