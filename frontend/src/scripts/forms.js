@@ -350,12 +350,12 @@
         $scope.processOptIn = function(path, sdata) {
 
 
+            $scope.processing = true;
+
             // if its already been clicked don't do anything (avoid multiple backend submissions)
             if ($scope.submitted) {
                 return;
             }
-
-
 
             $http({
                 headers: {
@@ -369,12 +369,15 @@
             success(function() {
                 //BED.Modal.open('signup');
                 //BED.SlideOut.close();
+                $scope.processing = false;
 
                 $scope.clearFormData();
                 $scope.regComplete = true;
                 BED.Analytics.formOnComplete('Registration');
             }).
             error(function(data) {
+                $scope.processing = false;
+
                 $scope.clearFormData();
                 BED.Modal.open('signup_error');
             });

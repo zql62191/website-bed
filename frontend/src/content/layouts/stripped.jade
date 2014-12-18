@@ -52,3 +52,12 @@ html
         scrolling='no',
         marginheight='0',
         marginwidth='0')
+
+    //- hacky solution to properly display pdfs in iOS: redirect to file
+    script(type='text/javascript').
+
+      console.log(navigator.userAgent);
+
+      if(navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
+        window.location.href = '/media/DSM-5_BED_Brochure.pdf';
+      }
