@@ -1210,22 +1210,22 @@ label > * {
 }
 @media only screen and (max-width: 40em) {
   .slideout--signup input.email, .slideout--signup select.email {
-    width: 519px;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 40em) {
   .slideout--signup input.first-name, .slideout--signup select.first-name {
-    width: 519px;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 40em) {
   .slideout--signup input.last-name, .slideout--signup select.last-name {
-    width: 519px;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 40em) {
   .slideout--signup input.email2, .slideout--signup select.email2 {
-    width: 519px;
+    width: 100%;
   }
 }
 .slideout--signup input.optin, .slideout--signup select.optin {
@@ -1282,6 +1282,13 @@ label > * {
     color: #FFBE2C;
     line-height: 38px;
   }
+}
+.slideout--signup .processing-gif {
+  background-image: url("../img/loading-gif.gif");
+  width: 50px;
+  height: 50px;
+  -webkit-background-size: 50px 50px;
+  background-size: 50px;
 }
 @media only screen and (max-width: 40em) {
   .slideout--signup .check-wrap {

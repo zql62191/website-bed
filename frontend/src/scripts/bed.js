@@ -356,11 +356,28 @@ BED.SlideOut = (function() {
             setTimeout(function() {
                 focused = false;
             }, 1);
-        });
+        })
+
+        // Remove focus from form on checkbox click (to allow iOS to scroll properly)
+        .on('click.slideout', '.slideout .optin', function() {
+
+            $(this).blur();
+        })
+
+        // Disable submit button on click
+        // .on('click.slideout', '.slideout .submit', function() {
+
+        //     if($(this).hasClass('disabled')) {
+
+        //     }
+
+        //     $(this).addClass('disabled');
+        // });
 
 
         if (bowser.ios) {
             // Elegant hack to fix scrolling in fixed position elements
+
 
             $('.slideout input[type="text"]').css('pointer-events', 'none');
 
@@ -400,6 +417,8 @@ BED.SlideOut = (function() {
     };
 
     var open = function(el) {
+
+        $('.submit').removeClass('disabled');
 
         $('.slideout._is_open').exists(function() {
             close();
@@ -465,7 +484,7 @@ BED.SlideOut = (function() {
             duration: 300
         });
 
-        $('body').css('overflow', 'auto');
+        $('body').css('overflow', '');
 
     };
 

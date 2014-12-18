@@ -75,7 +75,8 @@
               
             </p>
             <p ng-show="invalidform" class="error-message">Please review the errors above before continuing.</p>
-            <input type="submit" name="submit" value="SUBMIT" class="submit">
+            <div ng-show="processing" class="processing-gif"></div>
+            <input ng-class="{disabled: submitted}" type="submit" name="submit" value="SUBMIT" class="submit">
           </form>
         </div>
         <div ng-show="regComplete" class="slideout__inner">

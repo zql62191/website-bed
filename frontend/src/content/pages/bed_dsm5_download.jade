@@ -2,6 +2,16 @@
 ---
 extends /layouts/stripped
 
+//- hacky solution to properly display pdfs in iOS: redirect to file
+script(type='text/javascript').
+
+  var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
+
+  if (iOS) {
+    window.location('/media/DSM-5_BED_Brochure.pdf');
+  }
+
+
 block styles
   style.
     * {

@@ -157,6 +157,8 @@
                 return;
             }
 
+            $scope.processing = true;
+
             var URL;
             var data = {
                 'email': {
@@ -202,6 +204,8 @@
         };
 
         $scope.processForm = function(path, sdata) {
+
+
             $http({
                 headers: {
                     'Content-Type': 'application/json; charset=utf-8'
@@ -219,6 +223,8 @@
                 $scope.clearFormData();
                 BED.Modal.open('unsubscribe_error');
             });
+
+            $scope.processing = false;
         };
 
         $scope.checkFormPresent = function(item) {
@@ -252,6 +258,7 @@
         $scope.invalidform = false;
         $scope.regComplete = false;
         $scope.submitted = false;
+        $scope.processing = false;
         $scope.professions = [
             '*Profession',
             'Eating Disorder Clinician',
@@ -270,6 +277,8 @@
         $scope.form.profession = $scope.professions[0];
 
         $scope.optIn = function() {
+
+
             var oldHeight = $(document).height() - $(window).height();
             var oldTop = $(window).scrollTop();
             var oldBottom = oldHeight - oldTop;
@@ -323,22 +332,31 @@
 
         $scope.clearFormData = function() {
             $scope.bed_form.$setPristine();
-            $scope.invalidform       = false;
-            $scope.form.email        = null;
+            $scope.invalidform = false;
+            $scope.form.email = null;
             $scope.form.confirmemail = null;
-            $scope.form.fname        = null;
-            $scope.form.MI           = null;
-            $scope.form.lname        = null;
-            $scope.form.street       = null;
-            $scope.form.suite        = null;
-            $scope.form.city         = null;
-            $scope.form.state        = 0;
-            $scope.form.zip          = null;
-            $scope.form.profession   = 0;
-            $scope.form.checkbox     = false;
+            $scope.form.fname = null;
+            $scope.form.MI = null;
+            $scope.form.lname = null;
+            $scope.form.street = null;
+            $scope.form.suite = null;
+            $scope.form.city = null;
+            $scope.form.state = 0;
+            $scope.form.zip = null;
+            $scope.form.profession = 0;
+            $scope.form.checkbox = false;
         };
 
         $scope.processOptIn = function(path, sdata) {
+
+
+            // if its already been clicked don't do anything (avoid multiple backend submissions)
+            if ($scope.submitted) {
+                return;
+            }
+
+
+
             $http({
                 headers: {
                     'Content-Type': 'application/json; charset=utf-8'
@@ -363,7 +381,7 @@
         };
 
         $scope.toDSM5 = function() {
-            $window.location.href= "bed_dsm5_download.aspx";
+            $window.location.href = "bed_dsm5_download.aspx";
         };
     }
 }).call(this);
