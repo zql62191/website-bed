@@ -1,3 +1,5 @@
+var dir = '/content/';
+
 module.exports = {
     integrate: {
         options: {
@@ -21,17 +23,17 @@ module.exports = {
                 // },
                 // Matches image elements and their source value.
                 img: {
-                    'img/': '/content/img/'
+                    'img/': dir+'img/'
                 },
                 // Matches stylesheet links and their href attribute's value.
                 link: {
-                    'css/': '/content/css/',
-                    'me/': '/content/me/'
+                    'css/': dir+'css/',
+                    'me/': dir+'me/'
                 },
                 // Matches script tags, and their sources.
                 script: {
-                    'js/': '/content/js/',
-                    'me/': '/content/me/'
+                    'js/': dir+'js/',
+                    'me/': dir+'me/'
                 }
             }
         }]
