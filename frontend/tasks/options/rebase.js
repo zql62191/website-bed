@@ -1,4 +1,4 @@
-var dir = '/content/';
+var dir = '/hcp/content/';
 
 module.exports = {
     integrate: {

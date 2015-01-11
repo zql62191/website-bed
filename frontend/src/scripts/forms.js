@@ -142,7 +142,7 @@
                 'sourceCode': $scope.MID
             };
 
-            URL = '/Unsubscribe/Service/BEDUnsubscribe.svc/SetUnsubscribeDataBoth';
+            URL = '/hcp/Unsubscribe/Service/BEDUnsubscribe.svc/SetUnsubscribeDataBoth';
             Data = JSON.stringify(data);
 
             $scope.processForm(URL, Data);
@@ -178,7 +178,7 @@
                 'sourceCode': $scope.MID
             };
 
-            URL = '/Unsubscribe/Service/BEDUnsubscribe.svc/SetUnsubscribeDataAddress';
+            URL = '/hcp/Unsubscribe/Service/BEDUnsubscribe.svc/SetUnsubscribeDataAddress';
             Data = JSON.stringify(data);
 
             $scope.processForm(URL, Data);
@@ -197,7 +197,7 @@
                 'sourceCode': $scope.MID
             };
 
-            URL = '/Unsubscribe/Service/BEDUnsubscribe.svc/SetUnsubscribeDataEmail';
+            URL = '/hcp/Unsubscribe/Service/BEDUnsubscribe.svc/SetUnsubscribeDataEmail';
             Data = JSON.stringify(data);
 
             $scope.processForm(URL, Data);
@@ -315,7 +315,7 @@
                 $(window).scrollTop(oldTop + bottomDifference);
             }, 100);
 
-            URL = '/Service/BEDService.svc/SetOptInData';
+            URL = '/hcp/Service/BEDService.svc/SetOptInData';
             Data = JSON.stringify(data);
 
             $scope.processOptIn(URL, Data);

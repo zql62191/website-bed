@@ -6,46 +6,46 @@ prc: "S03442 09/14"
 nav:
   primary:
     -
-      url: "/#/home"
+      url: "/hcp/#/home"
       title: "Home"
       file: "home"
     -
-      url: "/#/prevalence"
+      url: "/hcp/#/prevalence"
       title: "Prevalence"
       file: "prevalence"
     -
-      url: "/#/dsm-5"
+      url: "/hcp/#/dsm-5"
       title: "What is BED?"
       file: "dsm5"
     -
-      url: "/#/clinical-characteristics"
+      url: "/hcp/#/clinical-characteristics"
       title: "Clinical Characteristics"
       file: "course"
     -
-      url: "/#/functional-consequences"
+      url: "/hcp/#/functional-consequences"
       title: "Functional Consequences"
       file: "effects"
     -
-      url: "/#/neurobiology"
+      url: "/hcp/#/neurobiology"
       title: "Potential Causes"
       file: "neurobiology"
     -
-      url: "/#/diagnosis"
+      url: "/hcp/#/diagnosis"
       title: "Recognizing BED in Adults"
       file: "diagnosis"
     -
-      url: "/#/resources"
+      url: "/hcp/#/resources"
       title: "Resources/Expert Videos"
       file: "resources"
   secondary:
     -
-      url: "/unsubscribe.html"
+      url: "/hcp/unsubscribe.html"
       title: "Unsubscribe"
     -
-      url: "/contact-us.html"
+      url: "/hcp/contact-us.html"
       title: "Contact Us"
     -
-      url: "/privacy-policy.html"
+      url: "/hcp/privacy-policy.html"
       title: "Privacy Policy"
     -
       url: "http://www.shire.com/"
