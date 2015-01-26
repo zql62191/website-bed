@@ -15,8 +15,8 @@ module.exports = {
                     pattern: /\/index.html/ig,
                     replacement: '/'
                 }, {
-                    pattern: /\/privacy-policy.html/ig,
-                    replacement: '/privacy-policy.aspx'
+                    pattern: /privacy-policy.html/ig,
+                    replacement: 'privacy-policy.aspx'
                 }, {
                     pattern: /\/contact-us.html/ig,
                     replacement: '/contact-us.aspx'
@@ -24,8 +24,8 @@ module.exports = {
                     pattern: /\/unsubscribe.html/ig,
                     replacement: '/Unsubscribe/'
                 }, {
-                    pattern: /\/media\/DSM-5_BED_Brochure.pdf/ig,
-                    replacement: '/Content/media/DSM-5_BED_Brochure.pdf'
+                    pattern: /media\/DSM-5_BED_Brochure.pdf/ig,
+                    replacement: 'Content/media/DSM-5_BED_Brochure.pdf'
                 }, {
                     pattern: /progid:DXImageTransform\.Microsoft\.AlphaImageLoader\(src='img\//ig,
                     replacement: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src=\'content/img/'

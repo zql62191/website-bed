@@ -85,3 +85,14 @@ The statement has been terminated.
 2014-07-31 09:27:31,907 [9] INFO BEDService.BEDUnsubscribe - BED:: User:   | Operation: Unsubscribtion_success |  Category: SetUnsubscribeDataAddress | Message: OK 
 2014-07-31 10:05:10,323 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
 2014-08-01 09:54:38,204 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2015-01-15 10:30:25,414 [12] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2015-01-15 10:40:22,464 [31] INFO BEDService.BEDUnsubscribe - BED:: User:   | Operation: Unsubscribtion_Failure |  Category: ShireRealtime | Message: The type initializer for 'Shire.Realtime.WebServices.Services' threw an exception. 
+2015-01-15 10:42:07,044 [31] INFO BEDService.BEDUnsubscribe - BED:: User:   | Operation: Unsubscribtion_Failure |  Category: ShireRealtime | Message: The type initializer for 'Shire.Realtime.WebServices.Services' threw an exception. 
+2015-01-15 10:42:10,613 [15] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2015-01-15 11:01:15,694 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2015-01-15 11:01:43,222 [14] INFO BEDService.BEDUnsubscribe - BED:: User: t@t.t | Operation: Unsubscribtion_success |  Category: SetUnsubscribeDataEmail | Message: OK 
+2015-01-15 11:02:08,450 [9] INFO BEDService.BEDUnsubscribe - BED:: User: t@t.t | Operation: Unsubscribtion_error |  Category: SetUnsubscribeDataBoth | Message: System.Collections.Generic.List`1[System.String] 
+2015-01-15 13:26:56,653 [18] INFO BEDService.BEDUnsubscribe - BED:: User: t@t.t | Operation: Unsubscribtion_error |  Category: SetUnsubscribeDataBoth | Message: System.Collections.Generic.List`1[System.String] 
+2015-01-16 13:49:28,349 [113] INFO BEDService.BEDUnsubscribe - BED:: User: t@t.t | Operation: Unsubscribtion_error |  Category: SetUnsubscribeDataBoth | Message: System.Collections.Generic.List`1[System.String] 
+2015-01-16 13:50:44,660 [43] INFO BEDService.BEDUnsubscribe - BED:: User: t@t.t | Operation: Unsubscribtion_error |  Category: SetUnsubscribeDataBoth | Message: System.Collections.Generic.List`1[System.String] 
+2015-01-16 13:57:53,019 [100] INFO BEDService.BEDUnsubscribe - BED:: User: t@t.t | Operation: Unsubscribtion_error |  Category: SetUnsubscribeDataBoth | Message: System.Collections.Generic.List`1[System.String] 

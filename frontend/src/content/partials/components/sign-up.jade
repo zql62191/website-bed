@@ -47,7 +47,7 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
         name='email2',
         ng-model='form.confirmemail',
         ng-required='true',
-        ui-validate=" '$value==form.email' ",
+        ui-validate=" '$value.toUpperCase() == form.email.toUpperCase()' ",
         ui-validate-watch=" 'form.email' ",
         placeholder='Re-enter E‐mail',
         ng-class="{forminvalid: (bed_form.email2.$invalid && bed_form.email2.$dirty) || (bed_form.email2.$invalid && invalidform)}",
@@ -72,7 +72,7 @@ div(data-direction='right', ng-controller='OptInController').signup-container.sl
           By checking this box and clicking submit, you certify that you are a US health care professional and you are opting to receive information about binge eating disorder plus site updates, educational information, patient support resources, and other information from Shire. You will be able to opt out of these communications at any time.
       
       p(class='optin-privacy').
-          Shire respects your personal information. All information you have provided will be kept confidential and will not be used or distributed to anyone for any purpose other than what is explained in our Privacy Policy Statement. We encourage you to read our Privacy Policy Statement by clicking on this link: #[a(href='/privacy-policy.html', target='_blank') Review Shire Privacy Policy Statement]. This consent will be in effect until such time as you opt out of the program.
+          Shire respects your personal information. All information you have provided will be kept confidential and will not be used or distributed to anyone for any purpose other than what is explained in our Privacy Policy Statement. We encourage you to read our Privacy Policy Statement by clicking on this link: #[a(href='/hcp/privacy-policy.html', target='_blank') Review Shire Privacy Policy Statement]. This consent will be in effect until such time as you opt out of the program.
 
       p.error-message(ng-show="invalidform")
         | Please review the errors above before continuing.

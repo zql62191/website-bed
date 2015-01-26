@@ -94,8 +94,6 @@ namespace BEDService
                     
                 }
 
-               
-
             }
             catch (Exception e)
             {

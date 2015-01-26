@@ -186,3 +186,6 @@
 2014-12-10 09:27:03,631 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
 2014-12-10 09:33:12,226 [12] INFO BEDService.BEDWCFService - BED:: User: asdf@asdf.com | Operation: OptIn_Success |  Category: SetOptInData | Message: OK 
 2014-12-10 09:42:03,119 [12] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2015-01-15 10:07:28,826 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2015-01-15 10:29:41,966 [6] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
+2015-01-15 10:29:42,001 [6] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_BeginRequest | Message: BED Request Received. 

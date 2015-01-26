@@ -315,7 +315,7 @@
                 $(window).scrollTop(oldTop + bottomDifference);
             }, 100);
 
-            URL = '/hcp/Service/BEDService.svc/SetOptInData';
+            URL = 'Service/BEDService.svc/SetOptInData';
             Data = JSON.stringify(data);
 
             $scope.processOptIn(URL, Data);
@@ -384,7 +384,7 @@
         };
 
         $scope.toDSM5 = function() {
-            $window.location.href = "bed_dsm5_download.aspx";
+            $window.open("bed_dsm5_download.aspx", "_blank");
         };
     }
 }).call(this);
