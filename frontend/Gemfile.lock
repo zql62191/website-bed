@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     bitters-compass (0.10.0)
       bourbon-compass (>= 3.1.3)

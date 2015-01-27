@@ -2,7 +2,7 @@
 title: "HCP Information on Binge Eating Disorder in Adults"
 keywords: ""
 description: "Find information on binge eating disorder in adults, including prevalence, diagnostic criteria, distinctions from obesity, and possible causes."
-prc: "S03442 09/14"
+prc: "S04644 02/15"
 nav:
   primary:
     -
@@ -15,7 +15,7 @@ nav:
       file: "prevalence"
     -
       url: "/hcp/#/dsm-5"
-      title: "What is BED?"
+      title: "What is B.E.D.?"
       file: "dsm5"
     -
       url: "/hcp/#/clinical-characteristics"
@@ -31,7 +31,7 @@ nav:
       file: "neurobiology"
     -
       url: "/hcp/#/diagnosis"
-      title: "Recognizing BED in Adults"
+      title: "Recognizing B.E.D. in Adults"
       file: "diagnosis"
     -
       url: "/hcp/#/resources"
