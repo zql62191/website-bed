@@ -111,3 +111,90 @@
         }
     }
 }
+
+
+
+/* BED 2.0 Callouts */
+
+.callouts {
+    background-color: #323E48;
+
+    @include mq('desktop') {
+        padding: 0 65px;
+        height: 229px;
+    }
+
+    .callout-link {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .column {
+        width: 33%;
+        display: inline-block;
+        vertical-align: top;
+
+        @include mq("mobile") {
+            width: 100%;
+            display: block;
+            border-bottom: 1px solid #606E7A;
+        }
+        
+        .callout-link {
+            position: relative;
+
+            @include mq('desktop') {
+                padding: 52px 0 32px 0;
+            }
+            @include mq('mobile') {
+                padding: 35px 0 28px 0;
+            }
+        }
+
+        h2 {
+            padding-bottom: 15px;
+
+            @include mq("desktop") {
+                margin-left: 41px;
+                font-size: 26px;
+                line-height: 22px;
+            }
+            @include mq('mobile') {
+                margin-left: 35px;
+                font-size: 40px;
+                line-height: 40px;
+            }
+        }
+
+        p {
+            margin-left: 41px;
+            color: #B6C2CC;
+
+            @include mq("desktop") {
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+
+        .callout-arrow {
+            position: absolute;
+
+            @include mq('desktop') {
+                background-image: url('#{$img-path}/callout-arrow.png');
+                width: 27px;
+                height: 27px;
+                left: 0;
+                top: 52px;
+            }
+
+            @include mq('mobile') {
+                background-image: url('#{$img-path}/callout-arrow-mobile.png');
+                width: 34px;
+                height: 34px;
+                top: 41px;
+                right: 32px;
+            }
+        }
+    }
+}

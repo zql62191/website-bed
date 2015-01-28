@@ -181,42 +181,7 @@
             }
         }
     }
-    // Graphic (and cooresponding text) only visible on desktop
-    // .desktop-graphic {
-    //     @include mq("mobile") {
-    //         display: none;
-    //     }
-    //     @include mq("desktop") {
-    //         display: none;
-    //         background-repeat: no-repeat;
-    //         background-position: top center;
-    //         text-align: center;
-    //         float: left;
-    //         p {
-    //             font-size: 22px;
-    //             line-height: 26px;
-    //             font-family: font("gill sans", "regular");
-    //             width: 230px;
-    //             margin-left: -36.5px;
-    //         }
-    //         &.female-graphic {
-    //             background-image: url("#{$img-path}/prevalence-female.png");
-    //             width: 158px;
-    //             height: 230px;
-    //             margin: 75px 0 0 151px;
-    //             padding-top: 235px;
-    //             color: #febd3f;
-    //         }
-    //         &.male-graphic {
-    //             background-image: url("#{$img-path}/prevalence-male.png");
-    //             background-size: 100% auto;
-    //             width: 192px;
-    //             height: 189px;
-    //             margin: 45px 0;
-    //             padding-top: 205px;
-    //         }
-    //     }
-    // }
+
     // Mobile text
     .gender-ratio {
         border-top: 1px solid #ffffff;
@@ -235,121 +200,164 @@
         }
     }
     .comparable {
-        padding: 40px 0 26px 0;
-        margin-bottom: 40px;
         border-top: 1px solid #ffffff;
-        border-bottom: 1px solid #ffffff;
-        @include mq("desktop") {
-            padding-top: 25px;
-            margin-bottom: 25px;
+        margin: 18px 0 32px;
+        padding: 24px 0 39px 0;
+        
+        @include mq('desktop') {
+            border-bottom: 1px solid #ffffff;
         }
 
-        .patients-graphic {
-            margin: 0 auto;
-            @include mq("mobile") {
-                //width: 605px;
-                width: 440px;
-                height: 545px;
-                //background-image: url("#{$img-path}/prevalence-patients-mobile.png");
+        h3 {
+            text-align: center;
+
+            @include mq('desktop') {
+                font-size: 26px;
+                line-height: 31px;
             }
 
-            @include mq("desktop") {
-                width: 897px;
-                //height: 186px;
-                //background-image: url("#{$img-path}/prevalence-patients.png");
-            }
-
-            .graphic {
-                @include mq("desktop") {
-                    width: 195px;
-                    //height: 185px;
-                    height: 365px;
-                    display: inline-block;
-                    margin-right: 25px;
-                }
-
-                @include mq("mobile") {
-                    //width: 275px;
-                    width: 195px;
-                    height: 262px;
-                    display: inline-block;
-                    margin-right: 20px;
-                    margin-bottom: 15px;
-                    background-position: center;
-                }
-            }
-        }
-        .patient-1 {
-            @include mq("desktop") {
-                background-image: url("#{$img-path}/prevalence-person-1-tall.png");
-            }
-
-            @include mq("mobile") {
-                background-image: url("#{$img-path}/prevalence-person-1-short.png");
-            }
-
-            //background-image: url("#{$img-path}/prevalence-patient-1.png");
-       
-        }
-        .patient-2 {
-            @include mq("desktop") {
-                background-image: url("#{$img-path}/prevalence-person-2-tall.png");
-            }
-
-            @include mq("mobile") {
-                background-image: url("#{$img-path}/prevalence-person-2-short.png");
-            }
-
-            //background-image: url("#{$img-path}/prevalence-patient-2.png");
-       
-        }
-        .patient-3 {
-            @include mq("desktop") {
-                background-image: url("#{$img-path}/prevalence-person-3-tall.png");
-            }
-
-            @include mq("mobile") {
-                background-image: url("#{$img-path}/prevalence-person-3-short.png");
-            }
-
-            //background-image: url("#{$img-path}/prevalence-patient-3.png");
-       
-        }
-        .patient-4 {
-            @include mq("desktop") {
-                background-image: url("#{$img-path}/prevalence-person-4-tall.png");
-            }
-
-            @include mq("mobile") {
-                background-image: url("#{$img-path}/prevalence-person-4-short.png");
-            }
-
-            //background-image: url("#{$img-path}/prevalence-patient-4.png");
-       
-        }
-        h2 {
-            @include mq("mobile") {
+            @include mq('mobile') {
                 font-size: 40px;
-                line-height: 46px;
-                width: 90%;
-                padding-bottom: 50px;
+                line-height: 40px;
             }
 
-            @include mq("desktop") {
-                font-size: 23px;
-                line-height: 26px;
-                font-family: font("gill sans", "regular");
-                width: 725px;
-                padding: 0 0 15px 0;
+            .small {
+                font-size: 18px;
             }
         }
-        .dagger {
-            padding: 0 0 25px 0;
-            //margin-left: 15px;
-            // &:before {
-            //     content: '\2020';
-            //     margin-left: -15px;
-            // }
+        p {
+            text-align: center;
+
+            @include mq('desktop') {
+                font-size: 18px;
+                line-height: 18px;
+            }
+
+            @include mq('mobile') {
+                font-size: 24px;
+                line-height: 28px; 
+            }
+        }
+        
+        .patient-thumbs {
+            text-align: center;
+
+            @include mq('mobile') {
+                margin-top: 21px;
+            }
+        }
+
+        /* patient thumbnails */
+        .patient-thumb {
+            background-repeat: no-repeat;
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 4px;
+
+            @include mq('desktop') {
+                background-size: 76px;
+                width: 76px;
+                height: 76px; 
+            }
+            @include mq('mobile') {
+                background-size: 154px;
+                width: 154px;
+                height: 154px; 
+            }
+        }
+        .kim-thumb {
+
+            @include mq('desktop') {
+                background-image: url("#{$img-path}/kim-thumb.png");
+            }
+            @include mq('mobile') {
+                background-image: url("#{$img-path}/kim-thumb-mobile.png");
+            }
+
+        }
+        .nikki-thumb {
+
+            @include mq('desktop') {
+                background-image: url("#{$img-path}/nikki-thumb.png");
+            }
+            @include mq('mobile') {
+                background-image: url("#{$img-path}/nikki-thumb-mobile.png");   
+            }
+        }
+        .julie-thumb {
+
+            @include mq('desktop') {
+                background-image: url("#{$img-path}/julie-thumb.png"); 
+            }
+            @include mq('mobile') {
+                background-image: url("#{$img-path}/julie-thumb-mobile.png");    
+            }
+        }
+        .diego-thumb {
+
+            @include mq('desktop') {
+                background-image: url("#{$img-path}/diego-thumb.png");
+            }
+            @include mq('mobile') {
+                background-image: url("#{$img-path}/diego-thumb-mobile.png");   
+            }
+        }
+
+        .view-patient-profiles {
+            display: block;
+            background: #FFBE2C;
+            margin: 29px auto 0 auto;
+            overflow: hidden;
+
+            @include mq('desktop') {
+                width: 264px;
+                height: 55px;
+                border-radius: 40px;
+            }
+            @include mq('mobile') {
+                width: 528px;
+                height: 110px;
+                border-radius: 28px;
+            }
+
+            p {
+                color: #2B4251;
+                font-family: font('gill sans', 'regular');
+                -webkit-transition: transform 0.3s;
+                -moz-transition: transform 0.3s;
+                transition: transform 0.3s;
+
+                @include mq('desktop') {
+                    font-size: 18px;
+                    line-height: 55px;
+                }
+                @include mq('mobile') {
+                    font-size: 36px;
+                    line-height: 110px;
+                }
+            }
+            &:before {
+                content: "\2193";
+                position: absolute;
+                top: -55px;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                font-size: 30px;
+                color: #2B4251;
+                line-height: 55px;
+                -webkit-transition: transform 0.3s;
+                -moz-transition: transform 0.3s;
+                transition: transform 0.3s;
+            }
+            &:hover {
+                
+                p, &:before {
+                    -webkit-transform: translateY(55px);
+                    -moz-transform: translateY(55px);
+                    transform: translateY(55px);
+                }
+            }
         }
     }
     ul {

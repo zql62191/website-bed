@@ -83,8 +83,32 @@ var BED = (function() {
             $(el).load($(el).data('load'));
         });
 
-    };
+    
 
+        // BED 2.0 Patient Profiles
+
+        $(document).ready(function() {
+
+            // desktop patient profile nav
+            $('.profile-button').on('click touch', function() {
+                var target = $(this).data('target');
+
+                $('.profile-button').removeClass('active-profile-button');
+                $(this).addClass('active-profile-button');
+
+                $('.profile').removeClass('active-profile');
+                $('.' + target).addClass('active-profile');
+            });
+
+            // mobile patient profile nav
+            $('.profile-icon').on('click touch', function() {
+
+                // do stuff
+
+            });
+        });
+    };
+    
 
     // Return the module object
     return {
