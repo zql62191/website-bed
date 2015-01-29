@@ -4526,11 +4526,14 @@ label > * {
 }
 .section--videos .video-list {
   font-size: 0;
+  position: relative;
 }
 .section--videos .video-list .video-nav li {
   background-color: #4F5A64;
+  transition: background-color 0.3s;
+  color: #D7DBDF;
 }
-.section--videos .video-list .video-nav li.active {
+.section--videos .video-list .video-nav li.active, .section--videos .video-list .video-nav li:hover {
   background-color: #333E48;
 }
 @media only screen and (min-width: 40.063em) {
@@ -4545,36 +4548,182 @@ label > * {
     vertical-align: top;
     width: 33.33333%;
     height: 60px;
-    color: #D7DBDF;
     font-size: 16px;
     line-height: 60px;
     text-align: center;
+    border-right: 1px solid #5F6B75;
+  }
+  .section--videos .video-list .video-nav li:last-of-type {
+    border: 0;
+  }
+  .section--videos .video-list .video-nav li.mobile-dropdown {
+    display: none;
   }
   .section--videos .video-list .video-nav .two-lines {
     line-height: 16px;
     padding-top: 12px;
   }
 }
-.section--videos .video-list .video-thumb.new :before {
+@media only screen and (max-width: 40em) {
+  .section--videos .video-list .video-nav {
+    height: 90px;
+    overflow: visible;
+    position: relative;
+    z-index: 1000;
+  }
+  .section--videos .video-list .video-nav li {
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1111;
+  }
+  .section--videos .video-list .video-nav li.active {
+    z-index: 5555;
+  }
+  .section--videos .video-list .video-nav .mobile-dropdown {
+    z-index: 9999;
+  }
+  .section--videos .video-list .video-nav.mobile-open li {
+    position: relative;
+  }
+  .section--videos .video-list .video-nav.mobile-open .mobile-dropdown {
+    z-index: 0;
+    position: absolute;
+  }
+}
+.section--videos .video-list .video-section {
+  position: relative;
+  z-index: 0;
+  top: 0;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.section--videos .video-list .video-section.active {
+  display: block;
+  opacity: 1;
+}
+@media only screen and (min-width: 40.063em) {
+  .section--videos .video-list .video-section {
+    left: 72px;
+  }
+}
+.section--videos .video-list .video-thumb {
+  cursor: pointer;
+  background-position: top left;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 29px 29px 0;
+}
+.section--videos .video-list .video-thumb.new:before {
   position: absolute;
   top: 6px;
   left: -6px;
 }
+.section--videos .video-list .video-thumb p {
+  color: #333E48;
+}
+.section--videos .video-list .video-thumb .timestamp {
+  position: absolute;
+  right: 0;
+  color: #ffffff;
+  background-color: #333E48;
+  text-align: center;
+}
 @media only screen and (min-width: 40.063em) {
   .section--videos .video-list .video-thumb {
-    display: inline-block;
-    vertical-align: top;
     width: 178px;
     height: 180px;
     background-size: 178px 100px;
-    background-position: top left;
-    margin: 0 29px 29px 0;
   }
   .section--videos .video-list .video-thumb p {
+    margin-top: 110px;
     font-size: 16px;
     line-height: 16px;
-    color: #333E48;
   }
+  .section--videos .video-list .video-thumb .timestamp {
+    top: 75px;
+    width: 39px;
+    height: 25px;
+    font-size: 12px;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--videos .video-list .video-thumb {
+    width: 253px;
+    height: 272px;
+    background-size: 253px 142px;
+  }
+  .section--videos .video-list .video-thumb p {
+    margin-top: 156px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .section--videos .video-list .video-thumb .timestamp {
+    top: 107px;
+    width: 51px;
+    height: 35px;
+    font-size: 17px;
+    line-height: 35px;
+  }
+}
+.section--videos .what-is-bed .video-1 {
+  background-image: url(../img/what-is-bed-thumb-1.png);
+}
+.section--videos .what-is-bed .video-2 {
+  background-image: url(../img/what-is-bed-thumb-2.png);
+}
+.section--videos .what-is-bed .video-3 {
+  background-image: url(../img/what-is-bed-thumb-3.png);
+}
+.section--videos .what-is-bed .video-4 {
+  background-image: url(../img/what-is-bed-thumb-4.png);
+}
+.section--videos .what-is-bed .video-5 {
+  background-image: url(../img/what-is-bed-thumb-5.png);
+}
+.section--videos .bed-in-adults .video-1 {
+  background-image: url(../img/bed-in-adults-thumb-1.png);
+}
+.section--videos .bed-in-adults .video-2 {
+  background-image: url(../img/bed-in-adults-thumb-2.png);
+}
+.section--videos .bed-in-adults .video-3 {
+  background-image: url(../img/bed-in-adults-thumb-3.png);
+}
+.section--videos .bed-in-adults .video-4 {
+  background-image: url(../img/bed-in-adults-thumb-4.png);
+}
+.section--videos .bed-in-adults .video-5 {
+  background-image: url(../img/bed-in-adults-thumb-5.png);
+}
+.section--videos .bed-in-adults .video-6 {
+  background-image: url(../img/bed-in-adults-thumb-6.png);
+}
+.section--videos .bed-in-adults .video-7 {
+  background-image: url(../img/bed-in-adults-thumb-7.png);
+}
+.section--videos .physician-television .video-1 {
+  background-image: url(../img/physician-television-thumb-1.png);
+}
+.section--videos .physician-television .video-2 {
+  background-image: url(../img/physician-television-thumb-2.png);
+}
+.section--videos .physician-television .video-3 {
+  background-image: url(../img/physician-television-thumb-3.png);
+}
+.section--videos .physician-television .video-4 {
+  background-image: url(../img/physician-television-thumb-4.png);
+}
+.section--videos .physician-television .video-5 {
+  background-image: url(../img/physician-television-thumb-5.png);
+}
+.section--videos .physician-television .video-6 {
+  background-image: url(../img/physician-television-thumb-6.png);
 }
 .section--videos .signup {
   margin: 0 auto;

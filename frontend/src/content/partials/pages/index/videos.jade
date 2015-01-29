@@ -25,77 +25,99 @@ div(data-section="videos").section.section--videos
       .video-list
 
         ul.video-nav
-          li.active.
-            B.E.D. Defined
-          li.two-lines.
+          li.mobile-dropdown 
+          
+          li(data-target="what-is-bed").active.
+            What is B.E.D.?
+
+          li(data-target="bed-in-adults").two-lines.
             B.E.D. in Adults #[br]Background Information
-          li.
+
+          li(data-target="physician-television").
             Physician Television Network
 
         //- BED DEFINED
-        .video-section.bed-defined
+        .video-section.what-is-bed.active
           
-          .video-thumb.new
+          .video-thumb(data-video="bulik4").video-1.new
             p What are the essential features for a diagnosis of B.E.D.?
+            .timestamp 1:25
 
-          .video-thumb.new
+          .video-thumb(data-video="wilfley10").video-2.new
             p How is B.E.D. distinct from bulimia nervosa?
+            .timestamp 2:23
 
-          .video-thumb.new
+          .video-thumb(data-video="wilfley9").video-3.new
             p How is B.E.D. distinct from overeating and obesity?
+            .timestamp 2:31
 
-          .video-thumb.new
+          .video-thumb(data-video="bulik3").video-4.new
             p What are the functional consequences of B.E.D. in adults?
+            .timestamp 2:00
 
-          .video-thumb
+          .video-thumb(data-video="bulik12").video-5
             p What is the clinical course of B.E.D.?
+            .timestamp 0:31
 
 
         //- BED IN ADULTS BACKGROUND INFORMATION
         .video-section.bed-in-adults
 
-          .video-thumb
+          .video-thumb(data-video="grilo2").video-1
             p How does the prevalence of B.E.D. compare to that of other eating disorders in adults?
+            .timestamp 0:42
 
-          .video-thumb.new
+          .video-thumb(data-video="wilfley13").video-2.new
             p What is the relationship between obesity and B.E.D. in adults?
+            .timestamp 0:55
 
-          .video-thumb
+          .video-thumb(data-video="grilo5").video-3
             p What psychiatric conditions are commonly associated with B.E.D.
+            .timestamp 1:10
 
-          .video-thumb
+          .video-thumb(data-video="kornstein6").video-4
             p What is thought to cause B.E.D.?
+            .timestamp 0:53
 
-          .video-thumb
+          .video-thumb(data-video="grilo7").video-5
             p How does the prevalence of B.E.D. compare among races/ethnicities in adults?
+            .timestamp 0:52
 
-          .video-thumb 
+          .video-thumb(data-video="kornstein8").video-6
             p Does B.E.D. occur in both women and men?
+            .timestamp 0:34
 
-          .video-thumb
+          .video-thumb(data-video="kornstein14").video-7
             p How can clinicians begin an effective conversation with their adult patients about B.E.D.?
+            .timestamp 0:51
   
 
         //- PHYSICIAN TELEVISION NETWORK
         .video-section.physician-television
 
-          .video-thumb
+          .video-thumb.video-1
             p Living with B.E.D.
+            .timestamp 4:54
 
-          .video-thumb
+          .video-thumb.video-2
             p Diagnostic criteria for B.E.D.
+            .timestamp 5:56
 
-          .video-thumb
+          .video-thumb.video-3
             p Possible causes of B.E.D.
+            .timestamp 5:37
 
-          .video-thumb
+          .video-thumb.video-4
             p Recognizing adult patients with B.E.D.
+            .timestamp 6:21
 
-          .video-thumb
+          .video-thumb.video-5
             p Functional consequences of B.E.D.
+            .timestamp 2:24
             
-          .video-thumb
+          .video-thumb.video-6
             p Diagnosing B.E.D. in adult patients
+            .timestamp 4:06
 
             
 

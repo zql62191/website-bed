@@ -124,12 +124,15 @@
     //- BED 2.0 video listings
     .video-list {
         font-size: 0;
+        position: relative;
 
         .video-nav {
             li {
                 background-color: #4F5A64;
+                transition: background-color 0.3s;
+                color: #D7DBDF;
 
-                &.active {
+                &.active, &:hover {
                     background-color: #333E48;
                 }
             }
@@ -145,10 +148,18 @@
                     vertical-align: top;
                     width: 33.33333%;
                     height: 60px;
-                    color: #D7DBDF;
                     font-size: 16px;
                     line-height: 60px;
                     text-align: center;
+                    border-right: 1px solid #5F6B75;
+
+                    &:last-of-type {
+                        border: 0;
+                    }
+
+                    &.mobile-dropdown {
+                        display: none;
+                    }
                 }
                 .two-lines {
                     line-height: 16px;
@@ -156,42 +167,186 @@
                 }
             }
             @include mq('mobile') {
+                height: 90px;
+                overflow: visible;
+                position: relative;
+                z-index: 1000;
 
+                li {
+                    height: 90px;
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1111;
+
+                    &.active {
+                        z-index: 5555;
+                    }
+                }
+                .mobile-dropdown {
+                    z-index: 9999;
+                }
+
+                &.mobile-open {
+                    li {
+                        position: relative;
+                    }
+                    .mobile-dropdown {
+                        z-index: 0;
+                        position: absolute;
+                    }
+                }
             }
         }
         .video-section {
+            position: relative;
+            z-index: 0;
+            top: 0;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s;
 
+            &.active {
+                display: block;
+                opacity: 1;
+            }
+
+            @include mq('desktop') {
+                left: 72px;
+            }
         }
         .video-thumb {
+            cursor: pointer;
+            background-position: top left;
+            background-repeat: no-repeat;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 29px 29px 0;
 
-            &.new {
+            &.new:before {
+                position: absolute;
+                top: 6px;
+                left: -6px;
+            }
 
-                :before {
-                    position: absolute;
-                    top: 6px;
-                    left: -6px;
-                }
+            p {
+                color: #333E48;
+            }
+
+            .timestamp {
+                position: absolute;
+                right: 0;
+                color: #ffffff;
+                background-color: #333E48;
+                text-align: center;
             }
             
             @include mq('desktop') {
-
-                display: inline-block;
-                vertical-align: top;
                 width: 178px;
                 height: 180px;
                 background-size: 178px 100px;
-                background-position: top left;
-                margin: 0 29px 29px 0;
 
                 p {
+                    margin-top: 110px;
                     font-size: 16px;
                     line-height: 16px;
-                    color: #333E48;
+                }
+                .timestamp {
+                    top: 75px;
+                    width: 39px;
+                    height: 25px;
+                    font-size: 12px;
+                    line-height: 25px;
+                }
+            }
+            @include mq('mobile') {
+                width: 253px;
+                height: 272px;
+                background-size: 253px 142px;
+
+                p {
+                    margin-top: 156px;
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+                .timestamp {
+                    top: 107px;
+                    width: 51px;
+                    height: 35px;
+                    font-size: 17px;
+                    line-height: 35px;
                 }
             }
         }
 
     }
+
+
+    //  Video thumbnails!
+    .what-is-bed {
+        .video-1 {
+            background-image: url(#{$img-path}/what-is-bed-thumb-1.png);
+        }
+        .video-2 {
+            background-image: url(#{$img-path}/what-is-bed-thumb-2.png);
+        }
+        .video-3 {
+            background-image: url(#{$img-path}/what-is-bed-thumb-3.png);
+        }
+        .video-4 {
+            background-image: url(#{$img-path}/what-is-bed-thumb-4.png);
+        }
+        .video-5 {
+            background-image: url(#{$img-path}/what-is-bed-thumb-5.png);
+        }
+    }
+
+    .bed-in-adults {
+        .video-1 {
+            background-image: url(#{$img-path}/bed-in-adults-thumb-1.png);
+        }
+        .video-2 {
+            background-image: url(#{$img-path}/bed-in-adults-thumb-2.png);
+        }
+        .video-3 {
+            background-image: url(#{$img-path}/bed-in-adults-thumb-3.png);
+        }
+        .video-4 {
+            background-image: url(#{$img-path}/bed-in-adults-thumb-4.png);
+        }
+        .video-5 {
+            background-image: url(#{$img-path}/bed-in-adults-thumb-5.png);
+        }
+        .video-6 {
+            background-image: url(#{$img-path}/bed-in-adults-thumb-6.png);
+        }
+        .video-7 {
+            background-image: url(#{$img-path}/bed-in-adults-thumb-7.png);
+        }
+    }
+
+    .physician-television {
+        .video-1 {
+            background-image: url(#{$img-path}/physician-television-thumb-1.png);
+        }
+        .video-2 {
+            background-image: url(#{$img-path}/physician-television-thumb-2.png);
+        }
+        .video-3 {
+            background-image: url(#{$img-path}/physician-television-thumb-3.png);
+        }
+        .video-4 {
+            background-image: url(#{$img-path}/physician-television-thumb-4.png);
+        }
+        .video-5 {
+            background-image: url(#{$img-path}/physician-television-thumb-5.png);
+        }
+        .video-6 {
+            background-image: url(#{$img-path}/physician-television-thumb-6.png);
+        }
+    }
+
 
 
 

@@ -85,9 +85,13 @@ var BED = (function() {
 
     
 
-        // BED 2.0 Patient Profiles
-
+        
         $(document).ready(function() {
+
+
+            /********************************************************************/
+            // BED 2.0 Patient Profiles
+
 
             // desktop patient profile nav
             $('.profile-button')
@@ -129,12 +133,10 @@ var BED = (function() {
 
             }
 
-
-            var profileWidth = 548;
+            var profileWidth = 548; // width of an individual patient profile for mobile.
 
             // mobile patient profile nav
             $('.arrow').on('click touch', function() {
-
 
                 var currentProfileIndex = parseInt($('.active-profile').data('profile-num'));
 
@@ -155,10 +157,34 @@ var BED = (function() {
                     $('.profile').css('transform', 'translateX( -' + (currentProfileIndex-2) * profileWidth + 'px)');
 
                     updateNavArrows(--currentProfileIndex);
-
                 }
+            });
+
+            /********************************************************************/
+            // BED 2.0 Video section nav
+
+            $('.video-nav li').on('click touch', function() {
+
+                var target = $(this).add('.' + $(this).data('target')); // selector for selected tab and section
+
+                $('.video-section, .video-nav li').removeClass('active');
+                $(target).addClass('active');
+
+
+                if (window.matchMedia(BED.UI.mediaQueries.mobile).matches) {
+                    $('.video-nav').removeClass('mobile-open');
+                }
+               
+            });
+
+            // mobile custom dropdown
+            $('.mobile-dropdown').on('click touch', function() {
+                $(this).parent().addClass('mobile-open');
 
             });
+
+
+
         });
     };
     

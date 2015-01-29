@@ -109,8 +109,10 @@ BED.VideoPlayer = (function() {
 
         $(document.body)
 
-        .on('click.videoplayer', '.video-playlist li[data-video]', function(e) {
+        //.on('click.videoplayer', '.video-playlist li[data-video]', function(e) {
 
+        // BED 2.0 updated event listener:
+        .on('click.videoplayer', '.video-thumb[data-video]', function(e) {
             playVideo($(this).data('video'));
 
         })
