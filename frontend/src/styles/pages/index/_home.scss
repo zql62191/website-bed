@@ -33,11 +33,15 @@
         width: 100%;
         background-color: #333e48;
         height: 25px;
-        // margin-bottom: -22px;
+
         p {
             text-align: center;
             line-height: 25px;
-            font-size: 16px;
+            font-size: 14px;
+            color: #BFCAD2;
+        }
+        a {
+            color: #ffffff;
         }
     }
     .content-wrap {
@@ -47,12 +51,12 @@
         }
 
         @include mq("desktop") {
-            padding: 178px 35px 0 609px;
+            padding: 122px 35px 0 609px;
         }
     }
     .eyebrow {
         font-family: font("gill sans", "roman");
-        font-size: 20px;
+        font-size: 20.5px;
         line-height: 23px; 
         padding-bottom: 0;
         @include mq("desktop") {
@@ -65,15 +69,9 @@
         }
     }
     h1 {
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-        // font-size: 55px;
-        // @include mq("desktop") {
-        //     font-size: 32px;
-        //     padding-bottom: 15px;
-        // }
-        // @include mq('mobile') {
-        //     padding-top: 24px;
-        // }
+        //text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+        
+
         @include mq("mobile") {
             font-size: 40px;
             line-height: 44px;
@@ -88,7 +86,7 @@
         }
     }
     h3 {
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+        //text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
         @include mq("desktop") {
             font-size: 26px;
         }
@@ -110,6 +108,42 @@
             line-height: 18px;
         }
     }
+    .sign-up-button {
+     
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        p {
+            text-align: center;
+            color: #FEBD3F;
+        }
+
+        @include mq('desktop') {
+            border: 3px solid #FFBE2C;
+            border-radius: 12px;
+            height: 55px;
+            width: 307px;
+
+            p {
+                font-size: 16px;
+                line-height: 55px;
+            }
+        }
+        @include mq('mobile') {
+            border: 6px solid #FFBE2C;
+            border-radius: 24px;
+            height: 110px;
+            width: 564px;
+
+            p {
+                font-size: 28px;
+                line-height: 110px;
+            }
+        }
+    }
+
 }
 
 
@@ -118,6 +152,10 @@
 
 .callouts {
     background-color: #323E48;
+
+    h2 {
+        color: #FFBE2C;
+    }
 
     @include mq('desktop') {
         padding: 0 65px;

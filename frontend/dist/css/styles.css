@@ -1736,7 +1736,11 @@ label > * {
 .section--home .disclaimer-bar p {
   text-align: center;
   line-height: 25px;
-  font-size: 16px;
+  font-size: 14px;
+  color: #BFCAD2;
+}
+.section--home .disclaimer-bar a {
+  color: #ffffff;
 }
 @media only screen and (max-width: 40em) {
   .section--home .content-wrap {
@@ -1746,12 +1750,12 @@ label > * {
 }
 @media only screen and (min-width: 40.063em) {
   .section--home .content-wrap {
-    padding: 178px 35px 0 609px;
+    padding: 122px 35px 0 609px;
   }
 }
 .section--home .eyebrow {
   font-family: "Gill Sans W01 Medium", Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
-  font-size: 20px;
+  font-size: 20.5px;
   line-height: 23px;
   padding-bottom: 0;
 }
@@ -1765,9 +1769,6 @@ label > * {
     font-size: 35px;
     line-height: 39px;
   }
-}
-.section--home h1 {
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 @media only screen and (max-width: 40em) {
   .section--home h1 {
@@ -1783,9 +1784,6 @@ label > * {
     line-height: 29px;
     padding-bottom: 10px;
   }
-}
-.section--home h3 {
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 @media only screen and (min-width: 40.063em) {
   .section--home h3 {
@@ -1810,10 +1808,46 @@ label > * {
     line-height: 18px;
   }
 }
+.section--home .sign-up-button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.section--home .sign-up-button p {
+  text-align: center;
+  color: #FEBD3F;
+}
+@media only screen and (min-width: 40.063em) {
+  .section--home .sign-up-button {
+    border: 3px solid #FFBE2C;
+    border-radius: 12px;
+    height: 55px;
+    width: 307px;
+  }
+  .section--home .sign-up-button p {
+    font-size: 16px;
+    line-height: 55px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--home .sign-up-button {
+    border: 6px solid #FFBE2C;
+    border-radius: 24px;
+    height: 110px;
+    width: 564px;
+  }
+  .section--home .sign-up-button p {
+    font-size: 28px;
+    line-height: 110px;
+  }
+}
 
 /* BED 2.0 Callouts */
 .callouts {
   background-color: #323E48;
+}
+.callouts h2 {
+  color: #FFBE2C;
 }
 @media only screen and (min-width: 40.063em) {
   .callouts {
@@ -1950,10 +1984,6 @@ label > * {
   width: 538px;
   margin-left: 25px;
   padding-bottom: 50px;
-  /*&:before {
-      content: '*';
-      margin-left: -9px;
-  }*/
 }
 @media only screen and (min-width: 40.063em) {
   .section--prevalence .chart-note {
@@ -2248,20 +2278,40 @@ label > * {
 .section--prevalence .comparable .view-patient-profiles:before {
   content: "\2193";
   position: absolute;
-  top: -55px;
   left: 0;
   width: 100%;
   height: 100%;
-  font-size: 30px;
   color: #2B4251;
-  line-height: 55px;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
 }
-.section--prevalence .comparable .view-patient-profiles:hover p, .section--prevalence .comparable .view-patient-profiles:hover:before {
-  -webkit-transform: translateY(55px);
-  -ms-transform: translateY(55px);
-  transform: translateY(55px);
+@media only screen and (min-width: 40.063em) {
+  .section--prevalence .comparable .view-patient-profiles:before {
+    top: -55px;
+    line-height: 55px;
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--prevalence .comparable .view-patient-profiles:before {
+    top: -110px;
+    line-height: 110px;
+    font-size: 60px;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .section--prevalence .comparable .view-patient-profiles:hover p, .section--prevalence .comparable .view-patient-profiles:hover:before {
+    -webkit-transform: translateY(55px);
+    -ms-transform: translateY(55px);
+    transform: translateY(55px);
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--prevalence .comparable .view-patient-profiles:hover p, .section--prevalence .comparable .view-patient-profiles:hover:before {
+    -webkit-transform: translateY(110px);
+    -ms-transform: translateY(110px);
+    transform: translateY(110px);
+  }
 }
 @media only screen and (min-width: 40.063em) {
   .section--prevalence ul {
@@ -2482,16 +2532,6 @@ label > * {
   .section--course .chart img {
     width: 175px;
   }
-}
-.section--course .mean-duration {
-  /*
-  background-image: url("../img/prevalence-text-bg.png");
-  width: 740px;
-  height: 73px;
-  margin: 0 auto 0 auto;
-  padding: 16px 25px;
-  color: #51748b;
-  */
 }
 @media only screen and (max-width: 40em) {
   .section--course .mean-duration {
@@ -3094,6 +3134,11 @@ label > * {
 .lt-ie9 .section--diagnosis {
   background: #51748b;
 }
+@media only screen and (max-width: 40em) {
+  .section--diagnosis .content-wrap {
+    border-bottom: 0;
+  }
+}
 .section--diagnosis .bar--title:before {
   border-top-color: #2b343d;
 }
@@ -3285,7 +3330,7 @@ label > * {
     padding-top: 52px;
     background-image: url("../img/patient-profile-header.png");
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: 240px 151px;
   }
   .bed-patient-profiles .patient-profiles-header h3 {
     font-size: 36px;
@@ -3320,14 +3365,30 @@ label > * {
     margin-right: 67px;
     width: 46px;
     height: 46px;
-    background-color: #ffffff;
+    background-image: url(../img/patient-profile-icon-inactive.png);
+    background-size: 46px;
     transition: -webkit-transform 300ms;
     transition: transform 300ms;
+    padding-bottom: 0;
+  }
+  .bed-patient-profiles .profile-buttons li .active-bg {
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-image: url(../img/patient-profile-icon-active.png);
+    width: 100%;
+    height: 100%;
+    background-size: 46px;
+  }
+  .bed-patient-profiles .profile-buttons li.hover .active-bg {
+    opacity: 1;
   }
   .bed-patient-profiles .profile-buttons li.active-profile-button {
     -webkit-transform: translateY(13px);
     -ms-transform: translateY(13px);
     transform: translateY(13px);
+  }
+  .bed-patient-profiles .profile-buttons li.active-profile-button .active-bg {
+    opacity: 1;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -3350,8 +3411,10 @@ label > * {
 }
 @media only screen and (max-width: 40em) {
   .bed-patient-profiles .profile-container {
-    width: 548px;
-    margin: 0 auto;
+    width: 2207px;
+    margin: 44px auto 0 auto;
+    height: 1150px;
+    overflow: auto;
   }
   .bed-patient-profiles .profile-container .arrow {
     position: absolute;
@@ -3372,14 +3435,40 @@ label > * {
     background-image: url("../img/arrow-previous.png");
   }
   .bed-patient-profiles .profile-container .arrow-next {
-    right: 42px;
+    left: 430px;
     background-image: url("../img/arrow-next.png");
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .bed-patient-profiles .profile-container .patient-profile-pagination {
+    display: none;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .bed-patient-profiles .profile-container .patient-profile-pagination {
+    width: 75px;
+    height: 15px;
+    margin: 12px auto 0 auto;
+    font-size: 0;
+  }
+  .bed-patient-profiles .profile-container .patient-profile-pagination .circle {
+    width: 13px;
+    height: 13px;
+    border: 2px solid #9EACB6;
+    border-radius: 6.5px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5px;
+  }
+  .bed-patient-profiles .profile-container .patient-profile-pagination .circle.active {
+    background-color: #9EACB6;
   }
 }
 .bed-patient-profiles .profile {
   opacity: 0;
   z-index: -1;
-  transition: opacity 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
 }
 .bed-patient-profiles .profile li {
   margin-left: 38px;
@@ -3405,9 +3494,12 @@ label > * {
   }
 }
 @media only screen and (max-width: 40em) {
+  .bed-patient-profiles .profile {
+    width: 548px;
+    float: left;
+  }
   .bed-patient-profiles .profile h3 {
     text-align: center;
-    width: 548px;
     margin: 0 auto;
     padding: 0;
   }
@@ -3430,7 +3522,7 @@ label > * {
     height: 160px;
     background-size: 161px 160px;
     left: 50%;
-    margin: 54px 0 24px -80px;
+    margin: 0 0 24px -80px;
   }
 }
 .bed-patient-profiles .profile-section {
@@ -3445,7 +3537,6 @@ label > * {
   margin-bottom: 0;
 }
 .bed-patient-profiles .profile-section p.footnote, .bed-patient-profiles .profile-section li.footnote {
-  font-family: "GillSansW01-MediumItali", Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
   font-size: 13px;
   color: #99ABB8;
 }
@@ -3454,6 +3545,9 @@ label > * {
   font-size: 24px;
   line-height: 29px;
   color: #FFBE2C;
+}
+.bed-patient-profiles .profile-section .bmi {
+  margin-top: 30px;
 }
 @media only screen and (min-width: 40.063em) {
   .bed-patient-profiles .profile-section {
@@ -3504,6 +3598,14 @@ label > * {
     padding: 27px 32px 32px 32px;
   }
 }
+@media only screen and (min-width: 40.063em) {
+  .bed-patient-profiles .stats p {
+    display: inline;
+    vertical-align: top;
+    width: 60px;
+    margin-right: 40px;
+  }
+}
 @media only screen and (max-width: 40em) {
   .bed-patient-profiles .stats {
     padding: 0;
@@ -3540,12 +3642,35 @@ label > * {
     height: 509px;
   }
 }
+@media only screen and (max-width: 40em) {
+  .bed-patient-profiles .nikki-profile .profile-image {
+    background-image: url("../img/profile-icon-nikki.png");
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .bed-patient-profiles .julie-profile .profile-image {
+    background-image: url("../img/julie-full.png");
+    background-size: 284px 504px;
+    width: 284px;
+    height: 504px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .bed-patient-profiles .julie-profile .profile-image {
+    background-image: url("../img/profile-icon-julie.png");
+  }
+}
 @media only screen and (min-width: 40.063em) {
   .bed-patient-profiles .diego-profile .profile-image {
     background-image: url("../img/diego-full.png");
     background-size: 274px 507px;
     width: 274px;
     height: 507px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .bed-patient-profiles .diego-profile .profile-image {
+    background-image: url("../img/profile-icon-diego.png");
   }
 }
 
@@ -3915,6 +4040,8 @@ label > * {
   }
   .section--resources .sub-head {
     padding-bottom: 20px;
+    font-size: 18px;
+    line-height: 22px;
   }
   .section--resources h3 {
     font-size: 28px;
@@ -3931,19 +4058,32 @@ label > * {
 @media only screen and (max-width: 40em) {
   .section--resources h2 {
     padding-bottom: 15px;
+    margin-left: 32px;
+  }
+  .section--resources .sub-head {
+    padding-bottom: 32px;
+    margin-left: 32px;
   }
 }
 @media only screen and (min-width: 40.063em) {
   .section--resources .graphic-wrap {
     background: url("../img/bed-patient-2.png") no-repeat bottom left;
+    background-size: 455px 466px;
     padding-left: 400px;
-    min-height: 386px;
+    min-height: 466px;
+    width: 455px;
     margin-left: -32px;
   }
 }
 .section--resources .graphic-wrap ul ul li {
   padding-bottom: 0;
   padding-top: 10px;
+}
+@media only screen and (min-width: 40.063em) {
+  .section--resources .content-wrap.steps {
+    padding: 0;
+    height: 637px;
+  }
 }
 .section--resources .graphic-wrap {
   position: absolute;
@@ -3952,38 +4092,61 @@ label > * {
 }
 .section--resources h3 {
   font-size: 24px;
-  line-height: 29px;
-  margin-top: 13px;
 }
-.section--resources .step {
-  width: 339px;
+@media only screen and (min-width: 40.063em) {
+  .section--resources h3 {
+    line-height: 29px;
+    margin-top: 13px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--resources h3 {
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 .section--resources .step:before {
   content: '';
   position: absolute;
-  left: -63px;
-  top: 0;
-  width: 43px;
-  height: 43px;
-  background-size: 43px;
-}
-.section--resources .step p {
-  font-size: 16px;
-  line-height: 19px;
 }
 @media only screen and (min-width: 40.063em) {
   .section--resources .step {
     margin-left: 530px;
+    width: 339px;
+  }
+  .section--resources .step:before {
+    left: -63px;
+    top: 0;
+    width: 43px;
+    height: 43px;
+    background-size: 43px;
+  }
+  .section--resources .step p {
+    font-size: 16px;
+    line-height: 19px;
   }
 }
-.section--resources .step-1:before {
-  background-image: url("../img/step-1.png");
-}
-.section--resources .step-2:before {
-  background-image: url("../img/step-2.png");
-}
-.section--resources .step-3:before {
-  background-image: url("../img/step-3.png");
+@media only screen and (max-width: 40em) {
+  .section--resources .step {
+    width: 588px;
+    margin-left: 32px;
+  }
+  .section--resources .step:before {
+    left: 0;
+    top: 0;
+    width: 68px;
+    height: 67px;
+    background-size: 68px 67px;
+  }
+  .section--resources .step h3 {
+    margin-left: 84px;
+    line-height: 67px;
+    margin-bottom: 20px;
+  }
+  .section--resources .step p {
+    font-size: 32px;
+    line-height: 38px;
+  }
 }
 .section--resources .download-button {
   background: #323E48;
@@ -3996,9 +4159,9 @@ label > * {
 }
 @media only screen and (min-width: 40.063em) {
   .section--resources .download-button {
-    width: 283px;
-    height: 31px;
-    border-radius: 40px;
+    width: 323px;
+    height: 32px;
+    border-radius: 8px;
   }
   .section--resources .download-button p {
     font-size: 15px;
@@ -4008,101 +4171,238 @@ label > * {
 @media only screen and (max-width: 40em) {
   .section--resources .download-button {
     width: 536px;
-    height: 90px;
+    height: 114px;
     border-radius: 18px;
   }
   .section--resources .download-button p {
+    padding-top: 22px;
     font-size: 30px;
     line-height: 36px;
   }
 }
+@media only screen and (min-width: 40.063em) {
+  .section--resources .step-1 {
+    margin-top: -100px;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .section--resources .step-1:before {
+    background-image: url("../img/step-1.png");
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--resources .step-1:before {
+    background-image: url("../img/step-1-mobile.png");
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .section--resources .step-2 .download-button {
+    height: 49px;
+  }
+  .section--resources .step-2 .download-button p {
+    padding-top: 7px;
+    line-height: 18px;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .section--resources .step-2:before {
+    background-image: url("../img/step-2.png");
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--resources .step-2:before {
+    background-image: url("../img/step-2-mobile.png");
+  }
+}
 .section--resources .audio {
-  height: 543px;
   background-image: radial-gradient(50% 50%, #333e48 50%, #21282f 100%);
   padding: 63px 58px;
 }
-.section--resources .audio h2 {
-  padding-bottom: 50px;
+@media only screen and (min-width: 40.063em) {
+  .section--resources .audio h2 {
+    padding-bottom: 50px;
+  }
 }
-.section--resources .audio-bg {
-  background-image: url("../img/audio-bg.png");
-  background-size: 359px 500px;
-  width: 359px;
-  height: 500px;
-  position: absolute;
-  right: 20px;
-  bottom: 0;
-  z-index: 0;
+@media only screen and (max-width: 40em) {
+  .section--resources .audio h2 {
+    padding-bottom: 60px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .section--resources .audio {
+    height: 543px;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .section--resources .sunny-icon {
+    display: none;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--resources .sunny-icon {
+    width: 153px;
+    height: 152px;
+    background-image: url(../img/audio-sunny-icon.png);
+    background-size: 153px 152px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .section--resources .audio-bg {
+    background-image: url("../img/audio-bg.png");
+    background-size: 359px 500px;
+    width: 359px;
+    height: 500px;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    z-index: 0;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--resources .audio-bg {
+    display: none;
+  }
 }
 .section--resources .quote-block {
   margin: 0 0 27px 27px;
-  width: 566px;
+}
+@media only screen and (min-width: 40.063em) {
+  .section--resources .quote-block {
+    width: 566px;
+  }
 }
 .section--resources .quote-block .quote {
-  font-size: 22px;
-  line-height: 26px;
   color: #C2CBD0;
   font-family: "GillSansW01-LightItalic", Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
 }
-.section--resources .quote-block .quote .quotation-mark {
-  width: 20px;
-  height: 14px;
-  vertical-align: top;
-  background-size: 20px 14px;
+@media only screen and (min-width: 40.063em) {
+  .section--resources .quote-block .quote {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .section--resources .quote-block .quote .quotation-mark {
+    width: 20px;
+    height: 14px;
+    vertical-align: top;
+    background-size: 20px 14px;
+  }
+  .section--resources .quote-block .quote .quote-open {
+    position: absolute;
+    left: -26px;
+    background-image: url("../img/quote-open.png");
+  }
+  .section--resources .quote-block .quote .quote-close {
+    display: inline-block;
+    background-image: url("../img/quote-close.png");
+    margin-left: 5px;
+  }
 }
-.section--resources .quote-block .quote .quote-open {
-  position: absolute;
-  left: -26px;
-  background-image: url("../img/quote-open.png");
+@media only screen and (max-width: 40em) {
+  .section--resources .quote-block .quote {
+    font-size: 44px;
+    line-height: 53px;
+    text-align: center;
+    padding-bottom: 35px;
+  }
+  .section--resources .quote-block .quote .quotation-mark {
+    width: 38px;
+    height: 27px;
+    vertical-align: top;
+    background-size: 38px 27px;
+  }
+  .section--resources .quote-block .quote .quote-open {
+    position: absolute;
+    left: -15px;
+    background-image: url("../img/quote-open-mobile.png");
+  }
+  .section--resources .quote-block .quote .quote-close {
+    display: inline-block;
+    background-image: url("../img/quote-close-mobile.png");
+    margin-left: 15px;
+  }
 }
-.section--resources .quote-block .quote .quote-close {
-  display: inline-block;
-  background-image: url("../img/quote-close.png");
-  margin-left: 5px;
+@media only screen and (min-width: 40.063em) {
+  .section--resources .quote-block .play-button {
+    display: inline-block;
+    vertical-align: top;
+    background-image: url("../img/play-button.png");
+    background-size: 27px 26px;
+    width: 27px;
+    height: 26px;
+    margin-right: 7px;
+  }
 }
-.section--resources .quote-block .play-button {
-  display: inline-block;
-  vertical-align: top;
-  background-image: url("../img/play-button.png");
-  background-size: 27px 26px;
-  width: 27px;
-  height: 26px;
-  margin-right: 7px;
+@media only screen and (max-width: 40em) {
+  .section--resources .quote-block .play-button {
+    display: none;
+  }
 }
 .section--resources .quote-block .listen {
-  display: inline-block;
-  vertical-align: top;
   color: #FFBE2C;
-  font-size: 18px;
-  line-height: 26px;
-  margin-right: 16px;
+}
+@media only screen and (min-width: 40.063em) {
+  .section--resources .quote-block .listen {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 18px;
+    line-height: 26px;
+    margin-right: 16px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--resources .quote-block .listen {
+    font-size: 36px;
+    line-height: 43px;
+    padding-bottom: 41px;
+  }
 }
 .section--resources .quote-block .audio-player {
-  display: inline-block;
-  vertical-align: top;
   background-image: url("../img/audio-player-placeholder.png");
-  background-size: 302px 30px;
-  width: 302px;
-  height: 30px;
 }
-.section--resources .callout {
-  width: 307px;
-  height: 75px;
-  background: #657E8E;
-  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.5);
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-  position: absolute;
-  right: 0;
-  bottom: 60px;
-  z-index: 1;
+@media only screen and (min-width: 40.063em) {
+  .section--resources .quote-block .audio-player {
+    display: inline-block;
+    vertical-align: top;
+    background-size: 229px 31px;
+    width: 229px;
+    height: 31px;
+  }
 }
-.section--resources .callout p {
-  font-size: 16px;
-  line-height: 19px;
-  color: #ffffff;
-  padding: 21px 24px;
-  font-family: "GillSansW01-MediumItali", Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+@media only screen and (max-width: 40em) {
+  .section--resources .quote-block .audio-player {
+    width: 509px;
+    height: 60px;
+    background-size: 509px 60px;
+    margin-bottom: 70px;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  .section--resources .callout {
+    width: 307px;
+    height: 75px;
+    background: #657E8E;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+    z-index: 1;
+  }
+  .section--resources .callout p {
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    padding: 21px 24px;
+    font-family: "GillSansW01-MediumItali", Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--resources .callout {
+    display: none;
+  }
 }
 
 .section--videos {
@@ -4128,6 +4428,9 @@ label > * {
 .section--videos .videos h3 {
   color: #333E48;
   padding-bottom: 24px;
+  text-align: center;
+  font-size: 28px;
+  line-height: 34px;
 }
 .section--videos .videos h4 {
   color: #ffffff;
@@ -4140,94 +4443,6 @@ label > * {
 @media only screen and (min-width: 40.063em) and (max-width: 64em) and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
   .section--videos .videos video::-webkit-media-controls-fullscreen-button {
     display: none;
-  }
-}
-.section--videos .video-playlist li {
-  cursor: pointer;
-  background: #616364;
-  display: block;
-  margin: 0 auto 1px auto;
-}
-@media only screen and (min-width: 40.063em) {
-  .section--videos .video-playlist li {
-    width: 800px;
-    height: 60px;
-    font-size: 18px;
-    padding: 0 20px;
-    padding-left: 80px;
-  }
-}
-@media only screen and (max-width: 40em) {
-  .section--videos .video-playlist li {
-    width: 100%;
-    min-height: 60px;
-    padding: 10px 20px;
-    text-align: center;
-    padding-left: 80px;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    -moz-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    -moz-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-}
-.section--videos .video-playlist li:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background-color: #3d3d3d;
-  width: 60px;
-}
-.section--videos .video-playlist li:after {
-  content: '\25B6';
-  color: #febd3f;
-  text-align: center;
-  width: 60px;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  margin-top: -11px;
-}
-@media only screen and (max-width: 40em) {
-  .section--videos .video-playlist li:after {
-    margin-top: -14.5px;
-    font-size: 30px;
-  }
-}
-.section--videos .video-playlist li.active, .section--videos .video-playlist li:hover {
-  background-color: #747779;
-}
-.section--videos .video-playlist li p {
-  margin: 0 auto;
-  color: #febd3f;
-  width: 100%;
-  text-align: left;
-  height: inherit;
-  padding-bottom: 0;
-  font-family: "Gill Sans W01 Medium", Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
-}
-@media only screen and (max-width: 40em) {
-  .section--videos .video-playlist li p {
-    font-size: 24px;
-    line-height: 26px;
-    width: 500px;
-  }
-}
-@media only screen and (min-width: 40.063em) {
-  .section--videos .video-playlist li p {
-    display: table-cell;
-    vertical-align: middle;
-    font-size: 18px;
-    line-height: 20px;
   }
 }
 .section--videos .video-player {
@@ -4308,6 +4523,58 @@ label > * {
 }
 .section--videos ul.organizations p:nth-child(3) {
   color: #febd3f;
+}
+.section--videos .video-list {
+  font-size: 0;
+}
+.section--videos .video-list .video-nav li {
+  background-color: #4F5A64;
+}
+.section--videos .video-list .video-nav li.active {
+  background-color: #333E48;
+}
+@media only screen and (min-width: 40.063em) {
+  .section--videos .video-list .video-nav {
+    width: 800px;
+    height: 60px;
+    font-size: 0;
+    margin: 20px auto 42px auto;
+  }
+  .section--videos .video-list .video-nav li {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33333%;
+    height: 60px;
+    color: #D7DBDF;
+    font-size: 16px;
+    line-height: 60px;
+    text-align: center;
+  }
+  .section--videos .video-list .video-nav .two-lines {
+    line-height: 16px;
+    padding-top: 12px;
+  }
+}
+.section--videos .video-list .video-thumb.new :before {
+  position: absolute;
+  top: 6px;
+  left: -6px;
+}
+@media only screen and (min-width: 40.063em) {
+  .section--videos .video-list .video-thumb {
+    display: inline-block;
+    vertical-align: top;
+    width: 178px;
+    height: 180px;
+    background-size: 178px 100px;
+    background-position: top left;
+    margin: 0 29px 29px 0;
+  }
+  .section--videos .video-list .video-thumb p {
+    font-size: 16px;
+    line-height: 16px;
+    color: #333E48;
+  }
 }
 .section--videos .signup {
   margin: 0 auto;

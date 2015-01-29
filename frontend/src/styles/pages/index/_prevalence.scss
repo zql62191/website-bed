@@ -29,7 +29,6 @@
         }
     }
     h3 {
-        //font-size: 32px;
         font-family: font("gill sans", "regular");
     }
     .graphic {
@@ -38,6 +37,7 @@
         background-position: top left;
     }
     .us-graphic {
+
         @include mq("mobile") {
             background-image: url("#{$img-path}/prevalence-us-mobile.png");
             height: 420px;
@@ -52,14 +52,10 @@
         }
     }
     .chart-note {
-        //padding-left: 5px;
         width: 538px;
         margin-left: 25px;
         padding-bottom: 50px;
-        /*&:before {
-            content: '*';
-            margin-left: -9px;
-        }*/
+
         @include mq("desktop") {
             float: left;
             width: 275px;
@@ -76,10 +72,10 @@
         color: #333e48;
         font-size: 27px;
         line-height: 31px;
+
         @include mq("mobile") {
             background-image: url("#{$img-path}/prevalence-text-bg-mobile.png");
             width: 520px;
-            // height: 167px;
             margin-bottom: 50px;
             font-size: 33px;
             line-height: 37px;
@@ -103,10 +99,10 @@
         padding: 22px;
         color: #333e48;
         line-height: 31px;
+
         @include mq("mobile") {
             background-image: url("#{$img-path}/prevalence-text-bg-tall.png");
             width: 571px;
-            // height: 311px;
             margin-bottom: 20px;
             margin-top: 30px;
             background-size: 100% 100%;
@@ -126,19 +122,14 @@
             @include mq("desktop") {
                 padding-bottom: 15px;
             }
-
-            @include mq("mobile") {
-                //font-size: 27px;
-                //line-height: 31px;
-            }
         }
     }
     .male-graphic {
         background: url("#{$img-path}/prevalence-male-graphic.png") 0 0 no-repeat;
         width: 254px;
-        // height: 248px;
         height: 348px;
         position: absolute;
+
         @include mq("mobile") {
             top: 0;
             left: 185px;
@@ -152,17 +143,15 @@
     .female-graphic {
         background: url("#{$img-path}/prevalence-female-graphic.png") 0px 42px no-repeat;
         width: 210px;
-        // height: 306px;
         height: 348px;
         position: absolute;
+
         @include mq("mobile") {
-            // top: 42px;
             top: 0;
             left: 55px;
         }
 
         @include mq("desktop") {
-            // top: 42px;
             top: 0;
             left: 55px;
         }
@@ -191,9 +180,6 @@
         }
 
         @include mq("desktop") {
-            //display: none;
-            ///font-size: 20px;
-            //line-height: 25px;
             margin-top: 30px;
             padding-top: 30px;
             padding-bottom: 0;
@@ -339,23 +325,40 @@
             &:before {
                 content: "\2193";
                 position: absolute;
-                top: -55px;
                 left: 0;
                 width: 100%;
                 height: 100%;
-                font-size: 30px;
                 color: #2B4251;
-                line-height: 55px;
                 -webkit-transition: transform 0.3s;
                 -moz-transition: transform 0.3s;
                 transition: transform 0.3s;
+
+                @include mq('desktop') {
+                    top: -55px;
+                    line-height: 55px;
+                    font-size: 30px;
+                }
+
+                @include mq('mobile') {
+                    top: -110px;
+                    line-height: 110px;
+                    font-size: 60px;
+                }
             }
             &:hover {
                 
                 p, &:before {
-                    -webkit-transform: translateY(55px);
-                    -moz-transform: translateY(55px);
-                    transform: translateY(55px);
+                    
+                    @include mq('desktop') {
+                        -webkit-transform: translateY(55px);
+                        -moz-transform: translateY(55px);
+                        transform: translateY(55px);
+                    }
+                    @include mq('mobile') {
+                        -webkit-transform: translateY(110px);
+                        -moz-transform: translateY(110px);
+                        transform: translateY(110px);
+                    }
                 }
             }
         }

@@ -106,7 +106,6 @@
         padding-bottom: 30px;
     }
     .twenty-one-animated {
-        //float: left;
         display: inline-block;
         vertical-align: top;
         width: 49%;
@@ -190,19 +189,10 @@
         }
     }
     .mean-duration {
-        /*
-        background-image: url("../img/prevalence-text-bg.png");
-        width: 740px;
-        height: 73px;
-        margin: 0 auto 0 auto;
-        padding: 16px 25px;
-        color: #51748b;
-        */
+
         @include mq("mobile") {
             padding: 0 15px;
-            // background: transparent url("#{$img-path}/blurb-2-mobile.png") 0 0 no-repeat;
             margin-bottom: 40px;
-            // background-size: 100% 100%;
             color: #FFFFFF;
         }
 
@@ -210,13 +200,10 @@
             position: absolute;
             padding: 0 15px;
             top: 465px;
-            // background: transparent url("#{$img-path}/blurb-2-desktop.png") 0 0 no-repeat;
-            // width: 739px;
-            // height: 76px;
-            // line-height: 46px;
             color: #FFFFFF;
         }
     }
+
     // add to global styles
     .disclaimer {
         @include mq("mobile") {
@@ -290,6 +277,7 @@
             font-size: 28px;
             line-height: 32px;
             padding: 0 0 0 15px;
+
             @include mq("desktop") {
                 left: 15px;
             }
@@ -308,6 +296,7 @@
         background: url("#{$img-path}/spiral.png") top left no-repeat;
         background-size: 100%;
         text-align: center;
+        
         @include mq("mobile") {
             height: 350px;
             width: 350px;

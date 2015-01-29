@@ -17,6 +17,7 @@
         width: 1024px;
         margin: 0 30px 0 -32px;
         padding: 20px 40px 25px;
+
         @include mq("mobile") {
             width: 640px;
             margin: 0 0 30px -20px;
@@ -25,6 +26,9 @@
         h3 {
             color: #333E48;
             padding-bottom: 24px;
+            text-align: center;
+            font-size: 28px;
+            line-height: 34px;
         }
         h4 {
             color: #ffffff;
@@ -41,82 +45,8 @@
             }
         }
     }
-    .video-playlist {
-        li {
-            cursor: pointer;
-            background: #616364;
-            display: block;
-            margin: 0 auto 1px auto;
+    
 
-            @include mq("desktop") {
-                width: 800px;
-                height: 60px;
-                font-size: 18px;
-                padding: 0 20px;
-                padding-left: 80px;
-            }
-
-            @include mq("mobile") {
-                width: 100%;
-                min-height: 60px;
-                padding: 10px 20px;
-                text-align: center;
-                padding-left: 80px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            &:before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                background-color: #3d3d3d;
-                width: 60px;
-            }
-            &:after {
-                content: '\25B6';
-                color: #febd3f;
-                text-align: center;
-                width: 60px;
-                position: absolute;
-                left: 0;
-                top: 50%;
-                margin-top: -11px;
-                @include mq("mobile") {
-                    margin-top: -14.5px;
-                    font-size: 30px;
-                }
-            }
-            &.active, &:hover {
-                background-color: #747779;
-            }
-            p {
-                margin: 0 auto;
-                color: #febd3f;
-                width: 100%;
-                text-align: left;
-                height: inherit;
-                padding-bottom: 0;
-                font-family: font("gill sans", "regular");
-
-                @include mq("mobile") {
-                    font-size: 24px;
-                    line-height: 26px;
-                    width: 500px;
-                }
-
-                @include mq("desktop") {
-                    display: table-cell;
-                    vertical-align: middle;
-                    font-size: 18px;
-                    line-height: 20px;
-                }
-            }
-        }
-    }
     .video-player {
         position: relative;
         .arrow {
@@ -190,6 +120,81 @@
             color: #febd3f;
         }
     }
+
+    //- BED 2.0 video listings
+    .video-list {
+        font-size: 0;
+
+        .video-nav {
+            li {
+                background-color: #4F5A64;
+
+                &.active {
+                    background-color: #333E48;
+                }
+            }
+
+            @include mq('desktop') {
+                width: 800px;
+                height: 60px;
+                font-size: 0;
+                margin: 20px auto 42px auto;
+
+                li {                
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 33.33333%;
+                    height: 60px;
+                    color: #D7DBDF;
+                    font-size: 16px;
+                    line-height: 60px;
+                    text-align: center;
+                }
+                .two-lines {
+                    line-height: 16px;
+                    padding-top: 12px;
+                }
+            }
+            @include mq('mobile') {
+
+            }
+        }
+        .video-section {
+
+        }
+        .video-thumb {
+
+            &.new {
+
+                :before {
+                    position: absolute;
+                    top: 6px;
+                    left: -6px;
+                }
+            }
+            
+            @include mq('desktop') {
+
+                display: inline-block;
+                vertical-align: top;
+                width: 178px;
+                height: 180px;
+                background-size: 178px 100px;
+                background-position: top left;
+                margin: 0 29px 29px 0;
+
+                p {
+                    font-size: 16px;
+                    line-height: 16px;
+                    color: #333E48;
+                }
+            }
+        }
+
+    }
+
+
+
     .signup {
         margin: 0 auto;
         line-height: 25px;

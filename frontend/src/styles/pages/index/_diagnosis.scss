@@ -13,6 +13,10 @@
     }
     @include mq("mobile") {
         // TODO: change to linear gradient for mobile
+    
+        .content-wrap {
+            border-bottom: 0;
+        }
     }
 
     .bar--title:before {
@@ -20,7 +24,6 @@
     }
     h1 {
         @include mq("desktop") {
-            //font-size: 36px;
             padding-bottom: 10px;
         }
 
@@ -200,7 +203,7 @@
             padding-top: 52px;
             background-image: url("#{$img-path}/patient-profile-header.png");
             background-repeat: no-repeat;
-            background-position: bottom center;
+            background-position: 240px 151px;
 
             h3 {
                 font-size: 36px;
@@ -214,6 +217,7 @@
         }
 
         @include mq('mobile') {
+
             h3 {
                 font-size: 56px;
                 line-height: 52px;
@@ -239,11 +243,35 @@
                 margin-right: 67px;
                 width: 46px;
                 height: 46px;
-                background-color: #ffffff; // fpo
+                background-image: url(#{$img-path}/patient-profile-icon-inactive.png);
+                background-size: 46px;
                 transition: transform 300ms;
+                padding-bottom: 0;
+
+                // background to show on hover/selection
+                .active-bg {
+                    opacity: 0;
+                    transition: opacity 0.3s;
+                    background-image: url(#{$img-path}/patient-profile-icon-active.png);
+                    width: 100%;
+                    height: 100%;
+                    background-size: 46px;
+
+
+                }
+
+                &.hover {
+                    .active-bg {
+                        opacity: 1;
+                    }
+                }
 
                 &.active-profile-button {
                     transform: translateY(13px);
+
+                    .active-bg {
+                        opacity: 1;
+                    }
                 }
             }
         }
@@ -266,8 +294,10 @@
             }
         }
         @include mq('mobile') {
-            width: 548px;
-            margin: 0 auto;
+            width: 2207px; // 4x profile width
+            margin: 44px auto 0 auto;
+            height: 1150px;
+            overflow: auto;
 
             .arrow {
                 position: absolute;
@@ -289,8 +319,36 @@
                 background-image: url('#{$img-path}/arrow-previous.png');
             }
             .arrow-next {
-                right: 42px;
+                left: 430px;
                 background-image: url('#{$img-path}/arrow-next.png');
+            }
+        }
+
+        .patient-profile-pagination {
+
+            @include mq('desktop') {
+                display: none;
+            }
+
+            @include mq('mobile') {
+                width: 75px;
+                height: 15px;
+                margin: 12px auto 0 auto;
+                font-size: 0;
+
+                .circle {
+                    width: 13px;
+                    height: 13px;
+                    border: 2px solid #9EACB6;
+                    border-radius: 6.5px;
+                    display: inline-block;
+                    vertical-align: top;
+                    margin-right: 5px;
+                
+                    &.active {
+                        background-color: #9EACB6;
+                    }
+                }
             }
         }
     }
@@ -299,7 +357,7 @@
     .profile {
         opacity: 0;
         z-index: -1;
-        transition: opacity 300ms;
+        transition: opacity 300ms, transform 300ms;
 
         li {
             margin-left: 38px;
@@ -326,10 +384,12 @@
             }
         }
         @include mq('mobile') {
+            
+            width: 548px;
+            float: left;
 
             h3 {
                 text-align: center;
-                width: 548px;
                 margin: 0 auto;
                 padding: 0;
             }
@@ -353,7 +413,7 @@
             height: 160px;
             background-size: 161px 160px;
             left: 50%;
-            margin: 54px 0 24px -80px;
+            margin: 0 0 24px -80px;
         }
     }
     
@@ -369,7 +429,6 @@
             margin-bottom: 0;
 
             &.footnote {
-                font-family: font('gill sans', 'italic');
                 font-size: 13px;
                 color: #99ABB8;
             }
@@ -381,6 +440,11 @@
             }
         }
         
+        
+        .bmi {
+            margin-top: 30px;
+        }
+
         @include mq('desktop') {
             margin-left: 312px;
 
@@ -434,6 +498,16 @@
     }
 
     .stats {
+
+        @include mq('desktop') {
+            p {
+                display: inline;
+                vertical-align: top;
+                width: 60px;
+                margin-right: 40px;
+            }
+        }
+
         @include mq('mobile') {
             padding: 0;
             overflow: auto;
@@ -476,12 +550,24 @@
                 width: 246px;
                 height: 509px;
             }
+
+            @include mq('mobile') {
+                background-image: url('#{$img-path}/profile-icon-nikki.png');
+            }
         }
     }
 
     .julie-profile {
         .profile-image {
-
+            @include mq('desktop') {
+                background-image: url('#{$img-path}/julie-full.png');
+                background-size: 284px 504px;
+                width: 284px;
+                height: 504px;
+            }
+            @include mq('mobile') {
+                background-image: url('#{$img-path}/profile-icon-julie.png');
+            }
         }
     }
 
@@ -492,6 +578,9 @@
                 background-size: 274px 507px;
                 width: 274px;
                 height: 507px;
+            }
+            @include mq('mobile') {
+                background-image: url('#{$img-path}/profile-icon-diego.png');
             }
         }
 

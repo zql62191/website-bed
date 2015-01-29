@@ -90,7 +90,9 @@ var BED = (function() {
         $(document).ready(function() {
 
             // desktop patient profile nav
-            $('.profile-button').on('click touch', function() {
+            $('.profile-button')
+
+            .on('click touch', function() {
                 var target = $(this).data('target');
 
                 $('.profile-button').removeClass('active-profile-button');
@@ -98,12 +100,63 @@ var BED = (function() {
 
                 $('.profile').removeClass('active-profile');
                 $('.' + target).addClass('active-profile');
+            })
+
+            .hover( function() {
+                $(this).addClass('hover');
+            }, function() {
+                $(this).removeClass('hover');
             });
 
-            // mobile patient profile nav
-            $('.profile-icon').on('click touch', function() {
 
-                // do stuff
+            // function to update status of next/previous arrows based on current profile (mobile only)
+            var updateNavArrows = function(profileIndex) {
+
+                console.log(profileIndex);
+
+                $('.arrow').removeClass('inactive');
+
+                switch (profileIndex) {
+                    case 1:
+                        $('.arrow-prev').addClass('inactive');
+                        break;
+                    case 4:
+                        $('.arrow-next').addClass('inactive');
+                        break;
+                    default:
+                        break;
+                }
+
+            }
+
+
+            var profileWidth = 548;
+
+            // mobile patient profile nav
+            $('.arrow').on('click touch', function() {
+
+
+                var currentProfileIndex = parseInt($('.active-profile').data('profile-num'));
+
+                // go to next profile
+                if ($(this).hasClass('arrow-next') && !$(this).hasClass('inactive')) {
+
+                    $('.active-profile').removeClass('active-profile').next().addClass('active-profile');
+                        
+                    $('.profile').css('transform', 'translateX( -' + currentProfileIndex * profileWidth + 'px)');
+
+                    updateNavArrows(++currentProfileIndex);                
+
+                // go to previous profile
+                } else if ($(this).hasClass('arrow-prev') && !$(this).hasClass('inactive')) {
+
+                    $('.active-profile').removeClass('active-profile').prev().addClass('active-profile');
+                        
+                    $('.profile').css('transform', 'translateX( -' + (currentProfileIndex-2) * profileWidth + 'px)');
+
+                    updateNavArrows(--currentProfileIndex);
+
+                }
 
             });
         });

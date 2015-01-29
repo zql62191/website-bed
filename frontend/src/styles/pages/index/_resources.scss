@@ -18,12 +18,14 @@
         border-top-color: rgb(56, 84, 102);
     }
     @include mq("desktop") {
+
         h2 {
-            //font-size: 36px;
             padding-bottom: 10px;
         }
         .sub-head {
             padding-bottom: 20px;
+            font-size: 18px;
+            line-height: 22px;
         }
         h3 {
             font-size: 28px;
@@ -41,14 +43,21 @@
     @include mq("mobile") {
         h2 {
             padding-bottom: 15px;
+            margin-left: 32px;
+        }
+        .sub-head {
+            padding-bottom: 32px;
+            margin-left: 32px;
         }
     }
 
     .graphic-wrap {
         @include mq("desktop") {
             background: url("#{$img-path}/bed-patient-2.png") no-repeat bottom left;
+            background-size: 455px 466px;
             padding-left: 400px;
-            min-height: 386px;
+            min-height: 466px;
+            width: 455px;
             margin-left: -32px;
         }
 
@@ -60,6 +69,14 @@
 
     // BED 2.0 - "Starting the conversation"
 
+    .content-wrap.steps {
+        
+        @include mq('desktop') {
+            padding: 0;
+            height: 637px;
+        }
+    }
+
     // Steps section
     .graphic-wrap {
         position: absolute;
@@ -69,40 +86,69 @@
     
     h3 {
         font-size: 24px;
-        line-height: 29px;
-        margin-top: 13px;
+
+        @include mq('desktop') {
+            line-height: 29px;
+            margin-top: 13px;
+        }
+
+        @include mq('mobile') {
+            font-size: 40px;
+            line-height: 40px;
+        }
     }
+
+
     .step {
-        width: 339px;
 
         &:before {
             content: '';
             position: absolute;
-            left: -63px;
-            top: 0;
-            width: 43px;
-            height: 43px;
-            background-size: 43px;
-        }
-
-        p {
-            font-size: 16px;
-            line-height: 19px;
         }
 
         @include mq('desktop') {
             margin-left: 530px;
+            width: 339px;
+            
+            &:before {
+                left: -63px;
+                top: 0;
+                width: 43px;
+                height: 43px;
+                background-size: 43px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+
+        @include mq('mobile') {
+            width: 588px;
+            margin-left: 32px;
+
+            &:before {
+                left: 0;
+                top: 0;
+                width: 68px;
+                height: 67px;
+                background-size: 68px 67px;
+            }
+
+            h3 {
+                margin-left: 84px;
+                line-height: 67px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 32px;
+                line-height: 38px;
+            }
         }
     }
-    .step-1:before {
-        background-image: url("#{$img-path}/step-1.png");
-    }
-    .step-2:before {
-        background-image: url("#{$img-path}/step-2.png");
-    }
-    .step-3:before {
-        background-image: url("#{$img-path}/step-3.png");
-    }
+
     .download-button {
         background: #323E48;
         cursor: pointer;
@@ -114,9 +160,9 @@
         }
 
         @include mq('desktop') {
-            width: 283px;
-            height: 31px;
-            border-radius: 40px;
+            width: 323px;
+            height: 32px;
+            border-radius: 8px;
 
             p {
                 font-size: 15px;
@@ -126,116 +172,252 @@
 
         @include mq('mobile') {
             width: 536px;
-            height: 90px;
+            height: 114px;
             border-radius: 18px;
 
             p {
+                padding-top: 22px;
                 font-size: 30px;
                 line-height: 36px;
             }
         }
     }
 
+
+    .step-1 {
+        @include mq('desktop') {
+            margin-top: -100px;
+        }
+
+        &:before {
+        
+            @include mq('desktop') {
+                background-image: url("#{$img-path}/step-1.png");
+            }
+            @include mq('mobile') {
+                background-image: url("#{$img-path}/step-1-mobile.png");
+            }
+        }
+    }
+    .step-2 {
+
+        @include mq('desktop') {
+            .download-button {
+                height: 49px;
+
+                p {
+                    padding-top: 7px;
+                    line-height: 18px;
+                }
+            }
+        }
+
+        &:before {
+            @include mq('desktop') {
+                background-image: url("#{$img-path}/step-2.png");
+            }
+            @include mq('mobile') {
+                background-image: url("#{$img-path}/step-2-mobile.png");
+            }
+        }
+    }
+
+
+
     // audio section
     .audio {
-        height: 543px;
         background-image: radial-gradient(50% 50%, #333E48 50%, #21282F 100%);
         padding: 63px 58px;
 
         h2 {
-            padding-bottom: 50px;
+            @include mq('desktop') {
+                padding-bottom: 50px;
+            }
+
+            @include mq('mobile') {
+                padding-bottom: 60px;
+                text-align: center;
+            }
+        }
+
+        @include mq('desktop') {
+            height: 543px;
+        }
+
+    }
+
+    .sunny-icon {
+
+        @include mq('desktop') {
+            display: none;
+        }
+    
+        @include mq('mobile') {
+            width: 153px;
+            height: 152px;
+            background-image: url(#{$img-path}/audio-sunny-icon.png);
+            background-size: 153px 152px;
+            margin: 0 auto;
         }
     }
 
     .audio-bg {
-        background-image: url("#{$img-path}/audio-bg.png");
-        background-size: 359px 500px;
-        width: 359px;
-        height: 500px;
-        position: absolute;
-        right: 20px;
-        bottom: 0;
-        z-index: 0;
+
+        @include mq('desktop') {
+            background-image: url("#{$img-path}/audio-bg.png");
+            background-size: 359px 500px;
+            width: 359px;
+            height: 500px;
+            position: absolute;
+            right: 20px;
+            bottom: 0;
+            z-index: 0;
+        }
+        @include mq('mobile') {
+            display: none;
+        }
     }
 
     .quote-block {
         margin: 0 0 27px 27px;
-        width: 566px;
+        
+        @include mq('desktop') {
+            width: 566px;
+        }
 
         .quote {
-            font-size: 22px;
-            line-height: 26px;
             color: #C2CBD0;
             font-family: font('gill sans', 'light italic');
-                
 
-            .quotation-mark {
-                width: 20px;
-                height: 14px;
-                vertical-align: top;
-                background-size: 20px 14px;
+            @include mq('desktop') {
+                font-size: 22px;
+                line-height: 26px;
+
+                .quotation-mark {
+                    width: 20px;
+                    height: 14px;
+                    vertical-align: top;
+                    background-size: 20px 14px;
+                }
+                .quote-open {
+                    position: absolute;
+                    left: -26px;
+                    background-image: url("#{$img-path}/quote-open.png");
+                }
+                
+                .quote-close {
+                    display: inline-block;
+                    background-image: url("#{$img-path}/quote-close.png");
+                    margin-left: 5px;
+                }
             }
-            .quote-open {
-                position: absolute;
-                left: -26px;
-                background-image: url("#{$img-path}/quote-open.png");
+            @include mq('mobile') {
+                font-size: 44px;
+                line-height: 53px;
+                text-align: center;
+                padding-bottom: 35px;
+
+                .quotation-mark {
+                    width: 38px;
+                    height: 27px;
+                    vertical-align: top;
+                    background-size: 38px 27px;
+                }
+                .quote-open {
+                    position: absolute;
+                    left: -15px;
+                    background-image: url("#{$img-path}/quote-open-mobile.png");
+                }
+                
+                .quote-close {
+                    display: inline-block;
+                    background-image: url("#{$img-path}/quote-close-mobile.png");
+                    margin-left: 15px;
+                }
             }
-            
-            .quote-close {
-                display: inline-block;
-                background-image: url("#{$img-path}/quote-close.png");
-                margin-left: 5px;
-            }
+
 
         }
 
         .play-button {
-            display: inline-block;
-            vertical-align: top;
-            background-image: url("#{$img-path}/play-button.png");
-            background-size: 27px 26px;
-            width: 27px;
-            height: 26px;
-            margin-right: 7px;
+            @include mq('desktop') {
+                display: inline-block;
+                vertical-align: top;
+                background-image: url("#{$img-path}/play-button.png");
+                background-size: 27px 26px;
+                width: 27px;
+                height: 26px;
+                margin-right: 7px;
+            }
+            @include mq('mobile') {
+                display: none;
+            }
         }
 
         .listen {
-            display: inline-block;
-            vertical-align: top;
             color: #FFBE2C;
-            font-size: 18px;
-            line-height: 26px;
-            margin-right: 16px;
+
+            @include mq('desktop') {
+                display: inline-block;
+                vertical-align: top;
+                font-size: 18px;
+                line-height: 26px;
+                margin-right: 16px;
+            }
+            @include mq('mobile') {
+                font-size: 36px;
+                line-height: 43px;
+                padding-bottom: 41px;
+            }
         }
 
         .audio-player {
-            display: inline-block;
-            vertical-align: top;
+
+            // temporary until audio is embedded
             background-image: url("#{$img-path}/audio-player-placeholder.png");
-            background-size: 302px 30px;
-            width: 302px;
-            height: 30px;
+            
+            
+            @include mq('desktop') {
+                display: inline-block;
+                vertical-align: top;
+                background-size: 229px 31px;
+                width: 229px;
+                height: 31px;
+            }
+
+            @include mq('mobile') {
+                width: 509px;
+                height: 60px;
+                background-size: 509px 60px;
+                margin-bottom: 70px;
+            }
         }
     }
 
     .callout {
-        width: 307px;
-        height: 75px;
-        background: #657E8E;
-        box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.50);
-        border-top-left-radius: 3px;
-        border-bottom-left-radius: 3px;
-        position: absolute;
-        right: 0;
-        bottom: 60px;
-        z-index: 1;
 
-        p {
-            font-size: 16px;
-            line-height: 19px;
-            color: #ffffff;
-            padding: 21px 24px;
-            font-family: font('gill sans', 'italic');
+        @include mq('desktop') {
+            width: 307px;
+            height: 75px;
+            background: #657E8E;
+            box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.50);
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            position: absolute;
+            right: 0;
+            bottom: 60px;
+            z-index: 1;
+
+            p {
+                font-size: 16px;
+                line-height: 19px;
+                color: #ffffff;
+                padding: 21px 24px;
+                font-family: font('gill sans', 'italic');
+            }
+        }
+        @include mq('mobile') {
+            display: none;
         }
     }
 }

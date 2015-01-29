@@ -18,29 +18,18 @@ div(data-section='diagnosis').section.section--diagnosis
       em
         | diagnostic criteria and additional B.E.D. information from Shire.
 
-    h3.
-      B.E.D. is different from #[br.hide--desktop]bulimia nervosa
-    p.
-      It is not associated with compensatory behaviors such as purging or excessive exercise, or with #[br.hide--mobile]dietary restriction, although frequent dieting may be reported.#[sup 1]
-    h3.
-      B.E.D. is different from overeating
-    p.
-      While overeating is a challenge for many Americans, recurrent binge eating is much less common, #[br.hide--mobile]far more severe, and is associated with significant physical and psychological problems.#[sup 13]
-    h3.
-      B.E.D. is different from obesity
-    p.
-      Compared with weight-matched obese adults without B.E.D., obese adults with B.E.D. eat more #[br.hide--mobile]calories in studies of how people eat and show#[sup 1]:
+    h3 B.E.D. is different from #[br.hide--desktop]bulimia nervosa
+    p It is not associated with compensatory behaviors such as purging or excessive exercise, or with #[br.hide--mobile]dietary restriction, although frequent dieting may be reported.#[sup 1]
+    h3 B.E.D. is different from overeating
+    p While overeating is a challenge for many Americans, recurrent binge eating is much less common, #[br.hide--mobile]far more severe, and is associated with significant physical and psychological problems.#[sup 13]
+    h3 B.E.D. is different from obesity
+    p Compared with weight-matched obese adults without B.E.D., obese adults with B.E.D. eat more #[br.hide--mobile]calories in studies of how people eat and show#[sup 1]:
     ul.bullet
-      li.
-        More functional impairment
-      li.
-        Greater self-reported distress
-      li.
-        Impaired quality of life
-      li.
-        More coexisting psychiatric conditions
-    p.
-      B.E.D. occurs in normal-weight, overweight, and obese individuals.#[sup 2]
+      li More functional impairment
+      li Greater self-reported distress
+      li Impaired quality of life
+      li More coexisting psychiatric conditions
+    p B.E.D. occurs in normal-weight, overweight, and obese individuals.#[sup 2]
 
     h3.center.chart-head.
       Based on a nationally representative survey of US adults aged ≥18 years#[sup 2]:
@@ -79,13 +68,9 @@ div(data-section='diagnosis').section.section--diagnosis
         p(data-skrollr='diagnosis-36').large.
           36#[sup.percent %]
 
-        p.
-          are overweight#[br]
-          (BMI 25-29.9)
+        p are overweight#[br](BMI 25-29.9)
 
-        p.
-          but not obese#[br]
-          (BMI ≥30)
+        p but not obese#[br](BMI ≥30)
 
 
     .bed-patient-profiles
@@ -105,21 +90,34 @@ div(data-section='diagnosis').section.section--diagnosis
       ul.profile-buttons
 
         li.kim-button(data-target="kim-profile").profile-button.active-profile-button
+          .active-bg
         li.nikki-button(data-target="nikki-profile").profile-button
+          .active-bg
         li.julie-button(data-target="julie-profile").profile-button
+          .active-bg
         li.diego-button(data-target="diego-profile").profile-button
+          .active-bg
 
       .profile-container
 
         .arrow-prev.arrow.inactive
         .arrow-next.arrow
 
+        
+
+
         //- PROFILE 1: Kimberly
-        .kim-profile.profile.active-profile
+        .kim-profile.profile.active-profile(data-profile-num="1")
 
           .profile-image
   
           h3 Kimberly
+
+          .patient-profile-pagination
+            .circle.active
+            .circle
+            .circle
+            .circle
 
           .profile-section.first
             p Binge days per week: #[span.yellow 2]
@@ -131,9 +129,9 @@ div(data-section='diagnosis').section.section--diagnosis
 
           .profile-section
             ul
-              li Kimberly is a single mother with 2 young children
-              li In addition to caring for her daughters, she works as a high school guidance counselor
-              li The stresses of both her job and her role at home are considerable
+              li Kimberly works as a high school librarian
+              li She is single and lives alone
+              li Kimberly’s binges are usually the result of boredom
 
           .profile-section
             p.quote “I feel like I’ve lost control while I’m eating.”
@@ -141,11 +139,17 @@ div(data-section='diagnosis').section.section--diagnosis
 
 
         //- PROFILE 2: Nikki
-        .nikki-profile.profile
+        .nikki-profile.profile(data-profile-num="2")
 
           .profile-image
 
           h3 Nikki
+
+          .patient-profile-pagination
+            .circle
+            .circle.active
+            .circle
+            .circle
 
           .profile-section.first
             p Binge days per week: #[span.yellow 3]
@@ -158,8 +162,8 @@ div(data-section='diagnosis').section.section--diagnosis
           .profile-section
             ul
               li Nikki is a pediatric oncology nurse
-              li Her binges are triggered by job-related interpersonal stressors
-              li Nikki greatly enjoys her work, but is distressed by her bingeing behavior
+              li Her binges are triggered by interpersonal stressors
+              li Nikki is distressed by her bingeing behavior
 
           .profile-section
             p.quote “I’m disgusted with myself after I binge.”
@@ -167,9 +171,17 @@ div(data-section='diagnosis').section.section--diagnosis
 
 
         //- PROFILE 3: Julie
-        .julie-profile.profile
+        .julie-profile.profile(data-profile-num="3")
+
+          .profile-image
           
           h3 Julie
+
+          .patient-profile-pagination
+            .circle
+            .circle
+            .circle.active
+            .circle
 
           .profile-section.first
             p Binge days per week: #[span.yellow 5]
@@ -182,8 +194,8 @@ div(data-section='diagnosis').section.section--diagnosis
           .profile-section
             ul
               li Julie works as an advertising executive
-              li Julie's binges are triggered by negative feelings about her body shape
-              li Like many adults with BED, Julie has a coexisting psychiatric disorder-Julie struggles with anxiety disorder
+              li Julie's binges are triggered by negative feelings #[br.hide--mobile]about her body shape
+              li Julie has a coexisting psychiatric disorder—Julie struggles with anxiety disorder
 
           .profile-section
             p.quote “When it’s over, I’m depressed and feel guilty”
@@ -192,11 +204,17 @@ div(data-section='diagnosis').section.section--diagnosis
 
 
         //- PROFILE 4: Diego
-        .diego-profile.profile
+        .diego-profile.profile(data-profile-num="4")
 
           .profile-image
 
           h3 Diego
+
+          .patient-profile-pagination
+            .circle
+            .circle
+            .circle
+            .circle.active
 
           .profile-section.first
             p Binge days per week: #[span.yellow 5]
@@ -209,9 +227,8 @@ div(data-section='diagnosis').section.section--diagnosis
           .profile-section
             ul
               li Diego works at night to support his family
-              li Diego and his wife are currently separated#[sup 5]
-              li Diego is embarrassed by his binges, which are triggered by stressful interactions with his wife#[sup 5]
+              li Following his binges, Diego tends to feel depressed
 
           .profile-section
-            p.quote “I binge alone because I don't want anyone to know how much I eat.”
+            p.quote “I binge alone because I don't want anyone #[br.hide--mobiel]to know how much I eat.”
             p.footnote.bmi BMI=body mass index.
