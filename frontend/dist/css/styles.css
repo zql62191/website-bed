@@ -1699,6 +1699,21 @@ label > * {
   .section--home {
     background: #4d5158 url("../img/home__bg--mobile.jpg") 0 25px no-repeat;
   }
+  .section--home.mobile-bg {
+    background-position: 0 197px;
+  }
+  .section--home.mobile-bg-1 {
+    background-image: url("../img/mobile-home-bg-1.png");
+  }
+  .section--home.mobile-bg-2 {
+    background-image: url("../img/mobile-home-bg-2.png");
+  }
+  .section--home.mobile-bg-3 {
+    background-image: url("../img/mobile-home-bg-3.png");
+  }
+  .section--home.mobile-bg-4 {
+    background-image: url("../img/mobile-home-bg-4.png");
+  }
 }
 @media only screen and (min-width: 40.063em) {
   .section--home {

@@ -88,150 +88,166 @@ BED.VideoPlayer = (function() {
         /*************************************************************************/
         /* Home Section video player */
 
-        if (window.matchMedia(BED.UI.mediaQueries.desktop).matches) {
-            console.log('load home section video player');
 
-            /* ----------- Variables -----------*/
-            var videoPlayer;
+        /* ----------- Variables -----------*/
+        var videoPlayer;
 
 
-            /* ----------- Video Index Cookie - getter/setter -----------*/
+        /* ----------- Video Index Cookie - getter/setter -----------*/
 
-            // set which home video will be played based on its index
-            function setVideoCookie(index) {
+        // set which home video will be played based on its index
+        function setVideoCookie(index) {
 
-                //var expirationDate = lasdkjfas;ldfkas;
-                //var expires = "expires=" + expirationDate;
-                document.cookie = 'videoIndex  = ' + index; // + "; " + expires;
-            }
+            //var expirationDate = lasdkjfas;ldfkas;
+            //var expires = "expires=" + expirationDate;
+            document.cookie = 'videoIndex  = ' + index; // + "; " + expires;
+        }
 
-            // get the current value of the video cookie to determine which video to play
-            function getCookie(cname) {
-                var name = cname + "=";
-                var ca = document.cookie.split(';');
+        // get the current value of the video cookie to determine which video to play
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
 
-                for (var i = 0; i < ca.length; i++) {
-                    var c = ca[i];
-                    while (c.charAt(0)==' ') c = c.substring(1);
-                    if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                
+                while (c.charAt(0) === ' ') {
+                    c = c.substring(1); 
                 }
-                return "";
-            }
-
-            // testing function to delete the cookie - to be used in console
-            function deleteVideoCookie() {
-                document.cookie = 'videoIndex=';
-            }
-
-
-            /* ----------- Video Controls -----------*/
-
-            // create a video player on the current video
-            function createVideoPlayer(index) {
-
-                var selectorString = '.home-video-' + index;
-
-                // set up mediaElement js with custom settings
-                var player = new MediaElementPlayer(selectorString, {
-                    startVolume: 0, // there is no audio
-                    features: [],
-                    autoRewind: false,
-                    success: function(mediaElement) {
-                        console.log('Video loaded properly.');
-
-                        mediaElement.addEventListener('ended', function(e) {
-                             
-                            console.log('video over!');
-
-                        }, false);
-                    },
-                    error: function () {
-                        console.log('The video did not load properly.');
-                    }
-                });
-
-                return player;
-            }
-
-            // play the video at the desired index
-            function playVideo(index) {
-
-                // only play the video in desktop view - video is hidden otherwise
-                if ($(window).width() >= 1024) {
-
-                    $('.home-video').removeClass('active');
-
-                    switch (index) {
-                        case 1:
-                            // set src file of video
-                            // call MEjs play function
-
-                            $('.home-video-1').addClass('active');
-                            console.log('play video 1');
-                            videoPlayer = createVideoPlayer(1);
-                            break;
-                        case 2:
-
-                            $('.home-video-2').addClass('active');
-                            console.log('play video 2');
-                            videoPlayer = createVideoPlayer(2);
-                            break;
-                        case 3:
-
-                            $('.home-video-3').addClass('active');
-                            console.log('play video 3');
-                            videoPlayer = createVideoPlayer(3);
-                            break;
-                        case 4:
-
-                            $('.home-video-4').addClass('active');
-                            console.log('play video 4');
-                            videoPlayer = createVideoPlayer(4);
-                            break;
-                        default:
-
-                            // this should never happen, but default to first video
-                            console.log('default');
-                            $('.home-video-1').addClass('active');
-                            videoPlayer = createVideoPlayer(1);
-                            break;
-                    } 
+                if (c.indexOf(name) === 0) {
+                    return c.substring(name.length, c.length);
                 }
-                videoPlayer.setVolume(0);
-                videoPlayer.play();
-
-                $('.section--home .content-wrap').addClass('active');
             }
+            return "";
+        }
 
-            /* ----------- Init -----------*/
+        // testing function to delete the cookie - to be used in console
+        function deleteVideoCookie() {
+            document.cookie = 'videoIndex=';
+        }
 
-            // Set/get cookie to determine which video loads:
-            var oldVideoCookie = getCookie('videoIndex');
 
-            $('.home-video').ready( function() {
+        /* ----------- Video Controls -----------*/
 
-                console.log('video loaded - play it!');
+        // create a video player on the current video
+        function createVideoPlayer(index) {
 
-                if (oldVideoCookie === '') {    // if the cookie has not been set
+            //var selectorString = '.home-video-' + index;
+    
 
-                    // set it to 1 and play video number 1
-                    setVideoCookie(1);
-                    playVideo(1);
+            // set up mediaElement js with custom settings
+            // var player = new MediaElementPlayer(selectorString, {
 
-                } else if (parseInt(oldVideoCookie, 10) === 4) {    // the cookie has reached the last video index value
+            $('.home-video-' + index).mediaelementplayer({
+                pauseOtherPlayers: false,       // allow multiple videos
+                startVolume: 0, // there is no audio
+                features: [],
+                autoRewind: false,
+                success: function(mediaElement) {
+                    //console.log('Video loaded properly.');
 
-                    var newVideoCookie = 1;     // reset it to first video
-                    setVideoCookie(newVideoCookie);
-                    playVideo(newVideoCookie);
+                    // Video End Event Listener
+                    mediaElement.addEventListener('ended', function(e) {
 
-                } else {    // normal case
-                    var newVideoCookie = parseInt(oldVideoCookie, 10) + 1;
-                    setVideoCookie(newVideoCookie);
-                    playVideo(newVideoCookie);
+                        mediaElement.pause();
+                        console.log('video over!');
+
+                    }, false);
+
+                    // Init video
+                    mediaElement.setVolume(0);
+                    mediaElement.play();
+                },
+                error: function () {
+                    console.log('The video did not load properly.');
                 }
             });
         }
 
+        // play the video at the desired index
+        function playHomeVideo(index) {
+
+
+            //console.log(window.matchMedia(BED.UI.mediaQueries.desktop).matches);
+
+            // only play the video in desktop view - video is hidden otherwise
+            if (window.matchMedia(BED.UI.mediaQueries.desktop).matches) {
+
+
+                $('.home-video').removeClass('active');
+
+                switch (index) {
+                    case 1:
+                        // set src file of video
+                        // call MEjs play function
+
+                        $('.home-video-1').addClass('active');
+                        console.log('play video 1');
+                        videoPlayer = createVideoPlayer(1);
+                        break;
+                    case 2:
+
+                        $('.home-video-2').addClass('active');
+                        console.log('play video 2');
+                        videoPlayer = createVideoPlayer(2);
+                        break;
+                    case 3:
+
+                        $('.home-video-3').addClass('active');
+                        console.log('play video 3');
+                        videoPlayer = createVideoPlayer(3);
+                        break;
+                    case 4:
+
+                        $('.home-video-4').addClass('active');
+                        console.log('play video 4');
+                        videoPlayer = createVideoPlayer(4);
+                        break;
+                    default:
+
+                        // this should never happen, but default to first video
+                        console.log('default');
+                        $('.home-video-1').addClass('active');
+                        videoPlayer = createVideoPlayer(1);
+                        break;
+                } 
+            } else {
+
+                console.log('show mobile image');
+                $('.section--home').addClass('mobile-bg mobile-bg-' + index);
+            }
+
+            $('.section--home .content-wrap').addClass('active');
+        }
+
+        /* ----------- Init -----------*/
+
+        // Set/get cookie to determine which video loads:
+        var oldVideoCookie = getCookie('videoIndex');
+
+        $('.home-video').ready( function() {
+
+            var newVideoCookie;
+
+            if (oldVideoCookie === '') {    // if the cookie has not been set
+
+                // set it to 1 and play video number 1
+                setVideoCookie(1);
+                playHomeVideo(1);
+
+            } else if (parseInt(oldVideoCookie, 10) === 4) {    // the cookie has reached the last video index value
+
+                newVideoCookie = 1;     // reset it to first video
+                setVideoCookie(newVideoCookie);
+                playHomeVideo(newVideoCookie);
+
+            } else {    // normal case
+                newVideoCookie = parseInt(oldVideoCookie, 10) + 1;
+                setVideoCookie(newVideoCookie);
+                playHomeVideo(newVideoCookie);
+            }
+        });
+        
 
         /*************************************************************************/
         /* Videos Section video player */
@@ -261,6 +277,7 @@ BED.VideoPlayer = (function() {
 
         }).mediaelementplayer({
 
+            pauseOtherPlayers: false,       // allow multiple videos
             iPadUseNativeControls: true,    // force iPad's native controls
             iPhoneUseNativeControls: true,  // force iPhone's native controls
             AndroidUseNativeControls: true, // force Android's native controls
@@ -288,10 +305,14 @@ BED.VideoPlayer = (function() {
     };
 
     // MediaElementJS success handler
-    var onSuccess = function(mediaElement, domObject) {
+    var onSuccess = function(me, domObject) {
         // console.log('success');
 
-        instance = mediaElement;
+        console.log(me);
+
+        me.pause();
+
+        instance = me;
 
         // Setup player listeners
         $(instance)
@@ -309,7 +330,6 @@ BED.VideoPlayer = (function() {
 
         // Load video?
         instance.load();
-
     };
 
     // MediaElementJS error handler
@@ -410,7 +430,7 @@ BED.VideoPlayer = (function() {
         currentVideoTitle = videoTitleList[currentVideoName];
 
         // Scroll player into view
-        $('.mejs-container').velocity('scroll', {
+        $('.video-player').velocity('scroll', {
             duration: 250,
             offset: '-' + ($('.page-header').height() + 20)
         });
@@ -420,6 +440,8 @@ BED.VideoPlayer = (function() {
 
         // Load video?
         instance.load();
+
+        console.log('instance: ' + instance);
 
         // Play video
         instance.play();

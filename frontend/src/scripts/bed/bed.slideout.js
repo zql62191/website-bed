@@ -59,7 +59,7 @@ BED.SlideOut = (function() {
         .on('click.slideout', '.slideout .optin', function() {
 
             $(this).blur();
-        })
+        });
 
         // Disable submit button on click
         // .on('click.slideout', '.slideout .submit', function() {

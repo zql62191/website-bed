@@ -131,7 +131,7 @@ var BED = (function() {
                         break;
                 }
 
-            }
+            };
 
             var profileWidth = 548; // width of an individual patient profile for mobile.
 

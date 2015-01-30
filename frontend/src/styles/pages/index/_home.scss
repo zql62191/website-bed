@@ -3,6 +3,23 @@
 
     @include mq("mobile") {
         background: #4d5158 url("#{$img-path}/home__bg--mobile.jpg") 0 25px no-repeat;
+
+        &.mobile-bg {
+            background-position: 0 197px;
+        }
+
+        &.mobile-bg-1 {
+            background-image: url("#{$img-path}/mobile-home-bg-1.png");
+        }
+        &.mobile-bg-2 {
+            background-image: url("#{$img-path}/mobile-home-bg-2.png");
+        }
+        &.mobile-bg-3 {
+            background-image: url("#{$img-path}/mobile-home-bg-3.png");
+        }
+        &.mobile-bg-4 {
+            background-image: url("#{$img-path}/mobile-home-bg-4.png");
+        }
     }
 
     @include mq("desktop") {
