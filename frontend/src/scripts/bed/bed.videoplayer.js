@@ -5,20 +5,32 @@ if (typeof BED === 'undefined') {
 BED.VideoPlayer = (function() {
 
     var videoLocationList = {
-        'grilo2': '//d2ly9zedmmzqz4.cloudfront.net/BED-S02969.mp4', // S02969 Grilo2
+        'grilo2': '//d2ly9zedmmzqz4.cloudfront.net/BED-S02969.mp4',     // S02969 Grilo2
         'kornstein8': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03012.mp4', // S03012 Kornstein8
-        'grilo7': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03011.mp4', // S03011 Grilo7
-        'bulik12': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03016.mp4', // S03016 Bulik12
-        'grilo5': '//d2ly9zedmmzqz4.cloudfront.net/BED-S02972.mp4', // S02972 Grilo5
+        'grilo7': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03011.mp4',     // S03011 Grilo7
+        'bulik12': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03016.mp4',    // S03016 Bulik12
+        'grilo5': '//d2ly9zedmmzqz4.cloudfront.net/BED-S02972.mp4',     // S02972 Grilo5
         'kornstein6': '//d2ly9zedmmzqz4.cloudfront.net/BED-S02973.mp4', // S02973 Kornstein6
         'kornstein14': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03018.mp4', // S03018 Kornstein14
 
         // videos added 10/27/14
-        'bulik4': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03323.mp4', // S03323
-        'bulik3': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03322.mp4', // S03322
-        'wilfley10': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03014.mp4', // S03014
-        'wilfley9': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03013.mp4', // S03013
-        'wilfley13': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03017.mp4' // S03017
+        'bulik4': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03323.mp4',     // S03323
+        'bulik3': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03322.mp4',     // S03322
+        'wilfley10': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03014.mp4',  // S03014
+        'wilfley9': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03013.mp4',   // S03013
+        'wilfley13': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03017.mp4',   // S03017
+
+        // BED 2.0 physician television network videos
+        'chapter1': '//view.vzaar.com/2604892/video', // S02868 Chapter 1
+        'chapter2': '//view.vzaar.com/2604904/video', // S03499 Chapter 2
+        'chapter3': '//view.vzaar.com/2604919/video', // S03500 Chapter 3
+        'chapter4': '//view.vzaar.com/2604928/video', // S03501 Chapter 4
+        'chapter5': '//view.vzaar.com/2604935/video', // S03502 Chapter 5
+        'chapter6': '//view.vzaar.com/2604941/video', // S03503 Chapter 6
+
+        // BED 2.0 Home section videos
+
+
     };
 
     var videoTitleList = {
@@ -34,7 +46,18 @@ BED.VideoPlayer = (function() {
         'bulik3': 'What are the functional consequences of BED in adults?',
         'wilfley10': 'How is BED distinct from bulimia nervosa?',
         'wilfley9': 'How is BED distinct from overeating and obesity?',
-        'wilfley13': 'What is the relationship between obesity and BED in adults?'
+        'wilfley13': 'What is the relationship between obesity and BED in adults?',
+
+        // BED 2.0 physician television network videos
+        'chapter1': 'Living with B.E.D.',
+        'chapter2': 'Diagnostic criteria for B.E.D.',
+        'chapter3': 'Possible causes of B.E.D.',
+        'chapter4': 'Recognizing adult patients with B.E.D.',
+        'chapter5': 'Functional consequences of B.E.D.',
+        'chapter6': 'Diagnosing B.E.D. in adult patients'
+
+        // BED 2.0 home section videos
+          
     };
 
     var videoNameList = [];
@@ -62,6 +85,157 @@ BED.VideoPlayer = (function() {
 
         initialized = true;
 
+        /*************************************************************************/
+        /* Home Section video player */
+
+        if (window.matchMedia(BED.UI.mediaQueries.desktop).matches) {
+            console.log('load home section video player');
+
+            /* ----------- Variables -----------*/
+            var videoPlayer;
+
+
+            /* ----------- Video Index Cookie - getter/setter -----------*/
+
+            // set which home video will be played based on its index
+            function setVideoCookie(index) {
+
+                //var expirationDate = lasdkjfas;ldfkas;
+                //var expires = "expires=" + expirationDate;
+                document.cookie = 'videoIndex  = ' + index; // + "; " + expires;
+            }
+
+            // get the current value of the video cookie to determine which video to play
+            function getCookie(cname) {
+                var name = cname + "=";
+                var ca = document.cookie.split(';');
+
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0)==' ') c = c.substring(1);
+                    if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+                }
+                return "";
+            }
+
+            // testing function to delete the cookie - to be used in console
+            function deleteVideoCookie() {
+                document.cookie = 'videoIndex=';
+            }
+
+
+            /* ----------- Video Controls -----------*/
+
+            // create a video player on the current video
+            function createVideoPlayer(index) {
+
+                var selectorString = '.home-video-' + index;
+
+                // set up mediaElement js with custom settings
+                var player = new MediaElementPlayer(selectorString, {
+                    startVolume: 0, // there is no audio
+                    features: [],
+                    autoRewind: false,
+                    success: function(mediaElement) {
+                        console.log('Video loaded properly.');
+
+                        mediaElement.addEventListener('ended', function(e) {
+                             
+                            console.log('video over!');
+
+                        }, false);
+                    },
+                    error: function () {
+                        console.log('The video did not load properly.');
+                    }
+                });
+
+                return player;
+            }
+
+            // play the video at the desired index
+            function playVideo(index) {
+
+                // only play the video in desktop view - video is hidden otherwise
+                if ($(window).width() >= 1024) {
+
+                    $('.home-video').removeClass('active');
+
+                    switch (index) {
+                        case 1:
+                            // set src file of video
+                            // call MEjs play function
+
+                            $('.home-video-1').addClass('active');
+                            console.log('play video 1');
+                            videoPlayer = createVideoPlayer(1);
+                            break;
+                        case 2:
+
+                            $('.home-video-2').addClass('active');
+                            console.log('play video 2');
+                            videoPlayer = createVideoPlayer(2);
+                            break;
+                        case 3:
+
+                            $('.home-video-3').addClass('active');
+                            console.log('play video 3');
+                            videoPlayer = createVideoPlayer(3);
+                            break;
+                        case 4:
+
+                            $('.home-video-4').addClass('active');
+                            console.log('play video 4');
+                            videoPlayer = createVideoPlayer(4);
+                            break;
+                        default:
+
+                            // this should never happen, but default to first video
+                            console.log('default');
+                            $('.home-video-1').addClass('active');
+                            videoPlayer = createVideoPlayer(1);
+                            break;
+                    } 
+                }
+                videoPlayer.setVolume(0);
+                videoPlayer.play();
+
+                $('.section--home .content-wrap').addClass('active');
+            }
+
+            /* ----------- Init -----------*/
+
+            // Set/get cookie to determine which video loads:
+            var oldVideoCookie = getCookie('videoIndex');
+
+            $('.home-video').ready( function() {
+
+                console.log('video loaded - play it!');
+
+                if (oldVideoCookie === '') {    // if the cookie has not been set
+
+                    // set it to 1 and play video number 1
+                    setVideoCookie(1);
+                    playVideo(1);
+
+                } else if (parseInt(oldVideoCookie, 10) === 4) {    // the cookie has reached the last video index value
+
+                    var newVideoCookie = 1;     // reset it to first video
+                    setVideoCookie(newVideoCookie);
+                    playVideo(newVideoCookie);
+
+                } else {    // normal case
+                    var newVideoCookie = parseInt(oldVideoCookie, 10) + 1;
+                    setVideoCookie(newVideoCookie);
+                    playVideo(newVideoCookie);
+                }
+            });
+        }
+
+
+        /*************************************************************************/
+        /* Videos Section video player */
+
         // Generate playlist order list (used in next/prev functionality)
         $('.video-playlist li').each(function(i, el) {
 
@@ -77,56 +251,38 @@ BED.VideoPlayer = (function() {
 
         });
 
-        // console.log('videoNameList: ', videoNameList);
-        // console.log('videoTitleList: ', videoTitleList);
 
         // Setup MediaElementJS
 
         $('#videoPlayer').attr({
 
-            width: window.matchMedia(BED.UI.mediaQueries.mobile).matches ? 560 : 800,
-
+            width: window.matchMedia(BED.UI.mediaQueries.mobile).matches ? 536 : 800,
             height: window.matchMedia(BED.UI.mediaQueries.mobile).matches ? 315 : 450
 
         }).mediaelementplayer({
 
-            // force iPad's native controls
-            iPadUseNativeControls: true,
-
-            // force iPhone's native controls
-            iPhoneUseNativeControls: true,
-
-            // force Android's native controls
-            AndroidUseNativeControls: true,
-
+            iPadUseNativeControls: true,    // force iPad's native controls
+            iPhoneUseNativeControls: true,  // force iPhone's native controls
+            AndroidUseNativeControls: true, // force Android's native controls
             success: onSuccess,
-
             error: onError
-
         });
 
         // Setup UI Events
 
         $(document.body)
 
-        //.on('click.videoplayer', '.video-playlist li[data-video]', function(e) {
-
         // BED 2.0 updated event listener:
         .on('click.videoplayer', '.video-thumb[data-video]', function(e) {
             playVideo($(this).data('video'));
-
         })
 
         .on('click.videoplayer', '.video-player .arrow-left', function(e) {
-
             playPrevVideo();
-
         })
 
         .on('click.videoplayer', '.video-player .arrow-right', function(e) {
-
             playNextVideo();
-
         });
 
     };
@@ -163,7 +319,6 @@ BED.VideoPlayer = (function() {
 
     // MediaElementJS loadeddata handler
     var onLoadedData = function(e) {
-        // console.log(e);
 
         // Reset percentage milestones
         p0 = p25 = p50 = p75 = p90 = p100 = false;
@@ -171,7 +326,6 @@ BED.VideoPlayer = (function() {
 
     // MediaElementJS timeupdate handler
     var onTimeUpdate = function(e) {
-        // console.log(e);
 
         // Calculate current percentage viewed
         var currentPercentage = (instance.currentTime / instance.duration) * 100;
@@ -181,12 +335,8 @@ BED.VideoPlayer = (function() {
             return;
         }
 
-        // console.log('currentPercentage: ', currentPercentage);
-
         if (currentPercentage >= 0 && !p0) {
             // Check if more than 0% viewed and if not previously fired
-
-            // console.log('0%');
 
             p0 = true;
 
@@ -196,8 +346,6 @@ BED.VideoPlayer = (function() {
         } else if (currentPercentage >= 25 && !p25) {
             // Check if more than 25% viewed and if not previously fired
 
-            // console.log('25%');
-
             p25 = true;
 
             // fire 'Video Milestone' @ 25%
@@ -205,8 +353,6 @@ BED.VideoPlayer = (function() {
 
         } else if (currentPercentage >= 50 && !p50) {
             // Check if more than 50% viewed and if not previously fired
-
-            // console.log('50%');
 
             p50 = true;
 
@@ -216,8 +362,6 @@ BED.VideoPlayer = (function() {
         } else if (currentPercentage >= 75 && !p75) {
             // Check if more than 75% viewed and if not previously fired
 
-            // console.log('75%');
-
             p75 = true;
 
             // fire 'Video Milestone' @ 75%
@@ -226,8 +370,6 @@ BED.VideoPlayer = (function() {
         } else if (currentPercentage >= 90 && !p90) {
             // Check if more than 90% viewed and if not previously fired
 
-            // console.log('90%');
-
             p90 = true;
 
             // fire 'Video Complete'
@@ -235,8 +377,6 @@ BED.VideoPlayer = (function() {
 
         } else if (currentPercentage >= 99 && !p100) {
             // Check if more than 100% viewed and if not previously fired
-
-            // console.log('100%');
 
             p100 = true;
 
@@ -248,7 +388,6 @@ BED.VideoPlayer = (function() {
 
     // MediaElementJS ended handler
     var onEnded = function(e) {
-        // console.log(e);
 
         // Reset percentage milestones
         p0 = p25 = p50 = p75 = p90 = p100 = false;

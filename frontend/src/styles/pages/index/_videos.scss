@@ -16,7 +16,7 @@
         background: #a1a1a1;
         width: 1024px;
         margin: 0 30px 0 -32px;
-        padding: 20px 40px 25px;
+        padding: 20px 52px 25px;
 
         @include mq("mobile") {
             width: 640px;
@@ -26,9 +26,16 @@
         h3 {
             color: #333E48;
             padding-bottom: 24px;
-            text-align: center;
-            font-size: 28px;
-            line-height: 34px;
+
+            @include mq('desktop') {
+                text-align: center;
+                font-size: 28px;
+                line-height: 34px;                
+            }
+            @include mq('mobile') {
+                font-size: 56px;
+                line-height: 60px;
+            }
         }
         h4 {
             color: #ffffff;
@@ -125,6 +132,7 @@
     .video-list {
         font-size: 0;
         position: relative;
+        font-family: font("gill sans", "regular");
 
         .video-nav {
             li {
@@ -167,34 +175,68 @@
                 }
             }
             @include mq('mobile') {
-                height: 90px;
+
+                $mobileNavHeight: 90px;
+
+                height: $mobileNavHeight;
                 overflow: visible;
                 position: relative;
                 z-index: 1000;
+                width: 536px;
+                margin: 35px 0;
 
                 li {
-                    height: 90px;
-                    width: 100%;
+                    height: $mobileNavHeight;
+                    width: 536px;
                     position: absolute;
                     top: 0;
                     left: 0;
                     z-index: 1111;
+                    font-size: 32px;
+                    line-height: $mobileNavHeight;
+                    padding-left: 39px;
+                    transition: top 0.3s;
 
                     &.active {
                         z-index: 5555;
                     }
                 }
                 .mobile-dropdown {
+                    z-index: 8888;
+                    background: transparent;
+
+                    &:hover {
+                        background: transparent;
+                    }
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    right: 36px;
+                    width: 36px;
+                    height: 20px;
+                    margin-top: -10px;
+                    background-image: url(#{$img-path}/video-nav-arrow.png);
+                    transform: rotateZ(-90deg);
+                    transition: transform 0.3s;
                     z-index: 9999;
                 }
-
                 &.mobile-open {
-                    li {
-                        position: relative;
+                    
+                    .second-row {
+                        top: $mobileNavHeight;
+                    }
+                    .third-row {
+                        top: 2 * $mobileNavHeight;
                     }
                     .mobile-dropdown {
                         z-index: 0;
                         position: absolute;
+
+                    }
+                    &:after {    
+                        transform: rotateZ(0);
                     }
                 }
             }
@@ -213,7 +255,10 @@
             }
 
             @include mq('desktop') {
-                left: 72px;
+                left: 60px;
+            }
+            @include mq('mobile') {
+                width: 590px;
             }
         }
         .video-thumb {

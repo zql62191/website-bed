@@ -7,8 +7,7 @@ div(data-section="videos").section.section--videos
 
     .videos
 
-      h3.
-        VIDEOS: Key opinion leaders discuss BED in adults
+      h3 VIDEOS: Experts discuss B.E.D. in adults
 
 
       //- VIDEO PLAYER
@@ -26,12 +25,13 @@ div(data-section="videos").section.section--videos
 
         ul.video-nav
           li.mobile-dropdown 
-          
+
           li(data-target="what-is-bed").active.
             What is B.E.D.?
 
-          li(data-target="bed-in-adults").two-lines.
-            B.E.D. in Adults #[br]Background Information
+          li(data-target="bed-in-adults").two-lines
+            span.hide--mobile B.E.D. in Adults #[br]Background Information
+            span.hide--desktop B.E.D. Background
 
           li(data-target="physician-television").
             Physician Television Network
@@ -95,27 +95,27 @@ div(data-section="videos").section.section--videos
         //- PHYSICIAN TELEVISION NETWORK
         .video-section.physician-television
 
-          .video-thumb.video-1
+          .video-thumb(data-video="chapter1").video-1
             p Living with B.E.D.
             .timestamp 4:54
 
-          .video-thumb.video-2
+          .video-thumb(data-video="chapter2").video-2
             p Diagnostic criteria for B.E.D.
             .timestamp 5:56
 
-          .video-thumb.video-3
+          .video-thumb(data-video="chapter3").video-3
             p Possible causes of B.E.D.
             .timestamp 5:37
 
-          .video-thumb.video-4
+          .video-thumb(data-video="chapter4").video-4
             p Recognizing adult patients with B.E.D.
             .timestamp 6:21
 
-          .video-thumb.video-5
+          .video-thumb(data-video="chapter5").video-5
             p Functional consequences of B.E.D.
             .timestamp 2:24
             
-          .video-thumb.video-6
+          .video-thumb(data-video="chapter6").video-6
             p Diagnosing B.E.D. in adult patients
             .timestamp 4:06
 

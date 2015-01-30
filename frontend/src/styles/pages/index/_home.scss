@@ -1,12 +1,16 @@
 .section--home {
     background: #4d5158;
+
     @include mq("mobile") {
         background: #4d5158 url("#{$img-path}/home__bg--mobile.jpg") 0 25px no-repeat;
     }
 
     @include mq("desktop") {
-        background: #4d5158 url("#{$img-path}/home__bg.jpg") 0 0 no-repeat;
-        height: 700px;
+        //background: #4d5158 url("#{$img-path}/home__bg.jpg") 0 0 no-repeat;
+        //height: 700px;
+
+        // BED 2.0 updates
+        height: 651px;
     }
 
     .scroll-point {
@@ -22,6 +26,7 @@
         z-index: 1002;
         background: #51748b;
         margin-bottom: 0;
+
         @include mq("mobile") {
             font-size: 25px;
             line-height: 25px;
@@ -32,18 +37,62 @@
     .disclaimer-bar {
         width: 100%;
         background-color: #333e48;
-        height: 25px;
+        position: relative;
+        z-index: 1000;
 
         p {
             text-align: center;
-            line-height: 25px;
-            font-size: 14px;
             color: #BFCAD2;
         }
         a {
             color: #ffffff;
         }
+
+        @include mq('desktop') {
+            height: 25px;
+
+            p {
+                line-height: 25px;
+                font-size: 14px;
+            }
+        }
+        @include mq('mobile') {
+            height: 104px;
+
+            p {
+                padding-top: 8px;
+                font-size: 24px;
+                line-height: 26px;
+            }
+        }
     }
+
+    .home-video-container {
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 1024px;
+        height: 576px;
+
+
+        .home-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+
+            &.active {
+                display: block;
+            }
+        }
+
+        .mejs-overlay-button, .mejs-container .mejs-controls {
+            display: none !important;
+            visibility: hidden !important; 
+        }
+
+    }
+
     .content-wrap {
         @include mq("mobile") {
             padding-left: 14px;
@@ -51,7 +100,15 @@
         }
 
         @include mq("desktop") {
-            padding: 122px 35px 0 609px;
+            //padding: 122px 35px 0 609px;
+            padding: 77px 35px 0 609px;
+            opacity: 0;
+            transition: opacity 3s;
+            transition-delay: 4s;
+
+            &.active {
+                opacity: 1;
+            }
         }
     }
     .eyebrow {
@@ -59,6 +116,7 @@
         font-size: 20.5px;
         line-height: 23px; 
         padding-bottom: 0;
+
         @include mq("desktop") {
             padding-bottom: 10px;
         }
