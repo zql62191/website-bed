@@ -27,7 +27,7 @@
         //height: 700px;
 
         // BED 2.0 updates
-        height: 651px;
+        //height: 651px;
     }
 
     .scroll-point {
@@ -117,7 +117,7 @@
         }
 
         @include mq("desktop") {
-            //padding: 122px 35px 0 609px;
+            height: 576px;
             padding: 77px 35px 0 609px;
             opacity: 0;
             transition: opacity 3s;
@@ -128,6 +128,7 @@
             }
         }
     }
+
     .eyebrow {
         font-family: font("gill sans", "roman");
         font-size: 20.5px;

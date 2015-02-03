@@ -271,6 +271,11 @@
 
             &.new:before {
                 position: absolute;
+                content: '';
+                background-image: url(#{$img-path}/new-video-icon.png);
+                background-size: 36px 21px;
+                height: 21px;
+                width: 36px;
                 top: 6px;
                 left: -6px;
             }
