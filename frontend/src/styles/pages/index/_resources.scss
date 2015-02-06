@@ -325,7 +325,7 @@
                 }
                 .quote-open {
                     position: absolute;
-                    left: -15px;
+                    left: -40px;
                     background-image: url("#{$img-path}/quote-open-mobile.png");
                 }
                 
@@ -390,6 +390,71 @@
                 height: 60px;
                 background-size: 509px 60px;
                 margin-bottom: 70px;
+            }
+        }
+
+        .audio-container {
+            @include mq('desktop') {
+                display: inline-block;
+                vertical-align: top;
+                background-size: 229px 31px;
+                width: 229px;
+                height: 31px;
+
+                .mejs-controls,
+                .mejs-time-total,
+                .mejs-time-buffering,
+                .mejs-time-loaded,
+                .mejs-time-current,
+                .mejs-button,
+                .mejs-time,
+                .mejs-controls {
+                }
+            }
+
+            @include mq('mobile') {
+                width: 509px;
+                height: 60px;
+                background-size: 509px 60px;
+                margin-bottom: 70px;
+
+                .mejs-controls {
+                    height: 60px;
+                }
+
+                .mejs-time-total {
+                    margin-top: 12px;
+                    height: 22px;
+                    border-radius: 5px;
+                    .mejs-time-buffering,
+                    .mejs-time-current {
+                        border-radius: 5px;
+                        height: 22px;
+                    }
+                }
+
+                .mejs-button {
+                    padding-top: 16px;
+                    button {
+                        transform: scale(1.5);
+                    }
+                }
+
+                .mejs-time {
+                    padding-top: 25px;
+                    span {
+                        font-size: 17px;
+                    }
+                }
+                .mejs-controls {
+                    height: 60px;
+                }
+
+            }
+
+            // Hiding the loaded buffer cause it was buggy
+            .mejs-time-loaded {
+                opacity: 0;
             }
         }
     }

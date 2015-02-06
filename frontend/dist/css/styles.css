@@ -998,7 +998,7 @@ label > * {
   overflow: hidden;
   background: url('../img/rgbapng/0000007f-5.png');
   background: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
+  z-index: 1001;
 }
 .slideout .slideout__inner {
   position: absolute;
@@ -1790,6 +1790,14 @@ label > * {
   visibility: hidden !important;
 }
 @media only screen and (max-width: 40em) {
+  .section--home .home-video-container .home-video {
+    display: none;
+  }
+  .section--home .home-video-container .home-video.active {
+    display: none;
+  }
+}
+@media only screen and (max-width: 40em) {
   .section--home .content-wrap {
     padding-left: 14px;
     padding-top: 545px;
@@ -1976,6 +1984,9 @@ label > * {
     height: 27px;
     left: 0;
     top: 52px;
+  }
+  .callouts .column .callout-arrow:hover {
+    background-image: url("../img/callout-arrow-hover.png");
   }
 }
 @media only screen and (max-width: 40em) {
@@ -4368,7 +4379,7 @@ label > * {
   }
   .section--resources .quote-block .quote .quote-open {
     position: absolute;
-    left: -15px;
+    left: -40px;
     background-image: url("../img/quote-open-mobile.png");
   }
   .section--resources .quote-block .quote .quote-close {
@@ -4431,6 +4442,56 @@ label > * {
     background-size: 509px 60px;
     margin-bottom: 70px;
   }
+}
+@media only screen and (min-width: 40.063em) {
+  .section--resources .quote-block .audio-container {
+    display: inline-block;
+    vertical-align: top;
+    background-size: 229px 31px;
+    width: 229px;
+    height: 31px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--resources .quote-block .audio-container {
+    width: 509px;
+    height: 60px;
+    background-size: 509px 60px;
+    margin-bottom: 70px;
+  }
+  .section--resources .quote-block .audio-container .mejs-controls {
+    height: 60px;
+  }
+  .section--resources .quote-block .audio-container .mejs-time-total {
+    margin-top: 12px;
+    height: 22px;
+    border-radius: 5px;
+  }
+  .section--resources .quote-block .audio-container .mejs-time-total .mejs-time-buffering,
+  .section--resources .quote-block .audio-container .mejs-time-total .mejs-time-current {
+    border-radius: 5px;
+    height: 22px;
+  }
+  .section--resources .quote-block .audio-container .mejs-button {
+    padding-top: 16px;
+  }
+  .section--resources .quote-block .audio-container .mejs-button button {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  .section--resources .quote-block .audio-container .mejs-time {
+    padding-top: 25px;
+  }
+  .section--resources .quote-block .audio-container .mejs-time span {
+    font-size: 17px;
+  }
+  .section--resources .quote-block .audio-container .mejs-controls {
+    height: 60px;
+  }
+}
+.section--resources .quote-block .audio-container .mejs-time-loaded {
+  opacity: 0;
 }
 @media only screen and (min-width: 40.063em) {
   .section--resources .callout {
@@ -4617,6 +4678,7 @@ label > * {
     line-height: 60px;
     text-align: center;
     border-right: 1px solid #5F6B75;
+    cursor: pointer;
   }
   .section--videos .video-list .video-nav li:last-of-type {
     border: 0;

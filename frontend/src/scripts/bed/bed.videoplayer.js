@@ -60,6 +60,11 @@ BED.VideoPlayer = (function() {
           
     };
 
+    var audioSamples = {
+        'sample1': 'media/TestAudio.mp3',
+        'sample2': 'media/TestAudio.mp3'
+    };
+
     var videoNameList = [];
 
     var currentVideoName = '';
@@ -220,7 +225,45 @@ BED.VideoPlayer = (function() {
             $('.section--home .content-wrap').addClass('active');
         }
 
+        /* Audio */
+        function initAudio() {
+            if (window.matchMedia(BED.UI.mediaQueries.desktop).matches) {
+                $('.audio-sample1').mediaelementplayer({
+                    audioWidth: 229,
+                    features: ['playpause', 'current', 'progress', 'duration']
+                });
+
+                $('.audio-sample2').mediaelementplayer({
+                    audioWidth: 229,
+                    features: ['playpause', 'current', 'progress', 'duration']
+                });
+            } else {
+                $('.audio-sample1').mediaelementplayer({
+                    audioWidth: 509,
+                    audioHeight: 60,
+                    iPadUseNativeControls: false,
+                    iPhoneUseNativeControls: false,
+                    AndroidUseNativeControls: false,
+                    features: ['playpause', 'current', 'progress', 'duration'],
+                    success: onAudioSuccess
+                });
+
+                $('.audio-sample2').mediaelementplayer({
+                    audioWidth: 509,
+                    audioHeight: 60,
+                    iPadUseNativeControls: false,
+                    iPhoneUseNativeControls: false,
+                    AndroidUseNativeControls: false,
+                    features: ['playpause', 'current', 'progress', 'duration']
+                });
+
+
+            }
+        }
+
         /* ----------- Init -----------*/
+
+        initAudio();
 
         // Set/get cookie to determine which video loads:
         var oldVideoCookie = getCookie('videoIndex');
@@ -302,7 +345,13 @@ BED.VideoPlayer = (function() {
             playNextVideo();
         });
 
+
+
     };
+
+    var onAudioSuccess = function(me, domObject) {
+        console.log(me);
+    }
 
     // MediaElementJS success handler
     var onSuccess = function(me, domObject) {

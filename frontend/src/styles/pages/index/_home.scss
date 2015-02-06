@@ -108,6 +108,18 @@
             visibility: hidden !important; 
         }
 
+        @include mq("mobile") {
+
+            .home-video {
+                display: none;
+
+                &.active {
+                    display: none;
+                }
+            }
+            
+        }
+
     }
 
     .content-wrap {
@@ -300,6 +312,10 @@
                 height: 27px;
                 left: 0;
                 top: 52px;
+
+                &:hover {
+                    background-image: url('#{$img-path}/callout-arrow-hover.png');
+                }
             }
 
             @include mq('mobile') {
@@ -309,6 +325,8 @@
                 top: 41px;
                 right: 32px;
             }
+
+
         }
     }
 }
