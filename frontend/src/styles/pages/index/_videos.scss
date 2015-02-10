@@ -274,12 +274,25 @@
             &.new:before {
                 position: absolute;
                 content: '';
-                background-image: url(#{$img-path}/new-video-icon.png);
-                background-size: 36px 21px;
-                height: 21px;
-                width: 36px;
-                top: 6px;
-                left: -6px;
+                
+
+                @include mq('desktop') {
+                    background-image: url(#{$img-path}/new-video-icon.png);
+                    background-size: 36px 21px;
+                    height: 21px;
+                    width: 36px;
+                    top: 6px;
+                    left: -6px;
+                }
+                @include mq('mobile') {
+                    background-image: url(#{$img-path}/new-video-icon-mobile.png);
+                    background-size: 72px 42px;
+                    width: 72px;
+                    height: 42px;
+                    top: 9px;
+                    left: -12px;
+                }
+
             }
 
             p {

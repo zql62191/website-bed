@@ -230,12 +230,14 @@ BED.VideoPlayer = (function() {
             if (window.matchMedia(BED.UI.mediaQueries.desktop).matches) {
                 $('.audio-sample1').mediaelementplayer({
                     audioWidth: 229,
-                    features: ['playpause', 'current', 'progress', 'duration']
+                    features: ['playpause', 'current', 'progress', 'duration'],
+                    success: onAudioSuccess
                 });
 
                 $('.audio-sample2').mediaelementplayer({
                     audioWidth: 229,
-                    features: ['playpause', 'current', 'progress', 'duration']
+                    features: ['playpause', 'current', 'progress', 'duration'],
+                    success: onAudioSuccess
                 });
             } else {
                 $('.audio-sample1').mediaelementplayer({
@@ -254,10 +256,9 @@ BED.VideoPlayer = (function() {
                     iPadUseNativeControls: false,
                     iPhoneUseNativeControls: false,
                     AndroidUseNativeControls: false,
-                    features: ['playpause', 'current', 'progress', 'duration']
+                    features: ['playpause', 'current', 'progress', 'duration'],
+                    success: onAudioSuccess
                 });
-
-
             }
         }
 
@@ -350,8 +351,19 @@ BED.VideoPlayer = (function() {
     };
 
     var onAudioSuccess = function(me, domObject) {
-        console.log(me);
-    }
+        console.log(me + '\n' + domObject);
+
+        // event listeners for play button icons
+
+        // $('.quote-block .play-button').click( function() {
+
+        //     var target = $(this).data('target');
+
+        //     $('.audio-' + target).play();
+
+        // });
+
+    };
 
     // MediaElementJS success handler
     var onSuccess = function(me, domObject) {

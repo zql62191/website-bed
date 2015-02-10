@@ -4785,12 +4785,26 @@ label > * {
 .section--videos .video-list .video-thumb.new:before {
   position: absolute;
   content: '';
-  background-image: url(../img/new-video-icon.png);
-  background-size: 36px 21px;
-  height: 21px;
-  width: 36px;
-  top: 6px;
-  left: -6px;
+}
+@media only screen and (min-width: 40.063em) {
+  .section--videos .video-list .video-thumb.new:before {
+    background-image: url(../img/new-video-icon.png);
+    background-size: 36px 21px;
+    height: 21px;
+    width: 36px;
+    top: 6px;
+    left: -6px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .section--videos .video-list .video-thumb.new:before {
+    background-image: url(../img/new-video-icon-mobile.png);
+    background-size: 72px 42px;
+    width: 72px;
+    height: 42px;
+    top: 9px;
+    left: -12px;
+  }
 }
 .section--videos .video-list .video-thumb p {
   color: #333E48;
