@@ -1870,6 +1870,9 @@ label > * {
     line-height: 18px;
   }
 }
+.section--home .sign-up-button {
+  transition: background-color 0.3s;
+}
 .section--home .sign-up-button a {
   display: block;
   width: 100%;
@@ -1878,6 +1881,13 @@ label > * {
 .section--home .sign-up-button p {
   text-align: center;
   color: #FEBD3F;
+  transition: color 0.3s;
+}
+.section--home .sign-up-button:hover {
+  background-color: #FEBD3F;
+}
+.section--home .sign-up-button:hover p {
+  color: #2d313a;
 }
 @media only screen and (min-width: 40.063em) {
   .section--home .sign-up-button {
@@ -1888,7 +1898,7 @@ label > * {
   }
   .section--home .sign-up-button p {
     font-size: 16px;
-    line-height: 55px;
+    line-height: 49px;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -4299,6 +4309,9 @@ label > * {
     height: 543px;
   }
 }
+.section--resources .audio .scroll-point {
+  margin: 0;
+}
 @media only screen and (min-width: 40.063em) {
   .section--resources .sunny-icon {
     display: none;
@@ -4387,6 +4400,9 @@ label > * {
     background-image: url("../img/quote-close-mobile.png");
     margin-left: 15px;
   }
+}
+.section--resources .quote-block .play-button {
+  cursor: pointer;
 }
 @media only screen and (min-width: 40.063em) {
   .section--resources .quote-block .play-button {

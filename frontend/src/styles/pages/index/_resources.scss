@@ -244,6 +244,10 @@
             height: 543px;
         }
 
+
+        .scroll-point {
+            margin: 0;
+        }
     }
 
     .sunny-icon {
@@ -340,6 +344,8 @@
         }
 
         .play-button {
+            cursor: pointer;
+
             @include mq('desktop') {
                 display: inline-block;
                 vertical-align: top;

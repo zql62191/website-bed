@@ -1280,17 +1280,22 @@ BED.VideoPlayer = (function() {
     };
 
     var onAudioSuccess = function(me, domObject) {
-        console.log(me + '\n' + domObject);
+        //console.log(me + '\n' + domObject);
 
-        // event listeners for play button icons
+        if ($(me).hasClass('audio-sample1')) {
 
-        // $('.quote-block .play-button').click( function() {
+            $('.play-sample1').click( function() {
+                var target = $(this).data('target');
+                me.play();
+            });
+            
+        } else if ($(me).hasClass('audio-sample2')) {
 
-        //     var target = $(this).data('target');
-
-        //     $('.audio-' + target).play();
-
-        // });
+            $('.play-sample2').click( function() {
+                var target = $(this).data('target');
+                me.play();
+            });
+        }
 
     };
 

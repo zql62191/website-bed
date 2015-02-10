@@ -197,6 +197,8 @@
         }
     }
     .sign-up-button {
+
+        transition: background-color 0.3s;
      
         a {
             display: block;
@@ -206,6 +208,15 @@
         p {
             text-align: center;
             color: #FEBD3F;
+
+            transition: color 0.3s;
+        }
+
+        &:hover {
+            background-color: #FEBD3F;
+            p {
+                color: #2d313a;
+            }
         }
 
         @include mq('desktop') {
@@ -216,7 +227,7 @@
 
             p {
                 font-size: 16px;
-                line-height: 55px;
+                line-height: 49px;
             }
         }
         @include mq('mobile') {
