@@ -104,6 +104,10 @@
     }
     .chart-head {
         padding-bottom: 30px;
+
+        &.spiral-charts-head {
+            padding-top: 10px;
+        }
     }
     .twenty-one-animated {
         display: inline-block;
@@ -223,7 +227,8 @@
         }
     }
     .graphic {
-        margin-bottom: 75px;
+        //margin-bottom: 75px;
+        
         .large {
             padding-top: 20px;
             font-size: 160px;

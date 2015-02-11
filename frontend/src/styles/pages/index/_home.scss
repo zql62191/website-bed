@@ -103,9 +103,12 @@
             }
         }
 
-        .mejs-overlay-button, .mejs-container .mejs-controls {
+        .mejs-overlay-button, .mejs-container .mejs-controls, .mejs-overlay-loading {
             display: none !important;
             visibility: hidden !important; 
+        }
+        .mejs-container {
+            background: transparent !important;
         }
 
         @include mq("mobile") {

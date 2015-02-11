@@ -188,14 +188,14 @@
     .comparable {
         border-top: 1px solid #ffffff;
         margin: 18px 0 32px;
-        padding: 24px 0 39px 0;
+        padding: 24px 0 10px 0; //39px 0;
         
         @include mq('desktop') {
             border-bottom: 1px solid #ffffff;
         }
 
         h3 {
-            text-align: center;
+            //text-align: center;
 
             @include mq('desktop') {
                 font-size: 26px;
@@ -211,7 +211,7 @@
                 font-size: 18px;
             }
         }
-        p {
+        p.sub-sub {
             text-align: center;
 
             @include mq('desktop') {
@@ -224,6 +224,10 @@
                 line-height: 28px; 
             }
         }
+        .footnote {
+            margin-top: 30px;
+        }
+
         
         .patient-thumbs {
             text-align: center;

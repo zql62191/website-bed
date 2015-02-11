@@ -16,7 +16,7 @@
         background: #a1a1a1;
         width: 1024px;
         margin: 0 30px 0 -32px;
-        padding: 20px 52px 25px;
+        padding: 40px 52px 25px;
 
         @include mq("mobile") {
             width: 640px;
@@ -28,7 +28,7 @@
             padding-bottom: 24px;
 
             @include mq('desktop') {
-                text-align: center;
+                //text-align: center;
                 font-size: 28px;
                 line-height: 34px;                
             }

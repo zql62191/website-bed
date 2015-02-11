@@ -192,6 +192,7 @@
 .bed-patient-profiles {
     border-top: 1px solid #B2BDC4;
     border-bottom: 1px solid #B2BDC4;
+    margin-top: 25px;
 
 
     .patient-profiles-header {
@@ -199,11 +200,11 @@
         position: relative;
 
         @include mq('desktop') {
-            height: 275px;
-            padding-top: 52px;
+            height: 248px;
+            padding-top: 25px;
             background-image: url("#{$img-path}/patient-profile-header.png");
             background-repeat: no-repeat;
-            background-position: 240px 151px;
+            background-position: 240px 125px;
 
             h3 {
                 font-size: 36px;
@@ -235,7 +236,7 @@
         @include mq('desktop') {
             position: absolute;
             left: 279px;
-            top: 302px;
+            top: 235px;
             z-index: 1;
 
             li {

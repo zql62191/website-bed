@@ -296,6 +296,15 @@ a {
     display: block;
     margin-top: 5px;
     margin-bottom: 50px;
+
+    @include mq('desktop') {
+
+        // 2-11-15 - upon request to reduce top margins of each section.
+        margin-top: -25px; 
+        margin-bottom: 35px;
+
+    }
+
     @include mq("mobile") {
         margin-bottom: 93px;
     }
@@ -584,3 +593,9 @@ label {
 }
 // Fastclick fix
 label > * { pointer-events: none; }
+
+
+
+
+
+

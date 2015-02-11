@@ -373,6 +373,12 @@ a:hover {
   margin-top: 5px;
   margin-bottom: 50px;
 }
+@media only screen and (min-width: 40.063em) {
+  .scroll-point {
+    margin-top: -25px;
+    margin-bottom: 35px;
+  }
+}
 @media only screen and (max-width: 40em) {
   .scroll-point {
     margin-bottom: 93px;
@@ -1785,9 +1791,12 @@ label > * {
 .section--home .home-video-container .home-video.active {
   display: block;
 }
-.section--home .home-video-container .mejs-overlay-button, .section--home .home-video-container .mejs-container .mejs-controls {
+.section--home .home-video-container .mejs-overlay-button, .section--home .home-video-container .mejs-container .mejs-controls, .section--home .home-video-container .mejs-overlay-loading {
   display: none !important;
   visibility: hidden !important;
+}
+.section--home .home-video-container .mejs-container {
+  background: transparent !important;
 }
 @media only screen and (max-width: 40em) {
   .section--home .home-video-container .home-video {
@@ -2203,16 +2212,13 @@ label > * {
 .section--prevalence .comparable {
   border-top: 1px solid #ffffff;
   margin: 18px 0 32px;
-  padding: 24px 0 39px 0;
+  padding: 24px 0 10px 0;
   /* patient thumbnails */
 }
 @media only screen and (min-width: 40.063em) {
   .section--prevalence .comparable {
     border-bottom: 1px solid #ffffff;
   }
-}
-.section--prevalence .comparable h3 {
-  text-align: center;
 }
 @media only screen and (min-width: 40.063em) {
   .section--prevalence .comparable h3 {
@@ -2229,20 +2235,23 @@ label > * {
 .section--prevalence .comparable h3 .small {
   font-size: 18px;
 }
-.section--prevalence .comparable p {
+.section--prevalence .comparable p.sub-sub {
   text-align: center;
 }
 @media only screen and (min-width: 40.063em) {
-  .section--prevalence .comparable p {
+  .section--prevalence .comparable p.sub-sub {
     font-size: 18px;
     line-height: 18px;
   }
 }
 @media only screen and (max-width: 40em) {
-  .section--prevalence .comparable p {
+  .section--prevalence .comparable p.sub-sub {
     font-size: 24px;
     line-height: 28px;
   }
+}
+.section--prevalence .comparable .footnote {
+  margin-top: 30px;
 }
 .section--prevalence .comparable .patient-thumbs {
   text-align: center;
@@ -2524,6 +2533,9 @@ label > * {
 .section--course .chart-head {
   padding-bottom: 30px;
 }
+.section--course .chart-head.spiral-charts-head {
+  padding-top: 10px;
+}
 .section--course .twenty-one-animated {
   display: inline-block;
   vertical-align: top;
@@ -2639,9 +2651,6 @@ label > * {
 .section--course .disclaimer:before {
   content: '*';
   margin-left: -9px;
-}
-.section--course .graphic {
-  margin-bottom: 75px;
 }
 .section--course .graphic .large {
   padding-top: 20px;
@@ -3394,6 +3403,7 @@ label > * {
 .bed-patient-profiles {
   border-top: 1px solid #B2BDC4;
   border-bottom: 1px solid #B2BDC4;
+  margin-top: 25px;
 }
 .bed-patient-profiles .patient-profiles-header {
   text-align: center;
@@ -3401,11 +3411,11 @@ label > * {
 }
 @media only screen and (min-width: 40.063em) {
   .bed-patient-profiles .patient-profiles-header {
-    height: 275px;
-    padding-top: 52px;
+    height: 248px;
+    padding-top: 25px;
     background-image: url("../img/patient-profile-header.png");
     background-repeat: no-repeat;
-    background-position: 240px 151px;
+    background-position: 240px 125px;
   }
   .bed-patient-profiles .patient-profiles-header h3 {
     font-size: 36px;
@@ -3432,7 +3442,7 @@ label > * {
   .bed-patient-profiles .profile-buttons {
     position: absolute;
     left: 279px;
-    top: 302px;
+    top: 235px;
     z-index: 1;
   }
   .bed-patient-profiles .profile-buttons li {
@@ -4156,7 +4166,6 @@ label > * {
 }
 @media only screen and (min-width: 40.063em) {
   .section--resources .content-wrap.steps {
-    padding: 0;
     height: 637px;
   }
 }
@@ -4261,16 +4270,6 @@ label > * {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  .section--resources .step-1:before {
-    background-image: url("../img/step-1.png");
-  }
-}
-@media only screen and (max-width: 40em) {
-  .section--resources .step-1:before {
-    background-image: url("../img/step-1-mobile.png");
-  }
-}
-@media only screen and (min-width: 40.063em) {
   .section--resources .step-2 .download-button {
     height: 49px;
   }
@@ -4279,19 +4278,9 @@ label > * {
     line-height: 18px;
   }
 }
-@media only screen and (min-width: 40.063em) {
-  .section--resources .step-2:before {
-    background-image: url("../img/step-2.png");
-  }
-}
-@media only screen and (max-width: 40em) {
-  .section--resources .step-2:before {
-    background-image: url("../img/step-2-mobile.png");
-  }
-}
 .section--resources .audio {
   background-image: radial-gradient(50% 50%, #333e48 50%, #21282f 100%);
-  padding: 63px 58px;
+  padding: 40px 58px;
 }
 @media only screen and (min-width: 40.063em) {
   .section--resources .audio h2 {
@@ -4306,7 +4295,7 @@ label > * {
 }
 @media only screen and (min-width: 40.063em) {
   .section--resources .audio {
-    height: 543px;
+    height: 530px;
   }
 }
 .section--resources .audio .scroll-point {
@@ -4548,7 +4537,7 @@ label > * {
   background: #a1a1a1;
   width: 1024px;
   margin: 0 30px 0 -32px;
-  padding: 20px 52px 25px;
+  padding: 40px 52px 25px;
 }
 @media only screen and (max-width: 40em) {
   .section--videos .videos {
@@ -4562,7 +4551,6 @@ label > * {
 }
 @media only screen and (min-width: 40.063em) {
   .section--videos .videos h3 {
-    text-align: center;
     font-size: 28px;
     line-height: 34px;
   }
