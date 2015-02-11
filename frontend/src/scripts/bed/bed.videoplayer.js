@@ -181,6 +181,15 @@ BED.VideoPlayer = (function() {
 
                 $('.home-video').removeClass('active');
 
+
+
+                $('.home-video-container')
+                    .removeClass('video-1')
+                    .removeClass('video-2')
+                    .removeClass('video-3')
+                    .removeClass('video-4')
+                    .addClass('video-' + index);
+
                 switch (index) {
                     case 1:
                         // set src file of video

@@ -1781,6 +1781,24 @@ label > * {
   left: 0;
   width: 1024px;
   height: 576px;
+  background-size: 1024px 576px;
+}
+@media only screen and (min-width: 40.063em) {
+  .section--home .home-video-container {
+    /* dynamic background images (controlled by cookies and js) */
+  }
+  .section--home .home-video-container.video-1 {
+    background-image: url(../img/vid-bg-kimberly.jpg);
+  }
+  .section--home .home-video-container.video-2 {
+    background-image: url(../img/vid-bg-nikki.jpg);
+  }
+  .section--home .home-video-container.video-3 {
+    background-image: url(../img/vid-bg-julie.jpg);
+  }
+  .section--home .home-video-container.video-4 {
+    background-image: url(../img/vid-bg-diego.jpg);
+  }
 }
 .section--home .home-video-container .home-video {
   position: absolute;
@@ -1818,7 +1836,7 @@ label > * {
     padding: 77px 35px 0 609px;
     opacity: 0;
     transition: opacity 3s;
-    transition-delay: 4s;
+    transition-delay: 5s;
   }
   .section--home .content-wrap.active {
     opacity: 1;
@@ -3915,7 +3933,7 @@ label > * {
 @media only screen and (min-width: 40.063em) {
   .section--dsm5 .tab-container {
     position: absolute;
-    width: 40px;
+    width: 39px;
     top: 107px;
     right: 25px;
     background-image: url("../img/dsm5-tab-border.png");
@@ -3926,14 +3944,22 @@ label > * {
     width: 400px;
   }
   .section--dsm5 .tab-container.open .tab-inner {
+    overflow: visible;
+    width: 400px;
     background-image: url("../img/dsm5-tab-bg.png");
     padding-left: 60px;
+    padding-right: 0px;
     background-position: top right;
+    background-size: auto;
+    height: 838px;
   }
   .section--dsm5 .tab-container.open .tab-inner p, .section--dsm5 .tab-container.open .tab-inner li {
     padding-left: 25px;
     font-size: 16px;
     line-height: 18px;
+  }
+  .section--dsm5 .tab-container.open .close {
+    right: 10px;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -3956,16 +3982,25 @@ label > * {
   }
 }
 .section--dsm5 .tab-inner {
-  padding: 34px 25px 0 100px;
-  height: 838px;
-  padding-right: 1px;
+  padding: 34px 0 0 38px;
+  height: 139px;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 @media only screen and (min-width: 40.063em) {
   .section--dsm5 .tab-inner {
     background-image: url("../img/dsm5-tab-bg-closed.png");
-    background-position: top left;
-    width: 400px;
+    background-position: 0 0;
+    background-size: 37px 278px;
+    background-repeat: no-repeat;
+    width: 0px;
+  }
+  .section--dsm5 .tab-inner:hover {
+    background-position: top right;
+    background-position: 0 -139px;
+  }
+  .section--dsm5 .tab-inner .close {
+    right: -1000px;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -3979,7 +4014,6 @@ label > * {
 }
 @media only screen and (min-width: 40.063em) {
   .section--dsm5 .tab-inner .close {
-    right: 10px;
     display: block;
   }
 }

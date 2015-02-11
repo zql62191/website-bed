@@ -90,7 +90,26 @@
         left: 0;
         width: 1024px;
         height: 576px;
+        background-size: 1024px 576px;
 
+
+        
+        @include mq('desktop') {
+
+            /* dynamic background images (controlled by cookies and js) */
+            &.video-1 {
+                background-image: url(#{$img-path}/vid-bg-kimberly.jpg);
+            }
+            &.video-2 {
+                background-image: url(#{$img-path}/vid-bg-nikki.jpg);
+            }
+            &.video-3 {
+                background-image: url(#{$img-path}/vid-bg-julie.jpg);
+            }
+            &.video-4 {
+                background-image: url(#{$img-path}/vid-bg-diego.jpg);
+            }
+        }
 
         .home-video {
             position: absolute;
@@ -136,11 +155,14 @@
             padding: 77px 35px 0 609px;
             opacity: 0;
             transition: opacity 3s;
-            transition-delay: 4s;
+            transition-delay: 5s;
 
             &.active {
                 opacity: 1;
             }
+
+
+
         }
     }
 
