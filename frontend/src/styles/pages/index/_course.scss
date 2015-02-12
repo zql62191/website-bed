@@ -325,6 +325,7 @@
             font-size: 28px;
             line-height: 32px;
             padding: 0 0 0 15px;
+
             @include mq("desktop") {
                 left: 15px;
             }
@@ -360,5 +361,8 @@
     .percent {
         font-size: 0.5em;
         top: -0.65em;
+    }
+    .content-wrap > .footnote:last-of-type { 
+        padding-bottom: 0;
     }
 }

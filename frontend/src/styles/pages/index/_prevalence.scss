@@ -302,7 +302,7 @@
             @include mq('desktop') {
                 width: 264px;
                 height: 55px;
-                border-radius: 40px;
+                border-radius: 12px;
             }
             @include mq('mobile') {
                 width: 528px;

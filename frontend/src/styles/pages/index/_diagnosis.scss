@@ -361,13 +361,17 @@
         transition: opacity 300ms, transform 300ms;
 
         li {
-            margin-left: 38px;
+            //margin-left: 38px;
+            //ugh
+            margin-left: 15px;
             position: relative;
 
             &:before {
                 content: '\2022';
                 position: absolute;
-                left: -25px;
+                //left: -25px;
+                //ugh
+                left: -15px;
                 top: 2px;
                 color: #FFBE2C;
             }

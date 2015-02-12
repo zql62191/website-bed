@@ -239,4 +239,8 @@
             width: 800px;
         }
     }
+    
+    .content-wrap > .footnote:last-of-type { 
+        padding-bottom: 0;
+    }
 }

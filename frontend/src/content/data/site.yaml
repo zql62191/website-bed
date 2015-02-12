@@ -34,13 +34,13 @@ nav:
       title: "Recognizing B.E.D. in Adults"
       file: "diagnosis"
     -
-      url: "/hcp/#/videos"
-      title: "Expert Videos"
-      file: "videos"
-    -
       url: "/hcp/#/resources"
       title: "Resources"
       files: "resources"
+    -
+      url: "/hcp/#/videos"
+      title: "Expert Videos"
+      file: "videos"
   secondary:
     -
       url: "/hcp/unsubscribe.html"
