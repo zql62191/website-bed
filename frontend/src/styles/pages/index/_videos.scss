@@ -9,6 +9,10 @@
     background: -ms-radial-gradient(center, ellipse cover, #8c8f91 40%, #323333 100%);
     background: radial-gradient(ellipse at center, #8c8f91 40%, #323333 100%);
     
+    #videos {
+        top: -25px;
+    }
+
     .content-wrap {
         padding-top: 0;
     }
@@ -223,6 +227,7 @@
                     transform: rotateZ(-90deg);
                     transition: transform 0.3s;
                     z-index: 9999;
+                    pointer-events: none;
                 }
                 &.mobile-open {
                     

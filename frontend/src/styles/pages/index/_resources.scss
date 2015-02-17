@@ -14,6 +14,7 @@
         // TODO: change to linear gradient for mobile
     }
 
+
     .bar--title:before {
         border-top-color: rgb(56, 84, 102);
     }
@@ -237,6 +238,11 @@
     .audio {
         background-image: radial-gradient(50% 50%, #333E48 50%, #21282F 100%);
         padding: 40px 58px;
+
+        
+        #story {
+            top: -90px;
+        }
 
         h2 {
             @include mq('desktop') {
