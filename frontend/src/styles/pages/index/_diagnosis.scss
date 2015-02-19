@@ -82,13 +82,17 @@
         @include mq("desktop") {
             @include clearfix;
             width: 700px;
-            margin: 0 auto;
+            margin: 0 auto 20px auto;
+        }
+        @include mq('mobile') {
+            margin-bottom:  10px;
         }
     }
     .fifty-percent {
         padding-top: 100px;
         min-height: 375px;
         text-align: center;
+
         @include mq("mobile") {
             margin-left: 115px;
         }
@@ -572,6 +576,13 @@
             }
             @include mq('mobile') {
                 background-image: url('#{$img-path}/profile-icon-julie.png');
+            }
+        }
+
+
+        .bmi {
+            @include mq('desktop') {
+                margin-top: 10px;
             }
         }
     }

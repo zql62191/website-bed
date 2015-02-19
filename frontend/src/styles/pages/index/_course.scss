@@ -14,6 +14,8 @@
         // TODO: change to linear gradient for mobile
     }
 
+
+
     .bar--title:before {
         border-top-color: rgb(179, 182, 183);
     }
@@ -58,6 +60,8 @@
             margin: 0 auto;
         }
         .footnote {
+            font-family: font('gill sans', 'light');
+
             @include mq("desktop") {
                 padding-left: 45px;
             }
@@ -346,11 +350,12 @@
             margin: 0 auto;
         }
     }
+    
     .chart-footnote {
         @include mq("desktop") {
             width: 93%;
             margin: 0;
-            margin-left: 10px;
+            // margin-left: 10px;
         }
 
         @include mq('mobile') {

@@ -7,14 +7,18 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <meta id="viewport" name="viewport" content="">
-    <script src="js/viewport.js?__inline=true"></script>
+    <script>
+!function(){var t=document.getElementById("viewport"),e=!/tablet|iPad/i.test(navigator.userAgent)&&/[^-]mobi/i.test(navigator.userAgent)?"640":"1024";t.setAttribute("content","target-densitydpi=device-dpi, width="+e+", user-scalable=0")}();
+</script>
     <meta name="format-detection" content="telephone=no">
     <meta name="google" content="notranslate">
     <title>HCP Information on Binge Eating Disorder in Adults</title>
     <meta name="description" content="Find information on binge eating disorder in adults, including prevalence, diagnostic criteria, distinctions from obesity, and possible causes.">
     <meta name="google-site-verification" content="J54-RSNLJc8L0u3mx8m2Ie3Fb5zXiF5w1x4JQRIPBg8">
     <meta name="keywords" content="">
-    <script src="js/ie-version.js?__inline=true"></script>
+    <script>
+!function(e){if(/msie|trident/i.test(e)){for(var t=function(){var t=e.match(/(?:msie |rv:)(\d+(\.\d+)?)/i),n=t&&t.length>1&&t[1]||"";return parseInt(n,10)}(),n="ie",i=6,s=12,u=["eq-ie"],r=i;s>=r;r++)t>r?u.push("gt-"+n+r):r>t?u.push("lt-"+n+r):t===r&&(u.push("lte-"+n+r),u.push("eq-"+n+r),u.push("gte-"+n+r));document.documentElement.className+=" "+u.join(" ")}}(navigator.userAgent||"");
+</script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="me/mediaelementplayer.min.css">
     <script src="//fast.fonts.net/jsapi/352bad9a-496a-416d-b9cf-171842848303.js"></script>
@@ -40,17 +44,17 @@
                   <li class="primary-nav__item _1_liner"><a href="/hcp/#/functional-consequences" target="_self">Functional Consequences</a></li>
                   <li class="primary-nav__item _1_liner"><a href="/hcp/#/potential-causes" target="_self">Potential Causes</a></li>
                   <li class="primary-nav__item _1_liner"><a href="/hcp/#/diagnosis" target="_self">Recognizing B.E.D. in Adults</a></li>
-                  <li class="primary-nav__item _1_liner"><a href="/hcp/#/resources" target="_self">Resources</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/hcp/#/starting-the-conversation" target="_self">Starting the Conversation</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/hcp/#/one-patients-story" target="_self">One Patient's Story</a></li>
                   <li class="primary-nav__item _1_liner"><a href="/hcp/#/videos" target="_self">Expert Videos</a></li>
+                  <li class="primary-nav__item _1_liner"><a href="/hcp/#/helpful-links" target="_self">Helpful Links</a></li>
                 </ul>
         </nav>
       </div>
       <div data-direction="right" ng-controller="OptInController" class="signup-container slideout slideout--signup">
         <div ng-hide="regComplete" class="slideout__inner">
           <div class="close"></div>
-          <h2>Sign up to instantly <br class="hide--desktop">receive the <br class="hide--mobile"><em>DSM-5</em><sup>&reg;</sup> diagnostic criteria for <br class="hide--desktop">binge  <br class="hide--mobile">eating disorder <br class="hide--desktop">and other B.E.D.<br class="hide--mobile"> content<br class="hide--desktop"> from Shire.
-            
-          </h2>
+          <h2>Sign up to instantly <br class="hide--desktop">receive the <br class="hide--mobile"><em>DSM-5</em><sup>&reg;</sup> diagnostic criteria for <br class="hide--desktop">B.E.D. <br class="hide--mobile">and additional information from <br class="hide--desktop">Shire about B.E.D. <br class="hide--desktop">in adults.</h2>
           <p class="required-fields"><em>All fields are required in the below form.</em>
             
           </p>
@@ -71,7 +75,7 @@
                 
               </p>
             </label>
-            <p class="optin-privacy">Shire respects your personal information. All information you have provided will be kept confidential and will not be used or distributed to anyone for any purpose other than what is explained in our Privacy Policy Statement. We encourage you to read our Privacy Policy Statement by clicking on this link: <a href="/privacy-policy.html" target="_blank">Review Shire Privacy Policy Statement</a>. This consent will be in effect until such time as you opt out of the program.
+            <p class="optin-privacy">Shire respects your personal information. All information you have provided will be kept confidential and will not be used or distributed <br class="hide--mobile">to anyone for any purpose other than what is explained in our Privacy Policy Statement. <br class="hide--mobile">We encourage you to read our Privacy Policy Statement by clicking on this link: <a href="/privacy-policy.html" target="_blank">Review Shire Privacy Policy Statement</a>. This consent will <br class="hide--mobile">be in effect until such time as you opt out of <br class="hide--mobile">the program.
               
             </p>
             <p ng-show="invalidform" class="error-message">Please review the errors above before continuing.</p>
@@ -90,15 +94,12 @@
       <div data-direction="right" class="dsm5-container slideout slideout--dsm5">
         <div class="slideout__inner">
           <div class="close"></div>
-          <h2>What is binge eating<br>disorder (B.E.D.)?
-            
-          </h2>
+          <h2>What is binge eating<br>disorder (B.E.D.)?</h2>
           <p>B.E.D., now a distinct disorder, is defined as recurring episodes (≥ once weekly, for at least 3 months) of consuming a large amount of food in a short time, compared with others. Patients feel a lack of control during a binge and marked distress over their eating. They typically experience shame and guilt, among other symptoms, about their bingeing. Compensatory behaviors are not observed like those associated with bulimia nervosa.<sup>1</sup>
             
           </p>
-          <p class="smaller"><em>
-              These are not the complete diagnostic criteria. Diagnosis should be based upon a complete evaluation of the patient.
-              </em></p><a data-slideout="signup" class="button signup">Register for additional information <br class="hide--desktop">on B.E.D. in adults including the <br class="hide--desktop"><em>DSM-5</em><sup>&reg;</sup> <br class="hide--mobile">diagnostic criteria
+          <p class="smaller"><em>These are not the complete diagnostic criteria. Diagnosis should be based upon a complete evaluation of the patient.</em></p><a data-slideout="signup" class="button signup">Register for additional information <br class="hide--desktop">on B.E.D. in adults, including the <br class="hide--desktop"><em>DSM-5</em><sup>&reg;</sup> <br class="hide--mobile">diagnostic criteria
+            
             </a>
         </div>
       </div>
@@ -151,23 +152,23 @@
                 <p>SIGN UP FOR MORE INFORMATION</p></a></div>
           </div>
           <div class="callouts">
-            <div class="column"><a href="/hcp/#/resources" target="_self" class="callout-link">
+            <div class="column"><a href="/hcp/#/starting-the-conversation" target="_self" class="callout-link">
                 <div class="callout-arrow"></div>
-                <h2>Download the B.E.D. <br>Patient Screener</h2>
-                <p>A validated instrument designed <br class="hide--mobile">to help <br class="hide--desktop">you quickly and simply <br class="hide--mobile">screen adult patients whom you <br class="hide--mobile">suspect may <br class="hide--desktop">have B.E.D.</p></a></div>
+                <h2>Download the Adult B.E.D. <br class="hide--desktop">Patient Screener</h2>
+                <p>A validated instrument designed <br class="hide--mobile">to help <br class="hide--desktop">you begin the evaluation process with  adult patients whom you suspect of <br class="hide--desktop">having B.E.D.</p></a></div>
             <div class="column"><a href="/hcp/#/videos" target="_self" class="callout-link">
                 <div class="callout-arrow"></div>
                 <h2>View NEW videos</h2>
-                <p>Physician peers discuss the <br class="hide--desktop">treatment of B.E.D. in adults.</p></a></div>
-            <div class="column"><a href="/hcp/#/story" target="_self" class="callout-link">
+                <p>Physicians discuss <br class="hide--desktop"> B.E.D. in adults.</p></a></div>
+            <div class="column"><a href="/hcp/#/one-patients-story" target="_self" class="callout-link">
                 <div class="callout-arrow"></div>
-                <h2>Listen to a real <br class="hide--mobile">patient story</h2>
+                <h2>Listen to a real adult <br>patient story</h2>
                 <p>Sunny Sea Gold, an adult patient <br class="hide--desktop">with B.E.D. and an advocate, talks <br class="hide--desktop">about her B.E.D. experience.</p></a></div>
           </div>
         </div>
         <div data-section="prevalence" class="section section--prevalence"><a id="prevalence" name="prevalence" class="scroll-point"></a>
           <div class="content-wrap">
-            <h2 data-skrollr="prevalence-header">Binge eating disorder (B.E.D.) affects <br class="hide--desktop">&asymp;2.8 million US adults<sup>2,3</sup>
+            <h2 data-skrollr="prevalence-header">Binge eating disorder (B.E.D.) affects <br class="hide--desktop">&asymp;2.8 million US adults*<sup>2,3</sup>
               
             </h2>
             <div data-skrollr="prevalence-map" class="us-graphic graphic">
@@ -176,7 +177,7 @@
                 
               </div>
             </div>
-            <div data-skrollr="prevalence-asterisk" class="chart-note footnote">Estimated 12-month prevalence in National Comorbidity Survey Replication of US adults aged ≥18 years, extrapolated to full US population aged ≥18 years.<sup>2,3</sup>
+            <div data-skrollr="prevalence-asterisk" class="chart-note footnote">*Estimated 12-month prevalence in National Comorbidity Survey Replication of US adults aged ≥18 years, extrapolated to full US population aged ≥18 years.<sup>2,3</sup>
               
             </div>
             <div class="blurb">B.E.D. is the most common eating disorder among US adults and more than twice as prevalent as bulimia nervosa and anorexia nervosa combined<sup>2</sup>
@@ -185,11 +186,11 @@
             <p class="gender-ratio sub-head">The gender ratio is far less skewed in B.E.D. than in bulimia nervosa.<sup>1</sup>
               
             </p>
-            <h3 class="center chart-head">Estimated 12-month prevalence <br class="hide--desktop">in US adults*<sup>2</sup>:
+            <h3 class="center chart-head">Estimated 12-month prevalence <br class="hide--desktop">in US adults<sup>†2</sup>:
               
             </h3>
             <div class="male-female-graphic">
-              <p data-skrollr="prevalence-mf-text-1"><span class="yellow">BED: 2 to 1</span><br>
+              <p data-skrollr="prevalence-mf-text-1"><span class="yellow">B.E.D.: 2 to 1</span><br>
                 1.6% of women vs 0.8% of men
                 
               </p>
@@ -200,26 +201,25 @@
               <div data-skrollr="prevalence-male-graphic" class="male-graphic graphic"></div>
               <div data-skrollr="prevalence-female-graphic" class="female-graphic graphic"></div>
             </div>
-            <p class="footnote asterisk">
-              Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a face-to-face household survey of English-speaking adults aged &#8805;18 years.
+            <p class="footnote dagger">Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, <br class="hide--mobile">a nationally respresentative face-to-face household survey of English-speaking adults aged &#8805;18 years.
               
             </p>
             <div class="comparable">
-              <p class="sub-head">Prevalence rates are comparable among non-Latino white <span class="small">(1.4%)</span>, Latino <span class="small">(2.1%)</span>, Asian <span class="small">(1.2%)</span>, and African <br class="hide--desktop">American <span class="small">(1.5%)</span> adults in the United States*<sup>4</sup></p>
+              <p class="sub-head">Prevalence rates are comparable among non-Latino white <span class="small">(1.4%)</span>, Latino <span class="small">(2.1%)</span>, Asian <span class="small">(1.2%)</span>, and African <br class="hide--desktop">American <span class="small">(1.5%)</span> adults in the United States.<sup>‡4</sup></p>
               <div class="patient-thumbs">
                 <div class="kim-thumb patient-thumb"></div>
                 <div class="nikki-thumb patient-thumb"></div><br class="hide--desktop">
                 <div class="julie-thumb patient-thumb"></div>
                 <div class="diego-thumb patient-thumb"></div><a href="/hcp/#/profiles" target="_self" class="view-patient-profiles">
-                  <p>View patient profiles</p></a>
+                  <p>View B.E.D. Patient Profiles</p></a>
               </div>
-              <p class="footnote asterisk">Sample from a combined data set of 3 <br class="hide--desktop">nationally representative US samples.<sup>4</sup></p>
+              <p class="footnote double-dagger">Sample from a combined data set of 3 <br class="hide--desktop">nationally representative US samples.<sup>4</sup></p>
             </div>
             <p class="sub-head center-mobile">B.E.D. occurs with roughly similar <br class="hide--desktop">frequencies in most industrialized <br class="hide--desktop">countries (eg, Australia, Canada, <br class="hide--desktop">many European countries, New <br class="hide--desktop">Zealand, and the United States).<sup>1</sup>
               
             </p>
             <div data-skrollr="prevalence-blurb-2" class="blurb-2">
-              <div class="sub-head">In an online survey, only 3% of US adults who met diagnostic criteria for B.E.D. reported being diagnosed with B.E.D. by a health care provider in the past 12 months.<sup>5</sup>
+              <div class="sub-head">In an online survey, only 3.2% (11 of 344) of US adults who met diagnostic criteria for B.E.D. reported being diagnosed with B.E.D. by a health care provider in the past 12 months.<sup>5</sup>
                 
               </div>
               <div class="footnote">Data from a 2013 online survey of adults aged ≥18 years. Of 22,397 respondents, 344 met diagnostic criteria for B.E.D. in the previous 12 months.<sup>5</sup></div>
@@ -244,21 +244,15 @@
               They do not show regular compensatory behavior associated with bulimia nervosa, nor do they binge eat solely during an episode of bulimia nervosa or anorexia nervosa.
               
             </p>
-            <p class="disclaimer smaller"><em>
-                Diagnosis should be based upon a complete evaluation of the patient.
-                </em></p><a data-slideout="signup" class="button signup">Register to receive the <br class="hide--desktop"><em>DSM-5</em><sup>&reg;</sup> diagnostic criteria and additional B.E.D. information from Shire
+            <p class="disclaimer smaller"><em>Diagnosis should be based upon a complete evaluation of the patient.</em></p><a data-slideout="signup" class="button signup">Register to receive the <br class="hide--desktop"><em>DSM-5</em><sup>&reg;</sup> diagnostic criteria and additional information from Shire about B.E.D. in adults
               
               </a>
             <div class="tab-container">
               <div class="tab-inner">
                 <div class="close"></div>
-                <h3>What are common <br>triggers of binge eating?</h3>
-                <p>Negative affect most commonly precedes a bingeing episode.<sup>1</sup> 
-                  
-                </p>
-                <p>Other triggers include<sup>1</sup>:
-                  
-                </p>
+                <h3>What are common <br>triggers of binge eating episodes?</h3>
+                <p>Negative affect most commonly precedes a bingeing episode.<sup>1</sup> </p>
+                <p>Other triggers include<sup>1</sup>:</p>
                 <ul class="bullet">
                   <li>Interpersonal stressors</li>
                   <li>Restrictions on diet</li>
@@ -266,8 +260,7 @@
                   <li>Feeling bored</li>
                 </ul>
               </div>
-              <div class="closed-text">
-                What are common triggers of binge eating?
+              <div class="closed-text">What are common triggers of binge <br class="hide--mobile">eating episodes?
                 
                 
                 
@@ -356,7 +349,7 @@
                 
               </p>
             </div>
-            <p class="footnote chart-footnote asterisk">Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults <br class="hide--mobile">aged ≥18 years.<sup>2</sup></p>
+            <p class="footnote asterisk">Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, <br class="hide--mobile">a nationally respresentative face-to-face household survey of English-speaking adults aged ≥18 years.<sup>2</sup></p>
           </div>
         </div>
         <div data-section="functional-consequences" class="section section--effects"><a id="functional-consequences" name="functional-consequences" class="scroll-point"></a>
@@ -397,14 +390,14 @@
                 </p>
               </div>
             </div>
-            <p class="footnote asterisk">Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a face-to-face household survey of English-speaking adults aged ≥18 years.<sup>2</sup></p>
+            <p class="footnote asterisk">Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, <br class="hide--mobile">a nationally respresentative face-to-face household survey of English-speaking adults aged ≥18 years.<sup>2</sup></p>
           </div>
         </div>
         <div data-section="potential-causes" class="section section--neurobiology"><a id="potential-causes" name="potential-causes" class="scroll-point"></a>
           <div class="content-wrap">
             <div data-skrollr="neurobiology-header">
               <h2 class="pretitle">While the exact cause is unknown,</h2>
-              <h2>Research suggests B.E.D. may have a neurobiological basis <br class="hide--mobile">and genetic and environmental influences<sup>6-12</sup></h2>
+              <h2>Research suggests B.E.D. may have a neurobiological basis <br class="hide--mobile">with genetic and environmental risk factors<sup>6-12</sup></h2>
               <p class="sub-head">
                 Prevailing theories that may support a neurobiological basis for B.E.D.:
                 
@@ -471,11 +464,11 @@
         <div data-section="diagnosis" class="section section--diagnosis"><a id="diagnosis" name="diagnosis" class="scroll-point"></a>
           <div class="content-wrap">
             <div data-bottom-top="opacity: 0; transform: translate3d(0px,-50px,0px)" data-bottom-bottom="opacity: 1; transform: translate3d(0px,0,0px)">
-              <h2>Recognizing binge eating disorder (B.E.D.) in Adults</h2>
+              <h2>Recognizing binge eating disorder (B.E.D.) in adults</h2>
               <p class="sub-head">B.E.D. is defined as recurring episodes (at least once weekly for <br class="hide--desktop">3 months) of consuming a large amount of food in a short period of time, compared to what others might eat, with episodes characterized by experiencing a lack of control and significant distress regarding binge eating.<sup>1</sup></p>
             </div>
             <p class="moar"><em><a data-slideout="signup" class="signup">Please register</a> to receive the  </em>
-              <nobr>DSM-5<sup>&reg;</sup></nobr> <em>diagnostic criteria and additional B.E.D. information from Shire.</em>
+              <nobr>DSM-5<sup>&reg;</sup></nobr> <em>diagnostic criteria and additional information from Shire about B.E.D. in adults.</em>
             </p>
             <h3>B.E.D. is different from <br class="hide--desktop">bulimia nervosa</h3>
             <p>It is not associated with compensatory behaviors such as purging or excessive exercise, or with <br class="hide--mobile">dietary restriction, although frequent dieting may be reported.<sup>1</sup></p>
@@ -490,7 +483,7 @@
               <li>More coexisting psychiatric conditions</li>
             </ul>
             <p>B.E.D. occurs in normal-weight, overweight, and obese individuals.<sup>2</sup></p>
-            <h3 class="center chart-head">Based on a nationally representative survey of US adults aged ≥18 years<sup>2</sup>:
+            <h3 class="center chart-head">Based on a nationally representative survey of US adults aged ≥18 years*<sup>2</sup>:
               
             </h3>
             <div class="graphic-wrap">
@@ -536,9 +529,13 @@
                 <p>but not obese<br>(BMI ≥30)</p>
               </div>
             </div>
+            <p class="footnote asterisk">Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, <br class="hide--mobile">a nationally respresentative face-to-face household survey of English-speaking adults aged &#8805;18 years.
+              
+              
+            </p>
             <div class="bed-patient-profiles"><a id="profiles" name="profiles" class="scroll-point"></a>
               <div class="patient-profiles-header">
-                <h3>BED Patient Profiles</h3>
+                <h3>B.E.D. Patient Profiles</h3>
                 <p><em>Models and descriptions are fictional <br class="hide--desktop">representations of how some adults <br class="hide--desktop">with B.E.D. may present, and do 
                     <br class="hide--mobile">not <br class="hide--desktop">constitute the totality of B.E.D <br class="hide--desktop">symptoms and criteria. Diagnosis should be based on a complete
                     <br class="hide--mobile"> evaluation of the patient that confirms the criteria for B.E.D. established in DSM-5<sup>&reg;</sup>.
@@ -644,7 +641,7 @@
                     </ul>
                   </div>
                   <div class="profile-section">
-                    <p class="quote">“When it’s over, I’m depressed and feel guilty”</p>
+                    <p class="quote">"When the binges are over, I feel guilty about <br class="hide--mobile">my behavior."</p>
                     <p class="footnote bmi">BMI=body mass index.</p>
                   </div>
                 </div>
@@ -680,10 +677,10 @@
             </div>
           </div>
         </div>
-        <div data-section="resources" class="section section--resources"><a id="resources" name="resources" class="scroll-point"></a>
+        <div data-section="starting-the-conversation" class="section section--resources"><a id="starting-the-conversation" name="starting-the-conversation" class="scroll-point"></a>
           <div class="content-wrap steps">
             <h2>Starting the conversation</h2>
-            <p class="sub-head">These tools were developed by Shire to assist <br class="hide--mobile">health care professionals to identify and accurately <br class="hide--mobile">diagnose adults with B.E.D. in their practices.</p>
+            <p class="sub-head">These tools were developed by Shire to assist <br class="hide--mobile">health care professionals in identifying and accurately <br class="hide--mobile">diagnosing B.E.D. in adults.</p>
             <div class="graphic-wrap"></div>
             <div class="screening-the-patient step step-1">
               <h3>Screening the patient</h3>
@@ -694,11 +691,13 @@
             <div class="conducting-a-conversation step step-2">
               <h3>Conducting a conversation</h3>
               <div class="download-button"><a href="/hcp/content/media/BingeEatingDisorderDiscussionGuide.pdf" target="_blank">
-                  <p>Download the Discussion Guide for <br>Adult Patients with B.E.D.</p></a></div>
-              <p>This discussion guide helps you begin a <br class="hide--mobile">dialogue about B.E.D. with adult patients.</p>
+                  <p>Download the Discussion Guide for <br>Adult Patients With B.E.D.</p></a></div>
+              <p>This discussion guide helps you begin a <br class="hide--mobile"> dialogue about B.E.D. with adult patients.</p>
             </div>
           </div>
-          <div class="audio"><a id="story" name="story" class="scroll-point"></a>
+        </div>
+        <div data-section="one-patients-story" class="section section--resources">
+          <div class="audio"><a id="one-patients-story" name="one-patients-story" class="scroll-point"></a>
             <div class="audio-bg"></div>
             <h2>This is what binge eating <br class="hide--mobile">disorder (B.E.D.) can feel like</h2>
             <div class="sunny-icon"></div>
@@ -711,7 +710,7 @@
               </div>
             </div>
             <div class="quote-block">
-              <p class="quote"><span class="quote-open quotation-mark"></span>My binges would always <br class="hide--desktop">happen when I was <br class="hide--desktop">alone. <br class="hide--mobile">That’s not <br class="hide--desktop">something that you want anyone else to see <br class="hide--mobile">you <br class="hide--desktop">do; there’s a lot of shame <br class="hide--desktop">around it.<span class="quote-close quotation-mark"></span> </p>
+              <p class="quote"><span class="quote-open quotation-mark"></span>My binges would always <br class="hide--desktop">happen when I was <br class="hide--desktop">alone. <br class="hide--mobile">That’s not <br class="hide--desktop">something that you want anyone else to see <br class="hide--mobile">you <br class="hide--desktop">do.<span class="quote-close quotation-mark"></span> </p>
               <div data-target="sample2" class="play-button play-sample2"></div>
               <p class="listen">Listen to the extended excerpt</p>
               <div class="audio-container">
@@ -724,7 +723,7 @@
           </div>
         </div>
         <div data-section="videos" class="section section--videos"><a id="videos" name="videos" class="scroll-point"></a>
-          <div class="content-wrap">
+          <div class="content-wrap video-content">
             <div class="videos">
               <h3>VIDEOS: Experts discuss B.E.D. in adults</h3>
               <div class="video-player">
@@ -738,7 +737,7 @@
                 <ul class="video-nav">
                   <li class="mobile-dropdown"></li>
                   <li data-target="what-is-bed" class="active">
-                    What is B.E.D.?
+                    What Is B.E.D.?
                     
                   </li>
                   <li data-target="bed-in-adults" class="two-lines"><span class="hide--mobile">B.E.D. in Adults <br>Background Information</span><span class="hide--desktop">B.E.D. Background</span></li>
@@ -761,11 +760,11 @@
                     <div class="timestamp">2:31</div>
                   </div>
                   <div data-video="bulik3" class="video-thumb video-4">
-                    <p>What are the functional consequences of B.E.D. in adults?</p>
+                    <p>What are the functional consequences of B.E.D. <br class="hide--mobile">in adults?</p>
                     <div class="timestamp">2:00</div>
                   </div>
                   <div data-video="bulik12" class="video-thumb video-5 new">
-                    <p>What is the clinical course of B.E.D.?</p>
+                    <p>What is the clinical <br class="hide--mobile">course of B.E.D.?</p>
                     <div class="timestamp">0:31</div>
                   </div>
                 </div>
@@ -779,7 +778,7 @@
                     <div class="timestamp">0:55</div>
                   </div>
                   <div data-video="grilo5" class="video-thumb video-3">
-                    <p>What psychiatric conditions are commonly associated with B.E.D.</p>
+                    <p>What psychiatric conditions are commonly associated with B.E.D.?</p>
                     <div class="timestamp">1:10</div>
                   </div>
                   <div data-video="kornstein6" class="video-thumb video-4">
@@ -827,7 +826,11 @@
                 </div>
               </div>
             </div>
-            <h3 class="org-header">If you or your patients would like more information about BED, <br class="hide--mobile">these organizations may be able to help:
+          </div>
+        </div>
+        <div data-section="helpful-links" class="section section--helpful-links">
+          <div class="content-wrap helpful-links"><a id="helpful-links" name="helpful-links" class="scroll-point"></a>
+            <h3 class="org-header">If you or your adult patients would like more information about B.E.D., <br class="hide--mobile">these organizations may be able to help:
               
             </h3>
             <ul class="organizations">
@@ -859,7 +862,7 @@
                 <p>1-855-855-2332</p>
               </li>
               <li>
-                <p>National Alliance for Mental Illness</p>
+                <p>National Alliance on Mental Illness</p>
                 <p><a href="http://www.nami.org" class="yellow">www.nami.org</a></p>
                 <p>1-800-950-6264</p>
               </li>
@@ -871,40 +874,40 @@
                   
                 </p>
               </li>
-            </ul><a data-slideout="signup" data-skrollr="resources-signup" class="button signup">Register for additional information on BED including the <em>DSM-5</em><sup>®</sup> diagnostic criteria
+            </ul><a data-slideout="signup" data-skrollr="resources-signup" class="button signup">Register for additional information <br class="hide--mobile">on B.E.D. in adults, including the <em>DSM-5</em><sup>®</sup> <br class="hide--mobile">diagnostic criteria
               </a>
             <div class="references">
               <p class="ref"><strong>References:</strong> 
                 
                 <strong>1.</strong>&nbsp;American Psychiatric Association. Binge-eating disorder. In: <em>Diagnostic and Statistical Manual of Mental Disorders.</em> 5th ed. Arlington, VA: American Psychiatric Association; 2013:350-353. 
                 
-                <strong>2.</strong>&nbsp;Hudson JI, Hiripi E, Pope HG Jr, Kessler RC. [Published correction appears in <em>Biol Psychiatry.</em> 2012;72(2):164.] <em>Biol Psychiatry.</em> 2007;61(3):348-358.
+                <strong>2.</strong>&nbsp;Hudson JI, Hiripi E, Pope HG Jr, Kessler RC. [Published correction appears <br class="hide--mobile">in <em>Biol Psychiatry.</em> 2012;72(2):164.] <em>Biol Psychiatry.</em> 2007;61(3):348-358.
                 
                 <strong>3.</strong>&nbsp;Howden LM, Meyer JA. Age and sex composition: 2010. US Census Bureau; 2011. 
                 
                 <strong>4.</strong>&nbsp;Marques L, Alegria M, Becker AE, et al. <em>Int J Eat Disord.</em> 2011;44(5):412-420. 
                 
-                <strong>5.</strong>&nbsp;Cossrow N, Russo LJ, Ming EE, Witt EA, Victor TW, Wadden TA. Poster. APA 167th Annual Meeting, New York, NY, May 3-7, 2014. 
+                <strong>5.</strong>&nbsp;Cossrow N, Russo LJ, Ming EE, Witt EA, <br class="hide--mobile">Victor TW, Wadden TA. Poster. APA 167th Annual Meeting, New York, NY, May 3-7, 2014. 
                 
                 <strong>6.</strong>&nbsp;Balodis IM, Molina ND, Kober H, et al. <em>Obesity (Silver Spring).</em> 2013;21(2):367-377. 
                 
                 <strong>7.</strong>&nbsp;Davis CA, Levitan RD, Reid C, et al. <em>Obesity (Silver Spring).</em> 2009;17(6):1220-1225. 
                 
-                <strong>8.</strong>&nbsp;Berridge KC, Ho CY, Richard JM, DiFeliceantonio AG. <em>Brain Res.</em> 2010;1350:43-64. 
+                <strong>8.</strong>&nbsp;Berridge KC, Ho CY, <br class="hide--mobile">Richard JM, DiFeliceantonio AG. <em>Brain Res.</em> 2010;1350:43-64. 
                 
                 <strong>9.</strong>&nbsp;Wyvell CL, Berridge KC. <em>J Neurosci.</em> 2000;20(21):8122-8130. 
                 
-                <strong>10.</strong>&nbsp;Davis C, Levitan RD, Yilmaz Z, Kaplan AS, Carter JC, Kennedy JL. <em>Prog Neuropsychopharmacol</em> <em>Biol Psychiatry.</em> 2012;38(2):328-335. 
+                <strong>10.</strong>&nbsp;Davis C, <br class="hide--mobile">Levitan RD, Yilmaz Z, Kaplan AS, Carter JC, Kennedy JL. <em>Prog Neuropsychopharmacol</em> <em>Biol Psychiatry.</em> 2012;38(2):328-335. 
                 
-                <strong>11.</strong>&nbsp;Pike&nbsp;KM, Wilfley D, Hilbert A, Fairburn CG, Dohm FA, Striegel-Moore RH. <em>Psychiatry Res.</em> 2006;142(1):19-29. 
+                <strong>11.</strong>&nbsp;Pike&nbsp;KM, Wilfley D, <br class="hide--mobile">Hilbert A, Fairburn CG, Dohm FA, Striegel-Moore RH. <em>Psychiatry Res.</em> 2006;142(1):19-29. 
                 
-                <strong>12.</strong>&nbsp;Mitchell KS, Mazzeo SE, Schlesinger MR, Brewerton TD, Smith BN. <em>Int J Eat Disord.</em> 2012;45(3):307-315. 
+                <strong>12.</strong>&nbsp;Mitchell KS, Mazzeo SE, Schlesinger MR, <br class="hide--mobile">Brewerton TD, Smith BN. <em>Int J Eat Disord.</em> 2012;45(3):307-315. 
                 
                 <strong>13.</strong>&nbsp;American Psychiatric Association. DSM-5 Fact Sheet. Feeding and eating disorders. <span class="break">www.dsm5.org/Documents/Eating%20Disorders%20Fact%20Sheet.pdf</span>. Accessed May 21, 2014. 
                 
-                <strong>14.</strong>&nbsp;Morgan JF, Reid F, Lacey JH. <em>West J Med.</em> 2000;172(3):164-165. 
+                <strong>14.</strong>&nbsp;Morgan JF, Reid F, Lacey JH. <br class="hide--mobile"><em>West J Med.</em> 2000;172(3):164-165. 
                 
-                <strong>15.</strong>&nbsp;First MB, Spitzer RL, Gibbon M, Williams JBW. <em>Structured Clinical Interview for DSM-IV-TR Axis I Disorders, Research Version, Patient Edition (SCID-I/P).</em> New York, NY: Biometrics Research, New York State Psychiatric Institute; 2010.
+                <strong>15.</strong>&nbsp;First MB, Spitzer RL, Gibbon M, Williams JBW. <em>Structured Clinical Interview for DSM-IV-TR Axis I Disorders, <br class="hide--mobile">Research Version, Patient Edition (SCID-I/P).</em> New York, NY: Biometrics Research, New York State Psychiatric Institute; 2010.
               </p>
             </div>
           </div>
@@ -921,11 +924,15 @@
               Potential causes of BED
               </a><a href="#/diagnosis" data-section="diagnosis" class="bar bar--next bar--diagnosis">
               Identifying BED in your adult patients
-              </a><a href="#/resources" data-section="resources" class="bar bar--next bar--resources">
-              Resources
-              </a><a href="#/videos" data-section="videos" class="bar bar--next bar--resources">Expert Videos</a></div>
+              </a><a href="#/starting-the-conversation" data-section="starting-the-conversation" class="bar bar--next bar--resources">
+              Starting the Conversation
+              </a><a href="#/one-patients-story" data-section="one-patients-story" class="bar bar--next bar--resources">
+              One Patient's Story
+              </a><a href="#/videos" data-section="videos" class="bar bar--next bar--resources">
+              Expert Videos
+              </a><a href="#/helpful-links" data-section="helpful-links" class="bar bar--next bar--resources">Helpful Links</a></div>
         </div>
-        <div class="pagination"><a href="/hcp/#/home" class="pagination__item"></a><a href="/hcp/#/prevalence" class="pagination__item"></a><a href="/hcp/#/dsm-5" class="pagination__item"></a><a href="/hcp/#/clinical-characteristics" class="pagination__item"></a><a href="/hcp/#/functional-consequences" class="pagination__item"></a><a href="/hcp/#/potential-causes" class="pagination__item"></a><a href="/hcp/#/diagnosis" class="pagination__item"></a><a href="/hcp/#/resources" class="pagination__item"></a><a href="/hcp/#/videos" class="pagination__item"></a>
+        <div class="pagination"><a href="/hcp/#/home" class="pagination__item"></a><a href="/hcp/#/prevalence" class="pagination__item"></a><a href="/hcp/#/dsm-5" class="pagination__item"></a><a href="/hcp/#/clinical-characteristics" class="pagination__item"></a><a href="/hcp/#/functional-consequences" class="pagination__item"></a><a href="/hcp/#/potential-causes" class="pagination__item"></a><a href="/hcp/#/diagnosis" class="pagination__item"></a><a href="/hcp/#/starting-the-conversation" class="pagination__item"></a><a href="/hcp/#/one-patients-story" class="pagination__item"></a><a href="/hcp/#/videos" class="pagination__item"></a><a href="/hcp/#/helpful-links" class="pagination__item"></a>
         </div>
       </div>
       <div class="page-footer">
@@ -938,7 +945,7 @@
                     <li class="secondary-nav__item _1_liner"><a href="http://www.shire.com/" target="_blank">Shire US</a></li>
                   </ul>
           </nav><img src="img/footer-logo.png" class="footer-logo">
-          <p>&copy;2014 <a href="http://www.shire.com/" target="_blank">Shire US Inc.,</a> Wayne, PA 19087 &nbsp;&nbsp;&nbsp;&nbsp;1‐800‐828‐2088 &nbsp;&nbsp;&nbsp;&nbsp;All rights reserved. &nbsp;&nbsp;&nbsp;&nbsp;S04644 &nbsp;&nbsp;&nbsp;&nbsp;02/15</p>
+          <p>&copy;2015 <a href="http://www.shire.com/" target="_blank">Shire US Inc.,</a> Wayne, PA 19087 &nbsp;&nbsp;&nbsp;&nbsp;1‐800‐828‐2088 &nbsp;&nbsp;&nbsp;&nbsp;All rights reserved. &nbsp;&nbsp;&nbsp;&nbsp;S04644 &nbsp;&nbsp;&nbsp;&nbsp;02/15</p>
           <p>All content of this website including text, images, graphics, sound files, and their arrangement, belongs to Shire and is protected by international copyright laws. All other intellectual property rights are reserved. The content may not be copied for commercial use or distribution, nor may these objects be downloaded, modified, or posted to other sites.</p>
           <p>This site is intended solely for US residents and is governed solely by US laws and government regulations. Please see <a href="privacy-policy.aspx">our privacy policy</a> for more information. While Shire US Inc. makes reasonable efforts to include accurate, up‐to‐date information on the site, Shire US Inc. makes no warranties or representations as to its accuracy. Shire US Inc. assumes no liability for any errors or omissions in the content of the site.</p>
         </div>
@@ -986,7 +993,7 @@
             <h3>Thank you for your request.</h3>
             <p>Your request has been received, and we will update your contact preferences. Please be aware that it may take up to 10 business days for your preferences to be reflected in our system. You may still receive communications during this time.</p>
             <p>Please feel free to register with us again should you wish to receive information about binge eating disorder (B.E.D.) in adults and other information from Shire in the future.</p>
-            <div class="controls"><a href="/" class="button button--close">
+            <div class="controls"><a href="/hcp/" class="button button--close">
                 CLOSE
                 </a></div>
           </div>
@@ -1030,6 +1037,5 @@
     <noscript>
       <iframe src="//s.thebrighttag.com/iframe?c=Xpq89R8" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
     </noscript>
-    <script>!/cdm210.com/i.test(location.host) && document.location.port !== '8005' && 'WebSocket' in window && window.WebSocket.CLOSING === 2 && document.write('\x3Cscript src="//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1">\x3C/script>');</script>
   </body>
 </html>

@@ -34,12 +34,20 @@ nav:
       title: "Recognizing B.E.D. in Adults"
       file: "diagnosis"
     -
-      url: "/hcp/#/resources"
-      title: "Resources"
-      files: "resources"
+      url: "/hcp/#/starting-the-conversation"
+      title: "Starting the Conversation"
+      file: "resources"
+    -
+      url: "/hcp/#/one-patients-story"
+      title: "One Patient's Story"
+      file: "audio"
     -
       url: "/hcp/#/videos"
       title: "Expert Videos"
+      file: "videos"
+    -
+      url: "/hcp/#/helpful-links"
+      title: "Helpful Links"
       file: "videos"
   secondary:
     -

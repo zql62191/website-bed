@@ -7,6 +7,7 @@
 @import "_dsm5";
 @import "_resources";
 @import "_videos";
+@import "_helpful_links";
 
 .pagination {
     position: fixed;
@@ -14,6 +15,7 @@
     top: 50%;
     margin-top: -80px;
     z-index: z("pagination");
+
     @include mq("mobile") {
         display: none;
     }
@@ -29,6 +31,7 @@
         height: 20px;
         cursor: pointer;
         display: block;
+
         &.active,
         &:hover {
             background-image: url("#{$img-path}/bullet--yellow.png");
