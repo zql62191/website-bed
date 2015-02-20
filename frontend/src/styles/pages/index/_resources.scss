@@ -344,7 +344,8 @@
                 }
                 .quote-open {
                     position: absolute;
-                    left: -40px;
+                    // left: -40px;
+                    left: -13px;
                     background-image: url("#{$img-path}/quote-open-mobile.png");
                 }
                 

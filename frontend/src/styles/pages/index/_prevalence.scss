@@ -190,9 +190,8 @@
         margin: 18px 0 32px;
         padding: 24px 0 10px 0; //39px 0;
         
-        @include mq('desktop') {
-            border-bottom: 1px solid #ffffff;
-        }
+        border-bottom: 1px solid #ffffff;
+
 
         h3 {
             //text-align: center;
@@ -234,6 +233,9 @@
 
             @include mq('mobile') {
                 margin-top: 21px;
+
+                padding-bottom: 38px;
+                //border-bottom: 1px solid #ffffff;
             }
         }
 
@@ -300,7 +302,7 @@
             overflow: hidden;
 
             @include mq('desktop') {
-                width: 264px;
+                width: 388px;
                 height: 55px;
                 border-radius: 12px;
             }
@@ -322,7 +324,7 @@
                     line-height: 55px;
                 }
                 @include mq('mobile') {
-                    font-size: 36px;
+                    font-size: 27px;
                     line-height: 110px;
                 }
             }
