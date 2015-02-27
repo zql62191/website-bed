@@ -85,7 +85,7 @@
             margin: 0 auto 20px auto;
         }
         @include mq('mobile') {
-            margin-bottom:  10px;
+            margin-bottom: 35px;
         }
     }
     .fifty-percent {
@@ -196,8 +196,19 @@
 .bed-patient-profiles {
     border-top: 1px solid #B2BDC4;
     border-bottom: 1px solid #B2BDC4;
-    margin-top: 25px;
+    
+    @include mq('desktop') {
+        margin-top: 25px;
+    }
 
+    @include mq('mobile') {
+        margin-top: 35px;
+
+
+        .scroll-point {
+            margin-bottom: 35px;
+        }
+    }
 
     .patient-profiles-header {
         text-align: center;
@@ -301,7 +312,7 @@
         @include mq('mobile') {
             width: 2210px; // 4x profile width
             margin: 44px auto 0 auto;
-            height: 1150px;
+            height: 1200px;
             overflow: auto;
 
             .arrow {
@@ -365,17 +376,11 @@
         transition: opacity 300ms, transform 300ms;
 
         li {
-            //margin-left: 38px;
-            //ugh
-            margin-left: 15px;
             position: relative;
 
             &:before {
                 content: '\2022';
                 position: absolute;
-                //left: -25px;
-                //ugh
-                left: -15px;
                 top: 2px;
                 color: #FFBE2C;
             }
@@ -391,6 +396,14 @@
             h3 {
                 margin-left: 312px;
             }
+
+            li {
+                margin-left: 15px;
+
+                &:before {
+                    left: -15px;
+                }
+            }
         }
         @include mq('mobile') {
             
@@ -401,6 +414,13 @@
                 text-align: center;
                 margin: 0 auto;
                 padding: 0;
+            }
+            li {
+                margin-left: 30px;
+
+                &:before {
+                    left: -22px;
+                }
             }
         }
     }

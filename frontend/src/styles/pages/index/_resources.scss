@@ -44,11 +44,11 @@
     @include mq("mobile") {
         h2 {
             padding-bottom: 15px;
-            margin-left: 32px;
+            //margin-left: 32px;
         }
         .sub-head {
             padding-bottom: 32px;
-            margin-left: 32px;
+            //margin-left: 32px;
         }
     }
 
@@ -71,7 +71,7 @@
     // BED 2.0 - "Starting the conversation"
 
     .content-wrap.steps {
-        
+
         @include mq('desktop') {
             //padding: 0;
             height: 637px;
@@ -84,7 +84,7 @@
         bottom: 0;
         left: 0;
     }
-    
+
     h3 {
         font-size: 24px;
 
@@ -110,7 +110,7 @@
         @include mq('desktop') {
             margin-left: 530px;
             width: 339px;
-            
+
             &:before {
                 left: -63px;
                 top: 0;
@@ -127,7 +127,7 @@
 
         @include mq('mobile') {
             width: 588px;
-            margin-left: 32px;
+            //margin-left: 32px;
 
             &:before {
                 left: 0;
@@ -138,7 +138,7 @@
             }
 
             h3 {
-                margin-left: 84px;
+                text-align: center;
                 line-height: 67px;
                 margin-bottom: 20px;
             }
@@ -154,7 +154,7 @@
         background: #323E48;
         cursor: pointer;
         margin-bottom: 18px;
-    
+
         &:hover {
             position: relative;
             top: 1px;
@@ -184,6 +184,7 @@
             width: 536px;
             height: 114px;
             border-radius: 18px;
+            margin: 0 auto 25px auto;
 
             p {
                 padding-top: 22px;
@@ -276,7 +277,7 @@
             height: 152px;
             background-image: url(#{$img-path}/audio-sunny-icon.png);
             background-size: 153px 152px;
-            margin: 0 auto;
+            margin: 0 auto 25px auto;
         }
     }
 

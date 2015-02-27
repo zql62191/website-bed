@@ -53,8 +53,18 @@
         margin-top: 15px;
     }
 
+
+
+
+
     @include mq("mobile") {
         padding-bottom: 93px;
+
+
+
+        .footer-disclaimer a {
+            line-height: 15px;
+        }
     }
     @include mq("desktop") {
         padding-bottom: 50px;

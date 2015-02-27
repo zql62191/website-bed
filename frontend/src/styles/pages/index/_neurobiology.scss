@@ -58,6 +58,12 @@
             padding: 34px 0 0 189px;
             margin-bottom: 26px;
         }
+
+        @include mq('mobile') {
+            &.risk-2 {
+                padding-top: 20px;
+            }
+        }
     }
     .reward {
         @include mq("mobile") {
@@ -191,7 +197,7 @@
             font-size: 25px;
             line-height: 30px;
             margin-top: 20px;
-            margin-left: 10px;
+            // margin-left: 10px;
         }
 
         @include mq("desktop") {

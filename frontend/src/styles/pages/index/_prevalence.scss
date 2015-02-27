@@ -53,7 +53,6 @@
     }
     .chart-note {
         width: 538px;
-        margin-left: 25px;
         padding-bottom: 50px;
 
         @include mq("desktop") {
@@ -62,6 +61,11 @@
             padding-top: 150px;
             font-size: 18px;
             line-height: 20px;
+            margin-left: 25px;
+        }
+
+        @include mq('mobile') {
+            padding-top: 20px;
         }
     }
     .blurb {

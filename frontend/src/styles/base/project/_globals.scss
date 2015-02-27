@@ -306,7 +306,7 @@ a {
     }
 
     @include mq("mobile") {
-        margin-bottom: 93px;
+        margin-bottom: 75px;
     }
 }
 
@@ -514,17 +514,17 @@ a.pdf-link {
 
 .dagger:before {
     content: '†';
-    font-size: 0.6em;
+    font-size: 0.8em;
     position: absolute;
-    left: -6px;
+    left: -11px;
     top: 2px;
     line-height: 0.5em;
 }
 .double-dagger:before {
     content: '‡';
-    font-size: 0.6em;
+    font-size: 0.8em;
     position: absolute;
-    left: -6px;
+    left: -11px;
     top: 2px;
     line-height: 0.5em;
 }

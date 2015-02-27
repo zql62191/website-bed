@@ -161,12 +161,15 @@
             width: 50%;
             display: inline-block;
         }
+        @include mq('mobile') {
+            padding-bottom: 0;
+        }
     }
     .twenty-one, .chart {
         @include mq("mobile") {
             text-align: center;
             height: auto;
-            margin-bottom: 30px;
+            //margin-bottom: 30px;
         }
 
         @include mq("desktop") {
@@ -199,7 +202,7 @@
     .mean-duration {
 
         @include mq("mobile") {
-            padding: 0 15px;
+            padding: 0 15px 0 0;
             margin-bottom: 40px;
             color: #FFFFFF;
         }

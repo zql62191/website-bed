@@ -102,5 +102,10 @@
     .scroll-point {
         position: absolute;
         top: -25px;
+
+        @include mq('mobile') {
+            margin-bottom: 25px;
+            top: -98px;
+        }
     }
 }
