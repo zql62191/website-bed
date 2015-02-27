@@ -38,13 +38,6 @@ sub {
     bottom: -0.25em;
 }
 
-// h1, h2, h3, h4, h5, h6 {
-//     sup {
-//         font-size: 0.4em;
-//         top: -1.2em;
-//     }
-// }
-
 .nobr,
 nobr {
     white-space: nowrap;
@@ -63,27 +56,21 @@ nobr {
         display: none !important;
     }
 }
-
-.hide--tablet {
-    // @include mq('tablet') {
-    //   display: none !important;
-    // }
-}
-
 .hide--desktop {
     @include mq("desktop") {
         display: none !important;
     }
 }
 
-// ._is_open {
-//     display: block !important;
-// }
-
 a {
     cursor: pointer;
 }
 
+p {
+    @include mq('mobile') {
+        margin-right: 5px;
+    }
+}
 hr {
     margin: 0 auto;
     height: 1px;
@@ -298,11 +285,8 @@ a {
     margin-bottom: 50px;
 
     @include mq('desktop') {
-
-        // 2-11-15 - upon request to reduce top margins of each section.
         margin-top: -25px; 
         margin-bottom: 35px;
-
     }
 
     @include mq("mobile") {

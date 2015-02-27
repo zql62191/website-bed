@@ -328,8 +328,9 @@
                     line-height: 55px;
                 }
                 @include mq('mobile') {
-                    font-size: 27px;
-                    line-height: 110px;
+                    font-size: 36px;
+                    line-height: 40px;
+                    padding: 15px 50px;
                 }
             }
             &:before {
