@@ -321,7 +321,7 @@
             @include mq("desktop") {
                 margin-left: 41px;
                 font-size: 26px;
-                line-height: 22px;
+                line-height: 26px;
             }
             @include mq('mobile') {
                 margin-left: 35px;

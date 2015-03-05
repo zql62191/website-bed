@@ -468,8 +468,12 @@
                 color: #FFBE2C;
             }
         }
-        
-        
+
+        ul {
+            @include mq('desktop') {
+                padding-bottom: 0;
+            }
+        }
         .bmi {
             margin-top: 30px;
         }
@@ -546,6 +550,7 @@
                 height: 90px;
                 line-height: 90px;
                 width: 272px;
+                margin-right: 0;
 
                 &:first-child {
                     border-right: 1px solid #728592;
