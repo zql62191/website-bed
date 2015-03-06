@@ -634,6 +634,9 @@ a.pdf-link span sup {
     font-size: 18px;
     line-height: 20px;
   }
+  .footnote.graphic-footnote {
+    padding-top: 20px;
+  }
 }
 
 .dagger:before {
@@ -2072,6 +2075,14 @@ label > * {
     right: 32px;
   }
 }
+@media only screen and (min-width: 40.063em) {
+  .callouts .column.middle h2, .callouts .column.middle p {
+    padding-left: 15px;
+  }
+  .callouts .column.middle .callout-arrow {
+    left: 15px;
+  }
+}
 
 .section--prevalence {
   background: #51748b;
@@ -2308,6 +2319,12 @@ label > * {
 }
 .section--prevalence .comparable .footnote {
   margin-top: 30px;
+}
+@media only screen and (min-width: 40.063em) {
+  .section--prevalence .comparable .footnote {
+    margin-top: 35px;
+    padding-bottom: 25px;
+  }
 }
 .section--prevalence .comparable .patient-thumbs {
   text-align: center;

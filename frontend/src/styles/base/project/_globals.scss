@@ -482,9 +482,8 @@ a.pdf-link {
 }
 
 .footnote {
-
     font-family: font('helvetica neue', 'roman') !important;
-    
+
     @include mq("mobile") {
         font-size: 24px;
         line-height: 28px;
@@ -493,6 +492,10 @@ a.pdf-link {
     @include mq("desktop") {
         font-size: 18px;
         line-height: 20px;
+
+        &.graphic-footnote {
+            padding-top: 20px;
+        }
     }
 }
 

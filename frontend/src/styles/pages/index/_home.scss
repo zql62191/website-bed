@@ -365,5 +365,21 @@
 
 
         }
+
+
+        @include mq('desktop') {
+
+            // this is to make columns seem more equal because of extra space left at end of lines of copy
+            $leftOffset: 15px;
+
+            &.middle {
+                h2, p, {
+                    padding-left: $leftOffset;
+                }
+                .callout-arrow {
+                    left: $leftOffset;
+                }
+            }
+        }
     }
 }
