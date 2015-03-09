@@ -7,14 +7,18 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <meta id="viewport" name="viewport" content="">
-    <script src="js/viewport.js?__inline=true"></script>
+    <script>
+!function(){var t=document.getElementById("viewport"),e=!/tablet|iPad/i.test(navigator.userAgent)&&/[^-]mobi/i.test(navigator.userAgent)?"640":"1024";t.setAttribute("content","target-densitydpi=device-dpi, width="+e+", user-scalable=0")}();
+</script>
     <meta name="format-detection" content="telephone=no">
     <meta name="google" content="notranslate">
     <title>HCP Information on Binge Eating Disorder in Adults</title>
     <meta name="description" content="Find information on binge eating disorder in adults, including prevalence, diagnostic criteria, distinctions from obesity, and possible causes.">
     <meta name="google-site-verification" content="J54-RSNLJc8L0u3mx8m2Ie3Fb5zXiF5w1x4JQRIPBg8">
     <meta name="keywords" content="">
-    <script src="js/ie-version.js?__inline=true"></script>
+    <script>
+!function(e){if(/msie|trident/i.test(e)){for(var t=function(){var t=e.match(/(?:msie |rv:)(\d+(\.\d+)?)/i),n=t&&t.length>1&&t[1]||"";return parseInt(n,10)}(),n="ie",i=6,s=12,u=["eq-ie"],r=i;s>=r;r++)t>r?u.push("gt-"+n+r):r>t?u.push("lt-"+n+r):t===r&&(u.push("lte-"+n+r),u.push("eq-"+n+r),u.push("gte-"+n+r));document.documentElement.className+=" "+u.join(" ")}}(navigator.userAgent||"");
+</script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="me/mediaelementplayer.min.css">
     <script src="//fast.fonts.net/jsapi/352bad9a-496a-416d-b9cf-171842848303.js"></script>
@@ -412,35 +416,31 @@
               <li>Impaired quality of life</li>
               <li>More coexisting psychiatric conditions</li>
             </ul>
-            <p>B.E.D. occurs in normal-weight, overweight, and obese individuals.<sup>2</sup></p>
-            <h3 class="center chart-head">Based on a nationally <br class="hide--desktop">representative survey of <br class="hide--desktop">US adults aged ≥18 years*<sup>2</sup>:
-              
-            </h3>
-            <div class="graphic-wrap">
-              <div class="fifty-percent">
-                <div class="grey-circle">
-                  <div class="yellow-wrap">
-                    <div data-skrollr="diagnosis-circle" class="yellow-circle"></div>
-                  </div>
+            <div class="occurance">
+              <p>BED occurs in normal-weight, overweight, and obese individuals<sup>2</sup></p>
+              <h3 class="center chart-head">Based on a nationally representative survey of US adults aged ≥18 years<sup>2</sup>:</h3>
+              <div class="column normal-weight">
+                <div class="person"></div>
+                <div class="text">
+                  <p class="percentage"><span class="letter-spacing-fix">1</span>9<span class="percent">%</span></p>
+                  <p class="description">are normal weight<br>(BMI 18.5-24.9)</p>
                 </div>
-                <p data-skrollr="diagnosis-50" class="large yellow">&lt;50<sup class="percent">%</sup>
-                  <div class="seo">Less than 50% of adults with B.E.D. are obese.</div>
-                </p>
-                <p data-skrollr="diagnosis-50-caption" class="yellow">of adults with B.E.D. <br>are obese</p>
               </div>
-              <div class="nineteen-percent weight-graphic">
-                <div class="seo">Silhouette of a normal-weight male</div>
-                <p data-skrollr="diagnosis-19" class="large yellow">19<sup class="percent">%</sup></p>
-                <p class="yellow">are normal weight <br>(BMI 18.5-24.9)</p>
+              <div class="column overweight">
+                <div class="person"></div>
+                <div class="text">
+                  <p class="percentage">36<span class="percent">%</span></p>
+                  <p class="description">are overweight<br>(BMI 25-29.9)</p>
+                </div>
               </div>
-              <div class="thirty-six-percent weight-graphic">
-                <div class="seo">Silhouette of an overweight male</div>
-                <p data-skrollr="diagnosis-36" class="large">36<sup class="percent">%</sup></p>
-                <p>are overweight<br>(BMI 25-29.9)</p>
-                <p>but not obese<br>(BMI ≥30)</p>
+              <div class="column obese">
+                <div class="person"></div>
+                <div class="text">
+                  <p class="percentage">45<span class="percent">%</span></p>
+                  <p class="description">are obese<br>(BMI &ge;30)</p>
+                </div>
               </div>
             </div>
-            <p class="footnote asterisk">Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, <br class="hide--mobile">a nationally respresentative face-to-face household survey of English-speaking adults aged &#8805;18 years.</p>
             <div class="bed-patient-profiles"><a id="profiles" name="profiles" class="scroll-point"></a>
               <div class="patient-profiles-header">
                 <h3>Patient Profiles of Adults with B.E.D.</h3>
@@ -490,7 +490,7 @@
                     </ul>
                   </div>
                   <div class="profile-section">
-                    <p class="quote">“I feel like I’ve lost control while I’m eating.”</p>
+                    <p class="quote block-quote"><span class="block-quote-opening">“</span>I feel like I’ve lost control while I’m eating.”</p>
                     <p class="footnote bmi">BMI=body mass index.</p>
                   </div>
                 </div>
@@ -519,7 +519,7 @@
                     </ul>
                   </div>
                   <div class="profile-section">
-                    <p class="quote">“I’m disgusted with myself after I binge.”</p>
+                    <p class="quote block-quote"><span class="block-quote-opening">“</span>I’m disgusted with myself after I binge.”</p>
                     <p class="footnote bmi">BMI=body mass index.</p>
                   </div>
                 </div>
@@ -548,7 +548,7 @@
                     </ul>
                   </div>
                   <div class="profile-section">
-                    <p class="quote">"When the binges are over, I feel guilty about <br class="hide--mobile">my behavior."</p>
+                    <p class="quote block-quote"><span class="block-quote-opening">“</span>When the binges are over, I feel guilty about <br class="hide--mobile">my behavior.”</p>
                     <p class="footnote bmi">BMI=body mass index.</p>
                   </div>
                 </div>
@@ -576,7 +576,7 @@
                     </ul>
                   </div>
                   <div class="profile-section">
-                    <p class="quote">“I binge alone because I don't want anyone <br class="hide--mobile">to know how much I eat.”</p>
+                    <p class="quote block-quote"><span class="block-quote-opening">“</span>I binge alone because I don't want anyone <br class="hide--mobile">to know how much I eat.”</p>
                     <p class="footnote bmi">BMI=body mass index.</p>
                   </div>
                 </div>
@@ -610,19 +610,19 @@
             <p class="hide--desktop center footnote"><em>Excerpts from an interview with Sunny Sea Gold, B.E.D. patient and advocate.</em></p>
             <div class="sunny-icon"></div>
             <div class="quote-block">
+              <p class="quote"><span class="quote-open quotation-mark"></span>During a binge, I would often eat really, really fast... When you lose control like that, it’s a shameful, embarrassing thing.<span class="quote-close quotation-mark"></span></p>
+              <div data-target="sample2" class="play-button play-sample2"></div>
+              <p class="listen">Listen to the extended excerpt</p>
+              <div class="audio-container">
+                <audio src="/hcp/content/media/Sunny_Seagold_1.mp3" class="audio-sample2"></audio>
+              </div>
+            </div>
+            <div class="quote-block">
               <p class="quote"><span class="quote-open quotation-mark"></span>When I first realized that <br class="hide--desktop">there was something <br class="hide--desktop">wrong, it <br class="hide--mobile">was terrifying to <br class="hide--desktop">admit to anyone, even <br class="hide--desktop">a professional.<span class="quote-close quotation-mark"></span> </p>
               <div data-target="sample1" class="play-button play-sample1"></div>
               <p class="listen">Listen to the extended excerpt</p>
               <div class="audio-container">
                 <audio src="/hcp/content/media/Sunny_Seagold_2.mp3" controls="none" class="audio-sample1"></audio>
-              </div>
-            </div>
-            <div class="quote-block">
-              <p class="quote"><span class="quote-open quotation-mark"></span>My binges would always <br class="hide--desktop">happen when I was alone. <br>That’s not something <br class="hide--desktop">that you want anyone else <br class="hide--desktop">to see <br class="hide--mobile">you do.<span class="quote-close quotation-mark"></span> </p>
-              <div data-target="sample2" class="play-button play-sample2"></div>
-              <p class="listen">Listen to the extended excerpt</p>
-              <div class="audio-container">
-                <audio src="/hcp/content/media/Sunny_Seagold_1.mp3" class="audio-sample2"></audio>
               </div>
             </div>
           </div>
@@ -947,6 +947,5 @@
     <noscript>
       <iframe src="//s.thebrighttag.com/iframe?c=Xpq89R8" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
     </noscript>
-    <script>!/cdm210.com/i.test(location.host) && document.location.port !== '8005' && 'WebSocket' in window && window.WebSocket.CLOSING === 2 && document.write('\x3Cscript src="//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1">\x3C/script>');</script>
   </body>
 </html>
