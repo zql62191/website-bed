@@ -4,6 +4,8 @@ if (typeof BED === 'undefined') {
 
 BED.SlideOut = (function() {
 
+    var scrollTopPosition = 0;
+
     var initialized = false;
 
     var focused = false;
@@ -12,6 +14,8 @@ BED.SlideOut = (function() {
         if (initialized) {
             return;
         }
+
+
 
         initialized = true;
 
@@ -115,6 +119,11 @@ BED.SlideOut = (function() {
 
     var open = function(el) {
 
+
+        scrollTopPosition = $('body').scrollTop();
+
+        console.log('scroll top: ' + scrollTopPosition);
+
         $('.submit').removeClass('disabled');
 
         $('.slideout._is_open').exists(function() {
@@ -154,6 +163,7 @@ BED.SlideOut = (function() {
 
     var close = function(el) {
 
+
         var jqSlideOut = $('.slideout._is_open');
         var jqSlideOutInner = jqSlideOut.find('.slideout__inner');
 
@@ -182,6 +192,11 @@ BED.SlideOut = (function() {
         });
 
         $('body').css('overflow', '');
+
+
+        $('body').scrollTop(scrollTopPosition);
+
+        //console.log($('body').scrollTop());
 
     };
 

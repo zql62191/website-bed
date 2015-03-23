@@ -4,6 +4,7 @@ if (typeof BED === 'undefined') {
 
 BED.Modal = (function() {
 
+
     var initialized = false;
 
     var init = function() {
