@@ -18,3 +18,16 @@ if (!String.prototype.trim) {
     while (prop = properties.pop()) con[prop] = con[prop] || empty;
     while (method = methods.pop()) con[method] = con[method] || dummy;
 })(this.console = this.console || {}); // Using `this` for web workers.
+
+(function($) {
+    $.fn.removeClassRegEx = function(regex) {
+        var classes = $(this).attr('class');
+        if(!classes || !regex) return false;
+        var classArray = [];
+        classes = classes.split(' ');
+        for(var i=0, len=classes.length; i<len; i++)
+            if(!classes[i].match(regex)) classArray.push(classes[i]);
+        $(this).attr('class', classArray.join(' '));
+        return $(this);
+    };
+})(jQuery);

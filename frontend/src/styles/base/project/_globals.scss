@@ -308,6 +308,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
     @include gill-sans;
     color: #febd3f;
+
+
     // TODO: add desktop font-size/line-height
     &.white {
         color: #ffffff;
@@ -603,6 +605,14 @@ label > * { pointer-events: none; }
 
 
 
+
+
+
+
+// chrome font rendering hack
+h1, h2, h3, h4, h5, h6, p, a, li {
+    -webkit-font-smoothing: antialiased;
+}
 
 
 

@@ -6,27 +6,21 @@
     overflow: hidden;
     @include rgba-background(rgba(0, 0, 0, 0.5));
     z-index: z("slideout");
-    // padding-top: 50px;
-    // @include mq("mobile") {
-    //     padding-top: 93px;
-    //     position: absolute;
-    // }
+
     .slideout__inner {
         position: absolute;
-        // height: 100%;
         top: 50px;
         bottom: 0;
         background: #e1e3e4;
-        // overflow-y: scroll;
         overflow-y: auto;
-        // -webkit-overflow-scrolling: touch;
+
         @include mq("mobile") {
             top: 93px;
         }
         .eq-ie9 & form {
-            //width: 670px;
             width: auto;
-            input  {
+
+            input {
                 width: 100%;
             }
         }
@@ -36,5 +30,10 @@
     }
     &[data-direction="right"] .slideout__inner {
         right: 0;
+    }
+
+    .small-footnote {
+        font-size: 13px;
+        line-height: 15px;
     }
 }

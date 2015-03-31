@@ -24,3 +24,12 @@
 //     $tmp: preload-desktop($img);
 //     $tmp: null;
 // }
+
+
+// ---------- Opacity ----------
+
+@mixin opacity($value) {
+    opacity: $value; 
+    filter: alpha(opacity=#{$value * 100}); 
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=#{$value * 100})";
+}

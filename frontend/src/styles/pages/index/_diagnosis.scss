@@ -264,6 +264,7 @@
     }
     .weight-graphic {
         padding-left: 105px;
+
         @include mq("mobile") {
             margin-left: 115px;
         }
@@ -293,6 +294,7 @@
         padding-left: 105px;
         background: url("#{$img-path}/diagnosis-thirty-six.png") top left no-repeat;
         min-height: 210px;
+
         @include mq("desktop") {
             float: left;
             width: 300px;
@@ -319,7 +321,6 @@
 
     @include mq('mobile') {
         margin-top: 35px;
-
 
         .scroll-point {
             margin-bottom: 35px;
@@ -382,7 +383,7 @@
 
                 // background to show on hover/selection
                 .active-bg {
-                    opacity: 0;
+                    @include opacity(0);
                     transition: opacity 0.3s;
                     background-image: url(#{$img-path}/patient-profile-icon-active.png);
                     width: 100%;
@@ -392,7 +393,7 @@
 
                 &.hover {
                     .active-bg {
-                        opacity: 1;
+                        @include opacity(1);
                     }
                 }
 
@@ -400,7 +401,7 @@
                     transform: translateY(13px);
 
                     .active-bg {
-                        opacity: 1;
+                        @include opacity(1);
                     }
                 }
             }
@@ -441,7 +442,7 @@
                 cursor: pointer;
 
                 &.inactive {
-                    opacity: 0.3;
+                    @include opacity(0.3);
                 }
             }
             .arrow-prev {
@@ -485,7 +486,7 @@
 
 
     .profile {
-        opacity: 0;
+        @include opacity(0);
         z-index: -1;
         transition: opacity 300ms, transform 300ms;
 
@@ -520,7 +521,6 @@
             }
         }
         @include mq('mobile') {
-            
             width: 548px;
             float: left;
 
@@ -539,7 +539,7 @@
         }
     }
     .active-profile {
-        opacity: 1;
+        @include opacity(1);
         z-index: 1;
     }
 

@@ -2,6 +2,8 @@ if (typeof BED === 'undefined') {
     window.BED = {};
 }
 
+var homeVideoPlayer;
+
 BED.VideoPlayer = (function() {
 
     var videoLocationList = {
@@ -95,7 +97,7 @@ BED.VideoPlayer = (function() {
 
 
         /* ----------- Variables -----------*/
-        var videoPlayer;
+        
 
 
         /* ----------- Video Index Cookie - getter/setter -----------*/
@@ -137,97 +139,78 @@ BED.VideoPlayer = (function() {
         // create a video player on the current video
         function createVideoPlayer(index) {
 
+            var heroVideos = [
+                '//view.vzaar.com/2552732/video',
+                '//view.vzaar.com/2552735/video',
+                '//view.vzaar.com/2552736/video',
+                '//view.vzaar.com/2552737/video'
+            ];
+
             //var selectorString = '.home-video-' + index;
-    
+            
+            var player;    
 
             // set up mediaElement js with custom settings
             // var player = new MediaElementPlayer(selectorString, {
 
-            $('.home-video-' + index).mediaelementplayer({
+            $('#heroPlayer').mediaelementplayer({
                 pauseOtherPlayers: false,       // allow multiple videos
                 startVolume: 0, // there is no audio
                 features: [],
                 autoRewind: false,
                 success: function(mediaElement) {
-                    //console.log('Video loaded properly.');
 
-                    // Video End Event Listener
-                    mediaElement.addEventListener('ended', function(e) {
+                    player = mediaElement;
 
-                        mediaElement.pause();
-                        console.log('video over!');
+                    // Load video
+                    mediaElement.setSrc(document.location.protocol + heroVideos[index-1]);
 
-                    }, false);
+                    // Load video?
+                    mediaElement.load();
 
-                    // Init video
                     mediaElement.setVolume(0);
+
                     mediaElement.play();
+
                 },
                 error: function () {
                     console.log('The video did not load properly.');
                 }
             });
+
+            return player;
         }
 
         // play the video at the desired index
         function playHomeVideo(index) {
 
-
-            //console.log(window.matchMedia(BED.UI.mediaQueries.desktop).matches);
-
             // only play the video in desktop view - video is hidden otherwise
             if (window.matchMedia(BED.UI.mediaQueries.desktop).matches) {
 
-
                 $('.home-video').removeClass('active');
 
-
-
                 $('.home-video-container')
-                    .removeClass('video-1')
-                    .removeClass('video-2')
-                    .removeClass('video-3')
-                    .removeClass('video-4')
+                    .removeClass('video-1 video-2 video-3 video-4')
                     .addClass('video-' + index);
 
                 switch (index) {
                     case 1:
-                        // set src file of video
-                        // call MEjs play function
-
-                        $('.home-video-1').addClass('active');
-                        console.log('play video 1');
-                        videoPlayer = createVideoPlayer(1);
-                        break;
                     case 2:
-
-                        $('.home-video-2').addClass('active');
-                        console.log('play video 2');
-                        videoPlayer = createVideoPlayer(2);
-                        break;
                     case 3:
-
-                        $('.home-video-3').addClass('active');
-                        console.log('play video 3');
-                        videoPlayer = createVideoPlayer(3);
-                        break;
                     case 4:
-
-                        $('.home-video-4').addClass('active');
-                        console.log('play video 4');
-                        videoPlayer = createVideoPlayer(4);
+                        homeVideoPlayer = createVideoPlayer(index);
                         break;
                     default:
-
-                        // this should never happen, but default to first video
-                        console.log('default');
-                        $('.home-video-1').addClass('active');
-                        videoPlayer = createVideoPlayer(1);
+                        homeVideoPlayer = createVideoPlayer(1);
                         break;
-                } 
+                }
+
+                //console.log(homeVideoPlayer.src);
+
+                homeVideoPlayer.play();
             } else {
 
-                console.log('show mobile image');
+                // console.log('show mobile image');
                 $('.section--home').addClass('mobile-bg mobile-bg-' + index);
             }
 
@@ -383,7 +366,7 @@ BED.VideoPlayer = (function() {
     var onSuccess = function(me, domObject) {
         // console.log('success');
 
-        console.log(me);
+        //console.log(me);
 
         me.pause();
 
