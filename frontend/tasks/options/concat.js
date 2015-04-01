@@ -6,7 +6,9 @@ var files = {
         'src/scripts/bed/bed.modal.js',
         'src/scripts/bed/bed.skrollr.js',
         'src/scripts/bed/bed.videoplayer.js',
-        'src/scripts/bed/bed.analytics.js'
+        'src/scripts/bed/bed.analytics.js',
+        'src/scripts/bed/bed.homevideoplayer.js',
+        'src/scripts/bed/bed.audio.js'
     ],
     'dist/js/libs.js': [
         'src/scripts/libs/jquery.min.js',

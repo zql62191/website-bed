@@ -66,12 +66,14 @@ var BED = (function() {
         initialized = true;
 
         // Init all the things!
+        BED.HomeVideoPlayer.init(); // for Hero videos
         BED.Analytics.init();
         BED.Skrollr.init();
         BED.UI.init();
         BED.SlideOut.init();
         BED.Modal.init();
-        BED.VideoPlayer.init();
+        BED.VideoPlayer.init(); // for resources videos
+        BED.AudioPlayer.init();
 
         if (typeof parseUri(window.location.href).queryKey['snag'] !== 'undefined') {
             $(window).load(snag);

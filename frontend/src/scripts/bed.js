@@ -66,12 +66,14 @@ var BED = (function() {
         initialized = true;
 
         // Init all the things!
+        BED.HomeVideoPlayer.init(); // for Hero videos
         BED.Analytics.init();
         BED.Skrollr.init();
         BED.UI.init();
         BED.SlideOut.init();
         BED.Modal.init();
-        BED.VideoPlayer.init();
+        BED.VideoPlayer.init(); // for resources videos
+        BED.AudioPlayer.init();
 
         if (typeof parseUri(window.location.href).queryKey['snag'] !== 'undefined') {
             $(window).load(snag);
@@ -949,7 +951,7 @@ BED.Skrollr = (function() {
     window.BED = {};
 }
 
-var homeVideoPlayer;
+// var homeVideoPlayer;
 
 BED.VideoPlayer = (function() {
 
@@ -976,10 +978,6 @@ BED.VideoPlayer = (function() {
         'chapter4': '//view.vzaar.com/2604928/video', // S03501 Chapter 4
         'chapter5': '//view.vzaar.com/2604935/video', // S03502 Chapter 5
         'chapter6': '//view.vzaar.com/2604941/video', // S03503 Chapter 6
-
-        // BED 2.0 Home section videos
-
-
     };
 
     var videoTitleList = {
@@ -1003,20 +1001,13 @@ BED.VideoPlayer = (function() {
         'chapter3': 'Possible causes of B.E.D.',
         'chapter4': 'Recognizing adult patients with B.E.D.',
         'chapter5': 'Functional consequences of B.E.D.',
-        'chapter6': 'Diagnosing B.E.D. in adult patients'
-
-        // BED 2.0 home section videos
-          
+        'chapter6': 'Diagnosing B.E.D. in adult patients'          
     };
 
-    var audioSamples = {
-        'sample1': 'media/TestAudio.mp3',
-        'sample2': 'media/TestAudio.mp3'
-    };
 
     var videoNameList = [];
 
-    var currentVideoName = '';
+    var currentVideoName = 'bulik4'; // this is the first video in the player
 
     var currentVideoTitle = '';
 
@@ -1039,204 +1030,17 @@ BED.VideoPlayer = (function() {
 
         initialized = true;
 
-        /*************************************************************************/
-        /* Home Section video player */
-
-
         /* ----------- Variables -----------*/
+    
+
         
-
-
-        /* ----------- Video Index Cookie - getter/setter -----------*/
-
-        // set which home video will be played based on its index
-        function setVideoCookie(index) {
-
-            //var expirationDate = lasdkjfas;ldfkas;
-            //var expires = "expires=" + expirationDate;
-            document.cookie = 'videoIndex  = ' + index; // + "; " + expires;
-        }
-
-        // get the current value of the video cookie to determine which video to play
-        function getCookie(cname) {
-            var name = cname + "=";
-            var ca = document.cookie.split(';');
-
-            for (var i = 0; i < ca.length; i++) {
-                var c = ca[i];
-                
-                while (c.charAt(0) === ' ') {
-                    c = c.substring(1); 
-                }
-                if (c.indexOf(name) === 0) {
-                    return c.substring(name.length, c.length);
-                }
-            }
-            return "";
-        }
-
-        // testing function to delete the cookie - to be used in console
-        function deleteVideoCookie() {
-            document.cookie = 'videoIndex=';
-        }
-
-
-        /* ----------- Video Controls -----------*/
-
-        // create a video player on the current video
-        function createVideoPlayer(index) {
-
-            var heroVideos = [
-                '//view.vzaar.com/2552732/video',
-                '//view.vzaar.com/2552735/video',
-                '//view.vzaar.com/2552736/video',
-                '//view.vzaar.com/2552737/video'
-            ];
-
-            //var selectorString = '.home-video-' + index;
-            
-            var player;    
-
-            // set up mediaElement js with custom settings
-            // var player = new MediaElementPlayer(selectorString, {
-
-            $('#heroPlayer').mediaelementplayer({
-                pauseOtherPlayers: false,       // allow multiple videos
-                startVolume: 0, // there is no audio
-                features: [],
-                autoRewind: false,
-                success: function(mediaElement) {
-
-                    player = mediaElement;
-
-                    // Load video
-                    mediaElement.setSrc(document.location.protocol + heroVideos[index-1]);
-
-                    // Load video?
-                    mediaElement.load();
-
-                    mediaElement.setVolume(0);
-
-                    mediaElement.play();
-
-                },
-                error: function () {
-                    console.log('The video did not load properly.');
-                }
-            });
-
-            return player;
-        }
-
-        // play the video at the desired index
-        function playHomeVideo(index) {
-
-            // only play the video in desktop view - video is hidden otherwise
-            if (window.matchMedia(BED.UI.mediaQueries.desktop).matches) {
-
-                $('.home-video').removeClass('active');
-
-                $('.home-video-container')
-                    .removeClass('video-1 video-2 video-3 video-4')
-                    .addClass('video-' + index);
-
-                switch (index) {
-                    case 1:
-                    case 2:
-                    case 3:
-                    case 4:
-                        homeVideoPlayer = createVideoPlayer(index);
-                        break;
-                    default:
-                        homeVideoPlayer = createVideoPlayer(1);
-                        break;
-                }
-
-                //console.log(homeVideoPlayer.src);
-
-                homeVideoPlayer.play();
-            } else {
-
-                // console.log('show mobile image');
-                $('.section--home').addClass('mobile-bg mobile-bg-' + index);
-            }
-
-            $('.section--home .content-wrap').addClass('active');
-        }
-
-        /* Audio */
-        function initAudio() {
-            if (window.matchMedia(BED.UI.mediaQueries.desktop).matches) {
-                $('.audio-sample1').mediaelementplayer({
-                    audioWidth: 229,
-                    features: ['playpause', 'current', 'progress', 'duration'],
-                    success: onAudioSuccess
-                });
-
-                $('.audio-sample2').mediaelementplayer({
-                    audioWidth: 229,
-                    features: ['playpause', 'current', 'progress', 'duration'],
-                    success: onAudioSuccess
-                });
-            } else {
-                $('.audio-sample1').mediaelementplayer({
-                    audioWidth: 509,
-                    audioHeight: 60,
-                    iPadUseNativeControls: false,
-                    iPhoneUseNativeControls: false,
-                    AndroidUseNativeControls: false,
-                    features: ['playpause', 'current', 'progress', 'duration'],
-                    success: onAudioSuccess
-                });
-
-                $('.audio-sample2').mediaelementplayer({
-                    audioWidth: 509,
-                    audioHeight: 60,
-                    iPadUseNativeControls: false,
-                    iPhoneUseNativeControls: false,
-                    AndroidUseNativeControls: false,
-                    features: ['playpause', 'current', 'progress', 'duration'],
-                    success: onAudioSuccess
-                });
-            }
-        }
 
         /* ----------- Init -----------*/
 
-        initAudio();
 
-        // Set/get cookie to determine which video loads:
-        var oldVideoCookie = getCookie('videoIndex');
-
-        $('.home-video').ready( function() {
-
-            var newVideoCookie;
-
-            if (oldVideoCookie === '') {    // if the cookie has not been set
-
-                // set it to 1 and play video number 1
-                setVideoCookie(1);
-                playHomeVideo(1);
-
-            } else if (parseInt(oldVideoCookie, 10) === 4) {    // the cookie has reached the last video index value
-
-                newVideoCookie = 1;     // reset it to first video
-                setVideoCookie(newVideoCookie);
-                playHomeVideo(newVideoCookie);
-
-            } else {    // normal case
-                newVideoCookie = parseInt(oldVideoCookie, 10) + 1;
-                setVideoCookie(newVideoCookie);
-                playHomeVideo(newVideoCookie);
-            }
-        });
-        
-
-        /*************************************************************************/
-        /* Videos Section video player */
 
         // Generate playlist order list (used in next/prev functionality)
-        $('.video-playlist li').each(function(i, el) {
+        $('.video-thumb').each(function(i, el) {
 
             videoNameList.push($(el).data('video'));
 
@@ -1289,25 +1093,7 @@ BED.VideoPlayer = (function() {
 
     };
 
-    var onAudioSuccess = function(me, domObject) {
-        //console.log(me + '\n' + domObject);
-
-        if ($(me).hasClass('audio-sample1')) {
-
-            $('.play-sample1').click( function() {
-                var target = $(this).data('target');
-                me.play();
-            });
-            
-        } else if ($(me).hasClass('audio-sample2')) {
-
-            $('.play-sample2').click( function() {
-                var target = $(this).data('target');
-                me.play();
-            });
-        }
-
-    };
+    
 
     // MediaElementJS success handler
     var onSuccess = function(me, domObject) {
@@ -1446,7 +1232,7 @@ BED.VideoPlayer = (function() {
         // Load video?
         instance.load();
 
-        console.log('instance: ' + instance);
+        // console.log('instance: ' + instance);
 
         // Play video
         instance.play();
@@ -1566,6 +1352,285 @@ BED.Analytics = (function() {
         videoOnPercentage: videoOnPercentage,
         videoOnComplete: videoOnComplete,
         formOnComplete: formOnComplete
+    };
+
+})();
+;if (typeof BED === 'undefined') {
+    window.BED = {};
+}
+
+//var homeVideoPlayer;
+
+BED.HomeVideoPlayer = (function() {
+
+
+    /* ----------- Variables -----------*/
+    
+    var initialized = false;
+
+    var init = function() {
+
+        if (initialized) {
+            return;
+        }
+
+        initialized = true;
+
+        var heroVideos = [
+            '//view.vzaar.com/2552732/video',
+            '//view.vzaar.com/2552735/video',
+            '//view.vzaar.com/2552736/video',
+            '//view.vzaar.com/2552737/video'
+        ];
+
+
+        /* ----------- Video Index Cookie - getter/setter -----------*/
+
+        // set which home video will be played based on its index
+        function setVideoCookie(index) {
+            document.cookie = 'videoIndex  = ' + index;
+        }
+
+        // get the current value of the video cookie to determine which video to play
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                
+                while (c.charAt(0) === ' ') {
+                    c = c.substring(1); 
+                }
+                if (c.indexOf(name) === 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        // testing function to delete the cookie - to be used in console
+        function deleteVideoCookie() {
+            document.cookie = 'videoIndex=';
+        }
+
+
+        /* ----------- Video Controls -----------*/
+
+        // create a video player on the current video
+        function createVideoPlayer(index) {
+            
+            var player;    
+
+            // set up mediaElement js with custom settings
+            // var player = new MediaElementPlayer(selectorString, {
+
+            $('#heroPlayer').mediaelementplayer({
+                pauseOtherPlayers: false,       // allow multiple videos
+                startVolume: 0, // there is no audio
+                features: [],
+                autoRewind: false,
+                success: function(mediaElement) {
+
+                    player = mediaElement;
+
+                    // Load video
+                    mediaElement.setSrc(document.location.protocol + heroVideos[index-1]);
+
+                    // flash url : controls=false&file=//view.vzaar.com/2552732/video
+
+                    // Load video?
+                    mediaElement.load();
+
+                    mediaElement.setVolume(0);
+
+                    mediaElement.play();
+
+                    player = mediaElement;
+                },
+                error: function () {
+                    console.log('The video did not load properly.');
+                }
+            });
+
+            return player;
+        }
+
+        // play the video at the desired index
+        function playHomeVideo(index) {
+
+            var homeVideoPlayer;
+
+            //console.log('desktop: ' + window.matchMedia(BED.UI.mediaQueries.desktop).matches);
+
+            // only play the video in desktop view - video is hidden otherwise
+            if (window.matchMedia(BED.UI.mediaQueries.desktop).matches || $('html').hasClass('eq-ie')) {
+
+                $('.home-video').removeClass('active');
+
+                $('.home-video-container')
+                    .removeClass('video-1 video-2 video-3 video-4')
+                    .addClass('video-' + index);
+
+                switch (index) {
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                        homeVideoPlayer = createVideoPlayer(index);
+                        break;
+                    default:
+                        homeVideoPlayer = createVideoPlayer(1);
+                        break;
+                }
+
+
+                // homeVideoPlayer.setSrc(document.location.protocol + heroVideos[index-1]);
+
+                // homeVideoPlayer.load();
+                // homeVideoPlayer.setVolume(0);
+                // homeVideoPlayer.play();
+
+
+            } else {
+
+                $('.section--home').addClass('mobile-bg mobile-bg-' + index);
+            }
+
+            $('.section--home .content-wrap').addClass('active');
+        }
+
+        /* ----------- Init -----------*/
+        
+
+        // Set/get cookie to determine which video loads:
+        var oldVideoCookie = getCookie('videoIndex');
+
+        $('.home-video').ready( function() {
+
+            var newVideoCookie;
+
+            if (oldVideoCookie === '') {    // if the cookie has not been set
+
+                // set it to 1 and play video number 1
+                setVideoCookie(1);
+                playHomeVideo(1);
+
+            } else if (parseInt(oldVideoCookie, 10) === 4) {    // the cookie has reached the last video index value
+
+                newVideoCookie = 1;     // reset it to first video
+                setVideoCookie(newVideoCookie);
+                playHomeVideo(newVideoCookie);
+
+            } else {    // normal case
+                newVideoCookie = parseInt(oldVideoCookie, 10) + 1;
+                setVideoCookie(newVideoCookie);
+                playHomeVideo(newVideoCookie);
+            }
+        });
+
+    };
+
+    // Return the module object
+    return {
+        init: init,
+        instance: function() {
+            return instance;
+        }
+    };
+
+})();
+;if (typeof BED === 'undefined') {
+    window.BED = {};
+}
+
+
+BED.AudioPlayer = (function() {
+
+
+    /* ----------- Variables -----------*/
+
+    var initialized = false;
+
+    var onAudioSuccess = function(me, domObject) {
+        //console.log(me + '\n' + domObject);
+
+        if ($(me).hasClass('audio-sample1')) {
+
+            $('.play-sample1').click( function() {
+                var target = $(this).data('target');
+                me.play();
+            });
+            
+        } else if ($(me).hasClass('audio-sample2')) {
+
+            $('.play-sample2').click( function() {
+                var target = $(this).data('target');
+                me.play();
+            });
+        }
+    };
+
+    var init = function() {
+
+        if (initialized) {
+            return;
+        }
+
+        initialized = true;
+
+        function initAudio() {
+            if (window.matchMedia(BED.UI.mediaQueries.desktop).matches) {   // desktop
+
+                $('.audio-sample1').mediaelementplayer({
+                    audioWidth: 229,
+                    pauseOtherPlayers: true,
+                    features: ['playpause', 'current', 'progress', 'duration'],
+                    success: onAudioSuccess
+                });
+
+                $('.audio-sample2').mediaelementplayer({
+                    audioWidth: 229,
+                    pauseOtherPlayers: true,
+                    features: ['playpause', 'current', 'progress', 'duration'],
+                    success: onAudioSuccess
+                });
+
+            } else {    // mobile
+
+                $('.audio-sample1').mediaelementplayer({
+                    audioWidth: 509,
+                    audioHeight: 60,
+                    pauseOtherPlayers: true,
+                    iPadUseNativeControls: false,
+                    iPhoneUseNativeControls: false,
+                    AndroidUseNativeControls: false,
+                    features: ['playpause', 'current', 'progress', 'duration'],
+                    success: onAudioSuccess
+                });
+
+                $('.audio-sample2').mediaelementplayer({
+                    audioWidth: 509,
+                    audioHeight: 60,
+                    pauseOtherPlayers: true,
+                    iPadUseNativeControls: false,
+                    iPhoneUseNativeControls: false,
+                    AndroidUseNativeControls: false,
+                    features: ['playpause', 'current', 'progress', 'duration'],
+                    success: onAudioSuccess
+                });
+            }
+        }
+
+        initAudio();
+    };
+
+    // Return the module object
+    return {
+        init: init,
+        instance: function() {
+            return instance;
+        }
     };
 
 })();
