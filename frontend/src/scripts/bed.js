@@ -1529,6 +1529,11 @@ BED.HomeVideoPlayer = (function() {
             }
         });
 
+        $('#heroPlayer').on('ended', function() {
+            //console.log('alksjdflsdaf ');
+            $(this).fadeOut(500);
+        })
+
     };
 
     // Return the module object
@@ -1555,11 +1560,15 @@ BED.AudioPlayer = (function() {
     var onAudioSuccess = function(me, domObject) {
         //console.log(me + '\n' + domObject);
 
+        me.load();
+
         if ($(me).hasClass('audio-sample1')) {
 
             $('.play-sample1').click( function() {
                 var target = $(this).data('target');
                 me.play();
+
+                console.log('play sample 1');
             });
             
         } else if ($(me).hasClass('audio-sample2')) {
@@ -1567,6 +1576,8 @@ BED.AudioPlayer = (function() {
             $('.play-sample2').click( function() {
                 var target = $(this).data('target');
                 me.play();
+
+                console.log('play sample 2');
             });
         }
     };

@@ -82,13 +82,23 @@
     .references {
         word-wrap: break-word;
         margin-top: 20px;
+
+        @include mq('desktop') {
+            p {
+                padding-right: 0;
+            }
+        }
+
         @include mq("mobile") {
             margin-top: 30px;
+
+            p {
+                padding-right: 16px;
+            }
         }
 
         p {
             color: #eeeeee;
-            padding-right: 16px;
         }
     }
     br.mobile-only {

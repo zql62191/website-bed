@@ -172,6 +172,11 @@ BED.HomeVideoPlayer = (function() {
             }
         });
 
+        $('#heroPlayer').on('ended', function() {
+            //console.log('alksjdflsdaf ');
+            $(this).fadeOut(500);
+        })
+
     };
 
     // Return the module object
