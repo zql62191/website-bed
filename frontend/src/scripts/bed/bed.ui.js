@@ -6,7 +6,8 @@ BED.UI = (function() {
 
     var whitelisted = [
         'www.shire.com',
-        'shire.com'
+        'shire.com',
+        'www.bingeeatingdisorder.com'
     ];
 
     var mediaQueries = {
