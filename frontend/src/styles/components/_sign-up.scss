@@ -74,7 +74,7 @@
     }
     h3 {
         
-        @include mq("desktop"){
+        @include mq("desktop") {
             font-weight: bold;
             font-family: font("gill sans", "roman");
             font-size: 26px;
@@ -155,7 +155,7 @@
             border: 1px solid #9A9A9A;
         }
 
-    em{  
+    em {  
         font-family: font("gill sans", "italic");
         font-size: 16px;
         color: #657E8E;
@@ -252,6 +252,8 @@
             font-family: font("gill sans", "roman");
             border-radius: 4px;
             background: #323E48;
+            cursor: pointer;
+
             @include mq("mobile") {
                 border-radius: 4px;
                 background: #323E48;
@@ -307,6 +309,7 @@
         font-family: font("gill sans", "roman");
         border-radius: 4px;
         background: #323E48;
+        cursor: pointer;
 
         @include mq("mobile") {
             border-radius: 4px;
