@@ -99,19 +99,15 @@
 
             /* dynamic background images (controlled by cookies and js) */
             &.video-1 {
-                // background-image: url(#{$img-path}/vid-bg-kimberly.jpg);
                 background-image: url(#{$img-path}/kimberly-last-frame.jpg);
             }
             &.video-2 {
-                // background-image: url(#{$img-path}/vid-bg-nikki.jpg);
                 background-image: url(#{$img-path}/nikki-last-frame.jpg);
             }
             &.video-3 {
-                // background-image: url(#{$img-path}/vid-bg-julie.jpg);
                 background-image: url(#{$img-path}/julie-last-frame.jpg);
             }
             &.video-4 {
-                // background-image: url(#{$img-path}/vid-bg-diego.jpg);
                 background-image: url(#{$img-path}/diego-last-frame.jpg);
             }
         }
@@ -136,6 +132,12 @@
         }
 
         @include mq("mobile") {
+
+            video {
+                display: none;
+                opacity: 0;
+                visibility: hidden;
+            }
 
             .home-video {
                 display: none;
@@ -165,9 +167,6 @@
             &.active {
                 opacity: 1;
             }
-
-
-
         }
     }
 
