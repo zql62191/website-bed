@@ -81,12 +81,17 @@
 
     // new content 3/9/15
     .occurance {
-        font-size: 0;
+        .column-container {
+            font-size: 0;
+        }
     
         .chart-head {
             @include mq('desktop') {
                 padding: 15px 0 32px 40px;
                 text-align: left;
+            }
+            @include mq('mobile') {
+                padding-bottom: 18px;
             }
         }
 
@@ -97,7 +102,6 @@
             @include mq('desktop') {
                 display: inline-block;
                 vertical-align: top;
-                //width: 300px;
             }
             @include mq('mobile') {
                 text-align: center;
@@ -188,6 +192,9 @@
             @include mq('desktop') {
                 padding-top: 32px;
                 padding-bottom: 0;
+            }
+            @include mq('mobile') {
+                //padding-top: 12px;
             }
         }
     }

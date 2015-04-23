@@ -42,8 +42,9 @@
         }
         &.bar--prevalence {
             background: #51748b;
+
             @include mq("mobile") {
-                letter-spacing: -0.02em;
+                letter-spacing: -0.04em;
             }
         }
         &.bar--dsm5 {

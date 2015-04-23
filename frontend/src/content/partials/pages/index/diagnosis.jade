@@ -51,81 +51,44 @@ div(data-section='diagnosis').section.section--diagnosis
     //- new content March 9, 2015
     .occurance
 
-      p BED occurs in normal-weight, overweight, and obese individuals#[sup 2]
+      p B.E.D. occurs in normal-weight, overweight, and obese individuals.#[sup 2]
 
       h3.center.chart-head Based on a nationally representative survey of US adults aged ≥18 years*#[sup 2]:
 
-      .column.normal-weight
+      .column-container
+        .column.normal-weight
 
-        .person
+          .person
 
-        .text
+          .text
 
-          p(data-skrollr='diagnosis-36').percentage #[span.letter-spacing-fix 1]9#[span.percent %]
+            p(data-skrollr='diagnosis-36').percentage #[span.letter-spacing-fix 1]9#[span.percent %]
 
-          p.description are normal weight#[br](BMI 18.5-24.9)
+            p.description are normal-weight#[br](BMI 18.5-24.9)
 
-      .column.overweight
+        .column.overweight
 
-        .person
+          .person
 
-        .text
+          .text
 
-          p(data-skrollr='diagnosis-36').percentage 36#[span.percent %]
+            p(data-skrollr='diagnosis-36').percentage 36#[span.percent %]
 
-          p.description are overweight#[br](BMI 25-29.9)
+            p.description are overweight#[br](BMI 25-29.9)
 
 
-      .column.obese
+        .column.obese
 
-        .person
+          .person
 
-        .text
+          .text
 
-          p(data-skrollr='diagnosis-36').percentage 45#[span.percent %]
+            p(data-skrollr='diagnosis-36').percentage 45#[span.percent %]
 
-          p.description are obese#[br](BMI &ge;30)
+            p.description are obese#[br](BMI &ge;30)
 
-      p.footnote.asterisk Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, #[br.hide--mobile]a nationally respresentative face-to-face household survey of English-speaking adults aged &#8805;18 years.#[sup 2]
+      p.footnote.asterisk Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, #[br.hide--mobile]a nationally representative face-to-face household survey of English-speaking adults aged &#8805;18 years.#[sup 2]
     
-
-    //- .graphic-wrap
-
-      .fifty-percent
-
-        .grey-circle
-
-          .yellow-wrap
-
-            div(data-skrollr='diagnosis-circle').yellow-circle
-
-        p(data-skrollr='diagnosis-50').large.yellow
-
-          | &lt;50#[sup.percent %]
-
-          .seo Less than 50% of adults with B.E.D. are obese.
-
-        p(data-skrollr='diagnosis-50-caption').yellow of adults with B.E.D. #[br]are obese
-
-      .nineteen-percent.weight-graphic
-
-        .seo Silhouette of a normal-weight male
-
-        p(data-skrollr='diagnosis-19').large.yellow 19#[sup.percent %]
-
-        p.yellow are normal weight #[br](BMI 18.5-24.9)
-
-      .thirty-six-percent.weight-graphic
-
-        .seo Silhouette of an overweight male
-
-        p(data-skrollr='diagnosis-36').large 36#[sup.percent %]
-
-        p are overweight#[br](BMI 25-29.9)
-
-        p but not obese#[br](BMI ≥30)
-
-    //- p.footnote.asterisk Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, #[br.hide--mobile]a nationally respresentative face-to-face household survey of English-speaking adults aged &#8805;18 years.
 
 
     .bed-patient-profiles
@@ -198,7 +161,7 @@ div(data-section='diagnosis').section.section--diagnosis
               li Kimberly’s binges are usually the result of boredom
 
           .profile-section
-            p.quote.block-quote #[span.block-quote-opening “]I feel like I’ve lost control while I’m eating.”
+            p.quote.block-quote.first-quote #[span.block-quote-opening “]I feel like I’ve lost control while I’m eating.”
             p.footnote.bmi BMI=body mass index.
 
 
@@ -230,7 +193,7 @@ div(data-section='diagnosis').section.section--diagnosis
               li Nikki is distressed by her bingeing behavior
 
           .profile-section
-            p.quote.block-quote #[span.block-quote-opening “]I’m disgusted with myself after I binge.”
+            p.quote.block-quote.second-quote #[span.block-quote-opening “]I’m disgusted with myself after I binge.”
             p.footnote.bmi BMI=body mass index.
 
 

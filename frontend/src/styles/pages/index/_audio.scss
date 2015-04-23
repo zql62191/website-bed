@@ -108,8 +108,15 @@
                 }
                 .quote-open {
                     position: absolute;
-                    left: -13px;
+                    // left: -13px;
                     background-image: url("#{$img-path}/quote-open-mobile.png");
+
+                    &.first-quote {
+                        left: -36px;
+                    }
+                    &.second-quote {
+                        left: 25px;
+                    }
                 }
                 
                 .quote-close {
@@ -118,8 +125,6 @@
                     margin-left: 15px;
                 }
             }
-
-
         }
 
         .play-button {
