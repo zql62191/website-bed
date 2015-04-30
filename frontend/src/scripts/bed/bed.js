@@ -73,6 +73,8 @@ var BED = (function() {
         BED.Modal.init();
         BED.VideoPlayer.init();
 
+        
+
         if (typeof parseUri(window.location.href).queryKey['snag'] !== 'undefined') {
             $(window).load(snag);
         }
