@@ -118,7 +118,7 @@ var BED = (function() {
             // function to update status of next/previous arrows based on current profile (mobile only)
             var updateNavArrows = function(profileIndex) {
 
-                console.log(profileIndex);
+                // console.log(profileIndex);
 
                 $('.arrow').removeClass('inactive');
 

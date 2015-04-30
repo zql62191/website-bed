@@ -110,6 +110,7 @@
         }
 
         .person {
+            background-repeat: no-repeat;
             height: 208px;
             line-height: 208px;
             display: inline-block;
@@ -119,6 +120,7 @@
             display: inline-block;
             vertical-align: top;
             padding-left: 20px;
+            max-width: 175px;
         }
 
         .normal-weight {

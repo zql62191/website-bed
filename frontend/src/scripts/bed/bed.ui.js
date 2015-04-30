@@ -122,7 +122,7 @@ BED.UI = (function() {
 
             jqNext.exists(function() {
 
-                console.log('.bar--next[data-section="' + jqNext.data('section') + '"]');
+                // console.log('.bar--next[data-section="' + jqNext.data('section') + '"]');
 
                 $('.bar--next[data-section="' + jqNext.data('section') + '"]').addClass('active');
 

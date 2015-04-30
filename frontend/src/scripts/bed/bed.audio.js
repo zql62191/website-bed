@@ -11,26 +11,22 @@ BED.AudioPlayer = (function() {
     var initialized = false;
 
     var onAudioSuccess = function(me, domObject) {
-        //console.log(me + '\n' + domObject);
+        // console.log('domObject: ' + $(domObject));
 
         me.load();
 
-        if ($(me).hasClass('audio-sample1')) {
+        if ($(domObject).hasClass('audio-sample1')) {
 
             $('.play-sample1').click( function() {
                 var target = $(this).data('target');
-                me.play();
-
-                console.log('play sample 1');
+                $('.audio-sample1 .mejs-play').trigger('click');
             });
             
-        } else if ($(me).hasClass('audio-sample2')) {
-
+        } else if ($(domObject).hasClass('audio-sample2')) {
+            
             $('.play-sample2').click( function() {
                 var target = $(this).data('target');
-                me.play();
-
-                console.log('play sample 2');
+                $('.audio-sample2 .mejs-play').trigger('click');
             });
         }
     };

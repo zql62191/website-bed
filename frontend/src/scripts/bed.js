@@ -118,7 +118,7 @@ var BED = (function() {
             // function to update status of next/previous arrows based on current profile (mobile only)
             var updateNavArrows = function(profileIndex) {
 
-                console.log(profileIndex);
+                // console.log(profileIndex);
 
                 $('.arrow').removeClass('inactive');
 
@@ -343,7 +343,7 @@ BED.UI = (function() {
 
             jqNext.exists(function() {
 
-                console.log('.bar--next[data-section="' + jqNext.data('section') + '"]');
+                // console.log('.bar--next[data-section="' + jqNext.data('section') + '"]');
 
                 $('.bar--next[data-section="' + jqNext.data('section') + '"]').addClass('active');
 
@@ -1423,12 +1423,9 @@ BED.HomeVideoPlayer = (function() {
             
             var player;    
 
-            // set up mediaElement js with custom settings
-            // var player = new MediaElementPlayer(selectorString, {
-
             $('#heroPlayer').mediaelementplayer({
                 pauseOtherPlayers: false,       // allow multiple videos
-                startVolume: 0, // there is no audio
+                startVolume: 0,                 // there is no audio
                 features: [],
                 autoRewind: false,
                 success: function(mediaElement) {
@@ -1462,11 +1459,13 @@ BED.HomeVideoPlayer = (function() {
 
             var homeVideoPlayer;
 
-            //console.log('desktop: ' + window.matchMedia(BED.UI.mediaQueries.desktop).matches);
-
             // only play the video in desktop view - video is hidden otherwise
             if (window.matchMedia(BED.UI.mediaQueries.desktop).matches || $('html').hasClass('eq-ie')) {
 
+                if (isTabletMobile) {
+                    $('.content-wrap').addClass('quick');
+                }
+                
                 $('.home-video').removeClass('active');
 
                 $('.home-video-container')
@@ -1484,15 +1483,6 @@ BED.HomeVideoPlayer = (function() {
                         homeVideoPlayer = createVideoPlayer(1);
                         break;
                 }
-
-
-                // homeVideoPlayer.setSrc(document.location.protocol + heroVideos[index-1]);
-
-                // homeVideoPlayer.load();
-                // homeVideoPlayer.setVolume(0);
-                // homeVideoPlayer.play();
-
-
             } else {
 
                 $('.section--home').addClass('mobile-bg mobile-bg-' + index);
@@ -1503,6 +1493,17 @@ BED.HomeVideoPlayer = (function() {
 
         /* ----------- Init -----------*/
         
+        var isTabletMobile = false;
+        $('#heroPlayer').ready(function() {
+
+            // hide homepage video if tablet or mobile
+            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            
+                isTabletMobile = true;
+                $('#heroPlayer').hide();
+                $('.section--home .content-wrap').addClass('active');
+            }
+        });
 
         // Set/get cookie to determine which video loads:
         var oldVideoCookie = getCookie('videoIndex');
@@ -1532,19 +1533,10 @@ BED.HomeVideoPlayer = (function() {
         });
 
         $('#heroPlayer').on('ended', function() {
-            //console.log('alksjdflsdaf ');
             $(this).fadeOut(500);
-        })
-
-        $('#heroPlayer').ready(function() {
-
-            // hide homepage video if tablet or mobile
-            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            
-                // console.log('mobile/tablet');
-                $('#heroPlayer').hide();
-            }
         });
+
+        
     };
 
     // Return the module object
@@ -1569,26 +1561,22 @@ BED.AudioPlayer = (function() {
     var initialized = false;
 
     var onAudioSuccess = function(me, domObject) {
-        //console.log(me + '\n' + domObject);
+        // console.log('domObject: ' + $(domObject));
 
         me.load();
 
-        if ($(me).hasClass('audio-sample1')) {
+        if ($(domObject).hasClass('audio-sample1')) {
 
             $('.play-sample1').click( function() {
                 var target = $(this).data('target');
-                me.play();
-
-                console.log('play sample 1');
+                $('.audio-sample1 .mejs-play').trigger('click');
             });
             
-        } else if ($(me).hasClass('audio-sample2')) {
-
+        } else if ($(domObject).hasClass('audio-sample2')) {
+            
             $('.play-sample2').click( function() {
                 var target = $(this).data('target');
-                me.play();
-
-                console.log('play sample 2');
+                $('.audio-sample2 .mejs-play').trigger('click');
             });
         }
     };
