@@ -86,7 +86,7 @@ var BED = (function() {
         });
 
     
-
+        
         
         $(document).ready(function() {
 
@@ -1507,6 +1507,7 @@ BED.HomeVideoPlayer = (function() {
         // Set/get cookie to determine which video loads:
         var oldVideoCookie = getCookie('videoIndex');
 
+
         $('.home-video').ready( function() {
 
             var newVideoCookie;
@@ -1535,6 +1536,15 @@ BED.HomeVideoPlayer = (function() {
             $(this).fadeOut(500);
         })
 
+        $('#heroPlayer').ready(function() {
+
+            // hide homepage video if tablet or mobile
+            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            
+                // console.log('mobile/tablet');
+                $('#heroPlayer').hide();
+            }
+        });
     };
 
     // Return the module object
