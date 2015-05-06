@@ -957,28 +957,28 @@ BED.Skrollr = (function() {
 BED.VideoPlayer = (function() {
 
     var videoLocationList = {
-        'grilo2': '//d2ly9zedmmzqz4.cloudfront.net/BED-S02969.mp4',     // S02969 Grilo2
+        'grilo2': '//d2ly9zedmmzqz4.cloudfront.net/BED-S02969.mp4', // S02969 Grilo2
         'kornstein8': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03012.mp4', // S03012 Kornstein8
-        'grilo7': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03011.mp4',     // S03011 Grilo7
-        'bulik12': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03016.mp4',    // S03016 Bulik12
-        'grilo5': '//d2ly9zedmmzqz4.cloudfront.net/BED-S02972.mp4',     // S02972 Grilo5
+        'grilo7': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03011.mp4', // S03011 Grilo7
+        'bulik12': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03016.mp4', // S03016 Bulik12
+        'grilo5': '//d2ly9zedmmzqz4.cloudfront.net/BED-S02972.mp4', // S02972 Grilo5
         'kornstein6': '//d2ly9zedmmzqz4.cloudfront.net/BED-S02973.mp4', // S02973 Kornstein6
         'kornstein14': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03018.mp4', // S03018 Kornstein14
 
         // videos added 10/27/14
-        'bulik4': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03323.mp4',     // S03323
-        'bulik3': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03322.mp4',     // S03322
-        'wilfley10': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03014.mp4',  // S03014
-        'wilfley9': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03013.mp4',   // S03013
-        'wilfley13': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03017.mp4',   // S03017
+        'bulik4': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03323.mp4', // S03323
+        'bulik3': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03322.mp4', // S03322
+        'wilfley10': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03014.mp4', // S03014
+        'wilfley9': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03013.mp4', // S03013
+        'wilfley13': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03017.mp4', // S03017
 
         // BED 2.0 physician television network videos
-        'chapter1': '//view.vzaar.com/2604892/video', // S02868 Chapter 1
-        'chapter2': '//view.vzaar.com/2604904/video', // S03499 Chapter 2
-        'chapter3': '//view.vzaar.com/2604919/video', // S03500 Chapter 3
-        'chapter4': '//view.vzaar.com/2604928/video', // S03501 Chapter 4
-        'chapter5': '//view.vzaar.com/2604935/video', // S03502 Chapter 5
-        'chapter6': '//view.vzaar.com/2604941/video', // S03503 Chapter 6
+        'chapter1': '//d2ly9zedmmzqz4.cloudfront.net/BED-S02868.mp4', // S02868 Chapter 1
+        'chapter2': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03499.mp4', // S03499 Chapter 2
+        'chapter3': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03500.mp4', // S03500 Chapter 3
+        'chapter4': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03501.mp4', // S03501 Chapter 4
+        'chapter5': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03502.mp4', // S03502 Chapter 5
+        'chapter6': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03503.mp4', // S03503 Chapter 6
     };
 
     var videoTitleList = {
@@ -1002,7 +1002,7 @@ BED.VideoPlayer = (function() {
         'chapter3': 'Possible causes of B.E.D.',
         'chapter4': 'Recognizing adult patients with B.E.D.',
         'chapter5': 'Functional consequences of B.E.D.',
-        'chapter6': 'Diagnosing B.E.D. in adult patients'          
+        'chapter6': 'Diagnosing B.E.D. in adult patients'
     };
 
 
@@ -1032,9 +1032,8 @@ BED.VideoPlayer = (function() {
         initialized = true;
 
         /* ----------- Variables -----------*/
-    
 
-        
+
 
         /* ----------- Init -----------*/
 
@@ -1065,9 +1064,9 @@ BED.VideoPlayer = (function() {
 
         }).mediaelementplayer({
 
-            pauseOtherPlayers: false,       // allow multiple videos
-            iPadUseNativeControls: true,    // force iPad's native controls
-            iPhoneUseNativeControls: true,  // force iPhone's native controls
+            pauseOtherPlayers: false, // allow multiple videos
+            iPadUseNativeControls: true, // force iPad's native controls
+            iPhoneUseNativeControls: true, // force iPhone's native controls
             AndroidUseNativeControls: true, // force Android's native controls
             success: onSuccess,
             error: onError
@@ -1094,7 +1093,7 @@ BED.VideoPlayer = (function() {
 
     };
 
-    
+
 
     // MediaElementJS success handler
     var onSuccess = function(me, domObject) {

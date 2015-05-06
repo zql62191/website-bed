@@ -14,5 +14,13 @@ module.exports = {
             force: true
         },
         src: ['./sass-cache']
+    },
+    integrate: {
+        options: {
+            force: true
+        },
+        src: [
+            '../backend/BEDSite/content/'
+        ]
     }
 };
