@@ -104,12 +104,40 @@
         color: #333e48;
         line-height: 31px;
 
+        p.line-one {
+                color: #333E48;
+                font-family: font("helvetica neue", "regular");
+            }
+            p.line-two {
+                color: #333E48;
+                font-family: font("helvetica neue", "bold");
+            }
+            p.line-three {
+                color: #67737E;
+                font-family: font("helvetica neue", "regular");
+            }
+
         @include mq("mobile") {
             background-image: url("#{$img-path}/prevalence-text-bg-tall.png");
             width: 571px;
             margin-bottom: 20px;
             margin-top: 30px;
             background-size: 100% 100%;
+
+            p.line-one {
+                font-size: 30px;
+                line-height: 35px;
+                margin-bottom: 13px;
+            }
+            p.line-two {
+                font-size: 36px;
+                line-height: 39px;
+                margin-bottom: 20px;
+            }
+            p.line-three {
+                font-size: 24px;
+                line-height: 27px;
+            }
         }
 
         @include mq("desktop") {
@@ -117,9 +145,24 @@
             width: 740px;
             height: 180px;
             margin: 30px auto 25px auto;
-            padding: 25px 35px;
+            padding: 25px 28px;
             font-size: 20px;
             line-height: 22px;
+
+            p.line-one {
+                font-size: 20px;
+                line-height: 26px;
+                padding-bottom: 6px;
+            }
+            p.line-two {
+                font-size: 23px;
+                line-height: 25px;
+                padding-bottom: 9px;
+            }
+            p.line-three {
+                font-size: 18px;
+                line-height: 20px;
+            }
         }
 
         .sub-head {
