@@ -105,17 +105,17 @@
         line-height: 31px;
 
         p.line-one {
-                color: #333E48;
-                font-family: font("helvetica neue", "regular");
-            }
-            p.line-two {
-                color: #333E48;
-                font-family: font("helvetica neue", "bold");
-            }
-            p.line-three {
-                color: #67737E;
-                font-family: font("helvetica neue", "regular");
-            }
+            color: #333E48;
+            font-family: font("helvetica neue", "regular");
+        }
+        p.line-two {
+            color: #333E48;
+            font-family: font("helvetica neue", "bold");
+        }
+        p.line-three {
+            color: #67737E;
+            font-family: font("helvetica neue", "regular");
+        }
 
         @include mq("mobile") {
             background-image: url("#{$img-path}/prevalence-text-bg-tall.png");
@@ -145,7 +145,7 @@
             width: 740px;
             height: 180px;
             margin: 30px auto 25px auto;
-            padding: 25px 28px;
+            padding: 15px 28px;
             font-size: 20px;
             line-height: 22px;
 
@@ -157,7 +157,7 @@
             p.line-two {
                 font-size: 23px;
                 line-height: 25px;
-                padding-bottom: 9px;
+                padding-bottom: 20px;
             }
             p.line-three {
                 font-size: 18px;
