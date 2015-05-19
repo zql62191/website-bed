@@ -34,6 +34,9 @@ module.exports = {
                 script: {
                     'js/': dir+'js/',
                     'me/': dir+'me/'
+                },
+                audio: {
+                    'media': dir+'media/'
                 }
             }
         }]

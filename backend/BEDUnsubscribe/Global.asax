@@ -31,16 +31,16 @@
 
     protected void Application_BeginRequest(Object sender, EventArgs e)
     {
-        //if (System.IO.File.Exists(HttpContext.Current.Request.PhysicalPath))
-        //{
-        //    if (HttpContext.Current.Request.IsSecureConnection.Equals(false))
-        //    {
-        //        Response.Redirect("https://" + Request.ServerVariables["HTTP_HOST"]
-        //            + HttpContext.Current.Request.RawUrl, false);
-        //        Response.StatusCode = 301;
-        //        Response.End();
-        //    }
-        //}
+        if (System.IO.File.Exists(HttpContext.Current.Request.PhysicalPath))
+        {
+            if (HttpContext.Current.Request.IsSecureConnection.Equals(false))
+            {
+                Response.Redirect("https://" + Request.ServerVariables["HTTP_HOST"]
+                    + HttpContext.Current.Request.RawUrl, false);
+                Response.StatusCode = 301;
+                Response.End();
+            }
+        }
     }
     
     void Application_End(object sender, EventArgs e) 

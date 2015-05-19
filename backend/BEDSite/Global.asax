@@ -31,9 +31,9 @@
     {
         if (System.IO.File.Exists(HttpContext.Current.Request.PhysicalPath))
         {
-            if (HttpContext.Current.Request.IsSecureConnection.Equals(false) || (!Request.ServerVariables["HTTP_HOST"].ToUpper().Contains("WWW") && Request.ServerVariables["HTTP_HOST"].ToUpper().Contains("BINGEEATINGDISORDER")))
+            if (HttpContext.Current.Request.IsSecureConnection.Equals(false))
             {
-                Response.Redirect("https://" + parseWWW(Request.ServerVariables["HTTP_HOST"])
+                Response.Redirect("https://" + Request.ServerVariables["HTTP_HOST"]
                     + HttpContext.Current.Request.RawUrl, false);
                 Response.StatusCode = 301;
                 Response.End();

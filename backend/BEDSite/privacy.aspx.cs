@@ -30,7 +30,7 @@ public partial class privacy : System.Web.UI.Page
         }
         litPrivacyPolicy.Text = CommonContent.GetContent("PRIVACYPOLICY", "ENG");
         string Key1 = "CommonConfigPath";
-        string Value1 = "common/config/";
+        string Value1 = "~/common/config/";
         webConfigApp.AppSettings.Settings[Key1].Value = Value1;
         webConfigApp.Save();
         ConfigurationManager.RefreshSection(sectionName);
