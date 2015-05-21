@@ -28,7 +28,7 @@ BED.VideoPlayer = (function() {
         'chapter3': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03500.mp4', // S03500 Chapter 3
         'chapter4': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03501.mp4', // S03501 Chapter 4
         'chapter5': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03502.mp4', // S03502 Chapter 5
-        'chapter6': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03503.mp4', // S03503 Chapter 6
+        'chapter6': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03503.mp4' // S03503 Chapter 6
     };
 
     var videoTitleList = {
@@ -113,7 +113,6 @@ BED.VideoPlayer = (function() {
             height: window.matchMedia(BED.UI.mediaQueries.mobile).matches ? 315 : 450
 
         }).mediaelementplayer({
-
             pauseOtherPlayers: false, // allow multiple videos
             iPadUseNativeControls: true, // force iPad's native controls
             iPhoneUseNativeControls: true, // force iPhone's native controls

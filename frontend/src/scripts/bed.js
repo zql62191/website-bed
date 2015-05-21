@@ -978,7 +978,7 @@ BED.VideoPlayer = (function() {
         'chapter3': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03500.mp4', // S03500 Chapter 3
         'chapter4': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03501.mp4', // S03501 Chapter 4
         'chapter5': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03502.mp4', // S03502 Chapter 5
-        'chapter6': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03503.mp4', // S03503 Chapter 6
+        'chapter6': '//d2ly9zedmmzqz4.cloudfront.net/BED-S03503.mp4' // S03503 Chapter 6
     };
 
     var videoTitleList = {
@@ -1063,7 +1063,6 @@ BED.VideoPlayer = (function() {
             height: window.matchMedia(BED.UI.mediaQueries.mobile).matches ? 315 : 450
 
         }).mediaelementplayer({
-
             pauseOtherPlayers: false, // allow multiple videos
             iPadUseNativeControls: true, // force iPad's native controls
             iPhoneUseNativeControls: true, // force iPhone's native controls
@@ -1365,7 +1364,7 @@ BED.HomeVideoPlayer = (function() {
 
 
     /* ----------- Variables -----------*/
-    
+
     var initialized = false;
 
     var init = function() {
@@ -1377,12 +1376,11 @@ BED.HomeVideoPlayer = (function() {
         initialized = true;
 
         var heroVideos = [
-            '//view.vzaar.com/2552732/video',
-            '//view.vzaar.com/2552735/video',
-            '//view.vzaar.com/2552736/video',
-            '//view.vzaar.com/2552737/video'
+            '//d2ly9zedmmzqz4.cloudfront.net/BED-S04644-1.mp4',
+            '//d2ly9zedmmzqz4.cloudfront.net/BED-S04644-2.mp4',
+            '//d2ly9zedmmzqz4.cloudfront.net/BED-S04644-3.mp4',
+            '//d2ly9zedmmzqz4.cloudfront.net/BED-S04644-4.mp4'
         ];
-
 
         /* ----------- Video Index Cookie - getter/setter -----------*/
 
@@ -1398,9 +1396,9 @@ BED.HomeVideoPlayer = (function() {
 
             for (var i = 0; i < ca.length; i++) {
                 var c = ca[i];
-                
+
                 while (c.charAt(0) === ' ') {
-                    c = c.substring(1); 
+                    c = c.substring(1);
                 }
                 if (c.indexOf(name) === 0) {
                     return c.substring(name.length, c.length);
@@ -1419,12 +1417,12 @@ BED.HomeVideoPlayer = (function() {
 
         // create a video player on the current video
         function createVideoPlayer(index) {
-            
-            var player;    
+
+            var player;
 
             $('#heroPlayer').mediaelementplayer({
-                pauseOtherPlayers: false,       // allow multiple videos
-                startVolume: 0,                 // there is no audio
+                pauseOtherPlayers: false, // allow multiple videos
+                startVolume: 0, // there is no audio
                 features: [],
                 autoRewind: false,
                 success: function(mediaElement) {
@@ -1432,7 +1430,7 @@ BED.HomeVideoPlayer = (function() {
                     player = mediaElement;
 
                     // Load video
-                    mediaElement.setSrc(document.location.protocol + heroVideos[index-1]);
+                    mediaElement.setSrc(document.location.protocol + heroVideos[index - 1]);
 
                     // flash url : controls=false&file=//view.vzaar.com/2552732/video
 
@@ -1445,8 +1443,8 @@ BED.HomeVideoPlayer = (function() {
 
                     player = mediaElement;
                 },
-                error: function () {
-                    console.log('The video did not load properly.');
+                error: function() {
+                    // console.log('The video did not load properly.');
                 }
             });
 
@@ -1464,7 +1462,7 @@ BED.HomeVideoPlayer = (function() {
                 if (isTabletMobile) {
                     $('.content-wrap').addClass('quick');
                 }
-                
+
                 $('.home-video').removeClass('active');
 
                 $('.home-video-container')
@@ -1491,13 +1489,13 @@ BED.HomeVideoPlayer = (function() {
         }
 
         /* ----------- Init -----------*/
-        
+
         var isTabletMobile = false;
         $('#heroPlayer').ready(function() {
 
             // hide homepage video if tablet or mobile
-            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+
                 isTabletMobile = true;
                 $('#heroPlayer').hide();
                 $('.section--home .content-wrap').addClass('active');
@@ -1508,23 +1506,23 @@ BED.HomeVideoPlayer = (function() {
         var oldVideoCookie = getCookie('videoIndex');
 
 
-        $('.home-video').ready( function() {
+        $('.home-video').ready(function() {
 
             var newVideoCookie;
 
-            if (oldVideoCookie === '') {    // if the cookie has not been set
+            if (oldVideoCookie === '') { // if the cookie has not been set
 
                 // set it to 1 and play video number 1
                 setVideoCookie(1);
                 playHomeVideo(1);
 
-            } else if (parseInt(oldVideoCookie, 10) === 4) {    // the cookie has reached the last video index value
+            } else if (parseInt(oldVideoCookie, 10) === 4) { // the cookie has reached the last video index value
 
-                newVideoCookie = 1;     // reset it to first video
+                newVideoCookie = 1; // reset it to first video
                 setVideoCookie(newVideoCookie);
                 playHomeVideo(newVideoCookie);
 
-            } else {    // normal case
+            } else { // normal case
                 newVideoCookie = parseInt(oldVideoCookie, 10) + 1;
                 setVideoCookie(newVideoCookie);
                 playHomeVideo(newVideoCookie);
@@ -1535,7 +1533,7 @@ BED.HomeVideoPlayer = (function() {
             $(this).fadeOut(500);
         });
 
-        
+
     };
 
     // Return the module object
