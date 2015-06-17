@@ -1,6 +1,6 @@
 module.exports = {
     options: {
-        browsers: ['last 2 version', '> 1%', 'ff 17', 'ie 8', 'ie 7']
+        browsers: ['last 2 version', '> 1%', 'ff 17', 'ie 8']
     },
     dev: {
         options: {

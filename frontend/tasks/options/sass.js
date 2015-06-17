@@ -4,12 +4,12 @@ module.exports = {
         force: true,
         quiet: false,
         trace: false,
-        noCache: true
+        noCache: false
     },
     dev: {
         options: {
             style: 'expanded',
-            sourcemap: true // sass-media_query_combiner does not work when this is true, luckily we only want it for a prod build :)
+            sourcemap: 'file'
         },
         files: [{
             expand: true,
@@ -22,7 +22,7 @@ module.exports = {
     prod: {
         options: {
             style: 'compressed',
-            sourcemap: false
+            sourcemap: 'none'
         },
         files: [{
             expand: true,

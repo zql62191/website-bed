@@ -22,12 +22,13 @@ module.exports = {
         // Reference: https://github.com/jshint/jshint/blob/2.1.4/src/shared/messages.js
         '-W013': true, // Missing space after '{a}'.
         '-W032': true, // Unnecessary semicolon.
+        '-W064': true, // "Missing 'new' prefix when invoking a constructor."
         '-W098': true // '{a}' is defined but never used.
     },
     dev: {
         src: [
-            'src/scripts/*.js',
-            'src/scripts/bed/*.js'
+            'src/scripts/**/*.js',
+            '!src/scripts/vendor/*.js'
         ]
     },
     tasks: {

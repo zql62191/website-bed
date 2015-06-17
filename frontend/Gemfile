@@ -1,13 +1,15 @@
-source 'http://rubygems.org'
+source "https://rubygems.org"
 
-gem 'sass', '>= 3.3.7'
-gem 'compass', '>= 1.0.0.alpha.20'
-gem 'compass-borderbox', '>= 0.1.2.0'
-gem 'compass-rgbapng', '>= 0.2.1'
-gem 'oily_png', '>= 1.1.1'
-gem 'bootstrap-sass', '>= 3.1.1.1'
-gem 'jeet', '>= 0.0.4'
-gem 'bourbon-compass', '>= 4.0.1'
-gem 'neat-compass', '>= 1.6.0'
-gem 'bitters-compass', '>= 0.9.3'
-gem 'sass-media_query_combiner', '>= 0.0.6'
+gem "sass"
+gem "compass"
+gem "compass-borderbox"
+gem "compass-rgbapng"
+gem "oily_png"
+# gem "bootstrap-sass"
+# gem "jeet"
+gem "bourbon-compass"
+# gem "neat-compass"
+# gem "bitters-compass"
+gem "SassyStrings"
+gem "sassy-math"
+gem "3d-ribbon"

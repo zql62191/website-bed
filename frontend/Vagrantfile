@@ -1,0 +1,64 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# Make sure dist exists
+directory_name = "dist"
+Dir.mkdir(directory_name) unless File.exists?(directory_name)
+
+# Used for some configs
+has_admin = !!ENV["HAS_ADMIN"]
+
+# if has_admin
+#   puts "you have admin"
+# else
+#   puts "you dont have admin"
+# end
+
+Vagrant.configure("2") do |config|
+
+  # Setup box
+  config.vm.box = "scotch/box"
+  config.vm.network "private_network", ip: "192.168.33.10"
+  config.vm.hostname = "scotchbox"
+
+  # Check for environment variable to denote we have sudo
+  if has_admin
+    config.vm.synced_folder "dist/", "/var/www/public/hcp", type: "nfs", mount_options: ["actimeo=1"]
+  else
+    config.vm.synced_folder "dist/", "/var/www/public/hcp"
+  end
+
+  # Forward Apache Ports
+  config.vm.network "forwarded_port", guest: 80, host: 3000, auto_correct: true
+
+  # Forward LiveReload Ports
+  if !has_admin
+    config.vm.network "forwarded_port", guest: 35729, host: 35729
+  end
+
+  # Weinre Ports
+  if !has_admin
+    config.vm.network "forwarded_port", guest: 8081, host: 8081
+  end
+
+  # Enable SSH Forwarding
+  config.ssh.forward_agent = true
+
+  # Configure resources statically
+  config.vm.provider "virtualbox" do |v|
+    v.customize ["modifyvm", :id, "--memory", 512]
+    v.customize ["modifyvm", :id, "--cpus", 1]
+  end
+
+  if Vagrant.has_plugin?("vagrant-exec")
+    # Tell the vagrant-exec plugin where to execute commands
+    config.exec.commands "*", directory: "/vagrant"
+  end
+
+  # Provisioning script (the name refers to where grunt runs)
+  if has_admin
+    config.vm.provision :shell, :privileged => false, :path => "outside.sh"
+  else
+    config.vm.provision :shell, :privileged => false, :run => "always", :path => "inside.sh"    
+  end
+end

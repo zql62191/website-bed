@@ -1,0 +1,234 @@
+// Gill Sans
+@mixin gs($type: "", $specify: false) {
+
+    @if $specify == true or $type == "" {
+        font-family: 'Gill Sans W01';
+    }
+
+    @if $type == "light" {
+        font-weight: 100;
+        font-style: normal;
+    }
+    @else if $type == "light-italic" {
+        font-weight: 100;
+        font-style: italic;
+    }
+    @else if $type == "roman" or $type == "" {
+        font-weight: 300;
+        font-style: normal;
+    }
+    @else if $type == "italic" {
+        font-weight: 300;
+        font-style: italic;
+    }
+    @else if $type == "bold" {
+        font-weight: 400;
+        font-style: normal;
+    }
+    @else if $type == "bold-italic" {
+        font-weight: 400;
+        font-style: italic;
+    }
+
+}
+
+// Helvetica Neue
+@mixin hn($type: "", $specify: false) {
+
+    @if $specify == true or $type == "" {
+        font-family:'Neue Helvetica W01';
+    }
+
+    @if $type == "light" {
+        font-weight: 300;
+        font-style: normal;
+    }
+    @else if $type == "light-italic" {
+        font-weight: 300;
+        font-style: italic;
+    }
+    @else if $type == "roman" or $type == "" {
+        font-weight: 400;
+        font-style: normal;
+    }
+    @else if $type == "italic" {
+        font-weight: 400;
+        font-style: italic;
+    }
+    @else if $type == "bold" {
+        font-weight: 600;
+        font-style: normal;
+    }
+    @else if $type == "bold-italic" {
+        font-weight: 600;
+        font-style: italic;
+    }
+    @else if $type == "medium" {
+        font-weight: 500;
+        font-style: normal;
+    }
+    @else if $type == "medium-italic" {
+        font-weight: 500;
+        font-style: italic;
+    }
+
+}
+
+//              /$$               /$$ /$$
+//             | $$              | $$|__/
+//   /$$$$$$$ /$$$$$$   /$$   /$$| $$ /$$ /$$$$$$$   /$$$$$$
+//  /$$_____/|_  $$_/  | $$  | $$| $$| $$| $$__  $$ /$$__  $$
+// |  $$$$$$   | $$    | $$  | $$| $$| $$| $$  \ $$| $$  \ $$
+//  \____  $$  | $$ /$$| $$  | $$| $$| $$| $$  | $$| $$  | $$
+//  /$$$$$$$/  |  $$$$/|  $$$$$$$| $$| $$| $$  | $$|  $$$$$$$
+// |_______/    \___/   \____  $$|__/|__/|__/  |__/ \____  $$
+//                      /$$  | $$                   /$$  \ $$
+//                     |  $$$$$$/                  |  $$$$$$/
+//                      \______/                    \______/
+
+body {
+    @include gs("light", true);
+    color: #E8E9E9;
+    background: #333E48;
+}
+
+em, i {
+    font-style: italic;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+
+h1, .heading--1 {
+
+}
+h2, .heading--2 {
+
+}
+h3, .heading--3 {
+
+}
+h4, .heading--4 {
+
+}
+h5, .heading--5 {
+
+}
+h6, .heading--6 {
+
+}
+p {
+
+}
+li {
+
+}
+
+//            /$$           /$$
+//           |__/          |__/
+//   /$$$$$$$ /$$ /$$$$$$$$ /$$ /$$$$$$$   /$$$$$$
+//  /$$_____/| $$|____ /$$/| $$| $$__  $$ /$$__  $$
+// |  $$$$$$ | $$   /$$$$/ | $$| $$  \ $$| $$  \ $$
+//  \____  $$| $$  /$$__/  | $$| $$  | $$| $$  | $$
+//  /$$$$$$$/| $$ /$$$$$$$$| $$| $$  | $$|  $$$$$$$
+// |_______/ |__/|________/|__/|__/  |__/ \____  $$
+//                                        /$$  \ $$
+//                                       |  $$$$$$/
+//                                        \______/
+
+@include mq("lg") {
+
+    body {
+
+    }
+    h1, .heading--1 {
+
+    }
+    h2, .heading--2 {
+
+    }
+    h3, .heading--3 {
+
+    }
+    h4, .heading--4 {
+
+    }
+    h5, .heading--5 {
+
+    }
+    h6, .heading--6 {
+
+    }
+    p {
+
+    }
+    li {
+
+    }
+}
+@include mq("md") {
+
+    body {
+
+    }
+    h1, .heading--1 {
+
+    }
+    h2, .heading--2 {
+
+    }
+    h3, .heading--3 {
+
+    }
+    h4, .heading--4 {
+
+    }
+    h5, .heading--5 {
+
+    }
+    h6, .heading--6 {
+
+    }
+    p {
+
+    }
+    li {
+
+    }
+}
+@include mq("sm") {
+
+    body {
+
+    }
+    h1, .heading--1 {
+
+    }
+    h2, .heading--2 {
+
+    }
+    h3, .heading--3 {
+
+    }
+    h4, .heading--4 {
+
+    }
+    h5, .heading--5 {
+
+    }
+    h6, .heading--6 {
+
+    }
+    p {
+
+    }
+    li {
+
+    }
+}
+
+nav li {
+    padding-bottom: 0;
+}

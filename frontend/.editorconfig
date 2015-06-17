@@ -17,9 +17,14 @@ indent_size = 4
 # Jade
 [*.jade]
 indent_style = space
-indent_size = 2
+indent_size = 4
 
 # SCSS
 [*.scss]
 indent_style = space
 indent_size = 4
+
+# JSON
+[*.json]
+indent_style = space
+indent_size = 2

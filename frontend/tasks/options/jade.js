@@ -1,6 +1,6 @@
 module.exports = {
     options: {
-        basedir: 'src/content/',
+        basedir: 'src/markup/',
         processContent: function(content) {
             var yfm = require('assemble-yaml');
             return yfm.stripYFM(content, {
@@ -8,8 +8,13 @@ module.exports = {
             });
         },
         processName: function(filename) {
-            // return filename.replace('src/content/pages', '').replace('.jade', '');
+            // return filename.replace('src/markup/pages', '').replace('.jade', '');
             return filename;
+        },
+        filters: {
+            raw: function(html, options) {
+                return '\n' + html + '\n';
+            }
         }
     },
     dev: {
@@ -23,17 +28,24 @@ module.exports = {
                     prod: false,
                     from: src,
                     to: dest,
-                    site: yfm.extractJSON('src/content/data/site.yaml'),
-                    env: yfm.extractJSON('src/content/data/dev.yaml'),
-                    page: yfm.extractJSON('./' + src),
-                    path: dest.replace('dist','').replace('index.html', '').replace('unsubscribe.html', 'Unsubscribe/').replace('.html', '.aspx')
+                    fileName: src[0].replace('src/markup/pages/', '').replace('.jade', '').split('/').pop(),
+                    site: yfm.extractJSON('src/markup/data/site.yaml'),
+                    env: yfm.extractJSON('src/markup/data/dev.yaml'),
+                    page: yfm.extractJSON('./' + src)
                 };
             }
         },
         files: [{
-            cwd: 'src/content/pages',
+            cwd: 'src/markup/pages',
             dest: 'dist/',
-            src: ['**/*.jade', '!**/_*.jade'],
+            src: ['**/*.jade'],
+            expand: true,
+            filter: 'isFile',
+            ext: '.aspx'
+        }, {
+            cwd: 'src/markup/views',
+            dest: 'dist/views',
+            src: ['**/*.jade'],
             expand: true,
             filter: 'isFile',
             ext: '.html'
@@ -50,17 +62,24 @@ module.exports = {
                     prod: true,
                     from: src,
                     to: dest,
-                    site: yfm.extractJSON('src/content/data/site.yaml'),
-                    env: yfm.extractJSON('src/content/data/prod.yaml'),
-                    page: yfm.extractJSON('./' + src),
-                    path: dest.replace('dist','').replace('index.html', '').replace('unsubscribe.html', 'Unsubscribe/').replace('.html', '.aspx')
+                    fileName: src[0].replace('src/markup/pages/', '').replace('.jade', '').split('/').pop(),
+                    site: yfm.extractJSON('src/markup/data/site.yaml'),
+                    env: yfm.extractJSON('src/markup/data/prod.yaml'),
+                    page: yfm.extractJSON('./' + src)
                 };
             }
         },
         files: [{
-            cwd: 'src/content/pages/',
+            cwd: 'src/markup/pages',
             dest: 'dist/',
-            src: ['**/*.jade', '!**/_*.jade'],
+            src: ['**/*.jade'],
+            expand: true,
+            filter: 'isFile',
+            ext: '.aspx'
+        }, {
+            cwd: 'src/markup/views',
+            dest: 'dist/views',
+            src: ['**/*.jade'],
             expand: true,
             filter: 'isFile',
             ext: '.html'

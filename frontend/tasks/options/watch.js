@@ -1,45 +1,39 @@
 module.exports = {
     options: {
-        livereload: true
+        dot: true,
+        interrupt: false,
+        livereload: true,
+        livereloadOnError: false,
+        spawn: false
     },
-    jade: {
-        files: [
-            'src/content/**/*.{yaml,jade}'
-        ],
-        tasks: ['jade:dev', 'cachebust:dev:html']
+    markup: {
+        files: ['src/markup/**/*.{yaml,jade,html,jsp}', '!src/markup/pages/**/*.{yaml,jade,html,jsp}'],
+        tasks: ['markup:dev']
+    },
+    markup_pages: {
+        files: ['src/markup/pages/**/*.{yaml,jade,html,jsp}'],
+        tasks: ['markup:watch']
     },
     tasks: {
         files: ['tasks/**/*.js'],
         tasks: ['jshint:tasks', 'build:dev']
     },
-    fonts: {
-        files: ['src/fonts/**/*.{ttf,otf,eot,woff,svg}'],
-        tasks: ['fonts']
-    },
     images: {
-        files: ['src/images/**/*.{gif,jpg,png}'],
-        tasks: ['images:dev']
+        files: ['src/images/**/*.{gif,jpg,png}', '!src/images/**/sprites/*.png'],
+        tasks: ['images:watch']
     },
-    sass: {
-        files: ['src/styles/**/*.scss'],
-        tasks: ['styles:dev', 'cachebust:dev']
+    styles: {
+        files: ['src/styles/**/*.scss', 'src/images/**/sprites/*.png'],
+        tasks: ['styles:dev']
     },
     scripts: {
-        files: [
-            'src/scripts/**/*.js'
-        ],
-        tasks: ['scripts:dev', 'cachebust:dev:html']
+        files: ['src/scripts/**/*.js'],
+        tasks: ['scripts:watch']
     },
-    media: {
+    assets: {
         files: [
-            'src/media/**/*'
+            'src/assets/**/*'
         ],
-        tasks: ['media']
-    },
-    vendor: {
-        files: [
-            'src/vendor/**/*'
-        ],
-        tasks: ['vendor']
+        tasks: ['newer:copy:assets']
     }
 };

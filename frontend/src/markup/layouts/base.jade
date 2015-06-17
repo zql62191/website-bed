@@ -1,0 +1,74 @@
+include /mixins/all.jade
+include /mixins/accordion.jade
+include /mixins/vzaar.jade
+
+doctype
+html(lang="en", xmlns:ng="http://angularjs.org", id="ng-app", ng-app="cdmp", ng-controller="MainController", ng-class="{'no-scroll': stickyFooterOpen}", class=(dev === true) ? "in-dev" : "")
+
+    head
+        meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+        meta(charset="utf-8")
+
+        if page.title
+            title.
+                #{page.title}
+        else if site.title
+            title.
+                #{site.title}
+
+        if page.description
+            meta(name="description", content="#{page.description}")
+        else if page.description
+            meta(name="description", content="#{site.description}")
+
+        if page.keywords
+            meta(name="keywords", content="#{page.keywords}")
+        else if site.keywords
+            meta(name="keywords", content="#{site.keywords}")
+
+        meta(name="format-detection", content="telephone=no")
+
+        meta(id="viewport", name="viewport", content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui")
+
+        //- +favicon("favicon.ico")
+
+        +cblink("/hcp/css/styles.css")
+
+        +script("//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js")
+
+        //- +iscript("js/inline/vp.js")
+
+        +iscript("js/inline/cloak.js")
+
+        +iscript("js/inline/iev.js")
+
+        //- +ie("if IE 8")
+            +cblink("/hcp/css/oldie.css")
+
+        +cbscript("/hcp/js/head.js")
+
+    body(ontouchstart="", class="#{fileName.toLowerCase()}", prime-directive="")
+
+        //- this block is used to put flood light tags and page specific tracking (NOT GOOGLE ANALYTICS)
+        block analytics
+
+        main.content--main
+
+            include /partials/header--global.jade
+
+            block content
+
+            include /partials/footer--global.jade
+
+            .injector--modal
+
+        +cbscript("/hcp/js/vendor.js")
+        +cbscript("/hcp/js/templates.js")
+        +cbscript("/hcp/js/app.js")
+
+        if dev
+            +not-ie
+                script.
+                    /local|ngrok|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/ig.test(location.hostname) && 'WebSocket' in window && window.WebSocket.CLOSING === 2 && document.write('\x3Cscript src="//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1">\x3C/script>');
+                //- script.
+                    /local|ngrok|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/ig.test(location.hostname) && /iP(hone|od|ad)|Android|BlackBerry|IEMobile/i.test(navigator.userAgent) && document.write('<script src="//'+(location.host||"localhost").split(":")[0]+':8081/target/target-script-min.js">\x3c/script>');

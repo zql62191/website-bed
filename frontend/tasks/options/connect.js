@@ -1,10 +1,13 @@
 module.exports = {
     dev: {
         options: {
-            hostname: '*', // breaks something (on my machine)
+            hostname: '*',
             // hostname: '<%= grunt.config.get("ip") %>',
             port: 3000,
-            base: 'dist/'
+            base: 'dist/',
+            appName: 'open',
+            open: true,
+            livereload: false
         }
     }
 };

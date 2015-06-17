@@ -5,10 +5,7 @@ module.exports = {
             '.gitignore',
             '.sass-cache',
             'node_modules',
-            'ruby_gems',
-            'src/tests/**',
-            'src/content/data/**',
-            'src/vendor/**'
+            'ruby_gems'
         ]
     },
     fonts: {
@@ -23,7 +20,7 @@ module.exports = {
         files: [{
             cwd: 'src/images/',
             dest: 'dist/img/',
-            src: ['**/*.{gif,jpg,png}'],
+            src: ['**/*.{gif,jpg,png}', '!**/sprites/*.png'],
             expand: true
         }]
     },
@@ -33,27 +30,16 @@ module.exports = {
             dest: 'dist/js/',
             src: ['*.{js,htc,map}'],
             expand: true
-        }]
-    },
-    styles: {
-        files: [{
-            cwd: 'src/styles/',
-            dest: 'dist/css/',
-            src: ['*.css'],
+        }, {
+            cwd: 'src/scripts/inline/',
+            dest: 'dist/js/inline/',
+            src: ['*.{js,htc,map}'],
             expand: true
         }]
     },
-    media: {
+    assets: {
         files: [{
-            cwd: 'src/media/',
-            dest: 'dist/media/',
-            src: ['**/*'],
-            expand: true
-        }]
-    },
-    vendor: {
-        files: [{
-            cwd: 'src/vendor/',
+            cwd: 'src/assets/',
             dest: 'dist/',
             src: ['**/*'],
             expand: true,
@@ -62,10 +48,10 @@ module.exports = {
     },
     integrate: {
         files: [{
-            cwd: 'dist/',
-            dest: '../backend/BEDSite/content/',
-            src: ['**/*', '!privacy.aspx', '!.htaccess', '!robots.txt'],
             expand: true,
+            cwd: 'dist/',
+            src: ['**'],
+            dest: '../REPLACE/ME',
             dot: true
         }]
     }

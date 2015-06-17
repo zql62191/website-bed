@@ -1,3 +1,7 @@
+var files = {
+    'dist/js/app.js': ['dist/js/app.js']
+};
+
 module.exports = {
     options: {
 
@@ -7,29 +11,23 @@ module.exports = {
             compress: {
                 drop_console: false
             },
+            sourceMapIn: function(src) {
+                return src + '.map';
+            },
             sourceMap: true
         },
-        files: [{
-            expand: true,
-            cwd: 'src/scripts',
-            src: ['*.js'],
-            dest: 'dist/js/',
-            ext: '.js'
-        }]
+        files: files
     },
     prod: {
         options: {
             compress: {
                 drop_console: true
             },
+            sourceMapIn: function(src) {
+                return src + '.map';
+            },
             sourceMap: false
         },
-        files: [{
-            expand: true,
-            cwd: 'src/scripts',
-            src: ['*.js'],
-            dest: 'dist/js/',
-            ext: '.js'
-        }]
+        files: files
     }
 };

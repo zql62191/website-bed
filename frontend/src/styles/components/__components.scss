@@ -1,12 +1,12 @@
-@import "_section";
-@import "_mask";
-@import "_btn";
-@import "_bar";
-@import "_next-section";
-@import "_modal";
-@import "_slideout";
-@import "_sign-up";
-@import "_dsm5-slideout";
-@import "_page-header";
-@import "_page-nav";
-@import "_page-footer";
+// Components
+
+// For smaller components, there is the components/ folder (frequently called modules/).
+// While layout/ is kind of macro (defining the global wireframe), components/ is more micro.
+// It can contain all kinds of specific modules like a slider, a loader, a widget, or anything
+// along those lines. There are usually a lot of files in components/ since your site is should
+// be mostly composed of tiny modules.
+
+@import "_sprites.scss";
+@import "_buttons.scss";
+@import "_forms.scss";
+@import "_modals.scss";

@@ -31,9 +31,7 @@ module.exports = {
         uglify: true,
 
         // Define any tests you want to implicitly include.
-        tests: [
-            'websockets'
-        ],
+        tests: [],
 
         // By default, this task will crawl your project for references to Modernizr tests.
         // Set to false to disable.
@@ -44,7 +42,7 @@ module.exports = {
         files: {
             src: [
                 'src/**/*.{js,scss}',
-                '!src/scripts/libs/*'
+                '!src/scripts/vendor/*'
             ]
         },
 

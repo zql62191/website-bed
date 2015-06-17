@@ -1,42 +1,43 @@
 var files = {
-    'src/scripts/bed.js': [
-        'src/scripts/bed/bed.js',
-        'src/scripts/bed/bed.ui.js',
-        'src/scripts/bed/bed.slideout.js',
-        'src/scripts/bed/bed.modal.js',
-        'src/scripts/bed/bed.skrollr.js',
-        'src/scripts/bed/bed.videoplayer.js',
-        'src/scripts/bed/bed.analytics.js',
-        'src/scripts/bed/bed.homevideoplayer.js',
-        'src/scripts/bed/bed.audio.js'
+    'dist/js/head.js': [
+        'src/scripts/vendor/console.min.js',
+        'src/scripts/vendor/requestAnimationFrame.min.js',
+        'src/scripts/vendor/modernizr.custom.min.js',
+        'src/scripts/vendor/respond.min.js',
+        'src/scripts/vendor/media.match.min.js',
+        'src/scripts/vendor/matchmedia.addListener.min.js',
+        'src/scripts/vendor/picturefill.min.js'
     ],
-    'dist/js/libs.js': [
-        'src/scripts/libs/jquery.min.js',
-        'src/scripts/libs/lodash.compat.min.js',
-        'src/scripts/libs/parseuri.min.js',
-        'src/scripts/libs/jquery.velocity.min.js',
-        'src/scripts/libs/velocity.ui.min.js',
-        'src/scripts/libs/fastclick.min.js',
-        // 'src/scripts/libs/jquery.hammer.min.js',
-        'src/scripts/libs/jquery.exists.js',
-        'src/scripts/libs/jquery.run.js',
-        'src/scripts/libs/jquery.browser.min.js',
-        'src/scripts/libs/jquery.history.min.js',
-        'src/scripts/libs/skrollr.min.js',
-        'src/scripts/libs/bowser.min.js',
-        'src/scripts/libs/matchMedia.js',
-        'src/scripts/libs/jquery.placeholder.js',
-        'src/scripts/libs/polyfills.js',
-        'src/scripts/libs/angular.min.js',
-        'src/scripts/libs/ui-utils.min.js'
+    'dist/js/vendor.js': [
+        'src/scripts/vendor/lodash.min.js',
+        'src/scripts/vendor/parseuri.min.js',
+        'src/scripts/vendor/fastclick.min.js',
+        'src/scripts/vendor/jquery.min.js',
+        'src/scripts/vendor/angular.min.js',
+        // 'src/scripts/vendor/angular-route.min.js',
+        'src/scripts/vendor/angular-sanitize.min.js',
+        // 'src/scripts/vendor/angular-cookies.min.js',
+        'src/scripts/vendor/matchmedia-ng.min.js',
+        'src/scripts/vendor/angular-scroll.min.js',
+        'src/scripts/vendor/bowser.min.js',
+        'src/scripts/vendor/moment.min.js',
+        'src/scripts/vendor/he.min.js',
+        'src/scripts/vendor/mobiscroll.custom-2.15.0.min.js',
+        'src/scripts/vendor/catchall.js'
     ],
-    'dist/js/ie.js': [
-        'src/scripts/libs/html5shiv.min.js',
-        'src/scripts/libs/nwmatcher.min.js',
-        'src/scripts/libs/selectivizr.min.js',
-        'src/scripts/libs/respond.min.js'
-    ],
-    'dist/js/skrollr.ie.js': 'src/scripts/libs/skrollr.ie.min.js'
+    'dist/js/app.js': [
+        'src/scripts/app/vendor/ngMask.js',
+        'src/scripts/app/vendor/rcMailgun.js',
+        'src/scripts/app/services/services.js',
+        'src/scripts/app/services/modalService.js',
+        'src/scripts/app/services/analyticsProvider.js',
+        'src/scripts/app/controllers/controllers.js',
+        'src/scripts/app/controllers/mainController.js',
+        'src/scripts/app/controllers/modalController.js',
+        'src/scripts/app/directives/directives.js',
+        'src/scripts/app/filters/filters.js',
+        'src/scripts/app/app.js'
+    ]
 };
 
 module.exports = {

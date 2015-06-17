@@ -4,23 +4,24 @@ module.exports = {
             force: true
         },
         src: [
-            './tmp',
-            './dist',
-            './.sass-cache'
+            './dist/*'
         ]
     },
-    sass: {
+    inline: {
         options: {
             force: true
         },
-        src: ['./sass-cache']
+        src: [
+            './dist/js/inline'
+        ]
     },
     integrate: {
         options: {
             force: true
         },
         src: [
-            '../backend/BEDSite/content/'
+            '../REPLACE/*',
+            '!../REPLACE/ME'
         ]
     }
 };

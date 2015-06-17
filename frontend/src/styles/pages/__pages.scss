@@ -1,4 +1,7 @@
-@import "index/__index";
-@import "_contact-us";
-@import "_privacy-policy";
-@import "_unsubscribe";
+// Pages
+
+// If you have page-specific styles, I think it’s cool to put them in a pages/ folder and in a file
+// named after the page. For example, it’s not uncommon to have very specific styles for the home page,
+// so you’d have a _home.scss file in pages/ dealing with this.
+
+@import "_index.scss";
