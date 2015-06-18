@@ -18,7 +18,7 @@ html(lang="en", xmlns:ng="http://angularjs.org", id="ng-app", ng-app="cdmp", ng-
 
         if page.description
             meta(name="description", content="#{page.description}")
-        else if page.description
+        else if site.description
             meta(name="description", content="#{site.description}")
 
         if page.keywords

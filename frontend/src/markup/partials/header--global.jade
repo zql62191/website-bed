@@ -9,33 +9,47 @@ header.header--global
             .hcp.
                 This site is intended for US health care professionals only.
 
-            a(href="/hcp/sign-up.aspx").signup.
+            a(href="/hcp/sign-up.aspx").signup.hide--md.hide--sm.
                 Get the full !{DSM5} !{BED} criteria
 
-            .menu-tile
+            .menu-tile.hide--lg
+
+            .menu-btn(onclick="$('html').toggleClass('nav-open');").hide--lg
+                .line
+                .line
+                .line
+                .line
 
     .primary-nav
         .wrap--content
             nav
                 ul
+                    li.hide--lg
+                        +a-active(href="/hcp/index.aspx")
+                            | Home
                     li
-                        a(href="/hcp/dsm5-criteria.aspx").
-                            !{DSM5} Criteria
+                        +a-active(href="/hcp/dsm5-criteria.aspx")
+                            | !{DSM5} Criteria
                     li
-                        a(href="/hcp/recognizing-BED.aspx").
-                            Recognizing !{BED}
+                        +a-active(href="/hcp/recognizing-BED.aspx")
+                            | Recognizing !{BED}
                     li
-                        a(href="/hcp/potential-causes.aspx").
-                            Potential Causes
+                        +a-active(href="/hcp/potential-causes.aspx")
+                            | Potential Causes
                     li
-                        a(href="/hcp/patient-statistics.aspx").
-                            Patient Statistics
+                        +a-active(href="/hcp/patient-statistics.aspx")
+                            | Patient Statistics
                     li
-                        a(href="/hcp/effects-of-BED.aspx").
-                            Effects of !{BED}
+                        +a-active(href="/hcp/effects-of-BED.aspx")
+                            | Effects of !{BED}
                     li
-                        a(href="/hcp/identifying-patients.aspx").
-                            Identifying Patients
+                        +a-active(href="/hcp/identifying-patients.aspx")
+                            | Identifying Patients
                     li
-                        a(href="/hcp/support-and-resources.aspx").
-                            Support &amp; Resources
+                        +a-active(href="/hcp/support-and-resources.aspx")
+                            | Support &amp; Resources
+                    li.hide--lg
+                        +a-active(href="/hcp/sign-up.aspx")
+                            | Get the full !{DSM5} #[br.hide--md]!{BED} criteria
+
+           

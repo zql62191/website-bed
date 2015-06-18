@@ -39,15 +39,11 @@ $z-layers: (
     "default" : 1,
     "below" : -1,
     "bottomless-pit" : -9000,
-    "header" : (
-        "global" : 3000,
-        "navopen": 7000
+    "menu" : (
+        "button" : 1001,
+        "overlay": 1000
     ),
-    "footer" : (
-        "sticky" : 4000
-    ),
-    "slideout": 6000,
-    "modal" : 5000
+    "modal" : 2000
 );
 
 // ---------- Media Queries ----------

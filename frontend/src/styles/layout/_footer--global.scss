@@ -1,3 +1,22 @@
 footer.footer--global {
 
+    @include mq("lg", "md") {
+        .legal {
+            white-space: pre;
+        }
+    }
+
+    @include mq("lg") {
+
+    }
+
+    @include mq("md") {
+
+    }
+
+    @include mq("sm") {
+        .legal .line {
+            display: block;
+        }
+    }
 }

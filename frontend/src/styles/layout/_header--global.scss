@@ -1,10 +1,5 @@
 header.header--global {
 
-    .wrap--content {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
     .title-bar {
         height: 60px;
         background: #52758B;
@@ -28,14 +23,7 @@ header.header--global {
         .signup {
             @include gs("light");
         }
-        .menu-tile {
-            width: 60px;
-            height: 60px;
-            background: #333E48;
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
+
     }
     .primary-nav {
 
@@ -94,9 +82,6 @@ header.header--global {
                     border-color: #FDBD3E;
                 }
             }
-            .menu-tile {
-                display: none;
-            }
         }
 
         .primary-nav {
@@ -106,11 +91,23 @@ header.header--global {
 
             }
             nav ul {
-                display: table;
-                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                .no-flexbox & {
+                    display: table;
+                    width: 100%;                    
+                }
             }
             nav ul li {
-                display: table-cell;
+
+                .no-flexbox & {
+                    display: table-cell;
+                }
+
+                &:last-child {
+                    display: none;
+                }
             }
             nav ul li a {
                 border-bottom: 2px solid transparent;
@@ -119,16 +116,175 @@ header.header--global {
                 color: #C9D3D9;
                 transition: border 250ms, color 250ms;
 
+                &.active, 
+                &:hover {
+                    color: #FDBD3E;
+                }
+                &.active {
+                    border-bottom-color: #FDBD3E;
+                }
+
             }
-            nav ul li a.active, 
-            nav ul li a:hover {
-                color: #FDBD3E;
+
+        }
+    }
+
+    @include mq("md", "sm") {
+
+        .title-bar {
+
+            .menu-tile {
+                width: 58px;
+                height: 60px;
+                background: #333E48;
+                position: absolute;
+                top: 0;
+                right: 0;
             }
-            nav ul li a.active {
-                border-bottom-color: #FDBD3E;
+            .menu-btn {
+                width: 24px;
+                height: 17px;
+                position: fixed;
+                top: 21px;
+                right: 17px;
+                cursor: pointer;
+                z-index: z("menu", "button");
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: -21px;
+                    right: -17px;
+                    width: 58px;
+                    height: 60px;
+                }
+
+                .line {
+                    width: 100%;
+                    height: 3px;
+                    position: absolute;
+                    left: 0;
+                    background: #FFFFFF;
+                    transform: rotate(0deg);
+                    transition: 250ms;
+
+                    &:nth-child(1) {
+                        top: 0;
+                    }
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                        top: 7px;
+                    }
+                    &:nth-child(4) {
+                        top: 14px;
+                    }
+                }
+
+                .nav-open & .line {
+
+                    &:nth-child(1) {
+                        top: 7px;
+                        width: 0%;
+                        left: 50%;
+                    }
+                    &:nth-child(2) {
+                        transform: rotate(45deg);
+                    }
+                    &:nth-child(3) {
+                        transform: rotate(-45deg);
+                    }
+                    &:nth-child(4) {
+                        top: 7px;
+                        width: 0%;
+                        left: 50%;
+                    }
+                }
+            }
+        }
+
+        .primary-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: z("menu", "overlay");
+            background: #252F39;
+            opacity: 0;
+            transform: scale(0.85);
+            transform-origin: center center;
+            transition: transform 250ms, opacity 250ms;
+
+            @include mq("op") {
+                background: red;
+            }
+
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+
+            .wrap--content {
+                padding: 15px 0;
+                display: table;
+                height: 100%;
+                width: 100%;
+            }
+
+            &.lte-ie10 {
+                display: none;
+            }
+
+            .nav-open & {
+                visibility: visible;
+                transform: scale(1.0);
+                opacity: 1;
+
+                &.lte-ie10 {
+                    display: block;
+                }
+            }
+
+            nav {
+                display: table-cell;
+                vertical-align: middle;
+                height: 100%;
+            }
+            nav ul {
+
+            }
+            nav ul li {
+                text-align: center;
+                padding: 4px 0;
+
+                &:last-child {
+                    padding-top: 30px;
+
+                    a:before {
+                        content: '';
+                        position: absolute;
+                        top: -15px;
+                        left: 25%;
+                        right: 25%;
+                        height: 1px;
+                        background: #858B91;
+                        pointer-events: none;
+                    }
+                }
+            }
+            nav ul li a {
+                @include gs("light");
+                font-size: 26px;
+                color: #F2F2F2;
+                line-height: 31px;
+                transition: color 250ms;
+
+                &:active,
+                &.active {
+                    color: #FDBD3E;
+                }
             }
         }
     }
+
     @include mq("md") {
 
         .title-bar {
@@ -141,12 +297,9 @@ header.header--global {
             .hcp {
                 margin-left: 32px;
             }
-            .signup {
-                display: none;
-            }
         }
         .primary-nav {
-            display: none;
+
         }
     }
     @include mq("sm") {
@@ -169,13 +322,9 @@ header.header--global {
                 font-size: 10px;
                 line-height: 12px;
             }
-
-            .signup {
-                display: none;
-            }
         }
         .primary-nav {
-            display: none;
+
         }
     }
 }
