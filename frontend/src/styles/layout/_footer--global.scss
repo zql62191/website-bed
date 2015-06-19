@@ -1,8 +1,80 @@
 footer.footer--global {
+    background: #333E48;
+
+    p {
+        color: #858B91;
+
+        a {
+            color: #D6D8DA;
+            transition: color 250ms; 
+
+            &:active {
+                color: #FFBE2C;                    
+            }           
+        }
+    }
+
+    p.legal {
+
+    }
+
+    nav {
+
+    }
+
+    nav ul {
+
+    }
+
+    nav ul li {
+
+    }
+
+    nav ul li a {
+        color: #D6D8DA;
+        transition: color 250ms;
+
+        &:active {
+            color: #FFBE2C;            
+        }
+    }
 
     @include mq("lg", "md") {
-        .legal {
+
+        p {
+            margin: 18px 0;
+            text-align: center;
+        }
+        
+        p.legal {
             white-space: pre;
+        }
+
+        nav {
+
+        }
+
+        nav ul {
+            text-align: center;
+        }
+
+        nav ul li {
+            @include inline-block;
+            margin: 0 9px;
+
+            & + li:before {
+                content: '';
+                position: absolute;
+                left: -12px;
+                top: 15%;
+                bottom: 15%;
+                width: 1px;
+                background: #979DA2;
+            }
+        }
+
+        nav ul li a {
+
         }
     }
 
@@ -15,8 +87,57 @@ footer.footer--global {
     }
 
     @include mq("sm") {
-        .legal .line {
+
+        p {
+            font-size: 14px;
+            line-height: 17px;
+            margin: 18px 0;
+        }
+
+        p.legal {
+            .line {
+                display: block;
+            }
+        }
+
+        .wrap--nav {
+            padding: 0;
+        }
+
+        nav {
+
+        }
+        nav ul {
+
+        }
+        nav ul li {
+            border-bottom: 1px solid #5C656D;
+
+            &:first-child {
+                border-top: 1px solid #5C656D;
+            }
+        }
+        nav ul li a {
             display: block;
+            font-size: 14px;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 $sm-gutter;
+            background: #333E48;
+            transition: color 250ms, background 250ms;
+
+            &:after {
+                content: '>';
+                position: absolute;
+                top: 0;
+                right: $sm-gutter;
+                height: 40px;
+                line-height: 40px;
+            }
+
+            &:active {
+                background: darken(#333E48, 2%);
+            }
         }
     }
 }
