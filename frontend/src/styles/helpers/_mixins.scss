@@ -255,16 +255,14 @@
     }
 }
 
-@mixin hero-img($img, $color: white, $retina: false) {
-
-    $img: "hero/" + $img;
+@mixin hero-img($img, $retina) {
 
     @if file_exists("src/images/" + $img) {
 
         $background-image: image-url($img);
-        $background-position: top center;
+        $background-position: center center;
         $background-repeat: no-repeat;
-        $background-color: $color;
+        $background-color: transparent;
 
         $height: image-height($img);
         $width: image-width($img);
@@ -274,12 +272,12 @@
             $width: $width / 2;
         }
 
-        // min-height: #{round($height)};
-
-        $background-size: #{round($width)} #{round($height)};
-
         background: $background-color $background-image $background-position $background-repeat;
-        background-size: #{round($width)} #{round($height)};
+        background-size: cover;
+
+        padding-top: percentage($height/$width);
+
+        @content;
 
 
     } @else {
@@ -289,6 +287,17 @@
 
         // turned off annoying message
         // @warn $img + " does not exist";
+    }
+}
+
+@mixin hero-bg($img) {
+
+    @each $query, $retina in $queries {
+        @include mq($query) {
+            @include hero-img($query + "/" + $img, $retina) {
+                @content;
+            }
+        }
     }
 }
 

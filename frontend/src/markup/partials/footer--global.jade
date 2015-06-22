@@ -5,14 +5,14 @@ footer.footer--global
         nav
             ul
                 li
-                    a(href="/hcp/unsubscribe.aspx").
-                        Unsubscribe
+                    +a-active(href="/hcp/unsubscribe.aspx")
+                        | Unsubscribe
                 li
-                    a(href="/hcp/contact-us.aspx").
-                        Contact Us
+                    +a-active(href="/hcp/contact-us.aspx")
+                        | Contact Us
                 li
-                    a(href="/hcp/privacy-policy.aspx").
-                        Privacy Policy
+                    +a-active(href="/hcp/privacy-policy.aspx")
+                        | Privacy Policy
                 li
                     a(href="http://www.shire.com/", target="_blank").
                         Shire US
@@ -22,7 +22,9 @@ footer.footer--global
         p.
             #[em !{DSM5}] is a registered trademark of the American Psychiatric Association.
 
-        p SHIRE LOGO HERE
+        p
+            a(href="http://www.shire.com/", target="_blank")
+                +picture-retina("shire-logo.png", "Shire")
 
         p.legal
             span.line

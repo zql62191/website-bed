@@ -2,7 +2,6 @@
 title: "HCP Information on Binge Eating Disorder in Adults"
 description: ""
 keywords: ""
-section: 0
 ---
 
 extends /layouts/base.jade
@@ -13,24 +12,41 @@ extends /layouts/base.jade
 block content
 
     section.section--hero
-        .wrap--content
 
-            p.
-                Binge eating disorder (!{BED}) is a cycle of...
+        .hero-player.audrey
 
-            h1.
-                Binge. Distress. Repeat.#[sup 1]
+            .video
+                .still
 
-            p.
-                Now a distinct disorder, !{BED} is defined as recurring episodes (on average, &ge;1 episode per week for at least 3 months) of consuming a large amount of food in a short time compared with others, a feeling of lack of control during a binge, and marked distress over binge eating. Patients also typically experience shame and guilt, among other symptoms.#[sup 1]
+            .copy
+                .wrap--content
+                    p.eyebrow.
+                        Binge eating disorder (!{BED}) is a cycle of...
+
+                    h1.
+                        Binge. Distress. Repeat.#[sup 1]
+
+                    p.
+                        Now a distinct disorder, !{BED} is defined as recurring episodes (on average, &ge;1 episode per week for at least 3 months) of consuming a large amount of food in a short time compared with others, a feeling of lack of control during a binge, and marked distress over binge eating. Patients also typically experience shame and guilt, among other symptoms.#[sup 1]
 
             .callouts
-                a(href="/hcp/dsm5-criteria.aspx")
-                    h4.
-                        Know the !{DSM5} criteria
-                a(href="/hcp/patient-statistics.aspx")
-                    h4.
-                        See the statistics
-                a(href="/hcp/identifying-patients.aspx")
-                    h4.
-                        Helping your patients
+
+                .wrap--content
+
+                    a(href="/hcp/dsm5-criteria.aspx")
+
+                        h4
+                            | Know the !{DSM5} criteria
+                        .sprite--cta1.is--vc.is--hc
+
+                    a(href="/hcp/patient-statistics.aspx")
+                        
+                        h4
+                            | See the statistics
+                        .sprite--cta2.is--vc.is--hc
+
+                    a(href="/hcp/identifying-patients.aspx")
+                        
+                        h4
+                            | Helping your patients
+                        .sprite--cta3.is--vc.is--hc

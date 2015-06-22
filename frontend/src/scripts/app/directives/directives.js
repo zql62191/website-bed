@@ -3,6 +3,64 @@
 
     angular.module('cdmp.directives', [])
 
+    .directive('mobileNav', ['$window', '$document', '$timeout', '_',
+
+        function($window, $document, $timeout, _) {
+            return {
+                restrict: 'A',
+                link: function(scope, element, attrs) {
+
+                    var ns = '.mobileNav' + _.uniqueId();
+                    var opened = false;
+                    var jqHtml = $document.find('html');
+                    var timeout;
+
+                    function open() {
+
+                        $timeout.cancel(timeout);
+
+                        jqHtml.addClass('nav-transition nav-open');
+
+                        opened = true;
+                    }
+
+                    function close() {
+
+                        jqHtml.removeClass('nav-open');
+
+                        timeout = $timeout(function() {
+                            jqHtml.removeClass('nav-transition');
+                        }, 250);
+
+                        opened = false;
+                    }
+
+                    function toggle() {
+                        if (opened) {
+                            close();
+                        } else {
+                            open();
+                        }
+                    }
+                    element.on('click' + ns, function(e) {
+                        toggle();
+                    });
+
+                    scope.$watch('mq.lg', function(newValue, oldValue) {
+                        if (newValue === true && newValue !== oldValue) {
+                            close();
+                        }
+                    });
+
+                    scope.$on('$destroy', function() {
+                        element.off(ns);
+                    });
+
+                }
+            };
+        }
+    ])
+
     .directive('trackEvent', ['$window', 'Analytics',
 
         function($window, Analytics) {

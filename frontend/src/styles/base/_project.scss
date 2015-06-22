@@ -69,7 +69,7 @@ a {
 }
 
 p a {
-    display: inline;
+    // display: inline;
 }
 
 input,
@@ -117,12 +117,10 @@ sub {
 picture {
     @include inline-block;
 
-//     img {
-//         max-width: 100%;
-//         height: auto;
-//         left: 0px;
-//         top: 0px;
-//     }
+    // An extra 5px gets added to the bottom somehow
+    img {
+        margin-bottom: -5px;
+    }
 }
 
 a > picture {

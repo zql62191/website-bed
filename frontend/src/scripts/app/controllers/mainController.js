@@ -14,11 +14,11 @@
             // Media Queries and Watchers Logic
 
             var mediaQueries = {
+                // p: '(orientation: portrait)',
+                // l: '(orientation: landscape)',
                 sm: 'only screen and (max-width: 640px)',
                 md: 'only screen and (min-width: 641px) and (max-width: 1024px)',
-                lg: 'only screen and (min-width: 1025px)',
-                p: '(orientation: portrait)',
-                l: '(orientation: landscape)'
+                lg: 'only screen and (min-width: 1025px)'
             };
 
             // Changed to put it on the rootScope so services can access it too.
@@ -62,16 +62,6 @@
                     .then(function(modal) {
                         // modal.element.show();
                     });
-            };
-
-            // Sticky footer
-            $scope.stickyFooterOpen = false;
-
-            $scope.showStickyFooter = function() {
-                $scope.stickyFooterOpen = true;
-            };
-            $scope.hideStickyFooter = function() {
-                $scope.stickyFooterOpen = false;
             };
 
 

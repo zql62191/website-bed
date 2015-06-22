@@ -8,6 +8,10 @@ footer.footer--global {
             color: #D6D8DA;
             transition: color 250ms; 
 
+            &:hover {
+                color: #FFFFFF;
+            }
+
             &:active {
                 color: #FFBE2C;                    
             }           
@@ -34,6 +38,11 @@ footer.footer--global {
         color: #D6D8DA;
         transition: color 250ms;
 
+        &:hover {
+            color: #FFFFFF;
+        }
+
+        &.active,
         &:active {
             color: #FFBE2C;            
         }
@@ -83,6 +92,19 @@ footer.footer--global {
     }
 
     @include mq("md") {
+
+        nav {
+            margin-top: 50px;
+        }
+        nav ul {
+
+        }
+        nav ul li {
+
+        }
+        nav ul li a {
+
+        }
 
     }
 

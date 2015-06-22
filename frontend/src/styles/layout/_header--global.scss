@@ -218,7 +218,6 @@ header.header--global {
             opacity: 0;
             transform: scale(0.85);
             transform-origin: center center;
-            transition: transform 250ms, opacity 250ms;
             overflow: auto;
             -webkit-overflow-scrolling: touch;
             pointer-events: none;
@@ -232,6 +231,10 @@ header.header--global {
 
             &.lte-ie10 {
                 display: none;
+            }
+
+            .nav-transition & {
+                transition: transform 250ms, opacity 250ms;
             }
 
             .nav-open & {
