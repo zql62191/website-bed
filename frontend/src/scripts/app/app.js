@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    angular.module('cdmp', ['cdmp.services', 'cdmp.controllers', 'cdmp.directives', 'cdmp.filters', /*'ngRoute',*/ 'ngSanitize', /*'ngCookies',*/ 'matchmedia-ng', 'duScroll', 'ngMask', 'rcMailgun', 'templates'])
+    angular.module('cdmp', ['cdmp.services', 'cdmp.controllers', 'cdmp.directives', 'cdmp.filters', 'ngSanitize', 'ngCookies', 'angular-storage', 'matchmedia-ng', 'duScroll', 'ngMask', 'rcMailgun', 'templates'])
 
     .config(['rcMailgunProvider', 'AnalyticsProvider',
         function(rcMailgunProvider, AnalyticsProvider) {

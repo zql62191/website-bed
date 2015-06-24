@@ -113,6 +113,7 @@ header.header--global {
                 border-bottom: 2px solid transparent;
                 height: 43px;
                 line-height: 43px;
+                font-size: 16px;
                 color: #C9D3D9;
                 transition: border 250ms, color 250ms;
 
@@ -277,9 +278,7 @@ header.header--global {
             }
             nav ul li a {
                 @include gs("light");
-                font-size: 26px;
                 color: #F2F2F2;
-                line-height: 31px;
                 transition: color 250ms;
 
                 &:active,
@@ -304,7 +303,9 @@ header.header--global {
             }
         }
         .primary-nav {
-
+            nav ul li a {
+                font-size: 36px;
+            }
         }
     }
     @include mq("sm") {
@@ -329,7 +330,9 @@ header.header--global {
             }
         }
         .primary-nav {
-
+            nav ul li a {
+                font-size: 26px;
+            }
         }
     }
 }

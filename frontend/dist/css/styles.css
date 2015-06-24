@@ -1,4 +1,4 @@
-/* Last Updated: 2015-06-22 at 06:26:45 PM */
+/* Last Updated: 2015-06-24 at 04:51:51 PM */
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -554,6 +554,46 @@ strong, b {
   font-weight: bold;
 }
 
+.yellow {
+  color: #FDBD3E;
+}
+
+h1, .heading--1 {
+  font-weight: 100;
+  font-style: normal;
+}
+
+@media only screen and (min-width: 1025px) {
+  body, p, a, li {
+    font-size: 18px;
+  }
+
+  h1, .heading--1 {
+    font-size: 32px;
+  }
+
+  h2, .heading--2 {
+    font-size: 24px;
+  }
+
+  h3, .heading--3 {
+    font-size: 21px;
+  }
+
+  h4, .heading--4 {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  h4, .heading--4 {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  h4, .heading--4 {
+    font-size: 18px;
+  }
+}
 nav li {
   padding-bottom: 0;
 }
@@ -624,7 +664,7 @@ nav li {
 @media only screen and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
   .sprite--cta1 {
     background: url('../img/smr/sprites-s2a57ed0be3.png') 0 0 no-repeat;
-    background-size: 77px 229.5px;
+    background-size: 77px 229px;
     height: 79px;
     width: 33px;
   }
@@ -637,7 +677,7 @@ nav li {
 
   .sprite--cta2 {
     background: url('../img/smr/sprites-s2a57ed0be3.png') 0 -79px no-repeat;
-    background-size: 77px 229.5px;
+    background-size: 77px 229px;
     height: 77px;
     width: 69px;
   }
@@ -650,7 +690,7 @@ nav li {
 
   .sprite--cta3 {
     background: url('../img/smr/sprites-s2a57ed0be3.png') 0 -156px no-repeat;
-    background-size: 77px 229.5px;
+    background-size: 77px 229px;
     height: 73px;
     width: 77px;
   }
@@ -663,15 +703,15 @@ nav li {
 
   .sprite--tmp {
     background: url('../img/smr/sprites-s2a57ed0be3.png') 0 -229px no-repeat;
-    background-size: 77px 229.5px;
-    height: 0.5px;
-    width: 0.5px;
+    background-size: 77px 229px;
+    height: 0px;
+    width: 0px;
   }
   .sprite--tmp.is--hc {
-    margin-left: -0.25px;
+    margin-left: -0px;
   }
   .sprite--tmp.is--vc {
-    margin-top: -0.25px;
+    margin-top: -0px;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
@@ -730,7 +770,7 @@ nav li {
 @media only screen and (min-width: 641px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   .sprite--cta1 {
     background: url('../img/mdr/sprites-s6a4f2c4a17.png') 0 0 no-repeat;
-    background-size: 86px 268.5px;
+    background-size: 86px 268px;
     height: 99px;
     width: 41px;
   }
@@ -743,7 +783,7 @@ nav li {
 
   .sprite--cta2 {
     background: url('../img/mdr/sprites-s6a4f2c4a17.png') 0 -99px no-repeat;
-    background-size: 86px 268.5px;
+    background-size: 86px 268px;
     height: 96px;
     width: 86px;
   }
@@ -756,7 +796,7 @@ nav li {
 
   .sprite--cta3 {
     background: url('../img/mdr/sprites-s6a4f2c4a17.png') 0 -195px no-repeat;
-    background-size: 86px 268.5px;
+    background-size: 86px 268px;
     height: 73px;
     width: 77px;
   }
@@ -769,15 +809,15 @@ nav li {
 
   .sprite--tmp {
     background: url('../img/mdr/sprites-s6a4f2c4a17.png') 0 -268px no-repeat;
-    background-size: 86px 268.5px;
-    height: 0.5px;
-    width: 0.5px;
+    background-size: 86px 268px;
+    height: 0px;
+    width: 0px;
   }
   .sprite--tmp.is--hc {
-    margin-left: -0.25px;
+    margin-left: -0px;
   }
   .sprite--tmp.is--vc {
-    margin-top: -0.25px;
+    margin-top: -0px;
   }
 }
 @media only screen and (min-width: 1025px) {
@@ -836,7 +876,7 @@ nav li {
 @media only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2) {
   .sprite--cta1 {
     background: url('../img/lgr/sprites-scbc76ffdcf.png') 0 0 no-repeat;
-    background-size: 85px 268.5px;
+    background-size: 85px 268px;
     height: 99px;
     width: 41px;
   }
@@ -849,7 +889,7 @@ nav li {
 
   .sprite--cta2 {
     background: url('../img/lgr/sprites-scbc76ffdcf.png') 0 -99px no-repeat;
-    background-size: 85px 268.5px;
+    background-size: 85px 268px;
     height: 96px;
     width: 85px;
   }
@@ -862,7 +902,7 @@ nav li {
 
   .sprite--cta3 {
     background: url('../img/lgr/sprites-scbc76ffdcf.png') 0 -195px no-repeat;
-    background-size: 85px 268.5px;
+    background-size: 85px 268px;
     height: 73px;
     width: 77px;
   }
@@ -875,15 +915,15 @@ nav li {
 
   .sprite--tmp {
     background: url('../img/lgr/sprites-scbc76ffdcf.png') 0 -268px no-repeat;
-    background-size: 85px 268.5px;
-    height: 0.5px;
-    width: 0.5px;
+    background-size: 85px 268px;
+    height: 0px;
+    width: 0px;
   }
   .sprite--tmp.is--hc {
-    margin-left: -0.25px;
+    margin-left: -0px;
   }
   .sprite--tmp.is--vc {
-    margin-top: -0.25px;
+    margin-top: -0px;
   }
 }
 @font-face {
@@ -1728,6 +1768,7 @@ header.header--global .title-bar .signup {
     border-bottom: 2px solid transparent;
     height: 43px;
     line-height: 43px;
+    font-size: 16px;
     color: #C9D3D9;
     -webkit-transition: border 250ms, color 250ms;
             transition: border 250ms, color 250ms;
@@ -1877,9 +1918,7 @@ header.header--global .title-bar .signup {
   header.header--global .primary-nav nav ul li a {
     font-weight: 100;
     font-style: normal;
-    font-size: 26px;
     color: #F2F2F2;
-    line-height: 31px;
     -webkit-transition: color 250ms;
             transition: color 250ms;
   }
@@ -1897,6 +1936,9 @@ header.header--global .title-bar .signup {
   }
   header.header--global .title-bar .hcp {
     margin-left: 32px;
+  }
+  header.header--global .primary-nav nav ul li a {
+    font-size: 36px;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -1917,10 +1959,16 @@ header.header--global .title-bar .signup {
     font-size: 10px;
     line-height: 12px;
   }
+  header.header--global .primary-nav nav ul li a {
+    font-size: 26px;
+  }
 }
 
 footer.footer--global {
   background: #333E48;
+}
+footer.footer--global p, footer.footer--global a {
+  font-size: 14px;
 }
 footer.footer--global p {
   color: #858B91;
@@ -2020,93 +2068,291 @@ footer.footer--global nav ul li a.active, footer.footer--global nav ul li a:acti
   }
 }
 
-@media only screen and (min-width: 1401px) {
-  body.index .section--hero .hero-player .video .still {
+@media only screen and (min-width: 1025px) {
+  body.index .section--hero .hero .player .still {
     padding-top: 0 !important;
     height: 644px !important;
+  }
+}
+@media only screen and (min-width: 1401px) {
+  body.index .section--hero .hero .player .still {
     background-size: contain !important;
   }
 }
 @media only screen and (max-width: 640px) {
-  body.index .section--hero .hero-player.audrey .video .still {
-    background: transparent url('../img/sm/index/audrey.jpg?1435011567') center center no-repeat;
+  body.index .section--hero .hero.kimberly .player .still {
+    background: transparent url('../img/sm/index/kimberly.jpg?1435011567') center center no-repeat;
     background-size: cover;
     padding-top: 62.5%;
   }
 }
 @media only screen and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
-  body.index .section--hero .hero-player.audrey .video .still {
-    background: transparent url('../img/smr/index/audrey.jpg?1435011548') center center no-repeat;
+  body.index .section--hero .hero.kimberly .player .still {
+    background: transparent url('../img/smr/index/kimberly.jpg?1435011548') center center no-repeat;
     background-size: cover;
     padding-top: 62.5%;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
-  body.index .section--hero .hero-player.audrey .video .still {
-    background: transparent url('../img/md/index/audrey.jpg?1435010008') center center no-repeat;
+  body.index .section--hero .hero.kimberly .player .still {
+    background: transparent url('../img/md/index/kimberly.jpg?1435010008') center center no-repeat;
     background-size: cover;
     padding-top: 52.08333%;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-  body.index .section--hero .hero-player.audrey .video .still {
-    background: transparent url('../img/mdr/index/audrey.jpg?1435010009') center center no-repeat;
+  body.index .section--hero .hero.kimberly .player .still {
+    background: transparent url('../img/mdr/index/kimberly.jpg?1435010009') center center no-repeat;
     background-size: cover;
     padding-top: 52.08333%;
   }
 }
 @media only screen and (min-width: 1025px) {
-  body.index .section--hero .hero-player.audrey .video .still {
-    background: transparent url('../img/lg/index/audrey.jpg?1435010009') center center no-repeat;
+  body.index .section--hero .hero.kimberly .player .still {
+    background: transparent url('../img/lg/index/kimberly.jpg?1435010009') center center no-repeat;
     background-size: cover;
     padding-top: 46%;
   }
 }
 @media only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2) {
-  body.index .section--hero .hero-player.audrey .video .still {
-    background: transparent url('../img/lgr/index/audrey.jpg?1435010010') center center no-repeat;
+  body.index .section--hero .hero.kimberly .player .still {
+    background: transparent url('../img/lgr/index/kimberly.jpg?1435010010') center center no-repeat;
     background-size: cover;
     padding-top: 46%;
   }
 }
+@media only screen and (max-width: 640px) {
+  body.index .section--hero .hero.nikki .player .still {
+    background: transparent url('../img/sm/index/nikki.jpg?1435164913') center center no-repeat;
+    background-size: cover;
+    padding-top: 62.5%;
+  }
+}
+@media only screen and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+  body.index .section--hero .hero.nikki .player .still {
+    background: transparent url('../img/smr/index/nikki.jpg?1435164913') center center no-repeat;
+    background-size: cover;
+    padding-top: 62.5%;
+  }
+}
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
-  body.index .section--hero .hero-player .callouts {
+  body.index .section--hero .hero.nikki .player .still {
+    background: transparent url('../img/md/index/nikki.jpg?1435166010') center center no-repeat;
+    background-size: cover;
+    padding-top: 52.08333%;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  body.index .section--hero .hero.nikki .player .still {
+    background: transparent url('../img/mdr/index/nikki.jpg?1435166010') center center no-repeat;
+    background-size: cover;
+    padding-top: 52.08333%;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  body.index .section--hero .hero.nikki .player .still {
+    background: transparent url('../img/lg/index/nikki.jpg?1435164614') center center no-repeat;
+    background-size: cover;
+    padding-top: 46%;
+  }
+}
+@media only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2) {
+  body.index .section--hero .hero.nikki .player .still {
+    background: transparent url('../img/lgr/index/nikki.jpg?1435164614') center center no-repeat;
+    background-size: cover;
+    padding-top: 46%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body.index .section--hero .hero.julie .player .still {
+    background: transparent url('../img/sm/index/julie.jpg?1435164949') center center no-repeat;
+    background-size: cover;
+    padding-top: 62.5%;
+  }
+}
+@media only screen and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+  body.index .section--hero .hero.julie .player .still {
+    background: transparent url('../img/smr/index/julie.jpg?1435164950') center center no-repeat;
+    background-size: cover;
+    padding-top: 62.5%;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  body.index .section--hero .hero.julie .player .still {
+    background: transparent url('../img/md/index/julie.jpg?1435166115') center center no-repeat;
+    background-size: cover;
+    padding-top: 52.08333%;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  body.index .section--hero .hero.julie .player .still {
+    background: transparent url('../img/mdr/index/julie.jpg?1435166115') center center no-repeat;
+    background-size: cover;
+    padding-top: 52.08333%;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  body.index .section--hero .hero.julie .player .still {
+    background: transparent url('../img/lg/index/julie.jpg?1435164671') center center no-repeat;
+    background-size: cover;
+    padding-top: 46%;
+  }
+}
+@media only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2) {
+  body.index .section--hero .hero.julie .player .still {
+    background: transparent url('../img/lgr/index/julie.jpg?1435164671') center center no-repeat;
+    background-size: cover;
+    padding-top: 46%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body.index .section--hero .hero.diego .player .still {
+    background: transparent url('../img/sm/index/diego.jpg?1435164982') center center no-repeat;
+    background-size: cover;
+    padding-top: 62.5%;
+  }
+}
+@media only screen and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+  body.index .section--hero .hero.diego .player .still {
+    background: transparent url('../img/smr/index/diego.jpg?1435164982') center center no-repeat;
+    background-size: cover;
+    padding-top: 62.5%;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  body.index .section--hero .hero.diego .player .still {
+    background: transparent url('../img/md/index/diego.jpg?1435166150') center center no-repeat;
+    background-size: cover;
+    padding-top: 52.08333%;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  body.index .section--hero .hero.diego .player .still {
+    background: transparent url('../img/mdr/index/diego.jpg?1435166150') center center no-repeat;
+    background-size: cover;
+    padding-top: 52.08333%;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  body.index .section--hero .hero.diego .player .still {
+    background: transparent url('../img/lg/index/diego.jpg?1435164754') center center no-repeat;
+    background-size: cover;
+    padding-top: 46%;
+  }
+}
+@media only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2) {
+  body.index .section--hero .hero.diego .player .still {
+    background: transparent url('../img/lgr/index/diego.jpg?1435164754') center center no-repeat;
+    background-size: cover;
+    padding-top: 46%;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  body.index .section--hero .hero .player .color {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  body.index .section--hero .hero .player .color:before, body.index .section--hero .hero .player .color:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+  body.index .section--hero .hero .player .color:before {
+    left: 0%;
+    right: 50%;
+    background: #242F38;
+  }
+  body.index .section--hero .hero .player .color:after {
+    left: 50%;
+    right: 0%;
+    background: #36414C;
+  }
+  body.index .section--hero .hero .copy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  body.index .section--hero .hero .copy .wrap--content {
+    padding-top: 40px;
+    padding-left: 622px;
+  }
+  body.index .section--hero .hero .callouts {
+    background: url('../img/rgbapng/333e48f2-5.png?1435166491');
+    background: rgba(51, 62, 72, 0.95);
+    position: absolute;
+    top: 322px;
+    left: 0;
+    width: 100%;
+    text-align: center;
     border-top: 1px solid #4D565E;
     border-bottom: 1px solid #4D565E;
   }
-  body.index .section--hero .hero-player .callouts:before, body.index .section--hero .hero-player .callouts:after {
+  body.index .section--hero .hero .callouts a {
+    height: 197px;
+    width: 264px;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    border-right: 1px solid #4D565E;
+    padding-top: 158px;
+    background: transparent;
+    -webkit-transition: background 250ms;
+            transition: background 250ms;
+  }
+  body.index .section--hero .hero .callouts a:hover {
+    background: url('../img/rgbapng/333e48f2-5.png?1435166491');
+    background: rgba(51, 62, 72, 0.95);
+  }
+  body.index .section--hero .hero .callouts a:first-child {
+    border-left: 1px solid #4D565E;
+  }
+  body.index .section--hero .hero .callouts a h4 {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  body.index .section--hero .hero .callouts {
+    border-top: 1px solid #4D565E;
+    border-bottom: 1px solid #4D565E;
+  }
+  body.index .section--hero .hero .callouts:before, body.index .section--hero .hero .callouts:after {
     content: " ";
     display: table;
   }
-  body.index .section--hero .hero-player .callouts:after {
+  body.index .section--hero .hero .callouts:after {
     clear: both;
   }
-  body.index .section--hero .hero-player .callouts .wrap--content {
+  body.index .section--hero .hero .callouts .wrap--content {
     padding: 0;
   }
-  body.index .section--hero .hero-player .callouts a {
+  body.index .section--hero .hero .callouts a {
     height: 200px;
     width: 33.33333%;
     float: left;
     padding-top: 160px;
     border-left: 1px solid #4D565E;
   }
-  body.index .section--hero .hero-player .callouts a:first-child {
+  body.index .section--hero .hero .callouts a:first-child {
     border-left: none;
   }
-  body.index .section--hero .hero-player .callouts a h4 {
+  body.index .section--hero .hero .callouts a h4 {
     text-align: center;
   }
 }
 @media only screen and (max-width: 640px) {
-  body.index .section--hero .hero-player .callouts .wrap--content {
+  body.index .section--hero .hero .callouts .wrap--content {
     padding: 0;
   }
-  body.index .section--hero .hero-player .callouts a {
+  body.index .section--hero .hero .callouts a {
     height: 100px;
     display: block;
   }
-  body.index .section--hero .hero-player .callouts a h4 {
+  body.index .section--hero .hero .callouts a h4 {
     height: 100%;
     line-height: 100px;
   }

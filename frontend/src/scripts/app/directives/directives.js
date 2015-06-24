@@ -3,6 +3,45 @@
 
     angular.module('cdmp.directives', [])
 
+    .directive('heroPlayer', ['store',
+
+        function(store) {
+            return {
+                restrict: 'A',
+                link: function(scope, element, attrs) {
+
+                    var people = [{
+                        'klass': 'kimberly',
+                        'url': ''
+                    }, {
+                        'klass': 'nikki',
+                        'url': ''
+                    }, {
+                        'klass': 'julie',
+                        'url': ''
+                    }, {
+                        'klass': 'diego',
+                        'url': ''
+                    }];
+
+                    var heroIndex = store.get('heroIndex') || 0;
+
+                    // Setup
+                    element.addClass(people[heroIndex].klass);
+
+                    // TODO: Add video functionality
+
+                    // Save for next time
+                    if (heroIndex + 1 > people.length - 1) {
+                        store.set('heroIndex', 0);
+                    } else {
+                        store.set('heroIndex', heroIndex + 1);
+                    }
+                }
+            };
+        }
+    ])
+
     .directive('mobileNav', ['$window', '$document', '$timeout', '_',
 
         function($window, $document, $timeout, _) {

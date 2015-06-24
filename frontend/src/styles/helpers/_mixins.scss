@@ -17,14 +17,14 @@
     $sprite-position: sprite-position($map, $sprite);
 
     @if $retina == true {
-        $sprite-position: round(nth(sprite-position($map, $sprite), 1) / 2) round(nth(sprite-position($map, $sprite), 2) / 2)
+        $sprite-position: floor(nth(sprite-position($map, $sprite), 1) / 2) floor(nth(sprite-position($map, $sprite), 2) / 2)
     }
 
     // Returns background
     background: $sprite-map $sprite-position $repeat;
 
     @if $retina == true {
-        background-size: (image-width(sprite-path($map)) / 2) (image-height(sprite-path($map)) / 2);
+        background-size: floor(image-width(sprite-path($map)) / 2) floor(image-height(sprite-path($map)) / 2);
     } @else {
         background-size: image-width(sprite-path($map)) image-height(sprite-path($map));
     }
@@ -33,8 +33,8 @@
     $width: 0;
 
     @if $retina == true {
-        $height: (image-height($sprite-image) / 2);
-        $width: (image-width($sprite-image) / 2);
+        $height: floor(image-height($sprite-image) / 2);
+        $width: floor(image-width($sprite-image) / 2);
     } @else {
         $height: image-height($sprite-image);
         $width: image-width($sprite-image);

@@ -2,21 +2,35 @@ body.index {
 
     .section--hero {
 
-        .hero-player {
+        .hero {
 
-            .video {
+            .player {
 
                 .still {
-                    @media only screen and (min-width: 1401px) {
+                    @include mq("lg") {
                         padding-top: 0 !important;
                         height: 644px !important;
+                    }
+                    @media only screen and (min-width: 1401px) {
                         background-size: contain !important;
                     }
                 }
             }
 
-            &.audrey .video .still {
-                @include hero-bg("index/audrey.jpg");
+            &.kimberly .player .still {
+                @include hero-bg("index/kimberly.jpg");
+            }
+
+            &.nikki .player .still {
+                @include hero-bg("index/nikki.jpg");
+            }
+
+            &.julie .player .still {
+                @include hero-bg("index/julie.jpg");
+            }
+
+            &.diego .player .still {
+                @include hero-bg("index/diego.jpg");
             }
 
             .copy {
@@ -30,10 +44,94 @@ body.index {
 
         @include mq("lg") {
 
+            .hero {
+
+                .player {
+
+                    .color {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+
+                        &:before,
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                        }
+
+                        &:before {
+                            left: 0%;
+                            right: 50%;
+                            background: #242F38;
+                        }
+                        &:after {
+                            left: 50%;
+                            right: 0%;
+                            background: #36414C;
+                        }
+
+                        // &:before {
+                        //     background: red;
+                        // }
+                        // &:after {
+                        //     background: blue;
+                        // }
+                    }
+                }
+
+                .copy {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+
+                    .wrap--content {
+                        padding-top: 40px;
+                        padding-left: 622px;
+                    }
+                }
+
+                .callouts {
+                    @include rgba-background(rgba(#333E48, 0.95));
+                    position: absolute;
+                    top: 322px;
+                    left: 0;
+                    width: 100%;
+                    text-align: center;
+                    border-top: 1px solid #4D565E;
+                    border-bottom: 1px solid #4D565E;
+
+                    a {
+                        height: 197px;
+                        width: 264px;
+                        @include inline-block;
+                        border-right: 1px solid #4D565E;
+                        padding-top: 158px;
+                        background: transparent;
+                        transition: background 250ms;
+
+                        &:hover {
+                            @include rgba-background(rgba(#333E48, 0.95));
+                        }
+
+                        &:first-child {
+                            border-left: 1px solid #4D565E;
+                        }
+
+                        h4 {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
         }
         @include mq("md") {
 
-            .hero-player {
+            .hero {
 
                 .callouts {
                     @include clearfix;
@@ -64,7 +162,7 @@ body.index {
         }
         @include mq("sm") {
 
-            .hero-player {
+            .hero {
 
                 .callouts {
 
@@ -83,7 +181,6 @@ body.index {
                     }
                 }
             }
-
         }
     }
 }
