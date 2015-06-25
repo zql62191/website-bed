@@ -39,8 +39,53 @@ body.index {
 
             .callouts {
 
+                a {
+
+                    h4 {
+
+                        &:after {
+                            content: '';
+                            @include inline-block;
+                            height: 8px;
+                            width: 8px;
+                            top: -1px;
+                            margin-left: 10px;
+                            border-right: 2px solid #D6D8DA;
+                            border-bottom: 2px solid #D6D8DA;
+                            transform: rotate(-45deg);
+
+                            .eq-ie8 & {
+                                display: none;
+                            }
+                        }
+                    }
+                }
             }
-        }     
+        }
+
+        ol.refs {
+            border-top: none;
+        }
+
+        @include mq("lg", "md") {
+
+            .hero {
+
+                .callouts {
+                    border-top: 1px solid #4D565E;
+                    border-bottom: 1px solid #4D565E;
+
+                    a {
+                        border-left: 1px solid #4D565E;
+
+                        &:first-child {
+                            border-left: none;
+                        }
+
+                    }
+                }
+            }
+        }
 
         @include mq("lg") {
 
@@ -102,24 +147,29 @@ body.index {
                     left: 0;
                     width: 100%;
                     text-align: center;
-                    border-top: 1px solid #4D565E;
-                    border-bottom: 1px solid #4D565E;
 
                     a {
                         height: 197px;
                         width: 264px;
                         @include inline-block;
-                        border-right: 1px solid #4D565E;
                         padding-top: 158px;
                         background: transparent;
-                        transition: background 250ms;
+                        transition: background 250ms, color 250ms, border-color 250ms;
 
                         &:hover {
                             @include rgba-background(rgba(#333E48, 0.95));
-                        }
+                            color: #FFFFFF;
 
-                        &:first-child {
-                            border-left: 1px solid #4D565E;
+                            h4:after {
+                                border-color: #FFFFFF;
+                            }
+                        }
+                        &:active {
+                            color: $active-yellow;
+
+                            h4:after {
+                                border-color: $active-yellow;
+                            }
                         }
 
                         h4 {
@@ -129,14 +179,57 @@ body.index {
                 }
             }
         }
+
+        @include mq("md", "sm") {
+
+            .hero {
+
+                .copy {
+                    background: #242F38;
+
+                }
+                .callouts {
+                    background: #2F3A45;
+
+                    a {
+                        transition: background 250ms, color 250ms, border-color 250ms;
+
+                        &:active {
+                            background: darken(#2F3A45, 2%);
+                            color: $active-yellow;
+
+                            h4:after {
+                                border-color: $active-yellow;
+                            }
+                        }
+
+                        h4:after {
+                            transition: border 250ms;
+                        }
+                    }
+                }
+            }
+        }
+
         @include mq("md") {
 
             .hero {
 
+                .copy {
+
+                    .wrap--content {
+                        padding-top: 44px;
+                        padding-bottom: 44px;
+
+                        :last-child {
+                            margin-bottom: 0 !important;
+                            padding-bottom: 0 !important;
+                        }
+                    }
+                }
+
                 .callouts {
                     @include clearfix;
-                    border-top: 1px solid #4D565E;
-                    border-bottom: 1px solid #4D565E;
 
                     .wrap--content {
                         padding: 0;
@@ -147,11 +240,6 @@ body.index {
                         width: percentage(1/3);
                         float: left;
                         padding-top: 160px;
-                        border-left: 1px solid #4D565E;
-
-                        &:first-child {
-                            border-left: none;
-                        }
 
                         h4 {
                             text-align: center;
@@ -164,7 +252,22 @@ body.index {
 
             .hero {
 
+                .copy {
+
+                    .wrap--content {
+                        padding-top: 24px;
+                        padding-bottom: 24px;
+
+                        :last-child {
+                            margin-bottom: 0 !important;
+                            padding-bottom: 0 !important;
+                        }
+                    }
+                }
+
                 .callouts {
+                    border-top: 1px solid #4D565E;
+                    border-bottom: 1px solid #4D565E;
 
                     .wrap--content {
                         padding: 0;
@@ -172,11 +275,48 @@ body.index {
 
                     a {
                         height: 100px;
-                        display: block;
+                        padding-left: $sm-gutter;
+                        padding-right: $sm-gutter;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        flex-direction: row;
+                        border-left: none;
+                        border-top: 1px solid #4D565E;
+
+                        .no-flexbox & {
+                            display: block;
+                            text-align: center;
+
+                            h4,
+                            .icon {
+                                @include inline-block;
+                                vertical-align: middle;
+                            }
+
+                            h4 {
+                                padding-right: 20px;
+                            }
+                        }
+
+                        &:first-child {
+                            border-top: none;
+                        }
+
+                        &:nth-of-type(2) {
+                            flex-direction: row-reverse;
+                        }
 
                         h4 {
                             height: 100%;
                             line-height: 100px;
+                        }
+
+                        .icon {
+                            position: relative;
+                            top: auto;
+                            left: auto;
+                            margin: 0;
                         }
                     }
                 }

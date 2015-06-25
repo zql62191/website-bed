@@ -8,13 +8,6 @@ header.header--global {
             @include gs("light");
             color: #E6EEF2;
             transition: color 250ms;
-
-            &:hover {
-                color: #FFFFFF;
-            }
-            &:active {
-                color: #FFBE2C;
-            }
         }
         .hcp {
             @include gs("light-italic");
@@ -54,6 +47,10 @@ header.header--global {
             }
             .title {
                 font-size: 22px;
+
+                &:hover {
+                    color: $active-yellow;
+                }
             }
             .hcp {
                 margin-left: 22px;
@@ -73,13 +70,13 @@ header.header--global {
                 transition: color 250ms, border 250ms, background 250ms;
 
                 &:hover {
-                    color: #FDBD3E;
-                    border-color: #FDBD3E;
+                    color: $active-yellow;
+                    border-color: $active-yellow;
                 }
                 &:active {
                     color: #52758B;
-                    background: #FDBD3E;
-                    border-color: #FDBD3E;
+                    background: $active-yellow;
+                    border-color: $active-yellow;
                 }
             }
         }
@@ -119,10 +116,10 @@ header.header--global {
 
                 &.active, 
                 &:hover {
-                    color: #FDBD3E;
+                    color: $active-yellow;
                 }
                 &.active {
-                    border-bottom-color: #FDBD3E;
+                    border-bottom-color: $active-yellow;
                 }
 
             }
@@ -133,6 +130,13 @@ header.header--global {
     @include mq("md", "sm") {
 
         .title-bar {
+
+            .title {
+
+                &:active {
+                    color: $active-yellow;
+                }
+            }
 
             .menu-tile {
                 width: 58px;
@@ -182,7 +186,7 @@ header.header--global {
                 }
 
                 &:active .line {
-                    background: #FFBE2C;
+                    background: $active-yellow;
                 }
 
                 .nav-open & .line {
@@ -230,7 +234,7 @@ header.header--global {
                 width: 100%;
             }
 
-            &.lte-ie10 {
+            .lt-ie11 & {
                 display: none;
             }
 
@@ -243,10 +247,9 @@ header.header--global {
                 transform: scale(1.0);
                 opacity: 1;
                 pointer-events: all;
-
-                &.lte-ie10 {
-                    display: block;
-                }
+            }
+            .lt-ie11.nav-open & {
+                display: block;
             }
 
             nav {
@@ -283,7 +286,7 @@ header.header--global {
 
                 &:active,
                 &.active {
-                    color: #FDBD3E;
+                    color: $active-yellow;
                 }
             }
         }

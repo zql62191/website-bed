@@ -10,15 +10,7 @@ footer.footer--global {
 
         a {
             color: #D6D8DA;
-            transition: color 250ms; 
-
-            &:hover {
-                color: #FFFFFF;
-            }
-
-            &:active {
-                color: #FFBE2C;                    
-            }           
+            transition: color 250ms;          
         }
     }
 
@@ -41,15 +33,6 @@ footer.footer--global {
     nav ul li a {
         color: #D6D8DA;
         transition: color 250ms;
-
-        &:hover {
-            color: #FFFFFF;
-        }
-
-        &.active,
-        &:active {
-            color: #FFBE2C;            
-        }
     }
 
     @include mq("lg", "md") {
@@ -93,6 +76,56 @@ footer.footer--global {
 
     @include mq("lg") {
 
+        p {
+            a:hover {
+                color: $active-yellow;
+            }
+        }
+
+        nav {
+            margin-top: 50px;
+        }
+        nav ul {
+
+        }
+        nav ul li {
+
+        }
+        nav ul li a {
+
+            &.active,
+            &:hover {
+                color: $active-yellow;      
+            }
+
+        }
+
+    }
+
+    @include mq("md", "sm") {
+
+        p {
+            a:active {
+                color: $active-yellow
+            }
+        }
+
+        nav {
+
+        }
+        nav ul {
+
+        }
+        nav ul li {
+
+        }
+        nav ul li a {
+
+            &.active,
+            &:active {
+                color: $active-yellow;          
+            }
+        }
     }
 
     @include mq("md") {
@@ -153,16 +186,29 @@ footer.footer--global {
             transition: color 250ms, background 250ms;
 
             &:after {
-                content: '>';
+                content: '';
                 position: absolute;
-                top: 0;
+                height: 8px;
+                width: 8px;
+                top: 50%;
                 right: $sm-gutter;
-                height: 40px;
-                line-height: 40px;
+                margin-top: -3px;
+                border-right: 2px solid #D6D8DA;
+                border-bottom: 2px solid #D6D8DA;
+                transform: rotate(-45deg);
+                transition: border 250ms;
+
+                .eq-ie8 & {
+                    display: none;
+                }
             }
 
             &:active {
                 background: darken(#333E48, 2%);
+
+                &:after {
+                    border-color: $active-yellow;
+                }
             }
         }
     }

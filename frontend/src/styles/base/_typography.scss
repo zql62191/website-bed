@@ -102,7 +102,7 @@ strong, b {
 }
 
 .yellow {
-    color: #FDBD3E;
+    color: $active-yellow;
 }
 
 
@@ -116,7 +116,7 @@ h3, .heading--3 {
 
 }
 h4, .heading--4 {
-
+    @include gs("light-italic");
 }
 h5, .heading--5 {
 
@@ -129,6 +129,18 @@ p {
 }
 li {
 
+}
+p.footnote,
+p.disclaimer,
+ol.refs li {
+    @include gs("light");
+    color: #858B91;    
+}
+
+ol.refs {
+    border-top: 1px solid #5C656D;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 //            /$$           /$$
@@ -172,20 +184,25 @@ li {
     li {
 
     }
+    p.footnote,
+    p.disclaimer,
+    ol.refs li {
+        font-size: 14px;
+    }
 }
 @include mq("md") {
 
     body, p, a, li {
-
+        font-size: 18px;
     }
     h1, .heading--1 {
-
+        font-size: 26px;
     }
     h2, .heading--2 {
-
+        font-size: 22px;
     }
     h3, .heading--3 {
-
+        font-size: 21px;
     }
     h4, .heading--4 {
         font-size: 18px;
@@ -201,21 +218,26 @@ li {
     }
     li {
 
+    }
+    p.footnote,
+    p.disclaimer,
+    ol.refs li {
+        font-size: 14px;
     }
 }
 @include mq("sm") {
 
     body, p, a, li {
-
+        font-size: 16px;
     }
     h1, .heading--1 {
-
+        font-size: 26px;
     }
     h2, .heading--2 {
-
+        font-size: 22px;
     }
     h3, .heading--3 {
-
+        font-size: 17px;
     }
     h4, .heading--4 {
         font-size: 18px;
@@ -231,6 +253,11 @@ li {
     }
     li {
 
+    }
+    p.footnote,
+    p.disclaimer,
+    ol.refs li {
+        font-size: 14px;
     }
 }
 

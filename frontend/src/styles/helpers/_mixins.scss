@@ -189,7 +189,6 @@
     }
 }
 
-
 @mixin accordion-color($color) {
     & {
         border-color: $color;
@@ -371,8 +370,3 @@
     }
 }
 
-@mixin trans-bg {
-    .eq-ie & {
-        background: image-url("transparent.gif");
-    }
-}

@@ -2,7 +2,7 @@
     position: relative;
     box-sizing: border-box;
     max-height: 1000000px; // Disables Android's font boosting
-    background: url(""); // Disables Android's Auto-Fit Pages
+    background: image-url("transparent.gif"); // Disables Android's Auto-Fit Pages
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0); // Disables Tap Highlight Color
 }
 
@@ -101,6 +101,7 @@ sub, sup {
 
 sup {
     top: -0.5em;
+    white-space: nowrap;
 
     .eq-ie9 & {
         top: -0.7em;
@@ -135,13 +136,6 @@ a > picture {
     filter: inherit;
 }
 
-.wrap--full {
-    @include mq("sm") {
-        margin-right: -15px;
-        margin-left: -15px;
-    }
-}
-
 .wrap--content {
     margin: 0 auto;
     // min-height: 100%;
@@ -149,16 +143,30 @@ a > picture {
 
     @include mq("lg") {
         width: 960px;
-        // padding: 42px 0;
+
+        &.full--lg {
+            width: 100%;
+            margin: 0;
+        }
     }
     @include mq("md") {
         width: 100%;
         padding: 0 $md-gutter;
+
+        &.full--md {
+            margin: 0;
+            padding: 0;
+        }
     }
     @include mq("sm") {
         width: 100%;
         min-width: 320px;
         padding: 0 $sm-gutter;
+
+        &.full--sm {
+            margin: 0;
+            padding: 0;
+        }
     }
 }
 
@@ -298,13 +306,19 @@ ul.dash {
         @include mq("lg") {
             margin: 0 5px 0 -15px;
         }
-
+        @include mq("md") {
+            margin: 0 5px 0 -15px;
+        }
         @include mq("sm") {
             margin: 0 2px 0 -10px;
         }
     }
     &.dash--m {
         @include mq("lg") {
+            padding-left: 20px;
+            margin-left: -20px;
+        }
+        @include mq("md") {
             padding-left: 20px;
             margin-left: -20px;
         }
@@ -319,7 +333,9 @@ ul.dash {
             @include mq("lg") {
                 margin-left: -20px;
             }
-
+            @include mq("md") {
+                margin-left: -20px;
+            }
             @include mq("sm") {
                 margin-left: -15px;
             }
@@ -335,7 +351,10 @@ ol.letter {
         padding-left: 15px;
         // margin-left: -15px;
     }
-
+    @include mq("md") {
+        padding-left: 15px;
+        // margin-left: -15px;
+    }
     @include mq("sm") {
         padding-left: 0;
     }
@@ -368,7 +387,10 @@ ol.number {
         padding-left: 15px;
         margin-left: -15px;
     }
-
+    @include mq("md") {
+        padding-left: 15px;
+        margin-left: -15px;
+    }
     @include mq("sm") {
         padding-left: 18px;
         margin-left: -18px;
@@ -387,10 +409,27 @@ ol.number {
         @include mq("lg") {
             margin: 0 5px 0 -15px;
         }
-
+        @include mq("md") {
+            margin: 0 5px 0 -15px;
+        }
         @include mq("sm") {
             margin: 0 2px 0 -18px;
         }
+    }
+}
+
+ol.refs {
+
+    @include mq("lg") {
+        width: 655px;
+        margin: 0 auto;
+        text-align: left;
+    }
+    @include mq("md") {
+        
+    }
+    @include mq("sm") {
+        
     }
 }
 
