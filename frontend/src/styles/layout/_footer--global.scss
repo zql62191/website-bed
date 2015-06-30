@@ -130,6 +130,10 @@ footer.footer--global {
 
     @include mq("md") {
 
+        .wrap--content {
+            padding: 0 percentage(20/768);
+        }
+
         nav {
             margin-top: 50px;
         }

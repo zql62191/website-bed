@@ -61,7 +61,7 @@ $media-queries: (
     "ol": "(orientation: landscape)",
     "p": "(max-aspect-ratio: 13/9)",
     "l": "(min-aspect-ratio: 13/9)"
-);
+);       
 
 $queries: (
     sm: false,
@@ -73,7 +73,7 @@ $queries: (
 );
 
 
-$md-gutter: percentage(20/768);
+$md-gutter: percentage(57/768);
 $sm-gutter: percentage(20/320);
 
 

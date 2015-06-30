@@ -1,0 +1,25 @@
+body.dsm5-criteria {
+
+    .section--individuals {
+        background: #252F39;
+
+        .wrap--content {
+
+        }
+
+        @include mq("lg") {
+            .wrap--content {
+                width: 655px;
+            }
+        }
+    }
+
+    .section--triggers {
+
+        @include mq("lg") {
+            .wrap--content {
+                width: 555px;
+            }
+        }
+    }
+}

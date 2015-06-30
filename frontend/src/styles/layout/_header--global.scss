@@ -120,6 +120,7 @@ header.header--global {
                 }
                 &.active {
                     border-bottom-color: $active-yellow;
+                    @include gs("light-italic");
                 }
 
             }
@@ -297,12 +298,17 @@ header.header--global {
         .title-bar {
             line-height: 60px;
 
+            .wrap--content {
+                padding: 0 percentage(20/768);
+            }
+
             .title,
             .hcp {
                 float: left;
             }
             .hcp {
                 margin-left: 32px;
+                z-index: z("default");
             }
         }
         .primary-nav {

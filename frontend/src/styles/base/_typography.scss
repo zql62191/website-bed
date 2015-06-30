@@ -29,7 +29,6 @@
         font-weight: 400;
         font-style: italic;
     }
-
 }
 
 // Helvetica Neue
@@ -108,15 +107,21 @@ strong, b {
 
 h1, .heading--1 {
     @include gs("light");
+    color: $active-yellow;
+    text-align: center;
 }
 h2, .heading--2 {
-
+    @include gs("light-italic");
+    color: #E8E9E9;
+    text-align: center;
 }
 h3, .heading--3 {
-
+    @include gs("light");
+    color: #E8E9E9;
 }
 h4, .heading--4 {
     @include gs("light-italic");
+    color: #E8E9E9;
 }
 h5, .heading--5 {
 
@@ -162,9 +167,11 @@ ol.refs {
     }
     h1, .heading--1 {
         font-size: 32px;
+        margin: 56px 0 13px 0;
     }
     h2, .heading--2 {
         font-size: 24px;
+        margin: 13px 0 50px 0;
     }
     h3, .heading--3 {
         font-size: 21px;
@@ -197,9 +204,11 @@ ol.refs {
     }
     h1, .heading--1 {
         font-size: 26px;
+        margin: 56px 0 13px 0;
     }
     h2, .heading--2 {
         font-size: 22px;
+        margin: 13px 0 50px 0;
     }
     h3, .heading--3 {
         font-size: 21px;
@@ -232,9 +241,11 @@ ol.refs {
     }
     h1, .heading--1 {
         font-size: 26px;
+        margin: 24px 0 21px 0;
     }
     h2, .heading--2 {
         font-size: 22px;
+        margin: 21px 0 21px 0;
     }
     h3, .heading--3 {
         font-size: 17px;
