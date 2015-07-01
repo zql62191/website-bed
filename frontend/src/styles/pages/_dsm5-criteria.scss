@@ -15,10 +15,16 @@ body.dsm5-criteria {
     }
 
     .section--triggers {
+        background: #333E48;
+        background-image: radial-gradient(50% 149%, #333E48 17%, #252F39 100%);
 
         @include mq("lg") {
             .wrap--content {
                 width: 555px;
+
+                .btn--yellow {
+                    width: 390px;
+                }
             }
         }
     }

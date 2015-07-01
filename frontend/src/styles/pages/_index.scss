@@ -68,8 +68,12 @@ body.index {
             }
         }
 
-        ol.refs {
-            border-top: none;
+        .wrap--refs {
+            margin-top: 0;
+        
+            ol.refs {
+                border-top: none;
+            }
         }
 
         @include mq("lg", "md") {
@@ -197,14 +201,25 @@ body.index {
                     background: #2F3A45;
 
                     a {
-                        transition: background 250ms, color 250ms, border-color 250ms;
+                        transition: background 250ms;
+
+                        h4 {
+                            transition: color 250ms;
+
+                            &:after {
+                                transition: border-color 250ms;
+                            }
+                        }
 
                         &:active {
                             background: darken(#2F3A45, 2%);
-                            color: $active-yellow;
 
-                            h4:after {
-                                border-color: $active-yellow;
+                            h4 {
+                                color: $active-yellow;
+
+                                &:after {
+                                    border-color: $active-yellow;
+                                }
                             }
                         }
 

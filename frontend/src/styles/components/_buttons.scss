@@ -1,8 +1,28 @@
 .btn {
-
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 
     &.btn--yellow {
-    
+        @include gs("roman");
+        background: #FFBE2C;
+        border-radius: 4px;
+        color: #21282F;
+        height: 46px;
+        line-height: 46px;
+        transition: background 250ms, color 250ms;
+
+        @include mq("lg") {
+            &:hover {
+                background: #CD9D3C;
+                color: #21282F;
+            }
+        }
+
+        &:active {
+            background: #52758B;
+            color: #FDBD3E;
+        }
     }
     &.btn--blue {
     

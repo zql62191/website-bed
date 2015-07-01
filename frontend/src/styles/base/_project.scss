@@ -136,6 +136,49 @@ a > picture {
     filter: inherit;
 }
 
+section {
+    > .wrap--content {
+        &.first-child,
+        &:first-child {
+
+            @include mq("lg") {
+                padding-top: 44px;
+            }
+            @include mq("md") {
+                padding-top: 34px;
+            }
+            @include mq("sm") {
+                padding-top: 24px;
+            }
+
+            > .first-child,
+            > :first-child {
+                margin-top: 0;
+                padding-top: 0;
+            }
+        }
+        &.last-child,
+        &:last-child {
+
+            @include mq("lg") {
+                padding-bottom: 44px;
+            }
+            @include mq("md") {
+                padding-bottom: 34px;
+            }
+            @include mq("sm") {
+                padding-bottom: 24px;
+            }
+
+            > .first-child,
+            > :last-child {
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+
 .wrap--content {
     margin: 0 auto;
     // min-height: 100%;
@@ -177,15 +220,18 @@ a > picture {
 
     @include mq("lg") {
         width: 655px;
+        margin-top: 44px;
     }
     @include mq("md") {
         width: 100%;
         padding: 0 $md-gutter;
+        margin-top: 34px;
     }
     @include mq("sm") {
         width: 100%;
         min-width: 320px;
         padding: 0 $sm-gutter;
+        margin-top: 24px;
     }
 }
 
@@ -259,37 +305,7 @@ ul.bullet {
             margin: 0 5px 0 -15px;
         }
 
-        @include mq("sm") {
-            margin: 0 2px 0 -10px;
-        }
-    }
-}
-
-ul.square {
-    display: block;
-
-    @include mq("lg") {
-        padding-left: 15px;
-        // margin-left: -15px;
-    }
-
-    @include mq("sm") {
-        padding-left: 10px;
-        // margin-left: -10px;
-    }
-
-    > li {
-        display: block;
-    }
-
-    > li:before {
-        content: '\25A0';
-        width: 0;
-        overflow: visible;
-        float: left;
-        font-size: 0.8em;
-
-        @include mq("lg") {
+        @include mq("md") {
             margin: 0 5px 0 -15px;
         }
 
@@ -299,10 +315,36 @@ ul.square {
     }
 }
 
+ul.square {
+    display: block;
+
+    margin: 10px 0;
+
+    > li {
+        display: block;
+        border-bottom: 1px solid #5C656D;
+        padding: 10px 0 10px 20px;
+        text-indent: -10px;
+    }
+
+    > li:before {
+        content: '\25A0';
+        font-size: 0.8em;
+        @include inline-block;
+        padding-right: 8px;
+        color: $active-yellow;
+    }
+}
+
 ul.dash {
     display: block;
 
     @include mq("lg") {
+        padding-left: 15px;
+        // margin-left: -15px;
+    }
+
+    @include mq("md") {
         padding-left: 15px;
         // margin-left: -15px;
     }
@@ -511,27 +553,6 @@ ol.refs {
 .intrinsic-container-4x3 {
     padding-bottom: 75%;
 }
-
-// @-webkit-keyframes roll {
-// from { -webkit-transform: rotate(0deg) }
-// to   { -webkit-transform: rotate(360deg) }
-// }
-
-// @-moz-keyframes roll {
-// from { -moz-transform: rotate(0deg) }
-// to   { -moz-transform: rotate(360deg) }
-// }
-
-// @keyframes roll {
-// from { transform: rotate(0deg) }
-// to   { transform: rotate(360deg) }
-// }
-
-// * {
-//     animation-name: roll;
-//     animation-duration: 4s;
-//     animation-iteration-count: infinite;
-// }
 
 .visuallyhidden {
     border: 0;
