@@ -89,7 +89,7 @@ body {
     @include gs("light", true);
     color: #E8E9E9;
     background: #333E48;
-    line-height: 1.25;
+    line-height: 1.2;
 }
 
 em, i {
@@ -104,29 +104,28 @@ strong, b {
     color: $active-yellow;
 }
 
-
-h1, .heading--1 {
+.heading--1 {
     @include gs("light");
     color: $active-yellow;
     text-align: center;
 }
-h2, .heading--2 {
+.heading--2 {
     @include gs("light-italic");
     color: #E8E9E9;
     text-align: center;
 }
-h3, .heading--3 {
+.heading--3 {
     @include gs("light");
     color: #E8E9E9;
 }
-h4, .heading--4 {
+.heading--4 {
     @include gs("light-italic");
     color: #E8E9E9;
 }
-h5, .heading--5 {
+.heading--5 {
 
 }
-h6, .heading--6 {
+.heading--6 {
 
 }
 p {
@@ -140,6 +139,21 @@ p.disclaimer,
 ol.refs li {
     @include gs("light");
     color: #858B91;    
+}
+
+p.footnote {
+    text-align: left;
+
+    @include mq("lg") {
+        margin: 30px auto;
+        width: 500px;
+    }
+    @include mq("md") {
+        margin: 30px percentage(40/768);
+    }
+    @include mq("sm") {
+        margin: 30px percentage(10/320);
+    }
 }
 
 ol.refs {
@@ -191,22 +205,22 @@ ol.refs {
     body, p, a, li {
         font-size: 18px;
     }
-    h1, .heading--1 {
+    .heading--1 {
         font-size: 32px;
     }
-    h2, .heading--2 {
+    .heading--2 {
         font-size: 24px;
     }
-    h3, .heading--3 {
+    .heading--3 {
         font-size: 21px;
     }
-    h4, .heading--4 {
+    .heading--4 {
         font-size: 18px;
     }
-    h5, .heading--5 {
+    .heading--5 {
 
     }
-    h6, .heading--6 {
+    .heading--6 {
 
     }
     p {
@@ -226,24 +240,24 @@ ol.refs {
     body, p, a, li {
         font-size: 18px;
     }
-    h1, .heading--1 {
+    .heading--1 {
         font-size: 26px;
         // margin: 56px 0 13px 0;
     }
-    h2, .heading--2 {
+    .heading--2 {
         font-size: 22px;
         // margin: 13px 0 50px 0;
     }
-    h3, .heading--3 {
+    .heading--3 {
         font-size: 21px;
     }
-    h4, .heading--4 {
+    .heading--4 {
         font-size: 18px;
     }
-    h5, .heading--5 {
+    .heading--5 {
 
     }
-    h6, .heading--6 {
+    .heading--6 {
 
     }
     p {
@@ -263,22 +277,22 @@ ol.refs {
     body, p, a, li {
         font-size: 16px;
     }
-    h1, .heading--1 {
+    .heading--1 {
         font-size: 26px;
     }
-    h2, .heading--2 {
+    .heading--2 {
         font-size: 22px;
     }
-    h3, .heading--3 {
+    .heading--3 {
         font-size: 17px;
     }
-    h4, .heading--4 {
+    .heading--4 {
         font-size: 18px;
     }
-    h5, .heading--5 {
+    .heading--5 {
 
     }
-    h6, .heading--6 {
+    .heading--6 {
 
     }
     p {
@@ -296,4 +310,27 @@ ol.refs {
 
 nav li {
     padding-bottom: 0;
+}
+
+blockquote {
+
+    &:before,
+    &:after {
+        font-size: 2.4em;
+        color: #657E8E;
+        @include gs("roman");
+        line-height: 0;
+        top: 0.3em;
+    }
+
+    &:before {
+        content: '\201C';
+    }
+    &:after {
+        content: '\201D';
+    }
+
+    p {
+        display: inline;
+    }
 }

@@ -1,0 +1,150 @@
+body.effects-of-bed {
+    $page: "effects-of-bed";
+
+    .section--associated {
+        background: #252F39;
+
+        .wrap--content {
+
+            @include mq("lg") {
+                width: 570px;
+                margin: 0 auto;
+            }
+
+            @include mq("md") {
+                padding-left: percentage(113/768);
+                padding-right: percentage(113/768);
+            }
+
+        }
+    }
+
+    .section--association {
+        background: #333E48;
+        background-image: radial-gradient(50% 149%, #333E48 17%, #252F39 100%);
+
+        .wrap--content {
+            @include mq("lg") {
+                width: 570px;
+            }
+            @include mq("md") {
+
+            }
+        }
+
+        .charts {
+
+            .flexbox & {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: row;
+
+                @include mq("sm") {
+                    flex-direction: column;
+                }
+            }
+
+            .no-flexbox & {
+                display: table;
+                border-collapse: separate;
+                margin: 0 auto;
+                border-spacing: 10% 0;                
+            }
+
+            .chart {
+                text-align: center;
+
+                @include mq("sm") {
+                    margin: 25px auto;
+                }
+
+                .flexbox & {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+
+                .no-flexbox & {
+                    display: table-cell;
+                    vertical-align: middle;
+                    text-align: center;
+                }
+
+                &.sixty-three {
+                    @include responsive-bg("#{$page}/63.png");
+                }
+                &.nineteen {
+                    @include responsive-bg("#{$page}/19.png");
+                }
+
+                .num {
+                    color: #FDBD3E;
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+
+    .section--living {
+        background: #252F39;
+
+        blockquote {
+            @include gs("light-italic");
+            color: #C2CBD0;
+
+            @include mq("lg") {
+                font-size: 22px;
+            }
+            @include mq("md") {
+                font-size: 21px;
+            }
+            @include mq("sm") {
+                font-size: 16px;
+            }
+        }
+
+        .excerpt {
+            
+            @include mq("lg") {
+                width: 270px;
+                position: absolute;
+                bottom: 202px;
+            }
+
+            &.one {
+                text-align: right;
+
+                @include mq("lg") {
+                    left: 0;
+                }
+            }
+            &.two {
+                text-align: left;
+
+                @include mq("lg") {
+                    right: 0;
+                }
+            }
+
+            @include mq("sm") {
+                text-align: center !important;
+            }
+
+            .listen {
+                color: #FFBE2C;
+
+                @include mq("md", "sm") {
+                    text-align: center;
+                }
+            }
+        }
+
+        .sunny {
+            margin: 0 auto;
+
+            @include responsive-bg("#{$page}/sunny.png");
+        }
+    }
+
+}

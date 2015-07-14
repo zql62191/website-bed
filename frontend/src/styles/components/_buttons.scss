@@ -13,6 +13,9 @@
         transition: background 250ms, color 250ms;
 
         @include mq("lg") {
+            @include inline-block;
+            padding: 0 50px;
+
             &:hover {
                 background: #CD9D3C;
                 color: #21282F;

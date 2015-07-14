@@ -248,7 +248,51 @@
         // display: none;
 
         // turned off annoying message
-        @warn $img + " does not exist";
+        // @warn $img + " does not exist";
+    }
+}
+
+@mixin icon-img($img, $retina: false, $fit: true, $color: transparent, $position: center center, $repeat: no-repeat) {
+
+    @if file_exists("src/images/" + $img) {
+
+        $background-image: image-url($img);
+        $background-position: $position;
+        $background-repeat: $repeat;
+        $background-color: $color;
+
+        $height: image-height($img);
+        $width: image-width($img);
+
+        @if $retina == true {
+            $height: $height / 2;
+            $width: $width / 2;
+        }
+
+        height: #{round($height)};
+        width: #{round($width)};
+
+        $background-size: #{round($width)} #{round($height)};
+
+        background: $background-color $background-image $background-position $background-repeat;
+        background-size: #{round($width)} #{round($height)};
+
+        &.is--hc {
+            margin-left: -#{($width/2)};
+        }
+        &.is--vc {
+            margin-top: -#{($height/2)};
+        }
+
+        @content;
+
+    } @else {
+
+        // if it doesnt exist, chances are its not visible in that query anyway..
+        // display: none;
+
+        // turned off annoying message
+        // @warn $img + " does not exist";
     }
 }
 
@@ -257,6 +301,17 @@
     @each $query, $retina in $queries {
         @include mq($query) {
             @include bst-img($query + "/" + $img, $retina) {
+                @content;
+            }
+        }
+    }
+}
+
+@mixin responsive-icon($img) {
+
+    @each $query, $retina in $queries {
+        @include mq($query) {
+            @include icon-img($query + "/" + $img, $retina) {
                 @content;
             }
         }

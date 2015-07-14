@@ -1,4 +1,5 @@
 body.recognizing-bed {
+    $page: "recognizing-bed";
 
     .section--bulimia {
         background: #252F39;
@@ -20,14 +21,219 @@ body.recognizing-bed {
 
     .section--majority {
         background: #333E48;
+
+        .chart-wrap {
+            @include clearfix;
+            margin: 0 auto;
+
+            .chart {
+                @include responsive-icon("#{$page}/chart.png");
+                margin: 0 auto;
+
+                @include mq("sm") {
+                    top: 73px;
+                }
+            }
+
+            @include mq("lg") {
+                width: 560px;
+                height: 310px;
+            }
+            @include mq("md") {
+                width: 560px;
+                height: 310px;
+            }
+            @include mq("sm") {
+                width: 260px;
+                height: 360px;
+            }
+
+            .label {
+                position: absolute;
+
+                .num {
+                    color: #FDBD3E;
+
+                    @include mq("lg", "md") {
+                        font-size: 45px;
+                    }
+                    @include mq("sm") {
+                        font-size: 30px;
+                    }
+                }
+                .clas {
+                    color: #D6D8DA;
+
+                    @include mq("lg", "md") {
+                        font-size: 18px;
+                    }
+                    @include mq("sm") {
+                        font-size: 12px;
+                    }
+
+                }
+                .footnote {
+                    color: #ADB2B6;
+
+                    @include mq("lg", "md") {
+                        font-size: 14px;
+                    }
+                    @include mq("sm") {
+                        font-size: 12px;
+                    }
+                }
+
+                &.top {
+
+                    @include mq("lg", "md") {
+                        top: 30px;
+                    }
+                    @include mq("sm") {
+                        top: 0;
+                    }
+
+                    &.left {
+
+                        .num {
+                            color: #FDBD3E;
+                        }
+
+                    }
+
+                    &.right {
+
+                        .num {
+                            color: #858B91;
+                        }
+
+                    }
+                }
+                &.bottom {
+
+                    @include mq("lg", "md") {
+                        top: 175px;
+                    }
+                    @include mq("sm") {
+                        top: 260px;
+                    }
+
+                    &.left {
+
+                        .num {
+                            color: #CD9D3C;
+                        }
+
+                    }
+
+                    &.right {
+
+                        .num {
+                            color: #ADB2B6;
+                        }
+
+                    }
+                }
+                &.right {
+                    right: 0;
+                    text-align: right;
+                }
+                &.left {
+                    left: 0;
+                    text-align: left;
+                }
+            }
+        }
     }
 
     .section--compared {
         background: #252F39;
 
+        .statistic-box {
+            border: 2px solid #5C656D;
+            border-radius: 4px;
+
+            h2, h4 {
+                text-align: left;
+            }
+
+            .statistic {
+                display: table;
+
+                .num,
+                .text {
+                    display: table-cell;
+                    vertical-align: top;
+                }
+
+                .num {
+                    @include gs("light");
+                    font-size: 45px;
+                    color: #FDBD3E;
+                    line-height: 1;
+                }
+                .text {
+                    color: #ADB2B6;
+                    padding: 0 14px;
+
+                    em {
+                        color: #D6D8DA;
+                    }
+                }
+            }
+        }
+
+        @include mq("lg", "md") {
+            .statistic-box {
+                @include clearfix;
+
+                .statistic {
+                    float: left;
+                    width: 50%;
+                    padding: 5px 10px;
+
+                    & + .statistic {
+                        border-left: 1px solid #979797;
+                    }
+                }
+            }
+        }
+
         @include mq("lg") {
             .wrap--content {
                 width: 570px;
+            }
+
+            .statistic-box {
+                padding: 40px;
+            }
+        }
+
+        @include mq("md") {
+            .wrap--content {
+                width: percentage(570/768);
+                min-width: 570px;
+            }
+
+            .statistic-box {
+                padding: percentage(40/768);
+            }
+        }
+
+        @include mq("sm") {
+            .statistic-box {
+                padding: percentage(20/320);
+
+                .statistic {
+                    padding: 20px 0;
+
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
+
+                    & + .statistic {
+                        border-top: 1px solid #979797;
+                    }
+                }
             }
         }
     }

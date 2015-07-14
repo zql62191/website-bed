@@ -1,15 +1,26 @@
+
 body.dsm5-criteria {
+    $page: "dsm5-criteria";
 
     .section--individuals {
         background: #252F39;
 
         .wrap--content {
-
+            @include mq("lg") {
+                width: 655px;
+            }
         }
 
-        @include mq("lg") {
-            .wrap--content {
-                width: 655px;
+        p.disclaimer {
+            @include mq("lg") {
+                font-size: 18px;
+            }
+            @include mq("md") {
+                font-size: 16px;
+            }
+            @include mq("sm") {
+                font-size: 16px;
+                text-align: center;
             }
         }
     }
@@ -18,13 +29,9 @@ body.dsm5-criteria {
         background: #333E48;
         background-image: radial-gradient(50% 149%, #333E48 17%, #252F39 100%);
 
-        @include mq("lg") {
-            .wrap--content {
+        .wrap--content {
+            @include mq("lg") {
                 width: 555px;
-
-                .btn--yellow {
-                    width: 390px;
-                }
             }
         }
     }

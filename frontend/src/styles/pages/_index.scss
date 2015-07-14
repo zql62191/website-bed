@@ -1,4 +1,5 @@
 body.index {
+    $page: "index";
 
     .section--hero {
 
@@ -18,19 +19,19 @@ body.index {
             }
 
             &.kimberly .player .still {
-                @include hero-bg("index/kimberly.jpg");
+                @include hero-bg("#{$page}/kimberly.jpg");
             }
 
             &.nikki .player .still {
-                @include hero-bg("index/nikki.jpg");
+                @include hero-bg("#{$page}/nikki.jpg");
             }
 
             &.julie .player .still {
-                @include hero-bg("index/julie.jpg");
+                @include hero-bg("#{$page}/julie.jpg");
             }
 
             &.diego .player .still {
-                @include hero-bg("index/diego.jpg");
+                @include hero-bg("#{$page}/diego.jpg");
             }
 
             .copy {
@@ -63,6 +64,16 @@ body.index {
                                 display: none;
                             }
                         }
+                    }
+
+                    &.cta1 .icon {
+                        @include responsive-icon("#{$page}/cta1.png");
+                    }
+                    &.cta2 .icon {
+                        @include responsive-icon("#{$page}/cta2.png");
+                    }
+                    &.cta3 .icon {
+                        @include responsive-icon("#{$page}/cta3.png");
                     }
                 }
             }
@@ -333,10 +344,10 @@ body.index {
                         }
 
                         .icon {
-                            position: relative;
-                            top: auto;
-                            left: auto;
-                            margin: 0;
+                            position: relative !important;
+                            top: auto !important;
+                            left: auto !important;
+                            margin: 0 !important;
                         }
                     }
                 }

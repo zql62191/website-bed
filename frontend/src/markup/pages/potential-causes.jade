@@ -11,59 +11,80 @@ extends /layouts/base.jade
 
 block content
 
-    section.section--
+    section.section--theories
         .wrap--content
 
-            h2.
+            h2.heading--2.
                 The exact cause of binge eating disorder (!{BED}) is unknown
 
-            h1.
+            h1.heading--1.
                 Prevailing theories may support a neurobiological basis for !{BED}
 
-            h4.
-                Reward center and impulsivity dysregulation theory
-            p.
-                Adults with !{BED} have shown reduced activity in impulse control–related regions of the brain#[sup 1-4]
+            .row.brain
 
-            h4.
-                Neurotransmitter dysregulation theory
-            p.
-                Dopamine signaling converts sensory stimuli into processes that may generate or enhance “wanting” of a particular food#[sup 5-7]
+                .icon.is--vc
 
-            h4.
-                Endogenous μ-opioid signaling dysfunction theory
-            p.
-                Opioid signaling converts sensory stimuli into processes that generate or enhance “liking” of a particular food#[sup 8-11]
+                h4.heading--4.
+                    Reward center and impulsivity dysregulation theory
+                p.
+                    Adults with !{BED} have shown reduced activity in impulse control–related regions of the brain#[sup 1-4]
 
-    section.section--
+            .row.neuron
+
+                .icon.is--vc
+
+                h4.heading--4.
+                    Neurotransmitter dysregulation theory
+                p.
+                    Dopamine signaling converts sensory stimuli into processes that may generate or enhance “wanting” of a particular food#[sup 5-7]
+
+            .row.neuron-closeup
+
+                .icon.is--vc
+
+                h4.heading--4.
+                    Endogenous μ-opioid signaling dysfunction theory
+                p.
+                    Opioid signaling converts sensory stimuli into processes that generate or enhance “liking” of a particular food#[sup 8-11]
+
+    section.section--factors
         .wrap--content
 
-            h1.
+            h1.heading--1.
                 Research suggests these possible risk factors for !{BED}
 
-            h4.
-                Genetics
+            .row.dna
 
-            ul.square
-                li.
-                    !{BED} appears to run in families, which may reflect additive genetic influences#[sup 12]
-                li.
-                    Genetic differences in neurobiological components of the brain’s reward center have been observed#[sup 8,13]
+                .icon.is--vc
 
-            h4.
-                Environmental and social influences
+                h4.heading--4.
+                    Genetics
 
-            ul.square
-                li.
-                    In a case-controlled retrospective assessment of 162 women with !{BED}, stressful life events were reported more frequently in the year preceding !{BED} onset than in non-!{BED} controls#[sup 5]
-                li.
-                    In a nationally representative survey of 5,702 adults, of the men (n=30) and women (n=75) who reported having !{BED}, 98% and 90%, respectively, reported experiencing some form of trauma*#[sup 14]
+                ul.square
+                    li
+                        | !{BED} appears to run in families, which may reflect additive genetic influences#[sup 12]
+                    li
+                        | Genetic differences in neurobiological components of the brain’s reward center have been observed#[sup 8,13]
 
-            p.footnote.
-                *Exposure to events such as combat, life-threatening accidents, a major disaster, or physical or sexual assault.#[sup 14]
+            .row.people
 
-            a(href="/hcp/sign-up.aspx").
-                GET THE FULL !{BED} CRITERIA
+                .icon.is--vc
+
+                h4.heading--4.
+                    Environmental and social influences
+
+                ul.square
+                    li
+                        | In a case-controlled retrospective assessment of 162 women with !{BED}, stressful life events were reported more frequently in the year preceding !{BED} onset than in non-!{BED} controls#[sup 5]
+                    li
+                        | In a nationally representative survey of 5,702 adults, of the men (n=30) and women (n=75) who reported having !{BED}, 98% and 90%, respectively, reported experiencing some form of trauma*#[sup 14]
+
+            p(data-note="*").footnote.
+                Exposure to events such as combat, life-threatening accidents, a major disaster, or physical or sexual assault.#[sup 14]
+
+            .center
+                a(href="/hcp/sign-up.aspx").btn.btn--yellow
+                    | GET THE FULL !{BED} CRITERIA
 
         .wrap--refs
             ol.refs.number

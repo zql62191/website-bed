@@ -11,70 +11,90 @@ extends /layouts/base.jade
 
 block content
 
-    section.section--
+    section.section--associated
         .wrap--content
 
-            h1.
-                Binge eating disorder (!{BED}) is associated with a range of functional consequences#[sup 1]
+            h1.heading--1
+                | Binge eating disorder (!{BED}) is associated with a range of functional consequences#[sup 1]
 
-            ul.square
-                li.
-                    Problems with adapting to social roles
-                li.
-                    Quality of life and life satisfaction degradation due to health issues
-                li.
-                    Heightened medical mortality and morbidity
-                li.
-                    Heightened use of health care resources compared to BMI-matched controls
-                li.
-                    Potential for weight gain that could lead to obesity
+            ul.square.line
+                li
+                    | Problems with adapting to social roles
+                li
+                    | Quality of life and life satisfaction degradation due to health issues
+                li
+                    | Heightened medical mortality and morbidity
+                li
+                    | Heightened use of health care resources compared to BMI-matched controls
+                li
+                    | Potential for weight gain that could lead to obesity
 
-    section.section--
+    section.section--association
         .wrap--content
 
-            h2.
-                !{BED} association with impaired role functioning in adults (Sheehan Disability Scale)*#[sup 2]
+            h2.heading--2.
+                !{BED} association with impaired role functioning in #[br.hide--sm]adults (Sheehan Disability Scale)*#[sup 2]
 
             .charts
-                .chart
+                .chart.sixty-three
                     .num.
                         ≈63%
-                    .text.
-                        reported functional impairment during the past year
-                .chart
+                    .text
+                        | reported functional
+                        br
+                        | impairment during the
+                        br
+                        | past year
+                .chart.nineteen
                     .num.
                         ≈19%
-                    .text.
-                        reported severe impairment during the past year
+                    .text
+                        | reported #[em severe]
+                        br
+                        | impairment during the
+                        br
+                        | past year
 
-            h2.
+            h2.heading--2.
                 The Sheehan Disability Scales were administered to assess the severity of recent episodes of disordered eating.
 
-            p.footnote.
-                *Data are from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged ≥18 years.#[sup 2]
+            p(data-note="*").footnote.
+                Data are from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged ≥18 years.#[sup 2]
 
-    section.section--
+    section.section--living
         .wrap--content
 
-            h1.
+            h1.heading--1.
                 Living with !{BED}: What it felt like to one adult patient
 
-            h2.
+            h2.heading--2.
                 Excerpts from an interview with Sunny Sea Gold
 
-            blockquote.
-                During a binge, I would often eat really, really fast. My binges would always happen when I was alone.
-            .listen.
-                Listen to the extended excerpt
+            .sunny.hide--lg.hide--md
 
-            blockquote.
-                When I first realized there was something wrong, it was terrifying to admit that to anyone, even a professional.
-            .listen.
-                Listen to the extended excerpt
+            .excerpt.one
 
+                blockquote
+                    p.
+                        During a binge, I would often eat really, really fast. My binges would always happen when I was alone.
+                .listen.
+                    Listen to the extended excerpt
 
-            a(href="#needurl").
-                GET THE FULL !{DSM5} !{BED} CRITERIA
+            .sunny.hide--md.hide--sm
+
+            .excerpt.two
+
+                blockquote
+                    p.
+                        When I first realized there was something wrong, it was terrifying to admit that to anyone, even a professional.
+                .listen.
+                    Listen to the extended excerpt
+
+            .sunny.hide--lg.hide--sm
+
+            .center
+                a(href="#needurl").btn.btn--yellow
+                    | GET THE FULL !{DSM5} !{BED} CRITERIA
 
         .wrap--refs
             ol.refs.number

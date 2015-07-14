@@ -1,0 +1,136 @@
+body.potential-causes {
+    $page: "potential-causes";
+
+    section {
+        p, li {
+            color: #ADB2B6;
+        }
+    }
+
+    .row {
+
+        $icons: "brain" "neuron" "neuron-closeup" "dna" "people";
+        @each $icon in $icons {
+            &.#{$icon} .icon {
+                @include responsive-icon("#{$page}/#{$icon}.png");
+            }
+        }
+    }
+
+    .section--theories {
+        background: #252F39;
+    }
+
+    .section--factors {
+        background: #303A44;
+    }
+
+    @include mq("lg", "md") {
+        .section--theories {
+            .row {
+                margin: 0 auto;
+
+                &.brain { 
+                    .icon {
+                        left: 0;                    
+                    }
+                }
+                &.neuron {
+                    .icon {
+                        right: 0;
+                    }
+                }
+                &.neuron-closeup {
+                    .icon {
+                        left: 0;
+                    }
+                }
+            }
+        }
+
+        .section--factors {
+            .row {
+                margin: 0 auto;
+
+                &.dna {
+                    .icon {
+                        left: 0;
+                    }
+                }
+                &.people {
+                    .icon {
+                        right: 0;
+                    }
+                }
+            }
+        }        
+    }
+
+
+    @include mq("lg") {
+        .section--theories {
+            .row {
+                width: 700px;
+                padding: 30px 0 30px 140px;
+
+                &.neuron {
+                    padding-right: 140px;
+                }
+            }
+        }
+
+        .section--factors {
+            .row {
+                width: 700px;
+                padding: 30px 0;
+
+                &.dna {
+                    padding-left: 170px;
+                }
+                &.people {
+                    padding-right: 240px;
+                }
+            }
+        }
+    }
+
+    @include mq("md") {
+        .section--theories {
+            .row {
+                width: percentage(618/768);
+                padding: 30px 0 30px 140px;
+
+                &.neuron {
+                    padding-right: 140px;
+                }
+            }
+        }
+
+        .section--factors {
+            .row {
+                width: percentage(598/768);
+                padding: 30px 0;
+
+                &.dna {
+                    padding-left: 150px;
+                }
+                &.people {
+                    padding-right: 180px;
+                }
+            }
+        }
+    }
+
+    @include mq("sm") {
+        .icon {
+            margin: 20px auto !important;
+            position: relative;
+            top: auto;
+            left: auto;
+        }
+
+        p, h4 {
+            text-align: center;
+        }
+    }
+}

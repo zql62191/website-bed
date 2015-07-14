@@ -138,7 +138,6 @@ a > picture {
 
 section {
     > .wrap--content {
-        &.first-child,
         &:first-child {
 
             @include mq("lg") {
@@ -151,13 +150,11 @@ section {
                 padding-top: 24px;
             }
 
-            > .first-child,
             > :first-child {
                 margin-top: 0;
                 padding-top: 0;
             }
         }
-        &.last-child,
         &:last-child {
 
             @include mq("lg") {
@@ -170,7 +167,6 @@ section {
                 padding-bottom: 24px;
             }
 
-            > .first-child,
             > :last-child {
                 margin-bottom: 0;
                 padding-bottom: 0;
@@ -178,6 +174,46 @@ section {
         }
     }
 }
+
+.eq-ie8 section {
+    > .wrap--content {
+        &.first-child {
+
+            @include mq("lg") {
+                padding-top: 44px;
+            }
+            @include mq("md") {
+                padding-top: 34px;
+            }
+            @include mq("sm") {
+                padding-top: 24px;
+            }
+
+            > .first-child {
+                margin-top: 0;
+                padding-top: 0;
+            }
+        }
+        &.last-child {
+
+            @include mq("lg") {
+                padding-bottom: 44px;
+            }
+            @include mq("md") {
+                padding-bottom: 34px;
+            }
+            @include mq("sm") {
+                padding-bottom: 24px;
+            }
+
+            > .last-child {
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+
 
 .wrap--content {
     margin: 0 auto;
@@ -277,257 +313,21 @@ section {
     }
 }
 
-ul.bullet {
-    display: block;
 
-    @include mq("lg") {
-        padding-left: 15px;
-        // margin-left: -15px;
-    }
-
-    @include mq("sm") {
-        padding-left: 10px;
-        // margin-left: -10px;
-    }
-
-    > li {
-        display: block;
-    }
-
-    > li:before {
-        content: '\2022';
-        width: 0;
-        overflow: visible;
-        float: left;
-        font-size: 0.8em;
-
-        @include mq("lg") {
-            margin: 0 5px 0 -15px;
-        }
-
-        @include mq("md") {
-            margin: 0 5px 0 -15px;
-        }
-
-        @include mq("sm") {
-            margin: 0 2px 0 -10px;
-        }
-    }
+[data-note]:before {
+    content: attr(data-note);
+    position: absolute;
+    right: 100%;
+    padding-right: 2px;
 }
 
-ul.square {
-    display: block;
-
-    margin: 10px 0;
-
-    > li {
-        display: block;
-        border-bottom: 1px solid #5C656D;
-        padding: 10px 0 10px 20px;
-        text-indent: -10px;
-    }
-
-    > li:before {
-        content: '\25A0';
-        font-size: 0.8em;
-        @include inline-block;
-        padding-right: 8px;
-        color: $active-yellow;
-    }
-}
-
-ul.dash {
-    display: block;
-
-    @include mq("lg") {
-        padding-left: 15px;
-        // margin-left: -15px;
-    }
-
-    @include mq("md") {
-        padding-left: 15px;
-        // margin-left: -15px;
-    }
-
-    @include mq("sm") {
-        padding-left: 10px;
-        // margin-left: -10px;
-    }
-
-    > li {
-        display: block;
-    }
-    > li:before {
-        content: '\2013';
-        width: 0;
-        overflow: visible;
-        float: left;
-        font-size: 0.8em;
-
-        @include mq("lg") {
-            margin: 0 5px 0 -15px;
-        }
-        @include mq("md") {
-            margin: 0 5px 0 -15px;
-        }
-        @include mq("sm") {
-            margin: 0 2px 0 -10px;
-        }
-    }
-    &.dash--m {
-        @include mq("lg") {
-            padding-left: 20px;
-            margin-left: -20px;
-        }
-        @include mq("md") {
-            padding-left: 20px;
-            margin-left: -20px;
-        }
-        @include mq("sm") {
-            padding-left: 15px;
-            margin-left: -15px;
-        }
-
-        > li:before {
-            content: '\2014';
-
-            @include mq("lg") {
-                margin-left: -20px;
-            }
-            @include mq("md") {
-                margin-left: -20px;
-            }
-            @include mq("sm") {
-                margin-left: -15px;
-            }
-        }
-    }
-}
-
-ol.letter {
-    display: block;
-    counter-reset: lettered;
-
-    @include mq("lg") {
-        padding-left: 15px;
-        // margin-left: -15px;
-    }
-    @include mq("md") {
-        padding-left: 15px;
-        // margin-left: -15px;
-    }
-    @include mq("sm") {
-        padding-left: 0;
-    }
-
-    > li {
-        position: relative;
-        display: block;
-        counter-increment: lettered;
-    }
-    > li:before {
-        content: counter(lettered, lower-alpha);
-        margin: 0 5px 0 -15px;
-        width: 0;
-        overflow: visible;
-        float: left;
-
-        @include mq("sm") {
-            margin: 0;
-            width: auto;
-            float: none;
-        }
-    }
-}
-
-ol.number {
-    display: block;
-    counter-reset: numbered;
-
-    @include mq("lg") {
-        padding-left: 20px;
-        margin-left: -15px;
-    }
-    @include mq("md") {
-        padding-left: 20px;
-        margin-left: -15px;
-    }
-    @include mq("sm") {
-        padding-left: 20px;
-        margin-left: -15px;
-    }
-
-    > li {
-        display: block;
-        counter-increment: numbered;
-    }
-    > li:before {
-        content: counter(numbered, decimal) ".";
-        width: 0;
-        overflow: visible;
-        float: left;
-
-        @include mq("lg") {
-            margin: 0 5px 0 -20px;
-        }
-        @include mq("md") {
-            margin: 0 5px 0 -20px;
-        }
-        @include mq("sm") {
-            margin: 0 5px 0 -20px;
-        }
-    }
-}
-
-ul.boxed {
-
-    > li {
-        border: 2px solid #5C656D;
-        border-radius: 4px;
-        padding: 20px;
-        margin-bottom: 22px;
-
-        & + li {
-
-            &:before {
-                content: '';
-                position: absolute;
-                top: -16px;
-                left: 50%;
-                margin-left: -4px;
-                width: 8px;
-                height: 8px;
-                background: #FDBD3E;
-                border-radius: 50%;
-            }
-        }
-    }
-}
-
-ol.refs {
-
-    @include mq("lg") {
-        width: 655px;
-        // margin: 0 auto;
-        text-align: left;
-    }
-    @include mq("md") {
-        
-    }
-    @include mq("sm") {
-        
-    }
-}
-
-.asterisk {
-    margin-left: 9px;
-
-    &:before {
-        content: '\002A';
-        position: absolute;
-        right: 100%;
-        padding-right: 2px;
-    }
+[data-note-sup]:before {
+    content: attr(data-note-sup);
+    position: absolute;
+    right: 100%;
+    padding-right: 2px;
+    font-size: 0.6em;
+    vertical-align: super;
 }
 
 // http://www.benmarshall.me/responsive-iframes/
@@ -568,4 +368,8 @@ ol.refs {
 
 .veil {
     visibility: hidden !important;
+}
+
+.url {
+    word-break: break-all;
 }

@@ -640,6 +640,12 @@
                             element.off('keydown.ie8TabFix');
                         });
 
+                        // css fixes
+                        $('section > .wrap--content:first-child').addClass('first-child');
+                        $('section > .wrap--content:last-child').addClass('last-child');
+                        $('section > .wrap--content:first-child > :first-child').addClass('first-child');
+                        $('section > .wrap--content:last-child > :last-child').addClass('first-child');
+
                     }
                 }
             };

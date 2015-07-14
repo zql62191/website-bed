@@ -1,0 +1,294 @@
+body.patient-statistics {
+    $page: "patient-statistics";
+
+
+    .section--us {
+        background: #252F39;
+
+        .statistics {
+            margin: 0 auto;
+
+            @include mq("lg", "md") {
+
+                .flexbox & {
+                    display: flex;
+                    flex-direction: row;
+                }
+
+                .no-flexbox & {
+                    display: table;
+                }
+
+            }
+
+            @include mq("lg") {
+                width: 910px;
+            }
+
+            @include mq("md") {
+                width: percentage(610/768);
+            }
+
+            .map {
+                @include responsive-bg("#{$page}/map.png");
+
+                .flexbox & {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    flex-shrink: 0;
+                }
+
+                .no-flexbox & {
+                    display: table-cell;
+                    vertical-align: middle;
+                    text-align: center;                    
+                }
+
+                @include mq("lg", "md") {
+                    .no-flexbox & {
+                        border-right: 1px solid #979797;
+                        box-sizing: content-box;
+                    }
+                }
+                @include mq("lg") {
+                    .no-flexbox & {
+                        padding-right: 50px;
+                    }
+                }
+                @include mq("md") {
+                    .no-flexbox & {
+                        padding-right: 30px;
+                    }
+                }
+
+                @include mq("sm") {
+                    margin: 0 auto;
+                }
+
+                .num {
+                    color: #FDBD3E;
+
+                    @include mq("lg") {
+                        font-size: 52px;
+                    }
+                    @include mq("md") {
+                        font-size: 36px;
+                    }
+                    @include mq("sm") {
+                        font-size: 32px;
+                    }
+                }
+
+                .stat {
+                    color: #D6D8DA;
+
+                    @include mq("lg", "md") {
+                        font-size: 32px;
+                    }
+                    @include mq("sm") {
+                        font-size: 26px;
+                    }
+                }
+            }
+
+
+            .survey {
+
+                @include mq("lg", "md") {
+                    .flexbox & {
+                        border-left: 1px solid #979797;
+                    }
+
+                    .footnote {
+                        width: auto;
+                        margin: 0;
+                    }
+                }
+
+                @include mq("lg") {
+                    padding-top: 30px;
+                    padding-left: 50px;
+
+                    .flexbox & {
+                        margin-left: 50px;
+                    }
+                }
+                @include mq("md") {
+                    padding-top: 20px;
+                    padding-left: 30px;
+
+                    .flexbox & {
+                        margin-left: 30px;
+                    }
+                }
+
+                @include mq("sm") {
+                    text-align: center;
+                }
+
+                .stat {
+                    display: block;
+
+                    .percent {
+                        color: #FDBD3E;
+
+                        @include mq("lg") {
+                            font-size: 52px;
+                        }
+                        @include mq("md") {
+                            font-size: 36px;
+                        }
+                        @include mq("sm") {
+                            font-size: 32px;
+                        }
+                    }
+
+                    .total {
+                        color: #858B91;
+
+                        @include mq("lg") {
+                            font-size: 18px;
+                        }
+                        @include mq("md") {
+                            font-size: 18px;
+                        }
+                        @include mq("sm") {
+                            font-size: 16px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    .section--ratio {
+        background: #333E48;
+        background-image: radial-gradient(50% 149%, #333E48 17%, #252F39 100%);
+
+        .row {
+
+            .icon {
+                @include mq("lg") {
+                    margin: 40px auto;
+                }
+                @include mq("md") {
+                    margin: 30px auto;
+                }
+                @include mq("sm") {
+                    margin: 20px auto;
+                }
+            }
+
+            &.two-to-one {
+                .icon {
+                    @include responsive-icon("#{$page}/2-to-1.png");
+                }
+            }
+            &.five-to-one {
+                .icon {
+                    @include responsive-icon("#{$page}/5-to-1.png");
+                }
+            }
+
+            h2 {
+                @include inline-block;
+
+                .estimated {
+                    text-align: left;
+
+                    .ratio {
+                        float: left;
+                        color: #FDBD3E;
+                    }
+                }
+
+                .versus {
+
+                    .percent {
+                        color: #FDBD3E;
+                    }
+                    .vs {
+                        color: #ADB2B6;
+                    }
+                }
+
+                @include mq("lg") {
+                    font-size: 24px;
+
+                    .estimated {
+
+                        .ratio {
+                            font-size: 72px;
+                            line-height: 0.8;
+                        }
+                    }
+                    .versus {
+                        text-align: left;
+
+                        .percent {
+                            font-size: 32px;
+                        }
+                        .vs {
+                            font-size: 29px;
+                        }
+                    }
+                }
+
+                @include mq("md") {
+                    font-size: 24px;
+
+                    .estimated {
+
+                        .ratio {
+                            font-size: 72px;
+                            line-height: 0.8;
+                        }
+                    }
+                    .versus {
+                        text-align: left;
+
+                        .percent {
+                            font-size: 26px;
+                        }
+                    }
+                }
+
+                @include mq("sm") {
+                    font-size: 16px;
+
+                    .estimated {
+                        @include clearfix;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .ratio {
+                            font-size: 50px;
+                            line-height: 0.8;
+                        }
+                    }
+                    .versus {
+                        text-align: center;
+
+                        .percent {
+                            font-size: 26px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    .section--onset {
+        background: #252F39;
+
+    }
+
+    .section--groups {
+        background: #2B3742;
+    }
+}

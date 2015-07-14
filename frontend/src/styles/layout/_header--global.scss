@@ -73,6 +73,7 @@ header.header--global {
                     color: $active-yellow;
                     border-color: $active-yellow;
                 }
+                &.active,
                 &:active {
                     color: #52758B;
                     background: $active-yellow;
@@ -120,7 +121,6 @@ header.header--global {
                 }
                 &.active {
                     border-bottom-color: $active-yellow;
-                    @include gs("light-italic");
                 }
 
             }
