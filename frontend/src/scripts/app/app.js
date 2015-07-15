@@ -3,6 +3,30 @@
 
     angular.module('cdmp', ['cdmp.services', 'cdmp.controllers', 'cdmp.directives', 'cdmp.filters', 'ngSanitize', 'ngCookies', 'angular-storage', 'matchmedia-ng', 'duScroll', 'ngMask', 'rcMailgun', 'templates'])
 
+    // Disable router
+    // http://stackoverflow.com/a/19825756
+    .config(['$provide',
+
+        function($provide) {
+
+            $provide.decorator('$browser', ['$delegate',
+
+                function($delegate) {
+
+                    $delegate.onUrlChange = function() {
+
+                    };
+
+                    $delegate.url = function() {
+                        return '';
+                    };
+
+                    return $delegate;
+                }
+            ]);
+        }
+    ])
+
     .config(['rcMailgunProvider', 'AnalyticsProvider',
         function(rcMailgunProvider, AnalyticsProvider) {
 

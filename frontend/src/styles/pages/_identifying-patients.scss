@@ -1,0 +1,18 @@
+body.identifying-patients {
+    $page: "identifying-patients";
+
+    .section--patients {
+
+        .persons {
+            .person {
+                $persons: "kimberly" "nikki" "julie" "diego";
+                @each $person in $persons {
+                    &.#{$person} {
+                        @include responsive-bg("#{$page}/#{$person}.jpg");
+                    }
+                }
+            }
+        }
+
+    }
+}
