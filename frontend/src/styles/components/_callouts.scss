@@ -1,0 +1,88 @@
+.callouts {
+
+    .callout {
+
+        &.one {
+
+        }
+        &.two {
+
+        }
+    }
+}
+
+
+
+@include mq("lg", "md") {
+
+    .callouts {
+        display: table;
+
+        .callout {
+            display: table-cell;
+
+            &.one {
+                border-right: 1px solid #5C656D;
+
+                &,
+                h2,
+                p {
+                    text-align: right;
+                }
+            }
+            &.two {
+
+                &,
+                h2,
+                p {
+                    text-align: left;
+                }                        
+            }
+        }
+    }
+}
+
+@include mq("lg") {
+
+    .callouts {
+
+        .callout {
+
+            &.one {
+                padding-right: 30px;
+            }
+            &.two {
+                padding-left: 30px;
+            }
+        }
+    }
+
+}
+@include mq("md") {
+
+    .callouts {
+
+        .callout {
+
+            &.one {
+                padding-right: 15px;
+            }
+            &.two {
+                padding-left: 15px;
+            }
+        }
+    }
+
+}
+@include mq("sm") {
+
+    .callouts {
+
+        .callout {
+
+            &.one {
+                border-bottom: 1px solid #5C656D;
+            }
+        }
+    }
+}

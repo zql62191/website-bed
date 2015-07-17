@@ -1,0 +1,64 @@
+body.profiles {
+    $page: "profiles";
+
+    .section--carousel {
+        background: #DED8D4;
+        color: #858B91;
+
+        // blockquote {
+        //     &:before {
+        //         content: '\201C';
+        //     }
+        //     &:after {
+        //         content: '\201D';
+        //     }
+        // }
+
+        .profile {
+
+            .name {
+
+            }
+            .binge {
+
+            }
+            .age {
+
+            }
+            .bmi {
+
+            }
+            .stat {
+
+            }
+        }
+
+        @include mq("sm") {
+
+            blockquote {
+                text-align: center;
+
+                p {
+                    font-size: 22px;
+                }
+            }
+
+            .profile {
+                color: #70767C;
+
+                .name {
+                    font-size: 32px;
+                    color: #333E48;
+                }
+                .binge {
+                    font-size: 18px;
+                }
+                .age,
+                .bmi,
+                .stat {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

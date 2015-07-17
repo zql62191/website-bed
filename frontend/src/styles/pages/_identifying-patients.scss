@@ -2,9 +2,12 @@ body.identifying-patients {
     $page: "identifying-patients";
 
     .section--patients {
+        background: #252F39;
 
         .persons {
+
             .person {
+
                 $persons: "kimberly" "nikki" "julie" "diego";
                 @each $person in $persons {
                     &.#{$person} {
@@ -14,5 +17,36 @@ body.identifying-patients {
             }
         }
 
+        @include mq("md") {
+
+            .wrap--content {
+
+            }
+
+            .persons {
+                @include clearfix;
+                width: 592px;
+                margin: 0 auto;
+
+                .person {
+                    display: block;
+                    float: left;
+                }
+            }
+        }
+
+        @include mq("sm") {
+
+            .persons {
+                @include clearfix;
+                width: 316px;
+                margin: 0 auto;
+
+                .person {
+                    display: block;
+                    float: left;
+                }
+            }
+        }
     }
 }

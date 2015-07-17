@@ -2,19 +2,22 @@
     display: block;
     margin: 0 auto;
     text-align: center;
+    transition: background 250ms, color 250ms;
+    height: 46px;
+    line-height: 46px;
+
+    @include mq("lg") {
+        @include inline-block;
+        padding: 0 50px;
+    }
 
     &.btn--yellow {
         @include gs("roman");
         background: #FFBE2C;
         border-radius: 4px;
         color: #21282F;
-        height: 46px;
-        line-height: 46px;
-        transition: background 250ms, color 250ms;
 
         @include mq("lg") {
-            @include inline-block;
-            padding: 0 50px;
 
             &:hover {
                 background: #CD9D3C;
@@ -28,7 +31,23 @@
         }
     }
     &.btn--blue {
-    
+        @include gs("roman");
+        background: #52758B;
+        border-radius: 4px;
+        color: #F2F2F2;
+
+        @include mq("lg") {
+            
+            &:hover {
+                color: #FFBE2C;
+            }
+        }
+
+        &:active {
+            background: #FFBE2C;
+            color: #000000;
+        }
+
     }
     &.btn--line {
 
