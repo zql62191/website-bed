@@ -33,7 +33,7 @@ Vagrant.configure("2") do |config|
 
   # Forward LiveReload Ports
   if !has_admin
-    config.vm.network "forwarded_port", guest: 35729, host: 35729
+    config.vm.network "forwarded_port", guest: 35728, host: 35728
   end
 
   # Weinre Ports
