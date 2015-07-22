@@ -1,0 +1,4 @@
+
+AddType text/html .aspx
+
+DirectoryIndex indext.html index.htm index.php index.aspx
