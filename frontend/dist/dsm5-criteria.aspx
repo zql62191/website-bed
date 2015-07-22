@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="cdmp" ng-controller="MainController">
+<html lang="en" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="cdmp" ng-controller="MainController" class="in-dev">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8">
@@ -7,15 +7,11 @@
     <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="/hcp/css/styles.css?1437589200000"/>
+    <link rel="stylesheet" href="/hcp/css/styles.css?1437594959991"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
-    <script>
-!function(){document.documentElement.className+=" ng-cloak"}();
-</script>
-    <script>
-!function(e){if(window.__ie=null,/msie|trident/i.test(e)){for(var t=function(){var t=e.match(/(?:msie |rv:)(\d+(\.\d+)?)/i),n=t&&t.length>1&&t[1]||"";return parseInt(n,10)}(),n="ie",i=6,s=12,u=["eq-ie"],r=i;s>=r;r++)t>r?u.push("gt-"+n+r):r>t?u.push("lt-"+n+r):t===r&&(u.push("lte-"+n+r),u.push("eq-"+n+r),u.push("gte-"+n+r));window.__ie=t,document.documentElement.className+=" "+u.join(" ")}}(navigator.userAgent||"");
-</script>
-    <script src="/hcp/js/head.js?1437589200000"></script>
+    <script src="js/inline/cloak.js?__inline=true"></script>
+    <script src="js/inline/iev.js?__inline=true"></script>
+    <script src="/hcp/js/head.js?1437594959992"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="dsm5-criteria">
     <main class="content--main">
@@ -71,15 +67,18 @@
           </h1>
           <ul class="boxed">
             <li>
-              At least once per week for 3 months, they experience a loss of control over eating and consume an abnormally large amount of food in a short period of time compared with what others might eat in the same amount of time.
+              Recurrent episodes of binge eating during which they experience a loss of control over eating and consume an abnormally large amount of food in a short period of time compared with what others might eat in the same amount of time.
               
             </li>
-            <li>
-              Episodes feature at least 3 of the following: consuming food faster than normal; consuming food until uncomfortably full; consuming large amounts of food when not hungry; consuming food alone due to embarrassment; feeling disgusted, depressed, or guilty after eating a large amount of food.
+            <li>Episodes feature <span class="underline">at least 3</span> of the following: consuming food faster than normal; consuming food until uncomfortably full; consuming large amounts of food when not hungry; consuming food alone due to embarrassment; feeling disgusted, depressed, or guilty after eating a large amount of food.
               
             </li>
             <li>
               Overall, they feel significant distress about their binge eating.
+              
+            </li>
+            <li>
+              Their binge eating episodes occur, on average, at least once per week for 3 months.
               
             </li>
             <li>
@@ -107,10 +106,18 @@
             
           </h3>
           <ul class="square line">
-            <li>Interpersonal stressors</li>
-            <li>Restrictions on diet</li>
-            <li>Feeling bad about body weight, body shape, and food</li>
-            <li>Feeling bored</li>
+            <li>
+              <h2 class="heading--2">Interpersonal stressors</h2>
+            </li>
+            <li>
+              <h2 class="heading--2">Dietary restraint</h2>
+            </li>
+            <li>
+              <h2 class="heading--2">Feeling bad about body weight, body shape, and food</h2>
+            </li>
+            <li>
+              <h2 class="heading--2">Feeling bored</h2>
+            </li>
           </ul>
           <div class="center"><a href="/hcp/sign-up.aspx" class="btn btn--yellow">GET THE FULL <em><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr></em> <abbr title="Binge Eating Disorder">B.E.D.</abbr> CRITERIA</a></div>
         </div>
@@ -122,7 +129,7 @@
       </section>
       <footer class="footer--global">
         <div class="wrap--content full--sm">
-          <nav>
+          <nav class="bottom-bump">
             <ul>
               <li><a href="/hcp/unsubscribe.aspx">Unsubscribe</a>
               </li>
@@ -136,11 +143,11 @@
             </ul>
           </nav>
         </div>
-        <div class="wrap--content">
+        <div class="wrap--content last">
           <p><em>DSM-IV</em><sup>&reg;</sup> and <em><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr></em> are registered trademarks of the American Psychiatric Association.
             
           </p>
-          <p><a href="http://www.shire.com/" target="_blank">
+          <p class="bottom-bump"><a href="http://www.shire.com/" target="_blank">
               <picture><!--[if IE 9]><video style="display: none;"><![endif]-->
                 <source media="only screen and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 2)" srcset="img/smr/shire-logo.png 2x"/>
                 <source media="only screen and (max-width: 640px)" srcset="img/sm/shire-logo.png 1x"/>
@@ -159,9 +166,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="/hcp/js/vendor.js?1437589200000"></script>
-    <script src="/hcp/js/templates.js?1437589200000"></script>
-    <script src="/hcp/js/app.js?1437589200000"></script>
+    <script src="/hcp/js/vendor.js?1437594959993"></script>
+    <script src="/hcp/js/templates.js?1437594959993"></script>
+    <script src="/hcp/js/app.js?1437594959993"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");
@@ -175,6 +182,11 @@
   <iframe src="//s.thebrighttag.com/iframe?c=BYgLeqO" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 </noscript>
 
-
+ 
+    <!--[if !IE]> -->
+     
+    <script>/local|ngrok|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/ig.test(location.hostname) && 'WebSocket' in window && window.WebSocket.CLOSING === 2 && document.write('\x3Cscript src="//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1">\x3C/script>');</script> 
+    <!-- <![endif]-->
+     
   </body>
 </html>

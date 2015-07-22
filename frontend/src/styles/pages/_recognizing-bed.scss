@@ -1,13 +1,30 @@
 body.recognizing-bed {
     $page: "recognizing-bed";
 
+    h1.heading--1{
+        padding-bottom: 18px;
+    }
+
     .section--bulimia {
         background: #252F39;
-        background-image: linear-gradient(-180deg, #1E2730 0%, #252F39 100%);            
+        background-image: linear-gradient(-180deg, #1E2730 0%, #252F39 100%);
+
+        .heading--2{
+            width: 796px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
     }
 
     .section--overeating {
         background: #333E48;
+
+        .heading--2{
+            width: 886px;
+            text-align: center;
+            margin: 0 auto;
+        }
 
         &:before {
             @include stretch;
@@ -17,10 +34,25 @@ body.recognizing-bed {
 
     .section--obesity {
         background: #252F39;
+
+        .heading--2{
+            width: 608px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
     }
 
     .section--majority {
         background: #333E48;
+
+        .wrap--content{
+            padding-bottom:67px;
+        }
+
+        .heading--2{
+            padding-bottom:40px;
+        }
 
         .chart-wrap {
             @include clearfix;
@@ -148,6 +180,13 @@ body.recognizing-bed {
     .section--compared {
         background: #252F39;
 
+        .heading--2.top{
+            width: 585px;
+            text-align: left;
+            margin: 0 auto;
+            font-size: 21px;
+        }
+
         .statistic-box {
             border: 2px solid #5C656D;
             border-radius: 4px;
@@ -206,6 +245,30 @@ body.recognizing-bed {
             .statistic-box {
                 padding: 40px;
             }
+
+            ul.square{
+                margin: 20px 36px 54px 36px;
+            }
+
+            h4.heading--2{
+                font-size: 21px;
+                padding-top:24px;
+                padding-bottom:24px;
+            }
+
+            .wrap--refs{
+
+                ol.refs{
+
+                    li{
+                        padding-top:6px;
+                        padding-bottom:6px;
+                    }
+
+                }
+
+            }
+
         }
 
         @include mq("md") {

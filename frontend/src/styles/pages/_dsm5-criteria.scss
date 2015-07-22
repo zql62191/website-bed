@@ -2,6 +2,11 @@
 body.dsm5-criteria {
     $page: "dsm5-criteria";
 
+    h1.heading--1{
+        padding-bottom: 32px;
+    }
+
+
     .section--individuals {
         background: #252F39;
 
@@ -32,6 +37,15 @@ body.dsm5-criteria {
         .wrap--content {
             @include mq("lg") {
                 width: 555px;
+
+                ul.square.line{
+                    .heading--2{
+                        text-align:left;
+                        display: inline-block;
+                    }
+                }
+                
+
             }
         }
     }
