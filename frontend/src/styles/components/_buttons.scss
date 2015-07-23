@@ -30,6 +30,28 @@
             color: #FDBD3E;
         }
     }
+
+    &.btn--gray{
+        @include gs("roman");
+        background: #D6D8DA;
+        border-radius: 4px;
+        color: #21282F;
+
+        @include mq("lg") {
+
+            &:hover {
+                background: #9FA3A7;
+                color: #21282F;
+            }
+        }
+
+        &:active {
+            background: #9FA3A7;
+            color: #FDBD3E;
+        }
+        
+    }
+
     &.btn--blue {
         @include gs("roman");
         background: #52758B;

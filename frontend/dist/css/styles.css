@@ -1,4 +1,4 @@
-/* Last Updated: 2015-07-22 at 04:56:05 PM */
+/* Last Updated: 2015-07-23 at 04:54:17 PM */
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -382,6 +382,10 @@ section > .wrap--content:last-child > :last-child {
 
 .center {
   text-align: center;
+}
+
+.left {
+  text-align: left;
 }
 
 .pre {
@@ -1069,6 +1073,23 @@ ul.boxed > li + li:before {
   background: #52758B;
   color: #FDBD3E;
 }
+.btn.btn--gray {
+  font-weight: 300;
+  font-style: normal;
+  background: #D6D8DA;
+  border-radius: 4px;
+  color: #21282F;
+}
+@media only screen and (min-width: 1025px) {
+  .btn.btn--gray:hover {
+    background: #9FA3A7;
+    color: #21282F;
+  }
+}
+.btn.btn--gray:active {
+  background: #9FA3A7;
+  color: #FDBD3E;
+}
 .btn.btn--blue {
   font-weight: 300;
   font-style: normal;
@@ -1094,8 +1115,8 @@ ul.boxed > li + li:before {
     bottom: 0;
     left: 0;
     z-index: 2000;
-    background: url('../img/rgbapng/0b2437b3-5.png?1437493424');
-    background: rgba(11, 36, 55, 0.7);
+    background: url('../img/rgbapng/1b2025cc-5.png?1437683478');
+    background: rgba(27, 32, 37, 0.8);
     -webkit-animation: fadeIn 250ms;
             animation: fadeIn 250ms;
   }
@@ -1108,7 +1129,7 @@ ul.boxed > li + li:before {
     width: 90%;
     max-width: 850px;
     border-radius: 3px;
-    background: #F7F7F7;
+    background: #52758B;
     box-shadow: 0px 2px 4px 2px #38434B;
     text-align: left;
   }
@@ -1123,6 +1144,7 @@ ul.boxed > li + li:before {
     max-height: inherit;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    color: #E8E9E9;
   }
   .eq-ie8 .modal .modal__scroll {
     overflow: visible;
@@ -1142,6 +1164,26 @@ ul.boxed > li + li:before {
     text-align: center;
     padding-bottom: 0;
     line-height: 62px;
+  }
+  .modal .button-container {
+    padding-top: 40px;
+    text-align: center;
+  }
+  .modal .btn {
+    width: 132px;
+    height: 45px;
+    padding: 0;
+  }
+  .modal .btn:last-child {
+    margin-left: 20px;
+  }
+  .modal .modal--title {
+    font-weight: 100;
+    font-style: normal;
+    font-size: 24px;
+    color: #E8E9E9;
+    text-align: center;
+    padding-bottom: 24px;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -1805,9 +1847,14 @@ footer.footer--global nav ul li a {
     padding-top: 46%;
   }
 }
+body.index .section--hero .hero .copy p {
+  font-size: 17px;
+}
 body.index .section--hero .hero .copy h1 {
   text-align: left;
   margin: 0;
+  padding-bottom: 14px;
+  padding-top: 10px;
 }
 body.index .section--hero .hero .callouts a h4:after {
   content: '';

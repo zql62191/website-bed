@@ -1,0 +1,18 @@
+include /mixins/modal.jade
+
++modal('interstitial')
+
+      h3.modal--title
+        | You are about to leave BingeEatingDisorder.com. 
+      p.center
+        | This link will take you to a website maintained by a third party that is responsible for its content and privacy policy. Shire provides this link as a service to you. Our privacy policy does not apply to the website you are about to visit.  We encourage you to read the privacy policy of every website you visit. Select OK to continue or CANCEL to return to BingeEatingDisorder.com.
+
+      p.button-container
+        a(ng-href="{{interstitialUrl}}",
+          target="_blank",
+          ng-click="close()").authorized-link.btn.btn--yellow
+          | OK
+
+        a(href="javascript:void(0)",
+          ng-click="close()").btn.btn--gray
+          | CANCEL

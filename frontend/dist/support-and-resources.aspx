@@ -7,11 +7,11 @@
     <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="/hcp/css/styles.css?1437594960687"/>
+    <link rel="stylesheet" href="/hcp/css/styles.css?1437685076919"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="/hcp/js/head.js?1437594960687"></script>
+    <script src="/hcp/js/head.js?1437685076919"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="support-and-resources">
     <main class="content--main">
@@ -60,15 +60,48 @@
           </div>
         </div>
       </header>
-      <section class="section--">
+      <section class="section--video-player">
         <div class="wrap--content">
           <h1 class="heading--1">
             VIDEOS: Experts discuss <abbr title="Binge Eating Disorder">B.E.D.</abbr> in adults
             
+          </h1>
+        </div>
+      </section>
+      <section class="section--video-boxes">
+        <div class="wrap--content">
+          <p>Boxes go here</p>
+        </div>
+      </section>
+      <section class="section--shire-resources">
+        <div class="wrap--content">
+          <h1 class="heading--1">Downloadable Resources from Shire</h1>
+          <h2 class="heading--2">A validated screener that can help in evaluating adult patients you suspect may have <abbr title="Binge Eating Disorder">B.E.D.</abbr></h2><a href="#needurl">
+            DOWNLOAD THE <abbr title="Binge Eating Disorder">B.E.D.</abbr> SCREENER
+            </a>
+          <h2 class="heading--2">A discussion guide to help you begin a dialogue about <abbr title="Binge Eating Disorder">B.E.D.</abbr> with your adult patients</h2><a href="#needurl">
+            DOWNLOAD THE DISCUSSION GUIDE
+            </a>
+        </div>
+      </section>
+      <section class="section--information">
+        <div class="wrap--content">
+          <h1 class="heading--1">
+            If you or your adult patients would like more information about <abbr title="Binge Eating Disorder">B.E.D.</abbr>, these organizations may be able to help:
             
           </h1>
-          <h1 class="heading--1">Downloadable Resources from Shire</h1>
-          <p>A validated screener that can help in evaluating adult patients you suspect may have <abbr title="Binge Eating Disorder">B.E.D.</abbr></p><a href="#needurl">DOWNLOAD THE <abbr title="Binge Eating Disorder">B.E.D.</abbr> SCREENER</a>
+          <div class="link-box-grid">
+            <div class="link-box-row">
+              <div class="link-box">Alliance for Eating Disorders Awareness<br><a href="http://www.allianceforeatingdisorders.com" target="_blank" class="yellow">www.allianceforeatingdisorders.com</a><br><span class="yellow">1-866-662-1235</span></div>
+              <div class="link-box">American Psychological Association<br><a href="http://www.apa.org" target="_blank" class="yellow">www.apa.org</a><br><span class="yellow">1-800-374-2721</span></div>
+              <div class="link-box">National Alliance for Mental Illness<br><a href="http://www.nami.org" target="_blank" class="yellow">www.nami.org</a><br><span class="yellow">1-800-950-6264</span></div>
+            </div>
+            <div class="link-box-row">
+              <div class="link-box">American Psychiatric Association<br><a href="http://www.psychiatry.org" target="_blank" class="yellow">www.psychiatry.org</a><br><span class="yellow">1-888-357-7924</span></div>
+              <div class="link-box">Binge Eating Disorder Association<br><a href="http://www.bedaonline.com" target="_blank" class="yellow">www.bedaonline.com</a><br><span class="yellow">1-855-855-2332</span></div>
+              <div class="link-box">National Eating Disorders Association<br><a href="http://www.nationaleatingdisorders.org" target="_blank" class="yellow">www.nationaleatingdisorders.org</a><br><span class="yellow">1-800-931-2237</span></div>
+            </div>
+          </div>
         </div>
       </section>
       <footer class="footer--global">
@@ -110,9 +143,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="/hcp/js/vendor.js?1437594960688"></script>
-    <script src="/hcp/js/templates.js?1437594960688"></script>
-    <script src="/hcp/js/app.js?1437594960688"></script>
+    <script src="/hcp/js/vendor.js?1437685076920"></script>
+    <script src="/hcp/js/templates.js?1437685076920"></script>
+    <script src="/hcp/js/app.js?1437685076920"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");
