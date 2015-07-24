@@ -7,11 +7,11 @@
     <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="/hcp/css/styles.css?1437683337274"/>
+    <link rel="stylesheet" href="/hcp/css/styles.css?1437766101518"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="/hcp/js/head.js?1437683337274"></script>
+    <script src="/hcp/js/head.js?1437766101518"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="sign-up">
     <main class="content--main">
@@ -61,10 +61,28 @@
         </div>
       </header>
       <header class="header--page">
-        <div class="wrap--content"></div>
+        <div class="wrap--content">
+          <h1 class="heading--1">Sign up to instantly receive the DSM-5® diagnostic criteria for binge eating disorder (B.E.D.) and future B.E.D. content from Shire.</h1>
+        </div>
       </header>
       <section class="section--page">
-        <div class="wrap--content"></div>
+        <div class="wrap--content">
+          <form name="opt-in" ng-submit="optIn()" autocomplete="off" novalidate>
+            <input type="text" placeholder="First Name" ng-model="firstName" ng-required="true" ng-class="{forminvalid: (opt-in.firstName.$invalid &amp;&amp; opt-in.firstName.$dirty) || (opt-in.firstName.$invalid &amp;&amp; invalidform)}">
+            <input type="text" placeholder="Last Name" ng-model="lastname" ng-required="true" ng-class="{forminvalid: (opt-in.lastName.$invalid &amp;&amp; opt-in.firstName.$dirty) || (opt-in.lastName.$invalid &amp;&amp; invalidform)}">
+            <input type="email" placeholder="E-mail" ng-model="email" ng-required="true" ng-class="{forminvalid: (opt-in.email.$invalid &amp;&amp; opt-in.email.$dirty) || (opt-in.email.$invalid &amp;&amp; invalidform)}">
+            <input type="email" placeholder="Confirm E-mail" ng-model="confirmemail" ng-required="true" ng-class="{forminvalid: (opt-in.confirmEmail.$invalid &amp;&amp; opt-in.confirmEmail.$dirty) || (opt-in.confirmEmail.$invalid &amp;&amp; invalidform) || ($value!=opt-in.email.value)}">
+            <h2 class="heading--2">Opt In for Communications</h2>
+            <p class="info">
+              <input type="checkbox" value="" ng-required="true"> By checking this box and clicking SUBMIT, you certify that you are a US health care professional and you are opting to receive information about binge eating disorder plus site updates, educational information, patient support resources, and other information from Shire. You will be able to opt out of these communications at any time.
+            </p>
+            <p class="info">
+               
+              Shire respects your personal information. All information you have provided will be kept confidential and will not be used or distributed to anyone for any purpose other than what is explained in our Privacy Policy Statement. We encourage you to read our Privacy Policy Statement by clicking on this link: <a href="/hcp/privacy-policy.aspx">Review Shire Privacy Policy Statement. </a>This consent will be in effect until such time as you opt out of the program.
+            </p>
+            <button type="submit" class="btn btn--yellow">SUBMIT</button>
+          </form>
+        </div>
       </section>
       <footer class="footer--page">
         <div class="wrap--content"></div>
@@ -108,9 +126,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="/hcp/js/vendor.js?1437683337275"></script>
-    <script src="/hcp/js/templates.js?1437683337275"></script>
-    <script src="/hcp/js/app.js?1437683337275"></script>
+    <script src="/hcp/js/vendor.js?1437766101518"></script>
+    <script src="/hcp/js/templates.js?1437766101518"></script>
+    <script src="/hcp/js/app.js?1437766101518"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

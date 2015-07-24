@@ -1,4 +1,4 @@
-/* Last Updated: 2015-07-23 at 04:54:17 PM */
+/* Last Updated: 2015-07-24 at 04:21:41 PM */
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -4314,6 +4314,235 @@ body.profiles .section--carousel {
   body.profiles .section--carousel .profile .bmi,
   body.profiles .section--carousel .profile .stat {
     font-size: 16px;
+  }
+}
+
+body.support-and-resources {
+  background-color: #252F39;
+}
+body.support-and-resources .section--video-player-title {
+  background-image: -webkit-linear-gradient(270deg, #1e2730 0%, #212b34 100%);
+  background-image: linear-gradient(-180deg, #1e2730 0%, #212b34 100%);
+}
+body.support-and-resources .section--video-player {
+  background-color: #1B2025;
+}
+body.support-and-resources .section--shire-resources .wrap--content {
+  border-top: 1px solid #5C656D;
+  border-bottom: 1px solid #5C656D;
+}
+body.support-and-resources .section--video-boxes .tabs {
+  padding-bottom: 18px;
+}
+body.support-and-resources .section--video-boxes .tabs .tab {
+  display: inline-block;
+  width: 33%;
+  height: 60px;
+  background-color: #52758B;
+  color: #E8E9E9;
+  padding: 20px 0;
+  text-align: center;
+  cursor: pointer;
+}
+body.support-and-resources .section--video-boxes .tabs .tab:hover {
+  border-bottom: 4px inset #FDBD3E;
+  color: #FDBD3E;
+}
+body.support-and-resources .section--video-boxes .tabs .active-tab {
+  border-bottom: 4px inset #FDBD3E;
+  color: #FDBD3E;
+}
+body.support-and-resources .section--video-boxes .boxes .boxes-row {
+  padding-top: 20px;
+}
+body.support-and-resources .section--video-boxes .boxes .boxes-row .box {
+  width: 303px;
+  height: 112px;
+  display: inline-block;
+  background-color: #333E48;
+  margin-right: 21px;
+  position: relative;
+  padding-top: 16px;
+  padding-left: 16px;
+  cursor: pointer;
+}
+body.support-and-resources .section--video-boxes .boxes .boxes-row .box .yellow {
+  width: 220px;
+}
+body.support-and-resources .section--video-boxes .boxes .boxes-row .box:hover {
+  border: 2px solid #FDBD3E;
+}
+body.support-and-resources .section--video-boxes .boxes .boxes-row .box:last-child {
+  margin-right: 0;
+}
+body.support-and-resources .section--video-boxes .boxes .boxes-row .box .subtitle {
+  font-style: italic;
+  font-size: 14px;
+  color: #ADB2B6;
+}
+body.support-and-resources .section--video-boxes .boxes .boxes-row .box .video-length {
+  font-size: 14px;
+  font-style: italic;
+  color: #858B91;
+  position: absolute;
+  width: 34px;
+  left: 242px;
+  top: 20px;
+}
+body.support-and-resources .section--video-boxes .boxes .boxes-row .box .play-btn {
+  width: 18px;
+  height: 19px;
+  background-image: url("../img/lg/support-and-resources/play-button.png");
+  position: absolute;
+  top: 18px;
+  left: 277px;
+}
+body.support-and-resources .section--video-boxes .boxes .boxes-row .box .new {
+  position: absolute;
+  top: 61px;
+  left: 265px;
+  width: 49px;
+  height: 22px;
+  background-image: url("../img/lg/support-and-resources/new-ribbon.png");
+}
+body.support-and-resources .section--video-boxes .boxes .boxes-row .box .viewed {
+  position: absolute;
+  top: 79px;
+  left: 249px;
+  width: 64px;
+  height: 22px;
+  background-image: url("../img/lg/support-and-resources/viewed-ribbon.png");
+}
+body.support-and-resources .section--information .link-box-grid .link-box-row .link-box {
+  font-family: GillSansStd-Light;
+  font-size: 18px;
+  color: #ADB2B6;
+  line-height: 22px;
+  width: 316px;
+  height: 70px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+@media only screen and (min-width: 1025px) {
+  body.support-and-resources h2.heading--1 {
+    text-align: left;
+    padding-bottom: 36px;
+  }
+  body.support-and-resources .section--video-player .wrap--content {
+    padding: 0;
+  }
+  body.support-and-resources .section--video-player .player {
+    background-image: url("../img/lg/support-and-resources/placeholder-video-player.png");
+    width: 960px;
+    height: 540px;
+    padding: 0;
+  }
+  body.support-and-resources .section--shire-resources .wrap--content {
+    border-top: 1px solid #5C656D;
+    border-bottom: 1px solid #5C656D;
+  }
+  body.support-and-resources .section--shire-resources .split-box {
+    width: 49%;
+    padding: 0 2.5%;
+    display: inline-block;
+  }
+  body.support-and-resources .section--shire-resources .split-box .heading--2 {
+    text-align: left;
+    font-size: 21px;
+    padding-bottom: 26px;
+  }
+  body.support-and-resources .section--shire-resources .split-box .btn {
+    font-size: 16px;
+  }
+}
+
+body.sign-up .header--page {
+  background-image: -webkit-linear-gradient(270deg, #1e2730 0%, #252f39 100%);
+  background-image: linear-gradient(-180deg, #1e2730 0%, #252f39 100%);
+}
+body.sign-up .section--page {
+  background-color: #252F39;
+}
+body.sign-up .section--page form {
+  width: 593px;
+  margin: 0 auto;
+}
+body.sign-up .section--page form input[type='text'], body.sign-up .section--page form input[type='email'] {
+  width: 582px;
+  font-family: GillSansStd-Light;
+  font-size: 18px;
+  color: #858B91;
+  line-height: 22px;
+  border: none;
+  display: block;
+  border-bottom: 1px solid #5C656D;
+  padding-bottom: 3px;
+  margin-top: 25px;
+}
+body.sign-up .section--page form button {
+  border-style: none;
+  font-family: GillSansStd;
+  font-size: 14px;
+  color: #21282F;
+  line-height: 17px;
+}
+body.sign-up .section--page form p.info {
+  margin-bottom: 32px;
+  color: #858B91;
+  font-size: 18px;
+}
+body.sign-up .section--page form .heading--2 {
+  font-size: 24px;
+  text-align: left;
+  padding-top: 44px;
+  padding-bottom: 9px;
+}
+@media only screen and (min-width: 1025px) {
+  body.sign-up .header--page .heading--1 {
+    padding-top: 40px;
+    width: 850px;
+    margin: 0 auto;
+  }
+  body.sign-up .section--page form .heading--2 {
+    font-size: 24px;
+    text-align: left;
+    padding-top: 44px;
+    padding-bottom: 9px;
+  }
+}
+
+body .header--page, body .section--page {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #252F39;
+}
+body .header--page .heading--1 {
+  padding-top: 40px;
+  text-align: left;
+}
+body .section--page {
+  text-align: left;
+}
+body .section--page .wrap--content {
+  padding-top: 12px;
+  height: 580px;
+}
+body .section--page .heading--2 {
+  text-align: left;
+  margin-bottom: 15px;
+}
+body .section--page p.info {
+  font-family: GillSansStd-Light;
+  font-size: 18px;
+  color: #858B91;
+  line-height: 22px;
+}
+@media only screen and (max-width: 640px) {
+  body .section--page .wrap--content {
+    height: auto;
+  }
+  body .section--page p.info {
+    color: #D6D8DA;
   }
 }
 

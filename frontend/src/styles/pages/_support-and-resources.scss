@@ -1,0 +1,216 @@
+body.support-and-resources{
+
+    background-color: #252F39;
+
+    .section--video-player-title{
+        background-image: linear-gradient(-180deg, #1E2730 0%, #212B34 100%);
+    }
+
+    .section--video-player{
+        background-color: #1B2025;
+    }
+
+    .section--shire-resources{
+
+        .wrap--content{
+            border-top: 1px solid #5C656D;
+            border-bottom: 1px solid #5C656D;
+        }
+
+    }
+
+    .section--video-boxes{
+
+        .tabs{
+
+            padding-bottom: 18px;
+
+            .tab{
+                display: inline-block;
+                width: 33%;
+                height: 60px;
+                background-color: #52758B;
+                color: #E8E9E9;
+                // margin-right: 1px;
+                padding: 20px 0;
+                text-align: center;
+                cursor: pointer;
+
+                &:hover{
+                    border-bottom: 4px inset #FDBD3E;
+                    color: #FDBD3E;
+                }
+
+            }
+
+            .active-tab{
+                border-bottom: 4px inset #FDBD3E;
+                color: #FDBD3E;
+            }
+
+        }
+
+        .boxes{
+
+            .boxes-row{
+
+                // position: relative;
+                padding-top: 20px;
+
+                .box{
+                    width: 303px;
+                    height: 112px;
+                    display: inline-block; 
+                    background-color: #333E48;
+                    margin-right: 21px;
+                    position: relative;
+                    padding-top:16px;
+                    padding-left:16px;
+                    cursor: pointer;
+
+                    .yellow{
+                        width: 220px;
+                    }
+
+                    &:hover{
+                        border: 2px solid #FDBD3E;
+                        // padding-top:14px;
+                        // padding-left:14px;
+                    }
+
+                    &:last-child{
+                        margin-right: 0;
+                    }
+
+                    .subtitle{
+                        font-style: italic;
+                        font-size: 14px;
+                        color: #ADB2B6;
+                    }
+
+                    .video-length{
+                        font-size: 14px;
+                        font-style: italic;
+                        color: #858B91;
+                        position: absolute;
+                        width: 34px;
+                        left: 242px;
+                        top: 20px;
+                    }
+
+                    .play-btn{
+                        width: 18px;
+                        height: 19px;
+                        background-image: url("../img/lg/support-and-resources/play-button.png");
+                        position: absolute;
+                        top: 18px;
+                        left: 277px;
+                    }
+
+                    .new{
+                        position: absolute;
+                        top: 61px;
+                        left: 265px;
+                        width: 49px;
+                        height: 22px;
+                        background-image: url("../img/lg/support-and-resources/new-ribbon.png");
+                    }
+
+                    .viewed{
+                        position: absolute;
+                        top: 79px;
+                        left: 249px;
+                        width: 64px;
+                        height: 22px;
+                        background-image: url("../img/lg/support-and-resources/viewed-ribbon.png");
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+    .section--information{
+        .link-box-grid{
+
+
+            .link-box-row{
+
+
+
+                .link-box{
+                    font-family: GillSansStd-Light;
+                    font-size: 18px;
+                    color: #ADB2B6;
+                    line-height: 22px;
+                    width:316px;
+                    height: 70px;
+                    margin-bottom: 10px;
+                    display: inline-block;
+                }
+
+            }
+
+        }
+    }
+
+    @include mq('lg') {
+
+
+        h2.heading--1{
+            text-align: left;
+            padding-bottom: 36px;
+        }
+
+        .section--video-player{
+
+            .wrap--content{
+
+                padding:0;
+
+            }
+
+            .player{
+                background-image: url('../img/lg/support-and-resources/placeholder-video-player.png');
+                width: 960px;
+                height: 540px;
+                padding: 0;
+            }
+            
+        }
+
+        .section--shire-resources{
+
+            .wrap--content{
+                border-top: 1px solid #5C656D;
+                border-bottom: 1px solid #5C656D;
+            }
+
+            .split-box{
+                width:49%;
+                padding:0 2.5%;
+                display: inline-block;
+
+
+                .heading--2{
+                    text-align: left;
+                    font-size: 21px;
+                    padding-bottom: 26px;
+                }
+
+                .btn{
+                    font-size: 16px;
+                }
+                
+            }
+
+        }
+
+
+    }
+
+}

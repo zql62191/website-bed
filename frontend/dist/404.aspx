@@ -3,17 +3,17 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8">
-    <title>Helping Adults with Binge Eating Disorder</title>
+    <title>404 Page Not Found</title>
     <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="/hcp/css/styles.css?1437741912858"/>
+    <link rel="stylesheet" href="/hcp/css/styles.css?1437768083248"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="/hcp/js/head.js?1437741912858"></script>
+    <script src="/hcp/js/head.js?1437768083248"></script>
   </head>
-  <body ontouchstart="" prime-directive="" class="identifying-patients">
+  <body ontouchstart="" prime-directive="" class="404">
     <main class="content--main">
       <header class="header--global">
         <div class="title-bar">
@@ -49,7 +49,7 @@
                 </li>
                 <li><a href="/hcp/effects-of-BED.aspx">Potential Effects</a>
                 </li>
-                <li><a href="/hcp/identifying-patients.aspx" class="active">Patient Profiles</a>
+                <li><a href="/hcp/identifying-patients.aspx">Patient Profiles</a>
                 </li>
                 <li><a href="/hcp/support-and-resources.aspx">Support &amp; Resources</a>
                 </li>
@@ -60,25 +60,20 @@
           </div>
         </div>
       </header>
-      <section class="section--patients">
+      <header class="header--page">
         <div class="wrap--content">
-          <h1 class="heading--1">
-            How adult patients with binge eating disorder (<abbr title="Binge Eating Disorder">B.E.D.</abbr>) may present—and tools to help when they do
-            
-          </h1>
-          <div class="persons"><a href="/hcp/profiles.aspx#kimberly" class="person kimberly"></a><a href="/hcp/profiles.aspx#nikki" class="person nikki"></a><a href="/hcp/profiles.aspx#julie" class="person julie"></a><a href="/hcp/profiles.aspx#diego" class="person diego"></a></div>
-          <div class="callouts">
-            <div class="callout one">
-              <h2 class="heading--2">Screening the patient</h2>
-              <p>Use this validated screener to help evaluate adult patients you suspect may have <abbr title="Binge Eating Disorder">B.E.D.</abbr></p><a href="#needurl" class="btn btn--yellow">DOWNLOAD THE <abbr title="Binge Eating Disorder">B.E.D.</abbr> SCREENER</a>
-            </div>
-            <div class="callout two">
-              <h2 class="heading--2">Conducting a conversation</h2>
-              <p>Use this discussion guide to help begin a dialogue about <abbr title="Binge Eating Disorder">B.E.D.</abbr> with your adult patients.</p><a href="#needurl" class="btn btn--yellow">DOWNLOAD THE DISCUSSION GUIDE</a>
-            </div>
-          </div>
+          <h1 class="heading--1">Sorry. Page not found.</h1>
+        </div>
+      </header>
+      <section class="section--page">
+        <div class="wrap--content">
+          <h2 class="heading--2">The page you requested cannot be found. This page may have been removed or had its name changed, or it may be temporarily unavailable. Please try the following:</h2>
+          <p class="info">If you typed the page address in your browser’s address bar, make sure that it is spelled correctly.</p>
         </div>
       </section>
+      <footer class="footer--page">
+        <div class="wrap--content"></div>
+      </footer>
       <footer class="footer--global">
         <div class="wrap--content full--sm">
           <nav class="bottom-bump">
@@ -118,9 +113,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="/hcp/js/vendor.js?1437741912859"></script>
-    <script src="/hcp/js/templates.js?1437741912859"></script>
-    <script src="/hcp/js/app.js?1437741912859"></script>
+    <script src="/hcp/js/vendor.js?1437768083248"></script>
+    <script src="/hcp/js/templates.js?1437768083248"></script>
+    <script src="/hcp/js/app.js?1437768083248"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

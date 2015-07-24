@@ -7,11 +7,11 @@
     <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="/hcp/css/styles.css?1437685076919"/>
+    <link rel="stylesheet" href="/hcp/css/styles.css?1437761414488"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="/hcp/js/head.js?1437685076919"></script>
+    <script src="/hcp/js/head.js?1437761414488"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="support-and-resources">
     <main class="content--main">
@@ -60,7 +60,7 @@
           </div>
         </div>
       </header>
-      <section class="section--video-player">
+      <section class="section--video-player-title">
         <div class="wrap--content">
           <h1 class="heading--1">
             VIDEOS: Experts discuss <abbr title="Binge Eating Disorder">B.E.D.</abbr> in adults
@@ -68,28 +68,101 @@
           </h1>
         </div>
       </section>
+      <section class="section--video-player">
+        <div class="wrap--content">
+          <div class="player">
+          </div>
+        </div>
+      </section>
       <section class="section--video-boxes">
         <div class="wrap--content">
-          <p>Boxes go here</p>
+          <div class="tabs">
+            <div class="tab">What is <abbr title="Binge Eating Disorder">B.E.D.</abbr>?</div>
+            <div class="tab"><abbr title="Binge Eating Disorder">B.E.D.</abbr> in Adults</div>
+            <div class="tab">Experts Panel Discussion</div>
+          </div>
+          <div class="boxes">
+            <div class="boxes-tab-1">
+              <div class="boxes-row">
+                <div class="box">
+                  <div class="yellow">What are the essential features for a diagnosis of <abbr title="Binge Eating Disorder">B.E.D.</abbr>?</div>
+                  <div class="video-length">12:24</div>
+                  <div class="play-btn"></div>
+                  <div class="subtitle">Featuring Cynthia M. Bulik, PhD, FAED</div>
+                  <div class="new"></div>
+                  <div class="viewed"></div>
+                </div>
+                <div class="box">
+                  <div class="yellow">How is <abbr title="Binge Eating Disorder">B.E.D.</abbr> distinct from bulimia nervosa?</div>
+                  <div class="video-length"></div>
+                  <div class="play-btn"></div>
+                  <div class="subtitle">Featuring Cynthia M. Bulik, PhD, FAED</div>
+                  <div class="new"></div>
+                  <div class="viewed"></div>
+                </div>
+                <div class="box">
+                  <div class="yellow">What are the essential features for a diagnosis of <abbr title="Binge Eating Disorder">B.E.D.</abbr>?</div>
+                  <div class="video-length"></div>
+                  <div class="play-btn"></div>
+                  <div class="subtitle">Featuring Cynthia M. Bulik, PhD, FAED</div>
+                  <div class="new"></div>
+                  <div class="viewed"></div>
+                </div>
+              </div>
+              <div class="boxes-row">
+                <div class="box">
+                  <div class="yellow">What are the functional consequences of <abbr title="Binge Eating Disorder">B.E.D.</abbr>  in adults?</div>
+                  <div class="video-length"></div>
+                  <div class="play-btn"></div>
+                  <div class="subtitle">Featuring Cynthia M. Bulik, PhD, FAED</div>
+                  <div class="new"></div>
+                  <div class="viewed"></div>
+                </div>
+                <div class="box">
+                  <div class="yellow">What are the essential features for a diagnosis of <abbr title="Binge Eating Disorder">B.E.D.</abbr>?</div>
+                  <div class="video-length"></div>
+                  <div class="play-btn"></div>
+                  <div class="subtitle">Featuring Cynthia M. Bulik, PhD, FAED</div>
+                  <div class="new"></div>
+                  <div class="viewed"></div>
+                </div>
+                <div class="box">
+                  <div class="yellow">What are the essential features for a diagnosis of <abbr title="Binge Eating Disorder">B.E.D.</abbr>?</div>
+                  <div class="video-length"></div>
+                  <div class="play-btn"></div>
+                  <div class="subtitle">Featuring Cynthia M. Bulik, PhD, FAED</div>
+                  <div class="new"></div>
+                  <div class="viewed"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section--shire-resources">
         <div class="wrap--content">
-          <h1 class="heading--1">Downloadable Resources from Shire</h1>
-          <h2 class="heading--2">A validated screener that can help in evaluating adult patients you suspect may have <abbr title="Binge Eating Disorder">B.E.D.</abbr></h2><a href="#needurl">
-            DOWNLOAD THE <abbr title="Binge Eating Disorder">B.E.D.</abbr> SCREENER
-            </a>
-          <h2 class="heading--2">A discussion guide to help you begin a dialogue about <abbr title="Binge Eating Disorder">B.E.D.</abbr> with your adult patients</h2><a href="#needurl">
-            DOWNLOAD THE DISCUSSION GUIDE
-            </a>
+          <h2 class="heading--1">
+            Downloadable Resources from Shire
+            
+          </h2>
+          <div class="split-box sb-1">
+            <h2 class="heading--2">A validated screener that can help in evaluating adult patients you suspect may have <abbr title="Binge Eating Disorder">B.E.D.</abbr></h2><a href="#needurl" class="btn btn--yellow">
+              DOWNLOAD THE <abbr title="Binge Eating Disorder">B.E.D.</abbr> SCREENER
+              </a>
+          </div>
+          <div class="split-box sb-2">
+            <h2 class="heading--2">A discussion guide to help you begin a dialogue about <abbr title="Binge Eating Disorder">B.E.D.</abbr> with your adult patients</h2><a href="#needurl" class="btn btn--yellow">
+              DOWNLOAD THE DISCUSSION GUIDE
+              </a>
+          </div>
         </div>
       </section>
       <section class="section--information">
         <div class="wrap--content">
-          <h1 class="heading--1">
+          <h2 class="heading--1">
             If you or your adult patients would like more information about <abbr title="Binge Eating Disorder">B.E.D.</abbr>, these organizations may be able to help:
             
-          </h1>
+          </h2>
           <div class="link-box-grid">
             <div class="link-box-row">
               <div class="link-box">Alliance for Eating Disorders Awareness<br><a href="http://www.allianceforeatingdisorders.com" target="_blank" class="yellow">www.allianceforeatingdisorders.com</a><br><span class="yellow">1-866-662-1235</span></div>
@@ -143,9 +216,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="/hcp/js/vendor.js?1437685076920"></script>
-    <script src="/hcp/js/templates.js?1437685076920"></script>
-    <script src="/hcp/js/app.js?1437685076920"></script>
+    <script src="/hcp/js/vendor.js?1437761414489"></script>
+    <script src="/hcp/js/templates.js?1437761414489"></script>
+    <script src="/hcp/js/app.js?1437761414489"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

@@ -1,0 +1,60 @@
+ body{
+
+
+    .header--page, .section--page{
+        width: 100%;
+        margin: 0 auto;
+        background-color: #252F39;
+    }
+
+    .header--page{
+        .heading--1{
+            padding-top:40px;
+            text-align: left;
+        }
+
+    }
+
+    .section--page{
+        text-align: left;
+
+        .wrap--content{
+            padding-top: 12px;
+            height: 580px;
+        }
+
+        .heading--2{
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        p.info{
+            font-family: GillSansStd-Light;
+            font-size: 18px;
+            color: #858B91;
+            line-height: 22px;
+        }
+
+    }
+
+    @include mq('sm') {
+
+        .section--page{
+
+            .wrap--content{
+                height: auto;
+            }
+
+            p.info{
+                color: #D6D8DA;
+            }
+
+        }
+
+        .heading--1{
+
+        }
+    }
+
+
+ }

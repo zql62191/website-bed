@@ -1,0 +1,92 @@
+body.sign-up{
+
+    .header--page{
+        background-image: linear-gradient(-180deg, #1E2730 0%, #252F39 100%);
+
+    }
+
+    .section--page{
+        background-color: #252F39;
+
+        form{
+            width: 593px;
+            margin: 0 auto;
+
+            input[type='text'],input[type='email']{
+                width:582px;
+                font-family: GillSansStd-Light;
+                font-size: 18px;
+                color: #858B91;
+                line-height: 22px;
+                border: none;
+                display: block;
+                border-bottom: 1px solid #5C656D;
+                padding-bottom: 3px; 
+                margin-top: 25px;
+            }
+
+            button{
+                border-style: none;
+                font-family: GillSansStd;
+                font-size: 14px;
+                color: #21282F;
+                line-height: 17px;
+            }
+
+            p.info{
+                margin-bottom:32px;
+                color: #858B91;
+                font-size: 18px;
+            }
+
+            .heading--2{
+                font-size: 24px;
+                text-align: left;
+                padding-top: 44px;
+                padding-bottom: 9px;
+            }
+
+        }
+        
+    }
+
+    @include mq('lg') {
+        .header--page{
+            .heading--1{
+                padding-top:40px;
+                width: 850px;
+                margin: 0 auto;
+            }
+
+        }
+
+        .section--page{
+
+            form{
+
+                .heading--2{
+                    font-size: 24px;
+                    text-align: left;
+                    padding-top: 44px;
+                    padding-bottom: 9px;
+                }
+
+                .info{
+                    // margin-bottom: 0px;
+                }
+
+            }
+
+        }
+
+    }
+    @include mq('md') {
+
+    }
+    @include mq('sm') {
+
+    }
+
+
+}
+
