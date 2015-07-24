@@ -11,11 +11,31 @@ extends /layouts/base.jade
 
 block content
 
-    header.header--page
+    .gradient
+
+    header.header--unsubscribe
         .wrap--content
 
-    section.section--page
+    section.section--unsubscribe
         .wrap--content
+            .subcontainer
 
-    footer.footer--page
+                h1.heading--1 Unsubscribe
+
+                h2.heading--2 To unsubscribe from future communications, please select an option below, fill in the required fields, and click SUBMIT.
+
+                .box
+                    .text I would like to opt out of future !{BED} e-mail communications
+                    .arrow.closed
+
+                .box
+                    .text I would like to opt out of future !{BED} direct mail communications
+                    .arrow.closed
+
+                .box
+                    .text I would like to opt out of all future Shire communications
+                    .arrow.closed
+
+
+    footer.footer--unsubscribe
         .wrap--content

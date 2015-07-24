@@ -1,0 +1,94 @@
+ body.unsubscribe{
+
+
+    .gradient{
+        position: absolute;
+        background-image: linear-gradient(-180deg, #1E2730 0%, #252F39 100%);
+        background-position: center top;
+        width: 100%;
+        height: 250px;
+    }
+
+    .header--unsubscribe, .section--unsubscribe{
+        background-color: #252F39;
+        text-align: left;
+    }
+
+    .section--unsubscribe{
+
+        .wrap--content{
+
+            // padding-top: 0;
+            padding-bottom: 0;
+
+            .subcontainer{
+                width: 636px;
+                height: 580px;
+                margin: 0 auto;
+            }    
+        }
+
+
+        .arrow{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url("../img/lg/unsubscribe/down_arrow.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            left: 578px;
+            top: 30px;
+        }
+
+    }
+
+    .heading--1{
+        padding-bottom: 12px;
+        text-align: left;
+    }
+
+    h2{
+        font-family: GillSansStd-LightItalic;
+        font-size: 24px;
+        color: #E8E9E9;
+        line-height: 29px;
+        text-align: left;
+        padding-bottom: 18px;
+    }
+
+    .box{
+        background: #333E48;
+        border-radius: 4px;
+    }
+
+
+    @include mq('lg') {
+
+        .section--unsubscribe{
+
+            .box{
+                width: 633px;
+                height: 74px;
+                margin-bottom: 10px;
+                padding-left: 25px;
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+
+            }
+
+            .text{
+                font-family: GillSansStd-Light;
+                font-size: 18px;
+                color: #E8E9E9;
+                line-height: 22px;
+                padding-top: 30px;
+                padding-bottom: 22px;
+            }
+        }
+
+        
+    }
+
+ }

@@ -7,11 +7,11 @@
     <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="/hcp/css/styles.css?1437741913527"/>
+    <link rel="stylesheet" href="/hcp/css/styles.css?1437778584374"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="/hcp/js/head.js?1437741913527"></script>
+    <script src="/hcp/js/head.js?1437778584374"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="unsubscribe">
     <main class="content--main">
@@ -60,13 +60,31 @@
           </div>
         </div>
       </header>
-      <header class="header--page">
+      <div class="gradient"></div>
+      <header class="header--unsubscribe">
         <div class="wrap--content"></div>
       </header>
-      <section class="section--page">
-        <div class="wrap--content"></div>
+      <section class="section--unsubscribe">
+        <div class="wrap--content">
+          <div class="subcontainer">
+            <h1 class="heading--1">Unsubscribe</h1>
+            <h2 class="heading--2">To unsubscribe from future communications, please select an option below, fill in the required fields, and click SUBMIT.</h2>
+            <div class="box">
+              <div class="text">I would like to opt out of future <abbr title="Binge Eating Disorder">B.E.D.</abbr> e-mail communications</div>
+              <div class="arrow closed"></div>
+            </div>
+            <div class="box">
+              <div class="text">I would like to opt out of future <abbr title="Binge Eating Disorder">B.E.D.</abbr> direct mail communications</div>
+              <div class="arrow closed"></div>
+            </div>
+            <div class="box">
+              <div class="text">I would like to opt out of all future Shire communications</div>
+              <div class="arrow closed"></div>
+            </div>
+          </div>
+        </div>
       </section>
-      <footer class="footer--page">
+      <footer class="footer--unsubscribe">
         <div class="wrap--content"></div>
       </footer>
       <footer class="footer--global">
@@ -108,9 +126,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="/hcp/js/vendor.js?1437741913529"></script>
-    <script src="/hcp/js/templates.js?1437741913529"></script>
-    <script src="/hcp/js/app.js?1437741913529"></script>
+    <script src="/hcp/js/vendor.js?1437778584376"></script>
+    <script src="/hcp/js/templates.js?1437778584376"></script>
+    <script src="/hcp/js/app.js?1437778584376"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

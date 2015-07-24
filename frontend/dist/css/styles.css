@@ -1,4 +1,4 @@
-/* Last Updated: 2015-07-24 at 04:21:41 PM */
+/* Last Updated: 2015-07-24 at 06:57:03 PM */
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -4511,38 +4511,226 @@ body.sign-up .section--page form .heading--2 {
   }
 }
 
-body .header--page, body .section--page {
+body._404 .header--page, body._404 .section--page {
   width: 100%;
   margin: 0 auto;
   background-color: #252F39;
 }
-body .header--page .heading--1 {
+body._404 .header--page .heading--1 {
   padding-top: 40px;
   text-align: left;
 }
-body .section--page {
+body._404 .section--page {
   text-align: left;
 }
-body .section--page .wrap--content {
+body._404 .section--page .wrap--content {
   padding-top: 12px;
   height: 580px;
 }
-body .section--page .heading--2 {
+body._404 .section--page .heading--2 {
   text-align: left;
   margin-bottom: 15px;
 }
-body .section--page p.info {
+body._404 .section--page p.info {
   font-family: GillSansStd-Light;
   font-size: 18px;
   color: #858B91;
   line-height: 22px;
 }
 @media only screen and (max-width: 640px) {
-  body .section--page .wrap--content {
+  body._404 .section--page .wrap--content {
     height: auto;
   }
-  body .section--page p.info {
+  body._404 .section--page p.info {
     color: #D6D8DA;
+  }
+}
+
+body.privacy-policy .gradient {
+  position: absolute;
+  background-image: -webkit-linear-gradient(270deg, #1e2730 0%, #252f39 100%);
+  background-image: linear-gradient(-180deg, #1e2730 0%, #252f39 100%);
+  background-position: center top;
+  width: 100%;
+  height: 250px;
+}
+body.privacy-policy .header--privacy-policy, body.privacy-policy .section--privacy-policy {
+  background-color: #252F39;
+}
+body.privacy-policy .section--privacy-policy .wrap--content {
+  padding-top: 18px;
+}
+body.privacy-policy .heading--1 {
+  padding-top: 50px;
+  text-align: left;
+}
+body.privacy-policy h2 {
+  font-family: GillSansStd-LightItalic;
+  font-size: 24px;
+  color: #E8E9E9;
+  line-height: 29px;
+}
+body.privacy-policy p {
+  font-family: GillSansStd-Light;
+  font-size: 18px;
+  color: #858B91;
+  line-height: 22px;
+  margin-bottom: 18px;
+}
+body.privacy-policy p span {
+  color: #E8E9E9;
+}
+@media only screen and (max-width: 640px) {
+  body.privacy-policy h1.heading--1 {
+    font-family: GillSansStd-Light;
+    font-size: 30px;
+    color: #FDBD3E;
+    line-height: 28px;
+    text-align: left;
+    padding-top: 24px;
+  }
+  body.privacy-policy h2 {
+    margin-top: 24px;
+    text-align: left;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  body.privacy-policy p {
+    font-size: 16px;
+    color: #D6D8DA;
+  }
+}
+
+body.contact-us .gradient {
+  position: absolute;
+  background-image: -webkit-linear-gradient(270deg, #1e2730 0%, #252f39 100%);
+  background-image: linear-gradient(-180deg, #1e2730 0%, #252f39 100%);
+  background-position: center top;
+  width: 100%;
+  height: 250px;
+}
+body.contact-us .header--contact-us, body.contact-us .section--contact-us {
+  background-color: #252F39;
+  text-align: left;
+}
+body.contact-us .heading--1 {
+  padding-top: 30px;
+  padding-bottom: 12px;
+  text-align: left;
+}
+body.contact-us h2 {
+  font-family: GillSansStd-LightItalic;
+  font-size: 24px;
+  color: #E8E9E9;
+  line-height: 29px;
+  text-align: left;
+  padding-bottom: 18px;
+}
+body.contact-us h3 {
+  font-style: italic;
+}
+body.contact-us .section--contact-us .wrap--content {
+  padding-top: 18px;
+}
+body.contact-us .section--contact-us .wrap--content p {
+  color: #858B91;
+}
+body.contact-us .section--contact-us .wrap--content .white {
+  color: #E8E9E9;
+}
+body.contact-us .section--contact-us .wrap--content .subcontainer {
+  width: 800px;
+  height: 580px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (max-width: 640px) {
+  body.contact-us .section--contact-us .wrap--content .subcontainer {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body.contact-us .heading--1 {
+    padding-top: 6px;
+  }
+  body.contact-us .section--contact-us .wrap--content h2 {
+    font-size: 22px;
+  }
+  body.contact-us .section--contact-us .wrap--content h3 {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+  body.contact-us .section--contact-us .wrap--content p {
+    font-size: 16px;
+    color: #ADB2B6;
+  }
+  body.contact-us .section--contact-us .wrap--content .subcontainer {
+    height: auto;
+  }
+}
+
+body.unsubscribe .gradient {
+  position: absolute;
+  background-image: -webkit-linear-gradient(270deg, #1e2730 0%, #252f39 100%);
+  background-image: linear-gradient(-180deg, #1e2730 0%, #252f39 100%);
+  background-position: center top;
+  width: 100%;
+  height: 250px;
+}
+body.unsubscribe .header--unsubscribe, body.unsubscribe .section--unsubscribe {
+  background-color: #252F39;
+  text-align: left;
+}
+body.unsubscribe .section--unsubscribe .wrap--content {
+  padding-bottom: 0;
+}
+body.unsubscribe .section--unsubscribe .wrap--content .subcontainer {
+  width: 636px;
+  height: 580px;
+  margin: 0 auto;
+}
+body.unsubscribe .section--unsubscribe .arrow {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/lg/unsubscribe/down_arrow.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  left: 578px;
+  top: 30px;
+}
+body.unsubscribe .heading--1 {
+  padding-bottom: 12px;
+  text-align: left;
+}
+body.unsubscribe h2 {
+  font-family: GillSansStd-LightItalic;
+  font-size: 24px;
+  color: #E8E9E9;
+  line-height: 29px;
+  text-align: left;
+  padding-bottom: 18px;
+}
+body.unsubscribe .box {
+  background: #333E48;
+  border-radius: 4px;
+}
+@media only screen and (min-width: 1025px) {
+  body.unsubscribe .section--unsubscribe .box {
+    width: 633px;
+    height: 74px;
+    margin-bottom: 10px;
+    padding-left: 25px;
+  }
+  body.unsubscribe .section--unsubscribe .box:last-child {
+    margin-bottom: 0;
+  }
+  body.unsubscribe .section--unsubscribe .text {
+    font-family: GillSansStd-Light;
+    font-size: 18px;
+    color: #E8E9E9;
+    line-height: 22px;
+    padding-top: 30px;
+    padding-bottom: 22px;
   }
 }
 

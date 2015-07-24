@@ -3,15 +3,15 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8">
-    <title>Contact Us</title>
+    <title>Privacy Policy</title>
     <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="/hcp/css/styles.css?1437741912560"/>
+    <link rel="stylesheet" href="/hcp/css/styles.css?1437778583405"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="/hcp/js/head.js?1437741912560"></script>
+    <script src="/hcp/js/head.js?1437778583405"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="contact-us">
     <main class="content--main">
@@ -60,11 +60,22 @@
           </div>
         </div>
       </header>
-      <header class="header--page">
+      <div class="gradient"></div>
+      <header class="header--contact-us">
         <div class="wrap--content"></div>
       </header>
-      <section class="section--page">
-        <div class="wrap--content"></div>
+      <section class="section--contact-us">
+        <div class="wrap--content">
+          <div class="subcontainer">
+            <h1 class="heading--1">Contact Us</h1>
+            <h2 class="heading--2">Thank you for your interest. Shire US Inc. welcomes your comments and questions.</h2>
+            <h3 class="heading--3">Health Care Professionals</h3>
+            <p>
+               
+              Clinical inquiries: For further clinical information on Shire products, US health care professionals may call Shire Medical Affairs toll free at <span class="white">1-800-828-2088 </span>or send an e‐mail to <a href="mailto:medinfoGlobal@shire.com" class="white">medinfoGlobal@shire.com</a>.
+            </p>
+          </div>
+        </div>
       </section>
       <footer class="footer--page">
         <div class="wrap--content"></div>
@@ -108,9 +119,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="/hcp/js/vendor.js?1437741912561"></script>
-    <script src="/hcp/js/templates.js?1437741912561"></script>
-    <script src="/hcp/js/app.js?1437741912561"></script>
+    <script src="/hcp/js/vendor.js?1437778583407"></script>
+    <script src="/hcp/js/templates.js?1437778583407"></script>
+    <script src="/hcp/js/app.js?1437778583407"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");
