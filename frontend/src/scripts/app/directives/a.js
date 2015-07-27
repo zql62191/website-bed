@@ -20,7 +20,6 @@
 
                     // only target external links
                     if (attrs.target !== '_blank' || element.hasClass('authorized-link')) {
-                        // console.log("I'M NOT WORTHY ON LINK :\t" + attrs.href);
                         return;
                     }
 
@@ -33,12 +32,7 @@
 
                         //     setupInterstitial('hcp');
 
-                        // } else if (urlObj.path === '/spanish/') {
-                        //     // spanish interstitial modal
-
-                        //     setupInterstitial('spanish');
-
-                        // } else 
+                        // } else {..below..}
                         if (!urlRegex.test(urlObj.host)) {
                             // check if host matches white list
                             // bind interstitial modal
@@ -49,8 +43,6 @@
                     };
 
                     var setupInterstitial = function(modalName) {
-
-                        // console.log("I'M SETTING UP INTST for modal named: " + modalName);
 
                         element.on('click.interstitial', function(e) {
                             e.preventDefault();

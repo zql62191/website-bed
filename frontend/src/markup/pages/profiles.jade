@@ -11,35 +11,46 @@ extends /layouts/base.jade
 
 block content
 
+    .gradient
+    .gradient-transition-bottom
+
     section.section--carousel
         .wrap--content
 
             .carousel
                 .slides
-                    .slide.kimberly
+                    .slide.kimberly.active
+
+                        +picture('profiles/kimberly.png').hero
+                        .shadow
 
                         blockquote
                             p.
-                                I feel like I’ve lost control while I’m eating.
+                                I feel like I've lost control while I'm eating.
+
 
                         .profile
                             .name.
                                 Kimberly
                             .binge.
                                 Average of 4 binge-eating episodes per week
-                            .age.
-                                Age: 34
-                            .bmi.
-                                Body mass index (BMI): 29
-                            .stat.
-                                Kimberly works as a high school librarian
-                            .stat.
-                                She is single and lives alone
-                            .stat.
-                                Kimberly’s binges are usually the result of boredom
-
-                        p.disclaimer.
-                            Diagnosis should be based on a complete evaluation of the patient that confirms the criteria for !{BED} established in !{DMS5}.#[sup 1]
+                            .text-line
+                                .age.
+                                    Age: 34
+                                .bmi.
+                                    Body mass index (BMI): 29
+                            .text-line
+                                .stat.
+                                    Kimberly works as a high school librarian
+                                .stat.
+                                    She is single and lives alone
+                                .stat
+                                    | Kimberly’s binges are usually the 
+                                    br
+                                    | result of boredom
+                            p.disclaimer
+                                | Diagnosis should be based on a complete evaluation of the patient that confirms the criteria for !{BED} established in !{DSM5}.
+                                sup 1
 
                     .slide.nikki
 
@@ -118,17 +129,18 @@ block content
                     .prev
                     .next
 
-                ul.pagination
-                    li.
-                        kimberly
-                    li.
-                        nikki
-                    li.
-                        julie
-                    li.
-                        diego
 
-            p.disclaimer.
+                ul.pagination
+                    +li-active.kimberly
+                        | kimberly
+                    +li-active.nikki
+                        | nikki
+                    +li-active.julie
+                        | julie
+                    +li-active.diego
+                        | diego
+
+            p.section-disclaimer.
                 Models and descriptions are fictional representations of how some adults with !{BED} may present and do not constitute the totality of !{BED} symptoms and criteria.
 
             .callouts
@@ -146,5 +158,12 @@ block content
                         Use this discussion guide to help begin a dialogue about !{BED} with your adult patients.
                     a(href="#needurl").btn.btn--blue.
                         DOWNLOAD THE DISCUSSION GUIDE
+
+            .wrap--refs
+                ol.refs.number
+                    li
+                        | American Psychiatric Association. Binge-eating disorder. In: 
+                        em Diagnostic and Statistical Manual of Mental Disorders.
+                        | 5th ed. Arlington, VA: American Psychiatric Association; 2013:350-353
 
 

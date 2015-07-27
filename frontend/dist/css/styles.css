@@ -1,4 +1,4 @@
-/* Last Updated: 2015-07-24 at 06:57:03 PM */
+/* Last Updated: 2015-07-27 at 05:31:42 PM */
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -1199,7 +1199,7 @@ ul.boxed > li + li:before {
     display: table-cell;
   }
   .callouts .callout.one {
-    border-right: 1px solid #5C656D;
+    border-right: 1px solid #979797;
   }
   .callouts .callout.one,
   .callouts .callout.one h2,
@@ -4289,9 +4289,220 @@ body.identifying-patients .section--patients {
   }
 }
 
+body.profiles .gradient {
+  position: absolute;
+  background-image: -webkit-radial-gradient(50% 121%, #f8f6f4 21%, #ded8d5 100%);
+  background-image: radial-gradient(50% 121%, #f8f6f4 21%, #ded8d5 100%);
+  background-position: center center;
+  width: 100%;
+  height: 926px;
+  z-index: 1;
+}
+body.profiles .gradient-transition-top {
+  background-image: -webkit-linear-gradient(90deg, #52758b 73%, rgba(82, 117, 139, 0) 100%);
+  background-image: linear-gradient(0deg, #52758b 73%, rgba(82, 117, 139, 0) 100%);
+  width: 100%;
+  height: 649px;
+  z-index: 3;
+}
+body.profiles .gradient-transition-bottom {
+  background-image: -webkit-linear-gradient(90deg, #ded8d5 77%, rgba(222, 216, 213, 0) 89%);
+  background-image: linear-gradient(0deg, #ded8d5 77%, rgba(222, 216, 213, 0) 89%);
+  width: 100%;
+  height: 649px;
+  position: absolute;
+  top: 586px;
+  z-index: 2;
+}
 body.profiles .section--carousel {
-  background: #DED8D4;
+  z-index: 5;
+  background: transparent;
   color: #858B91;
+}
+body.profiles .section--carousel .wrap--content {
+  padding-top: 0px;
+}
+body.profiles .section--carousel blockquote, body.profiles .section--carousel blockquote p {
+  font-family: GillSansStd-LightItalic;
+  font-size: 24px;
+  color: #858B91;
+  line-height: 29px;
+}
+body.profiles .section--carousel .hero {
+  margin-left: 86px;
+  margin-top: 54px;
+  z-index: 3;
+}
+body.profiles .section--carousel .kimberly {
+  height: 588px;
+  z-index: 3;
+}
+body.profiles .section--carousel .kimberly .shadow {
+  background-image: url("../img/lg/profiles/kimberly_lo.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 299px;
+  left: -184px;
+  width: 743px;
+  height: 337px;
+  z-index: 2;
+}
+body.profiles .section--carousel .kimberly blockquote {
+  position: absolute;
+  top: 85px;
+  left: 348px;
+}
+body.profiles .section--carousel .profile {
+  position: absolute;
+  top: 153px;
+  left: 574px;
+  width: 330px;
+  height: 275px;
+  /* Average of 4 binge-e: */
+  font-family: GillSansStd-Light;
+  font-size: 18px;
+  color: #858B91;
+  line-height: 22px;
+}
+body.profiles .section--carousel .profile .name {
+  font-size: 32px;
+  color: #333E48;
+  line-height: 38px;
+  border-bottom: 1px solid #D6D8DA;
+}
+body.profiles .section--carousel .profile .binge {
+  padding: 13px initial;
+  border-bottom: 1px solid #D6D8DA;
+}
+body.profiles .section--carousel .profile .text-line {
+  border-bottom: 1px solid #D6D8DA;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+body.profiles .section--carousel .profile .text-line .bmi {
+  display: inline-block;
+  padding-left: 41px;
+}
+body.profiles .section--carousel .profile .text-line .age {
+  display: inline-block;
+}
+body.profiles .section--carousel .profile .text-line .stat {
+  padding: 5px initial;
+}
+body.profiles .section--carousel .slides .slide {
+  display: none;
+}
+body.profiles .section--carousel .slides .slide.active {
+  display: block;
+}
+body.profiles .section--carousel .slides .slide .disclaimer {
+  margin-top: 13px;
+  width: 300px;
+  line-height: 16px;
+  font-size: 14px;
+  color: #858B91;
+}
+body.profiles .section--carousel .pagination {
+  width: 480px;
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+body.profiles .section--carousel .pagination li {
+  font-family: GillSansStd;
+  font-size: 14px;
+  color: #858B91;
+  line-height: 17px;
+  text-transform: uppercase;
+  width: 114px;
+  height: 60px;
+  cursor: pointer;
+  background-image: url("../img/lg/profiles/slider-dot-empty.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-bottom: 76px;
+  z-index: 6;
+  display: inline-block;
+  text-align: center;
+}
+body.profiles .section--carousel .pagination li.active, body.profiles .section--carousel .pagination li:hover {
+  color: #52758B;
+  background-image: url("../img/lg/profiles/slider-dot-full.png");
+}
+body.profiles .section--carousel .carousel .controls {
+  position: absolute;
+  top: 278px;
+  width: 100%;
+}
+body.profiles .section--carousel .carousel .controls .next {
+  width: 20px;
+  height: 33px;
+  background-image: url("../img/lg/profiles/carousel_arrow.png");
+  float: right;
+  z-index: 10;
+}
+body.profiles .section--carousel .carousel .controls .next:hover {
+  background-image: url("../img/lg/profiles/carousel_arrow_hover.png");
+}
+body.profiles .section--carousel .carousel .controls .prev {
+  width: 20px;
+  height: 33px;
+  background-image: url("../img/lg/profiles/carousel_arrow.png");
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+  float: left;
+  z-index: 10;
+}
+body.profiles .section--carousel .carousel .controls .prev:hover {
+  background-image: url("../img/lg/profiles/carousel_arrow_hover.png");
+}
+@media only screen and (min-width: 1025px) {
+  body.profiles .section--carousel .carousel {
+    width: 100%;
+    margin-bottom: 57px;
+  }
+  body.profiles .section--carousel .section-disclaimer {
+    width: 600px;
+    height: 36px;
+    margin: 0 auto 44px auto;
+    font-family: GillSansStd-Light;
+    font-size: 16px;
+    color: #858B91;
+    line-height: 15px;
+    text-align: center;
+  }
+  body.profiles .section--carousel .callouts {
+    font-family: GillSansStd-Light;
+    margin: 0 auto 69px auto;
+    font-size: 16px;
+    color: #858B91;
+    line-height: 19px;
+  }
+  body.profiles .section--carousel .callouts h2 {
+    font-size: 22px;
+    color: #333E48;
+    line-height: 26px;
+    font-style: normal;
+    padding-bottom: 20px;
+  }
+  body.profiles .section--carousel .callouts .callout {
+    width: 325px;
+  }
+  body.profiles .section--carousel .callouts .callout p {
+    opacity: 0.6;
+    margin-bottom: 21px;
+    font-size: 16px;
+  }
+  body.profiles .section--carousel .callouts .callout .btn {
+    width: 280px;
+    font-size: 14px;
+    font-family: GillSansStd;
+    color: #F2F2F2;
+    line-height: 17px;
+    padding: 16px 10px;
+  }
 }
 @media only screen and (max-width: 640px) {
   body.profiles .section--carousel blockquote {
@@ -4315,6 +4526,12 @@ body.profiles .section--carousel {
   body.profiles .section--carousel .profile .stat {
     font-size: 16px;
   }
+  body.profiles .section--carousel .pagination {
+    display: none;
+  }
+}
+body.profiles .footer--global {
+  z-index: 5;
 }
 
 body.support-and-resources {

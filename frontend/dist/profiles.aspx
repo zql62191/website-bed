@@ -7,11 +7,11 @@
     <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="/hcp/css/styles.css?1437778584080"/>
+    <link rel="stylesheet" href="/hcp/css/styles.css?1438032950203"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="/hcp/js/head.js?1437778584080"></script>
+    <script src="/hcp/js/head.js?1438032950203"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="profiles">
     <main class="content--main">
@@ -49,7 +49,7 @@
                 </li>
                 <li><a href="/hcp/effects-of-BED.aspx">Potential Effects</a>
                 </li>
-                <li><a href="/hcp/identifying-patients.aspx">Patient Profiles</a>
+                <li><a href="/hcp/identifying-patients.aspx" alt="/hcp/profiles.aspx" class="active">Patient Profiles</a>
                 </li>
                 <li><a href="/hcp/support-and-resources.aspx">Support &amp; Resources</a>
                 </li>
@@ -60,32 +60,40 @@
           </div>
         </div>
       </header>
+      <div class="gradient"></div>
+      <div class="gradient-transition-bottom"></div>
       <section class="section--carousel">
         <div class="wrap--content">
           <div class="carousel">
             <div class="slides">
-              <div class="slide kimberly">
+              <div class="slide kimberly active">
+                <picture class="hero"><!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source media="only screen and (max-width: 640px)" srcset="img/sm/profiles/kimberly.png"/>
+                  <source media="only screen and (min-width: 641px) and (max-width: 1024px)" srcset="img/md/profiles/kimberly.png"/>
+                  <source media="only screen and (min-width: 1025px)" srcset="img/lg/profiles/kimberly.png"/><!--[if IE 9]></video><![endif]--><img srcset="img/lg/profiles/kimberly.png"/>
+                </picture>
+                <div class="shadow"></div>
                 <blockquote>
                   <p>
-                    I feel like I’ve lost control while I’m eating.
+                    I feel like I've lost control while I'm eating.
+                    
                     
                   </p>
                 </blockquote>
                 <div class="profile">
                   <div class="name">Kimberly</div>
                   <div class="binge">Average of 4 binge-eating episodes per week</div>
-                  <div class="age">Age: 34</div>
-                  <div class="bmi">Body mass index (BMI): 29</div>
-                  <div class="stat">Kimberly works as a high school librarian</div>
-                  <div class="stat">She is single and lives alone</div>
-                  <div class="stat">
-                    Kimberly’s binges are usually the result of boredom
-                    
+                  <div class="text-line">
+                    <div class="age">Age: 34</div>
+                    <div class="bmi">Body mass index (BMI): 29</div>
                   </div>
+                  <div class="text-line">
+                    <div class="stat">Kimberly works as a high school librarian</div>
+                    <div class="stat">She is single and lives alone</div>
+                    <div class="stat">Kimberly’s binges are usually the <br>result of boredom</div>
+                  </div>
+                  <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr> established in <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr>.<sup>1</sup></p>
                 </div>
-                <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr> established in .<sup>1</sup>
-                  
-                </p>
               </div>
               <div class="slide nikki">
                 <blockquote>
@@ -161,16 +169,17 @@
               <div class="next"></div>
             </div>
             <ul class="pagination">
-              <li>kimberly</li>
-              <li>nikki</li>
-              <li>julie</li>
-              <li>
-                diego
-                
+              <li class="kimberly">kimberly
+              </li>
+              <li class="nikki">nikki
+              </li>
+              <li class="julie">julie
+              </li>
+              <li class="diego">diego
               </li>
             </ul>
           </div>
-          <p class="disclaimer">
+          <p class="section-disclaimer">
             Models and descriptions are fictional representations of how some adults with <abbr title="Binge Eating Disorder">B.E.D.</abbr> may present and do not constitute the totality of <abbr title="Binge Eating Disorder">B.E.D.</abbr> symptoms and criteria.
             
           </p>
@@ -181,8 +190,15 @@
             </div>
             <div class="callout two">
               <h2 class="heading--2">Conducting a conversation</h2>
-              <p>Use this discussion guide to help begin a dialogue about <abbr title="Binge Eating Disorder">B.E.D.</abbr> with your adult patients.</p><a href="#needurl" class="btn btn--blue">DOWNLOAD THE DISCUSSION GUIDE</a>
+              <p>Use this discussion guide to help begin a dialogue about <abbr title="Binge Eating Disorder">B.E.D.</abbr> with your adult patients.</p><a href="#needurl" class="btn btn--blue">
+                DOWNLOAD THE DISCUSSION GUIDE
+                </a>
             </div>
+          </div>
+          <div class="wrap--refs">
+            <ol class="refs number">
+              <li>American Psychiatric Association. Binge-eating disorder. In: <em>Diagnostic and Statistical Manual of Mental Disorders.</em>5th ed. Arlington, VA: American Psychiatric Association; 2013:350-353</li>
+            </ol>
           </div>
         </div>
       </section>
@@ -225,9 +241,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="/hcp/js/vendor.js?1437778584082"></script>
-    <script src="/hcp/js/templates.js?1437778584082"></script>
-    <script src="/hcp/js/app.js?1437778584082"></script>
+    <script src="/hcp/js/vendor.js?1438032950205"></script>
+    <script src="/hcp/js/templates.js?1438032950205"></script>
+    <script src="/hcp/js/app.js?1438032950205"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

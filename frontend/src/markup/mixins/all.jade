@@ -160,3 +160,38 @@ mixin a-active
             - attributes.class = "active"
     a&attributes(attributes)
         block
+
+mixin a-active-related(related)
+    if attributes.href && attributes.href.indexOf(fileName) !== -1
+        if attributes.class
+            - attributes.class += " active"
+        else
+            - attributes.class = "active"
+    else 
+        if attributes.alt && attributes.alt.indexOf(fileName) !== -1
+            if attributes.class
+                - attributes.class += " active"
+            else
+                - attributes.class = "active"
+    a&attributes(attributes)
+        block
+
+mixin li-active
+    - var anchorStr = (to.split('#').length > 1) ? to.split('#')[1] : false;
+
+    //- //- default active value: kimberly
+    //- if attributes.class && (anchorStr == false) && attributes.class.indexOf("kimberly") !== -1
+    //-     if attributes.class
+    //-         - attributes.class += " active"
+    //-     else
+    //-         - attributes.class = "active"
+    //- //- else use the URL after the first hash character            
+    //- else
+    //-     if attributes.class && anchorStr.length > 0 && attributes.class.indexOf(anchorStr) !== -1
+    //-         if attributes.class
+    //-             - attributes.class += " active"
+    //-         else
+    //-             - attributes.class = "active"
+
+    li&attributes(attributes)
+        block
