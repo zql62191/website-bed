@@ -23,7 +23,28 @@ body.sign-up{
                 border-bottom: 1px solid #5C656D;
                 padding-bottom: 3px; 
                 margin-top: 25px;
+
+                .errormessage{
+                    display: none;
+                }
+
+                &.forminvalid.ng-dirty{
+                    color: #FF4517;
+                    border-bottom: 1px solid #FF4517;
+
+                    .errormessage{
+                        color: #FF4517;
+                        display: inline-block;
+                        // position:absolute;
+                    }
+
+                }
+
             }
+
+
+
+            
 
             button{
                 border-style: none;

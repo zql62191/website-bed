@@ -1,4 +1,4 @@
-/* Last Updated: 2015-07-28 at 06:37:48 PM */
+/* Last Updated: 2015-07-28 at 06:47:49 PM */
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -4764,6 +4764,17 @@ body.sign-up .section--page form input[type='text'], body.sign-up .section--page
   border-bottom: 1px solid #5C656D;
   padding-bottom: 3px;
   margin-top: 25px;
+}
+body.sign-up .section--page form input[type='text'] .errormessage, body.sign-up .section--page form input[type='email'] .errormessage {
+  display: none;
+}
+body.sign-up .section--page form input[type='text'].forminvalid.ng-dirty, body.sign-up .section--page form input[type='email'].forminvalid.ng-dirty {
+  color: #FF4517;
+  border-bottom: 1px solid #FF4517;
+}
+body.sign-up .section--page form input[type='text'].forminvalid.ng-dirty .errormessage, body.sign-up .section--page form input[type='email'].forminvalid.ng-dirty .errormessage {
+  color: #FF4517;
+  display: inline-block;
 }
 body.sign-up .section--page form button {
   border-style: none;
