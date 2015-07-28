@@ -7,11 +7,11 @@
     <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="/hcp/css/styles.css?1438087573211"/>
+    <link rel="stylesheet" href="/hcp/css/styles.css?1438117654570"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="/hcp/js/head.js?1438087573211"></script>
+    <script src="/hcp/js/head.js?1438117654571"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="profiles">
     <main class="content--main">
@@ -61,12 +61,12 @@
         </div>
       </header>
       <div class="gradient"></div>
-      <div class="gradient-transition-bottom"></div>
-      <section class="section--carousel">
+      <div id="gradient-transition-bottom"></div>
+      <section ng-controller="ProfilesController as ProfCtrl" class="section--carousel">
         <div class="wrap--content">
           <div class="carousel">
             <div class="slides">
-              <div class="slide kimberly active">
+              <div ng-class="{active: currentSlide == 'kimberly'}" class="slide kimberly">
                 <picture class="hero"><!--[if IE 9]><video style="display: none;"><![endif]-->
                   <source media="only screen and (max-width: 640px)" srcset="img/sm/profiles/kimberly.png"/>
                   <source media="only screen and (min-width: 641px) and (max-width: 1024px)" srcset="img/md/profiles/kimberly.png"/>
@@ -95,7 +95,12 @@
                   <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr> established in <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr>.<sup>1</sup></p>
                 </div>
               </div>
-              <div class="slide nikki">
+              <div ng-class="{active : currentSlide == 'nikki'}" class="slide nikki">
+                <picture class="hero"><!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source media="only screen and (max-width: 640px)" srcset="img/sm/profiles/nikki.png"/>
+                  <source media="only screen and (min-width: 641px) and (max-width: 1024px)" srcset="img/md/profiles/nikki.png"/>
+                  <source media="only screen and (min-width: 1025px)" srcset="img/lg/profiles/nikki.png"/><!--[if IE 9]></video><![endif]--><img srcset="img/lg/profiles/nikki.png"/>
+                </picture>
                 <blockquote>
                   <p>
                     I’m disgusted with myself after I binge.
@@ -105,20 +110,27 @@
                 <div class="profile">
                   <div class="name">Nikki</div>
                   <div class="binge">Average of 5 binge-eating episodes per week</div>
-                  <div class="age">Age: 27</div>
-                  <div class="bmi">Body mass index (BMI): 28</div>
-                  <div class="stat">Nikki is a pediatric oncology nurse</div>
-                  <div class="stat">Her binges are triggered by interpersonal stressors</div>
-                  <div class="stat">
-                    Nikki is distressed by her bingeing behavior
-                    
+                  <div class="text-line">
+                    <div class="age">Age: 27</div>
+                    <div class="bmi">Body mass index (BMI): 28</div>
                   </div>
+                  <div class="text-line">
+                    <div class="stat">Nikki is a pediatric oncology nurse</div>
+                    <div class="stat">Her binges are triggered by interpersonal stressors</div>
+                    <div class="stat">
+                      Nikki is distressed by her bingeing behavior
+                      
+                    </div>
+                  </div>
+                  <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr> established in <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr>.<sup>1</sup></p>
                 </div>
-                <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr> established in <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr>.<sup>1</sup>
-                  
-                </p>
               </div>
-              <div class="slide julie">
+              <div ng-class="{active : currentSlide == 'julie'}" class="slide julie">
+                <picture class="hero"><!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source media="only screen and (max-width: 640px)" srcset="img/sm/profiles/julie.png"/>
+                  <source media="only screen and (min-width: 641px) and (max-width: 1024px)" srcset="img/md/profiles/julie.png"/>
+                  <source media="only screen and (min-width: 1025px)" srcset="img/lg/profiles/julie.png"/><!--[if IE 9]></video><![endif]--><img srcset="img/lg/profiles/julie.png"/>
+                </picture>
                 <blockquote>
                   <p>
                     When the binges are over, I feel guilty about my behavior.
@@ -128,55 +140,60 @@
                 <div class="profile">
                   <div class="name">Julie</div>
                   <div class="binge">Average of 6 binge-eating episodes per week</div>
-                  <div class="age">Age: 42</div>
-                  <div class="bmi">Body mass index (BMI): 35</div>
-                  <div class="stat">Julie works as an advertising executive</div>
-                  <div class="stat">Her binges are triggered by negative feelings about her body shape</div>
-                  <div class="stat">
-                    Julie has a coexisting psychiatric disorder—she struggles with anxiety
-                    
+                  <div class="text-line">
+                    <div class="age">Age: 42</div>
+                    <div class="bmi">Body mass index (BMI): 35</div>
                   </div>
+                  <div class="text-line">
+                    <div class="stat">Julie works as an advertising executive</div>
+                    <div class="stat">Her binges are triggered by negative feelings about her body shape</div>
+                    <div class="stat">
+                      Julie has a coexisting psychiatric disorder—she struggles with anxiety
+                      
+                    </div>
+                  </div>
+                  <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr> established in <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr>.<sup>1</sup></p>
                 </div>
-                <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr> established in <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr>.<sup>1</sup>
-                  
-                </p>
               </div>
-              <div class="slide diego">
+              <div ng-class="{active : currentSlide == 'diego'}" class="slide diego">
+                <picture class="hero"><!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source media="only screen and (max-width: 640px)" srcset="img/sm/profiles/diego.png"/>
+                  <source media="only screen and (min-width: 641px) and (max-width: 1024px)" srcset="img/md/profiles/diego.png"/>
+                  <source media="only screen and (min-width: 1025px)" srcset="img/lg/profiles/diego.png"/><!--[if IE 9]></video><![endif]--><img srcset="img/lg/profiles/diego.png"/>
+                </picture>
+                <div class="shadow"></div>
                 <blockquote>
-                  <p>
-                    I binge alone because I don't want anyone to know how much I eat.
-                    
-                  </p>
+                  <p>I binge alone because I don't want anyone<br><span>to know how much I eat.</span></p>
                 </blockquote>
                 <div class="profile">
                   <div class="name">Diego</div>
                   <div class="binge">Average of 8 binge-eating episodes per week</div>
-                  <div class="age">Age: 30</div>
-                  <div class="bmi">Body mass index (BMI): 32</div>
-                  <div class="stat">Diego works at night to support his family</div>
-                  <div class="stat">
-                    Following his binges, Diego tends to feel depressed
-                    
+                  <div class="text-line">
+                    <div class="age">Age: 30</div>
+                    <div class="bmi">Body mass index (BMI): 32</div>
                   </div>
+                  <div class="text-line">
+                    <div class="stat">Diego works at night to support his family</div>
+                    <div class="stat">
+                      Following his binges, Diego tends to feel depressed
+                      
+                    </div>
+                  </div>
+                  <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr> established in <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr>.<sup>1</sup>
+                    
+                  </p>
                 </div>
-                <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr> established in <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr>.<sup>1</sup>
-                  
-                </p>
               </div>
             </div>
             <div class="controls">
-              <div class="prev"></div>
-              <div class="next"></div>
+              <div ng-click="clickControls('L')" class="prev"></div>
+              <div ng-click="clickControls('R')" class="next"></div>
             </div>
             <ul class="pagination">
-              <li class="kimberly">kimberly
-              </li>
-              <li class="nikki">nikki
-              </li>
-              <li class="julie">julie
-              </li>
-              <li class="diego">diego
-              </li>
+              <li ng-click="changeHero('kimberly')" class="kimberly">kimberly</li>
+              <li ng-click="changeHero('nikki')" class="nikki">nikki</li>
+              <li ng-click="changeHero('julie')" class="julie">julie</li>
+              <li ng-click="changeHero('diego')" class="diego">diego</li>
             </ul>
           </div>
           <p class="section-disclaimer">
@@ -241,9 +258,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="/hcp/js/vendor.js?1438087573214"></script>
-    <script src="/hcp/js/templates.js?1438087573214"></script>
-    <script src="/hcp/js/app.js?1438087573214"></script>
+    <script src="/hcp/js/vendor.js?1438117654574"></script>
+    <script src="/hcp/js/templates.js?1438117654574"></script>
+    <script src="/hcp/js/app.js?1438117654574"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

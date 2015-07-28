@@ -17,14 +17,23 @@ body.profiles {
         z-index:3;
     }
 
-    .gradient-transition-bottom{
+    #gradient-transition-bottom{
         background-image: linear-gradient(0deg, #DED8D5 77%, rgba(222,216,213,0.00) 89%);
         width: 100%;
         height: 649px;
         position: absolute;
         top: 586px;
         z-index:2;
+
+        &.nikki, &.julie{
+            top: 479px;
+            height: 753px;
+        }
+
     }
+
+    //for nikki & julie, the gradient-transition-bottom needs to shift a bit
+        //starting line is at y=504px, and is 753px tall
 
     .section--carousel {
         z-index: 5;
@@ -79,12 +88,58 @@ body.profiles {
                 z-index: 2;
             }
 
-            blockquote{
-                position: absolute;
-                top: 85px;
-                left: 348px;
-            }
+            
         }
+
+
+        .nikki{
+
+
+            // background-image: url("../img/lg/profiles/kimberly.png");
+            // background-repeat: no-repeat;
+            // background-position: 86px 54px;
+            height: 588px;
+            z-index: 3;
+
+            .shadow{
+                display: none;
+            }
+
+        }
+
+        .julie{
+
+            height: 588px;
+            z-index: 3;
+
+            .shadow{
+                display: none;
+            }
+
+        }
+
+        .diego{
+
+            height: 588px;
+            z-index: 3;
+
+            .hero{
+                margin-top: 74px;
+                margin-left: -206px;
+            }
+
+            .shadow{
+                display: none;
+            }
+
+            blockquote p{
+                span{
+                    padding-left: 26px;
+                }
+            }
+
+                    }
+
 
         .profile {
 
@@ -235,6 +290,28 @@ body.profiles {
                 width:100%;
                 // height:588px;
                 margin-bottom: 57px;
+
+
+                .slides{
+
+
+                    .diego.active{
+
+                        height: 588px;
+
+                        blockquote{
+                            top: 70px;
+                        }
+                    }
+
+                    blockquote{
+                        position: absolute;
+                        top: 85px;
+                        left: 348px;
+                    }
+
+                }
+
             }
 
             .section-disclaimer{

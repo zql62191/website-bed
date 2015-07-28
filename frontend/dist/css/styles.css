@@ -1,4 +1,4 @@
-/* Last Updated: 2015-07-28 at 11:01:06 AM */
+/* Last Updated: 2015-07-28 at 05:22:54 PM */
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -4305,7 +4305,7 @@ body.profiles .gradient-transition-top {
   height: 649px;
   z-index: 3;
 }
-body.profiles .gradient-transition-bottom {
+body.profiles #gradient-transition-bottom {
   background-image: -webkit-linear-gradient(90deg, #ded8d5 77%, rgba(222, 216, 213, 0) 89%);
   background-image: linear-gradient(0deg, #ded8d5 77%, rgba(222, 216, 213, 0) 89%);
   width: 100%;
@@ -4313,6 +4313,10 @@ body.profiles .gradient-transition-bottom {
   position: absolute;
   top: 586px;
   z-index: 2;
+}
+body.profiles #gradient-transition-bottom.nikki, body.profiles #gradient-transition-bottom.julie {
+  top: 479px;
+  height: 753px;
 }
 body.profiles .section--carousel {
   z-index: 5;
@@ -4347,10 +4351,33 @@ body.profiles .section--carousel .kimberly .shadow {
   height: 337px;
   z-index: 2;
 }
-body.profiles .section--carousel .kimberly blockquote {
-  position: absolute;
-  top: 85px;
-  left: 348px;
+body.profiles .section--carousel .nikki {
+  height: 588px;
+  z-index: 3;
+}
+body.profiles .section--carousel .nikki .shadow {
+  display: none;
+}
+body.profiles .section--carousel .julie {
+  height: 588px;
+  z-index: 3;
+}
+body.profiles .section--carousel .julie .shadow {
+  display: none;
+}
+body.profiles .section--carousel .diego {
+  height: 588px;
+  z-index: 3;
+}
+body.profiles .section--carousel .diego .hero {
+  margin-top: 74px;
+  margin-left: -206px;
+}
+body.profiles .section--carousel .diego .shadow {
+  display: none;
+}
+body.profiles .section--carousel .diego blockquote p span {
+  padding-left: 26px;
 }
 body.profiles .section--carousel .profile {
   position: absolute;
@@ -4462,6 +4489,17 @@ body.profiles .section--carousel .carousel .controls .prev:hover {
   body.profiles .section--carousel .carousel {
     width: 100%;
     margin-bottom: 57px;
+  }
+  body.profiles .section--carousel .carousel .slides .diego.active {
+    height: 588px;
+  }
+  body.profiles .section--carousel .carousel .slides .diego.active blockquote {
+    top: 70px;
+  }
+  body.profiles .section--carousel .carousel .slides blockquote {
+    position: absolute;
+    top: 85px;
+    left: 348px;
   }
   body.profiles .section--carousel .section-disclaimer {
     width: 600px;

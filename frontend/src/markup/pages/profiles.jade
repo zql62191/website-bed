@@ -12,14 +12,14 @@ extends /layouts/base.jade
 block content
 
     .gradient
-    .gradient-transition-bottom
+    #gradient-transition-bottom
 
-    section.section--carousel
+    section.section--carousel(ng-controller="ProfilesController as ProfCtrl")
         .wrap--content
 
             .carousel
                 .slides
-                    .slide.kimberly.active
+                    .slide.kimberly(ng-class="{active: currentSlide == 'kimberly'}")
 
                         +picture('profiles/kimberly.png').hero
                         .shadow
@@ -52,7 +52,9 @@ block content
                                 | Diagnosis should be based on a complete evaluation of the patient that confirms the criteria for !{BED} established in !{DSM5}.
                                 sup 1
 
-                    .slide.nikki
+                    .slide.nikki(ng-class="{active : currentSlide == 'nikki'}")
+
+                        +picture('profiles/nikki.png').hero
 
                         blockquote
                             p.
@@ -63,21 +65,26 @@ block content
                                 Nikki
                             .binge.
                                 Average of 5 binge-eating episodes per week
-                            .age.
-                                Age: 27
-                            .bmi.
-                                Body mass index (BMI): 28
-                            .stat.
-                                Nikki is a pediatric oncology nurse
-                            .stat.
-                                Her binges are triggered by interpersonal stressors
-                            .stat.
-                                Nikki is distressed by her bingeing behavior
+                            .text-line
+                                .age.
+                                    Age: 27
+                                .bmi.
+                                    Body mass index (BMI): 28
+                            .text-line
+                                .stat.
+                                    Nikki is a pediatric oncology nurse
+                                .stat.
+                                    Her binges are triggered by interpersonal stressors
+                                .stat.
+                                    Nikki is distressed by her bingeing behavior
 
-                        p.disclaimer.
-                            Diagnosis should be based on a complete evaluation of the patient that confirms the criteria for !{BED} established in !{DSM5}.#[sup 1]
+                            p.disclaimer
+                                | Diagnosis should be based on a complete evaluation of the patient that confirms the criteria for !{BED} established in !{DSM5}.
+                                sup 1
 
-                    .slide.julie
+                    .slide.julie(ng-class="{active : currentSlide == 'julie'}")
+
+                        +picture('profiles/julie.png').hero
 
                         blockquote
                             p.
@@ -88,56 +95,66 @@ block content
                                 Julie
                             .binge.
                                 Average of 6 binge-eating episodes per week
-                            .age.
-                                Age: 42
-                            .bmi.
-                                Body mass index (BMI): 35
-                            .stat.
-                                Julie works as an advertising executive
-                            .stat.
-                                Her binges are triggered by negative feelings about her body shape
-                            .stat.
-                                Julie has a coexisting psychiatric disorder—she struggles with anxiety
+                            .text-line
+                                .age.
+                                    Age: 42
+                                .bmi.
+                                    Body mass index (BMI): 35
+                            .text-line
+                                .stat.
+                                    Julie works as an advertising executive
+                                .stat.
+                                    Her binges are triggered by negative feelings about her body shape
+                                .stat.
+                                    Julie has a coexisting psychiatric disorder—she struggles with anxiety
 
-                        p.disclaimer.
-                            Diagnosis should be based on a complete evaluation of the patient that confirms the criteria for !{BED} established in !{DSM5}.#[sup 1]
+                            p.disclaimer
+                                | Diagnosis should be based on a complete evaluation of the patient that confirms the criteria for !{BED} established in !{DSM5}.
+                                sup 1
 
-                    .slide.diego
+                    .slide.diego(ng-class="{active : currentSlide == 'diego'}")
+
+                        +picture('profiles/diego.png').hero
+                        .shadow
 
                         blockquote
-                            p.
-                                I binge alone because I don't want anyone to know how much I eat.
+                            p
+                                | I binge alone because I don't want anyone
+                                br
+                                span to know how much I eat.
 
                         .profile
                             .name.
                                 Diego
                             .binge.
                                 Average of 8 binge-eating episodes per week
-                            .age.
-                                Age: 30
-                            .bmi.
-                                Body mass index (BMI): 32
-                            .stat.
-                                Diego works at night to support his family
-                            .stat.
-                                Following his binges, Diego tends to feel depressed
+                            .text-line
+                                .age.
+                                    Age: 30
+                                .bmi.
+                                    Body mass index (BMI): 32
+                            .text-line
+                                .stat.
+                                    Diego works at night to support his family
+                                .stat.
+                                    Following his binges, Diego tends to feel depressed
 
-                        p.disclaimer.
-                            Diagnosis should be based on a complete evaluation of the patient that confirms the criteria for !{BED} established in !{DSM5}.#[sup 1]
+                            p.disclaimer.
+                                Diagnosis should be based on a complete evaluation of the patient that confirms the criteria for !{BED} established in !{DSM5}.#[sup 1]
 
                 .controls
-                    .prev
-                    .next
+                    .prev(ng-click="clickControls('L')")
+                    .next(ng-click="clickControls('R')")
 
 
                 ul.pagination
-                    +li-active.kimberly
+                    li.kimberly(ng-click="changeHero('kimberly')")
                         | kimberly
-                    +li-active.nikki
+                    li.nikki(ng-click="changeHero('nikki')")
                         | nikki
-                    +li-active.julie
+                    li.julie(ng-click="changeHero('julie')")
                         | julie
-                    +li-active.diego
+                    li.diego(ng-click="changeHero('diego')")
                         | diego
 
             p.section-disclaimer.
