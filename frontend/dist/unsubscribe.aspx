@@ -7,11 +7,11 @@
     <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="/hcp/css/styles.css?1438031964772"/>
+    <link rel="stylesheet" href="/hcp/css/styles.css?1438094470474"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="/hcp/js/head.js?1438031964772"></script>
+    <script src="/hcp/js/head.js?1438094470474"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="unsubscribe">
     <main class="content--main">
@@ -69,17 +69,88 @@
           <div class="subcontainer">
             <h1 class="heading--1">Unsubscribe</h1>
             <h2 class="heading--2">To unsubscribe from future communications, please select an option below, fill in the required fields, and click SUBMIT.</h2>
-            <div class="box">
-              <div class="text">I would like to opt out of future <abbr title="Binge Eating Disorder">B.E.D.</abbr> e-mail communications</div>
-              <div class="arrow closed"></div>
+            <div accordion="" accordian-query="" accordian-autoclose="true" class="accordion">
+              <div class="accordion__header">
+                <div class="accordion__controls">
+                  <div class="icon sprite--plus is--vc"></div>
+                  <div class="icon sprite--minus is--vc"></div>
+                  <div class="icon sprite--question--white is--vc"></div>
+                  <div class="icon sprite--question--blue is--vc"></div>
+                </div>
+                <div class="accordion-title">I would like to opt out of future <abbr title="Binge Eating Disorder">B.E.D.</abbr> e-mail communications
+                  <div class="arrow closed"></div>
+                </div>
+              </div>
+              <div class="accordion__wrap">
+                <div class="accordion__content">
+                  <div class="formContainer">
+                    <form name="opt-out-email" ng-submit="optOutEmail()" autocomplete="off" novalidate>
+                      <input type="email" placeholder="*E-mail" ng-model="email" ng-required="true" ng-class="{forminvalid: (opt-out-email.email.$invalid &amp;&amp; opt-out-email.email.$dirty) || (opt-in.email.$invalid &amp;&amp; invalidform)}">
+                      <button type="submit" class="btn btn--yellow">SUBMIT</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="box">
-              <div class="text">I would like to opt out of future <abbr title="Binge Eating Disorder">B.E.D.</abbr> direct mail communications</div>
-              <div class="arrow closed"></div>
+            <div accordion="" accordian-query="" accordian-autoclose="true" class="accordion">
+              <div class="accordion__header">
+                <div class="accordion__controls">
+                  <div class="icon sprite--plus is--vc"></div>
+                  <div class="icon sprite--minus is--vc"></div>
+                  <div class="icon sprite--question--white is--vc"></div>
+                  <div class="icon sprite--question--blue is--vc"></div>
+                </div>
+                <div class="accordion-title">I would like to opt out of future <abbr title="Binge Eating Disorder">B.E.D.</abbr> direct mail communications
+                  <div class="arrow closed"></div>
+                </div>
+              </div>
+              <div class="accordion__wrap">
+                <div class="accordion__content">
+                  <div class="formContainer">
+                    <form name="opt-out-direct-mail" ng-submit="optOutDirectMail()" autocomplete="off" novalidate>
+                      <input type="email" placeholder="E-mail" ng-model="email" ng-required="true" ng-class="{forminvalid: (opt-out-direct-mail.email.$invalid &amp;&amp; opt-out-direct-mail.email.$dirty) || (opt-out-direct-mail.email.$invalid &amp;&amp; invalidform)}">
+                      <input type="text" placeholder="First Name" ng-model="firstName" ng-required="true" ng-class="{forminvalid: (opt-out-direct-mail.firstName.$invalid &amp;&amp; opt-out-direct-mail.firstName.$dirty) || (opt-out-direct-mail.firstName.$invalid &amp;&amp; invalidform)}">
+                      <input type="text" placeholder="Last Name" ng-model="lastname" ng-required="true" ng-class="{forminvalid: (opt-out-direct-mail.lastName.$invalid &amp;&amp; opt-out-direct-mail.firstName.$dirty) || (opt-out-direct-mail.lastName.$invalid &amp;&amp; invalidform)}">
+                      <input type="text" placeholder="Street Address" ng-model="address" ng-required="true" ng-class="{forminvalid: (opt-out-direct-mail.address.$invalid &amp;&amp; opt-out-direct-mail.address.$dirty) || (opt-out-direct-mail.address.$invalid &amp;&amp; invalidform)}">
+                      <input type="text" placeholder="Suite/Office (not required)" ng-model="suite" ng-required="false" ng-class="{forminvalid: (opt-out-direct-mail.suite.$invalid &amp;&amp; opt-out-direct-mail.suite.$dirty) || (opt-out-direct-mail.suite.$invalid &amp;&amp; invalidform)}">
+                      <input type="text" placeholder="City" ng-model="city" ng-required="true" ng-class="{forminvalid: (opt-out-direct-mail.city.$invalid &amp;&amp; opt-out-direct-mail.city.$dirty) || (opt-out-direct-mail.city.$invalid &amp;&amp; invalidform)}">
+                      <select type="text" placeholder="State" ng-model="state" ng-required="true" ng-class="{forminvalid: (opt-out-direct-mail.state.$invalid &amp;&amp; opt-out-direct-mail.state.$dirty) || (opt-out-direct-mail.state.$invalid &amp;&amp; invalidform)}"></select>
+                      <input type="text" placeholder="Zip" ng-model="zip" ng-required="true" ng-class="{forminvalid: (opt-out-direct-mail.zip.$invalid &amp;&amp; opt-out-direct-mail.zip.$dirty) || (opt-out-direct-mail.zip.$invalid &amp;&amp; invalidform)}">
+                      <button type="submit" class="btn btn--yellow">SUBMIT</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="box">
-              <div class="text">I would like to opt out of all future Shire communications</div>
-              <div class="arrow closed"></div>
+            <div accordion="" accordian-query="" accordian-autoclose="true" class="accordion">
+              <div class="accordion__header">
+                <div class="accordion__controls">
+                  <div class="icon sprite--plus is--vc"></div>
+                  <div class="icon sprite--minus is--vc"></div>
+                  <div class="icon sprite--question--white is--vc"></div>
+                  <div class="icon sprite--question--blue is--vc"></div>
+                </div>
+                <div class="accordion-title">I would like to opt out of all future Shire communications
+                  <div class="arrow closed"></div>
+                </div>
+              </div>
+              <div class="accordion__wrap">
+                <div class="accordion__content">
+                  <div class="formContainer">
+                    <form name="opt-out-all" ng-submit="optOutAllShire()" autocomplete="off" novalidate>
+                      <input type="email" placeholder="E-mail" ng-model="email" ng-required="true" ng-class="{forminvalid: (opt-out-all.email.$invalid &amp;&amp; opt-out-all.email.$dirty) || (opt-out-all.email.$invalid &amp;&amp; invalidform)}">
+                      <input type="text" placeholder="First Name" ng-model="firstName" ng-required="true" ng-class="{forminvalid: (opt-out-all.firstName.$invalid &amp;&amp; opt-out-all.firstName.$dirty) || (opt-out-all.firstName.$invalid &amp;&amp; invalidform)}">
+                      <input type="text" placeholder="Last Name" ng-model="lastname" ng-required="true" ng-class="{forminvalid: (opt-out-all.lastName.$invalid &amp;&amp; opt-out-all.firstName.$dirty) || (opt-out-all.lastName.$invalid &amp;&amp; invalidform)}">
+                      <input type="text" placeholder="Street Address" ng-model="address" ng-required="true" ng-class="{forminvalid: (opt-out-all.address.$invalid &amp;&amp; opt-out-all.address.$dirty) || (opt-out-all.address.$invalid &amp;&amp; invalidform)}">
+                      <input type="text" placeholder="Suite/Office (not required)" ng-model="suite" ng-required="false" ng-class="{forminvalid: (opt-out-all.suite.$invalid &amp;&amp; opt-out-all.suite.$dirty) || (opt-out-all.suite.$invalid &amp;&amp; invalidform)}">
+                      <input type="text" placeholder="City" ng-model="city" ng-required="true" ng-class="{forminvalid: (opt-out-all.city.$invalid &amp;&amp; opt-out-all.city.$dirty) || (opt-out-all.city.$invalid &amp;&amp; invalidform)}">
+                      <select type="text" placeholder="State" ng-model="state" ng-required="true" ng-class="{forminvalid: (opt-out-all.state.$invalid &amp;&amp; opt-out-all.state.$dirty) || (opt-out-all.state.$invalid &amp;&amp; invalidform)}"></select>
+                      <input type="text" placeholder="Zip" ng-model="zip" ng-required="true" ng-class="{forminvalid: (opt-out-all.zip.$invalid &amp;&amp; opt-out-all.zip.$dirty) || (opt-out-all.zip.$invalid &amp;&amp; invalidform)}">
+                      <button type="submit" class="btn btn--yellow">SUBMIT</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -126,9 +197,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="/hcp/js/vendor.js?1438031964774"></script>
-    <script src="/hcp/js/templates.js?1438031964774"></script>
-    <script src="/hcp/js/app.js?1438031964774"></script>
+    <script src="/hcp/js/vendor.js?1438094470477"></script>
+    <script src="/hcp/js/templates.js?1438094470477"></script>
+    <script src="/hcp/js/app.js?1438094470477"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

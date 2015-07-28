@@ -23,7 +23,7 @@
 
             .subcontainer{
                 width: 636px;
-                height: 580px;
+                min-height: 580px;
                 margin: 0 auto;
             }    
         }
@@ -36,7 +36,7 @@
             background-image: url("../img/lg/unsubscribe/down_arrow.png");
             background-repeat: no-repeat;
             background-position: center center;
-            left: 578px;
+            left: 553px;
             top: 30px;
         }
 
@@ -56,7 +56,7 @@
         padding-bottom: 18px;
     }
 
-    .box{
+    .accordion{
         background: #333E48;
         border-radius: 4px;
     }
@@ -66,19 +66,45 @@
 
         .section--unsubscribe{
 
-            .box{
-                width: 633px;
-                height: 74px;
+            .accordion{
                 margin-bottom: 10px;
                 padding-left: 25px;
 
                 &:last-child{
-                    margin-bottom: 0;
+                    margin-bottom: 92px;
                 }
 
-            }
+                .accordion-title{
+                    width: 633px;
+                    height: 74px;
+                    
+                }
 
-            .text{
+                &.open{
+                    .accordion__wrap{
+                        display: inline-block;
+                        padding-bottom: 30px; 
+                    }
+
+                    .accordion-title{
+                        height: auto;
+                        padding-bottom: 0px; 
+                    }
+
+                }
+
+                .accordion__wrap{
+                    display: none;
+
+                    .accordion__content{
+
+                    }
+
+                }
+
+                
+            }
+            .accordion-title{
                 font-family: GillSansStd-Light;
                 font-size: 18px;
                 color: #E8E9E9;
@@ -86,6 +112,52 @@
                 padding-top: 30px;
                 padding-bottom: 22px;
             }
+
+
+            form{
+                width: 582px;
+                margin: 0 auto;
+
+                input[type='text'],input[type='email']{
+                    width:582px;
+                    font-family: GillSansStd-Light;
+                    font-size: 18px;
+                    color: #858B91;
+                    line-height: 22px;
+                    border: none;
+                    display: block;
+                    border-bottom: 1px solid #5C656D;
+                    padding-bottom: 3px; 
+                    margin-top: 25px;
+
+                }
+
+                button{
+                    border-style: none;
+                    font-family: GillSansStd;
+                    font-size: 14px;
+                    color: #21282F;
+                    line-height: 17px;
+                    margin-top: 28px;
+                    width: 100%;
+                }
+
+                p.info{
+                    margin-bottom:32px;
+                    color: #858B91;
+                    font-size: 18px;
+                }
+
+                .heading--2{
+                    font-size: 24px;
+                    text-align: left;
+                    padding-top: 44px;
+                    padding-bottom: 9px;
+                }
+
+            }
+
+
         }
 
         
