@@ -13,43 +13,59 @@ body.privacy-policy{
         background-color: #252F39;
     }
 
+    .header--privacy-policy{
+
+        @include mq('lg', 'md') {
+            .heading--1{
+                padding-top: 50px;
+            }
+        }
+
+        .heading--1{
+            text-align: left;
+        }
+
+        
+    }
+
     .section--privacy-policy{
+
+        
 
         .wrap--content{
             padding-top: 18px;
+
+            h2{
+                @include gs('light-italic');
+                font-size: 24px;
+                color: #E8E9E9;
+                line-height: 29px;
+            }
+
+            p{
+                @include gs('light');
+                font-size: 18px;
+                color: #858B91;
+                line-height: 22px;
+                margin-bottom: 18px;
+
+                span{
+                    color: #E8E9E9;
+                }
+
+            }
+
+
         }
 
     }
 
-    .heading--1{
-        padding-top: 50px;
-        text-align: left;
-    }
-
-    h2{
-        font-family: GillSansStd-LightItalic;
-        font-size: 24px;
-        color: #E8E9E9;
-        line-height: 29px;
-    }
-
-    p{
-        font-family: GillSansStd-Light;
-        font-size: 18px;
-        color: #858B91;
-        line-height: 22px;
-        margin-bottom: 18px;
-
-        span{
-            color: #E8E9E9;
-        }
-
-    }
+    
 
     @include mq('sm') {
 
         h1.heading--1{
-            font-family: GillSansStd-Light;
+            @include gs('light');
             font-size: 30px;
             color: #FDBD3E;
             line-height: 28px;

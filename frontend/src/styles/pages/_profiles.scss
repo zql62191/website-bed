@@ -55,7 +55,6 @@ body.profiles {
         // }
 
         blockquote, blockquote p{
-            // font-family: GillSansStd-LightItalic;
             @include gs("light-italic");
             font-size: 24px;
             color: #858B91;
@@ -157,7 +156,6 @@ body.profiles {
             width: 330px;
             height: 275px;
             
-            // font-family: GillSansStd-Light;
             @include gs("light");
             font-size: 18px;
             color: #858B91;
@@ -231,7 +229,6 @@ body.profiles {
             position: relative;
 
             li{
-                // font-family: GillSansStd;
                 @include gs();
                 font-size: 14px;
                 color: #858B91;
@@ -339,7 +336,6 @@ body.profiles {
                 width:600px;
                 height:36px;
                 margin: 0 auto 44px auto;
-                // font-family: GillSansStd-Light;
                 @include gs("light");
                 font-size: 16px;
                 color: #858B91;
@@ -349,7 +345,6 @@ body.profiles {
 
             .callouts{
 
-                // font-family: GillSansStd-Light;
                 @include gs("light");
                 margin: 0 auto 69px auto;
                 font-size: 16px;
@@ -378,7 +373,6 @@ body.profiles {
                     .btn{
                         width: 280px;
                         font-size: 14px;
-                        // font-family: GillSansStd;
                         @include gs();
                         color: #F2F2F2;
                         line-height: 17px;

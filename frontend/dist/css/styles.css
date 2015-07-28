@@ -1,4 +1,4 @@
-/* Last Updated: 2015-07-28 at 06:24:20 PM */
+/* Last Updated: 2015-07-28 at 06:37:48 PM */
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -4698,7 +4698,8 @@ body.support-and-resources .section--video-boxes .boxes .boxes-row .box .viewed 
   background-image: url("../img/lg/support-and-resources/viewed-ribbon.png");
 }
 body.support-and-resources .section--information .link-box-grid .link-box-row .link-box {
-  font-family: GillSansStd-Light;
+  font-weight: 100;
+  font-style: normal;
   font-size: 18px;
   color: #ADB2B6;
   line-height: 22px;
@@ -4753,7 +4754,8 @@ body.sign-up .section--page form {
 }
 body.sign-up .section--page form input[type='text'], body.sign-up .section--page form input[type='email'] {
   width: 582px;
-  font-family: GillSansStd-Light;
+  font-weight: 100;
+  font-style: normal;
   font-size: 18px;
   color: #858B91;
   line-height: 22px;
@@ -4765,7 +4767,9 @@ body.sign-up .section--page form input[type='text'], body.sign-up .section--page
 }
 body.sign-up .section--page form button {
   border-style: none;
-  font-family: GillSansStd;
+  font-family: 'Gill Sans W01';
+  font-weight: 300;
+  font-style: normal;
   font-size: 14px;
   color: #21282F;
   line-height: 17px;
@@ -4816,7 +4820,8 @@ body._404 .section--page .heading--2 {
   margin-bottom: 15px;
 }
 body._404 .section--page p.info {
-  font-family: GillSansStd-Light;
+  font-weight: 100;
+  font-style: normal;
   font-size: 18px;
   color: #858B91;
   line-height: 22px;
@@ -4841,32 +4846,39 @@ body.privacy-policy .gradient {
 body.privacy-policy .header--privacy-policy, body.privacy-policy .section--privacy-policy {
   background-color: #252F39;
 }
+@media only screen and (min-width: 1025px), only screen and (min-width: 641px) and (max-width: 1024px) {
+  body.privacy-policy .header--privacy-policy .heading--1 {
+    padding-top: 50px;
+  }
+}
+body.privacy-policy .header--privacy-policy .heading--1 {
+  text-align: left;
+}
 body.privacy-policy .section--privacy-policy .wrap--content {
   padding-top: 18px;
 }
-body.privacy-policy .heading--1 {
-  padding-top: 50px;
-  text-align: left;
-}
-body.privacy-policy h2 {
-  font-family: GillSansStd-LightItalic;
+body.privacy-policy .section--privacy-policy .wrap--content h2 {
+  font-weight: 100;
+  font-style: italic;
   font-size: 24px;
   color: #E8E9E9;
   line-height: 29px;
 }
-body.privacy-policy p {
-  font-family: GillSansStd-Light;
+body.privacy-policy .section--privacy-policy .wrap--content p {
+  font-weight: 100;
+  font-style: normal;
   font-size: 18px;
   color: #858B91;
   line-height: 22px;
   margin-bottom: 18px;
 }
-body.privacy-policy p span {
+body.privacy-policy .section--privacy-policy .wrap--content p span {
   color: #E8E9E9;
 }
 @media only screen and (max-width: 640px) {
   body.privacy-policy h1.heading--1 {
-    font-family: GillSansStd-Light;
+    font-weight: 100;
+    font-style: normal;
     font-size: 30px;
     color: #FDBD3E;
     line-height: 28px;
@@ -4903,7 +4915,8 @@ body.contact-us .heading--1 {
   text-align: left;
 }
 body.contact-us h2 {
-  font-family: GillSansStd-LightItalic;
+  font-weight: 100;
+  font-style: italic;
   font-size: 24px;
   color: #E8E9E9;
   line-height: 29px;
@@ -4987,7 +5000,8 @@ body.unsubscribe .heading--1 {
   text-align: left;
 }
 body.unsubscribe h2 {
-  font-family: GillSansStd-LightItalic;
+  font-weight: 100;
+  font-style: italic;
   font-size: 24px;
   color: #E8E9E9;
   line-height: 29px;
@@ -5022,7 +5036,8 @@ body.unsubscribe .accordion {
     display: none;
   }
   body.unsubscribe .section--unsubscribe .accordion-title {
-    font-family: GillSansStd-Light;
+    font-weight: 100;
+    font-style: normal;
     font-size: 18px;
     color: #E8E9E9;
     line-height: 22px;
@@ -5035,7 +5050,8 @@ body.unsubscribe .accordion {
   }
   body.unsubscribe .section--unsubscribe form input[type='text'], body.unsubscribe .section--unsubscribe form input[type='email'] {
     width: 582px;
-    font-family: GillSansStd-Light;
+    font-weight: 100;
+    font-style: normal;
     font-size: 18px;
     color: #858B91;
     line-height: 22px;
@@ -5047,7 +5063,9 @@ body.unsubscribe .accordion {
   }
   body.unsubscribe .section--unsubscribe form button {
     border-style: none;
-    font-family: GillSansStd;
+    font-family: 'Gill Sans W01';
+    font-weight: 300;
+    font-style: normal;
     font-size: 14px;
     color: #21282F;
     line-height: 17px;

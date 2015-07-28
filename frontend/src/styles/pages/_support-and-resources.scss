@@ -143,7 +143,7 @@ body.support-and-resources{
 
 
                 .link-box{
-                    font-family: GillSansStd-Light;
+                    @include gs('light');
                     font-size: 18px;
                     color: #ADB2B6;
                     line-height: 22px;

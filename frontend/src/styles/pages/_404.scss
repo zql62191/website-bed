@@ -29,7 +29,7 @@
         }
 
         p.info{
-            font-family: GillSansStd-Light;
+            @include gs('light');
             font-size: 18px;
             color: #858B91;
             line-height: 22px;

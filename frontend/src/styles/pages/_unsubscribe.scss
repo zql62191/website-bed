@@ -48,7 +48,7 @@
     }
 
     h2{
-        font-family: GillSansStd-LightItalic;
+        @include gs('light-italic');
         font-size: 24px;
         color: #E8E9E9;
         line-height: 29px;
@@ -105,7 +105,7 @@
                 
             }
             .accordion-title{
-                font-family: GillSansStd-Light;
+                @include gs('light');
                 font-size: 18px;
                 color: #E8E9E9;
                 line-height: 22px;
@@ -120,7 +120,7 @@
 
                 input[type='text'],input[type='email']{
                     width:582px;
-                    font-family: GillSansStd-Light;
+                    @include gs('light');
                     font-size: 18px;
                     color: #858B91;
                     line-height: 22px;
@@ -134,7 +134,7 @@
 
                 button{
                     border-style: none;
-                    font-family: GillSansStd;
+                    @include gs();
                     font-size: 14px;
                     color: #21282F;
                     line-height: 17px;

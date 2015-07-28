@@ -21,7 +21,7 @@ body.contact-us{
     }
 
     h2{
-        font-family: GillSansStd-LightItalic;
+        @include gs('light-italic');
         font-size: 24px;
         color: #E8E9E9;
         line-height: 29px;
