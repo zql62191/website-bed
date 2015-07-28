@@ -1,4 +1,4 @@
-/* Last Updated: 2015-07-28 at 05:22:54 PM */
+/* Last Updated: 2015-07-28 at 06:24:20 PM */
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -676,8 +676,8 @@ nav li {
 blockquote:before, blockquote:after {
   font-size: 2.4em;
   color: #657E8E;
-  font-weight: 300;
-  font-style: normal;
+  font-weight: 100;
+  font-style: italic;
   line-height: 0;
   top: 0.3em;
 }
@@ -4082,7 +4082,7 @@ body.identifying-patients .section--patients {
   body.identifying-patients .section--patients .persons .person.kimberly {
     height: 295px;
     width: 296px;
-    background: transparent url('../img/md/identifying-patients/kimberly.jpg?1437493424') center center no-repeat;
+    background: transparent url('../img/md/identifying-patients/kimberly.jpg?1438119709') center center no-repeat;
     background-size: 296px 295px;
   }
 }
@@ -4090,7 +4090,7 @@ body.identifying-patients .section--patients {
   body.identifying-patients .section--patients .persons .person.kimberly {
     height: 295px;
     width: 296px;
-    background: transparent url('../img/mdr/identifying-patients/kimberly.jpg?1437493424') center center no-repeat;
+    background: transparent url('../img/mdr/identifying-patients/kimberly.jpg?1438119709') center center no-repeat;
     background-size: 296px 295px;
   }
 }
@@ -4098,7 +4098,7 @@ body.identifying-patients .section--patients {
   body.identifying-patients .section--patients .persons .person.kimberly {
     height: 239px;
     width: 240px;
-    background: transparent url('../img/lg/identifying-patients/kimberly.jpg?1437493424') center center no-repeat;
+    background: transparent url('../img/lg/identifying-patients/kimberly.jpg?1438119283') center center no-repeat;
     background-size: 240px 239px;
   }
 }
@@ -4106,7 +4106,7 @@ body.identifying-patients .section--patients {
   body.identifying-patients .section--patients .persons .person.kimberly {
     height: 239px;
     width: 240px;
-    background: transparent url('../img/lgr/identifying-patients/kimberly.jpg?1437493424') center center no-repeat;
+    background: transparent url('../img/lgr/identifying-patients/kimberly.jpg?1438119283') center center no-repeat;
     background-size: 240px 239px;
   }
 }
@@ -4130,7 +4130,7 @@ body.identifying-patients .section--patients {
   body.identifying-patients .section--patients .persons .person.nikki {
     height: 295px;
     width: 296px;
-    background: transparent url('../img/md/identifying-patients/nikki.jpg?1437493424') center center no-repeat;
+    background: transparent url('../img/md/identifying-patients/nikki.jpg?1438119776') center center no-repeat;
     background-size: 296px 295px;
   }
 }
@@ -4138,7 +4138,7 @@ body.identifying-patients .section--patients {
   body.identifying-patients .section--patients .persons .person.nikki {
     height: 295px;
     width: 296px;
-    background: transparent url('../img/mdr/identifying-patients/nikki.jpg?1437493424') center center no-repeat;
+    background: transparent url('../img/mdr/identifying-patients/nikki.jpg?1438119776') center center no-repeat;
     background-size: 296px 295px;
   }
 }
@@ -4146,7 +4146,7 @@ body.identifying-patients .section--patients {
   body.identifying-patients .section--patients .persons .person.nikki {
     height: 239px;
     width: 240px;
-    background: transparent url('../img/lg/identifying-patients/nikki.jpg?1437493424') center center no-repeat;
+    background: transparent url('../img/lg/identifying-patients/nikki.jpg?1438119373') center center no-repeat;
     background-size: 240px 239px;
   }
 }
@@ -4154,7 +4154,7 @@ body.identifying-patients .section--patients {
   body.identifying-patients .section--patients .persons .person.nikki {
     height: 239px;
     width: 240px;
-    background: transparent url('../img/lgr/identifying-patients/nikki.jpg?1437493424') center center no-repeat;
+    background: transparent url('../img/lgr/identifying-patients/nikki.jpg?1438119373') center center no-repeat;
     background-size: 240px 239px;
   }
 }
@@ -4178,7 +4178,7 @@ body.identifying-patients .section--patients {
   body.identifying-patients .section--patients .persons .person.julie {
     height: 295px;
     width: 296px;
-    background: transparent url('../img/md/identifying-patients/julie.jpg?1437493424') center center no-repeat;
+    background: transparent url('../img/md/identifying-patients/julie.jpg?1438119840') center center no-repeat;
     background-size: 296px 295px;
   }
 }
@@ -4186,7 +4186,7 @@ body.identifying-patients .section--patients {
   body.identifying-patients .section--patients .persons .person.julie {
     height: 295px;
     width: 296px;
-    background: transparent url('../img/mdr/identifying-patients/julie.jpg?1437493424') center center no-repeat;
+    background: transparent url('../img/mdr/identifying-patients/julie.jpg?1438119841') center center no-repeat;
     background-size: 296px 295px;
   }
 }
@@ -4194,7 +4194,7 @@ body.identifying-patients .section--patients {
   body.identifying-patients .section--patients .persons .person.julie {
     height: 239px;
     width: 240px;
-    background: transparent url('../img/lg/identifying-patients/julie.jpg?1437493424') center center no-repeat;
+    background: transparent url('../img/lg/identifying-patients/julie.jpg?1438119482') center center no-repeat;
     background-size: 240px 239px;
   }
 }
@@ -4202,7 +4202,7 @@ body.identifying-patients .section--patients {
   body.identifying-patients .section--patients .persons .person.julie {
     height: 239px;
     width: 240px;
-    background: transparent url('../img/lgr/identifying-patients/julie.jpg?1437493424') center center no-repeat;
+    background: transparent url('../img/lgr/identifying-patients/julie.jpg?1438119483') center center no-repeat;
     background-size: 240px 239px;
   }
 }
@@ -4226,7 +4226,7 @@ body.identifying-patients .section--patients {
   body.identifying-patients .section--patients .persons .person.diego {
     height: 295px;
     width: 296px;
-    background: transparent url('../img/md/identifying-patients/diego.jpg?1437493424') center center no-repeat;
+    background: transparent url('../img/md/identifying-patients/diego.jpg?1438119888') center center no-repeat;
     background-size: 296px 295px;
   }
 }
@@ -4234,7 +4234,7 @@ body.identifying-patients .section--patients {
   body.identifying-patients .section--patients .persons .person.diego {
     height: 295px;
     width: 296px;
-    background: transparent url('../img/mdr/identifying-patients/diego.jpg?1437493424') center center no-repeat;
+    background: transparent url('../img/mdr/identifying-patients/diego.jpg?1438119888') center center no-repeat;
     background-size: 296px 295px;
   }
 }
@@ -4242,7 +4242,7 @@ body.identifying-patients .section--patients {
   body.identifying-patients .section--patients .persons .person.diego {
     height: 239px;
     width: 240px;
-    background: transparent url('../img/lg/identifying-patients/diego.jpg?1437493424') center center no-repeat;
+    background: transparent url('../img/lg/identifying-patients/diego.jpg?1438119560') center center no-repeat;
     background-size: 240px 239px;
   }
 }
@@ -4250,14 +4250,14 @@ body.identifying-patients .section--patients {
   body.identifying-patients .section--patients .persons .person.diego {
     height: 239px;
     width: 240px;
-    background: transparent url('../img/lgr/identifying-patients/diego.jpg?1437493424') center center no-repeat;
+    background: transparent url('../img/lgr/identifying-patients/diego.jpg?1438119560') center center no-repeat;
     background-size: 240px 239px;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   body.identifying-patients .section--patients .persons {
     width: 592px;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
   }
   body.identifying-patients .section--patients .persons:before, body.identifying-patients .section--patients .persons:after {
     content: " ";
@@ -4269,6 +4269,9 @@ body.identifying-patients .section--patients {
   body.identifying-patients .section--patients .persons .person {
     display: block;
     float: left;
+  }
+  body.identifying-patients .section--patients .persons .person.kimberly, body.identifying-patients .section--patients .persons .person.julie {
+    border-right: 1px solid #242e38;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -4289,6 +4292,10 @@ body.identifying-patients .section--patients {
   }
 }
 
+body.profiles {
+  font-weight: 100;
+  font-style: normal;
+}
 body.profiles .gradient {
   position: absolute;
   background-image: -webkit-radial-gradient(50% 121%, #f8f6f4 21%, #ded8d5 100%);
@@ -4327,7 +4334,8 @@ body.profiles .section--carousel .wrap--content {
   padding-top: 0px;
 }
 body.profiles .section--carousel blockquote, body.profiles .section--carousel blockquote p {
-  font-family: GillSansStd-LightItalic;
+  font-weight: 100;
+  font-style: italic;
   font-size: 24px;
   color: #858B91;
   line-height: 29px;
@@ -4376,6 +4384,12 @@ body.profiles .section--carousel .diego .hero {
 body.profiles .section--carousel .diego .shadow {
   display: none;
 }
+body.profiles .section--carousel .diego blockquote {
+  width: 408px;
+}
+body.profiles .section--carousel .diego blockquote p {
+  width: 408px;
+}
 body.profiles .section--carousel .diego blockquote p span {
   padding-left: 26px;
 }
@@ -4385,8 +4399,8 @@ body.profiles .section--carousel .profile {
   left: 574px;
   width: 330px;
   height: 275px;
-  /* Average of 4 binge-e: */
-  font-family: GillSansStd-Light;
+  font-weight: 100;
+  font-style: normal;
   font-size: 18px;
   color: #858B91;
   line-height: 22px;
@@ -4396,9 +4410,11 @@ body.profiles .section--carousel .profile .name {
   color: #333E48;
   line-height: 38px;
   border-bottom: 1px solid #D6D8DA;
+  padding-bottom: 10px;
 }
 body.profiles .section--carousel .profile .binge {
-  padding: 13px initial;
+  padding-top: 13px;
+  padding-bottom: 13px;
   border-bottom: 1px solid #D6D8DA;
 }
 body.profiles .section--carousel .profile .text-line {
@@ -4414,7 +4430,8 @@ body.profiles .section--carousel .profile .text-line .age {
   display: inline-block;
 }
 body.profiles .section--carousel .profile .text-line .stat {
-  padding: 5px initial;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 body.profiles .section--carousel .slides .slide {
   display: none;
@@ -4437,7 +4454,9 @@ body.profiles .section--carousel .pagination {
   position: relative;
 }
 body.profiles .section--carousel .pagination li {
-  font-family: GillSansStd;
+  font-family: 'Gill Sans W01';
+  font-weight: 300;
+  font-style: normal;
   font-size: 14px;
   color: #858B91;
   line-height: 17px;
@@ -4501,18 +4520,23 @@ body.profiles .section--carousel .carousel .controls .prev:hover {
     top: 85px;
     left: 348px;
   }
+  body.profiles .section--carousel .carousel .slides.diego blockquote, body.profiles .section--carousel .carousel .slides.diego blockquote p {
+    width: 408px;
+  }
   body.profiles .section--carousel .section-disclaimer {
     width: 600px;
     height: 36px;
     margin: 0 auto 44px auto;
-    font-family: GillSansStd-Light;
+    font-weight: 100;
+    font-style: normal;
     font-size: 16px;
     color: #858B91;
     line-height: 15px;
     text-align: center;
   }
   body.profiles .section--carousel .callouts {
-    font-family: GillSansStd-Light;
+    font-weight: 100;
+    font-style: normal;
     margin: 0 auto 69px auto;
     font-size: 16px;
     color: #858B91;
@@ -4536,10 +4560,15 @@ body.profiles .section--carousel .carousel .controls .prev:hover {
   body.profiles .section--carousel .callouts .callout .btn {
     width: 280px;
     font-size: 14px;
-    font-family: GillSansStd;
+    font-family: 'Gill Sans W01';
+    font-weight: 300;
+    font-style: normal;
     color: #F2F2F2;
     line-height: 17px;
     padding: 16px 10px;
+  }
+  body.profiles .section--carousel .pagination {
+    margin-top: 26px;
   }
 }
 @media only screen and (max-width: 640px) {

@@ -1,5 +1,6 @@
 body.profiles {
     $page: "profiles";
+    @include gs("light");
 
     .gradient{
         position: absolute;
@@ -54,7 +55,8 @@ body.profiles {
         // }
 
         blockquote, blockquote p{
-            font-family: GillSansStd-LightItalic;
+            // font-family: GillSansStd-LightItalic;
+            @include gs("light-italic");
             font-size: 24px;
             color: #858B91;
             line-height: 29px;
@@ -132,7 +134,13 @@ body.profiles {
                 display: none;
             }
 
+            blockquote{
+                width: 408px;//MOVE TO LG
+            }
+
             blockquote p{
+                width: 408px;//MOVE LG
+
                 span{
                     padding-left: 26px;
                 }
@@ -148,8 +156,9 @@ body.profiles {
             left: 574px;
             width: 330px;
             height: 275px;
-            /* Average of 4 binge-e: */
-            font-family: GillSansStd-Light;
+            
+            // font-family: GillSansStd-Light;
+            @include gs("light");
             font-size: 18px;
             color: #858B91;
             line-height: 22px;
@@ -159,10 +168,12 @@ body.profiles {
                 color: #333E48;
                 line-height: 38px;
                 border-bottom: 1px solid #D6D8DA;
+                padding-bottom: 10px;
             }
 
             .binge {
-                padding: 13px initial;
+                padding-top: 13px;
+                padding-bottom: 13px;
                 border-bottom: 1px solid #D6D8DA;
             } 
 
@@ -180,7 +191,8 @@ body.profiles {
                 }
 
                 .stat {
-                    padding: 5px initial;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
                 }
 
             }
@@ -219,7 +231,8 @@ body.profiles {
             position: relative;
 
             li{
-                font-family: GillSansStd;
+                // font-family: GillSansStd;
+                @include gs();
                 font-size: 14px;
                 color: #858B91;
                 line-height: 17px;
@@ -310,6 +323,14 @@ body.profiles {
                         left: 348px;
                     }
 
+                    &.diego{
+
+                        blockquote, blockquote p{
+                            width: 408px;
+                        }
+
+                    }
+
                 }
 
             }
@@ -318,7 +339,8 @@ body.profiles {
                 width:600px;
                 height:36px;
                 margin: 0 auto 44px auto;
-                font-family: GillSansStd-Light;
+                // font-family: GillSansStd-Light;
+                @include gs("light");
                 font-size: 16px;
                 color: #858B91;
                 line-height: 15px;
@@ -327,7 +349,8 @@ body.profiles {
 
             .callouts{
 
-                font-family: GillSansStd-Light;
+                // font-family: GillSansStd-Light;
+                @include gs("light");
                 margin: 0 auto 69px auto;
                 font-size: 16px;
                 color: #858B91;
@@ -355,7 +378,8 @@ body.profiles {
                     .btn{
                         width: 280px;
                         font-size: 14px;
-                        font-family: GillSansStd;
+                        // font-family: GillSansStd;
+                        @include gs();
                         color: #F2F2F2;
                         line-height: 17px;
                         padding: 16px 10px;
@@ -373,7 +397,11 @@ body.profiles {
 
             }
 
+            .pagination{
 
+                margin-top: 26px;
+
+            }
 
 
         }

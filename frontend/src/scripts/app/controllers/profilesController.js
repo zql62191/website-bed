@@ -29,7 +29,7 @@
 
                 elem.addClass($scope.currentSlide);
 
-                console.log("updating the gradient!");
+                // console.log("updating the gradient!");
 
             };
 
