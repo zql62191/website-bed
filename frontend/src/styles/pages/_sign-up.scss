@@ -28,7 +28,7 @@ body.sign-up{
                     display: none;
                 }
 
-                &.forminvalid.ng-dirty{
+                &.forminvalid.ng-dirty, &.ng-dirty.ng-invalid-required, &.ng-touch.ng-invalid-required{
                     color: #FF4517;
                     border-bottom: 1px solid #FF4517;
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="cdmp" ng-controller="MainController">
+<html lang="en" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="cdmp" ng-controller="MainController" class="in-dev">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8">
@@ -7,15 +7,11 @@
     <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="/hcp/css/styles.css?1438124100000"/>
+    <link rel="stylesheet" href="/hcp/css/styles.css?1438175873651"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
-    <script>
-!function(){document.documentElement.className+=" ng-cloak"}();
-</script>
-    <script>
-!function(e){if(window.__ie=null,/msie|trident/i.test(e)){for(var t=function(){var t=e.match(/(?:msie |rv:)(\d+(\.\d+)?)/i),n=t&&t.length>1&&t[1]||"";return parseInt(n,10)}(),n="ie",i=6,s=12,u=["eq-ie"],r=i;s>=r;r++)t>r?u.push("gt-"+n+r):r>t?u.push("lt-"+n+r):t===r&&(u.push("lte-"+n+r),u.push("eq-"+n+r),u.push("gte-"+n+r));window.__ie=t,document.documentElement.className+=" "+u.join(" ")}}(navigator.userAgent||"");
-</script>
-    <script src="/hcp/js/head.js?1438124100000"></script>
+    <script src="js/inline/cloak.js?__inline=true"></script>
+    <script src="js/inline/iev.js?__inline=true"></script>
+    <script src="/hcp/js/head.js?1438175873652"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="unsubscribe">
     <main class="content--main">
@@ -112,13 +108,67 @@
                 <div class="accordion__content">
                   <div class="formContainer">
                     <form name="opt-out-direct-mail" ng-submit="optOutDirectMail()" autocomplete="off" novalidate>
-                      <input type="email" placeholder="E-mail" ng-model="email" ng-required="true" ng-class="{forminvalid: (opt-out-direct-mail.email.$invalid &amp;&amp; opt-out-direct-mail.email.$dirty) || (opt-out-direct-mail.email.$invalid &amp;&amp; invalidform)}">
+                      <input type="email" placeholder="E-mail" ng-model="email" ng-pattern="emailPattern" ng-required="true" ng-class="{forminvalid: (opt-out-direct-mail.email.$invalid &amp;&amp; opt-out-direct-mail.email.$dirty) || (opt-out-direct-mail.email.$invalid &amp;&amp; invalidform)}">
                       <input type="text" placeholder="First Name" ng-model="firstName" ng-required="true" ng-class="{forminvalid: (opt-out-direct-mail.firstName.$invalid &amp;&amp; opt-out-direct-mail.firstName.$dirty) || (opt-out-direct-mail.firstName.$invalid &amp;&amp; invalidform)}">
                       <input type="text" placeholder="Last Name" ng-model="lastname" ng-required="true" ng-class="{forminvalid: (opt-out-direct-mail.lastName.$invalid &amp;&amp; opt-out-direct-mail.firstName.$dirty) || (opt-out-direct-mail.lastName.$invalid &amp;&amp; invalidform)}">
                       <input type="text" placeholder="Street Address" ng-model="address" ng-required="true" ng-class="{forminvalid: (opt-out-direct-mail.address.$invalid &amp;&amp; opt-out-direct-mail.address.$dirty) || (opt-out-direct-mail.address.$invalid &amp;&amp; invalidform)}">
                       <input type="text" placeholder="Suite/Office (not required)" ng-model="suite" ng-required="false" ng-class="{forminvalid: (opt-out-direct-mail.suite.$invalid &amp;&amp; opt-out-direct-mail.suite.$dirty) || (opt-out-direct-mail.suite.$invalid &amp;&amp; invalidform)}">
                       <input type="text" placeholder="City" ng-model="city" ng-required="true" ng-class="{forminvalid: (opt-out-direct-mail.city.$invalid &amp;&amp; opt-out-direct-mail.city.$dirty) || (opt-out-direct-mail.city.$invalid &amp;&amp; invalidform)}">
-                      <select type="text" placeholder="State" ng-model="state" ng-required="true" ng-class="{forminvalid: (opt-out-direct-mail.state.$invalid &amp;&amp; opt-out-direct-mail.state.$dirty) || (opt-out-direct-mail.state.$invalid &amp;&amp; invalidform)}"></select>
+                      <select type="text" placeholder="State" ng-model="state" ng-required="true" ng-class="{forminvalid: (opt-out-direct-mail.state.$invalid &amp;&amp; opt-out-direct-mail.state.$dirty) || (opt-out-direct-mail.state.$invalid &amp;&amp; invalidform)}">
+                              <option value="">State</option>
+                              <option value="AL">AL</option>
+                              <option value="AK">AK</option>
+                              <option value="AZ">AZ</option>
+                              <option value="AR">AR</option>
+                              <option value="CA">CA</option>
+                              <option value="CO">CO</option>
+                              <option value="CT">CT</option>
+                              <option value="DC">DC</option>
+                              <option value="DE">DE</option>
+                              <option value="FL">FL</option>
+                              <option value="GA">GA</option>
+                              <option value="HI">HI</option>
+                              <option value="ID">ID</option>
+                              <option value="IL">IL</option>
+                              <option value="IN">IN</option>
+                              <option value="IA">IA</option>
+                              <option value="KS">KS</option>
+                              <option value="KY">KY</option>
+                              <option value="LA">LA</option>
+                              <option value="ME">ME</option>
+                              <option value="MD">MD</option>
+                              <option value="MA">MA</option>
+                              <option value="MI">MI</option>
+                              <option value="MN">MN</option>
+                              <option value="MS">MS</option>
+                              <option value="MO">MO</option>
+                              <option value="MT">MT</option>
+                              <option value="NE">NE</option>
+                              <option value="NV">NV</option>
+                              <option value="NH">NH</option>
+                              <option value="NJ">NJ</option>
+                              <option value="NM">NM</option>
+                              <option value="NY">NY</option>
+                              <option value="NC">NC</option>
+                              <option value="ND">ND</option>
+                              <option value="OH">OH</option>
+                              <option value="OK">OK</option>
+                              <option value="OR">OR</option>
+                              <option value="PA">PA</option>
+                              <option value="PR">PR</option>
+                              <option value="RI">RI</option>
+                              <option value="SC">SC</option>
+                              <option value="SD">SD</option>
+                              <option value="TN">TN</option>
+                              <option value="TX">TX</option>
+                              <option value="UT">UT</option>
+                              <option value="VT">VT</option>
+                              <option value="VA">VA</option>
+                              <option value="WA">WA</option>
+                              <option value="WV">WV</option>
+                              <option value="WI">WI</option>
+                              <option value="WY">WY</option>
+                      </select>
                       <input type="text" placeholder="Zip" ng-model="zip" ng-required="true" ng-class="{forminvalid: (opt-out-direct-mail.zip.$invalid &amp;&amp; opt-out-direct-mail.zip.$dirty) || (opt-out-direct-mail.zip.$invalid &amp;&amp; invalidform)}">
                       <button type="submit" class="btn btn--yellow">SUBMIT</button>
                     </form>
@@ -148,7 +198,61 @@
                       <input type="text" placeholder="Street Address" ng-model="address" ng-required="true" ng-class="{forminvalid: (opt-out-all.address.$invalid &amp;&amp; opt-out-all.address.$dirty) || (opt-out-all.address.$invalid &amp;&amp; invalidform)}">
                       <input type="text" placeholder="Suite/Office (not required)" ng-model="suite" ng-required="false" ng-class="{forminvalid: (opt-out-all.suite.$invalid &amp;&amp; opt-out-all.suite.$dirty) || (opt-out-all.suite.$invalid &amp;&amp; invalidform)}">
                       <input type="text" placeholder="City" ng-model="city" ng-required="true" ng-class="{forminvalid: (opt-out-all.city.$invalid &amp;&amp; opt-out-all.city.$dirty) || (opt-out-all.city.$invalid &amp;&amp; invalidform)}">
-                      <select type="text" placeholder="State" ng-model="state" ng-required="true" ng-class="{forminvalid: (opt-out-all.state.$invalid &amp;&amp; opt-out-all.state.$dirty) || (opt-out-all.state.$invalid &amp;&amp; invalidform)}"></select>
+                      <select type="text" placeholder="State" ng-model="state" ng-required="true" ng-class="{forminvalid: (opt-out-all.state.$invalid &amp;&amp; opt-out-all.state.$dirty) || (opt-out-all.state.$invalid &amp;&amp; invalidform)}">
+                              <option value="">State</option>
+                              <option value="AL">AL</option>
+                              <option value="AK">AK</option>
+                              <option value="AZ">AZ</option>
+                              <option value="AR">AR</option>
+                              <option value="CA">CA</option>
+                              <option value="CO">CO</option>
+                              <option value="CT">CT</option>
+                              <option value="DC">DC</option>
+                              <option value="DE">DE</option>
+                              <option value="FL">FL</option>
+                              <option value="GA">GA</option>
+                              <option value="HI">HI</option>
+                              <option value="ID">ID</option>
+                              <option value="IL">IL</option>
+                              <option value="IN">IN</option>
+                              <option value="IA">IA</option>
+                              <option value="KS">KS</option>
+                              <option value="KY">KY</option>
+                              <option value="LA">LA</option>
+                              <option value="ME">ME</option>
+                              <option value="MD">MD</option>
+                              <option value="MA">MA</option>
+                              <option value="MI">MI</option>
+                              <option value="MN">MN</option>
+                              <option value="MS">MS</option>
+                              <option value="MO">MO</option>
+                              <option value="MT">MT</option>
+                              <option value="NE">NE</option>
+                              <option value="NV">NV</option>
+                              <option value="NH">NH</option>
+                              <option value="NJ">NJ</option>
+                              <option value="NM">NM</option>
+                              <option value="NY">NY</option>
+                              <option value="NC">NC</option>
+                              <option value="ND">ND</option>
+                              <option value="OH">OH</option>
+                              <option value="OK">OK</option>
+                              <option value="OR">OR</option>
+                              <option value="PA">PA</option>
+                              <option value="PR">PR</option>
+                              <option value="RI">RI</option>
+                              <option value="SC">SC</option>
+                              <option value="SD">SD</option>
+                              <option value="TN">TN</option>
+                              <option value="TX">TX</option>
+                              <option value="UT">UT</option>
+                              <option value="VT">VT</option>
+                              <option value="VA">VA</option>
+                              <option value="WA">WA</option>
+                              <option value="WV">WV</option>
+                              <option value="WI">WI</option>
+                              <option value="WY">WY</option>
+                      </select>
                       <input type="text" placeholder="Zip" ng-model="zip" ng-required="true" ng-class="{forminvalid: (opt-out-all.zip.$invalid &amp;&amp; opt-out-all.zip.$dirty) || (opt-out-all.zip.$invalid &amp;&amp; invalidform)}">
                       <button type="submit" class="btn btn--yellow">SUBMIT</button>
                     </form>
@@ -201,9 +305,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="/hcp/js/vendor.js?1438124100000"></script>
-    <script src="/hcp/js/templates.js?1438124100000"></script>
-    <script src="/hcp/js/app.js?1438124100000"></script>
+    <script src="/hcp/js/vendor.js?1438175873656"></script>
+    <script src="/hcp/js/templates.js?1438175873656"></script>
+    <script src="/hcp/js/app.js?1438175873656"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");
@@ -217,6 +321,11 @@
   <iframe src="//s.thebrighttag.com/iframe?c=BYgLeqO" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 </noscript>
 
-
+ 
+    <!--[if !IE]> -->
+     
+    <script>/local|ngrok|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/ig.test(location.hostname) && 'WebSocket' in window && window.WebSocket.CLOSING === 2 && document.write('\x3Cscript src="//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1">\x3C/script>');</script> 
+    <!-- <![endif]-->
+     
   </body>
 </html>

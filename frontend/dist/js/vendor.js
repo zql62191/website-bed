@@ -500,3 +500,5 @@ events:[]},a,function(){},f)}])})();
         return $(this);
     };
 })(jQuery);
+
+//# sourceMappingURL=vendor.js.map

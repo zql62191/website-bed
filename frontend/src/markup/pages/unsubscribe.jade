@@ -11,6 +11,9 @@ extends /layouts/base.jade
 
 block content
 
+    include /mixins/forms.jade
+
+
     .gradient
 
     header.header--unsubscribe
@@ -45,13 +48,14 @@ block content
                     mixin content
                         .formContainer
                             form(name='opt-out-direct-mail', ng-submit="optOutDirectMail()", autocomplete='off', novalidate)
-                                input(type='email', placeholder="E-mail", ng-model='email', ng-required="true", ng-class="{forminvalid: (opt-out-direct-mail.email.$invalid && opt-out-direct-mail.email.$dirty) || (opt-out-direct-mail.email.$invalid && invalidform)}")
+                                input(type='email', placeholder="E-mail", ng-model='email', ng-pattern="emailPattern",ng-required="true", ng-class="{forminvalid: (opt-out-direct-mail.email.$invalid && opt-out-direct-mail.email.$dirty) || (opt-out-direct-mail.email.$invalid && invalidform)}")
                                 input(type='text', placeholder="First Name", ng-model='firstName', ng-required="true", ng-class="{forminvalid: (opt-out-direct-mail.firstName.$invalid && opt-out-direct-mail.firstName.$dirty) || (opt-out-direct-mail.firstName.$invalid && invalidform)}")
                                 input(type='text', placeholder="Last Name", ng-model='lastname', ng-required="true", ng-class="{forminvalid: (opt-out-direct-mail.lastName.$invalid && opt-out-direct-mail.firstName.$dirty) || (opt-out-direct-mail.lastName.$invalid && invalidform)}")
                                 input(type='text', placeholder="Street Address", ng-model='address', ng-required="true", ng-class="{forminvalid: (opt-out-direct-mail.address.$invalid && opt-out-direct-mail.address.$dirty) || (opt-out-direct-mail.address.$invalid && invalidform)}")
                                 input(type='text', placeholder="Suite/Office (not required)", ng-model='suite', ng-required="false", ng-class="{forminvalid: (opt-out-direct-mail.suite.$invalid && opt-out-direct-mail.suite.$dirty) || (opt-out-direct-mail.suite.$invalid && invalidform)}")
                                 input(type='text', placeholder="City", ng-model='city', ng-required="true", ng-class="{forminvalid: (opt-out-direct-mail.city.$invalid && opt-out-direct-mail.city.$dirty) || (opt-out-direct-mail.city.$invalid && invalidform)}")
                                 select(type='text', placeholder="State", ng-model='state', ng-required="true", ng-class="{forminvalid: (opt-out-direct-mail.state.$invalid && opt-out-direct-mail.state.$dirty) || (opt-out-direct-mail.state.$invalid && invalidform)}")
+                                    +states
                                 input(type='text', placeholder="Zip", ng-model='zip', ng-required="true", ng-class="{forminvalid: (opt-out-direct-mail.zip.$invalid && opt-out-direct-mail.zip.$dirty) || (opt-out-direct-mail.zip.$invalid && invalidform)}")
 
                                 button(type='submit').btn.btn--yellow
@@ -73,6 +77,7 @@ block content
                                 input(type='text', placeholder="Suite/Office (not required)", ng-model='suite', ng-required="false", ng-class="{forminvalid: (opt-out-all.suite.$invalid && opt-out-all.suite.$dirty) || (opt-out-all.suite.$invalid && invalidform)}")
                                 input(type='text', placeholder="City", ng-model='city', ng-required="true", ng-class="{forminvalid: (opt-out-all.city.$invalid && opt-out-all.city.$dirty) || (opt-out-all.city.$invalid && invalidform)}")
                                 select(type='text', placeholder="State", ng-model='state', ng-required="true", ng-class="{forminvalid: (opt-out-all.state.$invalid && opt-out-all.state.$dirty) || (opt-out-all.state.$invalid && invalidform)}")
+                                    +states
                                 input(type='text', placeholder="Zip", ng-model='zip', ng-required="true", ng-class="{forminvalid: (opt-out-all.zip.$invalid && opt-out-all.zip.$dirty) || (opt-out-all.zip.$invalid && invalidform)}")
 
                                 button(type='submit').btn.btn--yellow

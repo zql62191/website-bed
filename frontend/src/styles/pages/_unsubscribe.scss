@@ -118,7 +118,7 @@
                 width: 582px;
                 margin: 0 auto;
 
-                input[type='text'],input[type='email']{
+                input[type='text'],input[type='email'], select{
                     width:582px;
                     @include gs('light');
                     font-size: 18px;
@@ -130,6 +130,32 @@
                     padding-bottom: 3px; 
                     margin-top: 25px;
 
+                    &.ng-dirty.ng-invalid-required, &.forminvalid.ng-dirty{
+                        border: 1px solid #FF4517;
+                        color: #FF4517;
+                    }
+
+                }
+
+                select{
+                    width: 590px;
+                    margin-left: -8px;
+                    color: #858B91;
+                    background: #D8D8D8;
+                    
+                    &.ng-dirty.ng-invalid-required, &.forminvalid.ng-dirty{
+                        border: 1px solid #FF4517;
+                        color: #FF4517;
+
+                        option{
+                            color: #FF4517;
+                        }
+
+                    }
+
+                    option{
+                        color: #858B91;
+                    }
                 }
 
                 button{
