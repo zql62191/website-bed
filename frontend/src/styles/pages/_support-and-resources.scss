@@ -52,6 +52,15 @@ body.support-and-resources{
 
         .boxes{
 
+            .boxes-tab{
+                display: none;
+
+                &.active{
+                    display: inline-block;
+                }
+
+            }
+
             .boxes-row{
 
                 // position: relative;

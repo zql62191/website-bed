@@ -7,11 +7,11 @@
     <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="/hcp/css/styles.css?1438173531235"/>
+    <link rel="stylesheet" href="/hcp/css/styles.css?1438192650303"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="/hcp/js/head.js?1438173531235"></script>
+    <script src="/hcp/js/head.js?1438192650303"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="support-and-resources">
     <main class="content--main">
@@ -71,68 +71,28 @@
       <section class="section--video-player">
         <div class="wrap--content">
           <div class="player">
+            <h2>The current video is ...</h2>
           </div>
         </div>
       </section>
-      <section class="section--video-boxes">
+      <section ng-controller="ResourcesController as ResCtrl" class="section--video-boxes">
         <div class="wrap--content">
+          <h4>i know everything! the current video is {{currentVideo}} and tab is {{currentTab}}</h4>
           <div class="tabs">
-            <div class="tab">What is <abbr title="Binge Eating Disorder">B.E.D.</abbr>?</div>
-            <div class="tab"><abbr title="Binge Eating Disorder">B.E.D.</abbr> in Adults</div>
-            <div class="tab">Experts Panel Discussion</div>
+            <div ng-click="changeTab(1)" class="tab what-is-bed">What is <abbr title="Binge Eating Disorder">B.E.D.</abbr>?</div>
+            <div ng-click="changeTab(2)" class="tab in-adults"><abbr title="Binge Eating Disorder">B.E.D.</abbr> in Adults</div>
+            <div ng-click="changeTab(3)" class="tab experts">Experts Panel Discussion</div>
           </div>
           <div class="boxes">
-            <div class="boxes-tab-1">
-              <div class="boxes-row">
-                <div class="box">
-                  <div class="yellow">What are the essential features for a diagnosis of <abbr title="Binge Eating Disorder">B.E.D.</abbr>?</div>
-                  <div class="video-length">12:24</div>
+            <div ng-repeat="tab in tabbedVideos" ng-class="{ active: tab.tabclass == currentTab}" class="boxes-tab {{tab.tabclass}}">
+              <div ng-switch on="$index % 3" class="boxes-row">
+                <div ng-repeat="vid in tab.videos" ng-click="updateVideo(vid.id)" class="box">
+                  <div class="yellow">{{vid.title}}</div>
+                  <div class="video-length">{{vid.length}}</div>
                   <div class="play-btn"></div>
-                  <div class="subtitle">Featuring Cynthia M. Bulik, PhD, FAED</div>
+                  <div class="subtitle">Featuring {{vid.featuring}}</div>
                   <div class="new"></div>
-                  <div class="viewed"></div>
-                </div>
-                <div class="box">
-                  <div class="yellow">How is <abbr title="Binge Eating Disorder">B.E.D.</abbr> distinct from bulimia nervosa?</div>
-                  <div class="video-length"></div>
-                  <div class="play-btn"></div>
-                  <div class="subtitle">Featuring Cynthia M. Bulik, PhD, FAED</div>
-                  <div class="new"></div>
-                  <div class="viewed"></div>
-                </div>
-                <div class="box">
-                  <div class="yellow">What are the essential features for a diagnosis of <abbr title="Binge Eating Disorder">B.E.D.</abbr>?</div>
-                  <div class="video-length"></div>
-                  <div class="play-btn"></div>
-                  <div class="subtitle">Featuring Cynthia M. Bulik, PhD, FAED</div>
-                  <div class="new"></div>
-                  <div class="viewed"></div>
-                </div>
-              </div>
-              <div class="boxes-row">
-                <div class="box">
-                  <div class="yellow">What are the functional consequences of <abbr title="Binge Eating Disorder">B.E.D.</abbr>  in adults?</div>
-                  <div class="video-length"></div>
-                  <div class="play-btn"></div>
-                  <div class="subtitle">Featuring Cynthia M. Bulik, PhD, FAED</div>
-                  <div class="new"></div>
-                  <div class="viewed"></div>
-                </div>
-                <div class="box">
-                  <div class="yellow">What are the essential features for a diagnosis of <abbr title="Binge Eating Disorder">B.E.D.</abbr>?</div>
-                  <div class="video-length"></div>
-                  <div class="play-btn"></div>
-                  <div class="subtitle">Featuring Cynthia M. Bulik, PhD, FAED</div>
-                  <div class="new"></div>
-                  <div class="viewed"></div>
-                </div>
-                <div class="box">
-                  <div class="yellow">What are the essential features for a diagnosis of <abbr title="Binge Eating Disorder">B.E.D.</abbr>?</div>
-                  <div class="video-length"></div>
-                  <div class="play-btn"></div>
-                  <div class="subtitle">Featuring Cynthia M. Bulik, PhD, FAED</div>
-                  <div class="new"></div>
-                  <div class="viewed"></div>
+                  <div ng-show="vid.viewed" class="viewed"> </div>
                 </div>
               </div>
             </div>
@@ -216,9 +176,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="/hcp/js/vendor.js?1438173531237"></script>
-    <script src="/hcp/js/templates.js?1438173531237"></script>
-    <script src="/hcp/js/app.js?1438173531237"></script>
+    <script src="/hcp/js/vendor.js?1438192650305"></script>
+    <script src="/hcp/js/templates.js?1438192650305"></script>
+    <script src="/hcp/js/app.js?1438192650305"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

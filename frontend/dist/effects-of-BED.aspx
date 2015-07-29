@@ -7,11 +7,11 @@
     <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="/hcp/css/styles.css?1438173530435"/>
+    <link rel="stylesheet" href="/hcp/css/styles.css?1438192649597"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="/hcp/js/head.js?1438173530436"></script>
+    <script src="/hcp/js/head.js?1438192649597"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="effects-of-bed">
     <main class="content--main">
@@ -74,13 +74,13 @@
       </section>
       <section class="section--association">
         <div class="wrap--content">
-          <h2 class="heading--2"><abbr title="Binge Eating Disorder">B.E.D.</abbr> association with impaired role functioning in <br class="hide--sm">adults (Sheehan Disability Scale)*<sup>2</sup>
+          <h2 class="heading--2"><abbr title="Binge Eating Disorder">B.E.D.</abbr> association with impairment in role functioning in <br class="hide--sm">adults (Sheehan Disability Scale)*<sup>2</sup>
             
           </h2>
           <div class="charts">
             <div class="chart sixty-three">
               <div class="num">≈63%</div>
-              <div class="text">reported functional<br>impairment during the<br>past year</div>
+              <div class="text">reported severe functional<br>impairment during the<br>past year</div>
             </div>
             <div class="chart nineteen">
               <div class="num">≈19%</div>
@@ -99,7 +99,7 @@
       <section class="section--living">
         <div class="wrap--content">
           <h1 class="heading--1">
-            Living with <abbr title="Binge Eating Disorder">B.E.D.</abbr>: What it felt like to one adult patient
+            Living with <abbr title="Binge Eating Disorder">B.E.D.</abbr>: One adult's experiences
             
           </h1>
           <h2 class="heading--2">
@@ -111,9 +111,8 @@
             <blockquote>
               <p>During a binge, I would often eat really, really fast. My binges would always happen when I was alone.</p>
             </blockquote>
-            <div class="listen">
-              Listen to the extended excerpt
-              
+            <div class="listen">Listen to the extended excerpt
+                    <audio src="../assets/foo.mp3"></audio>
             </div>
           </div>
           <div class="sunny hide--md hide--sm"></div>
@@ -175,9 +174,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="/hcp/js/vendor.js?1438173530437"></script>
-    <script src="/hcp/js/templates.js?1438173530437"></script>
-    <script src="/hcp/js/app.js?1438173530437"></script>
+    <script src="/hcp/js/vendor.js?1438192649599"></script>
+    <script src="/hcp/js/templates.js?1438192649599"></script>
+    <script src="/hcp/js/app.js?1438192649599"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

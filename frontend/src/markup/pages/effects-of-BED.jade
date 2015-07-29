@@ -11,6 +11,8 @@ extends /layouts/base.jade
 
 block content
 
+    include /mixins/mediaelement.jade
+
     section.section--associated
         .wrap--content
 
@@ -33,14 +35,14 @@ block content
         .wrap--content
 
             h2.heading--2.
-                !{BED} association with impaired role functioning in #[br.hide--sm]adults (Sheehan Disability Scale)*#[sup 2]
+                !{BED} association with impairment in role functioning in #[br.hide--sm]adults (Sheehan Disability Scale)*#[sup 2]
 
             .charts
                 .chart.sixty-three
                     .num.
                         ≈63%
                     .text
-                        | reported functional
+                        | reported severe functional
                         br
                         | impairment during the
                         br
@@ -65,7 +67,7 @@ block content
         .wrap--content
 
             h1.heading--1.
-                Living with !{BED}: What it felt like to one adult patient
+                Living with !{BED}: One adult's experiences
 
             h2.heading--2.
                 Excerpts from an interview with Sunny Sea Gold
@@ -77,8 +79,9 @@ block content
                 blockquote
                     p.
                         During a binge, I would often eat really, really fast. My binges would always happen when I was alone.
-                .listen.
-                    Listen to the extended excerpt
+                .listen
+                    | Listen to the extended excerpt
+                    +media-element-audio('../assets/foo.mp3',false)
 
             .sunny.hide--md.hide--sm
 
