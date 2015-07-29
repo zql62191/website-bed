@@ -18,6 +18,22 @@ body.identifying-patients {
             }
         }
 
+
+        @include mq("lg") {
+            .btn.btn--yellow{
+                height: 58px;
+                line-height: 24px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+            }
+
+            p.disclaimer{
+                margin-top: 16px;
+                text-align: center;
+            }
+
+        }
+
         @include mq("md") {
 
             .wrap--content {

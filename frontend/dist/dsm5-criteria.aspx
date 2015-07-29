@@ -7,11 +7,11 @@
     <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="/hcp/css/styles.css?1438192649485"/>
+    <link rel="stylesheet" href="/hcp/css/styles.css?1438203257890"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="/hcp/js/head.js?1438192649485"></script>
+    <script src="/hcp/js/head.js?1438203257890"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="dsm5-criteria">
     <main class="content--main">
@@ -93,32 +93,6 @@
       </section>
       <section class="section--triggers">
         <div class="wrap--content">
-          <h1 class="heading--1">
-            Common triggers of binge eating episodes (as noted in <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr>)
-            
-          </h1>
-          <h2 class="heading--2 bottom-bump">
-            Negative affect most commonly precedes a bingeing episode.
-            
-          </h2>
-          <h3 class="heading--3">
-            Other triggers include:
-            
-          </h3>
-          <ul class="square line">
-            <li>
-              <h2 class="heading--2">Interpersonal stressors</h2>
-            </li>
-            <li>
-              <h2 class="heading--2">Dietary restraint</h2>
-            </li>
-            <li>
-              <h2 class="heading--2">Feeling bad about body weight, body shape, and food</h2>
-            </li>
-            <li>
-              <h2 class="heading--2">Feeling bored</h2>
-            </li>
-          </ul>
           <div class="center"><a href="/hcp/sign-up.aspx" class="btn btn--yellow">GET THE FULL <em><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr></em> <abbr title="Binge Eating Disorder">B.E.D.</abbr> CRITERIA</a></div>
         </div>
         <div class="wrap--refs">
@@ -156,19 +130,19 @@
                 <source media="only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2)" srcset="img/lgr/shire-logo.png 2x"/>
                 <source media="only screen and (min-width: 1025px)" srcset="img/lg/shire-logo.png 1x"/><!--[if IE 9]></video><![endif]--><img srcset="img/lg/shire-logo.png" alt="Shire"/>
               </picture></a></p>
-          <p class="legal"><span class="line">&copy;2015 <a href="http://www.shire.com/" target="_blank">Shire US Inc.</a>, [Wayne, PA 19087]    </span><span class="line">1‐800‐828‐2088     </span><span class="line">All rights reserved.     </span><span class="line">S05144     08/15</span></p>
+          <p class="legal"><span class="line">&copy;2015 <a href="http://www.shire.com/" target="_blank">Shire US Inc.</a>, [Wayne, PA 19087]&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">1&ndash;800&ndash;828&ndash;2088&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">S05144&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;08/15</span></p>
           <p>
             Unless otherwise noted, all content of this website, including text, images, graphics, sound files, and their arrangement, belongs to Shire and is protected by international copyright laws. All other intellectual property rights are reserved.  The content may not be copied for commercial use or distribution, nor may these objects be downloaded, modified, or posted to other sites.
             
           </p>
-          <p>This site is intended solely for US residents and is governed solely by US laws and government regulations. Please see our <a href="/hcp/privacy-policy.aspx">privacy policy</a> for more information. While Shire US Inc. makes reasonable efforts to include accurate, up‐to‐date information on the site, Shire US Inc. makes no warranties or representations as to its accuracy. Shire US Inc. assumes no liability for any errors or omissions in the content of the site.</p>
+          <p>This site is intended solely for US residents and is governed solely by US laws and government regulations. Please see our <a href="/hcp/privacy-policy.aspx">privacy policy</a> for more information. While Shire US Inc. makes reasonable efforts to include accurate, up&ndash;to&ndash;date information on the site, Shire US Inc. makes no warranties or representations as to its accuracy. Shire US Inc. assumes no liability for any errors or omissions in the content of the site.</p>
         </div>
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="/hcp/js/vendor.js?1438192649487"></script>
-    <script src="/hcp/js/templates.js?1438192649487"></script>
-    <script src="/hcp/js/app.js?1438192649487"></script>
+    <script src="/hcp/js/vendor.js?1438203257892"></script>
+    <script src="/hcp/js/templates.js?1438203257892"></script>
+    <script src="/hcp/js/app.js?1438203257892"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

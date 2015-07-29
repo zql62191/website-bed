@@ -7,11 +7,11 @@
     <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="/hcp/css/styles.css?1438192649867"/>
+    <link rel="stylesheet" href="/hcp/css/styles.css?1438203492700"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="/hcp/js/head.js?1438192649867"></script>
+    <script src="/hcp/js/head.js?1438203492700"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="patient-statistics">
     <main class="content--main">
@@ -62,23 +62,25 @@
       </header>
       <section class="section--us">
         <div class="wrap--content">
-          <h1 class="heading--1">Binge eating disorder <abbr title="Binge Eating Disorder">B.E.D.</abbr> is the most common eating disorder among US adults*<sup>1,2</sup></h1>
-          <h2 class="heading--2">It is more prevalent than bulimia nervosa and anorexia nervosa combined<sup>1-3</sup>
+          <h1 class="heading--1">Binge eating disorder <abbr title="Binge Eating Disorder">B.E.D.</abbr> is the most common<br>eating disorder among US adults*
+          </h1>
+          <h2 class="heading--2">It is more prevalent than bulimia nervosa and anorexia nervosa combined*<sup>1,2</sup>
             
           </h2>
           <div class="statistics">
             <div class="map">
-              <div class="num">≈2.8 million</div>
-              <div class="stat">US adults have <abbr title="Binge Eating Disorder">B.E.D.</abbr><sup>1-3</sup></div>
+              <div class="num">&asymp;2.8 million</div>
+              <div class="stat">US adults have <abbr title="Binge Eating Disorder">B.E.D.</abbr><sup>&dagger;1-3</sup></div>
             </div>
             <div class="survey">
-              <p>In an online survey of 22,397 US adults, 344 met <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> diagnostic criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr> in the past 12 months (level of severity not specified). Of those:<span class="stat"><span class="percent">3.2%</span><span class="total"> (11 of 344)</span></span>reported ever receiving a diagnosis of <abbr title="Binge Eating Disorder">B.E.D.</abbr> by a health care provider<sup>†4</sup></p>
-              <p data-note-sup="†" class="footnote">Data from a 2013 online survey of US adults aged ≥18 years.<sup>4</sup>
+              <p>In an online survey of 22,397 US adults, 344 met <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> diagnostic criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr> in the past 12 months (level of severity not specified). Of those:<span class="stat"><span class="percent">3.2%</span><span class="total"> (11 of 344)</span></span>reported ever receiving a diagnosis of <abbr title="Binge Eating Disorder">B.E.D.</abbr> by a health care provider<sup>&Dagger;4</sup></p>
+              <p data-note-sup="‡" class="footnote">Data from a 2013 online survey of US adults aged &ge;18 years.<sup>4</sup>
                 
               </p>
             </div>
           </div>
-          <p data-note="*" class="footnote">Estimated 12-month prevalence in National Comorbidity Survey Replication of US adults aged ≥18 years, extrapolated to full US population aged &ge;18 years.<sup>1-3</sup>
+          <p data-note="*" class="footnote">Estimated 12-month and lifetime prevalence among an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.</p>
+          <p data-note="†" class="footnote">Estimated 12-month prevalence in National Comorbidity Survey Replication of US adults aged ≥18 years, extrapolated to full US population aged &ge;18 years.<sup>1-3</sup>
             
           </p>
         </div>
@@ -92,8 +94,8 @@
             </h1>
             <div class="center">
               <h2 class="heading--2">
-                <div class="estimated"><em class="ratio">2:1</em> Estimated 12-month <br class="hide--lg hide--md">prevalence in US adults:</div>
-                <div class="versus"><span class="percent">1.6%</span> of women <span class="vs">&nbsp;vs&nbsp;</span> <span class="percent">0.8%</span> of men<sup>‡</sup></div>
+                <div class="estimated"><em class="ratio">2:1</em> Estimated 12-month <br class="hide--lg hide--md">prevalence of <abbr title="Binge Eating Disorder">B.E.D.</abbr> in US adults:</div>
+                <div class="versus"><span class="percent">1.6%</span> of women <span class="vs">&nbsp;vs&nbsp;</span> <span class="percent">0.8%</span> of men<sup>§</sup></div>
               </h2>
             </div>
             <div class="icon"></div>
@@ -104,30 +106,30 @@
             </h1>
             <div class="center">
               <h2 class="heading--2">
-                <div class="estimated"><em class="ratio">5:1</em> Estimated 12-month <br class="hide--lg hide--md">prevalence in US adults:</div>
-                <div class="versus"><span class="percent">0.5%</span> of women <span class="vs">&nbsp;vs&nbsp;</span> <span class="percent">0.1%</span> of men<sup>‡</sup></div>
+                <div class="estimated"><em class="ratio">5:1</em> Estimated 12-month <br class="hide--lg hide--md">prevalence of bulimia nervosa in US adults:</div>
+                <div class="versus"><span class="percent">0.5%</span> of women <span class="vs">&nbsp;vs&nbsp;</span> <span class="percent">0.1%</span> of men<sup>§</sup></div>
               </h2>
             </div>
             <div class="icon"></div>
           </div>
-          <p data-note-sup="‡" class="footnote">Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged ≥18 and older.<sup>1</sup>
+          <p data-note-sup="§" class="footnote">Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged ≥18 and older.<sup>1</sup>
             
           </p>
         </div>
       </section>
       <section class="section--onset">
         <div class="wrap--content">
-          <h1 class="heading--1">Onset of <abbr title="Binge Eating Disorder">B.E.D.</abbr> occurs at a later age (21 years) than bulimia nervosa (18 years) and anorexia nervosa (18 years)<sup>§1</sup>
+          <h1 class="heading--1">Onset of <abbr title="Binge Eating Disorder">B.E.D.</abbr> occurs at a later age (21 years) than bulimia nervosa (18 years) and anorexia nervosa (18 years)<sup>||1</sup>
             
           </h1>
-          <p data-note-sup="§" class="footnote">Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged ≥18 and older.<sup>1</sup>
+          <p data-note-sup="||" class="footnote">Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged ≥18 and older.<sup>1</sup>
             
           </p>
         </div>
       </section>
       <section class="section--groups">
         <div class="wrap--content">
-          <h1 class="heading--1">In US adults, <abbr title="Binge Eating Disorder">B.E.D.</abbr> is observed across racial and ethnic groups: Prevalence rates are comparable among non-Latino white (1.4%), Latino (2.1%), Asian (1.2%), and African American (1.5%) adults<sup>¶5,6</sup>
+          <h1 class="heading--1">In US adults, <abbr title="Binge Eating Disorder">B.E.D.</abbr> is observed across racial and ethnic groups: Prevalence rates are comparable among non-Latino white (1.4%), Latino (2.1%), Asian (1.2%), and African American (1.5%) adults<sup>&para;5,6</sup>
             
           </h1>
           <h2 class="heading--2">Prevalence rates are also comparable between most industrialized countries (eg, Australia, Canada, many European countries, New Zealand, and the United States)<sup>5</sup>
@@ -136,7 +138,7 @@
           <p data-note-sup="¶" class="footnote">Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged ≥18 and older.<sup>1</sup>
             
           </p>
-          <div class="center"><a href="#needurl" class="btn btn--yellow">HOW <abbr title="Binge Eating Disorder">B.E.D.</abbr> PATIENTS MAY PRESENT</a></div>
+          <div class="center"><a href="#needurl" class="btn btn--yellow">HOW ADULTS WITH <abbr title="Binge Eating Disorder">B.E.D.</abbr> MAY PRESENT</a></div>
         </div>
         <div class="wrap--refs">
           <ol class="refs number">
@@ -178,19 +180,19 @@
                 <source media="only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2)" srcset="img/lgr/shire-logo.png 2x"/>
                 <source media="only screen and (min-width: 1025px)" srcset="img/lg/shire-logo.png 1x"/><!--[if IE 9]></video><![endif]--><img srcset="img/lg/shire-logo.png" alt="Shire"/>
               </picture></a></p>
-          <p class="legal"><span class="line">&copy;2015 <a href="http://www.shire.com/" target="_blank">Shire US Inc.</a>, [Wayne, PA 19087]    </span><span class="line">1‐800‐828‐2088     </span><span class="line">All rights reserved.     </span><span class="line">S05144     08/15</span></p>
+          <p class="legal"><span class="line">&copy;2015 <a href="http://www.shire.com/" target="_blank">Shire US Inc.</a>, [Wayne, PA 19087]&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">1&ndash;800&ndash;828&ndash;2088&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">S05144&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;08/15</span></p>
           <p>
             Unless otherwise noted, all content of this website, including text, images, graphics, sound files, and their arrangement, belongs to Shire and is protected by international copyright laws. All other intellectual property rights are reserved.  The content may not be copied for commercial use or distribution, nor may these objects be downloaded, modified, or posted to other sites.
             
           </p>
-          <p>This site is intended solely for US residents and is governed solely by US laws and government regulations. Please see our <a href="/hcp/privacy-policy.aspx">privacy policy</a> for more information. While Shire US Inc. makes reasonable efforts to include accurate, up‐to‐date information on the site, Shire US Inc. makes no warranties or representations as to its accuracy. Shire US Inc. assumes no liability for any errors or omissions in the content of the site.</p>
+          <p>This site is intended solely for US residents and is governed solely by US laws and government regulations. Please see our <a href="/hcp/privacy-policy.aspx">privacy policy</a> for more information. While Shire US Inc. makes reasonable efforts to include accurate, up&ndash;to&ndash;date information on the site, Shire US Inc. makes no warranties or representations as to its accuracy. Shire US Inc. assumes no liability for any errors or omissions in the content of the site.</p>
         </div>
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="/hcp/js/vendor.js?1438192649869"></script>
-    <script src="/hcp/js/templates.js?1438192649869"></script>
-    <script src="/hcp/js/app.js?1438192649869"></script>
+    <script src="/hcp/js/vendor.js?1438203492702"></script>
+    <script src="/hcp/js/templates.js?1438203492702"></script>
+    <script src="/hcp/js/app.js?1438203492702"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

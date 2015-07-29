@@ -7,11 +7,11 @@
     <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="/hcp/css/styles.css?1438192649746"/>
+    <link rel="stylesheet" href="/hcp/css/styles.css?1438203258097"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="/hcp/js/head.js?1438192649746"></script>
+    <script src="/hcp/js/head.js?1438203258098"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="index">
     <main class="content--main">
@@ -76,7 +76,7 @@
               <h1 class="heading--1 yellow">Binge. Distress. Repeat.<sup>1</sup>
                 
               </h1>
-              <p>In 2013, the American Psychiatric Association recognized <abbr title="Binge Eating Disorder">B.E.D.</abbr> as a distinct eating disorder. <abbr title="Binge Eating Disorder">B.E.D.</abbr> is defined as recurring episodes (on average, &ge;1 episode per week for at least 3 months) of consuming a large amount of food in a short time compared with others, a feeling of lack of control during a binge, and marked distress over binge eating. Patients also typically experience shame and guilt, among other symptoms.<sup>1</sup>
+              <p>In 2013, the American Psychiatric Association recognized <abbr title="Binge Eating Disorder">B.E.D.</abbr> as a distinct eating disorder. <abbr title="Binge Eating Disorder">B.E.D.</abbr> is defined as recurring episodes (on average, &ge;1 episode per week for at least 3 months) of consuming a large amount of food in a short time compared with others, a feeling of lack of control during a binge, and marked distress over binge eating. Patients also typically experience shame and guilt about their bingeing, among other symptoms.<sup>1</sup>
                 
               </p>
             </div>
@@ -126,19 +126,19 @@
                 <source media="only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2)" srcset="img/lgr/shire-logo.png 2x"/>
                 <source media="only screen and (min-width: 1025px)" srcset="img/lg/shire-logo.png 1x"/><!--[if IE 9]></video><![endif]--><img srcset="img/lg/shire-logo.png" alt="Shire"/>
               </picture></a></p>
-          <p class="legal"><span class="line">&copy;2015 <a href="http://www.shire.com/" target="_blank">Shire US Inc.</a>, [Wayne, PA 19087]    </span><span class="line">1‐800‐828‐2088     </span><span class="line">All rights reserved.     </span><span class="line">S05144     08/15</span></p>
+          <p class="legal"><span class="line">&copy;2015 <a href="http://www.shire.com/" target="_blank">Shire US Inc.</a>, [Wayne, PA 19087]&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">1&ndash;800&ndash;828&ndash;2088&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">S05144&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;08/15</span></p>
           <p>
             Unless otherwise noted, all content of this website, including text, images, graphics, sound files, and their arrangement, belongs to Shire and is protected by international copyright laws. All other intellectual property rights are reserved.  The content may not be copied for commercial use or distribution, nor may these objects be downloaded, modified, or posted to other sites.
             
           </p>
-          <p>This site is intended solely for US residents and is governed solely by US laws and government regulations. Please see our <a href="/hcp/privacy-policy.aspx">privacy policy</a> for more information. While Shire US Inc. makes reasonable efforts to include accurate, up‐to‐date information on the site, Shire US Inc. makes no warranties or representations as to its accuracy. Shire US Inc. assumes no liability for any errors or omissions in the content of the site.</p>
+          <p>This site is intended solely for US residents and is governed solely by US laws and government regulations. Please see our <a href="/hcp/privacy-policy.aspx">privacy policy</a> for more information. While Shire US Inc. makes reasonable efforts to include accurate, up&ndash;to&ndash;date information on the site, Shire US Inc. makes no warranties or representations as to its accuracy. Shire US Inc. assumes no liability for any errors or omissions in the content of the site.</p>
         </div>
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="/hcp/js/vendor.js?1438192649748"></script>
-    <script src="/hcp/js/templates.js?1438192649748"></script>
-    <script src="/hcp/js/app.js?1438192649748"></script>
+    <script src="/hcp/js/vendor.js?1438203258099"></script>
+    <script src="/hcp/js/templates.js?1438203258099"></script>
+    <script src="/hcp/js/app.js?1438203258099"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

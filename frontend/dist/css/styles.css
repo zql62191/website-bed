@@ -1,4 +1,4 @@
-/* Last Updated: 2015-07-29 at 01:57:35 PM */
+/* Last Updated: 2015-07-29 at 04:40:10 PM */
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -1294,6 +1294,7 @@ header.header--global .title-bar .signup {
     color: #52758B;
     background: #FFBE2C;
     border-color: #FFBE2C;
+    font-weight: 200;
   }
   header.header--global .primary-nav {
     background: #333E48;
@@ -2651,6 +2652,20 @@ body.recognizing-bed .section--majority .chart-wrap .label.left {
   left: 0;
   text-align: left;
 }
+body.recognizing-bed .section--triggers {
+  background: #333E48;
+  background-image: -webkit-radial-gradient(50% 149%, #333e48 17%, #252f39 100%);
+  background-image: radial-gradient(50% 149%, #333e48 17%, #252f39 100%);
+}
+@media only screen and (min-width: 1025px) {
+  body.recognizing-bed .section--triggers .wrap--content {
+    width: 555px;
+  }
+  body.recognizing-bed .section--triggers .wrap--content ul.square.line .heading--2 {
+    text-align: left;
+    display: inline-block;
+  }
+}
 body.recognizing-bed .section--compared {
   background: #252F39;
 }
@@ -3177,7 +3192,7 @@ body.potential-causes .section--theories {
   background: #252F39;
 }
 body.potential-causes .section--factors {
-  background: #303A44;
+  background: #252F39;
 }
 @media only screen and (min-width: 1025px), only screen and (min-width: 641px) and (max-width: 1024px) {
   body.potential-causes .section--theories .row {
@@ -4254,6 +4269,18 @@ body.identifying-patients .section--patients {
     background-size: 240px 239px;
   }
 }
+@media only screen and (min-width: 1025px) {
+  body.identifying-patients .section--patients .btn.btn--yellow {
+    height: 58px;
+    line-height: 24px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+  body.identifying-patients .section--patients p.disclaimer {
+    margin-top: 16px;
+    text-align: center;
+  }
+}
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   body.identifying-patients .section--patients .persons {
     width: 592px;
@@ -4564,8 +4591,9 @@ body.profiles .section--carousel .carousel .controls .prev:hover {
     font-weight: 300;
     font-style: normal;
     color: #F2F2F2;
-    line-height: 17px;
-    padding: 16px 10px;
+    line-height: 18px;
+    padding: 10px 10px;
+    height: 56px;
   }
   body.profiles .section--carousel .pagination {
     margin-top: 26px;
