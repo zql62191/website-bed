@@ -7,11 +7,11 @@
     <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="/hcp/css/styles.css?1438271327700"/>
+    <link rel="stylesheet" href="/hcp/css/styles.css?1438274256251"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="/hcp/js/head.js?1438271327700"></script>
+    <script src="/hcp/js/head.js?1438274256251"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="support-and-resources">
     <main class="content--main">
@@ -77,14 +77,13 @@
       </section>
       <section ng-controller="ResourcesController as ResCtrl" class="section--video-boxes">
         <div class="wrap--content">
-          <h4>i know everything! the current video is {{currentVideo}} and tab is {{currentTab}}</h4>
           <div class="tabs">
             <div ng-repeat="tab in tabbedVideos" ng-click="changeTab($index+1)" ng-class="{active: tab.tabclass == currentTab}" class="tab {{tab.tabclass}}">{{tab.tabtitle}}</div>
           </div>
           <div class="boxes">
             <div ng-repeat="tab in tabbedVideos" ng-class="{ active: tab.tabclass == currentTab}" class="boxes-tab {{tab.tabclass}}">
-              <div ng-switch on="$index % 3" class="boxes-row">
-                <div ng-repeat="vid in tab.videos" ng-click="updateVideo(vid.id)" class="box">
+              <div class="boxes-row">
+                <div ng-repeat="vid in tab.videos" ng-click="updateVideo(vid.id)" ng-class="{ playing: vid.id == currentVideo }" class="box">
                   <div class="yellow">{{vid.title}}</div>
                   <div class="video-length">{{vid.length}}</div>
                   <div class="play-btn"></div>
@@ -175,9 +174,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="/hcp/js/vendor.js?1438271327702"></script>
-    <script src="/hcp/js/templates.js?1438271327702"></script>
-    <script src="/hcp/js/app.js?1438271327702"></script>
+    <script src="/hcp/js/vendor.js?1438274256253"></script>
+    <script src="/hcp/js/templates.js?1438274256253"></script>
+    <script src="/hcp/js/app.js?1438274256253"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

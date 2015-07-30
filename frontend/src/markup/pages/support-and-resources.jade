@@ -27,23 +27,15 @@ block content
     section.section--video-boxes(ng-controller="ResourcesController as ResCtrl")
         .wrap--content
 
-            h4 i know everything! the current video is {{currentVideo}} and tab is {{currentTab}}
-
-            //- needs some Angular ng-repeat for each tab, add class .tab-{{name}} so it will look like .tab.tab-{{name}}
-                on second thought, this is probably not needed since it's a fixed number of videos
-
-            //- .tabs
-                .tab.what-is-bed(ng-click="changeTab(1)", ng-class="{active: tab.tabclass == currentTab}") What is !{BED}?
-                .tab.in-adults(ng-click="changeTab(2)", ng-class="{active: tab.tabclass == currentTab}") !{BED} in Adults
-                .tab.experts(ng-click="changeTab(3)", ng-class="{active: tab.tabclass == currentTab}") Experts Panel Discussion
+            //- h4 i know everything! the current video is {{currentVideo}} and tab is {{currentTab}}
 
             .tabs
                 .tab(ng-repeat="tab in tabbedVideos", ng-click="changeTab($index+1)", ng-class="{active: tab.tabclass == currentTab}", class="{{tab.tabclass}}") {{tab.tabtitle}}
 
             .boxes
                 .boxes-tab(ng-repeat="tab in tabbedVideos",class="{{tab.tabclass}}", ng-class="{ active: tab.tabclass == currentTab}")
-                    .boxes-row(ng-switch on="$index % 3")
-                        .box(ng-repeat="vid in tab.videos" ng-click="updateVideo(vid.id)")
+                    .boxes-row()
+                        .box(ng-repeat="vid in tab.videos", ng-click="updateVideo(vid.id)", ng-class="{ playing: vid.id == currentVideo }")
                             .yellow {{vid.title}}
                             .video-length {{vid.length}}
                             .play-btn
@@ -51,159 +43,6 @@ block content
                             .new
                             .viewed(ng-show="vid.viewed") 
                     .consult-disclaimer {{tab.disclaimer}}
-
-            //- .boxes
-                //- .boxes-tab-{name} ??
-                .boxes-tab-1.what-is-bed
-                    .boxes-row
-                        .box(ng-click="updateVideo('video_id')")
-                            .yellow
-                                | What are the essential features for a diagnosis of !{BED}?
-                            .video-length 1:25
-                            .play-btn
-                            .subtitle Featuring Cynthia M. Bulik, PhD, FAED
-                            .new
-                            .viewed
-                        .box(ng-click="updateVideo('video_id_2')")
-                            .yellow
-                                | How is !{BED} distinct from bulimia nervosa?
-                            .video-length 2:23
-                            .play-btn
-                            .subtitle Featuring Denise E. Wilfley, PhD
-                            .new
-                            .viewed
-                        .box(ng-click="updateVideo('hipster-so-edgy')")
-                            .yellow
-                                | How is !{BED} distinct from overeating and obesity?
-                            .video-length 2:31
-                            .play-btn
-                            .subtitle Denise E. Wilfley, PhD
-                            .new
-                            .viewed
-                    .boxes-row
-                        .box
-                            .yellow
-                                | What are the functional consequences of !{BED}  in adults?
-                            .video-length
-                            .play-btn
-                            .subtitle Featuring Cynthia M. Bulik, PhD, FAED
-                            .new
-                            .viewed
-                        .box
-                            .yellow
-                                | What are the essential features for a diagnosis of !{BED}?
-                            .video-length
-                            .play-btn
-                            .subtitle Featuring Cynthia M. Bulik, PhD, FAED
-                            .new
-                            .viewed
-                        
-                .boxes-tab-2.in-adults
-                    .boxes-row
-                        .box(ng-click="updateVideo('video_id')")
-                            .yellow
-                                | What are the essential features for a diagnosis of !{BED}?
-                            .video-length 12:24
-                            .play-btn
-                            .subtitle Featuring Cynthia M. Bulik, PhD, FAED
-                            .new
-                            .viewed
-                        .box(ng-click="updateVideo('video_id_2')")
-                            .yellow
-                                | How is !{BED} distinct from bulimia nervosa?
-                            .video-length
-                            .play-btn
-                            .subtitle Featuring Cynthia M. Bulik, PhD, FAED
-                            .new
-                            .viewed
-                        .box(ng-click="updateVideo('hipster-so-edgy')")
-                            .yellow
-                                | What are the essential features for a diagnosis of !{BED}?
-                            .video-length
-                            .play-btn
-                            .subtitle Featuring Cynthia M. Bulik, PhD, FAED
-                            .new
-                            .viewed
-                    .boxes-row
-                        .box
-                            .yellow
-                                | What are the functional consequences of !{BED}  in adults?
-                            .video-length
-                            .play-btn
-                            .subtitle Featuring Cynthia M. Bulik, PhD, FAED
-                            .new
-                            .viewed
-                        .box
-                            .yellow
-                                | What are the essential features for a diagnosis of !{BED}?
-                            .video-length
-                            .play-btn
-                            .subtitle Featuring Cynthia M. Bulik, PhD, FAED
-                            .new
-                            .viewed
-                        .box
-                            .yellow
-                                | What are the essential features for a diagnosis of !{BED}?
-                            .video-length
-                            .play-btn
-                            .subtitle Featuring Cynthia M. Bulik, PhD, FAED
-                            .new
-                            .viewed
-                    .boxes-row
-                        //- BOX HERE
-                .boxes-tab-3.experts
-                    .boxes-row
-                        .box(ng-click="updateVideo('video_id')")
-                            .yellow
-                                | What are the essential features for a diagnosis of !{BED}?
-                            .video-length 12:24
-                            .play-btn
-                            .subtitle Featuring Cynthia M. Bulik, PhD, FAED
-                            .new
-                            .viewed
-                        .box(ng-click="updateVideo('video_id_2')")
-                            .yellow
-                                | How is !{BED} distinct from bulimia nervosa?
-                            .video-length
-                            .play-btn
-                            .subtitle Featuring Cynthia M. Bulik, PhD, FAED
-                            .new
-                            .viewed
-                        .box(ng-click="updateVideo('hipster-so-edgy')")
-                            .yellow
-                                | What are the essential features for a diagnosis of !{BED}?
-                            .video-length
-                            .play-btn
-                            .subtitle Featuring Cynthia M. Bulik, PhD, FAED
-                            .new
-                            .viewed
-                    .boxes-row
-                        .box
-                            .yellow
-                                | What are the functional consequences of !{BED}  in adults?
-                            .video-length
-                            .play-btn
-                            .subtitle Featuring Cynthia M. Bulik, PhD, FAED
-                            .new
-                            .viewed
-                        .box
-                            .yellow
-                                | What are the essential features for a diagnosis of !{BED}?
-                            .video-length
-                            .play-btn
-                            .subtitle Featuring Cynthia M. Bulik, PhD, FAED
-                            .new
-                            .viewed
-                        .box
-                            .yellow
-                                | What are the essential features for a diagnosis of !{BED}?
-                            .video-length
-                            .play-btn
-                            .subtitle Featuring Cynthia M. Bulik, PhD, FAED
-                            .new
-                            .viewed
-
-
 
 
     section.section--shire-resources

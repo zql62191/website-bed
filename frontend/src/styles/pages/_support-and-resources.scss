@@ -31,7 +31,7 @@ body.support-and-resources{
                 height: 60px;
                 background-color: #52758B;
                 color: #E8E9E9;
-                // margin-right: 1px;
+                margin-right: 1px;
                 padding: 20px 0;
                 text-align: center;
                 cursor: pointer;
@@ -59,29 +59,39 @@ body.support-and-resources{
                     display: inline-block;
                 }
 
+                .consult-disclaimer{
+                    @include gs("light");
+                    font-size: 14px;
+                    margin-top: 20px;
+                    color: #858B91;
+                }
+
             }
 
             .boxes-row{
 
                 // position: relative;
-                padding-top: 20px;
+                // padding-top: 20px;
 
                 .box{
                     width: 298px;
-                    height: 112px;
+                    height: 130px;
                     display: inline-block; 
                     background-color: #333E48;
+                    border: 2px solid transparent; //no more jiggly content!
                     margin-right: 21px;
                     position: relative;
                     padding-top:16px;
                     padding-left:16px;
                     cursor: pointer;
+                    margin-top: 20px;
+                    vertical-align: middle;
 
                     .yellow{
                         width: 220px;
                     }
 
-                    &:hover{
+                    &:hover, &.playing{
                         border: 2px solid #FDBD3E;
                         // padding-top:14px;
                         // padding-left:14px;
@@ -119,7 +129,7 @@ body.support-and-resources{
                     .new{
                         position: absolute;
                         top: 61px;
-                        left: 265px;
+                        left: 254px;
                         width: 49px;
                         height: 22px;
                         background-image: url("../img/lg/support-and-resources/new-ribbon.png");
@@ -128,7 +138,7 @@ body.support-and-resources{
                     .viewed{
                         position: absolute;
                         top: 79px;
-                        left: 249px;
+                        left: 238px;
                         width: 64px;
                         height: 22px;
                         background-image: url("../img/lg/support-and-resources/viewed-ribbon.png");

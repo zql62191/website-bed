@@ -7,11 +7,11 @@
     <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="/hcp/css/styles.css?1438270864514"/>
+    <link rel="stylesheet" href="/hcp/css/styles.css?1438271728712"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="/hcp/js/head.js?1438270864514"></script>
+    <script src="/hcp/js/head.js?1438271728713"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="recognizing-bed">
     <main class="content--main">
@@ -208,9 +208,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="/hcp/js/vendor.js?1438270864516"></script>
-    <script src="/hcp/js/templates.js?1438270864516"></script>
-    <script src="/hcp/js/app.js?1438270864516"></script>
+    <script src="/hcp/js/vendor.js?1438271728714"></script>
+    <script src="/hcp/js/templates.js?1438271728714"></script>
+    <script src="/hcp/js/app.js?1438271728714"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");
