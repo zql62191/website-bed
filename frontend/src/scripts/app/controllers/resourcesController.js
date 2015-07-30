@@ -17,6 +17,7 @@
 
             $scope.tabbedVideos = [{
                 tabclass : "what-is-bed",
+                tabtitle: "What is B.E.D.?",
                 disclaimer: "Drs. Bulik and Wilfley are paid consultants for Shire.",
                 videos : [
                     {
@@ -72,6 +73,7 @@
                 ]
             },{
                 tabclass: "in-adults",
+                tabtitle: "B.E.D. in Adults",
                 disclaimer: "Drs. Grilo, Kornstein, and Wilfley are paid consultants for Shire.",
                 videos: [
                     {
@@ -147,6 +149,7 @@
                 ]
             }, {
                 tabclass: "experts",
+                tabtitle: "Experts Panel Discussion",
                 videos: [
                     {
                         id: "living-with-bed",

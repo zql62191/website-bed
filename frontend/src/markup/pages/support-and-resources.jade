@@ -32,13 +32,13 @@ block content
             //- needs some Angular ng-repeat for each tab, add class .tab-{{name}} so it will look like .tab.tab-{{name}}
                 on second thought, this is probably not needed since it's a fixed number of videos
 
-            .tabs
+            //- .tabs
                 .tab.what-is-bed(ng-click="changeTab(1)", ng-class="{active: tab.tabclass == currentTab}") What is !{BED}?
                 .tab.in-adults(ng-click="changeTab(2)", ng-class="{active: tab.tabclass == currentTab}") !{BED} in Adults
                 .tab.experts(ng-click="changeTab(3)", ng-class="{active: tab.tabclass == currentTab}") Experts Panel Discussion
 
-            //- p.tabs(ng-repeat="tab in tabbedVideos")
-                {{tab.tabclass}}
+            .tabs
+                .tab(ng-repeat="tab in tabbedVideos", ng-click="changeTab($index+1)", ng-class="{active: tab.tabclass == currentTab}", class="{{tab.tabclass}}") {{tab.tabtitle}}
 
             .boxes
                 .boxes-tab(ng-repeat="tab in tabbedVideos",class="{{tab.tabclass}}", ng-class="{ active: tab.tabclass == currentTab}")
