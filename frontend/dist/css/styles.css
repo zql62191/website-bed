@@ -1,4 +1,4 @@
-/* Last Updated: 2015-07-30 at 05:46:33 PM */
+/* Last Updated: 2015-07-30 at 06:49:44 PM */
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -4713,6 +4713,16 @@ body.support-and-resources .section--video-player-title {
 }
 body.support-and-resources .section--video-player {
   background-color: #1B2025;
+}
+body.support-and-resources .section--video-player .mejs-container, body.support-and-resources .section--video-player .mejs-container * {
+  max-width: 100%;
+  max-height: 540px;
+}
+body.support-and-resources .section--video-player .mejs-inner {
+  height: 100%;
+}
+body.support-and-resources .section--video-player #videoPlayer {
+  background: transparent;
 }
 body.support-and-resources .section--shire-resources .wrap--content {
   border-top: 1px solid #5C656D;

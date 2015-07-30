@@ -11,38 +11,206 @@ extends /layouts/base.jade
 
 block content
 
-    section.section--video-player-title
-        .wrap--content
+    div(ng-controller="ResourcesController as ResCtrl")
 
-            h1.heading--1.
-                VIDEOS: Experts discuss !{BED} in adults
+        section.section--video-player-title
+            .wrap--content
 
-    section.section--video-player
-        .wrap--content
+                h1.heading--1.
+                    VIDEOS: Experts discuss !{BED} in adults
 
-            .player
-                //- | PLACEHOLDER!!!
-                h2 The current video is ...
+        section.section--video-player
+            .wrap--content
 
-    section.section--video-boxes(ng-controller="ResourcesController as ResCtrl")
-        .wrap--content
+                video(
+                    id='videoPlayer'
+                    controls='controls',
+                    preload='none')
 
-            //- h4 i know everything! the current video is {{currentVideo}} and tab is {{currentTab}}
+                    source(
+                        type='video/mp4',
+                        ng-src='{{currentVideo}}')
 
-            .tabs
-                .tab(ng-repeat="tab in tabbedVideos", ng-click="changeTab($index+1)", ng-class="{active: tab.tabclass == currentTab}", class="{{tab.tabclass}}") {{tab.tabtitle}}
+        section.section--video-boxes
+            .wrap--content
 
-            .boxes
-                .boxes-tab(ng-repeat="tab in tabbedVideos",class="{{tab.tabclass}}", ng-class="{ active: tab.tabclass == currentTab}")
-                    .boxes-row()
-                        .box(ng-repeat="vid in tab.videos", ng-click="updateVideo(vid.id)", ng-class="{ playing: vid.id == currentVideo }")
-                            .yellow {{vid.title}}
-                            .video-length {{vid.length}}
-                            .play-btn
-                            .subtitle Featuring {{vid.featuring}}
-                            .new
-                            .viewed(ng-show="vid.viewed") 
-                    .consult-disclaimer {{tab.disclaimer}}
+                //- h4 i know everything! the current video is {{currentVideo}} and tab is {{currentTab}}
+
+                //- needs some Angular ng-repeat for each tab, add class .tab-{{name}} so it will look like .tab.tab-{{name}}
+                    on second thought, this is probably not needed since it's a fixed number of videos
+
+                .tabs
+                    .tab.what-is-bed(ng-click="changeTab(1)", ng-class="{active: tab.tabclass === currentTab}") What is !{BED}?
+                    .tab.in-adults(ng-click="changeTab(2)", ng-class="{active: tab.tabclass === currentTab}") !{BED} in Adults
+                    .tab.experts(ng-click="changeTab(3)", ng-class="{active: tab.tabclass === currentTab}") Experts Panel Discussion
+
+                //- p.tabs(ng-repeat="tab in tabbedVideos")
+                    {{tab.tabclass}}
+
+                .boxes
+                    .boxes-tab(ng-repeat="tab in tabbedVideos",class="{{tab.tabclass}}", ng-class="{ active: tab.tabclass == currentTab}")
+                        .boxes-row(ng-switch on="$index % 3")
+                            .box(ng-repeat="vid in tab.videos" ng-click="updateVideo(vid.id)")
+                                .yellow {{vid.title}}
+                                .video-length {{vid.length}}
+                                .play-btn
+                                .subtitle Featuring {{vid.featuring}}
+                                .new
+                                .viewed(ng-show="vid.viewed") 
+                        .consult-disclaimer {{tab.disclaimer}}
+
+                //- .boxes
+                    //- .boxes-tab-{name} ??
+                    .boxes-tab-1.what-is-bed
+                        .boxes-row
+                            .box(ng-click="updateVideo('video_id')")
+                                .yellow
+                                    | What are the essential features for a diagnosis of !{BED}?
+                                .video-length 1:25
+                                .play-btn
+                                .subtitle Featuring Cynthia M. Bulik, PhD, FAED
+                                .new
+                                .viewed
+                            .box(ng-click="updateVideo('video_id_2')")
+                                .yellow
+                                    | How is !{BED} distinct from bulimia nervosa?
+                                .video-length 2:23
+                                .play-btn
+                                .subtitle Featuring Denise E. Wilfley, PhD
+                                .new
+                                .viewed
+                            .box(ng-click="updateVideo('hipster-so-edgy')")
+                                .yellow
+                                    | How is !{BED} distinct from overeating and obesity?
+                                .video-length 2:31
+                                .play-btn
+                                .subtitle Denise E. Wilfley, PhD
+                                .new
+                                .viewed
+                        .boxes-row
+                            .box
+                                .yellow
+                                    | What are the functional consequences of !{BED}  in adults?
+                                .video-length
+                                .play-btn
+                                .subtitle Featuring Cynthia M. Bulik, PhD, FAED
+                                .new
+                                .viewed
+                            .box
+                                .yellow
+                                    | What are the essential features for a diagnosis of !{BED}?
+                                .video-length
+                                .play-btn
+                                .subtitle Featuring Cynthia M. Bulik, PhD, FAED
+                                .new
+                                .viewed
+                            
+                    .boxes-tab-2.in-adults
+                        .boxes-row
+                            .box(ng-click="updateVideo('video_id')")
+                                .yellow
+                                    | What are the essential features for a diagnosis of !{BED}?
+                                .video-length 12:24
+                                .play-btn
+                                .subtitle Featuring Cynthia M. Bulik, PhD, FAED
+                                .new
+                                .viewed
+                            .box(ng-click="updateVideo('video_id_2')")
+                                .yellow
+                                    | How is !{BED} distinct from bulimia nervosa?
+                                .video-length
+                                .play-btn
+                                .subtitle Featuring Cynthia M. Bulik, PhD, FAED
+                                .new
+                                .viewed
+                            .box(ng-click="updateVideo('hipster-so-edgy')")
+                                .yellow
+                                    | What are the essential features for a diagnosis of !{BED}?
+                                .video-length
+                                .play-btn
+                                .subtitle Featuring Cynthia M. Bulik, PhD, FAED
+                                .new
+                                .viewed
+                        .boxes-row
+                            .box
+                                .yellow
+                                    | What are the functional consequences of !{BED}  in adults?
+                                .video-length
+                                .play-btn
+                                .subtitle Featuring Cynthia M. Bulik, PhD, FAED
+                                .new
+                                .viewed
+                            .box
+                                .yellow
+                                    | What are the essential features for a diagnosis of !{BED}?
+                                .video-length
+                                .play-btn
+                                .subtitle Featuring Cynthia M. Bulik, PhD, FAED
+                                .new
+                                .viewed
+                            .box
+                                .yellow
+                                    | What are the essential features for a diagnosis of !{BED}?
+                                .video-length
+                                .play-btn
+                                .subtitle Featuring Cynthia M. Bulik, PhD, FAED
+                                .new
+                                .viewed
+                        .boxes-row
+                            //- BOX HERE
+                    .boxes-tab-3.experts
+                        .boxes-row
+                            .box(ng-click="updateVideo('video_id')")
+                                .yellow
+                                    | What are the essential features for a diagnosis of !{BED}?
+                                .video-length 12:24
+                                .play-btn
+                                .subtitle Featuring Cynthia M. Bulik, PhD, FAED
+                                .new
+                                .viewed
+                            .box(ng-click="updateVideo('video_id_2')")
+                                .yellow
+                                    | How is !{BED} distinct from bulimia nervosa?
+                                .video-length
+                                .play-btn
+                                .subtitle Featuring Cynthia M. Bulik, PhD, FAED
+                                .new
+                                .viewed
+                            .box(ng-click="updateVideo('hipster-so-edgy')")
+                                .yellow
+                                    | What are the essential features for a diagnosis of !{BED}?
+                                .video-length
+                                .play-btn
+                                .subtitle Featuring Cynthia M. Bulik, PhD, FAED
+                                .new
+                                .viewed
+                        .boxes-row
+                            .box
+                                .yellow
+                                    | What are the functional consequences of !{BED}  in adults?
+                                .video-length
+                                .play-btn
+                                .subtitle Featuring Cynthia M. Bulik, PhD, FAED
+                                .new
+                                .viewed
+                            .box
+                                .yellow
+                                    | What are the essential features for a diagnosis of !{BED}?
+                                .video-length
+                                .play-btn
+                                .subtitle Featuring Cynthia M. Bulik, PhD, FAED
+                                .new
+                                .viewed
+                            .box
+                                .yellow
+                                    | What are the essential features for a diagnosis of !{BED}?
+                                .video-length
+                                .play-btn
+                                .subtitle Featuring Cynthia M. Bulik, PhD, FAED
+                                .new
+                                .viewed
+
+
 
 
     section.section--shire-resources
@@ -75,8 +243,7 @@ block content
                         a(href="http://www.allianceforeatingdisorders.com",target="_blank").yellow.
                             www.allianceforeatingdisorders.com
                         br
-                        span.yellow
-                            a(href="tel:+18666621235") 1-866-662-1235
+                        span.yellow 1-866-662-1235
 
                     .link-box
                         | American Psychological Association
@@ -84,8 +251,7 @@ block content
                         a(href="http://www.apa.org",target="_blank").yellow.
                             www.apa.org
                         br
-                        span.yellow
-                            a(href="tel:+18003742721") 1-800-374-2721
+                        span.yellow 1-800-374-2721
 
                     .link-box
                         | National Alliance for Mental Illness
@@ -93,8 +259,7 @@ block content
                         a(href="http://www.nami.org",target="_blank").yellow.
                             www.nami.org
                         br
-                        span.yellow
-                            a(href="tel:+18009506264") 1-800-950-6264
+                        span.yellow 1-800-950-6264
                 .link-box-row
                     .link-box
                         | American Psychiatric Association
@@ -102,21 +267,18 @@ block content
                         a(href="http://www.psychiatry.org",target="_blank").yellow.
                             www.psychiatry.org
                         br
-                        span.yellow
-                            a(href="tel:+18883577924") 1-888-357-7924
+                        span.yellow 1-888-357-7924
                     .link-box
                         | Binge Eating Disorder Association
                         br
                         a(href="http://www.bedaonline.com",target="_blank").yellow.
                             www.bedaonline.com
                         br
-                        span.yellow
-                            a(href="tel:+18558552332") 1-855-855-2332
+                        span.yellow 1-855-855-2332
                     .link-box
                         | National Eating Disorders Association
                         br
                         a(href="http://www.nationaleatingdisorders.org",target="_blank").yellow.
                             www.nationaleatingdisorders.org
                         br
-                        span.yellow
-                            a(href="tel:+18009312237") 1-800-931-2237
+                        span.yellow 1-800-931-2237

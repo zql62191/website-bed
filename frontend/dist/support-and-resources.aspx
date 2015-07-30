@@ -7,11 +7,12 @@
     <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="/hcp/css/styles.css?1438292787046"/>
+    <link rel="stylesheet" href="/hcp/me/mediaelementplayer.min.css?1438297927604"/>
+    <link rel="stylesheet" href="/hcp/css/styles.css?1438297927604"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="/hcp/js/head.js?1438292787047"></script>
+    <script src="/hcp/js/head.js?1438297927604"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="support-and-resources">
     <main class="content--main">
@@ -60,43 +61,47 @@
           </div>
         </div>
       </header>
-      <section class="section--video-player-title">
-        <div class="wrap--content">
-          <h1 class="heading--1">
-            VIDEOS: Experts discuss <abbr title="Binge Eating Disorder">B.E.D.</abbr> in adults
-            
-          </h1>
-        </div>
-      </section>
-      <section class="section--video-player">
-        <div class="wrap--content">
-          <div class="player">
-            <h2>The current video is ...</h2>
+      <div ng-controller="ResourcesController as ResCtrl">
+        <section class="section--video-player-title">
+          <div class="wrap--content">
+            <h1 class="heading--1">
+              VIDEOS: Experts discuss <abbr title="Binge Eating Disorder">B.E.D.</abbr> in adults
+              
+            </h1>
           </div>
-        </div>
-      </section>
-      <section ng-controller="ResourcesController as ResCtrl" class="section--video-boxes">
-        <div class="wrap--content">
-          <div class="tabs">
-            <div ng-repeat="tab in tabbedVideos" ng-click="changeTab($index+1)" ng-class="{active: tab.tabclass == currentTab}" class="tab {{tab.tabclass}}">{{tab.tabtitle}}</div>
+        </section>
+        <section class="section--video-player">
+          <div class="wrap--content">
+            <video id="videoPlayer" controls="controls" preload="none">
+              <source type="video/mp4" ng-src="{{currentVideo}}">
+            </video>
           </div>
-          <div class="boxes">
-            <div ng-repeat="tab in tabbedVideos" ng-class="{ active: tab.tabclass == currentTab}" class="boxes-tab {{tab.tabclass}}">
-              <div class="boxes-row">
-                <div ng-repeat="vid in tab.videos" ng-click="updateVideo(vid.id)" ng-class="{ playing: vid.id == currentVideo }" class="box">
-                  <div class="yellow">{{vid.title}}</div>
-                  <div class="video-length">{{vid.length}}</div>
-                  <div class="play-btn"></div>
-                  <div class="subtitle">Featuring {{vid.featuring}}</div>
-                  <div class="new"></div>
-                  <div ng-show="vid.viewed" class="viewed"> </div>
+        </section>
+        <section class="section--video-boxes">
+          <div class="wrap--content">
+            <div class="tabs">
+              <div ng-click="changeTab(1)" ng-class="{active: tab.tabclass === currentTab}" class="tab what-is-bed">What is <abbr title="Binge Eating Disorder">B.E.D.</abbr>?</div>
+              <div ng-click="changeTab(2)" ng-class="{active: tab.tabclass === currentTab}" class="tab in-adults"><abbr title="Binge Eating Disorder">B.E.D.</abbr> in Adults</div>
+              <div ng-click="changeTab(3)" ng-class="{active: tab.tabclass === currentTab}" class="tab experts">Experts Panel Discussion</div>
+            </div>
+            <div class="boxes">
+              <div ng-repeat="tab in tabbedVideos" ng-class="{ active: tab.tabclass == currentTab}" class="boxes-tab {{tab.tabclass}}">
+                <div ng-switch on="$index % 3" class="boxes-row">
+                  <div ng-repeat="vid in tab.videos" ng-click="updateVideo(vid.id)" class="box">
+                    <div class="yellow">{{vid.title}}</div>
+                    <div class="video-length">{{vid.length}}</div>
+                    <div class="play-btn"></div>
+                    <div class="subtitle">Featuring {{vid.featuring}}</div>
+                    <div class="new"></div>
+                    <div ng-show="vid.viewed" class="viewed"> </div>
+                  </div>
                 </div>
+                <div class="consult-disclaimer">{{tab.disclaimer}}</div>
               </div>
-              <div class="consult-disclaimer">{{tab.disclaimer}}</div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
       <section class="section--shire-resources">
         <div class="wrap--content">
           <h2 class="heading--1">
@@ -123,14 +128,14 @@
           </h2>
           <div class="link-box-grid">
             <div class="link-box-row">
-              <div class="link-box">Alliance for Eating Disorders Awareness<br><a href="http://www.allianceforeatingdisorders.com" target="_blank" class="yellow">www.allianceforeatingdisorders.com</a><br><span class="yellow"><a href="tel:+18666621235">1-866-662-1235</a></span></div>
-              <div class="link-box">American Psychological Association<br><a href="http://www.apa.org" target="_blank" class="yellow">www.apa.org</a><br><span class="yellow"><a href="tel:+18003742721">1-800-374-2721</a></span></div>
-              <div class="link-box">National Alliance for Mental Illness<br><a href="http://www.nami.org" target="_blank" class="yellow">www.nami.org</a><br><span class="yellow"><a href="tel:+18009506264">1-800-950-6264</a></span></div>
+              <div class="link-box">Alliance for Eating Disorders Awareness<br><a href="http://www.allianceforeatingdisorders.com" target="_blank" class="yellow">www.allianceforeatingdisorders.com</a><br><span class="yellow">1-866-662-1235</span></div>
+              <div class="link-box">American Psychological Association<br><a href="http://www.apa.org" target="_blank" class="yellow">www.apa.org</a><br><span class="yellow">1-800-374-2721</span></div>
+              <div class="link-box">National Alliance for Mental Illness<br><a href="http://www.nami.org" target="_blank" class="yellow">www.nami.org</a><br><span class="yellow">1-800-950-6264</span></div>
             </div>
             <div class="link-box-row">
-              <div class="link-box">American Psychiatric Association<br><a href="http://www.psychiatry.org" target="_blank" class="yellow">www.psychiatry.org</a><br><span class="yellow"><a href="tel:+18883577924">1-888-357-7924</a></span></div>
-              <div class="link-box">Binge Eating Disorder Association<br><a href="http://www.bedaonline.com" target="_blank" class="yellow">www.bedaonline.com</a><br><span class="yellow"><a href="tel:+18558552332">1-855-855-2332</a></span></div>
-              <div class="link-box">National Eating Disorders Association<br><a href="http://www.nationaleatingdisorders.org" target="_blank" class="yellow">www.nationaleatingdisorders.org</a><br><span class="yellow"><a href="tel:+18009312237">1-800-931-2237</a></span></div>
+              <div class="link-box">American Psychiatric Association<br><a href="http://www.psychiatry.org" target="_blank" class="yellow">www.psychiatry.org</a><br><span class="yellow">1-888-357-7924</span></div>
+              <div class="link-box">Binge Eating Disorder Association<br><a href="http://www.bedaonline.com" target="_blank" class="yellow">www.bedaonline.com</a><br><span class="yellow">1-855-855-2332</span></div>
+              <div class="link-box">National Eating Disorders Association<br><a href="http://www.nationaleatingdisorders.org" target="_blank" class="yellow">www.nationaleatingdisorders.org</a><br><span class="yellow">1-800-931-2237</span></div>
             </div>
           </div>
         </div>
@@ -174,9 +179,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="/hcp/js/vendor.js?1438292787049"></script>
-    <script src="/hcp/js/templates.js?1438292787049"></script>
-    <script src="/hcp/js/app.js?1438292787049"></script>
+    <script src="/hcp/js/vendor.js?1438297927607"></script>
+    <script src="/hcp/js/templates.js?1438297927607"></script>
+    <script src="/hcp/js/app.js?1438297927607"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

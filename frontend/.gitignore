@@ -4,6 +4,7 @@ zips/
 .vagrant/
 .sass-cache/
 dist/
+dist/*
 path/
 .DS_Store
 ../.DS_Store

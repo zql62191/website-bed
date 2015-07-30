@@ -23,7 +23,8 @@ var files = {
         'src/scripts/vendor/moment.min.js',
         'src/scripts/vendor/he.min.js',
         'src/scripts/vendor/mobiscroll.custom-2.15.0.min.js',
-        'src/scripts/vendor/catchall.js'
+        'src/scripts/vendor/catchall.js',
+        'src/scripts/vendor/me/mediaelement-and-player.min.js'
     ],
     'dist/js/app.js': [
         'src/scripts/app/vendor/ngMask.js',
