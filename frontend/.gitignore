@@ -5,3 +5,5 @@ zips/
 .sass-cache/
 dist/
 path/
+.DS_Store
+../.DS_Store
