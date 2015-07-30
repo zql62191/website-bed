@@ -211,11 +211,15 @@
                 ]
             }];
 
+            //defaults on page load
             $scope.currentVideo = "essential-features-diag";
             $scope.currentTab = "what-is-bed";
 
 
             $scope.updateVideo = function(vid){
+
+                //this fn is fired in ng-click of a .box
+
                 $scope.currentVideo = vid;
 
                 var info = getVideoInfo(vid, $scope.tabbedVideos[$scope.currentTab]);
@@ -226,11 +230,22 @@
 
             $scope.changeTab = function(tabIndex){
 
-                // var i = _findIndex()
+                //find out the class of the tab the user selected, using index-1 (1: 0, 2:1, 3:2)
+                    var i = tabIndex - 1;
+                    
+                //bad input, brah
+                    if(typeof i === undefined || i < 0 || i > 3){
+                        return;
+                    }
 
-                // $scope.currentTab = 
+                //add the active class to the tab on the page to toggle display of the videos in the tab
+                    var tab = angular.element(".tab." + $scope.tabbedVideos[i].tabclass);
+                    //is this redundant bc idk about AngularJS?
 
+                //update the scope vars
+                    $scope.currentTab = $scope.tabbedVideos[i].tabclass;
 
+                //any other DOM updates that need to be reflected on the page
 
 
             };

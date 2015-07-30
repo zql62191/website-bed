@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="cdmp" ng-controller="MainController">
+<html lang="en" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="cdmp" ng-controller="MainController" class="in-dev">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8">
@@ -7,15 +7,11 @@
     <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="/hcp/css/styles.css?1438262400000"/>
+    <link rel="stylesheet" href="/hcp/css/styles.css?1438266239774"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
-    <script>
-!function(){document.documentElement.className+=" ng-cloak"}();
-</script>
-    <script>
-!function(e){if(window.__ie=null,/msie|trident/i.test(e)){for(var t=function(){var t=e.match(/(?:msie |rv:)(\d+(\.\d+)?)/i),n=t&&t.length>1&&t[1]||"";return parseInt(n,10)}(),n="ie",i=6,s=12,u=["eq-ie"],r=i;s>=r;r++)t>r?u.push("gt-"+n+r):r>t?u.push("lt-"+n+r):t===r&&(u.push("lte-"+n+r),u.push("eq-"+n+r),u.push("gte-"+n+r));window.__ie=t,document.documentElement.className+=" "+u.join(" ")}}(navigator.userAgent||"");
-</script>
-    <script src="/hcp/js/head.js?1438262400000"></script>
+    <script src="js/inline/cloak.js?__inline=true"></script>
+    <script src="js/inline/iev.js?__inline=true"></script>
+    <script src="/hcp/js/head.js?1438266239774"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="recognizing-bed">
     <main class="content--main">
@@ -94,8 +90,8 @@
             </div>
             <div class="label top right">
               <div class="num">16.2%</div>
-              <div class="clas">are Very<br>Severely Obese</div>
-              <div class="footnote">Body mass index<br>(BMI) &gt;40.0</div>
+              <div class="clas">are Very<br>Severely Obese<sup>4</sup></div>
+              <div class="footnote">Body mass index<br>(BMI) &ge;40</div>
             </div>
             <div class="label bottom left">
               <div class="num">35.7%</div>
@@ -107,6 +103,7 @@
               <div class="clas">are Moderately to<br>Severely Obese</div>
               <div class="footnote">Body mass index<br>(BMI) 30.0-39.9</div>
             </div>
+            <p data-note="*" class="footnote">Data (based on Version 3.0 of the World Health Organization Composite International Diagnostic Interview and DSM-IV&reg; criteria) from an eating disorder&ndash;assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.<sup>3</sup></p>
           </div>
         </div>
       </section>
@@ -131,7 +128,7 @@
               <div class="text">met criteria for <em>three or more </em>other psychiatric disorders</div>
             </div>
           </div>
-          <p data-note="*" class="footnote">Data (based on Version 3.0 of the World Health Organization Composite International Diagnostic Interview and DSM-IV&reg; criteria) from an eating disorder&ndash;assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.<sup>3</sup></p>
+          <p data-note="" class="footnote">&dagger; Data from a random subsample of respondents (n=1,139) from an eating disorder&ndash;assessed subsample of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge; 18 years.<sup>3</sup></p>
         </div>
       </section>
       <section class="section--triggers">
@@ -211,9 +208,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="/hcp/js/vendor.js?1438262400000"></script>
-    <script src="/hcp/js/templates.js?1438262400000"></script>
-    <script src="/hcp/js/app.js?1438262400000"></script>
+    <script src="/hcp/js/vendor.js?1438266239776"></script>
+    <script src="/hcp/js/templates.js?1438266239776"></script>
+    <script src="/hcp/js/app.js?1438266239776"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");
@@ -227,6 +224,11 @@
   <iframe src="//s.thebrighttag.com/iframe?c=BYgLeqO" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 </noscript>
 
-
+ 
+    <!--[if !IE]> -->
+     
+    <script>/local|ngrok|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/ig.test(location.hostname) && 'WebSocket' in window && window.WebSocket.CLOSING === 2 && document.write('\x3Cscript src="//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1">\x3C/script>');</script> 
+    <!-- <![endif]-->
+     
   </body>
 </html>

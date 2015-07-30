@@ -36,17 +36,17 @@ body.support-and-resources{
                 text-align: center;
                 cursor: pointer;
 
-                &:hover{
+                &:hover,&.active,&:active{
                     border-bottom: 4px inset #FDBD3E;
                     color: #FDBD3E;
                 }
 
             }
 
-            .active-tab{
-                border-bottom: 4px inset #FDBD3E;
-                color: #FDBD3E;
-            }
+            // .active{
+            //     border-bottom: 4px inset #FDBD3E;
+            //     color: #FDBD3E;
+            // }
 
         }
 
@@ -67,7 +67,7 @@ body.support-and-resources{
                 padding-top: 20px;
 
                 .box{
-                    width: 303px;
+                    width: 298px;
                     height: 112px;
                     display: inline-block; 
                     background-color: #333E48;
