@@ -37,6 +37,11 @@ header.header--global {
 
     @include mq("lg") {
 
+        position: fixed;
+        z-index: 100;
+        min-width: 100%;
+        top: 0px;
+
         .title-bar {
             line-height: 60px;
 

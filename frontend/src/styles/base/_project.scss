@@ -45,6 +45,11 @@ html {
 
 body {
     min-height: 100%;
+
+    @include mq("lg") {
+        padding-top: 100px; // for the sticky header in desktop
+    }
+
 }
 
 a {

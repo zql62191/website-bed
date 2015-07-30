@@ -17,8 +17,31 @@ body.potential-causes {
         }
     }
 
+    h4.heading--4{
+        font-size: 21px;
+        line-height: 25px;
+    }
+
+
     .section--theories {
         background: #252F39;
+
+        h1.heading--1{
+            margin-top: 20px;
+            margin-bottom: 26px;
+        }
+
+        h2.heading--2{
+            margin-bottom: 20px;
+
+            &.top{
+                margin-top:16px;
+            }
+
+        }
+
+        
+
     }
 
     .section--factors {
@@ -37,7 +60,7 @@ body.potential-causes {
                 }
                 &.neuron {
                     .icon {
-                        right: 0;
+                        right: -26px;
                     }
                 }
                 &.neuron-closeup {
@@ -49,12 +72,19 @@ body.potential-causes {
         }
 
         .section--factors {
+
+            padding-top: 20px;
+
+            h1.heading--1{
+                margin-bottom: 49px;
+            }
+
             .row {
                 margin: 0 auto;
 
                 &.dna {
                     .icon {
-                        left: 0;
+                        left: -32px;
                     }
                 }
                 &.people {
@@ -73,8 +103,25 @@ body.potential-causes {
                 width: 700px;
                 padding: 30px 0 30px 140px;
 
+                &.brain{
+
+                    padding-top: 40px;
+                    padding-bottom: 10px;
+
+                    h4.heading--4{
+                        margin-bottom:10px;
+                    }
+                }
+
                 &.neuron {
+                    margin-top: 20px;
                     padding-right: 140px;
+
+                    .icon{
+                        position: absolute;
+                        top: 50%;
+                        margin-top: -106px;
+                    }
                 }
             }
         }
@@ -86,10 +133,24 @@ body.potential-causes {
 
                 &.dna {
                     padding-left: 170px;
+
+                    ul li{
+                        padding-top: 6px;
+                        padding-bottom: 6px;
+                    }
+
+
                 }
                 &.people {
+                    padding-top: 58px;
                     padding-right: 240px;
                 }
+            }
+
+            p.footnote{
+                padding-top: 0px;
+                width: 656px;
+                text-align: center;
             }
         }
     }

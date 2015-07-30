@@ -22,6 +22,14 @@ body.index {
                 @include hero-bg("#{$page}/kimberly.jpg");
             }
 
+            // &.kimberly .player .fadeLeft{
+            //     background-image: linear-gradient(-270deg, rgba(37,47,57,0.00) 0%, #252F39 100%);
+            // }
+
+            // &.kimberly .player .fadeRight{
+            //     background-image: linear-gradient(-270deg, rgba(37,47,57,0.00) 0%, #333E48 100%);
+            // }
+
             &.nikki .player .still {
                 @include hero-bg("#{$page}/nikki.jpg");
             }
@@ -74,12 +82,21 @@ body.index {
 
                     &.cta1 .icon {
                         @include responsive-icon("#{$page}/cta1.png");
+                        margin-top: -64px;
+                        position: absolute;
+                        top: 50%;
                     }
                     &.cta2 .icon {
                         @include responsive-icon("#{$page}/cta2.png");
+                        margin-top: -64px;
+                        position: absolute;
+                        top: 50%;
                     }
                     &.cta3 .icon {
                         @include responsive-icon("#{$page}/cta3.png");
+                        margin-top: -46px;
+                        position: absolute;
+                        top: 50%;
                     }
                 }
             }
@@ -167,7 +184,7 @@ body.index {
                 }
 
                 .callouts {
-                    @include rgba-background(rgba(#333E48, 0.95));
+                    @include rgba-background(rgba(#333E48, 0.90));
                     position: absolute;
                     top: 322px;
                     left: 0;

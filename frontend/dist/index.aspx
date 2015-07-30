@@ -7,11 +7,11 @@
     <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="/hcp/css/styles.css?1438271728289"/>
+    <link rel="stylesheet" href="/hcp/css/styles.css?1438286507045"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="/hcp/js/head.js?1438271728289"></script>
+    <script src="/hcp/js/head.js?1438286507045"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="index">
     <main class="content--main">
@@ -84,11 +84,11 @@
           <div class="callouts">
             <div class="wrap--content"><a href="/hcp/dsm5-criteria.aspx" class="cta1">
                 <h4 class="heading--4">Know the <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> criteria</h4>
-                <div class="icon is--vc is--hc"></div></a><a href="/hcp/patient-statistics.aspx" class="cta2">
+                <div class="icon is--hc"></div></a><a href="/hcp/patient-statistics.aspx" class="cta2">
                 <h4 class="heading--4">See the statistics</h4>
-                <div class="icon is--vc is--hc"></div></a><a href="/hcp/identifying-patients.aspx" class="cta3">
+                <div class="icon is--hc"></div></a><a href="/hcp/identifying-patients.aspx" class="cta3">
                 <h4 class="heading--4">Helping your adult patients</h4>
-                <div class="icon is--vc is--hc"></div></a></div>
+                <div class="icon is--hc"></div></a></div>
           </div>
         </div>
         <div class="wrap--refs">
@@ -136,9 +136,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="/hcp/js/vendor.js?1438271728290"></script>
-    <script src="/hcp/js/templates.js?1438271728290"></script>
-    <script src="/hcp/js/app.js?1438271728290"></script>
+    <script src="/hcp/js/vendor.js?1438286507047"></script>
+    <script src="/hcp/js/templates.js?1438286507047"></script>
+    <script src="/hcp/js/app.js?1438286507047"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

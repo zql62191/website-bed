@@ -12,13 +12,17 @@ body.recognizing-bed {
         .heading--2{
             width: 796px;
             text-align: center;
-            margin: 0 auto;
+            margin: 0 auto 12px auto;
         }
 
     }
 
     .section--overeating {
         background: #333E48;
+
+        .wrap--content{
+            padding-bottom: 34px;
+        }
 
         .heading--2{
             width: 886px;
@@ -255,6 +259,10 @@ body.recognizing-bed {
                         border-left: 1px solid #979797;
                     }
                 }
+            }
+
+            p.footnote{
+                text-align: center;
             }
         }
 

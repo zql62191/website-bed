@@ -7,11 +7,11 @@
     <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="/hcp/css/styles.css?1438271728486"/>
+    <link rel="stylesheet" href="/hcp/css/styles.css?1438289609138"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="/hcp/js/head.js?1438271728486"></script>
+    <script src="/hcp/js/head.js?1438289609138"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="potential-causes">
     <main class="content--main">
@@ -62,7 +62,7 @@
       </header>
       <section class="section--theories">
         <div class="wrap--content">
-          <h2 class="heading--2">
+          <h2 class="heading--2 top">
             While the exact cause of binge eating disorder (B.E.D.) is unknown,
             
           </h2>
@@ -82,7 +82,7 @@
             </p>
           </div>
           <div class="row neuron">
-            <div class="icon is--vc"></div>
+            <div class="icon"></div>
             <h4 class="heading--4">Neurotransmitter dysregulation theory</h4>
             <p>Dopamine signaling converts sensory stimuli into processes that may generate or enhance “wanting” of a particular food<sup>5-7</sup>
               
@@ -125,10 +125,10 @@
               <li>In a nationally representative survey of 5,702 adults, of the men (n=30) and women (n=75) who reported having <abbr title="Binge Eating Disorder">B.E.D.</abbr>, 98% and 90%, respectively, reported experiencing some form of trauma*<sup>14</sup></li>
             </ul>
           </div>
-          <p data-note="*" class="footnote">Exposure to events such as combat, life-threatening accidents, a major disaster, or physical or sexual assault.<sup>14</sup>
+          <p data-note="" class="footnote">*Exposure to events such as combat, life-threatening accidents, a major disaster, or physical or sexual assault.<sup>14</sup>
             
           </p>
-          <div class="center"><a href="/hcp/sign-up.aspx" class="btn btn--yellow">GET THE FULL <abbr title="Binge Eating Disorder">B.E.D.</abbr> CRITERIA</a></div>
+          <div class="center"><a href="/hcp/sign-up.aspx" class="btn btn--yellow">GET THE FULL <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> <abbr title="Binge Eating Disorder">B.E.D.</abbr> CRITERIA</a></div>
         </div>
         <div class="wrap--refs">
           <ol class="refs number">
@@ -187,9 +187,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="/hcp/js/vendor.js?1438271728488"></script>
-    <script src="/hcp/js/templates.js?1438271728488"></script>
-    <script src="/hcp/js/app.js?1438271728488"></script>
+    <script src="/hcp/js/vendor.js?1438289609140"></script>
+    <script src="/hcp/js/templates.js?1438289609140"></script>
+    <script src="/hcp/js/app.js?1438289609140"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

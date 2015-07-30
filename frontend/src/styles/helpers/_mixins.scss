@@ -252,7 +252,9 @@
     }
 }
 
-@mixin icon-img($img, $retina: false, $fit: true, $color: transparent, $position: center center, $repeat: no-repeat) {
+@mixin icon-img($img, $retina: false, $fit: true, $color: transparent, $position: center center, $repeat: no-repeat, $bgWidth: -1, $bgHeight: -1) {
+
+    // pass in bgWidth and bgHeight to center based on the background
 
     @if file_exists("src/images/" + $img) {
 
@@ -278,10 +280,18 @@
         background-size: #{round($width)} #{round($height)};
 
         &.is--hc {
-            margin-left: -#{($width/2)};
+            @if($bgWidth > $width){
+                margin-left: -#{($bgWidth/2)};
+            } @else{
+                margin-left: -#{($width/2)};
+            }
         }
         &.is--vc {
-            margin-top: -#{($height/2)};
+            @if($bgHeight > $height){
+                margin-top: -#{($bgHeight/2)};
+            }@else{
+                margin-top: -#{($height/2)};
+            }
         }
 
         @content;
@@ -307,12 +317,18 @@
     }
 }
 
-@mixin responsive-icon($img) {
+@mixin responsive-icon($img, $bgWidth: -1, $bgHeight: -1) {
 
     @each $query, $retina in $queries {
         @include mq($query) {
-            @include icon-img($query + "/" + $img, $retina) {
-                @content;
+            @if( ($bgHeight > 0) or ($bgWidth > 0) ){
+                @include icon-img($query + "/" + $img, $retina, $bgWidth, $bgHeight) {
+                    @content;
+                }
+            }@else{
+                @include icon-img($query + "/" + $img, $retina) {
+                    @content;
+                }
             }
         }
     }
