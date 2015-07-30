@@ -76,7 +76,7 @@
                 videos: [
                     {
                         id: "prevalence-comparison",
-                        title: "How does the prevalence of B.E.D. compare to that of other eating disorders  in adults?",
+                        title: "How does the prevalence of B.E.D. compare to that of other eating disorders in adults?",
                         length: "0:42",
                         featuring: "Carlos Grilo, PhD",
                         filepath: "assets/supercoolvideo.mp4",

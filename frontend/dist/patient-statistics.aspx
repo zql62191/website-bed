@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="cdmp" ng-controller="MainController" class="in-dev">
+<html lang="en" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="cdmp" ng-controller="MainController">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8">
@@ -7,11 +7,15 @@
     <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="/hcp/css/styles.css?1438203492700"/>
+    <link rel="stylesheet" href="/hcp/css/styles.css?1438262400000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
-    <script src="js/inline/cloak.js?__inline=true"></script>
-    <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="/hcp/js/head.js?1438203492700"></script>
+    <script>
+!function(){document.documentElement.className+=" ng-cloak"}();
+</script>
+    <script>
+!function(e){if(window.__ie=null,/msie|trident/i.test(e)){for(var t=function(){var t=e.match(/(?:msie |rv:)(\d+(\.\d+)?)/i),n=t&&t.length>1&&t[1]||"";return parseInt(n,10)}(),n="ie",i=6,s=12,u=["eq-ie"],r=i;s>=r;r++)t>r?u.push("gt-"+n+r):r>t?u.push("lt-"+n+r):t===r&&(u.push("lte-"+n+r),u.push("eq-"+n+r),u.push("gte-"+n+r));window.__ie=t,document.documentElement.className+=" "+u.join(" ")}}(navigator.userAgent||"");
+</script>
+    <script src="/hcp/js/head.js?1438262400000"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="patient-statistics">
     <main class="content--main">
@@ -74,13 +78,13 @@
             </div>
             <div class="survey">
               <p>In an online survey of 22,397 US adults, 344 met <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> diagnostic criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr> in the past 12 months (level of severity not specified). Of those:<span class="stat"><span class="percent">3.2%</span><span class="total"> (11 of 344)</span></span>reported ever receiving a diagnosis of <abbr title="Binge Eating Disorder">B.E.D.</abbr> by a health care provider<sup>&Dagger;4</sup></p>
-              <p data-note-sup="‡" class="footnote">Data from a 2013 online survey of US adults aged &ge;18 years.<sup>4</sup>
+              <p data-note-sup="" class="footnote">&Dagger; Data from a 2013 online survey of US adults aged &ge;18 years.<sup>4</sup>
                 
               </p>
             </div>
           </div>
-          <p data-note="*" class="footnote">Estimated 12-month and lifetime prevalence among an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.</p>
-          <p data-note="†" class="footnote">Estimated 12-month prevalence in National Comorbidity Survey Replication of US adults aged ≥18 years, extrapolated to full US population aged &ge;18 years.<sup>1-3</sup>
+          <p data-note="*" class="footnote">Estimated 12-month and lifetime prevalence among an eating disorder&ndash;assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.</p>
+          <p data-note="" class="footnote">&dagger; Estimated 12-month prevalence in National Comorbidity Survey Replication of US adults aged &ge;18 years, extrapolated to full US population aged &ge;18 years.<sup>1-3</sup>
             
           </p>
         </div>
@@ -95,7 +99,7 @@
             <div class="center">
               <h2 class="heading--2">
                 <div class="estimated"><em class="ratio">2:1</em> Estimated 12-month <br class="hide--lg hide--md">prevalence of <abbr title="Binge Eating Disorder">B.E.D.</abbr> in US adults:</div>
-                <div class="versus"><span class="percent">1.6%</span> of women <span class="vs">&nbsp;vs&nbsp;</span> <span class="percent">0.8%</span> of men<sup>§</sup></div>
+                <div class="versus"><span class="percent">1.6%</span> of women <span class="vs">&nbsp;vs&nbsp;</span> <span class="percent">0.8%</span> of men<sup>&sect;</sup></div>
               </h2>
             </div>
             <div class="icon"></div>
@@ -107,12 +111,12 @@
             <div class="center">
               <h2 class="heading--2">
                 <div class="estimated"><em class="ratio">5:1</em> Estimated 12-month <br class="hide--lg hide--md">prevalence of bulimia nervosa in US adults:</div>
-                <div class="versus"><span class="percent">0.5%</span> of women <span class="vs">&nbsp;vs&nbsp;</span> <span class="percent">0.1%</span> of men<sup>§</sup></div>
+                <div class="versus"><span class="percent">0.5%</span> of women <span class="vs">&nbsp;vs&nbsp;</span> <span class="percent">0.1%</span> of men<sup>&sect;</sup></div>
               </h2>
             </div>
             <div class="icon"></div>
           </div>
-          <p data-note-sup="§" class="footnote">Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged ≥18 and older.<sup>1</sup>
+          <p data-note-sup="" class="footnote">&sect; Data from an eating disorder&ndash;assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 and older.<sup>1</sup>
             
           </p>
         </div>
@@ -122,7 +126,7 @@
           <h1 class="heading--1">Onset of <abbr title="Binge Eating Disorder">B.E.D.</abbr> occurs at a later age (21 years) than bulimia nervosa (18 years) and anorexia nervosa (18 years)<sup>||1</sup>
             
           </h1>
-          <p data-note-sup="||" class="footnote">Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged ≥18 and older.<sup>1</sup>
+          <p data-note-sup="||" class="footnote">Data from an eating disorder&ndash;assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 and older.<sup>1</sup>
             
           </p>
         </div>
@@ -135,7 +139,7 @@
           <h2 class="heading--2">Prevalence rates are also comparable between most industrialized countries (eg, Australia, Canada, many European countries, New Zealand, and the United States)<sup>5</sup>
             
           </h2>
-          <p data-note-sup="¶" class="footnote">Data from an eating disorder–assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged ≥18 and older.<sup>1</sup>
+          <p data-note-sup="" class="footnote">&para; Data from an eating disorder&ndash;assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 and older.<sup>1</sup>
             
           </p>
           <div class="center"><a href="#needurl" class="btn btn--yellow">HOW ADULTS WITH <abbr title="Binge Eating Disorder">B.E.D.</abbr> MAY PRESENT</a></div>
@@ -190,9 +194,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="/hcp/js/vendor.js?1438203492702"></script>
-    <script src="/hcp/js/templates.js?1438203492702"></script>
-    <script src="/hcp/js/app.js?1438203492702"></script>
+    <script src="/hcp/js/vendor.js?1438262400000"></script>
+    <script src="/hcp/js/templates.js?1438262400000"></script>
+    <script src="/hcp/js/app.js?1438262400000"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");
@@ -206,11 +210,6 @@
   <iframe src="//s.thebrighttag.com/iframe?c=BYgLeqO" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 </noscript>
 
- 
-    <!--[if !IE]> -->
-     
-    <script>/local|ngrok|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/ig.test(location.hostname) && 'WebSocket' in window && window.WebSocket.CLOSING === 2 && document.write('\x3Cscript src="//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1">\x3C/script>');</script> 
-    <!-- <![endif]-->
-     
+
   </body>
 </html>
