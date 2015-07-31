@@ -307,7 +307,7 @@
             };
 
 
-            // Create MEJS object for the video player element
+            // Create MEJS object for the video player element 😻
             $('#videoPlayer').mediaelementplayer({
                 pauseOtherPlayers: false,           // allow multiple videos
                 iPadUseNativeControls: true,        // force iPad's native controls
