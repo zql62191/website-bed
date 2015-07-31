@@ -1,13 +1,24 @@
 body.effects-of-bed {
     $page: "effects-of-bed";
 
+    .footnote {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+
     .section--associated {
         background: #252F39;
+        
+        .heading--1 {
+            padding-bottom: 25px;
+        }
 
         .wrap--content {
 
             @include mq("lg") {
-                width: 570px;
+                // width: 570px;
                 margin: 0 auto;
             }
 
@@ -17,12 +28,31 @@ body.effects-of-bed {
             }
 
         }
+
+        ul {
+            @include mq("lg") {
+                width: 570px;
+                margin: 0 auto 10px auto;
+            }
+        }
     }
 
     .section--association {
         background: #333E48;
         background-image: radial-gradient(50% 149%, #333E48 17%, #252F39 100%);
 
+        .heading--2 {
+            padding-top: 10px;
+            padding-bottom: 23px;
+        }
+        .heading--3 {
+            @include gs('light');
+            font-size: 18px;
+            color: #ADB2B6;
+            line-height: 22px;
+            padding: 30px 0 5px 0;
+            text-align: center;
+        }
         .wrap--content {
             @include mq("lg") {
                 width: 570px;
@@ -34,7 +64,7 @@ body.effects-of-bed {
 
         .charts {
 
-            .flexbox & {
+            .flexbox & {  
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
@@ -89,18 +119,49 @@ body.effects-of-bed {
     .section--living {
         background: #252F39;
 
+        .wrap--content {
+            padding-bottom: 0;
+        }
+
+        .heading--1 {
+            padding-bottom: 30px;
+        }
+        .heading--2 {
+            padding-bottom: 60px;
+        }
+
         blockquote {
-            @include gs("light-italic");
+            @include gs();
             color: #C2CBD0;
+            padding-bottom: 25px;
+            
+
+            p {
+                @include gs('light-italic');
+                font-size: 22px;
+                line-height: 26px;
+            }
+
+            &:before, &:after {
+                @include gs('roman');
+                color: #657E8E;
+                font-size: 52px;
+            }
+
 
             @include mq("lg") {
-                font-size: 22px;
             }
             @include mq("md") {
-                font-size: 21px;
+
+                p {
+                    font-size: 21px;
+                }
             }
             @include mq("sm") {
-                font-size: 16px;
+
+                p {
+                    font-size: 16px;
+                }
             }
         }
 
@@ -144,6 +205,21 @@ body.effects-of-bed {
             margin: 0 auto;
 
             @include responsive-bg("#{$page}/sunny.png");
+        }
+    }
+
+    .section--button {
+        background: #333E48;
+        background-image: radial-gradient(50% 149%, #333E48 17%, #252F39 100%);
+        padding-top: 65px;
+
+        .wrap--refs {
+            margin-top: 50px;
+
+            .refs {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
         }
     }
 
