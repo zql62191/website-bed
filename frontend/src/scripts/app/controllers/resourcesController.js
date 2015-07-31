@@ -12,6 +12,7 @@
 
             $scope.tabbedVideos = [{
                 tabclass : "what-is-bed",
+                tabtitle: "What is B.E.D.?",
                 disclaimer: "Drs. Bulik and Wilfley are paid consultants for Shire.",
                 videos : [
                     {
@@ -67,6 +68,7 @@
                 ]
             },{
                 tabclass: "in-adults",
+                tabtitle: "B.E.D. in Adults",
                 disclaimer: "Drs. Grilo, Kornstein, and Wilfley are paid consultants for Shire.",
                 videos: [
                     {
@@ -142,6 +144,7 @@
                 ]
             }, {
                 tabclass: "experts",
+                tabtitle: "Experts Panel Discussion",
                 videos: [
                     {
                         id: "living-with-bed",
@@ -364,7 +367,7 @@
                     }
 
                 //add the active class to the tab on the page to toggle display of the videos in the tab
-                    var tab = angular.element(".tab." + $scope.tabbedVideos[i].tabclass);
+                    // var tab = angular.element(".tab." + $scope.tabbedVideos[i].tabclass);
                     //is this redundant bc idk about AngularJS?
 
                 //update the scope vars
