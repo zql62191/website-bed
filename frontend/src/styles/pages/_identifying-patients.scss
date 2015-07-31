@@ -20,6 +20,33 @@ body.identifying-patients {
 
 
         @include mq("lg") {
+
+            .persons{
+                margin-bottom: 60px;
+            }
+
+            .callouts{
+                margin-bottom: 36px;
+            }
+
+            .callout{
+                width: 50%;
+
+                h2.heading--2{
+                    margin-bottom: 10px;
+                }
+
+                p{
+                    margin-bottom: 22px;
+                }
+
+            }
+
+            h1.heading--1{
+                width: 710px;
+                margin: 0 auto 32px auto;
+            }
+
             .btn.btn--yellow{
                 height: 58px;
                 line-height: 24px;
@@ -28,8 +55,12 @@ body.identifying-patients {
             }
 
             p.disclaimer{
-                margin-top: 16px;
                 text-align: center;
+                font-size: 18px;
+                color: #858B91;
+                line-height: 22px;
+                width: 478px;
+                margin: 16px auto 0 auto;
             }
 
         }

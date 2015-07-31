@@ -38,14 +38,17 @@ block content
                 | !{BED} is different from obesity
 
             h2.heading--2
-                | Although !{BED} can be associated with increased weight, it occurs in normal-weight, overweight, and obese adults
-                sup 3
+                //- | Although !{BED} can be associated with increased weight, it occurs in normal-weight, overweight, and obese adults
+                | !{BED} can occur in normal-weight, overweight, and obese adults 
+                sup *3
+
+            h3.heading--3
+                | Although !{BED} can be associated with increased weight, the majority of adults
+                br
+                | with !{BED} are not obese: 55% are normal-weight or overweight, 45% are obese
 
 
-    section.section--majority
-        .wrap--content
-
-            h1.heading--2
+            //- h1.heading--2
                 | The majority of adults with !{BED} are not obese*
                 sup 3
                 | :
@@ -70,10 +73,9 @@ block content
                     .num
                         | 16.2%
                     .clas
-                        | are Very
+                        | are Severely
                         br
-                        | Severely Obese
-                        sup 4
+                        | Obese
                     .footnote
                         | Body mass index
                         br
@@ -101,8 +103,8 @@ block content
                         br
                         | (BMI) 30.0-39.9
 
-                p(data-note="*").footnote
-                    | Data (based on Version 3.0 of the World Health Organization Composite International Diagnostic Interview and DSM-IV&reg; criteria) from an eating disorder&ndash;assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.
+                p(data-note="").footnote.section-note
+                    | *Data (based on Version 3.0 of the World Health Organization Composite International Diagnostic Interview and DSM-IV&reg; criteria) from an eating disorder&ndash;assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.
                     sup 3
 
     section.section--compared
@@ -123,42 +125,57 @@ block content
                 li
                     | More coexisting psychiatric conditions
 
+    section.section--coexisting
+        .wrap--content
+            //- .statistic-box
+
+            h2.heading--2
+                //- | At rates similar to those with bulimia and anorexia, adults with !{BED} may have coexisting psychiatric and physical conditions like bipolar disorders, depressive disorders, anxiety disorders, substance use disorders, and obesity
+                | Adult patients with !{BED} often have coexisting comorbid disorders such as bipolar disorders, depressive disorders, anxiety disorders, and, to a lesser extent, substance use disorders
+                sup 1
+
+            h3.heading--3.center
+                | As part of a complete evaluation, clinicians should consider these comorbid conditions that commonly occur in adults with !{BED} for differential diagnosis.
+
+            h4.heading--2.center
+                | Lifetime !{BED} in adults is associated with significant psychiatric comorbidity comparable to that of bulimia nervosa and anorexia nervosa
+                sup &dagger;1,3
+
             .statistic-box
-
-                h2.heading--2
-                    | At rates similar to those with bulimia and anorexia, adults with !{BED} may have coexisting psychiatric and physical conditions like bipolar disorders, depressive disorders, anxiety disorders, substance use disorders, and obesity
-                    sup 1
-
-                h4.heading--2
-                    | Lifetime psychiatric comorbidity associated with !{BED}*
-                    sup 3
-
-
-                .statistic
+                .statistic.box1
                     .num
-                        | 79%
+                        | &asymp;4 out of 5
                     .text
-                        | met criteria for 
+                        | had 
                         em at least one 
-                        | other psychiatric disorder
+                        br
+                        | comorbid psychiatric or 
+                        br 
+                        | substance use disorder
 
-                .statistic
+                .statistic.box2
                     .num
-                        | 49%
+                        | Nearly Half
                     .text
-                        | met criteria for 
+                        | had 
                         em three or more 
-                        | other psychiatric disorders
+                        br
+                        | comorbid psychiatric or 
+                        br 
+                        | substance use disorder
 
             p(data-note="").footnote
-                | &dagger; Data from a random subsample of respondents (n=1,139) from an eating disorder&ndash;assessed subsample of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge; 18 years.
+                | &dagger;Data from a random subsample of respondents (n=1,139) from an eating disorder&ndash;assessed subsample of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge; 18 years.
                 sup 3
 
     section.section--triggers
         .wrap--content
 
-            h1.heading--1.
-                Common triggers of binge eating episodes (as noted in !{DSM5})
+            h1.heading--1
+                | Common triggers of binge eating
+                br
+                | episodes (as noted in !{DSM5})
+                sup 1
 
             h2.heading--2.bottom-bump.
                 Negative affect most commonly precedes a bingeing episode.

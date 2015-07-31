@@ -37,7 +37,7 @@ body.recognizing-bed {
     }
 
     .section--obesity {
-        background: #252F39;
+        background: #252f39;//#252F39;
 
         .heading--2{
             width: 608px;
@@ -45,18 +45,24 @@ body.recognizing-bed {
             margin: 0 auto;
         }
 
-    }
-
-    .section--majority {
-        background: #333E48;
-
-        .wrap--content{
-            padding-bottom:67px;
+        .heading--3{
+            text-align: center;
+            margin-top: 28px;
+            margin-bottom: 66px;
         }
 
-        .heading--2{
-            padding-bottom:40px;
-        }
+    // }
+
+    // .section--majority {
+    //     background: #333E48;
+
+    //     .wrap--content{
+    //         padding-bottom:67px;
+    //     }
+
+    //     .heading--2{
+    //         padding-bottom:40px;
+    //     }
 
         .chart-wrap {
             @include clearfix;
@@ -73,15 +79,21 @@ body.recognizing-bed {
 
             @include mq("lg") {
                 width: 560px;
-                height: 310px;
+                // height: 310px;
             }
             @include mq("md") {
                 width: 560px;
-                height: 310px;
+                // height: 310px;
             }
             @include mq("sm") {
                 width: 260px;
-                height: 360px;
+                // height: 360px;
+            }
+
+            .section-note.footnote{
+                padding-top: 90px;
+                text-align: center;
+                margin-bottom: 0px;
             }
 
             .label {
@@ -182,25 +194,35 @@ body.recognizing-bed {
     }
 
     .section--triggers {
-        background: #333E48;
-        background-image: radial-gradient(50% 149%, #333E48 17%, #252F39 100%);
+        background: #252f39;
+        // background-image: radial-gradient(50% 149%, #333E48 17%, #252F39 100%);
 
         .wrap--content {
             @include mq("lg") {
                 width: 555px;
 
+                h2.bottom-bump{
+                    margin-bottom: 30px;
+                }
+
                 ul.square.line{
                     .heading--2{
                         text-align:left;
                         display: inline-block;
+                        padding-left: 14px;
                     }
                 }
                 
 
             }
+
+            @include mq("lg", "md") {
+                ul.square{
+                    margin-bottom: 54px;
+                }
+            }
         }
     }
-
 
     .section--compared {
         background: #252F39;
@@ -212,9 +234,60 @@ body.recognizing-bed {
             font-size: 21px;
         }
 
+        @include mq("lg", "md") {
+            p.footnote{
+                text-align: center;
+            }
+        }
+
+        @include mq("lg") {
+            .wrap--content {
+                width: 570px;
+                margin-bottom: 10px;
+            }
+
+            ul.square{
+                margin: 20px 36px 0px 36px;
+            }
+
+            h4.heading--2{
+                font-size: 21px;
+                padding-top:24px;
+                padding-bottom:24px;
+            }
+
+            .wrap--refs{
+
+                ol.refs{
+
+                    li{
+                        padding-top:6px;
+                        padding-bottom:6px;
+                    }
+
+                }
+
+            }
+
+        }
+
+        @include mq("md") {
+            .wrap--content {
+                width: percentage(570/768);
+                min-width: 570px;
+            }
+
+        }
+
+        
+    }
+
+    .section--coexisting{
+        background: #333E48;
+
         .statistic-box {
-            border: 2px solid #5C656D;
-            border-radius: 4px;
+            // border: 2px solid #5C656D;
+            // border-radius: 4px;
 
             h2, h4 {
                 text-align: left;
@@ -225,24 +298,45 @@ body.recognizing-bed {
 
                 .num,
                 .text {
-                    display: table-cell;
+                    display: inline-block;
                     vertical-align: top;
                 }
 
                 .num {
                     @include gs("light");
-                    font-size: 45px;
+                    font-size: 32px;
                     color: #FDBD3E;
-                    line-height: 1;
+                    line-height: 38px;
                 }
                 .text {
                     color: #ADB2B6;
                     padding: 0 14px;
+                    font-size: 18px;
+                    color: #D6D8DA;
+                    line-height: 22px;
 
                     em {
                         color: #D6D8DA;
                     }
                 }
+
+
+                &.box1{
+                    // @include responsive-icon("#{$page}/oval_4_of_5.png");
+                    height: 248px;
+                    width: 248px;
+                    background: transparent url("../img/lg/#{$page}/oval_4_of_5.png") center center no-repeat;
+                    background-size: 248px 248px;
+                }
+
+                &.box2{
+                    // @include responsive-icon("#{$page}/oval_nearly_half.png");
+                    height: 248px;
+                    width: 248px;
+                    background: transparent url("../img/lg/#{$page}/oval_nearly_half.png") center center no-repeat;
+                    background-size: 248px 248px;
+                }
+
             }
         }
 
@@ -253,26 +347,41 @@ body.recognizing-bed {
                 .statistic {
                     float: left;
                     width: 50%;
-                    padding: 5px 10px;
+                    padding: 62px 10px 5px 10px;
+                    text-align: center;
 
                     & + .statistic {
-                        border-left: 1px solid #979797;
+                    //     border-left: 1px solid #979797;
+                        margin-left: 70px;
                     }
                 }
             }
 
             p.footnote{
+                margin-top: 50px;
                 text-align: center;
             }
         }
 
         @include mq("lg") {
             .wrap--content {
-                width: 570px;
+                width: 600px;
+                margin-top: 10px;
+                padding-bottom: 56px;
+
+                .heading--3{
+                    @include gs('light');
+                    margin-top:18px;
+                    margin-bottom: 58px;
+                    font-size: 18px;
+                    color: #D6D8DA;
+                    line-height: 22px;
+                }
+
             }
 
             .statistic-box {
-                padding: 40px;
+                // padding: 40px;
             }
 
             ul.square{
@@ -328,5 +437,6 @@ body.recognizing-bed {
                 }
             }
         }
+
     }
 }
