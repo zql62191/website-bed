@@ -45,6 +45,11 @@ body.support-and-resources{
                 padding: 20px 0;
                 text-align: center;
                 cursor: pointer;
+                margin-right: 4px;
+
+                &:last-child{
+                    margin-right: 0;
+                }
 
                 &:hover,&.active,&:active{
                     border-bottom: 4px inset #FDBD3E;
@@ -71,7 +76,7 @@ body.support-and-resources{
 
                 .consult-disclaimer{
                     @include gs("light");
-                    font-size: 14px;
+                    font-size: 16px;
                     margin-top: 20px;
                     color: #858B91;
                 }
@@ -233,6 +238,13 @@ body.support-and-resources{
 
                 .btn{
                     font-size: 16px;
+                    background: #FFBE2C;
+                    border-radius: 4px;
+                    font-size: 16px;
+                    color: #21282F;
+                    line-height: 19px;
+                    height: 65px;
+                    padding: 14px 28px;
                 }
                 
             }

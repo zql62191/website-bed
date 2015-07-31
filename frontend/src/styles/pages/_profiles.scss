@@ -27,8 +27,8 @@ body.profiles {
         z-index:2;
 
         &.nikki, &.julie{
-            top: 479px;
-            height: 753px;
+            top: 320px;
+            height: 926px;
         }
 
     }
@@ -222,7 +222,7 @@ body.profiles {
 
         .pagination{
 
-            width: 480px;
+            width: 600px;
             height: 60px;
             display: block;
             margin: 0 auto;
@@ -234,7 +234,7 @@ body.profiles {
                 color: #858B91;
                 line-height: 17px;
                 text-transform: uppercase;
-                width: 114px;
+                width: 146px;
                 height: 60px;
                 cursor: pointer;
                 background-image: url("../img/lg/profiles/slider-dot-empty.png");
@@ -248,6 +248,15 @@ body.profiles {
                 &.active, &:hover{
                     color: #52758B;
                     background-image: url("../img/lg/profiles/slider-dot-full.png");
+                }
+
+                span.liner{
+                    width: 90px;
+                    height: 1px;
+                    border-top: 1px solid #979797;
+                    position: absolute;
+                    top: 50%;
+                    left: 104px;
                 }
 
             }
@@ -332,14 +341,25 @@ body.profiles {
 
             }
 
-            .section-disclaimer{
-                width:600px;
+            .section-disclaimer-sm{
+                width:516px;
                 height:36px;
                 margin: 0 auto 44px auto;
                 @include gs("light");
-                font-size: 16px;
+                font-size: 14px;
                 color: #858B91;
-                line-height: 15px;
+                line-height: 19px;
+                text-align: center;
+            }
+
+            .section-disclaimer{
+                width:478px;
+                height:36px;
+                margin: 0 auto 44px auto;
+                @include gs("light");
+                font-size: 18px;
+                color: #858B91;
+                line-height: 22px;
                 text-align: center;
             }
 
@@ -367,17 +387,22 @@ body.profiles {
                     p{
                         opacity: 0.6;
                         margin-bottom: 21px;
-                        font-size: 16px;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #858B91;
+                        width: 330px;
                     }
 
+
+
                     .btn{
-                        width: 280px;
+                        width: 300px;
                         font-size: 14px;
                         @include gs();
                         color: #F2F2F2;
                         line-height: 18px;
-                        padding: 10px 10px;
-                        height: 56px;
+                        padding: 15px 28px;
+                        height: 65px;
                     }
                     
                 }
