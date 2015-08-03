@@ -18,9 +18,20 @@ body.patient-statistics {
 
         .heading--1 {
             padding-bottom: 25px;
+
+            @include mq('sm') {
+                padding: 0 2% 25px 2%;
+            }
         }
         .heading--2 {
             padding-bottom: 48px;
+
+            @include mq('sm') {
+                @include gs('light');
+                font-size: 16px;
+                color: #D6D8DA;
+                line-height: 18px;
+            }
         }
 
         .statistics {
@@ -98,6 +109,7 @@ body.patient-statistics {
                         font-size: 36px;
                     }
                     @include mq("sm") {
+                        padding-top: 55px;
                         font-size: 32px;
                     }
                 }
@@ -113,8 +125,11 @@ body.patient-statistics {
                     }
                 }
             }
-
-
+            p.footnote {
+                @include mq('sm') {
+                    margin: 0;
+                }
+            }
             
         }
     }
@@ -125,33 +140,49 @@ body.patient-statistics {
 
         .heading--1 {
             padding-bottom: 45px;
+
+            @include mq('sm') {
+                padding: 0 6% 20px 6%;
+            }
         }
         .heading--2 {
-            width: percentage(540/960);
+            width: 90%;
             margin: 0 auto;
             padding-bottom: 40px;
+
+            @include mq('sm') {
+                @include gs('light');
+                font-size: 16px;
+                color: #D6D8DA;
+                line-height: 18px;
+                width: percentage(256/320);
+            }
         }
 
         p {
             width: 560px;
             margin: 0 auto;
 
-            .stat {
-                @include gs('light-italic');
-                @include inline-block;
-                vertical-align: top;
-                width: 121px;
-                margin-right: 40px;
-                text-align: center;
+            @include mq('sm') {
+                width: 100%;
             }
-            .text {
-                @include inline-block;
-                vertical-align: top;
-                width: 399px;
+        }
+        .text {
+            @include inline-block;
+            vertical-align: top;
+            width: 399px;
 
-                @include gs('light-italic');
-                font-size: 24px;
-                line-height: 29px;
+            @include gs('light-italic');
+            font-size: 24px;
+            line-height: 29px;
+
+            @include mq('sm') {
+                width: percentage(260/320);
+                @include gs('light');
+                font-size: 16px;
+                color: #D6D8DA;
+                line-height: 18px;
+                padding-top: 18px;
             }
         }
 
@@ -178,7 +209,12 @@ body.patient-statistics {
         }
 
         .stat {
-            display: block;
+            @include gs('light-italic');
+            @include inline-block;
+            vertical-align: top;
+            width: 121px;
+            margin-right: 40px;
+            text-align: center;
 
             .percent {
                 color: #FDBD3E;
@@ -208,6 +244,11 @@ body.patient-statistics {
                     font-size: 16px;
                 }
 
+            }
+
+            @include mq('sm') {
+                display: block;
+                width: 100%;
             }
         }
 
