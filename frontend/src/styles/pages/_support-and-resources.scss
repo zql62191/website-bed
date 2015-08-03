@@ -83,7 +83,7 @@ body.support-and-resources{
                 // display: none;
                 background: #52758B;
                 font-size: 18px;
-                color: #FFBE2C;
+                color: #E8E9E9;
                 line-height: 50px;
                 padding-left: percentage(23/280);
                 overflow: hidden;
@@ -94,20 +94,40 @@ body.support-and-resources{
                     // display: block;
                     max-height: 50px;
                 }
+                &.active {
+                    color: #FFBE2C;
+                }
                 &.open {
                     border-bottom: 1px solid #7E97A6;
 
                     &:last-child {
                         border-bottom: none;
                     }
+
+                    .arrow {
+                        transform: rotateZ(0);
+                    }
                 }
             }
+
+            .arrow {
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                margin: -8px 0 -5px 0;
+                transform: rotateZ(90deg);
+                opacity: 0;
+                transition: transform 250ms, opacity 250ms;
+
+                &.visible {
+                    opacity: 1;
+                }
+
+            }  
 
             @include mq('lg') {
                 display: none;
             }
-
-                
 
         }
 

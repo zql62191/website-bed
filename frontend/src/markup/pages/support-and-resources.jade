@@ -42,6 +42,9 @@ block content
                 .mobile-dropdown(ng-click="toggleMobileDropdown()")
                     .option(ng-repeat="tab in tabbedVideos", ng-click="changeTabMobile($index+1, $event)", ng-class="{ active: tab.tabclass === currentTab, open: mdOpen }", class="{{tab.tabclass}}") {{tab.tabtitle}}
 
+                        .sprite--arrow-gray.arrow(ng-class="{ visible: tab.tabclass !== currentTab }")
+
+                        .sprite--arrow-yellow.arrow(ng-class="{ visible: tab.tabclass === currentTab }")
 
 
  

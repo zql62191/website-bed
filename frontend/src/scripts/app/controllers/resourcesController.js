@@ -382,7 +382,7 @@
 
             $scope.toggleMobileDropdown = function() {
                 $scope.mdOpen = !$scope.mdOpen;
-            }
+            };
 
             $scope.changeTabMobile = function(tabIndex, event) {
 
@@ -393,8 +393,7 @@
 
                     $scope.mdOpen = false;
                 }
-
-            }
+            };
 
             // $scope.updateVideo("video_id");
         }
