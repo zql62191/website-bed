@@ -438,8 +438,30 @@ body.profiles {
             }
 
             .slide{
+
+                background-repeat: no-repeat;
+                background-position: center 108px;
+                background-size: 100%;
+
+                picture{
+                    display: none;
+                }
+
                 .hero{
                     margin:108px auto 10px auto;
+                }
+
+                &.kimberly{
+                    background-image: url("../img/smr/profiles/kimberly.png");
+                }
+                &.nikki{
+                    background-image: url("../img/smr/profiles/nikki.png");   
+                }
+                &.julie{
+                    background-image: url("../img/smr/profiles/julie.png");   
+                }
+                &.diego{
+                    background-image: url("../img/smr/profiles/diego.png");   
                 }
 
                 blockquote{
@@ -461,6 +483,8 @@ body.profiles {
                 height: 330px;
 
                 color: #70767C;
+
+                padding-top: 100%; // i hope this works in cool browsers!
 
                 .name {
                     font-size: 32px;
