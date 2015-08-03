@@ -378,6 +378,24 @@
 
             };
 
+            $scope.mdOpen = false;
+
+            $scope.toggleMobileDropdown = function() {
+                $scope.mdOpen = !$scope.mdOpen;
+            }
+
+            $scope.changeTabMobile = function(tabIndex, event) {
+
+                if ($scope.mdOpen) {
+                    event.stopPropagation();
+
+                    $scope.changeTab(tabIndex);
+
+                    $scope.mdOpen = false;
+                }
+
+            }
+
             // $scope.updateVideo("video_id");
         }
     ]);
