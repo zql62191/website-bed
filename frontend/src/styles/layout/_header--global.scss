@@ -60,6 +60,7 @@ header.header--global {
             .hcp {
                 margin-left: 22px;
                 font-size: 15px;
+                top: 3px;
             }
             .signup {
                 float: right;
@@ -83,7 +84,7 @@ header.header--global {
                     color: #52758B;
                     background: $active-yellow;
                     border-color: $active-yellow;
-                    font-weight: 200;
+                    font-weight: 300;
                 }
             }
         }

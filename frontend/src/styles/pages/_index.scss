@@ -107,6 +107,9 @@ body.index {
         
             ol.refs {
                 border-top: none;
+                text-align: center;
+                width: 570px;
+                margin: 0 auto;
             }
         }
 
@@ -284,6 +287,8 @@ body.index {
 
                 .callouts {
                     @include clearfix;
+
+                    width: 100%;
 
                     .wrap--content {
                         padding: 0;
