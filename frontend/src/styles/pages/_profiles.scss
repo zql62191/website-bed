@@ -437,7 +437,29 @@ body.profiles {
                 }
             }
 
+            .slide{
+                .hero{
+                    margin:108px auto 10px auto;
+                }
+
+                blockquote{
+                    position: absolute;
+                    top: 20px;
+                }
+            }
+
+
+            .shadow{
+                display:none;
+            }
+
             .profile {
+
+                position: relative;
+                top: initial;
+                left: initial;
+                height: 330px;
+
                 color: #70767C;
 
                 .name {
