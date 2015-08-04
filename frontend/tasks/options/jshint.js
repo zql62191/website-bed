@@ -31,6 +31,12 @@ module.exports = {
             '!src/scripts/vendor/*.js'
         ]
     },
+    devIntegrate: {
+        src: [
+            'src/scripts/**/*.js',
+            '!src/scripts/vendor/*.js'
+        ]
+    },
     tasks: {
         src: ['tasks/**/*.js']
     }

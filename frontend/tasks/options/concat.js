@@ -56,6 +56,12 @@ module.exports = {
         },
         files: files
     },
+    devIntegrate: {
+        options: {
+            sourceMap: true
+        },
+        files: files
+    },
     prod: {
         options: {
             sourceMap: false

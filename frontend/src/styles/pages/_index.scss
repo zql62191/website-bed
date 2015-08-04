@@ -102,18 +102,20 @@ body.index {
             }
         }
 
-        .wrap--refs {
-            margin-top: 0;
         
-            ol.refs {
-                border-top: none;
-                text-align: center;
-                width: 570px;
-                margin: 0 auto;
-            }
-        }
 
         @include mq("lg", "md") {
+
+            .wrap--refs {
+                margin-top: 0;
+            
+                ol.refs {
+                    border-top: none;
+                    text-align: center;
+                    width: 570px;
+                    margin: 0 auto;
+                }
+            }
 
             .hero {
 
@@ -380,6 +382,18 @@ body.index {
                     }
                 }
             }
+
+            .wrap--refs {
+                margin-top: 0;
+            
+                ol.refs {
+                    border-top: none;
+                    text-align: center;
+                    width: 100%;
+                    margin: 0 auto;
+                }
+            }
+
         }
     }
 }
