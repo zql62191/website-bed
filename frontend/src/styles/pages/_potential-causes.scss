@@ -196,12 +196,66 @@ body.potential-causes {
     }
 
     @include mq("sm") {
+        .phoneStyle{
+            display: none;
+        }
+
+        .mobileContspace{
+            margin-top: 61px;
+            width: 260px;
+        }
+        
         .icon {
             margin: 20px auto !important;
             position: relative;
             top: auto;
             left: auto;
         }
+        
+        .is--vc{
+            margin-top: 44px !important;
+        }
+
+        .mobileHeading--4{
+            font-size: 19px !important;
+            /* Reward center and im: */
+            line-height: 23px;
+            
+        }
+
+        .mobileP--1{
+            width: 256px !important;
+            font-size: 16px;
+            margin-top: 9px;
+            text-align: center;
+            color: #ADB2B6;
+            line-height: 20px !important;
+            margin-left: 5px !important;
+            
+        }
+
+        .is--nd{
+            margin-top: 45px !important;
+            margin-bottom: 25px !important;
+        }
+
+        .mobileHeading--5{
+            /* Neurotransmitter dys: */
+            font-size: 19px !important;
+            color: #E8E9E9;
+            line-height: 23px;
+            margin-bottom: 10px !important;
+        }
+        
+        .mobileP--2{
+            font-size: 15.7px !important;
+            color: #ADB2B6;
+            line-height: 19px !important;
+            letter-spacing: 1.1px;
+            margin-top: 53px;
+            
+        }
+        
 
         p, h4 {
             text-align: center;
