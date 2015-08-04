@@ -7,7 +7,10 @@ body.support-and-resources{
     }
 
     .section--video-player{
-        background-color: #1B2025;
+        
+        @include mq('lg') {
+            background-color: #1B2025;
+        }
 
         .mejs-container, .mejs-container * {
             max-width: 100%;
@@ -18,6 +21,7 @@ body.support-and-resources{
         }
         #videoPlayer {
             background: transparent;
+            max-width: 100%;
         }
     }
 
@@ -31,6 +35,12 @@ body.support-and-resources{
     }
 
     .section--video-boxes{
+
+        .wrap--content {
+            @include mq('sm') {
+                padding-top: 0;
+            }
+        }
 
         .tabs{
 
@@ -55,13 +65,69 @@ body.support-and-resources{
                     border-bottom: 4px inset #FDBD3E;
                     color: #FDBD3E;
                 }
-
             }
 
-            // .active{
-            //     border-bottom: 4px inset #FDBD3E;
-            //     color: #FDBD3E;
-            // }
+            @include mq('sm') {
+                display: none;
+            }
+        }
+
+        .mobile-dropdown {
+            width: 100%;
+            height: 50px;
+            z-index: 10;
+            margin-bottom: 20px;
+
+            .option {
+                height: 50px;
+                // display: none;
+                background: #52758B;
+                font-size: 18px;
+                color: #E8E9E9;
+                line-height: 50px;
+                padding-left: percentage(23/280);
+                overflow: hidden;
+                max-height: 0;
+                transition: max-height 250ms;
+
+                &.active, &.open {
+                    // display: block;
+                    max-height: 50px;
+                }
+                &.active {
+                    color: #FFBE2C;
+                }
+                &.open {
+                    border-bottom: 1px solid #7E97A6;
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    .arrow {
+                        transform: rotateZ(0);
+                    }
+                }
+            }
+
+            .arrow {
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                margin: -8px 0 -5px 0;
+                transform: rotateZ(90deg);
+                opacity: 0;
+                transition: transform 250ms, opacity 250ms;
+
+                &.visible {
+                    opacity: 1;
+                }
+
+            }  
+
+            @include mq('lg') {
+                display: none;
+            }
 
         }
 
@@ -102,27 +168,31 @@ body.support-and-resources{
                     margin-top: 20px;
                     vertical-align: middle;
 
-                    .yellow{
+
+
+                    .yellow {
                         width: 220px;
+
+                        @include mq('sm') {
+                            width: percentage(198/280);
+                        }
                     }
 
-                    &:hover, &.playing{
+                    &:hover, &.playing {
                         border: 2px solid #FDBD3E;
-                        // padding-top:14px;
-                        // padding-left:14px;
                     }
 
-                    &:last-child{
+                    &:last-child {
                         margin-right: 0;
                     }
 
-                    .subtitle{
+                    .subtitle {
                         font-style: italic;
                         font-size: 14px;
                         color: #ADB2B6;
                     }
 
-                    .video-length{
+                    .video-length {
                         font-size: 14px;
                         font-style: italic;
                         color: #858B91;
@@ -132,7 +202,7 @@ body.support-and-resources{
                         top: 20px;
                     }
 
-                    .play-btn{
+                    .play-btn {
                         width: 18px;
                         height: 19px;
                         background-image: url("../img/lg/support-and-resources/play-button.png");
@@ -141,7 +211,7 @@ body.support-and-resources{
                         left: 277px;
                     }
 
-                    .new{
+                    .new {
                         position: absolute;
                         top: 61px;
                         left: 254px;
@@ -150,13 +220,38 @@ body.support-and-resources{
                         background-image: url("../img/lg/support-and-resources/new-ribbon.png");
                     }
 
-                    .viewed{
+                    .viewed {
                         position: absolute;
                         top: 79px;
                         left: 238px;
                         width: 64px;
                         height: 22px;
                         background-image: url("../img/lg/support-and-resources/viewed-ribbon.png");
+                    }
+
+                    @include mq('sm') {
+                        width: 100%;
+                        height: auto;
+                        padding-bottom: 15px;
+                        margin-top: 4px;
+
+                        .video-length {
+                            left: auto;
+                            right: 37px;
+                            text-align: right;
+                        }
+                        .play-btn {
+                            left: auto;
+                            right: 11px;
+                        }
+                        .new {
+                            left: auto;
+                            right: -10px;
+                        }
+                        .viewed {
+                            left: auto;
+                            right: -10px;
+                        }
                     }
 
                 }
@@ -192,6 +287,42 @@ body.support-and-resources{
         }
     }
 
+    .section--shire-resources {
+
+        .heading--1 {
+            @include mq('sm') {
+                text-align: left;
+                padding-bottom: 29px;
+            }
+        }
+        .heading--2 {
+            @include mq('sm') {
+                text-align: left;
+                padding-bottom: 25px;
+            }
+        }
+        .btn {
+            @include mq('sm') {
+                margin-bottom: 44px;
+                height: auto;
+                line-height: 17px;
+                padding: 14px percentage(16/280);
+            }
+        }
+    }
+    .section--information {
+        .heading--1 {
+            @include mq('sm') {
+                text-align: left;
+                padding-bottom: 32px;
+            }
+        }
+
+        .link-box .yellow a {
+            display: block;
+        }
+    }
+
     @include mq('lg') {
 
 
@@ -219,14 +350,15 @@ body.support-and-resources{
 
         .section--shire-resources{
 
+
             .wrap--content{
                 border-top: 1px solid #5C656D;
                 border-bottom: 1px solid #5C656D;
             }
 
             .split-box{
-                width:49%;
-                padding:0 2.5%;
+                width: 49%;
+                padding: 0 2.5%;
                 display: inline-block;
 
 

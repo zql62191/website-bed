@@ -97,6 +97,31 @@ nobr {
     white-space: nowrap;
 }
 
+br {
+    display: none;
+
+    &.mobile-break {
+        @include mq('sm') {
+            display: block;
+        }
+    }
+    &.tablet-break {
+        @include mq('md') {
+            display: block;
+        }
+    }
+    &.desktop-break {
+        @include mq('lg') {
+            display: block;
+        }
+    }
+    &.xl-break {
+        // @include mq('xl') {
+        //     display: block;
+        // }
+    }
+}
+
 sub, sup {
   font-size: 0.6em;
   line-height: 0;
