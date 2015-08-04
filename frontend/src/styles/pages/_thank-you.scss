@@ -1,0 +1,101 @@
+body.thank-you{
+
+    .heading--1{
+        padding-top: 50px;
+        font-size: 32px;
+        color: #FDBD3E;
+        line-height: 38px;
+        width: 850px;
+        margin: 0 auto;
+    }
+    .heading--2{
+        font-size: 24px;
+        color: #E8E9E9;
+        line-height: 29px;
+        margin-top: 24px;
+        width: 75%;
+        margin-left: 11%;
+    }
+    
+
+    
+    button{
+        font-size: 16px !important;
+        /* Rectangle 10: */
+        background: #FFBE2C;
+        border-radius: 4px;
+        font-size: 16px;
+        color: #21282F;
+        line-height: 19px;
+        margin-left: 35% !important;
+        margin-top: 40px !important;
+        margin-bottom: 138px;
+
+    }
+
+    @include mq('lg') {
+
+        .heading--1{
+            padding-top: 50px;
+            font-size: 32px;
+            color: #FDBD3E;
+            line-height: 38px;
+            width: 850px;
+            margin: 0 auto;
+        }
+        
+
+
+        button{
+            font-size: 16px !important;
+            /* Rectangle 10: */
+            background: #FFBE2C;
+            border-radius: 4px;
+            font-size: 16px;
+            color: #21282F;
+            line-height: 19px;
+            margin-left: 38% !important;
+            margin-top: 35px !important;
+            margin-bottom: 138px !important;
+        }
+
+        
+
+    }
+    @include mq('md') {
+
+    }
+    @include mq('sm') {
+
+        .heading--1{
+            text-align: left;
+            margin-left: 0% !important;
+        }
+        
+        
+        
+        .heading--2{
+            text-align: center;
+            margin-top: 18px !important;
+        }
+        
+
+        button{
+            font-size: 16px !important;
+            /* Rectangle 10: */
+            background: #FFBE2C;
+            border-radius: 4px;
+            font-size: 16px;
+            color: #21282F;
+            line-height: 19px;
+            width: 100%;
+            margin-left: 0% !important;
+            margin-bottom: 50px !important;
+        }
+
+
+    }
+
+
+}
+
