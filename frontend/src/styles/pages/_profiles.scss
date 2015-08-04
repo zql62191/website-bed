@@ -462,30 +462,31 @@ body.profiles {
             .slide{
 
                 picture{
-                    display: none;
+                    // display: none;
                 }
 
-                .mobile-hero{
-                    width: 100%;
-                    min-height: 348px;
-                    max-height: 408px;
-                    display: block;
-                    // margin:108px auto 10px auto;
-                    margin: 0 auto;
-                    background-repeat: no-repeat;
-                    background-position: center 78px;
-                    background-size: cover;
-                }
+                // .mobile-hero{
+                width: 100%;
+                height: auto;
+                min-height: 315px;
+                // max-height: 408px;
+                // display: block;
+                // margin:108px auto 10px auto;
+                margin: 0 auto;
+                background-repeat: no-repeat;
+                background-position: center 108px;
+                background-size: cover;
+                // }
 
-                &.kimberly .mobile-hero{
-                    background-image: url("../img/smr/profiles/kimberly.png");
+                &.kimberly{
+                    // background-image: url("../img/smr/profiles/kimberly.png");
                 }
-                &.nikki .mobile-hero{
-                    background-image: url("../img/smr/profiles/nikki.png");  
+                &.nikki{
+                    // background-image: url("../img/smr/profiles/nikki.png");  
                     background-size: 38%; 
                 }
-                &.julie .mobile-hero{
-                    background-image: url("../img/smr/profiles/julie.png"); 
+                &.julie{
+                    // background-image: url("../img/smr/profiles/julie.png"); 
                     background-size: 38%;  
 
                     blockquote{
@@ -494,8 +495,8 @@ body.profiles {
                     }
 
                 }
-                &.diego .mobile-hero{
-                    background-image: url("../img/smr/profiles/diego.png");   
+                &.diego{
+                    // background-image: url("../img/smr/profiles/diego.png");   
 
                     blockquote{
                         width: percentage(291/320);
@@ -515,6 +516,13 @@ body.profiles {
                 }
             }
 
+            .hero {
+                margin: 78px auto 0px auto;
+            }
+            .hero, .hero img{
+                width: 100%;
+                height: auto;
+            }
 
             .shadow{
                 display:none;
@@ -522,10 +530,12 @@ body.profiles {
 
             .profile {
 
-                position: relative;
-                top: initial;
-                left: initial;
-                height: 330px;
+                position: static;
+                // top: initial;
+                // left: initial;
+                // height: 330px;
+                height: auto;
+                width: 100%;
 
                 color: #70767C;
 
