@@ -68,6 +68,9 @@ body.profiles {
             z-index: 3;
         }
 
+        .mobile-hero{
+            display: none;
+        }
 
         .kimberly{
 
@@ -431,6 +434,18 @@ body.profiles {
 
         @include mq("sm") {
 
+            // padding fixes for the mobile hero shots
+            .wrap--content{
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+            // restore padding for the parts that NEED spacing
+            .controls, .pagination, .section-disclaimer-sm, .callouts, .wrap--refs, .profile{
+                padding-left: 6.25%;
+                padding-right: 6.25%;
+            }
+
             blockquote {
                 text-align: center;
 
@@ -439,28 +454,37 @@ body.profiles {
                 }
             }
 
-            .slide{
+            .controls{
+                top: 230px;
+            }
 
-                background-repeat: no-repeat;
-                background-position: center 108px;
-                background-size: 100%;
+
+            .slide{
 
                 picture{
                     display: none;
                 }
 
-                .hero{
-                    margin:108px auto 10px auto;
+                .mobile-hero{
+                    width: 100%;
+                    min-height: 348px;
+                    max-height: 408px;
+                    display: block;
+                    // margin:108px auto 10px auto;
+                    margin: 0 auto;
+                    background-repeat: no-repeat;
+                    background-position: center 78px;
+                    background-size: cover;
                 }
 
-                &.kimberly{
+                &.kimberly .mobile-hero{
                     background-image: url("../img/smr/profiles/kimberly.png");
                 }
-                &.nikki{
+                &.nikki .mobile-hero{
                     background-image: url("../img/smr/profiles/nikki.png");  
                     background-size: 38%; 
                 }
-                &.julie{
+                &.julie .mobile-hero{
                     background-image: url("../img/smr/profiles/julie.png"); 
                     background-size: 38%;  
 
@@ -470,7 +494,7 @@ body.profiles {
                     }
 
                 }
-                &.diego{
+                &.diego .mobile-hero{
                     background-image: url("../img/smr/profiles/diego.png");   
 
                     blockquote{
@@ -478,6 +502,10 @@ body.profiles {
                         left: percentage(14/320);
                     }
                 }
+
+                
+
+                
 
                 blockquote{
                     position: absolute;
@@ -501,7 +529,7 @@ body.profiles {
 
                 color: #70767C;
 
-                padding-top: 100%; // i hope this works in cool browsers!
+                // padding-top: 450px; // i hope this works in cool browsers!
 
                 .name {
                     font-size: 32px;
