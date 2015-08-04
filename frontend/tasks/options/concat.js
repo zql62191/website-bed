@@ -37,6 +37,7 @@ var files = {
         'src/scripts/app/controllers/modalController.js',
         'src/scripts/app/controllers/profilesController.js',
         'src/scripts/app/controllers/resourcesController.js',
+        'src/scripts/app/controllers/unsubscribeCtrl.js',
         'src/scripts/app/directives/directives.js',
         'src/scripts/app/directives/a.js',
         // 'src/scripts/app/directives/profiles-carousel.js',
