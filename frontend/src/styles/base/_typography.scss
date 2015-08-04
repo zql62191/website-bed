@@ -334,3 +334,7 @@ blockquote {
         display: inline;
     }
 }
+
+.roman{
+    @include gs("roman");
+}

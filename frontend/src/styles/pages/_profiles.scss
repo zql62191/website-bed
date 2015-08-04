@@ -133,19 +133,21 @@ body.profiles {
                 display: none;
             }
 
-            blockquote{
-                width: 408px;//MOVE TO LG
-            }
+            @include mq("lg") {
+                blockquote{
+                    width: 408px;//MOVE TO LG
+                }
 
-            blockquote p{
-                width: 408px;//MOVE LG
+                blockquote p{
+                    width: 408px;//MOVE LG
 
-                span{
-                    padding-left: 26px;
+                    span{
+                        padding-left: 26px;
+                    }
                 }
             }
 
-                    }
+        }
 
 
         .profile {
@@ -455,13 +457,16 @@ body.profiles {
                     background-image: url("../img/smr/profiles/kimberly.png");
                 }
                 &.nikki{
-                    background-image: url("../img/smr/profiles/nikki.png");   
+                    background-image: url("../img/smr/profiles/nikki.png");  
+                    background-size: 38%; 
                 }
                 &.julie{
-                    background-image: url("../img/smr/profiles/julie.png");   
+                    background-image: url("../img/smr/profiles/julie.png"); 
+                    background-size: 38%;  
 
                     blockquote{
                         width: percentage(291/320);
+                        left: percentage(14/320);
                     }
 
                 }
@@ -470,6 +475,7 @@ body.profiles {
 
                     blockquote{
                         width: percentage(291/320);
+                        left: percentage(14/320);
                     }
                 }
 
