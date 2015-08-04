@@ -28,7 +28,7 @@
     }
 
     protected void Application_BeginRequest(Object sender, EventArgs e)
-    {
+    {/*
         if (System.IO.File.Exists(HttpContext.Current.Request.PhysicalPath))
         {
             if (HttpContext.Current.Request.IsSecureConnection.Equals(false))
@@ -39,6 +39,7 @@
                 Response.End();
             }
         }
+      * */
     }
 
     String parseWWW(String request)
