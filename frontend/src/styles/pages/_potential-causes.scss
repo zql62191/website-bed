@@ -202,7 +202,6 @@ body.potential-causes {
 
         .mobileContspace{
             margin-top: 61px;
-            width: 260px;
         }
         
         .icon {
@@ -252,11 +251,54 @@ body.potential-causes {
             color: #ADB2B6;
             line-height: 19px !important;
             letter-spacing: 1.1px;
-            margin-top: 53px;
+            margin-bottom: 53px;
             
         }
         
+        .mobileHeading--6{
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 18px;
+        }
+        
+        .mobileTitle{
+            font-size: 26px !important;
+            color: #FDBD3E !important;
+            line-height: 36px;
+            margin-top: 28px !important;
+            font-style: normal !important;
+            width: 246px;
+            margin-left: 6% !important;
+        }
+        
+        .listStyle{
+            font-size: 16px !important;
+            color: #ADB2B6 !important;
+            line-height: 18px !important;
+            margin-top: 12px;
+            padding-top: 12px !important;
+        }
+        
+        .mobileHeading--7{
+            font-size: 19px;
+            color: #E8E9E9;
+            line-height: 23px;
+            font-weight: 100;
+        }
 
+        .footnote{
+            margin-top: 30px;
+            font-size: 12px !important;
+            color: #858B91 !important;
+            line-height: 14px;
+            text-align: left;
+        }
+        
+        
+        .center{
+            margin-top: 36px;
+        }
         p, h4 {
             text-align: center;
         }

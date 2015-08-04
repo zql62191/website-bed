@@ -9,7 +9,7 @@
     angular.module('cdmp.controllers')
 
 
-        .directive('showErrors', function ($timeout, showErrorsConfig) {
+        .directive('showErrors', ['$timeout' ,function ($timeout, showErrorsConfig) {
             var getShowSuccess, linkFn;
             getShowSuccess = function (options) {
                 var showSuccess;
@@ -69,21 +69,20 @@
                     return linkFn;
                 }
             };
-        }
-        )
+        }])
 
-        module.provider('showErrorsConfig', function () {
-        var _showSuccess;
-        _showSuccess = false;
-        this.showSuccess = function (showSuccess) {
-            return _showSuccess = showSuccess;
-        };
-        this.$get = function () {
-            return { showSuccess: _showSuccess };
-        };
-    })
+        .factory('showErrorsConfig', function () {
+            var _showSuccess;
+            _showSuccess = false;
+            this.showSuccess = function (showSuccess) {
+                return _showSuccess = showSuccess;
+            };
+            this.$get = function () {
+                return { showSuccess: _showSuccess };
+            };
+        })
 
-     .controller('emailFormController', function($scope) {
+        .controller('emailFormController',['$scope',  function($scope) {
                 $scope.send = function () {
                     $scope.$broadcast('show-errors-check-validity');
 
@@ -91,27 +90,27 @@
                         console.log("sent");
                     }
                 }
-            })
+            }])
 
-            .controller('directEmailFormController', function($scope) {
-                $scope.send = function () {
-                    $scope.$broadcast('show-errors-check-validity');
+        .controller('directEmailFormController', ['$scope', function($scope) {
+            $scope.send = function () {
+                $scope.$broadcast('show-errors-check-validity');
 
-                    if ($scope.opt-out-direct-mail.$valid) {
-                        console.log("sent");
-                    }
+                if ($scope.opt-out-direct-mail.$valid) {
+                    console.log("sent");
                 }
-            })
+            }
+        }])    
 
-            .controller('allFormController', function($scope) {
-                $scope.send = function () {
-                    $scope.$broadcast('show-errors-check-validity');
+        .controller('allFormController',['$scope', function($scope) {
+            $scope.send = function () {
+                $scope.$broadcast('show-errors-check-validity');
 
-                    if ($scope.opt-out-all.$valid) {
-                        console.log("sent");
-                    }
+                if ($scope.opt-out-all.$valid) {
+                    console.log("sent");
                 }
-            })
+            }
+        }])    
     
 }).call(this);
 
