@@ -67,6 +67,7 @@
       <div class="gradient"></div>
       <header class="header--privacy-policy">
         <div class="wrap--content">
+        <asp:Literal ID="litPrivacyPolicy" runat="server"></asp:Literal>
           <h1 class="heading--1">Privacy Policy</h1>
         </div>
       </header>
