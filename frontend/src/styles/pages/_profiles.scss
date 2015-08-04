@@ -459,14 +459,25 @@ body.profiles {
                 }
                 &.julie{
                     background-image: url("../img/smr/profiles/julie.png");   
+
+                    blockquote{
+                        width: percentage(291/320);
+                    }
+
                 }
                 &.diego{
                     background-image: url("../img/smr/profiles/diego.png");   
+
+                    blockquote{
+                        width: percentage(291/320);
+                    }
                 }
 
                 blockquote{
                     position: absolute;
                     top: 20px;
+                    width: percentage(234/320);
+                    left: percentage(43/320);
                 }
             }
 
