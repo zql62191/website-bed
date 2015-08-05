@@ -82,8 +82,12 @@ block content
                         p.
                             During a binge, I would often eat really, really fast. My binges would always happen when I was alone.
                     .listen
-                        | Listen to the extended excerpt
-                        +media-element-audio('../assets/foo.mp3',false)(class="audio-player.audio-1")
+                        
+                        p Listen to the extended excerpt
+                        
+                        //- the following is a placeholder
+                        .audio-player.audio-1
+                        //- +media-element-audio('audio-player audio-1', '../assets/foo.mp3', false)
 
                 .sunny.hide--md.hide--sm
 
@@ -93,8 +97,12 @@ block content
                         p.
                             When I first realized there was something wrong, it was terrifying to admit that to anyone, even a professional.
                     .listen
-                        | Listen to the extended excerpt
-                        +media-element-audio('../assets/foo.mp3',false)(class="audio-player.audio-2")
+                        
+                        p Listen to the extended excerpt
+
+                        //- the following is a placeholder
+                        .audio-player.audio-2
+                        //- +media-element-audio('audio-player audio-2', '../assets/foo.mp3', false)
 
             .sunny.hide--lg.hide--sm
 
