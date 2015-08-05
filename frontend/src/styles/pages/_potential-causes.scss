@@ -73,10 +73,18 @@ body.potential-causes {
 
         .section--factors {
 
-            padding-top: 20px;
+            // padding-top: 20px;
+
+            .wrap--content{
+                padding-top: 22px;
+            }
 
             h1.heading--1{
                 margin-bottom: 49px;
+            }
+
+            h2.heading--2{
+                margin-bottom: 20px;
             }
 
             .row {

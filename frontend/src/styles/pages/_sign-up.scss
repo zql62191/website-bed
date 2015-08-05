@@ -41,8 +41,23 @@ body.sign-up{
                 }
 
             }
-
-        
+            .form-group.help-block{
+                display:none;
+            }
+            .form-group.has-error.help-block{
+                display: block;
+            }
+        .help-block{
+            position:absolute;
+            color: #FF4517;
+            margin-top: -30px;
+            right:20px;
+        }
+            .errormessage {
+                position:absolute;
+                color: #FF4517;
+                margin-top: -25px;
+            }
 
             
 

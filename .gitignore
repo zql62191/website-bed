@@ -4,3 +4,4 @@ zips/
 .vagrant/
 .sass-cache/
 frontend/dist/
+.DS_Store

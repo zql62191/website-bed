@@ -28,6 +28,22 @@ body.dsm5-criteria {
                 text-align: center;
             }
         }
+
+        .trim{
+            @include mq("lg", "md") {
+                width: 555px;
+                margin: 60px auto;
+            }
+            @include mq("sm") {
+                margin-top: 30px;
+                margin-bottom: 40px;
+            }
+        }
+
+        ol.refs{
+            padding-bottom: 0px;
+        }
+
     }
 
     .section--triggers {
@@ -44,8 +60,6 @@ body.dsm5-criteria {
                         display: inline-block;
                     }
                 }
-                
-
             }
         }
     }

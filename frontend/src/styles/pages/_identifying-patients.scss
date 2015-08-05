@@ -90,15 +90,90 @@ body.identifying-patients {
 
         @include mq("sm") {
 
+            .heading--1{
+                margin-bottom: 26px;
+            }
+
             .persons {
                 @include clearfix;
                 width: 316px;
-                margin: 0 auto;
+                height: 268px;
+                margin: 0 auto 0 -20px;
+                position: relative;
 
                 .person {
                     display: block;
                     float: left;
+                    position: absolute;
+                    z-index: 3;
                 }
+
+                .kimberly{
+                    top: 0px;
+                    left: 0px;
+                    // border-bottom: 4px solid #252F39;
+                }
+
+                .nikki{
+                    top:0px;
+                    left: 162px;
+                    // border-left: 4px solid #252F39;
+                }
+
+                .julie{
+                    top: 124px;
+                    left: 0px;
+                    // border-right: 4px solid #252F39;
+                }
+                .diego{
+                    top: 124px;
+                    left: 162px;
+                    // border-top: 4px solid #252F39;
+                }
+            }
+
+            .callouts{
+                .callout{
+
+                    margin-bottom: 30px;
+
+                    &.one{
+                        border-bottom: none;
+
+                        .btn{
+                            padding-top: 14px;
+                        }
+                    }
+
+                    &.two{
+                        border-top: 1px solid #5C656D;
+                        padding-top: 30px;
+                        .btn{
+                            padding-top: 14px; 
+                        }
+                    }
+
+                    h2, p{
+                        text-align: left;
+                        padding-bottom: 16px;
+                    }
+
+                    .btn{
+                        height: 65px;
+                        padding-top: 10px;
+                        line-height: 18px;
+                        font-size: 14px;
+                        width: percentage(280/320);
+                    }
+
+                }
+            }
+
+            p.disclaimer{
+                width: 214px;
+                text-align: center;
+                vertical-align: middle;
+                margin: 0 auto;
             }
         }
     }

@@ -31,8 +31,8 @@ html(lang="en", xmlns:ng="http://angularjs.org", id="ng-app", ng-app="cdmp", ng-
         meta(id="viewport", name="viewport", content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui")
 
         //- +favicon("favicon.ico")
-        +cblink('/hcp/me/mediaelementplayer.min.css')
-        +cblink("/hcp/css/styles.css")
+        +cblink('./me/mediaelementplayer.min.css')
+        +cblink("./css/styles.css")
 
         +script("//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js")
 
@@ -45,7 +45,7 @@ html(lang="en", xmlns:ng="http://angularjs.org", id="ng-app", ng-app="cdmp", ng-
         //- +ie("if IE 8")
             +cblink("/hcp/css/oldie.css")
 
-        +cbscript("/hcp/js/head.js")
+        +cbscript("./js/head.js")
 
     body(ontouchstart="", class="#{fileName.toLowerCase()}", prime-directive="")
 
@@ -62,9 +62,9 @@ html(lang="en", xmlns:ng="http://angularjs.org", id="ng-app", ng-app="cdmp", ng-
 
             .injector--modal
 
-        +cbscript("/hcp/js/vendor.js")
-        +cbscript("/hcp/js/templates.js")
-        +cbscript("/hcp/js/app.js")
+        +cbscript("./js/vendor.js")
+        +cbscript("./js/templates.js")
+        +cbscript("./js/app.js")
 
         :raw
             <script type="text/javascript">

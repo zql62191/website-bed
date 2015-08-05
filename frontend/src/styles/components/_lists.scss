@@ -236,6 +236,11 @@ ol.refs {
         width: 655px;
         // margin: 0 auto;
         text-align: left;
+
+        li.space{
+            line-height: 20px;
+        }
+
     }
     @include mq("md") {
         

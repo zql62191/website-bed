@@ -35,6 +35,7 @@ var files = {
         'src/scripts/app/controllers/controllers.js',
         'src/scripts/app/controllers/mainController.js',
         'src/scripts/app/controllers/modalController.js',
+        'src/scripts/app/controllers/signupController.js',
         'src/scripts/app/controllers/profilesController.js',
         'src/scripts/app/controllers/resourcesController.js',
         'src/scripts/app/directives/directives.js',

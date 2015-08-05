@@ -17,11 +17,11 @@
             };
 
             $scope.repaint = function($event) {
-
+            
                 if ($(document.activeElement).is('input')) {
                     return;
                 }
-
+            
                 var div = $event.currentTarget;
                 div.style.display = 'none';
                 var tmp = div.offsetHeight;
