@@ -21,7 +21,7 @@ body.sign-up{
                 border: none;
                 display: block;
                 border-bottom: 1px solid #5C656D;
-                padding-bottom: 3px; 
+                padding-bottom: 3px;
                 margin-top: 25px;
 
                 .errormessage{
@@ -41,10 +41,25 @@ body.sign-up{
                 }
 
             }
+            .form-group.help-block{
+                display:none;
+            }
+            .form-group.has-error.help-block{
+                display: block;
+            }
+            .help-block{
+                position:absolute;
+                color: #FF4517;
+                margin-top: -30px;
+                right:20px;
+            }
+            .errormessage {
+                position:absolute;
+                color: #FF4517;
+                margin-top: -25px;
+            }
 
 
-
-            
 
             button{
                 border-style: none;
@@ -73,7 +88,7 @@ body.sign-up{
             }
 
         }
-        
+
     }
 
     @include mq('lg') {
@@ -135,32 +150,30 @@ body.sign-up{
                 margin-top: 25px;
             }
         }
-        
+
         p.info{
             font-size: 16px;
             color: #858B91;
             line-height: 19px;
         }
-        
+
         p.info a{
             color: white;
             font-weight: bold;
         }
 
         button{
-            
+
             background: #FFBE2C;
             border-radius: 4px;
             /* SUBMIT: */
-            
+
             font-size: 16px;
             color: #21282F;
             line-height: 19px;
             width: 100%;
             margin-bottom: 51px;
         }
-        
-        
     }
 
 

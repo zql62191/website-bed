@@ -20,18 +20,18 @@
                 md: 'only screen and (min-width: 641px) and (max-width: 1024px)',
                 lg: 'only screen and (min-width: 1025px)'
             };
-
+            
             // Changed to put it on the rootScope so services can access it too.
             $rootScope.mq = {};
-
+            
             _.each(mediaQueries, function(value, key) {
-
+            
                 $rootScope.mq[key] = matchmedia.is(value);
-
+            
                 matchmedia.on(value, function(mediaQueryList) {
                     $rootScope.mq[key] = mediaQueryList.matches;
                 });
-
+            
             });
 
             $scope.scrollTo = function(sel, dur) {
@@ -50,9 +50,9 @@
 
             // Modal stuff
             $scope.showModal = function(name, controller, scope) {
-
+            
                 $rootScope.$emit('close:modal');
-
+            
                 ModalService
                     .showModal({
                         // scope: scope || $scope,
