@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     grunt.registerTask('images:prod', ['copy:images']);
 
     grunt.registerTask('scripts:watch', ['newer:jshint:dev', 'newer:copy:scripts', 'newer:concat:dev', 'newer:uglify:dev']);
-    grunt.registerTask('scripts:dev', ['jshint:dev', 'copy:scripts', 'concat:dev', 'uglify:dev']);
+    grunt.registerTask('scripts:dev', ['jshint:dev', 'copy:scripts', 'concat:dev']);
     grunt.registerTask('scripts:prod', ['jshint:dev', 'copy:scripts', 'concat:prod', 'uglify:prod']);
 
     grunt.registerTask('assets', ['copy:assets']);
