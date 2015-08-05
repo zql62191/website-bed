@@ -197,7 +197,7 @@ body.effects-of-bed {
                 background-image: radial-gradient(50% 149%, #333E48 17%, #252F39 100%);
                 width: percentage(320/280); // needs to be full width despite being in .wrap--content
                 margin: 0 -6.25%;
-                padding: 39px 6.25% 44px 6.25%;
+                padding: 39px 6.25% 0 6.25%;
             }
 
         }
@@ -244,11 +244,29 @@ body.effects-of-bed {
             @include responsive-bg("#{$page}/sunny.png");
         }
 
+        .listen {
+            overflow: auto;
+
+            p {
+                @include mq('sm') {
+                    width: percentage(125/280);
+                    text-align: left;
+                    float: right;
+                    margin-right: percentage(16/280);
+                    padding-top: 9px;
+                }
+            }
+        }
+
         .audio-player {
 
             @include mq('sm') {
-                @include inline-block;
-                @include bst-img('sm/audio-player-placeholder.png');
+                // @include inline-block;
+                @include bst-img('sm/effects-of-bed/audio-player-placeholder.png');
+                width: percentage(75/280);
+                height: 57px;
+                margin: 0 percentage(15/280) 33px percentage(49/280);
+                float: left;
             }
         }
     }
