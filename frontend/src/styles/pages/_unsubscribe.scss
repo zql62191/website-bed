@@ -41,6 +41,13 @@
         }
 
     }
+     
+    .errorMsg{
+        position: absolute;
+        margin-left: 300px;
+        color: red;
+        margin-top: -25px;
+    }
 
     .heading--1{
         padding-bottom: 12px;
@@ -225,7 +232,7 @@
                  }
 
                  .accordion-title {
-                     width: 55%;
+                     width: 70%;
                      height: 94px;
 
                  }
@@ -252,7 +259,7 @@
                  }
 
                  .arrow.closed{
-                     left: 150%;
+                     left: 120%;
                      top: 20px;
                  }
                  
@@ -267,12 +274,11 @@
              }
 
              form {
-                 width: 145% !important;
+                 width: 115% !important;
                  margin: 0 auto;
 
                  input[type='text'], input[type='email'], select {
                      width: 100% !important;
-                     @include gs('light');
                      font-size: 18px;
                      color: #858B91;
                      line-height: 22px;

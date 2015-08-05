@@ -34,9 +34,11 @@ block content
                             .arrow.closed
                     mixin content
                         .formContainer
-                            form(name='opt-out-email', ng-submit="optOutEmail()", autocomplete='off', novalidate)
-                                input(type='email', placeholder="*E-mail", ng-model='email', ng-required="true", ng-class="{forminvalid: (opt-out-email.email.$invalid && opt-out-email.email.$dirty) || (opt-in.email.$invalid && invalidform)}")
-                                button(type='submit').btn.btn--yellow
+                            form(name='opt-out-email', autocomplete='off', novalidate, ng-controller="emailController")
+                                input(type='email', placeholder="*E-mail", ng-model='email', required)
+                                span.errorMsg(ng-show="(opt-out-email.email.$error.required && submitted) || (opt-out-email.$error.email && submitted)")
+                                    | Email is invalid
+                                button(type="submit", ng-click="submitEmail(opt-out-email)").btn.btn--yellow
                                     | SUBMIT
 
 
@@ -47,7 +49,7 @@ block content
                             .arrow.closed
                     mixin content
                         .formContainer
-                            form(name='opt-out-direct-mail', ng-submit="optOutDirectMail()", autocomplete='off', novalidate)
+                            form(name='opt-out-direct-mail', ng-submit="optOutDirectMail()", autocomplete='off', novalidate).directMail
                                 input(type='email', placeholder="E-mail", ng-model='email', ng-pattern="emailPattern",ng-required="true", ng-class="{forminvalid: (opt-out-direct-mail.email.$invalid && opt-out-direct-mail.email.$dirty) || (opt-out-direct-mail.email.$invalid && invalidform)}")
                                 input(type='text', placeholder="First Name", ng-model='firstName', ng-required="true", ng-class="{forminvalid: (opt-out-direct-mail.firstName.$invalid && opt-out-direct-mail.firstName.$dirty) || (opt-out-direct-mail.firstName.$invalid && invalidform)}")
                                 input(type='text', placeholder="Last Name", ng-model='lastname', ng-required="true", ng-class="{forminvalid: (opt-out-direct-mail.lastName.$invalid && opt-out-direct-mail.firstName.$dirty) || (opt-out-direct-mail.lastName.$invalid && invalidform)}")

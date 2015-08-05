@@ -12,8 +12,8 @@
 
             $scope.tabbedVideos = [{
                 tabclass : "what-is-bed",
-                tabtitle: "What is B.E.D.?",
-                disclaimer: "Drs. Bulik and Wilfley are paid consultants for Shire.",
+                tabtitle: "What Is B.E.D.?",
+                disclaimer: "Drs Bulik and Wilfley are paid consultants for Shire.",
                 videos : [
                     {
                         id: "essential-features-diag",
@@ -47,7 +47,7 @@
                     },
                     {
                         id: "functional-conseqs",
-                        title: "How is B.E.D. distinct from bulimia nervosa?",
+                        title: "What are the functional consequences of B.E.D. in adults?",
                         length: "2:00",
                         featuring: "Cynthia M. Bulik, PhD, FAED",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03322.mp4",
@@ -69,7 +69,7 @@
             },{
                 tabclass: "in-adults",
                 tabtitle: "B.E.D. in Adults",
-                disclaimer: "Drs. Grilo, Kornstein, and Wilfley are paid consultants for Shire.",
+                disclaimer: "Drs Grilo, Kornstein, and Wilfley are paid consultants for Shire.",
                 videos: [
                     {
                         id: "prevalence-comparison",
