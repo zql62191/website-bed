@@ -260,8 +260,16 @@ body.effects-of-bed {
 
         .audio-player {
 
+            @include mq('lg') {
+                @include bst-img('lg/effects-of-bed/audio-player-placeholder.png');
+                margin-top: 10px;
+
+                &.audio-1 {
+                    float: right;
+                }
+            }
+
             @include mq('sm') {
-                // @include inline-block;
                 @include bst-img('sm/effects-of-bed/audio-player-placeholder.png');
                 width: percentage(75/280);
                 height: 57px;
