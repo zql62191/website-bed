@@ -2,26 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbcce2c8-3578-4f84-9d91-65040b55ee89" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/src/images/lg/effects-of-bed/audio-player-placeholder.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/src/images/sm/effects-of-bed/audio-player-placeholder.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/src/scripts/vendor/angular-animate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/.idea/frontend.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/.idea/libraries/frontend_node_modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/src/scripts/app/controllers/signupController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/styles/pages/_effects-of-bed.scss" afterPath="$PROJECT_DIR$/frontend/src/styles/pages/_effects-of-bed.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/styles/pages/_identifying-patients.scss" afterPath="$PROJECT_DIR$/frontend/src/styles/pages/_identifying-patients.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/styles/pages/_sign-up.scss" afterPath="$PROJECT_DIR$/frontend/src/styles/pages/_sign-up.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/tasks/options/concat.js" afterPath="$PROJECT_DIR$/frontend/tasks/options/concat.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/styles/pages/_index.scss" afterPath="$PROJECT_DIR$/frontend/src/styles/pages/_index.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/markup/pages/dsm5-criteria.jade" afterPath="$PROJECT_DIR$/frontend/src/markup/pages/dsm5-criteria.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/markup/pages/effects-of-BED.jade" afterPath="$PROJECT_DIR$/frontend/src/markup/pages/effects-of-BED.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/scripts/app/controllers/mainController.js" afterPath="$PROJECT_DIR$/frontend/src/scripts/app/controllers/mainController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/scripts/app/controllers/modalController.js" afterPath="$PROJECT_DIR$/frontend/src/scripts/app/controllers/modalController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/markup/pages/patient-statistics.jade" afterPath="$PROJECT_DIR$/frontend/src/markup/pages/patient-statistics.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/markup/pages/recognizing-BED.jade" afterPath="$PROJECT_DIR$/frontend/src/markup/pages/recognizing-BED.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/markup/pages/sign-up.jade" afterPath="$PROJECT_DIR$/frontend/src/markup/pages/sign-up.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/tasks/tasks.js" afterPath="$PROJECT_DIR$/frontend/tasks/tasks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vyvanse-bed-hcp-website-dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,18 +32,78 @@
       <file leaf-file-name="dsm5-criteria.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/dsm5-criteria.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.2777777">
-              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            <state vertical-scroll-proportion="-13.611111">
+              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sign-up.jade" pinned="false" current-in-tab="true">
+      <file leaf-file-name="recognizing-BED.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/recognizing-BED.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.7777777">
+              <caret line="108" column="233" selection-start-line="108" selection-start-column="233" selection-end-line="108" selection-end-column="233" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="patient-statistics.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/patient-statistics.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.4567902">
+              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="potential-causes.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/potential-causes.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-34.074074">
+              <caret line="140" column="24" selection-start-line="140" selection-start-column="24" selection-end-line="140" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="effects-of-BED.jade" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/effects-of-BED.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.060714286">
+              <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profiles.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/profiles.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-53.61111">
+              <caret line="193" column="95" selection-start-line="193" selection-start-column="95" selection-end-line="193" selection-end-column="95" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="identifying-patients.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/identifying-patients.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sign-up.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/sign-up.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.58928573">
-              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+            <state vertical-scroll-proportion="-13.333333">
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -75,70 +122,8 @@
       <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.46296296">
-              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="effects-of-BED.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/effects-of-BED.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.833333">
-              <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_index.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/styles/pages/_index.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_sign-up.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/styles/pages/_sign-up.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.725491">
-              <caret line="126" column="23" selection-start-line="126" selection-start-column="23" selection-end-line="126" selection-end-column="23" />
-              <folding>
-                <marker date="1438800590000" expanded="true" signature="295:612" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="support-and-resources.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/support-and-resources.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5185184">
-              <caret line="58" column="33" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="privacy-policy.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/privacy-policy.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.160494">
-              <caret line="81" column="14" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_privacy-policy.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/styles/pages/_privacy-policy.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.941177">
-              <caret line="61" column="4" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
+            <state vertical-scroll-proportion="-12.685185">
+              <caret line="46" column="38" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -168,11 +153,8 @@
         <option value="$PROJECT_DIR$/frontend/src/scripts/app/controllers/unsubscribeCtrl.js" />
         <option value="$PROJECT_DIR$/frontend/src/markup/pages/unsubscribe.jade" />
         <option value="$PROJECT_DIR$/frontend/src/styles/pages/_unsubscribe.scss" />
-        <option value="$PROJECT_DIR$/frontend/src/markup/pages/dsm5-criteria.jade" />
         <option value="$PROJECT_DIR$/frontend/src/styles/pages/_sign-up.scss" />
-        <option value="$PROJECT_DIR$/frontend/src/markup/pages/recognizing-BED.jade" />
         <option value="$PROJECT_DIR$/frontend/src/markup/pages/potential-causes.jade" />
-        <option value="$PROJECT_DIR$/frontend/src/markup/pages/patient-statistics.jade" />
         <option value="$PROJECT_DIR$/frontend/src/styles/pages/_effects-of-bed.scss" />
         <option value="$PROJECT_DIR$/frontend/src/styles/pages/_profiles.scss" />
         <option value="$PROJECT_DIR$/frontend/src/markup/pages/profiles.jade" />
@@ -182,8 +164,12 @@
         <option value="$PROJECT_DIR$/frontend/src/markup/pages/privacy-policy.jade" />
         <option value="$PROJECT_DIR$/frontend/src/styles/pages/_dsm5-criteria.scss" />
         <option value="$PROJECT_DIR$/frontend/src/markup/pages/index.jade" />
-        <option value="$PROJECT_DIR$/frontend/src/markup/pages/effects-of-BED.jade" />
+        <option value="$PROJECT_DIR$/frontend/src/styles/pages/_index.scss" />
         <option value="$PROJECT_DIR$/frontend/src/markup/pages/sign-up.jade" />
+        <option value="$PROJECT_DIR$/frontend/src/markup/pages/dsm5-criteria.jade" />
+        <option value="$PROJECT_DIR$/frontend/src/markup/pages/recognizing-BED.jade" />
+        <option value="$PROJECT_DIR$/frontend/src/markup/pages/patient-statistics.jade" />
+        <option value="$PROJECT_DIR$/frontend/src/markup/pages/effects-of-BED.jade" />
       </list>
     </option>
   </component>
@@ -753,13 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/identifying-patients.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/thank-you.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -920,30 +899,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/recognizing-BED.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.574074">
-          <caret line="208" column="54" selection-start-line="208" selection-start-column="54" selection-end-line="208" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/potential-causes.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.962963">
-          <caret line="140" column="24" selection-start-line="140" selection-start-column="24" selection-end-line="140" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/patient-statistics.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.351852">
-          <caret line="142" column="22" selection-start-line="142" selection-start-column="22" selection-end-line="142" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/styles/pages/_effects-of-bed.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.470589">
@@ -956,14 +911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.0641026">
           <caret line="319" column="33" selection-start-line="319" selection-start-column="33" selection-end-line="319" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/profiles.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.24074">
-          <caret line="193" column="95" selection-start-line="193" selection-start-column="95" selection-end-line="193" selection-end-column="95" />
           <folding />
         </state>
       </provider>
@@ -1021,15 +968,23 @@
         <state vertical-scroll-proportion="-11.725491">
           <caret line="126" column="23" selection-start-line="126" selection-start-column="23" selection-end-line="126" selection-end-column="23" />
           <folding>
-            <marker date="1438800590000" expanded="true" signature="295:612" placeholder="{...}" />
+            <marker date="1438800590000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/dsm5-criteria.jade">
+    <entry file="file://$PROJECT_DIR$/frontend/src/styles/pages/_index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.2777777">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        <state vertical-scroll-proportion="-0.5882353">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/sign-up.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.333333">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1042,34 +997,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/styles/pages/_index.scss">
+    <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/dsm5-criteria.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-13.611111">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.46296296">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        <state vertical-scroll-proportion="-12.685185">
+          <caret line="46" column="38" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/profiles.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-53.61111">
+          <caret line="193" column="95" selection-start-line="193" selection-start-column="95" selection-end-line="193" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/identifying-patients.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/patient-statistics.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.4567902">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/potential-causes.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-34.074074">
+          <caret line="140" column="24" selection-start-line="140" selection-start-column="24" selection-end-line="140" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/recognizing-BED.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.7777777">
+          <caret line="108" column="233" selection-start-line="108" selection-start-column="233" selection-end-line="108" selection-end-column="233" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/effects-of-BED.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.833333">
-          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/sign-up.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58928573">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.060714286">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
           <folding />
         </state>
       </provider>

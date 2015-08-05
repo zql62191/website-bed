@@ -37,11 +37,11 @@ block content
 
                 p.info
                     | Shire respects your personal information. All information you have provided will be kept confidential and will not be used or distributed to anyone for any purpose other than what is explained in our Privacy Policy Statement. We encourage you to read our Privacy Policy Statement by clicking on this link:
-                    a(href='/hcp/privacy-policy.aspx') Review Shire Privacy Policy Statement.
+                    a(href='/hcp/privacy-policy.aspx') Review Shire Privacy Policy Statement. 
                     | This consent will be in effect until such time as you opt out of the program.
                 p.errormessage(ng-if="submitted && (optIn.$error.required || notMatch)")
                     | Please address the errors above
-                +a-active(type="button", ng-click="submitForm()", href="/hcp/thank-you.aspx").btn.btn--yellow
+                button(type="button", ng-click="submitForm()").btn.btn--yellow
                     | SUBMIT
     footer.footer--page
         .wrap--content
