@@ -15,7 +15,7 @@
                 if(form.$invalid){
                     return;
                 }
-                alert("email is sent");
+                //alert("email is sent");
             }
         }])
     
