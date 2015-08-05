@@ -13,7 +13,7 @@ block content
                 | Sign up to instantly receive the DSM-5&reg; diagnostic criteria for binge eating disorder (B.E.D.) and future B.E.D. content from Shire.
     section.section--page(ng-controller="signupController")
         .wrap--content
-            form(name='optIn', autocomplete='off', novalidate, show-errors='{showSuccess:true}').form-group
+            form(name='optIn', autocomplete='off', novalidate, show-errors='{showSuccess:true}', ng-submit="submitForm()").form-group
                 input(type='text', name="firstName", placeholder="First Name", ng-model='user.firstName', required).form-control
                 p.help-block(ng-if="submitted && optIn.firstName.$error.required")
                     | The user's first name is required
@@ -40,7 +40,7 @@ block content
                     | This consent will be in effect until such time as you opt out of the program.
                 p.errormessage(ng-if="submitted && (optIn.$error.required || notMatch)")
                     | Please address the errors above
-                button(type="button", ng-click="submitForm()").btn.btn--yellow
+                +a-active(type="button", ng-click="submitForm()", href="/hcp/thank-you.aspx").btn.btn--yellow
                     | SUBMIT
     footer.footer--page
         .wrap--content
