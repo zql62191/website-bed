@@ -26,8 +26,12 @@ body.sign-up{
 
                 .errormessage{
                     display: none;
+                    border-bottom: 1px solid #FF4517;
                 }
 
+                .help-block{
+                    border-bottom: 1px solid #FF4517;
+                }
                 &.forminvalid.ng-dirty, &.ng-dirty.ng-invalid-required, &.ng-touch.ng-invalid-required{
                     color: #FF4517;
                     border-bottom: 1px solid #FF4517;
@@ -35,8 +39,10 @@ body.sign-up{
                     .errormessage{
                         color: #FF4517;
                         display: inline-block;
+                        border-bottom: 1px solid #FF4517;
                         // position:absolute;
                     }
+
                 }
 
             }
@@ -72,6 +78,11 @@ body.sign-up{
                 margin-bottom:32px;
                 color: #858B91;
                 font-size: 18px;
+            }
+
+            p.info a{
+                color: white;
+                font-weight: bold;
             }
 
             .heading--2{
@@ -153,6 +164,7 @@ body.sign-up{
 
         p.info a{
             color: white;
+            font-weight: bold;
         }
 
         button{
@@ -171,4 +183,3 @@ body.sign-up{
 
 
 }
-
