@@ -96,3 +96,4 @@ The statement has been terminated.
 2015-01-16 13:49:28,349 [113] INFO BEDService.BEDUnsubscribe - BED:: User: t@t.t | Operation: Unsubscribtion_error |  Category: SetUnsubscribeDataBoth | Message: System.Collections.Generic.List`1[System.String] 
 2015-01-16 13:50:44,660 [43] INFO BEDService.BEDUnsubscribe - BED:: User: t@t.t | Operation: Unsubscribtion_error |  Category: SetUnsubscribeDataBoth | Message: System.Collections.Generic.List`1[System.String] 
 2015-01-16 13:57:53,019 [100] INFO BEDService.BEDUnsubscribe - BED:: User: t@t.t | Operation: Unsubscribtion_error |  Category: SetUnsubscribeDataBoth | Message: System.Collections.Generic.List`1[System.String] 
+2015-07-30 12:02:21,529 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 

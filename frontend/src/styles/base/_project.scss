@@ -71,6 +71,12 @@ a {
         position: absolute;
         display: block;
     }
+
+    &.anchor{
+        padding-top: 118px !important;
+        height: 0px;
+        display: inline;
+    }
 }
 
 p a {

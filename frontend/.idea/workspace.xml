@@ -2,57 +2,992 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b598d674-96f2-448d-a693-c34610568ca7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/lg/sprites/arrow-gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/lgr/sprites/arrow-gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/md/sprites/arrow-gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/mdr/sprites/arrow-gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sm/sprites/arrow-gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/smr/sprites/arrow-gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/lg/sprites/arrow-yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/lgr/sprites/arrow-yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/md/sprites/arrow-yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/mdr/sprites/arrow-yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sm/sprites/arrow-yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/smr/sprites/arrow-yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sm/profiles/kimberly.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/smr/profiles/kimberly.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/scripts/vendor/angular-animate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/frontend.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/frontend_node_modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/pages/_dsm5-criteria.scss" afterPath="$PROJECT_DIR$/src/styles/pages/_dsm5-criteria.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/pages/_effects-of-bed.scss" afterPath="$PROJECT_DIR$/src/styles/pages/_effects-of-bed.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/layout/_header--global.scss" afterPath="$PROJECT_DIR$/src/styles/layout/_header--global.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/rgbapng/0a59924d-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/rgbapng/0a59924d-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/rgbapng/0a59924d-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/rgbapng/0a59924d-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/rgbapng/0b2437b3-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/rgbapng/0b2437b3-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/rgbapng/0b2437b3-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/rgbapng/0b2437b3-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/effects-of-bed/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/effects-of-bed/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/md/effects-of-bed/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/mdr/effects-of-bed/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/effects-of-bed/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/effects-of-bed/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lg/effects-of-bed/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lgr/effects-of-bed/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/md/effects-of-bed/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/mdr/effects-of-bed/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/sm/effects-of-bed/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/smr/effects-of-bed/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lg/effects-of-bed/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lgr/effects-of-bed/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/md/effects-of-bed/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/mdr/effects-of-bed/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/sm/effects-of-bed/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/smr/effects-of-bed/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/effects-of-bed/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/effects-of-bed/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/md/effects-of-bed/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/mdr/effects-of-bed/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/sm/effects-of-bed/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/smr/effects-of-bed/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/rgbapng/1b2025cc-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/rgbapng/1b2025cc-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/patient-statistics/2-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/patient-statistics/2-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/md/patient-statistics/2-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/mdr/patient-statistics/2-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/patient-statistics/2-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/patient-statistics/2-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lg/patient-statistics/2-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lgr/patient-statistics/2-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/md/patient-statistics/2-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/mdr/patient-statistics/2-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/sm/patient-statistics/2-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/smr/patient-statistics/2-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lg/patient-statistics/2-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lgr/patient-statistics/2-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/md/patient-statistics/2-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/mdr/patient-statistics/2-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/sm/patient-statistics/2-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/smr/patient-statistics/2-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/patient-statistics/2-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/patient-statistics/2-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/md/patient-statistics/2-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/mdr/patient-statistics/2-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/sm/patient-statistics/2-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/smr/patient-statistics/2-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/rgbapng/323d47e5-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/rgbapng/323d47e5-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/rgbapng/323d47e5-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/rgbapng/323d47e5-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/rgbapng/323d47f2-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/rgbapng/323d47f2-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/rgbapng/323d47f2-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/rgbapng/323d47f2-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/rgbapng/333e48bf-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/rgbapng/333e48bf-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/rgbapng/333e48bf-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/rgbapng/333e48bf-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/rgbapng/333e48e5-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/rgbapng/333e48e5-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/rgbapng/333e48f2-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/rgbapng/333e48f2-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/rgbapng/333e48f2-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/rgbapng/333e48f2-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/patient-statistics/5-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/patient-statistics/5-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/md/patient-statistics/5-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/mdr/patient-statistics/5-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/patient-statistics/5-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/patient-statistics/5-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lg/patient-statistics/5-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lgr/patient-statistics/5-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/md/patient-statistics/5-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/mdr/patient-statistics/5-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/sm/patient-statistics/5-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/smr/patient-statistics/5-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lg/patient-statistics/5-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lgr/patient-statistics/5-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/md/patient-statistics/5-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/mdr/patient-statistics/5-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/sm/patient-statistics/5-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/smr/patient-statistics/5-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/patient-statistics/5-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/patient-statistics/5-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/md/patient-statistics/5-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/mdr/patient-statistics/5-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/sm/patient-statistics/5-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/smr/patient-statistics/5-to-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/effects-of-bed/63.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/effects-of-bed/63.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/md/effects-of-bed/63.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/mdr/effects-of-bed/63.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/effects-of-bed/63.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/effects-of-bed/63.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lg/effects-of-bed/63.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lgr/effects-of-bed/63.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/md/effects-of-bed/63.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/mdr/effects-of-bed/63.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/sm/effects-of-bed/63.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/smr/effects-of-bed/63.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lg/effects-of-bed/63.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lgr/effects-of-bed/63.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/md/effects-of-bed/63.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/mdr/effects-of-bed/63.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/sm/effects-of-bed/63.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/smr/effects-of-bed/63.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/effects-of-bed/63.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/effects-of-bed/63.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/md/effects-of-bed/63.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/mdr/effects-of-bed/63.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/sm/effects-of-bed/63.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/smr/effects-of-bed/63.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/me/background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/me/background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/me/bigplay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/me/bigplay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/potential-causes/brain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/potential-causes/brain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/md/potential-causes/brain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/mdr/potential-causes/brain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/potential-causes/brain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/potential-causes/brain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lg/potential-causes/brain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lgr/potential-causes/brain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/md/potential-causes/brain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/mdr/potential-causes/brain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/sm/potential-causes/brain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/smr/potential-causes/brain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lg/potential-causes/brain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lgr/potential-causes/brain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/md/potential-causes/brain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/mdr/potential-causes/brain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/sm/potential-causes/brain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/smr/potential-causes/brain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/potential-causes/brain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/potential-causes/brain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/md/potential-causes/brain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/mdr/potential-causes/brain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/sm/potential-causes/brain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/smr/potential-causes/brain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/profiles/carousel_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/profiles/carousel_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/profiles/carousel_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/profiles/carousel_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/profiles/carousel_arrow_hover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/profiles/carousel_arrow_hover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/recognizing-bed/chart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/recognizing-bed/chart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/md/recognizing-bed/chart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/mdr/recognizing-bed/chart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/recognizing-bed/chart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/recognizing-bed/chart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lg/recognizing-bed/chart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lgr/recognizing-bed/chart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/md/recognizing-bed/chart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/mdr/recognizing-bed/chart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/sm/recognizing-bed/chart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/smr/recognizing-bed/chart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lg/recognizing-bed/chart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lgr/recognizing-bed/chart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/md/recognizing-bed/chart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/mdr/recognizing-bed/chart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/sm/recognizing-bed/chart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/smr/recognizing-bed/chart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/recognizing-bed/chart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/recognizing-bed/chart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/md/recognizing-bed/chart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/mdr/recognizing-bed/chart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/sm/recognizing-bed/chart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/smr/recognizing-bed/chart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/profiles/circle-arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/profiles/circle-arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/profiles/circle-arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/profiles/circle-arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/me/controls-ted.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/me/controls-ted.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/me/controls-wmp-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/me/controls-wmp-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/me/controls-wmp.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/me/controls-wmp.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/me/controls.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/me/controls.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/index/cta1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/index/cta1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/md/index/cta1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/mdr/index/cta1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/index/cta1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/index/cta1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lg/index/cta1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lgr/index/cta1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/md/index/cta1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/mdr/index/cta1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/sm/index/cta1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/smr/index/cta1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lg/index/cta1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lgr/index/cta1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/md/index/cta1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/mdr/index/cta1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/sm/index/cta1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/smr/index/cta1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/index/cta1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/index/cta1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/md/index/cta1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/mdr/index/cta1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/sm/index/cta1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/smr/index/cta1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/index/cta2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/index/cta2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/md/index/cta2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/mdr/index/cta2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/index/cta2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/index/cta2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lg/index/cta2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lgr/index/cta2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/md/index/cta2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/mdr/index/cta2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/sm/index/cta2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/smr/index/cta2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lg/index/cta2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lgr/index/cta2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/md/index/cta2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/mdr/index/cta2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/sm/index/cta2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/smr/index/cta2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/index/cta2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/index/cta2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/md/index/cta2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/mdr/index/cta2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/sm/index/cta2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/smr/index/cta2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/index/cta3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/index/cta3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/md/index/cta3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/mdr/index/cta3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/index/cta3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/index/cta3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lg/index/cta3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lgr/index/cta3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/md/index/cta3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/mdr/index/cta3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/sm/index/cta3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/smr/index/cta3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lg/index/cta3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lgr/index/cta3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/md/index/cta3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/mdr/index/cta3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/sm/index/cta3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/smr/index/cta3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/index/cta3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/index/cta3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/md/index/cta3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/mdr/index/cta3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/sm/index/cta3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/smr/index/cta3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/identifying-patients/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/index/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/identifying-patients/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/index/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/md/identifying-patients/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/md/index/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/mdr/identifying-patients/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/mdr/index/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/identifying-patients/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/index/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/identifying-patients/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/index/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lg/identifying-patients/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lg/index/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lgr/identifying-patients/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lgr/index/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/md/identifying-patients/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/md/index/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/mdr/identifying-patients/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/mdr/index/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/sm/identifying-patients/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/sm/index/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/smr/identifying-patients/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/smr/index/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lg/identifying-patients/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lg/index/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lgr/identifying-patients/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lgr/index/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/md/identifying-patients/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/md/index/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/mdr/identifying-patients/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/mdr/index/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/sm/identifying-patients/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/sm/index/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/smr/identifying-patients/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/smr/index/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/identifying-patients/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/index/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/identifying-patients/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/index/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/md/identifying-patients/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/md/index/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/mdr/identifying-patients/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/mdr/index/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/sm/identifying-patients/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/sm/index/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/smr/identifying-patients/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/smr/index/diego.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/profiles/diego.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/profiles/diego.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/profiles/diego.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/profiles/diego.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/profiles/diego.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/profiles/diego.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sm/profiles/diego.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/smr/profiles/diego.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/identifying-patients/diego_OLD.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/identifying-patients/diego_OLD.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/potential-causes/dna.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/potential-causes/dna.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/md/potential-causes/dna.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/mdr/potential-causes/dna.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/potential-causes/dna.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/potential-causes/dna.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lg/potential-causes/dna.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lgr/potential-causes/dna.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/md/potential-causes/dna.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/mdr/potential-causes/dna.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/sm/potential-causes/dna.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/smr/potential-causes/dna.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lg/potential-causes/dna.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lgr/potential-causes/dna.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/md/potential-causes/dna.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/mdr/potential-causes/dna.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/sm/potential-causes/dna.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/smr/potential-causes/dna.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/potential-causes/dna.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/potential-causes/dna.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/md/potential-causes/dna.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/mdr/potential-causes/dna.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/sm/potential-causes/dna.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/smr/potential-causes/dna.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/unsubscribe/down_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/unsubscribe/down_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/identifying-patients/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/index/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/identifying-patients/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/index/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/md/identifying-patients/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/md/index/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/mdr/identifying-patients/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/mdr/index/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/identifying-patients/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/index/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/identifying-patients/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/index/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lg/identifying-patients/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lg/index/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lgr/identifying-patients/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lgr/index/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/md/identifying-patients/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/md/index/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/mdr/identifying-patients/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/mdr/index/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/sm/identifying-patients/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/sm/index/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/smr/identifying-patients/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/smr/index/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lg/identifying-patients/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lg/index/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lgr/identifying-patients/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lgr/index/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/md/identifying-patients/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/md/index/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/mdr/identifying-patients/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/mdr/index/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/sm/identifying-patients/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/sm/index/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/smr/identifying-patients/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/smr/index/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/identifying-patients/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/index/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/identifying-patients/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/index/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/md/identifying-patients/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/md/index/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/mdr/identifying-patients/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/mdr/index/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/sm/identifying-patients/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/sm/index/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/smr/identifying-patients/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/smr/index/julie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/profiles/julie.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/profiles/julie.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/profiles/julie.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/profiles/julie.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/profiles/julie.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/profiles/julie.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sm/identifying-patients/julie.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sm/profiles/julie.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/smr/profiles/julie.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/identifying-patients/julie_OLD.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/identifying-patients/julie_OLD.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/identifying-patients/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/index/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/identifying-patients/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/index/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/md/identifying-patients/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/md/index/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/mdr/identifying-patients/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/mdr/index/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/identifying-patients/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/index/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/identifying-patients/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/index/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lg/identifying-patients/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lg/index/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lgr/identifying-patients/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lgr/index/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/md/identifying-patients/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/md/index/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/mdr/identifying-patients/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/mdr/index/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/sm/identifying-patients/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/sm/index/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/smr/identifying-patients/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/smr/index/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lg/identifying-patients/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lg/index/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lgr/identifying-patients/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lgr/index/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/md/identifying-patients/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/md/index/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/mdr/identifying-patients/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/mdr/index/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/sm/identifying-patients/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/sm/index/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/smr/identifying-patients/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/smr/index/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/identifying-patients/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/index/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/identifying-patients/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/index/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/md/identifying-patients/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/md/index/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/mdr/identifying-patients/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/mdr/index/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/sm/identifying-patients/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/sm/index/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/smr/identifying-patients/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/smr/index/kimberly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/profiles/kimberly.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/profiles/kimberly.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/profiles/kimberly.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/profiles/kimberly.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/profiles/kimberly.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/profiles/kimberly.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/sm/profiles/kimberly.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/smr/profiles/kimberly.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/identifying-patients/kimberly_OLD.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/identifying-patients/kimberly_OLD.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/profiles/kimberly_lo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/profiles/kimberly_lo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/profiles/kimberly_lo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/profiles/kimberly_lo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/me/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/me/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/patient-statistics/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/patient-statistics/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/md/patient-statistics/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/mdr/patient-statistics/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/patient-statistics/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/patient-statistics/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lg/patient-statistics/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lgr/patient-statistics/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/md/patient-statistics/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/mdr/patient-statistics/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/sm/patient-statistics/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/smr/patient-statistics/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lg/patient-statistics/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lgr/patient-statistics/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/md/patient-statistics/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/mdr/patient-statistics/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/sm/patient-statistics/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/smr/patient-statistics/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/patient-statistics/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/patient-statistics/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/md/patient-statistics/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/mdr/patient-statistics/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/sm/patient-statistics/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/smr/patient-statistics/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/potential-causes/neuron-closeup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/potential-causes/neuron-closeup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/md/potential-causes/neuron-closeup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/mdr/potential-causes/neuron-closeup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/potential-causes/neuron-closeup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/potential-causes/neuron-closeup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lg/potential-causes/neuron-closeup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lgr/potential-causes/neuron-closeup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/md/potential-causes/neuron-closeup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/mdr/potential-causes/neuron-closeup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/sm/potential-causes/neuron-closeup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/smr/potential-causes/neuron-closeup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lg/potential-causes/neuron-closeup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lgr/potential-causes/neuron-closeup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/md/potential-causes/neuron-closeup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/mdr/potential-causes/neuron-closeup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/sm/potential-causes/neuron-closeup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/smr/potential-causes/neuron-closeup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/potential-causes/neuron-closeup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/potential-causes/neuron-closeup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/md/potential-causes/neuron-closeup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/mdr/potential-causes/neuron-closeup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/sm/potential-causes/neuron-closeup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/smr/potential-causes/neuron-closeup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/potential-causes/neuron.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/potential-causes/neuron.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/md/potential-causes/neuron.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/mdr/potential-causes/neuron.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/potential-causes/neuron.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/potential-causes/neuron.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lg/potential-causes/neuron.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lgr/potential-causes/neuron.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/md/potential-causes/neuron.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/mdr/potential-causes/neuron.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/sm/potential-causes/neuron.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/smr/potential-causes/neuron.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lg/potential-causes/neuron.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lgr/potential-causes/neuron.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/md/potential-causes/neuron.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/mdr/potential-causes/neuron.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/sm/potential-causes/neuron.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/smr/potential-causes/neuron.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/potential-causes/neuron.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/potential-causes/neuron.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/md/potential-causes/neuron.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/mdr/potential-causes/neuron.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/sm/potential-causes/neuron.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/smr/potential-causes/neuron.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/support-and-resources/new-ribbon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/support-and-resources/new-ribbon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/identifying-patients/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/index/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/identifying-patients/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/index/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/md/identifying-patients/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/md/index/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/mdr/identifying-patients/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/mdr/index/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/identifying-patients/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/index/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/identifying-patients/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/index/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lg/identifying-patients/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lg/index/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lgr/identifying-patients/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lgr/index/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/md/identifying-patients/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/md/index/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/mdr/identifying-patients/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/mdr/index/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/sm/identifying-patients/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/sm/index/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/smr/identifying-patients/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/smr/index/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lg/identifying-patients/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lg/index/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lgr/identifying-patients/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lgr/index/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/md/identifying-patients/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/md/index/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/mdr/identifying-patients/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/mdr/index/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/sm/identifying-patients/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/sm/index/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/smr/identifying-patients/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/smr/index/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/identifying-patients/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/index/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/identifying-patients/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/index/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/md/identifying-patients/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/md/index/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/mdr/identifying-patients/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/mdr/index/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/sm/identifying-patients/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/sm/index/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/smr/identifying-patients/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/smr/index/nikki.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/profiles/nikki.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/profiles/nikki.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/profiles/nikki.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/profiles/nikki.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/profiles/nikki.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/profiles/nikki.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sm/profiles/nikki.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/smr/profiles/nikki.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/identifying-patients/nikki_OLD.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/identifying-patients/nikki_OLD.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/recognizing-bed/oval_4_of_5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/recognizing-bed/oval_4_of_5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/recognizing-bed/oval_4_of_5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/recognizing-bed/oval_4_of_5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/profiles/oval_mobile_empty.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/profiles/oval_mobile_empty.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sm/profiles/oval_mobile_empty.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/smr/profiles/oval_mobile_empty.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/profiles/oval_mobile_full.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/profiles/oval_mobile_full.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sm/profiles/oval_mobile_full.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/smr/profiles/oval_mobile_full.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/recognizing-bed/oval_nearly_half.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/recognizing-bed/oval_nearly_half.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/recognizing-bed/oval_nearly_half.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/recognizing-bed/oval_nearly_half.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/potential-causes/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/potential-causes/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/md/potential-causes/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/mdr/potential-causes/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/potential-causes/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/potential-causes/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lg/potential-causes/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lgr/potential-causes/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/md/potential-causes/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/mdr/potential-causes/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/sm/potential-causes/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/smr/potential-causes/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lg/potential-causes/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lgr/potential-causes/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/md/potential-causes/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/mdr/potential-causes/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/sm/potential-causes/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/smr/potential-causes/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/potential-causes/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/potential-causes/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/md/potential-causes/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/mdr/potential-causes/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/sm/potential-causes/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/smr/potential-causes/people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/support-and-resources/placeholder-video-player.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/support-and-resources/placeholder-video-player.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/support-and-resources/play-button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/support-and-resources/play-button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/shire-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/shire-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/md/shire-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/mdr/shire-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/shire-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/shire-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lg/shire-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lgr/shire-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/md/shire-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/mdr/shire-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/sm/shire-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/smr/shire-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lg/shire-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lgr/shire-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/md/shire-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/mdr/shire-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/sm/shire-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/smr/shire-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/shire-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/shire-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/md/shire-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/mdr/shire-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/sm/shire-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/smr/shire-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/profiles/slider-dot-empty.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/profiles/slider-dot-empty.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/profiles/slider-dot-empty.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/profiles/slider-dot-empty.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/profiles/slider-dot-full.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/profiles/slider-dot-full.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/profiles/slider-dot-full.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/profiles/slider-dot-full.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/md/sprites-s0769db70c5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/md/sprites-s0769db70c5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/md/sprites-s0769db70c5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/mdr/sprites-s0d0797cb93.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/mdr/sprites-s0d0797cb93.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/smr/sprites-s1b772872c1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/smr/sprites-s1b772872c1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/smr/sprites-s1b772872c1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/md/sprites-s25df459089.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/md/sprites-s25df459089.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lgr/sprites-s43cd0f6f86.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/sprites-s43cd0f6f86.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/sprites-s446362504e.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/sprites-s446362504e.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lgr/sprites-s4b8ab12f68.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lgr/sprites-s4b8ab12f68.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lgr/sprites-s4b8ab12f68.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/mdr/sprites-s4d9f11fe65.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/mdr/sprites-s4d9f11fe65.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/mdr/sprites-s4d9f11fe65.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/smr/sprites-s85ffeee91e.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/smr/sprites-s85ffeee91e.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/sprites-sae4585e737.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/sm/sprites-sae4585e737.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/sm/sprites-sb5eff1ff90.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/sm/sprites-sb5eff1ff90.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/sm/sprites-sb5eff1ff90.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lg/sprites-sf2e6eca70f.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lg/sprites-sf2e6eca70f.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/sprites-sf2e6eca70f.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/effects-of-bed/sunny.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/md/effects-of-bed/sunny.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/sm/effects-of-bed/sunny.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/lg/effects-of-bed/sunny.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/md/effects-of-bed/sunny.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/sm/effects-of-bed/sunny.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/lg/effects-of-bed/sunny.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/md/effects-of-bed/sunny.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/sm/effects-of-bed/sunny.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/effects-of-bed/sunny.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/md/effects-of-bed/sunny.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/sm/effects-of-bed/sunny.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/transparent.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/img/transparent.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/img/transparent.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/transparent.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/img/lg/support-and-resources/viewed-ribbon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/img/lg/support-and-resources/viewed-ribbon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/App_Code/AuditTrail.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/BEDLogFile.txt.exclude" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/App_Code/BEDService.svc.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/Service/BEDService.svc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite.sln" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/common/config/CommonContent.config" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/App_Code/DBDataSource.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/db/DBDataSource.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/common/config/Environment.config" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/App_Code/ErrorDataSource.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/db/ErrorDataSource.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/App_Code/FormAddress.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/App_Code/FormEmail.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/App_Code/FormName.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/App_Code/IBEDService.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/js/OLD_ASSETS_bed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/js/OLD_ASSETS_bed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/App_Code/OptIn.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/common/config/Realtime.config" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/App_Code/Settings.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/db/Settings.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/Bin/ShireRealtime.XmlSerializers.dll.refresh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/Bin/ShireRealtime.dll.refresh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/Bin/ShireRegistration.dll.refresh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/Bin/ShireUtility.dll.refresh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/Bin/ShireWeb.dll.refresh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/App_Code/Util.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/db/Util.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/_404.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/me/__vendor.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/me/__vendor.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/pages/_thank-you.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/js/app.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/js/app.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/js/app.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/me/bigplay.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/me/bigplay.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/js/inline/cloak.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/js/inline/cloak.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/js/inline/cloak.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/contact-us.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/contact-us.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/contact-us.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/me/controls.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/me/controls.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/dsm5-criteria.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/dsm5-criteria.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/dsm5-criteria.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/dsm5-criteria.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/dsm5-criteria.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/effects-of-BED.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/effects-of-BED.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/effects-of-BED.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/effects-of-BED.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/effects-of-BED.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/js/head.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/js/head.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/js/head.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/js/head.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/js/head.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/js/head.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/js/head.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/identifying-patients.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/identifying-patients.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/identifying-patients.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/identifying-patients.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/identifying-patients.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/js/inline/iev.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/js/inline/iev.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/js/inline/iev.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/index.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/index.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/index.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/index.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/index.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/views/modal/interstitial.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/views/modal/interstitial.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/Bin/log4net.dll.refresh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/me/mediaelementplayer.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/me/mediaelementplayer.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/patient-statistics.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/patient-statistics.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/patient-statistics.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/patient-statistics.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/patient-statistics.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/potential-causes.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/potential-causes.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/potential-causes.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/potential-causes.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/potential-causes.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/privacy-policy.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/privacy-policy.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/privacy-policy.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/profiles.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/profiles.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/profiles.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/profiles.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/profiles.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/recognizing-BED.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/recognizing-BED.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/recognizing-BED.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/recognizing-BED.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/recognizing-BED.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/configs/reg_general.config" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/configs/reg_parameter.config" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/configs/reg_validation.config" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/sign-up.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/sign-up.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/sign-up.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/sign-up.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/sign-up.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/start.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/start.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/css/styles.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/css/styles.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/css/styles.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/css/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/css/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/css/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/css/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/support-and-resources.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/support-and-resources.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/support-and-resources.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/support-and-resources.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/support-and-resources.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/js/templates.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/js/templates.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/js/templates.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/js/templates.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/test.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/test.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/test.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/test.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/markup/pages/thank-you.jade" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/unsubscribe.aspx.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/unsubscribe.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/unsubscribe.aspx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/scripts/app/controllers/unsubscribeCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/js/vendor.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/js/vendor.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/js/vendor.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../REPLACE/ME/js/vendor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/js/vendor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/js/vendor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/js/vendor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDSite/js/inline/vp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/js/inline/vp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/js/inline/vp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../backend/hcp/web.config" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/BEDLogFile.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/BEDService.Publish.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/BEDService.csproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/BEDService.csproj.user" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/BEDService.svc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/BEDService.svc.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/Global.asax" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/Global.asax.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/IBEDService.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/Model/AuditTrail.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/Model/FormAddress.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/Model/FormEmail.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/Model/OptIn.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/Properties/AssemblyInfo.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/Properties/AssemblyInfo.log4net.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/Web - Copy.config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/Web.config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/bin/ShireRealtime.XmlSerializers.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/bin/ShireRealtime.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/bin/ShireUtility.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/bin/ShireWeb.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/bin/log4net.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/common/config/Environment.config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/common/config/Realtime.config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/db/DBDataSource.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/db/ErrorDataSource.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/db/Settings.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BED/db/Util.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDService.sln" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDSite/About.aspx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDSite/About.aspx.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDSite/Account/ChangePassword.aspx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDSite/Account/ChangePassword.aspx.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDSite/Account/ChangePasswordSuccess.aspx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDSite/Account/ChangePasswordSuccess.aspx.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDSite/Account/Login.aspx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDSite/Account/Login.aspx.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDSite/Account/Register.aspx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDSite/Account/Register.aspx.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDSite/Account/Web.config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDSite/BEDSite.sln" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDSite/BEDSite.sln.exclude" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDSite/Default.aspx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDSite/Default.aspx.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDSite/Site.master" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDSite/Site.master.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDSite/bed_dsm5_download.aspx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDSite/bed_dsm5_download.aspx.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDUnsubscribe/Site.master" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDUnsubscribe/Site.master.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDWeb/Default.aspx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDWeb/Default.aspx.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDWeb/Register.aspx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDWeb/Register.aspx.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDWeb/Scripts/JScript.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDWeb/Scripts/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDWeb/Scripts/jquery-1.4.1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDWeb/Scripts/jquery-1.8.3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDWeb/Scripts/register.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDWeb/Scripts/script.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDWeb/Scripts/unsubscribe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDWeb/Styles/Site.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDWeb/Unsubscribe.aspx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDWeb/Unsubscribe.aspx.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDWeb/content/register.htm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDWeb/content/unsubscribe.htm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../backend/BEDWeb/web.config" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../backend/BEDSite/BEDSite.suo" afterPath="$PROJECT_DIR$/../backend/BEDSite/BEDSite.suo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../backend/BEDSite/BEDLogFile.txt" afterPath="$PROJECT_DIR$/../backend/BEDSite/BEDLogFile.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../backend/BEDUnsubscribe/BEDLogFile.txt" afterPath="$PROJECT_DIR$/../backend/BEDUnsubscribe/BEDLogFile.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../backend/BEDSite/Global.asax" afterPath="$PROJECT_DIR$/../backend/BEDSite/Global.asax" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vagrantfile" afterPath="$PROJECT_DIR$/Vagrantfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../backend/BEDSite/Web.config" afterPath="$PROJECT_DIR$/../backend/BEDSite/Web.config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/pages/__pages.scss" afterPath="$PROJECT_DIR$/src/styles/pages/__pages.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/pages/_identifying-patients.scss" afterPath="$PROJECT_DIR$/src/styles/pages/_identifying-patients.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/pages/_index.scss" afterPath="$PROJECT_DIR$/src/styles/pages/_index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/components/_lists.scss" afterPath="$PROJECT_DIR$/src/styles/components/_lists.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/pages/_patient-statistics.scss" afterPath="$PROJECT_DIR$/src/styles/pages/_patient-statistics.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/pages/_potential-causes.scss" afterPath="$PROJECT_DIR$/src/styles/pages/_potential-causes.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/pages/_profiles.scss" afterPath="$PROJECT_DIR$/src/styles/pages/_profiles.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/base/_project.scss" afterPath="$PROJECT_DIR$/src/styles/base/_project.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/pages/_recognizing-bed.scss" afterPath="$PROJECT_DIR$/src/styles/pages/_recognizing-bed.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/pages/_sign-up.scss" afterPath="$PROJECT_DIR$/src/styles/pages/_sign-up.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/pages/_support-and-resources.scss" afterPath="$PROJECT_DIR$/src/styles/pages/_support-and-resources.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/base/_typography.scss" afterPath="$PROJECT_DIR$/src/styles/base/_typography.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/pages/_unsubscribe.scss" afterPath="$PROJECT_DIR$/src/styles/pages/_unsubscribe.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/markup/layouts/base.jade" afterPath="$PROJECT_DIR$/src/markup/layouts/base.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/options/concat.js" afterPath="$PROJECT_DIR$/tasks/options/concat.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/options/connect.js" afterPath="$PROJECT_DIR$/tasks/options/connect.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../backend/BEDSite/contact-us.aspx" afterPath="$PROJECT_DIR$/../backend/BEDSite/contact-us.aspx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/markup/pages/dsm5-criteria.jade" afterPath="$PROJECT_DIR$/src/markup/pages/dsm5-criteria.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/markup/pages/effects-of-BED.jade" afterPath="$PROJECT_DIR$/src/markup/pages/effects-of-BED.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/markup/pages/identifying-patients.jade" afterPath="$PROJECT_DIR$/src/markup/pages/identifying-patients.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scripts/app/controllers/mainController.js" afterPath="$PROJECT_DIR$/src/scripts/app/controllers/mainController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scripts/app/controllers/modalController.js" afterPath="$PROJECT_DIR$/src/scripts/app/controllers/modalController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/markup/pages/index.jade" afterPath="$PROJECT_DIR$/src/markup/pages/index.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/options/jade.js" afterPath="$PROJECT_DIR$/tasks/options/jade.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/options/jshint.js" afterPath="$PROJECT_DIR$/tasks/options/jshint.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/markup/pages/patient-statistics.jade" afterPath="$PROJECT_DIR$/src/markup/pages/patient-statistics.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/markup/pages/potential-causes.jade" afterPath="$PROJECT_DIR$/src/markup/pages/potential-causes.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../backend/BEDSite/privacy-policy.aspx.cs" afterPath="$PROJECT_DIR$/../backend/BEDSite/privacy-policy.aspx.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../backend/BEDSite/privacy-policy.aspx" afterPath="$PROJECT_DIR$/../backend/BEDSite/privacy-policy.aspx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/markup/pages/privacy-policy.jade" afterPath="$PROJECT_DIR$/src/markup/pages/privacy-policy.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/markup/pages/profiles.jade" afterPath="$PROJECT_DIR$/src/markup/pages/profiles.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/markup/pages/recognizing-BED.jade" afterPath="$PROJECT_DIR$/src/markup/pages/recognizing-BED.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scripts/app/controllers/resourcesController.js" afterPath="$PROJECT_DIR$/src/scripts/app/controllers/resourcesController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/markup/pages/sign-up.jade" afterPath="$PROJECT_DIR$/src/markup/pages/sign-up.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scripts/app/controllers/signupController.js" afterPath="$PROJECT_DIR$/src/scripts/app/controllers/signupController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/markup/pages/support-and-resources.jade" afterPath="$PROJECT_DIR$/src/markup/pages/support-and-resources.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/tasks.js" afterPath="$PROJECT_DIR$/tasks/tasks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="frontend.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,23 +1008,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sign-up.jade" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sign-up.jade" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/markup/pages/sign-up.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3888888">
-              <caret line="5" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5578011">
+              <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
               <folding>
-                <marker date="1438788496000" expanded="true" signature="0:3354" placeholder="..." />
+                <marker date="1438791077000" expanded="true" signature="0:4" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signupController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="signupController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scripts/app/controllers/signupController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42441392">
-              <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
+            <state vertical-scroll-proportion="-15.833333">
+              <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="58" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -98,8 +1033,8 @@
       <file leaf-file-name="_sign-up.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/pages/_sign-up.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.4313726">
-              <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
+            <state vertical-scroll-proportion="-5.7843137">
+              <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -145,11 +1080,11 @@
         <option value="$PROJECT_DIR$/tasks/options/concat.js" />
         <option value="$PROJECT_DIR$/src/scripts/app/controllers/modalController.js" />
         <option value="$PROJECT_DIR$/src/scripts/app/controllers/mainController.js" />
-        <option value="$PROJECT_DIR$/src/styles/pages/_sign-up.scss" />
         <option value="$PROJECT_DIR$/dist/register.html" />
         <option value="$PROJECT_DIR$/dist/sign-up.aspx" />
         <option value="$PROJECT_DIR$/src/markup/pages/sign-up.jade" />
         <option value="$PROJECT_DIR$/src/scripts/app/controllers/signupController.js" />
+        <option value="$PROJECT_DIR$/src/styles/pages/_sign-up.scss" />
       </list>
     </option>
   </component>
@@ -163,9 +1098,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="765" />
+    <option name="x" value="77" />
     <option name="y" value="22" />
-    <option name="width" value="1853" />
+    <option name="width" value="2541" />
     <option name="height" value="1388" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -530,7 +1465,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="765" y="22" width="1853" height="1388" extended-state="0" />
+    <frame x="77" y="22" width="2541" height="1388" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -538,7 +1473,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1575823" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.114915386" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -599,7 +1534,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <marker date="1438788496000" expanded="true" signature="0:3354" placeholder="..." />
+            <marker date="1438791077000" expanded="true" signature="0:4" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -665,7 +1600,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1438788496000" expanded="true" signature="0:3354" placeholder="..." />
+            <marker date="1438791077000" expanded="true" signature="0:4" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -697,7 +1632,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
-            <marker date="1438788496000" expanded="true" signature="0:3354" placeholder="..." />
+            <marker date="1438791077000" expanded="true" signature="0:4" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -948,14 +1883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/pages/_sign-up.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.4313726">
-          <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/sign-up.aspx">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.88235295">
@@ -966,21 +1893,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/markup/pages/sign-up.jade">
+    <entry file="file://$PROJECT_DIR$/src/scripts/app/controllers/signupController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3888888">
-          <caret line="5" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding>
-            <marker date="1438788496000" expanded="true" signature="0:3354" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="-15.833333">
+          <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="58" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/app/controllers/signupController.js">
+    <entry file="file://$PROJECT_DIR$/src/styles/pages/_sign-up.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42441392">
-          <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
+        <state vertical-scroll-proportion="-5.7843137">
+          <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/markup/pages/sign-up.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5578011">
+          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+          <folding>
+            <marker date="1438791077000" expanded="true" signature="0:4" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

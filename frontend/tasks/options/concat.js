@@ -38,6 +38,7 @@ var files = {
         'src/scripts/app/controllers/signupController.js',
         'src/scripts/app/controllers/profilesController.js',
         'src/scripts/app/controllers/resourcesController.js',
+        'src/scripts/app/controllers/unsubscribeCtrl.js',
         'src/scripts/app/directives/directives.js',
         'src/scripts/app/directives/a.js',
         // 'src/scripts/app/directives/profiles-carousel.js',
@@ -51,6 +52,12 @@ module.exports = {
         separator: ';'
     },
     dev: {
+        options: {
+            sourceMap: true
+        },
+        files: files
+    },
+    devIntegrate: {
         options: {
             sourceMap: true
         },
