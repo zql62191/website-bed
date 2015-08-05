@@ -2,7 +2,7 @@ body.profiles {
     $page: "profiles";
     @include gs("light");
 
-    .gradient{
+    .gradient {
         position: absolute;
         background-image: radial-gradient(50% 121%, #F8F6F4 21%, #DED8D5 100%);
         background-position: center center;
@@ -10,27 +10,32 @@ body.profiles {
         height: 926px;
         z-index: 1;
     }
-
-    .gradient-transition-top{
+    .gradient-transition-top {
         background-image: linear-gradient(0deg, #52758B 73%, rgba(82,117,139,0.00) 100%);
         width: 100%;
         height: 649px;
-        z-index:3;
+        z-index: 3;
     }
 
-    #gradient-transition-bottom{
+    #gradient-transition-bottom {
         background-image: linear-gradient(0deg, #DED8D5 77%, rgba(222,216,213,0.00) 89%);
         width: 100%;
         height: 649px;
         position: absolute;
         top: 586px;
-        z-index:2;
+        z-index: 2;
 
-        &.nikki, &.julie{
+        &.nikki, &.julie {
             top: 320px;
             height: 926px;
         }
+    }
 
+    @include mq('sm') {
+
+        .gradient, #gradient-transition-bottom, .gradient-transition-top {
+            display: none;
+        }
     }
 
     //for nikki & julie, the gradient-transition-bottom needs to shift a bit
@@ -41,49 +46,50 @@ body.profiles {
         background: transparent;
         color: #858B91;
 
-        .wrap--content{
+        .wrap--content {
             padding-top: 0px;
         }
 
-        // blockquote {
-        //     &:before {
-        //         content: '\201C';
-        //     }
-        //     &:after {
-        //         content: '\201D';
-        //     }
-        // }
-
-        blockquote, blockquote p{
+        blockquote, blockquote p {
             @include gs("light-italic");
             font-size: 24px;
             color: #858B91;
             line-height: 29px;
         }
 
-
-        .hero{
+        .hero {
             margin-left: 86px;
             margin-top: 54px;
             z-index: 3;
         }
 
-        .mobile-hero{
+        .mobile-hero {
             display: none;
         }
 
-        .kimberly{
-
-            // background-image: url("../img/lg/profiles/kimberly.png");
-            // background-repeat: no-repeat;
-            // background-position: 86px 54px;
+        .slide {
+            display: none;
             height: 588px;
             z-index: 3;
 
-            .shadow{
+            &.active {
+                display: block;
+            }
+
+            .disclaimer {
+                margin-top: 13px;
+                width: 300px;
+                line-height: 16px;
+                font-size: 14px;
+                color: #858B91;
+            }
+        }
+
+        .kimberly {
+
+            .shadow {
                 background-image: url("../img/lg/profiles/kimberly_lo.png");
                 background-repeat: no-repeat;
-                // background-position: 86px 54px;
                 position: absolute;
                 top: 299px;
                 left: -184px;
@@ -91,48 +97,30 @@ body.profiles {
                 height: 337px;
                 z-index: 2;
             }
-
-            
         }
 
+        .nikki {
 
-        .nikki{
-
-
-            // background-image: url("../img/lg/profiles/kimberly.png");
-            // background-repeat: no-repeat;
-            // background-position: 86px 54px;
-            height: 588px;
-            z-index: 3;
-
-            .shadow{
+            .shadow {
                 display: none;
             }
-
         }
 
-        .julie{
+        .julie {
 
-            height: 588px;
-            z-index: 3;
-
-            .shadow{
+            .shadow {
                 display: none;
             }
-
         }
 
-        .diego{
+        .diego {
 
-            height: 588px;
-            z-index: 3;
-
-            .hero{
+            .hero {
                 margin-top: 74px;
                 margin-left: -206px;
             }
 
-            .shadow{
+            .shadow {
                 display: none;
             }
 
@@ -149,12 +137,10 @@ body.profiles {
                     }
                 }
             }
-
         }
 
 
         .profile {
-
             position: absolute;
             top: 153px;
             left: 574px;
@@ -180,7 +166,7 @@ body.profiles {
                 border-bottom: 1px solid #D6D8DA;
             } 
 
-            .text-line{
+            .text-line {
                 border-bottom: 1px solid #D6D8DA;
                 padding-top:15px;
                 padding-bottom: 10px;
@@ -197,43 +183,17 @@ body.profiles {
                     padding-top: 5px;
                     padding-bottom: 5px;
                 }
-
             }
-
-
-            
         }
 
-        .slides{
-
-            .slide{
-                display: none;
-
-                &.active{
-                    display: block;
-                }
-
-                .disclaimer{
-                    margin-top: 13px;
-                    width: 300px;
-                    line-height: 16px;
-                    font-size: 14px;
-                    color: #858B91;
-                }
-
-            }
-
-        }
-
-        .pagination{
-
+        .pagination {
             width: 600px;
             height: 60px;
             display: block;
             margin: 0 auto;
             position: relative;
 
-            li{
+            li {
                 @include gs();
                 font-size: 14px;
                 color: #858B91;
@@ -250,12 +210,12 @@ body.profiles {
                 display: inline-block;
                 text-align: center; 
 
-                &.active, &:hover{
+                &.active, &:hover {
                     color: #52758B;
                     background-image: url("../img/lg/profiles/slider-dot-full.png");
                 }
 
-                span.liner{
+                span.liner {
                     width: 90px;
                     height: 1px;
                     border-top: 1px solid #979797;
@@ -263,34 +223,29 @@ body.profiles {
                     top: 50%;
                     left: 104px;
                 }
-
             }
         }
 
-        .carousel{
+        .carousel {
 
-
-
-            .controls{
-
+            .controls {
                 position: absolute;
                 top: 278px;
                 width: 100%;
 
-                .next{
+                .next {
                     width: 20px;
                     height: 33px;
                     background-image: url("../img/lg/profiles/carousel_arrow.png");
                     float: right;
                     z-index: 10;
 
-                    &:hover{
+                    &:hover {
                         background-image: url("../img/lg/profiles/carousel_arrow_hover.png");
                     }
-
                 }
 
-                .prev{
+                .prev {
                     width: 20px;
                     height: 33px;
                     background-image: url("../img/lg/profiles/carousel_arrow.png");
@@ -299,56 +254,48 @@ body.profiles {
                     float: left;
                     z-index: 10;
 
-                    &:hover{
+                    &:hover {
                         background-image: url("../img/lg/profiles/carousel_arrow_hover.png");
                     }
                 }
             }
-
         }
 
 
         @include mq("lg") {
             
-            .carousel{
-                width:100%;
-                // height:588px;
+            .carousel {
+                width: 100%;
                 margin-bottom: 57px;
 
+                .slides {
 
-                .slides{
-
-
-                    .diego.active{
-
-                        height: 588px;
-
-                        blockquote{
-                            top: 70px;
-                        }
-                    }
-
-                    blockquote{
+                    blockquote {
                         position: absolute;
                         top: 85px;
                         left: 348px;
                     }
+                    .diego.active {
+                        height: 588px;
 
-                    &.diego{
-
-                        blockquote, blockquote p{
-                            width: 408px;
+                        blockquote {
+                            top: 70px;
                         }
-
                     }
 
-                }
 
+                    &.diego {
+
+                        blockquote, blockquote p { 
+                            width: 408px;
+                        }
+                    }
+                }
             }
 
-            .section-disclaimer-sm{
-                width:516px;
-                height:36px;
+            .section-disclaimer-sm {
+                width: 516px;
+                height: 36px;
                 margin: 0 auto 44px auto;
                 @include gs("light");
                 font-size: 14px;
@@ -357,9 +304,9 @@ body.profiles {
                 text-align: center;
             }
 
-            .section-disclaimer{
-                width:478px;
-                height:36px;
+            .section-disclaimer {
+                width: 478px;
+                height: 36px;
                 margin: 0 auto 44px auto;
                 @include gs("light");
                 font-size: 18px;
@@ -368,16 +315,14 @@ body.profiles {
                 text-align: center;
             }
 
-            .callouts{
-
+            .callouts {
                 @include gs("light");
                 margin: 0 auto 69px auto;
                 font-size: 16px;
                 color: #858B91;
                 line-height: 19px;
 
-                h2{
-
+                h2 {
                     font-size: 22px;
                     color: #333E48;
                     line-height: 26px;
@@ -385,11 +330,10 @@ body.profiles {
                     padding-bottom: 20px;
                 }
 
-                .callout{
-
+                .callout {
                     width: 325px;
 
-                    p{
+                    p {
                         opacity: 0.6;
                         margin-bottom: 21px;
                         font-size: 18px;
@@ -398,9 +342,7 @@ body.profiles {
                         width: 330px;
                     }
 
-
-
-                    .btn{
+                    .btn {
                         width: 300px;
                         font-size: 14px;
                         @include gs();
@@ -409,39 +351,35 @@ body.profiles {
                         padding: 15px 28px;
                         height: 65px;
                     }
-                    
                 }
 
-                .one{
-                    // width: 295px;
-                }
-
-                .two{
+                .one {
 
                 }
+                .two {
 
+                }
             }
 
-            .pagination{
-
+            .pagination {
                 margin-top: 26px;
-
             }
-
-
         }
 
 
         @include mq("sm") {
 
+
             // padding fixes for the mobile hero shots
-            .wrap--content{
+            .wrap--content {
                 padding-left: 0px;
                 padding-right: 0px;
+
+                background: #DED8D4;
             }
 
             // restore padding for the parts that NEED spacing
-            .controls, .pagination, .section-disclaimer-sm, .callouts, .wrap--refs, .profile{
+            .controls, .pagination, .callouts, .wrap--refs, .profile, .section-disclaimer {
                 padding-left: 6.25%;
                 padding-right: 6.25%;
             }
@@ -454,92 +392,86 @@ body.profiles {
                 }
             }
 
-            .controls{
+            .controls {
                 top: 230px;
             }
 
-
-            .slide{
-
-                picture{
-                    // display: none;
-                }
-
-                // .mobile-hero{
+            .slide {
                 width: 100%;
                 height: auto;
                 min-height: 315px;
-                // max-height: 408px;
-                // display: block;
-                // margin:108px auto 10px auto;
+                overflow: hidden;
                 margin: 0 auto;
                 background-repeat: no-repeat;
                 background-position: center 108px;
                 background-size: cover;
-                // }
 
-                &.kimberly{
-                    // background-image: url("../img/smr/profiles/kimberly.png");
+                .hero, .hero img {
+                    max-height: 400px;
                 }
-                &.nikki{
-                    // background-image: url("../img/smr/profiles/nikki.png");  
-                    background-size: 38%; 
-                }
-                &.julie{
-                    // background-image: url("../img/smr/profiles/julie.png"); 
-                    background-size: 38%;  
 
-                    blockquote{
+                &.kimberly {
+                }
+                &.nikki {
+
+                }
+                &.julie {
+                    
+                    .hero {
+                        width: percentage(143/280);
+                        margin-left: auto;
+                        margin-right: auto;
+                        display: block;
+                    }
+
+                    blockquote {
+                        width: percentage(291/320);
+                        left: percentage(14/320);
+                    }
+                }
+                &.diego {
+
+                    blockquote {
                         width: percentage(291/320);
                         left: percentage(14/320);
                     }
 
-                }
-                &.diego{
-                    // background-image: url("../img/smr/profiles/diego.png");   
-
-                    blockquote{
-                        width: percentage(291/320);
-                        left: percentage(14/320);
+                    .hero {
+                        margin: 117px auto 0;
                     }
                 }
 
-                
-
-                
-
-                blockquote{
+                blockquote {
                     position: absolute;
                     top: 20px;
                     width: percentage(234/320);
                     left: percentage(43/320);
                 }
+
+                .disclaimer {
+                    width: 100%;
+                    padding-bottom: 12px;
+                }
+
             }
 
             .hero {
                 margin: 78px auto 0px auto;
             }
-            .hero, .hero img{
+            .hero, .hero img {
                 width: 100%;
                 height: auto;
             }
 
-            .shadow{
-                display:none;
+            .shadow {
+                display: none;
             }
 
             .profile {
-
                 position: static;
-                // top: initial;
-                // left: initial;
-                // height: 330px;
                 height: auto;
                 width: 100%;
-
                 color: #70767C;
-
-                // padding-top: 450px; // i hope this works in cool browsers!
 
                 .name {
                     font-size: 32px;
@@ -548,20 +480,80 @@ body.profiles {
                 .binge {
                     font-size: 18px;
                 }
-                .age,
-                .bmi,
-                .stat {
+                .age, .bmi, .stat {
                     font-size: 16px;
+                }
+
+                > div, .text-line, .name, .binge {
+                    border-bottom: 1px solid #C3C0BE;
+                }
+            }
+            .section-disclaimer-sm {
+                font-size: 14px;
+                line-height: 15px;
+                border-bottom: 1px solid #C3C0BE;
+                padding-bottom: 13px;
+                width: percentage(280/320);
+                margin-left: 6.25%;
+                margin-right: 6.25%;
+            }
+            .btn {
+                line-height: 17px;
+                margin-top: 15px;
+                height: auto;
+                font-size: 14px;
+            }
+            .callout {
+
+                &.one {
+                    border-bottom: 1px solid #C3C0BE;
+
+                    .btn {
+                        padding: 14px 40px;
+                        margin-bottom: 18px;
+                    }
+                }
+                &.two {
+
+                    .btn {
+                        padding: 14px;
+                    }
                 }
             }
 
-            .pagination{
+            .pagination {
                 display: none;
+            }
+
+
+            .heading--2 {
+                @include gs('light');
+                font-size: 24px;
+                color: #333E48;
+                line-height: 29px;
+                text-align: left;
+                padding: 16px 0 10px;
+            }
+
+            .section-disclaimer {
+                font-size: 14px;
+                color: #858B91;
+                line-height: 17px;
+                text-align: center;
+                padding-top: 22px;
+            }
+
+            .wrap--refs {
+
+                ol.number {
+                    border-color: #C3C0BE;
+                    margin-left: 0;
+                }
             }
         }
     }
 
-    .footer--global{
+    .footer--global {
         z-index: 5;
     }
 }
