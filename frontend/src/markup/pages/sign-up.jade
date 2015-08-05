@@ -11,37 +11,44 @@ block content
         .wrap--content
             h1.heading--1
                 | Sign up to instantly receive the DSM-5&reg; diagnostic criteria for binge eating disorder (B.E.D.) and future B.E.D. content from Shire.
+    
     section.section--page(ng-controller="signupController")
         .wrap--content
             form(name='optIn', autocomplete='off', novalidate, show-errors='{showSuccess:true}', ng-submit="submitForm()").form-group
                 input(type='text', name="firstName", placeholder="First Name", ng-model='user.firstName', required).form-control
                 p.help-block(ng-if="submitted && optIn.firstName.$error.required")
                     | The user's first name is required
+                
                 input(type='text', name="lastName", placeholder="Last Name", ng-model='user.lastName', required)
                 p.help-block(ng-if="submitted && optIn.lastName.$error.required")
                     | The user's last name is required
+                
                 input(type='email', name="email", placeholder="E-mail", ng-model='user.email', required).form-control
                 p.help-block(ng-if="submitted && (optIn.email.$error.email || optIn.email.$error.required)")
                     | Please enter a vaild email address...
+                
                 input(type='email', name="confirmEmail", placeholder="Confirm E-mail", ng-model='user.confirmEmail', required)
                 p.help-block(ng-if="submitted && (optIn.confirmEmail.$error.email || optIn.confirmEmail.$error.required)")
                     | Please confirm the email address
                 p.help-block(ng-if="submitted && notMatch")
                     | The confirm email does not match
+                
                 h2.heading--2
                     | Opt In for Communications
                 p.info
-                    input(type='checkbox', value='', ng-required="true")
+                    input(type="checkBox", name="checkBox", ng-model="checkBox", value="false", required)
                     span.help-block(ng-if="submitted && optIn.checkBox.$error.required")
                     |  By checking this box and clicking SUBMIT, you certify that you are a US health care professional and you are opting to receive information about binge eating disorder plus site updates, educational information, patient support resources, and other information from Shire. You will be able to opt out of these communications at any time.
                 p.info
                     | Shire respects your personal information. All information you have provided will be kept confidential and will not be used or distributed to anyone for any purpose other than what is explained in our Privacy Policy Statement. We encourage you to read our Privacy Policy Statement by clicking on this link:
                     a(href='/hcp/privacy-policy.aspx') Review Shire Privacy Policy Statement.
                     | This consent will be in effect until such time as you opt out of the program.
+                
                 p.errormessage(ng-if="submitted && (optIn.$error.required || notMatch)")
-                    | Please address the errors above
-                +a-active(type="button", ng-click="submitForm()", href="/hcp/thank-you.aspx").btn.btn--yellow
+                    | Please address the errors above or Please check the block
+                button(type="button", ng-click="submitForm()").btn.btn--yellow
                     | SUBMIT
+    
     footer.footer--page
         .wrap--content
          
