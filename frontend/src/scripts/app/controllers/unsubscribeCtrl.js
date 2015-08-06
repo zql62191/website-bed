@@ -3,42 +3,20 @@
 
     angular.module('cdmp.controllers')
 
-<<<<<<< HEAD
-        .controller('mailController', ['$scope', function($scope) {
 
-=======
-        .controller('emailController', ['$scope', function($scope) {
->>>>>>> e5d5592d9cd02840e9a7eac4ea6e7ead7af3e8fb
+        .controller('mailController', ['$scope', function($scope) {
+            
             $scope.submitted = false;
 
             $scope.submitForm = function() {
                 $scope.submitted = true;
                 $scope.$broadcast('show-errors-check-validity');
-<<<<<<< HEAD
+
 
                 if (!$scope.optoutemail.$invalid) {
                     console.log("user submit");
                     window.location.href="/hcp/thank-you-request.aspx";
-=======
-                if (!$scope.optOutEmail.$invalid) {
-                    //alert('Successful login');
-                    console.log("user submit");
-                    window.location.href="thank-you-request.aspx";
-                    }
-                };
-        }])
 
-        .controller('directMailController', ['$scope', function($scope) {
-            $scope.submitted = false;
-           
-            $scope.submitEmail = function() {
-                $scope.submitted = true;
-                $scope.$broadcast('show-errors-check-validity');
-                
-                if (!$scope.optOutDirectMail.$invalid) {
-                    console.log("user submit");
-                    window.location.href="thank-you-request.aspx";
->>>>>>> e5d5592d9cd02840e9a7eac4ea6e7ead7af3e8fb
                 }
             };
         }])
@@ -122,7 +100,6 @@
                 return { showSuccess: _showSuccess };
             };
         })
-<<<<<<< HEAD
     
     
         //.controller('clickController', ['$scope', function($scope){
@@ -131,8 +108,7 @@
         //    }
         //}])
 
-=======
->>>>>>> e5d5592d9cd02840e9a7eac4ea6e7ead7af3e8fb
+
 
 }).call(this);
  
