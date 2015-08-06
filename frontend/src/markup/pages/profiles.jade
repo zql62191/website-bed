@@ -109,7 +109,7 @@ block content
                                 .stat.
                                     Her binges are triggered by negative feelings about her body shape
                                 .stat.
-                                    Julie has a coexisting psychiatric disorder—she struggles with anxiety
+                                    Julie has a coexisting psychiatric disorder&mdash;she struggles with anxiety
 
                             p.disclaimer
                                 | Diagnosis should be based on a complete evaluation of the patient that confirms the criteria for !{BED} established in !{DSM5}.
@@ -150,6 +150,11 @@ block content
                     .prev(ng-click="clickControls('L')")
                     .next(ng-click="clickControls('R')")
 
+                ul.mobile-pagination
+                    li.kimberly(ng-click="changeHero('kimberly')")
+                    li.nikki(ng-click="changeHero('nikki')")
+                    li.julie(ng-click="changeHero('julie')")
+                    li.diego(ng-click="changeHero('diego')")
 
                 ul.pagination
                     li.kimberly(ng-click="changeHero('kimberly')")

@@ -186,6 +186,12 @@ body.profiles {
             }
         }
 
+        @include mq("lg", "md") {
+            ul.mobile-pagination{
+                display:none;
+            }
+        }
+
         .pagination {
             width: 600px;
             height: 60px;
@@ -210,7 +216,7 @@ body.profiles {
                 display: inline-block;
                 text-align: center; 
 
-                &.active, &:hover {
+                &.active, &:hover, &:active {
                     color: #52758B;
                     background-image: url("../img/lg/profiles/slider-dot-full.png");
                 }
@@ -230,7 +236,7 @@ body.profiles {
 
             .controls {
                 position: absolute;
-                top: 278px;
+                top: 232px;
                 width: 100%;
 
                 .next {
@@ -374,8 +380,9 @@ body.profiles {
             .wrap--content {
                 padding-left: 0px;
                 padding-right: 0px;
-
-                background: #DED8D4;
+                background-image: radial-gradient(50% 102%, #F7F4F2 21%, #DED8D4 100%);
+                background-color: #DED8D4;
+                // background-color: #F0ECE9; 
             }
 
             // restore padding for the parts that NEED spacing
@@ -418,7 +425,7 @@ body.profiles {
                 &.julie {
                     
                     .hero {
-                        width: percentage(143/280);
+                        width: percentage(302/320);
                         margin-left: auto;
                         margin-right: auto;
                         display: block;
@@ -523,6 +530,33 @@ body.profiles {
 
             .pagination {
                 display: none;
+            }
+
+            ul.mobile-pagination{
+
+                display: inline-block;
+                width: 52px;
+                height: 12px;
+                // margin:0 auto;
+                position: absolute;
+                margin-left: -26px;//half the width of the UL, bruh
+                left: 50%;
+                top: 460px;
+                cursor: pointer;
+                z-index: 6;
+
+                li{
+                    display: inline-block;
+                    width: 9px;
+                    height: 9px;
+                    background-image: url("../img/sm/profiles/oval_mobile_empty.png");
+                    cursor: pointer;
+                    z-index: 6;
+
+                    &.active, &:hover, &:active{
+                        background-image: url("../img/sm/profiles/oval_mobile_full.png");
+                    }
+                }
             }
 
 

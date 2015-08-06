@@ -9,6 +9,8 @@ body.effects-of-bed {
         }
         @include mq("sm") {
             width: 100%;
+            padding-left:percentage(20/320);
+            padding-right:percentage(20/320);
         }
         margin: 0 auto;
         padding: 30px 0;
@@ -130,10 +132,10 @@ body.effects-of-bed {
                 font-size: 50px;
             }
             .text {
-                @include mq('sm') {
-                    width: percentage(155/280);
+                // @include mq('sm') {
+                    width: percentage(185/280);
                     margin: 0 auto;
-                }
+                // }
             }
         }
 

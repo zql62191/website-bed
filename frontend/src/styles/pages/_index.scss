@@ -388,9 +388,14 @@ body.index {
             
                 ol.refs {
                     border-top: none;
-                    text-align: center;
+                    text-align: left;
                     width: 100%;
                     margin: 0 auto;
+
+                    li{
+                        text-align: left;
+                    }
+
                 }
             }
 
