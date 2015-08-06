@@ -90,10 +90,10 @@
             $scope.updatePagination = function(scope){
 
                 //clear the old ones first
-                var rm = angular.element('ul.pagination li').removeClass('active');
+                var rm = angular.element('ul.pagination li, ul.mobile-pagination li').removeClass('active');
 
                 //update with current slide
-                var elem = angular.element('ul.pagination li.' + scope.currentSlide).addClass('active');
+                var elem = angular.element('ul.pagination li.' + scope.currentSlide + ', ul.mobile-pagination li.' + scope.currentSlide).addClass('active');
 
             };
 

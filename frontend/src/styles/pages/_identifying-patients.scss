@@ -92,7 +92,7 @@ body.identifying-patients {
 
             .heading--1{
                 margin-bottom: 26px;
-                text-align: left;
+                text-align: center;
             }
 
             .persons {
@@ -180,4 +180,10 @@ body.identifying-patients {
             }
         }
     }
+
+    .bold{
+        // @include gs("bold-italic");
+        font-weight: 300;
+    }
+
 }
