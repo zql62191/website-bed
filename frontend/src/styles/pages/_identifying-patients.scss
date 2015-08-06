@@ -6,13 +6,30 @@ body.identifying-patients {
 
         .persons {
 
-            .person {
+            @include mq("lg","md") {
+                .person {
 
-                $persons: "kimberly" "nikki" "julie" "diego";
-                @each $person in $persons {
-                    &.#{$person} {
-                        @include responsive-bg("#{$page}/#{$person}.jpg");
+                    $persons: "kimberly" "nikki" "julie" "diego";
+                    @each $person in $persons {
+                        &.#{$person} {
+                            @include responsive-bg("#{$page}/#{$person}.jpg");
+                        }
                     }
+
+                }
+            }
+
+            @include mq("sm") {
+
+                .person {
+
+                    $persons: "kimberly" "nikki" "julie" "diego";
+                    @each $person in $persons {
+                        &.#{$person} {
+                            @include responsive-bg("#{$page}/#{$person}.png");
+                        }
+                    }
+
                 }
 
             }

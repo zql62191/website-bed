@@ -48,6 +48,7 @@ body.profiles {
 
         .wrap--content {
             padding-top: 0px;
+            @include no-select;
         }
 
         blockquote, blockquote p {
@@ -71,6 +72,7 @@ body.profiles {
             display: none;
             height: 588px;
             z-index: 3;
+            @include no-select;
 
             &.active {
                 display: block;
@@ -414,7 +416,7 @@ body.profiles {
                 background-size: cover;
 
                 .hero, .hero img {
-                    max-height: 400px;
+                    // max-height: 400px;
                 }
 
                 &.kimberly {
