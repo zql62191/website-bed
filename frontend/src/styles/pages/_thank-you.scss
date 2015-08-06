@@ -68,8 +68,12 @@ body.thank-you{
     @include mq('sm') {
 
         .heading--1{
-            text-align: left;
-            margin-left: 0% !important;
+            text-align: center;
+            margin: 0 auto;
+            width: 100%;
+            font-size: 28px;
+            color: #FDBD3E;
+            line-height: 28px;
         }
         
         
@@ -77,6 +81,7 @@ body.thank-you{
         .heading--2{
             text-align: center;
             margin-top: 18px !important;
+            
         }
         
 
