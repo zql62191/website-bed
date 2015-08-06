@@ -232,6 +232,11 @@ ul.boxed {
 
 ol.refs {
 
+    li a{
+        font-size: 14px;
+        text-decoration: underline;
+    }
+
     @include mq("lg") {
         width: 655px;
         // margin: 0 auto;
