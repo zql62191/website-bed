@@ -3,27 +3,44 @@
 
     angular.module('cdmp.controllers')
 
-        .controller('unsubController', ['$scope', function($scope) {
-
+        .controller('emailController', ['$scope', function($scope) {
             $scope.submitted = false;
-            $scope.notMatch = false;
 
             $scope.submitForm = function() {
                 $scope.submitted = true;
                 $scope.$broadcast('show-errors-check-validity');
-
                 if (!$scope.optOutEmail.$invalid) {
-                    $scope.notMatch = false;
-                    if ($scope.checkBox == true) {
-                        //alert('Successful login');
-                        //location.reload();
-                        console.log("user submit");
-                        window.location.href = "thank-you-request.aspx";
-                    } else {
-                        $scope.notMatch = true;
-                        console.log("not match")
-                        //alert("Please address the errors above!")
+                    //alert('Successful login');
+                    console.log("user submit");
+                    window.location.href="thank-you-request.aspx";
                     }
+                };
+        }])
+
+        .controller('directMailController', ['$scope', function($scope) {
+            $scope.submitted = false;
+           
+            $scope.submitEmail = function() {
+                $scope.submitted = true;
+                $scope.$broadcast('show-errors-check-validity');
+                
+                if (!$scope.optOutDirectMail.$invalid) {
+                    console.log("user submit");
+                    window.location.href="thank-you-request.aspx";
+                }
+            };
+        }])
+
+        .controller('allController', ['$scope', function($scope) {
+            $scope.submitted = false;
+        
+            $scope.submitAll = function() {
+                $scope.submitted = true;
+                $scope.$broadcast('show-errors-check-validity');
+                if (!$scope.optOutAll.$invalid) {
+                    //alert('Successful login');
+                    console.log("user submit");
+                    window.location.href="thank-you-request.aspx";
                 }
             };
         }])
@@ -50,14 +67,6 @@
                 return { showSuccess: _showSuccess };
             };
         })
-    
-    
-        .controller('clickController', ['$scope', function($scope){
-            $scope.clickToTY = function(){
-                window.location.href="thank-you-request.aspx";
-            }
-        }])
-
 
 }).call(this);
  
