@@ -12,25 +12,19 @@
                 $scope.submitted = true;
                 $scope.$broadcast('show-errors-check-validity');
 
-                if (!$scope.optIn.$invalid) {
-                    if($scope.user.email == $scope.user.confirmEmail){
-                        $scope.notMatch = false;
-                        if($scope.checkBox==true){
-                            //alert('Successful login');
-                            //location.reload();
-                            console.log("user submit");
-                            window.location.href="thank-you-request.aspx";
-                        }
-                    }else{
+                if (!$scope.optOutEmail.$invalid || !$scope.optOutDirectMail.$invalid || !$scope.optOutAll.$invalid) {
+                    $scope.notMatch = false;
+                    if ($scope.checkBox == true) {
+                        //alert('Successful login');
+                        //location.reload();
+                        console.log("user submit");
+                        window.location.href = "thank-you-request.aspx";
+                    } else {
                         $scope.notMatch = true;
                         console.log("not match")
+                        //alert("Please address the errors above!")
                     }
                 }
-                else{
-                    console.log("Error!");
-                    //alert("Please address the errors above!")
-                }
-
             };
         }])
 
