@@ -43,7 +43,7 @@ body.effects-of-bed {
         }
     }
     .bold{
-        font-weight: bold;
+        font-weight: 300;
     }
     
     .section--association {
@@ -124,6 +124,10 @@ body.effects-of-bed {
                 font-size: 50px;
             }
             .text {
+                @include mq('lg') {
+                    width: percentage(215/280);
+                    margin: 0 auto;
+                }
                 @include mq('sm') {
                     width: percentage(155/280);
                     margin: 0 auto;
