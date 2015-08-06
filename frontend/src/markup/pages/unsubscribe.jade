@@ -19,7 +19,7 @@ block content
     header.header--unsubscribe
         .wrap--content
 
-    section.section--unsubscribe(ng-controller="unsubController")
+    section.section--unsubscribe
         .wrap--content
             .subcontainer
 
@@ -34,13 +34,13 @@ block content
                             .arrow.closed
                     mixin content
                         .formContainer
-                            form(name='optOutEmail', autocomplete='off', novalidate)
-                                input(type='email', name="name", placeholder="E-mail", ng-model='user.email', required)
-                                span.errorMsg(ng-if="submitted && (optOutEmail.email.$error.email || submitted.email.$error.required)")
+                            form(name='optOutEmail', autocomplete='off', novalidate, show-errors='{showSuccess:true}', ng-submit="submitForm()")
+                                input.form-control(type='email', name="name", placeholder="E-mail", ng-model='user.email', required)
+                                span.help-block(ng-if="submitted && (optOutEmail.email.$error.email || submitted.email.$error.required)")
                                     | Please enter e-mail address
-                                button(type="submit", ng-click="submitForm()").btn.btn--yellow
+                                button(type="submit", ng-controller="unsubController", ng-click="submitForm()").btn.btn--yellow
                                     | SUBMIT
-                                
+                
                 +accordion(undefined,true)
                     mixin header
                         .accordion-title
@@ -59,7 +59,7 @@ block content
                                     +states
                                 input(type='text', placeholder="Zip", ng-model='zip', required, ng-class="{forminvalid: (opt-out-direct-mail.zip.$invalid && opt-out-direct-mail.zip.$dirty) || (opt-out-direct-mail.zip.$invalid && invalidform)}")
 
-                                button(type='submit').btn.btn--yellow
+                                button(type='submit',ng-controller="clickController",ng-click="clickToTY()").btn.btn--yellow
                                     | SUBMIT
 
 
@@ -81,7 +81,7 @@ block content
                                     +states
                                 input(type='text', placeholder="Zip", ng-model='zip', required, ng-class="{forminvalid: (opt-out-all.zip.$invalid && opt-out-all.zip.$dirty) || (opt-out-all.zip.$invalid && invalidform)}")
 
-                                button(type='submit').btn.btn--yellow
+                                button(type='submit', ng-controller="clickController",ng-click="clickToTY()").btn.btn--yellow
                                     | SUBMIT
 
                 //- .box(ng-click="openBox(3)")

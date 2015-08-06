@@ -12,7 +12,7 @@
                 $scope.submitted = true;
                 $scope.$broadcast('show-errors-check-validity');
 
-                if (!$scope.optOutEmail.$invalid || !$scope.optOutDirectMail.$invalid || !$scope.optOutAll.$invalid) {
+                if (!$scope.optOutEmail.$invalid) {
                     $scope.notMatch = false;
                     if ($scope.checkBox == true) {
                         //alert('Successful login');
@@ -50,6 +50,14 @@
                 return { showSuccess: _showSuccess };
             };
         })
+    
+    
+        .controller('clickController', ['$scope', function($scope){
+            $scope.clickToTY = function(){
+                window.location.href="thank-you-request.aspx";
+            }
+        }])
 
 
 }).call(this);
+ 
