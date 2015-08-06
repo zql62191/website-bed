@@ -24,9 +24,11 @@ var files = {
         'src/scripts/vendor/he.min.js',
         'src/scripts/vendor/mobiscroll.custom-2.15.0.min.js',
         'src/scripts/vendor/catchall.js',
-        'src/scripts/vendor/me/mediaelement-and-player.min.js'
+        'src/scripts/vendor/me/mediaelement-and-player.min.js',
+        'src/scripts/vendor/angular-touch.js'
     ],
     'dist/js/app.js': [
+        'src/scripts/app/vendor/ngMask.js',
         'src/scripts/app/vendor/ngMask.js',
         'src/scripts/app/vendor/rcMailgun.js',
         'src/scripts/app/services/services.js',
