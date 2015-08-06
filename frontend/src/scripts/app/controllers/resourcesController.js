@@ -188,7 +188,7 @@
                     },
                     {
                         id: "functional-conseqs2",
-                        title: "Living with B.E.D.",
+                        title: "Functional consequences of B.E.D. ",
                         length: "2:24",
                         featuring: "",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03502.mp4",
