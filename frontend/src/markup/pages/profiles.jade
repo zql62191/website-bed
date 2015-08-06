@@ -19,7 +19,7 @@ block content
 
             .carousel
                 .slides
-                    .slide.kimberly(ng-class="{active: currentSlide == 'kimberly'}")
+                    .slide.kimberly(ng-class="{active: currentSlide == 'kimberly'}" ng-swipe-left="swipeControls('R')" ng-swipe-right="swipeControls('L')")
 
                         +picture('profiles/kimberly.png').hero
                         .mobile-hero
@@ -29,7 +29,7 @@ block content
                             p.
                                 I feel like I&rsquo;ve lost control while I&rsquo;m eating.
 
-
+                        +mobile-carousel-pagination
                         .profile
                             .name.
                                 Kimberly
@@ -53,7 +53,7 @@ block content
                                 | Diagnosis should be based on a complete evaluation of the patient that confirms the criteria for !{BED} established in !{DSM5}.
                                 sup 1
 
-                    .slide.nikki(ng-class="{active : currentSlide == 'nikki'}")
+                    .slide.nikki(ng-class="{active : currentSlide == 'nikki'}" ng-swipe-left="swipeControls('R')" ng-swipe-right="swipeControls('L')")
 
                         +picture('profiles/nikki.png').hero
                         .mobile-hero
@@ -61,6 +61,8 @@ block content
                         blockquote
                             p.
                                 I&rsquo;m disgusted with myself after I binge.
+
+                        +mobile-carousel-pagination
 
                         .profile
                             .name.
@@ -84,7 +86,7 @@ block content
                                 | Diagnosis should be based on a complete evaluation of the patient that confirms the criteria for !{BED} established in !{DSM5}.
                                 sup 1
 
-                    .slide.julie(ng-class="{active : currentSlide == 'julie'}")
+                    .slide.julie(ng-class="{active : currentSlide == 'julie'}" ng-swipe-left="swipeControls('R')" ng-swipe-right="swipeControls('L')")
 
                         +picture('profiles/julie.png').hero
                         .mobile-hero
@@ -92,6 +94,8 @@ block content
                         blockquote
                             p.
                                 When the binges are over, I feel guilty about my behavior.
+
+                        +mobile-carousel-pagination
 
                         .profile
                             .name.
@@ -115,7 +119,7 @@ block content
                                 | Diagnosis should be based on a complete evaluation of the patient that confirms the criteria for !{BED} established in !{DSM5}.
                                 sup 1
 
-                    .slide.diego(ng-class="{active : currentSlide == 'diego'}")
+                    .slide.diego(ng-class="{active : currentSlide == 'diego'}" ng-swipe-left="swipeControls('R')" ng-swipe-right="swipeControls('L')")
 
                         +picture('profiles/diego.png').hero
                         //- .mobile-hero
@@ -123,9 +127,11 @@ block content
 
                         blockquote
                             p
-                                | I binge alone because I don&rsquo;t want anyone
-                                br
+                                | I binge alone because I don&rsquo;t want anyone 
+                                br.desktop-break
                                 span to know how much I eat.
+
+                        +mobile-carousel-pagination
 
                         .profile
                             .name.
@@ -150,6 +156,7 @@ block content
                     .prev(ng-click="clickControls('L')")
                     .next(ng-click="clickControls('R')")
 
+                
 
                 ul.pagination
                     li.kimberly(ng-click="changeHero('kimberly')")
