@@ -55,8 +55,8 @@ block content
                                 .yellow {{vid.title}}
                                 .video-length {{vid.length}}
                                 .play-btn
-                                .subtitle Featuring {{vid.featuring}}
-                                .new
+                                .subtitle {{vid.featuring.length > 0 ? "Featuring " : ""}}{{vid.featuring}}
+                                .new(ng-show="vid.newFrom")
                                 .viewed(ng-show="vid.viewed") 
                         .consult-disclaimer {{tab.disclaimer}}
                             a.anchor(id="downloads", name="downloads")

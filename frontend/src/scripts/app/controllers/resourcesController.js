@@ -22,7 +22,7 @@
                         featuring: "Cynthia M. Bulik, PhD, FAED",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03323.mp4",
                         host: activehost,
-                        newFrom: Date(2015, 7, 15),
+                        newFrom: null,
                         viewed: true
                     },
                     {
@@ -52,7 +52,7 @@
                         featuring: "Cynthia M. Bulik, PhD, FAED",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03322.mp4",
                         host: activehost,
-                        newFrom: Date(2015, 7, 15),
+                        newFrom: null,
                         viewed: true
                     },
                     {
@@ -78,7 +78,7 @@
                         featuring: "Carlos Grilo, PhD",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S02969.mp4",
                         host: activehost,
-                        newFrom: Date(2015, 7, 15),
+                        newFrom: null,
                         viewed: true
                     },
                     {
@@ -98,7 +98,7 @@
                         featuring: "Carlos Grilo, PhD",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S02972.mp4",
                         host: activehost,
-                        newFrom: Date(2015, 7, 15),
+                        newFrom: null,
                         viewed: false
                     },
                     {
@@ -108,7 +108,7 @@
                         featuring: "Susan G. Kornstein, MD",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S02973.mp4",
                         host: activehost,
-                        newFrom: Date(2015, 7, 15),
+                        newFrom: null,
                         viewed: true
                     },
                     {
@@ -118,7 +118,7 @@
                         featuring: "Carlos Grilo, PhD",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03011.mp4",
                         host: activehost,
-                        newFrom: Date(2015, 7, 15),
+                        newFrom: null,
                         viewed: false
                     },
                     {
@@ -128,7 +128,7 @@
                         featuring: "Susan G. Kornstein, MD",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03012.mp4",
                         host: activehost,
-                        newFrom: Date(2015, 7, 15),
+                        newFrom: null,
                         viewed: true
                     },
                     {
@@ -153,7 +153,7 @@
                         featuring: "",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S02868.mp4",
                         host: activehost,
-                        newFrom: Date(2015, 7, 15),
+                        newFrom: null,
                         viewed: true
                     },
                     {
@@ -163,7 +163,7 @@
                         featuring: "",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03499.mp4",
                         host: activehost,
-                        newFrom: Date(2015, 7, 15),
+                        newFrom: null,
                         viewed: false
                     },
                     {
@@ -173,7 +173,7 @@
                         featuring: "",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03500.mp4",
                         host: activehost,
-                        newFrom: Date(2015, 7, 15),
+                        newFrom: null,
                         viewed: false
                     },
                     {
@@ -183,7 +183,7 @@
                         featuring: "",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03501.mp4",
                         host: activehost,
-                        newFrom: Date(2015, 7, 15),
+                        newFrom: null,
                         viewed: false
                     },
                     {
@@ -193,7 +193,7 @@
                         featuring: "",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03502.mp4",
                         host: activehost,
-                        newFrom: Date(2015, 7, 15),
+                        newFrom: null,
                         viewed: true
                     },
                     {
@@ -203,7 +203,7 @@
                         featuring: "",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03503.mp4",
                         host: activehost,
-                        newFrom: Date(2015, 7, 15),
+                        newFrom: null,
                         viewed: false
                     }
                 ]
