@@ -34,8 +34,8 @@ block content
                             .arrow.closed
                     mixin content
                         .formContainer
-                            form(name='opt-out-email', autocomplete='off', novalidate, ng-controller="emailController")
-                                input(type='email', placeholder="*E-mail", ng-model='email', required)
+                            form(name='opt-out-email', autocomplete='off', novalidate)
+                                input(type='email', placeholder="E-mail", ng-model='email', required)
                                 span.errorMsg(ng-show="(opt-out-email.email.$error.required && submitted) || (opt-out-email.$error.email && submitted)")
                                     | Email is invalid
                                 button(type="submit", ng-click="submitEmail(opt-out-email)").btn.btn--yellow
