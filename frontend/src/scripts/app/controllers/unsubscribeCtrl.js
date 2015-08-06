@@ -56,6 +56,13 @@
                 return { showSuccess: _showSuccess };
             };
         })
+    
+    
+        .controller('clickController', ['$scope', function($scope){
+            $scope.clickToTY = function(){
+                window.location.href="thank-you-request.aspx";
+            }
+        }])
 
 
 }).call(this);

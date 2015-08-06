@@ -38,7 +38,7 @@ block content
                                 input(type='email', placeholder="E-mail", ng-model='email', required)
                                 span.errorMsg(ng-show="(opt-out-email.email.$error.required && submitted) || (opt-out-email.$error.email && submitted)")
                                     | Email is invalid
-                                button(type="submit", ng-click="submitEmail(opt-out-email)").btn.btn--yellow
+                                button(type="submit", ng-controller="clickController",ng-click="clickToTY()").btn.btn--yellow
                                     | SUBMIT
 
 
@@ -60,7 +60,7 @@ block content
                                     +states
                                 input(type='text', placeholder="Zip", ng-model='zip', ng-required="true", ng-class="{forminvalid: (opt-out-direct-mail.zip.$invalid && opt-out-direct-mail.zip.$dirty) || (opt-out-direct-mail.zip.$invalid && invalidform)}")
 
-                                button(type='submit').btn.btn--yellow
+                                button(type='submit',ng-controller="clickController",ng-click="clickToTY()").btn.btn--yellow
                                     | SUBMIT
 
 
@@ -82,7 +82,7 @@ block content
                                     +states
                                 input(type='text', placeholder="Zip", ng-model='zip', ng-required="true", ng-class="{forminvalid: (opt-out-all.zip.$invalid && opt-out-all.zip.$dirty) || (opt-out-all.zip.$invalid && invalidform)}")
 
-                                button(type='submit').btn.btn--yellow
+                                button(type='submit', ng-controller="clickController",ng-click="clickToTY()").btn.btn--yellow
                                     | SUBMIT
 
                 //- .box(ng-click="openBox(3)")
