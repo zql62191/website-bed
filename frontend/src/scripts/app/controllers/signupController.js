@@ -16,9 +16,10 @@
                     if($scope.user.email == $scope.user.confirmEmail){
                         $scope.notMatch = false;
                         if($scope.checkBox==true){
-                            alert('Successful login');
-                            location.reload();
-                            console.log("user submit")
+                            //alert('Successful login');
+                            //location.reload();
+                            console.log("user submit");
+                            window.location.href="thank-you.aspx";
                         }
                     }else{
                         $scope.notMatch = true;
@@ -29,6 +30,7 @@
                     console.log("Error!");
                     //alert("Please address the errors above!")
                 }
+                
             };
         }])
 
@@ -57,16 +59,3 @@
 
 
 }).call(this);
-
-
-//app.controller('signupController',
-//    function($scope) {
-//        $scope.submitted = false; 
-//        $scope.signupForm = function() { 
-//            if ($scope.optIn.$valid) { 
-//            // Submit as normal 
-//            } else { 
-//                $scope.optIn.submitted = true; 
-//            } 
-//        }
-//    });
