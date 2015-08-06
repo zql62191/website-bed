@@ -15,23 +15,9 @@ body.thank-you{
         margin-top: 24px;
         width: 75%;
         margin-left: 11%;
+        text-align: left;
     }
     
-
-    
-    button{
-        font-size: 16px !important;
-        /* Rectangle 10: */
-        background: #FFBE2C;
-        border-radius: 4px;
-        font-weight: normal !important;
-        color: #21282F;
-        line-height: 19px;
-        margin-left: 35% !important;
-        margin-top: 40px !important;
-        margin-bottom: 138px;
-
-    }
 
     @include mq('lg') {
 
@@ -79,19 +65,6 @@ body.thank-you{
             margin-top: 18px !important;
         }
         
-
-        button{
-            font-size: 16px !important;
-            /* Rectangle 10: */
-            background: #FFBE2C;
-            border-radius: 4px;
-            font-weight: normal !important;
-            color: #21282F;
-            line-height: 19px;
-            width: 100%;
-            margin-left: 0% !important;
-            margin-bottom: 50px !important;
-        }
 
 
     }

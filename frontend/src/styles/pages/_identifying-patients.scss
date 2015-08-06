@@ -92,13 +92,14 @@ body.identifying-patients {
 
             .heading--1{
                 margin-bottom: 26px;
+                text-align: left;
             }
 
             .persons {
                 @include clearfix;
                 width: 316px;
                 height: 268px;
-                margin: 0 auto 0 auto;
+                margin: 0 -6.25% 0 -6.25%;
                 position: relative;
 
                 .person {
@@ -132,44 +133,46 @@ body.identifying-patients {
                 }
             }
 
-            .callouts{
-                .callout{
+            .callouts {
+                .callout {
 
                     margin-bottom: 30px;
 
                     &.one{
                         border-bottom: none;
 
-                        .btn{
-                            padding-top: 14px;
+                        .btn {
+                            padding: 15px 27px;
                         }
                     }
 
                     &.two{
                         border-top: 1px solid #5C656D;
                         padding-top: 30px;
-                        .btn{
-                            padding-top: 14px; 
+
+                        .btn {
+                            padding: 15px; 
                         }
                     }
 
-                    h2, p{
+                    h2, p {
                         text-align: left;
                         padding-bottom: 16px;
                     }
 
-                    .btn{
+                    .btn {
                         height: 65px;
                         padding-top: 10px;
                         line-height: 18px;
                         font-size: 14px;
-                        width: percentage(280/320);
+                        // width: percentage(280/320);
+                        width: 100%;
                     }
 
                 }
             }
 
-            p.disclaimer{
+            p.disclaimer {
                 width: 214px;
                 text-align: center;
                 vertical-align: middle;

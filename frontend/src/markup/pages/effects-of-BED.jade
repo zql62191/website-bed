@@ -52,7 +52,7 @@ block content
                         &asymp;19%
                     .text
                         | reported 
-                        em severe 
+                        em.bold severe 
                         | functional
                         br.desktop-break
                         | impairment during the
@@ -76,37 +76,50 @@ block content
 
             .sunny.hide--lg.hide--md
 
-            .excerpt.one
+            .mobile-excerpt-wrapper
 
-                blockquote
-                    p.
-                        During a binge, I would often eat really, really fast. My binges would always happen when I was alone.
-                .listen
-                    | Listen to the extended excerpt
-                    +media-element-audio('../assets/foo.mp3',false)
+                .excerpt.one
 
-            .sunny.hide--md.hide--sm
+                    blockquote
+                        p.
+                            During a binge, I would often eat really, really fast. My binges would always happen when I was alone.
+                    .listen
+                        
+                        p Listen to the extended excerpt
+                        
+                        //- the following is a placeholder
+                        .audio-player.audio-1
+                        //- +media-element-audio('audio-player audio-1', '../assets/foo.mp3', false)
 
-            .excerpt.two
+                .sunny.hide--md.hide--sm
 
-                blockquote
-                    p.
-                        When I first realized there was something wrong, it was terrifying to admit that to anyone, even a professional.
-                .listen.
-                    Listen to the extended excerpt
+                .excerpt.two
+
+                    blockquote
+                        p.
+                            When I first realized there was something wrong, it was terrifying to admit that to anyone, even a professional.
+                    .listen
+                        
+                        p Listen to the extended excerpt
+
+                        //- the following is a placeholder
+                        .audio-player.audio-2
+                        //- +media-element-audio('audio-player audio-2', '../assets/foo.mp3', false)
 
             .sunny.hide--lg.hide--sm
 
 
     section.section--button
 
-        .center
-            a(href="#needurl").btn.btn--yellow
-                | GET THE FULL !{DSM5} !{BED} CRITERIA
+        .wrap--content
+
+            .center
+                a(href="#needurl").btn.btn--yellow
+                    | GET THE FULL !{DSM5} !{BED} CRITERIA
 
         .wrap--refs
             ol.refs.number
                 li.
-                    American Psychiatric Association. Binge-eating disorder. In: #[em Diagnostic and Statistical Manual of Mental Disorders]. 5th ed. Arlington, VA: American Psychiatric Association; 2013:350-353.
+                    American Psychiatric Association. Binge-eating disorder. In: #[em Diagnostic and Statistical Manual of Mental Disorders]. 5th ed. Arlington, VA: American Psychiatric Association;2013:350-353.
                 li.
-                    Hudson JI, Hiripi E, Pope HG Jr, Kessler RC. [Published correction appears in #[em Biol Psychiatry]. 2012;72(2):164.] Biol Psychiatry. 2007;61(3):348-358.
+                    Hudson JI, Hiripi E, Pope HG Jr, Kessler RC. [Published correction appears in #[em Biol Psychiatry]. 2012;72(2):164.] #[em Biol Psychiatry]. 2007;61(3):348-358.

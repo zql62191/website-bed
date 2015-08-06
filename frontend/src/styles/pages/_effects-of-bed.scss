@@ -41,8 +41,17 @@ body.effects-of-bed {
                 margin: 0 auto 10px auto;
             }
         }
-    }
 
+        li:before {
+            @include mq('sm') {
+                font-size: 1.5em;
+            }
+        }
+    }
+    .bold{
+        font-weight: bold;
+    }
+    
     .section--association {
         background: #333E48;
         background-image: radial-gradient(50% 149%, #333E48 17%, #252F39 100%);
@@ -106,18 +115,32 @@ body.effects-of-bed {
                     vertical-align: middle;
                     text-align: center;
                 }
+            }
 
-                &.sixty-three {
-                    @include responsive-bg("#{$page}/63.png");
-                }
-                &.nineteen {
-                    @include responsive-bg("#{$page}/19.png");
-                }
+            .sixty-three {
+                @include responsive-bg("#{$page}/63.png");
+            }
+            .nineteen {
+                @include responsive-bg("#{$page}/19.png");
+            }
 
-                .num {
-                    color: #FDBD3E;
-                    font-size: 50px;
+            
+            .num {
+                color: #FDBD3E;
+                font-size: 50px;
+            }
+            .text {
+                @include mq('sm') {
+                    width: percentage(155/280);
+                    margin: 0 auto;
                 }
+            }
+        }
+
+        .heading--3 {
+            @include mq('sm') {
+                font-size: 16px;
+                line-height: 19px;
             }
         }
     }
@@ -171,6 +194,20 @@ body.effects-of-bed {
             }
         }
 
+        .mobile-excerpt-wrapper {
+            position: static;   // so it doesn't effect absolute position of exerpts on desktop
+            
+            // this wrapper is only needed for mobile layout
+            @include mq('sm') {
+                background-color: #333E48;
+                background-image: radial-gradient(50% 149%, #333E48 17%, #252F39 100%);
+                width: percentage(320/280); // needs to be full width despite being in .wrap--content
+                margin: 0 -6.25%;
+                padding: 39px 6.25% 0 6.25%;
+            }
+
+        }
+
         .excerpt {
             
             @include mq("lg") {
@@ -212,12 +249,59 @@ body.effects-of-bed {
 
             @include responsive-bg("#{$page}/sunny.png");
         }
+
+        .listen {
+            overflow: auto;
+
+            p {
+                @include mq('sm') {
+                    width: percentage(125/280);
+                    text-align: left;
+                    float: right;
+                    margin-right: percentage(16/280);
+                    padding-top: 9px;
+                }
+            }
+        }
+
+        .audio-player {
+
+            @include mq('lg') {
+                @include bst-img('lg/effects-of-bed/audio-player-placeholder.png');
+                margin-top: 10px;
+
+                &.audio-1 {
+                    float: right;
+                }
+            }
+
+            @include mq('sm') {
+                @include bst-img('sm/effects-of-bed/audio-player-placeholder.png');
+                width: percentage(75/280);
+                height: 57px;
+                margin: 0 percentage(15/280) 33px percentage(49/280);
+                float: left;
+            }
+        }
     }
 
     .section--button {
         background: #333E48;
         background-image: radial-gradient(50% 149%, #333E48 17%, #252F39 100%);
         padding-top: 65px;
+
+        @include mq('sm') {
+            padding-top: 20px;
+            background-image: none;
+
+            .btn {
+                width: percentage(280/320);
+                font-size: 14px;
+                line-height: 17px;
+                padding: 16px 24px 11px;
+                height: auto;
+            }
+        }
 
         .wrap--refs {
             margin-top: 50px;

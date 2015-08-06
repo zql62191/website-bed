@@ -28,7 +28,7 @@ body.dsm5-criteria {
                 text-align: center;
             }
         }
-
+        
         .trim{
             @include mq("lg", "md") {
                 width: 555px;
@@ -42,8 +42,9 @@ body.dsm5-criteria {
 
         ol.refs{
             padding-bottom: 0px;
+            
         }
-
+        
     }
 
     .section--triggers {
@@ -63,4 +64,25 @@ body.dsm5-criteria {
             }
         }
     }
+
+
+    @include mq('md') {
+
+    }
+    @include mq('sm') {
+        .heading--1{
+            font-size: 26px !important;
+            color: #FDBD3E;
+            line-height: 28px;
+            margin-bottom: 11px;
+        }
+        
+        li{
+            font-size: 16px !important;
+            color: #D6D8DA;
+            line-height: 18px;
+        }
+    }
+    
+    
 }
