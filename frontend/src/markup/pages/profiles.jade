@@ -29,7 +29,7 @@ block content
                             p.
                                 I feel like I&rsquo;ve lost control while I&rsquo;m eating.
 
-
+                        +mobile-carousel-pagination
                         .profile
                             .name.
                                 Kimberly
@@ -62,6 +62,8 @@ block content
                             p.
                                 I&rsquo;m disgusted with myself after I binge.
 
+                        +mobile-carousel-pagination
+
                         .profile
                             .name.
                                 Nikki
@@ -93,6 +95,8 @@ block content
                             p.
                                 When the binges are over, I feel guilty about my behavior.
 
+                        +mobile-carousel-pagination
+
                         .profile
                             .name.
                                 Julie
@@ -123,9 +127,11 @@ block content
 
                         blockquote
                             p
-                                | I binge alone because I don&rsquo;t want anyone
-                                br
+                                | I binge alone because I don&rsquo;t want anyone 
+                                br.desktop-break
                                 span to know how much I eat.
+
+                        +mobile-carousel-pagination
 
                         .profile
                             .name.
@@ -150,11 +156,7 @@ block content
                     .prev(ng-click="clickControls('L')")
                     .next(ng-click="clickControls('R')")
 
-                ul.mobile-pagination
-                    li.kimberly(ng-click="changeHero('kimberly')")
-                    li.nikki(ng-click="changeHero('nikki')")
-                    li.julie(ng-click="changeHero('julie')")
-                    li.diego(ng-click="changeHero('diego')")
+                
 
                 ul.pagination
                     li.kimberly(ng-click="changeHero('kimberly')")

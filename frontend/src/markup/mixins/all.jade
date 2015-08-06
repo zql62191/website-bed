@@ -195,3 +195,10 @@ mixin li-active
 
     li&attributes(attributes)
         block
+
+mixin mobile-carousel-pagination
+    ul.mobile-pagination
+        li.kimberly(ng-click="changeHero('kimberly')")
+        li.nikki(ng-click="changeHero('nikki')")
+        li.julie(ng-click="changeHero('julie')")
+        li.diego(ng-click="changeHero('diego')")
