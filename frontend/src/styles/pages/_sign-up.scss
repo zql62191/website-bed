@@ -12,8 +12,8 @@ body.sign-up{
             width: 593px;
             margin: 0 auto;
 
-            input[type='text'],input[type='email']{
-                width:582px;
+            input[type='text'],input[type='email'] {
+                width: 582px;
                 @include gs('light');
                 font-size: 18px;
                 color: #858B91;
@@ -27,6 +27,19 @@ body.sign-up{
                 .errormessage{
                     display: none;
                     border-bottom: 1px solid #FF4517;
+                    color: #FF4517;
+                }
+
+                &.forminvalid.ng-pristine {
+                    border-bottom: 1px solid #FF4517 !important;
+                }
+
+                .form-group.help-block {
+                    display: none;
+                }
+                .form-group.has-error.help-block {
+                    display: block;
+                    border-bottom: 1px solid #FF4517;
                 }
 
                 .help-block{
@@ -35,17 +48,17 @@ body.sign-up{
                 &.forminvalid.ng-dirty, &.ng-dirty.ng-invalid-required, &.ng-touch.ng-invalid-required{
                     color: #FF4517;
                     border-bottom: 1px solid #FF4517;
-
+                
                     .errormessage{
                         color: #FF4517;
                         display: inline-block;
                         border-bottom: 1px solid #FF4517;
-                        // position:absolute;
+                        //position:absolute;
                     }
-
-                }
+                }  
 
             }
+            
             .form-group.help-block{
                 display:none;
             }
@@ -63,12 +76,7 @@ body.sign-up{
                 color: #FF4517;
                 margin-top: -25px;
             }
-
-            .form-control{
-                border-bottom: 1px solid #FF4517 !important;
-            }
-
-
+            
             button{
                 border-style: none;
                 @include gs();

@@ -33,7 +33,7 @@
             position: absolute;
             width: 20px;
             height: 20px;
-            background-image: url("../img/lg/unsubscribe/down_arrow.png");
+            background-image: url("#/img/lg/unsubscribe/down_arrow.png");
             background-repeat: no-repeat;
             background-position: center center;
             left: 553px;
@@ -42,12 +42,14 @@
 
     }
 
+     
      .help-block{
          position:absolute;
          color: #FF4517;
          margin-top: -30px;
          right:20px;
          border-bottom-color: #FF4517;
+         
      }
      
      &.forminvalid.ng-dirty, &.ng-dirty.ng-invalid-required, &.ng-touch.ng-invalid-required{
@@ -142,10 +144,11 @@
                 border-bottom: 1px solid #5C656D;
                 padding-bottom: 3px; 
                 margin-top: 25px;
-
-                .errormessage{
-                    display: none;
                 }
+                
+               .errormessage{
+                   display: none;
+               }
 
                 .help-block{
                 //border-bottom: 1px solid #FF4517 !important;  
@@ -166,19 +169,20 @@
                 .form-group.has-error.help-block{
                     display: block;
                 }
-            }
-            
-        .help-block{
-            position:absolute;
-            color: #FF4517;
-            margin-top: -30px;
-            right:20px;
-        }
-            .errormessage {
-                position:absolute;
+            .help-block {
+                position: absolute;
                 color: #FF4517;
-                margin-top: -25px;
+                margin-top: -30px;
+                right: 20px;
             }
+                .errormessage {
+                    position:absolute;
+                    color: #FF4517;
+                    margin-top: -25px;
+                }
+            
+            }
+        
 
             select{
                 width: 590px;
@@ -189,7 +193,7 @@
                 &.ng-dirty.ng-invalid-required, &.forminvalid.ng-dirty{
                     border-bottom: 1px solid #FF4517 !important;
                     color: #FF4517;
-
+                    
                     option{
                         color: #FF4517;
                     }
@@ -197,12 +201,11 @@
                 &.forminvalid.ng-pristine {
                     border-bottom: 1px solid #FF4517 !important;
                 }    
-
-                    option{
+                  option{
                         color: #FF4517;
                     }
                 }
-                
+
                 option{
                     color: #858B91;
                 }
@@ -236,11 +239,8 @@
 
 
     }
-
-        
-    }
-
-
+ 
+ 
      @include mq("md") {
          
      }
@@ -337,6 +337,10 @@
                          color: #FF4517;
                      }
 
+                     &.forminvalid.ng-pristine{
+                         border-bottom: 1px solid #FF4517 !important;
+                     }
+
                  }
 
                  select {
@@ -353,6 +357,14 @@
                              color: #FF4517;
                          }
 
+                     }
+
+                     &.forminvalid.ng-pristine{
+                         border-bottom: 1px solid #FF4517 !important;
+
+                         option{
+                             color: #FF4517;
+                         }
                      }
 
                      option {
@@ -374,6 +386,3 @@
 
          }
      }
-     
-
- }

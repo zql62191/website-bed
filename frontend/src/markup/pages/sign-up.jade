@@ -19,15 +19,15 @@ block content
                 p.help-block(ng-if="submitted && optIn.firstName.$error.required")
                     | The user's first name is required
                 
-                input(type='text', name="lastName", placeholder="Last Name", ng-model='user.lastName', required)
+                input(type='text', name="lastName", placeholder="Last Name", ng-model='user.lastName', required, ng-class="{forminvalid: (optIn.lastName.$invalid && optIn.firstName.$dirty && submitted) || (optIn.lastName.$invalid && optIn.lastName.$pristine && submitted)}").form-control
                 p.help-block(ng-if="submitted && optIn.lastName.$error.required")
                     | The user's last name is required
                 
-                input(type='email', name="email", placeholder="E-mail", ng-model='user.email', required).form-control
+                input(type='email', name="email", placeholder="E-mail", ng-model='user.email', required, ng-class="{forminvalid: (optIn.email.$invalid && optIn.email.$dirty && submitted) || (optIn.email.$invalid && optIn.email.$pristine && submitted)}").form-control
                 p.help-block(ng-if="submitted && (optIn.email.$error.email || optIn.email.$error.required)")
                     | Please enter a vaild email address...
                 
-                input(type='email', name="confirmEmail", placeholder="Confirm E-mail", ng-model='user.confirmEmail', required)
+                input(type='email', name="confirmEmail", placeholder="Confirm E-mail", ng-model='user.confirmEmail', required, ng-class="{forminvalid: (optIn.confirmEmail.$invalid && optIn.confirmEmail.$dirty && submitted) || (optIn.confirmEmail.$invalid && optIn.confirmEmail.$pristine && submitted)}").form-control
                 p.help-block(ng-if="submitted && (optIn.confirmEmail.$error.email || optIn.confirmEmail.$error.required)")
                     | Please confirm the email address
                 p.help-block(ng-if="submitted && notMatch")

@@ -3,47 +3,65 @@
 
     angular.module('cdmp.controllers')
 
+
         .controller('emailController', ['$scope', function($scope) {
+            
             $scope.submitted = false;
 
             $scope.submitForm = function() {
                 $scope.submitted = true;
                 $scope.$broadcast('show-errors-check-validity');
+
+
                 if (!$scope.optOutEmail.$invalid) {
-                    //alert('Successful login');
                     console.log("user submit");
-                    window.location.href="thank-you-request.aspx";
-                    }
-                };
-        }])
+                    window.location.href="/hcp/thank-you-request.aspx";
 
-        .controller('directMailController', ['$scope', function($scope) {
-            $scope.submitted = false;
-           
-            $scope.submitEmail = function() {
-                $scope.submitted = true;
-                $scope.$broadcast('show-errors-check-validity');
-                
-                if (!$scope.optOutDirectMail.$invalid) {
-                    console.log("user submit");
-                    window.location.href="thank-you-request.aspx";
                 }
             };
         }])
-
-        .controller('allController', ['$scope', function($scope) {
-            $scope.submitted = false;
         
-            $scope.submitAll = function() {
+        .controller('directmailController', ['$scope', function($scope) {
+
+            $scope.submitted = false;
+
+            $scope.submitForm = function() {
                 $scope.submitted = true;
                 $scope.$broadcast('show-errors-check-validity');
-                if (!$scope.optOutAll.$invalid) {
-                    //alert('Successful login');
+
+                if (!$scope.optoutdirectmail.$invalid) {
                     console.log("user submit");
-                    window.location.href="thank-you-request.aspx";
+                    window.location.href="/hcp/thank-you-request.aspx";
                 }
+                else{
+                    console.log("Error!");
+                    //alert("Please address the errors above!")
+                }
+
             };
         }])
+
+
+        .controller('allmailController', ['$scope', function($scope) {
+
+            $scope.submitted = false;
+
+            $scope.submitForm = function() {
+                $scope.submitted = true;
+                $scope.$broadcast('show-errors-check-validity');
+
+                if (!$scope.optoutall.$invalid) {
+                    console.log("user submit");
+                    window.location.href="/hcp/thank-you-request.aspx";
+                }
+                else{
+                    console.log("Error!");
+                    //alert("Please address the errors above!")
+                }
+
+            };
+        }])
+        
 
         .directive('showErrors', function (showErrorsConfig) {
             var getShowSuccess;
@@ -67,6 +85,15 @@
                 return { showSuccess: _showSuccess };
             };
         })
+    
+    
+        //.controller('clickController', ['$scope', function($scope){
+        //    $scope.clickToTY = function(){
+        //        window.location.href="thank-you-request.aspx";
+        //    }
+        //}])
+
+
 
 }).call(this);
  
