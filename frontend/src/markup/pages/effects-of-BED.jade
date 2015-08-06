@@ -51,6 +51,7 @@ block content
                     .text
                         | reported 
                         em.bold severe 
+                        | functional 
                         | impairment during the 
                         | past year
 
@@ -60,7 +61,7 @@ block content
         p(data-note="").footnote.
             *Data are from an eating disorder&ndash;assessed subsample (n=2,980) of the National Comorbidity Survey Replication, #[br]a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.#[sup 2]
 
-    section.section--living
+    section.section--living(ng-controller="AudioController as AudioCtrl")
         .wrap--content
 
             h1.heading--1.
@@ -83,8 +84,8 @@ block content
                         p Listen to the extended excerpt
                         
                         //- the following is a placeholder
-                        .audio-player.audio-1
-                        //- +media-element-audio('audio-player audio-1', '../assets/foo.mp3', false)
+                        //- .audio-player.audio-1
+                        +media-element-audio('audio-player audio-1', 'https://d2ly9zedmmzqz4.cloudfront.net/BED-S05501.mp3', false)
 
                 .sunny.hide--md.hide--sm
 
@@ -98,8 +99,8 @@ block content
                         p Listen to the extended excerpt
 
                         //- the following is a placeholder
-                        .audio-player.audio-2
-                        //- +media-element-audio('audio-player audio-2', '../assets/foo.mp3', false)
+                        //- .audio-player.audio-2
+                        +media-element-audio('audio-player audio-2', 'https://d2ly9zedmmzqz4.cloudfront.net/BED-S05502.mp3', false)
 
             .sunny.hide--lg.hide--sm
 

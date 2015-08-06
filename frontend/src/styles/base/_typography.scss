@@ -336,5 +336,5 @@ blockquote {
 }
 
 .roman{
-    @include gs("roman");
+    @include gs("roman", true);
 }

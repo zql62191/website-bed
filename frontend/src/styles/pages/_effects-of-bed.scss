@@ -270,16 +270,20 @@ body.effects-of-bed {
         .audio-player {
 
             @include mq('lg') {
-                @include bst-img('lg/effects-of-bed/audio-player-placeholder.png');
+                // @include bst-img('lg/effects-of-bed/audio-player-placeholder.png');
                 margin-top: 10px;
 
                 &.audio-1 {
                     float: right;
                 }
+
+                .mejs-controls{
+                    position: relative;
+                }
             }
 
             @include mq('sm') {
-                @include bst-img('sm/effects-of-bed/audio-player-placeholder.png');
+                // @include bst-img('sm/effects-of-bed/audio-player-placeholder.png');
                 width: percentage(75/280);
                 height: 57px;
                 margin: 0 percentage(15/280) 33px percentage(49/280);
