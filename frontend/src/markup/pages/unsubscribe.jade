@@ -35,7 +35,7 @@ block content
                     mixin content
                         .formContainer(ng-controller="emailController")
                             form.emailForm(name='optOutEmail', autocomplete='off', novalidate, show-errors='{showSuccess:true}', ng-submit="submitForm()")
-                                input.inputForm(type='email', name="email", placeholder="E-mail", ng-model='user.email', required)
+                                input(type='email', name="email", placeholder="E-mail", ng-model='user.email', required, ng-class="{forminvalid: (optOutEmail.email.$invalid && optOutEmail.email.$dirty && submitted) || (optOutEmail.email.$invalid && optOutEmail.email.$pristine && submitted)}").form-control
                                 p.help-block(ng-if="submitted && (optOutEmail.email.$error.email || optOutEmail.email.$error.required)")
                                     | Please enter e-mail address
                                 button(type="button", ng-click="submitForm()").btn.btn--yellow

@@ -15,7 +15,7 @@ block content
     section.section--page(ng-controller="signupController")
         .wrap--content
             form(name='optIn', autocomplete='off', novalidate, show-errors='{showSuccess:true}', ng-submit="submitForm()").form-group
-                input(type='text', name="firstName", placeholder="First Name", ng-model='user.firstName', required).form-control
+                input(type='text', name="firstName", placeholder="First Name", ng-model='user.firstName', required, ng-class="{forminvalid: (optIn.firstName.$invalid && optIn.firstName.$dirty && submitted) || (optIn.firstName.$invalid && optIn.firstName.$pristine && submitted)}").form-control
                 p.help-block(ng-if="submitted && optIn.firstName.$error.required")
                     | The user's first name is required
                 
