@@ -3,28 +3,17 @@
 
     angular.module('cdmp.controllers')
 
-        .controller('unsubController', ['$scope', function($scope) {
+        .controller('mailController', ['$scope', function($scope) {
 
             $scope.submitted = false;
-            $scope.notMatch = false;
 
             $scope.submitForm = function() {
                 $scope.submitted = true;
                 $scope.$broadcast('show-errors-check-validity');
 
-                if (!$scope.optIn.$invalid) {
-                    if($scope.user.email == $scope.user.confirmEmail){
-                        $scope.notMatch = false;
-                        if($scope.checkBox==true){
-                            //alert('Successful login');
-                            //location.reload();
-                            console.log("user submit");
-                            window.location.href="thank-you-request.aspx";
-                        }
-                    }else{
-                        $scope.notMatch = true;
-                        console.log("not match")
-                    }
+                if (!$scope.optoutemail.$invalid) {
+                    console.log("user submit");
+                    window.location.href="/hcp/thank-you-request.aspx";
                 }
                 else{
                     console.log("Error!");
@@ -33,6 +22,49 @@
 
             };
         }])
+
+
+        .controller('directmailController', ['$scope', function($scope) {
+
+            $scope.submitted = false;
+
+            $scope.submitForm = function() {
+                $scope.submitted = true;
+                $scope.$broadcast('show-errors-check-validity');
+
+                if (!$scope.optoutdirectmail.$invalid) {
+                    console.log("user submit");
+                    window.location.href="/hcp/thank-you-request.aspx";
+                }
+                else{
+                    console.log("Error!");
+                    //alert("Please address the errors above!")
+                }
+
+            };
+        }])
+
+
+        .controller('allmailController', ['$scope', function($scope) {
+
+            $scope.submitted = false;
+
+            $scope.submitForm = function() {
+                $scope.submitted = true;
+                $scope.$broadcast('show-errors-check-validity');
+
+                if (!$scope.optoutall.$invalid) {
+                    console.log("user submit");
+                    window.location.href="/hcp/thank-you-request.aspx";
+                }
+                else{
+                    console.log("Error!");
+                    //alert("Please address the errors above!")
+                }
+
+            };
+        }])
+        
 
         .directive('showErrors', function (showErrorsConfig) {
             var getShowSuccess;
@@ -58,11 +90,11 @@
         })
     
     
-        .controller('clickController', ['$scope', function($scope){
-            $scope.clickToTY = function(){
-                window.location.href="thank-you-request.aspx";
-            }
-        }])
+        //.controller('clickController', ['$scope', function($scope){
+        //    $scope.clickToTY = function(){
+        //        window.location.href="thank-you-request.aspx";
+        //    }
+        //}])
 
 
 }).call(this);
