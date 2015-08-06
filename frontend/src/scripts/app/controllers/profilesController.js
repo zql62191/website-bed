@@ -60,6 +60,14 @@
 
             };
 
+            $scope.swipeControls = function(direction) {
+
+                // this is so swipes only happen on tablet/mobile
+                if ($(window).width() < 1024) {
+                    $scope.clickControls(direction);
+                }
+            }
+
             $scope.clickControls = function(direction){
 
                 //i = the current array index
