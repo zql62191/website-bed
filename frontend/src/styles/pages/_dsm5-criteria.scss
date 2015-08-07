@@ -9,6 +9,12 @@ body.dsm5-criteria {
             width: percentage(611/655);
             margin: 0 auto;
         }
+
+        @include mq('sm') {
+            width: percentage(555/655);
+            text-align: center;
+            margin-left: 8.5%;
+        }
     }
 
 
@@ -48,10 +54,30 @@ body.dsm5-criteria {
         ol.refs{
             padding-bottom: 0px;
             
+            @include mq("sm"){
+                width: 97%;
+            }
+            
+        }
+        
+        ol.refs li{
+            @include mq("sm"){
+                font-size: 14px !important;
+                color: #858B91 !important;
+                line-height: 17px;
+                margin: 0 auto !important;
+                width: percentage(300/320);
+                
+            }
         }
         
     }
 
+    ul.boxed  li{
+        padding-left: 35px;
+        padding-top: 25px;
+    }
+    
     .section--triggers {
         background: #333E48;
         background-image: radial-gradient(50% 149%, #333E48 17%, #252F39 100%);
