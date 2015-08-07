@@ -19,8 +19,14 @@ body.potential-causes {
     }
 
     h4.heading--4 {
-        font-size: 21px;
-        line-height: 25px;
+        @include mq("lg", "md") {
+            font-size: 21px;
+            line-height: 25px;
+        }
+        @include mq("sm") {
+            font-size: 19px;
+            line-height: 21px;
+        }
     }
 
     .section--theories {
@@ -203,15 +209,19 @@ body.potential-causes {
         }
     }
 
-    // NOTE: this section has to many !importants, use specificity to override css attributes
+    // NOTE: this section has too many !importants, use specificity to override css attributes ┻━┻︵ \(°□°)/ ︵ ┻━┻
     @include mq("sm") {
+
+        .row p{
+            letter-spacing: 0.3px;
+        }
 
         .phoneStyle {
             display: none;
         }
 
         .mobileContspace {
-            margin-top: 61px;
+            margin-top: 48px;
         }
         
         .icon {
@@ -257,7 +267,7 @@ body.potential-causes {
             font-size: 15.7px !important;
             color: #ADB2B6;
             line-height: 19px !important;
-            letter-spacing: 1.1px;
+            // letter-spacing: 1.1px;
             margin-bottom: 53px;
             
         }
@@ -309,6 +319,12 @@ body.potential-causes {
         }
         p, h4 {
             text-align: center;
+        }
+        .section--factors {
+            .btn{
+                font-size: 14px;
+                // line-height: 17px;
+            }
         }
     }
 }

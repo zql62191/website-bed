@@ -55,7 +55,7 @@ ul.square {
 
     > li:before {
         content: '\25A0';
-        font-size: 0.8em;
+        font-size: 1.5em;
         @include inline-block;
         padding-right: 8px;
         color: $active-yellow;
