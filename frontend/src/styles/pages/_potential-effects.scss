@@ -1,5 +1,5 @@
-body.effects-of-bed {
-    $page: "effects-of-bed";
+body.potential-effects {
+    $page: "potential-effects";
 
     .footnote {
         text-align: center;
@@ -276,7 +276,7 @@ body.effects-of-bed {
             }
 
             @include mq('lg') {
-                // @include bst-img('lg/effects-of-bed/audio-player-placeholder.png');
+                // @include bst-img('lg/potential-effects/audio-player-placeholder.png');
                 margin-top: 10px;
 
                 &.audio-1 {
@@ -292,14 +292,14 @@ body.effects-of-bed {
                 float: left;
                 width: percentage(75/280) !important;
                 height: 57px !important;
-                @include bst-img('sm/effects-of-bed/audio-player-placeholder.png');
+                @include bst-img('sm/potential-effects/audio-player-placeholder.png');
 
                 .mejs-inner{
                     display: none;
                 }
 
                 // .mejs-play button{
-                //     @include bst-img('sm/effects-of-bed/audio-player-placeholder.png');
+                //     @include bst-img('sm/potential-effects/audio-player-placeholder.png');
                 // }
 
                 // .mejs-time, .mejs-mute{
