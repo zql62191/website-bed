@@ -289,11 +289,8 @@ body.recognizing-bed {
                         padding-top:6px;
                         padding-bottom:6px;
                     }
-
                 }
-
             }
-
         }
 
         @include mq("md") {
@@ -303,11 +300,9 @@ body.recognizing-bed {
             }
 
         }
-
-        
     }
 
-    .section--coexisting{
+    .section--coexisting {
         background: #333E48;
 
         .statistic-box {
@@ -320,7 +315,6 @@ body.recognizing-bed {
 
             .statistic {
                 display: table;
-
                 margin-left: auto;
                 margin-right: auto;
 
@@ -341,31 +335,36 @@ body.recognizing-bed {
                     padding: 0 14px;
                     font-size: 18px;
                     color: #D6D8DA;
-                    line-height: 22px;
+                    line-height: 22px;            
+                    position: absolute;
+                    left: 0;
+                    right: 0;
 
                     em {
                         color: #D6D8DA;
                     }
+                    br {
+                        display: block;
+                    }
                 }
-
-
-                &.box1{
-                    // @include responsive-icon("#{$page}/oval_4_of_5.png");
-                    height: 248px;
-                    width: 248px;
-                    background: transparent url("../img/lg/#{$page}/oval_4_of_5.png") center center no-repeat;
-                    background-size: 248px 248px;
-                }
-
-                &.box2{
-                    // @include responsive-icon("#{$page}/oval_nearly_half.png");
-                    height: 248px;
-                    width: 248px;
-                    background: transparent url("../img/lg/#{$page}/oval_nearly_half.png") center center no-repeat;
-                    background-size: 248px 248px;
-                }
-
             }
+            .box1{
+                // @include responsive-icon("#{$page}/oval_4_of_5.png");
+                height: 248px;
+                width: 248px;
+                background: transparent url("../img/lg/#{$page}/oval_4_of_5.png") center center no-repeat;
+                background-size: 248px 248px;
+            }
+
+            .box2{
+                // @include responsive-icon("#{$page}/oval_nearly_half.png");
+                height: 248px;
+                width: 248px;
+                background: transparent url("../img/lg/#{$page}/oval_nearly_half.png") center center no-repeat;
+                background-size: 248px 248px;
+                background-position: center top;
+            }
+
         }
 
         @include mq("lg", "md") {
@@ -375,12 +374,12 @@ body.recognizing-bed {
                 .statistic {
                     float: left;
                     width: 50%;
-                    padding: 62px 10px 5px 10px;
+                    padding: 75px 10px 5px 10px;
                     text-align: center;
 
                     & + .statistic {
                     //     border-left: 1px solid #979797;
-                        margin-left: percentage(70/960);
+                        // margin-left: percentage(70/960);
                     }
                 }
             }
@@ -409,14 +408,11 @@ body.recognizing-bed {
             }
 
             .statistic-box {
-                // padding: 40px;
 
                 .statistic{
-                    &.box1{
 
-                    }
-                    &.box2{
-
+                    .text {  
+                        top: 114px;      
                     }
                 }
 
@@ -426,25 +422,22 @@ body.recognizing-bed {
                 margin: 20px 36px 54px 36px;
             }
 
-            h4.heading--2{
+            h4.heading--2 {
                 font-size: 21px;
-                padding-top:24px;
-                padding-bottom:24px;
+                padding-top: 24px;
+                padding-bottom: 24px;
             }
 
-            .wrap--refs{
+            .wrap--refs {
 
-                ol.refs{
+                ol.refs {
 
                     li{
-                        padding-top:6px;
-                        padding-bottom:6px;
+                        padding-top: 6px;
+                        padding-bottom: 6px;
                     }
-
                 }
-
             }
-
         }
 
         @include mq("md") {
@@ -452,16 +445,10 @@ body.recognizing-bed {
                 width: percentage(570/768);
                 min-width: 570px;
             }
-
-            .statistic-box {
-                // padding: percentage(40/768);
-
-                .statistic{
-                    margin: 0 auto;
-                    width: 250px;
-                    display: block;
-                }
-
+            .statistic {
+                margin: 0 auto;
+                width: 250px;
+                display: block;
             }
         }
 
@@ -470,25 +457,24 @@ body.recognizing-bed {
                 padding: percentage(20/320);
 
                 .statistic {
-                    // padding: 20px 0;
-                    padding: 62px 10px 5px 10px;
+                    padding: 79px 10px 5px 10px;
                     text-align: center;
 
-                    &.box1{
-                        margin-bottom: 20px;
+                    .text {
+                        top: 130px;
+                        font-size: 16px;
+                        line-height: 19px;
                     }
+                }
+                .box1 {
+                    margin-bottom: 20px;
+                }
 
-                    &:last-child {
-                        padding-bottom: 0;
-                        margin-top: 20px;
-                        padding-top: 90px;
-                        height: 288px;
+                .box2 {
+                    padding-bottom: 0;
+                    margin-top: 40px;
+                    // height: 288px;
 
-                    }
-
-                    & + .statistic {
-                        border-top: 1px solid #979797;
-                    }
                 }
             }
 
@@ -546,8 +532,8 @@ body.recognizing-bed {
 
         }
 
-        .section--obesity{
-            .mobile-line{
+        .section--obesity {
+            .mobile-line {
                 border-bottom: 1px solid #979797;
                 width: percentage(266/320);
                 margin: 0 auto;
@@ -560,26 +546,23 @@ body.recognizing-bed {
             }
 
             h3.heading--3{
-                br{ display: none; }
+                br { display: none; }
             }
-
         }
-
 
         .section--compared{
 
             .heading--2.top{
                 text-align: center;
             }
-
         }
 
-        .section--triggers{
-            h1{
+        .section--triggers {
+            h1 {
                 width: 240px;
                 text-align: center;
                 margin: 0 auto;
-                br{ display: none; }
+                br { display: none; }
             }
 
             .heading--2.bottom-bump{
@@ -606,8 +589,5 @@ body.recognizing-bed {
                 padding-bottom: 26px;
             }
         }
-
     }
-
-
 }
