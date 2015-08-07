@@ -3,16 +3,20 @@ body.recognizing-bed {
 
     h1.heading--1{
         padding-bottom: 18px;
+
     }
 
     .section--bulimia {
         background: #252F39;
         background-image: linear-gradient(-180deg, #1E2730 0%, #252F39 100%);
 
-        .heading--2{
-            // width: percentage(796/1024);
+        .heading--2 {
             text-align: center;
             margin: 0 auto 12px auto;
+
+            @include mq('lg') {
+                width: percentage(796/1024);
+            }
         }
 
     }
@@ -20,14 +24,17 @@ body.recognizing-bed {
     .section--overeating {
         background: #333E48;
 
-        .wrap--content{
+        .wrap--content {
             padding-bottom: 34px;
         }
 
-        .heading--2{
-            // width: 886px;
+        .heading--2 {
             text-align: center;
             margin: 0 auto;
+
+            @include mq('lg') {
+                width: percentage(886/960);
+            }
         }
 
         &:before {
@@ -39,30 +46,31 @@ body.recognizing-bed {
     .section--obesity {
         background: #252f39;//#252F39;
 
-        .heading--2{
-            // width: 608px;
+        .heading--2 {
             text-align: center;
             margin: 0 auto;
+
+            @include mq('lg') {
+                width: percentage(608/960);
+            }
         }
 
-        .heading--3{
+        .heading--3 {
             text-align: center;
             margin-top: 28px;
             margin-bottom: 66px;
+
+            @include mq('lg') {
+                width: percentage(585/960);
+                margin: 28px auto 66px auto;
+
+                // I don't know why this has a different font size - maybe my sketch file is old.
+                // If you find that this is the incorrect size for the large layout please update, 
+                // and update the width appropriately as well
+                // -- Mike
+                font-size: 18px; 
+            }
         }
-
-    // }
-
-    // .section--majority {
-    //     background: #333E48;
-
-    //     .wrap--content{
-    //         padding-bottom:67px;
-    //     }
-
-    //     .heading--2{
-    //         padding-bottom:40px;
-    //     }
 
         .chart-wrap {
             @include clearfix;
@@ -202,6 +210,14 @@ body.recognizing-bed {
         background: #252f39;
         // background-image: radial-gradient(50% 149%, #333E48 17%, #252F39 100%);
 
+
+        .heading--1 {
+            @include mq('lg') {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+
         .wrap--content {
             @include mq("lg") {
                 width: 555px;
@@ -217,8 +233,6 @@ body.recognizing-bed {
                         padding-left: 14px;
                     }
                 }
-                
-
             }
 
             @include mq("lg", "md") {

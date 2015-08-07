@@ -2,6 +2,7 @@ body.potential-causes {
     $page: "potential-causes";
 
     section {
+
         p, li {
             color: #ADB2B6;
         }
@@ -17,31 +18,32 @@ body.potential-causes {
         }
     }
 
-    h4.heading--4{
+    h4.heading--4 {
         font-size: 21px;
         line-height: 25px;
     }
 
-
     .section--theories {
         background: #252F39;
 
-        h1.heading--1{
+        h1.heading--1 {
             margin-top: 24px;
             margin-bottom: 46px;
+
+            @include mq('lg') {
+                width: percentage(775/960);
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
 
-        h2.heading--2{
+        h2.heading--2 {
             margin-bottom: 20px;
 
-            &.top{
+            &.top {
                 margin-top:16px;
             }
-
         }
-
-        
-
     }
 
     .section--factors {
@@ -49,7 +51,9 @@ body.potential-causes {
     }
 
     @include mq("lg", "md") {
+
         .section--theories {
+
             .row {
                 margin: 0 auto;
 
@@ -73,37 +77,34 @@ body.potential-causes {
 
         .section--factors {
 
-            // padding-top: 20px;
-
-            .wrap--content{
+            .wrap--content {
                 padding-top: 22px;
             }
 
-            h1.heading--1{
+            .heading--1 {
                 margin-bottom: 49px;
             }
 
-            h2.heading--2{
+            .heading--2 {
                 margin-bottom: 20px;
             }
 
             .row {
                 margin: 0 auto;
-
-                &.dna {
-                    .icon {
-                        left: -32px;
-                    }
+            }
+            .dna {
+                .icon {
+                    left: -32px;
                 }
-                &.people {
-                    .icon {
-                        right: 0;
-                    }
+            }
+            .people {
+                .icon {
+                    right: 0;
                 }
             }
         }
 
-        .wrap--refs{
+        .wrap--refs {
             width: 612px;
         }
 
@@ -111,35 +112,39 @@ body.potential-causes {
 
 
     @include mq("lg") {
+    
+        .heading--4 {
+            margin-bottom:10px;
+        }
         .section--theories {
+
             .row {
                 width: 700px;
                 padding: 30px 0 30px 140px;
 
-                &.brain{
+                
+            }
+            .brain {
+                padding-top: 40px;
+                padding-bottom: 10px;
 
-                    padding-top: 40px;
-                    padding-bottom: 10px;
+                
+            }
 
-                    h4.heading--4{
-                        margin-bottom:10px;
-                    }
-                }
+            .neuron {
+                margin-top: 20px;
+                padding-right: 140px;
 
-                &.neuron {
-                    margin-top: 20px;
-                    padding-right: 140px;
-
-                    .icon{
-                        position: absolute;
-                        top: 50%;
-                        margin-top: -106px;
-                    }
+                .icon {
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -106px;
                 }
             }
         }
 
         .section--factors {
+            
             .row {
                 width: 700px;
                 padding: 30px 0;
@@ -169,7 +174,9 @@ body.potential-causes {
     }
 
     @include mq("md") {
+
         .section--theories {
+
             .row {
                 width: percentage(618/768);
                 padding: 30px 0 30px 140px;
@@ -181,6 +188,7 @@ body.potential-causes {
         }
 
         .section--factors {
+
             .row {
                 width: percentage(598/768);
                 padding: 30px 0;
@@ -195,12 +203,14 @@ body.potential-causes {
         }
     }
 
+    // NOTE: this section has to many !importants, use specificity to override css attributes
     @include mq("sm") {
-        .phoneStyle{
+
+        .phoneStyle {
             display: none;
         }
 
-        .mobileContspace{
+        .mobileContspace {
             margin-top: 61px;
         }
         
@@ -211,18 +221,16 @@ body.potential-causes {
             left: auto;
         }
         
-        .is--vc{
+        .is--vc {
             margin-top: 44px !important;
         }
 
-        .mobileHeading--4{
+        .mobileHeading--4 {
             font-size: 19px !important;
-            /* Reward center and im: */
             line-height: 23px;
-            
         }
 
-        .mobileP--1{
+        .mobileP--1 {
             width: 256px !important;
             font-size: 16px;
             margin-top: 9px;
@@ -233,20 +241,19 @@ body.potential-causes {
             
         }
 
-        .is--nd{
+        .is--nd {
             margin-top: 45px !important;
             margin-bottom: 25px !important;
         }
 
-        .mobileHeading--5{
-            /* Neurotransmitter dys: */
+        .mobileHeading--5 {
             font-size: 19px !important;
             color: #E8E9E9;
             line-height: 23px;
             margin-bottom: 10px !important;
         }
         
-        .mobileP--2{
+        .mobileP--2 {
             font-size: 15.7px !important;
             color: #ADB2B6;
             line-height: 19px !important;
@@ -255,14 +262,14 @@ body.potential-causes {
             
         }
         
-        .mobileHeading--6{
+        .mobileHeading--6 {
             margin-top: 25px;
             margin-bottom: 10px;
             font-size: 16px;
             line-height: 18px;
         }
         
-        .mobileTitle{
+        .mobileTitle {
             font-size: 26px !important;
             color: #FDBD3E !important;
             line-height: 36px;
@@ -273,7 +280,7 @@ body.potential-causes {
             margin-right: auto;
         }
         
-        .listStyle{
+        .listStyle {
             font-size: 16px !important;
             color: #ADB2B6 !important;
             line-height: 18px !important;
@@ -281,14 +288,14 @@ body.potential-causes {
             padding-top: 12px !important;
         }
         
-        .mobileHeading--7{
+        .mobileHeading--7 {
             font-size: 19px;
             color: #E8E9E9;
             line-height: 23px;
             font-weight: 100;
         }
 
-        .footnote{
+        .footnote {
             margin-top: 30px;
             font-size: 12px !important;
             color: #858B91 !important;
@@ -297,7 +304,7 @@ body.potential-causes {
         }
         
         
-        .center{
+        .center {
             margin-top: 36px;
         }
         p, h4 {

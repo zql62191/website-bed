@@ -3,6 +3,8 @@ body.effects-of-bed {
 
     .footnote {
         text-align: center;
+        margin: 0 auto;
+        padding: 30px 0;
 
         @include mq("lg", "md") {
             width: 655px;
@@ -12,8 +14,6 @@ body.effects-of-bed {
             padding-left:percentage(20/320);
             padding-right:percentage(20/320);
         }
-        margin: 0 auto;
-        padding: 30px 0;
     }
 
     .section--associated {
@@ -21,12 +21,16 @@ body.effects-of-bed {
         
         .heading--1 {
             padding-bottom: 25px;
+
+            @include mq('lg') {
+                width: percentage(663/960);
+                margin: 0 auto;
+            }
         }
 
         .wrap--content {
 
             @include mq("lg") {
-                // width: 570px;
                 margin: 0 auto;
             }
 
@@ -50,7 +54,7 @@ body.effects-of-bed {
             }
         }
     }
-    .bold{
+    .bold {
         font-weight: 300;
     }
     
@@ -61,6 +65,11 @@ body.effects-of-bed {
         .heading--2 {
             padding-top: 10px;
             padding-bottom: 23px;
+
+            @include mq('lg') {
+                width: percentage(441/570);
+                margin: 0 auto;
+            }
         }
         .heading--3 {
             @include gs('light');
@@ -71,6 +80,7 @@ body.effects-of-bed {
             text-align: center;
         }
         .wrap--content {
+
             @include mq("lg") {
                 width: 570px;
             }
@@ -126,7 +136,6 @@ body.effects-of-bed {
                 @include responsive-bg("#{$page}/19.png");
             }
 
-            
             .num {
                 color: #FDBD3E;
                 font-size: 50px;
@@ -166,7 +175,6 @@ body.effects-of-bed {
             @include gs();
             color: #C2CBD0;
             padding-bottom: 25px;
-            
 
             p {
                 @include gs('light-italic');
@@ -180,9 +188,6 @@ body.effects-of-bed {
                 font-size: 52px;
             }
 
-
-            @include mq("lg") {
-            }
             @include mq("md") {
 
                 p {
@@ -218,38 +223,35 @@ body.effects-of-bed {
                 position: absolute;
                 bottom: 202px;
             }
-
-            &.one {
-                text-align: right;
-
-                @include mq("lg") {
-                    left: 0;
-                }
-            }
-            &.two {
-                text-align: left;
-
-                @include mq("lg") {
-                    right: 0;
-                }
-            }
-
             @include mq("sm") {
                 text-align: center !important;
             }
+        }
+        .one {
+            text-align: right;
 
-            .listen {
-                color: #FFBE2C;
+            @include mq("lg") {
+                left: 0;
+            }
+        }
+        .two {
+            text-align: left;
 
-                @include mq("md", "sm") {
-                    text-align: center;
-                }
+            @include mq("lg") {
+                right: 0;
             }
         }
 
+        .listen {
+            color: #FFBE2C;
+
+            @include mq("md", "sm") {
+                text-align: center;
+            }
+        }
+        
         .sunny {
             margin: 0 auto;
-
             @include responsive-bg("#{$page}/sunny.png");
         }
 
