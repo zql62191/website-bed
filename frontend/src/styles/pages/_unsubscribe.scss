@@ -77,7 +77,7 @@
     }
 
 
-    @include mq('lg') {
+    // @include mq('lg') {
 
     .section--unsubscribe{
 
@@ -130,7 +130,8 @@
 
 
         form{
-            width: 582px;
+            width: percentage(582/1024);
+            min-width: 582px;
             margin: 0 auto;
 
             input[type='text'],input[type='email'], select{
@@ -238,10 +239,49 @@
         }
 
 
-    }
+    // }
  
  
      @include mq("md") {
+
+        .section--unsubscribe{
+
+            .wrap--content{
+                padding-left: 0;
+                padding-right: 0;
+
+                .subcontainer{
+                    width: percentage(636/768);
+
+                    .heading--2{
+                        padding-top: 20px;
+                    }
+                }
+
+            }
+
+            .accordion{
+
+                .accordion-title{
+                    width: percentage(633/768);
+                }
+
+            }
+
+
+            form{
+                width: percentage(582/768);
+                margin: 0 auto;
+
+                input[type='text'],input[type='email'], select{
+                    width:percentage(582/768);
+                }
+
+
+            }
+
+        }
+
          
      }
      
