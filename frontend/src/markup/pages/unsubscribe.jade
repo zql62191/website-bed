@@ -85,27 +85,27 @@ block content
                     mixin content
 
                         .formContainer(ng-controller="allmailController")
-                            form(name='allmailController', autocomplete='off', novalidate, show-errors='{showSuccess:true}', ng-submit="submitForm()").form-group
-                                input(type='email', name="email", placeholder="E-mail", ng-model='user.email', required, ng-class="{forminvalid: (allmailController.email.$invalid && allmailController.email.$dirty && submitted) || (allmailController.email.$invalid && allmailController.email.$pristine && submitted)}").form-control
-                                p.help-block(ng-if="submitted && (allmailController.email.$error.email || allmailController.email.$error.required)")
+                            form(name='optinall', autocomplete='off', novalidate, show-errors='{showSuccess:true}', ng-submit="submitForm()").form-group
+                                input(type='email', name="email", placeholder="E-mail", ng-model='user.email', required, ng-class="{forminvalid: (optinall.email.$invalid && optinall.email.$dirty && submitted) || (optinall.email.$invalid && optinall.email.$pristine && submitted)}").form-control
+                                p.help-block(ng-if="submitted && (optinall.email.$error.email || optinall.email.$error.required)")
                                     | Please enter a vaild email address
-                                input(type='text', name="firstName", placeholder="First Name", ng-model='firstName', ng-required="true", ng-class="{forminvalid: (allmailController.firstName.$invalid && allmailController.firstName.$dirty && submitted) || (allmailController.firstName.$invalid && allmailController.firstName.$pristine && submitted)}")
-                                p.help-block(ng-if="submitted && allmailController.firstName.$error.required")
+                                input(type='text', name="firstName", placeholder="First Name", ng-model='firstName', ng-required="true", ng-class="{forminvalid: (optinall.firstName.$invalid && optinall.firstName.$dirty && submitted) || (optinall.firstName.$invalid && optinall.firstName.$pristine && submitted)}")
+                                p.help-block(ng-if="submitted && optinall.firstName.$error.required")
                                     | The user's first name is required
-                                input(type='text', name="lastName", placeholder="Last Name", ng-model='lastname', ng-required="true", ng-class="{forminvalid: (allmailController.lastName.$invalid && allmailController.firstName.$dirty && submitted) || (allmailController.lastName.$invalid && allmailController.lastName.$pristine && submitted)}")
-                                p.help-block(ng-if="submitted && allmailController.lastName.$error.required")
+                                input(type='text', name="lastName", placeholder="Last Name", ng-model='lastname', ng-required="true", ng-class="{forminvalid: (optinall.lastName.$invalid && optinall.firstName.$dirty && submitted) || (optinall.lastName.$invalid && optinall.lastName.$pristine && submitted)}")
+                                p.help-block(ng-if="submitted && optinall.lastName.$error.required")
                                     | The user's last name is required
-                                input(type='text', name="address", placeholder="Street Address", ng-model='address', ng-required="true", ng-class="{forminvalid: (allmailController.address.$invalid && allmailController.address.$dirty && submitted) || (allmailController.address.$invalid && allmailController.addresss.$pristine && submitted)}")
-                                p.help-block(ng-if="submitted && allmailController.address.$error.required")
+                                input(type='text', name="address", placeholder="Street Address", ng-model='address', ng-required="true", ng-class="{forminvalid: (optinall.address.$invalid && optinall.address.$dirty && submitted) || (optinall.address.$invalid && optinall.addresss.$pristine && submitted)}")
+                                p.help-block(ng-if="submitted && optinall.address.$error.required")
                                     | The user's street address is required
-                                input(type='text', name="suite", placeholder="Suite/Office (not required)", ng-model='suite', ng-required="false", ng-class="{forminvalid: (allmailController.suite.$invalid && allmailController.suite.$dirty && submitted) || (allmailController.suite.$invalid && invalidform && submitted)}")
-                                input(type='text', name="city", placeholder="City", ng-model='city', ng-required="true", ng-class="{forminvalid: (allmailController.city.$invalid && allmailController.city.$dirty && submitted) || (allmailController.city.$invalid && allmailController.city.$pristine && submitted)}")
-                                .help-block(ng-if="submitted && allmailController.city.$error.required")
+                                input(type='text', name="suite", placeholder="Suite/Office (not required)", ng-model='suite', ng-required="false", ng-class="{forminvalid: (optinall.suite.$invalid && optinall.suite.$dirty && submitted) || (optinall.suite.$invalid && invalidform && submitted)}")
+                                input(type='text', name="city", placeholder="City", ng-model='city', ng-required="true", ng-class="{forminvalid: (optinall.city.$invalid && optinall.city.$dirty && submitted) || (optinall.city.$invalid && optinall.city.$pristine && submitted)}")
+                                .help-block(ng-if="submitted && optinall.city.$error.required")
                                     | The user's city is required
-                                select(type='text', name="state", placeholder="State", ng-model='state', ng-required="true", ng-class="{forminvalid: (allmailController.state.$invalid && allmailController.state.$dirty && submitted) || (allmailController.state.$invalid && allmailController.state.$pristine && submitted)}")
+                                select(type='text', name="state", placeholder="State", ng-model='state', ng-required="true", ng-class="{forminvalid: (optinall.state.$invalid && optinall.state.$dirty && submitted) || (optinall.state.$invalid && optinall.state.$pristine && submitted)}")
                                     +states
-                                input(type='text', name="zip", placeholder="Zip", ng-model='zip', ng-required="true", ng-class="{forminvalid: (allmailController.zip.$invalid && allmailController.zip.$dirty && submitted) || (allmailController.zip.$invalid && allmailController.zip.$pristine && submitted)}")
-                                p.help-block(ng-if="submitted && allmailController.zip.$error.required")
+                                input(type='text', name="zip", placeholder="Zip", ng-model='zip', ng-required="true", ng-class="{forminvalid: (optinall.zip.$invalid && optinall.zip.$dirty && submitted) || (optinall.zip.$invalid && optinall.zip.$pristine && submitted)}")
+                                p.help-block(ng-if="submitted && optinall.zip.$error.required")
                                     | The user's zip code is required
 
                                 button(type="submit", ng-click="submitForm()").btn.btn--yellow
