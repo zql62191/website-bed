@@ -93,7 +93,8 @@ body.sign-up{
 
             p.info a{
                 color: white;
-                font-weight: bold;
+                // font-weight: bold;
+                @include gs("bold");
             }
 
             .heading--2{

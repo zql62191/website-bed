@@ -118,7 +118,7 @@ body.patient-statistics {
             padding-bottom: 40px;
 
             @include mq('sm') {
-                @include gs('light');
+                @include gs('light-italic');
                 font-size: 16px;
                 color: #D6D8DA;
                 line-height: 18px;

@@ -17,7 +17,7 @@
         font-weight: 300;
         font-style: normal;
     }
-    @else if $type == "roman-nice" {
+    @else if $type == "roman-nice" or $type == "semibold"{
         font-weight: 200;
         font-style: normal; 
     }
