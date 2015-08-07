@@ -50,7 +50,7 @@
                 $scope.submitted = true;
                 $scope.$broadcast('show-errors-check-validity');
 
-                if (!$scope.optoutall.$invalid) {
+                if (!$scope.optinall.$invalid) {
                     console.log("user submit");
                     window.location.href="/hcp/thank-you-request.aspx";
                 }

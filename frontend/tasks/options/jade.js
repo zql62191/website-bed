@@ -1,3 +1,10 @@
+
+// replace all function to get correct fileString
+String.prototype.replaceAll = function(str1, str2, ignore) {
+    return this.replace(new RegExp(str1.replace(/([\/\,\!\\\^\$\{\}\[\]\(\)\.\*\+\?\|\<\>\-\&])/g,"\\$&"),(ignore?"gi":"g")),(typeof(str2)=="string")?str2.replace(/\$/g,"$$$$"):str2);
+} 
+
+
 module.exports = {
     options: {
         basedir: 'src/markup/',
@@ -31,7 +38,7 @@ module.exports = {
                     from: src,
                     to: dest,
                     fileName: src[0].replace('src/markup/pages/', '').replace('.jade', '').split('/').pop(),
-                    fileString: src[0].replace('src/markup/pages/', '').replace('.jade', '').split('/').pop().replace('-', ''),
+                    fileString: src[0].replace('src/markup/pages/', '').replace('.jade', '').split('/').pop().replaceAll('-', ''),
                     site: yfm.extractJSON('src/markup/data/site.yaml'),
                     env: yfm.extractJSON('src/markup/data/dev.yaml'),
                     page: yfm.extractJSON('./' + src)
@@ -68,7 +75,7 @@ module.exports = {
                     from: src,
                     to: dest,
                     fileName: src[0].replace('src/markup/pages/', '').replace('.jade', '').split('/').pop(),
-                    fileString: src[0].replace('src/markup/pages/', '').replace('.jade', '').split('/').pop().replace('-', ''),
+                    fileString: src[0].replace('src/markup/pages/', '').replace('.jade', '').split('/').pop().replaceAll('-', ''),
                     site: yfm.extractJSON('src/markup/data/site.yaml'),
                     env: yfm.extractJSON('src/markup/data/dev.yaml'),
                     page: yfm.extractJSON('./' + src)
@@ -104,7 +111,7 @@ module.exports = {
                     from: src,
                     to: dest,
                     fileName: src[0].replace('src/markup/pages/', '').replace('.jade', '').split('/').pop(),
-                    fileString: src[0].replace('src/markup/pages/', '').replace('.jade', '').split('/').pop().replace('-', ''),
+                    fileString: src[0].replace('src/markup/pages/', '').replace('.jade', '').split('/').pop().replaceAll('-', ''),
                     site: yfm.extractJSON('src/markup/data/site.yaml'),
                     env: yfm.extractJSON('src/markup/data/prod.yaml'),
                     page: yfm.extractJSON('./' + src)
