@@ -4,79 +4,79 @@ body.identifying-patients {
     .section--patients {
         background: #252F39;
 
-        .persons {
+        @include mq("lg","md") {
 
-            @include mq("lg","md") {
-                .person {
-
-                    $persons: "kimberly" "nikki" "julie" "diego";
-                    @each $person in $persons {
-                        &.#{$person} {
-                            @include responsive-bg("#{$page}/#{$person}.jpg");
-                        }
+            .person {
+                $persons: "kimberly" "nikki" "julie" "diego";
+                @each $person in $persons {
+                    &.#{$person} {
+                        @include responsive-bg("#{$page}/#{$person}.jpg");
                     }
-
                 }
             }
+        }
 
-            @include mq("sm") {
+        @include mq("sm") {
 
-                .person {
-
-                    $persons: "kimberly" "nikki" "julie" "diego";
-                    @each $person in $persons {
-                        &.#{$person} {
-                            @include responsive-bg("#{$page}/#{$person}.png");
-                        }
+            .person {
+                $persons: "kimberly" "nikki" "julie" "diego";
+                @each $person in $persons {
+                    &.#{$person} {
+                        @include responsive-bg("#{$page}/#{$person}.png");
                     }
-
                 }
-
             }
         }
 
 
         @include mq("lg") {
 
-            .persons{
+            .persons {
                 margin-bottom: 60px;
             }
 
-            .callouts{
+            .callouts {
                 margin-bottom: 36px;
             }
 
-            .callout{
+            .callout {
                 width: 50%;
 
-                h2.heading--2{
+                h2.heading--2 {
                     margin-bottom: 10px;
                 }
 
-                p{
+                p {
                     margin-bottom: 22px;
                 }
-
             }
 
-            h1.heading--1{
-                width: 710px;
+            h1.heading--1 {
+                width: percentage(710/960);
                 margin: 0 auto 32px auto;
             }
 
-            .btn.btn--yellow{
-                height: 58px;
-                line-height: 24px;
-                padding-top: 6px;
-                padding-bottom: 6px;
+            .btn {
+                // height: 58px;
+                height: auto;
+                font-size: 16px;
+                line-height: 19px;
+                padding: 18px 0 16px 0;
+                width: 360px;
             }
 
-            p.disclaimer{
+            .one .btn {
+                padding-left: 60px;
+                padding-right: 60px;
+            }
+
+
+            p.disclaimer {
                 text-align: center;
                 font-size: 18px;
                 color: #858B91;
                 line-height: 22px;
-                width: 478px;
+                width: percentage(478/960);
                 margin: 16px auto 0 auto;
             }
 

@@ -33,9 +33,10 @@ block content
                             | I would like to opt out of future !{BED} e-mail communications
                             .arrow.closed
                     mixin content
+
                         .formContainer(ng-controller="emailController")
                             form.emailForm(name='optOutEmail', autocomplete='off', novalidate, show-errors='{showSuccess:true}', ng-submit="submitForm()")
-                                input.inputForm(type='email', name="email", placeholder="E-mail", ng-model='user.email', required)
+                                input(type='email', name="email", placeholder="E-mail", ng-model='user.email', required, ng-class="{forminvalid: (optOutEmail.email.$invalid && optOutEmail.email.$dirty && submitted) || (optOutEmail.email.$invalid && optOutEmail.email.$pristine && submitted)}").form-control
                                 p.help-block(ng-if="submitted && (optOutEmail.email.$error.email || optOutEmail.email.$error.required)")
                                     | Please enter e-mail address
                                 button(type="button", ng-click="submitForm()").btn.btn--yellow
@@ -47,31 +48,32 @@ block content
                             | I would like to opt out of future !{BED} direct mail communications
                             .arrow.closed
                     mixin content
-                        .formContainer(ng-controller="directMailController")
-                            form.directMail(name='optOutDirectMail', ng-submit="submitForm()", autocomplete='off', novalidate, show-errors='{showSuccess:true}')
-                                input(type='email', name="email", placeholder="E-mail", ng-model='user.email', required)
-                                p.help-block(ng-if="submitted && (optOutDirectMail.email.$error.email || optOutDirectMail.email.$error.required)")
-                                    | Please enter e-mail address
-                                input(type='text', name="firstName", placeholder="First Name", ng-model='user.firstName', required)
-                                p.help-block(ng-if="submitted && optOutDirectMail.firstName.$error.required")
+
+                        .formContainer(ng-controller="directmailController")
+                            form(name='optoutdirectmail', autocomplete='off', novalidate, show-errors='{showSuccess:true}', ng-submit="submitForm()").directMail.form-group
+                                input(type='email', name="email", placeholder="E-mail", ng-model='user.email', required, ng-class="{forminvalid: (directmailController.email.$invalid && directmailController.email.$dirty && submitted) || (directmailController.email.$invalid && directmailController.email.$pristine && submitted)}").form-control
+                                p.help-block(ng-if="submitted && (optoutdirectmail.email.$error.email || optoutdirectmail.email.$error.required)")
+                                    | Please enter a vaild email address
+                                input(type='text', name="firstName", placeholder="First Name", ng-model='firstName', ng-required="true", ng-class="{forminvalid: (directmailController.firstName.$invalid && directmailController.firstName.$dirty && submitted) || (directmailController.firstName.$invalid && directmailController.firstName.$pristine && submitted)}")
+                                p.help-block(ng-if="submitted && optoutdirectmail.firstName.$error.required")
                                     | The user's first name is required
-                                input(type='text', name="lastName", placeholder="Last Name", ng-model='user.lastName', required)
-                                p.help-block(ng-if="submitted && optOutDirectMail.lastName.$error.required")
+                                input(type='text', name="lastName",placeholder="Last Name", ng-model='lastname', ng-required="true", ng-class="{forminvalid: (directmailController.lastName.$invalid && directmailController.firstName.$dirty && submitted) || (directmailController.lastName.$invalid && directmailController.lastName.$pristine && submitted)}")
+                                p.help-block(ng-if="submitted && optoutdirectmail.lastName.$error.required")
                                     | The user's last name is required
-                                input(type='text', name="address", placeholder="Street Address", ng-model='user.address', required)
-                                p.help-block(ng-if="submitted && optOutDirectMail.address.$error.required")
+                                input(type='text', name="address", placeholder="Street Address", ng-model='address', ng-required="true", ng-class="{forminvalid: (directmailController.address.$invalid && directmailController.address.$dirty && submitted) || (directmailController.address.$invalid && directmailController.address.$pristine && submitted)}")
+                                p.help-block(ng-if="submitted && optoutdirectmail.address.$error.required")
                                     | The user's street address is required
-                                input(type='text', placeholder="Suite/Office (not required)", ng-model='suite', required)
-                                input(type='text', name="city", placeholder="City", ng-model='city', required)
-                                p.help-block(ng-if="submitted && optOutDirectMail.city.$error.required")
+                                input(type='text', name="suite",placeholder="Suite/Office (not required)", ng-model='suite', ng-required="false", ng-class="{forminvalid: (directmailController.suite.$invalid && directmailController.suite.$dirty && submitted) || (directmailController.suite.$invalid && invalidform && submitted)}")
+                                input(type='text', name="city",placeholder="City", ng-model='city', ng-required="true", ng-class="{forminvalid: (directmailController.city.$invalid && directmailController.city.$dirty && submitted) || (directmailController.city.$invalid && directmailController.city.$pristine && submitted)}")
+                                p.help-block(ng-if="submitted && optoutdirectmail.city.$error.required")
                                     | The user's city is required
-                                select(type='text', placeholder="State", ng-model='state', required)
+                                select(type='text', name="state", placeholder="State", ng-model='state', ng-required="true", ng-class="{forminvalid: (directmailController.state.$invalid && directmailController.state.$dirty && submitted) || (directmailController.state.$invalid && directmailController.state.$pristine && submitted)}")
                                     +states
-                                input(type='text', name="zip", placeholder="Zip", ng-model='zip', required)
-                                p.help-block(ng-if="submitted && optOutDirectMail.zip.$error.required")
+                                input(type='text', name="zip",placeholder="Zip", ng-model='zip', ng-required="true", ng-class="{forminvalid: (directmailController.$invalid && directmailController.zip.$dirty && submitted) || (directmailController.zip.$invalid && directmailController.zip.$pristine && submitted)}")
+                                p.help-block(ng-if="submitted && optoutdirectmail.zip.$error.required")
                                     | The user's zip code is required
-                                
-                                button(type='button', ng-click="submitEmail()").btn.btn--yellow
+                                button(type="submit", ng-click="submitForm()").btn.btn--yellow
+
                                     | SUBMIT
 
 
@@ -81,56 +83,38 @@ block content
                             | I would like to opt out of all future Shire communications
                             .arrow.closed
                     mixin content
-                        .formContainer(ng-controller="allController")
-                            form.optAll(name='optOutAll', ng-submit="submitForm()", autocomplete='off', novalidate, show-errors='{showSuccess:true}')
-                                input(type='email', name="email", placeholder="E-mail", ng-model='user.email', required)
-                                p.help-block(ng-if="submitted && (optOutAll.email.$error.email || optOutAll.email.$error.required)")
-                                    | Please enter e-mail address
-                                input(type='text', name="firstName", placeholder="First Name", ng-model='user.firstName', required)
-                                p.help-block(ng-if="submitted && optOutAll.firstName.$error.required")
+
+                        .formContainer(ng-controller="allmailController")
+                            form(name='allmailController', autocomplete='off', novalidate, show-errors='{showSuccess:true}', ng-submit="submitForm()").form-group
+                                input(type='email', name="email", placeholder="E-mail", ng-model='user.email', required, ng-class="{forminvalid: (allmailController.email.$invalid && allmailController.email.$dirty && submitted) || (allmailController.email.$invalid && allmailController.email.$pristine && submitted)}").form-control
+                                p.help-block(ng-if="submitted && (allmailController.email.$error.email || allmailController.email.$error.required)")
+                                    | Please enter a vaild email address
+                                input(type='text', name="firstName", placeholder="First Name", ng-model='firstName', ng-required="true", ng-class="{forminvalid: (allmailController.firstName.$invalid && allmailController.firstName.$dirty && submitted) || (allmailController.firstName.$invalid && allmailController.firstName.$pristine && submitted)}")
+                                p.help-block(ng-if="submitted && allmailController.firstName.$error.required")
                                     | The user's first name is required
-                                input(type='text', name="lastName", placeholder="Last Name", ng-model='user.lastName', required)
-                                p.help-block(ng-if="submitted && optOutAll.lastName.$error.required")
+                                input(type='text', name="lastName", placeholder="Last Name", ng-model='lastname', ng-required="true", ng-class="{forminvalid: (allmailController.lastName.$invalid && allmailController.firstName.$dirty && submitted) || (allmailController.lastName.$invalid && allmailController.lastName.$pristine && submitted)}")
+                                p.help-block(ng-if="submitted && allmailController.lastName.$error.required")
                                     | The user's last name is required
-                                input(type='text', name="address", placeholder="Street Address", ng-model='user.address', required)
-                                p.help-block(ng-if="submitted && optOutAll.address.$error.required")
+                                input(type='text', name="address", placeholder="Street Address", ng-model='address', ng-required="true", ng-class="{forminvalid: (allmailController.address.$invalid && allmailController.address.$dirty && submitted) || (allmailController.address.$invalid && allmailController.addresss.$pristine && submitted)}")
+                                p.help-block(ng-if="submitted && allmailController.address.$error.required")
                                     | The user's street address is required
-                                input(type='text', placeholder="Suite/Office (not required)", ng-model='suite', required)
-                                input(type='text', name="city", placeholder="City", ng-model='city', required)
-                                p.help-block(ng-if="submitted && optOutAll.city.$error.required")
+                                input(type='text', name="suite", placeholder="Suite/Office (not required)", ng-model='suite', ng-required="false", ng-class="{forminvalid: (allmailController.suite.$invalid && allmailController.suite.$dirty && submitted) || (allmailController.suite.$invalid && invalidform && submitted)}")
+                                input(type='text', name="city", placeholder="City", ng-model='city', ng-required="true", ng-class="{forminvalid: (allmailController.city.$invalid && allmailController.city.$dirty && submitted) || (allmailController.city.$invalid && allmailController.city.$pristine && submitted)}")
+                                .help-block(ng-if="submitted && allmailController.city.$error.required")
                                     | The user's city is required
-                                select(type='text', placeholder="State", ng-model='state', required)
+                                select(type='text', name="state", placeholder="State", ng-model='state', ng-required="true", ng-class="{forminvalid: (allmailController.state.$invalid && allmailController.state.$dirty && submitted) || (allmailController.state.$invalid && allmailController.state.$pristine && submitted)}")
                                     +states
-                                input(type='text', name="zip", placeholder="Zip", ng-model='zip', required)
-                                p.help-block(ng-if="submitted && optOutAll.zip.$error.required")
+                                input(type='text', name="zip", placeholder="Zip", ng-model='zip', ng-required="true", ng-class="{forminvalid: (allmailController.zip.$invalid && allmailController.zip.$dirty && submitted) || (allmailController.zip.$invalid && allmailController.zip.$pristine && submitted)}")
+                                p.help-block(ng-if="submitted && allmailController.zip.$error.required")
                                     | The user's zip code is required
 
-                                button(type='button', ng-click="submitAll()").btn.btn--yellow
+                                button(type="submit", ng-click="submitForm()").btn.btn--yellow
+
                                     | SUBMIT
 
-                //- .box(ng-click="openBox(3)")
-                    .text I would like to opt out of all future Shire communications
-                    .arrow.closed
-                    .formContainer.ng-hide
-                        | hello sir. my name is form 3
+                
                     
     footer.footer--unsubscribe
         .wrap--content
 
             
-//, ng-class="{forminvalid: (opt-out-direct-mail.address.$invalid && opt-out-direct-mail.address.$dirty) || (opt-out-direct-mail.address.$invalid && invalidform)}")
-//, ng-class="{forminvalid: (opt-out-direct-mail.suite.$invalid && opt-out-direct-mail.suite.$dirty) || (opt-out-direct-mail.suite.$invalid && invalidform)}")
-//, ng-class="{forminvalid: (opt-out-direct-mail.city.$invalid && opt-out-direct-mail.city.$dirty) || (opt-out-direct-mail.city.$invalid && invalidform)}")
-//, ng-class="{forminvalid: (opt-out-direct-mail.state.$invalid && opt-out-direct-mail.state.$dirty) || (opt-out-direct-mail.state.$invalid && invalidform)}")
-//, ng-class="{forminvalid: (opt-out-direct-mail.zip.$invalid && opt-out-direct-mail.zip.$dirty) || (opt-out-direct-mail.zip.$invalid && invalidform)}")
-
-//input(type='text', placeholder="First Name", ng-model='firstName', required, ng-class="{forminvalid: (opt-out-all.firstName.$invalid && opt-out-all.firstName.$dirty) || (opt-out-all.firstName.$invalid && invalidform)}")
-//input(type='text', placeholder="Last Name", ng-model='lastname', required, ng-class="{forminvalid: (opt-out-all.lastName.$invalid && opt-out-all.firstName.$dirty) || (opt-out-all.lastName.$invalid && invalidform)}")
-//input(type='text', placeholder="Street Address", ng-model='address', required, ng-class="{forminvalid: (opt-out-all.address.$invalid && opt-out-all.address.$dirty) || (opt-out-all.address.$invalid && invalidform)}")
-//input(type='text', placeholder="Suite/Office (not required)", ng-model='suite', required, ng-class="{forminvalid: (opt-out-all.suite.$invalid && opt-out-all.suite.$dirty) || (opt-out-all.suite.$invalid && invalidform)}")
-//input(type='text', placeholder="City", ng-model='city', required, ng-class="{forminvalid: (opt-out-all.city.$invalid && opt-out-all.city.$dirty) || (opt-out-all.city.$invalid && invalidform)}")
-//select(type='text', placeholder="State", ng-model='state', required, ng-class="{forminvalid: (opt-out-all.state.$invalid && opt-out-all.state.$dirty) || (opt-out-all.state.$invalid && invalidform)}")
-//+states
-//input(type='text', placeholder="Zip", ng-model='zip', required, ng-class="{forminvalid: (opt-out-all.zip.$invalid && opt-out-all.zip.$dirty) || (opt-out-all.zip.$invalid && invalidform)}")
-//button(type='button', ng-click="submitAll()").btn.btn--yellow
-//| SUBMIT

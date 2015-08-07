@@ -34,21 +34,15 @@ body.patient-statistics {
             }
         }
 
+        .footnote {
+
+            @include mq('lg') {
+                width: percentage(556/960);
+            }
+        }
+
         .statistics {
             margin: 0 auto;
-
-            @include mq("lg", "md") {
-
-                // .flexbox & {
-                //     display: flex;
-                //     flex-direction: row;
-                // }
-
-                // .no-flexbox & {
-                //     display: table;
-                // }
-
-            }
 
             @include mq("lg") {
                 width: 910px;
@@ -62,37 +56,6 @@ body.patient-statistics {
                 @include responsive-bg("#{$page}/map.png");
                 margin: 0 auto;
                 text-align: center;
-
-                // .flexbox & {
-                //     display: flex;
-                //     align-items: center;
-                //     justify-content: center;
-                //     flex-direction: column;
-                //     flex-shrink: 0;
-                // }
-
-                // .no-flexbox & {
-                //     display: table-cell;
-                //     vertical-align: middle;
-                //     text-align: center;                    
-                // }
-
-                @include mq("lg", "md") {
-                    // .no-flexbox & {
-                    //     border-right: 1px solid #979797;
-                    //     box-sizing: content-box;
-                    // }
-                }
-                @include mq("lg") {
-                    // .no-flexbox & {
-                    //     padding-right: 50px;
-                    // }
-                }
-                @include mq("md") {
-                    // .no-flexbox & {
-                    //     padding-right: 30px;
-                    // }
-                }
 
                 @include mq("sm") {
                     margin: 0 auto;
@@ -126,6 +89,10 @@ body.patient-statistics {
                 }
             }
             p.footnote {
+
+                @include mq('lg') {
+                    width: percentage(556/960);
+                }
                 @include mq('sm') {
                     margin: 0;
                 }
@@ -268,139 +235,121 @@ body.patient-statistics {
             padding: 27px 0 25px 0;
         }
 
-        .row {
-
+        .icon {
+            @include mq("lg") {
+                margin: 40px auto;
+            }
+            @include mq("md") {
+                margin: 30px auto;
+            }
+            @include mq("sm") {
+                margin: 20px auto;
+            }
+        }
+        .two-to-one {
             .icon {
-                @include mq("lg") {
-                    margin: 40px auto;
+                @include responsive-icon("#{$page}/2-to-1.png");
+            }
+
+            @include mq('sm') {
+                padding-bottom: 45px;
+            }
+        }
+        .five-to-one {
+            .icon {
+                @include responsive-icon("#{$page}/5-to-1.png");
+            }
+        }
+
+        h2 {
+            padding: 0 0 45px 198px;
+
+            .estimated {
+                text-align: left;
+                padding-bottom: 8px;
+
+                em {
+                    padding-right: 30px;
                 }
-                @include mq("md") {
-                    margin: 30px auto;
+                .ratio {
+                    float: left;
+                    color: #FDBD3E;
                 }
-                @include mq("sm") {
-                    margin: 20px auto;
+            }
+            .percent {
+                color: #FDBD3E;
+            }
+            .vs {
+                color: #ADB2B6;
+            }
+
+
+            @include mq("lg") {
+                font-size: 24px;
+
+
+                .ratio {
+                    font-size: 72px;
+                    line-height: 0.8;
+                }
+                .versus {
+                    text-align: left;
+                }
+                .percent {
+                    font-size: 32px;
+                }
+                .vs {
+                    font-size: 29px;
                 }
             }
 
-            &.two-to-one {
-                .icon {
-                    @include responsive-icon("#{$page}/2-to-1.png");
-                }
+            @include mq("md") {
+                font-size: 24px;
 
-                @include mq('sm') {
-                    padding-bottom: 45px;
+                .ratio {
+                    font-size: 72px;
+                    line-height: 0.8;
+                }
+                .versus {
+                    text-align: left;
+                }
+                .percent {
+                    font-size: 26px;
                 }
             }
-            &.five-to-one {
-                .icon {
-                    @include responsive-icon("#{$page}/5-to-1.png");
-                }
-            }
 
-            h2 {
-                // @include inline-block;
-                padding: 0 0 45px 198px;
+            @include mq("sm") {
+                font-size: 16px;
+                padding: 0;
 
                 .estimated {
-                    text-align: left;
-                    padding-bottom: 8px;
-
-                    em {
-                        padding-right: 30px;
-                    }
-
-                    .ratio {
-                        float: left;
-                        color: #FDBD3E;
-                    }
+                    padding-bottom: 20px;
+                    @include clearfix;
                 }
-
+                .ratio {
+                    font-size: 50px;
+                    line-height: 0.8;
+                    padding: 0 10px 0 30px;
+                }
                 .versus {
-
-                    .percent {
-                        color: #FDBD3E;
-                    }
-                    .vs {
-                        color: #ADB2B6;
-                    }
+                    text-align: center;
                 }
-
-
-                @include mq("lg") {
-                    font-size: 24px;
-
-                    .estimated {
-
-                        .ratio {
-                            font-size: 72px;
-                            line-height: 0.8;
-                        }
-                    }
-                    .versus {
-                        text-align: left;
-
-                        .percent {
-                            font-size: 32px;
-                        }
-                        .vs {
-                            font-size: 29px;
-                        }
-                    }
+                .percent {
+                    font-size: 26px;
                 }
-
-                @include mq("md") {
-                    font-size: 24px;
-
-                    .estimated {
-
-                        .ratio {
-                            font-size: 72px;
-                            line-height: 0.8;
-                        }
-                    }
-                    .versus {
-                        text-align: left;
-
-                        .percent {
-                            font-size: 26px;
-                        }
-                    }
-                }
-
-                @include mq("sm") {
-                    font-size: 16px;
-                    padding: 0;
-
-                    .estimated {
-                        padding-bottom: 20px;
-                        @include clearfix;
-                        // display: flex;
-                        // align-items: center;
-                        // justify-content: center;
-
-                        .ratio {
-                            font-size: 50px;
-                            line-height: 0.8;
-                            padding: 0 10px 0 30px;
-                        }
-                    }
-                    .versus {
-                        text-align: center;
-
-                        .percent {
-                            font-size: 26px;
-                        }
-
-                        .vs {
-                            display: block;
-                            padding: 12px 0;
-                        }
-
-                    }
+                .vs {
+                    display: block;
+                    padding: 12px 0;
                 }
             }
         }
 
+        .footnote {
+            @include mq('lg') {
+                width: percentage(667/960);
+                margin: 0 auto;
+            }
+        }
     }
 
     .section--onset {
@@ -409,6 +358,13 @@ body.patient-statistics {
         .heading--1 {
             margin: 0 auto;
             width: percentage(766/960);
+        }
+        .footnote {
+            @include mq('lg') {
+                width: percentage(667/960);
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
 
     }

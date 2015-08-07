@@ -2,8 +2,13 @@
 body.dsm5-criteria {
     $page: "dsm5-criteria";
 
-    h1.heading--1{
+    h1.heading--1 {
         padding-bottom: 32px;
+
+        @include mq('lg') {
+            width: percentage(611/655);
+            margin: 0 auto;
+        }
     }
 
 
