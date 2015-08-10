@@ -28,7 +28,7 @@ public partial class privacypolicy : System.Web.UI.Page
         {
             Response.Redirect(Request.RawUrl);
         }
-        litPrivacyPolicy.Text = CommonContent.GetContent("PRIVACYPOLICY", "ENG");
+        //litPrivacyPolicy.Text = CommonContent.GetContent("PRIVACYPOLICY", "ENG");
         string Key1 = "CommonConfigPath";
         string Value1 = "~/common/config/";
         webConfigApp.AppSettings.Settings[Key1].Value = Value1;
