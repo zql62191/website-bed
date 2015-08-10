@@ -7,16 +7,12 @@
     <meta name="description" content="Find info on binge eating disorder in adults, including diagnostic criteria, distinction from other eating disorders, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="./me/mediaelementplayer.min.css?1439220900000"/>
-    <link rel="stylesheet" href="./css/styles.css?1439220900000"/>
+    <link rel="stylesheet" href="./me/mediaelementplayer.min.css?1439221200000"/>
+    <link rel="stylesheet" href="./css/styles.css?1439221200000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
-    <script>
-!function(){document.documentElement.className+=" ng-cloak"}();
-</script>
-    <script>
-!function(e){if(window.__ie=null,/msie|trident/i.test(e)){for(var t=function(){var t=e.match(/(?:msie |rv:)(\d+(\.\d+)?)/i),n=t&&t.length>1&&t[1]||"";return parseInt(n,10)}(),n="ie",i=6,s=12,u=["eq-ie"],r=i;s>=r;r++)t>r?u.push("gt-"+n+r):r>t?u.push("lt-"+n+r):t===r&&(u.push("lte-"+n+r),u.push("eq-"+n+r),u.push("gte-"+n+r));window.__ie=t,document.documentElement.className+=" "+u.join(" ")}}(navigator.userAgent||"");
-</script>
-    <script src="./js/head.js?1439220900000"></script>
+    <script src="js/inline/cloak.js?__inline=true"></script>
+    <script src="js/inline/iev.js?__inline=true"></script>
+    <script src="./js/head.js?1439221200000"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="index">
     <main class="content--main">
@@ -141,9 +137,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1439220900000"></script>
-    <script src="./js/templates.js?1439220900000"></script>
-    <script src="./js/app.js?1439220900000"></script>
+    <script src="./js/vendor.js?1439221200000"></script>
+    <script src="./js/templates.js?1439221200000"></script>
+    <script src="./js/app.js?1439221200000"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");
