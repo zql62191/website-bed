@@ -36,7 +36,7 @@ block content
 
                         .formContainer(ng-controller="emailController")
                             form.emailForm(name='optOutEmail', autocomplete='off', novalidate, show-errors='{showSuccess:true}', ng-submit="submitForm()")
-                                input(type='email', name="email", placeholder="E-mail", ng-model='user.email', required, ng-class="{forminvalid: (optOutEmail.email.$invalid && optOutEmail.email.$dirty && submitted) || (optOutEmail.email.$invalid && optOutEmail.email.$pristine && submitted)}").form-control
+                                input(type='email', name="email", placeholder="E-mail", ng-model='user.email', required, ng-class="{forminvalid: (optOutEmail.email.$invalid && optOutEmail.email.$dirty && submitted) || (optOutEmail.email.$invalid && optOutEmail.email.$pristine && submitted)}", ng-keyup="emailController.syncFields(this)").form-control
                                 p.help-block(ng-if="submitted && (optOutEmail.email.$error.email || optOutEmail.email.$error.required)")
                                     | Please enter e-mail address
                                 button(type="button", ng-click="submitForm()").btn.btn--yellow
@@ -51,7 +51,7 @@ block content
 
                         .formContainer(ng-controller="directmailController")
                             form(name='optoutdirectmail', autocomplete='off', novalidate, show-errors='{showSuccess:true}', ng-submit="submitForm()").directMail.form-group
-                                input(type='email', name="email", placeholder="E-mail", ng-model='user.email', required, ng-class="{forminvalid: (directmailController.email.$invalid && directmailController.email.$dirty && submitted) || (directmailController.email.$invalid && directmailController.email.$pristine && submitted)}").form-control
+                                input(type='email', name="email", placeholder="E-mail", ng-model='user.email', required, ng-class="{forminvalid: (directmailController.email.$invalid && directmailController.email.$dirty && submitted) || (directmailController.email.$invalid && directmailController.email.$pristine && submitted)}", ng-keyup="directmailController.syncFields(this)").form-control
                                 p.help-block(ng-if="submitted && (optoutdirectmail.email.$error.email || optoutdirectmail.email.$error.required)")
                                     | Please enter a vaild email address
                                 input(type='text', name="firstName", placeholder="First Name", ng-model='firstName', ng-required="true", ng-class="{forminvalid: (directmailController.firstName.$invalid && directmailController.firstName.$dirty && submitted) || (directmailController.firstName.$invalid && directmailController.firstName.$pristine && submitted)}")
@@ -86,7 +86,7 @@ block content
 
                         .formContainer(ng-controller="allmailController")
                             form(name='optinall', autocomplete='off', novalidate, show-errors='{showSuccess:true}', ng-submit="submitForm()").form-group
-                                input(type='email', name="email", placeholder="E-mail", ng-model='user.email', required, ng-class="{forminvalid: (optinall.email.$invalid && optinall.email.$dirty && submitted) || (optinall.email.$invalid && optinall.email.$pristine && submitted)}").form-control
+                                input(type='email', name="email", placeholder="E-mail", ng-model='user.email', required, ng-class="{forminvalid: (optinall.email.$invalid && optinall.email.$dirty && submitted) || (optinall.email.$invalid && optinall.email.$pristine && submitted)}", ng-keyup="allmailController.syncFields(this)").form-control
                                 p.help-block(ng-if="submitted && (optinall.email.$error.email || optinall.email.$error.required)")
                                     | Please enter a vaild email address
                                 input(type='text', name="firstName", placeholder="First Name", ng-model='firstName', ng-required="true", ng-class="{forminvalid: (optinall.firstName.$invalid && optinall.firstName.$dirty && submitted) || (optinall.firstName.$invalid && optinall.firstName.$pristine && submitted)}")

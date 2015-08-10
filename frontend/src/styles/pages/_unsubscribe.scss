@@ -89,30 +89,44 @@
                 margin-bottom: 92px;
             }
 
+            .accordion__header{
+                cursor: pointer;
+            }
+
             .accordion-title{
                 width: 633px;
                 height: 74px;
                 
+                .arrow{
+                    transition: transform 180ms;
+                }
             }
 
             &.open{
                 .accordion__wrap{
-                    display: inline-block;
-                    padding-bottom: 30px; 
+                    padding-bottom: 30px;
+                    max-height: 700px;
                 }
 
                 .accordion-title{
-                    height: auto;
+                    // height: auto;
                     padding-bottom: 0px; 
+
+                    .arrow{
+                        transform: rotateZ(-180deg);
+                    }
+
                 }
 
             }
 
             .accordion__wrap{
-                display: none;
+                overflow: hidden;
+                max-height: 0px;
+                transition: max-height linear 250ms;
 
                 .accordion__content{
-
+                    
                 }
 
             }

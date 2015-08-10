@@ -19,6 +19,21 @@
 
                 }
             };
+
+
+            $scope.syncFields = function(elem){
+                //sync form field input across all 3 forms if a similarly-named field exists
+                //called from any form field's blur? keyup? something?
+
+                console.log("HELLO FRIENDS!");
+
+                var elem = angular.element(elem.currentTarget);
+
+                //check if elem's name attribute is in any other form on the page
+                var otherFields = angular.element( "input[name=" + elem.prop('name') + "]" );
+
+            };
+
         }])
         
         .controller('directmailController', ['$scope', function($scope) {
@@ -38,6 +53,10 @@
                     //alert("Please address the errors above!")
                 }
 
+            };
+
+            $scope.syncFields = function(elem){
+                emailController.syncFields(elem);
             };
         }])
 
@@ -59,6 +78,10 @@
                     //alert("Please address the errors above!")
                 }
 
+            };
+
+            $scope.syncFields = function(elem){
+                emailController.syncFields(elem);
             };
         }])
         
@@ -84,14 +107,7 @@
             this.$get = function () {
                 return { showSuccess: _showSuccess };
             };
-        })
-
-    
-    //$scope.syncFields = function(){
-    //    //sync form field input across all 3 forms if a similarly-named field exists
-    //    //called from form field blur? keyup?
-    //
-    //}
+        })    
 
     //.controller('clickController', ['$scope', function($scope){
     //    $scope.clickToTY = function(){
