@@ -47,6 +47,13 @@ body.potential-effects {
                 margin: 0 auto 10px auto;
             }
         }
+        li{
+            @include mq("md") {
+                font-size: 16px;
+                color: #D6D8DA;
+                line-height: 19px;
+            }
+        }
 
         li:before {
             @include mq('sm') {
@@ -64,10 +71,15 @@ body.potential-effects {
 
         .heading--2 {
             padding-top: 10px;
-            padding-bottom: 23px;
+            padding-bottom: 26px;
 
             @include mq('lg') {
                 width: percentage(441/570);
+                margin: 0 auto;
+            }
+
+            @include mq('md') {
+                width: percentage(541/768);
                 margin: 0 auto;
             }
         }
@@ -78,6 +90,13 @@ body.potential-effects {
             line-height: 22px;
             padding: 30px 0 5px 0;
             text-align: center;
+            @include mq('md') {
+                font-size: 16px;
+                color: #ADB2B6;
+                line-height: 19px;
+                width: percentage(541/768);
+                margin: auto;
+            }
         }
         .wrap--content {
 
@@ -141,11 +160,14 @@ body.potential-effects {
                 font-size: 50px;
             }
             .text {
-                // @include mq('sm') {
-                    width: percentage(185/280);
-
-                    margin: 0 auto;
-                // }
+                width: percentage(185/280);
+                margin: 0 auto;
+                @include mq('md') {
+                    font-size: 16px;
+                    color: #F3F3F3;
+                    line-height: 19px;
+                }
+                
             }
         }
 

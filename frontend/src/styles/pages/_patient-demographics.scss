@@ -270,7 +270,9 @@ body.patient-demographics {
 
         h2 {
             padding: 0 0 45px 198px;
-
+            @include mq('md'){
+                padding: 0 0 45px 80px;
+            }
             .estimated {
                 text-align: left;
                 padding-bottom: 8px;
@@ -398,7 +400,9 @@ body.patient-demographics {
             width: percentage(650/960);
             margin: 0 auto;
             padding-bottom: 25px;
-
+            @include mq('md') {
+                width: percentage(612/768);
+            }
             @include mq('sm') {
                 width: 100%;
             }
@@ -406,7 +410,7 @@ body.patient-demographics {
         .footnote {
             margin-top: 20px;
             padding-bottom: 15px;
-            @include mq('sm') {
+            @include mq('md','sm') {
                 margin-right: auto;
                 margin-left: auto;
             }

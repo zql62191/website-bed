@@ -185,10 +185,17 @@ body.potential-causes {
 
             .row {
                 width: percentage(618/768);
-                padding: 30px 0 30px 140px;
+                padding: 40px 0 30px 140px;
 
                 &.neuron {
+                    padding-left: 50px;
                     padding-right: 140px;
+                    
+                    .is--nd{
+                        margin-left: 270px;
+                        margin-top: -30px ;
+                        position: absolute;
+                    }
                 }
             }
         }
@@ -206,6 +213,16 @@ body.potential-causes {
                     padding-right: 180px;
                 }
             }
+        }
+
+        .footnote{
+            width: percentage(409/768);
+            margin: 13px auto 38px auto;
+            text-align: center;
+        }
+        .center{
+            width: percentage(342/768);
+            margin: 0 auto;
         }
     }
 

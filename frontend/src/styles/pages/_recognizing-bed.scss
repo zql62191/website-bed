@@ -10,12 +10,21 @@ body.recognizing-bed {
         background: #252F39;
         background-image: linear-gradient(-180deg, #1E2730 0%, #252F39 100%);
 
+        .wrap--content {
+            padding-bottom: 34px;
+        }
+        
         .heading--2 {
             text-align: center;
             margin: 0 auto 12px auto;
 
             @include mq('lg') {
                 width: percentage(796/1024);
+            }
+            
+            @include mq("md") {
+                margin: 0 auto 0px auto;
+                width: percentage(654/768);
             }
         }
 
@@ -33,7 +42,7 @@ body.recognizing-bed {
             margin: 0 auto;
 
             @include mq('lg') {
-                width: percentage(886/960);
+                width: percentage(654/768);
             }
         }
 
@@ -53,6 +62,9 @@ body.recognizing-bed {
             @include mq('lg') {
                 width: percentage(608/960);
             }
+            @include mq('md') {
+                width: percentage(654/768);
+            }
         }
 
         .heading--3 {
@@ -69,6 +81,12 @@ body.recognizing-bed {
                 // and update the width appropriately as well
                 // -- Mike
                 font-size: 18px; 
+            }
+            
+            @include mq('md') {
+                width: percentage(585/768);
+                margin: 28px auto 66px auto;
+                font-size: 18px;
             }
         }
 
@@ -216,8 +234,20 @@ body.recognizing-bed {
                 width: 80%;
                 margin: 0 auto;
             }
+            @include mq('md') {
+                width: percentage(583/768);
+                margin: 0 auto;
+            }
         }
-
+        .bottom-bump{
+            @include mq("md") {
+                margin: 0 auto;
+                text-align: left;
+                width: 100%;
+                margin-bottom: 39px;
+            }
+        }
+        
         .wrap--content {
             @include mq("lg") {
                 width: 555px;
@@ -256,6 +286,15 @@ body.recognizing-bed {
             text-align: left;
             margin: 0 auto;
             font-size: 21px;
+            
+            @include mq("md") {
+                font-size: 21px;
+                color: #D6D8DA;
+                line-height: 25px;
+                width: 90%;
+                text-align: left;
+                margin: 0 auto;
+            }
         }
 
         @include mq("lg", "md") {
@@ -295,7 +334,7 @@ body.recognizing-bed {
 
         @include mq("md") {
             .wrap--content {
-                width: percentage(570/768);
+                width: percentage(670/768);
                 min-width: 570px;
             }
 
@@ -442,8 +481,24 @@ body.recognizing-bed {
 
         @include mq("md") {
             .wrap--content {
-                width: percentage(570/768);
+                width: percentage(680/768);
                 min-width: 570px;
+            }
+            h2, h3{
+                padding-bottom: 20px;
+            }
+            h2.heading--2{
+                width: percentage(720/768);
+            }
+
+            .heading--3.center{
+                font-size: 18px;
+                color: #D6D8DA;
+                line-height: 22px;
+            }
+            h4{
+                padding-top: 40px;
+                padding-bottom: 15px;
             }
             .statistic {
                 margin: 0 auto;
@@ -513,9 +568,10 @@ body.recognizing-bed {
     }
     @include mq("md") {
         .heading--2{
-            width: percentage(796/1024);
-            margin: 0 auto;
+            margin: 0 auto auto 14px;
+            display: inline-block;
         }
+        
         .mobile-line{
             display: none;
         }
