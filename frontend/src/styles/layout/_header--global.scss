@@ -319,8 +319,9 @@ header.header--global {
                 float: left;
             }
             .hcp {
-                margin-left: 32px;
+                margin-left: percentage(32/628);
                 z-index: z("default");
+                font-size: 15px;
             }
         }
         .primary-nav {

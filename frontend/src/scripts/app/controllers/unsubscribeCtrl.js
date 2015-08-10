@@ -86,6 +86,12 @@
             };
         })
     
+
+        $scope.syncFields = function(){
+            //sync form field input across all 3 forms if a similarly-named field exists
+            //called from form field blur? keyup?
+
+        }
     
         //.controller('clickController', ['$scope', function($scope){
         //    $scope.clickToTY = function(){
