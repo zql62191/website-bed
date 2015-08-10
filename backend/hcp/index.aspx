@@ -1,19 +1,18 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="index.aspx.cs" Inherits="index" %>
-<!DOCTYPE html>
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="index.aspx.cs" Inherits="index" %><!DOCTYPE html>
 <html lang="en" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="cdmp" ng-controller="MainController">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8">
     <title>HCP Information on Binge Eating Disorder in Adults</title>
-    <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
+    <meta name="description" content="Find info on binge eating disorder in adults, including diagnostic criteria, distinction from other eating disorders, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="./me/mediaelementplayer.min.css?1438721700000"/>
-    <link rel="stylesheet" href="./css/styles.css?1438721700000"/>
+    <link rel="stylesheet" href="./me/mediaelementplayer.min.css?1439221200000"/>
+    <link rel="stylesheet" href="./css/styles.css?1439221200000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1438721700000"></script>
+    <script src="./js/head.js?1439221200000"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="index">
     <main class="content--main">
@@ -47,11 +46,11 @@
                 </li>
                 <li><a href="/hcp/potential-causes.aspx">Potential Causes</a>
                 </li>
-                <li><a href="/hcp/patient-statistics.aspx">Patient Demographics</a>
+                <li><a href="/hcp/patient-demographics.aspx">Patient Demographics</a>
                 </li>
-                <li><a href="/hcp/effects-of-BED.aspx">Potential Effects</a>
+                <li><a href="/hcp/potential-effects.aspx">Potential Effects</a>
                 </li>
-                <li><a href="/hcp/identifying-patients.aspx" alt="/hcp/profiles.aspx">Patient Profiles</a>
+                <li><a href="/hcp/patient-profiles.aspx" alt="/hcp/profiles.aspx">Patient Profiles</a>
                 </li>
                 <li><a href="/hcp/support-and-resources.aspx">Support &amp; Resources</a>
                 </li>
@@ -63,7 +62,7 @@
         </div>
       </header>
       <section class="section--hero">
-        <div hero-player="" class="hero">
+        <div hero-player="" alt="Binge eating disorder in adults" class="hero">
           <div class="player">
             <div class="color"></div>
             <div class="video"></div>
@@ -85,10 +84,10 @@
           </div>
           <div class="callouts">
             <div class="wrap--content"><a href="/hcp/dsm5-criteria.aspx" class="cta1">
-                <h4 class="heading--4">Know the <span class="roman"><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr></span>criteria</h4>
-                <div class="icon is--hc"></div></a><a href="/hcp/patient-statistics.aspx" class="cta2">
+                <h4 class="heading--4">Know the <span class="roman">DSM-5<sup>&reg; </sup></span>criteria</h4>
+                <div class="icon is--hc"></div></a><a href="/hcp/patient-demographics.aspx" class="cta2">
                 <h4 class="heading--4">See the statistics</h4>
-                <div class="icon is--hc"></div></a><a href="/hcp/identifying-patients.aspx" class="cta3">
+                <div class="icon is--hc"></div></a><a href="/hcp/patient-profiles.aspx" class="cta3">
                 <h4 class="heading--4">Help your adult patients</h4>
                 <div class="icon is--hc"></div></a></div>
           </div>
@@ -138,17 +137,17 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1438721700000"></script>
-    <script src="./js/templates.js?1438721700000"></script>
-    <script src="./js/app.js?1438721700000"></script>
+    <script src="./js/vendor.js?1439221200000"></script>
+    <script src="./js/templates.js?1439221200000"></script>
+    <script src="./js/app.js?1439221200000"></script>
 <script type="text/javascript">
-    (function () {
-        var tagjs = document.createElement("script");
-        var s = document.getElementsByTagName("script")[0];
-        tagjs.async = true;
-        tagjs.src = "//s.btstatic.com/tag.js#site=BYgLeqO";
-        s.parentNode.insertBefore(tagjs, s);
-    } ());
+  (function () {
+    var tagjs = document.createElement("script");
+    var s = document.getElementsByTagName("script")[0];
+    tagjs.async = true;
+    tagjs.src = "//s.btstatic.com/tag.js#site=BYgLeqO";
+    s.parentNode.insertBefore(tagjs, s);
+  }());
 </script>
 <noscript>
   <iframe src="//s.thebrighttag.com/iframe?c=BYgLeqO" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>

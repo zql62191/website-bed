@@ -1,20 +1,18 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="contact-us.aspx.cs" Inherits="contactus" %>
-
-<!DOCTYPE html>
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="contact-us.aspx.cs" Inherits="contactus" %><!DOCTYPE html>
 <html lang="en" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="cdmp" ng-controller="MainController">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8">
-    <title>Privacy Policy</title>
-    <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
+    <title>Contact Us</title>
+    <meta name="description" content="Find info on binge eating disorder in adults, including diagnostic criteria, distinction from other eating disorders, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="./me/mediaelementplayer.min.css?1438721700000"/>
-    <link rel="stylesheet" href="./css/styles.css?1438721700000"/>
+    <link rel="stylesheet" href="./me/mediaelementplayer.min.css?1439221200000"/>
+    <link rel="stylesheet" href="./css/styles.css?1439221200000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1438721700000"></script>
+    <script src="./js/head.js?1439221200000"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="contact-us">
     <main class="content--main">
@@ -48,11 +46,11 @@
                 </li>
                 <li><a href="/hcp/potential-causes.aspx">Potential Causes</a>
                 </li>
-                <li><a href="/hcp/patient-statistics.aspx">Patient Demographics</a>
+                <li><a href="/hcp/patient-demographics.aspx">Patient Demographics</a>
                 </li>
-                <li><a href="/hcp/effects-of-BED.aspx">Potential Effects</a>
+                <li><a href="/hcp/potential-effects.aspx">Potential Effects</a>
                 </li>
-                <li><a href="/hcp/identifying-patients.aspx" alt="/hcp/profiles.aspx">Patient Profiles</a>
+                <li><a href="/hcp/patient-profiles.aspx" alt="/hcp/profiles.aspx">Patient Profiles</a>
                 </li>
                 <li><a href="/hcp/support-and-resources.aspx">Support &amp; Resources</a>
                 </li>
@@ -75,7 +73,7 @@
             <h3 class="heading--3">Health Care Professionals</h3>
             <p>
                
-              Clinical inquiries: For further clinical information on Shire products, US health care professionals may call Shire Medical Affairs toll free at <span class="white">1-800-828-2088 </span>or send an e‐mail to <a href="mailto:medinfoGlobal@shire.com" class="white">medinfoGlobal@shire.com</a>.
+              Clinical inquiries: For further clinical information on Shire products, US health care professionals may call Shire Medical Affairs toll free at <span class="white">1-800-828-2088 </span>or send an e&ndash;mail to <a href="mailto:medinfoGlobal@shire.com" class="white">medinfoGlobal@shire.com</a>.
             </p>
           </div>
         </div>
@@ -122,17 +120,17 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1438721700000"></script>
-    <script src="./js/templates.js?1438721700000"></script>
-    <script src="./js/app.js?1438721700000"></script>
+    <script src="./js/vendor.js?1439221200000"></script>
+    <script src="./js/templates.js?1439221200000"></script>
+    <script src="./js/app.js?1439221200000"></script>
 <script type="text/javascript">
-    (function () {
-        var tagjs = document.createElement("script");
-        var s = document.getElementsByTagName("script")[0];
-        tagjs.async = true;
-        tagjs.src = "//s.btstatic.com/tag.js#site=BYgLeqO";
-        s.parentNode.insertBefore(tagjs, s);
-    } ());
+  (function () {
+    var tagjs = document.createElement("script");
+    var s = document.getElementsByTagName("script")[0];
+    tagjs.async = true;
+    tagjs.src = "//s.btstatic.com/tag.js#site=BYgLeqO";
+    s.parentNode.insertBefore(tagjs, s);
+  }());
 </script>
 <noscript>
   <iframe src="//s.thebrighttag.com/iframe?c=BYgLeqO" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>

@@ -31,6 +31,6 @@ module.exports = function(grunt) {
     grunt.registerTask('integrate', ['build:prod', 'clean:integrate', 'copy:integrate']);
 
     // a regular dev build but with the aspx tags included
-    grunt.registerTask('devIntegrate', ['clean:dist', 'images:dev', 'assets', 'markup:devIntegrate', 'scripts:dev', 'styles:dev']);
+    grunt.registerTask('devIntegrate', ['clean:dist', 'images:dev', 'assets', 'markup:devIntegrate', 'scripts:dev', 'styles:dev', 'copy:integrate']);
 
 };
