@@ -1,21 +1,22 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="privacy-policy.aspx.cs" Inherits="privacypolicy" %>
-
-
-<!DOCTYPE html>
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="privacy-policy.aspx.cs" Inherits="privacypolicy" %><!DOCTYPE html>
 <html lang="en" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="cdmp" ng-controller="MainController">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8">
     <title>Privacy Policy</title>
-    <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
+    <meta name="description" content="Find info on binge eating disorder in adults, including diagnostic criteria, distinction from other eating disorders, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="./me/mediaelementplayer.min.css?1438721700000"/>
-    <link rel="stylesheet" href="./css/styles.css?1438721700000"/>
+    <link rel="stylesheet" href="./me/mediaelementplayer.min.css?1439220900000"/>
+    <link rel="stylesheet" href="./css/styles.css?1439220900000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
-    <script src="js/inline/cloak.js?__inline=true"></script>
-    <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1438721700000"></script>
+    <script>
+!function(){document.documentElement.className+=" ng-cloak"}();
+</script>
+    <script>
+!function(e){if(window.__ie=null,/msie|trident/i.test(e)){for(var t=function(){var t=e.match(/(?:msie |rv:)(\d+(\.\d+)?)/i),n=t&&t.length>1&&t[1]||"";return parseInt(n,10)}(),n="ie",i=6,s=12,u=["eq-ie"],r=i;s>=r;r++)t>r?u.push("gt-"+n+r):r>t?u.push("lt-"+n+r):t===r&&(u.push("lte-"+n+r),u.push("eq-"+n+r),u.push("gte-"+n+r));window.__ie=t,document.documentElement.className+=" "+u.join(" ")}}(navigator.userAgent||"");
+</script>
+    <script src="./js/head.js?1439220900000"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="privacy-policy">
     <main class="content--main">
@@ -49,11 +50,11 @@
                 </li>
                 <li><a href="/hcp/potential-causes.aspx">Potential Causes</a>
                 </li>
-                <li><a href="/hcp/patient-statistics.aspx">Patient Demographics</a>
+                <li><a href="/hcp/patient-demographics.aspx">Patient Demographics</a>
                 </li>
-                <li><a href="/hcp/effects-of-BED.aspx">Potential Effects</a>
+                <li><a href="/hcp/potential-effects.aspx">Potential Effects</a>
                 </li>
-                <li><a href="/hcp/identifying-patients.aspx" alt="/hcp/profiles.aspx">Patient Profiles</a>
+                <li><a href="/hcp/patient-profiles.aspx" alt="/hcp/profiles.aspx">Patient Profiles</a>
                 </li>
                 <li><a href="/hcp/support-and-resources.aspx">Support &amp; Resources</a>
                 </li>
@@ -67,7 +68,6 @@
       <div class="gradient"></div>
       <header class="header--privacy-policy">
         <div class="wrap--content">
-        <asp:Literal ID="litPrivacyPolicy" runat="server"></asp:Literal>
           <h1 class="heading--1">Privacy Policy</h1>
         </div>
       </header>
@@ -111,7 +111,13 @@
           <p>This site may contain links or references to other Web sites. Please be aware that Shire does not control other Web sites and that this Online Privacy Policy does not apply to those Web sites. We encourage you to read the privacy policy of every Web site you visit. We are not responsible for, nor do we endorse, the contents of these other Web sites. If you in any way rely on information obtained from any such Web sites, you do so at your own risk.</p>
           <h2>How to Contact Us / Accountability</h2>
           <p>If you have any questions, comments or concerns about this Online Privacy Policy or about the information practices of this site, or would like to have your information removed from our files, please contact us as follows:</p>
-          <p>Shire US Inc.</p><br>Attn: Online Privacy Policy<br>725 Chesterbrook Blvd<br>Wayne, PA 19087<br>This policy was last revised June 1, 2011
+          <ul class="addresslines">
+            <li>Shire US Inc.</li>
+            <li>Attn: Online Privacy Policy</li>
+            <li>725 Chesterbrook Blvd</li>
+            <li>Wayne, PA 19087</li>
+            <li>This policy was last revised June 1, 2011</li>
+          </ul>
         </div>
       </section>
       <footer class="footer--page">
@@ -156,17 +162,17 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1438721700000"></script>
-    <script src="./js/templates.js?1438721700000"></script>
-    <script src="./js/app.js?1438721700000"></script>
+    <script src="./js/vendor.js?1439220900000"></script>
+    <script src="./js/templates.js?1439220900000"></script>
+    <script src="./js/app.js?1439220900000"></script>
 <script type="text/javascript">
-    (function () {
-        var tagjs = document.createElement("script");
-        var s = document.getElementsByTagName("script")[0];
-        tagjs.async = true;
-        tagjs.src = "//s.btstatic.com/tag.js#site=BYgLeqO";
-        s.parentNode.insertBefore(tagjs, s);
-    } ());
+  (function () {
+    var tagjs = document.createElement("script");
+    var s = document.getElementsByTagName("script")[0];
+    tagjs.async = true;
+    tagjs.src = "//s.btstatic.com/tag.js#site=BYgLeqO";
+    s.parentNode.insertBefore(tagjs, s);
+  }());
 </script>
 <noscript>
   <iframe src="//s.thebrighttag.com/iframe?c=BYgLeqO" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>

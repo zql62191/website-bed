@@ -1,18 +1,22 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="support-and-resources.aspx.cs" Inherits="supportandresources" %><!DOCTYPE html>
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="support-and-resources.aspx.cs" Inherits="supportandresources" %><!DOCTYPE html>
 <html lang="en" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="cdmp" ng-controller="MainController">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8">
     <title>More Information on Binge Eating Disorder in Adults</title>
-    <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
+    <meta name="description" content="Find info on binge eating disorder in adults, including diagnostic criteria, distinction from other eating disorders, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="./me/mediaelementplayer.min.css?1438722000000"/>
-    <link rel="stylesheet" href="./css/styles.css?1438722000000"/>
+    <link rel="stylesheet" href="./me/mediaelementplayer.min.css?1439220900000"/>
+    <link rel="stylesheet" href="./css/styles.css?1439220900000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
-    <script src="js/inline/cloak.js?__inline=true"></script>
-    <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1438722000000"></script>
+    <script>
+!function(){document.documentElement.className+=" ng-cloak"}();
+</script>
+    <script>
+!function(e){if(window.__ie=null,/msie|trident/i.test(e)){for(var t=function(){var t=e.match(/(?:msie |rv:)(\d+(\.\d+)?)/i),n=t&&t.length>1&&t[1]||"";return parseInt(n,10)}(),n="ie",i=6,s=12,u=["eq-ie"],r=i;s>=r;r++)t>r?u.push("gt-"+n+r):r>t?u.push("lt-"+n+r):t===r&&(u.push("lte-"+n+r),u.push("eq-"+n+r),u.push("gte-"+n+r));window.__ie=t,document.documentElement.className+=" "+u.join(" ")}}(navigator.userAgent||"");
+</script>
+    <script src="./js/head.js?1439220900000"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="support-and-resources">
     <main class="content--main">
@@ -46,11 +50,11 @@
                 </li>
                 <li><a href="/hcp/potential-causes.aspx">Potential Causes</a>
                 </li>
-                <li><a href="/hcp/patient-statistics.aspx">Patient Demographics</a>
+                <li><a href="/hcp/patient-demographics.aspx">Patient Demographics</a>
                 </li>
-                <li><a href="/hcp/effects-of-BED.aspx">Potential Effects</a>
+                <li><a href="/hcp/potential-effects.aspx">Potential Effects</a>
                 </li>
-                <li><a href="/hcp/identifying-patients.aspx" alt="/hcp/profiles.aspx">Patient Profiles</a>
+                <li><a href="/hcp/patient-profiles.aspx" alt="/hcp/profiles.aspx">Patient Profiles</a>
                 </li>
                 <li><a href="/hcp/support-and-resources.aspx" class="active">Support &amp; Resources</a>
                 </li>
@@ -95,8 +99,8 @@
                     <div class="yellow">{{vid.title}}</div>
                     <div class="video-length">{{vid.length}}</div>
                     <div class="play-btn"></div>
-                    <div class="subtitle">Featuring {{vid.featuring}}</div>
-                    <div class="new"></div>
+                    <div class="subtitle">{{vid.featuring.length > 0 ? "Featuring " : ""}}{{vid.featuring}}</div>
+                    <div ng-show="vid.newFrom" class="new"></div>
                     <div ng-show="vid.viewed" class="viewed"> </div>
                   </div>
                 </div>
@@ -134,12 +138,12 @@
           <div class="link-box-grid">
             <div class="link-box-row">
               <div class="link-box">Alliance for Eating Disorders Awareness<br><a href="http://www.allianceforeatingdisorders.com" target="_blank" class="yellow">www.allianceforeatingdisorders.com</a><br><span class="yellow"> <a href="tel:+18666621235">1-866-662-1235</a></span></div>
-              <div class="link-box">American Psychological Association<br><a href="http://www.apa.org" target="_blank" class="yellow">www.apa.org</a><br><span class="yellow"> <a href="tel:+18003742721">1-800-374-2721</a></span></div>
-              <div class="link-box">National Alliance for Mental Illness<br><a href="http://www.nami.org" target="_blank" class="yellow">www.nami.org</a><br><span class="yellow"> <a href="tel:+18009506264">1-800-950-6264</a></span></div>
+              <div class="link-box">American Psychiatric Association<br><a href="http://www.psychiatry.org" target="_blank" class="yellow">www.psychiatry.org</a><br><span class="yellow"><a href="tel:+18883577924">1-888-357-7924</a></span></div>
+              <div class="link-box">American Psychological Association<br><a href="http://www.apa.org" target="_blank" class="yellow">www.apa.org</a><br><span class="yellow"><a href="tel:+18003742721">1-800-374-2721</a></span></div>
             </div>
             <div class="link-box-row">
-              <div class="link-box">American Psychiatric Association<br><a href="http://www.psychiatry.org" target="_blank" class="yellow">www.psychiatry.org</a><br><span class="yellow"> <a href="tel:+18883577924">1-888-357-7924</a></span></div>
-              <div class="link-box">Binge Eating Disorder Association<br><a href="http://www.bedaonline.com" target="_blank" class="yellow">www.bedaonline.com</a><br><span class="yellow"> <a href="tel:+18558552332">1-855-855-2332</a></span></div>
+              <div class="link-box">Binge Eating Disorder Association<br><a href="http://www.bedaonline.com" target="_blank" class="yellow">bedaonline.com</a><br><span class="yellow"> <a href="tel:+18558552332">1-855-855-2332</a></span></div>
+              <div class="link-box">National Alliance for Mental Illness<br><a href="http://www.nami.org" target="_blank" class="yellow">www.nami.org</a><br><span class="yellow"><a href="tel:+18009506264">1-800-950-6264        </a></span></div>
               <div class="link-box">National Eating Disorders Association<br><a href="http://www.nationaleatingdisorders.org" target="_blank" class="yellow">www.nationaleatingdisorders.org</a><br><span class="yellow"> <a href="tel:+18009312237">1-800-931-2237</a></span></div>
             </div>
           </div>
@@ -184,17 +188,17 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1438722000000"></script>
-    <script src="./js/templates.js?1438722000000"></script>
-    <script src="./js/app.js?1438722000000"></script>
+    <script src="./js/vendor.js?1439220900000"></script>
+    <script src="./js/templates.js?1439220900000"></script>
+    <script src="./js/app.js?1439220900000"></script>
 <script type="text/javascript">
-    (function () {
-        var tagjs = document.createElement("script");
-        var s = document.getElementsByTagName("script")[0];
-        tagjs.async = true;
-        tagjs.src = "//s.btstatic.com/tag.js#site=BYgLeqO";
-        s.parentNode.insertBefore(tagjs, s);
-    } ());
+  (function () {
+    var tagjs = document.createElement("script");
+    var s = document.getElementsByTagName("script")[0];
+    tagjs.async = true;
+    tagjs.src = "//s.btstatic.com/tag.js#site=BYgLeqO";
+    s.parentNode.insertBefore(tagjs, s);
+  }());
 </script>
 <noscript>
   <iframe src="//s.thebrighttag.com/iframe?c=BYgLeqO" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>

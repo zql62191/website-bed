@@ -51,7 +51,7 @@ module.exports = {
             expand: true,
             cwd: 'dist/',
             src: ['**'],
-            dest: '../REPLACE/ME',
+            dest: '../backend/hcp/',
             dot: true
         }]
     }

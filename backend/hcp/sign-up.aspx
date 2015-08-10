@@ -1,18 +1,22 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="sign-up.aspx.cs" Inherits="signup" %><!DOCTYPE html>
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="sign-up.aspx.cs" Inherits="signup" %><!DOCTYPE html>
 <html lang="en" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="cdmp" ng-controller="MainController">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8">
-    <title>Sign Up</title>
-    <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
+    <title>HCP Information on Binge Eating Disorder in Adults</title>
+    <meta name="description" content="Find info on binge eating disorder in adults, including diagnostic criteria, distinction from other eating disorders, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="./me/mediaelementplayer.min.css?1438722000000"/>
-    <link rel="stylesheet" href="./css/styles.css?1438722000000"/>
+    <link rel="stylesheet" href="./me/mediaelementplayer.min.css?1439220900000"/>
+    <link rel="stylesheet" href="./css/styles.css?1439220900000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
-    <script src="js/inline/cloak.js?__inline=true"></script>
-    <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1438722000000"></script>
+    <script>
+!function(){document.documentElement.className+=" ng-cloak"}();
+</script>
+    <script>
+!function(e){if(window.__ie=null,/msie|trident/i.test(e)){for(var t=function(){var t=e.match(/(?:msie |rv:)(\d+(\.\d+)?)/i),n=t&&t.length>1&&t[1]||"";return parseInt(n,10)}(),n="ie",i=6,s=12,u=["eq-ie"],r=i;s>=r;r++)t>r?u.push("gt-"+n+r):r>t?u.push("lt-"+n+r):t===r&&(u.push("lte-"+n+r),u.push("eq-"+n+r),u.push("gte-"+n+r));window.__ie=t,document.documentElement.className+=" "+u.join(" ")}}(navigator.userAgent||"");
+</script>
+    <script src="./js/head.js?1439220900000"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="sign-up">
     <main class="content--main">
@@ -46,11 +50,11 @@
                 </li>
                 <li><a href="/hcp/potential-causes.aspx">Potential Causes</a>
                 </li>
-                <li><a href="/hcp/patient-statistics.aspx">Patient Demographics</a>
+                <li><a href="/hcp/patient-demographics.aspx">Patient Demographics</a>
                 </li>
-                <li><a href="/hcp/effects-of-BED.aspx">Potential Effects</a>
+                <li><a href="/hcp/potential-effects.aspx">Potential Effects</a>
                 </li>
-                <li><a href="/hcp/identifying-patients.aspx" alt="/hcp/profiles.aspx">Patient Profiles</a>
+                <li><a href="/hcp/patient-profiles.aspx" alt="/hcp/profiles.aspx">Patient Profiles</a>
                 </li>
                 <li><a href="/hcp/support-and-resources.aspx">Support &amp; Resources</a>
                 </li>
@@ -63,25 +67,28 @@
       </header>
       <header class="header--page">
         <div class="wrap--content">
-          <h1 class="heading--1">Sign up to instantly receive the <em>DSM-5<sup>&reg; </sup></em>diagnostic criteria for binge eating disorder (B.E.D.) and future B.E.D. content from Shire.</h1>
+          <h1 class="heading--1">Sign up to instantly receive the <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> diagnostic criteria for binge eating disorder (B.E.D.) and future B.E.D. content from Shire.</h1>
         </div>
       </header>
-      <section class="section--page">
+      <section ng-controller="signupController" class="section--page">
         <div class="wrap--content">
-          <form name="opt-in" ng-submit="optIn()" autocomplete="off" novalidate>
-            <input type="text" placeholder="First Name" ng-model="firstName" ng-required="true" ng-class="{forminvalid: (opt-in.firstName.$invalid &amp;&amp; opt-in.firstName.$dirty) || (opt-in.firstName.$invalid &amp;&amp; invalidform)}">
-            <input type="text" placeholder="Last Name" ng-model="lastname" ng-required="true" ng-class="{forminvalid: (opt-in.lastName.$invalid &amp;&amp; opt-in.firstName.$dirty) || (opt-in.lastName.$invalid &amp;&amp; invalidform)}">
-            <input type="email" placeholder="E-mail" ng-model="email" ng-required="true" ng-class="{forminvalid: (opt-in.email.$invalid &amp;&amp; opt-in.email.$dirty) || (opt-in.email.$invalid &amp;&amp; invalidform)}">
-            <input type="email" placeholder="Confirm E-mail" ng-model="confirmemail" ng-required="true" ng-class="{forminvalid: (opt-in.confirmEmail.$invalid &amp;&amp; opt-in.confirmEmail.$dirty) || (opt-in.confirmEmail.$invalid &amp;&amp; invalidform) || ($value!=opt-in.email.value)}">
+          <form name="optIn" autocomplete="off" novalidate show-errors="{showSuccess:true}" ng-submit="submitForm()" class="form-group">
+            <input type="text" name="firstName" placeholder="First Name" ng-model="user.firstName" required ng-class="{forminvalid: (optIn.firstName.$invalid &amp;&amp; optIn.firstName.$dirty &amp;&amp; submitted) || (optIn.firstName.$invalid &amp;&amp; optIn.firstName.$pristine &amp;&amp; submitted)}" class="form-control">
+            <p ng-if="submitted &amp;&amp; optIn.firstName.$error.required" class="help-block">The user's first name is required</p>
+            <input type="text" name="lastName" placeholder="Last Name" ng-model="user.lastName" required ng-class="{forminvalid: (optIn.lastName.$invalid &amp;&amp; optIn.firstName.$dirty &amp;&amp; submitted) || (optIn.lastName.$invalid &amp;&amp; optIn.lastName.$pristine &amp;&amp; submitted)}" class="form-control">
+            <p ng-if="submitted &amp;&amp; optIn.lastName.$error.required" class="help-block">The user's last name is required</p>
+            <input type="email" name="email" placeholder="E-mail" ng-model="user.email" required ng-class="{forminvalid: (optIn.email.$invalid &amp;&amp; optIn.email.$dirty &amp;&amp; submitted) || (optIn.email.$invalid &amp;&amp; optIn.email.$pristine &amp;&amp; submitted)}" class="form-control">
+            <p ng-if="submitted &amp;&amp; (optIn.email.$error.email || optIn.email.$error.required)" class="help-block">Please enter a vaild email address...</p>
+            <input type="email" name="confirmEmail" placeholder="Confirm E-mail" ng-model="user.confirmEmail" required ng-class="{forminvalid: (optIn.confirmEmail.$invalid &amp;&amp; optIn.confirmEmail.$dirty &amp;&amp; submitted) || (optIn.confirmEmail.$invalid &amp;&amp; optIn.confirmEmail.$pristine &amp;&amp; submitted)}" class="form-control">
+            <p ng-if="submitted &amp;&amp; (optIn.confirmEmail.$error.email || optIn.confirmEmail.$error.required)" class="help-block">Please confirm the email address</p>
+            <p ng-if="submitted &amp;&amp; notMatch" class="help-block">The confirm email does not match</p>
             <h2 class="heading--2">Opt In for Communications</h2>
             <p class="info">
-              <input type="checkbox" value="" ng-required="true"> By checking this box and clicking SUBMIT, you certify that you are a US health care professional and you are opting to receive information about binge eating disorder plus site updates, educational information, patient support resources, and other information from Shire. You will be able to opt out of these communications at any time.
+              <input type="checkBox" name="checkBox" ng-model="checkBox" value="false" required><span ng-if="submitted &amp;&amp; optIn.checkBox.$error.required" class="help-block"></span> By checking this box and clicking SUBMIT, you certify that you are a US health care professional and you are opting to receive information about binge eating disorder plus site updates, educational information, patient support resources, and other information from Shire. You will be able to opt out of these communications at any time.
             </p>
-            <p class="info">
-               
-              Shire respects your personal information. All information you have provided will be kept confidential and will not be used or distributed to anyone for any purpose other than what is explained in our Privacy Policy Statement. We encourage you to read our Privacy Policy Statement by clicking on this link: <a href="/hcp/privacy-policy.aspx"> <b class="white">Review Shire Privacy Policy Statement. </b></a>&nbsp;This consent will be in effect until such time as you opt out of the program.
-            </p>
-            <button type="submit" class="btn btn--yellow">SUBMIT</button>
+            <p class="info">Shire respects your personal information. All information you have provided will be kept confidential and will not be used or distributed to anyone for any purpose other than what is explained in our Privacy Policy Statement. We encourage you to read our Privacy Policy Statement by clicking on this link: <a href="/hcp/privacy-policy.aspx" class="roman">Review Shire Privacy</a><a href="/hcp/privacy-policy.aspx" class="roman">Policy Statement.&nbsp;</a>This consent will be in effect until such time as you opt out of the program.</p>
+            <p ng-if="submitted &amp;&amp; (optIn.$error.required || notMatch)" class="errormessage">Please address the errors above</p>
+            <button type="button" ng-click="submitForm()" class="btn btn--yellow">SUBMIT</button>
           </form>
         </div>
       </section>
@@ -127,17 +134,17 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1438722000000"></script>
-    <script src="./js/templates.js?1438722000000"></script>
-    <script src="./js/app.js?1438722000000"></script>
+    <script src="./js/vendor.js?1439220900000"></script>
+    <script src="./js/templates.js?1439220900000"></script>
+    <script src="./js/app.js?1439220900000"></script>
 <script type="text/javascript">
-    (function () {
-        var tagjs = document.createElement("script");
-        var s = document.getElementsByTagName("script")[0];
-        tagjs.async = true;
-        tagjs.src = "//s.btstatic.com/tag.js#site=BYgLeqO";
-        s.parentNode.insertBefore(tagjs, s);
-    } ());
+  (function () {
+    var tagjs = document.createElement("script");
+    var s = document.getElementsByTagName("script")[0];
+    tagjs.async = true;
+    tagjs.src = "//s.btstatic.com/tag.js#site=BYgLeqO";
+    s.parentNode.insertBefore(tagjs, s);
+  }());
 </script>
 <noscript>
   <iframe src="//s.thebrighttag.com/iframe?c=BYgLeqO" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>

@@ -1,19 +1,22 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="profiles.aspx.cs" Inherits="profiles" %>
-<!DOCTYPE html>
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="profiles.aspx.cs" Inherits="profiles" %><!DOCTYPE html>
 <html lang="en" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="cdmp" ng-controller="MainController">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8">
-    <title>Helping Adults with Binge Eating Disorder</title>
-    <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
+    <title>How Adults with Binge Eating Disorder May Present</title>
+    <meta name="description" content="Find info on binge eating disorder in adults, including diagnostic criteria, distinction from other eating disorders, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="./me/mediaelementplayer.min.css?1438721700000"/>
-    <link rel="stylesheet" href="./css/styles.css?1438721700000"/>
+    <link rel="stylesheet" href="./me/mediaelementplayer.min.css?1439220900000"/>
+    <link rel="stylesheet" href="./css/styles.css?1439220900000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
-    <script src="js/inline/cloak.js?__inline=true"></script>
-    <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1438721700000"></script>
+    <script>
+!function(){document.documentElement.className+=" ng-cloak"}();
+</script>
+    <script>
+!function(e){if(window.__ie=null,/msie|trident/i.test(e)){for(var t=function(){var t=e.match(/(?:msie |rv:)(\d+(\.\d+)?)/i),n=t&&t.length>1&&t[1]||"";return parseInt(n,10)}(),n="ie",i=6,s=12,u=["eq-ie"],r=i;s>=r;r++)t>r?u.push("gt-"+n+r):r>t?u.push("lt-"+n+r):t===r&&(u.push("lte-"+n+r),u.push("eq-"+n+r),u.push("gte-"+n+r));window.__ie=t,document.documentElement.className+=" "+u.join(" ")}}(navigator.userAgent||"");
+</script>
+    <script src="./js/head.js?1439220900000"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="profiles">
     <main class="content--main">
@@ -47,11 +50,11 @@
                 </li>
                 <li><a href="/hcp/potential-causes.aspx">Potential Causes</a>
                 </li>
-                <li><a href="/hcp/patient-statistics.aspx">Patient Demographics</a>
+                <li><a href="/hcp/patient-demographics.aspx">Patient Demographics</a>
                 </li>
-                <li><a href="/hcp/effects-of-BED.aspx">Potential Effects</a>
+                <li><a href="/hcp/potential-effects.aspx">Potential Effects</a>
                 </li>
-                <li><a href="/hcp/identifying-patients.aspx" alt="/hcp/profiles.aspx" class="active">Patient Profiles</a>
+                <li><a href="/hcp/patient-profiles.aspx" alt="/hcp/profiles.aspx" class="active">Patient Profiles</a>
                 </li>
                 <li><a href="/hcp/support-and-resources.aspx">Support &amp; Resources</a>
                 </li>
@@ -68,20 +71,26 @@
         <div class="wrap--content">
           <div class="carousel">
             <div class="slides">
-              <div ng-class="{active: currentSlide == 'kimberly'}" class="slide kimberly">
+              <div ng-class="{active: currentSlide == 'kimberly'}" ng-swipe-left="swipeControls('R')" ng-swipe-right="swipeControls('L')" class="slide kimberly">
                 <picture class="hero"><!--[if IE 9]><video style="display: none;"><![endif]-->
                   <source media="only screen and (max-width: 640px)" srcset="img/sm/profiles/kimberly.png"/>
                   <source media="only screen and (min-width: 641px) and (max-width: 1024px)" srcset="img/md/profiles/kimberly.png"/>
-                  <source media="only screen and (min-width: 1025px)" srcset="img/lg/profiles/kimberly.png"/><!--[if IE 9]></video><![endif]--><img srcset="img/lg/profiles/kimberly.png"/>
+                  <source media="only screen and (min-width: 1025px)" srcset="img/lg/profiles/kimberly.png"/><!--[if IE 9]></video><![endif]--><img srcset="img/lg/profiles/kimberly.png" alt="Caucasian woman"/>
                 </picture>
+                <div class="mobile-hero"></div>
                 <div class="shadow"></div>
                 <blockquote>
                   <p>
                     I feel like I&rsquo;ve lost control while I&rsquo;m eating.
                     
-                    
                   </p>
                 </blockquote>
+                <ul class="mobile-pagination">
+                  <li ng-click="changeHero('kimberly')" class="kimberly"></li>
+                  <li ng-click="changeHero('nikki')" class="nikki"></li>
+                  <li ng-click="changeHero('julie')" class="julie"></li>
+                  <li ng-click="changeHero('diego')" class="diego"></li>
+                </ul>
                 <div class="profile">
                   <div class="name">Kimberly</div>
                   <div class="binge">Average of 4 binge-eating episodes per week</div>
@@ -97,18 +106,25 @@
                   <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr> established in <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr>.<sup>1</sup></p>
                 </div>
               </div>
-              <div ng-class="{active : currentSlide == 'nikki'}" class="slide nikki">
+              <div ng-class="{active : currentSlide == 'nikki'}" ng-swipe-left="swipeControls('R')" ng-swipe-right="swipeControls('L')" class="slide nikki">
                 <picture class="hero"><!--[if IE 9]><video style="display: none;"><![endif]-->
                   <source media="only screen and (max-width: 640px)" srcset="img/sm/profiles/nikki.png"/>
                   <source media="only screen and (min-width: 641px) and (max-width: 1024px)" srcset="img/md/profiles/nikki.png"/>
-                  <source media="only screen and (min-width: 1025px)" srcset="img/lg/profiles/nikki.png"/><!--[if IE 9]></video><![endif]--><img srcset="img/lg/profiles/nikki.png"/>
+                  <source media="only screen and (min-width: 1025px)" srcset="img/lg/profiles/nikki.png"/><!--[if IE 9]></video><![endif]--><img srcset="img/lg/profiles/nikki.png" alt="African American woman"/>
                 </picture>
+                <div class="mobile-hero"></div>
                 <blockquote>
                   <p>
                     I&rsquo;m disgusted with myself after I binge.
                     
                   </p>
                 </blockquote>
+                <ul class="mobile-pagination">
+                  <li ng-click="changeHero('kimberly')" class="kimberly"></li>
+                  <li ng-click="changeHero('nikki')" class="nikki"></li>
+                  <li ng-click="changeHero('julie')" class="julie"></li>
+                  <li ng-click="changeHero('diego')" class="diego"></li>
+                </ul>
                 <div class="profile">
                   <div class="name">Nikki</div>
                   <div class="binge">Average of 5 binge-eating episodes per week</div>
@@ -127,18 +143,25 @@
                   <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr> established in <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr>.<sup>1</sup></p>
                 </div>
               </div>
-              <div ng-class="{active : currentSlide == 'julie'}" class="slide julie">
+              <div ng-class="{active : currentSlide == 'julie'}" ng-swipe-left="swipeControls('R')" ng-swipe-right="swipeControls('L')" class="slide julie">
                 <picture class="hero"><!--[if IE 9]><video style="display: none;"><![endif]-->
                   <source media="only screen and (max-width: 640px)" srcset="img/sm/profiles/julie.png"/>
                   <source media="only screen and (min-width: 641px) and (max-width: 1024px)" srcset="img/md/profiles/julie.png"/>
-                  <source media="only screen and (min-width: 1025px)" srcset="img/lg/profiles/julie.png"/><!--[if IE 9]></video><![endif]--><img srcset="img/lg/profiles/julie.png"/>
+                  <source media="only screen and (min-width: 1025px)" srcset="img/lg/profiles/julie.png"/><!--[if IE 9]></video><![endif]--><img srcset="img/lg/profiles/julie.png" alt="Caucasian woman"/>
                 </picture>
+                <div class="mobile-hero"></div>
                 <blockquote>
                   <p>
                     When the binges are over, I feel guilty about my behavior.
                     
                   </p>
                 </blockquote>
+                <ul class="mobile-pagination">
+                  <li ng-click="changeHero('kimberly')" class="kimberly"></li>
+                  <li ng-click="changeHero('nikki')" class="nikki"></li>
+                  <li ng-click="changeHero('julie')" class="julie"></li>
+                  <li ng-click="changeHero('diego')" class="diego"></li>
+                </ul>
                 <div class="profile">
                   <div class="name">Julie</div>
                   <div class="binge">Average of 6 binge-eating episodes per week</div>
@@ -150,23 +173,28 @@
                     <div class="stat">Julie works as an advertising executive</div>
                     <div class="stat">Her binges are triggered by negative feelings about her body shape</div>
                     <div class="stat">
-                      Julie has a coexisting psychiatric disorder—she struggles with anxiety
+                      Julie has a coexisting psychiatric disorder&mdash;she struggles with anxiety
                       
                     </div>
                   </div>
                   <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr> established in <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr>.<sup>1</sup></p>
                 </div>
               </div>
-              <div ng-class="{active : currentSlide == 'diego'}" class="slide diego">
+              <div ng-class="{active : currentSlide == 'diego'}" ng-swipe-left="swipeControls('R')" ng-swipe-right="swipeControls('L')" class="slide diego">
                 <picture class="hero"><!--[if IE 9]><video style="display: none;"><![endif]-->
                   <source media="only screen and (max-width: 640px)" srcset="img/sm/profiles/diego.png"/>
                   <source media="only screen and (min-width: 641px) and (max-width: 1024px)" srcset="img/md/profiles/diego.png"/>
-                  <source media="only screen and (min-width: 1025px)" srcset="img/lg/profiles/diego.png"/><!--[if IE 9]></video><![endif]--><img srcset="img/lg/profiles/diego.png"/>
+                  <source media="only screen and (min-width: 1025px)" srcset="img/lg/profiles/diego.png"/><!--[if IE 9]></video><![endif]--><img srcset="img/lg/profiles/diego.png" alt="Latino man"/>
                 </picture>
-                <div class="shadow"></div>
                 <blockquote>
-                  <p>I binge alone because I don&rsquo;t want anyone<br><span>to know how much I eat.</span></p>
+                  <p>I binge alone because I don&rsquo;t want anyone <br class="desktop-break"><span>to know how much I eat.</span></p>
                 </blockquote>
+                <ul class="mobile-pagination">
+                  <li ng-click="changeHero('kimberly')" class="kimberly"></li>
+                  <li ng-click="changeHero('nikki')" class="nikki"></li>
+                  <li ng-click="changeHero('julie')" class="julie"></li>
+                  <li ng-click="changeHero('diego')" class="diego"></li>
+                </ul>
                 <div class="profile">
                   <div class="name">Diego</div>
                   <div class="binge">Average of 8 binge-eating episodes per week</div>
@@ -217,7 +245,7 @@
           <p class="section-disclaimer">These tools were developed by Shire to assist health care professionals in identifying and accurately diagnosing <abbr title="Binge Eating Disorder">B.E.D.</abbr> in adults.</p>
           <div class="wrap--refs">
             <ol class="refs number">
-              <li>American Psychiatric Association. Binge-eating disorder. In: <em>Diagnostic and Statistical Manual of Mental Disorders.</em>5th ed. Arlington, VA: American Psychiatric Association; 2013:350-353</li>
+              <li>American Psychiatric Association. Binge-eating disorder. In: <em>Diagnostic and Statistical Manual of Mental Disorders. </em>5th ed. Arlington, VA: American Psychiatric Association;2013:350-353.</li>
             </ol>
           </div>
         </div>
@@ -261,17 +289,17 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1438721700000"></script>
-    <script src="./js/templates.js?1438721700000"></script>
-    <script src="./js/app.js?1438721700000"></script>
+    <script src="./js/vendor.js?1439220900000"></script>
+    <script src="./js/templates.js?1439220900000"></script>
+    <script src="./js/app.js?1439220900000"></script>
 <script type="text/javascript">
-    (function () {
-        var tagjs = document.createElement("script");
-        var s = document.getElementsByTagName("script")[0];
-        tagjs.async = true;
-        tagjs.src = "//s.btstatic.com/tag.js#site=BYgLeqO";
-        s.parentNode.insertBefore(tagjs, s);
-    } ());
+  (function () {
+    var tagjs = document.createElement("script");
+    var s = document.getElementsByTagName("script")[0];
+    tagjs.async = true;
+    tagjs.src = "//s.btstatic.com/tag.js#site=BYgLeqO";
+    s.parentNode.insertBefore(tagjs, s);
+  }());
 </script>
 <noscript>
   <iframe src="//s.thebrighttag.com/iframe?c=BYgLeqO" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>

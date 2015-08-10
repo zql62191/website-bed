@@ -1,21 +1,22 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="potential-causes.aspx.cs" Inherits="potentialcauses" %>
-
-
-<!DOCTYPE html>
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="potential-causes.aspx.cs" Inherits="potentialcauses" %><!DOCTYPE html>
 <html lang="en" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="cdmp" ng-controller="MainController">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8">
     <title>Potential Causes of Binge Eating Disorder in Adults</title>
-    <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
+    <meta name="description" content="Find info on binge eating disorder in adults, including diagnostic criteria, distinction from other eating disorders, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="./me/mediaelementplayer.min.css?1438721700000"/>
-    <link rel="stylesheet" href="./css/styles.css?1438721700000"/>
+    <link rel="stylesheet" href="./me/mediaelementplayer.min.css?1439220900000"/>
+    <link rel="stylesheet" href="./css/styles.css?1439220900000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
-    <script src="js/inline/cloak.js?__inline=true"></script>
-    <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1438721700000"></script>
+    <script>
+!function(){document.documentElement.className+=" ng-cloak"}();
+</script>
+    <script>
+!function(e){if(window.__ie=null,/msie|trident/i.test(e)){for(var t=function(){var t=e.match(/(?:msie |rv:)(\d+(\.\d+)?)/i),n=t&&t.length>1&&t[1]||"";return parseInt(n,10)}(),n="ie",i=6,s=12,u=["eq-ie"],r=i;s>=r;r++)t>r?u.push("gt-"+n+r):r>t?u.push("lt-"+n+r):t===r&&(u.push("lte-"+n+r),u.push("eq-"+n+r),u.push("gte-"+n+r));window.__ie=t,document.documentElement.className+=" "+u.join(" ")}}(navigator.userAgent||"");
+</script>
+    <script src="./js/head.js?1439220900000"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="potential-causes">
     <main class="content--main">
@@ -49,11 +50,11 @@
                 </li>
                 <li><a href="/hcp/potential-causes.aspx" class="active">Potential Causes</a>
                 </li>
-                <li><a href="/hcp/patient-statistics.aspx">Patient Demographics</a>
+                <li><a href="/hcp/patient-demographics.aspx">Patient Demographics</a>
                 </li>
-                <li><a href="/hcp/effects-of-BED.aspx">Potential Effects</a>
+                <li><a href="/hcp/potential-effects.aspx">Potential Effects</a>
                 </li>
-                <li><a href="/hcp/identifying-patients.aspx" alt="/hcp/profiles.aspx">Patient Profiles</a>
+                <li><a href="/hcp/patient-profiles.aspx" alt="/hcp/profiles.aspx">Patient Profiles</a>
                 </li>
                 <li><a href="/hcp/support-and-resources.aspx">Support &amp; Resources</a>
                 </li>
@@ -80,12 +81,12 @@
           <div class="row neuron">
             <div class="icon is--nd"></div>
             <h4 class="heading--4 mobileHeading--5">Neurotransmitter dysregulation theory<sup>5-7</sup></h4>
-            <p class="mobileP--2">Dopamine signaling converts sensory stimuli into processes that may generate or enhance “wanting” of a particular food<sup>5,8,9</sup></p>
+            <p class="mobileP--2">Dopamine signaling converts sensory stimuli into processes that may generate or enhance &ldquo;wanting&rdquo; of a particular food<sup>5,8,9</sup></p>
           </div>
           <div class="row neuron-closeup">
             <div class="icon is--vc"></div>
             <h4 class="heading--4 mobileHeading--6">Endogenous &micro;-opioid signaling dysfunction theory<sup>5,10-12</sup></h4>
-            <p>Opioid signaling converts sensory stimuli into processes that generate or enhance “liking” of a particular food<sup>8,9</sup></p>
+            <p>Opioid signaling converts sensory stimuli into processes that generate or enhance &ldquo;liking&rdquo; of a particular food<sup>8,9</sup></p>
           </div>
         </div>
       </section>
@@ -119,7 +120,7 @@
             <li>Balodis IM, Molina ND, Kober H, et al. <em>Obesity (Silver Spring). </em>2013;21(2):367-377. </li>
             <li>Sch&auml;fer A, Vaitl D, Schienle A. <em>Neuroimage. </em>2010;50(2):639-643. </li>
             <li>Woolley JD, Gorno-Tempini ML, Seeley WW, et al. <em>Neurology. </em>2007;69(14):1424-1433. </li>
-            <li>Schienle A, Schäfer A, Hermann A, Vaitl D. <em>Biol Psychiatry. </em>2009;65(8):654-661. </li>
+            <li>Schienle A, Sch&auml;fer A, Hermann A, Vaitl D. <em>Biol Psychiatry. </em>2009;65(8):654-661. </li>
             <li>Davis CA, Levitan RD, Reid C, et al. <em>Obesity (Silver Spring). </em>2009;17(6):1220-1225.</li>
             <li>Wang GJ, Geliebter A, Volkow ND, et al. <em>Obesity (Silver Spring). </em>2011;19(8):1601-1608. </li>
             <li>Levitan RD, Masellis M, Basile VS, et al. <em>Biol Psychiatry. </em>2004;56(9):665-669. </li>
@@ -127,11 +128,11 @@
             <li>Wyvell CL, Berridge KC. <em>J Neurosci. </em>2000;20(21):8122-8130.</li>
             <li class="space">Naleid AM, Grace MK, Chimukangara M, Billington CJ, Levine AS. <em>Am J Physiol Regul Integr Comp Physiol. </em>2007;293(1):R99-R105. </li>
             <li class="space">Boggiano MM, Chandler PC, Viana JB, Oswald KD, Maldonado CR, Wauford PK. <em>Behav Neurosci. </em>2005;119(5):1207-1214. </li>
-            <li>Blasio A, Steardo L, Sabino V, Cottone P. <em>Addict Biol. </em>2014;19(4):652-662.</li>
-            <li class="space">American Psychiatric Association. Binge-eating disorder. In: <em>Diagnostic and Statistical Manual of Mental Disorders. </em>5th ed. Arlington, VA: American Psychiatric Association; 2013:350-353.</li>
+            <li>Blasio A, Steardo L, Sabino V, Cottone P.  <em> Addict Biol. </em>2014;19(4):652-662.</li>
+            <li class="space">American Psychiatric Association. Binge-eating disorder. In: <em>Diagnostic and Statistical Manual of Mental Disorders. </em>5th ed. Arlington, VA: American Psychiatric Association;2013:350-353.</li>
             <li>Mitchell KS, Neale MC, Bulik CM, et al. <em>Psychol Med. </em>2010;40(11):1899-1906.</li>
             <li class="space">Davis C, Levitan RD, Yilmaz Z, Kaplan AS, Carter JC, Kennedy JL. <em>Prog Neuropsychopharmacol Biol Psychiatry. </em>2012;38(2):328-335. </li>
-            <li>Pike KM, Wilfley D, Hilbert A, Fairburn CG, Dohm FA, Striegel-Moore RH. <em>Psychiatry Res. </em>2006;142(1): 19-29.</li>
+            <li>Pike KM, Wilfley D, Hilbert A, Fairburn CG, Dohm FA, Striegel-Moore RH. <em>Psychiatry Res. </em>2006;142(1):19-29.</li>
             <li>Mitchell KS, Mazzeo SE, Schlesinger MR, Brewerton TD, Smith BN. <em>Int J Eat Disord. </em>2012;45(3):307-315. </li>
           </ol>
         </div>
@@ -175,17 +176,17 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1438721700000"></script>
-    <script src="./js/templates.js?1438721700000"></script>
-    <script src="./js/app.js?1438721700000"></script>
+    <script src="./js/vendor.js?1439220900000"></script>
+    <script src="./js/templates.js?1439220900000"></script>
+    <script src="./js/app.js?1439220900000"></script>
 <script type="text/javascript">
-    (function () {
-        var tagjs = document.createElement("script");
-        var s = document.getElementsByTagName("script")[0];
-        tagjs.async = true;
-        tagjs.src = "//s.btstatic.com/tag.js#site=BYgLeqO";
-        s.parentNode.insertBefore(tagjs, s);
-    } ());
+  (function () {
+    var tagjs = document.createElement("script");
+    var s = document.getElementsByTagName("script")[0];
+    tagjs.async = true;
+    tagjs.src = "//s.btstatic.com/tag.js#site=BYgLeqO";
+    s.parentNode.insertBefore(tagjs, s);
+  }());
 </script>
 <noscript>
   <iframe src="//s.thebrighttag.com/iframe?c=BYgLeqO" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>

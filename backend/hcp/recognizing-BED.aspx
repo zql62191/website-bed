@@ -1,18 +1,22 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="recognizing-BED.aspx.cs" Inherits="recognizingBED" %><!DOCTYPE html>
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="recognizing-BED.aspx.cs" Inherits="recognizingBED" %><!DOCTYPE html>
 <html lang="en" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="cdmp" ng-controller="MainController">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8">
     <title>Differential Diagnosis for Binge Eating Disorder in Adults</title>
-    <meta name="description" content="Find information on binge eating disorder in adults, including diagnostic criteria, distinctions from obesity, prevalence, and possible causes.">
+    <meta name="description" content="Find info on binge eating disorder in adults, including diagnostic criteria, distinction from other eating disorders, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="./me/mediaelementplayer.min.css?1438722000000"/>
-    <link rel="stylesheet" href="./css/styles.css?1438722000000"/>
+    <link rel="stylesheet" href="./me/mediaelementplayer.min.css?1439220900000"/>
+    <link rel="stylesheet" href="./css/styles.css?1439220900000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
-    <script src="js/inline/cloak.js?__inline=true"></script>
-    <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1438722000000"></script>
+    <script>
+!function(){document.documentElement.className+=" ng-cloak"}();
+</script>
+    <script>
+!function(e){if(window.__ie=null,/msie|trident/i.test(e)){for(var t=function(){var t=e.match(/(?:msie |rv:)(\d+(\.\d+)?)/i),n=t&&t.length>1&&t[1]||"";return parseInt(n,10)}(),n="ie",i=6,s=12,u=["eq-ie"],r=i;s>=r;r++)t>r?u.push("gt-"+n+r):r>t?u.push("lt-"+n+r):t===r&&(u.push("lte-"+n+r),u.push("eq-"+n+r),u.push("gte-"+n+r));window.__ie=t,document.documentElement.className+=" "+u.join(" ")}}(navigator.userAgent||"");
+</script>
+    <script src="./js/head.js?1439220900000"></script>
   </head>
   <body ontouchstart="" prime-directive="" class="recognizing-bed">
     <main class="content--main">
@@ -46,11 +50,11 @@
                 </li>
                 <li><a href="/hcp/potential-causes.aspx">Potential Causes</a>
                 </li>
-                <li><a href="/hcp/patient-statistics.aspx">Patient Demographics</a>
+                <li><a href="/hcp/patient-demographics.aspx">Patient Demographics</a>
                 </li>
-                <li><a href="/hcp/effects-of-BED.aspx">Potential Effects</a>
+                <li><a href="/hcp/potential-effects.aspx">Potential Effects</a>
                 </li>
-                <li><a href="/hcp/identifying-patients.aspx" alt="/hcp/profiles.aspx">Patient Profiles</a>
+                <li><a href="/hcp/patient-profiles.aspx" alt="/hcp/profiles.aspx">Patient Profiles</a>
                 </li>
                 <li><a href="/hcp/support-and-resources.aspx">Support &amp; Resources</a>
                 </li>
@@ -76,32 +80,32 @@
       <section class="section--obesity">
         <div class="wrap--content">
           <h1 class="heading--1"><abbr title="Binge Eating Disorder">B.E.D.</abbr> is different from obesity</h1>
-          <h2 class="heading--2"><abbr title="Binge Eating Disorder">B.E.D.</abbr> can occur in normal-weight, overweight, and obese adults <sup>*3</sup>
+          <h2 class="heading--2"><abbr title="Binge Eating Disorder">B.E.D.</abbr> can occur in normal-weight, overweight, and obese adults<sup>*3</sup>
           </h2>
-          <h3 class="heading--3">Although <abbr title="Binge Eating Disorder">B.E.D.</abbr> can be associated with increased weight, the majority of adults <br>with <abbr title="Binge Eating Disorder">B.E.D.</abbr> are not obese: 55% are normal-weight or overweight, 45% are obese</h3>
+          <h3 class="heading--3">Although <abbr title="Binge Eating Disorder">B.E.D.</abbr> can be associated with increased weight, the majority of adults <br>with <abbr title="Binge Eating Disorder">B.E.D.</abbr> are not obese: 55% are normal-weight or overweight, 45% are obese<sup>3</sup></h3>
           <div class="chart-wrap">
             <div class="chart"></div>
             <div class="label top left">
               <div class="num">19.0%</div>
-              <div class="clas">are Normal-<br>weight</div>
-              <div class="footnote">Body mass index <br>(BMI) 18.5-24.9</div>
+              <div class="clas">are Normal-<br class="mobile-break"><br class="desktop-break">weight</div>
+              <div class="footnote">Body mass index <br class="mobile-break"><br class="desktop-break">(BMI) 18.5-24.9</div>
             </div>
             <div class="label top right">
               <div class="num">16.2%</div>
-              <div class="clas">are Severely<br>Obese</div>
-              <div class="footnote">Body mass index<br>(BMI) &ge;40</div>
+              <div class="clas">are Severely <br class="mobile-break"><br class="desktop-break">Obese<sup>3</sup></div>
+              <div class="footnote">Body mass index<br class="mobile-break"><br class="desktop-break">(BMI) &ge;40</div>
             </div>
             <div class="label bottom left">
               <div class="num">35.7%</div>
               <div class="clas">are Overweight</div>
-              <div class="footnote">Body mass index <br>(BMI) 25.0-29.9</div>
+              <div class="footnote">Body mass index <br class="mobile-break"><br class="desktop-break">(BMI) 25.0-29.9</div>
             </div>
             <div class="label bottom right">
               <div class="num">29.2%</div>
               <div class="clas">are Obese</div>
-              <div class="footnote">Body mass index<br>(BMI) 30.0-39.9</div>
+              <div class="footnote">Body mass index<br class="mobile-break"><br class="desktop-break">(BMI) 30.0-39.9</div>
             </div>
-            <p data-note="" class="footnote section-note">*Data (based on Version 3.0 of the World Health Organization Composite International Diagnostic Interview and DSM-IV&reg; criteria) from an eating disorder&ndash;assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.<sup>3</sup></p>
+            <p data-note="" class="footnote section-note hide--sm">*Data (based on Version 3.0 of the World Health Organization Composite International Diagnostic Interview and <em>DSM-IV</em><sup>&reg; </sup>criteria) from an eating disorder&ndash;assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.<sup>3</sup></p>
           </div>
           <div class="mobile-line">&nbsp;</div>
         </div>
@@ -130,10 +134,10 @@
             </div>
             <div class="statistic box2">
               <div class="num">Nearly Half</div>
-              <div class="text">had <em>three or more </em><br>comorbid psychiatric or <br>substance use disorder</div>
+              <div class="text">had <em>three or more </em><br>comorbid psychiatric or <br>substance use disorders</div>
             </div>
           </div>
-          <p data-note="" class="footnote">&dagger;Data from a random subsample of respondents (n=1,139) from an eating disorder&ndash;assessed subsample of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge; 18 years.<sup>3</sup></p>
+          <p data-note="" class="footnote"><sup>&dagger;</sup>Data from a random subsample of respondents (n=1,139) from an eating disorder&ndash;assessed subsample of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.<sup>3</sup></p>
         </div>
       </section>
       <section class="section--triggers">
@@ -161,13 +165,13 @@
               <h2 class="heading--2">Feeling bored</h2>
             </li>
           </ul>
-          <div class="center"><a href="effects-of-BED.aspx" class="btn btn--yellow">POTENTIAL EFFECTS OF <abbr title="Binge Eating Disorder">B.E.D.</abbr></a></div>
+          <div class="center"><a href="potential-effects.aspx" class="btn btn--yellow">POTENTIAL EFFECTS OF <abbr title="Binge Eating Disorder">B.E.D.</abbr></a></div>
         </div>
         <div class="wrap--refs">
           <ol class="refs number">
-            <li>American Psychiatric Association. Binge-eating disorder. In: Diagnostic and Statistical Manual of Mental Disorders. 5th ed. Arlington, VA: American Psychiatric Association; 2013:350-353</li>
+            <li>American Psychiatric Association. Binge-eating disorder. In: <em>Diagnostic and Statistical Manual of Mental Disorders. </em>5th ed. Arlington, VA: American Psychiatric Association;2013:350-353</li>
             <li>American Psychiatric Association. DSM-5 Fact Sheet. Feeding and eating disorders. <a href="http://www.dsm5.org/documents/eating%20disorders%20fact%20sheet.pdf" target="_blank" class="url">www.dsm5.org/documents/eating%20disorders%20fact%20sheet.pdf</a>. Accessed May 8, 2015</li>
-            <li>Hudson JI, Hiripi E, Pope HG Jr, Kessler RC. [Published correction appears in Biol Psychiatry. 2012;72(2):164]. Biol Psychiatry. 2007;61(3):348-358.</li>
+            <li>Hudson JI, Hiripi E, Pope HG Jr, Kessler RC. [Published correction appears in <em>Biol Psychiatry. </em>2012;72(2):164]. <em>Biol Psychiatry. </em>2007;61(3):348-358.</li>
           </ol>
         </div>
       </section>
@@ -210,17 +214,17 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1438722000000"></script>
-    <script src="./js/templates.js?1438722000000"></script>
-    <script src="./js/app.js?1438722000000"></script>
+    <script src="./js/vendor.js?1439220900000"></script>
+    <script src="./js/templates.js?1439220900000"></script>
+    <script src="./js/app.js?1439220900000"></script>
 <script type="text/javascript">
-    (function () {
-        var tagjs = document.createElement("script");
-        var s = document.getElementsByTagName("script")[0];
-        tagjs.async = true;
-        tagjs.src = "//s.btstatic.com/tag.js#site=BYgLeqO";
-        s.parentNode.insertBefore(tagjs, s);
-    } ());
+  (function () {
+    var tagjs = document.createElement("script");
+    var s = document.getElementsByTagName("script")[0];
+    tagjs.async = true;
+    tagjs.src = "//s.btstatic.com/tag.js#site=BYgLeqO";
+    s.parentNode.insertBefore(tagjs, s);
+  }());
 </script>
 <noscript>
   <iframe src="//s.thebrighttag.com/iframe?c=BYgLeqO" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
