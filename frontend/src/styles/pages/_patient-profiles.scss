@@ -85,13 +85,13 @@ body.patient-profiles {
         @include mq("md") {
 
             .wrap--content {
-
+                
             }
 
             .persons {
                 @include clearfix;
                 width: 592px;
-                margin: 0 auto 40px auto;
+                margin: 48px auto 40px auto;
 
                 .person {
                     display: block;
@@ -102,6 +102,35 @@ body.patient-profiles {
                     }
 
                 }
+            }
+            
+            .callouts{
+                h2.heading--2{
+                    font-size: 22px;
+                    color: #E8E9E9;
+                    line-height: 26px;
+                }
+                p{
+                    font-size: 16px;
+                    color: #D6D8DA;
+                    line-height: 19px;
+                    margin-top: 6px;
+                }
+                .btn{
+                    /* Rectangle 10: */
+                    background: #FFBE2C;
+                    border-radius: 4px;
+                    font-size: 14px;
+                    color: #21282F;
+                    line-height: 17px;
+                    padding-top: 8px;
+                    margin-top: 25px;
+                }
+            }
+            .disclaimer{
+                margin: 35px auto 0 auto;
+                text-align: center;
+                width: percentage(543/768);
             }
         }
 

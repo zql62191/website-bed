@@ -6,8 +6,11 @@ body.potential-effects {
         margin: 0 auto;
         padding: 30px 0;
 
-        @include mq("lg", "md") {
+        @include mq("lg") {
             width: 655px;
+        }
+        @include mq("md") {
+            width: percentage(510/768);
         }
         @include mq("sm") {
             width: 100%;
@@ -184,6 +187,9 @@ body.potential-effects {
 
         .wrap--content {
             padding-bottom: 0;
+            @include mq("md") {
+                padding-top: 70px;
+            }
         }
 
         .heading--1 {
@@ -255,12 +261,29 @@ body.potential-effects {
             @include mq("lg") {
                 left: 0;
             }
+            @include mq("md") {
+                font-size: 21px;
+                color: #C2CBD0;
+                line-height: 25px;
+                text-align: center;
+                width: percentage(589/768);
+                margin: 0 auto;
+            }
         }
         .two {
             text-align: left;
 
             @include mq("lg") {
                 right: 0;
+            }
+
+            @include mq("md") {
+                font-size: 21px;
+                color: #C2CBD0;
+                line-height: 25px;
+                text-align: center;
+                width: percentage(589/768);
+                margin: 0 auto;
             }
         }
 
@@ -269,6 +292,7 @@ body.potential-effects {
 
             @include mq("md", "sm") {
                 text-align: center;
+                padding-bottom: 65px;
             }
         }
         
@@ -347,6 +371,25 @@ body.potential-effects {
                 line-height: 17px;
                 padding: 16px 24px 11px;
                 height: auto;
+            }
+            
+        }
+
+        @include mq('md') {
+            .wrap--content{
+                padding-top: 4px;
+            }
+            .center {
+                text-align: center;
+                width: percentage(350/768);
+                margin: 0 auto;
+                .btn{
+                    font-size: 16px;
+                    color: #21282F;
+                    line-height: 19px;
+                    padding: 13px 24px 11px;
+                    height: auto;
+                }
             }
         }
 
