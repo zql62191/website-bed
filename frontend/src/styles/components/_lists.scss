@@ -180,7 +180,7 @@ ol.number {
     }
     @include mq("sm") {
         padding-left: 20px;
-        margin-left: -15px;
+        // margin-left: -15px;
     }
 
     > li {

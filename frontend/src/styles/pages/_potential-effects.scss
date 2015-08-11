@@ -403,4 +403,21 @@ body.potential-effects {
         }
     }
 
+    @include mq('sm') {
+
+        .section--button{
+
+            .wrap--refs{
+
+                .refs{
+                    padding-left: 20px;
+                    padding-right: 0px;
+                }
+
+            }
+        }
+
+    }
+
+
 }
