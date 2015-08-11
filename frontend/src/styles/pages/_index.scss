@@ -308,6 +308,10 @@ body.index {
                     }
                 }
             }
+
+            .refs{
+                padding-bottom: 0px;
+            }
         }
         @include mq("sm") {
 
