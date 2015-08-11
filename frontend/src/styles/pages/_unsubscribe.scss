@@ -52,7 +52,7 @@
          
      }
      
-     &.forminvalid.ng-dirty, &.ng-dirty.ng-invalid-required, &.ng-touch.ng-invalid-required{
+     .forminvalid.ng-dirty, .ng-dirty.ng-invalid-required, .ng-touch.ng-invalid-required, .forminvalid.ng-pristine{
          color: #FF4517;
          border-bottom: 1px solid #FF4517;
      }
@@ -77,7 +77,7 @@
     }
 
 
-    // @include mq('lg') {
+    @include mq('lg') {
 
     .section--unsubscribe{
 
@@ -159,6 +159,15 @@
                 border-bottom: 1px solid #5C656D;
                 padding-bottom: 3px; 
                 margin-top: 25px;
+                
+                &.ng-dirty.ng-invalid-required, &.forminvalid.ng-dirty{
+                    border-bottom: 1px solid #FF4517 !important;
+                    color:#FF4517;
+                }
+                &.forminvalid.ng-pristine{
+                    border-bottom: 1px solid #FF4517 !important;
+                }
+                
                 }
                 
                .errormessage{
@@ -184,12 +193,12 @@
                 .form-group.has-error.help-block{
                     display: block;
                 }
-            .help-block {
-                position: absolute;
-                color: #FF4517;
-                margin-top: -30px;
-                right: 20px;
-            }
+                .help-block {
+                    position: absolute;
+                    color: #FF4517;
+                    margin-top: -30px;
+                    right: 20px;
+                }
                 .errormessage {
                     position:absolute;
                     color: #FF4517;
@@ -253,48 +262,149 @@
         }
 
 
-    // }
+    
  
  
      @include mq("md") {
 
-        .section--unsubscribe{
+         .section--unsubscribe {
 
-            .wrap--content{
-                padding-left: 0;
-                padding-right: 0;
+             .subcontainer {
+                 width: 100% !important;
+             }
 
-                .subcontainer{
-                    width: percentage(636/768);
+             .heading--1 {
+                 margin-bottom: 0px !important;
+             }
 
-                    .heading--2{
-                        padding-top: 20px;
-                    }
-                }
+             .heading--2 {
+                 font-size: 22px !important;
+                 color: #E8E9E9;
+                 line-height: 23px !important;
+                 text-align: left;
 
-            }
+             }
 
-            .accordion{
+             .accordion {
+                 margin-bottom: 10px;
+                 padding-left: 35px;
+                 padding-top: 20px;
 
-                .accordion-title{
-                    width: percentage(633/768);
-                }
+                 &:last-child {
+                     margin-bottom: 52px !important;
+                 }
 
-            }
+                 .accordion-title {
+                     width: 76%;
+                     height: 68px;
+
+                 }
+
+                 &.open {
+                     .accordion__wrap {
+                         display: inline-block;
+                         padding-bottom: 30px;
+                     }
+
+                     .accordion-title {
+                         height: auto;
+                         padding-bottom: 0px;
+                     }
+
+                 }
+
+                 .accordion__wrap {
+                     display: none;
+
+                     .accordion__content {
+                     }
+
+                 }
+
+                 .arrow.closed{
+                     left: 120%;
+                     top: 20px;
+                 }
 
 
-            form{
-                width: percentage(582/768);
-                margin: 0 auto;
+             }
+             .accordion-title {
+                 color: #D6D8DA;
+                 font-size: 18px;
+                 line-height: 22px;
+                 padding-top: 15px;
+                 padding-bottom: 20px;
+             }
 
-                input[type='text'],input[type='email'], select{
-                    width:percentage(582/768);
-                }
+             form {
+                 width: percentage(582/1024);
+                 min-width: 582px;
+                 margin: 0 auto;
 
+                 input[type='text'], input[type='email'], select {
+                     width: 100%;
+                     
+                     color: #858B91;
+                     line-height: 22px;
+                     border: none;
+                     display: block;
+                     border-bottom: 1px solid #5C656D;
+                     padding-bottom: 3px;
+                     margin-top: 25px;
 
-            }
+                     &.ng-dirty.ng-invalid-required, &.forminvalid.ng-dirty {
+                         border: 1px solid #FF4517;
+                         color: #FF4517;
+                     }
 
-        }
+                     &.forminvalid.ng-pristine{
+                         border-bottom: 1px solid #FF4517 !important;
+                     }
+
+                 }
+
+                 select {
+                     width: 590px;
+                     margin-left: -8px;
+                     color: #858B91;
+                     background: #D8D8D8;
+
+                     &.ng-dirty.ng-invalid-required, &.forminvalid.ng-dirty {
+                         border: 1px solid #FF4517;
+                         color: #FF4517;
+
+                         option {
+                             color: #FF4517;
+                         }
+
+                     }
+
+                     &.forminvalid.ng-pristine{
+                         border-bottom: 1px solid #FF4517 !important;
+
+                         option{
+                             color: #FF4517;
+                         }
+                     }
+
+                     option {
+                         color: #858B91;
+                     }
+                 }
+
+                 button {
+                     border-style: none;
+                     @include gs();
+                     font-size: 14px;
+                     color: #21282F;
+                     line-height: 17px;
+                     margin-top: 28px;
+                     width: 100%;
+                 }
+
+             }
+
+         }
 
          
      }
@@ -372,7 +482,7 @@
              }
 
              form {
-                 width: 115% !important;
+                 min-width: 115%;
                  margin: 0 auto;
 
                  input[type='text'], input[type='email'], select {
@@ -426,6 +536,19 @@
                      }
                  }
 
+                 .help-block {
+                     position: absolute;
+                     color: #FF4517;
+                     margin-top: -45px;
+                     right: 28px;
+                 }
+                 .spe{
+                     position: absolute;
+                     color: #FF4517;
+                     margin-top: -45px;
+                     right: 66px;
+                 }
+
                  button {
                      border-style: none;
                      @include gs();
@@ -440,3 +563,4 @@
 
          }
      }
+ }

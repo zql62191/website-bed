@@ -64,6 +64,28 @@ body.thank-you{
     }
     @include mq('md') {
 
+        .heading--1{
+            text-align: center;
+            margin: 0 auto;
+            width: 100%;
+            font-size: 28px;
+            color: #FDBD3E;
+            line-height: 28px;
+        }
+
+        button{
+            font-size: 16px !important;
+            /* Rectangle 10: */
+            background: #FFBE2C;
+            border-radius: 4px;
+            font-weight: normal !important;
+            color: #21282F;
+            line-height: 19px;
+            width: 80%;
+            margin: 50px 0 50px 12% !important;
+            
+        }
+
     }
     @include mq('sm') {
 

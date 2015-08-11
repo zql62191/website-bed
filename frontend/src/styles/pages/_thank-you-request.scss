@@ -49,6 +49,13 @@ body.thank-you-request{
 
     }
     @include mq('md') {
+        .heading--1{
+            text-align: center;
+            font-size: 30px;
+            color: #FDBD3E;
+            line-height: 28px;
+            width: 100%;
+        }
 
     }
     @include mq('sm') {

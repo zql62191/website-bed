@@ -34,17 +34,17 @@
             };
         }])
 
-        .directive('showErrors', function (showErrorsConfig) {
-            var getShowSuccess;
-            getShowSuccess = function (options) {
-                var showSuccess;
-                showSuccess = showErrorsConfig.showSuccess;
-                if (options && options.showSuccess != null) {
-                    showSuccess = options.showSuccess;
-                }
-                return showSuccess;
-            };
-        })
+        //.directive('showErrors', function (showErrorsConfig) {
+        //    var getShowSuccess;
+        //    getShowSuccess = function (options) {
+        //        var showSuccess;
+        //        showSuccess = showErrorsConfig.showSuccess;
+        //        if (options && options.showSuccess != null) {
+        //            showSuccess = options.showSuccess;
+        //        }
+        //        return showSuccess;
+        //    };
+        //})
 
         .provider('showErrorsConfig', function () {
             var _showSuccess;
