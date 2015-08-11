@@ -63,35 +63,6 @@
             };
 
         }])
-<<<<<<< HEAD
-        
-
-        .directive('showErrors', function (showErrorsConfig) {
-            var getShowSuccess;
-            getShowSuccess = function (options) {
-                var showSuccess;
-                showSuccess = showErrorsConfig.showSuccess;
-                if (options && options.showSuccess != null) {
-                    showSuccess = options.showSuccess;
-                }
-                return showSuccess;
-            };
-
-        })
-
-        .provider('showErrorsConfig', function () {
-            var _showSuccess;
-            _showSuccess = false;
-            this.showSuccess = function (showSuccess) {
-                return _showSuccess = showSuccess;
-            };
-            this.$get = function () {
-                return { showSuccess: _showSuccess };
-            };
-        })
-=======
-       
->>>>>>> 93151bd72ea8cffdf74b33fba1fdd2620a7b8bc7
 
     //.controller('clickController', ['$scope', function($scope){
     //    $scope.clickToTY = function(){
