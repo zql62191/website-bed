@@ -6,12 +6,13 @@ body.thank-you-request{
         color: #FDBD3E;
         line-height: 38px;
         width: 850px;
-        margin: 0 auto;
+        margin: 0 auto 0 105px;
+        text-align: left;
     }
     .heading--2{
-        font-size: 24px;
+        font-size: 18px;
         color: #E8E9E9;
-        line-height: 29px;
+        line-height: 22px;
         margin-top: 24px !important;
         width: 75%;
         margin-left: 11%;
@@ -27,22 +28,7 @@ body.thank-you-request{
             color: #FDBD3E;
             line-height: 38px;
             width: 850px;
-            margin: 0 auto;
-        }
-        
-
-
-        button{
-            font-size: 16px !important;
-            /* Rectangle 10: */
-            background: #FFBE2C;
-            border-radius: 4px;
-            font-size: 16px;
-            color: #21282F;
-            line-height: 19px;
-            margin-left: 38% !important;
-            margin-top: 35px !important;
-            margin-bottom: 138px !important;
+            //margin: 0 auto;
         }
 
         
@@ -50,11 +36,12 @@ body.thank-you-request{
     }
     @include mq('md') {
         .heading--1{
-            text-align: center;
+            text-align: left;
             font-size: 30px;
             color: #FDBD3E;
             line-height: 28px;
             width: 100%;
+            margin-left: 11%;
         }
 
     }
@@ -66,6 +53,7 @@ body.thank-you-request{
             color: #FDBD3E;
             line-height: 28px;
             width: 100%;
+            margin-left: 0;
         }
         
         
