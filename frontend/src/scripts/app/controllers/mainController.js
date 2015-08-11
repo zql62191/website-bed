@@ -3,8 +3,8 @@
 
     angular.module('cdmp.controllers')
 
-    .controller('MainController', ['$scope', '$rootScope', '$window', '$document', '$timeout', '$http', 'matchmedia', 'ModalService', 'Analytics', '_', 'he', 'parseUri',
-        function($scope, $rootScope, $window, $document, $timeout, $http, matchmedia, ModalService, Analytics, _, he, parseUri) {
+    .controller('MainController', ['$scope', '$rootScope', '$window', '$document', '$timeout', '$http', 'matchmedia', 'ModalService', 'Analytics', '_', 'he', 'parseUri', 'showErrorsConfig',
+        function($scope, $rootScope, $window, $document, $timeout, $http, matchmedia, ModalService, Analytics, _, he, parseUri, showErrorsConfig) {
 
 
             $rootScope.emailPattern = /^.+@[^\.].*\.[a-zA-Z]{2,}$/;

@@ -153,7 +153,7 @@
                         featuring: "",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S02868.mp4",
                         host: activehost,
-                        newFrom: null,
+                        newFrom: Date(2015, 7, 15),
                         viewed: true
                     },
                     {

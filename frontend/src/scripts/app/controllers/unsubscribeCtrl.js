@@ -10,7 +10,7 @@
 
             $scope.submitForm = function() {
                 $scope.submitted = true;
-                $scope.$broadcast('show-errors-check-validity');
+                $scope.$broadcast('show-errors-check-validity'); // uses the provider service
 
 
                 if (!$scope.optOutEmail.$invalid) {
@@ -96,6 +96,7 @@
                 }
                 return showSuccess;
             };
+
         })
 
         .provider('showErrorsConfig', function () {
@@ -107,7 +108,7 @@
             this.$get = function () {
                 return { showSuccess: _showSuccess };
             };
-        })    
+        })
 
     //.controller('clickController', ['$scope', function($scope){
     //    $scope.clickToTY = function(){

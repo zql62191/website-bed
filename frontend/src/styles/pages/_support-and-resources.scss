@@ -156,7 +156,7 @@ body.support-and-resources{
 
                 .box{
                     width: 298px;
-                    height: 130px;
+                    height: 112px;
                     display: inline-block; 
                     background-color: #333E48;
                     border: 2px solid transparent; //no more jiggly content!
@@ -171,7 +171,10 @@ body.support-and-resources{
 
 
                     .yellow {
-                        width: 220px;
+                        width: 160px;
+                        font-size: 16px;
+                        line-height: 20px;
+                        letter-spacing: 0.2px;
 
                         @include mq('sm') {
                             width: percentage(198/280);
@@ -198,7 +201,8 @@ body.support-and-resources{
                         color: #858B91;
                         position: absolute;
                         width: 34px;
-                        left: 242px;
+                        // left: 242px;
+                        right: 25px;
                         top: 20px;
                     }
 
@@ -208,13 +212,15 @@ body.support-and-resources{
                         background-image: url("../img/lg/support-and-resources/play-button.png");
                         position: absolute;
                         top: 18px;
-                        left: 277px;
+                        // left: 277px;
+                        right: 11px;
                     }
 
                     .new {
                         position: absolute;
-                        top: 61px;
-                        left: 254px;
+                        top: 57px;
+                        // left: 254px;
+                        right: -9px;
                         width: 49px;
                         height: 22px;
                         background-image: url("../img/lg/support-and-resources/new-ribbon.png");
@@ -223,7 +229,8 @@ body.support-and-resources{
                     .viewed {
                         position: absolute;
                         top: 79px;
-                        left: 238px;
+                        // left: 238px;
+                        right: -9px;
                         width: 64px;
                         height: 22px;
                         background-image: url("../img/lg/support-and-resources/viewed-ribbon.png");
@@ -259,6 +266,22 @@ body.support-and-resources{
                 }
 
             }
+
+            // .experts{
+            //     .boxes-row{
+            //         .box{
+            //             min-height: 90px;
+
+            //             .new {
+            //                 top: 44px;
+            //             }
+            //             .viewed {
+            //                 top: 64px;
+            //             }
+
+            //         }
+            //     }
+            // }
 
         }
 
@@ -359,6 +382,8 @@ body.support-and-resources{
                 border-bottom: 1px solid #5C656D;
             }
 
+            .box-wrap{}
+
             .split-box{
                 width: 49%;
                 padding: 0 2.5%;
@@ -386,6 +411,152 @@ body.support-and-resources{
 
         }
 
+
+    }
+
+    @include mq('md') {
+
+        .section--video-boxes{
+
+            .wrap--content{
+                padding-top: 0px;
+            }
+
+            .mobile-dropdown{
+                margin-bottom: 0px;
+            }
+
+            .tabs{
+                display: none;
+                .tab{
+                    // margin-right: 2px;
+                }
+
+            }
+            .boxes{
+                .boxes-row{
+                    .box{
+                        margin-right: percentage(15/670);
+                        width: percentage(320/670);
+                        min-height: 112px;
+                        height: auto;
+
+                        .yellow, .subtitle{
+                            width: percentage(218/320);
+                        }
+
+                        .video-length {
+                            right: 32px;
+                        }
+                        .play-btn{
+                            right: 20px;
+                        }
+
+                    }
+
+                }
+            }
+            
+
+        }
+
+
+        .section--shire-resources{
+
+
+            .wrap--content{
+                border-top: none;
+                border-bottom: none;
+                padding-top: 0px;
+                padding-bottom: 0px;
+            }
+
+            .box-wrap{
+                border-top: 1px solid #5C656D;
+                border-bottom: 1px solid #5C656D;
+                padding-top: 34px;
+                padding-bottom: 34px;
+                padding-left: percentage(30/768);
+                padding-right: percentage(30/768);
+                margin: 0 auto;
+            }
+
+            .heading--1{
+                padding-bottom: 30px;
+            }
+
+            .split-box{
+                width: 45%; //percentage(269/656)
+                // padding: 0 2.5%;
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0 auto;
+
+                &.sb-1{
+                    margin-right: percentage(60/768);
+                }
+
+
+                .heading--2{
+                    text-align: left;
+                    font-size: 21px;
+                    padding-bottom: 26px;
+                }
+
+                .btn{
+                    font-size: 14px;
+                    line-height: 17px;
+                    background: #FFBE2C;
+                    border-radius: 4px;
+                    color: #21282F;
+                    height: 65px;
+                    padding: 14px 17px;
+                }
+                
+            }
+
+        }
+
+        .section--information{
+            .heading--1{
+                padding-bottom: 36px;
+                width: percentage(625/656);
+            }
+
+            h1,h2{
+                margin: 0 auto;
+            }
+
+            .link-boxes-tablet{
+
+                padding-left: percentage(84/768);
+
+                .link-box{
+                    width: 230px;
+                    height: 55px;
+                    display: inline-block;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #ADB2B6;
+
+                    &:nth-child(2n+1){
+                        margin-right: percentage(73/768);
+                    }
+
+                    margin-bottom: 30px;
+
+                    .yellow, a{
+                        display: block;
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+                }
+
+            }
+            
+
+
+        }
 
     }
 
