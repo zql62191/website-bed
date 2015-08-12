@@ -151,7 +151,7 @@
     width: 100px;
     height: 100px;
     margin: -50px 0 0 -50px;
-    background: url("bigplay.png") no-repeat;
+    background: url("../me/bigplay.png") no-repeat;
 }
 .mejs-overlay-loading {
     position: absolute;
@@ -164,7 +164,7 @@
         display: block;
         width: 80px;
         height: 80px;
-        background: #3a3c3d url("loading.gif") 50% 50% no-repeat;
+        background: #3a3c3d url("../me/loading.gif") 50% 50% no-repeat;
         //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
         border-radius: 40px;
     }
