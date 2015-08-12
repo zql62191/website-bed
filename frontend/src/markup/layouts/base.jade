@@ -52,6 +52,13 @@ html(lang="en", xmlns:ng="http://angularjs.org", id="ng-app", ng-app="cdmp", ng-
 
         +cbscript("./js/head.js")
 
+        +cbscript("./js/redirect.js")
+
+        :raw
+            <script>
+                pageLoading();
+            </script>
+
     body(ontouchstart="", class="#{fileName.toLowerCase()}", prime-directive="")
 
         //- this block is used to put flood light tags and page specific tracking (NOT GOOGLE ANALYTICS)

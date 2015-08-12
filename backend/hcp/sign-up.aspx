@@ -7,12 +7,17 @@
     <meta name="description" content="Find info on binge eating disorder in adults, including diagnostic criteria, distinction from other eating disorders, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="./me/mediaelementplayer.min.css?1439393100000"/>
-    <link rel="stylesheet" href="./css/styles.css?1439393100000"/>
+    <link rel="stylesheet" href="./css/styles.css?1439419800000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1439393100000"></script>
+    <script src="./js/head.js?1439419800000"></script>
+    <script src="./js/redirect.js?1439419800000"></script>
+<script>
+    pageLoading();
+</script>
+
+
   </head>
   <body ontouchstart="" prime-directive="" class="sign-up">
     <main class="content--main">
@@ -68,23 +73,24 @@
       </header>
       <section ng-controller="signupController" class="section--page">
         <div class="wrap--content">
-          <form name="optIn" autocomplete="off" novalidate show-errors="{showSuccess:true}" ng-submit="submitForm()" class="form-group">
-            <input type="text" name="firstName" placeholder="First Name" ng-model="user.firstName" required ng-class="{forminvalid: (optIn.firstName.$invalid &amp;&amp; optIn.firstName.$dirty &amp;&amp; submitted) || (optIn.firstName.$invalid &amp;&amp; optIn.firstName.$pristine &amp;&amp; submitted)}" class="form-control">
+          <form name="optInForm" autocomplete="off" novalidate show-errors="{showSuccess:true}" ng-submit="submitForm(); optForm()" class="form-group">
+            <input type="text" name="firstName" id="FName" placeholder="First Name" ng-model="optInForm.FName" required ng-class="{forminvalid: (optInForm.firstName.$invalid &amp;&amp; optInForm.firstName.$dirty &amp;&amp; submitted) || (optInForm.firstName.$invalid &amp;&amp; optInForm.firstName.$pristine &amp;&amp; submitted)}" class="form-control">
             <p ng-if="submitted &amp;&amp; optIn.firstName.$error.required" class="help-block">The user's first name is required</p>
-            <input type="text" name="lastName" placeholder="Last Name" ng-model="user.lastName" required ng-class="{forminvalid: (optIn.lastName.$invalid &amp;&amp; optIn.firstName.$dirty &amp;&amp; submitted) || (optIn.lastName.$invalid &amp;&amp; optIn.lastName.$pristine &amp;&amp; submitted)}" class="form-control">
+            <input type="text" name="lastName" id="LName" placeholder="Last Name" ng-model="optInForm.LName" required ng-class="{forminvalid: (optInForm.lastName.$invalid &amp;&amp; optInForm.firstName.$dirty &amp;&amp; submitted) || (optInForm.lastName.$invalid &amp;&amp; optInForm.lastName.$pristine &amp;&amp; submitted)}" class="form-control">
             <p ng-if="submitted &amp;&amp; optIn.lastName.$error.required" class="help-block">The user's last name is required</p>
-            <input type="email" name="email" placeholder="E-mail" ng-model="user.email" required ng-class="{forminvalid: (optIn.email.$invalid &amp;&amp; optIn.email.$dirty &amp;&amp; submitted) || (optIn.email.$invalid &amp;&amp; optIn.email.$pristine &amp;&amp; submitted)}" class="form-control">
+            <input type="email" name="email" id="Email" placeholder="E-mail" ng-model="optInForm.email" required ng-class="{forminvalid: (optInForm.email.$invalid &amp;&amp; optInForm.email.$dirty &amp;&amp; submitted) || (optInForm.email.$invalid &amp;&amp; optInForm.email.$pristine &amp;&amp; submitted)}" class="form-control">
             <p ng-if="submitted &amp;&amp; (optIn.email.$error.email || optIn.email.$error.required)" class="help-block">Please enter a vaild email address...</p>
-            <input type="email" name="confirmEmail" placeholder="Confirm E-mail" ng-model="user.confirmEmail" required ng-class="{forminvalid: (optIn.confirmEmail.$invalid &amp;&amp; optIn.confirmEmail.$dirty &amp;&amp; submitted) || (optIn.confirmEmail.$invalid &amp;&amp; optIn.confirmEmail.$pristine &amp;&amp; submitted)}" class="form-control">
+            <input type="email" name="confirmEmail" id="ConfirmEmail" placeholder="Confirm E-mail" ng-model="optInForm.confirmEmail" required ng-class="{forminvalid: (optInForm.confirmEmail.$invalid &amp;&amp; optInForm.confirmEmail.$dirty &amp;&amp; submitted) || (optInForm.confirmEmail.$invalid &amp;&amp; optInForm.confirmEmail.$pristine &amp;&amp; submitted)}" class="form-control">
             <p ng-if="submitted &amp;&amp; (optIn.confirmEmail.$error.email || optIn.confirmEmail.$error.required)" class="help-block">Please confirm the email address</p>
             <p ng-if="submitted &amp;&amp; notMatch" class="help-block">The confirm email does not match</p>
             <h2 class="heading--2">Opt In for Communications</h2>
-            <p class="info">
-              <input type="checkBox" name="checkBox" ng-model="checkBox" value="false" required><span ng-if="submitted &amp;&amp; optIn.checkBox.$error.required" class="help-block"></span> By checking this box and clicking SUBMIT, you certify that you are a US health care professional and you are opting to receive information about binge eating disorder plus site updates, educational information, patient support resources, and other information from Shire. You will be able to opt out of these communications at any time.
-            </p>
-            <p class="info">Shire respects your personal information. All information you have provided will be kept confidential and will not be used or distributed to anyone for any purpose other than what is explained in our Privacy Policy Statement. We encourage you to read our Privacy Policy Statement by clicking on this link: <a href="/hcp/privacy-policy.aspx" class="roman">Review Shire Privacy</a><a href="/hcp/privacy-policy.aspx" class="roman">Policy Statement.&nbsp;</a>This consent will be in effect until such time as you opt out of the program.</p>
+            <label class="info">
+              <input type="checkBox" name="checkBox" ng-model="checkBox" value="false" required>
+              <p class="info checkbox-cont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By checking this box and clicking SUBMIT, you certify that you are a US health care professional and you are opting to receive information about binge eating disorder plus site updates, educational information, patient support resources, and other information from Shire. You will be able to opt out of these communications at any time.</p>
+              <p class="info">Shire respects your personal information. All information you have provided will be kept confidential and will not be used or distributed to anyone for any purpose other than what is explained in our Privacy Policy Statement. We encourage you to read our Privacy Policy Statement by clicking on this link: <a href="/hcp/privacy-policy.aspx" class="roman">Review Shire Privacy</a><a href="/hcp/privacy-policy.aspx" class="roman">Policy Statement.&nbsp;</a>This consent will be in effect until such time as you opt out of the program.</p>
+            </label>
             <p ng-if="submitted &amp;&amp; (optIn.$error.required || notMatch)" class="errormessage">Please address the errors above</p>
-            <button type="button" ng-click="submitForm()" class="btn btn--yellow">SUBMIT</button>
+            <button type="button" ng-click="submitForm(); optForm()" class="btn btn--yellow">SUBMIT</button>
           </form>
         </div>
       </section>
@@ -130,9 +136,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1439393100000"></script>
-    <script src="./js/templates.js?1439393100000"></script>
-    <script src="./js/app.js?1439393100000"></script>
+    <script src="./js/vendor.js?1439419800000"></script>
+    <script src="./js/templates.js?1439419800000"></script>
+    <script src="./js/app.js?1439419800000"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");
