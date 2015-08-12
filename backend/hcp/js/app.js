@@ -2128,8 +2128,8 @@ Array.prototype.forEach = function forEach(callback) {
 
     angular.module('cdmp.controllers')
 
-    .controller('MainController', ['$scope', '$rootScope', '$window', '$document', '$timeout', '$http', 'matchmedia', 'ModalService', 'Analytics', '_', 'he', 'parseUri',
-        function($scope, $rootScope, $window, $document, $timeout, $http, matchmedia, ModalService, Analytics, _, he, parseUri) {
+    .controller('MainController', ['$scope', '$rootScope', '$window', '$document', '$timeout', '$http', 'matchmedia', 'ModalService', 'Analytics', '_', 'he', 'parseUri', 'showErrorsConfig',
+        function($scope, $rootScope, $window, $document, $timeout, $http, matchmedia, ModalService, Analytics, _, he, parseUri, showErrorsConfig) {
 
 
             $rootScope.emailPattern = /^.+@[^\.].*\.[a-zA-Z]{2,}$/;
@@ -2283,13 +2283,7 @@ Array.prototype.forEach = function forEach(callback) {
                     if($scope.user.email == $scope.user.confirmEmail){
                         $scope.notMatch = false;
                         if($scope.checkBox==true){
-
-
-
-
-
-
-                            alert('Successful login');
+                            //alert('Successful login');
                             //location.reload();
                             console.log("user submit");
                             window.location.href="thank-you.aspx";
@@ -2307,17 +2301,17 @@ Array.prototype.forEach = function forEach(callback) {
             };
         }])
 
-        .directive('showErrors', function (showErrorsConfig) {
-            var getShowSuccess;
-            getShowSuccess = function (options) {
-                var showSuccess;
-                showSuccess = showErrorsConfig.showSuccess;
-                if (options && options.showSuccess != null) {
-                    showSuccess = options.showSuccess;
-                }
-                return showSuccess;
-            };
-        })
+        //.directive('showErrors', function (showErrorsConfig) {
+        //    var getShowSuccess;
+        //    getShowSuccess = function (options) {
+        //        var showSuccess;
+        //        showSuccess = showErrorsConfig.showSuccess;
+        //        if (options && options.showSuccess != null) {
+        //            showSuccess = options.showSuccess;
+        //        }
+        //        return showSuccess;
+        //    };
+        //})
 
         .provider('showErrorsConfig', function () {
             var _showSuccess;
@@ -2602,7 +2596,7 @@ Array.prototype.forEach = function forEach(callback) {
                         featuring: "",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S02868.mp4",
                         host: activehost,
-                        newFrom: null,
+                        newFrom: Date(2015, 7, 15),
                         viewed: true
                     },
                     {
@@ -2861,8 +2855,7 @@ Array.prototype.forEach = function forEach(callback) {
 
             $scope.submitForm = function() {
                 $scope.submitted = true;
-                $scope.$broadcast('show-errors-check-validity');
-
+//                 $scope.$broadcast('show-errors-check-validity'); // uses the provider service
 
                 if (!$scope.optOutEmail.$invalid) {
                     console.log("user submit");
@@ -2870,6 +2863,7 @@ Array.prototype.forEach = function forEach(callback) {
 
                 }
             };
+
         }])
         
         .controller('directmailController', ['$scope', function($scope) {
@@ -2878,7 +2872,7 @@ Array.prototype.forEach = function forEach(callback) {
 
             $scope.submitForm = function() {
                 $scope.submitted = true;
-                $scope.$broadcast('show-errors-check-validity');
+                //$scope.$broadcast('show-errors-check-validity');
 
                 if (!$scope.optoutdirectmail.$invalid) {
                     console.log("user submit");
@@ -2890,6 +2884,7 @@ Array.prototype.forEach = function forEach(callback) {
                 }
 
             };
+
         }])
 
 
@@ -2899,7 +2894,7 @@ Array.prototype.forEach = function forEach(callback) {
 
             $scope.submitForm = function() {
                 $scope.submitted = true;
-                $scope.$broadcast('show-errors-check-validity');
+                //$scope.$broadcast('show-errors-check-validity');
 
                 if (!$scope.optinall.$invalid) {
                     console.log("user submit");
@@ -2911,38 +2906,8 @@ Array.prototype.forEach = function forEach(callback) {
                 }
 
             };
+
         }])
-        
-
-        .directive('showErrors', function (showErrorsConfig) {
-            var getShowSuccess;
-            getShowSuccess = function (options) {
-                var showSuccess;
-                showSuccess = showErrorsConfig.showSuccess;
-                if (options && options.showSuccess != null) {
-                    showSuccess = options.showSuccess;
-                }
-                return showSuccess;
-            };
-        })
-
-        .provider('showErrorsConfig', function () {
-            var _showSuccess;
-            _showSuccess = false;
-            this.showSuccess = function (showSuccess) {
-                return _showSuccess = showSuccess;
-            };
-            this.$get = function () {
-                return { showSuccess: _showSuccess };
-            };
-        })
-
-    
-    //$scope.syncFields = function(){
-    //    //sync form field input across all 3 forms if a similarly-named field exists
-    //    //called from form field blur? keyup?
-    //
-    //}
 
     //.controller('clickController', ['$scope', function($scope){
     //    $scope.clickToTY = function(){
@@ -2953,7 +2918,8 @@ Array.prototype.forEach = function forEach(callback) {
 
 
 }).call(this);
- 
+
+
 ;(function() {
     'use strict';
 
@@ -4433,5 +4399,7 @@ Array.prototype.forEach = function forEach(callback) {
     ]);
 
 }).call(this);
+
+
 
 //# sourceMappingURL=app.js.map
