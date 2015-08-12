@@ -255,8 +255,8 @@
             .heading--2{
                 font-size: 24px;
                 text-align: left;
-                padding-top: 44px;
-                padding-bottom: 9px;
+                padding-top: 34px;
+                padding-bottom: 39px;
             }
 
         }
@@ -343,7 +343,7 @@
 
                  input[type='text'], input[type='email'], select {
                      width: 100%;
-                     
+                     font-weight: 200;
                      color: #858B91;
                      line-height: 22px;
                      border: none;
@@ -353,7 +353,7 @@
                      margin-top: 25px;
 
                      &.ng-dirty.ng-invalid-required, &.forminvalid.ng-dirty {
-                         border: 1px solid #FF4517;
+                         border-bottom: 1px solid #FF4517;
                          color: #FF4517;
                      }
 
@@ -370,7 +370,7 @@
                      background: #D8D8D8;
 
                      &.ng-dirty.ng-invalid-required, &.forminvalid.ng-dirty {
-                         border: 1px solid #FF4517;
+                         border-bottom: 1px solid #FF4517;
                          color: #FF4517;
 
                          option {
@@ -488,6 +488,7 @@
                  input[type='text'], input[type='email'], select {
                      width: 100% !important;
                      font-size: 18px;
+                     font-weight: 200;
                      color: #858B91;
                      line-height: 22px;
                      border: none;
@@ -497,7 +498,7 @@
                      margin-top: 25px;
 
                      &.ng-dirty.ng-invalid-required, &.forminvalid.ng-dirty {
-                         border: 1px solid #FF4517;
+                         border-bottom: 1px solid #FF4517;
                          color: #FF4517;
                      }
 
@@ -514,7 +515,7 @@
                      background: #D8D8D8;
 
                      &.ng-dirty.ng-invalid-required, &.forminvalid.ng-dirty {
-                         border: 1px solid #FF4517;
+                         border-bottom: 1px solid #FF4517;
                          color: #FF4517;
 
                          option {

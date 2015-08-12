@@ -26,6 +26,20 @@ namespace BEDService
     {
         public static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
+        public BEDWCFService()
+        {
+
+        }
+
+        public string Test()
+        {
+            return "function called";
+        }
+
+        public string TestString(string str)
+        {
+            return str;
+        }
 
         public List<string> SetOptInData(OptIn optIn, string sourceCode)
         {

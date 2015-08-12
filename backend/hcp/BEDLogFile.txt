@@ -1,0 +1,2 @@
+2015-08-11 13:57:50,544 [331] INFO BEDService.BEDWCFService - BED:: User:  | Operation: Uninitialized |  Category:  | Message:  
+2015-08-11 13:58:37,103 [348] INFO BEDService.BEDWCFService - BED:: User:  | Operation: Uninitialized |  Category:  | Message:  
