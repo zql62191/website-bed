@@ -23,7 +23,28 @@ namespace BEDService
         )]
         List<string> SetOptInData(OptIn optIn, string sourceCode);
 
-     
+        [OperationContract]
+        [WebInvoke
+         (Method = "POST",
+         BodyStyle = WebMessageBodyStyle.WrappedRequest,
+         ResponseFormat = WebMessageFormat.Json,
+         RequestFormat = WebMessageFormat.Json,
+         UriTemplate = "Test"
+        )]
 
+        string Test();
+
+        [OperationContract]
+        [WebInvoke
+         (Method = "POST",
+         BodyStyle = WebMessageBodyStyle.WrappedRequest,
+         ResponseFormat = WebMessageFormat.Json,
+         RequestFormat = WebMessageFormat.Json,
+         UriTemplate = "TestString"
+        )]
+        string TestString(string str);
     }
+
+
+
 }
