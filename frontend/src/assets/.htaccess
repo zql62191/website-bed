@@ -1,7 +1,7 @@
 
 AddType text/html .aspx
 
-DirectoryIndex indext.html index.htm index.php index.aspx
+DirectoryIndex index.html index.htm index.php index.aspx
 
 ErrorDocument 404 /hcp/_404.aspx
 

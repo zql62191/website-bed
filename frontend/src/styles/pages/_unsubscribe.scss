@@ -26,6 +26,50 @@
                 min-height: 580px;
                 margin: 0 auto;
             }    
+
+            .accordion-title{
+                // width: 633px;
+                // height: 74px;
+                
+                .arrow{
+                    transition: transform 100ms;
+                }
+            }
+
+            .accordion{
+                &.open{
+                    .accordion__wrap{
+                        padding-bottom: 30px;
+                        max-height: 700px;
+                    }
+
+                    .accordion-title{
+                        // height: auto;
+                        padding-bottom: 0px; 
+
+                        .arrow{
+                            transform: rotateZ(-180deg);
+                        }
+
+                    }
+
+                }
+
+                .accordion__wrap{
+                    overflow: hidden;
+                    max-height: 0px;
+                    transition: max-height linear 250ms;
+
+                    .accordion__content{
+                        
+                    }
+
+                }
+
+            }
+
+            
+
         }
 
 
@@ -144,9 +188,9 @@
 
 
         form{
-            width: percentage(582/1024);
+            max-width: percentage(582/1024);
             min-width: 582px;
-            margin: 0 auto;
+            // margin: 0 auto;
 
             input[type='text'],input[type='email'], select{
                 width:582px;
@@ -255,8 +299,8 @@
             .heading--2{
                 font-size: 24px;
                 text-align: left;
-                padding-top: 44px;
-                padding-bottom: 9px;
+                padding-top: 34px;
+                padding-bottom: 39px;
             }
 
         }
@@ -307,14 +351,18 @@
                      }
 
                      .accordion-title {
-                         height: auto;
+                         // height: auto;
                          padding-bottom: 0px;
                      }
 
                  }
 
                  .accordion__wrap {
-                     display: none;
+                     // display: none;
+                     max-height: 0;
+
+                     width: 95%;
+                     // max-width: percentage(582/768);
 
                      .accordion__content {
                      }
@@ -337,13 +385,11 @@
              }
 
              form {
-                 width: percentage(582/1024);
-                 min-width: 582px;
-                 margin: 0 auto;
+                 min-width: 0;
 
                  input[type='text'], input[type='email'], select {
                      width: 100%;
-                     
+                     font-weight: 200;
                      color: #858B91;
                      line-height: 22px;
                      border: none;
@@ -353,7 +399,7 @@
                      margin-top: 25px;
 
                      &.ng-dirty.ng-invalid-required, &.forminvalid.ng-dirty {
-                         border: 1px solid #FF4517;
+                         border-bottom: 1px solid #FF4517;
                          color: #FF4517;
                      }
 
@@ -370,7 +416,7 @@
                      background: #D8D8D8;
 
                      &.ng-dirty.ng-invalid-required, &.forminvalid.ng-dirty {
-                         border: 1px solid #FF4517;
+                         border-bottom: 1px solid #FF4517;
                          color: #FF4517;
 
                          option {
@@ -488,6 +534,7 @@
                  input[type='text'], input[type='email'], select {
                      width: 100% !important;
                      font-size: 18px;
+                     font-weight: 200;
                      color: #858B91;
                      line-height: 22px;
                      border: none;
@@ -497,7 +544,7 @@
                      margin-top: 25px;
 
                      &.ng-dirty.ng-invalid-required, &.forminvalid.ng-dirty {
-                         border: 1px solid #FF4517;
+                         border-bottom: 1px solid #FF4517;
                          color: #FF4517;
                      }
 
@@ -514,7 +561,7 @@
                      background: #D8D8D8;
 
                      &.ng-dirty.ng-invalid-required, &.forminvalid.ng-dirty {
-                         border: 1px solid #FF4517;
+                         border-bottom: 1px solid #FF4517;
                          color: #FF4517;
 
                          option {
