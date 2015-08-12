@@ -2283,6 +2283,12 @@ Array.prototype.forEach = function forEach(callback) {
                     if($scope.user.email == $scope.user.confirmEmail){
                         $scope.notMatch = false;
                         if($scope.checkBox==true){
+
+
+
+
+
+
                             alert('Successful login');
                             //location.reload();
                             console.log("user submit");
