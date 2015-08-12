@@ -104,6 +104,13 @@ body.sign-up{
                 padding-bottom: 9px;
             }
 
+            .checkbox-cont{
+                margin-top: -3.2%;
+                @include mq('sm'){
+                    margin-top: -3.5%;
+                }
+            }
+
         }
 
     }
