@@ -121,7 +121,7 @@ body.patient-demographics {
             }
         }
         .heading--2 {
-            width: 90%;
+            width: 539px;
             margin: 0 auto;
             padding-bottom: 18px;
 
@@ -169,14 +169,9 @@ body.patient-demographics {
             }
         }
 
-        @include mq("lg") {
-            padding-top: 30px;
-            padding-left: 50px;
-            padding-bottom: 40px;
-        }
+        @include mq("lg") { }
         @include mq("md") {
             padding-top: 20px;
-            padding-left: 30px;
         }
 
         @include mq("sm") {
@@ -239,6 +234,10 @@ body.patient-demographics {
 
     .section--ratio {
         background: #252F39;
+
+        .wrap--content{
+            padding-top: 10px;
+        }
 
         .heading--1 {
             padding: 27px 0 34px 0;
@@ -383,7 +382,6 @@ body.patient-demographics {
 
     .section--groups {
         background: #252F39;
-        padding-top: 60px;
 
         @include mq('sm') {
             padding-top: 26px;

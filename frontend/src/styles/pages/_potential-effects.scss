@@ -187,6 +187,10 @@ body.potential-effects {
 
         .wrap--content {
             padding-bottom: 0;
+
+            position: relative;
+            z-index: 2;
+
             @include mq("md") {
                 padding-top: 70px;
             }
@@ -231,8 +235,14 @@ body.potential-effects {
         }
 
         .mobile-excerpt-wrapper {
-            position: static;   // so it doesn't effect absolute position of exerpts on desktop
+            position: static;   // so it doesn't affect absolute position of excerpts on desktop
             
+            @include mq("lg") {
+                background-image: url("../img/lg/potential-effects/radial-shadow.png");
+                background-position: center bottom;
+                background-repeat: no-repeat;
+            }
+
             // this wrapper is only needed for mobile layout
             @include mq('sm') {
                 background-color: #333E48;
@@ -302,16 +312,39 @@ body.potential-effects {
         }
 
         .listen {
-            overflow: auto;
+            // overflow: auto;
 
             p {
-                @include mq('sm') {
-                    width: percentage(125/280);
+                @include mq('md') {
+                    width: 138px; //percentage(175/610)
+                    height: 58px;
                     text-align: left;
-                    float: right;
+                    // float: right;
                     margin-right: percentage(16/280);
                     padding-top: 9px;
+                    position: absolute;
+                    left: 62%;
                 }
+
+                @include mq('sm') {
+                    width: percentage(105/280);
+                    text-align: left;
+                    float: right;
+                    margin-right: percentage(36/280);
+                    padding-top: 9px;
+                }
+            }
+        }
+
+        .bottom-pocket{
+            @include mq("lg") {
+                height: 15px;
+                width: 100%;
+                position: absolute;
+                background-color: #333E48;
+                background-image: radial-gradient(50% 149%, #333E48 17%, #252F39 100%);
+                z-index: -1;
+                bottom: 0px;
             }
         }
 
@@ -321,6 +354,7 @@ body.potential-effects {
                 position: relative;
             }
 
+            //PLAYER POSITIONING
             @include mq('lg') {
                 // @include bst-img('lg/potential-effects/audio-player-placeholder.png');
                 margin-top: 10px;
@@ -332,17 +366,22 @@ body.potential-effects {
                 
             }
 
+            @include mq('md') {
+                margin: 0 auto;
+                // margin: 0 percentage(15/280) 33px percentage(49/280);
+                // float: left;
+                width: 100px !important;
+                height: 57px !important;
+                min-width: 0;
+            }
+
             @include mq('sm') {
                 
                 margin: 0 percentage(15/280) 33px percentage(49/280);
-                float: left;
+                // float: left;
                 width: percentage(75/280) !important;
                 height: 57px !important;
-                @include bst-img('sm/potential-effects/audio-player-placeholder.png');
-
-                .mejs-inner{
-                    display: none;
-                }
+                // @include bst-img('sm/potential-effects/audio-player-placeholder.png');
 
                 // .mejs-play button{
                 //     @include bst-img('sm/potential-effects/audio-player-placeholder.png');
@@ -353,13 +392,79 @@ body.potential-effects {
                 // }
 
             }
+
+
+            //PLAYER STYLING
+            .mejs-controls {
+
+                background: none;
+                background-image: none;
+
+                @include mq("lg") {
+                    .mejs-time-rail, .mejs-volume-button, .mejs-horizontal-volume-slider{
+                        background: #3a3c3d url("background.png");
+                        background: linear-gradient(#4a4c4d, #2b2d2d);
+                    }
+                }
+                @include mq("md", "sm") {
+                    .mejs-time-rail, .mejs-volume-button, .mejs-horizontal-volume-slider{
+                        display: none;
+                    }
+                }
+
+                .mejs-button.mejs-play {
+
+                    &, &:hover, button, button:hover{
+                        background-position: 0 0;
+                    }
+
+                    @include mq("lg") {
+                        button {
+                            background-image: url("../me/play_lg.png");
+                            width: 34px;
+                            height: 28px;
+                            margin: 0 0 0 -10px;
+                        }
+                    }
+                    @include mq("md", "sm") {
+                        button{
+                            background-image: url("../me/play.png");
+                            width: 78px;
+                            height: 60px;                             
+                        }
+                    }
+                }
+                .mejs-button.mejs-pause {
+                    &, &:hover, button, button:hover{
+                        background-position: 0 0;
+                    }
+                    @include mq("lg") {
+                        button {
+                            background-image: url("../me/pause_lg.png");
+                            width: 34px;
+                            height: 28px;
+                            margin: 0 0 0 -10px;
+                        }
+                    }
+
+                    @include mq("md", "sm") {
+                        button{
+                            background-image: url("../me/pause.png"); 
+                            width: 78px;
+                            height: 60px;  
+                        }
+                    }
+                    
+                }
+            }
+
         }
     }
 
     .section--button {
         background: #333E48;
         background-image: radial-gradient(50% 149%, #333E48 17%, #252F39 100%);
-        padding-top: 65px;
+        padding-top: 15px;
 
         @include mq('sm') {
             padding-top: 20px;
