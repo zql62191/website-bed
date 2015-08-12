@@ -16,6 +16,20 @@ body.potential-causes {
                 @include responsive-icon("#{$page}/#{$icon}.png");
             }
         }
+
+        h4.heading--4{
+            margin-bottom: 0;
+        }
+
+        ul.square{
+            margin-top: 0px;
+
+            li{
+                padding-top: 0px;
+            }
+
+        }
+
     }
 
     h4.heading--4 {
@@ -315,6 +329,12 @@ body.potential-causes {
             line-height: 18px !important;
             margin-top: 12px;
             padding-top: 12px !important;
+
+            &:first-child{
+                margin-top: 0px;
+                padding-top: 0px;
+            }
+
         }
         
         .mobileHeading--7 {

@@ -20,7 +20,7 @@ module.exports = {
             force: true
         },
         src: [
-            '../REPLACE/*',
+            '../REPLACE/*', // i think this should be '../backend/hcp/*.aspx'
             '!../REPLACE/ME'
         ]
     }
