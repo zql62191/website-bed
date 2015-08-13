@@ -35,5 +35,26 @@
         // or SQLServer, the event is not raised.
 
     }
-       
+
+    void Application_BeginRequest(object sender, EventArgs e)
+    {
+        HttpContext.Current.Response.Cache.SetCacheability(HttpCacheability.NoCache);
+        HttpContext.Current.Response.Cache.SetNoStore();
+
+        EnableCrossDmainAjaxCall();
+    }
+
+    private void EnableCrossDmainAjaxCall()
+    {
+        HttpContext.Current.Response.AddHeader("Access-Control-Allow-Origin", "*");
+        HttpContext.Current.Response.AddHeader("Access-Control-Allow-Methods", "GET, POST");
+
+        if (HttpContext.Current.Request.HttpMethod == "OPTIONS")
+        {
+            HttpContext.Current.Response.AddHeader("Access-Control-Allow-Headers", "Content-Type, Accept");
+            HttpContext.Current.Response.AddHeader("Access-Control-Max-Age", "1728000");
+            HttpContext.Current.Response.End();
+        }
+    }
+      
 </script>
