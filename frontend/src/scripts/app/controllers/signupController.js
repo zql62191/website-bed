@@ -3,7 +3,7 @@
 
     angular.module('cdmp.controllers')
 
-        .controller('signupController', ['$scope', '$http', '$location',function($scope,$http, $location) {
+        .controller('signupController', ['$scope', '$http',function($scope,$http) {
 
             console.log("in controller");
             
@@ -63,9 +63,9 @@
                                     .success(function (data, status, headers, config) {
                                         console.log("get data" + data);
                                         
-                                        if (data.SetOptInDataResult == true) {
-                        
-                                            //$location.path ('/thank-you');
+                                        if (data.SvcStatus == true) {
+
+                                            window.location.href="/hcp/thank-you-request.aspx";
                                             
                                         } else {
                                         }
