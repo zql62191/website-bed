@@ -3,19 +3,21 @@
 
     angular.module('cdmp.controllers')
 
-        .controller('signupController', ['$scope', '$http', function($scope,$http) {
+        .controller('signupController', ['$scope', '$http', '$location',function($scope,$http, $location) {
 
-            //$scope.submitted = false;
-            //$scope.notMatch = false;
-            //
-            //$scope.submitForm = function() {
-            //    $scope.submitted = true;
-            //    $scope.$broadcast('show-errors-check-validity');
-            //
-            //    if (!$scope.optIn.$invalid) {
-            //        if($scope.user.email == $scope.user.confirmEmail){
-            //            $scope.notMatch = false;
-            //            if($scope.checkBox==true){
+            console.log("in controller");
+            
+            $scope.submitted = false;
+            $scope.notMatch = false;
+            
+            $scope.submitForm = function() {
+                $scope.submitted = true;
+                $scope.$broadcast('show-errors-check-validity');
+            
+                if (!$scope.optInForm.$invalid) {
+                    if($scope.optInForm.Email == $scope.optInForm.ConfirmEmail){
+                        $scope.notMatch = false;
+                        if($scope.checkBox==true){
             //                //alert('Successful login');
             //                //location.reload();
             //                console.log("user submit");
@@ -32,86 +34,77 @@
             //    }
             //    
             //};
-        
-            
-            console.log("in controller");
-            
-            $scope.optForm = function() {
-                
-                console.log("in ajax");
-                
-                //var source = "0";
-                
-                var optInInfor = {
-                    optIn: {
-                        CommunicationsOptIn: true,
-                        Name: {
-                            FName: $scope.optInForm.FName,
-                            LName: $scope.optInForm.LName,
-                            },
-                        Email: {
-                            Email:$scope.optInForm.Email,
-                            ConfirmEmail:$scope.optInForm.ConfirmEmail,
-                        }
-                    },
-                    sourceCode: 0,
-                }
-                
-                console.log(optInInfor);
-        
-        
-                var URL = BEDSVC + "/SetOptInData";
-                
-        
-                $http({
-                    method: "POST",
-                    crossDomain: true,
-                    async: true,
-                    cache: false,
-                    url: URL,
-                    data: optInInfor,
-                    contentType: "application/json"
-                })
-                    
-                    .success(function (data, status, headers, config) {
-                        console.log("get data" + data);
-                        
-                        if (data.SetOptInDataResult == true) {
                             
-                            $scope.submitted = false;
-                            $scope.notMatch = false;
-
-                            $scope.submitForm = function() {
-                                $scope.submitted = true;
-                                $scope.$broadcast('show-errors-check-validity');
-
-                                if (!$scope.optIn.$invalid) {
-                                    if($scope.user.email == $scope.user.confirmEmail){
-                                        $scope.notMatch = false;
-                                        if($scope.checkBox==true){
-                                            //alert('Successful login');
-                                            //location.reload();
-                                            console.log("user submit");
-                                            window.location.href="thank-you.aspx";
+                            console.log("validation is right");
+                            
+                            $scope.optForm = function() {
+                                
+                                console.log("in ajax");
+                                console.log($scope.optInForm.FName);
+                                
+                                //var source = "0";
+                                
+                                var optInInfor = {
+                                    optIn: {
+                                        CommunicationsOptIn: true,
+                                        Name: {
+                                            FName: $scope.optInForm.FName,
+                                            LName: $scope.optInForm.LName,
+                                            },
+                                        Email: {
+                                            Email:$scope.optInForm.Email,
+                                            ConfirmEmail:$scope.optInForm.ConfirmEmail,
                                         }
-                                    }
-                                }
-                                else{
-                                    $scope.notMatch = true;
-                                    console.log("not match")
-                                    //alert("Please address the errors above!")
-                                }
+                                    },
+                                    sourceCode: 0,
+                                };
+                                
+                                
+                                console.log(JSON.stringify(optInInfor));
+                        
+                        
+                                var URL = BEDSVC + "/SetOptInData";
+                                
+                                console.log(URL);
+                                
+                                $http({
+                                    method: "POST",
+                                    crossDomain: true,
+                                    async: true,
+                                    cache: false,
+                                    url: URL,
+                                    //data: optInInfor,
+                                    contentType: "application/json"
+                                })
+                                    
+                                    .success(function (data, status, headers, config) {
+                                        console.log("get data" + data);
+                                        
+                                        if (data.SetOptInDataResult == true) {
 
-                            };
-                            
-                            
-                        } else {
+                                            $location.path ('/confirmation');
+                                            
+                                        } else {
+                                        }
+                                    })
+                                    .error(function (data, status, headers, config) {
+                                        console.log("Error Ajax\n" + JSON.stringify(data) );
+                                        console.log(JSON.stringify(status) );
+                                        console.log(JSON.stringify(headers) );
+                                    })
+                            }
                         }
-                    })
-                    .error(function (data, status, headers, config) {
-                        console.log("Error Ajax");
-                    })
-            }
+                        }else{
+                            $scope.notMatch = true;
+                            console.log("not match")
+                        }
+                    }
+                    else{
+                        console.log("Error!");
+                        //alert("Please address the errors above!")
+                    }
+                    
+                };
 
         }])
 

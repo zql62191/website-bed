@@ -5,7 +5,7 @@
 
 
         .controller('emailController', ['$scope', function($scope) {
-            
+            console.log("in emailCtrl!");
             $scope.submitted = false;
 
             $scope.submitForm = function() {
@@ -17,6 +17,15 @@
                     window.location.href="/hcp/thank-you-request.aspx";
 
                 }
+            };
+
+            $scope.syncFields = function(e){
+                //the original
+                var thisfield = angular.element(e.currentTarget);
+                var name = thisfield.prop('name');
+
+                var others = angular.element("input[name='" + name + "'], select[name='" + name + "']");
+                others.val( thisfield.val() );
             };
 
         }])
@@ -40,6 +49,16 @@
 
             };
 
+            
+            $scope.syncFields = function(e){
+                //it pains me to copypasta this... JM
+                var thisfield = angular.element(e.currentTarget);
+                var name = thisfield.prop('name');
+
+                var others = angular.element("input[name='" + name + "'], select[name='" + name + "']");
+                others.val( thisfield.val() );
+            };
+
         }])
 
 
@@ -60,6 +79,16 @@
                     //alert("Please address the errors above!")
                 }
 
+            };
+
+
+            $scope.syncFields = function(e){
+                //it pains me to copypasta this... JM
+                var thisfield = angular.element(e.currentTarget);
+                var name = thisfield.prop('name');
+
+                var others = angular.element("input[name='" + name + "'], select[name='" + name + "']");
+                others.val( thisfield.val() );
             };
 
         }])

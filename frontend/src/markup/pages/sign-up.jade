@@ -16,19 +16,19 @@ block content
         .wrap--content
             form(name='optInForm', autocomplete='off', novalidate, show-errors='{showSuccess:true}', ng-submit="submitForm(); optForm()").form-group
                 input(type='text', name="firstName", id="FName", placeholder="First Name", ng-model='optInForm.FName', required, ng-class="{forminvalid: (optInForm.firstName.$invalid && optInForm.firstName.$dirty && submitted) || (optInForm.firstName.$invalid && optInForm.firstName.$pristine && submitted)}").form-control
-                p.help-block(ng-if="submitted && optIn.firstName.$error.required")
+                p.help-block(ng-if="submitted && optInForm.firstName.$error.required")
                     | The user's first name is required
                 
                 input(type='text', name="lastName", id="LName", placeholder="Last Name", ng-model='optInForm.LName', required, ng-class="{forminvalid: (optInForm.lastName.$invalid && optInForm.firstName.$dirty && submitted) || (optInForm.lastName.$invalid && optInForm.lastName.$pristine && submitted)}").form-control
-                p.help-block(ng-if="submitted && optIn.lastName.$error.required")
+                p.help-block(ng-if="submitted && optInForm.lastName.$error.required")
                     | The user's last name is required
                 
-                input(type='email', name="email", id="Email", placeholder="E-mail", ng-model='optInForm.email', required, ng-class="{forminvalid: (optInForm.email.$invalid && optInForm.email.$dirty && submitted) || (optInForm.email.$invalid && optInForm.email.$pristine && submitted)}").form-control
-                p.help-block(ng-if="submitted && (optIn.email.$error.email || optIn.email.$error.required)")
+                input(type='email', name="email", id="Email", placeholder="E-mail", ng-model='optInForm.Email', required, ng-class="{forminvalid: (optInForm.email.$invalid && optInForm.email.$dirty && submitted) || (optInForm.email.$invalid && optInForm.email.$pristine && submitted)}").form-control
+                p.help-block(ng-if="submitted && (optInForm.email.$error.email || optInForm.email.$error.required)")
                     | Please enter a vaild email address...
                 
-                input(type='email', name="confirmEmail", id="ConfirmEmail", placeholder="Confirm E-mail", ng-model='optInForm.confirmEmail', required, ng-class="{forminvalid: (optInForm.confirmEmail.$invalid && optInForm.confirmEmail.$dirty && submitted) || (optInForm.confirmEmail.$invalid && optInForm.confirmEmail.$pristine && submitted)}").form-control
-                p.help-block(ng-if="submitted && (optIn.confirmEmail.$error.email || optIn.confirmEmail.$error.required)")
+                input(type='email', name="confirmEmail", id="ConfirmEmail", placeholder="Confirm E-mail", ng-model='optInForm.ConfirmEmail', required, ng-class="{forminvalid: (optInForm.confirmEmail.$invalid && optInForm.confirmEmail.$dirty && submitted) || (optInForm.confirmEmail.$invalid && optInForm.confirmEmail.$pristine && submitted)}").form-control
+                p.help-block(ng-if="submitted && (optInForm.confirmEmail.$error.email || optInForm.confirmEmail.$error.required)")
                     | Please confirm the email address
                 p.help-block(ng-if="submitted && notMatch")
                     | The confirm email does not match
@@ -45,7 +45,7 @@ block content
                         a.roman(href='/hcp/privacy-policy.aspx') Policy Statement.&nbsp;
                         | This consent will be in effect until such time as you opt out of the program.
                 
-                p.errormessage(ng-if="submitted && (optIn.$error.required || notMatch)")
+                p.errormessage(ng-if="submitted && (optInForm.$error.required || notMatch)")
                     | Please address the errors above
                 button(type="button", ng-click="submitForm(); optForm()").btn.btn--yellow
                     | SUBMIT
