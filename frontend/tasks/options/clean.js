@@ -23,5 +23,13 @@ module.exports = {
             '../REPLACE/*', // i think this should be '../backend/hcp/*.aspx'
             '!../REPLACE/ME'
         ]
+    },
+    unsubscribe: {
+        options: {
+            force: true
+        },
+        src: [
+            './dist/unsubscribe/*'
+        ]
     }
 };
