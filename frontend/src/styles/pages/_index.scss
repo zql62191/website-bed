@@ -106,17 +106,6 @@ body.index {
 
         @include mq("lg", "md") {
 
-            .wrap--refs {
-                margin-top: 0;
-            
-                ol.refs {
-                    border-top: none;
-                    text-align: center;
-                    width: 570px;
-                    margin: 0 auto;
-                }
-            }
-
             .hero {
 
                 .callouts {
@@ -137,16 +126,29 @@ body.index {
 
         @include mq("lg") {
 
+            background-color: #252F39;
+
             .hero {
 
                 .player {
+                    overflow: hidden;
 
                     .color {
                         position: absolute;
-                        top: 0;
+                        top: -50%;
+                        // top: 0;
                         right: 0;
                         bottom: 0;
                         left: 0;
+
+                        width: 100%;
+                        max-width: 1400px;//the bg image width in desktop
+                        height: 1400px;
+                        overflow: hidden;
+                        z-index: 5;
+                        background-image: radial-gradient(50% 70%, rgba(37,47,57,0.00) 51%, rgba(37,47,57,0.00) 80%, #252F39 100%);
+                        margin-left: auto;
+                        margin-right: auto;
 
                         &:before,
                         &:after {
@@ -156,16 +158,16 @@ body.index {
                             bottom: 0;
                         }
 
-                        &:before {
-                            left: 0%;
-                            right: 50%;
-                            background: #242F38;
-                        }
-                        &:after {
-                            left: 50%;
-                            right: 0%;
-                            background: #36414C;
-                        }
+                        // &:before {
+                        //     left: 0%;
+                        //     right: 50%;
+                        //     background: #242F38;
+                        // }
+                        // &:after {
+                        //     left: 50%;
+                        //     right: 0%;
+                        //     background: #36414C;
+                        // }
 
                         // &:before {
                         //     background: red;
@@ -195,6 +197,7 @@ body.index {
                     left: 0;
                     width: 100%;
                     text-align: center;
+                    z-index: 6;
 
                     a {
                         height: 197px;
@@ -309,9 +312,6 @@ body.index {
                 }
             }
 
-            .refs{
-                padding-bottom: 0px;
-            }
         }
         @include mq("sm") {
 
@@ -387,6 +387,41 @@ body.index {
                 }
             }
 
+            
+
+        }
+    }
+
+    .section--refs{
+
+        background-color:#333E48;
+
+
+        @include mq("lg", "md") {
+
+            .wrap--refs {
+                margin-top: 0;
+                background-color:#333E48; 
+            
+                ol.refs {
+                    border-top: none;
+                    text-align: center;
+                    width: 570px;
+                    margin: 0 auto;
+                }
+            }
+        }
+ 
+        // @include mq('lg') {}
+
+        @include mq('md') {
+            .refs{
+                padding-bottom: 0px;
+            }
+        }
+
+        @include mq('sm') {
+
             .wrap--refs {
                 margin-top: 0;
             
@@ -404,5 +439,9 @@ body.index {
             }
 
         }
+
+        
+
     }
+
 }
