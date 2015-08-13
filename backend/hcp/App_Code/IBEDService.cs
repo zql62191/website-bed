@@ -15,13 +15,13 @@ namespace BEDService
     {
         [OperationContract]
         [WebInvoke
-         (Method = "*",
-         BodyStyle = WebMessageBodyStyle.Wrapped,
+         (Method = "POST",
+         BodyStyle = WebMessageBodyStyle.WrappedRequest,
          ResponseFormat = WebMessageFormat.Json,
          RequestFormat = WebMessageFormat.Json,
          UriTemplate = "/SetOptInData"
         )]
-        List<string> SetOptInData(OptIn optIn, string sourceCode);
+        Status SetOptInData(OptIn optInForm, string sourceCode);
 
         [OperationContract]
         [WebInvoke

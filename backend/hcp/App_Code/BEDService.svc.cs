@@ -41,12 +41,12 @@ namespace BEDService
             return str;
         }
 
-        public List<string> SetOptInData(OptIn optIn, string sourceCode)
+        public Status SetOptInData(OptIn optInForm, string sourceCode)
         {
             log4net.Config.XmlConfigurator.Configure();
 
-            AuditTrail auditTrail = new AuditTrail();
-            List<string> errors = null;
+            Status status = new Status();
+            AuditTrail auditTrail = new AuditTrail();           
             HCPIndividual hcp;
             QuestionResponseSet questionResponseSet;
             RegistrationManager regMgr;
@@ -54,16 +54,16 @@ namespace BEDService
 
             try
             {
-                errors = Validate(optIn);
+                status.Errors = Validate(optInForm);
 
-                if (errors.Count > 0)
-                    return errors;
+                if (status.Errors.Count > 0)
+                    return status;
 
                 if (Services.ServiceIsAvailable)
                 {
 
-                    EmailAddress emailAddress = new EmailAddress(optIn.Email.Email);
-                    hcp = new HCPIndividual(String.Empty, optIn.Name.FName, optIn.Name.LName, String.Empty, emailAddress);
+                    EmailAddress emailAddress = new EmailAddress(optInForm.Email.Email);
+                    hcp = new HCPIndividual(String.Empty, optInForm.Name.FName, optInForm.Name.LName, String.Empty, emailAddress);
 
                     string sourceMCC = string.Empty;
                     if (!string.IsNullOrWhiteSpace(sourceCode) && !string.Equals(sourceCode, "0"))
@@ -103,15 +103,15 @@ namespace BEDService
                         emailMgr.SendEmail(Int32.Parse(ConfigurationManager.AppSettings["RTWelcomEmailMAID"]), emailAddress.EmailAddressString);
                     }
 
-                    errors = GetRegMgrErrors(regMgr, errors);
+                    status.Errors = GetRegMgrErrors(regMgr, status.Errors);
 
-                    auditTrail.SetAuditTrail(optIn.Email.Email, AuditTrail.OperationType.OptIn_Success, "SetOptInData", regMgr.Status.ToUpper());
-                    if (errors.Count > 0)
-                        auditTrail.SetAuditTrail(optIn.Email.Email, AuditTrail.OperationType.OptIn_errors, "SetOptInData", errors.ToString());
+                    auditTrail.SetAuditTrail(optInForm.Email.Email, AuditTrail.OperationType.OptIn_Success, "SetOptInData", regMgr.Status.ToUpper());
+                    if (status.Errors.Count > 0)
+                        auditTrail.SetAuditTrail(optInForm.Email.Email, AuditTrail.OperationType.OptIn_errors, "SetOptInData", status.Errors[0].ToString());
                 }
                 else
                 {
-                    errors.Add("The PMM services are unavailable");
+                    status.Errors.Add("The PMM services are unavailable");
                 }
 
             }
@@ -130,7 +130,7 @@ namespace BEDService
 
             }
 
-            return errors;
+            return status;
         }
 
 

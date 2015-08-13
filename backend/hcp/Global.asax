@@ -5,7 +5,7 @@
     void Application_Start(object sender, EventArgs e) 
     {
        // string url = Request.RawUrl;
-        string url = HttpContext.Current.Request.RawUrl;
+        //string url = HttpContext.Current.Request.RawUrl;
 
     }
     
