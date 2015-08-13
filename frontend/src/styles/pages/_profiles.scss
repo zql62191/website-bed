@@ -368,6 +368,142 @@ body.profiles {
 
                 }
             }
+            
+        }
+        
+        @include mq("md") {
+            .carousel {
+                width: 100%;
+                margin-bottom: 57px;
+
+                .slides {
+
+                    .kimberly {
+                        .hero{
+                            margin: 167px 0 0 0;
+                        }
+                        
+                    }
+                    .nikki {
+
+                    }
+                    .julie {
+
+                        .hero {
+                            width: percentage(302/320);
+                            margin-left: auto;
+                            margin-right: auto;
+                            display: block;
+                        }
+
+                        blockquote {
+                            width: percentage(291/320);
+                            left: percentage(14/320);
+                        }
+                    }
+                    .diego {
+
+                        blockquote {
+                            width: percentage(291/320);
+                            left: percentage(14/320);
+                        }
+
+                        .hero {
+                            margin: 117px auto 0;
+                        }
+                    }
+
+                    blockquote {
+                        position: absolute;
+                        top: 50px;
+                        left:0px;
+                        width: percentage(234/320);
+                        left: percentage(43/320);
+                    }
+
+                    .disclaimer {
+                        width: 100%;
+                        padding-bottom: 12px;
+                    }
+                    .profile{
+                        position: relative;
+                        margin-left: -35%;
+                        margin-top: -80%;
+                    }
+                }
+
+                .shadow {
+                    display: none;
+                }
+            }
+
+            .section-disclaimer-sm {
+                width: 516px;
+                height: 36px;
+                margin: 0 auto 44px auto;
+                @include gs("light");
+                font-size: 14px;
+                color: #858B91;
+                line-height: 19px;
+                text-align: center;
+            }
+
+            .section-disclaimer {
+                width: 478px;
+                height: 36px;
+                margin: 0 auto 44px auto;
+                @include gs("light");
+                font-size: 18px;
+                color: #858B91;
+                line-height: 22px;
+                text-align: center;
+            }
+
+            .callouts {
+                @include gs("light");
+                margin: 0 auto 46px auto;
+                font-size: 16px;
+                color: #858B91;
+                line-height: 19px;
+
+                h2 {
+                    font-size: 22px;
+                    color: #333E48;
+                    line-height: 26px;
+                    font-style: normal;
+                    padding-bottom: 20px;
+                }
+
+                .callout {
+                    width: 325px;
+
+                    p {
+                        opacity: 0.6;
+                        margin-bottom: 21px;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #858B91;
+                        width: 330px;
+                    }
+
+                    .btn {
+                        width: 300px;
+                        font-size: 14px;
+                        @include gs();
+                        color: #F2F2F2;
+                        line-height: 18px;
+                        padding: 15px 28px;
+                        height: 65px;
+                    }
+                }
+
+                .one {
+
+                }
+                .two {
+
+                }
+            }
 
             .pagination {
                 margin-top: 26px;
