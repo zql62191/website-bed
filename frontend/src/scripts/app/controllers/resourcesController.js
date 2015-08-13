@@ -307,16 +307,20 @@
             };
 
 
-            // Create MEJS object for the video player element 😻
-            $('#videoPlayer').mediaelementplayer({
-                pauseOtherPlayers: false,           // allow multiple videos
-                iPadUseNativeControls: true,        // force iPad's native controls
-                iPhoneUseNativeControls: true,      // force iPhone's native controls
-                AndroidUseNativeControls: true,     // force Android's native controls
-                success: onSuccess,
-                error: onError
-            });
+            $(document).ready(function(){ 
+            //for some odd loading ordering reason, this was throwing a 'nodeName' undefined TypeError, JM
+                // Create MEJS object for the video player element 😻
+                $('#videoPlayer').mediaelementplayer({
+                    pauseOtherPlayers: false,           // allow multiple videos
+                    iPadUseNativeControls: true,        // force iPad's native controls
+                    iPhoneUseNativeControls: true,      // force iPhone's native controls
+                    AndroidUseNativeControls: true,     // force Android's native controls
+                    success: onSuccess,
+                    error: onError
+                });
 
+            });
+            
             // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
