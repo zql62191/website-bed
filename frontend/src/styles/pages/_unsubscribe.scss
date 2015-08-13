@@ -32,7 +32,7 @@
                 // height: 74px;
                 
                 .arrow{
-                    transition: transform 100ms;
+                    transition: transform 140ms;
                 }
             }
 
@@ -58,7 +58,7 @@
                 .accordion__wrap{
                     overflow: hidden;
                     max-height: 0px;
-                    transition: max-height linear 250ms;
+                    transition: max-height linear 200ms;
 
                     .accordion__content{
                         
@@ -142,7 +142,7 @@
                 height: 74px;
                 
                 .arrow{
-                    transition: transform 180ms;
+                    transition: transform 140ms;
                 }
             }
 
@@ -167,7 +167,7 @@
             .accordion__wrap{
                 overflow: hidden;
                 max-height: 0px;
-                transition: max-height linear 250ms;
+                transition: max-height linear 200ms;
 
                 .accordion__content{
                     
@@ -410,7 +410,7 @@
                  }
 
                  select {
-                     width: 590px;
+                     width: 100%;
                      margin-left: -8px;
                      color: #858B91;
                      background: #D8D8D8;
@@ -498,14 +498,17 @@
                      }
 
                      .accordion-title {
-                         height: auto;
+                         // height: auto;
+                         max-height: 700px;
                          padding-bottom: 0px;
                      }
 
                  }
 
                  .accordion__wrap {
-                     display: none;
+                     // display: none;
+                     max-height: 0px;
+                     width: 95%;
                      
                      .accordion__content {
                      }
@@ -528,7 +531,7 @@
              }
 
              form {
-                 min-width: 115%;
+                 min-width: 0;
                  margin: 0 auto;
 
                  input[type='text'], input[type='email'], select {
