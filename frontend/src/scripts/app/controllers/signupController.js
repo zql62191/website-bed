@@ -18,22 +18,7 @@
                     if($scope.optInForm.Email == $scope.optInForm.ConfirmEmail){
                         $scope.notMatch = false;
                         if($scope.checkBox==true){
-            //                //alert('Successful login');
-            //                //location.reload();
-            //                console.log("user submit");
-            //                window.location.href="thank-you.aspx";
-            //            }
-            //        }else{
-            //            $scope.notMatch = true;
-            //            console.log("not match")
-            //        }
-            //    }
-            //    else{
-            //        console.log("Error!");
-            //        //alert("Please address the errors above!")
-            //    }
-            //    
-            //};
+                            
                             
                             console.log("validation is right");
                             
@@ -42,25 +27,24 @@
                                 console.log("in ajax");
                                 console.log($scope.optInForm.FName);
                                 
-                                //var source = "0";
                                 
-                                var optInInfor = {
-                                    optIn: {
+                                var optInfor = {
+                                    optInForm: {
                                         CommunicationsOptIn: true,
                                         Name: {
                                             FName: $scope.optInForm.FName,
-                                            LName: $scope.optInForm.LName,
+                                            LName: $scope.optInForm.LName
                                             },
                                         Email: {
                                             Email:$scope.optInForm.Email,
-                                            ConfirmEmail:$scope.optInForm.ConfirmEmail,
+                                            ConfirmEmail:$scope.optInForm.ConfirmEmail
                                         }
                                     },
-                                    sourceCode: 0,
+                                    sourceCode: "0"
                                 };
                                 
                                 
-                                console.log(JSON.stringify(optInInfor));
+                                console.log(JSON.stringify(optInfor));
                         
                         
                                 var URL = BEDSVC + "/SetOptInData";
@@ -70,19 +54,18 @@
                                 $http({
                                     method: "POST",
                                     crossDomain: true,
-                                    async: true,
-                                    cache: false,
                                     url: URL,
-                                    //data: optInInfor,
-                                    contentType: "application/json"
+                                    data: JSON.stringify(optInfor),
+                                    contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                                    dataType: "json"
                                 })
                                     
                                     .success(function (data, status, headers, config) {
                                         console.log("get data" + data);
                                         
                                         if (data.SetOptInDataResult == true) {
-
-                                            $location.path ('/confirmation');
+                        
+                                            //$location.path ('/thank-you');
                                             
                                         } else {
                                         }
@@ -96,7 +79,7 @@
                         }
                         }else{
                             $scope.notMatch = true;
-                            console.log("not match")
+                            console.log("not match");
                         }
                     }
                     else{
