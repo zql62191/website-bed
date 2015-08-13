@@ -375,62 +375,74 @@ body.profiles {
             .carousel {
                 width: 100%;
                 margin-bottom: 57px;
-
+                padding-left: 0px;
                 .slides {
-
+                    height: 558px;
+                    
                     .kimberly {
                         .hero{
-                            margin: 167px 0 0 0;
+                            
+                        }
+                        .hero img{
+                            width: 452px;
+                            height: auto;
+                            margin-left: -35%;
+                            margin-top: 23%;
                         }
                         
                     }
                     .nikki {
+                        .hero img{
+                            height: 365px;
+                            width: auto;
+                            margin-left: 20%;
+                            margin-top: 48%;
+                        }
 
                     }
                     .julie {
 
-                        .hero {
-                            width: percentage(302/320);
-                            margin-left: auto;
-                            margin-right: auto;
-                            display: block;
+                        .hero img{
+                            height: 365px;
+                            width: auto;
+                            margin-left: 15%;
+                            margin-top: 48%;
+                        }
+                        .profile{
+                            top:8%;
                         }
 
-                        blockquote {
-                            width: percentage(291/320);
-                            left: percentage(14/320);
+                        .disclaimer {
+                            margin-top: 0;
                         }
                     }
                     .diego {
-
-                        blockquote {
-                            width: percentage(291/320);
-                            left: percentage(14/320);
-                        }
-
-                        .hero {
-                            margin: 117px auto 0;
+                        .hero img{
+                            width: 402px;
+                            height: auto;
+                            margin-left: 45%;
+                            margin-top: 18%;
                         }
                     }
 
                     blockquote {
                         position: absolute;
-                        top: 50px;
-                        left:0px;
-                        width: percentage(234/320);
-                        left: percentage(43/320);
+                        top: 10%;
+                        left:8%;
+                        width: percentage(134/320);
+                        
                     }
 
                     .disclaimer {
                         width: 100%;
-                        padding-bottom: 12px;
+                        //padding-bottom: 12px;
                     }
                     .profile{
-                        position: relative;
-                        margin-left: -35%;
-                        margin-top: -80%;
-                        width: 233px;
+                        left: 58%;
+                        top: 12%;
+                        width: 253px;
                         height: 90px;
+                        
                     }
                 }
 
@@ -508,7 +520,7 @@ body.profiles {
             }
 
             .pagination {
-                margin-top: 26px;
+                margin-top: 0px;
             }
         }
 
