@@ -1,7 +1,13 @@
-﻿function pageLoading() {
-    var reqPageWithParams = window.location.hash;
+//This is for link conversion from old BED 2.0 links such that they forward users to the right BED 3.0 pages
 
-    if (reqPageWithParams.length == 0)
+function pageLoading() {
+    var reqPageWithParams = window.location.hash,
+        whitelist = ['#kimberly', '#nikki', '#julie', '#diego'];
+
+    var concatWL = whitelist.join('|'), 
+        whitelistRegex = new RegExp('(?:' + concatWL.substring(0, concatWL.length - 1) + ')$');
+
+    if (reqPageWithParams.length == 0 || whitelistRegex.test(reqPageWithParams))
         return;
 
     var req = reqPageWithParams.split("?");
@@ -43,7 +49,7 @@
             break;
 
         case "#/starting-the-conversation":
-            goToPage = "/hcp/identifying-patients.aspx";
+            goToPage = "/hcp/patient-profiles.aspx";
             break;
 
         case "#/one-patients-story":
@@ -67,7 +73,7 @@
         if (params.length > 0)
             goToPage = goToPage + "?" + params;
 
-    //alert(goToPage);
+    // alert(goToPage);
     window.location.href = goToPage;
 
 }

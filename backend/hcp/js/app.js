@@ -2270,115 +2270,91 @@ Array.prototype.forEach = function forEach(callback) {
 
     angular.module('cdmp.controllers')
 
-        .controller('signupController', ['$scope', '$http', function($scope,$http) {
+        .controller('signupController', ['$scope', '$http', '$location',function($scope,$http, $location) {
 
-            //$scope.submitted = false;
-            //$scope.notMatch = false;
-            //
-            //$scope.submitForm = function() {
-            //    $scope.submitted = true;
-            //    $scope.$broadcast('show-errors-check-validity');
-            //
-            //    if (!$scope.optIn.$invalid) {
-            //        if($scope.user.email == $scope.user.confirmEmail){
-            //            $scope.notMatch = false;
-            //            if($scope.checkBox==true){
-            //                //alert('Successful login');
-            //                //location.reload();
-            //                console.log("user submit");
-            //                window.location.href="thank-you.aspx";
-            //            }
-            //        }else{
-            //            $scope.notMatch = true;
-            //            console.log("not match")
-            //        }
-            //    }
-            //    else{
-            //        console.log("Error!");
-            //        //alert("Please address the errors above!")
-            //    }
-            //    
-            //};
-        
-            
             console.log("in controller");
             
-            $scope.optForm = function() {
-                
-                console.log("in ajax");
-                
-                //var source = "0";
-                
-                var optInInfor = {
-                    optIn: {
-                        CommunicationsOptIn: true,
-                        Name: {
-                            FName: $scope.optInForm.FName,
-                            LName: $scope.optInForm.LName,
-                            },
-                        Email: {
-                            Email:$scope.optInForm.Email,
-                            ConfirmEmail:$scope.optInForm.ConfirmEmail,
-                        }
-                    },
-                    sourceCode: 0,
-                }
-                
-                console.log(optInInfor);
-        
-        
-                var URL = BEDSVC + "/SetOptInData";
-                
-        
-                $http({
-                    method: "POST",
-                    crossDomain: true,
-                    async: true,
-                    cache: false,
-                    url: URL,
-                    data: optInInfor,
-                    contentType: "application/json"
-                })
-                    
-                    .success(function (data, status, headers, config) {
-                        console.log("get data" + data);
-                        
-                        if (data.SetOptInDataResult == true) {
+            $scope.submitted = false;
+            $scope.notMatch = false;
+            
+            $scope.submitForm = function() {
+                $scope.submitted = true;
+                $scope.$broadcast('show-errors-check-validity');
+            
+                if (!$scope.optInForm.$invalid) {
+                    if($scope.optInForm.Email == $scope.optInForm.ConfirmEmail){
+                        $scope.notMatch = false;
+                        if($scope.checkBox==true){
                             
-                            $scope.submitted = false;
-                            $scope.notMatch = false;
-
-                            $scope.submitForm = function() {
-                                $scope.submitted = true;
-                                $scope.$broadcast('show-errors-check-validity');
-
-                                if (!$scope.optIn.$invalid) {
-                                    if($scope.user.email == $scope.user.confirmEmail){
-                                        $scope.notMatch = false;
-                                        if($scope.checkBox==true){
-                                            //alert('Successful login');
-                                            //location.reload();
-                                            console.log("user submit");
-                                            window.location.href="thank-you.aspx";
+                            
+                            console.log("validation is right");
+                            
+                            $scope.optForm = function() {
+                                
+                                console.log("in ajax");
+                                console.log($scope.optInForm.FName);
+                                
+                                
+                                var optInfor = {
+                                    optInForm: {
+                                        CommunicationsOptIn: true,
+                                        Name: {
+                                            FName: $scope.optInForm.FName,
+                                            LName: $scope.optInForm.LName
+                                            },
+                                        Email: {
+                                            Email:$scope.optInForm.Email,
+                                            ConfirmEmail:$scope.optInForm.ConfirmEmail
                                         }
-                                    }
-                                }
-                                else{
-                                    $scope.notMatch = true;
-                                    console.log("not match")
-                                    //alert("Please address the errors above!")
-                                }
-
-                            };
-                            
-                            
-                        } else {
+                                    },
+                                    sourceCode: "0"
+                                };
+                                
+                                
+                                console.log(JSON.stringify(optInfor));
+                        
+                        
+                                var URL = BEDSVC + "/SetOptInData";
+                                
+                                console.log(URL);
+                                
+                                $http({
+                                    method: "POST",
+                                    crossDomain: true,
+                                    url: URL,
+                                    data: JSON.stringify(optInfor),
+                                    contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                                    dataType: "json"
+                                })
+                                    
+                                    .success(function (data, status, headers, config) {
+                                        console.log("get data" + data);
+                                        
+                                        if (data.SvcStatus == true) {
+                                            console.log("SvcStatus=" + data.SvcStatus);
+                                            //$location.path ('/thank-you');
+                                            
+                                        } else {
+                                        }
+                                    })
+                                    .error(function (data, status, headers, config) {
+                                        console.log("Error Ajax\n" + JSON.stringify(data) );
+                                        console.log(JSON.stringify(status) );
+                                        console.log(JSON.stringify(headers) );
+                                    })
+                            }
                         }
-                    })
-                    .error(function (data, status, headers, config) {
-                        console.log("Error Ajax");
-                    })
-            }
+                        }else{
+                            $scope.notMatch = true;
+                            console.log("not match");
+                        }
+                    }
+                    else{
+                        console.log("Error!");
+                        //alert("Please address the errors above!")
+                    }
+                    
+                };
 
         }])
 
@@ -2839,16 +2815,20 @@ Array.prototype.forEach = function forEach(callback) {
             };
 
 
-            // Create MEJS object for the video player element 😻
-            $('#videoPlayer').mediaelementplayer({
-                pauseOtherPlayers: false,           // allow multiple videos
-                iPadUseNativeControls: true,        // force iPad's native controls
-                iPhoneUseNativeControls: true,      // force iPhone's native controls
-                AndroidUseNativeControls: true,     // force Android's native controls
-                success: onSuccess,
-                error: onError
-            });
+            $(document).ready(function(){ 
+            //for some odd loading ordering reason, this was throwing a 'nodeName' undefined TypeError, JM
+                // Create MEJS object for the video player element 😻
+                $('#videoPlayer').mediaelementplayer({
+                    pauseOtherPlayers: false,           // allow multiple videos
+                    iPadUseNativeControls: true,        // force iPad's native controls
+                    iPhoneUseNativeControls: true,      // force iPhone's native controls
+                    AndroidUseNativeControls: true,     // force Android's native controls
+                    success: onSuccess,
+                    error: onError
+                });
 
+            });
+            
             // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
@@ -2939,7 +2919,7 @@ Array.prototype.forEach = function forEach(callback) {
 
 
         .controller('emailController', ['$scope', function($scope) {
-            
+            console.log("in emailCtrl!");
             $scope.submitted = false;
 
             $scope.submitForm = function() {
@@ -2951,6 +2931,15 @@ Array.prototype.forEach = function forEach(callback) {
                     window.location.href="/hcp/thank-you-request.aspx";
 
                 }
+            };
+
+            $scope.syncFields = function(e){
+                //the original
+                var thisfield = angular.element(e.currentTarget);
+                var name = thisfield.prop('name');
+
+                var others = angular.element("input[name='" + name + "'], select[name='" + name + "']");
+                others.val( thisfield.val() );
             };
 
         }])
@@ -2974,6 +2963,16 @@ Array.prototype.forEach = function forEach(callback) {
 
             };
 
+            
+            $scope.syncFields = function(e){
+                //it pains me to copypasta this... JM
+                var thisfield = angular.element(e.currentTarget);
+                var name = thisfield.prop('name');
+
+                var others = angular.element("input[name='" + name + "'], select[name='" + name + "']");
+                others.val( thisfield.val() );
+            };
+
         }])
 
 
@@ -2994,6 +2993,16 @@ Array.prototype.forEach = function forEach(callback) {
                     //alert("Please address the errors above!")
                 }
 
+            };
+
+
+            $scope.syncFields = function(e){
+                //it pains me to copypasta this... JM
+                var thisfield = angular.element(e.currentTarget);
+                var name = thisfield.prop('name');
+
+                var others = angular.element("input[name='" + name + "'], select[name='" + name + "']");
+                others.val( thisfield.val() );
             };
 
         }])

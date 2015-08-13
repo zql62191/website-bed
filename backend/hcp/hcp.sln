@@ -18,7 +18,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "hcp", ".", "{5E066019-2C40-
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "65172"
+		VWDPort = "56789"
+		VWDDynamicPort = "false"
 	EndProjectSection
 EndProject
 Global
