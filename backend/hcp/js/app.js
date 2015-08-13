@@ -2330,8 +2330,8 @@ Array.prototype.forEach = function forEach(callback) {
                                     .success(function (data, status, headers, config) {
                                         console.log("get data" + data);
                                         
-                                        if (data.SetOptInDataResult == true) {
-                        
+                                        if (data.SvcStatus == true) {
+                                            console.log("SvcStatus=" + data.SvcStatus);
                                             //$location.path ('/thank-you');
                                             
                                         } else {

@@ -13,9 +13,9 @@ public class Status
         get
         {
             if (Errors.Count > 0)
-                return true;
-            else
                 return false;
+            else
+                return true;
         }
         set
         {
