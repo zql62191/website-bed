@@ -99,7 +99,7 @@ block content
                                 p.help-block(ng-if="submitted && optinall.address.$error.required")
                                     
                                 input(type='text', id="Address2", name="suite", placeholder="Suite/Office (not required)", ng-model='optinall.Address2', ng-required="false", ng-class="{forminvalid: (optinall.suite.$invalid && optinall.suite.$dirty && submitted) || (optinall.suite.$invalid && invalidform && submitted)}", ng-blur="syncFields($event)")
-                                input(type='text', name="city", placeholder="City", ng-model='city', ng-required="true", ng-class="{forminvalid: (optinall.city.$invalid && optinall.city.$dirty && submitted) || (optinall.city.$invalid && optinall.city.$pristine && submitted)}", ng-blur="syncFields($event)")
+                                input(type='text', id="City", name="city", placeholder="City", ng-model='optinall.City', ng-required="true", ng-class="{forminvalid: (optinall.city.$invalid && optinall.city.$dirty && submitted) || (optinall.city.$invalid && optinall.city.$pristine && submitted)}", ng-blur="syncFields($event)")
                                 .help-block(ng-if="submitted && optinall.city.$error.required")
                                     
                                 select(type='text', id="State", name="state", placeholder="State", ng-model='optinall.State', ng-required="true", ng-class="{forminvalid: (optinall.state.$invalid && optinall.state.$dirty && submitted) || (optinall.state.$invalid && optinall.state.$pristine && submitted)}", ng-blur="syncFields($event)")
