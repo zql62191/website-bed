@@ -5,7 +5,7 @@ function pageLoading() {
         whitelist = ['#kimberly', '#nikki', '#julie', '#diego'];
 
     var concatWL = whitelist.join('|'), 
-        whitelistRegex = new RegExp('(?:' + concatWL.substring(0, concatWL.length - 1) + ')$');
+        whitelistRegex = new RegExp('(?:' + concatWL.substring(0, concatWL.length) + ')$');
 
     if (reqPageWithParams.length == 0 || whitelistRegex.test(reqPageWithParams))
         return;

@@ -24,7 +24,8 @@ body.recognizing-bed {
             
             @include mq("md") {
                 margin: 0 auto 0px auto;
-                width: percentage(654/768);
+                width: 100%;
+                // width: percentage(654/768);
             }
         }
 
@@ -63,7 +64,8 @@ body.recognizing-bed {
                 width: percentage(608/960);
             }
             @include mq('md') {
-                width: percentage(654/768);
+                width: 100%;
+                // width: percentage(654/768);
             }
         }
 
@@ -274,6 +276,11 @@ body.recognizing-bed {
                     text-align: left;
                 }
             }
+
+            @include mq("md") {
+                width: percentage(670/768);
+                min-width: 570px;
+            }
         }
     }
 
@@ -337,7 +344,6 @@ body.recognizing-bed {
                 width: percentage(670/768);
                 min-width: 570px;
             }
-
         }
     }
 
@@ -488,7 +494,7 @@ body.recognizing-bed {
                 padding-bottom: 20px;
             }
             h2.heading--2{
-                width: percentage(720/768);
+                // width: percentage(720/768);
             }
 
             .heading--3.center{

@@ -10,6 +10,13 @@ body.dsm5-criteria {
             margin: 0 auto;
         }
 
+        @include mq('md') {
+            // width: percentage(502/655);
+            // min-width: 502px;
+            width: 502px;
+            margin: 0 auto;
+        }
+
         @include mq('sm') {
             width: percentage(555/655);
             text-align: center;
@@ -53,10 +60,20 @@ body.dsm5-criteria {
                 margin-bottom: 40px;
             }
         }
+        @include mq("md") {
+            .wrap--refs{
+                padding-left:0;
+                padding-right:0;
+            }
+        }
 
         ol.refs{
             padding-bottom: 0px;
             
+            @include mq("md") {
+                margin-left: auto;
+            }
+
             @include mq("sm"){
                 width: 97%;
             }
@@ -64,6 +81,7 @@ body.dsm5-criteria {
         }
         
         ol.refs li{
+
             @include mq("sm"){
                 font-size: 14px !important;
                 color: #858B91 !important;
