@@ -24,7 +24,7 @@ module.exports = {
             '!../REPLACE/ME'
         ]
     },
-    unsubscribe: {
+    unsubIntegrate: {
         options: {
             force: true
         },

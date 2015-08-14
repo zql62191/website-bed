@@ -54,43 +54,43 @@ module.exports = {
             dest: '../backend/hcp/',
             dot: true
         }]
-    },
-    unsubscribe: {
+    }
+    ,unsubIntegrate: {
         files: [{
             expand: true,
-            cwd: 'src/markup/pages/',
-            src: ['unsubscribe.jade'],
-            dest: 'dist/unsubscribe/',
+            cwd: 'dist/unsubscribe/',
+            src: ['**'],
+            dest: '../backend/unsubscribe/',
             dot: true
-        },
-        {
-            expand: true,
-            cwd: 'src/markup/partials/',//header & footer
-            src: ['*.jade'],
-            dest: 'dist/unsubscribe/',
-            dot: true
-        },
-        {
-            expand: true,
-            cwd: 'src/markup/pages/layouts/',//base layout
-            src: ['base.jade'],
-            dest: 'dist/unsubscribe/',
-            dot: true
-        },
-        {
-            // maybe i should just use ALL the scripts since there are AngularJS dependencies everywhere... JM
-            expand: true,
-            cwd: 'src/markup/scripts/',
-            src: ['**/*'],
-            dest: 'dist/unsubscribe/',
-            dot: true
-        },
-        {
-            expand: true,
-            cwd: 'src/styles/pages/',
-            src: ['_unsubscribe.scss'],
-            dest: 'dist/unsubscribe/',
-            dot: true
+        // },
+        // {
+        //     expand: true,
+        //     cwd: 'src/markup/partials/',//header & footer
+        //     src: ['*.jade'],
+        //     dest: '../backend/unsubscribe/',
+        //     dot: true
+        // },
+        // {
+        //     expand: true,
+        //     cwd: 'src/markup/pages/layouts/',//base layout
+        //     src: ['base.jade'],
+        //     dest: '../backend/unsubscribe/',
+        //     dot: true
+        // },
+        // {
+        //     // maybe i should just use ALL the scripts since there are AngularJS dependencies everywhere... JM
+        //     expand: true,
+        //     cwd: 'src/markup/scripts/',
+        //     src: ['**/*'],
+        //     dest: '../backend/unsubscribe/',
+        //     dot: true
+        // },
+        // {
+        //     expand: true,
+        //     cwd: 'src/styles/pages/',
+        //     src: ['_unsubscribe.scss'],
+        //     dest: '../backend/unsubscribe/',
+        //     dot: true
         }]
     }
 };
