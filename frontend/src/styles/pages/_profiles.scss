@@ -427,7 +427,7 @@ body.profiles {
                         position: absolute;
                         top: 10%;
                         left:8%;
-                        width: percentage(134/320);
+                        width: percentage(233/768);
                         
                         
                     }
@@ -437,11 +437,17 @@ body.profiles {
                         //padding-bottom: 12px;
                     }
                     .profile{
-                        left: 58%;
+                        left: percentage(372/768);
                         top: 12%;
-                        width: 253px;
+                        width: 286px;
                         height: 90px;
+                        font-size: 16px;
                         
+                        .name{
+                            font-size: 26px;
+                            line-height: 31px;
+                        }
+
                     }
                 }
 
