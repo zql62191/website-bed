@@ -200,8 +200,8 @@ body.patient-demographics {
                     line-height: 86px;
                 }
                 @include mq("md") {
-                    font-size: 36px;
-                    margin-left: -20px;
+                    font-size: 72px;
+                    // margin-left: -20px;
                 }
                 @include mq("sm") {
                     font-size: 32px;
@@ -276,9 +276,11 @@ body.patient-demographics {
         }
 
         h2 {
-            padding: 0 0 45px 198px;
-            @include mq('md'){
-                padding: 0 0 45px 80px;
+            padding: 0 0 45px 60px;
+            width: percentage(712/1024);
+            margin: 0 auto;
+            @include mq('md') {
+                padding-left: 0px;
             }
             .estimated {
                 text-align: left;
@@ -310,6 +312,7 @@ body.patient-demographics {
                 }
                 .versus {
                     text-align: left;
+                    padding-left: 116px;
                 }
                 .percent {
                     font-size: 32px;
@@ -320,7 +323,7 @@ body.patient-demographics {
             }
 
             @include mq("md") {
-                font-size: 24px;
+                font-size: 22px;
 
                 .ratio {
                     font-size: 72px;
@@ -328,7 +331,8 @@ body.patient-demographics {
                 }
                 .versus {
                     text-align: left;
-                    margin-left: 17%;
+                    // margin-left: 17%;
+                    padding-left: 116px;
                 }
                 .percent {
                     font-size: 26px;

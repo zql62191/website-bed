@@ -227,6 +227,11 @@ body.potential-causes {
                     padding-right: 180px;
                 }
             }
+
+            .btn.btn--yellow{
+                font-size: 16px;
+            }
+
         }
 
         .footnote{
@@ -235,7 +240,7 @@ body.potential-causes {
             text-align: center;
         }
         .center{
-            width: percentage(342/768);
+            width: percentage(342/655);
             margin: 0 auto;
         }
     }
