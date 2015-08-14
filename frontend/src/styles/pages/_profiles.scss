@@ -386,7 +386,7 @@ body.profiles {
                         .hero img{
                             width: 452px;
                             height: auto;
-                            margin-left: -35%;
+                            margin-left: -38%;
                             margin-top: 23%;
                         }
                         
@@ -402,23 +402,27 @@ body.profiles {
                     .julie {
 
                         .hero img{
-                            height: 365px;
+                            height: 345px;
                             width: auto;
-                            margin-top: 48%;
+                            margin-top: 53%;
                         }
                         .profile{
-                            top:8%;
+                            top:12%;
                         }
 
                         .disclaimer {
                             margin-top: 0;
                         }
+                        blockquote {
+                            line-height: 34px;
+                        }
+                        
                     }
                     .diego {
                         .hero img{
                             width: 502px;
                             height: auto;
-                            margin-left: 16%;
+                            margin-left: 14%;
                             margin-top: 18%;
                         }
                     }
@@ -426,13 +430,20 @@ body.profiles {
                     blockquote {
                         position: absolute;
                         top: 10%;
-                        left:8%;
-                        width: percentage(233/768);
+                        left:5%;
+                        width: percentage(303/768);
+                        font-size: 22px;
+                        color: #858B91;
+                        line-height: 26px;
+                        
                         
                     }
 
                     .disclaimer {
                         width: 100%;
+                        font-size: 14px;
+                        color: #858B91;
+                        line-height: 15px;
                         //padding-bottom: 12px;
                     }
                     .profile{

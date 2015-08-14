@@ -4,7 +4,7 @@
     angular.module('cdmp.controllers')
 
 
-        .controller('emailController', ['$scope', function($scope) {
+        .controller('emailController', ['$scope', '$http', function($scope,$http) {
 
             $scope.submitted = false;
 
@@ -14,7 +14,53 @@
 
                 if (!$scope.optOutEmail.$invalid) {
                     console.log("user submit");
-                    window.location.href="/hcp/thank-you-request.aspx";
+
+                    $scope.optOutEmailForm = function() {
+
+                        console.log("in ajax");
+
+                        var optOutInfor = {
+                              email: {
+                                Email:$scope.optOutEmail.Email,
+                                ConfirmEmail:$scope.optOutEmail.Email
+                            },
+                            sourceCode: "0"
+                        };
+
+
+                        console.log(JSON.stringify(optOutInfor));
+
+
+                        var URL = BEDSVC + "/SetUnsubscribeDataEmail";
+
+                        console.log(URL);
+
+                        $http({
+                            method: "POST",
+                            crossDomain: true,
+                            catch:false,
+                            url: URL,
+                            data: optOutInfor,
+                            contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                            dataType: "json"
+                        })
+
+                            .success(function (data, status, headers, config) {
+                                console.log("get data" + data);
+
+                                if (data.SvcStatus == true) {
+
+                                    window.location.href="/hcp/thank-you-request.aspx";
+
+                                } else {
+                                }
+                            })
+                            .error(function (data, status, headers, config) {
+                                console.log("Error Ajax\n" + JSON.stringify(data) );
+                                console.log(JSON.stringify(status) );
+                                console.log(JSON.stringify(headers) );
+                            })
+                    }
 
                 }
             };
@@ -30,7 +76,7 @@
 
         }])
         
-        .controller('directmailController', ['$scope', function($scope) {
+        .controller('directmailController', ['$scope',"$http", function($scope,$http) {
 
             $scope.submitted = false;
 
@@ -40,7 +86,64 @@
 
                 if (!$scope.optoutdirectmail.$invalid) {
                     console.log("user submit");
-                    window.location.href="/hcp/thank-you-request.aspx";
+
+                    $scope.optoutdirectmailForm = function() {
+
+                        console.log("in ajax");
+
+                        var optDirectInfor = {
+                            email: {
+                                Email:$scope.optoutdirectmail.Email,
+                                ConfirmEmail:$scope.optoutdirectmail.Email
+                            },
+                            address:{
+                                FName:$scope.optoutdirectmail.FName,
+                                MName:"",
+                                LName:$scope.optoutdirectmail.LName,
+                                Address1:$scope.optoutdirectmail.Address1,
+                                Address2:$scope.optoutdirectmail.Address2,
+                                City:$scope.optoutdirectmail.City,
+                                State:$scope.optoutdirectmail.State,
+                                Zip:$scope.optoutdirectmail.Zip
+                            },
+                            sourceCode: "0"
+                        };
+
+
+                        console.log(JSON.stringify(optDirectInfor));
+
+
+                        var URL = BEDSVC + "/SetUnsubscribeDataAddress";
+
+                        console.log(URL);
+
+                        $http({
+                            method: "POST",
+                            crossDomain: true,
+                            catch:false,
+                            url: URL,
+                            data: optDirectInfor,
+                            contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                            dataType: "json"
+                        })
+
+                            .success(function (data, status, headers, config) {
+                                console.log("get data" + data);
+
+                                if (data.SvcStatus == true) {
+
+                                    window.location.href="/hcp/thank-you-request.aspx";
+
+                                } else {
+                                }
+                            })
+                            .error(function (data, status, headers, config) {
+                                console.log("Error Ajax\n" + JSON.stringify(data) );
+                                console.log(JSON.stringify(status) );
+                                console.log(JSON.stringify(headers) );
+                            })
+                    }
+                    
                 }
                 else{
                     console.log("Error!");
@@ -62,7 +165,7 @@
         }])
 
 
-        .controller('allmailController', ['$scope', function($scope) {
+        .controller('allmailController', ['$scope','$http', function($scope,$http) {
 
             $scope.submitted = false;
 
@@ -72,7 +175,63 @@
 
                 if (!$scope.optinall.$invalid) {
                     console.log("user submit");
-                    window.location.href="/hcp/thank-you-request.aspx";
+
+                    $scope.optinallForm = function() {
+
+                        console.log("in ajax");
+
+                        var optAllInfor = {
+                            email: {
+                                Email:$scope.optinall.Email,
+                                ConfirmEmail:$scope.optinall.Email
+                            },
+                            address:{
+                                FName:$scope.optinall.FName,
+                                MName:"",
+                                LName:$scope.optinall.LName,
+                                Address1:$scope.optinall.Address1,
+                                Address2:$scope.optinall.Address2,
+                                City:$scope.optinall.City,
+                                State:$scope.optinall.State,
+                                Zip:$scope.optinall.Zip
+                            },
+                            sourceCode: "0"
+                        };
+
+
+                        console.log(JSON.stringify(optAllInfor));
+
+
+                        var URL = BEDSVC + "/SetUnsubscribeDataBoth";
+
+                        console.log(URL);
+
+                        $http({
+                            method: "POST",
+                            crossDomain: true,
+                            catch:false,
+                            url: URL,
+                            data: optAllInfor,
+                            contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                            dataType: "json"
+                        })
+
+                            .success(function (data, status, headers, config) {
+                                console.log("get data" + data);
+
+                                if (data.SvcStatus == true) {
+
+                                    window.location.href="/hcp/thank-you-request.aspx";
+
+                                } else {
+                                }
+                            })
+                            .error(function (data, status, headers, config) {
+                                console.log("Error Ajax\n" + JSON.stringify(data) );
+                                console.log(JSON.stringify(status) );
+                                console.log(JSON.stringify(headers) );
+                            })
+                    }
                 }
                 else{
                     console.log("Error!");
@@ -100,6 +259,8 @@
     //}])
 
 
+    var BEDSVC = "http://6ccdb2.ngrok.com/hcpUnsubscribe/service/BEDUnsubscribe.svc"
+    
 
 }).call(this);
 

@@ -24,12 +24,12 @@ module.exports = {
             '!../REPLACE/ME'
         ]
     },
-    unsubscribe: {
+    unsubIntegrate: {
         options: {
             force: true
         },
         src: [
-            './dist/unsubscribe/*'
+            './dist/hcpUnsubscribe/*'
         ]
     }
 };
