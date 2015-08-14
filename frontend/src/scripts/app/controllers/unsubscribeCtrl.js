@@ -5,12 +5,12 @@
 
 
         .controller('emailController', ['$scope', function($scope) {
-            console.log("in emailCtrl!");
+
             $scope.submitted = false;
 
             $scope.submitForm = function() {
                 $scope.submitted = true;
-//                 $scope.$broadcast('show-errors-check-validity'); // uses the provider service
+                //$scope.$broadcast('show-errors-check-validity'); // uses the provider service
 
                 if (!$scope.optOutEmail.$invalid) {
                     console.log("user submit");
