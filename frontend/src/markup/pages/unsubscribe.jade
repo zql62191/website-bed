@@ -36,10 +36,10 @@ block content
 
                         .formContainer(ng-controller="emailController")
                             form.emailForm(name='optOutEmail', autocomplete='off', novalidate, show-errors='{showSuccess:true}', ng-submit="submitForm()")
-                                input(type='email', name="email", placeholder="E-mail", ng-model='user.email', required, ng-class="{forminvalid: (optOutEmail.email.$invalid && optOutEmail.email.$dirty && submitted) || (optOutEmail.email.$invalid && optOutEmail.email.$pristine && submitted)}", ng-blur="syncFields($event)").form-control
+                                input(type='email', id="Email", name="email", placeholder="E-mail", ng-model='optOutEmail.Email', required, ng-class="{forminvalid: (optOutEmail.email.$invalid && optOutEmail.email.$dirty && submitted) || (optOutEmail.email.$invalid && optOutEmail.email.$pristine && submitted)}", ng-blur="syncFields($event)").form-control
                                 p.help-block.spe(ng-if="submitted && (optOutEmail.email.$error.email || optOutEmail.email.$error.required)")
                                     | Please enter e-mail address
-                                button(type="button", ng-click="submitForm()").btn.btn--yellow
+                                button(type="button", ng-click="submitForm(); optOutEmailForm()").btn.btn--yellow
                                     | SUBMIT
 
                 +accordion(undefined,true)
@@ -51,28 +51,28 @@ block content
 
                         .formContainer(ng-controller="directmailController")
                             form(name='optoutdirectmail', autocomplete='off', novalidate, show-errors='{showSuccess:true}', ng-submit="submitForm()").directMail.form-group
-                                input(type='email', name="email", placeholder="E-mail", ng-model='user.email', required, ng-class="{forminvalid: (optoutdirectmail.email.$invalid && optoutdirectmail.email.$dirty && submitted) || (optoutdirectmail.email.$invalid && optoutdirectmail.email.$pristine && submitted)}", ng-blur="syncFields($event)").form-control
+                                input(type='email', id="Email" name="email", placeholder="E-mail", ng-model='optoutdirectmail.Email', required, ng-class="{forminvalid: (optoutdirectmail.email.$invalid && optoutdirectmail.email.$dirty && submitted) || (optoutdirectmail.email.$invalid && optoutdirectmail.email.$pristine && submitted)}", ng-blur="syncFields($event)").form-control
                                 p.help-block(ng-if="submitted && (optoutdirectmail.email.$error.email || optoutdirectmail.email.$error.required)")
                                     | Please enter a vaild email address
-                                input(type='text', name="firstName", placeholder="First Name", ng-model='firstName', ng-required="true", ng-class="{forminvalid: (optoutdirectmail.firstName.$invalid && optoutdirectmail.firstName.$dirty && submitted) || (optoutdirectmail.firstName.$invalid && optoutdirectmail.firstName.$pristine && submitted)}", ng-blur="syncFields($event)")
+                                input(type='text', id="FName" name="firstName", placeholder="First Name", ng-model='optoutdirectmail.FName', ng-required="true", ng-class="{forminvalid: (optoutdirectmail.firstName.$invalid && optoutdirectmail.firstName.$dirty && submitted) || (optoutdirectmail.firstName.$invalid && optoutdirectmail.firstName.$pristine && submitted)}", ng-blur="syncFields($event)")
                                 p.help-block(ng-if="submitted && optoutdirectmail.firstName.$error.required")
                                     
-                                input(type='text', name="lastName",placeholder="Last Name", ng-model='lastname', ng-required="true", ng-class="{forminvalid: (optoutdirectmail.lastName.$invalid && optoutdirectmail.firstName.$dirty && submitted) || (optoutdirectmail.lastName.$invalid && optoutdirectmail.lastName.$pristine && submitted)}", ng-blur="syncFields($event)")
+                                input(type='text', id="LName", name="lastName",placeholder="Last Name", ng-model='optoutdirectmail.LName', ng-required="true", ng-class="{forminvalid: (optoutdirectmail.lastName.$invalid && optoutdirectmail.firstName.$dirty && submitted) || (optoutdirectmail.lastName.$invalid && optoutdirectmail.lastName.$pristine && submitted)}", ng-blur="syncFields($event)")
                                 p.help-block(ng-if="submitted && optoutdirectmail.lastName.$error.required")
                                     
-                                input(type='text', name="address", placeholder="Street Address", ng-model='address', ng-required="true", ng-class="{forminvalid: (optoutdirectmail.address.$invalid && optoutdirectmail.address.$dirty && submitted) || (optoutdirectmail.address.$invalid && optoutdirectmail.address.$pristine && submitted)}", ng-blur="syncFields($event)")
+                                input(type='text', id="Address1", name="address", placeholder="Street Address", ng-model='optoutdirectmail.Address1', ng-required="true", ng-class="{forminvalid: (optoutdirectmail.address.$invalid && optoutdirectmail.address.$dirty && submitted) || (optoutdirectmail.address.$invalid && optoutdirectmail.address.$pristine && submitted)}", ng-blur="syncFields($event)")
                                 p.help-block(ng-if="submitted && optoutdirectmail.address.$error.required")
                                     
-                                input(type='text', name="suite",placeholder="Suite/Office (not required)", ng-model='suite', ng-required="false", ng-class="{forminvalid: (optoutdirectmail.suite.$invalid && optoutdirectmail.suite.$dirty && submitted) || (optoutdirectmail.suite.$invalid && invalidform && submitted)}", ng-blur="syncFields($event)")
-                                input(type='text', name="city",placeholder="City", ng-model='city', ng-required="true", ng-class="{forminvalid: (optoutdirectmail.city.$invalid && optoutdirectmail.city.$dirty && submitted) || (optoutdirectmail.city.$invalid && optoutdirectmail.city.$pristine && submitted)}", ng-blur="syncFields($event)")
+                                input(type='text', id="Address2" name="suite",placeholder="Suite/Office (not required)", ng-model='optoutdirectmail.Address2', ng-required="false", ng-class="{forminvalid: (optoutdirectmail.suite.$invalid && optoutdirectmail.suite.$dirty && submitted) || (optoutdirectmail.suite.$invalid && invalidform && submitted)}", ng-blur="syncFields($event)")
+                                input(type='text', id="City", name="city",placeholder="City", ng-model='optoutdirectmail.City', ng-required="true", ng-class="{forminvalid: (optoutdirectmail.city.$invalid && optoutdirectmail.city.$dirty && submitted) || (optoutdirectmail.city.$invalid && optoutdirectmail.city.$pristine && submitted)}", ng-blur="syncFields($event)")
                                 p.help-block(ng-if="submitted && optoutdirectmail.city.$error.required")
                                     
-                                select(type='text', name="state", placeholder="State", ng-model='state', ng-required="true", ng-class="{forminvalid: (optoutdirectmail.state.$invalid && optoutdirectmail.state.$dirty && submitted) || (optoutdirectmail.state.$invalid && optoutdirectmail.state.$pristine && submitted)}", ng-blur="syncFields($event)")
+                                select(type='text', id="State", name="state", placeholder="State", ng-model='optoutdirectmail.State', ng-required="true", ng-class="{forminvalid: (optoutdirectmail.state.$invalid && optoutdirectmail.state.$dirty && submitted) || (optoutdirectmail.state.$invalid && optoutdirectmail.state.$pristine && submitted)}", ng-blur="syncFields($event)")
                                     +states
-                                input(type='text', name="zip",placeholder="Zip", ng-model='zip', ng-required="true", ng-class="{forminvalid: (optoutdirectmail.$invalid && optoutdirectmail.zip.$dirty && submitted) || (optoutdirectmail.zip.$invalid && optoutdirectmail.zip.$pristine && submitted)}", ng-blur="syncFields($event)")
+                                input(type='text',id="Zip", name="zip",placeholder="Zip", ng-model='optoutdirectmail.Zip', ng-required="true", ng-class="{forminvalid: (optoutdirectmail.$invalid && optoutdirectmail.zip.$dirty && submitted) || (optoutdirectmail.zip.$invalid && optoutdirectmail.zip.$pristine && submitted)}", ng-blur="syncFields($event)")
                                 p.help-block(ng-if="submitted && optoutdirectmail.zip.$error.required")
                                     
-                                button(type="submit", ng-click="submitForm()").btn.btn--yellow
+                                button(type="submit", ng-click="submitForm(); optoutdirectmailForm()").btn.btn--yellow
 
                                     | SUBMIT
 
@@ -86,28 +86,28 @@ block content
 
                         .formContainer(ng-controller="allmailController")
                             form(name='optinall', autocomplete='off', novalidate, show-errors='{showSuccess:true}', ng-submit="submitForm()").form-group
-                                input(type='email', name="email", placeholder="E-mail", ng-model='user.email', required, ng-class="{forminvalid: (optinall.email.$invalid && optinall.email.$dirty && submitted) || (optinall.email.$invalid && optinall.email.$pristine && submitted)}", ng-blur="syncFields($event)").form-control
+                                input(type='email', id="Email", name="email", placeholder="E-mail", ng-model='optinall.Email', required, ng-class="{forminvalid: (optinall.email.$invalid && optinall.email.$dirty && submitted) || (optinall.email.$invalid && optinall.email.$pristine && submitted)}", ng-blur="syncFields($event)").form-control
                                 p.help-block(ng-if="submitted && (optinall.email.$error.email || optinall.email.$error.required)")
                                     | Please enter a vaild email address
-                                input(type='text', name="firstName", placeholder="First Name", ng-model='firstName', ng-required="true", ng-class="{forminvalid: (optinall.firstName.$invalid && optinall.firstName.$dirty && submitted) || (optinall.firstName.$invalid && optinall.firstName.$pristine && submitted)}", ng-blur="syncFields($event)")
+                                input(type='text', id="FName", name="firstName", placeholder="First Name", ng-model='optinall.FName', ng-required="true", ng-class="{forminvalid: (optinall.firstName.$invalid && optinall.firstName.$dirty && submitted) || (optinall.firstName.$invalid && optinall.firstName.$pristine && submitted)}", ng-blur="syncFields($event)")
                                 p.help-block(ng-if="submitted && optinall.firstName.$error.required")
                                     
-                                input(type='text', name="lastName", placeholder="Last Name", ng-model='lastname', ng-required="true", ng-class="{forminvalid: (optinall.lastName.$invalid && optinall.firstName.$dirty && submitted) || (optinall.lastName.$invalid && optinall.lastName.$pristine && submitted)}", ng-blur="syncFields($event)")
+                                input(type='text', id="LName", name="lastName", placeholder="Last Name", ng-model='optinall.LName', ng-required="true", ng-class="{forminvalid: (optinall.lastName.$invalid && optinall.firstName.$dirty && submitted) || (optinall.lastName.$invalid && optinall.lastName.$pristine && submitted)}", ng-blur="syncFields($event)")
                                 p.help-block(ng-if="submitted && optinall.lastName.$error.required")
                                     
-                                input(type='text', name="address", placeholder="Street Address", ng-model='address', ng-required="true", ng-class="{forminvalid: (optinall.address.$invalid && optinall.address.$dirty && submitted) || (optinall.address.$invalid && optinall.addresss.$pristine && submitted)}", ng-blur="syncFields($event)")
+                                input(type='text', id="Address1", name="address", placeholder="Street Address", ng-model='optinall.Address1', ng-required="true", ng-class="{forminvalid: (optinall.address.$invalid && optinall.address.$dirty && submitted) || (optinall.address.$invalid && optinall.addresss.$pristine && submitted)}", ng-blur="syncFields($event)")
                                 p.help-block(ng-if="submitted && optinall.address.$error.required")
                                     
-                                input(type='text', name="suite", placeholder="Suite/Office (not required)", ng-model='suite', ng-required="false", ng-class="{forminvalid: (optinall.suite.$invalid && optinall.suite.$dirty && submitted) || (optinall.suite.$invalid && invalidform && submitted)}", ng-blur="syncFields($event)")
+                                input(type='text', id="Address2", name="suite", placeholder="Suite/Office (not required)", ng-model='optinall.Address2', ng-required="false", ng-class="{forminvalid: (optinall.suite.$invalid && optinall.suite.$dirty && submitted) || (optinall.suite.$invalid && invalidform && submitted)}", ng-blur="syncFields($event)")
                                 input(type='text', name="city", placeholder="City", ng-model='city', ng-required="true", ng-class="{forminvalid: (optinall.city.$invalid && optinall.city.$dirty && submitted) || (optinall.city.$invalid && optinall.city.$pristine && submitted)}", ng-blur="syncFields($event)")
                                 .help-block(ng-if="submitted && optinall.city.$error.required")
                                     
-                                select(type='text', name="state", placeholder="State", ng-model='state', ng-required="true", ng-class="{forminvalid: (optinall.state.$invalid && optinall.state.$dirty && submitted) || (optinall.state.$invalid && optinall.state.$pristine && submitted)}", ng-blur="syncFields($event)")
+                                select(type='text', id="State", name="state", placeholder="State", ng-model='optinall.State', ng-required="true", ng-class="{forminvalid: (optinall.state.$invalid && optinall.state.$dirty && submitted) || (optinall.state.$invalid && optinall.state.$pristine && submitted)}", ng-blur="syncFields($event)")
                                     +states
-                                input(type='text', name="zip", placeholder="Zip", ng-model='zip', ng-required="true", ng-class="{forminvalid: (optinall.zip.$invalid && optinall.zip.$dirty && submitted) || (optinall.zip.$invalid && optinall.zip.$pristine && submitted)}", ng-blur="syncFields($event)")
+                                input(type='text', id="Zip", name="zip", placeholder="Zip", ng-model='optinall.Zip', ng-required="true", ng-class="{forminvalid: (optinall.zip.$invalid && optinall.zip.$dirty && submitted) || (optinall.zip.$invalid && optinall.zip.$pristine && submitted)}", ng-blur="syncFields($event)")
                                 p.help-block(ng-if="submitted && optinall.zip.$error.required")
 
-                                button(type="submit", ng-click="submitForm()").btn.btn--yellow
+                                button(type="submit", ng-click="submitForm(); optinallForm()").btn.btn--yellow
 
                                     | SUBMIT
 
