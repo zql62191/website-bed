@@ -48,6 +48,7 @@ body.support-and-resources{
 
             .tab{
                 display: inline-block;
+                vertical-align: middle;
                 width: 33%;
                 height: 60px;
                 background-color: #52758B;
@@ -306,6 +307,11 @@ body.support-and-resources{
                     height: 70px;
                     margin-bottom: 10px;
                     display: inline-block;
+
+                    br{
+                        display: inline;
+                    }
+
                 }
 
             }

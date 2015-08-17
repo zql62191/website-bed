@@ -8,7 +8,8 @@
 
             var whitelist = [
                 'shire.com',
-                parseUri($location.absUrl()).host
+                parseUri($location.absUrl()).host,
+                $location.$$host
             ];
             var foo = whitelist.join('|');
             var whitelistRegex = new RegExp('(?:' + foo.substring(0, foo.length - 1) + ')$');
