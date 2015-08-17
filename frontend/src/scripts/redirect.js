@@ -2,7 +2,7 @@
 
 function pageLoading() {
     var reqPageWithParams = window.location.hash,
-        whitelist = ['#kimberly', '#nikki', '#julie', '#diego'];
+        whitelist = ['#kimberly', '#nikki', '#julie', '#diego', '#downloads'];
 
     var concatWL = whitelist.join('|'), 
         whitelistRegex = new RegExp('(?:' + concatWL.substring(0, concatWL.length) + ')$');
