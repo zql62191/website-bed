@@ -490,7 +490,7 @@ body.profiles {
 
             .callouts {
                 @include gs("light");
-                margin: 0 auto 46px -3%;
+                margin: 0 auto 46px auto;
                 font-size: 16px;
                 color: #858B91;
                 line-height: 19px;
