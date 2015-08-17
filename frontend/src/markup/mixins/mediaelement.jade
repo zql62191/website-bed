@@ -18,8 +18,8 @@ mixin media-element-video(klass, pathtofile, fallback, w, h)
           //- Optional: Add chapters
           track(kind='chapters', src='chapters.srt', srclang='en')
           //- Flash fallback for non-HTML5 browsers without JavaScript
-          object(width='#{w}', height='#{h}', type='application/x-shockwave-flash', data='flashmediaelement.swf')
-            param(name='movie', value='flashmediaelement.swf')
+          object(width='#{w}', height='#{h}', type='application/x-shockwave-flash', data='me/flashmediaelement.swf')
+            param(name='movie', value='me/flashmediaelement.swf')
             param(name='flashvars', value='controls=true&file=#{pathtofile}')
             //- Image as a last resort
             img(src='#{pathtofile}', width='#{w}', height='#{h}', title='No video playback capabilities')

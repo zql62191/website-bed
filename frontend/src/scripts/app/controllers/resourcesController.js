@@ -9,8 +9,6 @@
             //local variables & functions!
             var activehost = "localhost:3000";
 
-            window.MY_SCOPE = $scope;
-
             $scope.tabbedVideos = [{
                 tabclass : "what-is-bed",
                 tabtitle: "What Is B.E.D.?",
@@ -231,7 +229,7 @@
 
             // MediaElementJS success handler
             var onSuccess = function(me, domObject) {
-                console.log("in success!");
+
                 me.pause();
                 instance = me;
 
@@ -307,14 +305,10 @@
                 p0 = p25 = p50 = p75 = p90 = p100 = false;  // Reset percentage milestones
             };
 
-            //props to Stefano Mtangoo & Biswanath at StackOverflow // http://stackoverflow.com/questions/29230306/mediaelement-js-with-angularjs
-            //called from an ng-init
-            // $scope.loadMediaElement =  function(){
-                $(document).ready(function(){ 
+
+            $(document).ready(function(){ 
                 //for some odd loading ordering reason, this was throwing a 'nodeName' undefined TypeError, JM
                 // Create MEJS object for the video player element 😻
-
-                console.log("NOW IN THE LOAD FN, I see " + $("#videoPlayer").length + " video players");
 
                 $('#videoPlayer').mediaelementplayer({
                     pauseOtherPlayers: false,           // allow multiple videos
@@ -325,16 +319,10 @@
                     error: onError
                 });
 
-                // firefox, please...
-                instance.setSrc(document.location.protocol + $scope.defaultVideoPath);
-                instance.load();
+                // firefox needed a source!
+                $("#videoPlayer source").prop('src',document.location.protocol + $scope.defaultVideoPath);
 
-                console.log("~video initialized!!!");
-
-                // $scope.updateVideo($scope.currentVideo);
-
-                });
-            // }
+            });
             
             // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
