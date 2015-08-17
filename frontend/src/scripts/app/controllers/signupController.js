@@ -65,7 +65,7 @@
                                         
                                         if (data.SvcStatus == true) {
 
-                                            window.location.href="/hcp/thank-you-request.aspx";
+                                            window.location.href="/hcp/thank-you.aspx";
                                             
                                         } else {
                                         }

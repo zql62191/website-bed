@@ -132,6 +132,37 @@ body.patient-profiles {
                 text-align: center;
                 width: percentage(543/768);
             }
+            
+        }
+
+        @media only screen
+        and (min-device-width: 360px)
+        and (max-device-width: 640px)
+        and (-webkit-min-device-pixel-ratio: 2)
+        {
+            .persons{
+                margin: 0 -6.25% 0 0 !important;
+            }
+        }
+
+        @media only screen
+        and (min-device-width: 375px)
+        and (max-device-width: 667px)
+        and (-webkit-min-device-pixel-ratio: 2)
+        and (orientation: portrait) {
+            .persons{
+                margin: 0 -6.25% 0 0 !important;
+            }
+        }
+
+        @media only screen
+        and (min-device-width: 414px)
+        and (max-device-width: 736px)
+        and (-webkit-min-device-pixel-ratio: 2)
+        and (orientation: portrait) {
+            .persons{
+                margin: 0 -6.25% 0 6.25% !important;
+            }
         }
 
         @include mq("sm") {
