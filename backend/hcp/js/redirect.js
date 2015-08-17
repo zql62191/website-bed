@@ -2,10 +2,10 @@
 
 function pageLoading() {
     var reqPageWithParams = window.location.hash,
-        whitelist = ['#kimberly', '#nikki', '#julie', '#diego'];
+        whitelist = ['#kimberly', '#nikki', '#julie', '#diego', '#downloads'];
 
     var concatWL = whitelist.join('|'), 
-        whitelistRegex = new RegExp('(?:' + concatWL.substring(0, concatWL.length - 1) + ')$');
+        whitelistRegex = new RegExp('(?:' + concatWL.substring(0, concatWL.length) + ')$');
 
     if (reqPageWithParams.length == 0 || whitelistRegex.test(reqPageWithParams))
         return;
