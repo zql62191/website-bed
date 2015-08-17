@@ -1,4 +1,4 @@
-/* Last Updated: 2015-08-13 at 03:39:23 PM */
+/* Last Updated: 2015-08-17 at 11:16:07 AM */
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -1265,7 +1265,7 @@ ol.refs li a {
     color: #21282F;
   }
 }
-.btn.btn--yellow:active {
+.btn.btn--yellow:active, .btn.btn--yellow:hover {
   background: #52758B;
   color: #FDBD3E;
 }
@@ -2347,15 +2347,6 @@ body.index .section--hero .hero .callouts a.cta3 .icon {
   }
 }
 @media only screen and (min-width: 1025px), only screen and (min-width: 641px) and (max-width: 1024px) {
-  body.index .section--hero .wrap--refs {
-    margin-top: 0;
-  }
-  body.index .section--hero .wrap--refs ol.refs {
-    border-top: none;
-    text-align: center;
-    width: 570px;
-    margin: 0 auto;
-  }
   body.index .section--hero .hero .callouts {
     border-top: 1px solid #4D565E;
     border-bottom: 1px solid #4D565E;
@@ -2368,28 +2359,33 @@ body.index .section--hero .hero .callouts a.cta3 .icon {
   }
 }
 @media only screen and (min-width: 1025px) {
+  body.index .section--hero {
+    background-color: #252F39;
+  }
+  body.index .section--hero .hero .player {
+    overflow: hidden;
+  }
   body.index .section--hero .hero .player .color {
     position: absolute;
-    top: 0;
+    top: -50%;
     right: 0;
     bottom: 0;
     left: 0;
+    width: 100%;
+    max-width: 1400px;
+    height: 1400px;
+    overflow: hidden;
+    z-index: 5;
+    background-image: -webkit-radial-gradient(50% 70%, rgba(37, 47, 57, 0) 51%, rgba(37, 47, 57, 0) 80%, #252f39 100%);
+    background-image: radial-gradient(50% 70%, rgba(37, 47, 57, 0) 51%, rgba(37, 47, 57, 0) 80%, #252f39 100%);
+    margin-left: auto;
+    margin-right: auto;
   }
   body.index .section--hero .hero .player .color:before, body.index .section--hero .hero .player .color:after {
     content: '';
     position: absolute;
     top: 0;
     bottom: 0;
-  }
-  body.index .section--hero .hero .player .color:before {
-    left: 0%;
-    right: 50%;
-    background: #242F38;
-  }
-  body.index .section--hero .hero .player .color:after {
-    left: 50%;
-    right: 0%;
-    background: #36414C;
   }
   body.index .section--hero .hero .copy {
     position: absolute;
@@ -2409,6 +2405,7 @@ body.index .section--hero .hero .callouts a.cta3 .icon {
     left: 0;
     width: 100%;
     text-align: center;
+    z-index: 6;
   }
   body.index .section--hero .hero .callouts a {
     height: 197px;
@@ -2503,9 +2500,6 @@ body.index .section--hero .hero .callouts a.cta3 .icon {
   body.index .section--hero .hero .callouts a h4 {
     text-align: center;
   }
-  body.index .section--hero .refs {
-    padding-bottom: 0px;
-  }
 }
 @media only screen and (max-width: 640px) {
   body.index .section--hero .hero .copy .wrap--content {
@@ -2586,16 +2580,38 @@ body.index .section--hero .hero .callouts a.cta3 .icon {
     left: auto !important;
     margin: 0 !important;
   }
-  body.index .section--hero .wrap--refs {
+}
+body.index .section--refs {
+  background-color: #333E48;
+}
+@media only screen and (min-width: 1025px), only screen and (min-width: 641px) and (max-width: 1024px) {
+  body.index .section--refs .wrap--refs {
+    margin-top: 0;
+    background-color: #333E48;
+  }
+  body.index .section--refs .wrap--refs ol.refs {
+    border-top: none;
+    text-align: center;
+    width: 570px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  body.index .section--refs .refs {
+    padding-bottom: 0px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body.index .section--refs .wrap--refs {
     margin-top: 0;
   }
-  body.index .section--hero .wrap--refs ol.refs {
+  body.index .section--refs .wrap--refs ol.refs {
     border-top: none;
     text-align: left;
     width: 100%;
     margin: 0 auto;
   }
-  body.index .section--hero .wrap--refs ol.refs li {
+  body.index .section--refs .wrap--refs ol.refs li {
     text-align: left;
   }
 }
@@ -2606,6 +2622,12 @@ body.dsm5-criteria h1.heading--1 {
 @media only screen and (min-width: 1025px) {
   body.dsm5-criteria h1.heading--1 {
     width: 93.28244%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  body.dsm5-criteria h1.heading--1 {
+    width: 502px;
     margin: 0 auto;
   }
 }
@@ -2657,8 +2679,19 @@ body.dsm5-criteria .section--individuals {
     margin-bottom: 40px;
   }
 }
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  body.dsm5-criteria .section--individuals .wrap--refs {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 body.dsm5-criteria .section--individuals ol.refs {
   padding-bottom: 0px;
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  body.dsm5-criteria .section--individuals ol.refs {
+    margin-left: auto;
+  }
 }
 @media only screen and (max-width: 640px) {
   body.dsm5-criteria .section--individuals ol.refs {
@@ -2736,7 +2769,7 @@ body.recognizing-bed .section--bulimia .heading--2 {
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   body.recognizing-bed .section--bulimia .heading--2 {
     margin: 0 auto 0px auto;
-    width: 85.15625%;
+    width: 100%;
   }
 }
 body.recognizing-bed .section--overeating {
@@ -2778,7 +2811,7 @@ body.recognizing-bed .section--obesity .heading--2 {
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   body.recognizing-bed .section--obesity .heading--2 {
-    width: 85.15625%;
+    width: 100%;
   }
 }
 body.recognizing-bed .section--obesity .heading--3 {
@@ -3054,6 +3087,12 @@ body.recognizing-bed .section--triggers {
     text-align: left;
   }
 }
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  body.recognizing-bed .section--triggers .wrap--content {
+    width: 87.23958%;
+    min-width: 570px;
+  }
+}
 body.recognizing-bed .section--compared {
   background: #252F39;
 }
@@ -3211,9 +3250,6 @@ body.recognizing-bed .section--coexisting .statistic-box .box2 {
   }
   body.recognizing-bed .section--coexisting h2, body.recognizing-bed .section--coexisting h3 {
     padding-bottom: 20px;
-  }
-  body.recognizing-bed .section--coexisting h2.heading--2 {
-    width: 93.75%;
   }
   body.recognizing-bed .section--coexisting .heading--3.center {
     font-size: 18px;
@@ -3903,13 +3939,16 @@ body.potential-causes .section--factors {
   body.potential-causes .section--factors .row.people {
     padding-right: 180px;
   }
+  body.potential-causes .section--factors .btn.btn--yellow {
+    font-size: 16px;
+  }
   body.potential-causes .footnote {
     width: 53.25521%;
     margin: 13px auto 38px auto;
     text-align: center;
   }
   body.potential-causes .center {
-    width: 44.53125%;
+    width: 52.21374%;
     margin: 0 auto;
   }
 }
@@ -3961,6 +4000,8 @@ body.potential-causes .section--factors {
     color: #ADB2B6;
     line-height: 19px !important;
     margin-bottom: 53px;
+    width: 80%;
+    margin-left: 10%;
   }
   body.potential-causes .mobileHeading--6 {
     margin-top: 25px;
@@ -4267,8 +4308,7 @@ body.patient-demographics .section--survey .stat .percent {
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   body.patient-demographics .section--survey .stat .percent {
-    font-size: 36px;
-    margin-left: -20px;
+    font-size: 72px;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -4506,11 +4546,13 @@ body.patient-demographics .section--ratio .heading--1 {
   }
 }
 body.patient-demographics .section--ratio h2 {
-  padding: 0 0 45px 198px;
+  padding: 0 0 45px 60px;
+  width: 69.53125%;
+  margin: 0 auto;
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   body.patient-demographics .section--ratio h2 {
-    padding: 0 0 45px 80px;
+    padding-left: 0px;
   }
 }
 body.patient-demographics .section--ratio h2 .estimated {
@@ -4540,6 +4582,7 @@ body.patient-demographics .section--ratio h2 .vs {
   }
   body.patient-demographics .section--ratio h2 .versus {
     text-align: left;
+    padding-left: 116px;
   }
   body.patient-demographics .section--ratio h2 .percent {
     font-size: 32px;
@@ -4550,7 +4593,7 @@ body.patient-demographics .section--ratio h2 .vs {
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   body.patient-demographics .section--ratio h2 {
-    font-size: 24px;
+    font-size: 22px;
   }
   body.patient-demographics .section--ratio h2 .ratio {
     font-size: 72px;
@@ -4558,7 +4601,7 @@ body.patient-demographics .section--ratio h2 .vs {
   }
   body.patient-demographics .section--ratio h2 .versus {
     text-align: left;
-    margin-left: 17%;
+    padding-left: 116px;
   }
   body.patient-demographics .section--ratio h2 .percent {
     font-size: 26px;
@@ -6024,42 +6067,67 @@ body.profiles .section--carousel .carousel .controls .prev:hover {
   body.profiles .section--carousel .carousel {
     width: 100%;
     margin-bottom: 57px;
+    padding-left: 0px;
   }
-  body.profiles .section--carousel .carousel .slides .kimberly .hero {
-    margin: 167px 0 0 0;
+  body.profiles .section--carousel .carousel .slides {
+    height: 558px;
   }
-  body.profiles .section--carousel .carousel .slides .julie .hero {
-    width: 94.375%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+  body.profiles .section--carousel .carousel .slides .kimberly .hero img {
+    width: 452px;
+    height: auto;
+    margin-left: -38%;
+    margin-top: 23%;
+  }
+  body.profiles .section--carousel .carousel .slides .nikki .hero img {
+    height: 365px;
+    width: auto;
+    margin-top: 48%;
+  }
+  body.profiles .section--carousel .carousel .slides .julie .hero img {
+    height: 345px;
+    width: auto;
+    margin-top: 53%;
+  }
+  body.profiles .section--carousel .carousel .slides .julie .profile {
+    top: 12%;
+  }
+  body.profiles .section--carousel .carousel .slides .julie .disclaimer {
+    margin-top: 0;
   }
   body.profiles .section--carousel .carousel .slides .julie blockquote {
-    width: 90.9375%;
-    left: 4.375%;
+    line-height: 34px;
   }
-  body.profiles .section--carousel .carousel .slides .diego blockquote {
-    width: 90.9375%;
-    left: 4.375%;
-  }
-  body.profiles .section--carousel .carousel .slides .diego .hero {
-    margin: 117px auto 0;
+  body.profiles .section--carousel .carousel .slides .diego .hero img {
+    width: 502px;
+    height: auto;
+    margin-left: 14%;
+    margin-top: 18%;
   }
   body.profiles .section--carousel .carousel .slides blockquote {
     position: absolute;
-    top: 50px;
-    left: 0px;
-    width: 73.125%;
-    left: 13.4375%;
+    top: 10%;
+    left: 5%;
+    width: 39.45313%;
+    font-size: 22px;
+    color: #858B91;
+    line-height: 26px;
   }
   body.profiles .section--carousel .carousel .slides .disclaimer {
     width: 100%;
-    padding-bottom: 12px;
+    font-size: 14px;
+    color: #858B91;
+    line-height: 15px;
   }
   body.profiles .section--carousel .carousel .slides .profile {
-    position: relative;
-    margin-left: -35%;
-    margin-top: -80%;
+    left: 48.4375%;
+    top: 12%;
+    width: 286px;
+    height: 90px;
+    font-size: 16px;
+  }
+  body.profiles .section--carousel .carousel .slides .profile .name {
+    font-size: 26px;
+    line-height: 31px;
   }
   body.profiles .section--carousel .carousel .shadow {
     display: none;
@@ -6124,7 +6192,7 @@ body.profiles .section--carousel .carousel .controls .prev:hover {
     height: 65px;
   }
   body.profiles .section--carousel .pagination {
-    margin-top: 26px;
+    margin-top: 0px;
   }
 }
 @media only screen and (max-width: 640px) {

@@ -7,12 +7,12 @@
     <meta name="description" content="Find info on binge eating disorder in adults, including diagnostic criteria, distinction from other eating disorders, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="./css/styles.css?1439494800000"/>
+    <link rel="stylesheet" href="./css/styles.css?1439824500000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1439494800000"></script>
-    <script src="./js/redirect.js?1439494800000"></script>
+    <script src="./js/head.js?1439824500000"></script>
+    <script src="./js/redirect.js?1439824500000"></script>
 <script>
     pageLoading();
 </script>
@@ -97,6 +97,8 @@
                 <div class="icon is--hc"></div></a></div>
           </div>
         </div>
+      </section>
+      <section class="section--refs">
         <div class="wrap--refs">
           <ol class="refs number">
             <li>American Psychiatric Association. Binge eating disorder. In: <em>Diagnostic and Statistical Manual of Mental Disorders.</em> 5th ed. Arlington, VA: American Psychiatric Association;2013:350-353.</li>
@@ -142,9 +144,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1439494800000"></script>
-    <script src="./js/templates.js?1439494800000"></script>
-    <script src="./js/app.js?1439494800000"></script>
+    <script src="./js/vendor.js?1439824500000"></script>
+    <script src="./js/templates.js?1439824500000"></script>
+    <script src="./js/app.js?1439824500000"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");
