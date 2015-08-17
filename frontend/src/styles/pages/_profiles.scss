@@ -490,7 +490,7 @@ body.profiles {
 
             .callouts {
                 @include gs("light");
-                margin: 0 auto 46px auto;
+                margin: 0 auto 46px -3%;
                 font-size: 16px;
                 color: #858B91;
                 line-height: 19px;
@@ -505,7 +505,6 @@ body.profiles {
 
                 .callout {
                     width: 325px;
-
                     p {
                         opacity: 0.6;
                         margin-bottom: 21px;
@@ -522,7 +521,7 @@ body.profiles {
                         color: #F2F2F2;
                         line-height: 18px;
                         padding: 15px 28px;
-                        height: 65px;
+                        height: 70px;
                     }
                 }
 
@@ -530,6 +529,12 @@ body.profiles {
 
                 }
                 .two {
+                    p{
+                        width: 345px;
+                    }
+                    .btn{
+                        margin-left: 4%;
+                    }
 
                 }
             }
