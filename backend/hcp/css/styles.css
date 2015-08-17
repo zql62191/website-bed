@@ -1,4 +1,4 @@
-/* Last Updated: 2015-08-17 at 11:16:07 AM */
+/* Last Updated: 2015-08-17 at 04:03:54 PM */
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -5673,6 +5673,21 @@ body.patient-profiles .section--patients {
     width: 70.70313%;
   }
 }
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+  body.patient-profiles .section--patients .persons {
+    margin: 0 -6.25% 0 0 !important;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  body.patient-profiles .section--patients .persons {
+    margin: 0 -6.25% 0 0 !important;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  body.patient-profiles .section--patients .persons {
+    margin: 0 -6.25% 0 6.25% !important;
+  }
+}
 @media only screen and (max-width: 640px) {
   body.patient-profiles .section--patients .heading--1 {
     margin-bottom: 26px;
@@ -6189,7 +6204,13 @@ body.profiles .section--carousel .carousel .controls .prev:hover {
     color: #F2F2F2;
     line-height: 18px;
     padding: 15px 28px;
-    height: 65px;
+    height: 70px;
+  }
+  body.profiles .section--carousel .callouts .two p {
+    width: 345px;
+  }
+  body.profiles .section--carousel .callouts .two .btn {
+    margin-left: 4%;
   }
   body.profiles .section--carousel .pagination {
     margin-top: 0px;
@@ -6391,6 +6412,7 @@ body.support-and-resources .section--video-boxes .tabs {
 }
 body.support-and-resources .section--video-boxes .tabs .tab {
   display: inline-block;
+  vertical-align: middle;
   width: 33%;
   height: 60px;
   background-color: #52758B;
@@ -6585,6 +6607,9 @@ body.support-and-resources .section--information .link-box-grid .link-box-row .l
   height: 70px;
   margin-bottom: 10px;
   display: inline-block;
+}
+body.support-and-resources .section--information .link-box-grid .link-box-row .link-box br {
+  display: inline;
 }
 @media only screen and (max-width: 640px) {
   body.support-and-resources .section--shire-resources .heading--1 {

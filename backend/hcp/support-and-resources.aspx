@@ -7,12 +7,12 @@
     <meta name="description" content="Find info on binge eating disorder in adults, including diagnostic criteria, distinction from other eating disorders, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="./css/styles.css?1439824500000"/>
+    <link rel="stylesheet" href="./css/styles.css?1439841900000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1439824500000"></script>
-    <script src="./js/redirect.js?1439824500000"></script>
+    <script src="./js/head.js?1439841900000"></script>
+    <script src="./js/redirect.js?1439841900000"></script>
 <script>
     pageLoading();
 </script>
@@ -120,12 +120,12 @@
               
             </h2>
             <div class="split-box sb-1">
-              <h2 class="heading--2">A validated screener that can help in evaluating adult patients you suspect may have <abbr title="Binge Eating Disorder">B.E.D.</abbr></h2><a href="#needurl" class="btn btn--yellow">
+              <h2 class="heading--2">A validated screener that can help in evaluating adult patients you suspect may have <abbr title="Binge Eating Disorder">B.E.D.</abbr></h2><a href="media/BingeEatingDisorder_Screener.pdf" target="_blank" class="btn btn--yellow">
                 DOWNLOAD THE ADULT <abbr title="Binge Eating Disorder">B.E.D.</abbr> PATIENT SCREENER
                 </a>
             </div>
             <div class="split-box sb-2">
-              <h2 class="heading--2">A discussion guide to help you begin a dialogue about <abbr title="Binge Eating Disorder">B.E.D.</abbr> with your adult patients</h2><a href="#needurl" class="btn btn--yellow">
+              <h2 class="heading--2">A discussion guide to help you begin a dialogue about <abbr title="Binge Eating Disorder">B.E.D.</abbr> with your adult patients</h2><a href="media/BingeEatingDisorderDiscussionGuide.pdf" target="_blank" class="btn btn--yellow">
                 DOWNLOAD THE DISCUSSION GUIDE FOR ADULT PATIENTS WITH <abbr title="Binge Eating Disorder">B.E.D.</abbr>
                 </a>
             </div>
@@ -199,9 +199,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1439824500000"></script>
-    <script src="./js/templates.js?1439824500000"></script>
-    <script src="./js/app.js?1439824500000"></script>
+    <script src="./js/vendor.js?1439841900000"></script>
+    <script src="./js/templates.js?1439841900000"></script>
+    <script src="./js/app.js?1439841900000"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

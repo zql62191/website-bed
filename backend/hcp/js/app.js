@@ -2332,7 +2332,7 @@ Array.prototype.forEach = function forEach(callback) {
                                         
                                         if (data.SvcStatus == true) {
 
-                                            window.location.href="/hcp/thank-you-request.aspx";
+                                            window.location.href="/hcp/thank-you.aspx";
                                             
                                         } else {
                                         }
@@ -2517,6 +2517,7 @@ Array.prototype.forEach = function forEach(callback) {
             //local variables & functions!
             var activehost = "localhost:3000";
 
+            window.MY_SCOPE = $scope;
 
             $scope.tabbedVideos = [{
                 tabclass : "what-is-bed",
@@ -2738,7 +2739,7 @@ Array.prototype.forEach = function forEach(callback) {
 
             // MediaElementJS success handler
             var onSuccess = function(me, domObject) {
-
+                console.log("in success!");
                 me.pause();
                 instance = me;
 
@@ -2814,10 +2815,15 @@ Array.prototype.forEach = function forEach(callback) {
                 p0 = p25 = p50 = p75 = p90 = p100 = false;  // Reset percentage milestones
             };
 
-
-            $(document).ready(function(){ 
-            //for some odd loading ordering reason, this was throwing a 'nodeName' undefined TypeError, JM
+            //props to Stefano Mtangoo & Biswanath at StackOverflow // http://stackoverflow.com/questions/29230306/mediaelement-js-with-angularjs
+            //called from an ng-init
+            // $scope.loadMediaElement =  function(){
+                $(document).ready(function(){ 
+                //for some odd loading ordering reason, this was throwing a 'nodeName' undefined TypeError, JM
                 // Create MEJS object for the video player element 😻
+
+                console.log("NOW IN THE LOAD FN, I see " + $("#videoPlayer").length + " video players");
+
                 $('#videoPlayer').mediaelementplayer({
                     pauseOtherPlayers: false,           // allow multiple videos
                     iPadUseNativeControls: true,        // force iPad's native controls
@@ -2827,7 +2833,16 @@ Array.prototype.forEach = function forEach(callback) {
                     error: onError
                 });
 
-            });
+                // firefox, please...
+                instance.setSrc(document.location.protocol + $scope.defaultVideoPath);
+                instance.load();
+
+                console.log("~video initialized!!!");
+
+                // $scope.updateVideo($scope.currentVideo);
+
+                });
+            // }
             
             // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -4449,7 +4464,8 @@ Array.prototype.forEach = function forEach(callback) {
 
             var whitelist = [
                 'shire.com',
-                parseUri($location.absUrl()).host
+                parseUri($location.absUrl()).host,
+                $location.$$host
             ];
             var foo = whitelist.join('|');
             var whitelistRegex = new RegExp('(?:' + foo.substring(0, foo.length - 1) + ')$');
