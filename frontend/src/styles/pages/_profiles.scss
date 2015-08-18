@@ -504,14 +504,15 @@ body.profiles {
                 }
 
                 .callout {
-                    width: 325px;
+                    width: percentage(325/717);
                     p {
                         opacity: 0.6;
                         margin-bottom: 21px;
                         font-size: 18px;
                         line-height: 22px;
                         color: #858B91;
-                        width: 330px;
+                        // width: 330px;
+                        min-height: 70px;
                     }
 
                     .btn {
@@ -530,10 +531,10 @@ body.profiles {
                 }
                 .two {
                     p{
-                        width: 345px;
+                        // width: 345px;
                     }
                     .btn{
-                        margin-left: 4%;
+                        // margin-left: 4%;
                     }
 
                 }
