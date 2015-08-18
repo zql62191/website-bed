@@ -8,9 +8,9 @@ body.support-and-resources{
 
     .section--video-player{
 
-        @include mq('lg') {
+        // @include mq('lg') {
             background-color: #1B2025;
-        }
+        // }
 
         .mejs-container, .mejs-container * {
             max-width: 100%;
@@ -152,9 +152,6 @@ body.support-and-resources{
 
             .boxes-row{
 
-                // position: relative;
-                // padding-top: 20px;
-
                 .box{
                     width: 292px;
                     height: 112px;
@@ -243,6 +240,7 @@ body.support-and-resources{
                         height: auto;
                         padding-bottom: 15px;
                         margin-top: 4px;
+                        margin-left: auto;
 
                         .video-length {
                             left: auto;
@@ -367,7 +365,8 @@ body.support-and-resources{
         .section--video-player{
 
             .wrap--content{
-
+                // width: 100%;
+                // height: 100%;
                 padding:0;
 
             }
@@ -377,6 +376,11 @@ body.support-and-resources{
                 width: 960px;
                 height: 540px;
                 padding: 0;
+            }
+
+            .mejs-container{
+                // max-width: 960px;
+                // max-height: 540px;
             }
             
         }

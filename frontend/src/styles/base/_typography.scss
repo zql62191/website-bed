@@ -2,7 +2,7 @@
 @mixin gs($type: "", $specify: false) {
 
     @if $specify == true or $type == "" {
-        font-family: 'Gill Sans';/* font name should be 'Gill Sans', not 'Gill Sans W01'*/
+        font-family: 'Gill Sans W01';/* font name should be 'Gill Sans', not 'Gill Sans W01'*/
     }
 
     @if $type == "light" {
