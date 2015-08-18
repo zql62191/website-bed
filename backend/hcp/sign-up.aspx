@@ -7,12 +7,12 @@
     <meta name="description" content="Find info on binge eating disorder in adults, including diagnostic criteria, distinction from other eating disorders, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="./css/styles.css?1439841900000"/>
+    <link rel="stylesheet" href="./css/styles.css?1439922600000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1439841900000"></script>
-    <script src="./js/redirect.js?1439841900000"></script>
+    <script src="./js/head.js?1439922600000"></script>
+    <script src="./js/redirect.js?1439922600000"></script>
 <script>
     pageLoading();
 </script>
@@ -84,11 +84,13 @@
             <p ng-if="submitted &amp;&amp; (optInForm.confirmEmail.$error.email || optInForm.confirmEmail.$error.required)" class="help-block">Please confirm the email address</p>
             <p ng-if="submitted &amp;&amp; notMatch" class="help-block">The confirm email does not match</p>
             <h2 class="heading--2">Opt In for Communications</h2>
-            <label class="info">
-              <input type="checkBox" name="checkBox" ng-model="checkBox" value="false" required>
-              <p class="info checkbox-cont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By checking this box and clicking SUBMIT, you certify that you are a US health care professional and you are opting to receive information about binge eating disorder plus site updates, educational information, patient support resources, and other information from Shire. You will be able to opt out of these communications at any time.</p>
-              <p class="info">Shire respects your personal information. All information you have provided will be kept confidential and will not be used or distributed to anyone for any purpose other than what is explained in our Privacy Policy Statement. We encourage you to read our Privacy Policy Statement by clicking on this link: <a href="/hcp/privacy-policy.aspx" class="roman">Review Shire Privacy</a><a href="/hcp/privacy-policy.aspx" class="roman">Policy Statement.&nbsp;</a>This consent will be in effect until such time as you opt out of the program.</p>
-            </label>
+            <div class="info">
+              <input type="checkBox" id="optInCheck" name="checkBox" ng-model="checkBox" value="false" required>
+              <label for="optInCheck" ng-click class="info">
+                <p class="info checkbox-cont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By checking this box and clicking SUBMIT, you certify that you are a US health care professional and you are opting to receive information about binge eating disorder plus site updates, educational information, patient support resources, and other information from Shire. You will be able to opt out of these communications at any time.</p>
+                <p class="info">Shire respects your personal information. All information you have provided will be kept confidential and will not be used or distributed to anyone for any purpose other than what is explained in our Privacy Policy Statement. We encourage you to read our Privacy Policy Statement by clicking on this link: <a href="/hcp/privacy-policy.aspx" class="roman">Review Shire Privacy</a><a href="/hcp/privacy-policy.aspx" class="roman">Policy Statement.&nbsp;</a>This consent will be in effect until such time as you opt out of the program.</p>
+              </label>
+            </div>
             <p ng-if="submitted &amp;&amp; (optInForm.$error.required || notMatch)" class="errormessage">Please address the errors above</p>
             <button type="button" ng-click="submitForm(); optForm()" class="btn btn--yellow">SUBMIT</button>
           </form>
@@ -136,9 +138,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1439841900000"></script>
-    <script src="./js/templates.js?1439841900000"></script>
-    <script src="./js/app.js?1439841900000"></script>
+    <script src="./js/vendor.js?1439922600000"></script>
+    <script src="./js/templates.js?1439922600000"></script>
+    <script src="./js/app.js?1439922600000"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

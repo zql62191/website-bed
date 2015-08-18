@@ -3,16 +3,16 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8">
-    <title>Unsubscribe</title>
+    <title>Thank You!</title>
     <meta name="description" content="Find info on binge eating disorder in adults, including diagnostic criteria, distinction from other eating disorders, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="./css/styles.css?1439841900000"/>
+    <link rel="stylesheet" href="./css/styles.css?1439922600000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1439841900000"></script>
-    <script src="./js/redirect.js?1439841900000"></script>
+    <script src="./js/head.js?1439922600000"></script>
+    <script src="./js/redirect.js?1439922600000"></script>
 <script>
     pageLoading();
 </script>
@@ -72,8 +72,7 @@
       <section class="section--ty">
         <div class="wrap--content">
           <h1 class="heading--1">Thank you for signing up.</h1>
-          <h2 class="heading--2">Your download of the <span class="roman">DSM-5<sup>&reg; </sup></span>diagnostic criteria for B.E.D. is now available. You can download it immediately using the button below or later from the unique link included in your welcome e-mail.</h2>
-          <button type="button" class="btn btn--yellow">DOWNLOAD NOW</button>
+          <h2 class="heading--2">Your download of the <span class="roman">DSM-5<sup>&reg; </sup></span>diagnostic criteria for B.E.D. is now available. You can download it immediately using the button below or later from the unique link included in your welcome e-mail.</h2><a href="media/DSM-5_BED_Brochure.pdf" target="_blank" class="btn btn--yellow">DOWNLOAD NOW</a>
         </div>
       </section>
       <footer class="footer--page">
@@ -118,9 +117,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1439841900000"></script>
-    <script src="./js/templates.js?1439841900000"></script>
-    <script src="./js/app.js?1439841900000"></script>
+    <script src="./js/vendor.js?1439922600000"></script>
+    <script src="./js/templates.js?1439922600000"></script>
+    <script src="./js/app.js?1439922600000"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

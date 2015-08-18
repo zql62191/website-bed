@@ -1,4 +1,4 @@
-/* Last Updated: 2015-08-17 at 04:03:54 PM */
+/* Last Updated: 2015-08-18 at 02:29:00 PM */
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -96,6 +96,7 @@ html {
   height: 100%;
   font-size: 100%;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 @media only screen and (min-width: 1025px) {
   html {
@@ -504,6 +505,7 @@ section > .wrap--content:last-child > :last-child {
 
 body {
   font-family: 'Gill Sans W01';
+  /* font name should be 'Gill Sans', not 'Gill Sans W01'*/
   font-weight: 100;
   font-style: normal;
   color: #E8E9E9;
@@ -721,6 +723,7 @@ blockquote p {
 
 .roman {
   font-family: 'Gill Sans W01';
+  /* font name should be 'Gill Sans', not 'Gill Sans W01'*/
   font-weight: 200;
   font-style: normal;
 }
@@ -2685,6 +2688,13 @@ body.dsm5-criteria .section--individuals {
     padding-right: 0;
   }
 }
+@media only screen and (max-width: 640px) {
+  body.dsm5-criteria .section--individuals .wrap--refs {
+    padding-left: 0;
+    padding-right: 0;
+    min-width: 0;
+  }
+}
 body.dsm5-criteria .section--individuals ol.refs {
   padding-bottom: 0px;
 }
@@ -2694,17 +2704,11 @@ body.dsm5-criteria .section--individuals ol.refs {
   }
 }
 @media only screen and (max-width: 640px) {
-  body.dsm5-criteria .section--individuals ol.refs {
-    width: 97%;
-  }
-}
-@media only screen and (max-width: 640px) {
   body.dsm5-criteria .section--individuals ol.refs li {
     font-size: 14px !important;
     color: #858B91 !important;
     line-height: 17px;
     margin: 0 auto !important;
-    width: 93.75%;
   }
 }
 body.dsm5-criteria ul.boxed li {
@@ -5068,6 +5072,7 @@ body.potential-effects .section--living .heading--2 {
 }
 body.potential-effects .section--living blockquote {
   font-family: 'Gill Sans W01';
+  /* font name should be 'Gill Sans', not 'Gill Sans W01'*/
   font-weight: 300;
   font-style: normal;
   color: #C2CBD0;
@@ -5942,6 +5947,7 @@ body.profiles .section--carousel .pagination {
 }
 body.profiles .section--carousel .pagination li {
   font-family: 'Gill Sans W01';
+  /* font name should be 'Gill Sans', not 'Gill Sans W01'*/
   font-weight: 300;
   font-style: normal;
   font-size: 14px;
@@ -6070,6 +6076,7 @@ body.profiles .section--carousel .carousel .controls .prev:hover {
     width: 300px;
     font-size: 14px;
     font-family: 'Gill Sans W01';
+    /* font name should be 'Gill Sans', not 'Gill Sans W01'*/
     font-weight: 300;
     font-style: normal;
     color: #F2F2F2;
@@ -6185,7 +6192,7 @@ body.profiles .section--carousel .carousel .controls .prev:hover {
     padding-bottom: 20px;
   }
   body.profiles .section--carousel .callouts .callout {
-    width: 325px;
+    width: 45.32775%;
   }
   body.profiles .section--carousel .callouts .callout p {
     opacity: 0.6;
@@ -6193,24 +6200,19 @@ body.profiles .section--carousel .carousel .controls .prev:hover {
     font-size: 18px;
     line-height: 22px;
     color: #858B91;
-    width: 330px;
+    min-height: 70px;
   }
   body.profiles .section--carousel .callouts .callout .btn {
     width: 300px;
     font-size: 14px;
     font-family: 'Gill Sans W01';
+    /* font name should be 'Gill Sans', not 'Gill Sans W01'*/
     font-weight: 300;
     font-style: normal;
     color: #F2F2F2;
     line-height: 18px;
     padding: 15px 28px;
     height: 70px;
-  }
-  body.profiles .section--carousel .callouts .two p {
-    width: 345px;
-  }
-  body.profiles .section--carousel .callouts .two .btn {
-    margin-left: 4%;
   }
   body.profiles .section--carousel .pagination {
     margin-top: 0px;
@@ -6382,10 +6384,8 @@ body.support-and-resources .section--video-player-title {
   background-image: -webkit-linear-gradient(270deg, #1e2730 0%, #212b34 100%);
   background-image: linear-gradient(-180deg, #1e2730 0%, #212b34 100%);
 }
-@media only screen and (min-width: 1025px) {
-  body.support-and-resources .section--video-player {
-    background-color: #1B2025;
-  }
+body.support-and-resources .section--video-player {
+  background-color: #1B2025;
 }
 body.support-and-resources .section--video-player .mejs-container, body.support-and-resources .section--video-player .mejs-container * {
   max-width: 100%;
@@ -6576,6 +6576,7 @@ body.support-and-resources .section--video-boxes .boxes .boxes-row .box .viewed 
     height: auto;
     padding-bottom: 15px;
     margin-top: 4px;
+    margin-left: auto;
   }
   body.support-and-resources .section--video-boxes .boxes .boxes-row .box .video-length {
     left: auto;
@@ -6846,11 +6847,15 @@ body.sign-up .section--page form .errormessage {
 body.sign-up .section--page form button {
   border-style: none;
   font-family: 'Gill Sans W01';
+  /* font name should be 'Gill Sans', not 'Gill Sans W01'*/
   font-weight: 300;
   font-style: normal;
   font-size: 14px;
   color: #21282F;
   line-height: 17px;
+}
+body.sign-up .section--page form label {
+  pointer-events: none;
 }
 body.sign-up .section--page form p.info {
   margin-bottom: 32px;
@@ -7314,6 +7319,7 @@ body.unsubscribe .accordion {
   body.unsubscribe button {
     border-style: none;
     font-family: 'Gill Sans W01';
+    /* font name should be 'Gill Sans', not 'Gill Sans W01'*/
     font-weight: 300;
     font-style: normal;
     font-size: 14px;
@@ -7427,6 +7433,7 @@ body.unsubscribe .accordion {
   body.unsubscribe .section--unsubscribe form button {
     border-style: none;
     font-family: 'Gill Sans W01';
+    /* font name should be 'Gill Sans', not 'Gill Sans W01'*/
     font-weight: 300;
     font-style: normal;
     font-size: 14px;
@@ -7543,6 +7550,7 @@ body.unsubscribe .accordion {
   body.unsubscribe .section--unsubscribe form button {
     border-style: none;
     font-family: 'Gill Sans W01';
+    /* font name should be 'Gill Sans', not 'Gill Sans W01'*/
     font-weight: 300;
     font-style: normal;
     font-size: 14px;
@@ -7553,15 +7561,21 @@ body.unsubscribe .accordion {
   }
 }
 
-body.thank-you .heading--1 {
-  padding-top: 50px;
+body.thank-you section.section--ty {
+  background-color: #252F39;
+}
+body.thank-you section.section--ty .wrap--content {
+  padding-top: 0px;
+}
+body.thank-you section.section--ty .heading--1 {
+  padding-top: 20px;
   font-size: 32px;
   color: #FDBD3E;
   line-height: 38px;
   width: 850px;
   margin: 0 auto;
 }
-body.thank-you .heading--2 {
+body.thank-you section.section--ty .heading--2 {
   font-size: 24px;
   color: #E8E9E9;
   line-height: 29px;
@@ -7569,20 +7583,25 @@ body.thank-you .heading--2 {
   width: 75%;
   margin-left: 11%;
 }
-body.thank-you button {
+body.thank-you section.section--ty .btn.btn--yellow {
   font-size: 16px !important;
-  /* Rectangle 10: */
   background: #FFBE2C;
   border-radius: 4px;
-  font-weight: normal !important;
   color: #21282F;
-  line-height: 19px;
-  margin-left: 35% !important;
+  line-height: 2em;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 40px !important;
-  margin-bottom: 138px;
+  width: 28.125%;
+  min-width: 270px;
+  display: block;
+  padding: 0.5em;
 }
 @media only screen and (min-width: 1025px) {
-  body.thank-you .heading--1 {
+  body.thank-you section.section--ty .wrap--content {
+    padding-top: 0px;
+  }
+  body.thank-you section.section--ty .heading--1 {
     padding-top: 50px;
     font-size: 32px;
     color: #FDBD3E;
@@ -7590,7 +7609,7 @@ body.thank-you button {
     width: 850px;
     margin: 0 auto;
   }
-  body.thank-you button {
+  body.thank-you section.section--ty button {
     font-size: 16px !important;
     /* Rectangle 10: */
     background: #FFBE2C;
@@ -7604,7 +7623,7 @@ body.thank-you button {
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
-  body.thank-you .heading--1 {
+  body.thank-you section.section--ty .heading--1 {
     text-align: center;
     margin: 0 auto;
     width: 100%;
@@ -7612,7 +7631,7 @@ body.thank-you button {
     color: #FDBD3E;
     line-height: 28px;
   }
-  body.thank-you button {
+  body.thank-you section.section--ty button {
     font-size: 16px !important;
     /* Rectangle 10: */
     background: #FFBE2C;
@@ -7625,7 +7644,7 @@ body.thank-you button {
   }
 }
 @media only screen and (max-width: 640px) {
-  body.thank-you .heading--1 {
+  body.thank-you section.section--ty .heading--1 {
     text-align: center;
     margin: 0 auto;
     width: 100%;
@@ -7633,11 +7652,11 @@ body.thank-you button {
     color: #FDBD3E;
     line-height: 28px;
   }
-  body.thank-you .heading--2 {
+  body.thank-you section.section--ty .heading--2 {
     text-align: center;
     margin-top: 18px !important;
   }
-  body.thank-you button {
+  body.thank-you section.section--ty button {
     font-size: 16px !important;
     /* Rectangle 10: */
     background: #FFBE2C;
@@ -7669,9 +7688,13 @@ body.thank-you-request .heading--2 {
   margin-left: 11%;
   text-align: left;
 }
+body.thank-you-request section.section--ty {
+  background-color: #252F39;
+  padding-bottom: 30px;
+}
 @media only screen and (min-width: 1025px) {
   body.thank-you-request .heading--1 {
-    padding-top: 50px;
+    padding-top: 20px;
     font-size: 32px;
     color: #FDBD3E;
     line-height: 38px;

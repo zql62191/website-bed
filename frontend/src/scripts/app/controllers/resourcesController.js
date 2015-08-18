@@ -316,12 +316,53 @@
                     iPhoneUseNativeControls: true,      // force iPhone's native controls
                     AndroidUseNativeControls: true,     // force Android's native controls
                     success: onSuccess,
-                    error: onError
+                    error: onError,
+                    // defaultVideoWidth: 960,
+                    // defaultVideoHeight: 540,
+                    // pluginWidth: "100%",
+                    // pluginHeight: "100%",
+                    enableAutosize: true
                 });
 
                 // firefox needed a source!
                 $("#videoPlayer source").prop('src',document.location.protocol + $scope.defaultVideoPath);
 
+                if(bowser.gecko){
+                    var foo = $("section.section--video-player .wrap--content");
+                    var w = foo.width();
+                    foo.css('height', (540/960)*w + "px" );
+
+                    //i hate doing this... and blame MediaElementJS for all wrongdoing
+                    $(window).resize(function(elem){
+                        var w = foo.width();
+                        foo.css('height', (540/960)*w + "px" );
+                        // if(w >= 1024){
+                        //     foo.css('height', (540/960)*w + "px" );
+                        // }else if(w < 1024 && w > 640){
+                        //     foo.css('height', (377/768)*w + "px" );
+                        // }else if(w < 640){
+                        //     foo.css('height', (158/320)*w + "px" );
+                        // }
+                    });
+                }
+
+                if(bowser.webkit){
+                    var foo = $(".mejs-container,.mejs-overlay-play");
+                    var w = foo.width();
+                    foo.css('height', (540/960)*w + "px" );
+
+                    $(window).resize(function(elem){
+                        var w = foo.width();
+                        foo.css('height', (540/960)*w + "px" );
+                        // if(w >= 1024){
+                        //     foo.css('height', (540/960)*w + "px" );
+                        // }else if(w < 1024 && w > 640){
+                        //     foo.css('height', (377/768)*w + "px" );
+                        // }else if(w < 640){
+                        //     foo.css('height', (158/320)*w + "px" );
+                        // }
+                    });
+                }
             });
             
             // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
