@@ -19,7 +19,13 @@ block content
 
                 .color
 
-                .video
+                video.video(
+                    id='videoPlayer'
+                    controls='controls',
+                    reload='none')
+
+                    source(
+                        type='video/mp4')
 
                 .still
 
