@@ -13,6 +13,7 @@ body.patient-profiles {
                         @include responsive-bg("#{$page}/#{$person}.jpg");
                     }
                 }
+                
             }
         }
 
@@ -141,21 +142,21 @@ body.patient-profiles {
         and (-webkit-min-device-pixel-ratio: 2)
         {
             .persons{
-                margin: 0 -6.25% 0 0 !important;
+                margin: 0 -6.25% 0 1% !important;
             }
         }
 
-        @media only screen
+        @media only screen    /*iPhone 6*/
         and (min-device-width: 375px)
         and (max-device-width: 667px)
         and (-webkit-min-device-pixel-ratio: 2)
         and (orientation: portrait) {
             .persons{
-                margin: 0 -6.25% 0 0 !important;
+                margin: 0 -6.25% 0 2% !important;
             }
         }
 
-        @media only screen
+        @media only screen    /*iPhone 6+*/
         and (min-device-width: 414px)
         and (max-device-width: 736px)
         and (-webkit-min-device-pixel-ratio: 2)
@@ -174,7 +175,7 @@ body.patient-profiles {
 
             .persons {
                 @include clearfix;
-                width: 316px;
+                width: 300px;
                 height: 268px;
                 margin: 0 -6.25% 0 -6.25%;
                 position: relative;
@@ -189,23 +190,27 @@ body.patient-profiles {
                 .kimberly{
                     top: 0px;
                     left: 0px;
+                    width: 155px;
                     // border-bottom: 4px solid #252F39;
                 }
 
                 .nikki{
                     top:0px;
-                    left: 162px;
+                    left: 159px;
+                    width: 155px;
                     // border-left: 4px solid #252F39;
                 }
 
                 .julie{
                     top: 124px;
                     left: 0px;
+                    width: 155px;
                     // border-right: 4px solid #252F39;
                 }
                 .diego{
                     top: 124px;
-                    left: 162px;
+                    left: 159px;
+                    width: 155px;
                     // border-top: 4px solid #252F39;
                 }
             }

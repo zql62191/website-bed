@@ -309,6 +309,10 @@ body.support-and-resources{
                     br{
                         display: inline;
                     }
+                    
+                    @include mq('sm'){
+                        width: 100%;
+                    }
 
                 }
 

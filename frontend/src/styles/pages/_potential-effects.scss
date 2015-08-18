@@ -247,9 +247,9 @@ body.potential-effects {
             @include mq('sm') {
                 background-color: #333E48;
                 background-image: radial-gradient(50% 149%, #333E48 17%, #252F39 100%);
-                width: percentage(320/280); // needs to be full width despite being in .wrap--content
+                width: percentage(320/320); // needs to be full width despite being in .wrap--content
                 margin: 0 -6.25%;
-                padding: 39px 6.25% 0 6.25%;
+                padding: 39px 6.25% 0 10%;
             }
 
         }
@@ -327,9 +327,10 @@ body.potential-effects {
                 }
 
                 @include mq('sm') {
-                    width: percentage(105/280);
-                    text-align: left;
+                    width: percentage(250/280);
+                    text-align: center;
                     float: right;
+                    left: 13%;
                     margin-right: percentage(36/280);
                     padding-top: 9px;
                 }
@@ -377,7 +378,7 @@ body.potential-effects {
 
             @include mq('sm') {
                 
-                margin: 0 percentage(15/280) 33px percentage(49/280);
+                margin: 0 percentage(15/280) 33px 0;
                 // float: left;
                 width: percentage(75/280) !important;
                 height: 57px !important;
