@@ -85,6 +85,10 @@ body.sign-up{
                 line-height: 17px;
             }
 
+            label{
+                pointer-events: none;
+            }
+
             p.info{
                 margin-bottom:32px;
                 color: #858B91;
