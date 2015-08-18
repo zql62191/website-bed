@@ -1,0 +1,11 @@
+
+AddType text/html .aspx
+
+DirectoryIndex index.html index.htm index.php index.aspx
+
+ErrorDocument 404 /hcp/_404.aspx
+
+AddType video/ogg .ogv
+AddType video/mp4 .mp4
+AddType video/webm .webm
+AddType audio/mp3 .mp3

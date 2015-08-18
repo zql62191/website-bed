@@ -121,7 +121,7 @@ module.exports = {
         },
         files: [{
             cwd: 'src/markup/pages',
-            dest: 'dist/hcpUnsubscribe',
+            dest: 'dist/',
             src: ['unsubscribe.jade', 'partials/*.jade'],
             expand: true,
             filter: 'isFile',

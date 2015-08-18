@@ -54,15 +54,15 @@ module.exports = {
             dest: '../backend/hcp/',
             dot: true
         }]
-    }
-    ,unsubIntegrate: {
+    },
+    unsubIntegrate: {
         files: [{
             expand: true,
-            cwd: 'dist/unsubscribe/',
+            cwd: 'dist/',
             src: ['**'],
             dest: '../backend/hcpUnsubscribe/',
             dot: true
-        // },
+        },
         // {
         //     expand: true,
         //     cwd: 'src/markup/partials/',//header & footer
@@ -85,12 +85,12 @@ module.exports = {
         //     dest: '../backend/unsubscribe/',
         //     dot: true
         // },
-        // {
-        //     expand: true,
-        //     cwd: 'src/styles/pages/',
-        //     src: ['_unsubscribe.scss'],
-        //     dest: '../backend/unsubscribe/',
-        //     dot: true
+        {
+            expand: true,
+            cwd: 'dist/css/',
+            src: ['**'],
+            dest: '../backend/hcpUnsubscribe/',
+            dot: true
         }]
     }
 };

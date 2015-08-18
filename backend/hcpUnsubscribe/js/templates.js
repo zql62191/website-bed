@@ -1,0 +1,6 @@
+angular.module('templates', ['views/modal/interstitial.html']);
+
+angular.module("views/modal/interstitial.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("views/modal/interstitial.html",
+    "<div class=\"modal modal--interstitial\"><div class=\"modal__outer\"><div class=\"modal__inner\"><div ng-click=\"close()\" class=\"sprite--close--blue modal__close\"></div><div ng-click=\"repaint($event)\" class=\"modal__scroll\"><h3 class=\"modal--title\">You are about to leave BingeEatingDisorder.com.</h3><p class=\"center\">This link will take you to a website maintained by a third party that is responsible for its content and privacy policy. Shire provides this link as a service to you. Our privacy policy does not apply to the website you are about to visit. We encourage you to read the privacy policy of every website you visit. Select OK to continue or CANCEL to return to BingeEatingDisorder.com.</p><p class=\"button-container\"><a ng-href=\"{{interstitialUrl}}\" target=\"_blank\" ng-click=\"close()\" class=\"authorized-link btn btn--yellow\">OK</a><a href=\"javascript:void(0)\" ng-click=\"close()\" class=\"btn btn--gray\">CANCEL</a></p></div></div></div></div>");
+}]);
