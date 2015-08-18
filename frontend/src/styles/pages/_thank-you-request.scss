@@ -19,11 +19,16 @@ body.thank-you-request{
         text-align: left;
     }
     
+    section.section--ty{
+        background-color: #252F39;
+        padding-bottom: 30px;
+    }
+    
 
     @include mq('lg') {
 
         .heading--1{
-            padding-top: 50px;
+            padding-top: 20px;
             font-size: 32px;
             color: #FDBD3E;
             line-height: 38px;
