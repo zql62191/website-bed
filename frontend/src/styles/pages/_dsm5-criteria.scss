@@ -67,6 +67,14 @@ body.dsm5-criteria {
             }
         }
 
+        @include mq("sm") {
+            .wrap--refs{
+                padding-left:0;
+                padding-right:0;
+                min-width: 0;
+            }
+        }
+
         ol.refs{
             padding-bottom: 0px;
             
@@ -75,7 +83,7 @@ body.dsm5-criteria {
             }
 
             @include mq("sm"){
-                width: 97%;
+                // width: 97%;
             }
             
         }
@@ -87,7 +95,7 @@ body.dsm5-criteria {
                 color: #858B91 !important;
                 line-height: 17px;
                 margin: 0 auto !important;
-                width: percentage(300/320);
+                // width: percentage(300/320);
                 
             }
         }
