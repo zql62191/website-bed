@@ -1,0 +1,13 @@
+Sitemap: https://www.bingeeatingdisorder.com/sitemap.xml
+
+User-agent: *
+
+Disallow: /hcp/bin
+Disallow: /hcp/Common
+Disallow: /hcp/configs
+Disallow: /hcp/db
+Disallow: /hcp/media
+Disallow: /hcp/Service
+Disallow: /hcp/Unsubscribe
+Disallow: /hcp/bed_dsm5_download.aspx
+Disallow: *.pdf 

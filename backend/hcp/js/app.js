@@ -2517,8 +2517,6 @@ Array.prototype.forEach = function forEach(callback) {
             //local variables & functions!
             var activehost = "localhost:3000";
 
-            window.MY_SCOPE = $scope;
-
             $scope.tabbedVideos = [{
                 tabclass : "what-is-bed",
                 tabtitle: "What Is B.E.D.?",
@@ -2739,7 +2737,7 @@ Array.prototype.forEach = function forEach(callback) {
 
             // MediaElementJS success handler
             var onSuccess = function(me, domObject) {
-                console.log("in success!");
+
                 me.pause();
                 instance = me;
 
@@ -2815,14 +2813,10 @@ Array.prototype.forEach = function forEach(callback) {
                 p0 = p25 = p50 = p75 = p90 = p100 = false;  // Reset percentage milestones
             };
 
-            //props to Stefano Mtangoo & Biswanath at StackOverflow // http://stackoverflow.com/questions/29230306/mediaelement-js-with-angularjs
-            //called from an ng-init
-            // $scope.loadMediaElement =  function(){
-                $(document).ready(function(){ 
+
+            $(document).ready(function(){ 
                 //for some odd loading ordering reason, this was throwing a 'nodeName' undefined TypeError, JM
                 // Create MEJS object for the video player element 😻
-
-                console.log("NOW IN THE LOAD FN, I see " + $("#videoPlayer").length + " video players");
 
                 $('#videoPlayer').mediaelementplayer({
                     pauseOtherPlayers: false,           // allow multiple videos
@@ -2830,19 +2824,54 @@ Array.prototype.forEach = function forEach(callback) {
                     iPhoneUseNativeControls: true,      // force iPhone's native controls
                     AndroidUseNativeControls: true,     // force Android's native controls
                     success: onSuccess,
-                    error: onError
+                    error: onError,
+                    // defaultVideoWidth: 960,
+                    // defaultVideoHeight: 540,
+                    // pluginWidth: "100%",
+                    // pluginHeight: "100%",
+                    enableAutosize: true
                 });
 
-                // firefox, please...
-                instance.setSrc(document.location.protocol + $scope.defaultVideoPath);
-                instance.load();
+                // firefox needed a source!
+                $("#videoPlayer source").prop('src',document.location.protocol + $scope.defaultVideoPath);
 
-                console.log("~video initialized!!!");
+                if(bowser.gecko){
+                    var foo = $("section.section--video-player .wrap--content");
+                    var w = foo.width();
+                    foo.css('height', (540/960)*w + "px" );
 
-                // $scope.updateVideo($scope.currentVideo);
+                    //i hate doing this... and blame MediaElementJS for all wrongdoing
+                    $(window).resize(function(elem){
+                        var w = foo.width();
+                        foo.css('height', (540/960)*w + "px" );
+                        // if(w >= 1024){
+                        //     foo.css('height', (540/960)*w + "px" );
+                        // }else if(w < 1024 && w > 640){
+                        //     foo.css('height', (377/768)*w + "px" );
+                        // }else if(w < 640){
+                        //     foo.css('height', (158/320)*w + "px" );
+                        // }
+                    });
+                }
 
-                });
-            // }
+                if(bowser.webkit){
+                    var foo = $(".mejs-container,.mejs-overlay-play");
+                    var w = foo.width();
+                    foo.css('height', (540/960)*w + "px" );
+
+                    $(window).resize(function(elem){
+                        var w = foo.width();
+                        foo.css('height', (540/960)*w + "px" );
+                        // if(w >= 1024){
+                        //     foo.css('height', (540/960)*w + "px" );
+                        // }else if(w < 1024 && w > 640){
+                        //     foo.css('height', (377/768)*w + "px" );
+                        // }else if(w < 640){
+                        //     foo.css('height', (158/320)*w + "px" );
+                        // }
+                    });
+                }
+            });
             
             // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
