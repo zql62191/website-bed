@@ -2824,12 +2824,53 @@ Array.prototype.forEach = function forEach(callback) {
                     iPhoneUseNativeControls: true,      // force iPhone's native controls
                     AndroidUseNativeControls: true,     // force Android's native controls
                     success: onSuccess,
-                    error: onError
+                    error: onError,
+                    // defaultVideoWidth: 960,
+                    // defaultVideoHeight: 540,
+                    // pluginWidth: "100%",
+                    // pluginHeight: "100%",
+                    enableAutosize: true
                 });
 
                 // firefox needed a source!
                 $("#videoPlayer source").prop('src',document.location.protocol + $scope.defaultVideoPath);
 
+                if(bowser.gecko){
+                    var foo = $("section.section--video-player .wrap--content");
+                    var w = foo.width();
+                    foo.css('height', (540/960)*w + "px" );
+
+                    //i hate doing this... and blame MediaElementJS for all wrongdoing
+                    $(window).resize(function(elem){
+                        var w = foo.width();
+                        foo.css('height', (540/960)*w + "px" );
+                        // if(w >= 1024){
+                        //     foo.css('height', (540/960)*w + "px" );
+                        // }else if(w < 1024 && w > 640){
+                        //     foo.css('height', (377/768)*w + "px" );
+                        // }else if(w < 640){
+                        //     foo.css('height', (158/320)*w + "px" );
+                        // }
+                    });
+                }
+
+                if(bowser.webkit){
+                    var foo = $(".mejs-container,.mejs-overlay-play");
+                    var w = foo.width();
+                    foo.css('height', (540/960)*w + "px" );
+
+                    $(window).resize(function(elem){
+                        var w = foo.width();
+                        foo.css('height', (540/960)*w + "px" );
+                        // if(w >= 1024){
+                        //     foo.css('height', (540/960)*w + "px" );
+                        // }else if(w < 1024 && w > 640){
+                        //     foo.css('height', (377/768)*w + "px" );
+                        // }else if(w < 640){
+                        //     foo.css('height', (158/320)*w + "px" );
+                        // }
+                    });
+                }
             });
             
             // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -3334,16 +3375,16 @@ Array.prototype.forEach = function forEach(callback) {
 
                     var people = [{
                         'klass': 'kimberly',
-                        'url': ''
+                        'url': '//d2ly9zedmmzqz4.cloudfront.net/BED-S04644-1.mp4'
                     }, {
                         'klass': 'nikki',
-                        'url': ''
+                        'url': '//d2ly9zedmmzqz4.cloudfront.net/BED-S04644-2.mp4'
                     }, {
                         'klass': 'julie',
-                        'url': ''
+                        'url': '//d2ly9zedmmzqz4.cloudfront.net/BED-S04644-3.mp4'
                     }, {
                         'klass': 'diego',
-                        'url': ''
+                        'url': '//d2ly9zedmmzqz4.cloudfront.net/BED-S04644-4.mp4'
                     }];
 
                     var heroIndex = store.get('heroIndex') || 0;
@@ -3351,7 +3392,48 @@ Array.prototype.forEach = function forEach(callback) {
                     // Setup
                     element.addClass(people[heroIndex].klass);
 
-                    // TODO: Add video functionality
+                    // Add video functionality
+
+                        //Get element's child with class "video" as MediaElement (ME)
+                        var videoElem = angular.element("#videoPlayer"),
+                            player;
+
+                        //init the ME
+                        videoElem.mediaelementplayer({
+                            enablePluginDebug: true,
+                            pauseOtherPlayers: false, // allow multiple videos
+                            startVolume: 0, // there is no audio
+                            features: [],
+                            autoRewind: false,
+                            // defaultVideoWidth: 1400,
+                            defaultVideoHeight: 644,
+                            success: function(mediaElement) {
+
+                                player = mediaElement;
+
+                                // Load video
+                                mediaElement.setSrc(people[heroIndex].url);
+
+                                // flash url : controls=false&file=//view.vzaar.com/2552732/video
+
+                                // Load video?
+                                mediaElement.load();
+
+                                mediaElement.setVolume(0);
+
+                                mediaElement.play();
+
+                                player = mediaElement;
+                            },
+                            error: function() {
+                                console.log('The video did not load properly.');
+                            }
+                        });
+
+                        // videoElem.on('ended', function() {
+                        //     $(this).fadeOut(500);
+                        // });
+
 
                     // Save for next time
                     if (heroIndex + 1 > people.length - 1) {
