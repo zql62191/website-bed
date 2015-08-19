@@ -59,8 +59,8 @@ namespace BEDService
                 if (status.Errors.Count > 0)
                     return status;
 
-                if (Services.ServiceIsAvailable)
-                {
+                //if (Services.ServiceIsAvailable)
+                //{
 
                     EmailAddress emailAddress = new EmailAddress(optInForm.Email.Email);
                     hcp = new HCPIndividual(String.Empty, optInForm.Name.FName, optInForm.Name.LName, String.Empty, emailAddress);
@@ -108,11 +108,11 @@ namespace BEDService
                     auditTrail.SetAuditTrail(optInForm.Email.Email, AuditTrail.OperationType.OptIn_Success, "SetOptInData", regMgr.Status.ToUpper());
                     if (status.Errors.Count > 0)
                         auditTrail.SetAuditTrail(optInForm.Email.Email, AuditTrail.OperationType.OptIn_errors, "SetOptInData", status.Errors[0].ToString());
-                }
-                else
-                {
-                    status.Errors.Add("The PMM services are unavailable");
-                }
+                //}
+                //else
+                //{
+                //    status.Errors.Add("The PMM services are unavailable");
+                //}
 
             }
             catch (Exception e)

@@ -2387,7 +2387,7 @@ Array.prototype.forEach = function forEach(callback) {
 
     
     
-        var BEDSVC = "http://62c435af.ngrok.com/hcp/service/BEDService.svc"
+        var BEDSVC = "service/BEDService.svc"
     
 
 }).call(this);
@@ -3217,7 +3217,7 @@ Array.prototype.forEach = function forEach(callback) {
     //}])
 
 
-    var BEDSVC = "http://6ccdb2.ngrok.com/hcpUnsubscribe/service/BEDUnsubscribe.svc"
+    var BEDSVC = "service/BEDUnsubscribe.svc"
     
 
 }).call(this);
@@ -3395,8 +3395,7 @@ Array.prototype.forEach = function forEach(callback) {
                     // Add video functionality
 
                         //Get element's child with class "video" as MediaElement (ME)
-                        var videoElem = angular.element("#videoPlayer"),
-                            player;
+                        var videoElem = angular.element("#videoPlayer");
 
                         //init the ME
                         videoElem.mediaelementplayer({
@@ -3405,8 +3404,6 @@ Array.prototype.forEach = function forEach(callback) {
                             startVolume: 0, // there is no audio
                             features: [],
                             autoRewind: false,
-                            // defaultVideoWidth: 1400,
-                            defaultVideoHeight: 644,
                             success: function(mediaElement) {
 
                                 player = mediaElement;
@@ -3422,6 +3419,7 @@ Array.prototype.forEach = function forEach(callback) {
                                 mediaElement.setVolume(0);
 
                                 mediaElement.play();
+
 
                                 player = mediaElement;
                             },

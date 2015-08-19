@@ -7,12 +7,12 @@
     <meta name="description" content="Find info on binge eating disorder in adults, including diagnostic criteria, distinction from other eating disorders, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="./css/styles.css?1439922600000"/>
+    <link rel="stylesheet" href="./css/styles.css?1439995800000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1439922600000"></script>
-    <script src="./js/redirect.js?1439922600000"></script>
+    <script src="./js/head.js?1439995800000"></script>
+    <script src="./js/redirect.js?1439995800000"></script>
 <script>
     pageLoading();
 </script>
@@ -215,9 +215,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1439922600000"></script>
-    <script src="./js/templates.js?1439922600000"></script>
-    <script src="./js/app.js?1439922600000"></script>
+    <script src="./js/vendor.js?1439995800000"></script>
+    <script src="./js/templates.js?1439995800000"></script>
+    <script src="./js/app.js?1439995800000"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

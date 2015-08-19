@@ -3375,16 +3375,16 @@ Array.prototype.forEach = function forEach(callback) {
 
                     var people = [{
                         'klass': 'kimberly',
-                        'url': ''
+                        'url': '//d2ly9zedmmzqz4.cloudfront.net/BED-S04644-1.mp4'
                     }, {
                         'klass': 'nikki',
-                        'url': ''
+                        'url': '//d2ly9zedmmzqz4.cloudfront.net/BED-S04644-2.mp4'
                     }, {
                         'klass': 'julie',
-                        'url': ''
+                        'url': '//d2ly9zedmmzqz4.cloudfront.net/BED-S04644-3.mp4'
                     }, {
                         'klass': 'diego',
-                        'url': ''
+                        'url': '//d2ly9zedmmzqz4.cloudfront.net/BED-S04644-4.mp4'
                     }];
 
                     var heroIndex = store.get('heroIndex') || 0;
@@ -3392,7 +3392,46 @@ Array.prototype.forEach = function forEach(callback) {
                     // Setup
                     element.addClass(people[heroIndex].klass);
 
-                    // TODO: Add video functionality
+                    // Add video functionality
+
+                        //Get element's child with class "video" as MediaElement (ME)
+                        var videoElem = angular.element("#videoPlayer");
+
+                        //init the ME
+                        videoElem.mediaelementplayer({
+                            enablePluginDebug: true,
+                            pauseOtherPlayers: false, // allow multiple videos
+                            startVolume: 0, // there is no audio
+                            features: [],
+                            autoRewind: false,
+                            success: function(mediaElement) {
+
+                                player = mediaElement;
+
+                                // Load video
+                                mediaElement.setSrc(people[heroIndex].url);
+
+                                // flash url : controls=false&file=//view.vzaar.com/2552732/video
+
+                                // Load video?
+                                mediaElement.load();
+
+                                mediaElement.setVolume(0);
+
+                                mediaElement.play();
+
+
+                                player = mediaElement;
+                            },
+                            error: function() {
+                                console.log('The video did not load properly.');
+                            }
+                        });
+
+                        // videoElem.on('ended', function() {
+                        //     $(this).fadeOut(500);
+                        // });
+
 
                     // Save for next time
                     if (heroIndex + 1 > people.length - 1) {
