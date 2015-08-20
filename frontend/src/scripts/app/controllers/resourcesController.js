@@ -363,6 +363,26 @@
                         // }
                     });
                 }
+
+                // IE needed a source!
+                if(bowser.msie){
+                    var foo = $("section.section--video-player .wrap--content");
+                    var w = foo.width();
+                    foo.css('height', (540/960)*w + "px" );
+
+                    //i hate doing this... and blame MediaElementJS for all wrongdoing
+                    $(window).resize(function(elem){
+                        var w = foo.width();
+                        foo.css('height', (540/960)*w + "px" );
+                        // if(w >= 1024){
+                        //     foo.css('height', (540/960)*w + "px" );
+                        // }else if(w < 1024 && w > 640){
+                        //     foo.css('height', (377/768)*w + "px" );
+                        // }else if(w < 640){
+                        //     foo.css('height', (158/320)*w + "px" );
+                        // }
+                    });
+                }
             });
             
             // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
