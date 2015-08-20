@@ -99,6 +99,7 @@ body.sign-up{
                 color: white;
                 // font-weight: bold;
                 @include gs("bold");
+                pointer-events: auto;
             }
 
             .heading--2{

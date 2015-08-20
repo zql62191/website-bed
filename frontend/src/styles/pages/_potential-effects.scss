@@ -316,14 +316,14 @@ body.potential-effects {
 
             p {
                 @include mq('md') {
-                    width: 138px; //percentage(175/610)
+                    width: 238px; //percentage(175/610)
                     height: 58px;
-                    text-align: left;
+                    text-align: center;
                     // float: right;
                     margin-right: percentage(16/280);
                     padding-top: 9px;
                     position: absolute;
-                    left: 62%;
+                    left: 30%;
                 }
 
                 @include mq('sm') {
@@ -368,7 +368,7 @@ body.potential-effects {
             }
 
             @include mq('md') {
-                margin: 0 auto;
+                margin: 50px auto auto -25%;
                 // margin: 0 percentage(15/280) 33px percentage(49/280);
                 // float: left;
                 width: 100px !important;
