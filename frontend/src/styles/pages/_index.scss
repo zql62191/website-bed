@@ -11,6 +11,7 @@ body.index {
                     @include mq("lg") {
                         padding-top: 0 !important;
                         height: 644px !important;
+                        z-index: 3;
                     }
                     @media only screen and (min-width: 1401px) {
                         background-size: contain !important;
@@ -145,7 +146,7 @@ body.index {
                         max-width: 1400px;//the bg image width in desktop
                         height: 1400px;
                         overflow: hidden;
-                        z-index: 5;
+                        z-index: 6;
                         background-image: radial-gradient(50% 70%, rgba(37,47,57,0.00) 51%, rgba(37,47,57,0.00) 80%, #252F39 100%);
                         margin-left: auto;
                         margin-right: auto;
@@ -176,6 +177,46 @@ body.index {
                         //     background: blue;
                         // }
                     }
+
+                    .video{
+                        padding-top: 0 !important;
+                        height: 644px !important;
+                        z-index: 2;
+                        position:absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+
+                        &:before,
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                        }
+
+                        .mejs-container{
+                            margin: 0 auto;
+                            width: 1400px !important;
+                            height: 644px !important;
+                        }
+
+                        .mejs-overlay-play, .mejs-overlay-button{
+                            display: none;
+                        }
+
+                        .mejs-container *{
+                            width: 1400px !important;
+                            margin: 0 auto;
+                        }
+
+                    }
+
+                    .still{
+                        z-index: 1; //initial for video/anims
+                    }
+
                 }
 
                 .copy {
@@ -183,6 +224,8 @@ body.index {
                     top: 0;
                     left: 0;
                     width: 100%;
+                    z-index: 4;
+                    display: none; // initial state for video + animations
 
                     .wrap--content {
                         padding-top: 36px;
@@ -193,11 +236,12 @@ body.index {
                 .callouts {
                     @include rgba-background(rgba(#333E48, 0.90));
                     position: absolute;
-                    top: 322px;
+                    top: 400px; // initial state for video + animations 
                     left: 0;
                     width: 100%;
                     text-align: center;
-                    z-index: 6;
+                    z-index: 7;
+                    display: none; // initial state for video + animations
 
                     a {
                         height: 197px;
@@ -234,6 +278,10 @@ body.index {
         @include mq("md", "sm") {
 
             .hero {
+
+                .video{
+                    display: none;
+                }
 
                 .copy {
                     background: #242F38;

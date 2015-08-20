@@ -1,4 +1,4 @@
-/* Last Updated: 2015-08-18 at 02:29:00 PM */
+/* Last Updated: 2015-08-19 at 10:49:41 AM */
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -5115,9 +5115,9 @@ body.potential-effects .section--living .mobile-excerpt-wrapper {
     background-color: #333E48;
     background-image: -webkit-radial-gradient(50% 149%, #333e48 17%, #252f39 100%);
     background-image: radial-gradient(50% 149%, #333e48 17%, #252f39 100%);
-    width: 114.28571%;
+    width: 100%;
     margin: 0 -6.25%;
-    padding: 39px 6.25% 0 6.25%;
+    padding: 39px 6.25% 0 10%;
   }
 }
 @media only screen and (min-width: 1025px) {
@@ -5217,9 +5217,10 @@ body.potential-effects .section--living .sunny {
 }
 @media only screen and (max-width: 640px) {
   body.potential-effects .section--living .listen p {
-    width: 37.5%;
-    text-align: left;
+    width: 89.28571%;
+    text-align: center;
     float: right;
+    left: 13%;
     margin-right: 12.85714%;
     padding-top: 9px;
   }
@@ -5257,7 +5258,7 @@ body.potential-effects .section--living .audio-player .mejs-controls {
 }
 @media only screen and (max-width: 640px) {
   body.potential-effects .section--living .audio-player {
-    margin: 0 5.35714% 33px 17.5%;
+    margin: 0 5.35714% 33px 0;
     width: 26.78571% !important;
     height: 57px !important;
   }
@@ -5680,12 +5681,12 @@ body.patient-profiles .section--patients {
 }
 @media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
   body.patient-profiles .section--patients .persons {
-    margin: 0 -6.25% 0 0 !important;
+    margin: 0 -6.25% 0 1% !important;
   }
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   body.patient-profiles .section--patients .persons {
-    margin: 0 -6.25% 0 0 !important;
+    margin: 0 -6.25% 0 2% !important;
   }
 }
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
@@ -5699,7 +5700,7 @@ body.patient-profiles .section--patients {
     text-align: center;
   }
   body.patient-profiles .section--patients .persons {
-    width: 316px;
+    width: 300px;
     height: 268px;
     margin: 0 -6.25% 0 -6.25%;
     position: relative;
@@ -5720,18 +5721,22 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .persons .kimberly {
     top: 0px;
     left: 0px;
+    width: 155px;
   }
   body.patient-profiles .section--patients .persons .nikki {
     top: 0px;
-    left: 162px;
+    left: 159px;
+    width: 155px;
   }
   body.patient-profiles .section--patients .persons .julie {
     top: 124px;
     left: 0px;
+    width: 155px;
   }
   body.patient-profiles .section--patients .persons .diego {
     top: 124px;
-    left: 162px;
+    left: 159px;
+    width: 155px;
   }
   body.patient-profiles .section--patients .callouts .callout {
     margin-bottom: 30px;
@@ -6611,6 +6616,11 @@ body.support-and-resources .section--information .link-box-grid .link-box-row .l
 }
 body.support-and-resources .section--information .link-box-grid .link-box-row .link-box br {
   display: inline;
+}
+@media only screen and (max-width: 640px) {
+  body.support-and-resources .section--information .link-box-grid .link-box-row .link-box {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 640px) {
   body.support-and-resources .section--shire-resources .heading--1 {

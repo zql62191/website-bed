@@ -59,38 +59,24 @@ module.exports = {
         files: [{
             expand: true,
             cwd: 'dist/',
-            src: ['**'],
+            src: ['**/*', '!**/unsubscribe.aspx'],
             dest: '../backend/hcpUnsubscribe/',
             dot: true
         },
-        // {
-        //     expand: true,
-        //     cwd: 'src/markup/partials/',//header & footer
-        //     src: ['*.jade'],
-        //     dest: '../backend/unsubscribe/',
-        //     dot: true
-        // },
-        // {
-        //     expand: true,
-        //     cwd: 'src/markup/pages/layouts/',//base layout
-        //     src: ['base.jade'],
-        //     dest: '../backend/unsubscribe/',
-        //     dot: true
-        // },
-        // {
-        //     // maybe i should just use ALL the scripts since there are AngularJS dependencies everywhere... JM
-        //     expand: true,
-        //     cwd: 'src/markup/scripts/',
-        //     src: ['**/*'],
-        //     dest: '../backend/unsubscribe/',
-        //     dot: true
-        // },
         {
             expand: true,
-            cwd: 'dist/css/',
-            src: ['**'],
-            dest: '../backend/hcpUnsubscribe/',
+            cwd: 'dist/',
+            src: 'unsubscribe.aspx',
+            dest: '../backend/hcpUnsubscribe/index.aspx',
             dot: true
-        }]
+        }
+        // ,{
+        //     expand: true,
+        //     cwd: 'dist/css/',
+        //     src: ['**'],
+        //     dest: '../backend/hcpUnsubscribe/',
+        //     dot: true
+        // }
+        ]
     }
 };

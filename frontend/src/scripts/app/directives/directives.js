@@ -29,10 +29,12 @@
                     // Setup
                     element.addClass(people[heroIndex].klass);
 
+                    if( angular.element(window).width() > 1024 ){
                     // Add video functionality
 
                         //Get element's child with class "video" as MediaElement (ME)
-                        var videoElem = angular.element("#videoPlayer");
+                        var videoElem = angular.element("#videoPlayer"),
+                            player;
 
                         //init the ME
                         videoElem.mediaelementplayer({
@@ -41,7 +43,33 @@
                             startVolume: 0, // there is no audio
                             features: [],
                             autoRewind: false,
-                            success: function(mediaElement) {
+                            videoWidth: 1400,
+                            videoHeight: 644,
+                            success: function(mediaElement, node, playr) {
+
+                                //Set up events. 
+                                //If a user presses Spacebar or Escape we just pause the video fade it out
+                                var events = ['pause','ended'];
+
+                                for(var i=0;i<events.length;i++){
+                                    mediaElement.addEventListener(events[i], function(e){
+                                        
+                                        element.find(".copy").fadeIn(250, function(){
+                                            var callouts = element.find(".callouts");
+
+                                            callouts.fadeIn({ queue: false, duration: 300});
+                                            callouts.animate({ top: "377px" }, 'slow', 'swing', function(){
+                                                videoElem.fadeOut(500, function(){
+                                                    var vid = element.find(".video");
+                                                    vid.hide();
+                                                    // vid.css("zIndex", 0);
+                                                });
+                                            });    
+
+                                        });
+
+                                    });
+                                }
 
                                 player = mediaElement;
 
@@ -57,18 +85,24 @@
 
                                 mediaElement.play();
 
-
                                 player = mediaElement;
                             },
                             error: function() {
                                 console.log('The video did not load properly.');
-                            }
+                            },
+                            keyActions: [{
+                                keys: [27,32],
+                                action: function(player,media){
+                                    //if a user hits escape or space, pause to fire the fadeout fn
+                                    media.pause();
+                                }
+                            }]
                         });
 
                         // videoElem.on('ended', function() {
                         //     $(this).fadeOut(500);
                         // });
-
+                    }//END VIDEO SETUP
 
                     // Save for next time
                     if (heroIndex + 1 > people.length - 1) {

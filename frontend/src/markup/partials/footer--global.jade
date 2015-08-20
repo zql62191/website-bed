@@ -5,8 +5,12 @@ footer.footer--global
         nav.bottom-bump
             ul
                 li
-                    +a-active(href="/hcp/unsubscribe.aspx")
-                        | Unsubscribe
+                    if dev
+                        +a-active(href="/hcp/unsubscribe.aspx")
+                            | Unsubscribe
+                    else
+                        +a-active(href="/hcpUnsubscribe/index.aspx")
+                            | Unsubscribe
                 li
                     +a-active(href="/hcp/contact-us.aspx")
                         | Contact Us

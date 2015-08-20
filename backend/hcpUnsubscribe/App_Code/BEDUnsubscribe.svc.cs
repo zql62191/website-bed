@@ -62,8 +62,8 @@ namespace BEDService
                     auditTrail.SetAuditTrail(email.Email, AuditTrail.OperationType.Unsubscribtion_error, "SetUnsubscribeDataEmail", status.Errors[0].ToString());
                     return status;
                 }
-                if (Services.ServiceIsAvailable)
-                {
+                //if (Services.ServiceIsAvailable)
+                //{
                     RegistrationManager regMgr = new RegistrationManager();
                     EmailAddress emailAddress = new EmailAddress(email.Email);
 
@@ -101,12 +101,12 @@ namespace BEDService
                     auditTrail.SetAuditTrail(email.Email, AuditTrail.OperationType.Unsubscribtion_success, "SetUnsubscribeDataEmail", regMgr.Status.ToUpper());
                     if (status.Errors.Count > 0)
                         auditTrail.SetAuditTrail(email.Email, AuditTrail.OperationType.Unsubscribtion_error, "SetUnsubscribeDataEmail", status.Errors[0].ToString());
-                }
-                else
-                {
-                    status.Errors.Add("The PMM services are unavailable");
+                //}
+                //else
+                //{
+                //    status.Errors.Add("The PMM services are unavailable");
                     
-                }
+                //}
 
             }
             catch (Exception e)
@@ -139,8 +139,8 @@ namespace BEDService
                     auditTrail.SetAuditTrail(email.Email, AuditTrail.OperationType.Unsubscribtion_error, "SetUnsubscribeDataAddress", status.Errors[0].ToString());
                     return status;
                 }
-                if (Services.ServiceIsAvailable)
-                {
+                //if (Services.ServiceIsAvailable)
+                //{
                     EmailAddress emailAddress = new EmailAddress(email.Email);
                     Address Address = new Address(address.Address1, address.Address2, address.City, address.State, address.Zip, "", "");
 
@@ -185,11 +185,11 @@ namespace BEDService
                     auditTrail.SetAuditTrail(email.Email, AuditTrail.OperationType.Unsubscribtion_success, "SetUnsubscribeDataAddress", regMgr.Status.ToUpper());
                     if (status.Errors.Count > 0)
                         auditTrail.SetAuditTrail(email.Email, AuditTrail.OperationType.Unsubscribtion_error, "SetUnsubscribeDataAddress", status.Errors[0].ToString());
-                }
-                else
-                {
-                    status.Errors.Add("The PMM services are unavailable");
-                }
+                //}
+                //else
+                //{
+                //    status.Errors.Add("The PMM services are unavailable");
+                //}
             }
             catch (Exception e)
             {
@@ -221,8 +221,8 @@ namespace BEDService
                     auditTrail.SetAuditTrail(email.Email, AuditTrail.OperationType.Unsubscribtion_error, "SetUnsubscribeDataBoth", status.Errors[0].ToString());
                     return status;
                 } 
-                if (Services.ServiceIsAvailable)
-                {
+                //if (Services.ServiceIsAvailable)
+                //{
                     RegistrationManager regMgr = new RegistrationManager();
                     EmailAddress emailAddress = new EmailAddress(email.Email);
 
@@ -270,11 +270,11 @@ namespace BEDService
                     auditTrail.SetAuditTrail(email.Email, AuditTrail.OperationType.Unsubscribtion_success, "SetUnsubscribeDataBoth", regMgr.Status.ToUpper());
                     if (status.Errors.Count > 0)
                         auditTrail.SetAuditTrail(email.Email, AuditTrail.OperationType.Unsubscribtion_error, "SetUnsubscribeDataBoth", status.Errors[0].ToString());
-                }
-                else
-                {
-                    status.Errors.Add("The PMM services are unavailable");
-                }
+                //}
+                //else
+                //{
+                //    status.Errors.Add("The PMM services are unavailable");
+                //}
 
                
             }
