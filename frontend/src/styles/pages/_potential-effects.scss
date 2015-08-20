@@ -153,9 +153,17 @@ body.potential-effects {
 
             .sixty-three {
                 @include responsive-bg("#{$page}/63.png");
+                @include mq('lg'){
+                    left:-7%
+                }
             }
             .nineteen {
                 @include responsive-bg("#{$page}/19.png");
+                
+                @include mq('lg') {
+                    left: 7%;
+                }
+                
             }
 
             .num {
@@ -248,8 +256,8 @@ body.potential-effects {
                 background-color: #333E48;
                 background-image: radial-gradient(50% 149%, #333E48 17%, #252F39 100%);
                 width: percentage(320/320); // needs to be full width despite being in .wrap--content
-                margin: 0 -6.25%;
-                padding: 39px 6.25% 0 10%;
+                margin: 0;
+                padding: 39px 6.25% 0 6.25%;
             }
 
         }
@@ -316,21 +324,21 @@ body.potential-effects {
 
             p {
                 @include mq('md') {
-                    width: 238px; //percentage(175/610)
+                    width: percentage(175/610); //percentage(175/610)
                     height: 58px;
-                    text-align: center;
+                    text-align: left;
                     // float: right;
                     margin-right: percentage(16/280);
                     padding-top: 9px;
                     position: absolute;
-                    left: 30%;
+                    left: 50%;
                 }
 
                 @include mq('sm') {
-                    width: percentage(250/280);
-                    text-align: center;
+                    width: percentage(115/280);
+                    text-align: left;
                     float: right;
-                    left: 13%;
+                    left: 3%;
                     margin-right: percentage(36/280);
                     padding-top: 9px;
                 }
@@ -368,7 +376,7 @@ body.potential-effects {
             }
 
             @include mq('md') {
-                margin: 50px auto auto -25%;
+                margin: 30px auto auto 30%;
                 // margin: 0 percentage(15/280) 33px percentage(49/280);
                 // float: left;
                 width: 100px !important;
@@ -410,6 +418,11 @@ body.potential-effects {
                 @include mq("md", "sm") {
                     .mejs-time-rail, .mejs-volume-button, .mejs-horizontal-volume-slider{
                         display: none;
+                    }
+                }
+                div{
+                    @include mq('sm'){
+                        margin-left: 15%;
                     }
                 }
 
