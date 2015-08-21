@@ -122,7 +122,7 @@ module.exports = {
         files: [{
             cwd: 'src/markup/pages',
             dest: 'dist/',
-            src: ['unsubscribe.jade', 'partials/*.jade'],
+            src: ['unsubscribe.jade', 'partials/*.jade', 'thank-you-request.jade'],
             expand: true,
             filter: 'isFile',
             ext: '.aspx'

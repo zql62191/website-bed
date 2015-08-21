@@ -81,6 +81,8 @@
                                 // Load video?
                                 mediaElement.load();
 
+                                // setTimeout
+
                                 mediaElement.setVolume(0);
 
                                 mediaElement.play();

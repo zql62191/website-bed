@@ -18,7 +18,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "hcp", ".", "{5E066019-2C40-
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "56790"
+		VWDPort = "56479"
 		VWDDynamicPort = "true"
 	EndProjectSection
 EndProject
@@ -39,7 +39,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "hcpUnsubscribe", "..\hcpUns
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "50918"
+		VWDPort = "56482"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
