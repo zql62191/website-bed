@@ -7,12 +7,12 @@
     <meta name="description" content="Find info on binge eating disorder in adults, including diagnostic criteria, distinction from other eating disorders, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="./css/styles.css?1439995800000"/>
+    <link rel="stylesheet" href="./css/styles.css?1440174000000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1439995800000"></script>
-    <script src="./js/redirect.js?1439995800000"></script>
+    <script src="./js/head.js?1440174000000"></script>
+    <script src="./js/redirect.js?1440174000000"></script>
 <script>
     pageLoading();
 </script>
@@ -140,13 +140,13 @@
               </div>
             </div>
           </div>
-          <div class="bottom-pocket hide--md hide--sm"></div>
+          <!--.bottom-pocket.hide--md.hide--sm-->
           <div alt="Adult patient with B.E.D." class="sunny hide--lg hide--sm"></div>
         </div>
       </section>
       <section class="section--button">
         <div class="wrap--content">
-          <div class="center"><a href="#needurl" class="btn btn--yellow">GET THE FULL <abbr title="Binge Eating Disorder">B.E.D.</abbr> CRITERIA</a></div>
+          <div class="center"><a href="sign-up.aspx" class="btn btn--yellow">GET THE FULL <abbr title="Binge Eating Disorder">B.E.D.</abbr> CRITERIA</a></div>
         </div>
         <div class="wrap--refs">
           <ol class="refs number">
@@ -159,7 +159,7 @@
         <div class="wrap--content full--sm">
           <nav class="bottom-bump">
             <ul>
-              <li><a href="/hcp/unsubscribe.aspx">Unsubscribe</a>
+              <li><a href="/hcpUnsubscribe/index.aspx">Unsubscribe</a>
               </li>
               <li><a href="/hcp/contact-us.aspx">Contact Us</a>
               </li>
@@ -194,9 +194,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1439995800000"></script>
-    <script src="./js/templates.js?1439995800000"></script>
-    <script src="./js/app.js?1439995800000"></script>
+    <script src="./js/vendor.js?1440174000000"></script>
+    <script src="./js/templates.js?1440174000000"></script>
+    <script src="./js/app.js?1440174000000"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");
