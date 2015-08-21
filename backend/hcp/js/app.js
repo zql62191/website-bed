@@ -2334,7 +2334,7 @@ Array.prototype.forEach = function forEach(callback) {
                                         
                                         if (data.SvcStatus == true) {
 
-                                            window.location.href="/hcp/thank-you.aspx";
+                                            window.location.href="thank-you.aspx";
                                             
                                         } else {
                                         }
@@ -3030,7 +3030,7 @@ Array.prototype.forEach = function forEach(callback) {
 
                                 if (data.SvcStatus == true) {
 
-                                    window.location.href="/hcp/thank-you-request.aspx";
+                                    window.location.href="thank-you-request.aspx";
 
                                 } else {
                                 }
@@ -3112,7 +3112,7 @@ Array.prototype.forEach = function forEach(callback) {
 
                                 if (data.SvcStatus == true) {
 
-                                    window.location.href="/hcp/thank-you-request.aspx";
+                                    window.location.href="thank-you-request.aspx";
 
                                 } else {
                                 }
@@ -3201,7 +3201,7 @@ Array.prototype.forEach = function forEach(callback) {
 
                                 if (data.SvcStatus == true) {
 
-                                    window.location.href="/hcp/thank-you-request.aspx";
+                                    window.location.href="thank-you-request.aspx";
 
                                 } else {
                                 }
@@ -3465,6 +3465,8 @@ Array.prototype.forEach = function forEach(callback) {
 
                                 // Load video?
                                 mediaElement.load();
+
+                                // setTimeout
 
                                 mediaElement.setVolume(0);
 

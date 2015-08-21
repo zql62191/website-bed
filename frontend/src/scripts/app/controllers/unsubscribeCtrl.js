@@ -50,7 +50,7 @@
 
                                 if (data.SvcStatus == true) {
 
-                                    window.location.href="/hcp/thank-you-request.aspx";
+                                    window.location.href="thank-you-request.aspx";
 
                                 } else {
                                 }
@@ -132,7 +132,7 @@
 
                                 if (data.SvcStatus == true) {
 
-                                    window.location.href="/hcp/thank-you-request.aspx";
+                                    window.location.href="thank-you-request.aspx";
 
                                 } else {
                                 }
@@ -221,7 +221,7 @@
 
                                 if (data.SvcStatus == true) {
 
-                                    window.location.href="/hcp/thank-you-request.aspx";
+                                    window.location.href="thank-you-request.aspx";
 
                                 } else {
                                 }
@@ -259,7 +259,7 @@
     //}])
 
 
-    var BEDSVC = "http://6ccdb2.ngrok.com/hcpUnsubscribe/service/BEDUnsubscribe.svc"
+    var BEDSVC = "service/BEDUnsubscribe.svc"
     
 
 }).call(this);
