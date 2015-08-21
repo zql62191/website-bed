@@ -1,4 +1,4 @@
-/* Last Updated: 2015-08-19 at 10:49:41 AM */
+/* Last Updated: 2015-08-21 at 12:19:44 PM */
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -1880,6 +1880,7 @@ footer.footer--global nav ul li a {
   body.index .section--hero .hero .player .still {
     padding-top: 0 !important;
     height: 644px !important;
+    z-index: 3;
   }
 }
 @media only screen and (min-width: 1401px) {
@@ -2378,7 +2379,7 @@ body.index .section--hero .hero .callouts a.cta3 .icon {
     max-width: 1400px;
     height: 1400px;
     overflow: hidden;
-    z-index: 5;
+    z-index: 6;
     background-image: -webkit-radial-gradient(50% 70%, rgba(37, 47, 57, 0) 51%, rgba(37, 47, 57, 0) 80%, #252f39 100%);
     background-image: radial-gradient(50% 70%, rgba(37, 47, 57, 0) 51%, rgba(37, 47, 57, 0) 80%, #252f39 100%);
     margin-left: auto;
@@ -2390,11 +2391,44 @@ body.index .section--hero .hero .callouts a.cta3 .icon {
     top: 0;
     bottom: 0;
   }
+  body.index .section--hero .hero .player .video {
+    padding-top: 0 !important;
+    height: 644px !important;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  body.index .section--hero .hero .player .video:before, body.index .section--hero .hero .player .video:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+  body.index .section--hero .hero .player .video .mejs-container {
+    margin: 0 auto;
+    width: 1400px !important;
+    height: 644px !important;
+  }
+  body.index .section--hero .hero .player .video .mejs-overlay-play, body.index .section--hero .hero .player .video .mejs-overlay-button {
+    display: none;
+  }
+  body.index .section--hero .hero .player .video .mejs-container * {
+    width: 1400px !important;
+    margin: 0 auto;
+  }
+  body.index .section--hero .hero .player .still {
+    z-index: 1;
+  }
   body.index .section--hero .hero .copy {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 4;
+    display: none;
   }
   body.index .section--hero .hero .copy .wrap--content {
     padding-top: 36px;
@@ -2404,11 +2438,12 @@ body.index .section--hero .hero .callouts a.cta3 .icon {
     background: url('../img/rgbapng/333e48e5-5.png?1439234524');
     background: rgba(51, 62, 72, 0.9);
     position: absolute;
-    top: 322px;
+    top: 400px;
     left: 0;
     width: 100%;
     text-align: center;
-    z-index: 6;
+    z-index: 7;
+    display: none;
   }
   body.index .section--hero .hero .callouts a {
     height: 197px;
@@ -2440,6 +2475,9 @@ body.index .section--hero .hero .callouts a.cta3 .icon {
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (max-width: 640px) {
+  body.index .section--hero .hero .video {
+    display: none;
+  }
   body.index .section--hero .hero .copy {
     background: #242F38;
   }
@@ -4982,6 +5020,11 @@ body.potential-effects .section--association .charts .chart {
     background-size: 243px 257px;
   }
 }
+@media only screen and (min-width: 1025px) {
+  body.potential-effects .section--association .charts .sixty-three {
+    left: -7%;
+  }
+}
 @media only screen and (max-width: 640px) {
   body.potential-effects .section--association .charts .nineteen {
     height: 243px;
@@ -5028,6 +5071,11 @@ body.potential-effects .section--association .charts .chart {
     width: 236px;
     background: transparent url('../img/lgr/potential-effects/19.png?1439234524') center center no-repeat;
     background-size: 236px 243px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  body.potential-effects .section--association .charts .nineteen {
+    left: 7%;
   }
 }
 body.potential-effects .section--association .charts .num {
@@ -5116,8 +5164,8 @@ body.potential-effects .section--living .mobile-excerpt-wrapper {
     background-image: -webkit-radial-gradient(50% 149%, #333e48 17%, #252f39 100%);
     background-image: radial-gradient(50% 149%, #333e48 17%, #252f39 100%);
     width: 100%;
-    margin: 0 -6.25%;
-    padding: 39px 6.25% 0 10%;
+    margin: 0;
+    padding: 39px 6.25% 0 6.25%;
   }
 }
 @media only screen and (min-width: 1025px) {
@@ -5206,21 +5254,21 @@ body.potential-effects .section--living .sunny {
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   body.potential-effects .section--living .listen p {
-    width: 138px;
+    width: 28.68852%;
     height: 58px;
     text-align: left;
     margin-right: 5.71429%;
     padding-top: 9px;
     position: absolute;
-    left: 62%;
+    left: 50%;
   }
 }
 @media only screen and (max-width: 640px) {
   body.potential-effects .section--living .listen p {
-    width: 89.28571%;
-    text-align: center;
+    width: 41.07143%;
+    text-align: left;
     float: right;
-    left: 13%;
+    left: 3%;
     margin-right: 12.85714%;
     padding-top: 9px;
   }
@@ -5250,7 +5298,7 @@ body.potential-effects .section--living .audio-player .mejs-controls {
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   body.potential-effects .section--living .audio-player {
-    margin: 0 auto;
+    margin: 30px auto auto 30%;
     width: 100px !important;
     height: 57px !important;
     min-width: 0;
@@ -5277,6 +5325,11 @@ body.potential-effects .section--living .audio-player .mejs-controls {
 @media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (max-width: 640px) {
   body.potential-effects .section--living .audio-player .mejs-controls .mejs-time-rail, body.potential-effects .section--living .audio-player .mejs-controls .mejs-volume-button, body.potential-effects .section--living .audio-player .mejs-controls .mejs-horizontal-volume-slider {
     display: none;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body.potential-effects .section--living .audio-player .mejs-controls div {
+    margin-left: 15%;
   }
 }
 body.potential-effects .section--living .audio-player .mejs-controls .mejs-button.mejs-play, body.potential-effects .section--living .audio-player .mejs-controls .mejs-button.mejs-play:hover, body.potential-effects .section--living .audio-player .mejs-controls .mejs-button.mejs-play button, body.potential-effects .section--living .audio-player .mejs-controls .mejs-button.mejs-play button:hover {
@@ -6119,7 +6172,7 @@ body.profiles .section--carousel .carousel .controls .prev:hover {
     top: 12%;
   }
   body.profiles .section--carousel .carousel .slides .julie .disclaimer {
-    margin-top: 0;
+    margin-top: 13px;
   }
   body.profiles .section--carousel .carousel .slides .julie blockquote {
     line-height: 34px;
@@ -6394,7 +6447,6 @@ body.support-and-resources .section--video-player {
 }
 body.support-and-resources .section--video-player .mejs-container, body.support-and-resources .section--video-player .mejs-container * {
   max-width: 100%;
-  max-height: 540px;
 }
 body.support-and-resources .section--video-player .mejs-inner {
   height: 100%;
@@ -6876,6 +6928,7 @@ body.sign-up .section--page form p.info a {
   color: white;
   font-weight: 400;
   font-style: normal;
+  pointer-events: auto;
 }
 body.sign-up .section--page form .heading--2 {
   font-size: 24px;
@@ -7749,9 +7802,10 @@ body.thank-you-request section.section--ty {
   overflow: hidden;
 }
 
-.mejs-container-fullscreen .mejs-mediaelement, .mejs-container-fullscreen video {
+.mejs-container-fullscreen .mejs-mediaelement {
   width: 100%;
   height: 100%;
+  min-height: 100%;
 }
 
 .mejs-container {
@@ -7828,7 +7882,9 @@ body.thank-you-request section.section--ty {
   right: 0;
   bottom: 0;
   overflow: hidden;
-  z-index: 1000;
+  z-index: 1001;
+  height: 100%;
+  min-height: 100%;
 }
 
 .mejs-background {
@@ -7870,6 +7926,7 @@ body.thank-you-request section.section--ty {
 
 .mejs-overlay-play {
   cursor: pointer;
+  z-index: 1000;
 }
 
 .mejs-overlay-button {

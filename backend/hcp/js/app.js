@@ -2321,9 +2321,11 @@ Array.prototype.forEach = function forEach(callback) {
                                 $http({
                                     method: "POST",
                                     crossDomain: true,
+                                    headers: {'X-Requested-With': 'XMLHttpRequest'},
                                     url: URL,
+                                    cache: false,
                                     data: JSON.stringify(optInfor),
-                                    contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                                    contentType: "application/json; charset=utf8",
                                     dataType: "json"
                                 })
                                     
@@ -2387,7 +2389,7 @@ Array.prototype.forEach = function forEach(callback) {
 
     
     
-        var BEDSVC = "http://62c435af.ngrok.com/hcp/service/BEDService.svc"
+        var BEDSVC = "service/BEDService.svc"
     
 
 }).call(this);
@@ -2871,6 +2873,26 @@ Array.prototype.forEach = function forEach(callback) {
                         // }
                     });
                 }
+
+                // IE needed a source!
+                if(bowser.msie){
+                    var foo = $("section.section--video-player .wrap--content");
+                    var w = foo.width();
+                    foo.css('height', (540/960)*w + "px" );
+
+                    //i hate doing this... and blame MediaElementJS for all wrongdoing
+                    $(window).resize(function(elem){
+                        var w = foo.width();
+                        foo.css('height', (540/960)*w + "px" );
+                        // if(w >= 1024){
+                        //     foo.css('height', (540/960)*w + "px" );
+                        // }else if(w < 1024 && w > 640){
+                        //     foo.css('height', (377/768)*w + "px" );
+                        // }else if(w < 640){
+                        //     foo.css('height', (158/320)*w + "px" );
+                        // }
+                    });
+                }
             });
             
             // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -3217,7 +3239,7 @@ Array.prototype.forEach = function forEach(callback) {
     //}])
 
 
-    var BEDSVC = "http://6ccdb2.ngrok.com/hcpUnsubscribe/service/BEDUnsubscribe.svc"
+    var BEDSVC = "service/BEDUnsubscribe.svc"
     
 
 }).call(this);
@@ -3328,8 +3350,8 @@ Array.prototype.forEach = function forEach(callback) {
             // Create MEJS object for the video player element 😻
             $('.audio-player').mediaelementplayer({
                 pauseOtherPlayers: true,           // allow multiple videos
-                iPadUseNativeControls: true,        // force iPad's native controls
-                iPhoneUseNativeControls: true,      // force iPhone's native controls
+                iPadUseNativeControls: false,        // force iPad's native controls
+                iPhoneUseNativeControls: false,      // force iPhone's native controls
                 AndroidUseNativeControls: true,     // force Android's native controls
                 success: onSuccess,
                 error: onError
@@ -3392,10 +3414,12 @@ Array.prototype.forEach = function forEach(callback) {
                     // Setup
                     element.addClass(people[heroIndex].klass);
 
+                    if( angular.element(window).width() > 1024 ){
                     // Add video functionality
 
                         //Get element's child with class "video" as MediaElement (ME)
-                        var videoElem = angular.element("#videoPlayer");
+                        var videoElem = angular.element("#videoPlayer"),
+                            player;
 
                         //init the ME
                         videoElem.mediaelementplayer({
@@ -3404,7 +3428,33 @@ Array.prototype.forEach = function forEach(callback) {
                             startVolume: 0, // there is no audio
                             features: [],
                             autoRewind: false,
-                            success: function(mediaElement) {
+                            videoWidth: 1400,
+                            videoHeight: 644,
+                            success: function(mediaElement, node, playr) {
+
+                                //Set up events. 
+                                //If a user presses Spacebar or Escape we just pause the video fade it out
+                                var events = ['pause','ended'];
+
+                                for(var i=0;i<events.length;i++){
+                                    mediaElement.addEventListener(events[i], function(e){
+                                        
+                                        element.find(".copy").fadeIn(250, function(){
+                                            var callouts = element.find(".callouts");
+
+                                            callouts.fadeIn({ queue: false, duration: 300});
+                                            callouts.animate({ top: "377px" }, 'slow', 'swing', function(){
+                                                videoElem.fadeOut(500, function(){
+                                                    var vid = element.find(".video");
+                                                    vid.hide();
+                                                    // vid.css("zIndex", 0);
+                                                });
+                                            });    
+
+                                        });
+
+                                    });
+                                }
 
                                 player = mediaElement;
 
@@ -3420,18 +3470,24 @@ Array.prototype.forEach = function forEach(callback) {
 
                                 mediaElement.play();
 
-
                                 player = mediaElement;
                             },
                             error: function() {
                                 console.log('The video did not load properly.');
-                            }
+                            },
+                            keyActions: [{
+                                keys: [27,32],
+                                action: function(player,media){
+                                    //if a user hits escape or space, pause to fire the fadeout fn
+                                    media.pause();
+                                }
+                            }]
                         });
 
                         // videoElem.on('ended', function() {
                         //     $(this).fadeOut(500);
                         // });
-
+                    }//END VIDEO SETUP
 
                     // Save for next time
                     if (heroIndex + 1 > people.length - 1) {
