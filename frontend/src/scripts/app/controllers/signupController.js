@@ -67,7 +67,7 @@
                                         
                                         if (data.SvcStatus == true) {
 
-                                            window.location.href="/hcp/thank-you.aspx";
+                                            window.location.href="thank-you.aspx";
                                             
                                         } else {
                                         }
@@ -122,7 +122,7 @@
 
     
     
-        var BEDSVC = "http://62c435af.ngrok.com/hcp/service/BEDService.svc"
+        var BEDSVC = "service/BEDService.svc"
     
 
 }).call(this);

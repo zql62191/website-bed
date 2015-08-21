@@ -1,4 +1,4 @@
-/* Last Updated: 2015-08-21 at 12:35:11 PM */
+/* Last Updated: 2015-08-21 at 02:04:50 PM */
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -88,7 +88,7 @@ ng\:form {
   -moz-box-sizing: border-box;
        box-sizing: border-box;
   max-height: 1000000px;
-  background: url('../img/transparent.gif?1438615757');
+  background: url('../img/transparent.gif?1439234524');
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -1314,7 +1314,7 @@ ol.refs li a {
     bottom: 0;
     left: 0;
     z-index: 2000;
-    background: url('../img/rgbapng/1b2025cc-5.png?1438615757');
+    background: url('../img/rgbapng/1b2025cc-5.png?1439234524');
     background: rgba(27, 32, 37, 0.8);
     -webkit-animation: fadeIn 250ms;
             animation: fadeIn 250ms;
@@ -1890,168 +1890,168 @@ footer.footer--global nav ul li a {
 }
 @media only screen and (max-width: 640px) {
   body.index .section--hero .hero.kimberly .player .still {
-    background: transparent url('../img/sm/index/kimberly.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/sm/index/kimberly.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 62.5%;
   }
 }
 @media only screen and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
   body.index .section--hero .hero.kimberly .player .still {
-    background: transparent url('../img/smr/index/kimberly.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/smr/index/kimberly.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 62.5%;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   body.index .section--hero .hero.kimberly .player .still {
-    background: transparent url('../img/md/index/kimberly.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/md/index/kimberly.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 52.08333%;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   body.index .section--hero .hero.kimberly .player .still {
-    background: transparent url('../img/mdr/index/kimberly.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/mdr/index/kimberly.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 52.08333%;
   }
 }
 @media only screen and (min-width: 1025px) {
   body.index .section--hero .hero.kimberly .player .still {
-    background: transparent url('../img/lg/index/kimberly.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/lg/index/kimberly.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 46%;
   }
 }
 @media only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2) {
   body.index .section--hero .hero.kimberly .player .still {
-    background: transparent url('../img/lgr/index/kimberly.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/lgr/index/kimberly.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 46%;
   }
 }
 @media only screen and (max-width: 640px) {
   body.index .section--hero .hero.nikki .player .still {
-    background: transparent url('../img/sm/index/nikki.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/sm/index/nikki.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 62.5%;
   }
 }
 @media only screen and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
   body.index .section--hero .hero.nikki .player .still {
-    background: transparent url('../img/smr/index/nikki.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/smr/index/nikki.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 62.5%;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   body.index .section--hero .hero.nikki .player .still {
-    background: transparent url('../img/md/index/nikki.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/md/index/nikki.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 52.08333%;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   body.index .section--hero .hero.nikki .player .still {
-    background: transparent url('../img/mdr/index/nikki.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/mdr/index/nikki.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 52.08333%;
   }
 }
 @media only screen and (min-width: 1025px) {
   body.index .section--hero .hero.nikki .player .still {
-    background: transparent url('../img/lg/index/nikki.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/lg/index/nikki.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 46%;
   }
 }
 @media only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2) {
   body.index .section--hero .hero.nikki .player .still {
-    background: transparent url('../img/lgr/index/nikki.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/lgr/index/nikki.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 46%;
   }
 }
 @media only screen and (max-width: 640px) {
   body.index .section--hero .hero.julie .player .still {
-    background: transparent url('../img/sm/index/julie.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/sm/index/julie.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 62.5%;
   }
 }
 @media only screen and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
   body.index .section--hero .hero.julie .player .still {
-    background: transparent url('../img/smr/index/julie.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/smr/index/julie.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 62.5%;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   body.index .section--hero .hero.julie .player .still {
-    background: transparent url('../img/md/index/julie.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/md/index/julie.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 52.08333%;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   body.index .section--hero .hero.julie .player .still {
-    background: transparent url('../img/mdr/index/julie.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/mdr/index/julie.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 52.08333%;
   }
 }
 @media only screen and (min-width: 1025px) {
   body.index .section--hero .hero.julie .player .still {
-    background: transparent url('../img/lg/index/julie.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/lg/index/julie.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 46%;
   }
 }
 @media only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2) {
   body.index .section--hero .hero.julie .player .still {
-    background: transparent url('../img/lgr/index/julie.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/lgr/index/julie.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 46%;
   }
 }
 @media only screen and (max-width: 640px) {
   body.index .section--hero .hero.diego .player .still {
-    background: transparent url('../img/sm/index/diego.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/sm/index/diego.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 62.5%;
   }
 }
 @media only screen and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
   body.index .section--hero .hero.diego .player .still {
-    background: transparent url('../img/smr/index/diego.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/smr/index/diego.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 62.5%;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   body.index .section--hero .hero.diego .player .still {
-    background: transparent url('../img/md/index/diego.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/md/index/diego.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 52.08333%;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   body.index .section--hero .hero.diego .player .still {
-    background: transparent url('../img/mdr/index/diego.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/mdr/index/diego.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 52.08333%;
   }
 }
 @media only screen and (min-width: 1025px) {
   body.index .section--hero .hero.diego .player .still {
-    background: transparent url('../img/lg/index/diego.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/lg/index/diego.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 46%;
   }
 }
 @media only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2) {
   body.index .section--hero .hero.diego .player .still {
-    background: transparent url('../img/lgr/index/diego.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/lgr/index/diego.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 46%;
   }
@@ -2092,7 +2092,7 @@ body.index .section--hero .hero .callouts a.cta1 .icon {
   body.index .section--hero .hero .callouts a.cta1 .icon {
     height: 79px;
     width: 33px;
-    background: transparent url('../img/sm/index/cta1.png?1438615757') center center no-repeat;
+    background: transparent url('../img/sm/index/cta1.png?1439234524') center center no-repeat;
     background-size: 33px 79px;
   }
   body.index .section--hero .hero .callouts a.cta1 .icon.is--hc {
@@ -2106,7 +2106,7 @@ body.index .section--hero .hero .callouts a.cta1 .icon {
   body.index .section--hero .hero .callouts a.cta1 .icon {
     height: 79px;
     width: 33px;
-    background: transparent url('../img/smr/index/cta1.png?1438615757') center center no-repeat;
+    background: transparent url('../img/smr/index/cta1.png?1439234524') center center no-repeat;
     background-size: 33px 79px;
   }
   body.index .section--hero .hero .callouts a.cta1 .icon.is--hc {
@@ -2120,7 +2120,7 @@ body.index .section--hero .hero .callouts a.cta1 .icon {
   body.index .section--hero .hero .callouts a.cta1 .icon {
     height: 99px;
     width: 41px;
-    background: transparent url('../img/md/index/cta1.png?1438615757') center center no-repeat;
+    background: transparent url('../img/md/index/cta1.png?1439234524') center center no-repeat;
     background-size: 41px 99px;
   }
   body.index .section--hero .hero .callouts a.cta1 .icon.is--hc {
@@ -2134,7 +2134,7 @@ body.index .section--hero .hero .callouts a.cta1 .icon {
   body.index .section--hero .hero .callouts a.cta1 .icon {
     height: 99px;
     width: 41px;
-    background: transparent url('../img/mdr/index/cta1.png?1438615757') center center no-repeat;
+    background: transparent url('../img/mdr/index/cta1.png?1439234524') center center no-repeat;
     background-size: 41px 99px;
   }
   body.index .section--hero .hero .callouts a.cta1 .icon.is--hc {
@@ -2148,7 +2148,7 @@ body.index .section--hero .hero .callouts a.cta1 .icon {
   body.index .section--hero .hero .callouts a.cta1 .icon {
     height: 99px;
     width: 41px;
-    background: transparent url('../img/lg/index/cta1.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lg/index/cta1.png?1439234524') center center no-repeat;
     background-size: 41px 99px;
   }
   body.index .section--hero .hero .callouts a.cta1 .icon.is--hc {
@@ -2162,7 +2162,7 @@ body.index .section--hero .hero .callouts a.cta1 .icon {
   body.index .section--hero .hero .callouts a.cta1 .icon {
     height: 99px;
     width: 41px;
-    background: transparent url('../img/lgr/index/cta1.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lgr/index/cta1.png?1439234524') center center no-repeat;
     background-size: 41px 99px;
   }
   body.index .section--hero .hero .callouts a.cta1 .icon.is--hc {
@@ -2181,7 +2181,7 @@ body.index .section--hero .hero .callouts a.cta2 .icon {
   body.index .section--hero .hero .callouts a.cta2 .icon {
     height: 77px;
     width: 69px;
-    background: transparent url('../img/sm/index/cta2.png?1438615757') center center no-repeat;
+    background: transparent url('../img/sm/index/cta2.png?1439234524') center center no-repeat;
     background-size: 69px 77px;
   }
   body.index .section--hero .hero .callouts a.cta2 .icon.is--hc {
@@ -2195,7 +2195,7 @@ body.index .section--hero .hero .callouts a.cta2 .icon {
   body.index .section--hero .hero .callouts a.cta2 .icon {
     height: 77px;
     width: 69px;
-    background: transparent url('../img/smr/index/cta2.png?1438615757') center center no-repeat;
+    background: transparent url('../img/smr/index/cta2.png?1439234524') center center no-repeat;
     background-size: 69px 77px;
   }
   body.index .section--hero .hero .callouts a.cta2 .icon.is--hc {
@@ -2209,7 +2209,7 @@ body.index .section--hero .hero .callouts a.cta2 .icon {
   body.index .section--hero .hero .callouts a.cta2 .icon {
     height: 96px;
     width: 86px;
-    background: transparent url('../img/md/index/cta2.png?1438615757') center center no-repeat;
+    background: transparent url('../img/md/index/cta2.png?1439234524') center center no-repeat;
     background-size: 86px 96px;
   }
   body.index .section--hero .hero .callouts a.cta2 .icon.is--hc {
@@ -2223,7 +2223,7 @@ body.index .section--hero .hero .callouts a.cta2 .icon {
   body.index .section--hero .hero .callouts a.cta2 .icon {
     height: 96px;
     width: 86px;
-    background: transparent url('../img/mdr/index/cta2.png?1438615757') center center no-repeat;
+    background: transparent url('../img/mdr/index/cta2.png?1439234524') center center no-repeat;
     background-size: 86px 96px;
   }
   body.index .section--hero .hero .callouts a.cta2 .icon.is--hc {
@@ -2237,7 +2237,7 @@ body.index .section--hero .hero .callouts a.cta2 .icon {
   body.index .section--hero .hero .callouts a.cta2 .icon {
     height: 96px;
     width: 85px;
-    background: transparent url('../img/lg/index/cta2.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lg/index/cta2.png?1439234524') center center no-repeat;
     background-size: 85px 96px;
   }
   body.index .section--hero .hero .callouts a.cta2 .icon.is--hc {
@@ -2251,7 +2251,7 @@ body.index .section--hero .hero .callouts a.cta2 .icon {
   body.index .section--hero .hero .callouts a.cta2 .icon {
     height: 96px;
     width: 85px;
-    background: transparent url('../img/lgr/index/cta2.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lgr/index/cta2.png?1439234524') center center no-repeat;
     background-size: 85px 96px;
   }
   body.index .section--hero .hero .callouts a.cta2 .icon.is--hc {
@@ -2270,7 +2270,7 @@ body.index .section--hero .hero .callouts a.cta3 .icon {
   body.index .section--hero .hero .callouts a.cta3 .icon {
     height: 73px;
     width: 77px;
-    background: transparent url('../img/sm/index/cta3.png?1438615757') center center no-repeat;
+    background: transparent url('../img/sm/index/cta3.png?1439234524') center center no-repeat;
     background-size: 77px 73px;
   }
   body.index .section--hero .hero .callouts a.cta3 .icon.is--hc {
@@ -2284,7 +2284,7 @@ body.index .section--hero .hero .callouts a.cta3 .icon {
   body.index .section--hero .hero .callouts a.cta3 .icon {
     height: 73px;
     width: 77px;
-    background: transparent url('../img/smr/index/cta3.png?1438615757') center center no-repeat;
+    background: transparent url('../img/smr/index/cta3.png?1439234524') center center no-repeat;
     background-size: 77px 73px;
   }
   body.index .section--hero .hero .callouts a.cta3 .icon.is--hc {
@@ -2298,7 +2298,7 @@ body.index .section--hero .hero .callouts a.cta3 .icon {
   body.index .section--hero .hero .callouts a.cta3 .icon {
     height: 73px;
     width: 77px;
-    background: transparent url('../img/md/index/cta3.png?1438615757') center center no-repeat;
+    background: transparent url('../img/md/index/cta3.png?1439234524') center center no-repeat;
     background-size: 77px 73px;
   }
   body.index .section--hero .hero .callouts a.cta3 .icon.is--hc {
@@ -2312,7 +2312,7 @@ body.index .section--hero .hero .callouts a.cta3 .icon {
   body.index .section--hero .hero .callouts a.cta3 .icon {
     height: 73px;
     width: 77px;
-    background: transparent url('../img/mdr/index/cta3.png?1438615757') center center no-repeat;
+    background: transparent url('../img/mdr/index/cta3.png?1439234524') center center no-repeat;
     background-size: 77px 73px;
   }
   body.index .section--hero .hero .callouts a.cta3 .icon.is--hc {
@@ -2326,7 +2326,7 @@ body.index .section--hero .hero .callouts a.cta3 .icon {
   body.index .section--hero .hero .callouts a.cta3 .icon {
     height: 73px;
     width: 77px;
-    background: transparent url('../img/lg/index/cta3.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lg/index/cta3.png?1439234524') center center no-repeat;
     background-size: 77px 73px;
   }
   body.index .section--hero .hero .callouts a.cta3 .icon.is--hc {
@@ -2340,7 +2340,7 @@ body.index .section--hero .hero .callouts a.cta3 .icon {
   body.index .section--hero .hero .callouts a.cta3 .icon {
     height: 73px;
     width: 77px;
-    background: transparent url('../img/lgr/index/cta3.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lgr/index/cta3.png?1439234524') center center no-repeat;
     background-size: 77px 73px;
   }
   body.index .section--hero .hero .callouts a.cta3 .icon.is--hc {
@@ -2435,7 +2435,7 @@ body.index .section--hero .hero .callouts a.cta3 .icon {
     padding-left: 622px;
   }
   body.index .section--hero .hero .callouts {
-    background: url('../img/rgbapng/333e48e5-5.png?1438615757');
+    background: url('../img/rgbapng/333e48e5-5.png?1439234524');
     background: rgba(51, 62, 72, 0.9);
     position: absolute;
     top: 400px;
@@ -2457,7 +2457,7 @@ body.index .section--hero .hero .callouts a.cta3 .icon {
             transition: background 250ms, color 250ms, border-color 250ms;
   }
   body.index .section--hero .hero .callouts a:hover {
-    background: url('../img/rgbapng/333e48f2-5.png?1438615757');
+    background: url('../img/rgbapng/333e48f2-5.png?1439234524');
     background: rgba(51, 62, 72, 0.95);
     color: #FFFFFF;
   }
@@ -2892,7 +2892,7 @@ body.recognizing-bed .section--obesity .chart-wrap .chart {
   body.recognizing-bed .section--obesity .chart-wrap .chart {
     height: 193px;
     width: 180px;
-    background: transparent url('../img/sm/recognizing-bed/chart.png?1438615757') center center no-repeat;
+    background: transparent url('../img/sm/recognizing-bed/chart.png?1439234524') center center no-repeat;
     background-size: 180px 193px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--hc {
@@ -2906,7 +2906,7 @@ body.recognizing-bed .section--obesity .chart-wrap .chart {
   body.recognizing-bed .section--obesity .chart-wrap .chart {
     height: 193px;
     width: 180px;
-    background: transparent url('../img/smr/recognizing-bed/chart.png?1438615757') center center no-repeat;
+    background: transparent url('../img/smr/recognizing-bed/chart.png?1439234524') center center no-repeat;
     background-size: 180px 193px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--hc {
@@ -2920,7 +2920,7 @@ body.recognizing-bed .section--obesity .chart-wrap .chart {
   body.recognizing-bed .section--obesity .chart-wrap .chart {
     height: 252px;
     width: 325px;
-    background: transparent url('../img/md/recognizing-bed/chart.png?1438615757') center center no-repeat;
+    background: transparent url('../img/md/recognizing-bed/chart.png?1439234524') center center no-repeat;
     background-size: 325px 252px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--hc {
@@ -2934,7 +2934,7 @@ body.recognizing-bed .section--obesity .chart-wrap .chart {
   body.recognizing-bed .section--obesity .chart-wrap .chart {
     height: 252px;
     width: 325px;
-    background: transparent url('../img/mdr/recognizing-bed/chart.png?1438615757') center center no-repeat;
+    background: transparent url('../img/mdr/recognizing-bed/chart.png?1439234524') center center no-repeat;
     background-size: 325px 252px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--hc {
@@ -2948,7 +2948,7 @@ body.recognizing-bed .section--obesity .chart-wrap .chart {
   body.recognizing-bed .section--obesity .chart-wrap .chart {
     height: 252px;
     width: 325px;
-    background: transparent url('../img/lg/recognizing-bed/chart.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lg/recognizing-bed/chart.png?1439234524') center center no-repeat;
     background-size: 325px 252px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--hc {
@@ -2962,7 +2962,7 @@ body.recognizing-bed .section--obesity .chart-wrap .chart {
   body.recognizing-bed .section--obesity .chart-wrap .chart {
     height: 252px;
     width: 325px;
-    background: transparent url('../img/lgr/recognizing-bed/chart.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lgr/recognizing-bed/chart.png?1439234524') center center no-repeat;
     background-size: 325px 252px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--hc {
@@ -3420,7 +3420,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.brain .icon {
     height: 110px;
     width: 104px;
-    background: transparent url('../img/sm/potential-causes/brain.png?1438615757') center center no-repeat;
+    background: transparent url('../img/sm/potential-causes/brain.png?1439234524') center center no-repeat;
     background-size: 104px 110px;
   }
   body.potential-causes .row.brain .icon.is--hc {
@@ -3434,7 +3434,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.brain .icon {
     height: 110px;
     width: 104px;
-    background: transparent url('../img/smr/potential-causes/brain.png?1438615757') center center no-repeat;
+    background: transparent url('../img/smr/potential-causes/brain.png?1439234524') center center no-repeat;
     background-size: 104px 110px;
   }
   body.potential-causes .row.brain .icon.is--hc {
@@ -3448,7 +3448,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.brain .icon {
     height: 110px;
     width: 104px;
-    background: transparent url('../img/md/potential-causes/brain.png?1438615757') center center no-repeat;
+    background: transparent url('../img/md/potential-causes/brain.png?1439234524') center center no-repeat;
     background-size: 104px 110px;
   }
   body.potential-causes .row.brain .icon.is--hc {
@@ -3462,7 +3462,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.brain .icon {
     height: 110px;
     width: 104px;
-    background: transparent url('../img/mdr/potential-causes/brain.png?1438615757') center center no-repeat;
+    background: transparent url('../img/mdr/potential-causes/brain.png?1439234524') center center no-repeat;
     background-size: 104px 110px;
   }
   body.potential-causes .row.brain .icon.is--hc {
@@ -3476,7 +3476,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.brain .icon {
     height: 110px;
     width: 104px;
-    background: transparent url('../img/lg/potential-causes/brain.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lg/potential-causes/brain.png?1439234524') center center no-repeat;
     background-size: 104px 110px;
   }
   body.potential-causes .row.brain .icon.is--hc {
@@ -3490,7 +3490,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.brain .icon {
     height: 110px;
     width: 104px;
-    background: transparent url('../img/lgr/potential-causes/brain.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lgr/potential-causes/brain.png?1439234524') center center no-repeat;
     background-size: 104px 110px;
   }
   body.potential-causes .row.brain .icon.is--hc {
@@ -3504,7 +3504,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.neuron .icon {
     height: 145px;
     width: 154px;
-    background: transparent url('../img/sm/potential-causes/neuron.png?1438615757') center center no-repeat;
+    background: transparent url('../img/sm/potential-causes/neuron.png?1439234524') center center no-repeat;
     background-size: 154px 145px;
   }
   body.potential-causes .row.neuron .icon.is--hc {
@@ -3518,7 +3518,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.neuron .icon {
     height: 145px;
     width: 154px;
-    background: transparent url('../img/smr/potential-causes/neuron.png?1438615757') center center no-repeat;
+    background: transparent url('../img/smr/potential-causes/neuron.png?1439234524') center center no-repeat;
     background-size: 154px 145px;
   }
   body.potential-causes .row.neuron .icon.is--hc {
@@ -3532,7 +3532,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.neuron .icon {
     height: 146px;
     width: 153px;
-    background: transparent url('../img/md/potential-causes/neuron.png?1438615757') center center no-repeat;
+    background: transparent url('../img/md/potential-causes/neuron.png?1439234524') center center no-repeat;
     background-size: 153px 146px;
   }
   body.potential-causes .row.neuron .icon.is--hc {
@@ -3546,7 +3546,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.neuron .icon {
     height: 146px;
     width: 153px;
-    background: transparent url('../img/mdr/potential-causes/neuron.png?1438615757') center center no-repeat;
+    background: transparent url('../img/mdr/potential-causes/neuron.png?1439234524') center center no-repeat;
     background-size: 153px 146px;
   }
   body.potential-causes .row.neuron .icon.is--hc {
@@ -3560,7 +3560,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.neuron .icon {
     height: 146px;
     width: 153px;
-    background: transparent url('../img/lg/potential-causes/neuron.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lg/potential-causes/neuron.png?1439234524') center center no-repeat;
     background-size: 153px 146px;
   }
   body.potential-causes .row.neuron .icon.is--hc {
@@ -3574,7 +3574,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.neuron .icon {
     height: 146px;
     width: 153px;
-    background: transparent url('../img/lgr/potential-causes/neuron.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lgr/potential-causes/neuron.png?1439234524') center center no-repeat;
     background-size: 153px 146px;
   }
   body.potential-causes .row.neuron .icon.is--hc {
@@ -3588,7 +3588,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.neuron-closeup .icon {
     height: 146px;
     width: 93px;
-    background: transparent url('../img/sm/potential-causes/neuron-closeup.png?1438615757') center center no-repeat;
+    background: transparent url('../img/sm/potential-causes/neuron-closeup.png?1439234524') center center no-repeat;
     background-size: 93px 146px;
   }
   body.potential-causes .row.neuron-closeup .icon.is--hc {
@@ -3602,7 +3602,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.neuron-closeup .icon {
     height: 146px;
     width: 93px;
-    background: transparent url('../img/smr/potential-causes/neuron-closeup.png?1438615757') center center no-repeat;
+    background: transparent url('../img/smr/potential-causes/neuron-closeup.png?1439234524') center center no-repeat;
     background-size: 93px 146px;
   }
   body.potential-causes .row.neuron-closeup .icon.is--hc {
@@ -3616,7 +3616,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.neuron-closeup .icon {
     height: 136px;
     width: 93px;
-    background: transparent url('../img/md/potential-causes/neuron-closeup.png?1438615757') center center no-repeat;
+    background: transparent url('../img/md/potential-causes/neuron-closeup.png?1439234524') center center no-repeat;
     background-size: 93px 136px;
   }
   body.potential-causes .row.neuron-closeup .icon.is--hc {
@@ -3630,7 +3630,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.neuron-closeup .icon {
     height: 136px;
     width: 93px;
-    background: transparent url('../img/mdr/potential-causes/neuron-closeup.png?1438615757') center center no-repeat;
+    background: transparent url('../img/mdr/potential-causes/neuron-closeup.png?1439234524') center center no-repeat;
     background-size: 93px 136px;
   }
   body.potential-causes .row.neuron-closeup .icon.is--hc {
@@ -3644,7 +3644,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.neuron-closeup .icon {
     height: 146px;
     width: 93px;
-    background: transparent url('../img/lg/potential-causes/neuron-closeup.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lg/potential-causes/neuron-closeup.png?1439234524') center center no-repeat;
     background-size: 93px 146px;
   }
   body.potential-causes .row.neuron-closeup .icon.is--hc {
@@ -3658,7 +3658,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.neuron-closeup .icon {
     height: 146px;
     width: 93px;
-    background: transparent url('../img/lgr/potential-causes/neuron-closeup.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lgr/potential-causes/neuron-closeup.png?1439234524') center center no-repeat;
     background-size: 93px 146px;
   }
   body.potential-causes .row.neuron-closeup .icon.is--hc {
@@ -3672,7 +3672,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.dna .icon {
     height: 133px;
     width: 106px;
-    background: transparent url('../img/sm/potential-causes/dna.png?1438615757') center center no-repeat;
+    background: transparent url('../img/sm/potential-causes/dna.png?1439234524') center center no-repeat;
     background-size: 106px 133px;
   }
   body.potential-causes .row.dna .icon.is--hc {
@@ -3686,7 +3686,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.dna .icon {
     height: 133px;
     width: 106px;
-    background: transparent url('../img/smr/potential-causes/dna.png?1438615757') center center no-repeat;
+    background: transparent url('../img/smr/potential-causes/dna.png?1439234524') center center no-repeat;
     background-size: 106px 133px;
   }
   body.potential-causes .row.dna .icon.is--hc {
@@ -3700,7 +3700,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.dna .icon {
     height: 149px;
     width: 119px;
-    background: transparent url('../img/md/potential-causes/dna.png?1438615757') center center no-repeat;
+    background: transparent url('../img/md/potential-causes/dna.png?1439234524') center center no-repeat;
     background-size: 119px 149px;
   }
   body.potential-causes .row.dna .icon.is--hc {
@@ -3714,7 +3714,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.dna .icon {
     height: 149px;
     width: 119px;
-    background: transparent url('../img/mdr/potential-causes/dna.png?1438615757') center center no-repeat;
+    background: transparent url('../img/mdr/potential-causes/dna.png?1439234524') center center no-repeat;
     background-size: 119px 149px;
   }
   body.potential-causes .row.dna .icon.is--hc {
@@ -3728,7 +3728,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.dna .icon {
     height: 198px;
     width: 157px;
-    background: transparent url('../img/lg/potential-causes/dna.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lg/potential-causes/dna.png?1439234524') center center no-repeat;
     background-size: 157px 198px;
   }
   body.potential-causes .row.dna .icon.is--hc {
@@ -3742,7 +3742,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.dna .icon {
     height: 198px;
     width: 157px;
-    background: transparent url('../img/lgr/potential-causes/dna.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lgr/potential-causes/dna.png?1439234524') center center no-repeat;
     background-size: 157px 198px;
   }
   body.potential-causes .row.dna .icon.is--hc {
@@ -3756,7 +3756,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.people .icon {
     height: 125px;
     width: 135px;
-    background: transparent url('../img/sm/potential-causes/people.png?1438615757') center center no-repeat;
+    background: transparent url('../img/sm/potential-causes/people.png?1439234524') center center no-repeat;
     background-size: 135px 125px;
   }
   body.potential-causes .row.people .icon.is--hc {
@@ -3770,7 +3770,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.people .icon {
     height: 125px;
     width: 135px;
-    background: transparent url('../img/smr/potential-causes/people.png?1438615757') center center no-repeat;
+    background: transparent url('../img/smr/potential-causes/people.png?1439234524') center center no-repeat;
     background-size: 135px 125px;
   }
   body.potential-causes .row.people .icon.is--hc {
@@ -3784,7 +3784,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.people .icon {
     height: 142px;
     width: 159px;
-    background: transparent url('../img/md/potential-causes/people.png?1438615757') center center no-repeat;
+    background: transparent url('../img/md/potential-causes/people.png?1439234524') center center no-repeat;
     background-size: 159px 142px;
   }
   body.potential-causes .row.people .icon.is--hc {
@@ -3798,7 +3798,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.people .icon {
     height: 142px;
     width: 159px;
-    background: transparent url('../img/mdr/potential-causes/people.png?1438615757') center center no-repeat;
+    background: transparent url('../img/mdr/potential-causes/people.png?1439234524') center center no-repeat;
     background-size: 159px 142px;
   }
   body.potential-causes .row.people .icon.is--hc {
@@ -3812,7 +3812,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.people .icon {
     height: 186px;
     width: 212px;
-    background: transparent url('../img/lg/potential-causes/people.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lg/potential-causes/people.png?1439234524') center center no-repeat;
     background-size: 212px 186px;
   }
   body.potential-causes .row.people .icon.is--hc {
@@ -3826,7 +3826,7 @@ body.potential-causes section p, body.potential-causes section li {
   body.potential-causes .row.people .icon {
     height: 186px;
     width: 212px;
-    background: transparent url('../img/lgr/potential-causes/people.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lgr/potential-causes/people.png?1439234524') center center no-repeat;
     background-size: 212px 186px;
   }
   body.potential-causes .row.people .icon.is--hc {
@@ -4157,7 +4157,7 @@ body.patient-demographics .section--us .statistics .map {
   body.patient-demographics .section--us .statistics .map {
     height: 187px;
     width: 264px;
-    background: transparent url('../img/sm/patient-demographics/map.png?1438978660') center center no-repeat;
+    background: transparent url('../img/sm/patient-demographics/map.png?1439234524') center center no-repeat;
     background-size: 264px 187px;
   }
 }
@@ -4165,7 +4165,7 @@ body.patient-demographics .section--us .statistics .map {
   body.patient-demographics .section--us .statistics .map {
     height: 187px;
     width: 264px;
-    background: transparent url('../img/smr/patient-demographics/map.png?1438978660') center center no-repeat;
+    background: transparent url('../img/smr/patient-demographics/map.png?1439234524') center center no-repeat;
     background-size: 264px 187px;
   }
 }
@@ -4173,7 +4173,7 @@ body.patient-demographics .section--us .statistics .map {
   body.patient-demographics .section--us .statistics .map {
     height: 275px;
     width: 384px;
-    background: transparent url('../img/md/patient-demographics/map.png?1438615757') center center no-repeat;
+    background: transparent url('../img/md/patient-demographics/map.png?1439234524') center center no-repeat;
     background-size: 384px 275px;
   }
 }
@@ -4181,7 +4181,7 @@ body.patient-demographics .section--us .statistics .map {
   body.patient-demographics .section--us .statistics .map {
     height: 275px;
     width: 384px;
-    background: transparent url('../img/mdr/patient-demographics/map.png?1438615757') center center no-repeat;
+    background: transparent url('../img/mdr/patient-demographics/map.png?1439234524') center center no-repeat;
     background-size: 384px 275px;
   }
 }
@@ -4189,7 +4189,7 @@ body.patient-demographics .section--us .statistics .map {
   body.patient-demographics .section--us .statistics .map {
     height: 534px;
     width: 745px;
-    background: transparent url('../img/lg/patient-demographics/map.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lg/patient-demographics/map.png?1439234524') center center no-repeat;
     background-size: 745px 534px;
   }
 }
@@ -4197,7 +4197,7 @@ body.patient-demographics .section--us .statistics .map {
   body.patient-demographics .section--us .statistics .map {
     height: 534px;
     width: 745px;
-    background: transparent url('../img/lgr/patient-demographics/map.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lgr/patient-demographics/map.png?1439234524') center center no-repeat;
     background-size: 745px 534px;
   }
 }
@@ -4418,7 +4418,7 @@ body.patient-demographics .section--ratio .heading--1 {
   body.patient-demographics .section--ratio .two-to-one .icon {
     height: 266px;
     width: 154px;
-    background: transparent url('../img/sm/patient-demographics/2-to-1.png?1438615757') center center no-repeat;
+    background: transparent url('../img/sm/patient-demographics/2-to-1.png?1439234524') center center no-repeat;
     background-size: 154px 266px;
   }
   body.patient-demographics .section--ratio .two-to-one .icon.is--hc {
@@ -4432,7 +4432,7 @@ body.patient-demographics .section--ratio .heading--1 {
   body.patient-demographics .section--ratio .two-to-one .icon {
     height: 266px;
     width: 154px;
-    background: transparent url('../img/smr/patient-demographics/2-to-1.png?1438615757') center center no-repeat;
+    background: transparent url('../img/smr/patient-demographics/2-to-1.png?1439234524') center center no-repeat;
     background-size: 154px 266px;
   }
   body.patient-demographics .section--ratio .two-to-one .icon.is--hc {
@@ -4446,7 +4446,7 @@ body.patient-demographics .section--ratio .heading--1 {
   body.patient-demographics .section--ratio .two-to-one .icon {
     height: 100px;
     width: 574px;
-    background: transparent url('../img/md/patient-demographics/2-to-1.png?1438615757') center center no-repeat;
+    background: transparent url('../img/md/patient-demographics/2-to-1.png?1439234524') center center no-repeat;
     background-size: 574px 100px;
   }
   body.patient-demographics .section--ratio .two-to-one .icon.is--hc {
@@ -4460,7 +4460,7 @@ body.patient-demographics .section--ratio .heading--1 {
   body.patient-demographics .section--ratio .two-to-one .icon {
     height: 100px;
     width: 574px;
-    background: transparent url('../img/mdr/patient-demographics/2-to-1.png?1438615757') center center no-repeat;
+    background: transparent url('../img/mdr/patient-demographics/2-to-1.png?1439234524') center center no-repeat;
     background-size: 574px 100px;
   }
   body.patient-demographics .section--ratio .two-to-one .icon.is--hc {
@@ -4474,7 +4474,7 @@ body.patient-demographics .section--ratio .heading--1 {
   body.patient-demographics .section--ratio .two-to-one .icon {
     height: 101px;
     width: 569px;
-    background: transparent url('../img/lg/patient-demographics/2-to-1.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lg/patient-demographics/2-to-1.png?1439234524') center center no-repeat;
     background-size: 569px 101px;
   }
   body.patient-demographics .section--ratio .two-to-one .icon.is--hc {
@@ -4488,7 +4488,7 @@ body.patient-demographics .section--ratio .heading--1 {
   body.patient-demographics .section--ratio .two-to-one .icon {
     height: 101px;
     width: 569px;
-    background: transparent url('../img/lgr/patient-demographics/2-to-1.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lgr/patient-demographics/2-to-1.png?1439234524') center center no-repeat;
     background-size: 569px 101px;
   }
   body.patient-demographics .section--ratio .two-to-one .icon.is--hc {
@@ -4507,7 +4507,7 @@ body.patient-demographics .section--ratio .heading--1 {
   body.patient-demographics .section--ratio .five-to-one .icon {
     height: 268px;
     width: 147px;
-    background: transparent url('../img/sm/patient-demographics/5-to-1.png?1438615757') center center no-repeat;
+    background: transparent url('../img/sm/patient-demographics/5-to-1.png?1439234524') center center no-repeat;
     background-size: 147px 268px;
   }
   body.patient-demographics .section--ratio .five-to-one .icon.is--hc {
@@ -4521,7 +4521,7 @@ body.patient-demographics .section--ratio .heading--1 {
   body.patient-demographics .section--ratio .five-to-one .icon {
     height: 268px;
     width: 147px;
-    background: transparent url('../img/smr/patient-demographics/5-to-1.png?1438615757') center center no-repeat;
+    background: transparent url('../img/smr/patient-demographics/5-to-1.png?1439234524') center center no-repeat;
     background-size: 147px 268px;
   }
   body.patient-demographics .section--ratio .five-to-one .icon.is--hc {
@@ -4535,7 +4535,7 @@ body.patient-demographics .section--ratio .heading--1 {
   body.patient-demographics .section--ratio .five-to-one .icon {
     height: 100px;
     width: 578px;
-    background: transparent url('../img/md/patient-demographics/5-to-1.png?1438615757') center center no-repeat;
+    background: transparent url('../img/md/patient-demographics/5-to-1.png?1439234524') center center no-repeat;
     background-size: 578px 100px;
   }
   body.patient-demographics .section--ratio .five-to-one .icon.is--hc {
@@ -4549,7 +4549,7 @@ body.patient-demographics .section--ratio .heading--1 {
   body.patient-demographics .section--ratio .five-to-one .icon {
     height: 100px;
     width: 578px;
-    background: transparent url('../img/mdr/patient-demographics/5-to-1.png?1438615757') center center no-repeat;
+    background: transparent url('../img/mdr/patient-demographics/5-to-1.png?1439234524') center center no-repeat;
     background-size: 578px 100px;
   }
   body.patient-demographics .section--ratio .five-to-one .icon.is--hc {
@@ -4563,7 +4563,7 @@ body.patient-demographics .section--ratio .heading--1 {
   body.patient-demographics .section--ratio .five-to-one .icon {
     height: 100px;
     width: 578px;
-    background: transparent url('../img/lg/patient-demographics/5-to-1.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lg/patient-demographics/5-to-1.png?1439234524') center center no-repeat;
     background-size: 578px 100px;
   }
   body.patient-demographics .section--ratio .five-to-one .icon.is--hc {
@@ -4577,7 +4577,7 @@ body.patient-demographics .section--ratio .heading--1 {
   body.patient-demographics .section--ratio .five-to-one .icon {
     height: 100px;
     width: 578px;
-    background: transparent url('../img/lgr/patient-demographics/5-to-1.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lgr/patient-demographics/5-to-1.png?1439234524') center center no-repeat;
     background-size: 578px 100px;
   }
   body.patient-demographics .section--ratio .five-to-one .icon.is--hc {
@@ -4976,7 +4976,7 @@ body.potential-effects .section--association .charts .chart {
   body.potential-effects .section--association .charts .sixty-three {
     height: 258px;
     width: 243px;
-    background: transparent url('../img/sm/potential-effects/63.png?1438615757') center center no-repeat;
+    background: transparent url('../img/sm/potential-effects/63.png?1439234524') center center no-repeat;
     background-size: 243px 258px;
   }
 }
@@ -4984,7 +4984,7 @@ body.potential-effects .section--association .charts .chart {
   body.potential-effects .section--association .charts .sixty-three {
     height: 258px;
     width: 243px;
-    background: transparent url('../img/smr/potential-effects/63.png?1438615757') center center no-repeat;
+    background: transparent url('../img/smr/potential-effects/63.png?1439234524') center center no-repeat;
     background-size: 243px 258px;
   }
 }
@@ -4992,7 +4992,7 @@ body.potential-effects .section--association .charts .chart {
   body.potential-effects .section--association .charts .sixty-three {
     height: 257px;
     width: 243px;
-    background: transparent url('../img/md/potential-effects/63.png?1438615757') center center no-repeat;
+    background: transparent url('../img/md/potential-effects/63.png?1439234524') center center no-repeat;
     background-size: 243px 257px;
   }
 }
@@ -5000,7 +5000,7 @@ body.potential-effects .section--association .charts .chart {
   body.potential-effects .section--association .charts .sixty-three {
     height: 257px;
     width: 243px;
-    background: transparent url('../img/mdr/potential-effects/63.png?1438615757') center center no-repeat;
+    background: transparent url('../img/mdr/potential-effects/63.png?1439234524') center center no-repeat;
     background-size: 243px 257px;
   }
 }
@@ -5008,7 +5008,7 @@ body.potential-effects .section--association .charts .chart {
   body.potential-effects .section--association .charts .sixty-three {
     height: 257px;
     width: 243px;
-    background: transparent url('../img/lg/potential-effects/63.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lg/potential-effects/63.png?1439234524') center center no-repeat;
     background-size: 243px 257px;
   }
 }
@@ -5016,7 +5016,7 @@ body.potential-effects .section--association .charts .chart {
   body.potential-effects .section--association .charts .sixty-three {
     height: 257px;
     width: 243px;
-    background: transparent url('../img/lgr/potential-effects/63.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lgr/potential-effects/63.png?1439234524') center center no-repeat;
     background-size: 243px 257px;
   }
 }
@@ -5029,7 +5029,7 @@ body.potential-effects .section--association .charts .chart {
   body.potential-effects .section--association .charts .nineteen {
     height: 243px;
     width: 236px;
-    background: transparent url('../img/sm/potential-effects/19.png?1438615757') center center no-repeat;
+    background: transparent url('../img/sm/potential-effects/19.png?1439234524') center center no-repeat;
     background-size: 236px 243px;
   }
 }
@@ -5037,7 +5037,7 @@ body.potential-effects .section--association .charts .chart {
   body.potential-effects .section--association .charts .nineteen {
     height: 243px;
     width: 236px;
-    background: transparent url('../img/smr/potential-effects/19.png?1438615757') center center no-repeat;
+    background: transparent url('../img/smr/potential-effects/19.png?1439234524') center center no-repeat;
     background-size: 236px 243px;
   }
 }
@@ -5045,7 +5045,7 @@ body.potential-effects .section--association .charts .chart {
   body.potential-effects .section--association .charts .nineteen {
     height: 243px;
     width: 235px;
-    background: transparent url('../img/md/potential-effects/19.png?1438615757') center center no-repeat;
+    background: transparent url('../img/md/potential-effects/19.png?1439234524') center center no-repeat;
     background-size: 235px 243px;
   }
 }
@@ -5053,7 +5053,7 @@ body.potential-effects .section--association .charts .chart {
   body.potential-effects .section--association .charts .nineteen {
     height: 243px;
     width: 235px;
-    background: transparent url('../img/mdr/potential-effects/19.png?1438615757') center center no-repeat;
+    background: transparent url('../img/mdr/potential-effects/19.png?1439234524') center center no-repeat;
     background-size: 235px 243px;
   }
 }
@@ -5061,7 +5061,7 @@ body.potential-effects .section--association .charts .chart {
   body.potential-effects .section--association .charts .nineteen {
     height: 243px;
     width: 236px;
-    background: transparent url('../img/lg/potential-effects/19.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lg/potential-effects/19.png?1439234524') center center no-repeat;
     background-size: 236px 243px;
   }
 }
@@ -5069,7 +5069,7 @@ body.potential-effects .section--association .charts .chart {
   body.potential-effects .section--association .charts .nineteen {
     height: 243px;
     width: 236px;
-    background: transparent url('../img/lgr/potential-effects/19.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lgr/potential-effects/19.png?1439234524') center center no-repeat;
     background-size: 236px 243px;
   }
 }
@@ -5232,7 +5232,7 @@ body.potential-effects .section--living .sunny {
   body.potential-effects .section--living .sunny {
     height: 325px;
     width: 247px;
-    background: transparent url('../img/sm/potential-effects/sunny.png?1438615757') center center no-repeat;
+    background: transparent url('../img/sm/potential-effects/sunny.png?1439234524') center center no-repeat;
     background-size: 247px 325px;
   }
 }
@@ -5240,7 +5240,7 @@ body.potential-effects .section--living .sunny {
   body.potential-effects .section--living .sunny {
     height: 463px;
     width: 352px;
-    background: transparent url('../img/md/potential-effects/sunny.png?1438615757') center center no-repeat;
+    background: transparent url('../img/md/potential-effects/sunny.png?1439234524') center center no-repeat;
     background-size: 352px 463px;
   }
 }
@@ -5248,7 +5248,7 @@ body.potential-effects .section--living .sunny {
   body.potential-effects .section--living .sunny {
     height: 399px;
     width: 303px;
-    background: transparent url('../img/lg/potential-effects/sunny.png?1438615757') center center no-repeat;
+    background: transparent url('../img/lg/potential-effects/sunny.png?1439234524') center center no-repeat;
     background-size: 303px 399px;
   }
 }
@@ -5425,7 +5425,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.kimberly {
     height: 120px;
     width: 158px;
-    background: transparent url('../img/sm/patient-profiles/kimberly.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/sm/patient-profiles/kimberly.jpg?1439234524') center center no-repeat;
     background-size: 158px 120px;
   }
 }
@@ -5433,7 +5433,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.kimberly {
     height: 120px;
     width: 158px;
-    background: transparent url('../img/smr/patient-profiles/kimberly.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/smr/patient-profiles/kimberly.jpg?1439234524') center center no-repeat;
     background-size: 158px 120px;
   }
 }
@@ -5441,7 +5441,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.kimberly {
     height: 295px;
     width: 296px;
-    background: transparent url('../img/md/patient-profiles/kimberly.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/md/patient-profiles/kimberly.jpg?1439234524') center center no-repeat;
     background-size: 296px 295px;
   }
 }
@@ -5449,7 +5449,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.kimberly {
     height: 295px;
     width: 296px;
-    background: transparent url('../img/mdr/patient-profiles/kimberly.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/mdr/patient-profiles/kimberly.jpg?1439234524') center center no-repeat;
     background-size: 296px 295px;
   }
 }
@@ -5457,7 +5457,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.kimberly {
     height: 239px;
     width: 240px;
-    background: transparent url('../img/lg/patient-profiles/kimberly.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/lg/patient-profiles/kimberly.jpg?1439234524') center center no-repeat;
     background-size: 240px 239px;
   }
 }
@@ -5465,7 +5465,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.kimberly {
     height: 239px;
     width: 240px;
-    background: transparent url('../img/lgr/patient-profiles/kimberly.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/lgr/patient-profiles/kimberly.jpg?1439234524') center center no-repeat;
     background-size: 240px 239px;
   }
 }
@@ -5473,7 +5473,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.nikki {
     height: 120px;
     width: 158px;
-    background: transparent url('../img/sm/patient-profiles/nikki.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/sm/patient-profiles/nikki.jpg?1439234524') center center no-repeat;
     background-size: 158px 120px;
   }
 }
@@ -5481,7 +5481,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.nikki {
     height: 120px;
     width: 158px;
-    background: transparent url('../img/smr/patient-profiles/nikki.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/smr/patient-profiles/nikki.jpg?1439234524') center center no-repeat;
     background-size: 158px 120px;
   }
 }
@@ -5489,7 +5489,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.nikki {
     height: 295px;
     width: 296px;
-    background: transparent url('../img/md/patient-profiles/nikki.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/md/patient-profiles/nikki.jpg?1439234524') center center no-repeat;
     background-size: 296px 295px;
   }
 }
@@ -5497,7 +5497,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.nikki {
     height: 295px;
     width: 296px;
-    background: transparent url('../img/mdr/patient-profiles/nikki.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/mdr/patient-profiles/nikki.jpg?1439234524') center center no-repeat;
     background-size: 296px 295px;
   }
 }
@@ -5505,7 +5505,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.nikki {
     height: 239px;
     width: 240px;
-    background: transparent url('../img/lg/patient-profiles/nikki.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/lg/patient-profiles/nikki.jpg?1439234524') center center no-repeat;
     background-size: 240px 239px;
   }
 }
@@ -5513,7 +5513,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.nikki {
     height: 239px;
     width: 240px;
-    background: transparent url('../img/lgr/patient-profiles/nikki.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/lgr/patient-profiles/nikki.jpg?1439234524') center center no-repeat;
     background-size: 240px 239px;
   }
 }
@@ -5521,7 +5521,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.julie {
     height: 120px;
     width: 158px;
-    background: transparent url('../img/sm/patient-profiles/julie.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/sm/patient-profiles/julie.jpg?1439234524') center center no-repeat;
     background-size: 158px 120px;
   }
 }
@@ -5529,7 +5529,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.julie {
     height: 120px;
     width: 158px;
-    background: transparent url('../img/smr/patient-profiles/julie.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/smr/patient-profiles/julie.jpg?1439234524') center center no-repeat;
     background-size: 158px 120px;
   }
 }
@@ -5537,7 +5537,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.julie {
     height: 295px;
     width: 296px;
-    background: transparent url('../img/md/patient-profiles/julie.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/md/patient-profiles/julie.jpg?1439234524') center center no-repeat;
     background-size: 296px 295px;
   }
 }
@@ -5545,7 +5545,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.julie {
     height: 295px;
     width: 296px;
-    background: transparent url('../img/mdr/patient-profiles/julie.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/mdr/patient-profiles/julie.jpg?1439234524') center center no-repeat;
     background-size: 296px 295px;
   }
 }
@@ -5553,7 +5553,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.julie {
     height: 239px;
     width: 240px;
-    background: transparent url('../img/lg/patient-profiles/julie.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/lg/patient-profiles/julie.jpg?1439234524') center center no-repeat;
     background-size: 240px 239px;
   }
 }
@@ -5561,7 +5561,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.julie {
     height: 239px;
     width: 240px;
-    background: transparent url('../img/lgr/patient-profiles/julie.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/lgr/patient-profiles/julie.jpg?1439234524') center center no-repeat;
     background-size: 240px 239px;
   }
 }
@@ -5569,7 +5569,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.diego {
     height: 120px;
     width: 158px;
-    background: transparent url('../img/sm/patient-profiles/diego.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/sm/patient-profiles/diego.jpg?1439234524') center center no-repeat;
     background-size: 158px 120px;
   }
 }
@@ -5577,7 +5577,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.diego {
     height: 120px;
     width: 158px;
-    background: transparent url('../img/smr/patient-profiles/diego.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/smr/patient-profiles/diego.jpg?1439234524') center center no-repeat;
     background-size: 158px 120px;
   }
 }
@@ -5585,7 +5585,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.diego {
     height: 295px;
     width: 296px;
-    background: transparent url('../img/md/patient-profiles/diego.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/md/patient-profiles/diego.jpg?1439234524') center center no-repeat;
     background-size: 296px 295px;
   }
 }
@@ -5593,7 +5593,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.diego {
     height: 295px;
     width: 296px;
-    background: transparent url('../img/mdr/patient-profiles/diego.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/mdr/patient-profiles/diego.jpg?1439234524') center center no-repeat;
     background-size: 296px 295px;
   }
 }
@@ -5601,7 +5601,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.diego {
     height: 239px;
     width: 240px;
-    background: transparent url('../img/lg/patient-profiles/diego.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/lg/patient-profiles/diego.jpg?1439234524') center center no-repeat;
     background-size: 240px 239px;
   }
 }
@@ -5609,7 +5609,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.diego {
     height: 239px;
     width: 240px;
-    background: transparent url('../img/lgr/patient-profiles/diego.jpg?1438615757') center center no-repeat;
+    background: transparent url('../img/lgr/patient-profiles/diego.jpg?1439234524') center center no-repeat;
     background-size: 240px 239px;
   }
 }
@@ -5618,7 +5618,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.kimberly {
     height: 120px;
     width: 158px;
-    background: transparent url('../img/sm/patient-profiles/kimberly.png?1438879723') center center no-repeat;
+    background: transparent url('../img/sm/patient-profiles/kimberly.png?1439234524') center center no-repeat;
     background-size: 158px 120px;
   }
 }
@@ -5626,7 +5626,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.nikki {
     height: 120px;
     width: 158px;
-    background: transparent url('../img/sm/patient-profiles/nikki.png?1438879450') center center no-repeat;
+    background: transparent url('../img/sm/patient-profiles/nikki.png?1439234524') center center no-repeat;
     background-size: 158px 120px;
   }
 }
@@ -5634,7 +5634,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.julie {
     height: 120px;
     width: 158px;
-    background: transparent url('../img/sm/patient-profiles/julie.png?1438879762') center center no-repeat;
+    background: transparent url('../img/sm/patient-profiles/julie.png?1439234524') center center no-repeat;
     background-size: 158px 120px;
   }
 }
@@ -5642,7 +5642,7 @@ body.patient-profiles .section--patients {
   body.patient-profiles .section--patients .person.diego {
     height: 120px;
     width: 158px;
-    background: transparent url('../img/sm/patient-profiles/diego.png?1438879746') center center no-repeat;
+    background: transparent url('../img/sm/patient-profiles/diego.png?1439234524') center center no-repeat;
     background-size: 158px 120px;
   }
 }
@@ -7802,9 +7802,12 @@ body.thank-you-request section.section--ty {
   overflow: hidden;
 }
 
-.mejs-container-fullscreen .mejs-mediaelement {
+html.ie9 .mejs-container-fullscreen .mejs-mediaelement {
   width: 100%;
   height: 100%;
+}
+
+html.ie9 .mejs-container-fullscreen {
   min-height: 100%;
 }
 
@@ -7884,7 +7887,6 @@ body.thank-you-request section.section--ty {
   overflow: hidden;
   z-index: 1001;
   height: 100%;
-  min-height: 100%;
 }
 
 .mejs-background {
@@ -7926,7 +7928,6 @@ body.thank-you-request section.section--ty {
 
 .mejs-overlay-play {
   cursor: pointer;
-  z-index: 1000;
 }
 
 .mejs-overlay-button {

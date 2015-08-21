@@ -2334,7 +2334,7 @@ Array.prototype.forEach = function forEach(callback) {
                                         
                                         if (data.SvcStatus == true) {
 
-                                            window.location.href="/hcp/thank-you.aspx";
+                                            window.location.href="thank-you.aspx";
                                             
                                         } else {
                                         }
@@ -2389,7 +2389,7 @@ Array.prototype.forEach = function forEach(callback) {
 
     
     
-        var BEDSVC = "http://62c435af.ngrok.com/hcp/service/BEDService.svc"
+        var BEDSVC = "service/BEDService.svc"
     
 
 }).call(this);
@@ -3030,7 +3030,7 @@ Array.prototype.forEach = function forEach(callback) {
 
                                 if (data.SvcStatus == true) {
 
-                                    window.location.href="/hcp/thank-you-request.aspx";
+                                    window.location.href="thank-you-request.aspx";
 
                                 } else {
                                 }
@@ -3112,7 +3112,7 @@ Array.prototype.forEach = function forEach(callback) {
 
                                 if (data.SvcStatus == true) {
 
-                                    window.location.href="/hcp/thank-you-request.aspx";
+                                    window.location.href="thank-you-request.aspx";
 
                                 } else {
                                 }
@@ -3201,7 +3201,7 @@ Array.prototype.forEach = function forEach(callback) {
 
                                 if (data.SvcStatus == true) {
 
-                                    window.location.href="/hcp/thank-you-request.aspx";
+                                    window.location.href="thank-you-request.aspx";
 
                                 } else {
                                 }
@@ -3239,7 +3239,7 @@ Array.prototype.forEach = function forEach(callback) {
     //}])
 
 
-    var BEDSVC = "http://6ccdb2.ngrok.com/hcpUnsubscribe/service/BEDUnsubscribe.svc"
+    var BEDSVC = "service/BEDUnsubscribe.svc"
     
 
 }).call(this);
