@@ -103,8 +103,8 @@
             // Create MEJS object for the video player element 😻
             $('.audio-player').mediaelementplayer({
                 pauseOtherPlayers: true,           // allow multiple videos
-                iPadUseNativeControls: true,        // force iPad's native controls
-                iPhoneUseNativeControls: true,      // force iPhone's native controls
+                iPadUseNativeControls: false,        // force iPad's native controls
+                iPhoneUseNativeControls: false,      // force iPhone's native controls
                 AndroidUseNativeControls: true,     // force Android's native controls
                 success: onSuccess,
                 error: onError

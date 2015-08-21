@@ -54,9 +54,11 @@
                                 $http({
                                     method: "POST",
                                     crossDomain: true,
+                                    headers: {'X-Requested-With': 'XMLHttpRequest'},
                                     url: URL,
+                                    cache: false,
                                     data: JSON.stringify(optInfor),
-                                    contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                                    contentType: "application/json; charset=utf8",
                                     dataType: "json"
                                 })
                                     

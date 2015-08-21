@@ -1880,6 +1880,7 @@ footer.footer--global nav ul li a {
   body.index .section--hero .hero .player .still {
     padding-top: 0 !important;
     height: 644px !important;
+    z-index: 3;
   }
 }
 @media only screen and (min-width: 1401px) {
@@ -2389,6 +2390,25 @@ body.index .section--hero .hero .callouts a.cta3 .icon {
     position: absolute;
     top: 0;
     bottom: 0;
+  }
+  body.index .section--hero .hero .player .video {
+    padding-top: 0 !important;
+    height: 644px !important;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  body.index .section--hero .hero .player .video:before, body.index .section--hero .hero .player .video:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+  body.index .section--hero .hero .player .video .mejs-container {
+    margin: 0 auto;
   }
   body.index .section--hero .hero .copy {
     position: absolute;

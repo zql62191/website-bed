@@ -7,14 +7,14 @@ body.support-and-resources{
     }
 
     .section--video-player{
-
+        
         // @include mq('lg') {
             background-color: #1B2025;
         // }
 
         .mejs-container, .mejs-container * {
             max-width: 100%;
-            max-height: 540px;
+            //max-height: 100%;
         }
         .mejs-inner {
             height: 100%;
