@@ -5,10 +5,39 @@ body.recognizing-bed {
         padding-bottom: 18px;
 
     }
+    p.footnote{
+        text-align: center;
+    }
 
-    .section--bulimia {
+    .section--episodes {
         background: #252F39;
         background-image: linear-gradient(-180deg, #1E2730 0%, #252F39 100%);
+
+        .wrap--content {
+            padding-bottom: 34px;
+        }
+
+        .heading--2 {
+            text-align: center;
+            margin: 0 auto 12px auto;
+
+            @include mq('lg') {
+                width: percentage(796/1024);
+            }
+
+            @include mq("md") {
+                margin: 0 auto 0px auto;
+                width: 100%;
+                // width: percentage(654/768);
+            }
+        }
+
+    }
+
+    .section--bulimia {
+        //background: #252F39;
+        //background-image: linear-gradient(-180deg, #1E2730 0%, #252F39 100%);
+        background: #333E48;
 
         .wrap--content {
             padding-bottom: 34px;
@@ -29,11 +58,19 @@ body.recognizing-bed {
             }
         }
 
+        &:before {
+            @include stretch;
+            background-image: radial-gradient(50% 149%, #333E48 17%, #252F39 100%);
+        }
+
     }
 
     .section--overeating {
-        background: #333E48;
-
+        //background: #333E48;
+        background: #252F39;
+        background-image: linear-gradient(-180deg, #1E2730 0%, #252F39 100%);
+        
+        
         .wrap--content {
             padding-bottom: 34px;
         }
@@ -47,15 +84,17 @@ body.recognizing-bed {
             }
         }
 
-        &:before {
-            @include stretch;
-            background-image: radial-gradient(50% 149%, #333E48 17%, #252F39 100%);
-        }
+        //&:before {
+        //    @include stretch;
+        //    background-image: radial-gradient(50% 149%, #333E48 17%, #252F39 100%);
+        //}
     }
 
     .section--obesity {
-        background: #252f39;//#252F39;
+        //background: #252f39;//#252F39;
 
+        background: #333E48;
+        
         .heading--2 {
             text-align: center;
             margin: 0 auto;
@@ -224,12 +263,19 @@ body.recognizing-bed {
                 }
             }
         }
+
+        &:before {
+            @include stretch;
+            background-image: radial-gradient(50% 149%, #333E48 17%, #252F39 100%);
+        }
     }
 
     .section--triggers {
-        background: #252f39;
+        //background: #252f39;
         // background-image: radial-gradient(50% 149%, #333E48 17%, #252F39 100%);
 
+        background: #252F39;
+        background-image: linear-gradient(-180deg, #1E2730 0%, #252F39 100%);
 
         .heading--1 {
             @include mq('lg') {
@@ -614,6 +660,7 @@ body.recognizing-bed {
                     padding-top: 150px;
                 }
             }
+           
 
             h3.heading--3{
                 br { display: none; }
@@ -651,6 +698,10 @@ body.recognizing-bed {
                 h2{
                     display: inline;
                 }
+            }
+            
+            .inline--sm{
+                display: inline;
             }
 
             .center{

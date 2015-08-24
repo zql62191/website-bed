@@ -38,7 +38,7 @@
 
                         //init the ME
                         videoElem.mediaelementplayer({
-                            enablePluginDebug: true,
+                            enablePluginDebug: false,
                             pauseOtherPlayers: false, // allow multiple videos
                             startVolume: 0, // there is no audio
                             features: [],

@@ -10,13 +10,19 @@ extends /layouts/base.jade
     :raw
 
 block content
-
-    section.section--bulimia
+    
+    section.section--episodes
         .wrap--content
 
+            h2.heading--2
+                | Binge eating disorder (!{BED}) is defined as recurring episodes (at least once weekly for 3 months) of consuming a large amount of food in a short period of time, compared to what others might eat, with episodes characterized by experiencing a lack of control and significant distress regarding binge eating, among other criteria.#[sup 1]
+    
+    section.section--bulimia
+        .wrap--content
+            
             h1.heading--1
-                | Binge eating disorder (!{BED}) is different from bulimia nervosa
-
+                | !{BED} is different from bulimia nervos
+            
             h2.heading--2
                 | !{BED} is not associated with compensatory behaviors like purging or excessive exercise, or with dietary restriction, though frequent dieting may be reported
                 sup 1
@@ -45,7 +51,7 @@ block content
             h3.heading--3
                 | Although !{BED} can be associated with increased weight, the majority of adults 
                 br
-                | with !{BED} are not obese: 55% are normal-weight or overweight, 45% are obese
+                | with !{BED} are not obese#[sup &dagger;]: 55% are normal-weight or overweight, 45% are obese
                 sup 3
 
 
@@ -114,6 +120,10 @@ block content
                     sup &reg; 
                     | criteria) from an eating disorder&ndash;assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.
                     sup 3
+                    
+                p.footnote.section-newnote.hide--sm  
+                    | #[sup &dagger;]Current BMI in adults with 12-month prevalence of !{BED}. among an eating disorder–assessed subsample of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.
+                    sup 3
             .mobile-line &nbsp;
 
     section.section--compared
@@ -142,12 +152,16 @@ block content
                 //- | At rates similar to those with bulimia and anorexia, adults with !{BED} may have coexisting psychiatric and physical conditions like bipolar disorders, depressive disorders, anxiety disorders, substance use disorders, and obesity
                 | Adult patients with !{BED} often have coexisting comorbid disorders such as bipolar disorders, depressive disorders, anxiety disorders, and, to a lesser extent, substance use disorders
                 sup 1
-
+                
             h3.heading--3.center
-                | As part of a complete evaluation, clinicians should consider these comorbid conditions that commonly occur in adults with !{BED} for differential diagnosis.
+                | As part of a complete evaluation of adult patients with !{BED}, clinicians should consider these comorbid conditions that commonly occur for differential diagnosis.
 
-            h4.heading--2.center
-                | Lifetime !{BED} in adults is associated with significant psychiatric comorbidity comparable to that of bulimia nervosa and anorexia nervosa
+            h2.heading--2
+                | B.E.D. is associated with significant comorbidity that is comparable to bulimia nervosa and anorexia nervosa
+                sup 1
+            
+            h3.heading--3.center
+                | Lifetime comorbidity (DSM-IV® Criteria) in adults with !{BED}
                 sup &dagger;1,3
 
             .statistic-box
@@ -175,7 +189,7 @@ block content
 
             p(data-note="").footnote
                 sup &dagger;
-                | Data from a random subsample of respondents (n=1,139) from an eating disorder&ndash;assessed subsample of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.
+                | Data from a random subsample of respondents (n=-2,980) from an eating disorder&ndash;assessed subsample of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.
                 sup 3
 
     section.section--triggers
@@ -216,8 +230,8 @@ block content
                     | 5th ed. Arlington, VA: American Psychiatric Association;2013:350-353
                 li
                     | American Psychiatric Association. DSM-5 Fact Sheet. Feeding and eating disorders. 
-                    a(href="http://www.dsm5.org/documents/eating%20disorders%20fact%20sheet.pdf",target="_blank").url www.dsm5.org/documents/eating%20disorders%20fact%20sheet.pdf
-                    | . Accessed May 8, 2015
+                    a(href="http://www.dsm5.org/documents/eating%20disorders%20fact%20sheet.pdf",target="_blank").url.inline--sm www.dsm5.org/documents/eating%20disorders%20fact%20sheet.pdf
+                    | . Accessed August 21, 2015
                 li
                     | Hudson JI, Hiripi E, Pope HG Jr, Kessler RC. [Published correction appears in 
                     em Biol Psychiatry. 

@@ -4,6 +4,13 @@ body.patient-profiles {
     .section--patients {
         background: #252F39;
 
+
+        .hypothetical {
+            font-size: 14px;
+            color: #858B91;
+            text-align:right;
+        }
+
         @include mq("lg","md") {
 
             .person {
@@ -19,6 +26,13 @@ body.patient-profiles {
 
         @include mq("sm") {
 
+            .hypothetical {
+                margin-bottom: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 300px; //in sync with .persons
+            }
+
             .person {
                 $persons: "kimberly" "nikki" "julie" "diego";
                 @each $person in $persons {
@@ -33,6 +47,10 @@ body.patient-profiles {
         @include mq("lg") {
 
             .persons {
+                margin-bottom: 0px;
+            }
+
+            .hypothetical {
                 margin-bottom: 60px;
             }
 
@@ -86,13 +104,16 @@ body.patient-profiles {
         @include mq("md") {
 
             .wrap--content {
-                
+                .hypothetical {
+                    width: 592px;
+                    margin: 10px auto 40px auto;
+                }
             }
 
             .persons {
                 @include clearfix;
                 width: 592px;
-                margin: 48px auto 40px auto;
+                margin: 48px auto 0px auto;
 
                 .person {
                     display: block;
@@ -135,7 +156,7 @@ body.patient-profiles {
             }
             
         }
-
+        /* START // What in the hell is this crap? --Jeremy */
         @media only screen
         and (min-device-width: 360px)
         and (max-device-width: 640px)
@@ -165,6 +186,7 @@ body.patient-profiles {
                 margin: 0 -6.25% 0 6.25% !important;
             }
         }
+        /*  END  // What in the hell is this crap? --Jeremy */
 
         @include mq("sm") {
 
@@ -176,7 +198,7 @@ body.patient-profiles {
             .persons {
                 @include clearfix;
                 width: 300px;
-                height: 268px;
+                height: 252px;
                 margin: 0 -6.25% 0 -6.25%;
                 position: relative;
 

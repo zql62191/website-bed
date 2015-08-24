@@ -6,7 +6,7 @@ body.dsm5-criteria {
         padding-bottom: 32px;
 
         @include mq('lg') {
-            width: percentage(611/655);
+            width: percentage(655/655);
             margin: 0 auto;
         }
 
@@ -14,6 +14,28 @@ body.dsm5-criteria {
             // width: percentage(502/655);
             // min-width: 502px;
             width: 502px;
+            margin: 0 auto;
+        }
+
+        @include mq('sm') {
+            width: percentage(555/655);
+            text-align: center;
+            margin-left: 8.5%;
+        }
+    }
+
+    h2.heading--2 {
+        padding-bottom: 32px;
+
+        @include mq('lg') {
+            width: percentage(655/655);
+            margin: 0 auto;
+        }
+
+        @include mq('md') {
+            // width: percentage(502/655);
+            // min-width: 502px;
+            width: 452px;
             margin: 0 auto;
         }
 
@@ -147,6 +169,12 @@ body.dsm5-criteria {
             font-size: 16px !important;
             color: #D6D8DA;
             line-height: 18px;
+        }
+
+        .btn{
+            font-size: 16px;
+            padding-top: 5px;
+            line-height: 20px;
         }
     }
     
