@@ -6,3 +6,4 @@
 2015-08-21 13:55:08,290 [64] INFO BEDService.BEDUnsubscribe - BED:: User: gtsert@hfdj.gfd | Operation: Unsubscribtion_success |  Category: SetUnsubscribeDataEmail | Message: OK 
 2015-08-21 14:00:24,095 [92] INFO BEDService.BEDUnsubscribe - BED:: User: gfds@gdfg.gfds | Operation: Unsubscribtion_success |  Category: SetUnsubscribeDataAddress | Message: OK 
 2015-08-21 14:06:52,259 [137] INFO BEDService.BEDUnsubscribe - BED:: User: gadsg@ghfgh.gds | Operation: Unsubscribtion_success |  Category: SetUnsubscribeDataBoth | Message: OK 
+2015-08-21 14:21:46,764 [130] INFO BEDService.BEDUnsubscribe - BED:: User: hgdh@hfgh.hfg | Operation: Unsubscribtion_success |  Category: SetUnsubscribeDataEmail | Message: OK 
