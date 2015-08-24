@@ -229,7 +229,7 @@ body.potential-causes {
             }
 
             .btn.btn--yellow{
-                font-size: 16px;
+                font-size: 14px;
             }
 
         }
@@ -368,8 +368,11 @@ body.potential-causes {
         }
         .section--factors {
             .btn{
-                font-size: 14px;
+                //font-size: 14px;
                 // line-height: 17px;
+                font-size: 16px;
+                padding-top: 5px;
+                line-height: 20px;
             }
         }
     }

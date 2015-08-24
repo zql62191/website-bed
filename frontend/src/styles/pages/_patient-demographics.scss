@@ -24,7 +24,7 @@ body.patient-demographics {
             }
         }
         .heading--2 {
-            padding-bottom: 48px;
+            padding-bottom: 28px;
 
             @include mq('sm') {
                 font-size: 16px;
@@ -35,8 +35,30 @@ body.patient-demographics {
             }
         }
 
-        .footnote {
+        .titlenote{
+            
+            margin: auto;
+            text-align: center;
+            font-size: 14px;
+            color: #858B91;
+            padding-bottom: 48px;
 
+            @include mq('lg') {
+                width: percentage(556/960);
+            }
+            @include mq('md') {
+                margin-left: 10%;
+                width: percentage(766/960);
+            }
+            @include mq('sm') {
+                margin-right: auto;
+                margin-left: auto;
+            }
+            
+        }
+
+        .footnote {
+            margin-top: 0;
             @include mq('lg') {
                 width: percentage(556/960);
             }
@@ -71,19 +93,32 @@ body.patient-demographics {
                     margin: 0 auto;
                 }
 
+                .title--affect{
+                    padding-top: 194px;
+                    
+                    @include mq("md") {
+                        font-size: 36px;
+                        padding-top: 84px;
+                    }
+                    @include mq("sm") {
+                        padding-top: 40px;
+                        font-size: 32px;
+                    }
+                }
+
                 .num {
                     color: #FDBD3E;
-                    padding-top: 214px;
+                    //padding-top: 214px;
 
                     @include mq("lg") {
                         font-size: 52px;
                     }
                     @include mq("md") {
                         font-size: 36px;
-                        padding-top: 104px;
+                        //padding-top: 0px;
                     }
                     @include mq("sm") {
-                        padding-top: 55px;
+                        //padding-top: 0px;
                         font-size: 32px;
                     }
                 }
@@ -100,7 +135,7 @@ body.patient-demographics {
                 }
             }
             p.footnote {
-
+                
                 @include mq('lg') {
                     width: percentage(556/960);
                 }
