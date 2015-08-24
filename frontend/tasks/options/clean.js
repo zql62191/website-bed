@@ -29,7 +29,7 @@ module.exports = {
             force: true
         },
         src: [
-            './dist/hcpUnsubscribe/*'
+            './dist/unsubscribe/*'
         ]
     }
 };

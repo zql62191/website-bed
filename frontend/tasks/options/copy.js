@@ -60,7 +60,7 @@ module.exports = {
             expand: true,
             cwd: 'dist/',
             src: ['**', '!unsubscribe.aspx'],
-            dest: '../backend/hcpUnsubscribe/',
+            dest: '../backend/unsubscribe/',
             dot: true,
             noProcess: ['unsubscribe.aspx']
         },
@@ -68,7 +68,7 @@ module.exports = {
             expand: true,
             cwd: 'dist/',
             src: 'unsubscribe.aspx',
-            dest: '../backend/hcpUnsubscribe/',
+            dest: '../backend/unsubscribe/',
             dot: true,
             rename: function(dest, src) {
                 return dest + src.replace('unsubscribe.aspx','index.aspx');
@@ -78,7 +78,7 @@ module.exports = {
         //     expand: true,
         //     cwd: 'dist/css/',
         //     src: ['**'],
-        //     dest: '../backend/hcpUnsubscribe/',
+        //     dest: '../backend/unsubscribe/',
         //     dot: true
         // }
         ]

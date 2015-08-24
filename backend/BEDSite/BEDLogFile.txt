@@ -1,1 +1,0 @@
-2015-07-31 15:22:06,183 [5] INFO ASP.global_asax - BED:: User:   | Operation: ServiceStart |  Category: Application_Start | Message: BED Service Started 
