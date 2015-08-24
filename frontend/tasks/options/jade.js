@@ -106,7 +106,8 @@ module.exports = {
             data: function(dest, src) {
                 var yfm = require('assemble-yaml');
                 return {
-                    aspx: true,
+                    aspx: false,
+                    unsubscribeAspx: true,
                     dev: false,
                     prod: false,
                     from: src,

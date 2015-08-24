@@ -1,6 +1,8 @@
 
 - if (aspx === true)
     <%@ Page Language="C#" AutoEventWireup="true" CodeFile="#{fileName}.aspx.cs" Inherits="#{fileString}" %>
+- else if (unsubscribeAspx !== undefined)
+    <%@ Page Language="C#" AutoEventWireup="true" CodeFile="index.aspx.cs" Inherits="index" %>
 
 
 include /mixins/all.jade

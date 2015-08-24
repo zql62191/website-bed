@@ -159,6 +159,7 @@ body.index {
                         margin-left: auto;
                         margin-right: auto;
 
+
                         &:before,
                         &:after {
                             content: '';
@@ -204,17 +205,17 @@ body.index {
                             bottom: 0;
                         }
 
-                        .mejs-container{
+                        .mejs-container,.me_flash_0_container{
                             margin: 0 auto;
                             width: 1400px !important;
-                            height: 644px !important;
+                            height: 787px !important;
                         }
 
                         .mejs-overlay-play, .mejs-overlay-button{
                             display: none;
                         }
 
-                        .mejs-container *{
+                        .mejs-container *, .me_flash_0_container *{
                             width: 1400px !important;
                             margin: 0 auto;
                         }
