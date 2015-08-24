@@ -49,7 +49,7 @@
 
                                 //Set up events. 
                                 //If a user presses Spacebar or Escape we just pause the video fade it out
-                                var events = ['pause','ended'];
+                                var events = ['ended'];
 
                                 for(var i=0;i<events.length;i++){
                                     mediaElement.addEventListener(events[i], function(e){
