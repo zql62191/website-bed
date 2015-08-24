@@ -7,12 +7,12 @@
     <meta name="description" content="Find info on binge eating disorder in adults, including diagnostic criteria, distinction from other eating disorders, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="./css/styles.css?1440180300000"/>
+    <link rel="stylesheet" href="./css/styles.css?1440436500000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1440180300000"></script>
-    <script src="./js/redirect.js?1440180300000"></script>
+    <script src="./js/head.js?1440436500000"></script>
+    <script src="./js/redirect.js?1440436500000"></script>
 <script>
     pageLoading();
 </script>
@@ -43,7 +43,7 @@
           <div class="wrap--content">
             <nav>
               <ul>
-                <li class="hide--lg"><a href="/hcp/index.aspx">Home</a>
+                <li class="hide--lg"><a href="/hcp/index.aspx">B.E.D. in Adults</a>
                 </li>
                 <li><a href="/hcp/dsm5-criteria.aspx"><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> Criteria</a>
                 </li>
@@ -73,7 +73,7 @@
             
           </h2>
           <h1 class="heading--1">Research suggests B.E.D. may have a neurobiological basis <br class="phoneStyle">with genetic and environmental risk factors</h1>
-          <h2 class="heading--2 mobileContspace">These prevailing theories may support a neurobiological basis for <abbr title="Binge Eating Disorder">B.E.D.</abbr></h2>
+          <h2 class="heading--2 mobileContspace">Prevailing theories that may support a neurobiological basis for <abbr title="Binge Eating Disorder">B.E.D.</abbr>:</h2>
           <div class="row brain">
             <div class="icon is--vc"></div>
             <h4 class="heading--4 mobileHeading--4">Reward center and impulsivity dysregulation theory<sup>1-4 </sup></h4>
@@ -86,35 +86,44 @@
           </div>
           <div class="row neuron-closeup">
             <div class="icon is--vc"></div>
-            <h4 class="heading--4 mobileHeading--6">Endogenous &micro;-opioid signaling dysfunction theory<sup>5,10-12</sup></h4>
-            <p>Opioid signaling converts sensory stimuli into processes that generate or enhance &ldquo;liking&rdquo; of a particular food<sup>8,9</sup></p>
+            <h4 class="heading--4 mobileHeading--6">Endogenous &micro;-opioid signaling dysfunction theory<sup>5,10-11</sup></h4>
+            <ul class="square">
+              <li class="listStyle">μ-Opioid receptor polymorphisms are more often found in adults with <abbr title="Binge Eating Disorder">B.E.D.</abbr><sup>5</sup></li>
+              <li class="listStyle">
+                  
+                Opioid receptor involvement in reward processing has been demonstrated primarily from animal studies<sup>10,11</sup>
+              </li>
+            </ul>
+            <!--p-->
+            <!--    | Opioid signaling converts sensory stimuli into processes that generate or enhance &ldquo;liking&rdquo; of a particular food-->
+            <!--    sup 8,9-->
           </div>
         </div>
       </section>
       <section class="section--factors">
         <div class="wrap--content">
           <h2 class="heading--2 mobileTitle">
-            Research also suggests these possible risk factors for <abbr title="Binge Eating Disorder">B.E.D.</abbr>
+            Research suggests risk factors for <abbr title="Binge Eating Disorder">B.E.D.</abbr>:
             
           </h2>
           <div class="row dna">
             <div class="icon is--vc"></div>
-            <h4 class="heading--4">Genetics<sup>5,13-15</sup></h4>
+            <h4 class="heading--4">Genetic influences<sup>5,12,13</sup></h4>
             <ul class="square">
-              <li class="listStyle"><abbr title="Binge Eating Disorder">B.E.D.</abbr> appears to run in families, which may reflect additive genetic influences<sup>13</sup></li>
-              <li class="listStyle">Genetic differences in neurobiological components of the brain's reward center have been observed<sup>5,15</sup></li>
+              <li class="listStyle"><abbr title="Binge Eating Disorder">B.E.D.</abbr> appears to run in families, which may reflect additive genetic influences<sup>12</sup></li>
+              <li class="listStyle">Genetic differences in neurobiological components of the brain's reward center have been observed<sup>5,13</sup></li>
             </ul>
           </div>
           <div class="row people">
             <div class="icon is--vc"></div>
-            <h4 class="heading--4 mobileHeading--7">Environmental and social influences<sup>16,17</sup></h4>
+            <h4 class="heading--4 mobileHeading--7">Environmental and social influences<sup>14,15</sup></h4>
             <ul class="square">
-              <li class="listStyle">In a case-controlled retrospective assessment of 162 women with <abbr title="Binge Eating Disorder">B.E.D.</abbr>, stressful life events were reported more frequently in the year preceding <abbr title="Binge Eating Disorder">B.E.D.</abbr> onset than in non-<abbr title="Binge Eating Disorder">B.E.D.</abbr> controls<sup>16</sup></li>
-              <li class="listStyle">In a nationally representative survey of 5,702 adults, of the men (n=30) and women (n=75) who reported having <abbr title="Binge Eating Disorder">B.E.D.</abbr>, 98% and 90%, respectively, reported experiencing some form of trauma*<sup>17</sup></li>
+              <li class="listStyle">In a case-controlled retrospective assessment of 162 women with <abbr title="Binge Eating Disorder">B.E.D.</abbr>, stressful life events were reported more frequently in the year preceding <abbr title="Binge Eating Disorder">B.E.D.</abbr> onset than in non-<abbr title="Binge Eating Disorder">B.E.D.</abbr> controls<sup>14</sup></li>
+              <li class="listStyle">In a nationally representative survey of 5,702 adults, of the men (n=30) and women (n=75) who reported having <abbr title="Binge Eating Disorder">B.E.D.</abbr>, 98% and 90%, respectively, reported experiencing some form of trauma*<sup>15</sup></li>
             </ul>
           </div>
-          <p data-note="" class="footnote">*Exposure to events such as combat, life-threatening accidents, a major disaster, or physical or sexual assault.<sup>17</sup></p>
-          <div class="center"><a href="sign-up.aspx" class="btn btn--yellow">GET THE FULL <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> <abbr title="Binge Eating Disorder">B.E.D.</abbr> CRITERIA</a></div>
+          <p data-note="" class="footnote">*Exposure to events such as combat, life-threatening accidents, a major disaster, or physical or sexual assault.<sup>15</sup></p>
+          <div class="center"><a href="sign-up.aspx" class="btn btn--yellow">GET THE FULL <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> <abbr title="Binge Eating Disorder">B.E.D.</abbr> DIAGNOSTIC CRITERIA</a></div>
         </div>
         <div class="wrap--refs">
           <ol class="refs number">
@@ -128,10 +137,8 @@
             <li>Berridge KC, Kringelback ML. <em>Curr Opin Neurobiol. </em>2013;23(3):294-303.</li>
             <li>Wyvell CL, Berridge KC. <em>J Neurosci. </em>2000;20(21):8122-8130.</li>
             <li class="space">Naleid AM, Grace MK, Chimukangara M, Billington CJ, Levine AS. <em>Am J Physiol Regul Integr Comp Physiol. </em>2007;293(1):R99-R105. </li>
-            <li class="space">Boggiano MM, Chandler PC, Viana JB, Oswald KD, Maldonado CR, Wauford PK. <em>Behav Neurosci. </em>2005;119(5):1207-1214. </li>
-            <li>Blasio A, Steardo L, Sabino V, Cottone P.  <em> Addict Biol. </em>2014;19(4):652-662.</li>
+            <li class="space">Boggiano MM, Chandler PC, Viana JB, Oswald KD, Maldonado CR, Wauford PK. <em>Behav Neurosci. </em>2005;119(5):1207-1214.</li>
             <li class="space">American Psychiatric Association. Binge-eating disorder. In: <em>Diagnostic and Statistical Manual of Mental Disorders. </em>5th ed. Arlington, VA: American Psychiatric Association;2013:350-353.</li>
-            <li>Mitchell KS, Neale MC, Bulik CM, et al. <em>Psychol Med. </em>2010;40(11):1899-1906.</li>
             <li class="space">Davis C, Levitan RD, Yilmaz Z, Kaplan AS, Carter JC, Kennedy JL. <em>Prog Neuropsychopharmacol Biol Psychiatry. </em>2012;38(2):328-335. </li>
             <li>Pike KM, Wilfley D, Hilbert A, Fairburn CG, Dohm FA, Striegel-Moore RH. <em>Psychiatry Res. </em>2006;142(1):19-29.</li>
             <li>Mitchell KS, Mazzeo SE, Schlesinger MR, Brewerton TD, Smith BN. <em>Int J Eat Disord. </em>2012;45(3):307-315. </li>
@@ -142,7 +149,7 @@
         <div class="wrap--content full--sm">
           <nav class="bottom-bump">
             <ul>
-              <li><a href="/hcpUnsubscribe/index.aspx">Unsubscribe</a>
+              <li><a href="/hcp/unsubscribe/index.aspx">Unsubscribe</a>
               </li>
               <li><a href="/hcp/contact-us.aspx">Contact Us</a>
               </li>
@@ -155,7 +162,7 @@
           </nav>
         </div>
         <div class="wrap--content last">
-          <p><em>DSM-IV</em><sup>&reg;</sup> and <em><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr></em> are registered trademarks of the American Psychiatric Association.
+          <p><em>DSM-IV-Text Revision</em><sup>&reg;</sup> and <em><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr></em> are registered trademarks of the American Psychiatric Association.
             
           </p>
           <p class="bottom-bump"><a href="http://www.shire.com/" target="_blank">
@@ -177,9 +184,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1440180300000"></script>
-    <script src="./js/templates.js?1440180300000"></script>
-    <script src="./js/app.js?1440180300000"></script>
+    <script src="./js/vendor.js?1440436500000"></script>
+    <script src="./js/templates.js?1440436500000"></script>
+    <script src="./js/app.js?1440436500000"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

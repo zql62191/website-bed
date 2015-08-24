@@ -5,3 +5,4 @@
 2015-08-13 15:33:03,934 [14] INFO BEDService.BEDWCFService - BED:: User:  | Operation: Uninitialized |  Category:  | Message:  
 2015-08-20 13:52:35,823 [9] INFO BEDService.BEDWCFService - BED:: User: rseth@cdmprinceton.com | Operation: OptIn_Success |  Category: SetOptInData | Message: OK 
 2015-08-21 13:59:27,262 [48] INFO BEDService.BEDWCFService - BED:: User: rseth@cdmprinceton.com | Operation: OptIn_Success |  Category: SetOptInData | Message: OK 
+2015-08-24 13:17:46,062 [20] INFO BEDService.BEDWCFService - BED:: User: rseth@cdmprinceton.com | Operation: OptIn_Success |  Category: SetOptInData | Message: OK 

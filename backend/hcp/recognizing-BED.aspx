@@ -7,12 +7,12 @@
     <meta name="description" content="Find info on binge eating disorder in adults, including diagnostic criteria, distinction from other eating disorders, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="./css/styles.css?1440180300000"/>
+    <link rel="stylesheet" href="./css/styles.css?1440436500000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1440180300000"></script>
-    <script src="./js/redirect.js?1440180300000"></script>
+    <script src="./js/head.js?1440436500000"></script>
+    <script src="./js/redirect.js?1440436500000"></script>
 <script>
     pageLoading();
 </script>
@@ -43,7 +43,7 @@
           <div class="wrap--content">
             <nav>
               <ul>
-                <li class="hide--lg"><a href="/hcp/index.aspx">Home</a>
+                <li class="hide--lg"><a href="/hcp/index.aspx">B.E.D. in Adults</a>
                 </li>
                 <li><a href="/hcp/dsm5-criteria.aspx"><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> Criteria</a>
                 </li>
@@ -66,9 +66,14 @@
           </div>
         </div>
       </header>
+      <section class="section--episodes">
+        <div class="wrap--content">
+          <h2 class="heading--2">Binge eating disorder (<abbr title="Binge Eating Disorder">B.E.D.</abbr>) is defined as recurring episodes (at least once weekly for 3 months) of consuming a large amount of food in a short period of time, compared to what others might eat, with episodes characterized by experiencing a lack of control and significant distress regarding binge eating, among other criteria.<sup>1</sup></h2>
+        </div>
+      </section>
       <section class="section--bulimia">
         <div class="wrap--content">
-          <h1 class="heading--1">Binge eating disorder (<abbr title="Binge Eating Disorder">B.E.D.</abbr>) is different from bulimia nervosa</h1>
+          <h1 class="heading--1"><abbr title="Binge Eating Disorder">B.E.D.</abbr> is different from bulimia nervos</h1>
           <h2 class="heading--2"><abbr title="Binge Eating Disorder">B.E.D.</abbr> is not associated with compensatory behaviors like purging or excessive exercise, or with dietary restriction, though frequent dieting may be reported<sup>1</sup></h2>
         </div>
       </section>
@@ -83,7 +88,7 @@
           <h1 class="heading--1"><abbr title="Binge Eating Disorder">B.E.D.</abbr> is different from obesity</h1>
           <h2 class="heading--2"><abbr title="Binge Eating Disorder">B.E.D.</abbr> can occur in normal-weight, overweight, and obese adults<sup>*3</sup>
           </h2>
-          <h3 class="heading--3">Although <abbr title="Binge Eating Disorder">B.E.D.</abbr> can be associated with increased weight, the majority of adults <br>with <abbr title="Binge Eating Disorder">B.E.D.</abbr> are not obese: 55% are normal-weight or overweight, 45% are obese<sup>3</sup></h3>
+          <h3 class="heading--3">Although <abbr title="Binge Eating Disorder">B.E.D.</abbr> can be associated with increased weight, the majority of adults <br>with <abbr title="Binge Eating Disorder">B.E.D.</abbr> are not obese<sup>&dagger;</sup>: 55% are normal-weight or overweight, 45% are obese<sup>3</sup></h3>
           <div class="chart-wrap">
             <div class="chart"></div>
             <div class="label top left">
@@ -107,6 +112,7 @@
               <div class="footnote">Body mass index<br class="mobile-break"><br class="desktop-break">(BMI) 30.0-39.9</div>
             </div>
             <p data-note="" class="footnote section-note hide--sm">*Data (based on Version 3.0 of the World Health Organization Composite International Diagnostic Interview and <em>DSM-IV</em><sup>&reg; </sup>criteria) from an eating disorder&ndash;assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.<sup>3</sup></p>
+            <p class="footnote section-newnote hide--sm"> <sup>&dagger;</sup>Current BMI in adults with 12-month prevalence of <abbr title="Binge Eating Disorder">B.E.D.</abbr>. among an eating disorder–assessed subsample of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.<sup>3</sup></p>
           </div>
           <div class="mobile-line">&nbsp;</div>
         </div>
@@ -126,8 +132,9 @@
         <div class="wrap--content">
           <h2 class="heading--2">Adult patients with <abbr title="Binge Eating Disorder">B.E.D.</abbr> often have coexisting comorbid disorders such as bipolar disorders, depressive disorders, anxiety disorders, and, to a lesser extent, substance use disorders<sup>1</sup>
           </h2>
-          <h3 class="heading--3 center">As part of a complete evaluation, clinicians should consider these comorbid conditions that commonly occur in adults with <abbr title="Binge Eating Disorder">B.E.D.</abbr> for differential diagnosis.</h3>
-          <h4 class="heading--2 center">Lifetime <abbr title="Binge Eating Disorder">B.E.D.</abbr> in adults is associated with significant psychiatric comorbidity comparable to that of bulimia nervosa and anorexia nervosa<sup>&dagger;1,3</sup></h4>
+          <h3 class="heading--3 center">As part of a complete evaluation of adult patients with <abbr title="Binge Eating Disorder">B.E.D.</abbr>, clinicians should consider these comorbid conditions that commonly occur for differential diagnosis.</h3>
+          <h2 class="heading--2">B.E.D. is associated with significant comorbidity that is comparable to bulimia nervosa and anorexia nervosa<sup>1</sup></h2>
+          <h3 class="heading--3 center">Lifetime comorbidity (DSM-IV® Criteria) in adults with <abbr title="Binge Eating Disorder">B.E.D.</abbr><sup>&dagger;1,3</sup></h3>
           <div class="statistic-box">
             <div class="statistic box1">
               <div class="num">&asymp;4 out of 5</div>
@@ -138,7 +145,7 @@
               <div class="text">had <em>three or more </em><br>comorbid psychiatric or <br>substance use disorders</div>
             </div>
           </div>
-          <p data-note="" class="footnote"><sup>&dagger;</sup>Data from a random subsample of respondents (n=1,139) from an eating disorder&ndash;assessed subsample of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.<sup>3</sup></p>
+          <p data-note="" class="footnote"><sup>&dagger;</sup>Data from a random subsample of respondents (n=-2,980) from an eating disorder&ndash;assessed subsample of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.<sup>3</sup></p>
         </div>
       </section>
       <section class="section--triggers">
@@ -171,7 +178,7 @@
         <div class="wrap--refs">
           <ol class="refs number">
             <li>American Psychiatric Association. Binge-eating disorder. In: <em>Diagnostic and Statistical Manual of Mental Disorders. </em>5th ed. Arlington, VA: American Psychiatric Association;2013:350-353</li>
-            <li>American Psychiatric Association. DSM-5 Fact Sheet. Feeding and eating disorders. <a href="http://www.dsm5.org/documents/eating%20disorders%20fact%20sheet.pdf" target="_blank" class="url">www.dsm5.org/documents/eating%20disorders%20fact%20sheet.pdf</a>. Accessed May 8, 2015</li>
+            <li>American Psychiatric Association. DSM-5 Fact Sheet. Feeding and eating disorders. <a href="http://www.dsm5.org/documents/eating%20disorders%20fact%20sheet.pdf" target="_blank" class="url inline--sm">www.dsm5.org/documents/eating%20disorders%20fact%20sheet.pdf</a>. Accessed August 21, 2015</li>
             <li>Hudson JI, Hiripi E, Pope HG Jr, Kessler RC. [Published correction appears in <em>Biol Psychiatry. </em>2012;72(2):164]. <em>Biol Psychiatry. </em>2007;61(3):348-358.</li>
           </ol>
         </div>
@@ -180,7 +187,7 @@
         <div class="wrap--content full--sm">
           <nav class="bottom-bump">
             <ul>
-              <li><a href="/hcpUnsubscribe/index.aspx">Unsubscribe</a>
+              <li><a href="/hcp/unsubscribe/index.aspx">Unsubscribe</a>
               </li>
               <li><a href="/hcp/contact-us.aspx">Contact Us</a>
               </li>
@@ -193,7 +200,7 @@
           </nav>
         </div>
         <div class="wrap--content last">
-          <p><em>DSM-IV</em><sup>&reg;</sup> and <em><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr></em> are registered trademarks of the American Psychiatric Association.
+          <p><em>DSM-IV-Text Revision</em><sup>&reg;</sup> and <em><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr></em> are registered trademarks of the American Psychiatric Association.
             
           </p>
           <p class="bottom-bump"><a href="http://www.shire.com/" target="_blank">
@@ -215,9 +222,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1440180300000"></script>
-    <script src="./js/templates.js?1440180300000"></script>
-    <script src="./js/app.js?1440180300000"></script>
+    <script src="./js/vendor.js?1440436500000"></script>
+    <script src="./js/templates.js?1440436500000"></script>
+    <script src="./js/app.js?1440436500000"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

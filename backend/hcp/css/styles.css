@@ -1,4 +1,4 @@
-/* Last Updated: 2015-08-21 at 02:05:55 PM */
+/* Last Updated: 2015-08-24 at 01:13:46 PM */
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -2065,6 +2065,12 @@ body.index .section--hero .hero .copy h1 {
   padding-bottom: 14px;
   padding-top: 10px;
 }
+body.index .section--hero .hero .copy .depiction {
+  margin: 90% auto auto -70%;
+}
+.eq-ie9 body.index .section--hero .hero .copy .depiction {
+  margin: 80% auto auto -70%;
+}
 body.index .section--hero .hero .callouts a h4:after {
   content: '';
   display: inline-block;
@@ -2407,15 +2413,15 @@ body.index .section--hero .hero .callouts a.cta3 .icon {
     top: 0;
     bottom: 0;
   }
-  body.index .section--hero .hero .player .video .mejs-container {
+  body.index .section--hero .hero .player .video .mejs-container, body.index .section--hero .hero .player .video .me_flash_0_container {
     margin: 0 auto;
     width: 1400px !important;
-    height: 644px !important;
+    height: 787px !important;
   }
   body.index .section--hero .hero .player .video .mejs-overlay-play, body.index .section--hero .hero .player .video .mejs-overlay-button {
     display: none;
   }
-  body.index .section--hero .hero .player .video .mejs-container * {
+  body.index .section--hero .hero .player .video .mejs-container *, body.index .section--hero .hero .player .video .me_flash_0_container * {
     width: 1400px !important;
     margin: 0 auto;
   }
@@ -2662,7 +2668,7 @@ body.dsm5-criteria h1.heading--1 {
 }
 @media only screen and (min-width: 1025px) {
   body.dsm5-criteria h1.heading--1 {
-    width: 93.28244%;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -2674,6 +2680,28 @@ body.dsm5-criteria h1.heading--1 {
 }
 @media only screen and (max-width: 640px) {
   body.dsm5-criteria h1.heading--1 {
+    width: 84.73282%;
+    text-align: center;
+    margin-left: 8.5%;
+  }
+}
+body.dsm5-criteria h2.heading--2 {
+  padding-bottom: 32px;
+}
+@media only screen and (min-width: 1025px) {
+  body.dsm5-criteria h2.heading--2 {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  body.dsm5-criteria h2.heading--2 {
+    width: 452px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body.dsm5-criteria h2.heading--2 {
     width: 84.73282%;
     text-align: center;
     margin-left: 8.5%;
@@ -2786,15 +2814,44 @@ body.dsm5-criteria .section--triggers {
     color: #D6D8DA;
     line-height: 18px;
   }
+  body.dsm5-criteria .btn {
+    font-size: 16px;
+    padding-top: 5px;
+    line-height: 20px;
+  }
 }
 
 body.recognizing-bed h1.heading--1 {
   padding-bottom: 18px;
 }
-body.recognizing-bed .section--bulimia {
+body.recognizing-bed p.footnote {
+  text-align: center;
+}
+body.recognizing-bed .section--episodes {
   background: #252F39;
   background-image: -webkit-linear-gradient(270deg, #1e2730 0%, #252f39 100%);
   background-image: linear-gradient(-180deg, #1e2730 0%, #252f39 100%);
+}
+body.recognizing-bed .section--episodes .wrap--content {
+  padding-bottom: 34px;
+}
+body.recognizing-bed .section--episodes .heading--2 {
+  text-align: center;
+  margin: 0 auto 12px auto;
+}
+@media only screen and (min-width: 1025px) {
+  body.recognizing-bed .section--episodes .heading--2 {
+    width: 77.73438%;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  body.recognizing-bed .section--episodes .heading--2 {
+    margin: 0 auto 0px auto;
+    width: 100%;
+  }
+}
+body.recognizing-bed .section--bulimia {
+  background: #333E48;
 }
 body.recognizing-bed .section--bulimia .wrap--content {
   padding-bottom: 34px;
@@ -2814,8 +2871,20 @@ body.recognizing-bed .section--bulimia .heading--2 {
     width: 100%;
   }
 }
+body.recognizing-bed .section--bulimia:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: -webkit-radial-gradient(50% 149%, #333e48 17%, #252f39 100%);
+  background-image: radial-gradient(50% 149%, #333e48 17%, #252f39 100%);
+}
 body.recognizing-bed .section--overeating {
-  background: #333E48;
+  background: #252F39;
+  background-image: -webkit-linear-gradient(270deg, #1e2730 0%, #252f39 100%);
+  background-image: linear-gradient(-180deg, #1e2730 0%, #252f39 100%);
 }
 body.recognizing-bed .section--overeating .wrap--content {
   padding-bottom: 34px;
@@ -2829,18 +2898,8 @@ body.recognizing-bed .section--overeating .heading--2 {
     width: 85.15625%;
   }
 }
-body.recognizing-bed .section--overeating:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-image: -webkit-radial-gradient(50% 149%, #333e48 17%, #252f39 100%);
-  background-image: radial-gradient(50% 149%, #333e48 17%, #252f39 100%);
-}
 body.recognizing-bed .section--obesity {
-  background: #252f39;
+  background: #333E48;
 }
 body.recognizing-bed .section--obesity .heading--2 {
   text-align: center;
@@ -3085,8 +3144,20 @@ body.recognizing-bed .section--obesity .chart-wrap .label.left {
   left: 0;
   text-align: left;
 }
+body.recognizing-bed .section--obesity:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: -webkit-radial-gradient(50% 149%, #333e48 17%, #252f39 100%);
+  background-image: radial-gradient(50% 149%, #333e48 17%, #252f39 100%);
+}
 body.recognizing-bed .section--triggers {
-  background: #252f39;
+  background: #252F39;
+  background-image: -webkit-linear-gradient(270deg, #1e2730 0%, #252f39 100%);
+  background-image: linear-gradient(-180deg, #1e2730 0%, #252f39 100%);
 }
 @media only screen and (min-width: 1025px) {
   body.recognizing-bed .section--triggers .heading--1 {
@@ -3404,6 +3475,9 @@ body.recognizing-bed .section--coexisting .statistic-box .box2 {
     text-align: left;
   }
   body.recognizing-bed .section--triggers ul.square li h2 {
+    display: inline;
+  }
+  body.recognizing-bed .section--triggers .inline--sm {
     display: inline;
   }
   body.recognizing-bed .section--triggers .center {
@@ -3982,7 +4056,7 @@ body.potential-causes .section--factors {
     padding-right: 180px;
   }
   body.potential-causes .section--factors .btn.btn--yellow {
-    font-size: 16px;
+    font-size: 14px;
   }
   body.potential-causes .footnote {
     width: 53.25521%;
@@ -4082,7 +4156,9 @@ body.potential-causes .section--factors {
     text-align: center;
   }
   body.potential-causes .section--factors .btn {
-    font-size: 14px;
+    font-size: 16px;
+    padding-top: 5px;
+    line-height: 20px;
   }
 }
 
@@ -4108,7 +4184,7 @@ body.patient-demographics .section--us .heading--1 {
   }
 }
 body.patient-demographics .section--us .heading--2 {
-  padding-bottom: 48px;
+  padding-bottom: 28px;
 }
 @media only screen and (max-width: 640px) {
   body.patient-demographics .section--us .heading--2 {
@@ -4118,6 +4194,33 @@ body.patient-demographics .section--us .heading--2 {
     width: 90%;
     margin: 0 auto;
   }
+}
+body.patient-demographics .section--us .titlenote {
+  margin: auto;
+  text-align: center;
+  font-size: 14px;
+  color: #858B91;
+  padding-bottom: 48px;
+}
+@media only screen and (min-width: 1025px) {
+  body.patient-demographics .section--us .titlenote {
+    width: 57.91667%;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  body.patient-demographics .section--us .titlenote {
+    margin-left: 10%;
+    width: 79.79167%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body.patient-demographics .section--us .titlenote {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+body.patient-demographics .section--us .footnote {
+  margin-top: 0;
 }
 @media only screen and (min-width: 1025px) {
   body.patient-demographics .section--us .footnote {
@@ -4206,9 +4309,23 @@ body.patient-demographics .section--us .statistics .map {
     margin: 0 auto;
   }
 }
+body.patient-demographics .section--us .statistics .map .title--affect {
+  padding-top: 194px;
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  body.patient-demographics .section--us .statistics .map .title--affect {
+    font-size: 36px;
+    padding-top: 84px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body.patient-demographics .section--us .statistics .map .title--affect {
+    padding-top: 40px;
+    font-size: 32px;
+  }
+}
 body.patient-demographics .section--us .statistics .map .num {
   color: #FDBD3E;
-  padding-top: 214px;
 }
 @media only screen and (min-width: 1025px) {
   body.patient-demographics .section--us .statistics .map .num {
@@ -4218,12 +4335,10 @@ body.patient-demographics .section--us .statistics .map .num {
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   body.patient-demographics .section--us .statistics .map .num {
     font-size: 36px;
-    padding-top: 104px;
   }
 }
 @media only screen and (max-width: 640px) {
   body.patient-demographics .section--us .statistics .map .num {
-    padding-top: 55px;
     font-size: 32px;
   }
 }
@@ -4359,7 +4474,7 @@ body.patient-demographics .section--survey .stat .percent {
   }
 }
 body.patient-demographics .section--survey .stat .total {
-  color: #858B91;
+  color: #FDBD3E;
 }
 @media only screen and (min-width: 1025px) {
   body.patient-demographics .section--survey .stat .total {
@@ -4764,6 +4879,13 @@ body.patient-demographics .section--groups .heading--2 {
 body.patient-demographics .section--groups .footnote {
   margin-top: 20px;
   padding-bottom: 15px;
+}
+@media only screen and (min-width: 1025px) {
+  body.patient-demographics .section--groups .footnote {
+    width: 69.47917%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   body.patient-demographics .section--groups .footnote {
@@ -5420,6 +5542,13 @@ body.potential-effects .section--button .wrap--refs .refs {
 
 body.patient-profiles .section--patients {
   background: #252F39;
+  /* START // What in the hell is this crap? --Jeremy */
+  /*  END  // What in the hell is this crap? --Jeremy */
+}
+body.patient-profiles .section--patients .hypothetical {
+  font-size: 14px;
+  color: #858B91;
+  text-align: right;
 }
 @media only screen and (min-width: 1025px) and (max-width: 640px), only screen and (min-width: 641px) and (max-width: 1024px) and (max-width: 640px) {
   body.patient-profiles .section--patients .person.kimberly {
@@ -5614,6 +5743,14 @@ body.patient-profiles .section--patients {
   }
 }
 
+@media only screen and (max-width: 640px) {
+  body.patient-profiles .section--patients .hypothetical {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+  }
+}
 @media only screen and (max-width: 640px) and (max-width: 640px) {
   body.patient-profiles .section--patients .person.kimberly {
     height: 120px;
@@ -5648,6 +5785,9 @@ body.patient-profiles .section--patients {
 }
 @media only screen and (min-width: 1025px) {
   body.patient-profiles .section--patients .persons {
+    margin-bottom: 0px;
+  }
+  body.patient-profiles .section--patients .hypothetical {
     margin-bottom: 60px;
   }
   body.patient-profiles .section--patients .callouts {
@@ -5687,9 +5827,13 @@ body.patient-profiles .section--patients {
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
+  body.patient-profiles .section--patients .wrap--content .hypothetical {
+    width: 592px;
+    margin: 10px auto 40px auto;
+  }
   body.patient-profiles .section--patients .persons {
     width: 592px;
-    margin: 48px auto 40px auto;
+    margin: 48px auto 0px auto;
   }
   body.patient-profiles .section--patients .persons:before, body.patient-profiles .section--patients .persons:after {
     content: " ";
@@ -5754,7 +5898,7 @@ body.patient-profiles .section--patients {
   }
   body.patient-profiles .section--patients .persons {
     width: 300px;
-    height: 268px;
+    height: 252px;
     margin: 0 -6.25% 0 -6.25%;
     position: relative;
   }
@@ -5916,6 +6060,15 @@ body.profiles .section--carousel .slide .disclaimer {
   line-height: 16px;
   font-size: 14px;
   color: #858B91;
+}
+body.profiles .section--carousel .slide .disclaimer a {
+  color: #3c3f43;
+  text-decoration: underline;
+  line-height: 16px;
+  font-size: 14px;
+}
+body.profiles .section--carousel .slide .disclaimer a:hover, body.profiles .section--carousel .slide .disclaimer a:active {
+  color: #767c83;
 }
 body.profiles .section--carousel .kimberly .shadow {
   background-image: url("../img/lg/profiles/kimberly_lo.png");
