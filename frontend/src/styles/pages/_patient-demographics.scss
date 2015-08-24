@@ -39,8 +39,8 @@ body.patient-demographics {
             
             margin: auto;
             text-align: center;
-            font-size: 14px;
-            color: #858B91;
+            font-size: 15px;
+            color: #ADB2B6;
             padding-bottom: 48px;
 
             @include mq('lg') {
@@ -58,7 +58,7 @@ body.patient-demographics {
         }
 
         .footnote {
-            margin-top: 0;
+            margin-top: 20px;
             @include mq('lg') {
                 width: percentage(556/960);
             }
