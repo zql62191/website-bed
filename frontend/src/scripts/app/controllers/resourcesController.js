@@ -31,7 +31,7 @@
                         featuring: "Denise E. Wilfley, PhD",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03014.mp4",
                         host: activehost,
-                        newFrom: Date(2015, 7, 15),
+                        newFrom: null,//Date(2015, 7, 15),
                         viewed: false
                     },
                     {
@@ -41,7 +41,7 @@
                         featuring: "Denise E. Wilfley, PhD",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03013.mp4",
                         host: activehost,
-                        newFrom: Date(2015, 7, 15),
+                        newFrom: null,//Date(2015, 7, 15),
                         viewed: false
                     },
                     {
@@ -61,7 +61,7 @@
                         featuring: "Cynthia M. Bulik, PhD, FAED",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03016.mp4",
                         host: activehost,
-                        newFrom: Date(2015, 7, 15),
+                        newFrom: null,//Date(2015, 7, 15),
                         viewed: false
                     }
                 ]
@@ -87,7 +87,7 @@
                         featuring: "Denise E. Wilfley, PhD",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03017.mp4",
                         host: activehost,
-                        newFrom: Date(2015, 7, 15),
+                        newFrom: null,//Date(2015, 7, 15),
                         viewed: false
                     },
                     {
@@ -137,7 +137,7 @@
                         featuring: "Susan G. Kornstein, MD",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03018.mp4",
                         host: activehost,
-                        newFrom: Date(2015, 7, 15),
+                        newFrom: null,//Date(2015, 7, 15),
                         viewed: false
                     }
                 ]
@@ -152,7 +152,7 @@
                         featuring: "",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S02868.mp4",
                         host: activehost,
-                        newFrom: Date(2015, 7, 15),
+                        newFrom: null,//Date(2015, 7, 15),
                         viewed: true
                     },
                     {
