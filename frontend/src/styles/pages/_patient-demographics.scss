@@ -244,7 +244,8 @@ body.patient-demographics {
             }
 
             .total {
-                color: #858B91;
+                //color: #858B91;
+                color: #FDBD3E;
 
                 @include mq("lg") {
                     font-size: 18px;
