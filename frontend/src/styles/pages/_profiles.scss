@@ -84,6 +84,17 @@ body.profiles {
                 line-height: 16px;
                 font-size: 14px;
                 color: #858B91;
+
+                a{
+                    color:#3c3f43;
+                    text-decoration: underline;
+                    line-height: 16px;
+                    font-size: 14px;
+                    &:hover, &:active{
+                        color: #767c83;
+                    }
+                }
+
             }
         }
 
