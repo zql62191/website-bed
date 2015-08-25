@@ -129,6 +129,11 @@ body.recognizing-bed {
                 margin: 28px auto 66px auto;
                 font-size: 18px;
             }
+            
+            @include mq('sm') {
+                margin-bottom: 26px;
+            }
+            
         }
 
         .chart-wrap {
@@ -140,21 +145,22 @@ body.recognizing-bed {
                 margin: 0 auto;
 
                 @include mq("sm") {
-                    top: 73px;
+                    top: 13px;
                 }
             }
 
             @include mq("lg") {
-                width: 560px;
+                width: 764px;
                 // height: 310px;
             }
             @include mq("md") {
-                width: 560px;
+                width: 596px;
                 // height: 310px;
             }
             @include mq("sm") {
-                width: 260px;
-                height: 360px;
+                width: 267px;
+                height: 482px;
+                margin-bottom: 20px;
             }
 
             .section-note.footnote{
