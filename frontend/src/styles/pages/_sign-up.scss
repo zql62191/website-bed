@@ -151,7 +151,9 @@ body.sign-up{
 
     }
     @include mq('md') {
-
+        h1.heading--1{
+            margin: 30px auto;
+        }
     }
     @include mq('sm') {
 

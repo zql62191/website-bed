@@ -5,6 +5,10 @@ body.profiles {
     .gradient {
         position: absolute;
         background-image: radial-gradient(50% 121%, #F8F6F4 21%, #DED8D5 100%);
+        .eq-ie9 & {
+            background: #ded8d5;
+            filter: none;
+        }
         background-position: center center;
         width: 100%;
         height: 926px;
@@ -19,6 +23,10 @@ body.profiles {
 
     #gradient-transition-bottom {
         background-image: linear-gradient(0deg, #DED8D5 77%, rgba(222,216,213,0.00) 89%);
+        .eq-ie9 & {
+            background: #ded8d5;
+            filter: none;
+        }
         width: 100%;
         height: 649px;
         position: absolute;
@@ -376,7 +384,7 @@ body.profiles {
 
                 }
                 .two {
-
+                    
                 }
             }
             

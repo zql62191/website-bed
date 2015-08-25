@@ -7,12 +7,12 @@
     <meta name="description" content="Find info on binge eating disorder in adults, including diagnostic criteria, distinction from other eating disorders, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="./css/styles.css?1440180300000"/>
+    <link rel="stylesheet" href="./css/styles.css?1440436500000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1440180300000"></script>
-    <script src="./js/redirect.js?1440180300000"></script>
+    <script src="./js/head.js?1440436500000"></script>
+    <script src="./js/redirect.js?1440436500000"></script>
 <script>
     pageLoading();
 </script>
@@ -43,7 +43,7 @@
           <div class="wrap--content">
             <nav>
               <ul>
-                <li class="hide--lg"><a href="/hcp/index.aspx">Home</a>
+                <li class="hide--lg"><a href="/hcp/index.aspx">B.E.D. in Adults</a>
                 </li>
                 <li><a href="/hcp/dsm5-criteria.aspx" class="active"><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> Criteria</a>
                 </li>
@@ -68,12 +68,14 @@
       </header>
       <section class="section--individuals">
         <div class="wrap--content">
-          <h1 class="heading--1 yellow">Individuals with binge eating disorder (<abbr title="Binge Eating Disorder">B.E.D.</abbr>) <br class="hide--sm">must meet all of the following criteria<sup>1</sup>:
+          <h1 class="heading--1 yellow">Diagnosing adults with binge eating disorder (<abbr title="Binge Eating Disorder">B.E.D.</abbr>) <br class="hide--sm">
             
           </h1>
+          <h2 class="heading--2">Individuals with <abbr title="Binge Eating Disorder">B.E.D.</abbr> <br class="hide--sm">must meet all of the following <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> diagnostic criteria<sup>1</sup>:
+            
+          </h2>
           <ul class="boxed">
-            <li>
-              Recurrent episodes of binge eating during which they experience a loss of control over eating and consume an abnormally large amount of food in a short period of time compared with what others might eat in the same amount of time.
+            <li>Recurrent episodes of binge eating characterized by <span class="underline">both</span> consuming an abnormally large amount of food in a short period of time compared with what others might eat in the same amount of time under the same or similar circumstances and experiencing a loss of control over eating during the episode.
               
             </li>
             <li>These episodes feature <span class="underline">at least 3</span> of the following: consuming food faster than normal; consuming food until uncomfortably full; consuming large amounts of food when not hungry; consuming food alone due to embarrassment; feeling disgusted, depressed, or guilty after eating a large amount of food.
@@ -96,7 +98,7 @@
             
             
           </p>
-          <div class="trim center"><a href="/hcp/sign-up.aspx" class="btn btn--yellow">GET THE FULL <em><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr></em> <abbr title="Binge Eating Disorder">B.E.D.</abbr> CRITERIA</a></div>
+          <div class="trim center"><a href="/hcp/sign-up.aspx" class="btn btn--yellow">GET THE FULL <em><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr></em> <abbr title="Binge Eating Disorder">B.E.D.</abbr> DIAGNOSTIC CRITERIA</a></div>
           <div class="wrap--refs">
             <ol class="refs number">
               <li>American Psychiatric Association. Binge-eating disorder. In: <em>Diagnostic and Statistical Manual of Mental Disorders. </em>5th ed. Arlington, VA: American Psychiatric Association;2013:350-353.</li>
@@ -108,7 +110,7 @@
         <div class="wrap--content full--sm">
           <nav class="bottom-bump">
             <ul>
-              <li><a href="/hcpUnsubscribe/index.aspx">Unsubscribe</a>
+              <li><a href="/hcp/unsubscribe/index.aspx">Unsubscribe</a>
               </li>
               <li><a href="/hcp/contact-us.aspx">Contact Us</a>
               </li>
@@ -121,7 +123,7 @@
           </nav>
         </div>
         <div class="wrap--content last">
-          <p><em>DSM-IV</em><sup>&reg;</sup> and <em><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr></em> are registered trademarks of the American Psychiatric Association.
+          <p><em>DSM-IV-Text Revision</em><sup>&reg;</sup> and <em><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr></em> are registered trademarks of the American Psychiatric Association.
             
           </p>
           <p class="bottom-bump"><a href="http://www.shire.com/" target="_blank">
@@ -143,9 +145,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1440180300000"></script>
-    <script src="./js/templates.js?1440180300000"></script>
-    <script src="./js/app.js?1440180300000"></script>
+    <script src="./js/vendor.js?1440436500000"></script>
+    <script src="./js/templates.js?1440436500000"></script>
+    <script src="./js/app.js?1440436500000"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

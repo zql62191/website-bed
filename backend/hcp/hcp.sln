@@ -22,24 +22,24 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "hcp", ".", "{5E066019-2C40-
 		VWDDynamicPort = "true"
 	EndProjectSection
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "hcpUnsubscribe", "..\hcpUnsubscribe\", "{4D62C3A1-0D3D-448D-A2A6-FDB80458933F}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "unsubscribe", "..\unsubscribe\", "{7DA2F0DF-B272-4DD4-A521-46BD7FF92A40}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/hcpUnsubscribe"
-		Debug.AspNetCompiler.PhysicalPath = "..\hcpUnsubscribe\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\hcpUnsubscribe\"
+		Debug.AspNetCompiler.VirtualPath = "/unsubscribe"
+		Debug.AspNetCompiler.PhysicalPath = "..\unsubscribe\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\unsubscribe\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/hcpUnsubscribe"
-		Release.AspNetCompiler.PhysicalPath = "..\hcpUnsubscribe\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\hcpUnsubscribe\"
+		Release.AspNetCompiler.VirtualPath = "/unsubscribe"
+		Release.AspNetCompiler.PhysicalPath = "..\unsubscribe\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\unsubscribe\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "56482"
+		VWDPort = "53341"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
@@ -50,8 +50,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{5E066019-2C40-49FE-A6C5-B42402E09B0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5E066019-2C40-49FE-A6C5-B42402E09B0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D62C3A1-0D3D-448D-A2A6-FDB80458933F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D62C3A1-0D3D-448D-A2A6-FDB80458933F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DA2F0DF-B272-4DD4-A521-46BD7FF92A40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DA2F0DF-B272-4DD4-A521-46BD7FF92A40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

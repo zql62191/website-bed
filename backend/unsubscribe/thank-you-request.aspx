@@ -1,25 +1,25 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="patient-profiles.aspx.cs" Inherits="patientprofiles" %><!DOCTYPE html>
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="index.aspx.cs" Inherits="index" %><!DOCTYPE html>
 <html lang="en" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="cdmp" ng-controller="MainController">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8">
-    <title>Helping Adults with Binge Eating Disorder</title>
+    <title>Thank You!</title>
     <meta name="description" content="Find info on binge eating disorder in adults, including diagnostic criteria, distinction from other eating disorders, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="./css/styles.css?1440436500000"/>
+    <link rel="stylesheet" href="./css/styles.css?1440437700000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1440436500000"></script>
-    <script src="./js/redirect.js?1440436500000"></script>
+    <script src="./js/head.js?1440437700000"></script>
+    <script src="./js/redirect.js?1440437700000"></script>
 <script>
     pageLoading();
 </script>
 
 
   </head>
-  <body ontouchstart="" prime-directive="" class="patient-profiles">
+  <body ontouchstart="" prime-directive="" class="thank-you-request">
     <main class="content--main">
       <header class="header--global">
         <div class="title-bar">
@@ -55,7 +55,7 @@
                 </li>
                 <li><a href="/hcp/potential-effects.aspx">Potential Effects</a>
                 </li>
-                <li><a href="/hcp/patient-profiles.aspx" alt="/hcp/profiles.aspx" class="active">Patient Profiles</a>
+                <li><a href="/hcp/patient-profiles.aspx" alt="/hcp/profiles.aspx">Patient Profiles</a>
                 </li>
                 <li><a href="/hcp/support-and-resources.aspx">Support &amp; Resources</a>
                 </li>
@@ -66,27 +66,22 @@
           </div>
         </div>
       </header>
-      <section class="section--patients">
+      <header class="header">
+        <div class="wrap--content"></div>
+      </header>
+      <section class="section--ty">
         <div class="wrap--content">
-          <h1 class="heading--1">
-            How adult patients with binge eating disorder (<abbr title="Binge Eating Disorder">B.E.D.</abbr>) may present&mdash;and tools to help when they do
+          <h1 class="heading--1">Thank you for your request.</h1>
+          <h2 class="heading--2">Your request has been received, and we will update your contact preferences. Please be aware that it may take up to 10 business days for your preferences to be reflected in our system. You may still receive communications during this time.</h2>
+          <h2 class="heading--2">
+            Please feel free to register with us again should you wish to receive information about binge eating disorder (B.E.D.) in adults and other information from Shire in the future.
             
-          </h1>
-          <div class="persons"><a href="profiles.aspx#kimberly" alt="Caucasian woman" class="person kimberly"></a><a href="profiles.aspx#nikki" alt="African American woman" class="person nikki"></a><a href="profiles.aspx#julie" alt="Caucasian woman" class="person julie"></a><a href="profiles.aspx#diego" alt="Latino man" class="person diego"></a></div>
-          <div class="hypothetical">Hypothetical patient portrayals.</div>
-          <div class="callouts">
-            <div class="callout one">
-              <h2 class="heading--2 bold">Screening the patient</h2>
-              <p>Use this validated screener to help evaluate adult patients you suspect may have <abbr title="Binge Eating Disorder">B.E.D.</abbr></p><a href="media/BingeEatingDisorder_Screener.pdf" target="_blank" class="btn btn--yellow">DOWNLOAD THE ADULT <abbr title="Binge Eating Disorder">B.E.D.</abbr> PATIENT SCREENER</a>
-            </div>
-            <div class="callout two">
-              <h2 class="heading--2 bold">Conducting a conversation</h2>
-              <p>Use this discussion guide to help begin a dialogue about <abbr title="Binge Eating Disorder">B.E.D.</abbr> with your adult patients.</p><a href="media/BingeEatingDisorderDiscussionGuide.pdf" target="_blank" class="btn btn--yellow">DOWNLOAD THE DISCUSSION GUIDE FOR ADULT PATIENTS WITH <abbr title="Binge Eating Disorder">B.E.D.</abbr></a>
-            </div>
-          </div>
-          <p class="disclaimer">These tools were developed by Shire to assist health care professionals in identifying and accurately diagnosing B.E.D. in adults.</p>
+          </h2>
         </div>
       </section>
+      <footer class="footer--page">
+        <div class="wrap--content"></div>
+      </footer>
       <footer class="footer--global">
         <div class="wrap--content full--sm">
           <nav class="bottom-bump">
@@ -126,9 +121,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1440436500000"></script>
-    <script src="./js/templates.js?1440436500000"></script>
-    <script src="./js/app.js?1440436500000"></script>
+    <script src="./js/vendor.js?1440437700000"></script>
+    <script src="./js/templates.js?1440437700000"></script>
+    <script src="./js/app.js?1440437700000"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

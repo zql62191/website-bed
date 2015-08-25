@@ -2541,7 +2541,7 @@ Array.prototype.forEach = function forEach(callback) {
                         featuring: "Denise E. Wilfley, PhD",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03014.mp4",
                         host: activehost,
-                        newFrom: Date(2015, 7, 15),
+                        newFrom: null,//Date(2015, 7, 15),
                         viewed: false
                     },
                     {
@@ -2551,7 +2551,7 @@ Array.prototype.forEach = function forEach(callback) {
                         featuring: "Denise E. Wilfley, PhD",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03013.mp4",
                         host: activehost,
-                        newFrom: Date(2015, 7, 15),
+                        newFrom: null,//Date(2015, 7, 15),
                         viewed: false
                     },
                     {
@@ -2571,7 +2571,7 @@ Array.prototype.forEach = function forEach(callback) {
                         featuring: "Cynthia M. Bulik, PhD, FAED",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03016.mp4",
                         host: activehost,
-                        newFrom: Date(2015, 7, 15),
+                        newFrom: null,//Date(2015, 7, 15),
                         viewed: false
                     }
                 ]
@@ -2597,7 +2597,7 @@ Array.prototype.forEach = function forEach(callback) {
                         featuring: "Denise E. Wilfley, PhD",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03017.mp4",
                         host: activehost,
-                        newFrom: Date(2015, 7, 15),
+                        newFrom: null,//Date(2015, 7, 15),
                         viewed: false
                     },
                     {
@@ -2647,7 +2647,7 @@ Array.prototype.forEach = function forEach(callback) {
                         featuring: "Susan G. Kornstein, MD",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03018.mp4",
                         host: activehost,
-                        newFrom: Date(2015, 7, 15),
+                        newFrom: null,//Date(2015, 7, 15),
                         viewed: false
                     }
                 ]
@@ -2662,7 +2662,7 @@ Array.prototype.forEach = function forEach(callback) {
                         featuring: "",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S02868.mp4",
                         host: activehost,
-                        newFrom: Date(2015, 7, 15),
+                        newFrom: null,//Date(2015, 7, 15),
                         viewed: true
                     },
                     {
@@ -3423,7 +3423,7 @@ Array.prototype.forEach = function forEach(callback) {
 
                         //init the ME
                         videoElem.mediaelementplayer({
-                            enablePluginDebug: true,
+                            enablePluginDebug: false,
                             pauseOtherPlayers: false, // allow multiple videos
                             startVolume: 0, // there is no audio
                             features: [],
@@ -3434,7 +3434,7 @@ Array.prototype.forEach = function forEach(callback) {
 
                                 //Set up events. 
                                 //If a user presses Spacebar or Escape we just pause the video fade it out
-                                var events = ['pause','ended'];
+                                var events = ['ended'];
 
                                 for(var i=0;i<events.length;i++){
                                     mediaElement.addEventListener(events[i], function(e){

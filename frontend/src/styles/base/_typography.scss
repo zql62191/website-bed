@@ -145,7 +145,7 @@ p.footnote,
 p.disclaimer,
 ol.refs li {
     @include gs("light");
-    color: #858B91;    
+    color: #ADB2B6;    
 }
 
 p.footnote {
@@ -239,7 +239,7 @@ ol.refs {
     p.footnote,
     p.disclaimer,
     ol.refs li {
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 @include mq("md") {
@@ -276,7 +276,7 @@ ol.refs {
     p.footnote,
     p.disclaimer,
     ol.refs li {
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 @include mq("sm") {
