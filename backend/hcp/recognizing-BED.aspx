@@ -7,12 +7,13 @@
     <meta name="description" content="Find info on binge eating disorder in adults, including diagnostic criteria, distinction from other eating disorders, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
-    <link rel="stylesheet" href="./css/styles.css?1440436500000"/>
+    <meta name="google-site-verification" content="J54-RSNLJc8L0u3mx8m2Ie3Fb5zXiF5w1x4JQRIPBg8">
+    <link rel="stylesheet" href="./css/styles.css?1440513900000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1440436500000"></script>
-    <script src="./js/redirect.js?1440436500000"></script>
+    <script src="./js/head.js?1440513900000"></script>
+    <script src="./js/redirect.js?1440513900000"></script>
 <script>
     pageLoading();
 </script>
@@ -68,12 +69,13 @@
       </header>
       <section class="section--episodes">
         <div class="wrap--content">
-          <h2 class="heading--2">Binge eating disorder (<abbr title="Binge Eating Disorder">B.E.D.</abbr>) is defined as recurring episodes (at least once weekly for 3 months) of consuming a large amount of food in a short period of time, compared to what others might eat, with episodes characterized by experiencing a lack of control and significant distress regarding binge eating, among other criteria.<sup>1</sup></h2>
+          <h1 class="heading--1">Binge eating disorder (<abbr title="Binge Eating Disorder">B.E.D.</abbr>):</h1>
+          <h2 class="heading--2">Recurring episodes (at least once weekly for 3 months) of consuming a large amount of food in a short period of time, compared to what others might eat, with episodes characterized by experiencing a lack of control and significant distress regarding binge eating, among <a href="dsm5-criteria.aspx" class="goother">other criteria.<sup>1</sup></a></h2>
         </div>
       </section>
       <section class="section--bulimia">
         <div class="wrap--content">
-          <h1 class="heading--1"><abbr title="Binge Eating Disorder">B.E.D.</abbr> is different from bulimia nervos</h1>
+          <h1 class="heading--1"><abbr title="Binge Eating Disorder">B.E.D.</abbr> is different from bulimia nervosa</h1>
           <h2 class="heading--2"><abbr title="Binge Eating Disorder">B.E.D.</abbr> is not associated with compensatory behaviors like purging or excessive exercise, or with dietary restriction, though frequent dieting may be reported<sup>1</sup></h2>
         </div>
       </section>
@@ -222,9 +224,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1440436500000"></script>
-    <script src="./js/templates.js?1440436500000"></script>
-    <script src="./js/app.js?1440436500000"></script>
+    <script src="./js/vendor.js?1440513900000"></script>
+    <script src="./js/templates.js?1440513900000"></script>
+    <script src="./js/app.js?1440513900000"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

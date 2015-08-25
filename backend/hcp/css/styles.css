@@ -1,4 +1,4 @@
-/* Last Updated: 2015-08-24 at 01:13:46 PM */
+/* Last Updated: 2015-08-25 at 10:47:34 AM */
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -556,7 +556,7 @@ p.disclaimer,
 ol.refs li {
   font-weight: 100;
   font-style: normal;
-  color: #858B91;
+  color: #ADB2B6;
 }
 
 p.footnote {
@@ -642,7 +642,7 @@ ol.refs {
   p.footnote,
   p.disclaimer,
   ol.refs li {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
@@ -669,7 +669,7 @@ ol.refs {
   p.footnote,
   p.disclaimer,
   ol.refs li {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -2484,6 +2484,11 @@ body.index .section--hero .hero .callouts a.cta3 .icon {
   body.index .section--hero .hero .video {
     display: none;
   }
+  body.index .section--hero .hero .still .hypothetical {
+    font-size: 14px;
+    padding-left: 14px;
+    padding-bottom: 4px;
+  }
   body.index .section--hero .hero .copy {
     background: #242F38;
   }
@@ -3096,7 +3101,7 @@ body.recognizing-bed .section--obesity .chart-wrap .label .footnote {
 }
 @media only screen and (min-width: 1025px), only screen and (min-width: 641px) and (max-width: 1024px) {
   body.recognizing-bed .section--obesity .chart-wrap .label .footnote {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -3227,6 +3232,7 @@ body.recognizing-bed .section--compared .heading--2.top {
 @media only screen and (min-width: 1025px), only screen and (min-width: 641px) and (max-width: 1024px) {
   body.recognizing-bed .section--compared p.footnote {
     text-align: center;
+    font-size: 15px;
   }
 }
 @media only screen and (min-width: 1025px) {
@@ -3281,7 +3287,6 @@ body.recognizing-bed .section--coexisting .statistic-box .statistic .text {
   color: #ADB2B6;
   padding: 0 14px;
   font-size: 18px;
-  color: #D6D8DA;
   line-height: 22px;
   position: absolute;
   left: 0;
@@ -3323,6 +3328,7 @@ body.recognizing-bed .section--coexisting .statistic-box .box2 {
   body.recognizing-bed .section--coexisting p.footnote {
     margin-top: 50px;
     text-align: center;
+    font-size: 15px;
   }
 }
 @media only screen and (min-width: 1025px) {
@@ -4198,8 +4204,8 @@ body.patient-demographics .section--us .heading--2 {
 body.patient-demographics .section--us .titlenote {
   margin: auto;
   text-align: center;
-  font-size: 14px;
-  color: #858B91;
+  font-size: 15px;
+  color: #ADB2B6;
   padding-bottom: 48px;
 }
 @media only screen and (min-width: 1025px) {
@@ -4220,7 +4226,7 @@ body.patient-demographics .section--us .titlenote {
   }
 }
 body.patient-demographics .section--us .footnote {
-  margin-top: 0;
+  margin-top: 20px;
 }
 @media only screen and (min-width: 1025px) {
   body.patient-demographics .section--us .footnote {
@@ -5986,6 +5992,11 @@ body.profiles .gradient {
   height: 926px;
   z-index: 1;
 }
+.eq-ie9 body.profiles .gradient {
+  background: #ded8d5;
+  -webkit-filter: none;
+          filter: none;
+}
 body.profiles .gradient-transition-top {
   background-image: -webkit-linear-gradient(90deg, #52758b 73%, rgba(82, 117, 139, 0) 100%);
   background-image: linear-gradient(0deg, #52758b 73%, rgba(82, 117, 139, 0) 100%);
@@ -6001,6 +6012,11 @@ body.profiles #gradient-transition-bottom {
   position: absolute;
   top: 586px;
   z-index: 2;
+}
+.eq-ie9 body.profiles #gradient-transition-bottom {
+  background: #ded8d5;
+  -webkit-filter: none;
+          filter: none;
 }
 body.profiles #gradient-transition-bottom.nikki, body.profiles #gradient-transition-bottom.julie {
   top: 320px;
@@ -7072,6 +7088,11 @@ body.sign-up .section--page form button {
 body.sign-up .section--page form label {
   pointer-events: none;
 }
+@media only screen and (min-width: 1025px) {
+  body.sign-up .section--page form label {
+    pointer-events: visiblePainted;
+  }
+}
 body.sign-up .section--page form p.info {
   margin-bottom: 32px;
   color: #858B91;
@@ -7108,6 +7129,11 @@ body.sign-up .section--page form .checkbox-cont {
     text-align: left;
     padding-top: 44px;
     padding-bottom: 9px;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  body.sign-up h1.heading--1 {
+    margin: 30px auto;
   }
 }
 @media only screen and (max-width: 640px) {
