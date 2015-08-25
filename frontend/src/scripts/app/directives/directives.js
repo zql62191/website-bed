@@ -12,16 +12,20 @@
 
                     var people = [{
                         'klass': 'kimberly',
-                        'url': '//d2ly9zedmmzqz4.cloudfront.net/BED-S04644-1.mp4'
+                        'url': '//d2ly9zedmmzqz4.cloudfront.net/BED-S04644-1.mp4',
+                        'vzaarUrl' : '//view.vzaar.com/4918990/video'
                     }, {
                         'klass': 'nikki',
-                        'url': '//d2ly9zedmmzqz4.cloudfront.net/BED-S04644-2.mp4'
+                        'url': '//d2ly9zedmmzqz4.cloudfront.net/BED-S04644-2.mp4',
+                        'vzaarUrl' : '//view.vzaar.com/4918987/video'
                     }, {
                         'klass': 'julie',
-                        'url': '//d2ly9zedmmzqz4.cloudfront.net/BED-S04644-3.mp4'
+                        'url': '//d2ly9zedmmzqz4.cloudfront.net/BED-S04644-3.mp4',
+                        'vzaarUrl' : '//view.vzaar.com/4918986/video'
                     }, {
                         'klass': 'diego',
-                        'url': '//d2ly9zedmmzqz4.cloudfront.net/BED-S04644-4.mp4'
+                        'url': '//d2ly9zedmmzqz4.cloudfront.net/BED-S04644-4.mp4',
+                        'vzaarUrl' : '//view.vzaar.com/4918984/video'
                     }];
 
                     var heroIndex = store.get('heroIndex') || 0;
@@ -44,12 +48,12 @@
                             features: [],
                             autoRewind: false,
                             videoWidth: 1400,
-                            videoHeight: 644,
+                            videoHeight: 787,
                             success: function(mediaElement, node, playr) {
 
                                 //Set up events. 
                                 //If a user presses Spacebar or Escape we just pause the video fade it out
-                                var events = ['ended'];
+                                var events = ['pause','ended'];
 
                                 for(var i=0;i<events.length;i++){
                                     mediaElement.addEventListener(events[i], function(e){
@@ -74,7 +78,7 @@
                                 player = mediaElement;
 
                                 // Load video
-                                mediaElement.setSrc(people[heroIndex].url);
+                                mediaElement.setSrc(people[heroIndex].vzaarUrl);
 
                                 // flash url : controls=false&file=//view.vzaar.com/2552732/video
 
