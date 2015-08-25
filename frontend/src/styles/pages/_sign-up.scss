@@ -87,6 +87,9 @@ body.sign-up{
 
             label{
                 pointer-events: none;
+                @include mq('lg') {
+                    pointer-events: visiblePainted;
+                }
             }
 
             p.info{
