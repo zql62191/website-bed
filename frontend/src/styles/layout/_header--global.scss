@@ -276,7 +276,7 @@ header.header--global {
             }
             nav ul li {
                 text-align: center;
-                padding: 4px 0;
+                padding: 10px 0;
 
                 &:last-child {
                     padding-top: 30px;
@@ -328,6 +328,15 @@ header.header--global {
         .primary-nav {
             nav ul li a {
                 font-size: 36px;
+
+                &.mobilehome {
+                    font-size: 48px;
+                    margin-bottom: 10px;
+                }
+                &.mobilesignup {
+                    padding-top: 25px;
+                    font-size: 26px;
+                }
             }
         }
     }
@@ -355,6 +364,14 @@ header.header--global {
         .primary-nav {
             nav ul li a {
                 font-size: 26px;
+                &.mobilehome {
+                    font-size: 34px;
+                    margin-bottom: 10px;
+                }
+                &.mobilesignup {
+                    padding-top: 15px;
+                    font-size: 18px;
+                }
             }
         }
     }

@@ -21,6 +21,13 @@ body.index {
 
             &.kimberly .player .still {
                 @include hero-bg("#{$page}/kimberly.jpg");
+                @include mq('sm'){
+                    .hypothetical{
+                        font-size: 10px;
+                        margin-left: 0px;
+                        color: #EDEDED;
+                    }
+                }
             }
 
             // &.kimberly .player .fadeLeft{
@@ -33,15 +40,42 @@ body.index {
 
             &.nikki .player .still {
                 @include hero-bg("#{$page}/nikki.jpg");
+                @include mq('sm'){
+                    .hypothetical{
+                        font-size: 10px;
+                        margin-left: 56%;
+                        color: #3d3d3d;
+                    }
+                }
             }
 
             &.julie .player .still {
                 @include hero-bg("#{$page}/julie.jpg");
+                @include mq('sm'){
+                    .hypothetical{
+                        font-size: 10px;
+                        margin-left: 56%;
+                        color: #3d3d3d;
+                    }
+                }
             }
 
             &.diego .player .still {
                 @include hero-bg("#{$page}/diego.jpg");
+                @include mq('sm'){
+                    .hypothetical{
+                        font-size: 10px;
+                        margin-left: 0px;
+                        color: #EDEDED;
+                    }
+                }
             }
+
+            //&.nikki,&.julie {
+            //    .copy .depiction{
+            //        color: #575D63; // darker color to stand out on a light gradient part
+            //    }
+            //}
 
             .copy {
 
@@ -57,12 +91,12 @@ body.index {
                 }
 
                 .depiction{
-                    margin: 94% auto auto -70%;
-                    color: #3d3d3d;
+                    color: #ADB2B6;
+                    margin: 94% auto auto 50%;
                     font-size: 14px;
-                    
+
                     .eq-ie9 & {
-                        margin: 87% auto auto -70%;
+                        margin: 84% auto auto -70%;
                     }
                     
                 }
@@ -207,6 +241,8 @@ body.index {
                             top: 0;
                             bottom: 0;
                         }
+
+                        .mejs-overlay-loading { display: none; }
 
                         .mejs-container,.me_flash_0_container{
                             margin: 0 auto;
