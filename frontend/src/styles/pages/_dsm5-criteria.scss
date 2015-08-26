@@ -28,7 +28,7 @@ body.dsm5-criteria {
         padding-bottom: 32px;
 
         @include mq('lg') {
-            width: percentage(655/655);
+            width: percentage(635/655);
             margin: 0 auto;
         }
 
@@ -43,6 +43,10 @@ body.dsm5-criteria {
             width: percentage(555/655);
             text-align: center;
             margin-left: 8.5%;
+        }
+
+        .roman{
+            font-style: normal;
         }
     }
 

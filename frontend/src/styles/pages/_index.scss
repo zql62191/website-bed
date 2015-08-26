@@ -57,11 +57,14 @@ body.index {
                 }
 
                 .depiction{
-                    margin: 90% auto auto -70%;
-
+                    margin: 94% auto auto -70%;
+                    color: #3d3d3d;
+                    font-size: 14px;
+                    
                     .eq-ie9 & {
-                        margin: 80% auto auto -70%;
+                        margin: 87% auto auto -70%;
                     }
+                    
                 }
 
             }
@@ -297,6 +300,7 @@ body.index {
                         font-size: 14px;
                         padding-left: 14px;
                         padding-bottom: 4px;
+                        color: #3d3d3d;
                     }
                 }
 

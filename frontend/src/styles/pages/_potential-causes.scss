@@ -23,9 +23,14 @@ body.potential-causes {
 
         ul.square{
             margin-top: 0px;
-
             li{
                 padding-top: 0px;
+                
+                .limitwidth{
+                    @include mq('lg') {
+                        width: 200px;
+                    }
+                }
             }
 
         }
