@@ -155,7 +155,7 @@ body.patient-demographics {
         background-image: radial-gradient(50% 149%, #333E48 17%, #252F39 100%);
 
         .heading--1 {
-            padding-bottom: 45px;
+            padding-bottom: 26px;
 
             @include mq('sm') {
                 padding: 0 6% 20px 6%;
@@ -164,7 +164,7 @@ body.patient-demographics {
         .heading--2 {
             width: 539px;
             margin: 0 auto;
-            padding-bottom: 18px;
+            padding-bottom: 26px;
 
             @include mq('sm') {
                 @include gs('light-italic');
@@ -191,6 +191,10 @@ body.patient-demographics {
             @include gs('light-italic');
             font-size: 24px;
             line-height: 29px;
+
+            @include mq('lg') {
+                padding-top: 6px;
+            }
 
             @include mq('sm') {
                 width: percentage(260/320);
@@ -224,7 +228,7 @@ body.patient-demographics {
             @include inline-block;
             vertical-align: top;
             width: 121px;
-            margin-right: 40px;
+            margin-right: 30px;
             text-align: center;
 
             .percent {
@@ -244,11 +248,11 @@ body.patient-demographics {
             }
 
             .total {
-                //color: #858B91;
-                color: #FDBD3E;
+                // color: #858B91; //graybeard?
+                // color: #FDBD3E; //yellow
 
                 @include mq("lg") {
-                    font-size: 18px;
+                    font-size: 27px;
                 }
                 @include mq("md") {
                     font-size: 16px;
@@ -313,7 +317,7 @@ body.patient-demographics {
 
         h2 {
             padding: 0 0 45px 60px;
-            width: percentage(712/1024);
+            width: percentage(826/1024);
             margin: 0 auto;
             @include mq('md') {
                 padding-left: 0px;
