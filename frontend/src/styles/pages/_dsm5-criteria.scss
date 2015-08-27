@@ -43,6 +43,7 @@ body.dsm5-criteria {
             width: percentage(555/655);
             text-align: center;
             margin-left: 8.5%;
+            padding-bottom: 15px;
         }
 
         .roman{
@@ -129,8 +130,9 @@ body.dsm5-criteria {
     }
 
     ul.boxed  li{
-        padding-left: 35px;
-        padding-top: 25px;
+        padding-left: 24px;
+        padding-top: 15px;
+        margin-top: 20.5px;
         
         @include mq("md") {
             font-size: 16px;

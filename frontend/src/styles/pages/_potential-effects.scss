@@ -56,6 +56,11 @@ body.potential-effects {
                 color: #D6D8DA;
                 line-height: 19px;
             }
+            span{ /* add span for each li, and set the margin-left to change the space between the text and bullets*/
+                @include mq('sm'){
+                    margin-left: -1px;
+                }
+            }
         }
 
         li:before {
