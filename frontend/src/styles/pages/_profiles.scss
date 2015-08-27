@@ -74,6 +74,11 @@ body.profiles {
             margin-left: 86px;
             margin-top: 54px;
             z-index: 3;
+            img{
+                @include mq('sm') {
+                    padding-top: 15px;
+                }
+            }
         }
 
         .mobile-hero {
@@ -580,6 +585,7 @@ body.profiles {
                 background-color: #DED8D4;
                 // background-color: #F0ECE9; 
             }
+            
 
             // restore padding for the parts that NEED spacing
             .controls, .pagination, .callouts, .wrap--refs, .profile, .section-disclaimer {

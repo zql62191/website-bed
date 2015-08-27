@@ -276,7 +276,7 @@ header.header--global {
             }
             nav ul li {
                 text-align: center;
-                padding: 10px 0;
+                padding: 4px 0;
 
                 &:last-child {
                     padding-top: 30px;
@@ -326,6 +326,11 @@ header.header--global {
             }
         }
         .primary-nav {
+
+            nav ul li {
+                padding: 10px 0;
+            }
+            
             nav ul li a {
                 font-size: 36px;
 
@@ -358,7 +363,7 @@ header.header--global {
             }
             .hcp {
                 font-size: 10px;
-                line-height: 12px;
+                line-height: 11px;
             }
         }
         .primary-nav {

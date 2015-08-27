@@ -85,6 +85,10 @@ body.potential-effects {
                 width: percentage(541/768);
                 margin: 0 auto;
             }
+            
+            @include mq('sm') {
+                padding-bottom: 6px;
+            }
         }
         .heading--3 {
             @include gs('light');
@@ -135,7 +139,7 @@ body.potential-effects {
                 text-align: center;
 
                 @include mq("sm") {
-                    margin: 25px auto;
+                    margin: 15px auto;
                 }
 
                 .flexbox & {
@@ -186,6 +190,7 @@ body.potential-effects {
             @include mq('sm') {
                 font-size: 16px;
                 line-height: 19px;
+                padding-top: 15px;
             }
         }
     }
@@ -237,6 +242,7 @@ body.potential-effects {
             @include mq("sm") {
 
                 p {
+                    color: #E8E9E9;
                     font-size: 16px;
                 }
             }
@@ -308,9 +314,13 @@ body.potential-effects {
         .listen {
             color: #FFBE2C;
 
-            @include mq("md", "sm") {
+            @include mq("md") {
                 text-align: center;
                 padding-bottom: 65px;
+            }
+            @include mq("sm") {
+                text-align: center;
+                padding-bottom: 45px;
             }
         }
         
