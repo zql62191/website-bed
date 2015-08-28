@@ -1,4 +1,4 @@
-/* Last Updated: 2015-08-28 at 11:55:49 AM */
+/* Last Updated: 2015-08-28 at 12:04:16 PM */
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -1230,7 +1230,7 @@ ol.refs li a {
 }
 @media only screen and (min-width: 1025px) {
   ol.refs {
-    width: 655px;
+    width: 675px;
     text-align: left;
   }
   ol.refs li.space {
@@ -1712,8 +1712,19 @@ header.header--global .title-bar .signup {
     z-index: 1;
     font-size: 15px;
   }
+  header.header--global .primary-nav nav ul li {
+    padding: 10px 0;
+  }
   header.header--global .primary-nav nav ul li a {
     font-size: 36px;
+  }
+  header.header--global .primary-nav nav ul li a.mobilehome {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  header.header--global .primary-nav nav ul li a.mobilesignup {
+    padding-top: 25px;
+    font-size: 26px;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -1732,10 +1743,18 @@ header.header--global .title-bar .signup {
   }
   header.header--global .title-bar .hcp {
     font-size: 10px;
-    line-height: 12px;
+    line-height: 11px;
   }
   header.header--global .primary-nav nav ul li a {
     font-size: 26px;
+  }
+  header.header--global .primary-nav nav ul li a.mobilehome {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+  header.header--global .primary-nav nav ul li a.mobilesignup {
+    padding-top: 15px;
+    font-size: 18px;
   }
 }
 
@@ -1918,7 +1937,7 @@ footer.footer--global nav ul li a {
 }
 @media only screen and (min-width: 1025px) {
   body.index .section--hero .hero.kimberly .player .still {
-    background: transparent url('../img/lg/index/kimberly.jpg?1439234524') center center no-repeat;
+    background: transparent url('../img/lg/index/kimberly.jpg?1440777816') center center no-repeat;
     background-size: cover;
     padding-top: 46%;
   }
@@ -1928,6 +1947,13 @@ footer.footer--global nav ul li a {
     background: transparent url('../img/lgr/index/kimberly.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 46%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body.index .section--hero .hero.kimberly .player .still .hypothetical {
+    font-size: 10px;
+    margin-left: 0px;
+    color: #EDEDED;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -1960,7 +1986,7 @@ footer.footer--global nav ul li a {
 }
 @media only screen and (min-width: 1025px) {
   body.index .section--hero .hero.nikki .player .still {
-    background: transparent url('../img/lg/index/nikki.jpg?1439234524') center center no-repeat;
+    background: transparent url('../img/lg/index/nikki.jpg?1440777816') center center no-repeat;
     background-size: cover;
     padding-top: 46%;
   }
@@ -1970,6 +1996,13 @@ footer.footer--global nav ul li a {
     background: transparent url('../img/lgr/index/nikki.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 46%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body.index .section--hero .hero.nikki .player .still .hypothetical {
+    font-size: 10px;
+    margin-left: 56%;
+    color: #3d3d3d;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -2002,9 +2035,9 @@ footer.footer--global nav ul li a {
 }
 @media only screen and (min-width: 1025px) {
   body.index .section--hero .hero.julie .player .still {
-    background: transparent url('../img/lg/index/julie.jpg?1439234524') center center no-repeat;
+    background: transparent url('../img/lg/index/julie.jpg?1440777816') center center no-repeat;
     background-size: cover;
-    padding-top: 46%;
+    padding-top: 48.16754%;
   }
 }
 @media only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -2012,6 +2045,13 @@ footer.footer--global nav ul li a {
     background: transparent url('../img/lgr/index/julie.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 46%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body.index .section--hero .hero.julie .player .still .hypothetical {
+    font-size: 10px;
+    margin-left: 56%;
+    color: #3d3d3d;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -2044,7 +2084,7 @@ footer.footer--global nav ul li a {
 }
 @media only screen and (min-width: 1025px) {
   body.index .section--hero .hero.diego .player .still {
-    background: transparent url('../img/lg/index/diego.jpg?1439234524') center center no-repeat;
+    background: transparent url('../img/lg/index/diego.jpg?1440777816') center center no-repeat;
     background-size: cover;
     padding-top: 46%;
   }
@@ -2054,6 +2094,13 @@ footer.footer--global nav ul li a {
     background: transparent url('../img/lgr/index/diego.jpg?1439234524') center center no-repeat;
     background-size: cover;
     padding-top: 46%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body.index .section--hero .hero.diego .player .still .hypothetical {
+    font-size: 10px;
+    margin-left: 0px;
+    color: #EDEDED;
   }
 }
 body.index .section--hero .hero .copy p {
@@ -2066,10 +2113,12 @@ body.index .section--hero .hero .copy h1 {
   padding-top: 10px;
 }
 body.index .section--hero .hero .copy .depiction {
-  margin: 90% auto auto -70%;
+  color: #ADB2B6;
+  margin: 94% auto auto 50%;
+  font-size: 14px;
 }
 .eq-ie9 body.index .section--hero .hero .copy .depiction {
-  margin: 80% auto auto -70%;
+  margin: 84% auto auto -70%;
 }
 body.index .section--hero .hero .callouts a h4:after {
   content: '';
@@ -2413,6 +2462,9 @@ body.index .section--hero .hero .callouts a.cta3 .icon {
     top: 0;
     bottom: 0;
   }
+  body.index .section--hero .hero .player .video .mejs-overlay-loading {
+    display: none;
+  }
   body.index .section--hero .hero .player .video .mejs-container, body.index .section--hero .hero .player .video .me_flash_0_container {
     margin: 0 auto;
     width: 1400px !important;
@@ -2488,6 +2540,7 @@ body.index .section--hero .hero .callouts a.cta3 .icon {
     font-size: 14px;
     padding-left: 14px;
     padding-bottom: 4px;
+    color: #3d3d3d;
   }
   body.index .section--hero .hero .copy {
     background: #242F38;
@@ -2691,11 +2744,11 @@ body.dsm5-criteria h1.heading--1 {
   }
 }
 body.dsm5-criteria h2.heading--2 {
-  padding-bottom: 32px;
+  padding-bottom: 12px;
 }
 @media only screen and (min-width: 1025px) {
   body.dsm5-criteria h2.heading--2 {
-    width: 100%;
+    width: 96.94656%;
     margin: 0 auto;
   }
 }
@@ -2710,7 +2763,11 @@ body.dsm5-criteria h2.heading--2 {
     width: 84.73282%;
     text-align: center;
     margin-left: 8.5%;
+    padding-bottom: 15px;
   }
+}
+body.dsm5-criteria h2.heading--2 .roman {
+  font-style: normal;
 }
 body.dsm5-criteria .section--individuals {
   background: #252F39;
@@ -2783,8 +2840,9 @@ body.dsm5-criteria .section--individuals ol.refs {
   }
 }
 body.dsm5-criteria ul.boxed li {
-  padding-left: 35px;
-  padding-top: 25px;
+  padding-left: 24px;
+  padding-top: 15px;
+  margin-top: 20.5px;
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   body.dsm5-criteria ul.boxed li {
@@ -2855,6 +2913,16 @@ body.recognizing-bed .section--episodes .heading--2 {
     width: 100%;
   }
 }
+body.recognizing-bed .section--episodes .goother {
+  font-size: 22px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+@media only screen and (max-width: 640px) {
+  body.recognizing-bed .section--episodes .goother {
+    font-size: 19px;
+  }
+}
 body.recognizing-bed .section--bulimia {
   background: #333E48;
 }
@@ -2906,6 +2974,9 @@ body.recognizing-bed .section--overeating .heading--2 {
 body.recognizing-bed .section--obesity {
   background: #333E48;
 }
+body.recognizing-bed .section--obesity .wrap--content {
+  padding-bottom: 24px;
+}
 body.recognizing-bed .section--obesity .heading--2 {
   text-align: center;
   margin: 0 auto;
@@ -2939,6 +3010,11 @@ body.recognizing-bed .section--obesity .heading--3 {
     font-size: 18px;
   }
 }
+@media only screen and (max-width: 640px) {
+  body.recognizing-bed .section--obesity .heading--3 {
+    margin-bottom: 26px;
+  }
+}
 body.recognizing-bed .section--obesity .chart-wrap {
   margin: 0 auto;
 }
@@ -2954,111 +3030,112 @@ body.recognizing-bed .section--obesity .chart-wrap .chart {
 }
 @media only screen and (max-width: 640px) {
   body.recognizing-bed .section--obesity .chart-wrap .chart {
-    height: 193px;
-    width: 180px;
-    background: transparent url('../img/sm/recognizing-bed/chart.png?1439234524') center center no-repeat;
-    background-size: 180px 193px;
+    height: 480px;
+    width: 276px;
+    background: transparent url('../img/sm/recognizing-bed/chart.png?1440777816') center center no-repeat;
+    background-size: 276px 480px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--hc {
-    margin-left: -90px;
+    margin-left: -138px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--vc {
-    margin-top: -96.5px;
+    margin-top: -240px;
   }
 }
 @media only screen and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
   body.recognizing-bed .section--obesity .chart-wrap .chart {
-    height: 193px;
-    width: 180px;
-    background: transparent url('../img/smr/recognizing-bed/chart.png?1439234524') center center no-repeat;
-    background-size: 180px 193px;
+    height: 480px;
+    width: 276px;
+    background: transparent url('../img/smr/recognizing-bed/chart.png?1440777816') center center no-repeat;
+    background-size: 276px 480px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--hc {
-    margin-left: -90px;
+    margin-left: -138px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--vc {
-    margin-top: -96.5px;
+    margin-top: -240px;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   body.recognizing-bed .section--obesity .chart-wrap .chart {
-    height: 252px;
-    width: 325px;
-    background: transparent url('../img/md/recognizing-bed/chart.png?1439234524') center center no-repeat;
-    background-size: 325px 252px;
+    height: 212px;
+    width: 596px;
+    background: transparent url('../img/md/recognizing-bed/chart.png?1440777816') center center no-repeat;
+    background-size: 596px 212px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--hc {
-    margin-left: -162.5px;
+    margin-left: -298px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--vc {
-    margin-top: -126px;
+    margin-top: -106px;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   body.recognizing-bed .section--obesity .chart-wrap .chart {
-    height: 252px;
-    width: 325px;
-    background: transparent url('../img/mdr/recognizing-bed/chart.png?1439234524') center center no-repeat;
-    background-size: 325px 252px;
+    height: 212px;
+    width: 596px;
+    background: transparent url('../img/mdr/recognizing-bed/chart.png?1440777816') center center no-repeat;
+    background-size: 596px 212px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--hc {
-    margin-left: -162.5px;
+    margin-left: -298px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--vc {
-    margin-top: -126px;
+    margin-top: -106px;
   }
 }
 @media only screen and (min-width: 1025px) {
   body.recognizing-bed .section--obesity .chart-wrap .chart {
-    height: 252px;
-    width: 325px;
-    background: transparent url('../img/lg/recognizing-bed/chart.png?1439234524') center center no-repeat;
-    background-size: 325px 252px;
+    height: 265px;
+    width: 745px;
+    background: transparent url('../img/lg/recognizing-bed/chart.png?1440777816') center center no-repeat;
+    background-size: 745px 265px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--hc {
-    margin-left: -162.5px;
+    margin-left: -372.5px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--vc {
-    margin-top: -126px;
+    margin-top: -132.5px;
   }
 }
 @media only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2) {
   body.recognizing-bed .section--obesity .chart-wrap .chart {
-    height: 252px;
-    width: 325px;
-    background: transparent url('../img/lgr/recognizing-bed/chart.png?1439234524') center center no-repeat;
-    background-size: 325px 252px;
+    height: 265px;
+    width: 745px;
+    background: transparent url('../img/lgr/recognizing-bed/chart.png?1440777816') center center no-repeat;
+    background-size: 745px 265px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--hc {
-    margin-left: -162.5px;
+    margin-left: -372.5px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--vc {
-    margin-top: -126px;
+    margin-top: -132.5px;
   }
 }
 @media only screen and (max-width: 640px) {
   body.recognizing-bed .section--obesity .chart-wrap .chart {
-    top: 73px;
+    top: 13px;
   }
 }
 @media only screen and (min-width: 1025px) {
   body.recognizing-bed .section--obesity .chart-wrap {
-    width: 560px;
+    width: 764px;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   body.recognizing-bed .section--obesity .chart-wrap {
-    width: 560px;
+    width: 596px;
   }
 }
 @media only screen and (max-width: 640px) {
   body.recognizing-bed .section--obesity .chart-wrap {
-    width: 260px;
-    height: 360px;
+    width: 267px;
+    height: 482px;
+    margin-bottom: 20px;
   }
 }
 body.recognizing-bed .section--obesity .chart-wrap .section-note.footnote {
-  padding-top: 70px;
+  padding-top: 30px;
   text-align: center;
   margin-bottom: 0px;
 }
@@ -3218,6 +3295,7 @@ body.recognizing-bed .section--compared .heading--2.top {
   text-align: left;
   margin: 0 auto;
   font-size: 21px;
+  padding-top: 34px;
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   body.recognizing-bed .section--compared .heading--2.top {
@@ -3349,6 +3427,10 @@ body.recognizing-bed .section--coexisting .statistic-box .box2 {
   body.recognizing-bed .section--coexisting .statistic-box .statistic .text {
     top: 114px;
   }
+  body.recognizing-bed .section--coexisting .chartTitle {
+    padding-top: 40px;
+    margin-bottom: 20px !important;
+  }
   body.recognizing-bed .section--coexisting ul.square {
     margin: 20px 36px 54px 36px;
   }
@@ -3390,23 +3472,23 @@ body.recognizing-bed .section--coexisting .statistic-box .box2 {
 }
 @media only screen and (max-width: 640px) {
   body.recognizing-bed .section--coexisting .statistic-box {
-    padding: 6.25%;
+    margin-top: -20px;
   }
   body.recognizing-bed .section--coexisting .statistic-box .statistic {
     padding: 79px 10px 5px 10px;
     text-align: center;
   }
   body.recognizing-bed .section--coexisting .statistic-box .statistic .text {
-    top: 130px;
+    top: 120px;
     font-size: 16px;
     line-height: 19px;
   }
   body.recognizing-bed .section--coexisting .statistic-box .box1 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   body.recognizing-bed .section--coexisting .statistic-box .box2 {
     padding-bottom: 0;
-    margin-top: 40px;
+    margin-top: 25px;
   }
   body.recognizing-bed .section--coexisting .heading--3.center {
     margin-top: 30px;
@@ -3418,6 +3500,7 @@ body.recognizing-bed .section--coexisting .statistic-box .box2 {
   }
   body.recognizing-bed .section--coexisting p.footnote {
     text-align: center;
+    margin-top: 20px;
   }
 }
 @media only screen and (min-width: 1025px) {
@@ -3493,6 +3576,10 @@ body.recognizing-bed .section--coexisting .statistic-box .box2 {
   }
 }
 
+body.potential-causes {
+  /*This is setting the ol numbers position   --- I hate this change!!!*/
+  /*-------------------------*/
+}
 body.potential-causes section p, body.potential-causes section li {
   color: #ADB2B6;
 }
@@ -3925,6 +4012,19 @@ body.potential-causes .row ul.square {
 body.potential-causes .row ul.square li {
   padding-top: 0px;
 }
+@media only screen and (min-width: 1025px) {
+  body.potential-causes .row ul.square li .limitwidth {
+    width: 200px;
+  }
+}
+body.potential-causes .row ul.square li span {
+  margin-left: -3px;
+}
+@media only screen and (max-width: 640px) {
+  body.potential-causes .row ul.square li span {
+    margin-left: -1px;
+  }
+}
 @media only screen and (min-width: 1025px), only screen and (min-width: 641px) and (max-width: 1024px) {
   body.potential-causes h4.heading--4 {
     font-size: 21px;
@@ -3956,6 +4056,43 @@ body.potential-causes .section--theories h2.heading--2 {
 }
 body.potential-causes .section--theories h2.heading--2.top {
   margin-top: 16px;
+}
+body.potential-causes ol {
+  counter-reset: foo;
+  display: table;
+}
+body.potential-causes ol li {
+  list-style: none;
+  counter-increment: foo;
+  display: table-row;
+}
+@media only screen and (min-width: 1025px) {
+  body.potential-causes ol li {
+    line-height: 28px;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  body.potential-causes ol li {
+    line-height: 24px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body.potential-causes ol li {
+    line-height: 18px;
+  }
+}
+body.potential-causes ol li::before {
+  content: counter(foo) ".";
+  display: table-cell;
+  text-align: right;
+  padding-right: .5em;
+}
+body.potential-causes ol.number {
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+body.potential-causes ol.number li:before {
+  float: none;
 }
 body.potential-causes .section--factors {
   background: #252F39;
@@ -4035,6 +4172,7 @@ body.potential-causes .section--factors {
     padding-top: 0px;
     width: 656px;
     text-align: center;
+    margin: 0 auto 48px auto;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
@@ -4158,7 +4296,7 @@ body.potential-causes .section--factors {
   body.potential-causes .center {
     margin-top: 36px;
   }
-  body.potential-causes p, body.potential-causes h4 {
+  body.potential-causes .distinguishfooter {
     text-align: center;
   }
   body.potential-causes .section--factors .btn {
@@ -4194,9 +4332,7 @@ body.patient-demographics .section--us .heading--2 {
 }
 @media only screen and (max-width: 640px) {
   body.patient-demographics .section--us .heading--2 {
-    font-size: 16px;
     color: #D6D8DA;
-    line-height: 18px;
     width: 90%;
     margin: 0 auto;
   }
@@ -4223,10 +4359,11 @@ body.patient-demographics .section--us .titlenote {
   body.patient-demographics .section--us .titlenote {
     margin-right: auto;
     margin-left: auto;
+    padding-bottom: 28px;
   }
 }
 body.patient-demographics .section--us .footnote {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 @media only screen and (min-width: 1025px) {
   body.patient-demographics .section--us .footnote {
@@ -4382,7 +4519,7 @@ body.patient-demographics .section--survey {
   background-image: radial-gradient(50% 149%, #333e48 17%, #252f39 100%);
 }
 body.patient-demographics .section--survey .heading--1 {
-  padding-bottom: 45px;
+  padding-bottom: 26px;
 }
 @media only screen and (max-width: 640px) {
   body.patient-demographics .section--survey .heading--1 {
@@ -4392,7 +4529,7 @@ body.patient-demographics .section--survey .heading--1 {
 body.patient-demographics .section--survey .heading--2 {
   width: 539px;
   margin: 0 auto;
-  padding-bottom: 18px;
+  padding-bottom: 26px;
 }
 @media only screen and (max-width: 640px) {
   body.patient-demographics .section--survey .heading--2 {
@@ -4402,6 +4539,11 @@ body.patient-demographics .section--survey .heading--2 {
     color: #D6D8DA;
     line-height: 18px;
     width: 90%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body.patient-demographics .section--survey .mobilespace {
+    padding-bottom: 14px;
   }
 }
 body.patient-demographics .section--survey p {
@@ -4424,13 +4566,18 @@ body.patient-demographics .section--survey .text {
   font-size: 24px;
   line-height: 29px;
 }
+@media only screen and (min-width: 1025px) {
+  body.patient-demographics .section--survey .text {
+    padding-top: 6px;
+  }
+}
 @media only screen and (max-width: 640px) {
   body.patient-demographics .section--survey .text {
     width: 81.25%;
     font-size: 16px;
     color: #D6D8DA;
     line-height: 18px;
-    padding-top: 18px;
+    padding-top: 5px;
   }
 }
 @media only screen and (min-width: 1025px), only screen and (min-width: 641px) and (max-width: 1024px) {
@@ -4457,7 +4604,7 @@ body.patient-demographics .section--survey .stat {
   *display: inline;
   vertical-align: top;
   width: 121px;
-  margin-right: 40px;
+  margin-right: 30px;
   text-align: center;
 }
 body.patient-demographics .section--survey .stat .percent {
@@ -4479,12 +4626,11 @@ body.patient-demographics .section--survey .stat .percent {
     font-size: 32px;
   }
 }
-body.patient-demographics .section--survey .stat .total {
-  color: #FDBD3E;
-}
 @media only screen and (min-width: 1025px) {
   body.patient-demographics .section--survey .stat .total {
-    font-size: 18px;
+    font-size: 27px;
+    margin-left: -130px;
+    top: 35px;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
@@ -4495,6 +4641,7 @@ body.patient-demographics .section--survey .stat .total {
 @media only screen and (max-width: 640px) {
   body.patient-demographics .section--survey .stat .total {
     font-size: 16px;
+    padding-left: 10px;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -4504,7 +4651,12 @@ body.patient-demographics .section--survey .stat .total {
   }
 }
 body.patient-demographics .section--survey .footnote {
-  padding-top: 26px;
+  padding-top: 36px;
+}
+@media only screen and (max-width: 640px) {
+  body.patient-demographics .section--survey .footnote {
+    padding-top: 18px;
+  }
 }
 @media only screen and (max-width: 640px) {
   body.patient-demographics .section--survey .footnote {
@@ -4710,7 +4862,7 @@ body.patient-demographics .section--ratio .heading--1 {
 }
 body.patient-demographics .section--ratio h2 {
   padding: 0 0 45px 60px;
-  width: 69.53125%;
+  width: 80.66406%;
   margin: 0 auto;
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
@@ -4785,10 +4937,13 @@ body.patient-demographics .section--ratio h2 .vs {
   body.patient-demographics .section--ratio h2 .estimated:after {
     clear: both;
   }
+  body.patient-demographics .section--ratio h2 .estimated em {
+    padding-right: 10px;
+  }
   body.patient-demographics .section--ratio h2 .ratio {
     font-size: 50px;
     line-height: 0.8;
-    padding: 0 10px 0 30px;
+    padding: 0 10px 0 10px;
   }
   body.patient-demographics .section--ratio h2 .versus {
     text-align: center;
@@ -4977,6 +5132,14 @@ body.potential-effects .section--associated .heading--1 {
     line-height: 19px;
   }
 }
+body.potential-effects .section--associated li span {
+  /* add span for each li, and set the margin-left to change the space between the text and bullets*/
+}
+@media only screen and (max-width: 640px) {
+  body.potential-effects .section--associated li span {
+    margin-left: -1px;
+  }
+}
 @media only screen and (max-width: 640px) {
   body.potential-effects .section--associated li:before {
     font-size: 1.5em;
@@ -5004,6 +5167,11 @@ body.potential-effects .section--association .heading--2 {
   body.potential-effects .section--association .heading--2 {
     width: 70.44271%;
     margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body.potential-effects .section--association .heading--2 {
+    padding-bottom: 6px;
   }
 }
 body.potential-effects .section--association .heading--3 {
@@ -5073,7 +5241,7 @@ body.potential-effects .section--association .charts .chart {
 }
 @media only screen and (max-width: 640px) {
   body.potential-effects .section--association .charts .chart {
-    margin: 25px auto;
+    margin: 15px auto;
   }
 }
 .flexbox body.potential-effects .section--association .charts .chart {
@@ -5225,6 +5393,7 @@ body.potential-effects .section--association .charts .text {
   body.potential-effects .section--association .heading--3 {
     font-size: 16px;
     line-height: 19px;
+    padding-top: 15px;
   }
 }
 body.potential-effects .section--living {
@@ -5273,6 +5442,7 @@ body.potential-effects .section--living blockquote:before, body.potential-effect
 }
 @media only screen and (max-width: 640px) {
   body.potential-effects .section--living blockquote p {
+    color: #E8E9E9;
     font-size: 16px;
   }
 }
@@ -5347,10 +5517,16 @@ body.potential-effects .section--living .two {
 body.potential-effects .section--living .listen {
   color: #FFBE2C;
 }
-@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (max-width: 640px) {
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
   body.potential-effects .section--living .listen {
     text-align: center;
     padding-bottom: 65px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body.potential-effects .section--living .listen {
+    text-align: center;
+    padding-bottom: 45px;
   }
 }
 body.potential-effects .section--living .sunny {
@@ -5556,6 +5732,12 @@ body.patient-profiles .section--patients .hypothetical {
   color: #858B91;
   text-align: right;
 }
+@media only screen and (max-width: 640px) {
+  body.patient-profiles .section--patients .hypothetical {
+    font-size: 10px;
+    padding-right: 5px;
+  }
+}
 @media only screen and (min-width: 1025px) and (max-width: 640px), only screen and (min-width: 641px) and (max-width: 1024px) and (max-width: 640px) {
   body.patient-profiles .section--patients .person.kimberly {
     height: 120px;
@@ -5704,7 +5886,7 @@ body.patient-profiles .section--patients .hypothetical {
   body.patient-profiles .section--patients .person.diego {
     height: 120px;
     width: 158px;
-    background: transparent url('../img/sm/patient-profiles/diego.jpg?1439234524') center center no-repeat;
+    background: transparent url('../img/sm/patient-profiles/diego.jpg?1440777816') center center no-repeat;
     background-size: 158px 120px;
   }
 }
@@ -5736,7 +5918,7 @@ body.patient-profiles .section--patients .hypothetical {
   body.patient-profiles .section--patients .person.diego {
     height: 239px;
     width: 240px;
-    background: transparent url('../img/lg/patient-profiles/diego.jpg?1439234524') center center no-repeat;
+    background: transparent url('../img/lg/patient-profiles/diego.jpg?1440777816') center center no-repeat;
     background-size: 240px 239px;
   }
 }
@@ -5744,7 +5926,7 @@ body.patient-profiles .section--patients .hypothetical {
   body.patient-profiles .section--patients .person.diego {
     height: 239px;
     width: 240px;
-    background: transparent url('../img/lgr/patient-profiles/diego.jpg?1439234524') center center no-repeat;
+    background: transparent url('../img/lgr/patient-profiles/diego.jpg?1440777816') center center no-repeat;
     background-size: 240px 239px;
   }
 }
@@ -5785,7 +5967,7 @@ body.patient-profiles .section--patients .hypothetical {
   body.patient-profiles .section--patients .person.diego {
     height: 120px;
     width: 158px;
-    background: transparent url('../img/sm/patient-profiles/diego.png?1439234524') center center no-repeat;
+    background: transparent url('../img/sm/patient-profiles/diego.png?1440777816') center center no-repeat;
     background-size: 158px 120px;
   }
 }
@@ -5969,7 +6151,7 @@ body.patient-profiles .section--patients .hypothetical {
     width: 100%;
   }
   body.patient-profiles .section--patients p.disclaimer {
-    width: 214px;
+    width: 284px;
     text-align: center;
     vertical-align: middle;
     margin: 0 auto;
@@ -5982,6 +6164,7 @@ body.patient-profiles .bold {
 body.profiles {
   font-weight: 100;
   font-style: normal;
+  background-color: #ded8d5;
 }
 body.profiles .gradient {
   position: absolute;
@@ -6034,6 +6217,7 @@ body.profiles .section--carousel {
 }
 body.profiles .section--carousel .wrap--content {
   padding-top: 0px;
+  padding-bottom: 24px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -6052,6 +6236,11 @@ body.profiles .section--carousel .hero {
   margin-left: 86px;
   margin-top: 54px;
   z-index: 3;
+}
+@media only screen and (max-width: 640px) {
+  body.profiles .section--carousel .hero img {
+    padding-top: 15px;
+  }
 }
 body.profiles .section--carousel .mobile-hero {
   display: none;
@@ -6616,6 +6805,15 @@ body.support-and-resources .section--video-player {
 }
 body.support-and-resources .section--video-player .mejs-container, body.support-and-resources .section--video-player .mejs-container * {
   max-width: 100%;
+  max-height: 100%;
+}
+body.support-and-resources .section--video-player .mejs-volume-slider {
+  max-height: none;
+}
+body.support-and-resources .section--video-player .mejs-overlay {
+  height: 540px;
+  max-height: 100%;
+  position: relative;
 }
 body.support-and-resources .section--video-player .mejs-inner {
   height: 100%;
@@ -6857,7 +7055,7 @@ body.support-and-resources .section--information .link-box-grid .link-box-row .l
 }
 @media only screen and (max-width: 640px) {
   body.support-and-resources .section--shire-resources .btn {
-    margin-bottom: 44px;
+    margin-bottom: 14px;
     height: auto;
     line-height: 17px;
     padding: 14px 5.71429%;
@@ -7114,6 +7312,16 @@ body.sign-up .section--page form .checkbox-cont {
   margin-top: -3.2%;
 }
 @media only screen and (max-width: 640px) {
+  body.sign-up .section--page form .checkbox-cont {
+    margin-top: -7%;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
+  body.sign-up .section--page form .checkbox-cont {
+    margin-top: -3.25%;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
   body.sign-up .section--page form .checkbox-cont {
     margin-top: -3.5%;
   }

@@ -8,12 +8,12 @@
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
     <meta name="google-site-verification" content="J54-RSNLJc8L0u3mx8m2Ie3Fb5zXiF5w1x4JQRIPBg8">
-    <link rel="stylesheet" href="./css/styles.css?1440777300000"/>
+    <link rel="stylesheet" href="./css/styles.css?1440777900000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1440777300000"></script>
-    <script src="./js/redirect.js?1440777300000"></script>
+    <script src="./js/head.js?1440777900000"></script>
+    <script src="./js/redirect.js?1440777900000"></script>
 <script>
     pageLoading();
 </script>
@@ -44,7 +44,7 @@
           <div class="wrap--content">
             <nav>
               <ul>
-                <li class="hide--lg"><a href="/hcp/index.aspx">B.E.D. in Adults</a>
+                <li class="hide--lg"><a href="/hcp/index.aspx" class="mobilehome">B.E.D. in Adults</a>
                 </li>
                 <li><a href="/hcp/dsm5-criteria.aspx"><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> Criteria</a>
                 </li>
@@ -60,7 +60,7 @@
                 </li>
                 <li><a href="/hcp/support-and-resources.aspx">Support &amp; Resources</a>
                 </li>
-                <li class="hide--lg"><a href="/hcp/sign-up.aspx">Get the full <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> <br><abbr title="Binge Eating Disorder">B.E.D.</abbr> criteria</a>
+                <li class="hide--lg"><a href="/hcp/sign-up.aspx" class="mobilesignup">Get the full <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> <br><abbr title="Binge Eating Disorder">B.E.D.</abbr> criteria</a>
                 </li>
               </ul>
             </nav>
@@ -105,7 +105,7 @@
                     <div class="stat">She is single and lives alone</div>
                     <div class="stat">Kimberly&rsquo;s binges are usually the <br>result of boredom</div>
                   </div>
-                  <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the <a href="dsm5-criteria.aspx">criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr> </a>&nbsp;established in <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr>.<sup>1</sup></p>
+                  <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the <a href="dsm5-criteria.aspx">criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr> </a>established in <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr>.<sup>1</sup></p>
                 </div>
               </div>
               <div ng-class="{active : currentSlide == 'nikki'}" ng-swipe-left="swipeControls('R')" ng-swipe-right="swipeControls('L')" class="slide nikki">
@@ -142,7 +142,7 @@
                       
                     </div>
                   </div>
-                  <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the <a href="dsm5-criteria.aspx">criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr> </a>&nbsp;established in <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr>.<sup>1</sup></p>
+                  <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the <a href="dsm5-criteria.aspx">criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr> </a>established in <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr>.<sup>1</sup></p>
                 </div>
               </div>
               <div ng-class="{active : currentSlide == 'julie'}" ng-swipe-left="swipeControls('R')" ng-swipe-right="swipeControls('L')" class="slide julie">
@@ -179,7 +179,7 @@
                       
                     </div>
                   </div>
-                  <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the <a href="dsm5-criteria.aspx">criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr> </a>&nbsp;established in <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr>.<sup>1</sup></p>
+                  <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the <a href="dsm5-criteria.aspx">criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr> </a>established in <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr>.<sup>1</sup></p>
                 </div>
               </div>
               <div ng-class="{active : currentSlide == 'diego'}" ng-swipe-left="swipeControls('R')" ng-swipe-right="swipeControls('L')" class="slide diego">
@@ -211,7 +211,7 @@
                       
                     </div>
                   </div>
-                  <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the <a href="dsm5-criteria.aspx">criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr></a>&nbsp;established in <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr>.</p>
+                  <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the <a href="dsm5-criteria.aspx">criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr></a>established in <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr>.</p>
                 </div>
               </div>
             </div>
@@ -245,7 +245,7 @@
           <p class="section-disclaimer">These tools were developed by Shire to assist health care professionals in identifying and accurately diagnosing <abbr title="Binge Eating Disorder">B.E.D.</abbr> in adults.</p>
           <div class="wrap--refs">
             <ol class="refs number">
-              <li>American Psychiatric Association. Binge-eating disorder. In: <em>Diagnostic and Statistical Manual of Mental Disorders. </em>5th ed. Arlington, VA: American Psychiatric Association;2013:350-353.</li>
+              <li>American Psychiatric Association. Binge-eating disorder. In: <em>Diagnostic and Statistical Manual of Mental Disorders. </em>5th ed. Arlington, VA: American Psychiatric Association; 2013:350-353.</li>
             </ol>
           </div>
         </div>
@@ -267,7 +267,7 @@
           </nav>
         </div>
         <div class="wrap--content last">
-          <p><em>DSM-IV-Text Revision</em><sup>&reg;</sup> and <em><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr></em> are registered trademarks of the American Psychiatric Association.
+          <p><em>DSM-IV</em><sup>&reg;</sup>, <em>DSM-IV-Text Revision</em><sup>&reg;</sup>, and <em><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr></em> are registered trademarks of the American Psychiatric Association.
             
           </p>
           <p class="bottom-bump"><a href="http://www.shire.com/" target="_blank">
@@ -279,7 +279,7 @@
                 <source media="only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2)" srcset="img/lgr/shire-logo.png 2x"/>
                 <source media="only screen and (min-width: 1025px)" srcset="img/lg/shire-logo.png 1x"/><!--[if IE 9]></video><![endif]--><img srcset="img/lg/shire-logo.png" alt="Shire"/>
               </picture></a></p>
-          <p class="legal"><span class="line">&copy;2015 <a href="http://www.shire.com/" target="_blank">Shire US Inc.</a>, [Waltham, MA 02451]&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">1&ndash;800&ndash;828&ndash;2088&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">S05144&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;08/15</span></p>
+          <p class="legal"><span class="line">&copy;2015 <a href="http://www.shire.com/" target="_blank">Shire US Inc.</a>, [Waltham, MA 02451]&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">1&ndash;800&ndash;828&ndash;2088&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">S05144&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09/15</span></p>
           <p>
             Unless otherwise noted, all content of this website, including text, images, graphics, sound files, and their arrangement, belongs to Shire and is protected by international copyright laws. All other intellectual property rights are reserved.  The content may not be copied for commercial use or distribution, nor may these objects be downloaded, modified, or posted to other sites.
             
@@ -289,9 +289,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1440777300000"></script>
-    <script src="./js/templates.js?1440777300000"></script>
-    <script src="./js/app.js?1440777300000"></script>
+    <script src="./js/vendor.js?1440777900000"></script>
+    <script src="./js/templates.js?1440777900000"></script>
+    <script src="./js/app.js?1440777900000"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");
