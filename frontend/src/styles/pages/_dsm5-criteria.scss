@@ -25,10 +25,10 @@ body.dsm5-criteria {
     }
 
     h2.heading--2 {
-        padding-bottom: 32px;
+        padding-bottom: 12px;
 
         @include mq('lg') {
-            width: percentage(655/655);
+            width: percentage(635/655);
             margin: 0 auto;
         }
 
@@ -43,6 +43,11 @@ body.dsm5-criteria {
             width: percentage(555/655);
             text-align: center;
             margin-left: 8.5%;
+            padding-bottom: 15px;
+        }
+
+        .roman{
+            font-style: normal;
         }
     }
 
@@ -125,8 +130,9 @@ body.dsm5-criteria {
     }
 
     ul.boxed  li{
-        padding-left: 35px;
-        padding-top: 25px;
+        padding-left: 24px;
+        padding-top: 15px;
+        margin-top: 20.5px;
         
         @include mq("md") {
             font-size: 16px;

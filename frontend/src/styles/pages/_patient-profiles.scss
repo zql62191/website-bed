@@ -9,6 +9,10 @@ body.patient-profiles {
             font-size: 14px;
             color: #858B91;
             text-align:right;
+            @include mq('sm') {
+                font-size: 10px;
+                padding-right: 5px;
+            }
         }
 
         @include mq("lg","md") {
@@ -277,7 +281,7 @@ body.patient-profiles {
             }
 
             p.disclaimer {
-                width: 214px;
+                width: 284px;
                 text-align: center;
                 vertical-align: middle;
                 margin: 0 auto;

@@ -23,9 +23,22 @@ body.potential-causes {
 
         ul.square{
             margin-top: 0px;
-
             li{
                 padding-top: 0px;
+                
+                .limitwidth{
+                    @include mq('lg') {
+                        width: 200px;
+                    }
+                }
+                
+                span{
+                    margin-left: -3px;
+                    @include mq('sm'){
+                        margin-left: -1px;
+                    }
+                }
+                
             }
 
         }
@@ -65,6 +78,47 @@ body.potential-causes {
             }
         }
     }
+
+
+    /*This is setting the ol numbers position   --- I hate this change!!!*/
+    ol {
+        counter-reset: foo;
+        display: table;
+
+        li {
+            list-style: none;
+            counter-increment: foo;
+            display: table-row;
+            @include mq('lg') {
+                line-height: 28px;
+            }
+            @include mq('md') {
+                line-height: 24px;
+            }
+            @include mq('sm') {
+                line-height: 18px;
+            }
+        }
+
+        li::before {
+            content: counter(foo)".";
+            display: table-cell;
+            text-align: right;
+            padding-right: .5em;
+        }
+
+    }
+
+    ol.number{
+
+        padding-left: 0;
+        margin-bottom: 10px;
+        li:before {
+            float: none;
+        }
+    }
+    /*-------------------------*/
+    
 
     .section--factors {
         background: #252F39;//303A44;
@@ -126,10 +180,10 @@ body.potential-causes {
 
         .wrap--refs {
             width: 612px;
+            
         }
 
     }
-
 
     @include mq("lg") {
     
@@ -189,6 +243,7 @@ body.potential-causes {
                 padding-top: 0px;
                 width: 656px;
                 text-align: center;
+                margin:0 auto 48px auto;
             }
         }
     }
@@ -363,7 +418,7 @@ body.potential-causes {
         .center {
             margin-top: 36px;
         }
-        p, h4 {
+        .distinguishfooter {
             text-align: center;
         }
         .section--factors {

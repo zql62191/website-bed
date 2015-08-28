@@ -32,6 +32,15 @@ body.recognizing-bed {
             }
         }
 
+        .goother{
+            font-size: 22px;
+            font-weight: 500;
+            color: #FFFFFF;
+            @include mq('sm'){
+                font-size: 19px;
+            }
+        }
+
     }
 
     .section--bulimia {
@@ -94,6 +103,10 @@ body.recognizing-bed {
         //background: #252f39;//#252F39;
 
         background: #333E48;
+
+        .wrap--content{
+            padding-bottom: 24px;
+        }
         
         .heading--2 {
             text-align: center;
@@ -129,6 +142,11 @@ body.recognizing-bed {
                 margin: 28px auto 66px auto;
                 font-size: 18px;
             }
+            
+            @include mq('sm') {
+                margin-bottom: 26px;
+            }
+            
         }
 
         .chart-wrap {
@@ -140,25 +158,26 @@ body.recognizing-bed {
                 margin: 0 auto;
 
                 @include mq("sm") {
-                    top: 73px;
+                    top: 13px;
                 }
             }
 
             @include mq("lg") {
-                width: 560px;
+                width: 764px;
                 // height: 310px;
             }
             @include mq("md") {
-                width: 560px;
+                width: 596px;
                 // height: 310px;
             }
             @include mq("sm") {
-                width: 260px;
-                height: 360px;
+                width: 267px;
+                height: 482px;
+                margin-bottom: 20px;
             }
 
             .section-note.footnote{
-                padding-top: 70px;
+                padding-top: 30px;
                 text-align: center;
                 margin-bottom: 0px;
             }
@@ -339,6 +358,7 @@ body.recognizing-bed {
             text-align: left;
             margin: 0 auto;
             font-size: 21px;
+            padding-top: 34px;
             
             @include mq("md") {
                 font-size: 21px;
@@ -511,6 +531,11 @@ body.recognizing-bed {
 
             }
 
+            .chartTitle{
+                padding-top: 40px;
+                margin-bottom: 20px !important;
+            }
+            
             ul.square{
                 margin: 20px 36px 54px 36px;
             }
@@ -569,25 +594,26 @@ body.recognizing-bed {
 
         @include mq("sm") {
             .statistic-box {
-                padding: percentage(20/320);
+                //padding: percentage(20/320);
+                margin-top: -20px;
 
                 .statistic {
                     padding: 79px 10px 5px 10px;
                     text-align: center;
 
                     .text {
-                        top: 130px;
+                        top: 120px;
                         font-size: 16px;
                         line-height: 19px;
                     }
                 }
                 .box1 {
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
                 }
 
                 .box2 {
                     padding-bottom: 0;
-                    margin-top: 40px;
+                    margin-top: 25px;
                     // height: 288px;
 
                 }
@@ -605,6 +631,7 @@ body.recognizing-bed {
 
             p.footnote{
                 text-align: center;
+                margin-top: 20px;
             }
 
         }
@@ -615,6 +642,7 @@ body.recognizing-bed {
         .heading--2{
             // width: 796px;
             margin: 0 auto;
+            //padding-top: 34px;
         }
         .mobile-line{
             display: none;
@@ -669,6 +697,7 @@ body.recognizing-bed {
             }
         }
 
+        
         .section--compared{
 
             .heading--2.top{

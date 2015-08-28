@@ -326,8 +326,22 @@ header.header--global {
             }
         }
         .primary-nav {
+
+            nav ul li {
+                padding: 10px 0;
+            }
+            
             nav ul li a {
                 font-size: 36px;
+
+                &.mobilehome {
+                    font-size: 48px;
+                    margin-bottom: 10px;
+                }
+                &.mobilesignup {
+                    padding-top: 25px;
+                    font-size: 26px;
+                }
             }
         }
     }
@@ -349,12 +363,20 @@ header.header--global {
             }
             .hcp {
                 font-size: 10px;
-                line-height: 12px;
+                line-height: 11px;
             }
         }
         .primary-nav {
             nav ul li a {
                 font-size: 26px;
+                &.mobilehome {
+                    font-size: 34px;
+                    margin-bottom: 10px;
+                }
+                &.mobilesignup {
+                    padding-top: 15px;
+                    font-size: 18px;
+                }
             }
         }
     }
