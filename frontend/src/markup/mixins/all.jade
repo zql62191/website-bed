@@ -153,7 +153,7 @@ mixin picture-svg(svg, fallback, alt)
         img(src="img/lg/#{name}", alt=alt)
 
 mixin a-active
-    if attributes.href && attributes.href.indexOf(fileName) !== -1
+    if attributes.href && attributes.href.indexOf("/hcp/"+fileName) !== -1
         if attributes.class
             - attributes.class += " active"
         else
