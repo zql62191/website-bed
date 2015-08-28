@@ -13,19 +13,19 @@
                     var people = [{
                         'klass': 'kimberly',
                         'url': '//d2ly9zedmmzqz4.cloudfront.net/BED-S04644-1.mp4',
-                        'vzaarUrl' : '//view.vzaar.com/4918990/video'
+                        'vzaarUrl' : '//view.vzaar.com/4952792/video'
                     }, {
                         'klass': 'nikki',
                         'url': '//d2ly9zedmmzqz4.cloudfront.net/BED-S04644-2.mp4',
-                        'vzaarUrl' : '//view.vzaar.com/4918987/video'
+                        'vzaarUrl' : '//view.vzaar.com/4952793/video'
                     }, {
                         'klass': 'julie',
                         'url': '//d2ly9zedmmzqz4.cloudfront.net/BED-S04644-3.mp4',
-                        'vzaarUrl' : '//view.vzaar.com/4918986/video'
+                        'vzaarUrl' : '//view.vzaar.com/4952794/video'
                     }, {
                         'klass': 'diego',
                         'url': '//d2ly9zedmmzqz4.cloudfront.net/BED-S04644-4.mp4',
-                        'vzaarUrl' : '//view.vzaar.com/4918984/video'
+                        'vzaarUrl' : '//view.vzaar.com/4952795/video'
                     }];
 
                     var heroIndex = store.get('heroIndex') || 0;
