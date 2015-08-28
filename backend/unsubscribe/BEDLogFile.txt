@@ -9,3 +9,5 @@
 2015-08-21 14:21:46,764 [130] INFO BEDService.BEDUnsubscribe - BED:: User: hgdh@hfgh.hfg | Operation: Unsubscribtion_success |  Category: SetUnsubscribeDataEmail | Message: OK 
 2015-08-24 13:28:31,860 [7] INFO BEDService.BEDUnsubscribe - BED:: User:   | Operation: Unsubscribtion_Failure |  Category: ShireRealtime | Message: The type initializer for 'Shire.Realtime.WebServices.Services' threw an exception. 
 2015-08-24 13:29:41,925 [16] INFO BEDService.BEDUnsubscribe - BED:: User: gfdsh@hfg.fff | Operation: Unsubscribtion_success |  Category: SetUnsubscribeDataEmail | Message: OK 
+2015-08-27 13:36:48,477 [16] INFO BEDService.BEDUnsubscribe - BED:: User: maneesga@cdm.com | Operation: Unsubscribtion_success |  Category: SetUnsubscribeDataEmail | Message: OK 
+2015-08-27 14:27:53,831 [99] INFO BEDService.BEDUnsubscribe - BED:: User: dzgvsd@hfgh.fdf | Operation: Unsubscribtion_success |  Category: SetUnsubscribeDataEmail | Message: OK 
