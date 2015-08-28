@@ -247,8 +247,15 @@ body.index {
                         .mejs-container,.me_flash_0_container{
                             margin: 0 auto;
                             width: 1400px !important;
-                            height: 787px !important;
+                            height: 644px !important;
                         }
+                        svg, .mejs-video{
+                            height: 644px !important;
+                            width: 1400px !important;
+                            margin: 0 auto;
+                        }
+                        
+                        
 
                         .mejs-overlay-play, .mejs-overlay-button{
                             display: none;
@@ -257,6 +264,10 @@ body.index {
                         .mejs-container *, .me_flash_0_container *{
                             width: 1400px !important;
                             margin: 0 auto;
+
+                            @-moz-document url-prefix() {
+                                margin: -18px auto;
+                            }
                         }
 
                     }
