@@ -103,6 +103,10 @@ body.recognizing-bed {
         //background: #252f39;//#252F39;
 
         background: #333E48;
+
+        .wrap--content{
+            padding-bottom: 24px;
+        }
         
         .heading--2 {
             text-align: center;
@@ -173,7 +177,7 @@ body.recognizing-bed {
             }
 
             .section-note.footnote{
-                padding-top: 70px;
+                padding-top: 30px;
                 text-align: center;
                 margin-bottom: 0px;
             }
@@ -354,6 +358,7 @@ body.recognizing-bed {
             text-align: left;
             margin: 0 auto;
             font-size: 21px;
+            padding-top: 34px;
             
             @include mq("md") {
                 font-size: 21px;
@@ -637,6 +642,7 @@ body.recognizing-bed {
         .heading--2{
             // width: 796px;
             margin: 0 auto;
+            //padding-top: 34px;
         }
         .mobile-line{
             display: none;
@@ -691,6 +697,7 @@ body.recognizing-bed {
             }
         }
 
+        
         .section--compared{
 
             .heading--2.top{

@@ -31,6 +31,14 @@ body.potential-causes {
                         width: 200px;
                     }
                 }
+                
+                span{
+                    margin-left: -3px;
+                    @include mq('sm'){
+                        margin-left: -1px;
+                    }
+                }
+                
             }
 
         }
