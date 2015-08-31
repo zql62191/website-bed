@@ -104,9 +104,10 @@ body.profiles {
 
                 a{
                     color:#3c3f43;
-                    text-decoration: underline;
+                    //text-decoration: underline;
                     line-height: 16px;
                     font-size: 14px;
+                    font-weight: 300;
                     &:hover, &:active{
                         color: #767c83;
                     }

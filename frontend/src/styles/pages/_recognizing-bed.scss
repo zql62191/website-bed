@@ -107,6 +107,10 @@ body.recognizing-bed {
 
     .section--obesity {
         //background: #252f39;//#252F39;
+        
+        @include mq('sm') {
+            height: 1143px;
+        }
 
         background: #333E48;
 
@@ -198,6 +202,9 @@ body.recognizing-bed {
                 padding-top: 30px;
                 text-align: center;
                 margin-bottom: 0px;
+                @include mq('sm') {
+                    padding-top: 20px;
+                }
             }
 
             .label {
@@ -710,7 +717,7 @@ body.recognizing-bed {
 
             .chart-wrap{
                 .section-note.footnote{
-                    padding-top: 150px;
+                    //padding-top: 150px;
                 }
             }
            
