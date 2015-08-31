@@ -69,7 +69,7 @@ block content
                                     
                                 select(type='text', id="State", name="state", placeholder="State", ng-model='optoutdirectmail.State', ng-required="true", ng-class="{forminvalid: (optoutdirectmail.state.$invalid && optoutdirectmail.state.$dirty && submitted) || (optoutdirectmail.state.$invalid && optoutdirectmail.state.$pristine && submitted)}", ng-blur="syncFields($event)")
                                     +states
-                                input(type='text',id="Zip", name="zip",placeholder="Zip", ng-model='optoutdirectmail.Zip', ng-required="true", ng-class="{forminvalid: (optoutdirectmail.$invalid && optoutdirectmail.zip.$dirty && submitted) || (optoutdirectmail.zip.$invalid && optoutdirectmail.zip.$pristine && submitted)}", ng-blur="syncFields($event)")
+                                input(type='text',id="Zip", name="zip",placeholder="Zip", pattern="[0-9]*" maxlength="5", ng-model='optoutdirectmail.Zip', ng-required="true", ng-class="{forminvalid: (optoutdirectmail.$invalid && optoutdirectmail.zip.$dirty && submitted) || (optoutdirectmail.zip.$invalid && optoutdirectmail.zip.$pristine && submitted)}", ng-blur="syncFields($event)")
                                 p.help-block(ng-if="submitted && optoutdirectmail.zip.$error.required")
                                     
                                 button(type="submit", ng-click="submitForm(); optoutdirectmailForm()").btn.btn--yellow
@@ -104,7 +104,7 @@ block content
                                     
                                 select(type='text', id="State", name="state", placeholder="State", ng-model='optinall.State', ng-required="true", ng-class="{forminvalid: (optinall.state.$invalid && optinall.state.$dirty && submitted) || (optinall.state.$invalid && optinall.state.$pristine && submitted)}", ng-blur="syncFields($event)")
                                     +states
-                                input(type='text', id="Zip", name="zip", placeholder="Zip", ng-model='optinall.Zip', ng-required="true", ng-class="{forminvalid: (optinall.zip.$invalid && optinall.zip.$dirty && submitted) || (optinall.zip.$invalid && optinall.zip.$pristine && submitted)}", ng-blur="syncFields($event)")
+                                input(type='text', id="Zip", name="zip", placeholder="Zip", ng-model='optinall.Zip', pattern="[0-9]*" maxlength="5", ng-required="true", ng-class="{forminvalid: (optinall.zip.$invalid && optinall.zip.$dirty && submitted) || (optinall.zip.$invalid && optinall.zip.$pristine && submitted)}", ng-blur="syncFields($event)")
                                 p.help-block(ng-if="submitted && optinall.zip.$error.required")
 
                                 button(type="submit", ng-click="submitForm(); optinallForm()").btn.btn--yellow
