@@ -8,6 +8,15 @@ body.potential-causes {
         }
     }
 
+    ul.square > li:before {
+        @include mq('lg') {
+            margin-left: -3px;
+        }
+        @include mq('sm') {
+            margin-left: 2px;
+        }
+    }
+
     .row {
 
         $icons: "brain" "neuron" "neuron-closeup" "dna" "people";
@@ -18,7 +27,7 @@ body.potential-causes {
         }
 
         h4.heading--4{
-            margin-bottom: 0;
+            margin-bottom: 10px;
         }
 
         ul.square{
@@ -32,12 +41,12 @@ body.potential-causes {
                     }
                 }
                 
-                span{
-                    margin-left: -3px;
-                    @include mq('sm'){
-                        margin-left: -1px;
-                    }
-                }
+                //span{
+                //    margin-left: -3px;
+                //    @include mq('sm'){
+                //        margin-left: -1px;
+                //    }
+                //}
                 
             }
 
@@ -54,6 +63,10 @@ body.potential-causes {
             font-size: 19px;
             line-height: 21px;
         }
+    }
+    
+    .mobile-break {
+        display: block;
     }
 
     .section--theories {
@@ -168,7 +181,8 @@ body.potential-causes {
             }
             .dna {
                 .icon {
-                    left: -32px;
+                    left: -62px;
+                    background-size: 125px 156px;
                 }
             }
             .people {
@@ -224,11 +238,11 @@ body.potential-causes {
                 padding: 30px 0;
 
                 &.dna {
-                    padding-left: 170px;
+                    padding-left: 140px;
 
                     ul li{
-                        padding-top: 6px;
-                        padding-bottom: 6px;
+                        //padding-top: 6px;
+                        //padding-bottom: 6px;
                     }
 
 
@@ -426,7 +440,7 @@ body.potential-causes {
                 //font-size: 14px;
                 // line-height: 17px;
                 font-size: 16px;
-                padding-top: 5px;
+                padding-top: 3px;
                 line-height: 20px;
             }
         }

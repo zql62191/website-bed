@@ -25,6 +25,9 @@ body.contact-us{
         font-size: 24px;
         color: #E8E9E9;
         line-height: 29px;
+        @include mq('sm'){
+            line-height: normal;
+        }
         text-align: left;
         padding-bottom: 18px;
     }
@@ -87,6 +90,7 @@ body.contact-us{
                 h3{
                     font-size: 18px;
                     padding-bottom:10px;
+                    margin-top: 10px;
                 }
 
                 p{

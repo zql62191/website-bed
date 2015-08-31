@@ -63,11 +63,11 @@ body.potential-effects {
             }
         }
 
-        li:before {
-            @include mq('sm') {
-                font-size: 1.5em;
-            }
-        }
+        //li:before {
+        //    @include mq('sm') {
+        //        font-size: 1.5em;
+        //    }
+        //}
     }
     .bold {
         font-weight: 300;
@@ -178,10 +178,13 @@ body.potential-effects {
             .num {
                 color: #FDBD3E;
                 font-size: 50px;
+                margin-left: -7px;
+                margin-top: -3%;
             }
             .text {
                 width: percentage(185/280);
                 margin: 0 auto;
+                margin-left: 15%;
                 @include mq('md') {
                     font-size: 16px;
                     color: #F3F3F3;

@@ -80,9 +80,14 @@ body.sign-up{
             button{
                 border-style: none;
                 @include gs();
-                font-size: 14px;
+                font-size: 16px;
                 color: #21282F;
                 line-height: 17px;
+                
+                @include mq('lg'){
+                    width:268px;
+                    margin-left: 28%;
+                }
             }
 
             label{
@@ -101,7 +106,7 @@ body.sign-up{
             p.info a{
                 color: white;
                 // font-weight: bold;
-                @include gs("bold");
+                //@include gs("bold");
                 pointer-events: auto;
             }
 
@@ -113,7 +118,7 @@ body.sign-up{
             }
 
             .checkbox-cont{
-                margin-top: -3.2%;
+                margin-top: -3.4%;
                 @include mq('sm'){
                     margin-top: -7%;
                 }
@@ -206,7 +211,7 @@ body.sign-up{
 
         p.info a{
             color: white;
-            font-weight: bold;
+            //font-weight: bold;
         }
 
         button{

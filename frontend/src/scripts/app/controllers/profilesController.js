@@ -3,13 +3,14 @@
 
     angular.module('cdmp.controllers')
 
-    .controller('ProfilesController', ['$scope', '$rootScope', '$window', '$document', '$timeout', '_', 'parseUri',
-        function($scope, $rootScope, $window, $document, $timeout, _, parseUri){
+    .controller('ProfilesController', ['$scope', '$rootScope', '$window', '$document', '$timeout', '_', 'parseUri', '$anchorScroll',
+        function($scope, $rootScope, $window, $document, $timeout, _, parseUri,$anchorScroll){
 
             $scope.slides = ["kimberly","nikki","julie","diego"];
 
             var currentSlide = parseUri($window.location.href).anchor, slides = $scope.slides;
 
+            $anchorScroll();
             
 
             // console.log("is \t" + currentSlide + " in slides?\t" + (_.indexOf(slides, currentSlide) >= 0) );

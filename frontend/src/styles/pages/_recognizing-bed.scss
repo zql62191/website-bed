@@ -9,6 +9,12 @@ body.recognizing-bed {
         text-align: center;
     }
 
+    h2.heading--2{
+        @include mq('sm') {
+            padding-top: 10px;
+        }
+    }
+
     .section--episodes {
         background: #252F39;
         background-image: linear-gradient(-180deg, #1E2730 0%, #252F39 100%);
@@ -126,6 +132,7 @@ body.recognizing-bed {
             margin-top: 28px;
             margin-bottom: 66px;
 
+
             @include mq('lg') {
                 width: percentage(585/960);
                 margin: 28px auto 66px auto;
@@ -134,7 +141,7 @@ body.recognizing-bed {
                 // If you find that this is the incorrect size for the large layout please update, 
                 // and update the width appropriately as well
                 // -- Mike
-                font-size: 18px; 
+                font-size: 21px; 
             }
             
             @include mq('md') {
@@ -145,8 +152,19 @@ body.recognizing-bed {
             
             @include mq('sm') {
                 margin-bottom: 26px;
+                margin-top: 15px;
+
+                .mobile-break{
+                    display: block !important;
+                }
             }
             
+        }
+        
+        p.footnote{
+            @include mq('lg') {
+                width: 600px;
+            }
         }
 
         .chart-wrap {
@@ -420,6 +438,7 @@ body.recognizing-bed {
         .statistic-box {
             // border: 2px solid #5C656D;
             // border-radius: 4px;
+            margin: 10px auto;
 
             h2, h4 {
                 text-align: left;
@@ -497,7 +516,7 @@ body.recognizing-bed {
             }
 
             p.footnote{
-                margin-top: 50px;
+                margin-top: 40px;
                 text-align: center;
                 font-size: 15px;
             }
@@ -513,9 +532,13 @@ body.recognizing-bed {
                     @include gs('light');
                     margin-top:18px;
                     margin-bottom: 58px;
-                    font-size: 18px;
+                    font-size: 21px;
                     color: #D6D8DA;
-                    line-height: 22px;
+                    line-height: 24px;
+                }
+                
+                .center{
+                    margin: 30px auto 60px auto;
                 }
 
             }
@@ -532,8 +555,8 @@ body.recognizing-bed {
             }
 
             .chartTitle{
-                padding-top: 40px;
-                margin-bottom: 20px !important;
+                //padding-top: 40px;
+                margin-bottom: 30px !important;
             }
             
             ul.square{
@@ -620,7 +643,7 @@ body.recognizing-bed {
             }
 
             .heading--3.center{
-                margin-top: 30px;
+                //margin-top: 30px;
                 margin-bottom: 50px;
             }
 
@@ -664,7 +687,7 @@ body.recognizing-bed {
         .heading--2{
             // width: percentage(280/320);
             margin: 0 auto;
-            padding-top: 20px;
+            margin-top: 50px;
             padding-bottom: 20px;
         }
 
@@ -700,8 +723,15 @@ body.recognizing-bed {
         
         .section--compared{
 
+            .wrap--content:last-child{
+                padding-top: 0;
+            }
             .heading--2.top{
                 text-align: center;
+                @include mq('sm') {
+                    padding-bottom:0;
+                    padding-top: 24px;
+                }
             }
         }
 
@@ -715,7 +745,9 @@ body.recognizing-bed {
 
             .heading--2.bottom-bump{
                 width: 222px;
-                margin-bottom: 30px;
+                margin-bottom: 10px;
+                padding-top: 10px;
+                margin-top: 0;
             }
 
             .heading--2, ul.square li{
@@ -729,6 +761,12 @@ body.recognizing-bed {
                 h2{
                     display: inline;
                 }
+                span{
+                    @include mq('sm') {
+                        margin-left: -3px;
+                    }
+                }
+                
             }
             
             .inline--sm{

@@ -64,6 +64,9 @@ body.dsm5-criteria {
         p.disclaimer {
             @include mq("lg") {
                 font-size: 18px;
+                text-align: center;
+                width: 72%;
+                margin-left: 14%;
             }
             @include mq("md") {
                 font-size: 16px;
