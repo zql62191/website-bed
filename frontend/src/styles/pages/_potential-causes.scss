@@ -12,9 +12,9 @@ body.potential-causes {
         @include mq('lg') {
             margin-left: -3px;
         }
-        @include mq('sm') {
-            margin-left: 2px;
-        }
+        //@include mq('sm') {
+        //    margin-left: 2px;
+        //}
     }
 
     .row {
@@ -426,6 +426,16 @@ body.potential-causes {
             color: #858B91 !important;
             line-height: 14px;
             text-align: left;
+        }
+
+        .section--factors{
+            p.footnote{
+                text-align: left;
+                margin-left: -2px;
+                .movespace{
+                    margin-left: 6px;
+                }
+            }
         }
         
         
