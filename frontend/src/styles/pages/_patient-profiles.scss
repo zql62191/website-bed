@@ -78,6 +78,11 @@ body.patient-profiles {
                 width: percentage(710/960);
                 margin: 0 auto 32px auto;
             }
+            
+            a:hover{
+                //-webkit-filter: brightness(106%);
+                filter: brightness(106%);
+            }
 
             .btn {
                 // height: 58px;

@@ -153,7 +153,12 @@ body.support-and-resources{
                     @include gs("light");
                     font-size: 16px;
                     margin-top: 20px;
+                    padding-top: 20px;
+                    margin-left: 15px;
                     color: #858B91;
+                    @include mq('sm') {
+                        margin-left: 0;
+                    }
                 }
 
             }
@@ -245,7 +250,7 @@ body.support-and-resources{
 
                     @include mq('sm') {
                         width: 100%;
-                        height: auto;
+                        height: 125px;
                         padding-bottom: 15px;
                         margin-top: 4px;
                         margin-left: auto;
@@ -268,6 +273,7 @@ body.support-and-resources{
                             left: auto;
                             right: -10px;
                             top: 62px;
+                            z-index: 1;
                         }
                     }
 

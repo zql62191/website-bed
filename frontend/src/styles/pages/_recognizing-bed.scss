@@ -95,7 +95,7 @@ body.recognizing-bed {
             margin: 0 auto;
 
             @include mq('lg') {
-                width: percentage(654/768);
+                width: percentage(534/768);
             }
         }
 
@@ -178,6 +178,9 @@ body.recognizing-bed {
             .chart {
                 @include responsive-icon("#{$page}/chart.png");
                 margin: 0 auto;
+                background-size: 745px 265px !important;
+                width: 745px !important;
+                height: 265px !important;
 
                 @include mq("sm") {
                     top: 13px;
@@ -585,6 +588,10 @@ body.recognizing-bed {
                         padding-bottom: 6px;
                     }
                 }
+            }
+
+            p.footnote{
+                width: 585px;
             }
         }
 

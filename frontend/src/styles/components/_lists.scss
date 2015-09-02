@@ -59,6 +59,9 @@ ul.square {
         @include inline-block;
         padding-right: 8px;
         color: $active-yellow;
+        @include mq('lg') {
+            top: 0.07em;
+        }
         @include mq('sm') {
             font-size: 0.8em;
         }

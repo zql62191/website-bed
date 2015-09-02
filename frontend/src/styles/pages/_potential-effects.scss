@@ -163,14 +163,14 @@ body.potential-effects {
             .sixty-three {
                 @include responsive-bg("#{$page}/63.png");
                 @include mq('lg'){
-                    left:-7%
+                    //left:-7%
                 }
             }
             .nineteen {
                 @include responsive-bg("#{$page}/19.png");
                 
                 @include mq('lg') {
-                    left: 7%;
+                    //left: 7%;
                 }
                 
             }
@@ -199,6 +199,12 @@ body.potential-effects {
                 font-size: 16px;
                 line-height: 19px;
                 padding-top: 15px;
+            }
+        }
+        
+        p.footnote{
+            @include mq('lg') {
+                width: 585px;
             }
         }
     }

@@ -43,6 +43,7 @@ body.patient-demographics {
 
             @include mq('lg') {
                 width: percentage(556/960);
+                margin-top: 10px;
             }
             @include mq('md') {
                 margin-left: 10%;
@@ -60,6 +61,7 @@ body.patient-demographics {
             margin-top: 10px;
             @include mq('lg') {
                 width: percentage(556/960);
+                margin-top: 30px;
             }
             @include mq('md') {
                 margin-left: 10%;
@@ -200,7 +202,7 @@ body.patient-demographics {
             line-height: 29px;
 
             @include mq('lg') {
-                padding-top: 6px;
+                padding-top: 10px;
             }
 
             @include mq('sm') {
@@ -282,7 +284,7 @@ body.patient-demographics {
         }
 
         .footnote {
-            padding-top: 36px;
+            padding-top: 46px;
             @include mq('sm') {
                 padding-top: 18px;
             }
@@ -455,6 +457,7 @@ body.patient-demographics {
                 width: percentage(667/960);
                 margin-left: auto;
                 margin-right: auto;
+                margin-top: 50px;
             }
             @include mq('md') {
                 margin-left: 10%;
@@ -498,7 +501,7 @@ body.patient-demographics {
         }
         .footnote {
             margin-top: 20px;
-            padding-bottom: 15px;
+            padding-bottom: 25px;
             @include mq('lg') {
                 width: percentage(667/960);
                 margin-left: auto;

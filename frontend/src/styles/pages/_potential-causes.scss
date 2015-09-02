@@ -181,8 +181,9 @@ body.potential-causes {
             }
             .dna {
                 .icon {
-                    left: -62px;
+                    left: -42px;
                     background-size: 125px 156px;
+                    margin-top: -90px !important;
                 }
             }
             .people {
@@ -226,7 +227,7 @@ body.potential-causes {
                 .icon {
                     position: absolute;
                     top: 50%;
-                    margin-top: -106px;
+                    margin-top: -76px;
                 }
             }
         }
@@ -248,7 +249,7 @@ body.potential-causes {
 
                 }
                 &.people {
-                    padding-top: 58px;
+                    padding-top: 38px;
                     padding-right: 240px;
                 }
             }
@@ -258,6 +259,10 @@ body.potential-causes {
                 width: 656px;
                 text-align: center;
                 margin:0 auto 48px auto;
+            }
+            
+            .btn{
+                width: auto;
             }
         }
     }
@@ -450,8 +455,10 @@ body.potential-causes {
                 //font-size: 14px;
                 // line-height: 17px;
                 font-size: 16px;
-                padding-top: 3px;
+                padding-top: 9px;
                 line-height: 20px;
+                height: 60px;
+                
             }
         }
     }
