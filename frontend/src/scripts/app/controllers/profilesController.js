@@ -58,6 +58,7 @@
                 $scope.updatePagination($scope);
 
                 // console.log("current slide is\t" + $scope.currentSlide);
+                window.location.hash = chosen;
 
             };
 
