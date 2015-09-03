@@ -80,8 +80,25 @@ body.patient-profiles {
             }
             
             a:hover{
-                //-webkit-filter: brightness(106%);
+                -webkit-filter: brightness(106%);
                 filter: brightness(106%);
+                -khtml-opacity:0.9; // only for Safari 5 hover
+            }
+            //html[xmlns*=""]:root a.person{
+            //    opacity: 0.9;
+            //}
+            //html[xmlns*=""]:root a.person:hover{
+            //    -khtml-opacity:1;
+            //}
+
+            .eq-ie9 & {  //only for ie9 hover
+                a.person {
+                    opacity: 0.9;
+                }
+                a.person:hover{
+                    opacity: 1;
+                }
+
             }
 
             .btn {

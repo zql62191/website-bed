@@ -351,9 +351,9 @@ body.potential-causes {
         }
 
         .mobileP--1 {
-            width: 256px !important;
+            width: 80%;
             font-size: 16px;
-            margin-top: 9px;
+            margin-top: 19px;
             text-align: center;
             color: #ADB2B6;
             line-height: 20px !important;
@@ -383,6 +383,8 @@ body.potential-causes {
             margin-bottom: 53px;
             width:80%;
             margin-left: 10%;
+            text-align: center;
+            margin-top: 19px;
             
         }
         
@@ -437,9 +439,18 @@ body.potential-causes {
             p.footnote{
                 text-align: left;
                 margin-left: -2px;
+                margin-top: 0;
                 .movespace{
                     margin-left: 6px;
                 }
+                
+            }
+        }
+
+        .section--theories {
+            h2.heading--2{
+                width: 90%;
+                margin-left: 5%;
             }
         }
         

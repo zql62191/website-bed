@@ -29,6 +29,10 @@ body.potential-effects {
                 width: percentage(663/960);
                 margin: 0 auto;
             }
+
+            @include mq('sm') {
+                padding-bottom: 15px;
+            }
         }
 
         .wrap--content {

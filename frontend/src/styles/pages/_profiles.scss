@@ -651,6 +651,9 @@ body.profiles {
 
                     .hero {
                         margin: 117px auto 0;
+                        img{
+                            margin-top: -20px;
+                        }
                     }
                 }
 
@@ -750,6 +753,7 @@ body.profiles {
                 // top: 460px; IN THE DESIGN THIS IS A HARD 460px FROM TOP UNIFIED
                 cursor: pointer;
                 z-index: 6;
+                margin-bottom: 15px;
 
                 li{
                     display: inline-block;
