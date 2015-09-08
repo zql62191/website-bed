@@ -6,8 +6,7 @@
     .directive('a', ['$rootScope', '$location', 'parseUri', 'ModalService',
         function($rootScope, $location, parseUri, ModalService) {
 
-            var whitelist = [
-                'shire.com',
+            var whitelist = [                
                 parseUri($location.absUrl()).host,
                 $location.$$host
             ];
@@ -34,7 +33,7 @@
                         //     setupInterstitial('hcp');
 
                         // } else {..below..}
-                        if (!urlRegex.test(urlObj.host)) {
+                        if (urlRegex.test(urlObj.host)) {
                             // check if host matches white list
                             // bind interstitial modal
 

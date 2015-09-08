@@ -8,12 +8,12 @@
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
     <meta name="google-site-verification" content="J54-RSNLJc8L0u3mx8m2Ie3Fb5zXiF5w1x4JQRIPBg8">
-    <link rel="stylesheet" href="./css/styles.css?1440783600000"/>
+    <link rel="stylesheet" href="./css/styles.css?1441736400000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1440783600000"></script>
-    <script src="./js/redirect.js?1440783600000"></script>
+    <script src="./js/head.js?1441736400000"></script>
+    <script src="./js/redirect.js?1441736400000"></script>
 <script>
     pageLoading();
 </script>
@@ -70,7 +70,7 @@
       <section class="section--episodes">
         <div class="wrap--content">
           <h1 class="heading--1">Binge eating disorder (<abbr title="Binge Eating Disorder">B.E.D.</abbr>):</h1>
-          <h2 class="heading--2">Recurring episodes (at least once weekly for 3 months) of consuming a large amount of food in a short period of time, compared to what others might eat, with episodes characterized by experiencing a lack of control and significant distress regarding binge eating, among <a href="dsm5-criteria.aspx" class="goother roman">other criteria.<sup>1</sup></a></h2>
+          <h2 class="heading--2">Recurring episodes (at least once weekly for 3 months) of consuming a large amount of food in a short period of time, compared to what others might eat, with episodes characterized by experiencing a lack of control and significant distress regarding binge eating, among <a href="dsm5-criteria.aspx" class="goother roman">other criteria</a><sup>1</sup></h2>
         </div>
       </section>
       <section class="section--bulimia">
@@ -90,7 +90,7 @@
           <h1 class="heading--1"><abbr title="Binge Eating Disorder">B.E.D.</abbr> is different from obesity</h1>
           <h2 class="heading--2"><abbr title="Binge Eating Disorder">B.E.D.</abbr> can occur in normal-weight, overweight, and obese adults<sup>*3</sup>
           </h2>
-          <h3 class="heading--3">Although <abbr title="Binge Eating Disorder">B.E.D.</abbr> can be associated with increased weight, the majority of adults <br>with <abbr title="Binge Eating Disorder">B.E.D.</abbr> are not obese<sup>&dagger;</sup>: 55% are normal-weight or overweight, are 45% obese<sup>3</sup></h3>
+          <h3 class="heading--3">Although <abbr title="Binge Eating Disorder">B.E.D.</abbr> can be associated with increased weight, the majority of adults <br>with <abbr title="Binge Eating Disorder">B.E.D.</abbr> are not obese<sup>&dagger;</sup>: 55% are normal-weight or overweight, <br class="mobile-break">45% are obese<sup>3</sup></h3>
           <div class="chart-wrap">
             <div class="chart"></div>
             <!--.label.top.left-->
@@ -143,15 +143,15 @@
             <!--        br.mobile-break-->
             <!--        br.desktop-break-->
             <!--        | (BMI) 30.0-39.9-->
-            <p data-note="" class="footnote section-note hide--sm">*Data (based on Version 3.0 of the World Health Organization Composite International Diagnostic Interview and <em>DSM-IV</em><sup>&reg; </sup>criteria) from an eating disorder&ndash;assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.<sup>3</sup></p>
-            <p class="footnote section-newnote hide--sm"> <sup>&dagger;</sup>Current BMI in adults with 12-month prevalence of <abbr title="Binge Eating Disorder">B.E.D.</abbr>. among an eating disorder&ndash;assessed subsample of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.<sup>3</sup></p>
+            <p data-note="" class="footnote section-note">*Data (based on Version 3.0 of the World Health Organization Composite International Diagnostic Interview and <em>DSM-IV</em><sup>&reg; </sup>criteria) from an eating disorder&ndash;assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.<sup>3</sup></p>
+            <p class="footnote section-newnote"><sup>&dagger;</sup>Current BMI in adults with 12-month prevalence of <abbr title="Binge Eating Disorder">B.E.D.</abbr> among an eating disorder&ndash;assessed subsample of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.<sup>3</sup></p>
           </div>
           <!--.mobile-line &nbsp;-->
         </div>
       </section>
       <section class="section--compared">
         <div class="wrap--content">
-          <h1 class="heading--2 top">Compared with weight-matched obese adults without <abbr title="Binge Eating Disorder">B.E.D.</abbr>, obese adults with <abbr title="Binge Eating Disorder">B.E.D.</abbr> eat more calories in studies of how people and eat show<sup>1</sup>:</h1>
+          <h1 class="heading--2 top">Compared with weight-matched obese adults without <abbr title="Binge Eating Disorder">B.E.D.</abbr>, obese adults with <abbr title="Binge Eating Disorder">B.E.D.</abbr> eat more calories in studies of how <br class="mobile-break">people eat and show<sup>1</sup>:</h1>
           <ul class="square line">
             <li>More functional impairment</li>
             <li>Greater self-reported distress</li>
@@ -164,9 +164,9 @@
         <div class="wrap--content">
           <h2 class="heading--2">Adult patients with <abbr title="Binge Eating Disorder">B.E.D.</abbr> often have coexisting comorbid disorders such as bipolar disorders, depressive disorders, anxiety disorders, and, to a lesser extent, substance use disorders<sup>1</sup>
           </h2>
-          <h3 class="heading--3 center">As part of a complete evaluation of adult patients with <abbr title="Binge Eating Disorder">B.E.D.</abbr>, clinicians should consider these comorbid conditions that commonly occur for differential diagnosis.</h3>
+          <p class="center">As part of a complete evaluation of adult patients with <abbr title="Binge Eating Disorder">B.E.D.</abbr>, clinicians should consider these comorbid conditions that commonly occur for differential diagnosis.</p>
           <h2 class="heading--2">B.E.D. is associated with significant comorbidity that is comparable to bulimia nervosa and anorexia nervosa<sup>1</sup></h2>
-          <h3 class="heading--3 center chartTitle">Lifetime comorbidity (<em>DSM-IV</em><sup>&reg;</sup> Clriteria) in adults with <abbr title="Binge Eating Disorder">B.E.D.</abbr><sup>&Dagger;1,3</sup></h3>
+          <h3 class="heading--3 center chartTitle">Lifetime comorbidity (<em>DSM-IV</em><sup>&reg;</sup> Criteria) in adults with <abbr title="Binge Eating Disorder">B.E.D.</abbr><sup>&Dagger;3</sup></h3>
           <div class="statistic-box">
             <div class="statistic box1">
               <div class="num">&asymp;4 out of 5</div>
@@ -177,7 +177,7 @@
               <div class="text">had <em>three or more </em><br>comorbid psychiatric or <br>substance use disorders</div>
             </div>
           </div>
-          <p data-note="" class="footnote"><sup>&Dagger;</sup>Data from a random subsample of respondents (n=1139-2,980) from an eating disorder&ndash;assessed subsample of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.<sup>3</sup></p>
+          <p data-note="" class="footnote"><sup>&Dagger;</sup>Data from a random subsample of respondents (n=1,139-2,980) from an eating disorder&ndash;assessed subsample of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.<sup>3</sup></p>
         </div>
       </section>
       <section class="section--triggers">
@@ -192,24 +192,20 @@
             
           </h3>
           <ul class="square line">
-            <li>
-              <h2 class="heading--2">Interpersonal stressors</h2>
-            </li>
-            <li>
-              <h2 class="heading--2">Dietary restraint</h2>
-            </li>
-            <li>
-              <h2 class="heading--2">Feeling bad about body weight, body shape, and food</h2>
-            </li>
-            <li>
-              <h2 class="heading--2">Feeling bored</h2>
-            </li>
+            <li><span>
+                <h2 class="heading--2">Interpersonal stressors</h2></span></li>
+            <li><span>
+                <h2 class="heading--2">Dietary restraint</h2></span></li>
+            <li><span>
+                <h2 class="heading--2">Feeling bad about body weight, body shape, and food</h2></span></li>
+            <li><span>
+                <h2 class="heading--2">Feeling bored</h2></span></li>
           </ul>
           <div class="center"><a href="potential-effects.aspx" class="btn btn--yellow">POTENTIAL EFFECTS OF <abbr title="Binge Eating Disorder">B.E.D.</abbr></a></div>
         </div>
         <div class="wrap--refs">
           <ol class="refs number">
-            <li>American Psychiatric Association. Binge-eating disorder. In: <em>Diagnostic and Statistical Manual of Mental Disorders. </em>5th ed. Arlington, VA: American Psychiatric Association; 2013:350-353</li>
+            <li>American Psychiatric Association. Binge-eating disorder. In: <em>Diagnostic and Statistical Manual of Mental Disorders. </em>5th ed. Arlington, VA: American Psychiatric Association; 2013:350-353.</li>
             <li>American Psychiatric Association. DSM-5 Fact Sheet. Feeding and eating disorders. <a href="http://www.dsm5.org/documents/eating%20disorders%20fact%20sheet.pdf" target="_blank" class="url inline--sm">www.dsm5.org/documents/eating%20disorders%20fact%20sheet.pdf</a>. Accessed August 21, 2015.</li>
             <li>Hudson JI, Hiripi E, Pope HG Jr, Kessler RC. [Published correction appears in <em>Biol Psychiatry. </em>2012;72(2):164]. <em>Biol Psychiatry. </em>2007;61(3):348-358.</li>
           </ol>
@@ -244,19 +240,19 @@
                 <source media="only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2)" srcset="img/lgr/shire-logo.png 2x"/>
                 <source media="only screen and (min-width: 1025px)" srcset="img/lg/shire-logo.png 1x"/><!--[if IE 9]></video><![endif]--><img srcset="img/lg/shire-logo.png" alt="Shire"/>
               </picture></a></p>
-          <p class="legal"><span class="line">&copy;2015 <a href="http://www.shire.com/" target="_blank">Shire US Inc.</a>, [Waltham, MA 02451]&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">1&ndash;800&ndash;828&ndash;2088&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">S05144&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09/15</span></p>
+          <p class="legal"><span class="line">&copy;2015 <a href="http://www.shire.com/" target="_blank">Shire US Inc.</a>, [Lexington, MA 02421]&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">1-800-828-2088&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">S05144&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09/15</span></p>
           <p>
             Unless otherwise noted, all content of this website, including text, images, graphics, sound files, and their arrangement, belongs to Shire and is protected by international copyright laws. All other intellectual property rights are reserved.  The content may not be copied for commercial use or distribution, nor may these objects be downloaded, modified, or posted to other sites.
             
           </p>
-          <p>This site is intended solely for US residents and is governed solely by US laws and government regulations. Please see our <a href="/hcp/privacy-policy.aspx">privacy policy</a> for more information. While Shire US Inc. makes reasonable efforts to include accurate, up&ndash;to&ndash;date information on the site, Shire US Inc. makes no warranties or representations as to its accuracy. Shire US Inc. assumes no liability for any errors or omissions in the content of the site.</p>
+          <p>This site is intended solely for US residents and is governed solely by US laws and government regulations. Please see our <a href="/hcp/privacy-policy.aspx">privacy policy</a> for more information. While Shire US Inc. makes reasonable efforts to include accurate, up-to-date information on the site, Shire US Inc. makes no warranties or representations as to its accuracy. Shire US Inc. assumes no liability for any errors or omissions in the content of the site.</p>
         </div>
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1440783600000"></script>
-    <script src="./js/templates.js?1440783600000"></script>
-    <script src="./js/app.js?1440783600000"></script>
+    <script src="./js/vendor.js?1441736400000"></script>
+    <script src="./js/templates.js?1441736400000"></script>
+    <script src="./js/app.js?1441736400000"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");
@@ -269,7 +265,6 @@
 <noscript>
   <iframe src="//s.thebrighttag.com/iframe?c=BYgLeqO" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 </noscript>
-
 
   </body>
 </html>

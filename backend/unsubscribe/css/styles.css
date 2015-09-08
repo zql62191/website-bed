@@ -1,4 +1,4 @@
-/* Last Updated: 2015-08-28 at 01:43:39 PM */
+/* Last Updated: 2015-09-08 at 02:21:07 PM */
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -1039,6 +1039,16 @@ ul.square > li:before {
   padding-right: 8px;
   color: #FFBE2C;
 }
+@media only screen and (min-width: 1025px) {
+  ul.square > li:before {
+    top: 0.07em;
+  }
+}
+@media only screen and (max-width: 640px) {
+  ul.square > li:before {
+    font-size: 0.8em;
+  }
+}
 
 ul.dash {
   display: block;
@@ -1820,6 +1830,10 @@ footer.footer--global nav ul li a {
   footer.footer--global nav ul li a.active, footer.footer--global nav ul li a:hover {
     color: #FFBE2C;
   }
+  footer.footer--global img {
+    margin-top: 15px;
+    margin-bottom: -15px;
+  }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (max-width: 640px) {
   footer.footer--global p a:active {
@@ -2035,9 +2049,9 @@ footer.footer--global nav ul li a {
 }
 @media only screen and (min-width: 1025px) {
   body.index .section--hero .hero.julie .player .still {
-    background: transparent url('../img/lg/index/julie.jpg?1440777816') center center no-repeat;
+    background: transparent url('../img/lg/index/julie.jpg?1441222990') center center no-repeat;
     background-size: cover;
-    padding-top: 48.16754%;
+    padding-top: 46%;
   }
 }
 @media only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -2468,7 +2482,12 @@ body.index .section--hero .hero .callouts a.cta3 .icon {
   body.index .section--hero .hero .player .video .mejs-container, body.index .section--hero .hero .player .video .me_flash_0_container {
     margin: 0 auto;
     width: 1400px !important;
-    height: 787px !important;
+    height: 644px !important;
+  }
+  body.index .section--hero .hero .player .video svg, body.index .section--hero .hero .player .video .mejs-video {
+    height: 644px !important;
+    width: 1400px !important;
+    margin: 0 auto;
   }
   body.index .section--hero .hero .player .video .mejs-overlay-play, body.index .section--hero .hero .player .video .mejs-overlay-button {
     display: none;
@@ -2476,6 +2495,11 @@ body.index .section--hero .hero .callouts a.cta3 .icon {
   body.index .section--hero .hero .player .video .mejs-container *, body.index .section--hero .hero .player .video .me_flash_0_container * {
     width: 1400px !important;
     margin: 0 auto;
+  }
+  @-moz-document url-prefix() {
+    body.index .section--hero .hero .player .video .me_flash_0_container {
+      margin: -18px auto;
+    }
   }
   body.index .section--hero .hero .player .still {
     z-index: 1;
@@ -2780,6 +2804,9 @@ body.dsm5-criteria .section--individuals {
 @media only screen and (min-width: 1025px) {
   body.dsm5-criteria .section--individuals p.disclaimer {
     font-size: 18px;
+    text-align: center;
+    width: 72%;
+    margin-left: 14%;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
@@ -2870,7 +2897,7 @@ body.dsm5-criteria .section--triggers {
     font-size: 26px !important;
     color: #FDBD3E;
     line-height: 28px;
-    margin-bottom: 11px;
+    margin-bottom: 0px;
   }
   body.dsm5-criteria .boxed li {
     font-size: 16px !important;
@@ -2879,8 +2906,9 @@ body.dsm5-criteria .section--triggers {
   }
   body.dsm5-criteria .btn {
     font-size: 16px;
-    padding-top: 5px;
+    padding-top: 9px;
     line-height: 20px;
+    height: 60px;
   }
 }
 
@@ -2889,6 +2917,11 @@ body.recognizing-bed h1.heading--1 {
 }
 body.recognizing-bed p.footnote {
   text-align: center;
+}
+@media only screen and (max-width: 640px) {
+  body.recognizing-bed h2.heading--2 {
+    padding-top: 10px;
+  }
 }
 body.recognizing-bed .section--episodes {
   background: #252F39;
@@ -2968,14 +3001,19 @@ body.recognizing-bed .section--overeating .heading--2 {
 }
 @media only screen and (min-width: 1025px) {
   body.recognizing-bed .section--overeating .heading--2 {
-    width: 85.15625%;
+    width: 69.53125%;
   }
 }
 body.recognizing-bed .section--obesity {
   background: #333E48;
 }
+@media only screen and (max-width: 640px) {
+  body.recognizing-bed .section--obesity {
+    height: 1143px;
+  }
+}
 body.recognizing-bed .section--obesity .wrap--content {
-  padding-bottom: 24px;
+  padding-bottom: 14px;
 }
 body.recognizing-bed .section--obesity .heading--2 {
   text-align: center;
@@ -3000,7 +3038,7 @@ body.recognizing-bed .section--obesity .heading--3 {
   body.recognizing-bed .section--obesity .heading--3 {
     width: 60.9375%;
     margin: 28px auto 66px auto;
-    font-size: 18px;
+    font-size: 21px;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
@@ -3013,6 +3051,15 @@ body.recognizing-bed .section--obesity .heading--3 {
 @media only screen and (max-width: 640px) {
   body.recognizing-bed .section--obesity .heading--3 {
     margin-bottom: 26px;
+    margin-top: 15px;
+  }
+  body.recognizing-bed .section--obesity .heading--3 .mobile-break {
+    display: block !important;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  body.recognizing-bed .section--obesity p.footnote {
+    width: 600px;
   }
 }
 body.recognizing-bed .section--obesity .chart-wrap {
@@ -3027,19 +3074,22 @@ body.recognizing-bed .section--obesity .chart-wrap:after {
 }
 body.recognizing-bed .section--obesity .chart-wrap .chart {
   margin: 0 auto;
+  background-size: 745px 265px !important;
+  width: 745px !important;
+  height: 265px !important;
 }
 @media only screen and (max-width: 640px) {
   body.recognizing-bed .section--obesity .chart-wrap .chart {
-    height: 480px;
-    width: 276px;
-    background: transparent url('../img/sm/recognizing-bed/chart.png?1440777816') center center no-repeat;
-    background-size: 276px 480px;
+    height: 1900px;
+    width: 1088px;
+    background: transparent url('../img/sm/recognizing-bed/chart.png?1441733909') center center no-repeat;
+    background-size: 1088px 1900px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--hc {
-    margin-left: -138px;
+    margin-left: -544px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--vc {
-    margin-top: -240px;
+    margin-top: -950px;
   }
 }
 @media only screen and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -3086,16 +3136,16 @@ body.recognizing-bed .section--obesity .chart-wrap .chart {
 }
 @media only screen and (min-width: 1025px) {
   body.recognizing-bed .section--obesity .chart-wrap .chart {
-    height: 265px;
-    width: 745px;
-    background: transparent url('../img/lg/recognizing-bed/chart.png?1440777816') center center no-repeat;
-    background-size: 745px 265px;
+    height: 702px;
+    width: 1970px;
+    background: transparent url('../img/lg/recognizing-bed/chart.png?1441733909') center center no-repeat;
+    background-size: 1970px 702px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--hc {
-    margin-left: -372.5px;
+    margin-left: -985px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--vc {
-    margin-top: -132.5px;
+    margin-top: -351px;
   }
 }
 @media only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -3115,6 +3165,9 @@ body.recognizing-bed .section--obesity .chart-wrap .chart {
 @media only screen and (max-width: 640px) {
   body.recognizing-bed .section--obesity .chart-wrap .chart {
     top: 13px;
+    background-size: 276px 480px !important;
+    width: 276px !important;
+    height: 480px !important;
   }
 }
 @media only screen and (min-width: 1025px) {
@@ -3138,6 +3191,11 @@ body.recognizing-bed .section--obesity .chart-wrap .section-note.footnote {
   padding-top: 30px;
   text-align: center;
   margin-bottom: 0px;
+}
+@media only screen and (max-width: 640px) {
+  body.recognizing-bed .section--obesity .chart-wrap .section-note.footnote {
+    padding-top: 20px;
+  }
 }
 body.recognizing-bed .section--obesity .chart-wrap .label {
   position: absolute;
@@ -3341,6 +3399,9 @@ body.recognizing-bed .section--compared .heading--2.top {
 body.recognizing-bed .section--coexisting {
   background: #333E48;
 }
+body.recognizing-bed .section--coexisting .statistic-box {
+  margin: 10px auto;
+}
 body.recognizing-bed .section--coexisting .statistic-box h2, body.recognizing-bed .section--coexisting .statistic-box h4 {
   text-align: left;
 }
@@ -3404,7 +3465,7 @@ body.recognizing-bed .section--coexisting .statistic-box .box2 {
     text-align: center;
   }
   body.recognizing-bed .section--coexisting p.footnote {
-    margin-top: 50px;
+    margin-top: 40px;
     text-align: center;
     font-size: 15px;
   }
@@ -3420,16 +3481,18 @@ body.recognizing-bed .section--coexisting .statistic-box .box2 {
     font-style: normal;
     margin-top: 18px;
     margin-bottom: 58px;
-    font-size: 18px;
+    font-size: 21px;
     color: #D6D8DA;
-    line-height: 22px;
+    line-height: 24px;
+  }
+  body.recognizing-bed .section--coexisting .wrap--content .center {
+    margin: 30px auto 60px auto;
   }
   body.recognizing-bed .section--coexisting .statistic-box .statistic .text {
     top: 114px;
   }
   body.recognizing-bed .section--coexisting .chartTitle {
-    padding-top: 40px;
-    margin-bottom: 20px !important;
+    margin-bottom: 30px !important;
   }
   body.recognizing-bed .section--coexisting ul.square {
     margin: 20px 36px 54px 36px;
@@ -3442,6 +3505,9 @@ body.recognizing-bed .section--coexisting .statistic-box .box2 {
   body.recognizing-bed .section--coexisting .wrap--refs ol.refs li {
     padding-top: 6px;
     padding-bottom: 6px;
+  }
+  body.recognizing-bed .section--coexisting p.footnote {
+    width: 585px;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
@@ -3491,7 +3557,6 @@ body.recognizing-bed .section--coexisting .statistic-box .box2 {
     margin-top: 25px;
   }
   body.recognizing-bed .section--coexisting .heading--3.center {
-    margin-top: 30px;
     margin-bottom: 50px;
   }
   body.recognizing-bed .section--coexisting h4.heading--2 {
@@ -3526,7 +3591,7 @@ body.recognizing-bed .section--coexisting .statistic-box .box2 {
   }
   body.recognizing-bed .heading--2 {
     margin: 0 auto;
-    padding-top: 20px;
+    margin-top: 50px;
     padding-bottom: 20px;
   }
   body.recognizing-bed .section--obesity .mobile-line {
@@ -3534,15 +3599,23 @@ body.recognizing-bed .section--coexisting .statistic-box .box2 {
     width: 83.125%;
     margin: 0 auto;
   }
-  body.recognizing-bed .section--obesity .chart-wrap .section-note.footnote {
-    padding-top: 150px;
-  }
   body.recognizing-bed .section--obesity h3.heading--3 br {
     display: none;
+  }
+  body.recognizing-bed .section--compared .wrap--content:last-child {
+    padding-top: 0;
   }
   body.recognizing-bed .section--compared .heading--2.top {
     text-align: center;
   }
+}
+@media only screen and (max-width: 640px) and (max-width: 640px) {
+  body.recognizing-bed .section--compared .heading--2.top {
+    padding-bottom: 0;
+    padding-top: 24px;
+  }
+}
+@media only screen and (max-width: 640px) {
   body.recognizing-bed .section--triggers h1 {
     width: 240px;
     text-align: center;
@@ -3553,7 +3626,9 @@ body.recognizing-bed .section--coexisting .statistic-box .box2 {
   }
   body.recognizing-bed .section--triggers .heading--2.bottom-bump {
     width: 222px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 0;
   }
   body.recognizing-bed .section--triggers .heading--2, body.recognizing-bed .section--triggers ul.square li {
     font-size: 18px;
@@ -3566,6 +3641,13 @@ body.recognizing-bed .section--coexisting .statistic-box .box2 {
   body.recognizing-bed .section--triggers ul.square li h2 {
     display: inline;
   }
+}
+@media only screen and (max-width: 640px) and (max-width: 640px) {
+  body.recognizing-bed .section--triggers ul.square li span {
+    margin-left: -4px;
+  }
+}
+@media only screen and (max-width: 640px) {
   body.recognizing-bed .section--triggers .inline--sm {
     display: inline;
   }
@@ -3582,6 +3664,11 @@ body.potential-causes {
 }
 body.potential-causes section p, body.potential-causes section li {
   color: #ADB2B6;
+}
+@media only screen and (min-width: 1025px) {
+  body.potential-causes ul.square > li:before {
+    margin-left: -3px;
+  }
 }
 @media only screen and (max-width: 640px) {
   body.potential-causes .row.brain .icon {
@@ -3893,30 +3980,30 @@ body.potential-causes section p, body.potential-causes section li {
 }
 @media only screen and (min-width: 1025px) {
   body.potential-causes .row.dna .icon {
-    height: 198px;
-    width: 157px;
-    background: transparent url('../img/lg/potential-causes/dna.png?1439234524') center center no-repeat;
-    background-size: 157px 198px;
+    height: 156px;
+    width: 125px;
+    background: transparent url('../img/lg/potential-causes/dna.png?1441222990') center center no-repeat;
+    background-size: 125px 156px;
   }
   body.potential-causes .row.dna .icon.is--hc {
-    margin-left: -78.5px;
+    margin-left: -62.5px;
   }
   body.potential-causes .row.dna .icon.is--vc {
-    margin-top: -99px;
+    margin-top: -78px;
   }
 }
 @media only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2) {
   body.potential-causes .row.dna .icon {
-    height: 198px;
-    width: 157px;
-    background: transparent url('../img/lgr/potential-causes/dna.png?1439234524') center center no-repeat;
-    background-size: 157px 198px;
+    height: 156px;
+    width: 125px;
+    background: transparent url('../img/lgr/potential-causes/dna.png?1441222990') center center no-repeat;
+    background-size: 125px 156px;
   }
   body.potential-causes .row.dna .icon.is--hc {
-    margin-left: -78.5px;
+    margin-left: -62.5px;
   }
   body.potential-causes .row.dna .icon.is--vc {
-    margin-top: -99px;
+    margin-top: -78px;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -4004,7 +4091,7 @@ body.potential-causes section p, body.potential-causes section li {
   }
 }
 body.potential-causes .row h4.heading--4 {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 body.potential-causes .row ul.square {
   margin-top: 0px;
@@ -4015,14 +4102,6 @@ body.potential-causes .row ul.square li {
 @media only screen and (min-width: 1025px) {
   body.potential-causes .row ul.square li .limitwidth {
     width: 200px;
-  }
-}
-body.potential-causes .row ul.square li span {
-  margin-left: -3px;
-}
-@media only screen and (max-width: 640px) {
-  body.potential-causes .row ul.square li span {
-    margin-left: -1px;
   }
 }
 @media only screen and (min-width: 1025px), only screen and (min-width: 641px) and (max-width: 1024px) {
@@ -4036,6 +4115,9 @@ body.potential-causes .row ul.square li span {
     font-size: 19px;
     line-height: 21px;
   }
+}
+body.potential-causes .mobile-break {
+  display: block;
 }
 body.potential-causes .section--theories {
   background: #252F39;
@@ -4123,7 +4205,9 @@ body.potential-causes .section--factors {
     margin: 0 auto;
   }
   body.potential-causes .section--factors .dna .icon {
-    left: -32px;
+    left: -42px;
+    background-size: 125px 156px;
+    margin-top: -90px !important;
   }
   body.potential-causes .section--factors .people .icon {
     right: 0;
@@ -4151,21 +4235,17 @@ body.potential-causes .section--factors {
   body.potential-causes .section--theories .neuron .icon {
     position: absolute;
     top: 50%;
-    margin-top: -106px;
+    margin-top: -76px;
   }
   body.potential-causes .section--factors .row {
     width: 700px;
     padding: 30px 0;
   }
   body.potential-causes .section--factors .row.dna {
-    padding-left: 170px;
-  }
-  body.potential-causes .section--factors .row.dna ul li {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-left: 140px;
   }
   body.potential-causes .section--factors .row.people {
-    padding-top: 58px;
+    padding-top: 38px;
     padding-right: 240px;
   }
   body.potential-causes .section--factors p.footnote {
@@ -4173,6 +4253,9 @@ body.potential-causes .section--factors {
     width: 656px;
     text-align: center;
     margin: 0 auto 48px auto;
+  }
+  body.potential-causes .section--factors .btn {
+    width: auto;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
@@ -4236,9 +4319,9 @@ body.potential-causes .section--factors {
     line-height: 23px;
   }
   body.potential-causes .mobileP--1 {
-    width: 256px !important;
+    width: 80%;
     font-size: 16px;
-    margin-top: 9px;
+    margin-top: 19px;
     text-align: center;
     color: #ADB2B6;
     line-height: 20px !important;
@@ -4262,6 +4345,8 @@ body.potential-causes .section--factors {
     margin-bottom: 53px;
     width: 80%;
     margin-left: 10%;
+    text-align: center;
+    margin-top: 19px;
   }
   body.potential-causes .mobileHeading--6 {
     margin-top: 25px;
@@ -4293,6 +4378,18 @@ body.potential-causes .section--factors {
     line-height: 14px;
     text-align: left;
   }
+  body.potential-causes .section--factors p.footnote {
+    text-align: left;
+    margin-left: -2px;
+    margin-top: 0;
+  }
+  body.potential-causes .section--factors p.footnote .movespace {
+    margin-left: 6px;
+  }
+  body.potential-causes .section--theories h2.heading--2 {
+    width: 90%;
+    margin-left: 5%;
+  }
   body.potential-causes .center {
     margin-top: 36px;
   }
@@ -4301,8 +4398,9 @@ body.potential-causes .section--factors {
   }
   body.potential-causes .section--factors .btn {
     font-size: 16px;
-    padding-top: 5px;
+    padding-top: 9px;
     line-height: 20px;
+    height: 60px;
   }
 }
 
@@ -4347,6 +4445,7 @@ body.patient-demographics .section--us .titlenote {
 @media only screen and (min-width: 1025px) {
   body.patient-demographics .section--us .titlenote {
     width: 57.91667%;
+    margin-top: 10px;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
@@ -4368,6 +4467,7 @@ body.patient-demographics .section--us .footnote {
 @media only screen and (min-width: 1025px) {
   body.patient-demographics .section--us .footnote {
     width: 57.91667%;
+    margin-top: 30px;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
@@ -4568,7 +4668,7 @@ body.patient-demographics .section--survey .text {
 }
 @media only screen and (min-width: 1025px) {
   body.patient-demographics .section--survey .text {
-    padding-top: 6px;
+    padding-top: 10px;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -4606,6 +4706,11 @@ body.patient-demographics .section--survey .stat {
   width: 121px;
   margin-right: 30px;
   text-align: center;
+}
+@media only screen and (min-width: 1025px) {
+  body.patient-demographics .section--survey .stat {
+    margin-left: -50px;
+  }
 }
 body.patient-demographics .section--survey .stat .percent {
   color: #FDBD3E;
@@ -4651,7 +4756,7 @@ body.patient-demographics .section--survey .stat .percent {
   }
 }
 body.patient-demographics .section--survey .footnote {
-  padding-top: 36px;
+  padding-top: 46px;
 }
 @media only screen and (max-width: 640px) {
   body.patient-demographics .section--survey .footnote {
@@ -4989,6 +5094,7 @@ body.patient-demographics .section--onset .heading--1 {
     width: 69.47917%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
@@ -5039,7 +5145,7 @@ body.patient-demographics .section--groups .heading--2 {
 }
 body.patient-demographics .section--groups .footnote {
   margin-top: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 @media only screen and (min-width: 1025px) {
   body.patient-demographics .section--groups .footnote {
@@ -5108,6 +5214,11 @@ body.potential-effects .section--associated .heading--1 {
     margin: 0 auto;
   }
 }
+@media only screen and (max-width: 640px) {
+  body.potential-effects .section--associated .heading--1 {
+    padding-bottom: 15px;
+  }
+}
 @media only screen and (min-width: 1025px) {
   body.potential-effects .section--associated .wrap--content {
     margin: 0 auto;
@@ -5138,11 +5249,6 @@ body.potential-effects .section--associated li span {
 @media only screen and (max-width: 640px) {
   body.potential-effects .section--associated li span {
     margin-left: -1px;
-  }
-}
-@media only screen and (max-width: 640px) {
-  body.potential-effects .section--associated li:before {
-    font-size: 1.5em;
   }
 }
 body.potential-effects .bold {
@@ -5316,11 +5422,6 @@ body.potential-effects .section--association .charts .chart {
     background-size: 243px 257px;
   }
 }
-@media only screen and (min-width: 1025px) {
-  body.potential-effects .section--association .charts .sixty-three {
-    left: -7%;
-  }
-}
 @media only screen and (max-width: 640px) {
   body.potential-effects .section--association .charts .nineteen {
     height: 243px;
@@ -5369,18 +5470,16 @@ body.potential-effects .section--association .charts .chart {
     background-size: 236px 243px;
   }
 }
-@media only screen and (min-width: 1025px) {
-  body.potential-effects .section--association .charts .nineteen {
-    left: 7%;
-  }
-}
 body.potential-effects .section--association .charts .num {
   color: #FDBD3E;
   font-size: 50px;
+  margin-left: -7px;
+  margin-top: -3%;
 }
 body.potential-effects .section--association .charts .text {
   width: 66.07143%;
   margin: 0 auto;
+  margin-left: 15%;
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   body.potential-effects .section--association .charts .text {
@@ -5394,6 +5493,11 @@ body.potential-effects .section--association .charts .text {
     font-size: 16px;
     line-height: 19px;
     padding-top: 15px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  body.potential-effects .section--association p.footnote {
+    width: 585px;
   }
 }
 body.potential-effects .section--living {
@@ -5994,6 +6098,17 @@ body.patient-profiles .section--patients .hypothetical {
     width: 73.95833%;
     margin: 0 auto 32px auto;
   }
+  body.patient-profiles .section--patients a:hover {
+    -webkit-filter: brightness(106%);
+    filter: brightness(106%);
+    -khtml-opacity: 0.9;
+  }
+  .eq-ie9 body.patient-profiles .section--patients a.person {
+    opacity: 0.9;
+  }
+  .eq-ie9 body.patient-profiles .section--patients a.person:hover {
+    opacity: 1;
+  }
   body.patient-profiles .section--patients .btn {
     height: auto;
     font-size: 16px;
@@ -6268,9 +6383,9 @@ body.profiles .section--carousel .slide .disclaimer {
 }
 body.profiles .section--carousel .slide .disclaimer a {
   color: #3c3f43;
-  text-decoration: underline;
   line-height: 16px;
   font-size: 14px;
+  font-weight: 300;
 }
 body.profiles .section--carousel .slide .disclaimer a:hover, body.profiles .section--carousel .slide .disclaimer a:active {
   color: #767c83;
@@ -6500,6 +6615,9 @@ body.profiles .section--carousel .carousel .controls .prev:hover {
     padding: 15px 28px;
     height: 65px;
   }
+  body.profiles .section--carousel .callouts .callout .btn:hover {
+    background-color: #333e48;
+  }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   body.profiles .section--carousel .carousel {
@@ -6682,6 +6800,9 @@ body.profiles .section--carousel .carousel .controls .prev:hover {
   body.profiles .section--carousel .slide.diego .hero {
     margin: 117px auto 0;
   }
+  body.profiles .section--carousel .slide.diego .hero img {
+    margin-top: -20px;
+  }
   body.profiles .section--carousel .slide blockquote {
     position: absolute;
     top: 20px;
@@ -6756,6 +6877,7 @@ body.profiles .section--carousel .carousel .controls .prev:hover {
     margin: 0 auto;
     cursor: pointer;
     z-index: 6;
+    margin-bottom: 15px;
   }
   body.profiles .section--carousel ul.mobile-pagination li {
     display: inline-block;
@@ -6922,7 +7044,14 @@ body.support-and-resources .section--video-boxes .boxes .boxes-tab .consult-disc
   font-style: normal;
   font-size: 16px;
   margin-top: 20px;
+  padding-top: 20px;
+  margin-left: 15px;
   color: #858B91;
+}
+@media only screen and (max-width: 640px) {
+  body.support-and-resources .section--video-boxes .boxes .boxes-tab .consult-disclaimer {
+    margin-left: 0;
+  }
 }
 body.support-and-resources .section--video-boxes .boxes .boxes-row .box {
   width: 292px;
@@ -6997,7 +7126,7 @@ body.support-and-resources .section--video-boxes .boxes .boxes-row .box .viewed 
 @media only screen and (max-width: 640px) {
   body.support-and-resources .section--video-boxes .boxes .boxes-row .box {
     width: 100%;
-    height: auto;
+    height: 125px;
     padding-bottom: 15px;
     margin-top: 4px;
     margin-left: auto;
@@ -7020,6 +7149,7 @@ body.support-and-resources .section--video-boxes .boxes .boxes-row .box .viewed 
     left: auto;
     right: -10px;
     top: 62px;
+    z-index: 1;
   }
 }
 body.support-and-resources .section--information .link-box-grid .link-box-row .link-box {
@@ -7279,9 +7409,15 @@ body.sign-up .section--page form button {
   /* font name should be 'Gill Sans', not 'Gill Sans W01'*/
   font-weight: 300;
   font-style: normal;
-  font-size: 14px;
+  font-size: 16px;
   color: #21282F;
   line-height: 17px;
+}
+@media only screen and (min-width: 1025px) {
+  body.sign-up .section--page form button {
+    width: 268px;
+    margin-left: 28%;
+  }
 }
 body.sign-up .section--page form label {
   pointer-events: none;
@@ -7298,8 +7434,6 @@ body.sign-up .section--page form p.info {
 }
 body.sign-up .section--page form p.info a {
   color: white;
-  font-weight: 400;
-  font-style: normal;
   pointer-events: auto;
 }
 body.sign-up .section--page form .heading--2 {
@@ -7309,7 +7443,7 @@ body.sign-up .section--page form .heading--2 {
   padding-bottom: 9px;
 }
 body.sign-up .section--page form .checkbox-cont {
-  margin-top: -3.2%;
+  margin-top: -3.4%;
 }
 @media only screen and (max-width: 640px) {
   body.sign-up .section--page form .checkbox-cont {
@@ -7374,7 +7508,6 @@ body.sign-up .section--page form .checkbox-cont {
   }
   body.sign-up p.info a {
     color: white;
-    font-weight: bold;
   }
   body.sign-up button {
     background: #FFBE2C;
@@ -7470,7 +7603,7 @@ body.privacy-policy .section--privacy-policy .wrap--content p span {
   color: #E8E9E9;
 }
 body.privacy-policy ul.addresslines {
-  margin-top: 50px !important;
+  margin-top: 20px !important;
 }
 body.privacy-policy ul.addresslines li {
   list-style-type: none;
@@ -7524,6 +7657,11 @@ body.contact-us h2 {
   text-align: left;
   padding-bottom: 18px;
 }
+@media only screen and (max-width: 640px) {
+  body.contact-us h2 {
+    line-height: normal;
+  }
+}
 body.contact-us h3 {
   font-style: italic;
 }
@@ -7556,6 +7694,7 @@ body.contact-us .section--contact-us .wrap--content .subcontainer {
   body.contact-us .section--contact-us .wrap--content h3 {
     font-size: 18px;
     padding-bottom: 10px;
+    margin-top: 10px;
   }
   body.contact-us .section--contact-us .wrap--content p {
     font-size: 16px;

@@ -8,12 +8,12 @@
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
     <meta name="google-site-verification" content="J54-RSNLJc8L0u3mx8m2Ie3Fb5zXiF5w1x4JQRIPBg8">
-    <link rel="stylesheet" href="./css/styles.css?1440783600000"/>
+    <link rel="stylesheet" href="./css/styles.css?1441736400000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1440783600000"></script>
-    <script src="./js/redirect.js?1440783600000"></script>
+    <script src="./js/head.js?1441736400000"></script>
+    <script src="./js/redirect.js?1441736400000"></script>
 <script>
     pageLoading();
 </script>
@@ -69,8 +69,8 @@
       </header>
       <section class="section--us">
         <div class="wrap--content">
-          <h1 class="heading--1">Binge eating disorder <br class="mobile-break">(<abbr title="Binge Eating Disorder">B.E.D.</abbr>) is the most <br class="mobile-break">common <br class="desktop-break">eating disorder <br class="mobile-break">among US adults*<sup>1</sup></h1>
-          <h2 class="heading--2">It is more prevalent than bulimia nervosa and anorexia nervosa combined<sup>1,2</sup></h2>
+          <h1 class="heading--1">Binge eating disorder <br class="mobile-break">(<abbr title="Binge Eating Disorder">B.E.D.</abbr>) is the most <br class="mobile-break">common <br class="desktop-break">eating disorder <br class="mobile-break">among US adults<sup>1</sup></h1>
+          <h2 class="heading--2">It is more prevalent than bulimia nervosa and anorexia nervosa combined*<sup>1,2</sup></h2>
           <p data-note="" class="titlenote">*Estimated 12-month and lifetime prevalence among an eating disorder&ndash;assessed subsample <br>(n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face <br>household survey of English-speaking adults aged &ge;18 years.<sup>1,2</sup></p>
           <div class="statistics">
             <div class="map">
@@ -138,10 +138,11 @@
           <h1 class="heading--1">In US adults, <abbr title="Binge Eating Disorder">B.E.D.</abbr> is observed across racial and ethnic groups: Prevalence rates are comparable among non-Latino white (1.4%), Latino (2.1%), Asian (1.2%), and African American (1.5%) adults<sup>&para;5,6</sup>
             
           </h1>
-          <h2 class="heading--2">Prevalence rates are also comparable between most industrialized countries (eg, Australia, Canada, many European countries, New Zealand, and the United States)<sup>5</sup>
+          <h2 class="heading--2">Prevalence rates are also comparable between most industrialized countries (eg, Australia, Canada, many European countries, <br class="desktop-break">
+            New Zealand, and the United States)<sup>5</sup>
             
           </h2>
-          <p data-note-sup="" class="footnote"><sup>&para;</sup>Sample from a combined data set of 3 nationally representative US samples. Lifetime prevalence of B.E.D. <br class="desktop-break tablet-break">in adults based on <em>DSM-IV-TR</em><sup>&reg;</sup>&nbsp;criteria.<sup>6</sup></p>
+          <p data-note-sup="" class="footnote"><sup>&para;</sup>Sample from a combined data set of 3 nationally representative US samples. Lifetime <br class="desktop-break tablet-break">prevalence of B.E.D. in adults based on <em>DSM-IV-TR</em><sup>&reg;</sup>&nbsp;criteria.<sup>6</sup></p>
           <div class="center"><a href="potential-effects.aspx" class="btn btn--yellow">HOW ADULTS WITH <abbr title="Binge Eating Disorder">B.E.D.</abbr> MAY PRESENT</a></div>
         </div>
         <div class="wrap--refs">
@@ -184,19 +185,19 @@
                 <source media="only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2)" srcset="img/lgr/shire-logo.png 2x"/>
                 <source media="only screen and (min-width: 1025px)" srcset="img/lg/shire-logo.png 1x"/><!--[if IE 9]></video><![endif]--><img srcset="img/lg/shire-logo.png" alt="Shire"/>
               </picture></a></p>
-          <p class="legal"><span class="line">&copy;2015 <a href="http://www.shire.com/" target="_blank">Shire US Inc.</a>, [Waltham, MA 02451]&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">1&ndash;800&ndash;828&ndash;2088&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">S05144&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09/15</span></p>
+          <p class="legal"><span class="line">&copy;2015 <a href="http://www.shire.com/" target="_blank">Shire US Inc.</a>, [Lexington, MA 02421]&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">1-800-828-2088&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">S05144&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09/15</span></p>
           <p>
             Unless otherwise noted, all content of this website, including text, images, graphics, sound files, and their arrangement, belongs to Shire and is protected by international copyright laws. All other intellectual property rights are reserved.  The content may not be copied for commercial use or distribution, nor may these objects be downloaded, modified, or posted to other sites.
             
           </p>
-          <p>This site is intended solely for US residents and is governed solely by US laws and government regulations. Please see our <a href="/hcp/privacy-policy.aspx">privacy policy</a> for more information. While Shire US Inc. makes reasonable efforts to include accurate, up&ndash;to&ndash;date information on the site, Shire US Inc. makes no warranties or representations as to its accuracy. Shire US Inc. assumes no liability for any errors or omissions in the content of the site.</p>
+          <p>This site is intended solely for US residents and is governed solely by US laws and government regulations. Please see our <a href="/hcp/privacy-policy.aspx">privacy policy</a> for more information. While Shire US Inc. makes reasonable efforts to include accurate, up-to-date information on the site, Shire US Inc. makes no warranties or representations as to its accuracy. Shire US Inc. assumes no liability for any errors or omissions in the content of the site.</p>
         </div>
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1440783600000"></script>
-    <script src="./js/templates.js?1440783600000"></script>
-    <script src="./js/app.js?1440783600000"></script>
+    <script src="./js/vendor.js?1441736400000"></script>
+    <script src="./js/templates.js?1441736400000"></script>
+    <script src="./js/app.js?1441736400000"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");
@@ -209,7 +210,6 @@
 <noscript>
   <iframe src="//s.thebrighttag.com/iframe?c=BYgLeqO" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 </noscript>
-
 
   </body>
 </html>

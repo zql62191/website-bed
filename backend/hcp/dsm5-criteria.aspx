@@ -8,12 +8,12 @@
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
     <meta name="google-site-verification" content="J54-RSNLJc8L0u3mx8m2Ie3Fb5zXiF5w1x4JQRIPBg8">
-    <link rel="stylesheet" href="./css/styles.css?1440783600000"/>
+    <link rel="stylesheet" href="./css/styles.css?1441736400000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1440783600000"></script>
-    <script src="./js/redirect.js?1440783600000"></script>
+    <script src="./js/head.js?1441736400000"></script>
+    <script src="./js/redirect.js?1441736400000"></script>
 <script>
     pageLoading();
 </script>
@@ -72,7 +72,8 @@
           <h1 class="heading--1 yellow">Diagnosing adults with binge eating disorder (<abbr title="Binge Eating Disorder">B.E.D.</abbr>) <br class="hide--sm">
             
           </h1>
-          <h2 class="heading--2">Individuals with <abbr title="Binge Eating Disorder">B.E.D.</abbr> <br class="hide--sm">must meet all of the following <span class="roman">DSM-5<sup>&reg;</sup></span> diagnostic criteria<sup>1</sup>:
+          <h2 class="heading--2">Individuals with <abbr title="Binge Eating Disorder">B.E.D.</abbr> <br class="hide--sm">must meet all of the following <br class="desktop-break"> 
+            <span class="roman">DSM-5<sup>&reg;</sup></span> diagnostic criteria<sup>1</sup>:
             
           </h2>
           <ul class="boxed">
@@ -99,7 +100,7 @@
             
             
           </p>
-          <div class="trim center"><a href="/hcp/sign-up.aspx" class="btn btn--yellow">GET THE FULL <em><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr></em> <abbr title="Binge Eating Disorder">B.E.D.</abbr> DIAGNOSTIC CRITERIA</a></div>
+          <div class="trim center"><a href="/hcp/sign-up.aspx" class="btn btn--yellow">GET THE FULL <em><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr></em> <abbr title="Binge Eating Disorder">B.E.D.</abbr> <br class="mobile-break">DIAGNOSTIC CRITERIA</a></div>
           <div class="wrap--refs">
             <ol class="refs number">
               <li>American Psychiatric Association. Binge-eating disorder. In: <em>Diagnostic and Statistical Manual of Mental Disorders. </em>5th ed. Arlington, VA: American Psychiatric Association; 2013:350-353.</li>
@@ -136,19 +137,19 @@
                 <source media="only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2)" srcset="img/lgr/shire-logo.png 2x"/>
                 <source media="only screen and (min-width: 1025px)" srcset="img/lg/shire-logo.png 1x"/><!--[if IE 9]></video><![endif]--><img srcset="img/lg/shire-logo.png" alt="Shire"/>
               </picture></a></p>
-          <p class="legal"><span class="line">&copy;2015 <a href="http://www.shire.com/" target="_blank">Shire US Inc.</a>, [Waltham, MA 02451]&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">1&ndash;800&ndash;828&ndash;2088&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">S05144&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09/15</span></p>
+          <p class="legal"><span class="line">&copy;2015 <a href="http://www.shire.com/" target="_blank">Shire US Inc.</a>, [Lexington, MA 02421]&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">1-800-828-2088&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">S05144&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09/15</span></p>
           <p>
             Unless otherwise noted, all content of this website, including text, images, graphics, sound files, and their arrangement, belongs to Shire and is protected by international copyright laws. All other intellectual property rights are reserved.  The content may not be copied for commercial use or distribution, nor may these objects be downloaded, modified, or posted to other sites.
             
           </p>
-          <p>This site is intended solely for US residents and is governed solely by US laws and government regulations. Please see our <a href="/hcp/privacy-policy.aspx">privacy policy</a> for more information. While Shire US Inc. makes reasonable efforts to include accurate, up&ndash;to&ndash;date information on the site, Shire US Inc. makes no warranties or representations as to its accuracy. Shire US Inc. assumes no liability for any errors or omissions in the content of the site.</p>
+          <p>This site is intended solely for US residents and is governed solely by US laws and government regulations. Please see our <a href="/hcp/privacy-policy.aspx">privacy policy</a> for more information. While Shire US Inc. makes reasonable efforts to include accurate, up-to-date information on the site, Shire US Inc. makes no warranties or representations as to its accuracy. Shire US Inc. assumes no liability for any errors or omissions in the content of the site.</p>
         </div>
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1440783600000"></script>
-    <script src="./js/templates.js?1440783600000"></script>
-    <script src="./js/app.js?1440783600000"></script>
+    <script src="./js/vendor.js?1441736400000"></script>
+    <script src="./js/templates.js?1441736400000"></script>
+    <script src="./js/app.js?1441736400000"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");
@@ -161,7 +162,6 @@
 <noscript>
   <iframe src="//s.thebrighttag.com/iframe?c=BYgLeqO" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 </noscript>
-
 
   </body>
 </html>
