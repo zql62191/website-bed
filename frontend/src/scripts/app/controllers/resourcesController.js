@@ -17,7 +17,7 @@
                     {
                         id: "essential-features-diag",
                         title: "What are the essential features for a diagnosis of B.E.D.?",
-                        length: "1:25",
+                        length: "1:23",
                         featuring: "Cynthia M. Bulik, PhD, FAED",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03323.mp4",
                         host: activehost,
@@ -27,7 +27,7 @@
                     {
                         id: "bed-diff-bulimia",
                         title: "How is B.E.D. distinct from bulimia nervosa?",
-                        length: "2:23",
+                        length: "2:13",
                         featuring: "Denise E. Wilfley, PhD",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03014.mp4",
                         host: activehost,
@@ -37,7 +37,7 @@
                     {
                         id: "bed-diff-overeating",
                         title: "How is B.E.D. distinct from overeating and obesity?",
-                        length: "2:31",
+                        length: "2:28",
                         featuring: "Denise E. Wilfley, PhD",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03013.mp4",
                         host: activehost,
@@ -47,7 +47,7 @@
                     {
                         id: "functional-conseqs",
                         title: "What are the functional consequences of B.E.D. in adults?",
-                        length: "2:00",
+                        length: "1:57",
                         featuring: "Cynthia M. Bulik, PhD, FAED",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03322.mp4",
                         host: activehost,
@@ -148,7 +148,7 @@
                     {
                         id: "living-with-bed",
                         title: "Living with B.E.D.",
-                        length: "1:25",
+                        length: "4:48",
                         featuring: "",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S02868.mp4",
                         host: activehost,
@@ -158,7 +158,7 @@
                     {
                         id: "diag-criteria",
                         title: "Diagnostic criteria for B.E.D.",
-                        length: "5:56",
+                        length: "5:50",
                         featuring: "",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03499.mp4",
                         host: activehost,
@@ -168,7 +168,7 @@
                     {
                         id: "possible-causes-of-bed",
                         title: "Possible causes of B.E.D.",
-                        length: "5:37",
+                        length: "5:30",
                         featuring: "",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03500.mp4",
                         host: activehost,
@@ -178,7 +178,7 @@
                     {
                         id: "recog-adult-patients",
                         title: "Recognizing adult patients with B.E.D.",
-                        length: "6:21",
+                        length: "6:12",
                         featuring: "",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03501.mp4",
                         host: activehost,
@@ -188,7 +188,7 @@
                     {
                         id: "functional-conseqs2",
                         title: "Functional consequences of B.E.D. ",
-                        length: "2:24",
+                        length: "2:22",
                         featuring: "",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03502.mp4",
                         host: activehost,
@@ -198,7 +198,7 @@
                     {
                         id: "diag-bed-in-adult-patients",
                         title: "Diagnosing B.E.D. in adult patients",
-                        length: "4:06",
+                        length: "4:02",
                         featuring: "",
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03503.mp4",
                         host: activehost,
