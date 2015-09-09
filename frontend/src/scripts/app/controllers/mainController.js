@@ -34,8 +34,7 @@
             
             });
 
-            //Zach please fix below and remove this comment when done!!!
-            //problems: on Sign up page, maybe add a new SCSS rule if .no-gradient is on the header-page class
+            // Fix for the gradient issues of Chrome on Mac  
             if(bowser.chrome && navigator.platform.toUpperCase().indexOf("MAC") > -1){
                 angular.element("section,header.header--page").addClass("no-gradient");
             }
