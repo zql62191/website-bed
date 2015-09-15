@@ -8,12 +8,12 @@
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
     <meta name="google-site-verification" content="J54-RSNLJc8L0u3mx8m2Ie3Fb5zXiF5w1x4JQRIPBg8">
-    <link rel="stylesheet" href="./css/styles.css?1441742400000"/>
+    <link rel="stylesheet" href="./css/styles.css?1442327700000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1441742400000"></script>
-    <script src="./js/redirect.js?1441742400000"></script>
+    <script src="./js/head.js?1442327700000"></script>
+    <script src="./js/redirect.js?1442327700000"></script>
 <script>
     pageLoading();
 </script>
@@ -30,7 +30,7 @@
             <div class="hcp">
               This site is intended for US health care professionals only.
               
-            </div><a href="/hcp/sign-up.aspx" class="signup hide--md hide--sm">Get the full <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> <abbr title="Binge Eating Disorder">B.E.D.</abbr> criteria</a>
+            </div><a href="/hcp/sign-up.aspx" class="signup hide--md hide--sm">Get the full <em>DSM-5</em><sup>&reg;</sup> B.E.D. criteria</a>
             <div class="menu-tile hide--lg"></div>
             <div mobile-nav="" class="menu-btn hide--lg">
               <div class="line"></div>
@@ -46,9 +46,9 @@
               <ul>
                 <li class="hide--lg"><a href="/hcp/index.aspx" class="mobilehome">B.E.D. in Adults</a>
                 </li>
-                <li><a href="/hcp/dsm5-criteria.aspx"><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> Criteria</a>
+                <li><a href="/hcp/dsm5-criteria.aspx"><em>DSM-5</em><sup>&reg;</sup> Criteria</a>
                 </li>
-                <li><a href="/hcp/recognizing-BED.aspx">Recognizing <abbr title="Binge Eating Disorder">B.E.D.</abbr></a>
+                <li><a href="/hcp/recognizing-BED.aspx">Recognizing B.E.D.</a>
                 </li>
                 <li><a href="/hcp/potential-causes.aspx">Potential Causes</a>
                 </li>
@@ -60,7 +60,7 @@
                 </li>
                 <li><a href="/hcp/support-and-resources.aspx">Support &amp; Resources</a>
                 </li>
-                <li class="hide--lg"><a href="/hcp/sign-up.aspx" class="mobilesignup">Get the full <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> <br><abbr title="Binge Eating Disorder">B.E.D.</abbr> criteria</a>
+                <li class="hide--lg"><a href="/hcp/sign-up.aspx" class="mobilesignup">Get the full <em>DSM-5</em><sup>&reg;</sup> <br>B.E.D. criteria</a>
                 </li>
               </ul>
             </nav>
@@ -84,7 +84,7 @@
                   <div class="icon sprite--question--white is--vc"></div>
                   <div class="icon sprite--question--blue is--vc"></div>
                 </div>
-                <div class="accordion-title">I would like to opt out of future <abbr title="Binge Eating Disorder">B.E.D.</abbr> e-mail communications
+                <div class="accordion-title">I would like to opt out of future B.E.D. e-mail communications
                   <div class="arrow closed"></div>
                 </div>
               </div>
@@ -108,7 +108,7 @@
                   <div class="icon sprite--question--white is--vc"></div>
                   <div class="icon sprite--question--blue is--vc"></div>
                 </div>
-                <div class="accordion-title">I would like to opt out of future <abbr title="Binge Eating Disorder">B.E.D.</abbr> direct mail communications
+                <div class="accordion-title">I would like to opt out of future B.E.D. direct mail communications
                   <div class="arrow closed"></div>
                 </div>
               </div>
@@ -303,7 +303,7 @@
           </nav>
         </div>
         <div class="wrap--content last">
-          <p><em>DSM-IV</em><sup>&reg;</sup>, <em>DSM-IV-Text Revision</em><sup>&reg;</sup>, and <em><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr></em> are registered trademarks of the American Psychiatric Association.
+          <p><em>DSM-IV</em><sup>&reg;</sup>, <em>DSM-IV-Text Revision</em><sup>&reg;</sup>, and <em><em>DSM-5</em><sup>&reg;</sup></em> are registered trademarks of the American Psychiatric Association.
             
           </p>
           <p class="bottom-bump"><a href="http://www.shire.com/" target="_blank">
@@ -325,9 +325,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1441742400000"></script>
-    <script src="./js/templates.js?1441742400000"></script>
-    <script src="./js/app.js?1441742400000"></script>
+    <script src="./js/vendor.js?1442327700000"></script>
+    <script src="./js/templates.js?1442327700000"></script>
+    <script src="./js/app.js?1442327700000"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

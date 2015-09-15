@@ -8,12 +8,12 @@
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
     <meta name="google-site-verification" content="J54-RSNLJc8L0u3mx8m2Ie3Fb5zXiF5w1x4JQRIPBg8">
-    <link rel="stylesheet" href="./css/styles.css?1441742400000"/>
+    <link rel="stylesheet" href="./css/styles.css?1442327700000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1441742400000"></script>
-    <script src="./js/redirect.js?1441742400000"></script>
+    <script src="./js/head.js?1442327700000"></script>
+    <script src="./js/redirect.js?1442327700000"></script>
 <script>
     pageLoading();
 </script>
@@ -30,7 +30,7 @@
             <div class="hcp">
               This site is intended for US health care professionals only.
               
-            </div><a href="/hcp/sign-up.aspx" class="signup hide--md hide--sm">Get the full <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> <abbr title="Binge Eating Disorder">B.E.D.</abbr> criteria</a>
+            </div><a href="/hcp/sign-up.aspx" class="signup hide--md hide--sm">Get the full <em>DSM-5</em><sup>&reg;</sup> B.E.D. criteria</a>
             <div class="menu-tile hide--lg"></div>
             <div mobile-nav="" class="menu-btn hide--lg">
               <div class="line"></div>
@@ -46,9 +46,9 @@
               <ul>
                 <li class="hide--lg"><a href="/hcp/index.aspx" class="mobilehome">B.E.D. in Adults</a>
                 </li>
-                <li><a href="/hcp/dsm5-criteria.aspx"><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> Criteria</a>
+                <li><a href="/hcp/dsm5-criteria.aspx"><em>DSM-5</em><sup>&reg;</sup> Criteria</a>
                 </li>
-                <li><a href="/hcp/recognizing-BED.aspx">Recognizing <abbr title="Binge Eating Disorder">B.E.D.</abbr></a>
+                <li><a href="/hcp/recognizing-BED.aspx">Recognizing B.E.D.</a>
                 </li>
                 <li><a href="/hcp/potential-causes.aspx">Potential Causes</a>
                 </li>
@@ -60,7 +60,7 @@
                 </li>
                 <li><a href="/hcp/support-and-resources.aspx">Support &amp; Resources</a>
                 </li>
-                <li class="hide--lg"><a href="/hcp/sign-up.aspx" class="mobilesignup">Get the full <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> <br><abbr title="Binge Eating Disorder">B.E.D.</abbr> criteria</a>
+                <li class="hide--lg"><a href="/hcp/sign-up.aspx" class="mobilesignup">Get the full <em>DSM-5</em><sup>&reg;</sup> <br>B.E.D. criteria</a>
                 </li>
               </ul>
             </nav>
@@ -69,12 +69,12 @@
       </header>
       <section class="section--us">
         <div class="wrap--content">
-          <h1 class="heading--1">Binge eating disorder <br class="mobile-break">(<abbr title="Binge Eating Disorder">B.E.D.</abbr>) is the most <br class="mobile-break">common <br class="desktop-break">eating disorder <br class="mobile-break">among US adults<sup>1</sup></h1>
+          <h1 class="heading--1">Binge eating disorder <br class="mobile-break">(B.E.D.) is the most <br class="mobile-break">common <br class="desktop-break">eating disorder <br class="mobile-break">among US adults<sup>1</sup></h1>
           <h2 class="heading--2">It is more prevalent than bulimia nervosa and anorexia nervosa combined*<sup>1,2</sup></h2>
           <p data-note="" class="titlenote">*Estimated 12-month and lifetime prevalence among an eating disorder&ndash;assessed subsample <br>(n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face <br>household survey of English-speaking adults aged &ge;18 years.<sup>1,2</sup></p>
           <div class="statistics">
             <div class="map">
-              <div class="stat title--affect"><abbr title="Binge Eating Disorder">B.E.D.</abbr> affects</div>
+              <div class="stat title--affect">B.E.D. affects</div>
               <div class="num">&asymp;2.8 million</div>
               <div class="stat">US adults<sup>&dagger;1,3</sup>
                 
@@ -87,26 +87,26 @@
           <p data-note="" class="footnote"><sup>&dagger;</sup>Estimated 12-month prevalence in National Comorbidity Survey Replication of US adults aged &ge;18 <br>years, extrapolated to full US population aged &ge;18 years.<sup>1,3</sup></p>
         </div>
       </section>
-      <section class="section--survey">
+      <section class="section--survey light">
         <div class="wrap--content">
           <h1 class="heading--1">
             A separate online survey of 22,397 US adults showed that&#8230;
             
           </h1>
-          <h2 class="heading--2 mobilespace">of the 344 who met <span class="roman">DSM-5<sup>&reg;</sup> </span> diagnostic criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr> in the past 12 months (level of severity not specified):</h2>
-          <p><span class="stat"><span class="percent">3.2<sup>%</sup></span><span class="total">(11 of 344)</span></span><span class="text">reported ever receiving a diagnosis of <span class="yellow"><abbr title="Binge Eating Disorder">B.E.D.</abbr></span> by a health care provider<sup> &Dagger;4</sup></span></p>
+          <h2 class="heading--2 mobilespace">of the 344 who met <span class="roman">DSM-5<sup>&reg;</sup> </span> diagnostic criteria for B.E.D. in the past 12 months (level of severity not specified):</h2>
+          <p><span class="stat"><span class="percent">3.2<sup>%</sup></span><span class="total">(11 of 344)</span></span><span class="text">reported ever receiving a diagnosis of <span class="yellow">B.E.D.</span> by a health care provider<sup> &Dagger;4</sup></span></p>
           <p data-note-sup="" class="footnote"><sup>&Dagger;</sup>Data from a 2013 online survey of US adults aged &ge;18 years.<sup>4</sup></p>
         </div>
       </section>
       <section class="section--ratio">
         <div class="wrap--content">
           <div class="row two-to-one">
-            <h1 class="heading--1">The gender ratio is less skewed in <abbr title="Binge Eating Disorder">B.E.D.</abbr> than in bulimia nervosa<sup>1,5</sup>
+            <h1 class="heading--1">The gender ratio is less skewed in B.E.D. than in bulimia nervosa<sup>1,5</sup>
               
             </h1>
             <div class="center">
               <h2 class="heading--2">
-                <div class="estimated"><em class="ratio">2:1</em> Estimated 12-month prevalence of &nbsp;<span class="yellow"><abbr title="Binge Eating Disorder">B.E.D.</abbr></span> in US adults<sup>&sect;</sup>:</div>
+                <div class="estimated"><em class="ratio">2:1</em> Estimated 12-month prevalence of &nbsp;<span class="yellow">B.E.D.</span> in US adults<sup>&sect;</sup>:</div>
                 <div class="versus"><span class="percent">1.6%</span> &nbsp;of women <span class="vs">&nbsp;vs&nbsp;</span> <span class="percent">0.8%</span> &nbsp;of men</div>
               </h2>
             </div>
@@ -124,7 +124,7 @@
       </section>
       <section class="section--onset">
         <div class="wrap--content">
-          <h1 class="heading--1">Onset of <abbr title="Binge Eating Disorder">B.E.D.</abbr> occurs at a later median age (21 years) than bulimia nervosa (18 years) and anorexia nervosa <br class="mobile-break">
+          <h1 class="heading--1">Onset of B.E.D. occurs at a later median age (21 years) than bulimia nervosa (18 years) and anorexia nervosa <br class="mobile-break">
             (18 years)<sup>||1</sup>
             
           </h1>
@@ -135,7 +135,7 @@
       </section>
       <section class="section--groups">
         <div class="wrap--content">
-          <h1 class="heading--1">In US adults, <abbr title="Binge Eating Disorder">B.E.D.</abbr> is observed across racial and ethnic groups: Prevalence rates are comparable among non-Latino white (1.4%), Latino (2.1%), Asian (1.2%), and African American (1.5%) adults<sup>&para;5,6</sup>
+          <h1 class="heading--1">In US adults, B.E.D. is observed across racial and ethnic groups: Prevalence rates are comparable among non-Latino white (1.4%), Latino (2.1%), Asian (1.2%), and African American (1.5%) adults<sup>&para;5,6</sup>
             
           </h1>
           <h2 class="heading--2">Prevalence rates are also comparable between most industrialized countries (eg, Australia, Canada, many European countries, <br class="desktop-break">
@@ -143,7 +143,7 @@
             
           </h2>
           <p data-note-sup="" class="footnote"><sup>&para;</sup>Sample from a combined data set of 3 nationally representative US samples. Lifetime <br class="desktop-break tablet-break">prevalence of B.E.D. in adults based on <em>DSM-IV-TR</em><sup>&reg;</sup>&nbsp;criteria.<sup>6</sup></p>
-          <div class="center"><a href="potential-effects.aspx" class="btn btn--yellow">HOW ADULTS WITH <abbr title="Binge Eating Disorder">B.E.D.</abbr> MAY PRESENT</a></div>
+          <div class="center"><a href="potential-effects.aspx" class="btn btn--yellow">HOW ADULTS WITH B.E.D. MAY PRESENT</a></div>
         </div>
         <div class="wrap--refs">
           <ol class="refs number">
@@ -173,7 +173,7 @@
           </nav>
         </div>
         <div class="wrap--content last">
-          <p><em>DSM-IV</em><sup>&reg;</sup>, <em>DSM-IV-Text Revision</em><sup>&reg;</sup>, and <em><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr></em> are registered trademarks of the American Psychiatric Association.
+          <p><em>DSM-IV</em><sup>&reg;</sup>, <em>DSM-IV-Text Revision</em><sup>&reg;</sup>, and <em><em>DSM-5</em><sup>&reg;</sup></em> are registered trademarks of the American Psychiatric Association.
             
           </p>
           <p class="bottom-bump"><a href="http://www.shire.com/" target="_blank">
@@ -195,9 +195,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1441742400000"></script>
-    <script src="./js/templates.js?1441742400000"></script>
-    <script src="./js/app.js?1441742400000"></script>
+    <script src="./js/vendor.js?1442327700000"></script>
+    <script src="./js/templates.js?1442327700000"></script>
+    <script src="./js/app.js?1442327700000"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

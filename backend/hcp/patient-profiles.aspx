@@ -8,12 +8,12 @@
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
     <meta name="google-site-verification" content="J54-RSNLJc8L0u3mx8m2Ie3Fb5zXiF5w1x4JQRIPBg8">
-    <link rel="stylesheet" href="./css/styles.css?1441742400000"/>
+    <link rel="stylesheet" href="./css/styles.css?1442327700000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1441742400000"></script>
-    <script src="./js/redirect.js?1441742400000"></script>
+    <script src="./js/head.js?1442327700000"></script>
+    <script src="./js/redirect.js?1442327700000"></script>
 <script>
     pageLoading();
 </script>
@@ -30,7 +30,7 @@
             <div class="hcp">
               This site is intended for US health care professionals only.
               
-            </div><a href="/hcp/sign-up.aspx" class="signup hide--md hide--sm">Get the full <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> <abbr title="Binge Eating Disorder">B.E.D.</abbr> criteria</a>
+            </div><a href="/hcp/sign-up.aspx" class="signup hide--md hide--sm">Get the full <em>DSM-5</em><sup>&reg;</sup> B.E.D. criteria</a>
             <div class="menu-tile hide--lg"></div>
             <div mobile-nav="" class="menu-btn hide--lg">
               <div class="line"></div>
@@ -46,9 +46,9 @@
               <ul>
                 <li class="hide--lg"><a href="/hcp/index.aspx" class="mobilehome">B.E.D. in Adults</a>
                 </li>
-                <li><a href="/hcp/dsm5-criteria.aspx"><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> Criteria</a>
+                <li><a href="/hcp/dsm5-criteria.aspx"><em>DSM-5</em><sup>&reg;</sup> Criteria</a>
                 </li>
-                <li><a href="/hcp/recognizing-BED.aspx">Recognizing <abbr title="Binge Eating Disorder">B.E.D.</abbr></a>
+                <li><a href="/hcp/recognizing-BED.aspx">Recognizing B.E.D.</a>
                 </li>
                 <li><a href="/hcp/potential-causes.aspx">Potential Causes</a>
                 </li>
@@ -60,7 +60,7 @@
                 </li>
                 <li><a href="/hcp/support-and-resources.aspx">Support &amp; Resources</a>
                 </li>
-                <li class="hide--lg"><a href="/hcp/sign-up.aspx" class="mobilesignup">Get the full <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> <br><abbr title="Binge Eating Disorder">B.E.D.</abbr> criteria</a>
+                <li class="hide--lg"><a href="/hcp/sign-up.aspx" class="mobilesignup">Get the full <em>DSM-5</em><sup>&reg;</sup> <br>B.E.D. criteria</a>
                 </li>
               </ul>
             </nav>
@@ -70,7 +70,7 @@
       <section class="section--patients">
         <div class="wrap--content">
           <h1 class="heading--1">
-            How adult patients with binge eating disorder (<abbr title="Binge Eating Disorder">B.E.D.</abbr>) may present&mdash;and tools to help when they do
+            How adult patients with binge eating disorder (B.E.D.) may present&mdash;and tools to help when they do
             
           </h1>
           <div class="persons"><a href="profiles.aspx#kimberly" alt="Caucasian woman" class="person kimberly"></a><a href="profiles.aspx#nikki" alt="African American woman" class="person nikki"></a><a href="profiles.aspx#julie" alt="Caucasian woman" class="person julie"></a><a href="profiles.aspx#diego" alt="Latino man" class="person diego"></a></div>
@@ -78,11 +78,11 @@
           <div class="callouts">
             <div class="callout one">
               <h2 class="heading--2 bold">Screening the patient</h2>
-              <p>Use this validated screener to help evaluate adult patients you suspect may have <abbr title="Binge Eating Disorder">B.E.D.</abbr></p><a href="media/BingeEatingDisorder_Screener.pdf" target="_blank" class="btn btn--yellow">DOWNLOAD THE ADULT <br class="mobile-break"><abbr title="Binge Eating Disorder">B.E.D.</abbr> PATIENT SCREENER</a>
+              <p>Use this validated screener to help evaluate adult patients you suspect may have B.E.D.</p><a href="media/BingeEatingDisorder_Screener.pdf" target="_blank" class="btn btn--yellow">DOWNLOAD THE ADULT <br class="mobile-break">B.E.D. PATIENT SCREENER</a>
             </div>
             <div class="callout two">
               <h2 class="heading--2 bold">Conducting a conversation</h2>
-              <p>Use this discussion guide to help begin a dialogue about <abbr title="Binge Eating Disorder">B.E.D.</abbr> with your adult patients.</p><a href="media/BingeEatingDisorderDiscussionGuide.pdf" target="_blank" class="btn btn--yellow">DOWNLOAD THE DISCUSSION GUIDE FOR ADULT PATIENTS WITH <abbr title="Binge Eating Disorder">B.E.D.</abbr></a>
+              <p>Use this discussion guide to help begin a dialogue about B.E.D. with your adult patients.</p><a href="media/BingeEatingDisorderDiscussionGuide.pdf" target="_blank" class="btn btn--yellow">DOWNLOAD THE DISCUSSION GUIDE FOR ADULT PATIENTS WITH B.E.D.</a>
             </div>
           </div>
           <p class="disclaimer">These tools were developed by Shire to assist health care professionals in identifying and accurately diagnosing B.E.D. in adults.</p>
@@ -105,7 +105,7 @@
           </nav>
         </div>
         <div class="wrap--content last">
-          <p><em>DSM-IV</em><sup>&reg;</sup>, <em>DSM-IV-Text Revision</em><sup>&reg;</sup>, and <em><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr></em> are registered trademarks of the American Psychiatric Association.
+          <p><em>DSM-IV</em><sup>&reg;</sup>, <em>DSM-IV-Text Revision</em><sup>&reg;</sup>, and <em><em>DSM-5</em><sup>&reg;</sup></em> are registered trademarks of the American Psychiatric Association.
             
           </p>
           <p class="bottom-bump"><a href="http://www.shire.com/" target="_blank">
@@ -127,9 +127,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1441742400000"></script>
-    <script src="./js/templates.js?1441742400000"></script>
-    <script src="./js/app.js?1441742400000"></script>
+    <script src="./js/vendor.js?1442327700000"></script>
+    <script src="./js/templates.js?1442327700000"></script>
+    <script src="./js/app.js?1442327700000"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

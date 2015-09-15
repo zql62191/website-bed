@@ -8,12 +8,12 @@
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
     <meta name="google-site-verification" content="J54-RSNLJc8L0u3mx8m2Ie3Fb5zXiF5w1x4JQRIPBg8">
-    <link rel="stylesheet" href="./css/styles.css?1441742400000"/>
+    <link rel="stylesheet" href="./css/styles.css?1442327700000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1441742400000"></script>
-    <script src="./js/redirect.js?1441742400000"></script>
+    <script src="./js/head.js?1442327700000"></script>
+    <script src="./js/redirect.js?1442327700000"></script>
 <script>
     pageLoading();
 </script>
@@ -30,7 +30,7 @@
             <div class="hcp">
               This site is intended for US health care professionals only.
               
-            </div><a href="/hcp/sign-up.aspx" class="signup hide--md hide--sm">Get the full <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> <abbr title="Binge Eating Disorder">B.E.D.</abbr> criteria</a>
+            </div><a href="/hcp/sign-up.aspx" class="signup hide--md hide--sm">Get the full <em>DSM-5</em><sup>&reg;</sup> B.E.D. criteria</a>
             <div class="menu-tile hide--lg"></div>
             <div mobile-nav="" class="menu-btn hide--lg">
               <div class="line"></div>
@@ -46,9 +46,9 @@
               <ul>
                 <li class="hide--lg"><a href="/hcp/index.aspx" class="mobilehome">B.E.D. in Adults</a>
                 </li>
-                <li><a href="/hcp/dsm5-criteria.aspx"><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> Criteria</a>
+                <li><a href="/hcp/dsm5-criteria.aspx"><em>DSM-5</em><sup>&reg;</sup> Criteria</a>
                 </li>
-                <li><a href="/hcp/recognizing-BED.aspx" class="active">Recognizing <abbr title="Binge Eating Disorder">B.E.D.</abbr></a>
+                <li><a href="/hcp/recognizing-BED.aspx" class="active">Recognizing B.E.D.</a>
                 </li>
                 <li><a href="/hcp/potential-causes.aspx">Potential Causes</a>
                 </li>
@@ -60,7 +60,7 @@
                 </li>
                 <li><a href="/hcp/support-and-resources.aspx">Support &amp; Resources</a>
                 </li>
-                <li class="hide--lg"><a href="/hcp/sign-up.aspx" class="mobilesignup">Get the full <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> <br><abbr title="Binge Eating Disorder">B.E.D.</abbr> criteria</a>
+                <li class="hide--lg"><a href="/hcp/sign-up.aspx" class="mobilesignup">Get the full <em>DSM-5</em><sup>&reg;</sup> <br>B.E.D. criteria</a>
                 </li>
               </ul>
             </nav>
@@ -69,28 +69,28 @@
       </header>
       <section class="section--episodes">
         <div class="wrap--content">
-          <h1 class="heading--1">Binge eating disorder (<abbr title="Binge Eating Disorder">B.E.D.</abbr>):</h1>
+          <h1 class="heading--1">Binge eating disorder (B.E.D.):</h1>
           <h2 class="heading--2">Recurring episodes (at least once weekly for 3 months) of consuming a large amount of food in a short period of time, compared to what others might eat, with episodes characterized by experiencing a lack of control and significant distress regarding binge eating, among <a href="dsm5-criteria.aspx" class="goother roman">other criteria</a><sup>1</sup></h2>
         </div>
       </section>
-      <section class="section--bulimia">
+      <section class="section--bulimia light">
         <div class="wrap--content">
-          <h1 class="heading--1"><abbr title="Binge Eating Disorder">B.E.D.</abbr> is different from bulimia nervosa</h1>
-          <h2 class="heading--2"><abbr title="Binge Eating Disorder">B.E.D.</abbr> is not associated with compensatory behaviors like purging or excessive exercise, or with dietary restriction, though frequent dieting may be reported<sup>1</sup></h2>
+          <h1 class="heading--1">B.E.D. is different from bulimia nervosa</h1>
+          <h2 class="heading--2">B.E.D. is not associated with compensatory behaviors like purging or excessive exercise, or with dietary restriction, though frequent dieting may be reported<sup>1</sup></h2>
         </div>
       </section>
       <section class="section--overeating">
         <div class="wrap--content">
-          <h1 class="heading--1"><abbr title="Binge Eating Disorder">B.E.D.</abbr> is different from overeating</h1>
+          <h1 class="heading--1">B.E.D. is different from overeating</h1>
           <h2 class="heading--2">While overeating is a challenge for many Americans, recurrent binge eating is much less common, far more severe, and is associated with significant physical and psychological problems<sup>2</sup></h2>
         </div>
       </section>
-      <section class="section--obesity">
+      <section class="section--obesity light">
         <div class="wrap--content">
-          <h1 class="heading--1"><abbr title="Binge Eating Disorder">B.E.D.</abbr> is different from obesity</h1>
-          <h2 class="heading--2"><abbr title="Binge Eating Disorder">B.E.D.</abbr> can occur in normal-weight, overweight, and obese adults<sup>*3</sup>
+          <h1 class="heading--1">B.E.D. is different from obesity</h1>
+          <h2 class="heading--2">B.E.D. can occur in normal-weight, overweight, and obese adults<sup>*3</sup>
           </h2>
-          <h3 class="heading--3">Although <abbr title="Binge Eating Disorder">B.E.D.</abbr> can be associated with increased weight, the majority of adults <br>with <abbr title="Binge Eating Disorder">B.E.D.</abbr> are not obese<sup>&dagger;</sup>: 55% are normal-weight or overweight, <br class="mobile-break">45% are obese<sup>3</sup></h3>
+          <h3 class="heading--3">Although B.E.D. can be associated with increased weight, the majority of adults <br>with B.E.D. are not obese<sup>&dagger;</sup>: 55% are normal-weight or overweight, <br class="mobile-break">45% are obese<sup>3</sup></h3>
           <div class="chart-wrap">
             <div class="chart"></div>
             <!--.label.top.left-->
@@ -144,14 +144,14 @@
             <!--        br.desktop-break-->
             <!--        | (BMI) 30.0-39.9-->
             <p data-note="" class="footnote section-note">*Data (based on Version 3.0 of the World Health Organization Composite International Diagnostic Interview and <em>DSM-IV</em><sup>&reg; </sup>criteria) from an eating disorder&ndash;assessed subsample (n=2,980) of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.<sup>3</sup></p>
-            <p class="footnote section-newnote"><sup>&dagger;</sup>Current BMI in adults with 12-month prevalence of <abbr title="Binge Eating Disorder">B.E.D.</abbr> among an eating disorder&ndash;assessed subsample of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.<sup>3</sup></p>
+            <p class="footnote section-newnote"><sup>&dagger;</sup>Current BMI in adults with 12-month prevalence of B.E.D. among an eating disorder&ndash;assessed subsample of the National Comorbidity Survey Replication, a nationally representative face-to-face household survey of English-speaking adults aged &ge;18 years.<sup>3</sup></p>
           </div>
           <!--.mobile-line &nbsp;-->
         </div>
       </section>
       <section class="section--compared">
         <div class="wrap--content">
-          <h1 class="heading--2 top">Compared with weight-matched obese adults without <abbr title="Binge Eating Disorder">B.E.D.</abbr>, obese adults with <abbr title="Binge Eating Disorder">B.E.D.</abbr> eat more calories in studies of how <br class="mobile-break">people eat and show<sup>1</sup>:</h1>
+          <h1 class="heading--2 top">Compared with weight-matched obese adults without B.E.D., obese adults with B.E.D. eat more calories in studies of how <br class="mobile-break">people eat and show<sup>1</sup>:</h1>
           <ul class="square line">
             <li>More functional impairment</li>
             <li>Greater self-reported distress</li>
@@ -160,13 +160,13 @@
           </ul>
         </div>
       </section>
-      <section class="section--coexisting">
+      <section class="section--coexisting light">
         <div class="wrap--content">
-          <h2 class="heading--2">Adult patients with <abbr title="Binge Eating Disorder">B.E.D.</abbr> often have coexisting comorbid disorders such as bipolar disorders, depressive disorders, anxiety disorders, and, to a lesser extent, substance use disorders<sup>1</sup>
+          <h2 class="heading--2">Adult patients with B.E.D. often have coexisting comorbid disorders such as bipolar disorders, depressive disorders, anxiety disorders, and, to a lesser extent, substance use disorders<sup>1</sup>
           </h2>
-          <p class="center">As part of a complete evaluation of adult patients with <abbr title="Binge Eating Disorder">B.E.D.</abbr>, clinicians should consider these comorbid conditions that commonly occur for differential diagnosis.</p>
+          <p class="center">As part of a complete evaluation of adult patients with B.E.D., clinicians should consider these comorbid conditions that commonly occur for differential diagnosis.</p>
           <h2 class="heading--2">B.E.D. is associated with significant comorbidity that is comparable to bulimia nervosa and anorexia nervosa<sup>1</sup></h2>
-          <h3 class="heading--3 center chartTitle">Lifetime comorbidity (<em>DSM-IV</em><sup>&reg;</sup> Criteria) in adults with <abbr title="Binge Eating Disorder">B.E.D.</abbr><sup>&Dagger;3</sup></h3>
+          <h3 class="heading--3 center chartTitle">Lifetime comorbidity (<em>DSM-IV</em><sup>&reg;</sup> Criteria) in adults with B.E.D.<sup>&Dagger;3</sup></h3>
           <div class="statistic-box">
             <div class="statistic box1">
               <div class="num">&asymp;4 out of 5</div>
@@ -182,7 +182,7 @@
       </section>
       <section class="section--triggers">
         <div class="wrap--content">
-          <h1 class="heading--1">Common triggers of binge eating <br>episodes (as noted in <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr>)<sup>1</sup></h1>
+          <h1 class="heading--1">Common triggers of binge eating <br>episodes (as noted in <em>DSM-5</em><sup>&reg;</sup>)<sup>1</sup></h1>
           <h2 class="heading--2 bottom-bump">
             Negative affect most commonly precedes a bingeing episode.
             
@@ -201,7 +201,7 @@
             <li><span>
                 <h2 class="heading--2">Feeling bored</h2></span></li>
           </ul>
-          <div class="center"><a href="potential-effects.aspx" class="btn btn--yellow">POTENTIAL EFFECTS OF <abbr title="Binge Eating Disorder">B.E.D.</abbr></a></div>
+          <div class="center"><a href="potential-effects.aspx" class="btn btn--yellow">POTENTIAL EFFECTS OF B.E.D.</a></div>
         </div>
         <div class="wrap--refs">
           <ol class="refs number">
@@ -228,7 +228,7 @@
           </nav>
         </div>
         <div class="wrap--content last">
-          <p><em>DSM-IV</em><sup>&reg;</sup>, <em>DSM-IV-Text Revision</em><sup>&reg;</sup>, and <em><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr></em> are registered trademarks of the American Psychiatric Association.
+          <p><em>DSM-IV</em><sup>&reg;</sup>, <em>DSM-IV-Text Revision</em><sup>&reg;</sup>, and <em><em>DSM-5</em><sup>&reg;</sup></em> are registered trademarks of the American Psychiatric Association.
             
           </p>
           <p class="bottom-bump"><a href="http://www.shire.com/" target="_blank">
@@ -250,9 +250,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1441742400000"></script>
-    <script src="./js/templates.js?1441742400000"></script>
-    <script src="./js/app.js?1441742400000"></script>
+    <script src="./js/vendor.js?1442327700000"></script>
+    <script src="./js/templates.js?1442327700000"></script>
+    <script src="./js/app.js?1442327700000"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

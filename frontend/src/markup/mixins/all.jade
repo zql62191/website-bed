@@ -7,8 +7,9 @@
 - mediaQueries["lg"] = "only screen and (min-width: 1025px)"
 - mediaQueries["lgr"] = "only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2)"
 
-- var BED = '<abbr title="Binge Eating Disorder">B.E.D.</abbr>';
-- var DSM5 = '<abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr>';
+- var abbrToggle = false
+- var BED = abbrToggle == true ? '<abbr title="Binge Eating Disorder">B.E.D.</abbr>' : 'B.E.D.';
+- var DSM5 = abbrToggle == true ? '<abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr>' : '<em>DSM-5</em><sup>&reg;</sup>';
 
 - var ternary = function(compareA, compareB, returnA, returnB) {
 -     return (compareA === compareB) ? returnA : returnB;

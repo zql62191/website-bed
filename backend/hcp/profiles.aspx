@@ -8,12 +8,12 @@
     <meta name="format-detection" content="telephone=no">
     <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
     <meta name="google-site-verification" content="J54-RSNLJc8L0u3mx8m2Ie3Fb5zXiF5w1x4JQRIPBg8">
-    <link rel="stylesheet" href="./css/styles.css?1441742400000"/>
+    <link rel="stylesheet" href="./css/styles.css?1442327700000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1441742400000"></script>
-    <script src="./js/redirect.js?1441742400000"></script>
+    <script src="./js/head.js?1442327700000"></script>
+    <script src="./js/redirect.js?1442327700000"></script>
 <script>
     pageLoading();
 </script>
@@ -30,7 +30,7 @@
             <div class="hcp">
               This site is intended for US health care professionals only.
               
-            </div><a href="/hcp/sign-up.aspx" class="signup hide--md hide--sm">Get the full <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> <abbr title="Binge Eating Disorder">B.E.D.</abbr> criteria</a>
+            </div><a href="/hcp/sign-up.aspx" class="signup hide--md hide--sm">Get the full <em>DSM-5</em><sup>&reg;</sup> B.E.D. criteria</a>
             <div class="menu-tile hide--lg"></div>
             <div mobile-nav="" class="menu-btn hide--lg">
               <div class="line"></div>
@@ -46,9 +46,9 @@
               <ul>
                 <li class="hide--lg"><a href="/hcp/index.aspx" class="mobilehome">B.E.D. in Adults</a>
                 </li>
-                <li><a href="/hcp/dsm5-criteria.aspx"><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> Criteria</a>
+                <li><a href="/hcp/dsm5-criteria.aspx"><em>DSM-5</em><sup>&reg;</sup> Criteria</a>
                 </li>
-                <li><a href="/hcp/recognizing-BED.aspx">Recognizing <abbr title="Binge Eating Disorder">B.E.D.</abbr></a>
+                <li><a href="/hcp/recognizing-BED.aspx">Recognizing B.E.D.</a>
                 </li>
                 <li><a href="/hcp/potential-causes.aspx">Potential Causes</a>
                 </li>
@@ -60,7 +60,7 @@
                 </li>
                 <li><a href="/hcp/support-and-resources.aspx">Support &amp; Resources</a>
                 </li>
-                <li class="hide--lg"><a href="/hcp/sign-up.aspx" class="mobilesignup">Get the full <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr> <br><abbr title="Binge Eating Disorder">B.E.D.</abbr> criteria</a>
+                <li class="hide--lg"><a href="/hcp/sign-up.aspx" class="mobilesignup">Get the full <em>DSM-5</em><sup>&reg;</sup> <br>B.E.D. criteria</a>
                 </li>
               </ul>
             </nav>
@@ -105,7 +105,7 @@
                     <div class="stat">She is single and lives alone</div>
                     <div class="stat">Kimberly&rsquo;s binges are usually the <br>result of boredom</div>
                   </div>
-                  <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the <a href="dsm5-criteria.aspx">criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr>&nbsp;</a>established in <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr>.<sup>1</sup></p>
+                  <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the <a href="dsm5-criteria.aspx">criteria for B.E.D.&nbsp;</a>established in <em>DSM-5</em><sup>&reg;</sup>.<sup>1</sup></p>
                 </div>
               </div>
               <div ng-class="{active : currentSlide == 'nikki'}" ng-swipe-left="swipeControls('R')" ng-swipe-right="swipeControls('L')" class="slide nikki">
@@ -142,7 +142,7 @@
                       
                     </div>
                   </div>
-                  <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the <a href="dsm5-criteria.aspx">criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr>&nbsp;</a>established in <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr>.<sup>1</sup></p>
+                  <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the <a href="dsm5-criteria.aspx">criteria for B.E.D.&nbsp;</a>established in <em>DSM-5</em><sup>&reg;</sup>.<sup>1</sup></p>
                 </div>
               </div>
               <div ng-class="{active : currentSlide == 'julie'}" ng-swipe-left="swipeControls('R')" ng-swipe-right="swipeControls('L')" class="slide julie">
@@ -179,7 +179,7 @@
                       
                     </div>
                   </div>
-                  <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the <a href="dsm5-criteria.aspx">criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr>&nbsp;</a>established in <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr>.<sup>1</sup></p>
+                  <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the <a href="dsm5-criteria.aspx">criteria for B.E.D.&nbsp;</a>established in <em>DSM-5</em><sup>&reg;</sup>.<sup>1</sup></p>
                 </div>
               </div>
               <div ng-class="{active : currentSlide == 'diego'}" ng-swipe-left="swipeControls('R')" ng-swipe-right="swipeControls('L')" class="slide diego">
@@ -211,7 +211,7 @@
                       
                     </div>
                   </div>
-                  <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the <a href="dsm5-criteria.aspx">criteria for <abbr title="Binge Eating Disorder">B.E.D.</abbr>&nbsp;</a>established in <abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr>.</p>
+                  <p class="disclaimer">Diagnosis should be based on a complete evaluation of the patient that confirms the <a href="dsm5-criteria.aspx">criteria for B.E.D.&nbsp;</a>established in <em>DSM-5</em><sup>&reg;</sup>.</p>
                 </div>
               </div>
             </div>
@@ -227,22 +227,22 @@
             </ul>
           </div>
           <p class="section-disclaimer-sm">
-            Models and descriptions are fictional representations of how some adults with <abbr title="Binge Eating Disorder">B.E.D.</abbr> may present and do not constitute the totality of <abbr title="Binge Eating Disorder">B.E.D.</abbr> symptoms and criteria.
+            Models and descriptions are fictional representations of how some adults with B.E.D. may present and do not constitute the totality of B.E.D. symptoms and criteria.
             
           </p>
           <div class="callouts">
             <div class="callout one">
               <h2 class="heading--2">Screening the patient</h2>
-              <p>Use this validated screener to help evaluate adult patients you suspect may have <abbr title="Binge Eating Disorder">B.E.D.</abbr></p><a href="media/BingeEatingDisorder_Screener.pdf" target="_blank" class="btn btn--blue">DOWNLOAD THE ADULT <abbr title="Binge Eating Disorder">B.E.D.</abbr> PATIENT SCREENER</a>
+              <p>Use this validated screener to help evaluate adult patients you suspect may have B.E.D.</p><a href="media/BingeEatingDisorder_Screener.pdf" target="_blank" class="btn btn--blue">DOWNLOAD THE ADULT B.E.D. PATIENT SCREENER</a>
             </div>
             <div class="callout two">
               <h2 class="heading--2">Conducting a conversation</h2>
-              <p>Use this discussion guide to help begin a dialogue about <abbr title="Binge Eating Disorder">B.E.D.</abbr> with your adult patients.</p><a href="media/BingeEatingDisorderDiscussionGuide.pdf" target="_blank" class="btn btn--blue">
-                DOWNLOAD THE DISCUSSION GUIDE FOR ADULT PATIENTS WITH <abbr title="Binge Eating Disorder">B.E.D.</abbr>
+              <p>Use this discussion guide to help begin a dialogue about B.E.D. with your adult patients.</p><a href="media/BingeEatingDisorderDiscussionGuide.pdf" target="_blank" class="btn btn--blue">
+                DOWNLOAD THE DISCUSSION GUIDE FOR ADULT PATIENTS WITH B.E.D.
                 </a>
             </div>
           </div>
-          <p class="section-disclaimer">These tools were developed by Shire to assist health care professionals in identifying and accurately diagnosing <abbr title="Binge Eating Disorder">B.E.D.</abbr> in adults.</p>
+          <p class="section-disclaimer">These tools were developed by Shire to assist health care professionals in identifying and accurately diagnosing B.E.D. in adults.</p>
           <div class="wrap--refs">
             <ol class="refs number">
               <li>American Psychiatric Association. Binge-eating disorder. In: <em>Diagnostic and Statistical Manual of Mental Disorders. </em>5th ed. Arlington, VA: American Psychiatric Association; 2013:350-353.</li>
@@ -267,7 +267,7 @@
           </nav>
         </div>
         <div class="wrap--content last">
-          <p><em>DSM-IV</em><sup>&reg;</sup>, <em>DSM-IV-Text Revision</em><sup>&reg;</sup>, and <em><abbr title="Fifth Edition of the Diagnostic and Statistical Manual of Mental Disorders"><em>DSM-5</em><sup>&reg;</sup></abbr></em> are registered trademarks of the American Psychiatric Association.
+          <p><em>DSM-IV</em><sup>&reg;</sup>, <em>DSM-IV-Text Revision</em><sup>&reg;</sup>, and <em><em>DSM-5</em><sup>&reg;</sup></em> are registered trademarks of the American Psychiatric Association.
             
           </p>
           <p class="bottom-bump"><a href="http://www.shire.com/" target="_blank">
@@ -289,9 +289,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1441742400000"></script>
-    <script src="./js/templates.js?1441742400000"></script>
-    <script src="./js/app.js?1441742400000"></script>
+    <script src="./js/vendor.js?1442327700000"></script>
+    <script src="./js/templates.js?1442327700000"></script>
+    <script src="./js/app.js?1442327700000"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");
