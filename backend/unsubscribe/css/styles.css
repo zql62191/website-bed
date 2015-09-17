@@ -1,4 +1,4 @@
-/* Last Updated: 2015-09-08 at 04:01:03 PM */
+/* Last Updated: 2015-09-17 at 01:41:06 PM */
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -237,6 +237,22 @@ a > picture {
 .eq-ie8 * {
   -webkit-filter: inherit;
           filter: inherit;
+}
+
+.no-gradient {
+  background-image: none !important;
+}
+.no-gradient:before {
+  background-image: none !important;
+}
+.no-gradient.light {
+  background-color: #2A343E;
+}
+.no-gradient.dark {
+  background-color: #212b34;
+}
+.no-gradient.SignUpheader {
+  background-color: #252f39;
 }
 
 @media only screen and (min-width: 1025px) {
