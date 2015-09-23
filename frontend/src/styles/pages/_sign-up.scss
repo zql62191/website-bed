@@ -58,7 +58,31 @@ body.sign-up{
                 }  
 
             }
-            
+
+            //input[type="checkbox"]:required {
+            //    display: none;
+            //}
+            //input[type="checkbox"]:required:invalid + label:before {
+            //    content: "\2610";
+            //    padding-right: 0.2em;
+            //    padding-top: 0.4em;
+            //    font-size: 1.4em;
+            //    color: red;
+            //    @include mq('lg'){
+            //        top: 0.2em;
+            //    }
+            //}
+            //input[type="checkbox"]:required:valid + label:before {
+            //    content: "\2611";
+            //    padding-right: 0.2em;
+            //    padding-top: 0.4em;
+            //    font-size: 1.4em;
+            //    color: green;
+            //    @include mq('lg'){
+            //        top: 0.2em;
+            //    }
+            //}
+            //
             .form-group.help-block{
                 display:none;
             }
@@ -82,12 +106,21 @@ body.sign-up{
                 @include gs();
                 font-size: 16px;
                 color: #21282F;
+                margin-top: 15px;
                 line-height: 17px;
                 
                 @include mq('lg'){
                     width:268px;
                     margin-left: 28%;
                 }
+            }
+            .info{
+                margin-top: 20px;
+                p.help-block{
+                    right: 406px;
+                    margin-top: -25px;
+                }
+                
             }
 
             label{
@@ -203,6 +236,15 @@ body.sign-up{
             }
         }
 
+        .info{
+           
+            p.help-block{
+                left: 0px;
+                font-size: 12px;
+            }
+
+        }
+
         p.info{
             font-size: 16px;
             color: #858B91;
@@ -225,12 +267,16 @@ body.sign-up{
             line-height: 19px;
             width: 100%;
             margin-bottom: 51px;
+            margin-top: 35px;
         }
         
         .help-block{
             font-size: 12px;
             margin-top: -22px !important;
             right:10px !important;
+        }
+        .errormessage{
+            font-size: 12px;
         }
         
     }

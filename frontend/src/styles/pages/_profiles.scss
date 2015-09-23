@@ -216,6 +216,13 @@ body.profiles {
                 }
             }
         }
+        
+        ol.refs{
+            li{
+                color: #858B91;
+            }
+            
+        }
 
         @include mq("lg", "md") {
             ul.mobile-pagination{
@@ -371,7 +378,7 @@ body.profiles {
                     width: 325px;
 
                     p {
-                        opacity: 0.6;
+                        //opacity: 0.6;
                         margin-bottom: 21px;
                         font-size: 18px;
                         line-height: 22px;

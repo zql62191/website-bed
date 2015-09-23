@@ -12,6 +12,17 @@ header.header--global {
         .hcp {
             @include gs("light-italic");
             color: #C0D2DE;
+            line-height: 18px;
+            br{
+                display: block;
+            }
+            a{
+                color:#FFBE2C;
+                font-size: 15px;
+                &:hover{
+                    color: white;
+                }
+            }
         }
         .signup {
             @include gs("light");
@@ -60,7 +71,7 @@ header.header--global {
             .hcp {
                 margin-left: 22px;
                 font-size: 15px;
-                top: 3px;
+                top: 12px;
             }
             .signup {
                 float: right;

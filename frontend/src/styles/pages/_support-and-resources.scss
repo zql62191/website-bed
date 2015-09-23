@@ -350,6 +350,7 @@ body.support-and-resources{
             }
         }
         .btn {
+            width: 420px;
             @include mq('sm') {
                 margin-bottom: 14px;
                 height: auto;
@@ -369,6 +370,12 @@ body.support-and-resources{
 
         .link-box .yellow a {
             display: block;
+            &:hover{
+                color: white;
+            }
+        }
+        .link-box a:hover{
+            color: white;
         }
     }
 
@@ -434,6 +441,10 @@ body.support-and-resources{
                     line-height: 19px;
                     height: 65px;
                     padding: 14px 28px;
+                    &:hover{
+                        background-color: #52758B;
+                        color: #FFBE2C;
+                    }
                 }
                 
             }

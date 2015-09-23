@@ -45,6 +45,9 @@ body.recognizing-bed {
             @include mq('sm'){
                 font-size: 19px;
             }
+            &:hover{
+                color: #FFBE2C;
+            }
         }
 
     }

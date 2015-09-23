@@ -36,7 +36,9 @@ block content
                 h2.heading--2
                     | Opt In for Communications
                 .info
-                    input(type="checkBox", id="optInCheck", name="checkBox", ng-model="checkBox", value="false", required)
+                    p.help-block(ng-if="submitted && (optInForm.checkBox.$error.required)")
+                        | Please select the checkbox
+                    input(type="checkBox", id="optInCheck", name="checkBox", ng-model="checkBox", required)
                     label(for="optInCheck").info
                         p.info.checkbox-cont
                             | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By checking this box and clicking SUBMIT, you certify that you are a US health care professional and you are opting to receive information about binge eating disorder plus site updates, educational information, patient support resources, and other information from Shire. You will be able to opt out of these communications at any time.
@@ -53,4 +55,3 @@ block content
     
     footer.footer--page
         .wrap--content
-         
