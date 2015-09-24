@@ -12,15 +12,16 @@ header.header--global {
         .hcp {
             @include gs("light-italic");
             color: #C0D2DE;
-            line-height: 18px;
-            br{
-                display: block;
-            }
+            top:2px;
             a{
                 color:#FFBE2C;
                 font-size: 15px;
                 &:hover{
                     color: white;
+                }
+                @include mq('sm'){
+                    font-size: 10px;
+                    
                 }
             }
         }
@@ -71,7 +72,6 @@ header.header--global {
             .hcp {
                 margin-left: 22px;
                 font-size: 15px;
-                top: 12px;
             }
             .signup {
                 float: right;
@@ -238,11 +238,13 @@ header.header--global {
             left: 0;
             width: 100%;
             height: 100%;
+            
             z-index: z("menu", "overlay");
             background: #252F39;
             opacity: 0;
-            overflow: auto;
+            overflow-y: scroll;
             -webkit-overflow-scrolling: touch;
+            
             pointer-events: none;
 
             .wrap--content {
@@ -387,6 +389,29 @@ header.header--global {
                 &.mobilesignup {
                     padding-top: 15px;
                     font-size: 18px;
+                }
+            }
+        }
+    }
+
+
+    @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1280px)
+    and (orientation: landscape)
+    and (-webkit-min-device-pixel-ratio: 1) {
+        .primary-nav {
+    
+            nav ul li a {
+                font-size: 24px;
+    
+                &.mobilehome {
+                    font-size: 36px;
+                    margin-bottom: 5px;
+                }
+                &.mobilesignup {
+                    padding-top: 10px;
+                    font-size: 14px;
                 }
             }
         }

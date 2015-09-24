@@ -40,7 +40,7 @@
                 &.open{
                     .accordion__wrap{
                         padding-bottom: 30px;
-                        max-height: 700px;
+                        max-height: 800px;
                     }
 
                     .accordion-title{
@@ -116,9 +116,8 @@
 
      ul.contactinfo{
          font-style: normal;
-         margin-bottom: 28px;
          @include mq('lg'){
-             margin-top: -20px; 
+             margin-top: 30px; 
          }
          @include mq('sm'){
              margin-top: 20px;
@@ -129,7 +128,10 @@
              list-style-type: none;
              margin-top: 5px !important;
              &:first-child{
-                 margin-bottom: 15px;
+                 margin-bottom: 15px !important;
+             }
+             &:last-child{
+                 margin-top: 20px !important;
              }
          }
          a{
@@ -500,7 +502,7 @@
                  color: #E8E9E9;
                  line-height: 23px !important;
                  text-align: left;
-
+                 margin-bottom: 30px;
              }
 
              .accordion {
@@ -521,11 +523,12 @@
                      .accordion__wrap {
                          display: inline-block;
                          padding-bottom: 30px;
+                         max-height: 1200px !important;
                      }
 
                      .accordion-title {
                          // height: auto;
-                         max-height: 700px;
+                         
                          padding-bottom: 0px;
                      }
 

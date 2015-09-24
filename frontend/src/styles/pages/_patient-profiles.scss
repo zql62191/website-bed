@@ -28,6 +28,16 @@ body.patient-profiles {
             }
         }
 
+        //@media only screen
+        //and (min-device-width: 768px)
+        //and (max-device-width: 1280px)
+        //and (orientation: landscape)
+        //and (-webkit-min-device-pixel-ratio: 1) {
+        //    h1{
+        //        font-size: 20px;
+        //    }
+        //}
+
         @include mq("sm") {
 
             .hypothetical {
