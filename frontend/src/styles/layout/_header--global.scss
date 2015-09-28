@@ -396,14 +396,14 @@ header.header--global {
 
 
     @media only screen
-    and (min-device-width: 768px)
+    and (min-device-width: 1024px)
     and (max-device-width: 1280px)
     and (orientation: landscape)
     and (-webkit-min-device-pixel-ratio: 1) {
         .primary-nav {
     
             nav ul li a {
-                font-size: 24px;
+                font-size: 14px;
     
                 &.mobilehome {
                     font-size: 36px;
@@ -413,6 +413,19 @@ header.header--global {
                     padding-top: 10px;
                     font-size: 14px;
                 }
+            }
+        }
+    }
+
+    @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: landscape)
+    and (-webkit-min-device-pixel-ratio: 1) {
+        .primary-nav {
+
+            nav ul li a {
+                font-size: 24px;
             }
         }
     }

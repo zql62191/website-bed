@@ -184,6 +184,13 @@ body.recognizing-bed {
                 background-size: 745px 265px !important;
                 width: 745px !important;
                 height: 265px !important;
+                @include mq("md") {
+                    margin-top: -13px;
+                    margin-left: -2%;
+                    background-size: 596px 212px !important;
+                    width: 596px !important;
+                    height: 212px !important;
+                }
 
                 @include mq("sm") {
                     top: 13px;
@@ -500,6 +507,10 @@ body.recognizing-bed {
                 height: 248px;
                 width: 248px;
                 background: transparent url("../img/lg/#{$page}/oval_4_of_5.png") center center no-repeat;
+                @include mq('md'){
+                    background: transparent url("../img/md/#{$page}/oval_4_of_5.png") center center no-repeat;
+                    background-size: 248px 248px;
+                }
                 background-size: 248px 248px;
             }
 
@@ -508,6 +519,10 @@ body.recognizing-bed {
                 height: 248px;
                 width: 248px;
                 background: transparent url("../img/lg/#{$page}/oval_nearly_half.png") center center no-repeat;
+                @include mq('md'){
+                    background: transparent url("../img/md/#{$page}/oval_nearly_half.png") center center no-repeat;
+                    background-size: 248px 248px;
+                }
                 background-size: 248px 248px;
                 background-position: center top;
             }

@@ -193,6 +193,49 @@ body.patient-profiles {
             }
             
         }
+
+        @media only screen
+        and (min-device-width: 768px)
+        and (max-device-width: 1024px)
+        and (orientation: landscape)
+        and (-webkit-min-device-pixel-ratio: 1) {
+
+            .persons {
+                width: 824px;
+    
+                .kimberly {
+                    height: 205px;
+                    width: 206px;
+                    background-size: 206px 205px;
+                }
+
+                .nikki {
+                    height: 205px;
+                    width: 206px;
+                    //background: transparenturl('../img/mdr/patient-profiles/nikki.jpg?1438980976') center center no-repeat;
+                    background-size: 206px 205px;
+                    border-right: 1px solid #242e38;
+                }
+                .julie {
+                    height: 205px;
+                    width: 206px;
+                    //background: transparenturl('../img/mdr/patient-profiles/julie.jpg?1438980976') center center no-repeat;
+                    background-size: 206px 205px;
+                }
+                .diego {
+                    height: 205px;
+                    width: 206px;
+                    //background: transparenturl('../img/mdr/patient-profiles/diego.jpg?1438980976') center center no-repeat;
+                    background-size: 206px 205px;
+                }
+                
+            }
+
+            .wrap--content .hypothetical {
+                width: 822px;
+            }
+        }
+        
         /* START // What in the hell is this crap? --Jeremy */
         @media only screen
         and (min-device-width: 360px)

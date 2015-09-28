@@ -247,6 +247,10 @@ body.profiles {
                 height: 60px;
                 cursor: pointer;
                 background-image: url("../img/lg/profiles/slider-dot-empty.png");
+                @include mq('md'){
+                    background-image: url("../img/md/profiles/slider-dot-empty.png");
+                    background-size: 34px 34px;
+                }
                 background-repeat: no-repeat;
                 background-position: center center;
                 padding-bottom:76px;
@@ -257,6 +261,10 @@ body.profiles {
                 &.active, &:hover, &:active {
                     color: #52758B;
                     background-image: url("../img/lg/profiles/slider-dot-full.png");
+                    @include mq('md'){
+                        background-image: url("../img/md/profiles/slider-dot-full.png");
+                        background-size: 34px 34px;
+                    }
                 }
 
                 span.liner {
@@ -281,6 +289,13 @@ body.profiles {
                     width: 20px;
                     height: 33px;
                     background-image: url("../img/lg/profiles/carousel_arrow.png");
+                    background-size: 20px 33px;
+                    @include mq('md'){
+                        background-image: url("../img/md/profiles/carousel_arrow.png");
+                    }
+                    @include mq('sm'){
+                        background-image: url("../img/sm/profiles/carousel_arrow.png");
+                    }
                     float: right;
                     z-index: 10;
 
@@ -293,6 +308,13 @@ body.profiles {
                     width: 20px;
                     height: 33px;
                     background-image: url("../img/lg/profiles/carousel_arrow.png");
+                    background-size: 20px 33px;
+                    @include mq('md'){
+                        background-image: url("../img/md/profiles/carousel_arrow.png");
+                    }
+                    @include mq('sm'){
+                        background-image: url("../img/sm/profiles/carousel_arrow.png");
+                    }
                     -webkit-transform: rotate(180deg);
                     transform: rotate(180deg);
                     float: left;
@@ -631,15 +653,24 @@ body.profiles {
                 }
 
                 &.kimberly {
+                    .hero{
+                        
+                    }
+                    
                 }
                 &.nikki {
+                    .hero {
+                        width: 124px;
+                        height: auto;
+                        margin-left: 28%;
+                    }
 
                 }
                 &.julie {
                     
                     .hero {
-                        width: percentage(302/320);
-                        margin-left: auto;
+                        width: 148px;
+                        margin-left: 25%;
                         margin-right: auto;
                         display: block;
                     }
@@ -767,11 +798,13 @@ body.profiles {
                     width: 9px;
                     height: 9px;
                     background-image: url("../img/sm/profiles/oval_mobile_empty.png");
+                    background-size: 9px 9px;
                     cursor: pointer;
                     z-index: 6;
 
                     &.active, &:hover, &:active{
                         background-image: url("../img/sm/profiles/oval_mobile_full.png");
+                        background-size: 9px 9px;
                     }
                 }
             }
@@ -800,6 +833,28 @@ body.profiles {
                     border-color: #C3C0BE;
                     margin-left: 0;
                 }
+            }
+        }
+    }
+
+    @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: landscape)
+    and (-webkit-min-device-pixel-ratio: 1) {
+        .nikki {
+            .hero img{
+                height: 405px !important;
+                width: auto;
+                margin-top: 40% !important;
+            }
+        }
+        .julie {
+
+            .hero img {
+                height: 395px !important;
+                width: auto;
+                margin-top: 45% !important;
             }
         }
     }

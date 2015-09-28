@@ -201,7 +201,7 @@ body.patient-demographics {
             font-size: 24px;
             line-height: 29px;
 
-            @include mq('lg') {
+            @include mq('lg','md') {
                 padding-top: 10px;
             }
 

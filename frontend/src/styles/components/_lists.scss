@@ -62,6 +62,9 @@ ul.square {
         @include mq('lg') {
             top: 0.07em;
         }
+        @include mq('md') {
+            font-size: 1.0em;
+        }
         @include mq('sm') {
             font-size: 0.8em;
         }

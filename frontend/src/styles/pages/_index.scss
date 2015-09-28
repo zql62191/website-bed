@@ -21,7 +21,7 @@ body.index {
 
             &.kimberly .player .still {
                 @include hero-bg("#{$page}/kimberly.jpg");
-                @include mq('sm'){
+                @include mq('md','sm'){
                     .hypothetical{
                         font-size: 10px;
                         margin-left: 0px;
@@ -40,7 +40,7 @@ body.index {
 
             &.nikki .player .still {
                 @include hero-bg("#{$page}/nikki.jpg");
-                @include mq('sm'){
+                @include mq('md','sm'){
                     .hypothetical{
                         font-size: 10px;
                         margin-left: 56%;
@@ -51,7 +51,7 @@ body.index {
 
             &.julie .player .still {
                 @include hero-bg("#{$page}/julie.jpg");
-                @include mq('sm'){
+                @include mq('md','sm'){
                     .hypothetical{
                         font-size: 10px;
                         margin-left: 56%;
@@ -62,7 +62,7 @@ body.index {
 
             &.diego .player .still {
                 @include hero-bg("#{$page}/diego.jpg");
-                @include mq('sm'){
+                @include mq('md','sm'){
                     .hypothetical{
                         font-size: 10px;
                         margin-left: 0px;
