@@ -32,7 +32,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03014.mp4",
                         host: activehost,
                         newFrom: null,//Date(2015, 7, 15),
-                        viewed: false
+                        viewed: true
                     },
                     {
                         id: "bed-diff-overeating",
@@ -42,7 +42,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03013.mp4",
                         host: activehost,
                         newFrom: null,//Date(2015, 7, 15),
-                        viewed: false
+                        viewed: true
                     },
                     {
                         id: "functional-conseqs",
@@ -62,7 +62,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03016.mp4",
                         host: activehost,
                         newFrom: null,//Date(2015, 7, 15),
-                        viewed: false
+                        viewed: true
                     }
                 ]
             },{
@@ -88,7 +88,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03017.mp4",
                         host: activehost,
                         newFrom: null,//Date(2015, 7, 15),
-                        viewed: false
+                        viewed: true
                     },
                     {
                         id: "psych-conditions-assoc",
@@ -98,7 +98,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S02972.mp4",
                         host: activehost,
                         newFrom: null,
-                        viewed: false
+                        viewed: true
                     },
                     {
                         id: "thought-to-cause",
@@ -383,6 +383,15 @@
                         // }
                     });
                 }
+                
+                //Zach used the stupid way to make the video viewed tag (not 100% success). dont forget the support.scss file, I have change .viewed opacity=0
+
+                $('video').on('ended',function(){
+                    console.log('Video has ended!');
+                    $('.viewed').css({"opacity": "1"});
+                    
+                });
+                
             });
             
             // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

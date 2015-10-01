@@ -18,7 +18,7 @@ footer.footer--global
                     +a-active(href="/hcp/privacy-policy.aspx")
                         | Privacy Policy
                 li
-                    a(href="http://www.shire.com/", target="_blank").
+                    a(href="http://www.shire.com/", target="_blank").authorized-link.
                         Shire US
 
     .wrap--content.last
@@ -27,12 +27,12 @@ footer.footer--global
             #[em DSM-IV]#[sup &reg;], #[em DSM-IV-Text Revision]#[sup &reg;], and #[em !{DSM5}] are registered trademarks of the American Psychiatric Association.
 
         p.bottom-bump
-            a(href="http://www.shire.com/", target="_blank")
+            a(href="http://www.shire.com/", target="_blank").authorized-link
                 +picture-retina("shire-logo.png", "Shire")
 
         p.legal
             span.line
-                | &copy;2015 #[a(href="http://www.shire.com/", target="_blank") Shire US Inc.], [Wayne, PA 19087]&nbsp;&nbsp;&nbsp;&nbsp;
+                | &copy;2015 #[a(href="http://www.shire.com/", target="_blank").authorized-link Shire US Inc.], [Wayne, PA 19087]&nbsp;&nbsp;&nbsp;&nbsp;
             span.line
                 | 1-800-828-2088&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             span.line

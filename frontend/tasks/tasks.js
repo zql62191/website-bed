@@ -37,4 +37,8 @@ module.exports = function(grunt) {
     // a special sub-site build for /unsubscribe/ 
     grunt.registerTask('unsubIntegrate', ['clean:dist', 'images:dev', 'assets', 'markup:unsubIntegrate', 'scripts:dev', 'styles:dev', 'copy:unsubIntegrate']);
 
+    
+    
+    // prod build with aspx integration (prod version of devIntegrate
+    grunt.registerTask('devIntegrate', ['clean:dist', 'images:prod', 'assets', 'markup:devIntegrate', 'scripts:prod', 'styles:prod', 'copy:integrate']);
 };

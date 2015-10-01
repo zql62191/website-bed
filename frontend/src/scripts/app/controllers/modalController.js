@@ -46,15 +46,15 @@
             });
 
             // Close if we hit the mobile breakpoint
-            var queryListener = $rootScope.$watch('mq.sm', function(newValue, oldValue) {
-                if (newValue === true) {
-                    close();
-                }
-            });
+            //var queryListener = $rootScope.$watch('mq.sm', function(newValue, oldValue) {
+            //    if (newValue === true) {
+            //        close();
+            //    }
+            //});
 
             $scope.$on('$destroy', function(e) {
                 closeListener();
-                queryListener();
+                //queryListener();
                 $($document).off('.modal');
             });
         }

@@ -1,5 +1,5 @@
 
-@include mq("lg") {
+@include mq("lg","md") {
 
     .modal {
         position: fixed;
@@ -89,7 +89,18 @@
             &:last-child{
                 margin-left:20px;
             }
+            &:hover{
+                color: #252F39;
+                background-color: #CD9D3C !important;
+            }
 
+        }
+
+        a{
+            &:hover{
+                color: #252F39;
+                background-color: #CD9D3C !important;
+            }
         }
 
         .modal--title{
@@ -102,9 +113,94 @@
         }
     }
 }
+@include mq("md"){
+    .btn{
+        display: inline-block;
+    }
+}
 
 @include mq("sm") {
     .modal {
-        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: z("modal");
+        @include rgba-background(rgba(#1B2025, 0.8));
+        animation: fadeIn 250ms;
+
+        .modal__outer {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .modal__inner {
+            margin: 0 auto;
+            width: 90%;
+            max-height: 450px !important;
+            height: 450px;
+            max-width: 850px;
+            border-radius: 3px;
+            background: #52758B;
+            // background: white;
+            box-shadow: 0px 2px 4px 2px #38434B;
+            // max-height: 105%;
+            text-align: left;
+
+            h2 {
+                padding-bottom: 50px;
+            }
+
+            .eq-ie8 & {
+                overflow-y: auto;
+            }
+        }
+
+        .modal__scroll {
+            padding: 50px 20px;
+            max-height: inherit;
+
+            color: #E8E9E9;
+        }
+
+        .modal__close {
+            cursor: pointer;
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            z-index: z("default");
+        }
+
+        .button-container{
+            padding-top:30px;
+            text-align: center;
+        }
+        p{
+            font-size: 16px;
+        }
+        
+
+        .btn{
+            height: 45px;
+            padding:0;
+
+            &:last-child{
+                margin-top:10px;
+            }
+            
+
+        }
+        
+
+        .modal--title{
+            font-weight: 300;
+            font-style: normal;
+            font-size: 18px;
+            color: #E8E9E9;
+            text-align: center;
+            padding-bottom: 24px;
+            margin-top: -30px;
+        }
     }
 }

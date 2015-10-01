@@ -7,7 +7,7 @@
         function($rootScope, $location, parseUri, ModalService) {
 
             var whitelist = [  
-                /*'shire.com',  */            
+                'shire.com',              
                 parseUri($location.absUrl()).host,
                 $location.$$host
             ];
@@ -23,6 +23,11 @@
                     if (attrs.target !== '_blank' || element.hasClass('authorized-link')) {
                         return;
                     }
+                    
+                    //no modals in tablet or mobile
+                    //if(scope.mq && (scope.mq.md == true || scope.mq.sm == true) ){
+                    //    return;
+                    //}
 
                     var checkWhiteList = function() {
 

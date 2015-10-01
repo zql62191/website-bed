@@ -246,6 +246,7 @@ body.support-and-resources{
                         width: 64px;
                         height: 22px;
                         background-image: url("../img/lg/support-and-resources/viewed-ribbon.png");
+                        opacity: 0;
                     }
 
                     @include mq('sm') {
@@ -353,7 +354,7 @@ body.support-and-resources{
             and (max-device-width: 1024px)
             and (orientation: landscape)
             and (-webkit-min-device-pixel-ratio: 1) {
-                margin-left: 25px;
+                margin-left: 28px !important;
             }
         }
         .btn {
@@ -382,7 +383,7 @@ body.support-and-resources{
         .link-box .yellow a {
             display: block;
             &:hover{
-                color: white;
+                color: #FFBE2C;
             }
         }
         .link-box a:hover{
@@ -465,13 +466,13 @@ body.support-and-resources{
 
     }
 
-    @media only screen
-    and (min-device-width: 768px)
-    and (max-device-width: 1024px)
-    and (orientation: landscape)
-    and (-webkit-min-device-pixel-ratio: 1) {
-        width: 43%;
-    }
+    //@media only screen
+    //and (min-device-width: 768px)
+    //and (max-device-width: 1024px)
+    //and (orientation: landscape)
+    //and (-webkit-min-device-pixel-ratio: 1) {
+    //    width: 43%;
+    //}
 
     @include mq('md') {
 
@@ -560,6 +561,7 @@ body.support-and-resources{
                     text-align: left;
                     font-size: 21px;
                     padding-bottom: 26px;
+                    margin-left: 3px;
                 }
 
                 .btn{
@@ -597,7 +599,7 @@ body.support-and-resources{
                     font-size: 14px;
                     line-height: 17px;
                     color: #ADB2B6;
-
+                    
                     &:nth-child(2n+1){
                         margin-right: percentage(73/768);
                     }
