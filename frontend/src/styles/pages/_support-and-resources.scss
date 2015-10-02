@@ -246,7 +246,7 @@ body.support-and-resources{
                         width: 64px;
                         height: 22px;
                         background-image: url("../img/lg/support-and-resources/viewed-ribbon.png");
-                        opacity: 0;
+                        //opacity: 0;
                     }
 
                     @include mq('sm') {
