@@ -1,4 +1,4 @@
-/* Last Updated: 2015-09-17 at 01:41:06 PM */
+/* Last Updated: 2015-10-02 at 10:18:41 AM */
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -1060,6 +1060,11 @@ ul.square > li:before {
     top: 0.07em;
   }
 }
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  ul.square > li:before {
+    font-size: 1.0em;
+  }
+}
 @media only screen and (max-width: 640px) {
   ul.square > li:before {
     font-size: 0.8em;
@@ -1332,7 +1337,7 @@ ol.refs li a {
   color: #000000;
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1025px), only screen and (min-width: 641px) and (max-width: 1024px) {
   .modal {
     position: fixed;
     top: 0;
@@ -1402,6 +1407,14 @@ ol.refs li a {
   .modal .btn:last-child {
     margin-left: 20px;
   }
+  .modal .btn:hover {
+    color: #252F39;
+    background-color: #CD9D3C !important;
+  }
+  .modal a:hover {
+    color: #252F39;
+    background-color: #CD9D3C !important;
+  }
   .modal .modal--title {
     font-weight: 100;
     font-style: normal;
@@ -1411,9 +1424,79 @@ ol.refs li a {
     padding-bottom: 24px;
   }
 }
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .btn {
+    display: inline-block;
+  }
+}
 @media only screen and (max-width: 640px) {
   .modal {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2000;
+    background: url('../img/rgbapng/1b2025cc-5.png?1439234524');
+    background: rgba(27, 32, 37, 0.8);
+    -webkit-animation: fadeIn 250ms;
+            animation: fadeIn 250ms;
+  }
+  .modal .modal__outer {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .modal .modal__inner {
+    margin: 0 auto;
+    width: 90%;
+    max-height: 450px !important;
+    height: 450px;
+    max-width: 850px;
+    border-radius: 3px;
+    background: #52758B;
+    box-shadow: 0px 2px 4px 2px #38434B;
+    text-align: left;
+  }
+  .modal .modal__inner h2 {
+    padding-bottom: 50px;
+  }
+  .eq-ie8 .modal .modal__inner {
+    overflow-y: auto;
+  }
+  .modal .modal__scroll {
+    padding: 50px 20px;
+    max-height: inherit;
+    color: #E8E9E9;
+  }
+  .modal .modal__close {
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    z-index: 1;
+  }
+  .modal .button-container {
+    padding-top: 30px;
+    text-align: center;
+  }
+  .modal p {
+    font-size: 16px;
+  }
+  .modal .btn {
+    height: 45px;
+    padding: 0;
+  }
+  .modal .btn:last-child {
+    margin-top: 10px;
+  }
+  .modal .modal--title {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    color: #E8E9E9;
+    text-align: center;
+    padding-bottom: 24px;
+    margin-top: -30px;
   }
 }
 @media only screen and (min-width: 1025px), only screen and (min-width: 641px) and (max-width: 1024px) {
@@ -1473,6 +1556,19 @@ header.header--global .title-bar .hcp {
   font-weight: 100;
   font-style: italic;
   color: #C0D2DE;
+  top: 2px;
+}
+header.header--global .title-bar .hcp a {
+  color: #FFBE2C;
+  font-size: 15px;
+}
+header.header--global .title-bar .hcp a:hover {
+  color: white;
+}
+@media only screen and (max-width: 640px) {
+  header.header--global .title-bar .hcp a {
+    font-size: 10px;
+  }
 }
 header.header--global .title-bar .signup {
   font-weight: 100;
@@ -1502,7 +1598,6 @@ header.header--global .title-bar .signup {
   header.header--global .title-bar .hcp {
     margin-left: 22px;
     font-size: 15px;
-    top: 3px;
   }
   header.header--global .title-bar .signup {
     float: right;
@@ -1651,7 +1746,7 @@ header.header--global .title-bar .signup {
     z-index: 1000;
     background: #252F39;
     opacity: 0;
-    overflow: auto;
+    overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     pointer-events: none;
   }
@@ -1781,6 +1876,24 @@ header.header--global .title-bar .signup {
   header.header--global .primary-nav nav ul li a.mobilesignup {
     padding-top: 15px;
     font-size: 18px;
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1280px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  header.header--global .primary-nav nav ul li a {
+    font-size: 14px;
+  }
+  header.header--global .primary-nav nav ul li a.mobilehome {
+    font-size: 36px;
+    margin-bottom: 5px;
+  }
+  header.header--global .primary-nav nav ul li a.mobilesignup {
+    padding-top: 10px;
+    font-size: 14px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  header.header--global .primary-nav nav ul li a {
+    font-size: 24px;
   }
 }
 
@@ -1979,7 +2092,7 @@ footer.footer--global nav ul li a {
     padding-top: 46%;
   }
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (max-width: 640px) {
   body.index .section--hero .hero.kimberly .player .still .hypothetical {
     font-size: 10px;
     margin-left: 0px;
@@ -2028,7 +2141,7 @@ footer.footer--global nav ul li a {
     padding-top: 46%;
   }
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (max-width: 640px) {
   body.index .section--hero .hero.nikki .player .still .hypothetical {
     font-size: 10px;
     margin-left: 56%;
@@ -2077,7 +2190,7 @@ footer.footer--global nav ul li a {
     padding-top: 46%;
   }
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (max-width: 640px) {
   body.index .section--hero .hero.julie .player .still .hypothetical {
     font-size: 10px;
     margin-left: 56%;
@@ -2126,7 +2239,7 @@ footer.footer--global nav ul li a {
     padding-top: 46%;
   }
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (min-width: 641px) and (max-width: 1024px), only screen and (max-width: 640px) {
   body.index .section--hero .hero.diego .player .still .hypothetical {
     font-size: 10px;
     margin-left: 0px;
@@ -2836,6 +2949,18 @@ body.dsm5-criteria .section--individuals {
     text-align: center;
   }
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  body.dsm5-criteria .section--individuals p.disclaimer {
+    text-align: center;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  body.dsm5-criteria .section--individuals p.disclaimer {
+    text-align: center;
+    width: 510px;
+    margin-left: 80px;
+  }
+}
 @media only screen and (min-width: 1025px) {
   body.dsm5-criteria .section--individuals .trim {
     width: 555px;
@@ -2908,6 +3033,11 @@ body.dsm5-criteria .section--triggers {
     display: inline-block;
   }
 }
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  body.dsm5-criteria .btn {
+    width: 500px;
+  }
+}
 @media only screen and (max-width: 640px) {
   body.dsm5-criteria .heading--1 {
     font-size: 26px !important;
@@ -2971,6 +3101,9 @@ body.recognizing-bed .section--episodes .goother {
   body.recognizing-bed .section--episodes .goother {
     font-size: 19px;
   }
+}
+body.recognizing-bed .section--episodes .goother:hover {
+  color: #FFBE2C;
 }
 body.recognizing-bed .section--bulimia {
   background: #333E48;
@@ -3096,37 +3229,37 @@ body.recognizing-bed .section--obesity .chart-wrap .chart {
 }
 @media only screen and (max-width: 640px) {
   body.recognizing-bed .section--obesity .chart-wrap .chart {
-    height: 1900px;
-    width: 1088px;
-    background: transparent url('../img/sm/recognizing-bed/chart.png?1441733909') center center no-repeat;
-    background-size: 1088px 1900px;
+    height: 960px;
+    width: 552px;
+    background: transparent url('../img/sm/recognizing-bed/chart.png?1443794229') center center no-repeat;
+    background-size: 552px 960px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--hc {
-    margin-left: -544px;
+    margin-left: -276px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--vc {
-    margin-top: -950px;
+    margin-top: -480px;
   }
 }
 @media only screen and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
   body.recognizing-bed .section--obesity .chart-wrap .chart {
-    height: 480px;
-    width: 276px;
-    background: transparent url('../img/smr/recognizing-bed/chart.png?1440777816') center center no-repeat;
-    background-size: 276px 480px;
+    height: 960px;
+    width: 552px;
+    background: transparent url('../img/smr/recognizing-bed/chart.png?1443794229') center center no-repeat;
+    background-size: 552px 960px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--hc {
-    margin-left: -138px;
+    margin-left: -276px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--vc {
-    margin-top: -240px;
+    margin-top: -480px;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   body.recognizing-bed .section--obesity .chart-wrap .chart {
     height: 212px;
     width: 596px;
-    background: transparent url('../img/md/recognizing-bed/chart.png?1440777816') center center no-repeat;
+    background: transparent url('../img/md/recognizing-bed/chart.png?1443794229') center center no-repeat;
     background-size: 596px 212px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--hc {
@@ -3140,7 +3273,7 @@ body.recognizing-bed .section--obesity .chart-wrap .chart {
   body.recognizing-bed .section--obesity .chart-wrap .chart {
     height: 212px;
     width: 596px;
-    background: transparent url('../img/mdr/recognizing-bed/chart.png?1440777816') center center no-repeat;
+    background: transparent url('../img/mdr/recognizing-bed/chart.png?1443794229') center center no-repeat;
     background-size: 596px 212px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--hc {
@@ -3154,7 +3287,7 @@ body.recognizing-bed .section--obesity .chart-wrap .chart {
   body.recognizing-bed .section--obesity .chart-wrap .chart {
     height: 702px;
     width: 1970px;
-    background: transparent url('../img/lg/recognizing-bed/chart.png?1441733909') center center no-repeat;
+    background: transparent url('../img/lg/recognizing-bed/chart.png?1443794228') center center no-repeat;
     background-size: 1970px 702px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--hc {
@@ -3166,16 +3299,25 @@ body.recognizing-bed .section--obesity .chart-wrap .chart {
 }
 @media only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2) {
   body.recognizing-bed .section--obesity .chart-wrap .chart {
-    height: 265px;
-    width: 745px;
-    background: transparent url('../img/lgr/recognizing-bed/chart.png?1440777816') center center no-repeat;
-    background-size: 745px 265px;
+    height: 702px;
+    width: 1970px;
+    background: transparent url('../img/lgr/recognizing-bed/chart.png?1443794228') center center no-repeat;
+    background-size: 1970px 702px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--hc {
-    margin-left: -372.5px;
+    margin-left: -985px;
   }
   body.recognizing-bed .section--obesity .chart-wrap .chart.is--vc {
-    margin-top: -132.5px;
+    margin-top: -351px;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  body.recognizing-bed .section--obesity .chart-wrap .chart {
+    margin-top: -13px;
+    margin-left: -2%;
+    background-size: 596px 212px !important;
+    width: 596px !important;
+    height: 212px !important;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -3459,12 +3601,24 @@ body.recognizing-bed .section--coexisting .statistic-box .box1 {
   background: transparent url("../img/lg/recognizing-bed/oval_4_of_5.png") center center no-repeat;
   background-size: 248px 248px;
 }
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  body.recognizing-bed .section--coexisting .statistic-box .box1 {
+    background: transparent url("../img/md/recognizing-bed/oval_4_of_5.png") center center no-repeat;
+    background-size: 248px 248px;
+  }
+}
 body.recognizing-bed .section--coexisting .statistic-box .box2 {
   height: 248px;
   width: 248px;
   background: transparent url("../img/lg/recognizing-bed/oval_nearly_half.png") center center no-repeat;
   background-size: 248px 248px;
   background-position: center top;
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  body.recognizing-bed .section--coexisting .statistic-box .box2 {
+    background: transparent url("../img/md/recognizing-bed/oval_nearly_half.png") center center no-repeat;
+    background-size: 248px 248px;
+  }
 }
 @media only screen and (min-width: 1025px), only screen and (min-width: 641px) and (max-width: 1024px) {
   body.recognizing-bed .section--coexisting .statistic-box:before, body.recognizing-bed .section--coexisting .statistic-box:after {
@@ -4132,9 +4286,6 @@ body.potential-causes .row ul.square li {
     line-height: 21px;
   }
 }
-body.potential-causes .mobile-break {
-  display: block;
-}
 body.potential-causes .section--theories {
   background: #252F39;
 }
@@ -4301,13 +4452,16 @@ body.potential-causes .section--factors {
   body.potential-causes .section--factors .btn.btn--yellow {
     font-size: 14px;
   }
+  body.potential-causes .section--factors .wrap--refs {
+    width: 732px;
+  }
   body.potential-causes .footnote {
     width: 53.25521%;
     margin: 13px auto 38px auto;
     text-align: center;
   }
   body.potential-causes .center {
-    width: 52.21374%;
+    width: 68.21374%;
     margin: 0 auto;
   }
 }
@@ -4682,7 +4836,7 @@ body.patient-demographics .section--survey .text {
   font-size: 24px;
   line-height: 29px;
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1025px), only screen and (min-width: 641px) and (max-width: 1024px) {
   body.patient-demographics .section--survey .text {
     padding-top: 10px;
   }
@@ -5831,13 +5985,8 @@ body.potential-effects .section--button {
 body.potential-effects .section--button .wrap--refs {
   margin-top: 50px;
 }
-body.potential-effects .section--button .wrap--refs .refs {
-  padding-left: 40px;
-  padding-right: 40px;
-}
 @media only screen and (max-width: 640px) {
   body.potential-effects .section--button .wrap--refs .refs {
-    padding-left: 20px;
     padding-right: 0px;
   }
 }
@@ -6100,6 +6249,7 @@ body.patient-profiles .section--patients .hypothetical {
   }
   body.patient-profiles .section--patients .callouts {
     margin-bottom: 36px;
+    margin-left: 9.5%;
   }
   body.patient-profiles .section--patients .callout {
     width: 50%;
@@ -6193,6 +6343,35 @@ body.patient-profiles .section--patients .hypothetical {
     margin: 35px auto 0 auto;
     text-align: center;
     width: 70.70313%;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  body.patient-profiles .section--patients .persons {
+    width: 824px;
+  }
+  body.patient-profiles .section--patients .persons .kimberly {
+    height: 205px;
+    width: 206px;
+    background-size: 206px 205px;
+  }
+  body.patient-profiles .section--patients .persons .nikki {
+    height: 205px;
+    width: 206px;
+    background-size: 206px 205px;
+    border-right: 1px solid #242e38;
+  }
+  body.patient-profiles .section--patients .persons .julie {
+    height: 205px;
+    width: 206px;
+    background-size: 206px 205px;
+  }
+  body.patient-profiles .section--patients .persons .diego {
+    height: 205px;
+    width: 206px;
+    background-size: 206px 205px;
+  }
+  body.patient-profiles .section--patients .wrap--content .hypothetical {
+    width: 822px;
   }
 }
 @media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -6480,6 +6659,9 @@ body.profiles .section--carousel .profile .text-line .stat {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+body.profiles .section--carousel ol.refs li {
+  color: #858B91;
+}
 @media only screen and (min-width: 1025px), only screen and (min-width: 641px) and (max-width: 1024px) {
   body.profiles .section--carousel ul.mobile-pagination {
     display: none;
@@ -6512,9 +6694,21 @@ body.profiles .section--carousel .pagination li {
   display: inline-block;
   text-align: center;
 }
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  body.profiles .section--carousel .pagination li {
+    background-image: url("../img/md/profiles/slider-dot-empty.png");
+    background-size: 34px 34px;
+  }
+}
 body.profiles .section--carousel .pagination li.active, body.profiles .section--carousel .pagination li:hover, body.profiles .section--carousel .pagination li:active {
   color: #52758B;
   background-image: url("../img/lg/profiles/slider-dot-full.png");
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  body.profiles .section--carousel .pagination li.active, body.profiles .section--carousel .pagination li:hover, body.profiles .section--carousel .pagination li:active {
+    background-image: url("../img/md/profiles/slider-dot-full.png");
+    background-size: 34px 34px;
+  }
 }
 body.profiles .section--carousel .pagination li span.liner {
   width: 90px;
@@ -6533,8 +6727,19 @@ body.profiles .section--carousel .carousel .controls .next {
   width: 20px;
   height: 33px;
   background-image: url("../img/lg/profiles/carousel_arrow.png");
+  background-size: 20px 33px;
   float: right;
   z-index: 10;
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  body.profiles .section--carousel .carousel .controls .next {
+    background-image: url("../img/md/profiles/carousel_arrow.png");
+  }
+}
+@media only screen and (max-width: 640px) {
+  body.profiles .section--carousel .carousel .controls .next {
+    background-image: url("../img/sm/profiles/carousel_arrow.png");
+  }
 }
 body.profiles .section--carousel .carousel .controls .next:hover {
   background-image: url("../img/lg/profiles/carousel_arrow_hover.png");
@@ -6543,11 +6748,22 @@ body.profiles .section--carousel .carousel .controls .prev {
   width: 20px;
   height: 33px;
   background-image: url("../img/lg/profiles/carousel_arrow.png");
+  background-size: 20px 33px;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
       transform: rotate(180deg);
   float: left;
   z-index: 10;
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  body.profiles .section--carousel .carousel .controls .prev {
+    background-image: url("../img/md/profiles/carousel_arrow.png");
+  }
+}
+@media only screen and (max-width: 640px) {
+  body.profiles .section--carousel .carousel .controls .prev {
+    background-image: url("../img/sm/profiles/carousel_arrow.png");
+  }
 }
 body.profiles .section--carousel .carousel .controls .prev:hover {
   background-image: url("../img/lg/profiles/carousel_arrow_hover.png");
@@ -6612,7 +6828,6 @@ body.profiles .section--carousel .carousel .controls .prev:hover {
     width: 325px;
   }
   body.profiles .section--carousel .callouts .callout p {
-    opacity: 0.6;
     margin-bottom: 21px;
     font-size: 18px;
     line-height: 22px;
@@ -6799,9 +7014,14 @@ body.profiles .section--carousel .carousel .controls .prev:hover {
     background-position: center 108px;
     background-size: cover;
   }
+  body.profiles .section--carousel .slide.nikki .hero {
+    width: 124px;
+    height: auto;
+    margin-left: 28%;
+  }
   body.profiles .section--carousel .slide.julie .hero {
-    width: 94.375%;
-    margin-left: auto;
+    width: 148px;
+    margin-left: 25%;
     margin-right: auto;
     display: block;
   }
@@ -6900,11 +7120,13 @@ body.profiles .section--carousel .carousel .controls .prev:hover {
     width: 9px;
     height: 9px;
     background-image: url("../img/sm/profiles/oval_mobile_empty.png");
+    background-size: 9px 9px;
     cursor: pointer;
     z-index: 6;
   }
   body.profiles .section--carousel ul.mobile-pagination li.active, body.profiles .section--carousel ul.mobile-pagination li:hover, body.profiles .section--carousel ul.mobile-pagination li:active {
     background-image: url("../img/sm/profiles/oval_mobile_full.png");
+    background-size: 9px 9px;
   }
   body.profiles .section--carousel .heading--2 {
     font-weight: 100;
@@ -6925,6 +7147,18 @@ body.profiles .section--carousel .carousel .controls .prev:hover {
   body.profiles .section--carousel .wrap--refs ol.number {
     border-color: #C3C0BE;
     margin-left: 0;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  body.profiles .nikki .hero img {
+    height: 405px !important;
+    width: auto;
+    margin-top: 40% !important;
+  }
+  body.profiles .julie .hero img {
+    height: 395px !important;
+    width: auto;
+    margin-top: 45% !important;
   }
 }
 body.profiles .footer--global {
@@ -7138,6 +7372,7 @@ body.support-and-resources .section--video-boxes .boxes .boxes-row .box .viewed 
   width: 64px;
   height: 22px;
   background-image: url("../img/lg/support-and-resources/viewed-ribbon.png");
+  opacity: 0;
 }
 @media only screen and (max-width: 640px) {
   body.support-and-resources .section--video-boxes .boxes .boxes-row .box {
@@ -7199,6 +7434,19 @@ body.support-and-resources .section--information .link-box-grid .link-box-row .l
     padding-bottom: 25px;
   }
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  body.support-and-resources .section--shire-resources .heading--2 {
+    margin-left: 28px !important;
+  }
+}
+body.support-and-resources .section--shire-resources .btn {
+  width: 420px;
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  body.support-and-resources .section--shire-resources .btn {
+    width: 300px;
+  }
+}
 @media only screen and (max-width: 640px) {
   body.support-and-resources .section--shire-resources .btn {
     margin-bottom: 14px;
@@ -7206,6 +7454,7 @@ body.support-and-resources .section--information .link-box-grid .link-box-row .l
     line-height: 17px;
     padding: 14px 5.71429%;
     font-size: 14px;
+    width: auto;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -7216,6 +7465,12 @@ body.support-and-resources .section--information .link-box-grid .link-box-row .l
 }
 body.support-and-resources .section--information .link-box .yellow a {
   display: block;
+}
+body.support-and-resources .section--information .link-box .yellow a:hover {
+  color: #FFBE2C;
+}
+body.support-and-resources .section--information .link-box a:hover {
+  color: white;
 }
 @media only screen and (min-width: 1025px) {
   body.support-and-resources h2.heading--1 {
@@ -7254,6 +7509,10 @@ body.support-and-resources .section--information .link-box .yellow a {
     line-height: 19px;
     height: 65px;
     padding: 14px 28px;
+  }
+  body.support-and-resources .section--shire-resources .split-box .btn:hover {
+    background-color: #52758B;
+    color: #FFBE2C;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
@@ -7312,6 +7571,7 @@ body.support-and-resources .section--information .link-box .yellow a {
     text-align: left;
     font-size: 21px;
     padding-bottom: 26px;
+    margin-left: 3px;
   }
   body.support-and-resources .section--shire-resources .split-box .btn {
     font-size: 14px;
@@ -7427,6 +7687,7 @@ body.sign-up .section--page form button {
   font-style: normal;
   font-size: 16px;
   color: #21282F;
+  margin-top: 15px;
   line-height: 17px;
 }
 @media only screen and (min-width: 1025px) {
@@ -7434,6 +7695,13 @@ body.sign-up .section--page form button {
     width: 268px;
     margin-left: 28%;
   }
+}
+body.sign-up .section--page form .info {
+  margin-top: 20px;
+}
+body.sign-up .section--page form .info p.help-block {
+  right: 406px;
+  margin-top: -25px;
 }
 body.sign-up .section--page form label {
   pointer-events: none;
@@ -7517,6 +7785,10 @@ body.sign-up .section--page form .checkbox-cont {
     padding-bottom: 3px;
     margin-top: 25px;
   }
+  body.sign-up .info p.help-block {
+    left: 0px;
+    font-size: 12px;
+  }
   body.sign-up p.info {
     font-size: 16px;
     color: #858B91;
@@ -7534,11 +7806,15 @@ body.sign-up .section--page form .checkbox-cont {
     line-height: 19px;
     width: 100%;
     margin-bottom: 51px;
+    margin-top: 35px;
   }
   body.sign-up .help-block {
     font-size: 12px;
     margin-top: -22px !important;
     right: 10px !important;
+  }
+  body.sign-up .errormessage {
+    font-size: 12px;
   }
 }
 
@@ -7747,7 +8023,7 @@ body.unsubscribe .section--unsubscribe .wrap--content .accordion-title .arrow {
 }
 body.unsubscribe .section--unsubscribe .wrap--content .accordion.open .accordion__wrap {
   padding-bottom: 30px;
-  max-height: 700px;
+  max-height: 800px;
 }
 body.unsubscribe .section--unsubscribe .wrap--content .accordion.open .accordion-title {
   padding-bottom: 0px;
@@ -7794,7 +8070,41 @@ body.unsubscribe h2 {
   color: #E8E9E9;
   line-height: 29px;
   text-align: left;
-  padding-bottom: 18px;
+}
+body.unsubscribe ul.contactinfo {
+  font-style: normal;
+  color: #858B91;
+}
+@media only screen and (min-width: 1025px) {
+  body.unsubscribe ul.contactinfo {
+    margin-top: 30px;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  body.unsubscribe ul.contactinfo {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body.unsubscribe ul.contactinfo {
+    margin-top: 20px;
+  }
+}
+body.unsubscribe ul.contactinfo li {
+  list-style-type: none;
+  margin-top: 5px !important;
+}
+body.unsubscribe ul.contactinfo li:first-child {
+  margin-bottom: 15px !important;
+}
+body.unsubscribe ul.contactinfo li:last-child {
+  margin-top: 20px !important;
+}
+body.unsubscribe ul.contactinfo a {
+  color: white;
+}
+body.unsubscribe ul.contactinfo a:hover {
+  color: #FFBE2C;
 }
 body.unsubscribe .accordion {
   background: #333E48;
@@ -7957,6 +8267,7 @@ body.unsubscribe .accordion {
     color: #E8E9E9;
     line-height: 23px !important;
     text-align: left;
+    margin-bottom: 30px;
   }
   body.unsubscribe .section--unsubscribe .accordion {
     margin-bottom: 10px;
@@ -8060,6 +8371,7 @@ body.unsubscribe .accordion {
     color: #E8E9E9;
     line-height: 23px !important;
     text-align: left;
+    margin-bottom: 30px;
   }
   body.unsubscribe .section--unsubscribe .accordion {
     margin-bottom: 10px;
@@ -8075,9 +8387,9 @@ body.unsubscribe .accordion {
   body.unsubscribe .section--unsubscribe .accordion.open .accordion__wrap {
     display: inline-block;
     padding-bottom: 30px;
+    max-height: 1200px !important;
   }
   body.unsubscribe .section--unsubscribe .accordion.open .accordion-title {
-    max-height: 700px;
     padding-bottom: 0px;
   }
   body.unsubscribe .section--unsubscribe .accordion .accordion__wrap {

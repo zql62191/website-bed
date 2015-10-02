@@ -6,14 +6,14 @@
     <title>Thank You!</title>
     <meta name="description" content="Find info on binge eating disorder in adults, including diagnostic criteria, distinction from other eating disorders, prevalence, and possible causes.">
     <meta name="format-detection" content="telephone=no">
-    <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=0, minimal-ui">
+    <meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width,initial-scale=1, user-scalable=0, minimal-ui">
     <meta name="google-site-verification" content="J54-RSNLJc8L0u3mx8m2Ie3Fb5zXiF5w1x4JQRIPBg8">
-    <link rel="stylesheet" href="./css/styles.css?1442511600000"/>
+    <link rel="stylesheet" href="./css/styles.css?1443795300000"/>
     <script src="//fast.fonts.net/jsapi/632e2bdc-4739-4b24-904b-c0e880eac200.js"></script>
     <script src="js/inline/cloak.js?__inline=true"></script>
     <script src="js/inline/iev.js?__inline=true"></script>
-    <script src="./js/head.js?1442511600000"></script>
-    <script src="./js/redirect.js?1442511600000"></script>
+    <script src="./js/head.js?1443795300000"></script>
+    <script src="./js/redirect.js?1443795300000"></script>
 <script>
     pageLoading();
 </script>
@@ -27,10 +27,7 @@
           <div class="wrap--content"><a href="/hcp/index.aspx" class="title">
               Binge eating disorder in adults
               </a>
-            <div class="hcp">
-              This site is intended for US health care professionals only.
-              
-            </div><a href="/hcp/sign-up.aspx" class="signup hide--md hide--sm">Get the full <em>DSM-5</em><sup>&reg;</sup> B.E.D. criteria</a>
+            <div class="hcp">Not a US health care professional? Please visit <a href="http://www.bingeeatingdisorder.com/" target="_blank" class="authorized-link">patient site.</a></div><a href="/hcp/sign-up.aspx" class="signup hide--md hide--sm">Get the full <em>DSM-5</em><sup>&reg;</sup> B.E.D. criteria</a>
             <div class="menu-tile hide--lg"></div>
             <div mobile-nav="" class="menu-btn hide--lg">
               <div class="line"></div>
@@ -93,7 +90,7 @@
               </li>
               <li><a href="/hcp/privacy-policy.aspx">Privacy Policy</a>
               </li>
-              <li><a href="http://www.shire.com/" target="_blank">
+              <li><a href="http://www.shire.com/" target="_blank" class="authorized-link">
                   Shire US
                   </a></li>
             </ul>
@@ -103,7 +100,7 @@
           <p><em>DSM-IV</em><sup>&reg;</sup>, <em>DSM-IV-Text Revision</em><sup>&reg;</sup>, and <em><em>DSM-5</em><sup>&reg;</sup></em> are registered trademarks of the American Psychiatric Association.
             
           </p>
-          <p class="bottom-bump"><a href="http://www.shire.com/" target="_blank">
+          <p class="bottom-bump"><a href="http://www.shire.com/" target="_blank" class="authorized-link">
               <picture><!--[if IE 9]><video style="display: none;"><![endif]-->
                 <source media="only screen and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 2)" srcset="img/smr/shire-logo.png 2x"/>
                 <source media="only screen and (max-width: 640px)" srcset="img/sm/shire-logo.png 1x"/>
@@ -112,7 +109,7 @@
                 <source media="only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2)" srcset="img/lgr/shire-logo.png 2x"/>
                 <source media="only screen and (min-width: 1025px)" srcset="img/lg/shire-logo.png 1x"/><!--[if IE 9]></video><![endif]--><img srcset="img/lg/shire-logo.png" alt="Shire"/>
               </picture></a></p>
-          <p class="legal"><span class="line">&copy;2015 <a href="http://www.shire.com/" target="_blank">Shire US Inc.</a>, [Lexington, MA 02421]&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">1-800-828-2088&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">S05144&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09/15</span></p>
+          <p class="legal"><span class="line">&copy;2015 <a href="http://www.shire.com/" target="_blank" class="authorized-link">Shire US Inc.</a>, [Wayne, PA 19087]&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">1-800-828-2088&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="line">S05144&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09/15</span></p>
           <p>
             Unless otherwise noted, all content of this website, including text, images, graphics, sound files, and their arrangement, belongs to Shire and is protected by international copyright laws. All other intellectual property rights are reserved.  The content may not be copied for commercial use or distribution, nor may these objects be downloaded, modified, or posted to other sites.
             
@@ -122,9 +119,9 @@
       </footer>
       <div class="injector--modal"></div>
     </main>
-    <script src="./js/vendor.js?1442511600000"></script>
-    <script src="./js/templates.js?1442511600000"></script>
-    <script src="./js/app.js?1442511600000"></script>
+    <script src="./js/vendor.js?1443795300000"></script>
+    <script src="./js/templates.js?1443795300000"></script>
+    <script src="./js/app.js?1443795300000"></script>
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");

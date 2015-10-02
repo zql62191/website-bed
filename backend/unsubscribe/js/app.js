@@ -2256,15 +2256,15 @@ Array.prototype.forEach = function forEach(callback) {
             });
 
             // Close if we hit the mobile breakpoint
-            var queryListener = $rootScope.$watch('mq.sm', function(newValue, oldValue) {
-                if (newValue === true) {
-                    close();
-                }
-            });
+            //var queryListener = $rootScope.$watch('mq.sm', function(newValue, oldValue) {
+            //    if (newValue === true) {
+            //        close();
+            //    }
+            //});
 
             $scope.$on('$destroy', function(e) {
                 closeListener();
-                queryListener();
+                //queryListener();
                 $($document).off('.modal');
             });
         }
@@ -2550,7 +2550,7 @@ Array.prototype.forEach = function forEach(callback) {
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03014.mp4",
                         host: activehost,
                         newFrom: null,//Date(2015, 7, 15),
-                        viewed: false
+                        viewed: true
                     },
                     {
                         id: "bed-diff-overeating",
@@ -2560,7 +2560,7 @@ Array.prototype.forEach = function forEach(callback) {
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03013.mp4",
                         host: activehost,
                         newFrom: null,//Date(2015, 7, 15),
-                        viewed: false
+                        viewed: true
                     },
                     {
                         id: "functional-conseqs",
@@ -2580,7 +2580,7 @@ Array.prototype.forEach = function forEach(callback) {
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03016.mp4",
                         host: activehost,
                         newFrom: null,//Date(2015, 7, 15),
-                        viewed: false
+                        viewed: true
                     }
                 ]
             },{
@@ -2606,7 +2606,7 @@ Array.prototype.forEach = function forEach(callback) {
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03017.mp4",
                         host: activehost,
                         newFrom: null,//Date(2015, 7, 15),
-                        viewed: false
+                        viewed: true
                     },
                     {
                         id: "psych-conditions-assoc",
@@ -2616,7 +2616,7 @@ Array.prototype.forEach = function forEach(callback) {
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S02972.mp4",
                         host: activehost,
                         newFrom: null,
-                        viewed: false
+                        viewed: true
                     },
                     {
                         id: "thought-to-cause",
@@ -2901,6 +2901,15 @@ Array.prototype.forEach = function forEach(callback) {
                         // }
                     });
                 }
+                
+                //Zach used the stupid way to make the video viewed tag (not 100% success). dont forget the support.scss file, I have change .viewed opacity=0
+
+                $('video').on('ended',function(){
+                    console.log('Video has ended!');
+                    $('.viewed').css({"opacity": "1"});
+                    
+                });
+                
             });
             
             // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -4672,7 +4681,7 @@ Array.prototype.forEach = function forEach(callback) {
         function($rootScope, $location, parseUri, ModalService) {
 
             var whitelist = [  
-                /*'shire.com',  */            
+                'shire.com',              
                 parseUri($location.absUrl()).host,
                 $location.$$host
             ];
@@ -4688,6 +4697,11 @@ Array.prototype.forEach = function forEach(callback) {
                     if (attrs.target !== '_blank' || element.hasClass('authorized-link')) {
                         return;
                     }
+                    
+                    //no modals in tablet or mobile
+                    //if(scope.mq && (scope.mq.md == true || scope.mq.sm == true) ){
+                    //    return;
+                    //}
 
                     var checkWhiteList = function() {
 
