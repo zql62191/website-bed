@@ -2,29 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbcce2c8-3578-4f84-9d91-65040b55ee89" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/img/lg/recognizing-bed/chart.png" afterPath="$PROJECT_DIR$/backend/hcp/img/lg/recognizing-bed/chart.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/img/lgr/recognizing-bed/chart.png" afterPath="$PROJECT_DIR$/backend/hcp/img/lgr/recognizing-bed/chart.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/img/md/recognizing-bed/chart.png" afterPath="$PROJECT_DIR$/backend/hcp/img/md/recognizing-bed/chart.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/img/mdr/recognizing-bed/chart.png" afterPath="$PROJECT_DIR$/backend/hcp/img/mdr/recognizing-bed/chart.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/img/sm/recognizing-bed/chart.png" afterPath="$PROJECT_DIR$/backend/hcp/img/sm/recognizing-bed/chart.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/img/smr/recognizing-bed/chart.png" afterPath="$PROJECT_DIR$/backend/hcp/img/smr/recognizing-bed/chart.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/img/md/profiles/diego.png" afterPath="$PROJECT_DIR$/backend/hcp/img/md/profiles/diego.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/img/sm/profiles/diego.png" afterPath="$PROJECT_DIR$/backend/hcp/img/sm/profiles/diego.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/img/md/profiles/julie.png" afterPath="$PROJECT_DIR$/backend/hcp/img/md/profiles/julie.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/img/sm/profiles/julie.png" afterPath="$PROJECT_DIR$/backend/hcp/img/sm/profiles/julie.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/img/md/profiles/kimberly.png" afterPath="$PROJECT_DIR$/backend/hcp/img/md/profiles/kimberly.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/img/sm/profiles/kimberly.png" afterPath="$PROJECT_DIR$/backend/hcp/img/sm/profiles/kimberly.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/img/md/profiles/nikki.png" afterPath="$PROJECT_DIR$/backend/hcp/img/md/profiles/nikki.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/img/sm/profiles/nikki.png" afterPath="$PROJECT_DIR$/backend/hcp/img/sm/profiles/nikki.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/img/sm/profiles/oval_mobile_empty.png" afterPath="$PROJECT_DIR$/backend/hcp/img/sm/profiles/oval_mobile_empty.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/img/sm/profiles/oval_mobile_full.png" afterPath="$PROJECT_DIR$/backend/hcp/img/sm/profiles/oval_mobile_full.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/unsubscribe/img/md/profiles/carousel_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/unsubscribe/img/sm/profiles/carousel_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/unsubscribe/img/md/recognizing-bed/oval_4_of_5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/unsubscribe/img/md/recognizing-bed/oval_nearly_half.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/unsubscribe/img/md/profiles/slider-dot-empty.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/unsubscribe/img/md/profiles/slider-dot-full.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/unsubscribe/img/lg/recognizing-bed/chart.png" afterPath="$PROJECT_DIR$/backend/unsubscribe/img/lg/recognizing-bed/chart.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/unsubscribe/img/lgr/recognizing-bed/chart.png" afterPath="$PROJECT_DIR$/backend/unsubscribe/img/lgr/recognizing-bed/chart.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/unsubscribe/img/md/recognizing-bed/chart.png" afterPath="$PROJECT_DIR$/backend/unsubscribe/img/md/recognizing-bed/chart.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/unsubscribe/img/mdr/recognizing-bed/chart.png" afterPath="$PROJECT_DIR$/backend/unsubscribe/img/mdr/recognizing-bed/chart.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/unsubscribe/img/sm/recognizing-bed/chart.png" afterPath="$PROJECT_DIR$/backend/unsubscribe/img/sm/recognizing-bed/chart.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/unsubscribe/img/smr/recognizing-bed/chart.png" afterPath="$PROJECT_DIR$/backend/unsubscribe/img/smr/recognizing-bed/chart.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/unsubscribe/img/md/profiles/diego.png" afterPath="$PROJECT_DIR$/backend/unsubscribe/img/md/profiles/diego.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/unsubscribe/img/sm/profiles/diego.png" afterPath="$PROJECT_DIR$/backend/unsubscribe/img/sm/profiles/diego.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/unsubscribe/img/md/profiles/julie.png" afterPath="$PROJECT_DIR$/backend/unsubscribe/img/md/profiles/julie.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/unsubscribe/img/sm/profiles/julie.png" afterPath="$PROJECT_DIR$/backend/unsubscribe/img/sm/profiles/julie.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/unsubscribe/img/md/profiles/kimberly.png" afterPath="$PROJECT_DIR$/backend/unsubscribe/img/md/profiles/kimberly.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/unsubscribe/img/sm/profiles/kimberly.png" afterPath="$PROJECT_DIR$/backend/unsubscribe/img/sm/profiles/kimberly.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/unsubscribe/img/md/profiles/nikki.png" afterPath="$PROJECT_DIR$/backend/unsubscribe/img/md/profiles/nikki.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/unsubscribe/img/sm/profiles/nikki.png" afterPath="$PROJECT_DIR$/backend/unsubscribe/img/sm/profiles/nikki.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/unsubscribe/img/sm/profiles/oval_mobile_empty.png" afterPath="$PROJECT_DIR$/backend/unsubscribe/img/sm/profiles/oval_mobile_empty.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/unsubscribe/img/sm/profiles/oval_mobile_full.png" afterPath="$PROJECT_DIR$/backend/unsubscribe/img/sm/profiles/oval_mobile_full.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/_404.aspx" afterPath="$PROJECT_DIR$/backend/hcp/_404.aspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/styles/pages/_support-and-resources.scss" afterPath="$PROJECT_DIR$/frontend/src/styles/pages/_support-and-resources.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/unsubscribe/js/app.js.map" afterPath="$PROJECT_DIR$/backend/unsubscribe/js/app.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/js/app.js" afterPath="$PROJECT_DIR$/backend/hcp/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/unsubscribe/js/app.js" afterPath="$PROJECT_DIR$/backend/unsubscribe/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/contact-us.aspx" afterPath="$PROJECT_DIR$/backend/hcp/contact-us.aspx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/dsm5-criteria.aspx" afterPath="$PROJECT_DIR$/backend/hcp/dsm5-criteria.aspx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/js/head.js" afterPath="$PROJECT_DIR$/backend/hcp/js/head.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/index.aspx" afterPath="$PROJECT_DIR$/backend/hcp/index.aspx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/unsubscribe/index.aspx" afterPath="$PROJECT_DIR$/backend/unsubscribe/index.aspx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/patient-demographics.aspx" afterPath="$PROJECT_DIR$/backend/hcp/patient-demographics.aspx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/patient-profiles.aspx" afterPath="$PROJECT_DIR$/backend/hcp/patient-profiles.aspx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/potential-causes.aspx" afterPath="$PROJECT_DIR$/backend/hcp/potential-causes.aspx" />
@@ -32,12 +40,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/privacy-policy.aspx" afterPath="$PROJECT_DIR$/backend/hcp/privacy-policy.aspx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/profiles.aspx" afterPath="$PROJECT_DIR$/backend/hcp/profiles.aspx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/recognizing-BED.aspx" afterPath="$PROJECT_DIR$/backend/hcp/recognizing-BED.aspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/scripts/app/controllers/resourcesController.js" afterPath="$PROJECT_DIR$/frontend/src/scripts/app/controllers/resourcesController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/sign-up.aspx" afterPath="$PROJECT_DIR$/backend/hcp/sign-up.aspx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/unsubscribe/css/styles.css.map" afterPath="$PROJECT_DIR$/backend/unsubscribe/css/styles.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/css/styles.css" afterPath="$PROJECT_DIR$/backend/hcp/css/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/unsubscribe/css/styles.css" afterPath="$PROJECT_DIR$/backend/unsubscribe/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/support-and-resources.aspx" afterPath="$PROJECT_DIR$/backend/hcp/support-and-resources.aspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/markup/pages/support-and-resources.jade" afterPath="$PROJECT_DIR$/frontend/src/markup/pages/support-and-resources.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/thank-you-request.aspx" afterPath="$PROJECT_DIR$/backend/hcp/thank-you-request.aspx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/unsubscribe/thank-you-request.aspx" afterPath="$PROJECT_DIR$/backend/unsubscribe/thank-you-request.aspx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/thank-you.aspx" afterPath="$PROJECT_DIR$/backend/hcp/thank-you.aspx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/unsubscribe.aspx" afterPath="$PROJECT_DIR$/backend/hcp/unsubscribe.aspx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/hcp/js/vendor.js" afterPath="$PROJECT_DIR$/backend/hcp/js/vendor.js" />
@@ -62,82 +71,126 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="support-and-resources.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/support-and-resources.jade">
+      <file leaf-file-name="potential-causes.aspx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/hcp/potential-causes.aspx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.222222">
-              <caret line="58" column="59" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resourcesController.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/src/scripts/app/controllers/resourcesController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.67052025">
-              <caret line="350" column="23" selection-start-line="350" selection-start-column="23" selection-end-line="350" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_support-and-resources.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/styles/pages/_support-and-resources.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.352941">
-              <caret line="200" column="33" selection-start-line="200" selection-start-column="33" selection-end-line="200" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/index.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state vertical-scroll-proportion="-24.791666">
+              <caret line="184" column="0" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
               <folding>
-                <marker date="1440685269000" expanded="true" signature="312:2873" placeholder="..." />
-                <marker date="1440685269000" expanded="true" signature="333:2566" placeholder="..." />
-                <marker date="1440685269000" expanded="true" signature="511:717" placeholder="..." />
-                <marker date="1440685269000" expanded="true" signature="669:717" placeholder="..." />
-                <marker date="1440685269000" expanded="true" signature="762:842" placeholder="..." />
-                <marker date="1440685269000" expanded="true" signature="915:1040" placeholder="..." />
-                <marker date="1440685269000" expanded="true" signature="1063:1140" placeholder="..." />
-                <marker date="1440685269000" expanded="true" signature="1162:1663" placeholder="..." />
-                <marker date="1440685269000" expanded="true" signature="1685:1770" placeholder="..." />
-                <marker date="1440685269000" expanded="true" signature="1847:2129" placeholder="..." />
-                <marker date="1440685269000" expanded="true" signature="1912:2091" placeholder="..." />
-                <marker date="1440685269000" expanded="true" signature="1996:2051" placeholder="..." />
-                <marker date="1440685269000" expanded="true" signature="2151:2346" placeholder="..." />
-                <marker date="1440685269000" expanded="true" signature="2247:2308" placeholder="..." />
-                <marker date="1440685269000" expanded="true" signature="2368:2566" placeholder="..." />
-                <marker date="1440685269000" expanded="true" signature="2460:2527" placeholder="..." />
-                <marker date="1440685269000" expanded="true" signature="2578:2873" placeholder="..." />
-                <marker date="1440685269000" expanded="true" signature="2628:2873" placeholder="..." />
-                <marker date="1440685269000" expanded="true" signature="2659:2873" placeholder="..." />
+                <marker date="1443804341000" expanded="true" signature="10954:10968" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="a.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/scripts/app/directives/a.js">
+      <file leaf-file-name="potential-effects.aspx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/hcp/potential-effects.aspx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="58" column="33" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
-              <folding />
+            <state vertical-scroll-proportion="-24.791666">
+              <caret line="198" column="0" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
+              <folding>
+                <marker date="1443804341000" expanded="true" signature="9300:9314" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="directives.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/scripts/app/directives/directives.js">
+      <file leaf-file-name="privacy-policy.aspx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/hcp/privacy-policy.aspx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="114" column="41" selection-start-line="114" selection-start-column="41" selection-end-line="114" selection-end-column="41" />
-              <folding />
+            <state vertical-scroll-proportion="-24.791666">
+              <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+              <folding>
+                <marker date="1443804341000" expanded="true" signature="16895:16909" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profiles.aspx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/hcp/profiles.aspx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-24.791666">
+              <caret line="291" column="0" selection-start-line="291" selection-start-column="0" selection-end-line="291" selection-end-column="0" />
+              <folding>
+                <marker date="1443804341000" expanded="true" signature="4041:4055" placeholder="..." />
+                <marker date="1443804341000" expanded="true" signature="6422:6436" placeholder="..." />
+                <marker date="1443804341000" expanded="true" signature="8805:8819" placeholder="..." />
+                <marker date="1443804341000" expanded="true" signature="11244:11258" placeholder="..." />
+                <marker date="1443804341000" expanded="true" signature="16678:16692" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="recognizing-BED.aspx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/hcp/recognizing-BED.aspx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-24.791666">
+              <caret line="252" column="0" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
+              <folding>
+                <marker date="1443804341000" expanded="true" signature="13571:13585" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sign-up.aspx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/hcp/sign-up.aspx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-24.791666">
+              <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+              <folding>
+                <marker date="1443804341000" expanded="true" signature="9093:9107" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="support-and-resources.aspx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/hcp/support-and-resources.aspx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-24.791666">
+              <caret line="205" column="0" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
+              <folding>
+                <marker date="1443804341000" expanded="true" signature="11581:11595" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thank-you.aspx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/hcp/thank-you.aspx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-24.791666">
+              <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+              <folding>
+                <marker date="1443804341000" expanded="true" signature="5239:5253" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thank-you-request.aspx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/hcp/thank-you-request.aspx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-24.791666">
+              <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+              <folding>
+                <marker date="1443804341000" expanded="true" signature="5420:5434" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="unsubscribe.aspx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/hcp/unsubscribe.aspx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.46368715">
+              <caret line="345" column="13" selection-start-line="345" selection-start-column="13" selection-end-line="345" selection-end-column="13" />
+              <folding>
+                <marker date="1443804341000" expanded="true" signature="27626:27640" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -157,22 +210,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/src/scripts/app/controllers/unsubscribeCtrl.js" />
-        <option value="$PROJECT_DIR$/frontend/src/scripts/redirect.js" />
-        <option value="$PROJECT_DIR$/frontend/tasks/options/copy.js" />
-        <option value="$PROJECT_DIR$/frontend/src/markup/pages/thank-you-request.jade" />
-        <option value="$PROJECT_DIR$/frontend/src/styles/pages/_thank-you-request.scss" />
-        <option value="$PROJECT_DIR$/frontend/src/scripts/app/controllers/signupController.js" />
-        <option value="$PROJECT_DIR$/frontend/src/scripts/app/controllers/audioController.js" />
-        <option value="$PROJECT_DIR$/frontend/src/styles/vendor/_mediaelementplayer.scss" />
-        <option value="$PROJECT_DIR$/frontend/src/styles/base/_typography.scss" />
-        <option value="$PROJECT_DIR$/frontend/src/markup/pages/index.jade" />
-        <option value="$PROJECT_DIR$/frontend/src/markup/mixins/all.jade" />
-        <option value="$PROJECT_DIR$/frontend/src/scripts/app/controllers/profilesController.js" />
-        <option value="$PROJECT_DIR$/frontend/src/scripts/app/directives/directives.js" />
-        <option value="$PROJECT_DIR$/frontend/src/styles/pages/_contact-us.scss" />
-        <option value="$PROJECT_DIR$/frontend/src/markup/pages/contact-us.jade" />
-        <option value="$PROJECT_DIR$/frontend/src/styles/layout/_footer--global.scss" />
         <option value="$PROJECT_DIR$/frontend/src/styles/pages/_privacy-policy.scss" />
         <option value="$PROJECT_DIR$/frontend/src/markup/pages/potential-effects.jade" />
         <option value="$PROJECT_DIR$/frontend/src/styles/base/_project.scss" />
@@ -208,6 +245,22 @@
         <option value="$PROJECT_DIR$/frontend/src/styles/pages/_support-and-resources.scss" />
         <option value="$PROJECT_DIR$/frontend/src/markup/pages/support-and-resources.jade" />
         <option value="$PROJECT_DIR$/frontend/src/scripts/app/controllers/resourcesController.js" />
+        <option value="$PROJECT_DIR$/backend/hcp/_404.aspx" />
+        <option value="$PROJECT_DIR$/backend/hcp/contact-us.aspx" />
+        <option value="$PROJECT_DIR$/backend/hcp/dsm5-criteria.aspx" />
+        <option value="$PROJECT_DIR$/backend/hcp/index.aspx" />
+        <option value="$PROJECT_DIR$/backend/hcp/patient-demographics.aspx" />
+        <option value="$PROJECT_DIR$/backend/hcp/patient-profiles.aspx" />
+        <option value="$PROJECT_DIR$/backend/hcp/potential-causes.aspx" />
+        <option value="$PROJECT_DIR$/backend/hcp/potential-effects.aspx" />
+        <option value="$PROJECT_DIR$/backend/hcp/privacy-policy.aspx" />
+        <option value="$PROJECT_DIR$/backend/hcp/profiles.aspx" />
+        <option value="$PROJECT_DIR$/backend/hcp/recognizing-BED.aspx" />
+        <option value="$PROJECT_DIR$/backend/hcp/sign-up.aspx" />
+        <option value="$PROJECT_DIR$/backend/hcp/support-and-resources.aspx" />
+        <option value="$PROJECT_DIR$/backend/hcp/thank-you.aspx" />
+        <option value="$PROJECT_DIR$/backend/hcp/thank-you-request.aspx" />
+        <option value="$PROJECT_DIR$/backend/hcp/unsubscribe.aspx" />
       </list>
     </option>
   </component>
@@ -553,6 +606,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vyvanse-bed-hcp-website-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vyvanse-bed-hcp-website-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vyvanse-bed-hcp-website-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vyvanse-bed-hcp-website-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hcp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope">
@@ -657,111 +742,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/src/scripts/app/controllers/unsubscribeCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="184" column="52" selection-start-line="184" selection-start-column="52" selection-end-line="184" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/styles/pages/_privacy-policy.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43663594">
-          <caret line="67" column="9" selection-start-line="64" selection-start-column="8" selection-end-line="67" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/privacy-policy.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="51" column="128" selection-start-line="51" selection-start-column="128" selection-end-line="51" selection-end-column="128" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/markup/pages/patient-demographics.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="132" column="28" selection-start-line="132" selection-start-column="28" selection-end-line="132" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/styles/components/_lists.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.5897436">
-          <caret line="58" column="25" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/styles/base/_reset.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.29411766">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/styles/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.108294934">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/styles/_shame.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/styles/vendor/__vendor.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10368664">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/styles/helpers/__helpers.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/styles/helpers/_functions.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/styles/base/_project.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5769231">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/styles/components/__components.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/styles/components/_sprites.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/styles/components/_buttons.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4615383">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/styles/components/_callouts.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34615386">
@@ -909,13 +889,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/hcp/index.aspx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/markup/layouts/base.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -988,25 +961,25 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
-            <marker date="1440685269000" expanded="true" signature="312:2873" placeholder="..." />
-            <marker date="1440685269000" expanded="true" signature="333:2566" placeholder="..." />
-            <marker date="1440685269000" expanded="true" signature="511:717" placeholder="..." />
-            <marker date="1440685269000" expanded="true" signature="669:717" placeholder="..." />
-            <marker date="1440685269000" expanded="true" signature="762:842" placeholder="..." />
-            <marker date="1440685269000" expanded="true" signature="915:1040" placeholder="..." />
-            <marker date="1440685269000" expanded="true" signature="1063:1140" placeholder="..." />
-            <marker date="1440685269000" expanded="true" signature="1162:1663" placeholder="..." />
-            <marker date="1440685269000" expanded="true" signature="1685:1770" placeholder="..." />
-            <marker date="1440685269000" expanded="true" signature="1847:2129" placeholder="..." />
-            <marker date="1440685269000" expanded="true" signature="1912:2091" placeholder="..." />
-            <marker date="1440685269000" expanded="true" signature="1996:2051" placeholder="..." />
-            <marker date="1440685269000" expanded="true" signature="2151:2346" placeholder="..." />
-            <marker date="1440685269000" expanded="true" signature="2247:2308" placeholder="..." />
-            <marker date="1440685269000" expanded="true" signature="2368:2566" placeholder="..." />
-            <marker date="1440685269000" expanded="true" signature="2460:2527" placeholder="..." />
-            <marker date="1440685269000" expanded="true" signature="2578:2873" placeholder="..." />
-            <marker date="1440685269000" expanded="true" signature="2628:2873" placeholder="..." />
-            <marker date="1440685269000" expanded="true" signature="2659:2873" placeholder="..." />
+            <marker date="1440685269000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440685269000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440685269000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440685269000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440685269000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440685269000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440685269000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440685269000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440685269000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440685269000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440685269000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440685269000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440685269000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440685269000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440685269000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440685269000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440685269000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440685269000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440685269000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1037,9 +1010,173 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/scripts/app/controllers/resourcesController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67052025">
-          <caret line="350" column="23" selection-start-line="350" selection-start-column="23" selection-end-line="350" selection-end-column="23" />
+        <state vertical-scroll-proportion="-1.8518518">
+          <caret line="318" column="33" selection-start-line="318" selection-start-column="33" selection-end-line="318" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/hcp/_404.aspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.166666">
+          <caret line="121" column="53" selection-start-line="121" selection-start-column="53" selection-end-line="121" selection-end-column="53" />
+          <folding>
+            <marker date="1443804341000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/hcp/contact-us.aspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.416666">
+          <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+          <folding>
+            <marker date="1443804341000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/hcp/dsm5-criteria.aspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.166666">
+          <caret line="149" column="53" selection-start-line="149" selection-start-column="53" selection-end-line="149" selection-end-column="53" />
+          <folding>
+            <marker date="1443804341000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/hcp/index.aspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.791666">
+          <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+          <folding>
+            <marker date="1443804341000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/hcp/patient-demographics.aspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.791666">
+          <caret line="197" column="0" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
+          <folding>
+            <marker date="1443804341000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/hcp/patient-profiles.aspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.791666">
+          <caret line="129" column="0" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+          <folding>
+            <marker date="1443804341000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/hcp/potential-causes.aspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.791666">
+          <caret line="184" column="0" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+          <folding>
+            <marker date="1443804341000" expanded="true" signature="10954:10968" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/hcp/potential-effects.aspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.791666">
+          <caret line="198" column="0" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
+          <folding>
+            <marker date="1443804341000" expanded="true" signature="9300:9314" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/hcp/privacy-policy.aspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.791666">
+          <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+          <folding>
+            <marker date="1443804341000" expanded="true" signature="16895:16909" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/hcp/profiles.aspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.791666">
+          <caret line="291" column="0" selection-start-line="291" selection-start-column="0" selection-end-line="291" selection-end-column="0" />
+          <folding>
+            <marker date="1443804341000" expanded="true" signature="4041:4055" placeholder="..." />
+            <marker date="1443804341000" expanded="true" signature="6422:6436" placeholder="..." />
+            <marker date="1443804341000" expanded="true" signature="8805:8819" placeholder="..." />
+            <marker date="1443804341000" expanded="true" signature="11244:11258" placeholder="..." />
+            <marker date="1443804341000" expanded="true" signature="16678:16692" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/hcp/recognizing-BED.aspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.791666">
+          <caret line="252" column="0" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
+          <folding>
+            <marker date="1443804341000" expanded="true" signature="13571:13585" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/hcp/sign-up.aspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.791666">
+          <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+          <folding>
+            <marker date="1443804341000" expanded="true" signature="9093:9107" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/hcp/support-and-resources.aspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.791666">
+          <caret line="205" column="0" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
+          <folding>
+            <marker date="1443804341000" expanded="true" signature="11581:11595" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/hcp/thank-you.aspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.791666">
+          <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+          <folding>
+            <marker date="1443804341000" expanded="true" signature="5239:5253" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/hcp/thank-you-request.aspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.791666">
+          <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+          <folding>
+            <marker date="1443804341000" expanded="true" signature="5420:5434" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/hcp/unsubscribe.aspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46368715">
+          <caret line="345" column="13" selection-start-line="345" selection-start-column="13" selection-end-line="345" selection-end-column="13" />
+          <folding>
+            <marker date="1443804341000" expanded="true" signature="27626:27640" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
