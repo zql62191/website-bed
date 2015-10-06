@@ -15,6 +15,8 @@ body.patient-demographics {
 
     .section--us {
         background: #252F39;
+        
+        
 
         .heading--1 {
             padding-bottom: 25px;
@@ -48,6 +50,7 @@ body.patient-demographics {
             @include mq('md') {
                 margin-left: 10%;
                 width: percentage(766/960);
+                padding-bottom: 28px;
             }
             @include mq('sm') {
                 margin-right: auto;
@@ -66,6 +69,7 @@ body.patient-demographics {
             @include mq('md') {
                 margin-left: 10%;
                 width: percentage(766/960);
+                margin-top: 20px;
             }
             @include mq('sm') {
                 margin-right: auto;
@@ -87,19 +91,37 @@ body.patient-demographics {
 
             .map {
                 @include responsive-bg("#{$page}/map.png");
+                
+                @include mq("md") {
+                    margin-left: -30px;
+                    background-size: 580px 415px;
+                    height: 415px;
+                    width: 580px;
+
+                    @media only screen
+                    and (min-device-width: 768px)
+                    and (max-device-width: 1024px)
+                    and (orientation: landscape)
+                    and (-webkit-min-device-pixel-ratio: 1) {
+                        margin-left: auto;
+                    }
+                }
+                
                 margin: 0 auto;
                 text-align: center;
 
                 @include mq("sm") {
                     margin: 0 auto;
                 }
-
+                
+                
+                
                 .title--affect{
                     padding-top: 194px;
                     
                     @include mq("md") {
                         font-size: 36px;
-                        padding-top: 84px;
+                        padding-top: 144px;
                     }
                     @include mq("sm") {
                         padding-top: 40px;

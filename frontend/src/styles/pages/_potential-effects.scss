@@ -126,6 +126,16 @@ body.potential-effects {
 
         .charts {
 
+            @media only screen
+            and (min-device-width: 768px)
+            and (max-device-width: 1024px)
+            and (orientation: landscape)
+            and (-webkit-min-device-pixel-ratio: 1) {
+                width: 70%;
+                margin-left: 15%;
+            }
+            
+
             .flexbox & {  
                 display: flex;
                 align-items: center;
@@ -270,10 +280,10 @@ body.potential-effects {
             position: static;   // so it doesn't affect absolute position of excerpts on desktop
             
             @include mq("lg") {
-                background-image: url("../img/lg/potential-effects/radial-shadow.png");
-                background-position: center bottom;
-                background-repeat: no-repeat;
-            }
+                 background-image: url("../img/lg/potential-effects/radial-shadow.png");
+                 background-position: center bottom;
+                 background-repeat: no-repeat;
+             }
 
             // this wrapper is only needed for mobile layout
             @include mq('sm') {
@@ -310,6 +320,17 @@ body.potential-effects {
                 text-align: center;
                 width: percentage(589/768);
                 margin: 0 auto;
+
+                @media only screen
+                and (min-device-width: 768px)
+                and (max-device-width: 1024px)
+                and (orientation: landscape)
+                and (-webkit-min-device-pixel-ratio: 1) {
+                    width: percentage(339/768);
+                    margin: 0 0 0 0;
+                    display: inline-block;
+
+                }
             }
         }
         .two {
@@ -326,6 +347,30 @@ body.potential-effects {
                 text-align: center;
                 width: percentage(589/768);
                 margin: 0 auto;
+
+                @media only screen
+                and (min-device-width: 768px)
+                and (max-device-width: 1024px)
+                and (orientation: landscape)
+                and (-webkit-min-device-pixel-ratio: 1) {
+                    width: percentage(359/768);
+                    margin: 0 0 0 55px;
+                    display: inline-block;
+
+                }
+                
+                .listen{
+                    p{
+                        @media only screen
+                        and (min-device-width: 768px)
+                        and (max-device-width: 1024px)
+                        and (orientation: landscape)
+                        and (-webkit-min-device-pixel-ratio: 1) {
+                            left: 51.5%;
+
+                        }
+                    }
+                }
             }
         }
 
@@ -345,6 +390,17 @@ body.potential-effects {
         .sunny {
             margin: 0 auto;
             @include responsive-bg("#{$page}/sunny.png");
+            @include mq('md'){
+                background-size: 352px 463px;
+                width: 352px;
+                height: 463px;
+            }
+            @include mq('sm'){
+                background-size: 320px 335px;
+                width: 320px;
+                height: 335px;
+            }
+            
         }
 
         .listen {
@@ -359,7 +415,17 @@ body.potential-effects {
                     margin-right: percentage(16/280);
                     padding-top: 9px;
                     position: absolute;
-                    left: 50%;
+                    left: 46.5%;
+
+                    @media only screen
+                    and (min-device-width: 768px)
+                    and (max-device-width: 1024px)
+                    and (orientation: landscape)
+                    and (-webkit-min-device-pixel-ratio: 1) {
+                        left: 53%;
+                        
+                        width: 38.68852%;
+                    }
                 }
 
                 @include mq('sm') {
@@ -404,7 +470,7 @@ body.potential-effects {
             }
 
             @include mq('md') {
-                margin: 30px auto auto 30%;
+                margin: 30px auto auto 25%;
                 // margin: 0 percentage(15/280) 33px percentage(49/280);
                 // float: left;
                 width: 100px !important;
@@ -471,8 +537,9 @@ body.potential-effects {
                     @include mq("md", "sm") {
                         button{
                             background-image: url("../me/play.png");
-                            width: 78px;
-                            height: 60px;                             
+                            width: 77px;
+                            height: 59px;
+                            background-size: 77px 59px;
                         }
                     }
                 }
@@ -492,8 +559,9 @@ body.potential-effects {
                     @include mq("md", "sm") {
                         button{
                             background-image: url("../me/pause.png"); 
-                            width: 78px;
-                            height: 60px;  
+                            width: 77px;
+                            height: 59px;
+                            background-size: 77px 59px;
                         }
                     }
                     

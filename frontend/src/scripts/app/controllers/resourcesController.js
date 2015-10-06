@@ -5,10 +5,11 @@
 
     .controller('ResourcesController', ['$scope', '$rootScope', '$window', '$document', '$timeout', '_', 'parseUri',
         function($scope, $rootScope, $window, $document, $timeout, _, parseUri){
-
+            
+            var videoStorage;
             //local variables & functions!
             var activehost = "localhost:3000";
-
+            
             $scope.tabbedVideos = [{
                 tabclass : "what-is-bed",
                 tabtitle: "What Is B.E.D.?",
@@ -22,7 +23,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03323.mp4",
                         host: activehost,
                         newFrom: null,
-                        viewed: false
+                        viewed: videoStor
                     },
                     {
                         id: "bed-diff-bulimia",
@@ -32,7 +33,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03014.mp4",
                         host: activehost,
                         newFrom: null,//Date(2015, 7, 15),
-                        viewed: false
+                        viewed: videoStor
                     },
                     {
                         id: "bed-diff-overeating",
@@ -42,7 +43,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03013.mp4",
                         host: activehost,
                         newFrom: null,//Date(2015, 7, 15),
-                        viewed: false
+                        viewed: videoStorage
                     },
                     {
                         id: "functional-conseqs",
@@ -52,7 +53,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03322.mp4",
                         host: activehost,
                         newFrom: null,
-                        viewed: false
+                        viewed: videoStorage
                     },
                     {
                         id: "clinical-course",
@@ -62,7 +63,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03016.mp4",
                         host: activehost,
                         newFrom: null,//Date(2015, 7, 15),
-                        viewed: false
+                        viewed: videoStorage
                     }
                 ]
             },{
@@ -78,7 +79,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S02969.mp4",
                         host: activehost,
                         newFrom: null,
-                        viewed: false
+                        viewed: videoStorage
                     },
                     {
                         id: "rel-obesity-bed",
@@ -88,7 +89,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03017.mp4",
                         host: activehost,
                         newFrom: null,//Date(2015, 7, 15),
-                        viewed: false
+                        viewed: videoStorage
                     },
                     {
                         id: "psych-conditions-assoc",
@@ -98,7 +99,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S02972.mp4",
                         host: activehost,
                         newFrom: null,
-                        viewed: false
+                        viewed: videoStorage
                     },
                     {
                         id: "thought-to-cause",
@@ -108,7 +109,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S02973.mp4",
                         host: activehost,
                         newFrom: null,
-                        viewed: false
+                        viewed: videoStorage
                     },
                     {
                         id: "prevalence-comparison-ethnic",
@@ -118,7 +119,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03011.mp4",
                         host: activehost,
                         newFrom: null,
-                        viewed: false
+                        viewed: videoStorage
                     },
                     {
                         id: "occur-in-both",
@@ -128,7 +129,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03012.mp4",
                         host: activehost,
                         newFrom: null,
-                        viewed: false
+                        viewed: videoStorage
                     },
                     {
                         id: "begin-effective-convo",
@@ -138,7 +139,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03018.mp4",
                         host: activehost,
                         newFrom: null,//Date(2015, 7, 15),
-                        viewed: false
+                        viewed: videoStorage
                     }
                 ]
             }, {
@@ -153,7 +154,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S02868.mp4",
                         host: activehost,
                         newFrom: null,//Date(2015, 7, 15),
-                        viewed: false
+                        viewed: $window.localStorage.getItem("id")
                     },
                     {
                         id: "diag-criteria",
@@ -163,7 +164,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03499.mp4",
                         host: activehost,
                         newFrom: null,
-                        viewed: false
+                        viewed: $window.localStorage.getItem("id")
                     },
                     {
                         id: "possible-causes-of-bed",
@@ -173,7 +174,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03500.mp4",
                         host: activehost,
                         newFrom: null,
-                        viewed: false
+                        viewed: $window.localStorage.getItem("id")
                     },
                     {
                         id: "recog-adult-patients",
@@ -183,7 +184,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03501.mp4",
                         host: activehost,
                         newFrom: null,
-                        viewed: false
+                        viewed: $window.localStorage.getItem("id")
                     },
                     {
                         id: "functional-conseqs2",
@@ -193,7 +194,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03502.mp4",
                         host: activehost,
                         newFrom: null,
-                        viewed: false
+                        viewed: $window.localStorage.getItem("id")
                     },
                     {
                         id: "diag-bed-in-adult-patients",
@@ -203,7 +204,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03503.mp4",
                         host: activehost,
                         newFrom: null,
-                        viewed: false
+                        viewed: $window.localStorage.getItem("id")
                     }
                 ]
             }];
@@ -212,6 +213,8 @@
             $scope.currentTab = "what-is-bed";
             $scope.currentVideo = "essential-features-diag";
             $scope.defaultVideoPath = '//d2ly9zedmmzqz4.cloudfront.net/BED-S03323.mp4'; // default video - never changes
+            
+            
 
             // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
             // MEDIA ELEMENTS INTERNAL STUFFS: 
@@ -290,6 +293,29 @@
                     // Check if more than 90% viewed and if not previously fired
 
                     p90 = true;
+                    //show the current video as viewed
+                    var id = $scope.currentVideo;
+                    for (var i = 0; i < $scope.tabbedVideos.length; i++) {              // iterate through the json objects in array which represent each tab of videos
+
+                        if ($scope.tabbedVideos[i].tabclass === $scope.currentTab) {    // when correct tab is found
+
+                            $scope.currentTabVideos = $scope.tabbedVideos[i].videos;    // save the tab's list of videos
+
+                            for (var j = 0; j < $scope.currentTabVideos.length; j++) {  // iterate through that list of videos
+
+                                if ($scope.currentTabVideos[j]['id'] === id) {          // get filepath from that list
+
+                                    $scope.tabbedVideos[i]["videos"][j]["viewed"] = true;
+                                    window.localStorage.setItem(id, $scope.tabbedVideos[i]["videos"][j]["viewed"]);
+                                    $scope.$apply();
+                                }
+                                
+                            }
+                            
+                            
+                        }
+                        
+                    }
                     // BED.Analytics.videoOnComplete(currentVideoTitle);
 
                 } else if (currentPercentage >= 99 && !p100) {
@@ -298,63 +324,41 @@
                     p100 = true;
                     // BED.Analytics.videoOnPercentage(currentVideoTitle, 100);
                 }
-            };
-
-            // you can change attributes of a video using this
-            $scope.updateVideoOption = function(id, obj) {
-
-                for (var i = 0; i < $scope.tabbedVideos.length; i++) {              // iterate through the json objects in array which represent each tab of videos
-
-                    if ($scope.tabbedVideos[i].tabclass === $scope.currentTab) {    // when correct tab is found
-
-                        $scope.currentTabVideos = $scope.tabbedVideos[i].videos;    // save the tab's list of videos
-
-                        for (var j = 0; j < $scope.currentTabVideos.length; j++) {  // iterate through that list of videos
-
-                            if ($scope.currentTabVideos[j]['id'] === id) {          // get filepath from that list
-
-                                //return $scope.currentTabVideos[j].filepath;
-                                for(var prop in obj){
-                                    $scope.tabbedVideos[i].videos[j][prop] = obj[prop];
-                                }
-                            }
-                        }
-                    }
-                }
-
+                
             };
             
-            // MediaElementJS ended handler
+            // you can change attributes of a video using this
+            //$scope.updateVideoOption = function(id, obj) {
+            //
+            //    for (var i = 0; i < $scope.tabbedVideos.length; i++) {              // iterate through the json objects in array which represent each tab of videos
+            //
+            //        if ($scope.tabbedVideos[i].tabclass === $scope.currentTab) {    // when correct tab is found
+            //
+            //            $scope.currentTabVideos = $scope.tabbedVideos[i].videos;    // save the tab's list of videos
+            //
+            //            for (var j = 0; j < $scope.currentTabVideos.length; j++) {  // iterate through that list of videos
+            //
+            //                if ($scope.currentTabVideos[j]['id'] === id) {          // get filepath from that list
+            //
+            //                    //return $scope.currentTabVideos[j].filepath;
+            //                    for(var prop in obj){
+            //                        $scope.tabbedVideos[i].videos[j][prop] = obj[prop];
+            //                    }
+            //                }
+            //            }
+            //        }
+            //    }
+            //
+            //};
+            
+            // MediaElementJS ended handler, fires when the video is at 100%
             var onEnded = function(e,id,obj) {
-                p0 = p25 = p50 = p75 = p90 = p100 = false;  // Reset percentage milestones
+                
                 console.log('Video has ended!');
-                
-                //for (var i = 0; i < $scope.tabbedVideos.length; i++) {              // iterate through the json objects in array which represent each tab of videos
-                //
-                //    if ($scope.tabbedVideos[i].tabclass === $scope.currentTab) {    // when correct tab is found
-                //
-                //        $scope.currentTabVideos = $scope.tabbedVideos[i].videos;    // save the tab's list of videos
-                //
-                //        for (var j = 0; j < $scope.currentTabVideos.length; j++) {  // iterate through that list of videos
-                //
-                //            if ($scope.currentTabVideos[j]['id'] === id) {          // get filepath from that list
-                //
-                //                //return $scope.currentTabVideos[j].filepath;
-                //                for(var prop in obj){
-                //                    $scope.tabbedVideos[i].videos[j][prop] = obj[prop];
-                //                }
-                //            }
-                //            $scope.tabbedVideos[i]["videos"][j]["viewed"] = true;
-                //
-                //            console.log($scope.tabbedVideos[i]["videos"][j]["viewed"]);
-                //        }
-                //    }
+                //if(p90 == true) {
+                //    //foo bar
                 //}
-                
-                $scope.tabbedVideos[0]["videos"][0]["viewed"] = true;
-                //console.log($scope.tabbedVideos);
-                console.log($scope.tabbedVideos[0]["videos"][0]["viewed"]);
-                // ^^ will not work, you need to use _ or lodash or something to get to the right videos based on teh JSON structure above
+                p0 = p25 = p50 = p75 = p90 = p100 = false;  // Reset percentage milestones
                 //$scope.updateVideoOption($scope.currentVideo.videos, {viewed: true}); //not working right now! should be what we use!
             };
 
