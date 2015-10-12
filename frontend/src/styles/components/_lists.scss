@@ -63,10 +63,10 @@ ul.square {
             top: 0.07em;
         }
         @include mq('md') {
-            font-size: 1.0em;
+            font-size: 0.8em;
         }
         @include mq('sm') {
-            font-size: 0.8em;
+            font-size: 0.6em;
         }
     }
 }

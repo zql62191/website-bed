@@ -154,11 +154,7 @@ body.potential-causes {
                         right: -26px;
                     }
                 }
-                &.neuron-closeup {
-                    .icon {
-                        left: 0;
-                    }
-                }
+                
             }
         }
 
@@ -230,6 +226,11 @@ body.potential-causes {
                     margin-top: -76px;
                 }
             }
+            .neuron-closeup {
+                .icon {
+                    left: 0px;
+                }
+            }
         }
 
         .section--factors {
@@ -276,7 +277,7 @@ body.potential-causes {
                 padding: 40px 0 30px 140px;
 
                 &.neuron {
-                    padding-left: 50px;
+                    padding-left: 15px;
                     padding-right: 140px;
                     
                     .is--nd{
@@ -285,6 +286,12 @@ body.potential-causes {
                         position: absolute;
                     }
                 }
+                &.neuron-closeup {
+                    .icon {
+                        left: 15px;
+                    }
+                }
+                
             }
         }
 
@@ -295,7 +302,12 @@ body.potential-causes {
                 padding: 30px 0;
 
                 &.dna {
-                    padding-left: 150px;
+                    padding-left: 130px;
+                    
+                    .icon{
+                        background-size: 100px 125px;
+                        left: -10px;
+                    }
                 }
                 &.people {
                     padding-right: 180px;
@@ -311,6 +323,12 @@ body.potential-causes {
             }
 
         }
+        
+        ul.square{
+            li{
+                text-indent: -11.5px;
+            }
+        }
 
         .footnote{
             width: percentage(409/768);
@@ -321,6 +339,31 @@ body.potential-causes {
             width: 68.21374%;
             margin: 0 auto;
         }
+        
+        .btn{
+            width: 100%;
+        }
+    }
+
+    @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: landscape)
+    and (-webkit-min-device-pixel-ratio: 1) {
+        .section--factors {
+            .row {
+                &.dna {
+                    .icon{
+                        left: -15px;
+                    }
+                }
+            }
+        }
+
+        .btn{
+            margin-left: -12px;
+        }
+
     }
 
     // NOTE: this section has too many !importants, use specificity to override css attributes ┻━┻︵ \(°□°)/ ︵ ┻━┻

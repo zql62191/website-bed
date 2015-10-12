@@ -342,6 +342,11 @@ header.header--global {
 
             nav ul li {
                 padding: 10px 0;
+
+                &:last-child {
+                    padding-top: 0;
+                    margin-top: 40px;
+                }
             }
             
             nav ul li a {
@@ -352,7 +357,7 @@ header.header--global {
                     margin-bottom: 10px;
                 }
                 &.mobilesignup {
-                    padding-top: 25px;
+                    padding-top: 20px;
                     font-size: 26px;
                 }
             }

@@ -17,6 +17,7 @@ body.patient-demographics {
         background: #252F39;
         
         
+        
 
         .heading--1 {
             padding-bottom: 25px;
@@ -48,8 +49,8 @@ body.patient-demographics {
                 margin-top: 10px;
             }
             @include mq('md') {
-                margin-left: 10%;
-                width: percentage(766/960);
+                margin-left: 13.5%;
+                width: 72.79167%;
                 padding-bottom: 28px;
             }
             @include mq('sm') {
@@ -326,6 +327,15 @@ body.patient-demographics {
 
         .heading--1 {
             padding: 27px 0 34px 0;
+
+            @media only screen
+            and (min-device-width: 768px)
+            and (max-device-width: 1024px)
+            and (orientation: portrait)
+            and (-webkit-min-device-pixel-ratio: 1) {
+                width:85%;
+                margin-left: 9.5%;
+            }
         }
 
         .icon {
@@ -365,7 +375,7 @@ body.patient-demographics {
             .estimated {
                 text-align: left;
                 padding-bottom: 8px;
-
+                width: 110%;
                 em {
                     padding-right: 30px;
                 }
@@ -456,6 +466,7 @@ body.patient-demographics {
             @include mq('md') {
                 margin-left: 10%;
                 width: percentage(766/960);
+                margin-top: 0;
             }
             @include mq('sm') {
                 font-size: 14px;
@@ -541,6 +552,9 @@ body.patient-demographics {
 
 
         .btn {
+            @include mq('md') {
+                width: 450px;
+            }
             @include mq('sm') {
                 height: auto;
                 line-height: 17px;

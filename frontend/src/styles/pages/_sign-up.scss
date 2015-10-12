@@ -113,12 +113,17 @@ body.sign-up{
                     width:268px;
                     margin-left: 28%;
                 }
+                @include mq('md'){
+                    width: 230px;
+                }
+                
             }
             .info{
                 margin-top: 20px;
                 p.help-block{
                     right: 406px;
                     margin-top: -25px;
+                    
                 }
                 
             }
@@ -151,7 +156,7 @@ body.sign-up{
             }
 
             .checkbox-cont{
-                margin-top: -3.4%;
+                margin-top: -3.55%;
                 @include mq('sm'){
                     margin-top: -7%;
                 }
@@ -207,6 +212,7 @@ body.sign-up{
     @include mq('md') {
         h1.heading--1{
             margin: 30px auto;
+            width: 93%;
         }
     }
     @include mq('sm') {

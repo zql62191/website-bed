@@ -25,13 +25,13 @@ block content
                 
                 input(type='email', name="email", id="Email", placeholder="E-mail", ng-model='optInForm.Email', required, ng-class="{forminvalid: (optInForm.email.$invalid && optInForm.email.$dirty && submitted) || (optInForm.email.$invalid && optInForm.email.$pristine && submitted)}").form-control
                 p.help-block(ng-if="submitted && (optInForm.email.$error.email || optInForm.email.$error.required)")
-                    | Please enter a vaild email address
+                    | Please enter a vaild e-mail address
                 
                 input(type='email', name="confirmEmail", id="ConfirmEmail", placeholder="Confirm E-mail", ng-model='optInForm.ConfirmEmail', required, ng-class="{forminvalid: (optInForm.confirmEmail.$invalid && optInForm.confirmEmail.$dirty && submitted) || (optInForm.confirmEmail.$invalid && optInForm.confirmEmail.$pristine && submitted)}").form-control
                 p.help-block(ng-if="submitted && (optInForm.confirmEmail.$error.email || optInForm.confirmEmail.$error.required)")
-                    | Please confirm the email address
+                    | Please confirm the e-mail address
                 p.help-block(ng-if="submitted && notMatch")
-                    | The confirm email does not match
+                    | The confirm e-mail does not match
                 
                 h2.heading--2
                     | Opt In for Communications

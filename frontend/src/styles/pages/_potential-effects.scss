@@ -186,6 +186,15 @@ body.potential-effects {
                 @include mq('lg') {
                     //left: 7%;
                 }
+
+                @media only screen
+                and (min-device-width: 768px)
+                and (max-device-width: 1024px)
+                and (orientation: portrait)
+                and (-webkit-min-device-pixel-ratio: 1) {
+                    margin-left: -80px;
+                }
+                
                 
             }
 
@@ -591,12 +600,14 @@ body.potential-effects {
         }
 
         @include mq('md') {
+            padding-top: 45px;
+            
             .wrap--content{
                 padding-top: 4px;
             }
             .center {
                 text-align: center;
-                width: percentage(350/768);
+                width: percentage(450/768);
                 margin: 0 auto;
                 .btn{
                     font-size: 16px;
@@ -604,6 +615,7 @@ body.potential-effects {
                     line-height: 19px;
                     padding: 13px 24px 11px;
                     height: auto;
+                    
                 }
             }
         }

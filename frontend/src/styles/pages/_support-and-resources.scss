@@ -466,13 +466,21 @@ body.support-and-resources{
 
     }
 
-    //@media only screen
-    //and (min-device-width: 768px)
-    //and (max-device-width: 1024px)
-    //and (orientation: landscape)
-    //and (-webkit-min-device-pixel-ratio: 1) {
-    //    width: 43%;
-    //}
+    @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: landscape)
+    and (-webkit-min-device-pixel-ratio: 1) {
+        .btn{
+            margin-left: 20px;
+        }
+        .section--information{
+            .link-boxes-tablet{
+                left: 15% !important;
+            }
+        }
+        
+    }
 
     @include mq('md') {
 
@@ -590,18 +598,18 @@ body.support-and-resources{
 
             .link-boxes-tablet{
 
-                padding-left: percentage(84/768);
+                left: 5%;
 
                 .link-box{
-                    width: 230px;
+                    width: 300px;
                     height: 55px;
                     display: inline-block;
-                    font-size: 14px;
-                    line-height: 17px;
+                    font-size: 18px;
+                    line-height: 21px;
                     color: #ADB2B6;
                     
                     &:nth-child(2n+1){
-                        margin-right: percentage(73/768);
+                        margin-right: 5.5%;
                     }
 
                     margin-bottom: 30px;

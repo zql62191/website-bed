@@ -386,8 +386,13 @@ body.recognizing-bed {
             @include mq("md") {
                 width: percentage(670/768);
                 min-width: 570px;
+                
+                .btn{
+                    width: 320px;
+                }
             }
         }
+        
     }
 
     .section--compared {
@@ -457,6 +462,14 @@ body.recognizing-bed {
 
     .section--coexisting {
         background: #333E48;
+        
+        @include mq("md") {
+            p{
+                width: 95%;
+                margin-left: 20px;
+                margin-bottom: 40px;
+            }
+        }
 
         .statistic-box {
             // border: 2px solid #5C656D;
