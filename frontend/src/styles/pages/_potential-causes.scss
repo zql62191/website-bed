@@ -275,6 +275,10 @@ body.potential-causes {
             .row {
                 width: percentage(618/768);
                 padding: 40px 0 30px 140px;
+                
+                .heading--4{
+                    width: 500px;
+                }
 
                 &.neuron {
                     padding-left: 15px;
@@ -358,8 +362,12 @@ body.potential-causes {
                     }
                 }
             }
-        }
 
+            .wrap--refs{
+                width: 932px;
+            }
+        }
+        
         .btn{
             margin-left: -12px;
         }

@@ -21,7 +21,14 @@ body.index {
 
             &.kimberly .player .still {
                 @include hero-bg("#{$page}/kimberly.jpg");
-                @include mq('md','sm'){
+                @include mq('md'){
+                    .hypothetical{
+                        font-size: 12px;
+                        margin-left: 0px;
+                        color: #EDEDED;
+                    }
+                }
+                @include mq('sm'){
                     .hypothetical{
                         font-size: 10px;
                         margin-left: 0px;
@@ -40,7 +47,24 @@ body.index {
 
             &.nikki .player .still {
                 @include hero-bg("#{$page}/nikki.jpg");
-                @include mq('md','sm'){
+                @include mq('md'){
+                    .hypothetical{
+                        font-size: 12px;
+                        margin-left: 76%;
+                        color: #3d3d3d;
+                    }
+                }
+                @media only screen
+                and (min-device-width: 768px)
+                and (max-device-width: 1024px)
+                and (orientation: landscape)
+                and (-webkit-min-device-pixel-ratio: 1) {
+                    .hypothetical {
+                        margin-left: 80%;
+                    }
+
+                }
+                @include mq('sm'){
                     .hypothetical{
                         font-size: 10px;
                         margin-left: 56%;
@@ -51,7 +75,24 @@ body.index {
 
             &.julie .player .still {
                 @include hero-bg("#{$page}/julie.jpg");
-                @include mq('md','sm'){
+                @include mq('md'){
+                    .hypothetical{
+                        font-size: 12px;
+                        margin-left: 76%;
+                        color: #3d3d3d;
+                    }
+                }
+                @media only screen
+                and (min-device-width: 768px)
+                and (max-device-width: 1024px)
+                and (orientation: landscape)
+                and (-webkit-min-device-pixel-ratio: 1) {
+                    .hypothetical {
+                        margin-left: 80%;
+                    }
+
+                }
+                @include mq('sm'){
                     .hypothetical{
                         font-size: 10px;
                         margin-left: 56%;
@@ -62,7 +103,14 @@ body.index {
 
             &.diego .player .still {
                 @include hero-bg("#{$page}/diego.jpg");
-                @include mq('md','sm'){
+                @include mq('md'){
+                    .hypothetical{
+                        font-size: 12px;
+                        margin-left: 0px;
+                        color: #EDEDED;
+                    }
+                }
+                @include mq('sm'){
                     .hypothetical{
                         font-size: 10px;
                         margin-left: 0px;
