@@ -284,8 +284,8 @@ body.profiles {
                 position: absolute;
                 top: 232px;
                 width: 100%;
-
                 .next {
+                    cursor: pointer;
                     width: 20px;
                     height: 33px;
                     background-image: url("../img/lg/profiles/carousel_arrow.png");
@@ -305,6 +305,7 @@ body.profiles {
                 }
 
                 .prev {
+                    cursor: pointer;
                     width: 20px;
                     height: 33px;
                     background-image: url("../img/lg/profiles/carousel_arrow.png");
