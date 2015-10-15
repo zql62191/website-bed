@@ -194,8 +194,8 @@ body.recognizing-bed {
 
                 @include mq("sm") {
                     top: 13px;
-                    background-size: 307px 480px !important;
-                    width: 307px !important;
+                    background-size: 291px 480px !important;
+                    width: 291px !important;
                     height: 480px !important;
                 }
             }
@@ -209,7 +209,7 @@ body.recognizing-bed {
                 // height: 310px;
             }
             @include mq("sm") {
-                width: 267px;
+                width: 280px;
                 height: 482px;
                 margin-bottom: 20px;
             }
