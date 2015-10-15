@@ -139,7 +139,7 @@
          }
          a{
              color: white;
-             &:hover {
+             &:hover, &.hover {
                  color: #FFBE2C;
              }
          }

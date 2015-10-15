@@ -1230,6 +1230,22 @@
         }
     ])
 
+    .directive('hoverUnsubscribeLink', [
+        function() {
+            return {
+                restrict: "A",
+                link: function(scope, element, attr){
+                    $(element).on('mouseenter', function(){
+                        $(this).siblings().addClass('hover');
+                    });
+                    $(element).on('mouseleave', function(){                       
+                        $(this).siblings().removeClass('hover');
+                    });
+                }
+            }
+        }
+    ])
+
     .service('ScrollTo', ['$window', 'ngScrollToOptions', function($window, ngScrollToOptions) {
 
         this.idOrName = function (idOrName, offset, focus) {//find element with the given id or name and scroll to the first element it finds
