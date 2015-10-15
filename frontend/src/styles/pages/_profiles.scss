@@ -299,7 +299,7 @@ body.profiles {
                     float: right;
                     z-index: 10;
 
-                    &:hover {
+                    &.hover {
                         background-image: url("../img/lg/profiles/carousel_arrow_hover.png");
                     }
                 }
@@ -321,7 +321,7 @@ body.profiles {
                     float: left;
                     z-index: 10;
 
-                    &:hover {
+                    &.hover {
                         background-image: url("../img/lg/profiles/carousel_arrow_hover.png");
                     }
                 }
