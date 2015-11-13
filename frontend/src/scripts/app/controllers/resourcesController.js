@@ -21,7 +21,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03323.mp4",
                         host: activehost,
                         newFrom: null,
-                        viewed: $window.localStorage.getItem($scope.tabbedVideos)
+                        viewed: false
                     },
                     {
                         id: "bed-diff-bulimia",
@@ -31,7 +31,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03014.mp4",
                         host: activehost,
                         newFrom: null,//Date(2015, 7, 15),
-                        viewed: $window.localStorage.getItem($scope.defaultVideoPath)
+                        viewed: false
                     },
                     {
                         id: "bed-diff-overeating",
@@ -41,7 +41,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03013.mp4",
                         host: activehost,
                         newFrom: null,//Date(2015, 7, 15),
-                        viewed: $window.localStorage.getItem($scope.defaultVideoPath)
+                        viewed: false
                     },
                     {
                         id: "functional-conseqs",
@@ -51,7 +51,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03322.mp4",
                         host: activehost,
                         newFrom: null,
-                        viewed: $window.localStorage.getItem($scope.defaultVideoPath)
+                        viewed: false
                     },
                     {
                         id: "clinical-course",
@@ -61,7 +61,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03016.mp4",
                         host: activehost,
                         newFrom: null,//Date(2015, 7, 15),
-                        viewed: $window.localStorage.getItem($scope.defaultVideoPath)
+                        viewed: false
                     }
                 ]
             },{
@@ -77,7 +77,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S02969.mp4",
                         host: activehost,
                         newFrom: null,
-                        viewed: $window.localStorage.getItem($scope.currentVideo)
+                        viewed: false
                     },
                     {
                         id: "rel-obesity-bed",
@@ -87,7 +87,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03017.mp4",
                         host: activehost,
                         newFrom: null,//Date(2015, 7, 15),
-                        viewed: $window.localStorage.getItem($scope.currentVideo)
+                        viewed: false
                     },
                     {
                         id: "psych-conditions-assoc",
@@ -97,7 +97,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S02972.mp4",
                         host: activehost,
                         newFrom: null,
-                        viewed: $window.localStorage.getItem($scope.currentVideo)
+                        viewed: false
                     },
                     {
                         id: "thought-to-cause",
@@ -107,7 +107,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S02973.mp4",
                         host: activehost,
                         newFrom: null,
-                        viewed: $window.localStorage.getItem($scope.currentVideo)
+                        viewed: false
                     },
                     {
                         id: "prevalence-comparison-ethnic",
@@ -117,7 +117,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03011.mp4",
                         host: activehost,
                         newFrom: null,
-                        viewed: $window.localStorage.getItem($scope.currentVideo)
+                        viewed: false
                     },
                     {
                         id: "occur-in-both",
@@ -127,7 +127,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03012.mp4",
                         host: activehost,
                         newFrom: null,
-                        viewed: $window.localStorage.getItem($scope.currentVideo)
+                        viewed: false
                     },
                     {
                         id: "begin-effective-convo",
@@ -137,7 +137,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03018.mp4",
                         host: activehost,
                         newFrom: null,//Date(2015, 7, 15),
-                        viewed: $window.localStorage.getItem($scope.currentVideo)
+                        viewed: false
                     }
                 ]
             }, {
@@ -152,7 +152,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S02868.mp4",
                         host: activehost,
                         newFrom: null,//Date(2015, 7, 15),
-                        viewed: $window.localStorage.getItem("id")
+                        viewed: false
                     },
                     {
                         id: "diag-criteria",
@@ -162,7 +162,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03499.mp4",
                         host: activehost,
                         newFrom: null,
-                        viewed: $window.localStorage.getItem("id")
+                        viewed: false
                     },
                     {
                         id: "possible-causes-of-bed",
@@ -172,7 +172,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03500.mp4",
                         host: activehost,
                         newFrom: null,
-                        viewed: $window.localStorage.getItem("id")
+                        viewed: false
                     },
                     {
                         id: "recog-adult-patients",
@@ -182,7 +182,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03501.mp4",
                         host: activehost,
                         newFrom: null,
-                        viewed: $window.localStorage.getItem("id")
+                        viewed: false
                     },
                     {
                         id: "functional-conseqs2",
@@ -192,7 +192,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03502.mp4",
                         host: activehost,
                         newFrom: null,
-                        viewed: $window.localStorage.getItem("id")
+                        viewed: false
                     },
                     {
                         id: "diag-bed-in-adult-patients",
@@ -202,7 +202,7 @@
                         filepath: "//d2ly9zedmmzqz4.cloudfront.net/BED-S03503.mp4",
                         host: activehost,
                         newFrom: null,
-                        viewed: $window.localStorage.getItem("id")
+                        viewed: false
                     }
                 ]
             }]
@@ -212,6 +212,27 @@
             $scope.currentTab = "what-is-bed";
             $scope.currentVideo = "essential-features-diag";
             $scope.defaultVideoPath = '//d2ly9zedmmzqz4.cloudfront.net/BED-S03323.mp4'; // default video - never changes
+
+            $( window ).load(function() {
+                var id = $scope.currentVideo;
+                for (var i = 0; i < $scope.tabbedVideos.length; i++) {              
+            
+                    if ($scope.tabbedVideos[i].tabclass === $scope.currentTab) {    
+            
+                        $scope.currentTabVideos = $scope.tabbedVideos[i].videos;    
+            
+                        for (var j = 0; j < $scope.currentTabVideos.length; j++) {
+                            if ($scope.currentTabVideos[j]['id'] === id) {
+                                $scope.currentTabVideos[j].viewed = localStorage.getItem(id);
+                                $scope.$apply();
+                            }
+                        }
+            
+            
+                    }
+                }
+            });
+            
             
             // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
             // MEDIA ELEMENTS INTERNAL STUFFS: 
@@ -303,7 +324,7 @@
                                 if ($scope.currentTabVideos[j]['id'] === id) {          // get filepath from that list
 
                                     $scope.tabbedVideos[i]["videos"][j]["viewed"] = true;
-                                    window.localStorage.setItem(id, $scope.tabbedVideos[i]["videos"][j]["viewed"]);
+                                    localStorage.setItem(id, $scope.tabbedVideos[i]["videos"][j]["viewed"]);
                                     $scope.$apply();
                                 }
                                 
@@ -321,7 +342,7 @@
                     p100 = true;
                     // BED.Analytics.videoOnPercentage(currentVideoTitle, 100);
                 }
-                
+
             };
             
             // you can change attributes of a video using this
@@ -490,6 +511,7 @@
                 instance.setSrc(document.location.protocol + filePath); // set mejs to that url
                 instance.play();
             };
+            
 
             $scope.changeTab = function(tabIndex){
 
